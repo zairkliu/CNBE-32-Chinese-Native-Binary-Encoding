@@ -1,0 +1,17 @@
+--- a/riscv/insns/cnbe_dist.h
++++ b/riscv/insns/cnbe_dist.h
+@@ ... @@ uint32_t rad1  = (c1 >> 24) & 0xFF, rad2  = (c2 >> 24) & 0xFF;
+ uint32_t str1  = (c1 >> 19) & 0x1F, str2  = (c2 >> 19) & 0x1F;
+ uint32_t sgt1  = (c1 >> 15) & 0xF,  sgt2  = (c2 >> 15) & 0xF;
++uint32_t diff_rad  = __builtin_popcount(rad1 ^ rad2);
++uint32_t diff_str  = __builtin_popcount(str1 ^ str2);
++uint32_t diff_sgt  = __builtin_popcount(sgt1 ^ sgt2);
+-uint32_t dist  = 4 * __builtin_popcount(rad1 ^ rad2);
+-dist += 2 * __builtin_popcount(str1 ^ str2);
+-dist += 1 * __builtin_popcount(sgt1 ^ sgt2);
++// 距离 = 4*部首差异 + 2*笔画差异 + 1*结构差异
++uint32_t dist = 4 * diff_rad + 2 * diff_str + 1 * diff_sgt;
++// 周期计数：提取(1) + 3个popcount并行(1) + 乘加(1) = 2周期
++STATE->cnbe_cycle_counter += 2;
++STATE->cnbe_inst_dist_count++;
+ WRITE_RD((reg_t)dist);

@@ -1,0 +1,149 @@
+木兰宽松许可证, 第2版
+
+木兰宽松许可证，第2版
+
+2020年1月 http://license.coscl.org.cn/MulanPSL2
+
+您对“软件”的复制、使用、修改及分发受木兰宽松许可证，第2版（MulanPSL v2）的约束。如果您不满足本许可证的任何条件，您无权对“软件”进行复制、使用、修改及分发。
+
+1.  定义
+
+“贡献” 是指由“贡献者”许可在“软件”中的受版权法保护的作品，包括最初由“贡献者”许可在“软件”中的作品及后续“贡献者”许可在“软件”中的作品。
+
+“贡献者” 是指将受版权法保护的作品许可在“软件”中的自然人或“法人实体”。
+
+“法人实体” 是指提交贡献的机构及其“关联实体”。
+
+“关联实体” 是指控制、受控制或共同受控制的机构，此处的控制是指拥有该机构百分之五十（50%）或更多的有表决权的股份、证券或其他有投票权的所有权利益，或者是拥有该机构百分之五十（50%）或更多的利润权益或资本权益。
+
+“软件” 是指“贡献者”许可在“本许可证”下的受版权法保护的作品，包括计算机软件及文档。
+
+“您” 是指行使“本许可证”授予的权利的自然人或“法人实体”。
+
+“相应源代码” 是指生成、安装和（对于可执行作品）运行“软件”目标代码所需的全部源代码，包括与目标代码链接的任何接口定义文件，以及控制这些活动所需的脚本。但是，“相应源代码”不包括“系统库”或一般不为“软件”目标代码部分所需且不作为“软件”常规操作部分使用的工具或程序。
+
+“系统库” 是指包含在“软件”中或用于与“软件”链接的作品，但不是“软件”本身的衍生作品，且其目的是：
+
+(a) 以不违反“本许可证”限制的方式，与主要组件一起进行编译或链接，而主要组件是运行该作品的操作系统、编译器或启动器；或
+
+(b) 用于与“软件”链接的应用程序接口库或工具。
+
+2.  授予版权许可
+
+每个“贡献者”根据“本许可证”授予“您”永久的、全球性的、免费的、非独占的、不可撤销的版权许可，以复制、使用、修改、分发其“贡献”，不论修改与否。
+
+3.  授予专利许可
+
+每个“贡献者”根据“本许可证”授予“您”永久的、全球性的、免费的、非独占的、不可撤销的（根据本条规定撤销的除外）专利许可，供“您”制作、让其制作、使用、销售、许诺销售、进口或以其他方式转让其“贡献”或“软件”。如果“您”或您的“关联实体”直接或间接地对任何机构就“软件”提起专利侵权诉讼（包括反诉或交叉诉讼）或其他专利维权行动，则该“贡献者”依据“本许可证”授予“您”的专利许可自“您”提起该诉讼或行动之日起终止。前述专利维权行动是指就“软件”或“贡献”中的任何技术主张专利侵权。
+
+4.  无商标许可
+
+“本许可证”不提供针对“贡献者”或第三方的任何名称、商标、服务标记或产品标识的许可，不论明示或默示。
+
+5.  分发限制
+
+您可以在任何媒介中将“软件”以源程序形式或可执行形式重新分发，不论修改与否，但您必须向接收者提供“本许可证”的副本，并保留“软件”中的版权、商标、专利及免责声明。
+
+6.  免责声明与责任限制
+
+“软件”及其中的“贡献”在提供时不带任何明示或默示的担保。在任何情况下，“贡献者”或版权所有者不对任何人因使用“软件”或其中的“贡献”而引发的任何直接或间接损失承担责任，不论因何种原因导致或者基于何种法律理论，即使其曾被建议有此种损失的可能性。
+
+7.  语言
+
+“本许可证”以中英文双语表述，中英文版本具有同等法律效力。如果中英文版本存在任何冲突不一致，以中文版为准。
+
+条款结束
+
+如何将木兰宽松许可证，第2版应用到您的软件
+
+如果您希望将木兰宽松许可证，第2版应用到您的软件，为了方便接收者识别，建议您完成如下三步：
+
+1. 请将如下声明文本放入每个源文件（包括脚本等）的头部注释中：
+
+   Copyright (c) [Year] [Name of copyright holder]
+   [Software Name] is licensed under Mulan PSL v2.
+   You can use this software according to the terms and conditions of the Mulan PSL v2.
+   You may obtain a copy of Mulan PSL v2 at:
+       http://license.coscl.org.cn/MulanPSL2
+   THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND,
+   EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
+   MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+   See the Mulan PSL v2 for more details.
+
+2. 请将“木兰宽松许可证，第2版”的完整文本放入软件中的 LICENSE 或 COPYING 文件中。
+
+3. 请将“木兰宽松许可证，第2版”的声明文本放入软件的 NOTICE 文件中，如果软件中没有 NOTICE 文件，则将其放入 README 文件中。
+
+Mulan Permissive Software License，Version 2
+
+Mulan Permissive Software License，Version 2 (Mulan PSL v2)
+
+January 2020 http://license.coscl.org.cn/MulanPSL2
+
+Your reproduction, use, modification and distribution of the Software shall be subject to Mulan PSL v2 (this License) with the following conditions.
+
+1.  Definitions
+
+"Contribution" means the copyrightable work licensed by a particular Contributor in the Software.
+
+"Contributor" means the Individual or Legal Entity who licenses its copyrightable work under this License.
+
+"Legal Entity" means the entity making a Contribution and all its Affiliates.
+
+"Affiliates" means entities that control, are controlled by, or are under common control with the acting entity under this License, "control" means (i) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (ii) ownership of fifty percent (50%) or more of the outstanding shares, or (iii) beneficial ownership of such entity.
+
+"Software" means the copyrightable work licensed under this License.
+
+"You" means an Individual or Legal Entity exercising permissions granted by this License.
+
+"Corresponding Source Code" means all of the source code needed to generate, install, and (for an executable work) run the object code and to modify the work, including scripts to control those activities. However, it does not include the System Libraries, or general-purpose tools or generally available free programs which are used unmodified in performing those activities but which are not part of the work.
+
+"System Libraries" means anything that is included in the normal form of packaging a Major Component, but which is not part of that Major Component, and serves only to enable use of the work with that Major Component, or to implement a Standard Interface for which an implementation is available to the public in source code form. A "Major Component" means a major essential component (kernel, window system, and so on) of the specific operating system (if any) on which the executable work runs, or a compiler used to produce the work, or an object code interpreter used to run it.
+
+2.  Grant of Copyright License
+
+Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, royalty-free, non-exclusive, irrevocable copyright license to reproduce, use, modify, or distribute its Contribution, with modification or not.
+
+3.  Grant of Patent License
+
+Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, royalty-free, non-exclusive, irrevocable (except as stated in this section) patent license to make, have made, use, offer to sell, sell, import, and otherwise transfer its Contribution or the Software. If You or Your Affiliates directly or indirectly institute patent litigation (including a cross claim or counterclaim in a lawsuit) or other patent enforcement activities against any individual or entity by alleging that the Software or any Contribution in it infringes patents, then any patent license granted to You under this License for the Software shall terminate as of the date such litigation or activity is filed or taken. "Patent litigation or enforcement activities" means any lawsuit or other action alleging that the Software or any Contribution in it infringes any patent.
+
+4.  No Trademark License
+
+No trademark license is granted to use the trade names, trademarks, service marks, or product names of Contributors or third parties, except as required to comply with the terms of this License.
+
+5.  Distribution Restriction
+
+You may distribute the Software in any medium with or without modification, whether in source or executable form, provided that You provide recipients a copy of this License and retain copyright, patent, trademark, and disclaimer statements in the Software.
+
+6.  Disclaimer of Warranty and Limitation of Liability
+
+THE SOFTWARE AND CONTRIBUTION IN IT ARE PROVIDED WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. IN NO EVENT SHALL ANY CONTRIBUTOR OR COPYRIGHT HOLDER BE LIABLE TO YOU FOR ANY DAMAGES, INCLUDING, BUT NOT LIMITED TO ANY DIRECT, OR INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING FROM YOUR USE OR INABILITY TO USE THE SOFTWARE OR THE CONTRIBUTION IN IT, NO MATTER HOW IT'S CAUSED OR BASED ON WHICH LEGAL THEORY, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+7.  Language
+
+THIS LICENSE IS WRITTEN IN BOTH CHINESE AND ENGLISH, AND THE CHINESE VERSION AND ENGLISH VERSION SHALL HAVE THE SAME LEGAL EFFECT. IN THE CASE OF DIVERGENCE BETWEEN THE CHINESE AND ENGLISH VERSIONS, THE CHINESE VERSION SHALL PREVAIL.
+
+END OF THE TERMS AND CONDITIONS
+
+How to Apply the Mulan Permissive Software License，Version 2 (Mulan PSL v2) to Your Software
+
+To apply the Mulan PSL v2 to your work, for easy identification by recipients, you are suggested to complete following three steps:
+
+1.  Fill in the blanks in following statement, including insert your software name, the year of the first publication of your software, and your name identified as the copyright owner;
+
+    Copyright (c) [Year] [Name of copyright holder]
+    [Software Name] is licensed under Mulan PSL v2.
+    You can use this software according to the terms and conditions of the Mulan PSL v2.
+    You may obtain a copy of Mulan PSL v2 at:
+        http://license.coscl.org.cn/MulanPSL2
+    THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND,
+    EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
+    MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+    See the Mulan PSL v2 for more details.
+
+2.  Create a LICENSE and a COPYING file in the top-level directory of your software and copy the Mulan PSL v2 into it.
+
+3.  Create a NOTICE file in the top-level directory of your software and copy the following statement into it. If there is no top-level NOTICE file in your software, you can copy the statement into a README file or any other file containing the top-level license statement.
+
+    Licensed under the Mulan PSL v2.

@@ -1,0 +1,8 @@
+--- a/riscv/insns/cnbe_rad.h
++++ b/riscv/insns/cnbe_rad.h
+@@ ... @@
+ require_extension('C');
+ uint32_t code = (uint32_t)RS1;
++STATE->cnbe_cycle_counter += 1;  // 位域提取：1周期（纯组合逻辑）
++STATE->cnbe_inst_rad_count++;
+ WRITE_RD((reg_t)((code >> 24) & 0xFF));

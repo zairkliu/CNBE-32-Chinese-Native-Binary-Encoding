@@ -1,0 +1,28 @@
+--- a/riscv/encoding.h
++++ b/riscv/encoding.h
+@@ ... @@
+ // Custom opcode spaces
+ #define MATCH_CUSTOM0     0x0b
+ #define MASK_CUSTOM0      0x7f
++// CNBE-32 Custom Instructions (Custom-0, opcode=0x0b)
++#define MATCH_CNBE_ENC     0x0000000b
++#define MASK_CNBE_ENC      0xfe00707f
++#define MATCH_CNBE_DEC     0x0010000b
++#define MASK_CNBE_DEC      0xfe00707f
++#define MATCH_CNBE_RAD     0x0020000b
++#define MASK_CNBE_RAD      0xfe00707f
++#define MATCH_CNBE_STR     0x0030000b
++#define MASK_CNBE_STR      0xfe00707f
++#define MATCH_CNBE_STRUCT  0x0040000b
++#define MASK_CNBE_STRUCT   0xfe00707f
++#define MATCH_CNBE_DIST    0x0050000b
++#define MASK_CNBE_DIST     0xfe00707f
+@@ ... @@
+ DECLARE_INSN(custom0_rtype, MATCH_CUSTOM0, MASK_CUSTOM0)
+ DECLARE_INSN(custom0_itype, MATCH_CUSTOM0, MASK_CUSTOM0)
++DECLARE_INSN(cnbe_enc, MATCH_CNBE_ENC, MASK_CNBE_ENC)
++DECLARE_INSN(cnbe_dec, MATCH_CNBE_DEC, MASK_CNBE_DEC)
++DECLARE_INSN(cnbe_rad, MATCH_CNBE_RAD, MASK_CNBE_RAD)
++DECLARE_INSN(cnbe_str, MATCH_CNBE_STR, MASK_CNBE_STR)
++DECLARE_INSN(cnbe_struct, MATCH_CNBE_STRUCT, MASK_CNBE_STRUCT)
++DECLARE_INSN(cnbe_dist, MATCH_CNBE_DIST, MASK_CNBE_DIST)

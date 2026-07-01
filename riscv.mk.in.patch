@@ -1,0 +1,7 @@
+--- a/riscv/riscv.mk.in
++++ b/riscv/riscv.mk.in
+@@ ... @@
+ # Instruction header files
+ insn_h_files = \
++  cnbe_enc.h cnbe_dec.h cnbe_rad.h cnbe_str.h cnbe_struct.h cnbe_dist.h \
+   ...

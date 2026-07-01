@@ -1,0 +1,8 @@
+--- a/riscv/insns/cnbe_str.h
++++ b/riscv/insns/cnbe_str.h
+@@ ... @@
+ require_extension('C');
+ uint32_t code = (uint32_t)RS1;
++STATE->cnbe_cycle_counter += 1;  // 位域提取：1周期
++STATE->cnbe_inst_str_count++;
+ WRITE_RD((reg_t)((code >> 19) & 0x1F));

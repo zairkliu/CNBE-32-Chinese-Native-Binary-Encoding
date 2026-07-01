@@ -1,0 +1,18 @@
+--- a/riscv/processor.cc
++++ b/riscv/processor.cc
+@@ ... @@ processor_t::processor_t(const char* isa, const char* priv, const char* varch,
+   satp = 0;
+   extension_table[0] = true;
+ 
++  // CNBE-32 cycle counter initialization
++  cnbe_cycle_counter = 0;
++  cnbe_inst_enc_count = 0;
++  cnbe_inst_dec_count = 0;
++  cnbe_inst_rad_count = 0;
++  cnbe_inst_str_count = 0;
++  cnbe_inst_struct_count = 0;
++  cnbe_inst_dist_count = 0;
++
+   parse_arch_string();
+   parse_priv_key();
+   find_extension();

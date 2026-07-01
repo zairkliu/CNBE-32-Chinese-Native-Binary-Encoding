@@ -1,0 +1,8 @@
+--- a/riscv/insns/cnbe_struct.h
++++ b/riscv/insns/cnbe_struct.h
+@@ ... @@
+ require_extension('C');
+ uint32_t code = (uint32_t)RS1;
++STATE->cnbe_cycle_counter += 1;  // 位域提取：1周期
++STATE->cnbe_inst_struct_count++;
+ WRITE_RD((reg_t)((code >> 15) & 0xF));

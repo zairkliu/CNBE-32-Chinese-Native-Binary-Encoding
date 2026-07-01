@@ -1,0 +1,15 @@
+--- a/riscv/insns/cnbe_dec.h
++++ b/riscv/insns/cnbe_dec.h
+@@ ... @@ uint32_t code = (uint32_t)RS1;
+ uint32_t result = 0;
+ for (int i = 0; i < 8105; i++) {
+-    if (cnbe_table[i] == code) { result = unicode_table[i]; break; }
++    if (cnbe_table[i] == code) {
++        result = unicode_table[i];
++        STATE->cnbe_cycle_counter += (i + 1);
++        break;
++    }
+ }
++if (result == 0) STATE->cnbe_cycle_counter += 8105;
++STATE->cnbe_inst_dec_count++;
+ WRITE_RD((reg_t)result);

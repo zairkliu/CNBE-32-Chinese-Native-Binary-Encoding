@@ -1,0 +1,13 @@
+--- a/riscv/processor.h
++++ b/riscv/processor.h
+@@ ... @@ class processor_t : public abstract_device_t
+   // CNBE-32 cycle counter
++  uint64_t cnbe_cycle_counter;
++  uint64_t cnbe_inst_enc_count;
++  uint64_t cnbe_inst_dec_count;
++  uint64_t cnbe_inst_rad_count;
++  uint64_t cnbe_inst_str_count;
++  uint64_t cnbe_inst_struct_count;
++  uint64_t cnbe_inst_dist_count;
++
+   void* get_extension();

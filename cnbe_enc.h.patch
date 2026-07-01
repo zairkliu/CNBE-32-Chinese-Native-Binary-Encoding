@@ -1,0 +1,15 @@
+--- a/riscv/insns/cnbe_enc.h
++++ b/riscv/insns/cnbe_enc.h
+@@ ... @@ uint32_t ucp = (uint32_t)RS1;
+ uint32_t result = 0;
+ for (int i = 0; i < 8105; i++) {
+-    if (unicode_table[i] == ucp) { result = cnbe_table[i]; break; }
++    if (unicode_table[i] == ucp) {
++        result = cnbe_table[i];
++        STATE->cnbe_cycle_counter += (i + 1);  // 线性搜索：每比较一次计1周期
++        break;
++    }
+ }
++if (result == 0) STATE->cnbe_cycle_counter += 8105;
++STATE->cnbe_inst_enc_count++;
+ WRITE_RD((reg_t)result);
