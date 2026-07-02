@@ -1,205 +1,191 @@
-# CNBE-32: 中文原生二进制编码
+# CNBE-32: Chinese Native Binary Encoding
 
-**Chinese Native Binary Encoding** · 部首 × 笔画 × 结构 → 32-bit → RISC-V 指令
+A structured 32-bit representation of **97,686 CJK characters** for AI systems, hardware acceleration, and semantic processing.
 
-![Python](https://img.shields.io/badge/python-3.9+-green)
-![CJK](https://img.shields.io/badge/CJK-97%2C686-brightgreen)
-![Platform](https://img.shields.io/badge/platform-macOS_ARM64-lightgrey)
-
-</div>
-
----
-
-## 📖 中文文档
-
-### 概述
-
-CNBE-32 是一种 32 位定长汉字编码方案，将汉字的部首、笔画、结构等字形特征直接映射到二进制位域中。已在 RISC-V Spike 模拟器上实现 6 条自定义指令，使 CPU 可以直接提取汉字语义特征。
-
-```
-[31:24] 部首区 (8bit) → 214 个康熙部首
-[23:19] 笔画区 (5bit) → 1-31 画
-[18:15] 结构区 (4bit) → 9 种结构类型 (自动检测)
-[14:4]  字库区 (11bit) → 组内索引
-[3:0]   扩展区 (4bit) → 繁简/多音标志 (预留)
-```
-
-### 核心数据
-
-| 指标 | 值 |
-|:-----|:----|
-| 汉字覆盖 | **97,686** 字 (CJK 全部统一汉字) |
-| 编码唯一性 | **100%** (全部唯一) |
-| 部首覆盖 | **214/214** (全部康熙部首) |
-| 结构类型 | **9/16** 种 (自动检测，修复前仅 3 种) |
-| RISC-V 指令 | **6 条** (Custom-0 opcode) |
-| 查表加速 | **二分 338x** (零成本) / **哈希 4044x** (128KB) |
-| 分类准确率 | **100.00%** (直接位域读取) |
-| 国标兼容 | GB 18030-2022, GB/T 22320-2025 |
-
-### 仓库结构
-
-```
-cnbe-32/
-├── docs/                      9 篇技术文档
-│   ├── 1_技术白皮书.md         白皮书 (核心)
-│   ├── 2_实验说明.md          实验设计 + 方法
-│   ├── 3_架构设计.md          六层全链路架构
-│   ├── 4_编码方案设计.md       位域 + 索引设计
-│   ├── 5_产出报告.md          交付清单
-│   ├── CNBE32_CJK_完整白皮书.md  理论+技术+方案
-│   ├── CNBE32_RISCV_技术白皮书.md  Spike 实现
-│   ├── CNBE32_双版本对比白皮书.md  8105 vs 97K
-│   └── CNBE32_标准引用附录.md    GB/T 标准对接
-├── src/                      3 个源代码
-│   ├── generate_cnbe_table.py   编码表生成器
-│   ├── cnbe_simulator.py        周期精确性能模拟器
-│   └── cnbe_table_fixed.h       编码 C 头文件 (3.8MB)
-├── hardware/                  21 个硬件文件
-│   ├── spike-patches/            16 个补丁
-│   │   ├── encoding.h.patch      编码定义
-│   │   ├── processor.h.patch     周期计数
-│   │   ├── cnbe_enc/dec.h        编码/解码指令
-│   │   └── cnbe_rad/str/struct/dist.h  部首/笔画/结构/距离
-│   └── verilog-cam/              5 个 CAM 模块
-│       └── cnbe_cam_top.sv       CAM 顶层 (8105 条目)
-├── tests/                     5 个测试程序
-│   ├── test_cnbe_full.c         8105 字全量集成测试
-│   ├── test_clustering.c        聚类验证
-│   ├── test_cnbe_unit.S         汇编单元测试
-│   ├── perf_cycle_count.c       周期计数测试
-│   └── test_perf.c              性能基准
-├── results/                   3 篇实验报告
-│   ├── CNBE32_EXP_CJK.md       CJK 全量 4 项实验
-│   ├── CNBE32_TEST_REPORT_8105.md  8105 字验证
-│   └── CNBE32_PERFORMANCE_REPORT.md  周期性能
-├── data/                      编码目录数据库
-│   ├── CNBE_编码目录_修复完整版.xlsx   (5.7 MB)
-│   ├── cnbe_catalog_fixed.db.gz       (1.4 MB)
-│   └── cnbe_catalog_fixed.csv.gz      (803 KB)
-└── experiments/                t-SNE 特征数据
-    └── cnbe_tsne_data.csv.gz          (51 KB, 10000 点)
-```
-
-### 快速开始
-
-```bash
-# 1. 生成编码表
-pip install openpyxl
-python src/generate_cnbe_table.py
-
-# 2. 运行性能模拟器
-python src/cnbe_simulator.py
-
-# 3. 集成到 Spike (需要 RISC-V GCC)
-cd riscv-isa-sim
-patch -p1 < hardware/spike-patches/encoding.h.patch
-cp hardware/spike-patches/*.h riscv/insns/
-mkdir build && cd build
-../configure --with-isa=rv64imafdc && make -j4 && make install
-```
-
-### 6 条 RISC-V 自定义指令
-
-| 指令 | funct3 | 功能 | 硬件周期 |
-|:----:|:------:|:-----|:--------:|
-| `cnbe.enc` | 000 | Unicode → CNBE-32 (哈希 O(1)) | **2** |
-| `cnbe.dec` | 001 | CNBE-32 → Unicode (线性) | ~4053 |
-| `cnbe.rad` | 010 | 提取部首 (bits 31:24) | **1** |
-| `cnbe.str` | 011 | 提取笔画 (bits 23:19) | **1** |
-| `cnbe.struct` | 100 | 提取结构 (bits 18:15) | **1** |
-| `cnbe.dist` | 101 | 加权语义距离 | **2** |
-
-### 实验验证
-
-| 实验 | 结果 |
-|:-----|:----:|
-| 部首分类 | **100.00%** (8,105 字) |
-| 笔画分类 | **100.00%** (8,105 字) |
-| 同部首距离 | 4.29 (97,686 字采样) |
-| 跨部首距离 | 21.34 (97,686 字采样) |
-| 聚类分离度 | **4.97x** |
-| 平均语义距离 | 20.9 / 46 |
-| 编码唯一性 | **97,686/97,686 ✓** |
-
-### 引用
-
-```bibtex
-@software{cnbe32_2026,
-  title = {CNBE-32: Chinese Native Binary Encoding},
-  author = {Liu, Zairk},
-  year = {2026},
-  url = {https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding}
-}
-```
-
-### 许可证
-
-本项目采用 [木兰宽松许可证，第2版（MulanPSL v2）](http://license.coscl.org.cn/MulanPSL2) 进行许可。
+[![License](https://img.shields.io/badge/License-MulanPSL2-blue.svg)]()
+[![CJK Coverage](https://img.shields.io/badge/CJK-97%2C686-brightgreen)]()
+[![Zero Collisions](https://img.shields.io/badge/Collisions-0-success)]()
+[![RISC-V](https://img.shields.io/badge/RISC--V-5%20custom-orange)]()
 
 ---
 
-## 📘 English Documentation
+## 1. Executive Summary
 
-### Overview
+CNBE-32 (Chinese Native Binary Encoding) embeds Chinese character structural knowledge directly into 32-bit codes. Unlike traditional schemes (Unicode, GB 18030-2022) that treat characters as opaque identifiers, CNBE-32 encodes **radical, stroke count, structure type, and index** as distinct bit-fields.
 
-CNBE-32 is a 32-bit fixed-length encoding scheme that embeds Chinese character structure information — radical, stroke count, and structure type — directly into binary bit fields. Implemented with 6 custom RISC-V instructions on the Spike simulator.
+| Metric | Value | Notes |
+|---|---|---|
+| Total characters | **97,686** | CJK Unified + Extensions A-I, 10 blocks |
+| Encoding collisions | **0** | Verified across all characters |
+| Kangxi radicals | **214/214** | 8-bit radical field, 100% coverage |
+| Structure types | **9** | Single, Left-Right, Up-Down, 6 enclosures |
+| Stroke range | **1-31** | 5-bit stroke count field |
+| Code space utilization | **0.0023%** | Ample room for future expansion |
+| GB 18030-2022 comparison | **+9,799 chars** | CNBE covers 11.1% more CJK characters |
 
-### Key Metrics
+---
+
+## 2. Why CNBE?
+
+Existing Chinese character encodings share a fundamental limitation: **they encode identity, not structure**. AI systems must learn character relationships from scratch. CNBE embeds structural information directly:
+
+```
+Bit: 31        24 23    19 18   15 14                 4 3  0
+      +----------+--------+-------+--------------------+---+
+      | Radical  | Stroke |Struct |    Index           |Ext|
+      |  (8 bit) | (5 bit)|(4 bit)|    (11 bit)        |(4)|
+      +----------+--------+-------+--------------------+---+
+```
+
+This enables:
+- **Direct AI readability**: 99.94% accuracy in 3 epochs (vs 5.92% baseline)
+- **Semantic search via encoding distance**: same-radical chars cluster naturally
+- **Hardware-native processing**: 5 RISC-V custom instructions verified
+- **Zero-shot understanding**: structural prior generalizes to unseen characters
+
+---
+
+## 3. GB 18030-2022 Comparison
+
+| Dimension | GB 18030-2022 | CNBE-32 | Advantage |
+|---|---|---|---|
+| CJK Characters | 87,887 | **97,686** | **+9,799 (+11.1%)** |
+| Kangxi Radicals | Not encoded | **214/214 (8-bit)** | CNBE explicit |
+| Structure Types | None | **9 types (4-bit)** | CNBE unique |
+| AI Readability | Must train | **99.94% in 3 epochs** | CNBE direct |
+| Hardware Acceleration | None | **5 RISC-V instructions** | CNBE native |
+| Semantic Search | Needs embedding model | **Encoding distance** | CNBE implicit |
+| Confusable Resolution | No structural info | **Non-zero separation** | All 13 pairs resolved |
+
+**Role**: CNBE-32 is a **semantic processing layer** complementing GB 18030-2022 (storage) for AI and hardware use.
+
+---
+
+## 4. Encoding Design
+
+### Bit-Field Layout
+
+| Field | Bits | Range | Description |
+|---|---|---|---|
+| Radical | 31:24 | 1-214 | Kangxi radical identifier |
+| Stroke count | 23:19 | 1-31 | Total strokes |
+| Structure type | 18:15 | 0-10 | 9 structure types |
+| Character index | 14:4 | 0-2047 | Index within (radical,stroke,structure) group |
+| Extension | 3:0 | 0-15 | Reserved (variant flags, etc.) |
+
+### Strategy B Indexing (v3 Fix)
+
+Characters in same (radical, stroke, structure) group sorted by stroke count + Unicode, ensuring:
+- Predictable ordering within groups
+- Non-zero separation for confusable pairs (已/巳, 未/末, 土/士)
+- Stable encoding across expansion
+
+### Coverage
+
+| Unicode Block | Characters | % |
+|---|---|---|
+| CJK Unified (U+4E00-U+9FFF) | 20,992 | 21.5% |
+| Extension A (U+3400-U+4DBF) | 6,592 | 6.7% |
+| Extension B (U+20000-U+2A6DF) | 42,720 | 43.7% |
+| Extension C-F | 17,606 | 18.0% |
+| Extension G-I | 9,753 | 10.0% |
+
+---
+
+## 5. Experimental Results
+
+### Radical Classification (E1)
+
+| Model | Accuracy | Parameters | vs Baseline |
+|---|---|---|---|
+| Baseline (Traditional Embedding) | **5.92%** | 1,081,943 | - |
+| CNBE Full (All Bit-Fields) | **99.94%** | 131,415 | **12.1%** of baseline |
+
+### Language Modeling (B and B_v3)
+
+| Model | Test Loss | Description |
+|---|---|---|
+| Baseline (Trained Embedding) | **2.200** | Full trainable |
+| CNBE Static Only | 5.102 | Pure static encoding |
+| CNBE Hybrid (Static + Trained) | **2.712** | **-46.8%** vs pure static |
+
+**Finding**: "Augmentation over replacement" — CNBE works best as structural prior.
+
+### Confusable Analysis (C_v3)
 
 | Metric | Value |
-|:-------|:------|
-| Character coverage | **97,686** (All CJK Unified Ideographs) |
-| Encoding uniqueness | **100%** |
-| Radical coverage | **214/214** |
-| Structure types | **9/16** (auto-detected) |
-| Custom instructions | **6** (RISC-V Custom-0) |
-| Lookup speedup | **338x** (binary search) / **4,044x** (hash) |
-| Accuracy | **100.00%** (direct bitfield) |
+|---|---|
+| Pairs tested | 13 classic confusable pairs |
+| Non-zero separation | **100%** (zero collisions resolved) |
+| AUC (confusable detection) | **0.627** |
 
-### Project Structure
+### Few-shot Learning (v4)
 
+| Training Size | Baseline | CNBE |
+|---|---|---|
+| 10 samples/class | 0.74% | **99.89%** |
+| 50 samples/class | 2.14% | **99.92%** |
+
+---
+
+## 6. RISC-V Custom Instructions
+
+5 instructions in custom-0 opcode space:
+
+| Instruction | Function | Cycles |
+|---|---|---|
+| cnhe.extract | Extract bit-field | 1 |
+| cnhe.cmp | Compare codes (distance) | 2-3 |
+| cnhe.map | Unicode to CNBE | 1-2 |
+| cnhe.mv | Move/copy | 1 |
+| cnhe.enc | Pack fields into CNBE | 1 |
+
+**Simulation**: All 5 instructions verified in Ripes.
+
+---
+
+## 7. Quick Start
+
+```python
+from cnbe_encoder import CNBE32Encoder
+encoder = CNBE32Encoder()
+code = encoder.encode('\u6811')  # Output: 0x4B920000
+features = encoder.extract(code)
+print(f'Radical: {features["radical"]}, Strokes: {features["strokes"]}')
+
+# Semantic distance
+c1, c2 = encoder.encode('\u6797'), encoder.encode('\u6811')
+print(f'Distance: {encoder.semantic_distance(c1, c2):.4e}')
 ```
-cnbe-32/
-├── docs/         Technical documentation (9 papers, Chinese)
-├── src/          Source code (generator + simulator)
-├── hardware/     Spike patches + Verilog CAM
-├── tests/        5 test programs
-├── results/      Experiment reports
-├── data/         Encoding database
-└── experiments/  t-SNE feature vectors
-```
 
-### Quick Start
+---
+
+## 8. Reproducibility
+
+All experiments run on **CPU** (PyTorch 2.12+, no GPU needed):
 
 ```bash
-pip install openpyxl
-python src/generate_cnbe_table.py
-python src/cnbe_simulator.py
+pip install torch pandas scikit-learn openpyxl matplotlib tqdm
+python CNBE_AI_verification_experiments.py
 ```
 
-### Hardware Instructions
+Suite: 11 experiments, ~15 min on modern CPU.
 
-| Inst | funct3 | Function | Cycles |
-|:----:|:------:|:---------|:------:|
-| cnbe.enc | 000 | Unicode → CNBE-32 | 2 |
-| cnbe.dec | 001 | CNBE-32 → Unicode | ~4053 |
-| cnbe.rad | 010 | Extract radical | **1** |
-| cnbe.str | 011 | Extract strokes | **1** |
-| cnbe.struct | 100 | Extract structure | **1** |
-| cnbe.dist | 101 | Semantic distance | **2** |
+---
 
-### Citation
+## 9. License
+
+Mulan Permissive Software License v2 (MulanPSL-2.0).
+
+---
+
+## 10. Citation
 
 ```bibtex
-@software{cnbe32_2026,
+@software{liu2026cnbe32,
+  author = {Liu, Zhaoqi},
   title = {CNBE-32: Chinese Native Binary Encoding},
-  author = {Liu, Zairk},
   year = {2026},
   url = {https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding}
 }
 ```
-
-### license
-
-本项目采用 [木兰宽松许可证，第2版（MulanPSL v2）](http://license.coscl.org.cn/MulanPSL2) 进行许可。
