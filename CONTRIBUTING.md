@@ -76,11 +76,5 @@
 
 - 再次感谢你的贡献！
 
-### 使用方法
-
-1. 在项目根目录分别创建 `CODE_OF_CONDUCT.md` 和 `CONTRIBUTING.md` 文件。
-2. 将上面的内容分别复制粘贴到对应文件中。
-3. 将文件中 `[你的邮箱地址]` 替换为你自己的联系邮箱。
-4. 提交并推送到 GitHub。
 
 如果需要其他辅助文件（如 `PULL_REQUEST_TEMPLATE.md`、`ISSUE_TEMPLATE.md` 等），随时告诉我。
