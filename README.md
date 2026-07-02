@@ -3,7 +3,6 @@
 **Chinese Native Binary Encoding** · 部首 × 笔画 × 结构 → 32-bit → RISC-V 指令
 
 ![Python](https://img.shields.io/badge/python-3.9+-green)
-![RISC-V](https://img.shields.io/badge/RISC-V-Custom_0-orange)
 ![CJK](https://img.shields.io/badge/CJK-97%2C686-brightgreen)
 ![Platform](https://img.shields.io/badge/platform-macOS_ARM64-lightgrey)
 
