@@ -1,45 +1,47 @@
-<div align="center">
+# CNBE-32: 中文原生二进制编码
 
+**Chinese Native Binary Encoding** · 部首 × 笔画 × 结构 → 32-bit → RISC-V 指令
 
-CNBE-32: 中文原生二进制编码
-
-Chinese Native Binary Encoding · 部首 × 笔画 × 结构 → 32-bit → RISC-V 指令
-
-License 
-Python 
-RISC-V 
-CJK 
-Platform
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Python](https://img.shields.io/badge/python-3.9+-green)
+![RISC-V](https://img.shields.io/badge/RISC-V-Custom_0-orange)
+![CJK](https://img.shields.io/badge/CJK-97%2C686-brightgreen)
+![Platform](https://img.shields.io/badge/platform-macOS_ARM64-lightgrey)
 
 </div>
 
-⸻
-📖 中文文档
+---
 
-概述
+## 📖 中文文档
+
+### 概述
 
 CNBE-32 是一种 32 位定长汉字编码方案，将汉字的部首、笔画、结构等字形特征直接映射到二进制位域中。已在 RISC-V Spike 模拟器上实现 6 条自定义指令，使 CPU 可以直接提取汉字语义特征。
 
+```
 [31:24] 部首区 (8bit) → 214 个康熙部首
 [23:19] 笔画区 (5bit) → 1-31 画
 [18:15] 结构区 (4bit) → 9 种结构类型 (自动检测)
 [14:4]  字库区 (11bit) → 组内索引
 [3:0]   扩展区 (4bit) → 繁简/多音标志 (预留)
+```
 
+### 核心数据
 
-核心数据
-指标	值
-汉字覆盖	97,686 字 (CJK 全部统一汉字)
-编码唯一性	100% (全部唯一)
-部首覆盖	214/214 (全部康熙部首)
-结构类型	9/16 种 (自动检测，修复前仅 3 种)
-RISC-V 指令	6 条 (Custom-0 opcode)
-查表加速	二分 338x (零成本) / 哈希 4044x (128KB)
-分类准确率	100.00% (直接位域读取)
-国标兼容	GB 18030-2022, GB/T 22320-2025
+| 指标 | 值 |
+|:-----|:----|
+| 汉字覆盖 | **97,686** 字 (CJK 全部统一汉字) |
+| 编码唯一性 | **100%** (全部唯一) |
+| 部首覆盖 | **214/214** (全部康熙部首) |
+| 结构类型 | **9/16** 种 (自动检测，修复前仅 3 种) |
+| RISC-V 指令 | **6 条** (Custom-0 opcode) |
+| 查表加速 | **二分 338x** (零成本) / **哈希 4044x** (128KB) |
+| 分类准确率 | **100.00%** (直接位域读取) |
+| 国标兼容 | GB 18030-2022, GB/T 22320-2025 |
 
-仓库结构
+### 仓库结构
 
+```
 cnbe-32/
 ├── docs/                      9 篇技术文档
 │   ├── 1_技术白皮书.md         白皮书 (核心)
@@ -79,10 +81,11 @@ cnbe-32/
 │   └── cnbe_catalog_fixed.csv.gz      (803 KB)
 └── experiments/                t-SNE 特征数据
     └── cnbe_tsne_data.csv.gz          (51 KB, 10000 点)
+```
 
+### 快速开始
 
-快速开始
-
+```bash
 # 1. 生成编码表
 pip install openpyxl
 python src/generate_cnbe_table.py
@@ -96,59 +99,69 @@ patch -p1 < hardware/spike-patches/encoding.h.patch
 cp hardware/spike-patches/*.h riscv/insns/
 mkdir build && cd build
 ../configure --with-isa=rv64imafdc && make -j4 && make install
+```
 
+### 6 条 RISC-V 自定义指令
 
-6 条 RISC-V 自定义指令
-指令	funct3	功能	硬件周期
-cnbe.enc	000	Unicode → CNBE-32 (哈希 O(1))	2
-cnbe.dec	001	CNBE-32 → Unicode (线性)	~4053
-cnbe.rad	010	提取部首 (bits 31:24)	1
-cnbe.str	011	提取笔画 (bits 23:19)	1
-cnbe.struct	100	提取结构 (bits 18:15)	1
-cnbe.dist	101	加权语义距离	2
+| 指令 | funct3 | 功能 | 硬件周期 |
+|:----:|:------:|:-----|:--------:|
+| `cnbe.enc` | 000 | Unicode → CNBE-32 (哈希 O(1)) | **2** |
+| `cnbe.dec` | 001 | CNBE-32 → Unicode (线性) | ~4053 |
+| `cnbe.rad` | 010 | 提取部首 (bits 31:24) | **1** |
+| `cnbe.str` | 011 | 提取笔画 (bits 23:19) | **1** |
+| `cnbe.struct` | 100 | 提取结构 (bits 18:15) | **1** |
+| `cnbe.dist` | 101 | 加权语义距离 | **2** |
 
-实验验证
-实验	结果
-部首分类	100.00% (8,105 字)
-笔画分类	100.00% (8,105 字)
-同部首距离	4.29 (97,686 字采样)
-跨部首距离	21.34 (97,686 字采样)
-聚类分离度	4.97x
-平均语义距离	20.9 / 46
-编码唯一性	97,686/97,686 ✓
+### 实验验证
 
-引用
+| 实验 | 结果 |
+|:-----|:----:|
+| 部首分类 | **100.00%** (8,105 字) |
+| 笔画分类 | **100.00%** (8,105 字) |
+| 同部首距离 | 4.29 (97,686 字采样) |
+| 跨部首距离 | 21.34 (97,686 字采样) |
+| 聚类分离度 | **4.97x** |
+| 平均语义距离 | 20.9 / 46 |
+| 编码唯一性 | **97,686/97,686 ✓** |
 
+### 引用
+
+```bibtex
 @software{cnbe32_2026,
   title = {CNBE-32: Chinese Native Binary Encoding},
   author = {Liu, Zairk},
   year = {2026},
   url = {https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding}
 }
+```
 
-
-许可证
+### 许可证
 
 MIT
-⸻
-📘 English Documentation
 
-Overview
+---
+
+## 📘 English Documentation
+
+### Overview
 
 CNBE-32 is a 32-bit fixed-length encoding scheme that embeds Chinese character structure information — radical, stroke count, and structure type — directly into binary bit fields. Implemented with 6 custom RISC-V instructions on the Spike simulator.
 
-Key Metrics
-Metric	Value
-Character coverage	97,686 (All CJK Unified Ideographs)
-Encoding uniqueness	100%
-Radical coverage	214/214
-Structure types	9/16 (auto-detected)
-Custom instructions	6 (RISC-V Custom-0)
-Lookup speedup	338x (binary search) / 4,044x (hash)
-Accuracy	100.00% (direct bitfield)
+### Key Metrics
 
-Project Structure
+| Metric | Value |
+|:-------|:------|
+| Character coverage | **97,686** (All CJK Unified Ideographs) |
+| Encoding uniqueness | **100%** |
+| Radical coverage | **214/214** |
+| Structure types | **9/16** (auto-detected) |
+| Custom instructions | **6** (RISC-V Custom-0) |
+| Lookup speedup | **338x** (binary search) / **4,044x** (hash) |
+| Accuracy | **100.00%** (direct bitfield) |
 
+### Project Structure
+
+```
 cnbe-32/
 ├── docs/         Technical documentation (9 papers, Chinese)
 ├── src/          Source code (generator + simulator)
@@ -157,34 +170,38 @@ cnbe-32/
 ├── results/      Experiment reports
 ├── data/         Encoding database
 └── experiments/  t-SNE feature vectors
+```
 
+### Quick Start
 
-Quick Start
-
+```bash
 pip install openpyxl
 python src/generate_cnbe_table.py
 python src/cnbe_simulator.py
+```
 
+### Hardware Instructions
 
-Hardware Instructions
-Inst	funct3	Function	Cycles
-cnbe.enc	000	Unicode → CNBE-32	2
-cnbe.dec	001	CNBE-32 → Unicode	~4053
-cnbe.rad	010	Extract radical	1
-cnbe.str	011	Extract strokes	1
-cnbe.struct	100	Extract structure	1
-cnbe.dist	101	Semantic distance	2
+| Inst | funct3 | Function | Cycles |
+|:----:|:------:|:---------|:------:|
+| cnbe.enc | 000 | Unicode → CNBE-32 | 2 |
+| cnbe.dec | 001 | CNBE-32 → Unicode | ~4053 |
+| cnbe.rad | 010 | Extract radical | **1** |
+| cnbe.str | 011 | Extract strokes | **1** |
+| cnbe.struct | 100 | Extract structure | **1** |
+| cnbe.dist | 101 | Semantic distance | **2** |
 
-Citation
+### Citation
 
+```bibtex
 @software{cnbe32_2026,
   title = {CNBE-32: Chinese Native Binary Encoding},
   author = {Liu, Zairk},
   year = {2026},
   url = {https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding}
 }
+```
 
-
-License
+###许可证
 
 本项目采用 [木兰宽松许可证，第2版（MulanPSL v2）](http://license.coscl.org.cn/MulanPSL2) 进行许可。
