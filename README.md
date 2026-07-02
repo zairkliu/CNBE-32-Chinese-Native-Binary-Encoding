@@ -137,7 +137,7 @@ mkdir build && cd build
 
 ### 许可证
 
-MIT
+本项目采用 [木兰宽松许可证，第2版（MulanPSL v2）](http://license.coscl.org.cn/MulanPSL2) 进行许可。
 
 ---
 
@@ -202,6 +202,6 @@ python src/cnbe_simulator.py
 }
 ```
 
-###许可证
+### license
 
 本项目采用 [木兰宽松许可证，第2版（MulanPSL v2）](http://license.coscl.org.cn/MulanPSL2) 进行许可。
