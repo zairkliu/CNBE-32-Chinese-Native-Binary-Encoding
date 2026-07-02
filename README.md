@@ -189,3 +189,7 @@ Mulan Permissive Software License v2 (MulanPSL-2.0).
   url = {https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding}
 }
 ```
+
+## 11.LICENSE
+
+本项目使用木兰宽松许可证 v2.0（Mulan Permissive Software License, Version 2.0，简称 ‌Mulan PSL v2）进行授权(http://license.coscl.org.cn/MulanPSL2)
