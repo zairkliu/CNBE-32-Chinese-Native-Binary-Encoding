@@ -1,0 +1,41 @@
+{
+  "pairs": 453,
+  "chars": 241,
+  "similarity": {
+    "PureText": {
+      "rad_sep": 0.0,
+      "struct_sep": 0.0,
+      "sem_sep": 0.0,
+      "silhouette": 0.0
+    },
+    "Unicode": {
+      "rad_sep": 0.0,
+      "struct_sep": 0.0,
+      "sem_sep": 0.0,
+      "silhouette": 0.0
+    },
+    "CNBEF": {
+      "rad_sep": 0.0294254083102609,
+      "struct_sep": -0.015857747818332754,
+      "sem_sep": -0.05124170663379485,
+      "silhouette": -0.4061030949917547
+    }
+  },
+  "hard_task": {
+    "Radical": {
+      "CNBE": 0.7125,
+      "Unicode": 0.7666666666666667,
+      "Text": 0.0125
+    },
+    "Stroke": {
+      "CNBE": 0.12083333333333335,
+      "Unicode": 0.075,
+      "Text": 0.041666666666666664
+    },
+    "Struct": {
+      "CNBE": 0.7833333333333333,
+      "Unicode": 0.6791666666666666,
+      "Text": 0.17500000000000002
+    }
+  }
+}
