@@ -92,7 +92,7 @@ JEPA 的核心是在高维语义空间中进行预测，而非在原始数据空
 
 ---
 
-## 📊 项目里程碑 / Milestones (v1-v8.4.1)
+## 📊 项目里程碑 / Milestones (v1-v9.1)
 
 | 阶段 / Phase | 版本 / Version | 核心成果 / Core Achievement | 关键数据 / Key Data | 环境 / Env |
 |:----------:|:------------:|-------------------------|:----------------:|:---------:|
@@ -102,6 +102,8 @@ JEPA 的核心是在高维语义空间中进行预测，而非在原始数据空
 | **硬件验证** / Hardware | v7.0-v7.2 | RISC-V自定义指令 / Custom instructions | 3条指令，Spike+FPGA | **WSL Ubuntu 26.04** |
 | **中文编程** / Programming | v8.0-v8.2 | 中文→RISC-V编译 / Chinese→RISC-V | 5程序exit=0 | **WSL Ubuntu 26.04** |
 | **全中文OS** / Chinese OS | v8.3-v8.4.1 | 操作系统+文本编辑器 / OS + editor | 205行《道德经》录入 | **WSL Ubuntu 26.04** |
+| **JEPA预测** / JEPA | v9.0 | 树木生长JEPA预测 / Tree growth prediction | CNBE 0.000168 (vs Raw 0.035039) **86%更优** | Windows |
+| **JEPA生命周期** / Lifecycle | v9.1 | 台风/雷击生命周期 / Typhoon lifecycle | CNBE 0.000001 (vs Raw 0.089981) **90,000x更优** | Windows |
 
 ### v8.4.1 核心验证 / v8.4.1 Core Verification
 
@@ -124,6 +126,8 @@ JEPA 的核心是在高维语义空间中进行预测，而非在原始数据空
 | v7.1.1 | 3条CNBE指令集成Spike / 3 insns in Spike | `cnhe.map`/`extract`/`cmp` |
 | v8.2 | QEMU端到端运行 / End-to-end QEMU | 5 ELFs, all **exit=0** |
 | v8.4.1 | 全中文OS启动 + 文本编辑 / Chinese OS + editor | Shell+BASIC+CNBE+道德经 |
+| v9.0 | JEPA树木生长预测 / JEPA tree growth | **CNBE 86%优于Raw**，10维vs70维 |
+| v9.1 | 台风生命周期预测 / Typhoon lifecycle | **CNBE 90,000x优于Raw**（复杂度放大效应）|
 
 **核心证明 / Core Proof**：一个**从未被优化、从未被模型见过**的新编码系统，在首次尝试中即超越了一个被全球AI训练了 **30 年**的编码标准。**这不是终点，是起点。**
 
@@ -141,6 +145,8 @@ JEPA 的核心是在高维语义空间中进行预测，而非在原始数据空
 | 6 | **Chinese source -> RISC-V+CNBE assembly** | test_loop: 34 insns |
 | 7 | **End-to-end verified: source -> ELF -> QEMU** | 5 tests, all exit=0 |
 | 8 | **Chinese OS boots on RISC-V QEMU** | Shell prompt + BASIC + text editor |
+| 9 | **JEPA prediction: CNBE 86% better than Raw** / JEPA预测CNBE优于Raw86% | v9.0 tree growth, Val=0.000168 |
+| 10 | **Complexity amplification: CNBE advantage grows with difficulty** | v9.1 typhoon lifecycle: 90,000x better than Raw |
 
 ---
 
@@ -164,6 +170,9 @@ CNBE-32-Chinese-Native-Binary-Encoding/
 |   |-- runtime/             #   CNBE 运行时
 |   |-- tests/               #   .cnbe 测试程序
 |   |-- output/              #   RISC-V 汇编 + ELF
+|-- v9_jepa_tree/             # JEPA预测实验 (v9.0-v9.1)
+|   |-- v91_lifecycle/        #   生命周期预测 (台风/雷击)
+|   |-- results/              #   实验数据
 |-- v84_riscv_os_full/       # 全中文操作系统 (v8.4)
 |   |-- src/                 #   Bootloader + Kernel + Shell
 |   |-- include/             #   头文件 + 道德经数据
