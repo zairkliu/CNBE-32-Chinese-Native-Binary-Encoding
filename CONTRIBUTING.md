@@ -103,6 +103,48 @@ bash scripts/run_qemu.sh
 - 调整部首映射或结构类型需附上来源引用 / Provide source citations for mapping changes
 - 生成编码表后需验证无重复和越界 / Validate no collisions after table changes
 
+## 7.5 贡献分级 / Contribution Tiers
+
+作为一个面向未来的 **"地基工程"** ，CNBE-32 欢迎来自不同背景的开发者参与。无论你是学生、研究人员、工程师还是中文爱好者，都能找到适合自己的贡献方式。
+
+As a future-oriented **"foundation project"** , CNBE-32 welcomes contributors from all backgrounds.
+
+### 低门槛贡献区 / Low-Barrier Contributions
+
+适合首次参与开源、对中文或 AI 有兴趣的贡献者：
+
+| 领域 / Area | 具体任务 / Tasks | 所需技能 / Skills |
+|-----------|----------------|-----------------|
+| **CNBE 编码字典扩充** / Encoding Dictionary | 为 CJK 扩展区字符验证/补充编码数据 | 中文基础 + Excel/CSV |
+| **中文 BASIC 测试用例** / BASIC Test Cases | 为全中文操作系统编写更多测试程序 | 逻辑思维 + 基础编程 |
+| **文档翻译** / Documentation | 将中文文档翻译为英文，或反之 | 中英双语能力 |
+| **实验复现报告** / Experiment Reproduction | 在本地复现实验并报告结果 | Python 基础 |
+| **经典文本录入** / Classical Text Input | 整理中文经典文本数据 | 中文基础 + 文本编辑 |
+
+### 高门槛贡献区 / High-Barrier Contributions
+
+适合有 AI 研究、硬件设计或系统编程经验的贡献者：
+
+| 领域 / Area | 具体任务 / Tasks | 所需技能 / Skills |
+|-----------|----------------|-----------------|
+| **RISC-V 指令流水线优化** / Pipeline | 优化 Spike 模拟器中的 cnhe.map/extract/cmp 指令 | RISC-V + C++ |
+| **FPGA 原型验证** / FPGA Prototyping | 将 CNBE 查表模块部署到真实 FPGA | Verilog + FPGA 工具链 |
+| **LLM 适配与微调** / LLM Adaptation | 在更多大模型上验证 CNBE 编码 | PyTorch + 深度学习 |
+| **JEPA 模型改进** / JEPA Enhancement | 改进预测架构，提升时序预测性能 | ML + 时序分析 |
+| **回测框架完善** / Backtest Framework | 完善 v10.x 多市场回测框架 | Python + 金融量化 |
+| **编译器后端扩展** / Compiler Backend | 中文编程语言扩展到更多目标架构 | 编译器设计 + 汇编 |
+
+### 如何选择 / How to Choose
+
+- **第一次参与？** 从低门槛贡献区开始——扩充编码字典或编写测试用例，熟悉项目流程
+- **First time?** Start with Low-Barrier tasks to learn the project flow
+- **有特定技能？** 直接认领高门槛任务，在 Issue 中留言
+- **Have specific skills?** Claim a high-barrier task by commenting on the Issue
+
+无论你的背景如何，每一份贡献都在为 "数字中国地基" 添砖加瓦。欢迎加入！
+
+---
+
 ## 7. 法律与许可 / License
 
 所有贡献将被视为在 **木兰宽松许可证 v2** (Mulan PSL v2) 下发布。
