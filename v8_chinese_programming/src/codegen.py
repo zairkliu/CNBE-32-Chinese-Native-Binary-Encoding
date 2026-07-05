@@ -26,9 +26,15 @@ class CodeGen:
         elif isinstance(s,AssignStmt):
             self.i.append("    mv %s, %s"%(self._g(s.target),self._e(s.value)))
         elif isinstance(s,OutputStmt):
-            self.i.append("    mv a0, %s"%self._e(s.value))
-            self.i.append("    li a7, 1")
+            vr_ = self._e(s.value)
+            self.i.append("    addi sp, sp, -16")
+            self.i.append("    sw %s, 0(sp)" % vr_)
+            self.i.append("    li a7, 64")
+            self.i.append("    li a0, 1")
+            self.i.append("    mv a1, sp")
+            self.i.append("    li a2, 4")
             self.i.append("    ecall")
+            self.i.append("    addi sp, sp, 16")
         elif isinstance(s,ReturnStmt):
             if s.value: self.i.append("    mv a0, %s"%self._e(s.value))
             self.i.append("    li a7, 93")
