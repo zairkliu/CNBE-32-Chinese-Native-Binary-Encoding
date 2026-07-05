@@ -1,4 +1,0 @@
-
-
-Hello from CNBE-32!
-Type a char: qemu-system-riscv64: terminating on signal 15 from pid 52246 (timeout)

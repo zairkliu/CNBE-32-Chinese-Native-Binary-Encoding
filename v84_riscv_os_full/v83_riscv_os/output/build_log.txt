@@ -1,7 +1,0 @@
-riscv64-linux-gnu-gcc -march=rv64im_zicsr -mabi=lp64 -static -O2 -nostdlib -ffreestanding -Iinclude -c src/boot/start.S -o src/boot/start.o
-riscv64-linux-gnu-gcc -march=rv64im_zicsr -mabi=lp64 -static -O2 -nostdlib -ffreestanding -Iinclude -c src/kernel/main.c -o src/kernel/main.o
-riscv64-linux-gnu-gcc -march=rv64im_zicsr -mabi=lp64 -static -O2 -nostdlib -ffreestanding -Iinclude -c src/shell/shell.c -o src/shell/shell.o
-riscv64-linux-gnu-gcc -march=rv64im_zicsr -mabi=lp64 -static -O2 -nostdlib -ffreestanding -Iinclude -c src/basic/basic.c -o src/basic/basic.o
-riscv64-linux-gnu-gcc -march=rv64im_zicsr -mabi=lp64 -static -O2 -nostdlib -ffreestanding -Iinclude -c src/basic/cnbe.c -o src/basic/cnbe.o
-riscv64-linux-gnu-gcc -T src/kernel/linker.ld -nostdlib src/boot/start.o src/kernel/main.o src/shell/shell.o src/basic/basic.o src/basic/cnbe.o -o output/kernel.elf
-riscv64-linux-gnu-objcopy -O binary output/kernel.elf output/kernel.bin
