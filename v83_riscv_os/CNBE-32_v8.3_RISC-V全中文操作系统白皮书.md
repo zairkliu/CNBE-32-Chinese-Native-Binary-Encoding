@@ -60,23 +60,42 @@ make clean && make all
 | kernel.elf | — | ✅(93KB) |
 | kernel.bin | — | ✅(86KB) |
 
-## 五、QEMU 运行
+## 五、QEMU 运行验证
+
+### 5.1 已验证功能
+
+| 功能 | 状态 | 说明 |
+|------|:----:|------|
+| M-mode 启动 | ✅ | `-bios none -device loader` |
+| UART 输出 | ✅ | Banner + 终端回显 |
+| Shell 提示符 | ✅ | "C:/> " 出现 |
+| 输入读取 | ✅ | readline 逐字符接收 |
+| BASIC 解释器 | ✅ | 对未知命令返回 "?" |
+| CNBE 库 | ✅ | 链接无错误 |
+
+### 5.2 QEMU 运行命令
 
 ```bash
-# 安装 QEMU RISC-V 系统模拟器
-sudo apt install -y qemu-system-riscv
-
-# 启动系统
-qemu-system-riscv64 -machine virt -bios default \\
-    -kernel output/kernel.elf -nographic
-
-# 或直接加载裸机二进制
-qemu-system-riscv64 -machine virt -bios none \\
-    -device loader,file=output/kernel.bin,addr=0x80000000 \\
+# M-mode 直接启动（已验证）
+qemu-system-riscv64 -M virt -bios none \
+    -device loader,file=output/kernel.bin,addr=0x80000000 \
     -nographic
+
+# S-mode 通过 OpenSBI（待调试）
+qemu-system-riscv64 -M virt -bios default \
+    -kernel output/kernel.elf -nographic
 ```
 
-## 六、中文 BASIC 示例
+### 5.3 启动日志
+
+```
+CNBE-32 v8.3 OS for RISC-V
+1GHz | 1GB RAM | Chinese BASIC
+
+  C:/> test
+ ?
+  C:/> 
+```## 六、中文 BASIC 示例
 
 | 命令 | 效果 | 对应 RISC-V |
 |------|------|:-----------:|

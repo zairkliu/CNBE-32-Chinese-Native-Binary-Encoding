@@ -1,12 +1,16 @@
 #include <stdint.h>
-volatile char* const UART = (char*)0x10000000;
-void uart_putchar(char c) { *UART = c; }
+#include "cnbe.h"
+#include "shell.h"
+#define UART_BASE 0x10000000
+#define UART_THR (*(volatile char*)(UART_BASE))
+#define UART_LSR (*(volatile char*)(UART_BASE + 5))
+void uart_putchar(char c) { UART_THR = c; }
 void uart_puts(const char* s) { while (*s) { if (*s==10) uart_putchar(13); uart_putchar(*s++); } }
-char uart_getchar(void) { while(!(((volatile uint32_t*)0x10000000)[5]&1)); return *UART; }
+char uart_getchar(void) { while(!(UART_LSR & 1)); return UART_THR; }
+
 void main() {
-    uart_puts("\n\nHello from CNBE-32!\n");
-    uart_puts("Type a char: ");
-    uart_putchar(uart_getchar());
-    uart_puts("\nDone.\n");
-    while(1);
+    cnbe_init();
+    uart_puts("\n\nCNBE-32 v8.3 OS for RISC-V\n1GHz | 1GB RAM | Chinese BASIC\n");
+    shell_run();
+    while(1) {}
 }

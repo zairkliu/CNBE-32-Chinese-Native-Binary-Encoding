@@ -1,4 +1,4 @@
-﻿#include <stdint.h>
+#include <stdint.h>
 #include "shell.h"
 #include "basic.h"
 extern void uart_putchar(char);
