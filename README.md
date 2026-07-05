@@ -1,6 +1,31 @@
+## 🌟 战略愿景：面向 2035 的中文原生计算地基
+## Strategic Vision: A Chinese-Native Computing Foundation Toward 2035
+
+这不是对现有系统的缝缝补补，而是面向未来的地基重构。本项目的诞生深受 "2035 数字中国" 战略的启发。
+
+> **在 AI 时代，让每一个中文使用者——无论年龄、学历或专业背景——都能完全使用全中文与人工智能进行深度对话、定义规则甚至编写底层逻辑，而不必再去学习英语或复杂的传统编程语法。**
+
+### 时代背景 / Context
+
+AI Agent 和具身智能正在替代人类的重复性劳动。人类的核心价值正在从"如何编码"转向"表达意图"、"定义规则"与"顶层设计"。但当前人机交互的底层 **"地基"** ——从 Unicode 到编程语言语法到操作系统内核——依然建立在英语和拉丁字母的逻辑之上，构成巨大的认知壁垒。
+
+### 三大支柱 / Three Pillars
+
+| 支柱 / Pillar | 说明 / Description | 验证 / Validation |
+|:-----------:|-----------------|:--------------:|
+| **全中文原生** / Chinese-Native | 从 32 位编码到 RISC-V 指令集到操作系统内核，全部基于中文逻辑原生构建 | v8.4/v8.4.1 全中文 OS |
+| **小模型的大智慧** / Small Model Wisdom | 结构化编码让 0.8B 小模型性能飞跃 **+81%** | v2 验证通过 |
+| **破除专业词汇壁垒** / Breaking Barriers | 用户只需用中文书写规则，系统自动完成逻辑转化 | v8.0 中文编译器 |
+
+> 如果说 ASCII/Unicode 定义了信息时代"人类可读文本"的交换标准，CNBE-32 则定义了 AI 时代"机器可理解语义"的编码标准——前者服务于人与人之间的信息传递，后者服务于人与机器之间的意图表达。
+
+---
+
 ﻿# CNBE-32: Chinese Native Binary Encoding / 中文原生二进制编码
 
 ## 🎯 核心定位 / Core Position
+
+**如果说ASCII/Unicode定义了信息时代"人类可读文本"的交换标准，CNBE-32则定义了AI时代"机器可理解语义"的编码标准——前者服务于人与人之间的信息传递，后者服务于人与机器之间的意图表达。**
 
 **如果说PCIe是硬件层的互连协议，CNBE就是数据语义层的时空编码协议。**
 *If PCIe is the interconnect protocol of the hardware layer, CNBE is the spatiotemporal encoding protocol of the data semantic layer.*
@@ -139,6 +164,8 @@ JEPA 的核心是在高维语义空间中进行预测，而非在原始数据空
 | v10.1 | A股多尺度5/15min/daily / Multi-scale backtest | **长尺度→少亏损**趋势确认，15min CNBE优于Raw |
 | v10.2 | 6个月日线跨周期 / 6-month daily cross-period | **CNBE双市场正收益**，准确率**59-71%** |
 
+> **关键洞察 / Key Insight**：大模型（如 8B 以上）可以通过海量数据"暴力"记住 Unicode 的映射，但 0.8B 小模型的 **+81%** 性能飞跃，确凿地证明了 CNBE 将汉字的"字形结构"转化为"计算先验"的巨大价值。这对于未来 AI 在**边缘设备、物联网和端侧**的普及具有决定性意义。
+
 **核心证明 / Core Proof**：一个**从未被优化、从未被模型见过**的新编码系统，在首次尝试中即超越了一个被全球AI训练了 **30 年**的编码标准。**这不是终点，是起点。**
 
 ---
@@ -162,6 +189,20 @@ JEPA 的核心是在高维语义空间中进行预测，而非在原始数据空
 | 13 | **Backtest: CNBE 60% accuracy, positive returns on US** / 回测：CNBE准确率60%，美股正收益 | v10.0 US+A-share, CNBE +0.64% vs Raw -0.42% |
 | 14 | **Multi-scale: lower frequency = better CNBE advantage** / 多尺度：低频放大CNBE优势 | v10.1 A-share 1min→5min→15min, losses reduce from -43% to -15% |
 | 15 | **6-month validation: CNBE positive on both markets, 70% accuracy on US** / 6月验证: 双市场正收益 | v10.2 A+0.76% US+3.07%, accuracy 59-71% |
+
+---
+
+## 🗺️ 演进路线：从概念验证到未来地基
+## Roadmap: From Proof of Concept to Future Foundation
+
+| 阶段 / Phase | 状态 / Status | 内容 / Content |
+|:----------:|:------------:|--------------|
+| **Phase 1**: 编码与语义验证 / Encoding & Semantic | **已完成** | v1-v6，证明 CNBE 可被 AI 理解，优于传统编码 |
+| **Phase 2**: 硬件与系统闭环 / Hardware & System | **已完成** | v7-v8，RISC-V 指令集成与全中文 OS 启动 |
+| **Phase 3**: 复杂系统预测验证 / Complex Prediction | **已完成** | v9-v10，JEPA 架构与金融时间序列验证 |
+| **Phase 4**: AI 编译器与中间件 / AI Compiler | 规划中 | 探索将自然语言中文直接编译为 CNBE 机器码的 AI 辅助工具 |
+| **Phase 5**: 端侧 AI 原生集成 / Edge AI Integration | 规划中 | 推动 CNBE 成为边缘 AI 芯片处理中文语义的默认标准 |
+| **Phase 6**: 生态共建 / Ecosystem Building | 愿景 | 建立 CNBE 开源社区，推动行业标准与国标对接 |
 
 ---
 
