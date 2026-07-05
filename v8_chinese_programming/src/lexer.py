@@ -26,53 +26,55 @@ class Lexer:
 
     def tok(self):
         KW = {
-            '程序集': TT.PROGRAM,
-            '子程序': TT.SUBPROC,
-            '变量': TT.VAR,
-            '整数': TT.INT,
-            '小数': TT.FLOAT,
-            '文本': TT.STRING,
-            '汉字': TT.CHAR,
-            '编码': TT.CODE,
-            '如果': TT.IF,
-            '否则': TT.ELSE,
-            '结束如果': TT.ENDIF,
-            '计次循环': TT.FOR,
-            '判断循环': TT.WHILE,
-            '结束循环': TT.ENDLOOP,
-            '返回': TT.RETURN,
-            '输出': TT.OUTPUT,
-            '输入': TT.INPUT,
-            '取编码': TT.GET_CODE,
-            '取部首': TT.GET_RADICAL,
-            '取笔画': TT.GET_STROKE,
-            '取结构': TT.GET_STRUCT,
-            '比较': TT.COMPARE,
+            "程序集": TT.PROGRAM,
+            "子程序": TT.SUBPROC,
+            "变量": TT.VAR,
+            "整数": TT.INT,
+            "小数": TT.FLOAT,
+            "文本": TT.STRING,
+            "汉字": TT.CHAR,
+            "编码": TT.CODE,
+            "如果": TT.IF,
+            "否则": TT.ELSE,
+            "结束如果": TT.ENDIF,
+            "计次循环": TT.FOR,
+            "判断循环": TT.WHILE,
+            "结束循环": TT.ENDLOOP,
+            "返回": TT.RETURN,
+            "输出": TT.OUTPUT,
+            "输入": TT.INPUT,
+            "取编码": TT.GET_CODE,
+            "取部首": TT.GET_RADICAL,
+            "取笔画": TT.GET_STROKE,
+            "取结构": TT.GET_STRUCT,
+            "比较": TT.COMPARE,
         }
         OP = {
-            '=': TT.ASSIGN,
-            '==': TT.EQ,
-            '!=': TT.NE,
-            '<': TT.LT,
-            '><': TT.GE,
-            '>': TT.GT,
-            '+': TT.PLUS,
-            '-': TT.MINUS,
-            '*': TT.MUL,
-            '/': TT.DIV,
-            '(': TT.LPAREN,
-            ')': TT.RPAREN,
-            '[': TT.LBRACK,
-            ']': TT.RBRACK,
-            ',': TT.COMMA,
-            ':': TT.COLON,
-            '.': TT.DOT,
+            "=": TT.ASSIGN,
+            "==": TT.EQ,
+            "!=": TT.NE,
+            "<": TT.LT,
+            ">": TT.GT,
+            "<=": TT.LE,
+            ">=": TT.GE,
+            "+": TT.PLUS,
+            "-": TT.MINUS,
+            "*": TT.MUL,
+            "/": TT.DIV,
+            "(": TT.LPAREN,
+            ")": TT.RPAREN,
+            "[": TT.LBRACK,
+            "]": TT.RBRACK,
+            ",": TT.COMMA,
+            ":": TT.COLON,
+            ".": TT.DOT,
         }
+
         r = []
         while self.p < len(self.s):
             ch = self.s[self.p]
             if ch.isspace():
-                if ch == chr(10): self.l += 1; self.c = 1
+                if ch == '\n': self.l += 1; self.c = 1
                 else: self.c += 1
                 self.p += 1; continue
             if chr(0x4e00) <= ch <= chr(0x9fff):
@@ -95,8 +97,17 @@ class Lexer:
                         self.p += 2; self.c += 2; continue
                 r.append(Token(OP[ch], ch, self.l, self.c))
                 self.p += 1; self.c += 1; continue
+            if ch == chr(34):
+                self.p += 1; self.c += 1
+                s = []
+                while self.p < len(self.s) and self.s[self.p] != chr(34):
+                    s.append(self.s[self.p]); self.p += 1; self.c += 1
+                if self.p < len(self.s) and self.s[self.p] == chr(34):
+                    self.p += 1; self.c += 1
+                r.append(Token(TT.STRING_C, chr(34).join(s), self.l, self.c))
+                continue
             self.p += 1; self.c += 1
-        r.append(Token(TT.EOF, "", self.l, self.c))
+        r.append(Token(TT.EOF, chr(34)*0, self.l, self.c))
         return r
 
     def _rd(self):
