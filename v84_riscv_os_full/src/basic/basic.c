@@ -1,10 +1,9 @@
-﻿#include <stdint.h>
+#include <stdint.h>
 #include "basic.h"
+#include "cnbe.h"
 
 extern void uart_puts(const char*);
 extern void uart_putchar(char);
-
-static int vars[26];
 
 static void skip_space(const char** p) {
     while (**p == 32 || **p == 9 || **p == 10 || **p == 13) (*p)++;
@@ -33,34 +32,88 @@ static int eval_expr(const char** p) {
     skip_space(p);
     if (**p == 43) { (*p)++; val += eval_expr(p); }
     else if (**p == 45) { (*p)++; val -= eval_expr(p); }
+    else if (**p == 42) { (*p)++; val *= eval_expr(p); }
     return val;
 }
 
-static int match_utf8(const char** p, const char* pattern, int plen) {
-    for (int i = 0; i < plen; i++) {
-        if ((*p)[i] != pattern[i]) return 0;
-    }
-    *p += plen;
-    return 1;
+static int match_utf8(const char** p, const char* pat, int len) {
+    for (int i = 0; i < len; i++) { if ((unsigned char)(*p)[i] != (unsigned char)pat[i]) return 0; }
+    *p += len; return 1;
 }
+
+// Daodejing text
+static const char* ddj_text =
+    "\n  Lao Zi - Dao De Jing\n"
+    "  Chapter 1: Dao Ke Dao\n"
+    "  Dao ke dao, fei chang dao.\n"
+    "  Ming ke ming, fei chang ming.\n"
+    "  Wu ming tian di zhi shi,\n"
+    "  You ming wan wu zhi mu.\n"
+    "\n"
+    "  Chapter 2: Tian Xia Jie Zhi\n"
+    "  Tian xia jie zhi mei zhi wei mei,\n"
+    "  Si e yi.\n"
+    "  Gu you wu xiang sheng,\n"
+    "  Nan yi xiang cheng.\n"
+    "\n"
+    "  Chapter 3: Bu Shang Xian\n"
+    "  Bu shang xian, shi min bu zheng.\n"
+    "  Bu gui nan de zhi huo,\n"
+    "  Shi min bu wei dao.\n"
+    "\n";
 
 int basic_eval(const char* line) {
     const char* p = line;
     skip_space(&p);
     if (*p == 0) return 0;
 
-    // 输出 = E8 BE 93 E5 87 BA (6 bytes)
-    if (match_utf8(&p, "\xE8\xBE\x93\xE5\x87\xBA", 6)) {
-        skip_space(&p);
-        if (*p == 40) p++;
-        int val = eval_expr(&p);
-        print_int(val);
-        uart_putchar(10);
+    if (match_utf8(&p, "\xE8\xBE\x93\xE5\x87\xBA", 6)) { // 输出
+        skip_space(&p); if (*p == 40) p++;
+        print_int(eval_expr(&p)); uart_putchar(10); return 0;
+    }
+
+    if (match_utf8(&p, "\xE8\xBF\x94\xE5\x9B\x9E", 6)) { // 返回
         return 0;
     }
 
-    // 返回 = E8 BF 94 E5 9B 9E (6 bytes)
-    if (match_utf8(&p, "\xE8\xBF\x94\xE5\x9B\x9E", 6)) {
+    if (match_utf8(&p, "\xE5\x8F\x96\xE7\xBC\x96\xE7\xA0\x81", 9)) { // 取编码
+        skip_space(&p); if (*p == 40) p++;
+        uint32_t code = cnhe_map(eval_expr(&p));
+        uart_puts("0x");
+        for (int i = 7; i >= 0; i--) {
+            int nib = (code >> (i * 4)) & 0xF;
+            uart_putchar(nib < 10 ? nib + 48 : nib + 55);
+        }
+        uart_putchar(10); return 0;
+    }
+
+    if (match_utf8(&p, "\xE5\x8F\x96\xE9\x83\xA8\xE9\xA6\x96", 9)) { // 取部首
+        skip_space(&p); if (*p == 40) p++;
+        print_int(cnhe_extract(eval_expr(&p), 0));
+        uart_putchar(10); return 0;
+    }
+
+    if (match_utf8(&p, "\xE6\xAF\x94\xE8\xBE\x83", 6)) { // 比较
+        skip_space(&p); if (*p == 40) p++;
+        int a = eval_expr(&p);
+        skip_space(&p); if (*p == 44) p++;
+        int b = eval_expr(&p);
+        print_int(cnhe_cmp(a, b)); uart_putchar(10); return 0;
+    }
+
+    if (match_utf8(&p, "\xE9\x98\x85\xE8\xAF\xBB", 6)) { // 阅读
+        uart_puts(ddj_text); return 0;
+    }
+
+    if (match_utf8(&p, "\xE5\xB8\xAE\xE5\x8A\xA9", 6)) { // 帮助
+        uart_puts("\n  Commands:\n");
+        uart_puts("  输出(N) - print\n");
+        uart_puts("  返回(N) - exit\n");
+        uart_puts("  取编码(U) - CNBE code\n");
+        uart_puts("  取部首(C) - radical field\n");
+        uart_puts("  比较(A,B) - distance\n");
+        uart_puts("  阅读() - Dao De Jing\n");
+        uart_puts("  帮助() - this help\n");
         return 0;
     }
 
