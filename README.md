@@ -16,7 +16,7 @@ A structured 32-bit representation of **97,686 CJK characters** for AI systems, 
 
 CNBE-32 是一个面向中文 AI 的原生二进制编码方案，将汉字的结构特征（部首、笔画、结构）直接编码到 32 位空间中，使得编码本身即可被 AI 模型和硬件系统直接解析。
 
-与 Unicode 的纯索引定位不同，CNBE-32 的编码空间具有语义结构——两位编码相近的汉字在部首、笔画或结构上具有相似性。v1-v8.3 系列实验完整验证了从单字识别到 RISC-V 全中文操作系统的 30+ 个子实验。
+与 Unicode 的纯索引定位不同，CNBE-32 的编码空间具有语义结构——两位编码相近的汉字在部首、笔画或结构上具有相似性。v1-v8.4 系列实验完整验证了从单字识别到 RISC-V 全中文操作系统的 30+ 个子实验。
 
 **RISC-V 实验环境**：所有硬件相关实验在 **WSL Ubuntu 26.04 LTS** 上完成，使用预装的 riscv64-linux-gnu-gcc 15.2.0 工具链和 qemu-system-riscv64 10.2.1 模拟器。
 
@@ -41,7 +41,7 @@ CNBE-32 is a native binary encoding scheme for Chinese AI that embeds character 
 
 ---
 
-## 实验证据链 / Experiment Chain (v1-v8.3)
+## 实验证据链 / Experiment Chain (v1-v8.4)
 
 All experiments are reproducible. Environment: Python 3.14+ for LLM tests, WSL Ubuntu 26.04 for RISC-V. Each experiment has a published white paper in the repo.
 
@@ -124,6 +124,7 @@ CNBE-32-Chinese-Native-Binary-Encoding/
 |   |-- output/              #   RISC-V 汇编 + ELF
 |   |-- scripts/             #   QEMU/Spike 运行脚本
 |-- v83_riscv_os/            # RISC-V 中文操作系统 (v8.3)
+|-- v84_riscv_os_full/       # RISC-V 中文操作系统完整验证 (v8.4)
 |   |-- src/boot/            #   Bootloader (start.S)
 |   |-- src/kernel/          #   内核入口 (UART + 初始化)
 |   |-- src/shell/           #   命令行 Shell
@@ -165,7 +166,7 @@ qemu-riscv64 output/test_loop.elf
 ### 中文操作系统启动 / Boot Chinese OS on QEMU
 
 ```bash
-cd v83_riscv_os
+cd v84_riscv_os_full
 make all                                    # 编译内核
 qemu-system-riscv64 -M virt -bios none \    # 启动
     -device loader,file=output/kernel.bin,addr=0x80000000 \
