@@ -1,0 +1,6 @@
+﻿.version 2
+程序集 CNBETest5
+
+子程序 hello_test, 整数
+    输出(42)
+返回(0)
