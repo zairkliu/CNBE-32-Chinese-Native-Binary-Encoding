@@ -92,7 +92,7 @@ JEPA 的核心是在高维语义空间中进行预测，而非在原始数据空
 
 ---
 
-## 📊 项目里程碑 / Milestones (v1-v9.1)
+## 📊 项目里程碑 / Milestones (v1-v10.0)
 
 | 阶段 / Phase | 版本 / Version | 核心成果 / Core Achievement | 关键数据 / Key Data | 环境 / Env |
 |:----------:|:------------:|-------------------------|:----------------:|:---------:|
@@ -104,6 +104,9 @@ JEPA 的核心是在高维语义空间中进行预测，而非在原始数据空
 | **全中文OS** / Chinese OS | v8.3-v8.4.1 | 操作系统+文本编辑器 / OS + editor | 205行《道德经》录入 | **WSL Ubuntu 26.04** |
 | **JEPA预测** / JEPA | v9.0 | 树木生长JEPA预测 / Tree growth prediction | CNBE 0.000168 (vs Raw 0.035039) **86%更优** | Windows |
 | **JEPA生命周期** / Lifecycle | v9.1 | 台风/雷击生命周期 / Typhoon lifecycle | CNBE 0.000001 (vs Raw 0.089981) **90,000x更优** | Windows |
+| **JEPA消融** / Ablation | v9.3 | 消融实验+标普Tick / Ablation+S&P500 tick | **NoSupport移除损失+148%，NoVolMom移除反降28%** | Windows |
+| **JEPA全月** / Monthly | v9.4 | 6月全月21天 / June full month | **Abl-2全月最优，62%胜率** / 21天×4编码×2种子=**168次实验** | Windows |
+| **回测验证** / Backtest | v10.0 | 美股+A股跨市场 / US+A-share cross-market | **CNBE准确率60%，美股+0.64%** (Raw -0.42%) | Windows |
 
 ### v8.4.1 核心验证 / v8.4.1 Core Verification
 
@@ -128,6 +131,9 @@ JEPA 的核心是在高维语义空间中进行预测，而非在原始数据空
 | v8.4.1 | 全中文OS启动 + 文本编辑 / Chinese OS + editor | Shell+BASIC+CNBE+道德经 |
 | v9.0 | JEPA树木生长预测 / JEPA tree growth | **CNBE 86%优于Raw**，10维vs70维 |
 | v9.1 | 台风生命周期预测 / Typhoon lifecycle | **CNBE 90,000x优于Raw**（复杂度放大效应）|
+| v9.3 | Tick消融实验 / Tick ablation | **NoSupport最关键，NoVolMom是噪声** |
+| v9.4 | 全月跨周期验证 / Monthly validation | **Abl-2全月最优，13/21天胜率62%** |
+| v10.0 | 回测+A股跨市场 / Backtest+cross-market | **CNBE准确率60%**，美股**+0.64%**（Raw -0.42%）|
 
 **核心证明 / Core Proof**：一个**从未被优化、从未被模型见过**的新编码系统，在首次尝试中即超越了一个被全球AI训练了 **30 年**的编码标准。**这不是终点，是起点。**
 
@@ -147,6 +153,9 @@ JEPA 的核心是在高维语义空间中进行预测，而非在原始数据空
 | 8 | **Chinese OS boots on RISC-V QEMU** | Shell prompt + BASIC + text editor |
 | 9 | **JEPA prediction: CNBE 86% better than Raw** / JEPA预测CNBE优于Raw86% | v9.0 tree growth, Val=0.000168 |
 | 10 | **Complexity amplification: CNBE advantage grows with difficulty** | v9.1 typhoon lifecycle: 90,000x better than Raw |
+| 11 | **Ablation ranking: support/strength most critical** / 消融：支撑/趋势强度最关键 | v9.3 tick data, NoSupport causes +148% loss |
+| 12 | **Regime invariance: CNBE works across all market states** / 市场状态不变性 | v9.4 21-day monthly, Abl-2 wins 62% of days |
+| 13 | **Backtest: CNBE 60% accuracy, positive returns on US** / 回测：CNBE准确率60%，美股正收益 | v10.0 US+A-share, CNBE +0.64% vs Raw -0.42% |
 
 ---
 
