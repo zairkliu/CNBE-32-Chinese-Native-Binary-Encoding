@@ -1,0 +1,4 @@
+﻿interface:
+  display_name: "CNBE-32 Experiment Runner"
+  short_description: "Reproduce LLM experiments with CNBE encoding"
+  default_prompt: "Use $cnbe32-experiment to reproduce v2 sentence-understanding experiment with qwen3.5:0.8b."
