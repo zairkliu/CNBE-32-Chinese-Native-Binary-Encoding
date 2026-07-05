@@ -1,0 +1,38 @@
+[
+  {
+    "encoder": "CNBE",
+    "final_val": 9.225000212609302e-07,
+    "min_val": 4.041996248815849e-08,
+    "final_train": 4.168810268545542e-07,
+    "input_dim": 10,
+    "survival_acc": 0.0,
+    "time": 51.99785017967224
+  },
+  {
+    "encoder": "Raw",
+    "final_val": 0.08998148888349533,
+    "min_val": 0.007813472300767899,
+    "final_train": 0.04669065928086638,
+    "input_dim": 90,
+    "survival_acc": 0.5,
+    "time": 80.43310308456421
+  },
+  {
+    "encoder": "OneHot",
+    "final_val": 8.761787466937676e-05,
+    "min_val": 7.394672866212204e-05,
+    "final_train": 8.267854345225108e-05,
+    "input_dim": 100,
+    "survival_acc": 0.5706666666666667,
+    "time": 78.1317982673645
+  },
+  {
+    "encoder": "Random",
+    "final_val": 0.13799557089805603,
+    "min_val": 0.002005684655159712,
+    "final_train": 0.07745878669122855,
+    "input_dim": 32,
+    "survival_acc": 0.0,
+    "time": 58.239514112472534
+  }
+]
