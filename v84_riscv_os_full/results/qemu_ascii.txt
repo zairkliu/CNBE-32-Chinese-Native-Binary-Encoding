@@ -1,0 +1,9 @@
+
+
+CNBE-32 v8.3 OS for RISC-V
+1GHz | 1GB RAM | Chinese BASIC
+
+  C:/> test
+ ?
+
+  C:/> qemu-system-riscv64: terminating on signal 15 from pid 52432 (timeout)
