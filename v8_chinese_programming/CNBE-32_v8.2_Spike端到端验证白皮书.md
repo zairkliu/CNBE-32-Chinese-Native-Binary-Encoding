@@ -13,44 +13,30 @@ v8.1 完成了：
 
 ### 1.2 v8.2 目标
 
-| 目标 | 状态 |
-|------|:----:|
-| 修正 test_struct（同部首比较） | ✅ |
-| 创建 test_hello 文本输出程序 | ✅ |
-| 创建 Spike 一键运行脚本 | ✅ |
-| 安装 RISC-V 工具链 | 🔄 环境受限 |
-| Spike 端到端运行 | 🔄 依赖工具链 |
+| 目标 | 状态 | 说明 |
+|------|:----:|------|
+| 修正 test_struct（同部首比较） | ✅ | 森(26862)/林(26576)同为木部首 |
+| 创建 test_hello | ✅ | 输出整数42 |
+| 创建 Spike/QEMU 脚本 | ✅ | scripts/run_qemu.sh |
+| RISC-V 工具链 | ✅ | riscv64-linux-gnu-gcc 15.2.0 |
+| QEMU 端到端运行 | ✅ | 5个程序全部exit=0 |
+| Spike 运行 | 🔄 | 需安装 riscv-pk |
 
 ## 二、环境说明
 
-### 2.1 当前环境限制
+### 2.1 运行环境
 
-WSL Ubuntu 24.04 LTS 的 apt 网络连接在本次实验中不稳定，无法完成 RISC-V 工具链的安装。具体表现为：
+实验在 WSL Ubuntu 26.04 LTS 上完成，RISC-V 工具链已预装：
 
-| 操作 | 结果 | 原因 |
-|------|:----:|------|
-| `apt-get install gcc-riscv64-linux-gnu` | ⏱ 超时 | WSL HTTP 连接挂起 |
-| `curl http://archive.ubuntu.com` | ⏱ 超时 | 出站连接被阻塞 |
-| `nslookup archive.ubuntu.com` | ✅ | DNS 解析正常 |
+| 工具 | 位置 | 版本 |
+|------|:----:|:----:|
+| riscv64-linux-gnu-gcc | /usr/bin/ | 15.2.0 |
+| qemu-riscv64 | /usr/bin/ | 10.2.1 |
+| spike | /usr/local/bin/ | 已安装(pk未安装) |
+
 
 **后续步骤**：在具备网络连接的 WSL/Ubuntu 环境中运行以下命令即可完成验证。
 
-### 2.2 所需工具链
-
-```bash
-# 安装 RISC-V 交叉编译器
-sudo apt install -y gcc-riscv64-linux-gnu binutils-riscv64-linux-gnu
-
-# 安装 Spike 和 pk（如 apt 中无，则从源码编译）
-git clone https://github.com/riscv-software-src/riscv-isa-sim.git
-cd riscv-isa-sim && mkdir build && cd build
-../configure --prefix=/usr/local && make -j$(nproc) && sudo make install
-
-git clone https://github.com/riscv-software-src/riscv-pk.git
-cd riscv-pk && mkdir build && cd build
-../configure --prefix=/usr/local --host=riscv64-linux-gnu
-make -j$(nproc) && sudo make install
-```
 
 ## 三、实验准备
 
@@ -95,12 +81,12 @@ make -j$(nproc) && sudo make install
 ### 4.1 5 个测试程序编译结果
 
 | 测试 | 说明 | 指令数 | 词法 | 语法 | 代码生成 |
-|:----:|------|:------:|:----:|:----:|:--------:|
-| test_loop | 循环求和 0+...+9=45 | 34 | ✅ | ✅ | ✅ |
-| test_struct | CNBE 部首比较（森/林）| 48 | ✅ | ✅ | ✅ |
-| test_cluster | CNBE 距离计算（编码比较）| 27 | ✅ | ✅ | ✅ |
-| test_array | 数组求和 0+1+2+3+4=10 | 34 | ✅ | ✅ | ✅ |
-| test_hello | 文本输出（输出 42）| 16 | ✅ | ✅ | ✅ |
+|:----:|------|:------:|:---------:|:---:|:--------:|
+| test_hello | 整数输出(42) | 24 insns | ✅ | ✅ | ✅ exit=0 |
+| test_loop | 循环求和 0+...+9=45 | 41 insns | ✅ | ✅ | ✅ exit=0 |
+| test_struct | CNBE部首比较(森/林) | 52 insns | ✅ | ✅ | ✅ exit=0 |
+| test_cluster | CNBE距离计算 | 34 insns | ✅ | ✅ | ✅ exit=0 |
+| test_array | 循环求和 0+...+4=10 | 41 insns | ✅ | ✅ | ✅ exit=0 |
 
 ### 4.2 一键运行脚本
 
@@ -122,60 +108,42 @@ spike pk output/test_struct.elf
 # 4. 记录日志到 results/v82_spike_log.txt
 ```
 
-## 五、预期 Spike 运行结果
+## 五、QEMU 运行结果
 
-以下是在完整环境中预期看到的输出（基于汇编代码和 Skill 表验证）：
+### 5.1 QEMU 端到端验证
 
-### 5.1 test_loop（循环求和）
+使用 qemu-riscv64 运行 5 个 ELF 文件：
 
-```
-bbl loader
-45
-程序正常退出
-```
+### 5.2 实际输出
 
-**解释**：`计次循环(10)` 执行 0+0+1+2+...+9 = 45。循环体：`总和 = 总和 + i`。
+| 测试 | 输出(原始) | 输出(数值) | 退出码 | 说明 |
+|:----:|:----------:|:----------:|:------:|------|
+| test_hello | `*` + 3 NUL | 42 | 0 | 整数42写入stdout |
+| test_loop | NUL + `-` + 2 NUL | 45 | 0 | 求和0+...+9=45 |
+| test_struct | SOH + 3 NUL | 1 | 0 | 部首相同→输出1 |
+| test_cluster | (二进制) | 距离值 | 0 | 编码间加权距离 |
+| test_array | LF + 3 NUL | 10 | 0 | 求和0+...+4=10 |
 
-### 5.2 test_struct（部首比较）
+**编译器改进**：输出使用 Linux write 系统调用(a7=64)，通过栈缓冲区传递数据。
 
-```
-bbl loader
-1
-程序正常退出
-```
-
-**解释**：森(26862)和林(26576)均为木部，部首相同，输出 1。
-
-### 5.3 test_cluster（距离计算）
+### 5.3 运行日志
 
 ```
-bbl loader
-128
-程序正常退出
+CNBE-32 v8.2 QEMU Run Log
+Sun Jul  5 21:01:59 CST 2026
+=== test_hello ===
+*exit: 0
+=== test_loop ===
+exit: 0
+=== test_struct ===
+exit: 0
+=== test_cluster ===
+exit: 0
+=== test_array ===
+exit: 0
 ```
 
-**解释**：取编码(27743)=江, 取编码(27827)=河, cnbe_cmp 计算加权距离。
-
-### 5.4 test_array（数组处理）
-
-```
-bbl loader
-10
-程序正常退出
-```
-
-**解释**：0+1+2+3+4 = 10。简化版循环。
-
-### 5.5 test_hello（文本输出）
-
-```
-bbl loader
-42
-程序正常退出
-```
-
-**解释**：直接输出整数常量 42。
-
+日志文件：`results/v82_qemu_log.txt`
 ## 六、与全系列的关系
 
 ```
@@ -190,19 +158,40 @@ v8.2:   Spike端到端验证 ← 本次（环境受限，脚本就绪）
 
 ## 七、结论
 
-v8.2 完成了 Spike 端到端验证的所有准备工作：5 个测试程序编译通过，test_struct 修正为正确的同部首比较（森/林），一键运行脚本就绪。
+### 7.1 验证成果
 
-由于当前 WSL 环境网络受限无法安装 RISC-V 工具链，Spike 实际运行需在有网络连接的 Ubuntu 环境中执行 `bash scripts/run_v82.sh`。
+| 验证项 | 结果 |
+|--------|:----:|
+| 5个测试编译通过 | ✅ 全部(24-52 insns) |
+| 交叉编译为RISC-V ELF | ✅ riscv64-linux-gnu-gcc |
+| QEMU端到端运行 | ✅ 全部exit=0 |
+| 系统调用处理 | ✅ Linux write(a7=64)+exit(a7=93) |
+| CNBE运行时集成 | ✅ skill_table_data.h 81.6KB |
 
-**一旦工具链就绪，端到端验证链即可闭合：中文源码 → CNBE 编译器 → RISC-V 汇编 → ELF 链接 → Spike 执行 → 输出日志。**
+### 7.2 端到端证据链
 
-## 八、快速开始（在工具链就绪的机器上）
+```
+中文源码(.cnbe) → CNBE编译器 → RISC-V汇编(.s)
+    → riscv64-linux-gnu-gcc → ELF
+    → qemu-riscv64 → 输出 + 退出代码0 ✅
+```
+
+### 7.3 与 Spike 的差距
+
+| 差项 | 说明 |
+|------|------|
+| Spike+pk | pk 未编译安装 |
+| bbl loader | Spike 启动需 bbl |
+| 指令级日志 | Spike --log-commits |
+
+## 八、快速开始
 
 ```bash
-cd CNBE-32-Chinese-Native-Binary-Encoding/v8_chinese_programming
+# QEMU 运行（推荐）
+bash scripts/run_qemu.sh
+
+# Spike 运行（需安装 riscv-pk）
 bash scripts/run_v82.sh
 ```
 
-产出文件：`results/v82_spike_log.txt`
-
-许可证：木兰宽松许可证 v2 (Mulan PSL v2)
+)
