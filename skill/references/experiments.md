@@ -52,3 +52,29 @@
 - **Metrics**: x86: 0.8ns, QEMU RISC-V: 2.5ns, FPGA: 1 cycle
 - **Custom instructions**: cnhe.map, cnhe.extract, cnhe.cmp (Spike integrated)
 - **White papers**: `riscv/` (v7.0 through v7.2)
+
+
+## v7.3: Feature Space Co-validation
+
+- **Test**: Can CNBE Format F (3D features: radical/stroke/structure) be directly parsed by ML classifiers?
+- **Data**: 418 character pairs across 6 categories, 241 unique chars
+- **Methods**: Cosine similarity + silhouette score + KNN classification
+- **Findings**: CNBE is only format with positive radical separation (+0.0294). CNBE wins 2/3 hard tasks (stroke +4.6pp, structure +10.4pp)
+- **Significance**: Validates that CNBE's 3-byte format F carries usable structural features without any embedding model
+- **White paper**: `experiments/v73/CNBE-32_v7.3_硬件编码+特征空间协同验证白皮书.md`
+
+## v8.0: Chinese Programming Language Compiler
+
+- **Test**: Can a Chinese programming language be compiled to CNBE-enhanced RISC-V assembly?
+- **Data**: 3 test programs (loop sum, structure compare, semantic cluster)
+- **Implementation**: Complete lexer/parser/codegen toolchain (lexer.py: 23 keywords, parser.py: recursive descent, codegen.py: 34+ insns)
+- **Findings**: test_loop.cnbe compiles to 34 valid RISC-V instructions with loop/condition/output/exit. Chinese keywords map to CNBE functions
+- **Significance**: Proves "Chinese source -> CNBE RISC-V" full-stack feasibility
+- **White paper**: `v8_chinese_programming/CNBE-32_v8.0_中文编程映射实验白皮书.md`
+
+## v8.1: Complete Compiler + Skill Table Integration
+
+- **Test**: Complete the compiler, fix all bugs, integrate 81.6KB skill table into runtime
+- **Achievements**: All 4 test programs compile (test_loop:34, test_struct:48, test_cluster:27, test_array:34 insns). String literal support added. Digit-suffixed Chinese identifiers supported. 20902-entry skill table embedded in C runtime
+- **Significance**: Production-ready compiler prototype with real CNBE lookup (not stubs). Complete path from Chinese source -> RISC-V assembly -> runtime link
+- **White paper**: `v8_chinese_programming/CNBE-32_v8.1_完整编译器+Skill表集成+Spike验证白皮书.md`
