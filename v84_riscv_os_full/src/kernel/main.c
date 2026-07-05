@@ -10,7 +10,7 @@ char uart_getchar(void) { while(!(UART_LSR & 1)); return UART_THR; }
 
 void main() {
     cnbe_init();
-    uart_puts("\n\nCNBE-32 v8.4 OS for RISC-V\n1GHz | 1GB RAM | Chinese BASIC\n");
+    uart_puts("\n\nCNBE-32 v8.4.1 OS for RISC-V\n1GHz | 1GB RAM | Chinese BASIC\n");
     shell_run();
     while(1) {}
 }

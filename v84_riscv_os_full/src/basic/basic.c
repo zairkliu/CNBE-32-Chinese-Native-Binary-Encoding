@@ -42,25 +42,8 @@ static int match_utf8(const char** p, const char* pat, int len) {
 }
 
 // Daodejing text
-static const char* ddj_text =
-    "\n  Lao Zi - Dao De Jing\n"
-    "  Chapter 1: Dao Ke Dao\n"
-    "  Dao ke dao, fei chang dao.\n"
-    "  Ming ke ming, fei chang ming.\n"
-    "  Wu ming tian di zhi shi,\n"
-    "  You ming wan wu zhi mu.\n"
-    "\n"
-    "  Chapter 2: Tian Xia Jie Zhi\n"
-    "  Tian xia jie zhi mei zhi wei mei,\n"
-    "  Si e yi.\n"
-    "  Gu you wu xiang sheng,\n"
-    "  Nan yi xiang cheng.\n"
-    "\n"
-    "  Chapter 3: Bu Shang Xian\n"
-    "  Bu shang xian, shi min bu zheng.\n"
-    "  Bu gui nan de zhi huo,\n"
-    "  Shi min bu wei dao.\n"
-    "\n";
+#include "daodejing_text.h"
+// Daodejing text from header
 
 int basic_eval(const char* line) {
     const char* p = line;
