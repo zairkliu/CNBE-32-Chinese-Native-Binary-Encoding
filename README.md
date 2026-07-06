@@ -13,31 +13,31 @@ A structured 32-bit encoding for 97,686 CJK characters that embeds radical, stro
 </p>
 
 <p align="center">
-  <a href="#-%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B-quick-start"><strong>[ 快速开始 ]</strong></a>
-  <a href="#-%E6%A0%B8%E5%BF%83%E5%AE%9E%E9%AA%8C-key-experiments"><strong>[ 核心实验 ]</strong></a>
-  <a href="#-%E6%8A%80%E6%9C%AF%E6%A0%88-tech-stack"><strong>[ 技术栈 ]</strong></a>
-  <a href="#-%E5%8F%82%E4%B8%8E%E8%B4%A1%E7%8C%AE-how-to-contribute"><strong>[ 参与贡献 ]</strong></a>
+  <a href="#quick-start"><strong>[ 快速开始 ]</strong></a>
+  <a href="#key-experiments"><strong>[ 核心实验 ]</strong></a>
+  <a href="#tech-stack"><strong>[ 技术栈 ]</strong></a>
+  <a href="#how-to-contribute"><strong>[ 参与贡献 ]</strong></a>
 </p>
 
 ---
 
 ## 目录 / Table of Contents
 
-- [编码速览](#-编码速览-code-quick-look)
-- [为什么是 CNBE？](#-为什么是-cnbe)
-- [认知平权](#-认知平权-cognitive-equity)
-- [核心实验](#-核心实验-key-experiments)
-- [关键洞察](#-关键洞察-large-vs-small)
-- [技术栈](#-技术栈-tech-stack)
-- [快速开始](#-快速开始-quick-start)
-- [项目结构](#-项目结构-project-structure)
-- [演进路线](#-演进路线-roadmap)
-- [参与贡献](#-参与贡献-how-to-contribute)
-- [许可证](#-许可证-license)
+- [编码速览](#code-quick-look)
+- [为什么是 CNBE？](#why-cnbe)
+- [认知平权](#cognitive-equity)
+- [核心实验](#key-experiments)
+- [关键洞察](#large-vs-small)
+- [技术栈](#tech-stack)
+- [快速开始](#quick-start)
+- [项目结构](#project-structure)
+- [演进路线](#roadmap)
+- [参与贡献](#how-to-contribute)
+- [许可证](#license)
 
 ---
 
-## 编码速览 / Code Quick Look
+## <span id="code-quick-look">编码速览 / Code Quick Look</span>
 
 **核心理念: 把汉字变成包含部首-笔画-结构的 32 位整数，让机器直接看懂字形。**
 
@@ -80,7 +80,7 @@ CNBE-32 的终极意义，是让中文使用者能够以母语思维直接定义
 
 ---
 
-## 核心实验 / Key Experiments
+## <span id="key-experiments">核心实验 / Key Experiments</span>
 
 ### 小模型大提升 (v2)
 **假设**: 结构化编码补偿小模型参数量不足。
@@ -133,7 +133,7 @@ CNBE-32 的终极意义，是让中文使用者能够以母语思维直接定义
 
 ---
 
-## 技术栈 / Tech Stack
+## <span id="tech-stack">技术栈 / Tech Stack</span>
 
 ```
 应用层: 中文 BASIC 解释器 + 文本编辑器 + 《道德经》
@@ -145,7 +145,7 @@ CNBE-32 的终极意义，是让中文使用者能够以母语思维直接定义
 
 ---
 
-## 快速开始 / Quick Start
+## <span id="quick-start">快速开始 / Quick Start</span>
 
 ### 依赖安装 / Dependencies
 
@@ -224,7 +224,7 @@ CNBE-32-Chinese-Native-Binary-Encoding/
 
 ---
 
-## 参与贡献 / How to Contribute
+## <span id="how-to-contribute">参与贡献 / How to Contribute</span>
 
 ### 当前最需要社区支援的方向
 
