@@ -24,7 +24,7 @@ A structured 32-bit encoding for 97,686 CJK characters that embeds radical, stro
 
 ---
 
-## 架构全景 / Architecture Panorama
+## <span id="architecture">架构全景 / Architecture Panorama</span>
 
 ```mermaid
 graph TD
@@ -37,7 +37,7 @@ graph TD
 
 ---
 
-## 愿景与使命 / Vision & Mission
+## <span id="vision">愿景与使命 / Vision & Mission</span>
 
 受 **2035 数字中国** 战略启发，CNBE-32 的目标是：
 
@@ -49,16 +49,21 @@ graph TD
 
 ## 目录 / Table of Contents
 
+- [架构全景](#architecture)
+- [愿景与使命](#vision)
 - [编码速览](#code-quick-look)
 - [为什么是 CNBE？](#why-cnbe)
-- [认知平权](#cognitive-equity)
+- [JEPA 探索](#jepa)
+- [认知平权](#equity)
 - [核心实验](#key-experiments)
-- [关键洞察](#large-vs-small)
+- [关键洞察](#insight)
 - [技术栈](#tech-stack)
+- [AI Factory](#ai-factory)
 - [快速开始](#quick-start)
-- [项目结构](#project-structure)
+- [项目结构](#structure)
 - [演进路线](#roadmap)
 - [参与贡献](#how-to-contribute)
+- [免责声明](#disclaimer)
 - [许可证](#license)
 
 ---
@@ -83,7 +88,7 @@ graph TD
 
 ---
 
-## 为什么是 CNBE？
+## <span id="why-cnbe">为什么是 CNBE？</span>
 
 | 维度 | Unicode / UTF-8 | CNBE-32 |
 |------|----------------|---------|
@@ -96,7 +101,7 @@ graph TD
 
 ---
 
-## 面向 JEPA 架构的探索 / JEPA Exploration
+## <span id="jepa">面向 JEPA 架构的探索 / JEPA Exploration</span>
 
 CNBE 不是为今天的 Transformer 设计的补丁，而是为明天的 JEPA 准备的底层基础设施。
 
@@ -110,7 +115,7 @@ Yann LeCun 提出的 JEPA 强调在表示空间中预测，而 CNBE 提供的恰
 
 ---
 
-## 认知平权 / Cognitive Equity
+## <span id="equity">认知平权 / Cognitive Equity</span>
 
 现代计算机的底层逻辑（从指令集到 OS 内核）完全建立在英语/拉丁字母之上。这导致非英语母语者在进行底层开发时，必须先跨越一层语言翻译的认知壁垒。
 
@@ -187,7 +192,7 @@ CNBE-32 的终极意义，是让中文使用者能够以母语思维直接定义
 
 ---
 
-## 关键洞察: 大模型 vs 小模型 / Large vs Small
+## <span id="insight">关键洞察: 大模型 vs 小模型 / Large vs Small</span>
 
 为什么 8B+ 大模型对 CNBE 的收益递减（~0%），而 0.8B 小模型却能获得 +81% 的巨大提升？
 
@@ -269,7 +274,7 @@ cd v10_3_typhoon && python v10_3_typhoon.py
 
 ---
 
-## 项目结构 / Project Structure
+## <span id="structure">项目结构 / Project Structure</span>
 
 ```
 CNBE-32-Chinese-Native-Binary-Encoding/
@@ -299,7 +304,7 @@ CNBE-32-Chinese-Native-Binary-Encoding/
 
 ---
 
-## AI Agent 驱动 / AI Factory
+## <span id="ai-factory">AI Agent 驱动 / AI Factory</span>
 
 这是一个以前绝不可能完成，但在 AI 时代必然诞生的项目。
 
@@ -313,7 +318,7 @@ CNBE-32-Chinese-Native-Binary-Encoding/
 
 ---
 
-## 演进路线 / Roadmap
+## <span id="roadmap">演进路线 / Roadmap</span>
 
 | 阶段 | 状态 | 内容 |
 |------|------|------|
@@ -344,13 +349,13 @@ CNBE-32-Chinese-Native-Binary-Encoding/
 
 ---
 
-## 免责声明 / Disclaimer
+## <span id="disclaimer">免责声明 / Disclaimer</span>
 
 v10.x 阶段的金融时间序列（美股/A 股）回测，仅用于验证 CNBE-32 在高噪声、非平稳时间序列数据中的特征提取与结构化先验能力，不构成任何投资建议。
 
 ---
 
-## 许可证 / License
+## <span id="license">许可证 / License</span>
 
 **木兰宽松许可证 v2 (Mulan Permissive Software License v2)**
 
