@@ -119,7 +119,7 @@ JEPA 的核心是在高维语义空间中进行预测，而非在原始数据空
 
 ---
 
-## 📊 项目里程碑 / Milestones (v1-v10.7)
+## 📊 项目里程碑 / Milestones (v1-v10.8)
 
 | 阶段 / Phase | 版本 / Version | 核心成果 / Core Achievement | 关键数据 / Key Data | 环境 / Env |
 |:----------:|:------------:|-------------------------|:----------------:|:---------:|
@@ -141,6 +141,7 @@ JEPA 的核心是在高维语义空间中进行预测，而非在原始数据空
 | **黑洞引力场** / Black Hole | v10.5 | Gaia BH1引力场预测 / BH gravitational field | **R2 0.60-0.77**，优于Onehot/Random | Python |
 | **社会决策** / Social Decision | v10.6 | 城市信息决策中心 / Urban decision center | **CNBE优于OneHot/Random**，7轮验证 | Python |
 | **预训练底座** / Pretraining | v10.7 | TinyGPT冻结嵌入 / Frozen embedding | **1.4568初始损失，不输于Learned** | Python |
+| **数学推理** / Math Reasoning | v10.8 | 纯数学推理底座 / Math reasoning | **CNBE最小损失全面优于OneHot** | Python |
 
 > **免责声明 / Disclaimer**：v10.x 系列金融回测旨在验证 CNBE 结构化编码在处理高噪声、复杂时间序列数据时的特征提取潜力，而非提供直接的投资策略。回测结果受数据窗口、市场状态和策略参数影响，不代表未来收益。CNBE-32 项目的核心定位始终是中文原生计算地基，金融预测仅是验证编码特征表达能力的一个维度。
 
@@ -178,6 +179,7 @@ JEPA 的核心是在高维语义空间中进行预测，而非在原始数据空
 | v10.5 | 黑洞引力场模拟 / Black hole simulation | **R2 0.60-0.77**，物理系统验证通过 |
 | v10.6 | 社会信息决策模拟 / Social decision simulation | **CNBE优于Random**，强分类特征场景劣于OneHot |
 | v10.7 | 预训练底座验证 / Pretraining foundation | **CNBE初始损失与Learned差仅0.09**，冻结嵌入可行 |
+| v10.8 | 纯数学推理验证 / Math reasoning validation | **CNBE最小损失全面优于OneHot**，Sequence任务最优 |
 
 > **关键洞察 / Key Insight**：大模型（如 8B 以上）可以通过海量数据"暴力"记住 Unicode 的映射，但 0.8B 小模型的 **+81%** 性能飞跃，确凿地证明了 CNBE 将汉字的"字形结构"转化为"计算先验"的巨大价值。这对于未来 AI 在**边缘设备、物联网和端侧**的普及具有决定性意义。
 
@@ -209,6 +211,7 @@ JEPA 的核心是在高维语义空间中进行预测，而非在原始数据空
 | 18 | **Black hole: CNBE R2 0.60-0.77 on gravitational field prediction** / 黑洞引力场预测 | v10.5 Gaia BH1, 跨领域验证第6站 |
 | 19 | **Social decision: CNBE works on urban management data** / 社会决策验证 | v10.6 8行政区×4时段, CNBE优于Random |
 | 20 | **Pretraining base: CNBE frozen embedding viable** / 预训练底座验证 | v10.7 TinyGPT, 初始损失1.4568 vs Learned 1.3653 |
+| 21 | **Math reasoning: CNBE min loss beats OneHot on all tasks** / 数学推理验证 | v10.8 Parity/Prime/Seq, CNBE > OneHot > Random |
 
 ---
 
