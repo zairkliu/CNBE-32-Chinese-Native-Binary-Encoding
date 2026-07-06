@@ -9,6 +9,7 @@ A structured 32-bit encoding for 97,686 CJK characters that embeds radical, stro
   <img src="https://img.shields.io/badge/Encoding-32--bit%20CNBE-blue?style=for-the-badge" alt="Encoding">
   <img src="https://img.shields.io/badge/ISA-RISC--V%20Custom-green?style=for-the-badge" alt="ISA">
   <img src="https://img.shields.io/badge/OS-Full%20Chinese%20Shell-orange?style=for-the-badge" alt="OS">
+  <img src="https://img.shields.io/badge/Vision-2035%20Digital%20China-red?style=for-the-badge" alt="Vision">
   <img src="https://img.shields.io/badge/License-Mulan%20PSL%20v2-lightgrey?style=for-the-badge" alt="License">
 </p>
 
@@ -33,6 +34,16 @@ graph TD
     D --> E[系统层: 全中文 Shell]
     E --> F[中文 BASIC / JEPA 语义引擎]
 ```
+
+---
+
+## 愿景与使命 / Vision & Mission
+
+受 **2035 数字中国** 战略启发，CNBE-32 的目标是：
+
+> **让每一个会中文的人，都能用母语无缝进入人工智能时代。**
+
+这不是完成品，而是一个启发性的 **概念验证 (PoC)**。在 AI Agent 时代，以前科学家关于全中文计算机系统的梦想终于有了实现的可能。
 
 ---
 
@@ -85,6 +96,20 @@ graph TD
 
 ---
 
+## 面向 JEPA 架构的探索 / JEPA Exploration
+
+CNBE 不是为今天的 Transformer 设计的补丁，而是为明天的 JEPA 准备的底层基础设施。
+
+Yann LeCun 提出的 JEPA 强调在表示空间中预测，而 CNBE 提供的恰恰是最结构化的表示空间：
+
+- **部首 = 空间锚点**：相同部首的字在二进制空间中天然聚集
+- **笔画 = 离散特征**：提供细粒度的形态差异
+- **结构 = 空间关系**：左右、上下、包围等直接映射为拓扑关系
+
+已完成的 JEPA 验证：v9 树结构预测 + v10 跨9领域泛化
+
+---
+
 ## 认知平权 / Cognitive Equity
 
 现代计算机的底层逻辑（从指令集到 OS 内核）完全建立在英语/拉丁字母之上。这导致非英语母语者在进行底层开发时，必须先跨越一层语言翻译的认知壁垒。
@@ -133,7 +158,32 @@ CNBE-32 的终极意义，是让中文使用者能够以母语思维直接定义
 | 质数 | 0.3894 | 0.5061 | **CNBE** |
 | 序列 | 1.0726 | 1.2344 | **CNBE** |
 
-**完整实验数据** → [docs/EXPERIMENTS.md](docs/EXPERIMENTS.md)
+<details>
+<summary><b>点击展开 v1-v10.8 完整实验数据 / Click to expand</b></summary>
+
+| 版本 | 核心结论 | 关键数据 |
+|------|----------|----------|
+| v1 | CNBE 零样本可理解 | 200字 100% |
+| v2 | 小模型提升 +81% | 48%→87% |
+| v3 | 逐字完整注解最优 | 87% effective |
+| v4 | 长文本提升 +9.1% | 91%→100% |
+| v5 | 收益随规模递减 | 0.8B:+81%, 8B:~0% |
+| v6.5.2 | CNBE > Unicode | Gemma 4B +17.4pp |
+| v7.1.1 | 3条 RISC-V 指令 | cnhe.map/extract/cmp |
+| v8.4 | 全中文操作系统 | Shell+BASIC+道德经 |
+| v9.0 | 树木生长 JEPA | CNBE 86% 优于 Raw |
+| v9.1 | 台风生命周期 | CNBE 0.000001 vs Raw 0.089981 |
+| v9.4 | 全月金融跨周期 | Abl-2 62% 胜率 |
+| v10.0 | 美股+A 股回测 | 双市场正收益 |
+| v10.3 | 台风巴威路径 | CNBE 174km vs Raw 216km (-19%) |
+| v10.4 | 蛋白质 Q3 结构 | CNBE 41.0% vs OH 44.6% |
+| v10.5 | 黑洞引力场 | R2 0.60-0.77 |
+| v10.6 | 城市决策模拟 | CNBE 优于 Random |
+| v10.7 | TinyGPT 冻结嵌入 | CNBE 1.4568 vs Learned 1.3653 |
+| v10.8 | 数学推理底座 | CNBE 全面优于 OneHot |
+</details>
+
+ → [docs/EXPERIMENTS.md](docs/EXPERIMENTS.md)
 
 ---
 
@@ -249,6 +299,20 @@ CNBE-32-Chinese-Native-Binary-Encoding/
 
 ---
 
+## AI Agent 驱动 / AI Factory
+
+这是一个以前绝不可能完成，但在 AI 时代必然诞生的项目。
+
+| 过去 | 现在 |
+|------|------|
+| 97,686 汉字标注需数千语言学家人年 | AI Agent 辅助自动化标注 |
+| 全栈验证需顶级团队数年 | LLM 辅助代码生成 + 验证 |
+| 单一团队孤岛开发 | 开源社区协作探索 |
+
+上世纪科学家的梦想，在 AI Agent 时代终于有了实现的可能。
+
+---
+
 ## 演进路线 / Roadmap
 
 | 阶段 | 状态 | 内容 |
@@ -293,6 +357,12 @@ v10.x 阶段的金融时间序列（美股/A 股）回测，仅用于验证 CNBE
 [![License](https://img.shields.io/badge/License-MulanPSL2-blue.svg)](http://license.coscl.org.cn/MulanPSL2)
 
 ---
+
+**让会中文的人，用母语进入人工智能时代。**
+**Let Chinese speakers enter the AI era in their mother tongue.**
+
+从 2035 数字中国的愿景出发，到 AI Agent 时代的工程实践。
+From the vision of 2035 Digital China to the engineering practice in the AI Agent era.
 
 **为中文 AI 生态而生——从编码到硬件，从单字到操作系统。**
 **Built for the Chinese AI ecosystem — from encoding to hardware.**
