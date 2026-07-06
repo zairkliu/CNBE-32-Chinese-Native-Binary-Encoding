@@ -1,119 +1,114 @@
 # CNBE-32 · Chinese Native Binary Encoding / Chinese Native Binary Encoding
 
-**A structured 32-bit encoding for 97,686 CJK characters that embeds radical, stroke count, and structure type directly into the encoding space.**
+**将汉字的结构语义直接编码为 32 位二进制。A structured 32-bit encoding for 97,686 CJK characters that embeds radical, stroke count, and structure type directly into the encoding space, making machines understand Chinese at the binary level.**
 
-> This is not a replacement for Unicode. It is a **semantic enhancement layer** that lets machines *understand* Chinese characters at the binary level, not just display them.
+> 这不是 Unicode 的替代品，而是 Unicode 之上的语义增强层。让 CPU 和 AI 不仅能显示汉字，更能理解汉字。
+> This is not a replacement for Unicode. It is a semantic enhancement layer that lets machines understand Chinese characters at the binary level, not just display them.
 
 [![License](https://img.shields.io/badge/License-MulanPSL2-blue.svg)](http://license.coscl.org.cn/MulanPSL2)
 [![CJK Coverage](https://img.shields.io/badge/CJK-97%2C686-brightgreen)]()
 [![RISC-V](https://img.shields.io/badge/RISC--V-Spike+QEMU-orange)]()
-[![OS](https://img.shields.io/badge/OS-WSL%20Ubuntu%2026.04-blue)]()
 
 ---
 
-## Code Quick Look
+## 编码速览 / Code Quick Look
 
-**One character, one 32-bit binary.**
+**一个汉字，一个 32 位二进制数。One character, one 32-bit binary.**
 
 ```
-Bit: 31     28 27    24 23    19 18    15 14              4 3     0
+位: 31     28 27    24 23    19 18    15 14              4 3     0
      +--------+--------+--------+------------------------+-------+
-     |RESERVED|SUB_TYPE|EXT_FLAG|  RADIX     |  STROKE   |STRUCT |
+     | 预留位 | 子类型  | 扩展标志|    部首      |  笔画   | 结构  |
      +--------+--------+--------+------------------------+-------+
 ```
 
-| Char | Unicode | CNBE-32 Code | Radical | Strokes | Structure |
-|------|---------|-------------|---------|---------|-----------|
-| one | U+4E00 | 0x01080000 | Yi (1) | 1 | Single |
-| Han | U+6C49 | 0x0F288101 | Shui (15) | 5 | Left-Right |
-| Guo | U+56FD | 0x1F400B0B | Wei (31) | 8 | Full-Wrap |
-| Ming | U+660E | 0x48400801 | Sun (72) | 8 | Left-Right |
+| 汉字 | Unicode | 编码值 CNBE Code | 部首 Radical | 笔画 Stroke | 结构 Structure |
+|------|---------|-----------------|-------------|-------------|---------------|
+| 一 | U+4E00 | `0x01080000` | 一 (ID=1) | 1 | 独体 Single |
+| 汉 | U+6C49 | `0x0F288101` | 氵 (ID=15) | 5 | 左右 Left-Right |
+| 国 | U+56FD | `0x1F400B0B` | 囗 (ID=31) | 8 | 全包围 Full-Wrap |
+| 明 | U+660E | `0x48400801` | 日 (ID=72) | 8 | 左右 Left-Right |
 
 ---
 
-## Why CNBE-32?
+## 为什么是 CNBE？/ Why CNBE-32?
 
-| Aspect | Unicode / UTF-8 | CNBE-32 |
-|--------|----------------|---------|
-| Purpose | Character display & exchange | AI understanding & hardware acceleration |
-| Encoding | Flat ID mapping | Semantic structured (radical+stroke+structure) |
-| Machine cognition | Identifies characters | Understands character composition |
-| AI compatibility | Must learn from data | Provides structural prior |
+| 维度 Aspect | Unicode / UTF-8 | CNBE-32 |
+|------------|----------------|---------|
+| 目标 Purpose | 字符显示与交换 Display & exchange | AI 理解与硬件加速 AI understanding |
+| 编码方式 Encoding | 查表映射 Flat ID | 语义结构化 Semantic structured |
+| 机器认知 Machine | 标识字符 Identifies | 理解结构 Understands composition |
+| AI 兼容性 AI | 需从数据学习 Must learn | 提供结构先验 Provides structural prior |
 
-**9 domains validated**: linguistics, ecology, meteorology, finance, biology, physics, sociology, pretraining, mathematics
+**9 个跨领域验证通过 / 9 domains validated**: 语言学 linguistics, 生态 ecology, 气象 meteorology, 金融 finance, 生物 biology, 物理 physics, 社会 sociology, 预训练 pretraining, 数学 mathematics
 
 ---
 
-## Key Experiments
+## 核心实验 / Key Experiments
 
-### 1. Small Model, Big Boost (v2)
+### 1. 小模型大提升 (v2) / Small Model, Big Boost
 
-**Hypothesis**: Structured encoding compensates for small model capacity.
+**假设 Hypothesis**：结构化编码补偿小模型参数量不足。Structured encoding compensates for small model capacity.
+**方法 Method**：Qwen 3.5 0.8B，CNBE vs 标准输入。CNBE vs standard input on Chinese sentence understanding.
 
-**Method**: Qwen 3.5 0.8B with CNBE input vs standard input on Chinese sentence understanding.
-
-| Input | Accuracy | Improvement |
-|-------|----------|-------------|
-| Standard | 48% | -- |
+| 输入 Input | 准确率 Accuracy | 提升 Improvement |
+|-----------|----------------|-----------------|
+| 标准 Standard | 48% | -- |
 | **CNBE** | **87%** | **+81%** |
 
-**Conclusion**: CNBE provides significant knowledge compensation for small models.
+**结论 Conclusion**：CNBE 对小模型有显著知识补偿效应。Significant knowledge compensation for small models.
 
-### 2. CNBE > Unicode (v6.5.2)
+### 2. CNBE 超越 Unicode (v6.5.2)
 
-**Hypothesis**: Structured bit fields carry more semantic information than Unicode code points.
+**假设 Hypothesis**：结构化位域比 Unicode 码点携带更多语义信息。
+**方法 Method**：Gemma 4B 中文硬任务。Chinese hard tasks (reasoning, classical text).
 
-**Method**: Gemma 4B on Chinese hard tasks (reasoning, classical text).
-
-| Input | Accuracy |
-|-------|----------|
+| 输入 Input | 准确率 Accuracy |
+|-----------|----------------|
 | Unicode | 26.1% |
 | **CNBE** | **43.5%** |
 
-**Conclusion**: A new, untrained encoding surpasses a 30-year-old standard on first attempt (+17.4pp).
+**结论 Conclusion**：未经训练的新编码首次尝试即超越 30 年标准（+17.4pp）。
 
-### 3. Full Chinese Operating System (v8.4)
+### 3. 全中文操作系统 (v8.4) / Full Chinese OS
 
-**Hypothesis**: CNBE enables a complete Chinese-native software stack.
+**假设 Hypothesis**：CNBE 能构建完整的中文原生软件栈。
 
-**Method**: RISC-V QEMU virtual machine with Chinese BASIC interpreter, Shell, and text editor.
+- 全中文 Shell（输出/取编码/比较等命令）
+- 中文 BASIC 解释器（7 个关键字）
+- 文本编辑器（内置《道德经》205 行）
+- RISC-V 自定义指令：cnhe.map/extract/cmp
 
-- Chinese Shell with commands like output(), getcode(), compare()
-- Chinese BASIC interpreter with 7 keywords
-- Text editor with Daodejing (205 lines, 7,720 characters)
-- RISC-V custom instructions: cnhe.map/extract/cmp (Spike+FPGA)
+**结论 Conclusion**：从编码到操作系统的完整技术栈已验证。
 
-**Conclusion**: A complete tech stack from encoding to operating system has been validated.
+### 4. 数学推理底座 (v10.8) / Math Reasoning Foundation
 
-### 4. Math Reasoning Foundation (v10.8)
+**假设 Hypothesis**：CNBE 冻结嵌入可替代 Transformer 可训练嵌入。
+**方法 Method**：TinyGPT 在奇偶/质数/序列推理任务上对比 4 种编码。
 
-**Hypothesis**: CNBE frozen embeddings can replace learned embeddings in Transformer models.
+| 任务 Task | CNBE 最优 | OneHot 最优 | 胜出 |
+|-----------|-----------|-------------|------|
+| 奇偶 Parity | **0.3174** | 0.3427 | **CNBE** |
+| 质数 Prime | **0.3894** | 0.5061 | **CNBE** |
+| 序列 Sequence | **1.0726** | 1.2344 | **CNBE** |
 
-**Method**: TinyGPT with CNBE frozen embeddings on parity/prime/sequence reasoning tasks.
-
-| Task | CNBE Best | OneHot Best | Winner |
-|------|-----------|-------------|--------|
-| Parity | 0.3174 | 0.3427 | **CNBE** |
-| Prime | 0.3894 | 0.5061 | **CNBE** |
-| Sequence | 1.0726 | 1.2344 | **CNBE** |
-
-**Conclusion**: Structured encoding approaches learned embedding performance with zero training.
+**结论 Conclusion**：结构化编码在零训练条件下接近可训练嵌入性能。
 
 ---
 
-## Tech Stack
+## 技术栈 / Tech Stack
 
 ```
-Application: Chinese BASIC + Text Editor + Daodejing
-System: Shell + CNBE Runtime (cnhe_map/extract/cmp)
-Hardware: RISC-V 1GHz + 1GB RAM (QEMU + Spike)
-Instructions: cnhe.map / cnhe.extract / cnhe.cmp
-Encoding: 32-bit CJK structured bit field (radix/stroke/structure)
+应用层 Application: 中文 BASIC + 文本编辑器 + 《道德经》录入
+系统层 System: Shell + CNBE 运行时 (cnhe_map/extract/cmp)
+硬件层 Hardware: RISC-V 1GHz + 1GB RAM (QEMU + Spike)
+指令层 Instructions: cnhe.map / cnhe.extract / cnhe.cmp
+编码层 Encoding: 32-bit CJK structured bit field (部首/笔画/结构)
 ```
 
 ---
 
-## Quick Start
+## 快速开始 / Quick Start
 
 ### Python SDK
 
@@ -123,21 +118,21 @@ cd CNBE-32-Chinese-Native-Binary-Encoding
 python -c "import sys; sys.path.insert(0,'src'); from cnbe32 import encode_cnbe; print(hex(encode_cnbe(1,1,0)))"
 ```
 
-### RISC-V Simulator
+### RISC-V 模拟器 / Simulator
 
 ```bash
 cd hardware/simulator
 gcc -o cnhe_sim cnhe_sim.c -Wall -O2 && ./cnhe_sim
 ```
 
-### Chinese OS (QEMU)
+### 中文操作系统 / Chinese OS (QEMU)
 
 ```bash
 cd v84_riscv_os_full
 make all && make run
 ```
 
-### Reproduce Experiments
+### 复现实验 / Reproduce Experiments
 
 ```bash
 cd v10_8_math_reasoning && python run_v108.py
@@ -146,73 +141,77 @@ cd v10_3_typhoon && python v10_3_typhoon.py
 
 ---
 
-## Project Structure
+## 项目结构 / Project Structure
 
 ```
 CNBE-32-Chinese-Native-Binary-Encoding/
-|-- docs/specification/      # Encoding specification (7 docs)
-|-- src/cnbe32/              # Python SDK (core/skill_table/encoders)
-|-- include/cnbe32.h         # C header
-|-- data/                    # Encoding database (CSV)
-|-- tests/                   # Test suite
-|-- tools/                   # Development tools
-|-- bindings/rust/           # Rust/WASM bindings
-|-- hardware/               # RISC-V simulator + FPGA RTL
-|-- v9_jepa_tree/           # JEPA prediction experiments (v9)
-|-- v10_5~v10_8/            # Cross-domain experiments (v10)
-|-- v84_riscv_os_full/      # Chinese OS prototype
-|-- results/                 # White papers (41 docs)
-|-- pyproject.toml           # Python project config
-|-- LICENSE                  # Mulan PSL v2
+|-- docs/specification/      # 编码规范 Encoding specification
+|-- src/cnbe32/              # Python SDK (核心/编码器)
+|-- include/cnbe32.h         # C 头文件 C header
+|-- data/                    # 编码数据库 Database (CSV)
+|-- tests/                   # 测试套件 Test suite
+|-- tools/                   # 开发工具 Dev tools
+|-- bindings/rust/           # Rust/WASM 绑定
+|-- hardware/               # RISC-V 模拟器 + FPGA
+|-- v9_jepa_tree/           # JEPA 预测实验 (v9)
+|-- v10_5~v10_8/            # 跨领域实验 (v10)
+|-- v84_riscv_os_full/      # 中文操作系统原型
+|-- results/                 # 白皮书 White papers
+|-- docs/EXPERIMENTS.md      # 实验总览 Experiment overview
+|-- docs/VISION.md           # 战略愿景 Strategic vision
+|-- docs/COMPARISON.md       # 方案对比 Comparison
+|-- pyproject.toml           # Python 项目配置
+|-- LICENSE                  # 木兰许可证 Mulan PSL v2
 ```
 
 ---
 
-## Milestones (v1-v10.8)
+## 里程碑 / Milestones (v1-v10.8)
 
-| Phase | Version | Key Result |
-|-------|---------|------------|
-| Semantic Validation | v1-v4 | CNBE understood by AI (+81% on 0.8B) |
-| Model Comparison | v5 | CNBE benefit decreases with model size |
-| Numerical Features | v6 | Bare number format F optimal |
-| Hardware Validation | v7 | 3 RISC-V instructions (Spike+FPGA) |
-| Chinese OS | v8 | Full Chinese tech stack + BASIC |
-| JEPA Prediction | v9.0-v9.4 | Structured encoding advantage confirmed |
-| Finance Backtest | v10.0-v10.2 | Both markets profitable |
-| Cross-Domain | v10.3-v10.8 | 9 domains validated |
+| 阶段 Phase | 版本 | 核心结论 Key Result |
+|-----------|------|--------------------|
+| 编码语义验证 Semantic | v1-v4 | AI 理解 CNBE（0.8B +81%）|
+| 多模型对比 Model | v5 | 收益随规模递减 |
+| 数值特征 Numerical | v6 | 裸数字最优 >Unicode |
+| 硬件验证 Hardware | v7 | 3 条 RISC-V 指令 |
+| 中文操作系统 Chinese OS | v8 | 全中文技术栈 |
+| JEPA 预测 | v9.0-v9.4 | 结构化编码优势确认 |
+| 金融回测 Finance | v10.0-v10.2 | 双市场正收益 |
+| 跨领域 Cross-Domain | v10.3-v10.8 | 9 个领域验证通过 |
 
-**Full white papers**: [results/](results/) directory (41 documents)
-
----
-
-## Roadmap
-
-| Phase | Status | Content |
-|-------|--------|---------|
-| Encoding & Semantics | Done | v1-v6: CJK encoding design |
-| Hardware & System | Done | v7-v8: RISC-V + Chinese OS |
-| Complex Prediction | Done | v9-v10: 9 domains validated |
-| AI Compiler | Planning | Chinese natural language to machine code |
-| Edge AI Integration | Planning | CNBE as default for edge AI chips |
-| Ecosystem | Vision | Open source community + standards |
+**完整白皮书 Full white papers**: [results/](results/) 目录 (41 份文档)
 
 ---
 
-## How to Contribute
+## 演进路线 / Roadmap
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution tiers:
-- **Low barrier**: Encoding dictionary, test cases, documentation
-- **High barrier**: RISC-V pipeline, FPGA, LLM adaptation, compiler
+| 阶段 Phase | 状态 Status | 内容 Content |
+|-----------|-------------|-------------|
+| 编码与语义验证 Encoding & Semantics | 已完成 Done | v1-v6 CJK 编码设计 |
+| 硬件与系统 Hardware & System | 已完成 Done | v7-v8 RISC-V + 中文 OS |
+| 复杂预测验证 Complex Prediction | 已完成 Done | v9-v10 9 领域验证 |
+| AI 编译器 AI Compiler | 规划中 Planning | 中文自然语言→机器码 |
+| 端侧 AI 集成 Edge AI | 规划中 Planning | CNBE 成为边缘 AI 默认标准 |
+| 生态共建 Ecosystem | 愿景 Vision | 开源社区 + 行业标准 |
 
 ---
 
-## License
+## 参与贡献 / How to Contribute
 
-**Mulan Permissive Software License v2** (Mulan PSL v2)
+详见 See [CONTRIBUTING.md](CONTRIBUTING.md)
+
+- **低门槛 Low barrier**: 编码字典 Encoding dictionary / 测试用例 Test cases / 文档 Documentation
+- **高门槛 High barrier**: RISC-V 流水线 Pipeline / FPGA / LLM 适配 / 编译器  Compiler
+
+---
+
+## 许可证 / License
+
+**木兰宽松许可证 v2 (Mulan Permissive Software License v2)**
 
 [![License](https://img.shields.io/badge/License-MulanPSL2-blue.svg)](http://license.coscl.org.cn/MulanPSL2)
 
 ---
 
-*Built for the Chinese AI ecosystem -- from encoding to hardware.*
-*Made Chinese a native language of AI.*
+**为中文 AI 生态而生——从编码到硬件，从单字到操作系统。**
+**Built for the Chinese AI ecosystem -- from encoding to hardware, from single characters to a full operating system.**
