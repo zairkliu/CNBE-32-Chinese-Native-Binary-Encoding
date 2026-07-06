@@ -117,7 +117,7 @@ JEPA 的核心是在高维语义空间中进行预测，而非在原始数据空
 
 ---
 
-## 📊 项目里程碑 / Milestones (v1-v10.4)
+## 📊 项目里程碑 / Milestones (v1-v10.5)
 
 | 阶段 / Phase | 版本 / Version | 核心成果 / Core Achievement | 关键数据 / Key Data | 环境 / Env |
 |:----------:|:------------:|-------------------------|:----------------:|:---------:|
@@ -136,6 +136,7 @@ JEPA 的核心是在高维语义空间中进行预测，而非在原始数据空
 | **6月跨周期** / 6-month | v10.2 | A股+美股6个月日线 / 6-month daily | **CNBE双市场正收益** A+0.76% US+3.07% **准确率59-71%** | Windows |
 | **台风路径** / Typhoon Path | v10.3 | 台风巴威路径预测 / Typhoon Barijat path | **CNBE 174km vs Raw 216km (−19%)** | macOS |
 | **蛋白结构** / Protein Structure | v10.4 | 蛋白质二级结构Q3预测 / Protein Q3 prediction | **CNBE 41.0% vs 30年标准 44.6% (仅差3.6pp)** | macOS |
+| **黑洞引力场** / Black Hole | v10.5 | Gaia BH1引力场预测 / BH gravitational field | **R2 0.60-0.77**，优于Onehot/Random | Python |
 
 > **免责声明 / Disclaimer**：v10.x 系列金融回测旨在验证 CNBE 结构化编码在处理高噪声、复杂时间序列数据时的特征提取潜力，而非提供直接的投资策略。回测结果受数据窗口、市场状态和策略参数影响，不代表未来收益。CNBE-32 项目的核心定位始终是中文原生计算地基，金融预测仅是验证编码特征表达能力的一个维度。
 
@@ -170,6 +171,7 @@ JEPA 的核心是在高维语义空间中进行预测，而非在原始数据空
 | v10.2 | 6个月日线跨周期 / 6-month daily cross-period | **CNBE双市场正收益**，准确率**59-71%** |
 | v10.3 | 台风巴威路径预测 / Typhoon Barijat path | **CNBE 174km vs Raw 216km (−19%)**，跨领域泛化验证 |
 | v10.4 | 蛋白质二级结构 / Protein Q3 prediction | **CNBE 41.0% vs One-hot 44.6%（差距仅3.6pp）** |
+| v10.5 | 黑洞引力场模拟 / Black hole simulation | **R2 0.60-0.77**，物理系统验证通过 |
 
 > **关键洞察 / Key Insight**：大模型（如 8B 以上）可以通过海量数据"暴力"记住 Unicode 的映射，但 0.8B 小模型的 **+81%** 性能飞跃，确凿地证明了 CNBE 将汉字的"字形结构"转化为"计算先验"的巨大价值。这对于未来 AI 在**边缘设备、物联网和端侧**的普及具有决定性意义。
 
@@ -198,6 +200,7 @@ JEPA 的核心是在高维语义空间中进行预测，而非在原始数据空
 | 15 | **6-month validation: CNBE positive on both markets, 70% accuracy on US** / 6月验证: 双市场正收益 | v10.2 A+0.76% US+3.07%, accuracy 59-71% |
 | 16 | **Typhoon path: CNBE 19% better than Raw** / 台风路径预测CNBE优于Raw19% | v10.3 174km vs 216km, 跨领域泛化 |
 | 17 | **Protein structure: CNBE within 3.6pp of 30-year domain standard** / 蛋白结构：CNBE仅差3.6pp | v10.4 41.0% vs One-hot 44.6%, 零样本首次尝试 |
+| 18 | **Black hole: CNBE R2 0.60-0.77 on gravitational field prediction** / 黑洞引力场预测 | v10.5 Gaia BH1, 跨领域验证第6站 |
 
 ---
 
@@ -208,7 +211,7 @@ JEPA 的核心是在高维语义空间中进行预测，而非在原始数据空
 |:----------:|:------------:|--------------|
 | **Phase 1**: 编码与语义验证 / Encoding & Semantic | **已完成** | v1-v6，证明 CNBE 可被 AI 理解，优于传统编码 |
 | **Phase 2**: 硬件与系统闭环 / Hardware & System | **已完成** | v7-v8，RISC-V 指令集成与全中文 OS 启动 |
-| **Phase 3**: 复杂系统预测验证 / Complex Prediction | **已完成** | v9-v10，JEPA 架构与金融/气象/生物多领域验证 |
+| **Phase 3**: 复杂系统预测验证 / Complex Prediction | **已完成** | v9-v10，JEPA 架构与金融/气象/生物/物理6领域验证 |
 | **Phase 4**: AI 编译器与中间件 / AI Compiler | 规划中 | 探索将自然语言中文直接编译为 CNBE 机器码的 AI 辅助工具 |
 | **Phase 5**: 端侧 AI 原生集成 / Edge AI Integration | 规划中 | 推动 CNBE 成为边缘 AI 芯片处理中文语义的默认标准 |
 | **Phase 6**: 生态共建 / Ecosystem Building | 愿景 | 建立 CNBE 开源社区，推动行业标准与国标对接 |
