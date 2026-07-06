@@ -43,7 +43,7 @@ graph TD
 
 > **让每一个会中文的人，都能用母语无缝进入人工智能时代。**
 
-这不是完成品，而是一个启发性的 **概念验证 (PoC)**。在 AI Agent 时代，以前科学家关于全中文计算机系统的梦想终于有了实现的可能。
+这是一个具备完整技术闭环的成熟体系，但作为中文原生计算领域的极早期探索，仍处于开放性的研究阶段。在 AI Agent 时代，以前科学家关于全中文计算机系统的梦想终于有了实现的可能。
 
 ---
 
@@ -359,6 +359,15 @@ v10.x 阶段的金融时间序列（美股/A 股）回测，仅用于验证 CNBE
 ---
 
 **让会中文的人，用母语进入人工智能时代。**
+**Let Chinese speakers enter the AI era in their mother tongue.**
+
+从“2035 数字中国”的愿景出发，到 AI Agent 时代的工程实践。
+From the vision of “2035 Digital China” to the engineering practice in the AI Agent era.
+
+**这是一个具备完整技术闭环的成熟体系，诚邀社区共同探索中文原生计算的无限可能。**
+A mature system with a complete technical loop, inviting the community to explore.
+
+**为中文 AI 生态而生
 **Let Chinese speakers enter the AI era in their mother tongue.**
 
 从 2035 数字中国的愿景出发，到 AI Agent 时代的工程实践。
