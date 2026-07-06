@@ -5,9 +5,26 @@
 > 这不是 Unicode 的替代品，而是 Unicode 之上的语义增强层。让 CPU 和 AI 不仅能显示汉字，更能理解汉字。
 > This is not a replacement for Unicode. It is a semantic enhancement layer that lets machines understand Chinese characters at the binary level, not just display them.
 
-[![License](https://img.shields.io/badge/License-MulanPSL2-blue.svg)](http://license.coscl.org.cn/MulanPSL2)
-[![CJK Coverage](https://img.shields.io/badge/CJK-97%2C686-brightgreen)]()
-[![RISC-V](https://img.shields.io/badge/RISC--V-Spike+QEMU-orange)]()
+<p align="center">
+  <a href="http://license.coscl.org.cn/MulanPSL2"><img src="https://img.shields.io/badge/License-MulanPSL2-blue.svg" alt="License"></a>
+  <img src="https://img.shields.io/badge/CJK-97%2C686-brightgreen" alt="CJK">
+  <img src="https://img.shields.io/badge/RISC--V-Spike+QEMU-orange" alt="RISC-V">
+  <img src="https://img.shields.io/badge/Status-Active--Development-green" alt="Status">
+</p>
+
+---
+
+## 目录 / Table of Contents
+- [编码速览 Code Quick Look](#编码速览--code-quick-look)
+- [为什么是 CNBE Why CNBE-32](#为什么是-cnbe-why-cnbe-32)
+- [核心实验 Key Experiments](#核心实验-key-experiments)
+- [技术栈 Tech Stack](#技术栈-tech-stack)
+- [快速开始 Quick Start](#快速开始-quick-start)
+- [项目结构 Project Structure](#项目结构-project-structure)
+- [里程碑 Milestones](#里程碑-milestones-v1-v108)
+- [演进路线 Roadmap](#演进路线-roadmap)
+- [参与贡献 How to Contribute](#参与贡献-how-to-contribute)
+- [许可证 License](#许可证-license)
 
 ---
 
@@ -110,6 +127,17 @@
 
 ## 快速开始 / Quick Start
 
+### 依赖安装 / Dependencies
+
+```bash
+# Python
+pip install numpy torch scikit-learn
+
+# RISC-V (WSL Ubuntu 26.04)
+sudo apt-get update
+sudo apt-get install -y gcc-riscv64-linux-gnu qemu-system-misc
+```
+
 ### Python SDK
 
 ```bash
@@ -166,6 +194,10 @@ CNBE-32-Chinese-Native-Binary-Encoding/
 
 ---
 
+<details>
+<summary><b>点击展开完整里程碑表 / Click to expand</b></summary>
+<br>
+
 ## 里程碑 / Milestones (v1-v10.8)
 
 | 阶段 Phase | 版本 | 核心结论 Key Result |
@@ -180,6 +212,10 @@ CNBE-32-Chinese-Native-Binary-Encoding/
 | 跨领域 Cross-Domain | v10.3-v10.8 | 9 个领域验证通过 |
 
 **完整白皮书 Full white papers**: [results/](results/) 目录 (41 份文档)
+
+---
+
+</details>
 
 ---
 
@@ -210,6 +246,10 @@ CNBE-32-Chinese-Native-Binary-Encoding/
 **木兰宽松许可证 v2 (Mulan Permissive Software License v2)**
 
 [![License](https://img.shields.io/badge/License-MulanPSL2-blue.svg)](http://license.coscl.org.cn/MulanPSL2)
+
+---
+
+> **免责声明 / Disclaimer**：v10.x 系列金融回测旨在验证 CNBE 的特征提取潜力，不构成投资建议。
 
 ---
 
