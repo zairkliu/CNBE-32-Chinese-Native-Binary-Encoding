@@ -1,0 +1,6 @@
+unicode,hanzi,struct_id,struct_name
+U+4E00,一,0,single
+U+6C49,汉,1,left_right
+U+56FD,国,11,full_wrap
+U+660E,明,1,left_right
+U+65E9,早,3,up_down
