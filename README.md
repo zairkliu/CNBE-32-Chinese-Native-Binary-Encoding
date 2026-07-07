@@ -1,4 +1,4 @@
-# CNBE-32
+﻿# CNBE-32
 
 **Chinese Native Binary Encoding**
 
@@ -56,7 +56,7 @@ This is a mature system with a complete closed-loop, but as an early-stage explo
 - [JEPA Exploration](#jepa-exploration)
 - [Cognitive Equity](#cognitive-equity)
 - [Key Experiments](#key-experiments)
-- [Key Insights](#key-insights-large-models-vs-small-models)
+- [Key Insights I](#key-insights-large-models-vs-small-models)
 - [Experimental Limitations & Future Directions](#experimental-limitations--future-directions)
 - [Tech Stack](#tech-stack)
 - [AI Agent Driven / AI Factory](#ai-agent-driven--ai-factory)
@@ -322,6 +322,20 @@ Why do 8B+ large models show diminishing returns (~0%) from CNBE, while 0.8B sma
 
 This is the breakthrough path for edge-side AI processing of Chinese.
 
+
+> ## Key Insights III: CNBE Encoding Knowledge LoRA Fine-Tuning
+>
+> — Injecting CNBE-32 encoding knowledge into Qwen3.5-0.8B via LoRA
+>
+> - **LoRA knowledge injection works**: 500 steps (22 min) of lightweight fine-tuning successfully injects CNBE-32 encoding knowledge into a 0.8B model, with final loss converging to 0.7524
+> - **Model understands encoding concepts**: After fine-tuning, the model recognizes character radicals, stroke counts, and structure types, outputting CNBE-32 encoded information
+> - **Minimal GPU requirements**: RTX 4060 Ti (8GB) handles the entire pipeline, with peak memory usage of only 1.5GB
+> - **Edge deployment validated**: For the first time, CNBE-32 advances from inference-level semantic validation to training-level knowledge injection
+> - **Complete cross-domain chain**: From linguistics to finance to physics to biology to LLM training, CNBE's structured encoding is validated across encoding, hardware, OS, cross-domain prediction, and model fine-tuning
+>
+> Full methodology → [cnbe-llm training(demo)/](./cnbe-llm%20training(demo)/)
+
+
 ---
 
 ## <span id="experimental-limitations--future-directions">Experimental Limitations & Future Directions</span>
@@ -503,3 +517,4 @@ From the "Digital China 2035" vision to AI Agent era engineering practice.
 **Born for Chinese AI ecosystem — from encoding to hardware, from single character to operating system.**
 
 [GitHub](https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding)
+

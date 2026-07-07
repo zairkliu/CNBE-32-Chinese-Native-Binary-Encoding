@@ -1,0 +1,14 @@
+CNBE-32 Lite Training - 2026-07-08T00:18:40.302899
+============================================================
+
+[00:18:40] Device: cuda | CUDA: True
+[00:18:40] GPU: NVIDIA GeForce RTX 4060 Ti
+[00:18:40] Loading model...
+[00:18:48] Loaded in 8.6s
+[00:18:50] Data: 1000 samples
+[00:23:17] Step 100/500 | Loss: 1.9045 | 266.9s | Checkpoint saved
+[00:27:41] Step 200/500 | Loss: 0.8067 | 531.0s | Checkpoint saved
+[00:32:10] Step 300/500 | Loss: 0.6314 | 800.1s | Checkpoint saved
+[00:36:28] Step 400/500 | Loss: 1.7899 | 1058.3s | Checkpoint saved
+[00:40:52] Step 500/500 | Loss: 0.7524 | 1322.1s | Checkpoint saved
+[00:40:53] Done! 500 steps in 1323.1s
