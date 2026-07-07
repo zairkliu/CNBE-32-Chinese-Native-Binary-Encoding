@@ -1,0 +1,188 @@
+2026-07-08 02:16:44 [INFO] Loading data from: C:\Users\zairk\cnbe-training1\scripts\..\data\cnbe_train_full_formatted.jsonl
+2026-07-08 02:16:56 [INFO] Loaded 178034 samples in 11.9s
+2026-07-08 02:16:57 [INFO] Using 25000 diverse samples
+2026-07-08 02:16:57 [INFO] Loading model...
+2026-07-08 02:16:58 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 02:16:58 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 02:16:59 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 02:16:59 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 02:16:59 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-07-08 02:16:59 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/model.safetensors.index.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 02:16:59 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/model.safetensors.index.json "HTTP/1.1 200 OK"
+2026-07-08 02:17:00 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/model.safetensors-00001-of-00001.safetensors "HTTP/1.1 302 Found"
+2026-07-08 02:17:02 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/generation_config.json "HTTP/1.1 404 Not Found"
+2026-07-08 02:17:02 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 02:17:03 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 02:17:03 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-07-08 02:17:03 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 02:17:04 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 02:17:04 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 02:17:04 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-08 02:17:04 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 02:17:04 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-08 02:17:05 [INFO] HTTP Request: GET https://hf-mirror.com/api/models/Qwen/Qwen3.5-0.8B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-07-08 02:17:05 [INFO] HTTP Request: GET https://hf-mirror.com/api/models/Qwen/Qwen3.5-0.8B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-07-08 02:17:05 [INFO] HTTP Request: GET https://hf-mirror.com/api/models/Qwen/Qwen3.5-0.8B "HTTP/1.1 200 OK"
+2026-07-08 02:17:05 [INFO] Model loaded in 8.4s
+2026-07-08 02:17:05 [INFO] GPU: NVIDIA GeForce RTX 4060 Ti, Mem: 1.50GB
+2026-07-08 02:17:10 [INFO] ============================================================
+2026-07-08 02:17:10 [INFO] Training: 5000 steps | batch=4 | lr=0.0001 -> 1e-05
+2026-07-08 02:17:10 [INFO] Checkpoints every 500 steps
+2026-07-08 02:20:17 [INFO] Step 50/5000 | Loss: 2.0540 | LR: 0.000100 | Elapsed: 186s | ETA: 18458s
+2026-07-08 02:23:51 [INFO] Step 100/5000 | Loss: 1.5470 | LR: 0.000100 | Elapsed: 401s | ETA: 19664s
+2026-07-08 02:26:40 [INFO] Step 150/5000 | Loss: 1.3970 | LR: 0.000100 | Elapsed: 570s | ETA: 18421s
+2026-07-08 02:30:00 [INFO] Step 200/5000 | Loss: 1.0812 | LR: 0.000100 | Elapsed: 770s | ETA: 18489s
+2026-07-08 02:33:05 [INFO] Step 250/5000 | Loss: 1.0410 | LR: 0.000100 | Elapsed: 955s | ETA: 18149s
+2026-07-08 02:35:34 [INFO] Step 300/5000 | Loss: 1.1976 | LR: 0.000100 | Elapsed: 1104s | ETA: 17301s
+2026-07-08 02:38:05 [INFO] Step 350/5000 | Loss: 1.0139 | LR: 0.000100 | Elapsed: 1255s | ETA: 16674s
+2026-07-08 02:40:36 [INFO] Step 400/5000 | Loss: 1.2489 | LR: 0.000100 | Elapsed: 1406s | ETA: 16167s
+2026-07-08 02:43:08 [INFO] Step 450/5000 | Loss: 1.0466 | LR: 0.000099 | Elapsed: 1558s | ETA: 15754s
+2026-07-08 02:45:38 [INFO] Step 500/5000 | Loss: 1.0071 | LR: 0.000099 | Elapsed: 1708s | ETA: 15375s
+2026-07-08 02:45:39 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 02:45:39 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 02:45:39 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 02:45:39 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 02:45:39 [INFO] Checkpoint saved: C:\Users\zairk\cnbe-training1\scripts\..\outputs\cnbe-5k\checkpoint-500
+2026-07-08 02:48:11 [INFO] Step 550/5000 | Loss: 1.0839 | LR: 0.000099 | Elapsed: 1861s | ETA: 15060s
+2026-07-08 02:50:39 [INFO] Step 600/5000 | Loss: 0.9532 | LR: 0.000098 | Elapsed: 2009s | ETA: 14734s
+2026-07-08 02:53:06 [INFO] Step 650/5000 | Loss: 1.0069 | LR: 0.000098 | Elapsed: 2156s | ETA: 14428s
+2026-07-08 02:55:31 [INFO] Step 700/5000 | Loss: 1.0898 | LR: 0.000098 | Elapsed: 2301s | ETA: 14135s
+2026-07-08 02:58:07 [INFO] Step 750/5000 | Loss: 0.9789 | LR: 0.000097 | Elapsed: 2457s | ETA: 13923s
+2026-07-08 03:00:34 [INFO] Step 800/5000 | Loss: 1.0984 | LR: 0.000097 | Elapsed: 2604s | ETA: 13673s
+2026-07-08 03:03:02 [INFO] Step 850/5000 | Loss: 1.1408 | LR: 0.000096 | Elapsed: 2752s | ETA: 13436s
+2026-07-08 03:05:26 [INFO] Step 900/5000 | Loss: 0.9890 | LR: 0.000095 | Elapsed: 2896s | ETA: 13194s
+2026-07-08 03:07:53 [INFO] Step 950/5000 | Loss: 1.0325 | LR: 0.000095 | Elapsed: 3043s | ETA: 12974s
+2026-07-08 03:10:21 [INFO] Step 1000/5000 | Loss: 0.9284 | LR: 0.000094 | Elapsed: 3191s | ETA: 12765s
+2026-07-08 03:10:22 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 03:10:22 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 03:10:22 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 03:10:22 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 03:10:22 [INFO] Checkpoint saved: C:\Users\zairk\cnbe-training1\scripts\..\outputs\cnbe-5k\checkpoint-1000
+2026-07-08 03:12:47 [INFO] Step 1050/5000 | Loss: 0.8990 | LR: 0.000093 | Elapsed: 3337s | ETA: 12554s
+2026-07-08 03:15:13 [INFO] Step 1100/5000 | Loss: 1.0279 | LR: 0.000092 | Elapsed: 3483s | ETA: 12349s
+2026-07-08 03:17:42 [INFO] Step 1150/5000 | Loss: 0.9614 | LR: 0.000092 | Elapsed: 3632s | ETA: 12159s
+2026-07-08 03:20:09 [INFO] Step 1200/5000 | Loss: 1.0249 | LR: 0.000091 | Elapsed: 3779s | ETA: 11967s
+2026-07-08 03:22:35 [INFO] Step 1250/5000 | Loss: 1.0146 | LR: 0.000090 | Elapsed: 3924s | ETA: 11773s
+2026-07-08 03:25:00 [INFO] Step 1300/5000 | Loss: 0.9313 | LR: 0.000089 | Elapsed: 4070s | ETA: 11583s
+2026-07-08 03:27:27 [INFO] Step 1350/5000 | Loss: 0.8913 | LR: 0.000088 | Elapsed: 4217s | ETA: 11401s
+2026-07-08 03:29:54 [INFO] Step 1400/5000 | Loss: 0.8377 | LR: 0.000087 | Elapsed: 4364s | ETA: 11222s
+2026-07-08 03:32:20 [INFO] Step 1450/5000 | Loss: 0.9455 | LR: 0.000086 | Elapsed: 4510s | ETA: 11041s
+2026-07-08 03:34:42 [INFO] Step 1500/5000 | Loss: 1.1220 | LR: 0.000085 | Elapsed: 4652s | ETA: 10855s
+2026-07-08 03:34:43 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 03:34:43 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 03:34:43 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 03:34:43 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 03:34:43 [INFO] Checkpoint saved: C:\Users\zairk\cnbe-training1\scripts\..\outputs\cnbe-5k\checkpoint-1500
+2026-07-08 03:37:11 [INFO] Step 1550/5000 | Loss: 0.8682 | LR: 0.000084 | Elapsed: 4801s | ETA: 10687s
+2026-07-08 03:39:38 [INFO] Step 1600/5000 | Loss: 0.9361 | LR: 0.000082 | Elapsed: 4948s | ETA: 10514s
+2026-07-08 03:42:06 [INFO] Step 1650/5000 | Loss: 0.9377 | LR: 0.000081 | Elapsed: 5096s | ETA: 10347s
+2026-07-08 03:44:31 [INFO] Step 1700/5000 | Loss: 1.0271 | LR: 0.000080 | Elapsed: 5240s | ETA: 10173s
+2026-07-08 03:46:57 [INFO] Step 1750/5000 | Loss: 0.8836 | LR: 0.000079 | Elapsed: 5387s | ETA: 10004s
+2026-07-08 03:49:23 [INFO] Step 1800/5000 | Loss: 0.8515 | LR: 0.000078 | Elapsed: 5533s | ETA: 9836s
+2026-07-08 03:51:50 [INFO] Step 1850/5000 | Loss: 1.0060 | LR: 0.000076 | Elapsed: 5680s | ETA: 9671s
+2026-07-08 03:54:14 [INFO] Step 1900/5000 | Loss: 0.8734 | LR: 0.000075 | Elapsed: 5824s | ETA: 9502s
+2026-07-08 03:56:42 [INFO] Step 1950/5000 | Loss: 0.7722 | LR: 0.000074 | Elapsed: 5971s | ETA: 9340s
+2026-07-08 03:59:09 [INFO] Step 2000/5000 | Loss: 0.8962 | LR: 0.000072 | Elapsed: 6118s | ETA: 9178s
+2026-07-08 03:59:09 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 03:59:09 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 03:59:10 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 03:59:10 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 03:59:10 [INFO] Checkpoint saved: C:\Users\zairk\cnbe-training1\scripts\..\outputs\cnbe-5k\checkpoint-2000
+2026-07-08 04:01:37 [INFO] Step 2050/5000 | Loss: 0.9298 | LR: 0.000071 | Elapsed: 6267s | ETA: 9018s
+2026-07-08 04:04:00 [INFO] Step 2100/5000 | Loss: 0.7973 | LR: 0.000069 | Elapsed: 6409s | ETA: 8851s
+2026-07-08 04:06:28 [INFO] Step 2150/5000 | Loss: 0.8655 | LR: 0.000068 | Elapsed: 6558s | ETA: 8693s
+2026-07-08 04:08:56 [INFO] Step 2200/5000 | Loss: 0.9271 | LR: 0.000067 | Elapsed: 6706s | ETA: 8535s
+2026-07-08 04:11:23 [INFO] Step 2250/5000 | Loss: 0.9142 | LR: 0.000065 | Elapsed: 6853s | ETA: 8376s
+2026-07-08 04:13:47 [INFO] Step 2300/5000 | Loss: 0.9705 | LR: 0.000064 | Elapsed: 6997s | ETA: 8214s
+2026-07-08 04:16:15 [INFO] Step 2350/5000 | Loss: 0.8767 | LR: 0.000062 | Elapsed: 7145s | ETA: 8057s
+2026-07-08 04:18:42 [INFO] Step 2400/5000 | Loss: 0.8211 | LR: 0.000061 | Elapsed: 7292s | ETA: 7900s
+2026-07-08 04:21:08 [INFO] Step 2450/5000 | Loss: 0.7897 | LR: 0.000059 | Elapsed: 7438s | ETA: 7742s
+2026-07-08 04:23:35 [INFO] Step 2500/5000 | Loss: 0.8059 | LR: 0.000058 | Elapsed: 7585s | ETA: 7585s
+2026-07-08 04:23:35 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 04:23:35 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 04:23:36 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 04:23:36 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 04:23:36 [INFO] Checkpoint saved: C:\Users\zairk\cnbe-training1\scripts\..\outputs\cnbe-5k\checkpoint-2500
+2026-07-08 04:26:02 [INFO] Step 2550/5000 | Loss: 0.7306 | LR: 0.000056 | Elapsed: 7732s | ETA: 7428s
+2026-07-08 04:28:28 [INFO] Step 2600/5000 | Loss: 1.0519 | LR: 0.000055 | Elapsed: 7878s | ETA: 7272s
+2026-07-08 04:30:56 [INFO] Step 2650/5000 | Loss: 0.7807 | LR: 0.000054 | Elapsed: 8026s | ETA: 7118s
+2026-07-08 04:33:20 [INFO] Step 2700/5000 | Loss: 0.9353 | LR: 0.000052 | Elapsed: 8170s | ETA: 6959s
+2026-07-08 04:35:47 [INFO] Step 2750/5000 | Loss: 0.8833 | LR: 0.000051 | Elapsed: 8317s | ETA: 6805s
+2026-07-08 04:38:14 [INFO] Step 2800/5000 | Loss: 0.7215 | LR: 0.000049 | Elapsed: 8464s | ETA: 6650s
+2026-07-08 04:40:41 [INFO] Step 2850/5000 | Loss: 0.8267 | LR: 0.000048 | Elapsed: 8611s | ETA: 6496s
+2026-07-08 04:43:04 [INFO] Step 2900/5000 | Loss: 0.7694 | LR: 0.000046 | Elapsed: 8754s | ETA: 6339s
+2026-07-08 04:45:31 [INFO] Step 2950/5000 | Loss: 0.7563 | LR: 0.000045 | Elapsed: 8901s | ETA: 6185s
+2026-07-08 04:47:57 [INFO] Step 3000/5000 | Loss: 0.8090 | LR: 0.000043 | Elapsed: 9047s | ETA: 6031s
+2026-07-08 04:47:58 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 04:47:58 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 04:47:58 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 04:47:58 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 04:47:58 [INFO] Checkpoint saved: C:\Users\zairk\cnbe-training1\scripts\..\outputs\cnbe-5k\checkpoint-3000
+2026-07-08 04:50:24 [INFO] Step 3050/5000 | Loss: 0.8658 | LR: 0.000042 | Elapsed: 9194s | ETA: 5878s
+2026-07-08 04:52:47 [INFO] Step 3100/5000 | Loss: 0.7881 | LR: 0.000041 | Elapsed: 9337s | ETA: 5723s
+2026-07-08 04:55:14 [INFO] Step 3150/5000 | Loss: 0.8021 | LR: 0.000039 | Elapsed: 9484s | ETA: 5570s
+2026-07-08 04:57:41 [INFO] Step 3200/5000 | Loss: 0.8281 | LR: 0.000038 | Elapsed: 9631s | ETA: 5417s
+2026-07-08 05:00:07 [INFO] Step 3250/5000 | Loss: 0.7692 | LR: 0.000036 | Elapsed: 9777s | ETA: 5264s
+2026-07-08 05:02:31 [INFO] Step 3300/5000 | Loss: 0.7715 | LR: 0.000035 | Elapsed: 9921s | ETA: 5111s
+2026-07-08 05:04:56 [INFO] Step 3350/5000 | Loss: 0.7149 | LR: 0.000034 | Elapsed: 10066s | ETA: 4958s
+2026-07-08 05:07:24 [INFO] Step 3400/5000 | Loss: 0.8523 | LR: 0.000033 | Elapsed: 10213s | ETA: 4806s
+2026-07-08 05:09:50 [INFO] Step 3450/5000 | Loss: 0.8011 | LR: 0.000031 | Elapsed: 10360s | ETA: 4655s
+2026-07-08 05:12:15 [INFO] Step 3500/5000 | Loss: 0.8540 | LR: 0.000030 | Elapsed: 10505s | ETA: 4502s
+2026-07-08 05:12:16 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 05:12:16 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 05:12:16 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 05:12:17 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 05:12:17 [INFO] Checkpoint saved: C:\Users\zairk\cnbe-training1\scripts\..\outputs\cnbe-5k\checkpoint-3500
+2026-07-08 05:14:40 [INFO] Step 3550/5000 | Loss: 0.8244 | LR: 0.000029 | Elapsed: 10650s | ETA: 4350s
+2026-07-08 05:17:06 [INFO] Step 3600/5000 | Loss: 0.7886 | LR: 0.000028 | Elapsed: 10796s | ETA: 4199s
+2026-07-08 05:19:31 [INFO] Step 3650/5000 | Loss: 0.8855 | LR: 0.000026 | Elapsed: 10941s | ETA: 4047s
+2026-07-08 05:21:58 [INFO] Step 3700/5000 | Loss: 0.7788 | LR: 0.000025 | Elapsed: 11088s | ETA: 3896s
+2026-07-08 05:24:21 [INFO] Step 3750/5000 | Loss: 0.6773 | LR: 0.000024 | Elapsed: 11230s | ETA: 3743s
+2026-07-08 05:26:48 [INFO] Step 3800/5000 | Loss: 0.7183 | LR: 0.000023 | Elapsed: 11378s | ETA: 3593s
+2026-07-08 05:29:15 [INFO] Step 3850/5000 | Loss: 0.7324 | LR: 0.000022 | Elapsed: 11525s | ETA: 3443s
+2026-07-08 05:31:41 [INFO] Step 3900/5000 | Loss: 0.8000 | LR: 0.000021 | Elapsed: 11671s | ETA: 3292s
+2026-07-08 05:34:04 [INFO] Step 3950/5000 | Loss: 1.0707 | LR: 0.000020 | Elapsed: 11814s | ETA: 3140s
+2026-07-08 05:36:29 [INFO] Step 4000/5000 | Loss: 0.7278 | LR: 0.000019 | Elapsed: 11959s | ETA: 2990s
+2026-07-08 05:36:30 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 05:36:30 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 05:36:30 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 05:36:30 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 05:36:31 [INFO] Checkpoint saved: C:\Users\zairk\cnbe-training1\scripts\..\outputs\cnbe-5k\checkpoint-4000
+2026-07-08 05:38:57 [INFO] Step 4050/5000 | Loss: 0.8612 | LR: 0.000018 | Elapsed: 12106s | ETA: 2840s
+2026-07-08 05:41:22 [INFO] Step 4100/5000 | Loss: 0.8709 | LR: 0.000018 | Elapsed: 12252s | ETA: 2689s
+2026-07-08 05:43:46 [INFO] Step 4150/5000 | Loss: 0.7557 | LR: 0.000017 | Elapsed: 12396s | ETA: 2539s
+2026-07-08 05:46:12 [INFO] Step 4200/5000 | Loss: 0.7855 | LR: 0.000016 | Elapsed: 12542s | ETA: 2389s
+2026-07-08 05:48:38 [INFO] Step 4250/5000 | Loss: 0.9526 | LR: 0.000015 | Elapsed: 12687s | ETA: 2239s
+2026-07-08 05:51:05 [INFO] Step 4300/5000 | Loss: 0.7059 | LR: 0.000015 | Elapsed: 12835s | ETA: 2089s
+2026-07-08 05:53:29 [INFO] Step 4350/5000 | Loss: 0.7365 | LR: 0.000014 | Elapsed: 12979s | ETA: 1939s
+2026-07-08 05:55:54 [INFO] Step 4400/5000 | Loss: 0.7476 | LR: 0.000013 | Elapsed: 13124s | ETA: 1790s
+2026-07-08 05:58:20 [INFO] Step 4450/5000 | Loss: 0.8612 | LR: 0.000013 | Elapsed: 13270s | ETA: 1640s
+2026-07-08 06:00:46 [INFO] Step 4500/5000 | Loss: 0.8072 | LR: 0.000012 | Elapsed: 13416s | ETA: 1491s
+2026-07-08 06:00:47 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 06:00:47 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 06:00:48 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 06:00:48 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 06:00:48 [INFO] Checkpoint saved: C:\Users\zairk\cnbe-training1\scripts\..\outputs\cnbe-5k\checkpoint-4500
+2026-07-08 06:03:15 [INFO] Step 4550/5000 | Loss: 0.7711 | LR: 0.000012 | Elapsed: 13565s | ETA: 1342s
+2026-07-08 06:05:39 [INFO] Step 4600/5000 | Loss: 0.7900 | LR: 0.000012 | Elapsed: 13709s | ETA: 1192s
+2026-07-08 06:08:07 [INFO] Step 4650/5000 | Loss: 0.7206 | LR: 0.000011 | Elapsed: 13857s | ETA: 1043s
+2026-07-08 06:10:35 [INFO] Step 4700/5000 | Loss: 0.7294 | LR: 0.000011 | Elapsed: 14005s | ETA: 894s
+2026-07-08 06:13:02 [INFO] Step 4750/5000 | Loss: 0.7424 | LR: 0.000011 | Elapsed: 14152s | ETA: 745s
+2026-07-08 06:15:26 [INFO] Step 4800/5000 | Loss: 0.6814 | LR: 0.000010 | Elapsed: 14296s | ETA: 596s
+2026-07-08 06:17:56 [INFO] Step 4850/5000 | Loss: 0.7297 | LR: 0.000010 | Elapsed: 14446s | ETA: 447s
+2026-07-08 06:20:29 [INFO] Step 4900/5000 | Loss: 0.7678 | LR: 0.000010 | Elapsed: 14599s | ETA: 298s
+2026-07-08 06:22:59 [INFO] Step 4950/5000 | Loss: 0.8013 | LR: 0.000010 | Elapsed: 14749s | ETA: 149s
+2026-07-08 06:25:28 [INFO] Step 5000/5000 | Loss: 0.7218 | LR: 0.000010 | Elapsed: 14898s | ETA: 0s
+2026-07-08 06:25:28 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 06:25:29 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 06:25:29 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 06:25:29 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 06:25:29 [INFO] Checkpoint saved: C:\Users\zairk\cnbe-training1\scripts\..\outputs\cnbe-5k\checkpoint-5000
+2026-07-08 06:25:29 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 06:25:30 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 06:25:30 [INFO] HTTP Request: HEAD https://hf-mirror.com/Qwen/Qwen3.5-0.8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-08 06:25:30 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3.5-0.8B/2fc06364715b967f1860aea9cf38778875588b17/config.json "HTTP/1.1 200 OK"
+2026-07-08 06:25:30 [INFO] ============================================================
+2026-07-08 06:25:30 [INFO] Training complete! Steps: 5000 | Time: 14900s (248.3m)
+2026-07-08 06:25:30 [INFO] Final loss: 0.7616
+2026-07-08 06:25:30 [INFO] Model saved to: C:\Users\zairk\cnbe-training1\scripts\..\outputs\cnbe-5k
