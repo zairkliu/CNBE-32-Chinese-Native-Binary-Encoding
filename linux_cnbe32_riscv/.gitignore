@@ -1,0 +1,24 @@
+﻿# Build outputs
+output/
+*.o
+*.elf
+*.bin
+*.map
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE / OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Temp
+*.bak
+*.new
+*.old

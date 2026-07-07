@@ -1,4 +1,4 @@
-# CNBE-32
+﻿# CNBE-32
 
 **Chinese Native Binary Encoding**
 
@@ -263,6 +263,16 @@ Why do 8B+ large models show diminishing returns (~0%) from CNBE, while 0.8B sma
 - **Small Model Structural Priors**: On compute-constrained edge devices, CNBE transforms glyph structure directly into computational priors
 
 This is the breakthrough path for edge-side AI processing of Chinese.
+
+> ## Key Insights II: AI Agent Full-Stack OS Translation
+>
+> — Porting Linux 0.01 from x86 to RISC-V + CNBE-32 by GPT-5/Codex Agent
+>
+> - **The agent wrote genuinely complex systems-level code**: 49 C files, 6 assembly files, 36 headers — including a complete CNBE-32 runtime, Chinese BASIC interpreter (1748 lines, 16 keywords) and a Chinese bytecode compiler (1315 lines, 27 instructions). The code is substantive and structurally complete.
+> - **But the agent does not test its own code**: 9 blocking architectural issues were found (encoding corruption, Sv32/Sv39 page table mismatch, wrong instruction width, unimplemented trap handlers, etc.). The code cannot compile without human review.
+> - **A 'fully Chinese OS' is both within reach and far away**: The proof of concept exists, but making the code actually run on QEMU still requires deep human engineer involvement.
+>
+> This is the first complete attempt by an AI Agent at systems-level software translation — demonstrating capability boundaries while also revealing current limitations. Full analysis → [linux_cnbe32_riscv/WHITEPAPER.md](./linux_cnbe32_riscv/WHITEPAPER.md)
 
 ---
 
