@@ -19,12 +19,11 @@ A structured 32-bit encoding for 97,686 CJK characters that embeds radical, stro
   <a href="#key-experiments"><strong>[ Key Experiments ]</strong></a>
   <a href="#tech-stack"><strong>[ Tech Stack ]</strong></a>
   <a href="#how-to-contribute"><strong>[ How to Contribute ]</strong></a>
-  <a href="README_ZH.md"><strong>[ 中文 ]</strong></a>  <a href="README_EN.md"><strong>[ English ]</strong></a>
 </p>
 
 ---
 
-## <span id="architecture-panorama">Architecture Panorama</span>
+## Architecture Panorama
 
 ```mermaid
 graph TD
@@ -37,7 +36,7 @@ graph TD
 
 ---
 
-## <span id="vision--mission">Vision & Mission</span>
+## Vision & Mission
 
 Inspired by the **Digital China 2035** strategy, CNBE-32's goal is:
 
@@ -69,7 +68,7 @@ This is a mature system with a complete closed-loop, but as an early-stage explo
 
 ---
 
-## <span id="code-quick-look">Code Quick Look</span>
+## Code Quick Look
 
 **Core Idea: Transform Chinese characters into 32-bit integers containing radical, stroke count, and structure type — letting the machine "see" the glyph directly.**
 
@@ -101,7 +100,7 @@ Bit: 31              24 23    19 18    15 14              4  3     0
 
 ---
 
-## <span id="why-cnbe">Why CNBE?</span>
+## Why CNBE?
 
 | Dimension | Unicode / UTF-8 | CNBE-32 |
 |-----------|-----------------|---------|
@@ -114,7 +113,7 @@ Bit: 31              24 23    19 18    15 14              4  3     0
 
 ---
 
-## <span id="jepa-exploration">JEPA Exploration</span>
+## JEPA Exploration
 
 CNBE is not a patch for today's Transformers, but foundational infrastructure for tomorrow's JEPA.
 
@@ -128,7 +127,7 @@ Completed JEPA validations: v9 tree structure prediction + v10 cross-9-domain ge
 
 ---
 
-## <span id="cognitive-equity">Cognitive Equity</span>
+## Cognitive Equity
 
 The underlying logic of modern computers (from instruction sets to OS kernels) is built entirely on English/Latin alphabets. This creates a cognitive barrier for non-native English speakers who must first translate their thoughts before performing low-level development.
 
@@ -152,7 +151,7 @@ The ultimate significance of CNBE-32 is to enable Chinese speakers to define und
 
 ---
 
-## <span id="key-experiments">Key Experiments</span>
+## Key Experiments
 
 ### Small Model, Big Improvement (v2)
 
@@ -256,64 +255,7 @@ Complete experimental data → [docs/EXPERIMENTS.md](docs/EXPERIMENTS.md)
 
 ---
 
-<details>
-<summary><b>Click to expand v1-v10.8 complete experiment data</b></summary>
-
-### Table 1: CNBE-32 Core Experiment Overview (v1~v10)
-
-| Version | Dimension | Model / Platform | Key Metric | Key Conclusion |
-| :---: | :--- | :--- | :--- | :--- |
-| **v1** | Zero-shot char understanding | Qwen 0.8B | 200 chars, **100%** effective | Encoding inherently semantically interpretable |
-| **v2** | Small model sentence understanding | Qwen 0.8B | 48% **→ 87%** (**+81%**) | Structured encoding compensates small models significantly |
-| **v3** | Annotation format optimization | Qwen 0.8B | Full char annotation **87%** effective | Optimal format: per-character annotation |
-| **v4** | Long text (paper-level) | Qwen 0.8B | 90.9% **→ 100%** | Effective in long-context scenarios |
-| **v5** | Multi-model comparison | 7 models | <1B: +81%; 1-7B: +9~17%; >7B: ~0% | **Diminishing returns law** |
-| **v6** | Unicode hard task comparison | Gemma 4B | Unicode 26.1% **vs** **CNBE 43.5%** | **CNBE > Unicode** (+17.4pp) |
-| **v7** | RISC-V hardware implementation | C/QEMU/Spike/FPGA | x86 0.8ns → FPGA **1 Cycle** | Complete hardware path closed-loop |
-| **v8** | Full Chinese OS | RISC-V QEMU | Chinese Shell + BASIC + Dao De Jing | Encoding integrates seamlessly into OS |
-| **v9** | JEPA tree structure prediction | JEPA architecture | Error **0.0899 → 0.000001** | Powerful feature extraction for noisy data |
-| **v10** | Cross 9-domain generalization | Multi-domain models | Math wins, typhoon error **-19%** | Effective in math/physics/biology/finance |
-
----
-
-### Table 2: Detailed Experiment Data (v1~v10)
-
-| Version | Sub-task | Environment | Specific Metric | Conclusion |
-| :---: | :--- | :--- | :--- | :--- |
-| **v1** | Char radical/stroke/structure extraction | Qwen 0.8B | 200 chars, **100%** zero-shot | Encoding space = semantic space |
-| **v2** | Chinese sentence understanding | Qwen 0.8B | Text 48% → CNBE **87%** | +39pp absolute improvement |
-| **v3** | Encoding format ablation | Qwen 0.8B | Per-char 87% > segment 60% > compact 50% | Optimal: full per-char annotation |
-| **v4** | Paper-level semantic understanding | Qwen 0.8B | 90.9% → **100%** | Fills small model long-context gap |
-| **v6.5.2** | CNBE vs Unicode | Gemma 4B | Unicode 26.1% **vs** CNBE **43.5%** | Surpassed 30-year standard first try |
-| **v7.1.1** | Custom instruction integration | Spike | map(2 cycles)/extract(1)/cmp(3) | Three Custom-0 instructions verified |
-| **v7.2** | FPGA logic synthesis | Verilog+BRAM | **Single cycle** lookup | 81.6KB table fits BRAM |
-| **v8.4** | Full Chinese system | RISC-V QEMU | Shell + BASIC 7 keywords + Dao De Jing | Chinese computing feasibility proven |
-| **v9.0** | Tree growth JEPA | JEPA | CNBE **86%** better than Raw | Structured encoding boosts abstraction |
-| **v9.1** | Typhoon lifecycle JEPA | JEPA | 0.089981 → **0.000001** | Error reduced 4 orders of magnitude |
-| **v10.3** | Typhoon Barijat path | Meteorological model | 216 km → **174 km** | Path prediction accuracy +19% |
-| **v10.4** | Protein Q3 structure | Bioinformatics | OH 44.6% vs CNBE 41.0% | Slightly below OH, room for improvement |
-| **v10.5** | Black hole gravity simulation | Physics simulation | R² **0.60-0.77** | Physical field simulation performs well |
-| **v10.7** | TinyGPT frozen embedding | TinyGPT | Learned 1.3653 vs CNBE 1.4568 | Close to learned as frozen embedding |
-| **v10.8** | Math reasoning base | TinyGPT | Parity/Prime/Seq CNBE wins all | Comprehensive win over One-Hot |
-
----
-
-### Table 3: Evidence Chain Logic Closure
-
-| Phase | Version | Role |
-| :--- | :--- | :--- |
-| **Semantic validity** | v1~v4 | Proves encoding contains semantics |
-| **Comparative superiority** | v5~v6 | Proves encoding > Unicode |
-| **Hardware feasibility** | v7 | Proves software-to-FPGA path |
-| **System-level compatibility** | v8 | Proves encoding supports full OS ecosystem |
-| **Cross-domain generalization** | v9~v10 | Proves effective across multiple domains |
-</details>
-
-Full experiment data → [docs/EXPERIMENTS.md](docs/EXPERIMENTS.md)
-
----
-
-## <span id="key-insights-large-models-vs-small-models">Key Insights: Large Models vs Small Models</span>
+## Key Insights: Large Models vs Small Models
 
 Why do 8B+ large models show diminishing returns (~0%) from CNBE, while 0.8B small models achieve massive +81% improvement?
 
@@ -324,7 +266,7 @@ This is the breakthrough path for edge-side AI processing of Chinese.
 
 ---
 
-## <span id="experimental-limitations--future-directions">Experimental Limitations & Future Directions</span>
+## Experimental Limitations & Future Directions
 
 > **We have faithfully documented failures and limitations in all experiments. The following are known boundaries disclosed directly in this README.**
 
@@ -353,7 +295,7 @@ This is the breakthrough path for edge-side AI processing of Chinese.
 
 ---
 
-## <span id="tech-stack">Tech Stack</span>
+## Tech Stack
 
 ```
 Application Layer: Chinese BASIC interpreter + Text Editor + Tao Te Ching
@@ -365,7 +307,7 @@ Encoding Layer: 32-bit CJK Structured Bit Fields (Radical/Stroke/Structure)
 
 ---
 
-## <span id="ai-agent-driven--ai-factory">AI Agent Driven / AI Factory</span>
+## AI Agent Driven / AI Factory
 
 This is a project that was previously impossible to complete, but is destined to be born in the AI era.
 
@@ -379,7 +321,7 @@ The dreams of scientists from the last century finally have a chance to be reali
 
 ---
 
-## <span id="quick-start">Quick Start</span>
+## Quick Start
 
 ### Environment Requirements
 - Python 3.8+
@@ -428,7 +370,7 @@ cd v10_3_typhoon && python v10_3_typhoon.py
 
 ---
 
-## <span id="project-structure">Project Structure</span>
+## Project Structure
 
 ```
 CNBE-32-Chinese-Native-Binary-Encoding/
@@ -451,7 +393,7 @@ CNBE-32-Chinese-Native-Binary-Encoding/
 
 ---
 
-## <span id="roadmap">Roadmap</span>
+## Roadmap
 
 | Phase | Status | Content |
 |-------|--------|---------|
@@ -464,7 +406,7 @@ CNBE-32-Chinese-Native-Binary-Encoding/
 
 ---
 
-## <span id="how-to-contribute">How to Contribute</span>
+## How to Contribute
 
 ### Current Directions Most Needing Community Support
 
@@ -482,13 +424,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details
 
 ---
 
-## <span id="disclaimer">Disclaimer</span>
+## Disclaimer
 
 v10.x stage financial time series (US stocks / A-shares) backtesting is solely for validating CNBE-32's feature extraction and structured prior capabilities in high-noise, non-stationary time series data, and does not constitute any investment advice.
 
 ---
 
-## <span id="license">License</span>
+## License
 
 **Mulan Permissive Software License v2 (Mulan PSL v2)**
 
