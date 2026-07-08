@@ -138,7 +138,9 @@ CNBE-32 is **not** a "Chinese-localized" or "character-replacement" version of B
 | Machine Cognition | Identifies the character | Understands structural composition |
 | AI Compatibility | Learns from data | Provides structural priors |
 
-**10 cross-domain validations passed (incl. LLM LoRA training)**: Linguistics, Ecology, Meteorology, Finance, Biology, Physics, Sociology, Pre-training, Mathematics
+**10 cross-domain validations passed (incl. LLM LoRA training)
+
+> *Note: Experimental accuracy metrics (e.g., "100%" in v1/v4) refer to model task performance on specific controlled test sets, not absolute encoding capability. See individual whitepapers for methodology.***: Linguistics, Ecology, Meteorology, Finance, Biology, Physics, Sociology, Pre-training, Mathematics
 
 ---
 
@@ -160,9 +162,9 @@ Completed JEPA validations: v9 tree structure prediction + v10 cross-9-domain ge
 
 The underlying logic of modern computers (from instruction sets to OS kernels) is built entirely on English/Latin alphabets. This creates a cognitive barrier for non-native English speakers who must first translate their thoughts before performing low-level development.
 
-The ultimate significance of CNBE-32 is to enable Chinese speakers to define underlying logic directly through their native linguistic thinking, breaking down professional vocabulary barriers and achieving true technological cognitive equity.
+One exploratory direction of CNBE-32 is to help Chinese speakers engage with underlying technical concepts through their native linguistic thinking, potentially reducing language-related barriers. Note that encoding addresses the symbol-level cognitive layer; understanding underlying computer science concepts (memory management, interrupts, compilation principles) remains a cross-language cognitive challenge.
 
-> **In the AI era, every Chinese user — regardless of age, education level, or professional background — should be able to engage in deep dialogue with AI, define rules, and even write underlying logic using their native language.**
+> **In the AI era, Chinese-speaking users can explore participating in technical discussions and low-level development through their native language, potentially reducing entry barriers caused by documentation language differences.**
 
 ### Core Performance Overview
 
@@ -236,7 +238,7 @@ The ultimate significance of CNBE-32 is to enable Chinese speakers to define und
 | **v4** | Long text (paper-level) | Qwen 0.8B | 90.9% **→ 100%** | Effective in long-text scenarios, eliminates ambiguity |
 | **v5** | Multi-model horizontal comparison | 7 models | <1B: +81%; 1-7B: +9~17%; >7B: ~0% | **Diminishing marginal returns** |
 | **v6** | Unicode hard task comparison | Gemma 4B | Unicode 26.1% **vs** **CNBE 43.5%** | **CNBE > Unicode** (+17.4 pp) |
-| **v7** | RISC-V hardware implementation | C / QEMU / Spike / FPGA | x86 0.8 ns → FPGA **1 Cycle** | Complete hardware path closed-loop |
+| **v7** | RISC-V hardware implementation | C / QEMU / Spike / FPGA | x86 0.8 ns → FPGA **1 Cycle** | RTL simulation verified; board-level testing pending |
 | **v8** | Full Chinese operating system | RISC-V QEMU | Chinese Shell + BASIC + Tao Te Ching editor | Encoding can seamlessly integrate into OS underlying layer |
 | **v9** | JEPA tree structure prediction | JEPA architecture | Error **0.0899 → 0.000001** | Extremely strong high-noise temporal feature extraction |
 | **v10** | Cross-9-domain generalization | Multi-domain | Mathematics wins; typhoon error **−19%** | Effective across mathematics/physics/biology/finance and other domains |
@@ -291,7 +293,7 @@ The ultimate significance of CNBE-32 is to enable Chinese speakers to define und
 | **v7.0.1** | RISC-V cross-compilation | QEMU | Single lookup ~2.5 ns | RISC-V portability verified |
 | **v7.1** | Custom instruction design | Spike/RISC-V | Instruction semantics | Instruction encoding defined |
 | **v7.1.1** | Spike custom instruction integration | Spike | map(2)/extract(1)/cmp(3) cycles | 3 Custom-0 instructions verified |
-| **v7.2** | FPGA logic synthesis | Verilog + BRAM | **Single cycle** lookup | 81.6KB table fits BRAM |
+| **v7.2** | FPGA pre-synthesis simulation | Verilog + BRAM | **Single cycle** lookup | 81.6KB table fits BRAM (pre-synthesis estimate) |
 | **v7.3** | Hardware encoding + feature co-validation | ML classifiers | 2/3 hard tasks win | Feature space validated |
 | **v8.0** | Chinese programming mapping | RISC-V compiler | test_loop=34 insns | Chinese to RISC-V mapping |
 | **v8.1** | Complete compiler + Skill table | Spike integration | test_struct=48 insns | Full compiler + runtime |
