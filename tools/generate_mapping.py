@@ -1,4 +1,7 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
+import sys, io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8")
 """Generate CNBE-32 binary mapping table from CJK Unicode range"""
 import numpy as np, os, json
 
@@ -23,3 +26,4 @@ def generate_skill_table(output_format="bin"):
 
 if __name__ == "__main__":
     generate_skill_table()
+
