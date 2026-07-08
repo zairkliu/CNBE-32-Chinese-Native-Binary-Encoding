@@ -4,7 +4,7 @@ requires = ["setuptools>=68.0"]
 
 [project]
 name = "cnbe32"
- version = "1.0.0"
+ version = "1.0.1"
  description = "CNBE-32: Chinese Native Binary Encoding — Structured 32-bit CJK encoding for AI and hardware"
 readme = "README.md"
  authors = [
