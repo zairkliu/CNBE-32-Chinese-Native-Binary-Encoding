@@ -1,4 +1,4 @@
-# CNBE-32
+﻿# CNBE-32
 
 **中文原生二进制编码**
 
@@ -332,7 +332,7 @@ CNBE-32 的终极意义在于让中文使用者能够直接用母语思维定义
 > - **边缘部署验证**：首次将 CNBE-32 从「推理层面的语义验证」推进至「训练层面的知识注入」
 > - **完整跨领域闭环**：从语言学到金融到物理到生物到 LLM 训练，CNBE 的结构化编码思想在编码、硬件、OS、跨领域预测、模型微调的全链路上得到验证
 >
-> 完整方法 → [cnbe-llm training(demo)/](./cnbe-llm%20training(demo)/)
+> 完整方法 → [cnbe-llm training(demo)/](<./cnbe-llm training(demo)/>)
 
 
 ---
@@ -540,3 +540,4 @@ v10.x 阶段的金融时间序列（美股/A 股）回测，仅用于验证 CNBE
 **为中文 AI 生态而生——从编码到硬件，从单字到操作系统。**
 
 [GitHub](https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding)
+

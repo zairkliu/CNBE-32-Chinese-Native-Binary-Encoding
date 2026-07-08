@@ -310,7 +310,7 @@ This is the breakthrough path for edge-side AI processing of Chinese.
 > - **Edge deployment validated**: For the first time, CNBE-32 advances from inference-level semantic validation to training-level knowledge injection
 > - **Complete cross-domain chain**: From linguistics to finance to physics to biology to LLM training, CNBE's structured encoding is validated across encoding, hardware, OS, cross-domain prediction, and model fine-tuning
 >
-> Full methodology → [cnbe-llm training(demo)/](./cnbe-llm%20training(demo)/)
+> Full methodology → [cnbe-llm training(demo)/](<./cnbe-llm training(demo)/>)
 
 
 
@@ -514,5 +514,6 @@ From the "Digital China 2035" vision to AI Agent era engineering practice.
 **Born for Chinese AI ecosystem — from encoding to hardware, from single character to operating system.**
 
 [GitHub](https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding)
+
 
 
