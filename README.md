@@ -2,11 +2,12 @@
 
 **Chinese Native Binary Encoding**
 
-A 32-bit encoding that embeds the structural semantics of Chinese characters (radical, stroke count, and structure type) directly into binary, enabling CPUs and AI to natively understand Chinese.
+A 32-bit encoding that embeds the structural semantics of Chinese characters (radical, stroke count, and structure type) directly into binary, exploring how CPUs and AI can natively understand Chinese.
 
 A structured 32-bit encoding for 97,686 CJK characters that embeds radical, stroke count, and structure type directly into the encoding space.
 
 <p align="center">
+  <a href="docs/VISION.md"><img src="https://img.shields.io/badge/Status-Research%20Prototype-yellow?style=for-the-badge" alt="Research Prototype"></a>
   <a href="https://pypi.org/project/cnbe32/"><img src="https://img.shields.io/pypi/v/cnbe32?style=for-the-badge&label=PyPI" alt="PyPI"></a>
   <a href="docs/specification/bit-layout.md"><img src="https://img.shields.io/badge/Encoding-32--bit%20CNBE-blue?style=for-the-badge" alt="Encoding"></a>
   <a href="docs/specification/riscv-instructions.md"><img src="https://img.shields.io/badge/ISA-RISC--V%20Custom-green?style=for-the-badge" alt="ISA"></a>
@@ -48,7 +49,7 @@ Inspired by the **Digital China 2035** strategy, CNBE-32's goal is:
 
 > **To let every Chinese speaker seamlessly enter the AI era through their native language.**
 
-This is a mature system with a complete closed-loop, but as an early-stage exploration in the field of native Chinese computing, it remains in an open research phase. In the AI Agent era, the dreams of previous generations of scientists about full-Chinese computer systems finally have a chance to be realized.
+This is an experimental research prototype with a validated technical concept. As an early-stage exploration in the field of native Chinese computing, it remains in an open research phase. In the AI Agent era, the dreams of previous generations of scientists about full-Chinese computer systems finally have a chance to be realized.
 
 ---
 

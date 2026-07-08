@@ -2,11 +2,12 @@
 
 **中文原生二进制编码**
 
-一种将汉字语义结构（部首、笔画数、结构类型）直接嵌入 32 位二进制的编码方案，让 CPU 和 AI 模型「原生」理解中文。
+一种将汉字语义结构（部首、笔画数、结构类型）嵌入 32 位二进制的编码研究原型，探索 CPU 和 AI 模型「原生」理解中文的路径。
 
 为 97,686 个 CJK 统一表意文字设计的结构化 32 位编码，将部首、笔画数和结构类型直接嵌入编码空间。
 
 <p align="center">
+  <a href="docs/VISION.md"><img src="https://img.shields.io/badge/Status-Research%20Prototype-yellow?style=for-the-badge" alt="研究原型"></a>
   <a href="https://pypi.org/project/cnbe32/"><img src="https://img.shields.io/pypi/v/cnbe32?style=for-the-badge&label=PyPI" alt="PyPI"></a>
   <a href="docs/specification/bit-layout.md"><img src="https://img.shields.io/badge/Encoding-32--bit%20CNBE-blue?style=for-the-badge" alt="Encoding"></a>
   <a href="docs/specification/riscv-instructions.md"><img src="https://img.shields.io/badge/ISA-RISC--V%20Custom-green?style=for-the-badge" alt="ISA"></a>
@@ -49,7 +50,7 @@ graph TD
 
 > **让每个中文使用者通过母语无缝进入 AI 时代。**
 
-这是一个成熟完善的系统，拥有完整闭环，但作为中文原生计算领域的早期探索，仍处于开放研究阶段。在 AI Agent 时代，前几代科学家关于全中文计算机系统的梦想终于有机会实现。
+这是一个探索性的研究原型，拥有验证过的技术概念。作为中文原生计算领域的早期探索，仍处于开放研究阶段。在 AI Agent 时代，前几代科学家关于全中文计算机系统的梦想终于有机会实现。
 
 ---
 
