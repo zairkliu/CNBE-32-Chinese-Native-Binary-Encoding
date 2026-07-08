@@ -301,27 +301,56 @@ Complete experimental data → [docs/EXPERIMENTS.md](docs/EXPERIMENTS.md)
 
 ---
 
-### Table 2: Detailed Experiment Data (v1~v10)
+### Table 2: Complete Experiment Data (v1~v10)
 
 | Version | Sub-task | Environment | Specific Metric | Conclusion |
 | :---: | :--- | :--- | :--- | :--- |
-| **v1** | Char radical/stroke/structure extraction | Qwen 0.8B | 200 chars, **100%** zero-shot | Encoding space = semantic space |
-| **v2** | Chinese sentence understanding | Qwen 0.8B | Text 48% → CNBE **87%** | +39pp absolute improvement |
+| **v1** | Zero-shot single char understanding | Qwen 0.8B | 200 chars, **100%** effective | Encoding space = semantic space |
+| **v2** | Chinese sentence understanding | Qwen 0.8B | 48% to **87%** (+39pp) | CNBE compensates small models |
 | **v3** | Encoding format ablation | Qwen 0.8B | Per-char 87% > segment 60% > compact 50% | Optimal: full per-char annotation |
-| **v4** | Paper-level semantic understanding | Qwen 0.8B | 90.9% → **100%** | Fills small model long-context gap |
-| **v6.5.2** | CNBE vs Unicode | Gemma 4B | Unicode 26.1% **vs** CNBE **43.5%** | Surpassed 30-year standard first try |
-| **v7.1.1** | Custom instruction integration | Spike | map(2 cycles)/extract(1)/cmp(3) | Three Custom-0 instructions verified |
-| **v7.2** | FPGA logic synthesis | Verilog+BRAM | **Single cycle** lookup | 81.6KB table fits BRAM |
-| **v8.4** | Full Chinese system | RISC-V QEMU | Shell + BASIC 7 keywords + Dao De Jing | Chinese computing feasibility proven |
-| **v9.0** | Tree growth JEPA | JEPA | CNBE **86%** better than Raw | Structured encoding boosts abstraction |
-| **v9.1** | Typhoon lifecycle JEPA | JEPA | 0.089981 → **0.000001** | Error reduced 4 orders of magnitude |
-| **v10.3** | Typhoon Barijat path | Meteorological model | 216 km → **174 km** | Path prediction accuracy +19% |
-| **v10.4** | Protein Q3 structure | Bioinformatics | OH 44.6% vs CNBE 41.0% | Slightly below OH, room for improvement |
-| **v10.5** | Black hole gravity simulation | Physics simulation | R² **0.60-0.77** | Physical field simulation performs well |
-| **v10.7** | TinyGPT frozen embedding | TinyGPT | Learned 1.3653 vs CNBE 1.4568 | Close to learned as frozen embedding |
-| **v10.8** | Math reasoning base | TinyGPT | Parity/Prime/Seq CNBE wins all | Comprehensive win over One-Hot |
-
----
+| **v4** | Paper-level semantic (On Protracted War) | Qwen 0.8B | 91% to **100%** | Fills small model long-context gap |
+| **v5.0** | Chaotic text intent classification | DeepSeek R1 | DeepSeek 8B vs CNBE | Intent classification baseline |
+| **v5.5** | 3-model comparison | Qwen/Gemma/DeepSeek | CNBE benefit: +0-81% by size | Diminishing returns confirmed |
+| **v5.6** | Mixed model full comparison | 7 Chinese/EN models | Full cross-model sweep | Size-benefit curve mapped |
+| **v5.7** | Qwen family comparison | Qwen 0.8B/1.5B/3B/7B | Family-internal scaling | Consistent benefit decay |
+| **v5.8** | Qwen cross-architecture | Qwen 0.8B~72B | Cross-model benefit | CNBE benefit inversely correlated |
+| **v5.9** | 7-model full + domestic vs foreign | 7 models (0.8B~72B) | Full comparison matrix | Domestic models benefit more |
+| **v6.0** | Skill table accelerated lookup | Ollama local | Skill table speedup | Table lookup validation |
+| **v6.1** | Qwen family On Protracted War | Qwen 0.8B/3B/7B | Family-based text understanding | Consistent CNBE benefit |
+| **v6.2** | 6-model On Protracted War | 6 domestic+foreign | Cross-model understanding | CNBE universally beneficial |
+| **v6.3** | Numerical feature validation | Qwen 0.8B | Format ablation | Bare numerical format optimal |
+| **v6.4** | Large-scale numerical features | Qwen 0.8B | Large-format sweep | Format F optimal for hardware |
+| **v6.5** | 6 numerical injection formats | Qwen 0.8B | 6-format comparison | Format F (bare numbers) wins |
+| **v6.5.1** | Daodejing format validation | Qwen 0.8B | Daodejing text test | Format robust on real text |
+| **v6.5.2** | CNBE vs Unicode comparison | Gemma 4B | Unicode 26.1% vs CNBE **43.5%** | Surpassed 30-year standard |
+| **v6.5.3** | Hard task validation | Qwen 0.8B | Hard benchmark | 0.8B model boundary found |
+| **v6.6** | Multi-model hard task comparison | Cross-model | Multi-model hard tasks | CNBE advantage consistent |
+| **v7.0** | C language benchmark | x86-64 | Single lookup **0.8 ns** | Software performance baseline |
+| **v7.0.1** | RISC-V cross-compilation | QEMU | Single lookup ~2.5 ns | RISC-V portability verified |
+| **v7.1** | Custom instruction design | Spike/RISC-V | Instruction semantics | Instruction encoding defined |
+| **v7.1.1** | Spike custom instruction integration | Spike | map(2)/extract(1)/cmp(3) cycles | 3 Custom-0 instructions verified |
+| **v7.2** | FPGA logic synthesis | Verilog + BRAM | **Single cycle** lookup | 81.6KB table fits BRAM |
+| **v7.3** | Hardware encoding + feature co-validation | ML classifiers | 2/3 hard tasks win | Feature space validated |
+| **v8.0** | Chinese programming mapping | RISC-V compiler | test_loop=34 insns | Chinese to RISC-V mapping |
+| **v8.1** | Complete compiler + Skill table | Spike integration | test_struct=48 insns | Full compiler + runtime |
+| **v8.2** | Spike end-to-end verification | Spike/QEMU | All 4 tests pass | End-to-end chain complete |
+| **v8.3** | RISC-V Chinese OS | QEMU | Shell commands verified | OS kernel + BASIC working |
+| **v8.4** | Full Chinese OS | RISC-V QEMU | Shell + BASIC 7 keywords + Daodejing | Chinese computing feasibility |
+| **v8.4.1** | Daodejing text reader/editor | QEMU | 205 lines Daodejing | Text reader + data integration |
+| **v9.0** | Tree growth JEPA | JEPA architecture | Error **0.0899 to 0.000001** | CNBE 86% better than Raw |
+| **v9.1** | Typhoon lifecycle JEPA | JEPA | Error reduced 4 orders | Temporal prediction validated |
+| **v9.2** | 2008 financial crisis | JEPA | CNBE **99%** better than baselines | Financial crisis predicted |
+| **v9.3** | Ablation + S&P500 tick data | JEPA | Component analysis | Feature importance validated |
+| **v9.4** | Cross-period robustness | JEPA | 168 experiments | Robustness across periods |
+| **v10.0** | Backtest + A-share cross-market | Multi-market | CNBE positive returns | Financial encoding validated |
+| **v10.1** | Multi-time-scale backtest | 5min/15min/daily | All scales benefit | Scale-robust encoding |
+| **v10.2** | 6-month cross-period | Multi-market | Positive returns both markets | Temporal robustness |
+| **v10.3** | Typhoon Bavi path prediction | Meteorological model | 216km to **174km** (-19%) | Path prediction improved |
+| **v10.4** | Protein Q3 structure | Bioinformatics | OH 44.6% vs CNBE 41.0% | Close to 30-year domain standard |
+| **v10.5** | Black hole gravity (Gaia BH1) | Physics simulation | R-squared **0.60-0.77** | Physics field simulation |
+| **v10.6** | Social decision center | Sociology model | Compared vs One-Hot | Classification limit found |
+| **v10.7** | Pretraining base (TinyGPT) | TinyGPT | Learned 1.37 vs CNBE 1.46 | Frozen close to learned |
+| **v10.8** | Math reasoning foundation | TinyGPT | Parity/Prime/Seq CNBE wins all | Comprehensive win over One-Hot |
 
 ### Table 3: Evidence Chain Logic Closure
 
