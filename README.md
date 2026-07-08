@@ -132,7 +132,7 @@ CNBE-32 is **not** a "Chinese-localized" or "character-replacement" version of B
 | Machine Cognition | Identifies the character | Understands structural composition |
 | AI Compatibility | Learns from data | Provides structural priors |
 
-**9 cross-domain validations passed**: Linguistics, Ecology, Meteorology, Finance, Biology, Physics, Sociology, Pre-training, Mathematics
+**10 cross-domain validations passed (incl. LLM LoRA training)**: Linguistics, Ecology, Meteorology, Finance, Biology, Physics, Sociology, Pre-training, Mathematics
 
 ---
 
@@ -261,6 +261,8 @@ The ultimate significance of CNBE-32 is to enable Chinese speakers to define und
 | **v10.5** | Black hole gravitational field | Physics simulation | R² **0.60-0.77** | Good performance in physics field simulation |
 | **v10.7** | TinyGPT frozen embedding | TinyGPT | Learned 1.3653 vs CNBE 1.4568 | Frozen embedding performance close to learned embedding |
 | **v10.8** | Mathematical reasoning foundation | TinyGPT | Odd/Even(0.3174<0.3427) Prime(0.3894<0.5061) Sequence(1.07<1.23) | Universally better than One-Hot |
+| **LLM** | CNBE knowledge LoRA fine-tuning | Qwen3.5-0.8B | 5000 steps, loss **0.6424**, 500-steps 0.7524 | Knowledge injection feasible, edge deployment validated |
+
 
 </details>
 
@@ -349,7 +351,7 @@ This is the breakthrough path for edge-side AI processing of Chinese.
 >
 > — Injecting CNBE-32 encoding knowledge into Qwen3.5-0.8B via LoRA
 >
-> - **LoRA knowledge injection works**: 500 steps (22 min) of lightweight fine-tuning successfully injects CNBE-32 encoding knowledge into a 0.8B model, with final loss converging to 0.7524
+> - **LoRA knowledge injection works**: 500 steps (22 min) + 5000 steps (4.14 h) with 25K diverse Chat Template data, loss from 0.7524 → **0.6424** (↓14.6%), augmentation artifacts eliminated
 > - **Model understands encoding concepts**: After fine-tuning, the model recognizes character radicals, stroke counts, and structure types, outputting CNBE-32 encoded information
 > - **Minimal GPU requirements**: RTX 4060 Ti (8GB) handles the entire pipeline, with peak memory usage of only 1.5GB
 > - **Edge deployment validated**: For the first time, CNBE-32 advances from inference-level semantic validation to training-level knowledge injection
@@ -556,6 +558,7 @@ From the "Digital China 2035" vision to AI Agent era engineering practice.
 **Born for Chinese AI ecosystem — from encoding to hardware, from single character to operating system.**
 
 [GitHub](https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding)
+
 
 
 
