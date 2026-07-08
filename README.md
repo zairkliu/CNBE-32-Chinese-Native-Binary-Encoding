@@ -1,4 +1,4 @@
-﻿# CNBE-32
+# CNBE-32
 
 **Chinese Native Binary Encoding**
 
@@ -7,11 +7,12 @@ A 32-bit encoding that embeds the structural semantics of Chinese characters (ra
 A structured 32-bit encoding for 97,686 CJK characters that embeds radical, stroke count, and structure type directly into the encoding space.
 
 <p align="center">
+  <a href="https://pypi.org/project/cnbe32/"><img src="https://img.shields.io/pypi/v/cnbe32?style=for-the-badge&label=PyPI" alt="PyPI"></a>
   <a href="docs/specification/bit-layout.md"><img src="https://img.shields.io/badge/Encoding-32--bit%20CNBE-blue?style=for-the-badge" alt="Encoding"></a>
   <a href="docs/specification/riscv-instructions.md"><img src="https://img.shields.io/badge/ISA-RISC--V%20Custom-green?style=for-the-badge" alt="ISA"></a>
-  <a href="v84_riscv_os_full/"><img src="https://img.shields.io/badge/OS-Full%20Chinese%20Shell-orange?style=for-the-badge" alt="OS"></a>
+  <a href="llm_experiments/v8_hardware_system/v84_riscv_os_full/"><img src="https://img.shields.io/badge/OS-Full%20Chinese%20Shell-orange?style=for-the-badge" alt="OS"></a>
   <a href="docs/VISION.md"><img src="https://img.shields.io/badge/Vision-2035%20Digital%20China-red?style=for-the-badge" alt="Vision"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Mulan%20PSL%20v2-lightgrey?style=for-the-badge" alt="License"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MulanPSL--2.0-lightblue?style=for-the-badge" alt="License"></a>
 </p>
 
 <p align="center">
@@ -423,7 +424,13 @@ The dreams of scientists from the last century finally have a chance to be reali
 - Python 3.8+
 - numpy, torch, scikit-learn (for experiment reproduction)
 
-### Install Python SDK
+### Install from PyPI
+
+```bash
+pip install cnbe32
+```
+
+### Install for Experiment Reproduction
 
 ```bash
 pip install numpy torch scikit-learn
@@ -432,11 +439,10 @@ pip install numpy torch scikit-learn
 ### Usage Example
 
 ```python
-import sys; sys.path.insert(0, 'src')
 from cnbe32 import encode_cnbe, hamming_distance
 
-code_ming = encode_cnbe(72, 8, 1)   # 明 (bright) = 日(sun, 72) + 8 strokes + left-right structure
-code_an  = encode_cnbe(72, 9, 1)   # 暗 (dark) = 日(sun, 72) + 9 strokes + left-right structure
+code_ming = encode_cnbe(72, 8, 1)   # ming (bright) = ri (sun, radix 72) + 8 strokes + left-right
+code_an  = encode_cnbe(72, 9, 1)   # an (dark) = ri (sun, radix 72) + 9 strokes + left-right
 print(hamming_distance(code_ming, code_an))
 ```
 
@@ -453,15 +459,15 @@ gcc -o cnhe_sim cnhe_sim.c -Wall -O2 && ./cnhe_sim
 # Ubuntu dependencies
 sudo apt-get install -y gcc-riscv64-linux-gnu qemu-system-misc
 
-cd v84_riscv_os_full
+cd llm_experiments/v8_hardware_system/v84_riscv_os_full
 make all && make run
 ```
 
 ### Reproduce Experiments
 
 ```bash
-cd v10_8_math_reasoning && python run_v108.py
-cd v10_3_typhoon && python v10_3_typhoon.py
+cd llm_experiments/v10_cross_domain/v10_8_math_reasoning && python run_v108.py
+cd llm_experiments/v10_cross_domain/v10_3_typhoon && python v10_3_typhoon.py
 ```
 
 ---
@@ -487,21 +493,22 @@ CNBE-32 is designed for **AI-era Chinese computing infrastructure**, not as a ge
 
 ```
 CNBE-32-Chinese-Native-Binary-Encoding/
-|-- docs/specification/      # Encoding specification
-|-- docs/EXPERIMENTS.md      # Experiment overview
-|-- docs/VISION.md           # Strategic vision
-|-- src/cnbe32/              # Python SDK
-|-- include/cnbe32.h         # C header file
-|-- data/                    # Encoding database
-|-- tests/                   # Test suite
-|-- tools/                   # Development tools
-|-- bindings/rust/           # Rust bindings
-|-- hardware/                # RISC-V simulator
-|-- v9_jepa_tree/            # JEPA experiments (v9)
-|-- v10_5~v10_8/             # Cross-domain experiments (v10)
-|-- v84_riscv_os_full/       # Chinese OS prototype
-|-- results/                 # White papers (41 documents)
-|-- LICENSE                  # Mulan License
+|-- src/cnbe32/              # Python SDK (v1.0.1, published on PyPI)
+|-- include/cnbe32.h         # C SDK header
+|-- hardware/                # Hardware macros, Spike patches, Verilog
+|-- riscv/                   # RISC-V simulator + v7 instruction definitions
+|-- docs/                    # Encoding specification, architecture, vision
+|-- llm_experiments/         # v1-v10 experiments, grouped by version
+|-- results/                 # All 57 white papers, organized by version
+|-- data/                    # Encoding databases
+|-- tests/                   # Test suite (6 tests, v1.0.1)
+|-- tools/                   # Development tools (table generation, mapping)
+|-- experiments/             # v7.3 hardware co-validation
+|-- bindings/                # Rust bindings
+|-- skill/                   # Codex experiment reproduction skill
+|-- cnbe-llm training(demo)/ # LoRA fine-tuning on Qwen3.5-0.8B
+|-- linux_cnbe32_riscv/      # Agent-translated Linux 0.01
+|-- LICENSE                  # Mulan PSL v2
 ```
 
 ---
