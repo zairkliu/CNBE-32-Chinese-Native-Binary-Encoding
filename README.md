@@ -156,6 +156,8 @@ Yann LeCun's JEPA emphasizes prediction in representation space — and CNBE pro
 
 Completed JEPA validations: v9 tree structure prediction + v10 cross-9-domain generalization
 
+> **Cross-domain applicability**: CNBE performs best on multi-dimensional structured temporal data (meteorology, ecology, finance). It may underperform on classification-heavy tasks (sociology, protein structure) or single-variable continuous systems (physics). See [Experimental Limitations](#experimental-limitations--future-directions) for details.
+
 ---
 
 ## <span id="cognitive-equity">Cognitive Equity</span>
@@ -212,6 +214,8 @@ One exploratory direction of CNBE-32 is to help Chinese speakers engage with und
 - Chinese BASIC interpreter (7 keywords)
 - Text editor (built-in Tao Te Ching, 205 lines)
 - RISC-V custom instructions: `cnhe.map` / `cnhe.extract` / `cnhe.cmp`
+
+> **Note on v8.4**: This is a proof-of-concept (PoC) prototype. The agent-generated code has 9 blocking architectural issues (encoding corruption, page table mismatch, wrong instruction width, unimplemented trap handlers, etc.) and cannot compile without human review. The concept is validated, but the code requires deep human engineering involvement before it can run on QEMU. See [linux_cnbe32_riscv/WHITEPAPER.md](./linux_cnbe32_riscv/WHITEPAPER.md)
 
 ### Mathematical Reasoning Foundation (v10.8)
 
