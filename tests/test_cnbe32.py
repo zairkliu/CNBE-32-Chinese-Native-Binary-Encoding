@@ -1,4 +1,4 @@
-﻿"""CNBE-32 test suite based on v6.0-v10.8 validation"""
+"""CNBE-32 test suite based on v6.0-v10.8 validation"""
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 from cnbe32 import CNBE32, encode_cnbe, decode_cnbe, hamming_distance
@@ -64,5 +64,4 @@ if __name__ == "__main__":
     test_hamming()
     test_skill_table()
     test_non_cjk_error()
-    print("\nAll 6 tests passed! (v0.3.1)")
     print("\nAll 6 tests passed! (v1.0.0)")

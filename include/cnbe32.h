@@ -1,4 +1,4 @@
-﻿#ifndef CNBE32_H
+﻿ifndef CNBE32_H
 #define CNBE32_H
 #include <stdint.h>
 
