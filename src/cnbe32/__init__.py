@@ -1,4 +1,4 @@
-"""CNBE-32: Chinese Native Binary Encoding - Python SDK"""
+﻿"""CNBE-32: Chinese Native Binary Encoding - Python SDK"""
 from .core import CNBE32, encode_cnbe, decode_cnbe, hamming_distance
 from .skill_table import SkillTable
 from .constants import (
@@ -19,3 +19,4 @@ from .encoders import (
     SocialEncoder, MathEncoder, RawEncoder, OneHotEncoder, RandomEncoder,
 )
 __version__ = "1.0.1"
+from .db import lookup, search, batch, by_radix, stats

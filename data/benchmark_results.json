@@ -1,0 +1,11 @@
+{
+  "lookup_speed_us": {
+    "CNBE": 682.07,
+    "OneHot": 3.0,
+    "Raw": 0.0
+  },
+  "stroke_correlation": {
+    "CNBE": 1.0,
+    "Raw": 0.0065
+  }
+}
