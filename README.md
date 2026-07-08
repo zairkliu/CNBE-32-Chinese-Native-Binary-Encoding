@@ -13,6 +13,10 @@ A structured 32-bit encoding for 97,686 CJK characters that embeds radical, stro
   <a href="llm_experiments/v8_hardware_system/v84_riscv_os_full/"><img src="https://img.shields.io/badge/OS-Full%20Chinese%20Shell-orange?style=for-the-badge" alt="OS"></a>
   <a href="docs/VISION.md"><img src="https://img.shields.io/badge/Vision-2035%20Digital%20China-red?style=for-the-badge" alt="Vision"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MulanPSL--2.0-lightblue?style=for-the-badge" alt="License"></a>
+  <a href=".github/workflows/ci.yml"><img src="https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="hardware/wasm/"><img src="https://img.shields.io/badge/WASM-Online%20Demo-blue?style=for-the-badge" alt="WASM"></a>
+  <a href="docs/BENCHMARK.md"><img src="https://img.shields.io/badge/Benchmark-v0.4.0-green?style=for-the-badge" alt="Benchmark"></a>
+  <a href="data/cnbe32.db"><img src="https://img.shields.io/badge/DB-SQLite%2020902%20chars-orange?style=for-the-badge" alt="DB"></a>
 </p>
 
 <p align="center">
@@ -503,12 +507,17 @@ CNBE-32-Chinese-Native-Binary-Encoding/
 |-- llm_experiments/         # v1-v10 experiments, grouped by version
 |-- results/                 # All 57 white papers, organized by version
 |-- data/                    # Encoding databases
-|-- tests/                   # Test suite (6 tests, v1.0.1)
+|-- tests/                   # Test suite (7 tests, v1.0.1)
 |-- tools/                   # Development tools (table generation, mapping)
 |-- experiments/             # v7.3 hardware co-validation
 |-- bindings/                # Rust bindings
 |-- skill/                   # Codex experiment reproduction skill
 |-- cnbe-llm training(demo)/ # LoRA fine-tuning on Qwen3.5-0.8B
+|-- experiments/             # Benchmark scripts
+|-- .github/workflows/        # CI/CD (CI + WASM deploy)
+|-- data/cnbe32.db            # SQLite encoding DB (20,902 entries)
+|-- data/cnbe32.json          # JSON mapping file (4.4 MB)
+|-- docs/BENCHMARK.md         # Benchmark report
 |-- linux_cnbe32_riscv/      # Agent-translated Linux 0.01
 |-- LICENSE                  # Mulan PSL v2
 ```

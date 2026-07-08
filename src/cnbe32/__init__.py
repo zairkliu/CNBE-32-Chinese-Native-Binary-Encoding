@@ -18,5 +18,6 @@ from .encoders import (
     TreeEncoder, TyphoonEncoder, BlackHoleEncoder,
     SocialEncoder, MathEncoder, RawEncoder, OneHotEncoder, RandomEncoder,
 )
-__version__ = "1.0.1"
+__version__ = "0.4.0"
 from .db import lookup, search, batch, by_radix, stats
+
