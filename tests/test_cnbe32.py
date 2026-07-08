@@ -41,8 +41,8 @@ def test_non_cjk_error():
             print("FAIL: should have raised for", ascii(ch))
         except CNBECharNotInTableError:
             print("PASS: CNBECharNotInTableError for", ascii(ch))
-        except Exception:
-            pass  # These may raise OSError if no table loaded
+        except:
+            print("FAIL: unexpected exception for", ascii(ch)); raise
     print("PASS: non-CJK error handling")
 
 def test_hamming():
@@ -65,3 +65,5 @@ if __name__ == "__main__":
     test_skill_table()
     test_non_cjk_error()
     print("\nAll 6 tests passed! (v0.3.1)")
+
+
