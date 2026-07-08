@@ -232,10 +232,10 @@ One exploratory direction of CNBE-32 is to help Chinese speakers engage with und
 
 | Version | Validation Dimension | Model / Platform | Core Metric | Key Conclusion |
 | :---: | :--- | :--- | :--- | :--- |
-| **v1** | Zero-shot single character understanding | Qwen 0.8B | 200 characters, **100%** effective | Encoding is inherently semantically interpretable |
+| **v1** | Zero-shot single character understanding | Qwen 0.8B | 200 characters, **100%**\* effective | Encoding is inherently semantically interpretable |
 | **v2** | Small model sentence understanding | Qwen 0.8B | 48% **→ 87%** (**+81%**) | Structured encoding provides significant compensation for small models |
 | **v3** | Annotation format optimization | Qwen 0.8B | Character-by-character full annotation **87%** effective | Optimal format: character-by-character full annotation |
-| **v4** | Long text (paper-level) | Qwen 0.8B | 90.9% **→ 100%** | Effective in long-text scenarios, eliminates ambiguity |
+| **v4** | Long text (paper-level) | Qwen 0.8B | 90.9% **→ 100%**\* | Effective in long-text scenarios, eliminates ambiguity |
 | **v5** | Multi-model horizontal comparison | 7 models | <1B: +81%; 1-7B: +9~17%; >7B: ~0% | **Diminishing marginal returns** |
 | **v6** | Unicode hard task comparison | Gemma 4B | Unicode 26.1% **vs** **CNBE 43.5%** | **CNBE > Unicode** (+17.4 pp) |
 | **v7** | RISC-V hardware implementation | C / QEMU / Spike / FPGA | x86 0.8 ns → FPGA **1 Cycle** | RTL simulation verified; board-level testing pending |
@@ -252,10 +252,10 @@ One exploratory direction of CNBE-32 is to help Chinese speakers engage with und
 
 | Version | Dimension | Model / Platform | Key Metric | Key Conclusion |
 | :---: | :--- | :--- | :--- | :--- |
-| **v1** | Zero-shot char understanding | Qwen 0.8B | 200 chars, **100%** effective | Encoding inherently semantically interpretable |
+| **v1** | Zero-shot char understanding | Qwen 0.8B | 200 chars, **100%**\* effective | Encoding inherently semantically interpretable |
 | **v2** | Small model sentence understanding | Qwen 0.8B | 48% **→ 87%** (**+81%**) | Structured encoding compensates small models significantly |
 | **v3** | Annotation format optimization | Qwen 0.8B | Full char annotation **87%** effective | Optimal format: per-character annotation |
-| **v4** | Long text (paper-level) | Qwen 0.8B | 90.9% **→ 100%** | Effective in long-context scenarios |
+| **v4** | Long text (paper-level) | Qwen 0.8B | 90.9% **→ 100%**\* | Effective in long-context scenarios |
 | **v5** | Multi-model comparison | 7 models | <1B: +81%; 1-7B: +9~17%; >7B: ~0% | **Diminishing returns law** |
 | **v6** | Unicode hard task comparison | Gemma 4B | Unicode 26.1% **vs** **CNBE 43.5%** | **CNBE > Unicode** (+17.4pp) |
 | **v7** | RISC-V hardware implementation | C/QEMU/Spike/FPGA | x86 0.8ns → FPGA **1 Cycle** | Complete hardware path closed-loop |
@@ -269,10 +269,10 @@ One exploratory direction of CNBE-32 is to help Chinese speakers engage with und
 
 | Version | Sub-task | Environment | Specific Metric | Conclusion |
 | :---: | :--- | :--- | :--- | :--- |
-| **v1** | Zero-shot single char understanding | Qwen 0.8B | 200 chars, **100%** effective | Encoding space = semantic space |
+| **v1** | Zero-shot single char understanding | Qwen 0.8B | 200 chars, **100%**\* effective | Encoding space = semantic space |
 | **v2** | Chinese sentence understanding | Qwen 0.8B | 48% to **87%** (+39pp) | CNBE compensates small models |
 | **v3** | Encoding format ablation | Qwen 0.8B | Per-char 87% > segment 60% > compact 50% | Optimal: full per-char annotation |
-| **v4** | Paper-level semantic (On Protracted War) | Qwen 0.8B | 91% to **100%** | Fills small model long-context gap |
+| **v4** | Paper-level semantic (On Protracted War) | Qwen 0.8B | 91% to **100%**\* | Fills small model long-context gap |
 | **v5.0** | Chaotic text intent classification | DeepSeek R1 | DeepSeek 8B vs CNBE | Intent classification baseline |
 | **v5.5** | 3-model comparison | Qwen/Gemma/DeepSeek | CNBE benefit: +0-81% by size | Diminishing returns confirmed |
 | **v5.6** | Mixed model full comparison | 7 Chinese/EN models | Full cross-model sweep | Size-benefit curve mapped |
@@ -331,6 +331,8 @@ One exploratory direction of CNBE-32 is to help Chinese speakers engage with und
 | **System-level compatibility** | v8 | Proves encoding supports full OS ecosystem |
 | **Cross-domain generalization** | v9~v10 | Proves effective across multiple domains |
 </details>
+
+> \* 100% refers to model task performance on specific test sets. See individual whitepapers for methodology.
 
 ### Complete Evidence Chain Logic Closure
 

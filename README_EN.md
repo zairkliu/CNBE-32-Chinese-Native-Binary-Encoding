@@ -225,10 +225,10 @@ The ultimate significance of CNBE-32 is to enable Chinese speakers to define und
 
 | Version | Validation Dimension | Model / Platform | Core Metric | Key Conclusion |
 | :---: | :--- | :--- | :--- | :--- |
-| **v1** | Zero-shot single character understanding | Qwen 0.8B | 200 characters, **100%** effective | Encoding is inherently semantically interpretable |
+| **v1** | Zero-shot single character understanding | Qwen 0.8B | 200 characters, **100%**\* effective | Encoding is inherently semantically interpretable |
 | **v2** | Small model sentence understanding | Qwen 0.8B | 48% **→ 87%** (**+81%**) | Structured encoding provides significant compensation for small models |
 | **v3** | Annotation format optimization | Qwen 0.8B | Character-by-character full annotation **87%** effective | Optimal format: character-by-character full annotation |
-| **v4** | Long text (paper-level) | Qwen 0.8B | 90.9% **→ 100%** | Effective in long-text scenarios, eliminates ambiguity |
+| **v4** | Long text (paper-level) | Qwen 0.8B | 90.9% **→ 100%**\* | Effective in long-text scenarios, eliminates ambiguity |
 | **v5** | Multi-model horizontal comparison | 7 models | <1B: +81%; 1-7B: +9~17%; >7B: ~0% | **Diminishing marginal returns** |
 | **v6** | Unicode hard task comparison | Gemma 4B | Unicode 26.1% **vs** **CNBE 43.5%** | **CNBE > Unicode** (+17.4 pp) |
 | **v7** | RISC-V hardware implementation | C / QEMU / Spike / FPGA | x86 0.8 ns → FPGA **1 Cycle** | Complete hardware path closed-loop |
@@ -246,7 +246,7 @@ The ultimate significance of CNBE-32 is to enable Chinese speakers to define und
 | **v1** | Single character radical/stroke/structure extraction | Qwen 0.8B | 200 Chinese characters, **100%** zero-shot effective | Proves encoding space IS semantic space |
 | **v2** | Chinese sentence understanding | Qwen 0.8B | Text input 48% → CNBE **87%** | Accuracy improvement 39 pp |
 | **v3** | Encoding format ablation experiment | Qwen 0.8B | Character-by-character 87% > segmented 60% > compact 50% | Optimal: `中(丨,4 strokes, single)` |
-| **v4** | Paper-level semantic understanding | Qwen 0.8B | 90.9% → **100%** | Complements small model long-context reasoning shortcomings |
+| **v4** | Paper-level semantic understanding | Qwen 0.8B | 90.9% → **100%**\* | Complements small model long-context reasoning shortcomings |
 | **v5a-5.9** | 7-model horizontal comparison | 0.8B~20B | Domestic 2B **90%**; 8B+ approaches 0 | Less compute power = more important structural priors |
 | **v6.3-6.5** | Numerical format optimization | Qwen 0.8B | **Format F (bare numbers)** optimal | Hardware recommends bare number input |
 | **v6.5.2** | CNBE vs Unicode | Gemma 4B | Unicode 26.1% **vs** CNBE **43.5%** | Outperforms thirty-year industry standard on first attempt |
@@ -266,6 +266,8 @@ The ultimate significance of CNBE-32 is to enable Chinese speakers to define und
 
 
 </details>
+
+> \* 100% refers to model task performance on specific test sets. See individual whitepapers for methodology.
 
 ### Complete Evidence Chain Logic Closure
 
