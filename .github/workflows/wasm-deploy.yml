@@ -1,0 +1,50 @@
+﻿name: WASM Build + Deploy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "hardware/wasm/**"
+      - ".github/workflows/wasm-deploy.yml"
+
+jobs:
+  wasm-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build WASM with Emscripten
+        run: |
+          docker run --rm -v $PWD:/src emscripten/emsdk:latest \
+            emcc /src/hardware/wasm/cnbe_wasm.c \
+              -o /src/hardware/wasm/cnbe_wasm.wasm \
+              -O3 -s WASM=1 -s EXPORTED_FUNCTIONS='["_cnbe_encode","_cnbe_radix","_cnbe_stroke","_cnbe_struct_type","_cnbe_index","_cnbe_extension","_cnbe_distance","_cnbe_struct_name"]' \
+              -s EXPORTED_RUNTIME_METHODS='["ccall","cwrap"]'
+
+      - name: Copy WASM to docs
+        run: |
+          mkdir -p docs/wasm
+          cp hardware/wasm/*.wasm docs/wasm/ 2>/dev/null || true
+          cp hardware/wasm/index.html docs/wasm/
+          cp hardware/wasm/app.js docs/wasm/
+          cp hardware/wasm/style.css docs/wasm/
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

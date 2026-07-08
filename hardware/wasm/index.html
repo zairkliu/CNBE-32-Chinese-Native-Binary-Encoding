@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CNBE-32 在线编码演示</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>CNBE-32 编码模拟器</h1>
+  <p class="subtitle">中文原生二进制编码 · v0.4.0</p>
+
+  <div class="card">
+    <h2>汉字编码</h2>
+    <div class="input-row">
+      <input type="text" id="charInput" maxlength="1" placeholder="输入汉字" class="char-input">
+      <button id="encodeBtn" class="btn" disabled>编码</button>
+    </div>
+    <div class="manual-row">
+      <p class="hint">或手动输入编码字段：</p>
+      <div class="field-group">
+        <label>部首 <input type="number" id="radixInput" value="72" min="0" max="255" class="num-input"></label>
+        <label>笔画 <input type="number" id="strokeInput" value="8" min="1" max="31" class="num-input"></label>
+        <label>结构 <input type="number" id="structInput" value="1" min="0" max="12" class="num-input"></label>
+        <label>索引 <input type="number" id="indexInput" value="0" min="0" max="2047" class="num-input"></label>
+      </div>
+      <button id="manualEncodeBtn" class="btn">手工编码</button>
+    </div>
+  </div>
+
+  <div class="card result-card">
+    <h2>编码结果</h2>
+    <div id="resultPlaceholder" class="placeholder">等待输入...</div>
+    <div id="resultArea" class="result" style="display:none">
+      <div class="hex-row">
+        <span class="label">32位编码</span>
+        <span id="hexValue" class="value hex"></span>
+      </div>
+      <div class="binary-row">
+        <span class="label">二进制</span>
+        <span id="binaryValue" class="value binary"></span>
+      </div>
+      <table class="field-table">
+        <tr><th>字段</th><th>位范围</th><th>值</th></tr>
+        <tr><td>部首 (Radical)</td><td>[31:24]</td><td id="fieldRadix"></td></tr>
+        <tr><td>笔画 (Strokes)</td><td>[23:19]</td><td id="fieldStroke"></td></tr>
+        <tr><td>结构 (Structure)</td><td>[18:15]</td><td id="fieldStruct"></td></tr>
+        <tr><td>索引 (Index)</td><td>[14:4]</td><td id="fieldIndex"></td></tr>
+        <tr><td>扩展 (Extension)</td><td>[3:0]</td><td id="fieldExt"></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <footer>
+    <p><a href="https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding">GitHub</a></p>
+    <p class="status" id="status">WASM 模块加载中...</p>
+  </footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
