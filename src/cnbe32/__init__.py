@@ -18,4 +18,4 @@ from .encoders import (
     TreeEncoder, TyphoonEncoder, BlackHoleEncoder,
     SocialEncoder, MathEncoder, RawEncoder, OneHotEncoder, RandomEncoder,
 )
-__version__ = "0.3.0"
+__version__ = "0.3.1"

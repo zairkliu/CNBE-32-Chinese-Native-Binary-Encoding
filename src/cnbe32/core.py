@@ -9,7 +9,7 @@ from .constants import (
     CNBE_STROKE_MIN, CNBE_STROKE_MAX, CNBE_RADIX_MIN, CNBE_RADIX_MAX,
     CJK_UNICODE_START, CJK_UNICODE_COUNT,
 )
-from .exceptions import CNBEValueError, CNBEFormatError
+from .exceptions import CNBEValueError, CNBEFormatError, CNBECharNotInTableError
 
 
 def encode_cnbe(radix=0, stroke=0, struct=0, index=0, ext=0):
@@ -24,7 +24,7 @@ def encode_cnbe(radix=0, stroke=0, struct=0, index=0, ext=0):
     return ((radix & 0xFF) << RADIX_SHIFT) | \
            ((stroke & 0x1F) << STROKE_SHIFT) | \
            ((struct & 0xF) << STRUCT_SHIFT) | \
-           ((index & 0x7FF) << INDEX_SHIFT) | \
+           ((index & INDEX_MASK) << INDEX_SHIFT) | \
            (ext & 0xF)
 
 
@@ -36,7 +36,7 @@ def decode_cnbe(code):
         "radix": (code >> RADIX_SHIFT) & 0xFF,
         "stroke": (code >> STROKE_SHIFT) & 0x1F,
         "structure": (code >> STRUCT_SHIFT) & 0xF,
-        "index": (code >> INDEX_SHIFT) & 0x7FF,
+        "index": (code >> INDEX_SHIFT) & INDEX_MASK,
         "extension": code & 0xF,
         "struct_name": STRUCT_NAMES.get((code >> STRUCT_SHIFT) & 0xF, "unknown"),
     }
@@ -57,10 +57,11 @@ class CNBE32:
     """CNBE-32 encoding/decoding for Chinese characters (wraps constants + SkillTable)"""
 
     def encode(self, char):
-        idx = ord(char) - CJK_UNICODE_START
+        code_point = ord(char)
+        idx = code_point - CJK_UNICODE_START
         if 0 <= idx < CJK_UNICODE_COUNT:
             return getattr(self, "_table", np.zeros(CJK_UNICODE_COUNT, dtype=np.uint32))[idx]
-        return 0
+        raise CNBECharNotInTableError(char, code_point)
 
     def decode(self, code):
         return decode_cnbe(code)
