@@ -84,7 +84,7 @@ Bit: 31              24 23    19 18    15 14              4  3     0
 ```
 
 | Field | Bit Range | Description | Range |
-|-------|-----------|-------------|-------|
+|---|-----------|---|-------|
 | Radical | `[31:24]` | 214 Kangxi radicals + 41 extensions | 0-255 |
 | Stroke Count | `[23:19]` | Number of strokes | 1-31 |
 | Structure Type | `[18:15]` | Structural composition type | 9 types (single/left-right/top-bottom/enclosure, etc.) |
@@ -94,7 +94,7 @@ Bit: 31              24 23    19 18    15 14              4  3     0
 ### Encoding Examples
 
 | Character | Unicode | CNBE-32 Encoding | Radical (ID) | Stroke Count | Structure Type |
-|-----------|---------|-----------------|--------------|--------------|----------------|
+|---|---------|---|--------------|---|----------------|
 | 一 (one) | U+4E00 | `0x01080000` | 一 (1) | 1 | Single (独体) |
 | 汉 (Chinese) | U+6C49 | `0x0F288101` | 氵 (water, 15) | 5 | Left-Right (左右) |
 | 国 (country) | U+56FD | `0x1F400B0B` | 囗 (enclosure, 31) | 8 | Full Enclosure (全包围) |
@@ -107,7 +107,7 @@ Bit: 31              24 23    19 18    15 14              4  3     0
 CNBE-32 is **not** a "Chinese-localized" or "character-replacement" version of Base32.
 
 | Dimension | Base32 | CNBE-32 |
-|-----------|--------|---------|
+|---|--------|---|
 | **Encoding target** | Arbitrary binary data | **97,686 CJK characters themselves** |
 | **Code space** | Fixed 32 letters | **Structured 32-bit bitfield** (radical, stroke, structure) |
 | **Goal** | Data compression / transmission | **Let machines "understand" character semantics** |
@@ -127,7 +127,7 @@ CNBE-32 is **not** a "Chinese-localized" or "character-replacement" version of B
 ## <span id="why-cnbe">Why CNBE?</span>
 
 | Dimension | Unicode / UTF-8 | CNBE-32 |
-|-----------|-----------------|---------|
+|---|-----------------|---|
 | Objective | Character display and exchange | AI understanding and hardware acceleration |
 | Encoding Method | Lookup table (Flat ID) | Semantic structuring |
 | Machine Cognition | Identifies the character | Understands structural composition |
@@ -162,7 +162,7 @@ The ultimate significance of CNBE-32 is to enable Chinese speakers to define und
 ### Core Performance Overview
 
 | Metric | Value | Equity Value Explanation |
-|--------|:-----:|-------------------------|
+|---|:-----:|---|
 | Small model (<1B) comprehension improvement | **+81%** (48%→87%) | Edge devices can achieve high-quality Chinese comprehension without cloud connectivity, breaking the compute monopoly of large tech companies |
 | Medium model (1-7B) improvement | +9% ~ +17% | Mid-range mobile chips can smoothly run complex Chinese tasks without relying on high-end GPUs |
 | Large model (>7B) benefit | ~0% (diminishing returns) | Validates that large models don't need this encoding; resources should be prioritized for small-to-medium intelligence scenarios |
@@ -183,7 +183,7 @@ The ultimate significance of CNBE-32 is to enable Chinese speakers to define und
 **Method**: Qwen 3.5 0.8B, CNBE vs standard input.
 
 | Input | Accuracy | Improvement |
-|-------|----------|-------------|
+|---|----------|---|
 | Standard input | 48% | -- |
 | **CNBE-32** | **87%** | **+81%** |
 
@@ -193,7 +193,7 @@ The ultimate significance of CNBE-32 is to enable Chinese speakers to define und
 **Method**: Gemma 4B Chinese hard tasks.
 
 | Input | Accuracy |
-|-------|----------|
+|---|----------|
 | Unicode | 26.1% |
 | **CNBE-32** | **43.5%** |
 
@@ -211,7 +211,7 @@ The ultimate significance of CNBE-32 is to enable Chinese speakers to define und
 **Method**: TinyGPT on odd/even/prime/sequence reasoning tasks comparing 4 encodings.
 
 | Task | CNBE Loss | OneHot Loss | Winner |
-|------|-----------|-------------|--------|
+|---|-----------|---|--------|
 | Odd/Even | 0.3174 | 0.3427 | **CNBE** |
 | Prime | 0.3894 | 0.5061 | **CNBE** |
 | Sequence | 1.0726 | 1.2344 | **CNBE** |
@@ -309,6 +309,11 @@ The ultimate significance of CNBE-32 is to enable Chinese speakers to define und
 | **v10.7** | Pretraining base (TinyGPT) | TinyGPT | Learned 1.37 vs CNBE 1.46 | Frozen close to learned |
 | **v10.8** | Math reasoning foundation | TinyGPT | Parity/Prime/Seq CNBE wins all | Comprehensive win over One-Hot |
 
+</details>
+
+<details>
+<summary><b>Click to expand evidence chain logic closure</b></summary>
+
 ### Table 3: Evidence Chain Logic Closure
 
 | Phase | Version | Role |
@@ -367,7 +372,7 @@ This is the breakthrough path for edge-side AI processing of Chinese.
 ### Known Limitations
 
 | Experiment | Limitation | Future Direction |
-|------------|------------|------------------|
+|---|------------|---|
 | v5/v6 (LLM validation) | Some models (DeepSeek 8B / GPT-OSS 20B) showed empty responses or insufficient Chinese capability | Focus on Chinese-friendly small models like Qwen/Gemma |
 | v6.5.3 (Hard task 0.8B) | Overall only 12.5%, CNBE and Unicode showed no difference | 0.8B model capability boundary; requires larger model validation |
 | v9.0 (Tree growth) | Simulated environment, not real climate/economic data | Validate on real temporal data |
@@ -380,7 +385,7 @@ This is the breakthrough path for edge-side AI processing of Chinese.
 ### Applicability Boundaries (Based on All Experimental Data)
 
 | Scenario Type | CNBE Performance | Typical Domains | Reason |
-|---------------|:----------------:|-----------------|--------|
+|---|:----------------:|---|--------|
 | Multi-dimensional continuous value + structured temporal | ✅ Significantly better than baseline | Meteorology, ecology, finance, mathematics | Bit-field structured encoding naturally matches |
 | Strong classification features | ❌ Inferior to One-hot | Sociology (8 regions + 4 time periods) | Bit-field mixed encoding cannot distinguish classification field weights |
 | Single-variable deterministic systems | ⚠️ Equal to Raw | Physics (gravitational field) | Continuous value single-variable scenario Raw is optimal |
@@ -406,7 +411,7 @@ Encoding Layer: 32-bit CJK Structured Bit Fields (Radical/Stroke/Structure)
 This is a project that was previously impossible to complete, but is destined to be born in the AI era.
 
 | Past | Present |
-|------|---------|
+|---|---------|
 | 97,686 Chinese character annotations required thousands of linguist man-years | AI Agent assisted automated annotation |
 | Full-stack validation required top-tier teams for years | LLM-assisted code generation + validation |
 | Single-team siloed development | Open source community collaborative exploration |
@@ -474,7 +479,7 @@ cd llm_experiments/v10_cross_domain/v10_3_typhoon && python v10_3_typhoon.py
 CNBE-32 is designed for **AI-era Chinese computing infrastructure**, not as a general-purpose encoding tool.
 
 | Scenario | Suitability | Description |
-|----------|:-----------:|-------------|
+|---|:-----------:|---|
 | AI model structured input | **Recommended** | Provides radical/stroke/structure priors, improves small model comprehension |
 | RISC-V hardware acceleration | **Recommended** | Custom instructions operate directly on encoding bitfields |
 | Chinese-native OS | **Recommended** | Native support for filenames, paths, system messages |
@@ -513,7 +518,7 @@ CNBE-32-Chinese-Native-Binary-Encoding/
 ## <span id="roadmap">Roadmap</span>
 
 | Phase | Status | Content |
-|-------|--------|---------|
+|---|--------|---|
 | Encoding & semantic validation | Completed | v1-v6 CJK encoding design |
 | Hardware & system | Completed | v7-v8 RISC-V + Chinese OS |
 | Complex prediction validation | Completed | v9-v10 9-domain validation |
@@ -533,7 +538,7 @@ CNBE-32-Chinese-Native-Binary-Encoding/
 - Frontend visualization tools - Web interface showing encoding decomposition process
 
 | Level | Direction |
-|-------|-----------|
+|---|-----------|
 | Low barrier | Encoding dictionary / Test cases / Documentation |
 | High barrier | RISC-V pipeline / FPGA / LLM adaptation / Compiler |
 
