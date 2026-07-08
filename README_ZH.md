@@ -13,6 +13,10 @@
   <a href="v84_riscv_os_full/"><img src="https://img.shields.io/badge/OS-Full%20Chinese%20Shell-orange?style=for-the-badge" alt="OS"></a>
   <a href="docs/VISION.md"><img src="https://img.shields.io/badge/Vision-2035%20Digital%20China-red?style=for-the-badge" alt="Vision"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MulanPSL--2.0-lightblue?style=for-the-badge" alt="License"></a>
+  <a href=".github/workflows/ci.yml"><img src="https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="hardware/wasm/"><img src="https://img.shields.io/badge/WASM-%E5%9C%A8%E7%BA%BF%E6%BC%94%E7%A4%BA-blue?style=for-the-badge" alt="WASM"></a>
+  <a href="docs/BENCHMARK.md"><img src="https://img.shields.io/badge/Benchmark-v0.4.0-green?style=for-the-badge" alt="Benchmark"></a>
+  <a href="data/cnbe32.db"><img src="https://img.shields.io/badge/DB-SQLite%2020902%20%E5%AD%97-orange?style=for-the-badge" alt="DB"></a>
 </p>
 
 <p align="center">
@@ -468,7 +472,7 @@ CNBE-32 是为 **AI 时代的中文计算基础设施** 设计的，而非通用
 
 ```
 CNBE-32-Chinese-Native-Binary-Encoding/
-|-- src/cnbe32/              # Python SDK（v0.3.1，已发布至 PyPI）
+|-- src/cnbe32/              # Python SDK（v0.4.0，已发布至 PyPI）
 |-- include/cnbe32.h         # C SDK 头文件
 |-- hardware/                # 硬件宏、Spike 补丁、Verilog
 |-- riscv/                   # RISC-V 模拟器 + v7 指令定义
@@ -476,12 +480,17 @@ CNBE-32-Chinese-Native-Binary-Encoding/
 |-- llm_experiments/         # v1-v10 实验，按版本分组
 |-- results/                 # 全部 57 份白皮书，按版本组织
 |-- data/                    # 编码数据库
-|-- tests/                   # 测试套件（6 个测试，v0.3.1）
+|-- tests/                   # 测试套件（7 个测试，v0.4.0）
 |-- tools/                   # 开发工具（表格生成、映射）
 |-- experiments/             # v7.3 硬件协同验证
 |-- bindings/                # Rust 绑定
 |-- skill/                   # Codex 实验复现技能
 |-- cnbe-llm training(demo)/ # Qwen3.5-0.8B LoRA 微调
+|-- experiments/             # 基准实验脚本
+|-- .github/workflows/        # CI/CD（CI + WASM 部署）
+|-- data/cnbe32.db            # SQLite 编码数据库（20,902 条）
+|-- data/cnbe32.json          # JSON 映射文件（4.4 MB）
+|-- docs/BENCHMARK.md         # 基准测试报告
 |-- linux_cnbe32_riscv/      # Agent 转译的 Linux 0.01
 |-- LICENSE                  # 木兰 PSL v2
 ```
