@@ -335,11 +335,6 @@ Complete experimental data → [docs/EXPERIMENTS.md](docs/EXPERIMENTS.md)
 ---
 
 s>
-
-Full experiment data → [docs/EXPERIMENTS.md](docs/EXPERIMENTS.md)
-
----
-
 ## <span id="key-insights-large-models-vs-small-models">Key Insights: Large Models vs Small Models</span>
 
 Why do 8B+ large models show diminishing returns (~0%) from CNBE, while 0.8B small models achieve massive +81% improvement?
