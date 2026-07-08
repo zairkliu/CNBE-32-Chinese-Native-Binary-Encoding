@@ -15,3 +15,9 @@ data/skill_table*.bin
 data/skill_table*.npy
 data/skill_table*.hex
 data/skill_table_data.h
+
+dist/
+src/*.egg-info/
+*.egg-info/
+build/
+*.whl
