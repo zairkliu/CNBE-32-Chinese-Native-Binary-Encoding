@@ -1,4 +1,4 @@
-*.pyc
+﻿*.pyc
 __pycache__/
 .DS_Store
 *.swp
@@ -9,3 +9,9 @@ __pycache__/
 *.o
 *.elf
 build/
+
+# Generated data files
+data/skill_table*.bin
+data/skill_table*.npy
+data/skill_table*.hex
+data/skill_table_data.h

@@ -27,3 +27,4 @@ def generate_skill_table(output_format="bin"):
 if __name__ == "__main__":
     generate_skill_table()
 
+
