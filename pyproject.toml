@@ -10,20 +10,19 @@ readme = "README.md"
  authors = [
    {name = "zairkliu"},
  ]
-license = {text = "Mulan PSL v2"}
+ license = "MulanPSL-2.0"
 requires-python = ">=3.10"
 dependencies = ["numpy>=2.0"]
  keywords = ["chinese", "encoding", "cjk", "riscv", "nlp", "structured-encoding"]
- classifiers = [
-     "Development Status :: 4 - Beta",
+classifiers = [
+    "Development Status :: 4 - Beta",
      "Intended Audience :: Science/Research",
-     "License :: Other/Proprietary License",
-     "Programming Language :: Python :: 3",
-     "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
      "Programming Language :: Python :: 3.11",
      "Programming Language :: Python :: 3.12",
      "Programming Language :: Python :: 3.13",
-     "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
      "Topic :: Software Development :: Embedded Systems",
      "Topic :: Text Processing :: Linguistic",
  ]
@@ -35,3 +34,4 @@ dependencies = ["numpy>=2.0"]
 
  [tool.setuptools.packages.find]
  where = ["src"]
+
