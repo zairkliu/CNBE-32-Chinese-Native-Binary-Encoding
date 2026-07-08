@@ -239,49 +239,6 @@ The ultimate significance of CNBE-32 is to enable Chinese speakers to define und
 </details>
 
 <details>
-<summary><b>Click to expand v1~v10 detailed experimental data</b></summary>
-
-| Version | Sub-item / Task | Test Environment | Specific Data Metrics | Conclusion / Notes |
-| :---: | :--- | :--- | :--- | :--- |
-| **v1** | Single character radical/stroke/structure extraction | Qwen 0.8B | 200 Chinese characters, **100%** zero-shot effective | Proves encoding space IS semantic space |
-| **v2** | Chinese sentence understanding | Qwen 0.8B | Text input 48% → CNBE **87%** | Accuracy improvement 39 pp |
-| **v3** | Encoding format ablation experiment | Qwen 0.8B | Character-by-character 87% > segmented 60% > compact 50% | Optimal: `中(丨,4 strokes, single)` |
-| **v4** | Paper-level semantic understanding | Qwen 0.8B | 90.9% → **100%** | Complements small model long-context reasoning shortcomings |
-| **v5a-5.9** | 7-model horizontal comparison | 0.8B~20B | Domestic 2B **90%**; 8B+ approaches 0 | Less compute power = more important structural priors |
-| **v6.3-6.5** | Numerical format optimization | Qwen 0.8B | **Format F (bare numbers)** optimal | Hardware recommends bare number input |
-| **v6.5.2** | CNBE vs Unicode | Gemma 4B | Unicode 26.1% **vs** CNBE **43.5%** | Outperforms thirty-year industry standard on first attempt |
-| **v7.0** | C language benchmark | x86-64 | Single lookup **0.8 ns** | Software performance baseline established |
-| **v7.0.1** | RISC-V cross-compilation | QEMU | Single lookup 2.5 ns | Validates RISC-V portability |
-| **v7.1.1** | Instruction integration | Spike | `map`(2 cycles) / `extract`(1) / `cmp`(3) | Three Custom-0 instruction behaviors verified |
-| **v7.2** | FPGA logic synthesis | Verilog+BRAM | **Single cycle** lookup complete | 81.6 KB table entries fit BRAM resources |
-| **v8.4** | Full Chinese system | RISC-V QEMU | Shell commands + BASIC 7 keywords + Tao Te Ching | "Full Chinese computing" feasibility validated |
-| **v9.0** | Tree growth JEPA | JEPA | CNBE **86%** better than Raw | Structured encoding improves abstract representation |
-| **v9.1** | Typhoon lifecycle | JEPA | 0.089981 → **0.000001** | Error reduced by 4 orders of magnitude |
-| **v10.3** | Typhoon Bavi path | Meteorological model | 216 km → **174 km** | Actual path prediction accuracy improved 19% |
-| **v10.4** | Protein Q3 structure | Bioinformatics | OH 44.6% vs CNBE 41.0% | Slightly below OH; biological sequence still has optimization room |
-| **v10.5** | Black hole gravitational field | Physics simulation | R² **0.60-0.77** | Good performance in physics field simulation |
-| **v10.7** | TinyGPT frozen embedding | TinyGPT | Learned 1.3653 vs CNBE 1.4568 | Frozen embedding performance close to learned embedding |
-| **v10.8** | Mathematical reasoning foundation | TinyGPT | Odd/Even(0.3174<0.3427) Prime(0.3894<0.5061) Sequence(1.07<1.23) | Universally better than One-Hot |
-| **LLM** | CNBE knowledge LoRA fine-tuning | Qwen3.5-0.8B | 5000 steps, loss **0.6424**, 500-steps 0.7524 | Knowledge injection feasible, edge deployment validated |
-
-
-</details>
-
-### Complete Evidence Chain Logic Closure
-
-| Stage | Corresponding Version | Logical Role |
-| :--- | :--- | :--- |
-| **Semantic Validity** | v1 ~ v4 | Prove encoding itself contains semantics |
-| **Comparative Superiority** | v5 ~ v6 | Prove encoding outperforms Unicode |
-| **Hardware Implementability** | v7 | Prove from software to FPGA is feasible |
-| **System-level Compatibility** | v8 | Prove encoding can support complete OS ecosystem |
-| **Cross-domain Generalization** | v9 ~ v10 | Prove equally effective in physics/biology/finance and other domains |
-
-Complete experimental data → [docs/EXPERIMENTS.md](docs/EXPERIMENTS.md)
-
----
-
-<details>
 <summary><b>Click to expand v1-v10.8 complete experiment data</b></summary>
 
 ### Table 1: CNBE-32 Core Experiment Overview (v1~v10)
@@ -362,6 +319,22 @@ Complete experimental data → [docs/EXPERIMENTS.md](docs/EXPERIMENTS.md)
 | **System-level compatibility** | v8 | Proves encoding supports full OS ecosystem |
 | **Cross-domain generalization** | v9~v10 | Proves effective across multiple domains |
 </details>
+
+### Complete Evidence Chain Logic Closure
+
+| Stage | Corresponding Version | Logical Role |
+| :--- | :--- | :--- |
+| **Semantic Validity** | v1 ~ v4 | Prove encoding itself contains semantics |
+| **Comparative Superiority** | v5 ~ v6 | Prove encoding outperforms Unicode |
+| **Hardware Implementability** | v7 | Prove from software to FPGA is feasible |
+| **System-level Compatibility** | v8 | Prove encoding can support complete OS ecosystem |
+| **Cross-domain Generalization** | v9 ~ v10 | Prove equally effective in physics/biology/finance and other domains |
+
+Complete experimental data → [docs/EXPERIMENTS.md](docs/EXPERIMENTS.md)
+
+---
+
+s>
 
 Full experiment data → [docs/EXPERIMENTS.md](docs/EXPERIMENTS.md)
 
