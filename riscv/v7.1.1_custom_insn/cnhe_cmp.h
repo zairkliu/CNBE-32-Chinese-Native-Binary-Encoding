@@ -6,6 +6,9 @@
 // MATCH=0x0000200B, MASK=0xFE00707F
 //
 // Distance = |rad1-rad2|*4 + |str1-str2|*2 + |stc1-stc2|*1
+// Note: weights (4,2,1) maintain the same ratio as Python SDK (8,5,4).
+// Index field excluded from hardware distance to minimize ALU cycles.
+// The Python SDK hamming_distance() uses weights (8,5,4).
 
 require_extension("C");
 

@@ -1,6 +1,6 @@
 // cnhe_extract.h — cnhe.extract instruction: Extract field from CNBE code
 // rd = cnhe_extract(rs1, rs2)
-// Input:  rs1 = 32-bit CNBE code, rs2 = field selector (0/1/2)
+ // Input:  rs1 = 32-bit CNBE code, rs2 = field selector (0/1/2/3)
 // Output: rd = extracted field value
 // Custom-0 opcode=0x0B, funct3=1
 // MATCH=0x0000100B, MASK=0xFE00707F
@@ -20,6 +20,9 @@ switch (sel) {
         break;
     case 2:  // Structure type (bits 18:15, 4-bit, 0-15)
         result = (code >> 15) & 0x0F;
+        break;
+    case 3:  // Glyph index (bits 14:4, 11-bit, 0-2047)
+        result = (code >> 4) & 0x7FF;
         break;
     default:
         result = 0;

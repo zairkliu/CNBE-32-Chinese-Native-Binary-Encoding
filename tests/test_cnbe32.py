@@ -65,5 +65,4 @@ if __name__ == "__main__":
     test_skill_table()
     test_non_cjk_error()
     print("\nAll 6 tests passed! (v0.3.1)")
-
-
+    print("\nAll 6 tests passed! (v1.0.0)")

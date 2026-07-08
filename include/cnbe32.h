@@ -36,8 +36,8 @@ uint32_t cnhe_map(uint32_t unicode);
 uint32_t cnhe_extract(uint32_t code, uint32_t field);
 uint32_t cnhe_cmp(uint32_t a, uint32_t b);
 
-static inline uint32_t cnbe_encode(uint8_t radix, uint8_t stroke, uint8_t struct_type, uint16_t ext, uint16_t index) {
-    return ((uint32_t)radix << 24) | ((uint32_t)stroke << 19) | ((uint32_t)struct_type << 15) | ((uint32_t)(index & 0x7FF) << 4) | (ext & 0xF);
+ static inline uint32_t cnbe_encode(uint8_t radix, uint8_t stroke, uint8_t struct_type, uint16_t index, uint16_t ext) {
+     return ((uint32_t)radix << 24) | ((uint32_t)stroke << 19) | ((uint32_t)struct_type << 15) | ((uint32_t)(index & 0x7FF) << 4) | (ext & 0xF);
 }
 #endif
 

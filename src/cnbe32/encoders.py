@@ -10,14 +10,17 @@ class TreeEncoder:
 class TyphoonEncoder:
     """v10.3: Typhoon path [lat(8)+lon(8)+wind(8)+pressure(8)]"""
     def encode(self, lat, lon, wind, pressure):
-        return int(lat/50*255)&0xFF<<24|int((lon-100)/80*255)&0xFF<<16|int(wind/85*255)&0xFF<<8|int((pressure-900)/120*255)&0xFF
+        return (int(lat/50*255)&0xFF)<<24|(int((lon-100)/80*255)&0xFF)<<16|(int(wind/85*255)&0xFF)<<8|(int((pressure-900)/120*255)&0xFF)
 
 class BlackHoleEncoder:
     """v10.5: BH spacetime [r_Rs(8)+redshift(8)+tidal(8)+deflection(8)]"""
     def encode(self, r_rs, redshift, tidal, deflection):
-        code=0
-        code|=(min(int((r_rs-1)/99*255),255)&0xFF)<<24
-        code|=0; return code  # simplified
+        code = 0
+        code |= (min(int((r_rs - 1) / 99 * 255), 255) & 0xFF) << 24
+        code |= (min(redshift, 255) & 0xFF) << 16
+        code |= (min(tidal, 255) & 0xFF) << 8
+        code |= (min(deflection, 255) & 0xFF)
+        return code
 
 class SocialEncoder:
     """v10.6: Urban state [traffic(8)+livelihood(6)+infra(6)+env(4)+emergency(3)+region(3)+time(2)]"""

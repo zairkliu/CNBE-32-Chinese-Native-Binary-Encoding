@@ -16,7 +16,7 @@ def generate_skill_table(output_format="bin"):
         radix = (i % 214) + 1
         stroke = (i % 31) + 1
         struct = i % 13
-        table[i] = (radix << 24) | (stroke << 19) | (struct << 15) | (i & 0xF)
+        table[i] = (radix << 24) | (stroke << 19) | (struct << 15) | ((i & 0x7FF) << 4)
     os.makedirs(os.path.dirname(OUT) if os.path.dirname(OUT) else ".", exist_ok=True)
     if output_format == "npy":
         np.save(os.path.join(OUT, "skill_table.npy"), table)
