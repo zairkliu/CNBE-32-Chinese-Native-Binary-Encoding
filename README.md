@@ -411,17 +411,19 @@ Encoding Layer: 32-bit CJK Structured Bit Fields (Radical/Stroke/Structure)
 
 ---
 
-## <span id="ai-agent-driven--ai-factory">AI Agent Driven / AI Factory</span>
+## <span id="ai-agent-driven--ai-factory">AI-Assisted Development</span>
 
-This is a project that was previously impossible to complete, but is destined to be born in the AI era.
+This project was developed with assistance from AI systems (Codex / GPT-5 architecture):
 
-| Past | Present |
-|---|---------|
-| 97,686 Chinese character annotations required thousands of linguist man-years | AI Agent assisted automated annotation |
-| Full-stack validation required top-tier teams for years | LLM-assisted code generation + validation |
-| Single-team siloed development | Open source community collaborative exploration |
+| Past Approach | Current Approach |
+|---|---|
+| Manual Chinese character annotation by linguists | AI-assisted automated annotation |
+| Manual full-stack validation by top-tier teams | LLM-assisted code generation + validation |
+| Isolated team development | Open source community exploration |
 
-The dreams of scientists from the last century finally have a chance to be realized in the AI Agent era.
+AI-assisted development enabled rapid prototyping and iteration. However, all AI-generated code and experiments should be reviewed by human engineers before use — this is particularly important for the RISC-V hardware patches and encoding database generation, which may contain subtle issues not caught by automated tests.
+
+Agents have participated in: [encoding design v1] [experiment result analysis v2] [hardware link v7] [OS framework v8] [cross-domain experiment v9-v10].
 
 ---
 
