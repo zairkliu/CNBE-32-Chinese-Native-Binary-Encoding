@@ -100,6 +100,30 @@ Bit: 31              24 23    19 18    15 14              4  3     0
 
 ---
 
+
+
+## Important: This is Not Base32
+
+CNBE-32 is **not** a "Chinese-localized" or "character-replacement" version of Base32.
+
+| Dimension | Base32 | CNBE-32 |
+|-----------|--------|---------|
+| **Encoding target** | Arbitrary binary data | **97,686 CJK characters themselves** |
+| **Code space** | Fixed 32 letters | **Structured 32-bit bitfield** (radical, stroke, structure) |
+| **Goal** | Data compression / transmission | **Let machines "understand" character semantics** |
+| **Target audience** | Human-readable (transcription) | **AI models, CPU instruction sets, OS kernels** |
+
+**In one sentence**: Base32 turns data "into letters", CNBE-32 turns characters "into semantics".
+
+### Who is it for?
+
+- **AI models**: Structured prior knowledge input (radical=spatial anchor, stroke=discrete feature, structure=spatial relationship)
+- **CPU instruction sets**: `cnhe.map` / `cnhe.extract` / `cnhe.cmp` operate at the hardware level
+- **OS kernels**: Filenames, paths, system messages natively support CNBE-32 encoding
+- **Not recommended**: URL transmission, database primary keys, human transcription (use Base64/Base32)
+
+---
+
 ## Why CNBE?
 
 | Dimension | Unicode / UTF-8 | CNBE-32 |
@@ -391,6 +415,25 @@ make all && make run
 cd v10_8_math_reasoning && python run_v108.py
 cd v10_3_typhoon && python v10_3_typhoon.py
 ```
+
+---
+
+
+
+## Application Scenarios
+
+CNBE-32 is designed for **AI-era Chinese computing infrastructure**, not as a general-purpose encoding tool.
+
+| Scenario | Suitability | Description |
+|----------|:-----------:|-------------|
+| AI model structured input | **Recommended** | Provides radical/stroke/structure priors, improves small model comprehension |
+| RISC-V hardware acceleration | **Recommended** | Custom instructions operate directly on encoding bitfields |
+| Chinese-native OS | **Recommended** | Native support for filenames, paths, system messages |
+| Chinese compiler/BASIC | **Recommended** | Direct encoding operations at the language level |
+| Data compression/obfuscation | Not recommended | Semantic encoding, not compression |
+| URL transmission | Not recommended | Characters broken by %-encoding in URLs |
+| Human transcription | Not recommended | Visually similar characters cause errors |
+| Database primary keys | Use with caution | 32-bit integers are storable but CNBE is not a unique identifier |
 
 ---
 
