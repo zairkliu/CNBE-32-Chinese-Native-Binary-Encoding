@@ -10,6 +10,7 @@ from pathlib import Path
 
 
 TEXT_FILES = [
+    ".gitattributes",
     "pyproject.toml",
     ".github/workflows/ci.yml",
     "src/cnbe32/core.py",
@@ -39,6 +40,7 @@ TEXT_FILES = [
 ]
 
 MIN_LINES = {
+    ".gitattributes": 10,
     "pyproject.toml": 30,
     ".github/workflows/ci.yml": 35,
     "src/cnbe32/core.py": 80,
