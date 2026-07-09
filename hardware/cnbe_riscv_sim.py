@@ -5,7 +5,14 @@ import numpy as np
 from openpyxl import load_workbook
 OUT = os.path.dirname(__file__) or "."
 BASE = os.path.dirname(OUT)
-XLSX = os.path.join(BASE, "CNBE_\u7f16\u7801\u76ee\u5f55_\u4fee\u590d\u7248_v3.xlsx")
+# Configure via CNBE_SOURCE_XLSX env var
+_DEFAULT_XLSX = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "cnbe_catalog.xlsx")
+XLSX = os.environ.get("CNBE_SOURCE_XLSX", _DEFAULT_XLSX)
+if not os.path.exists(XLSX):
+    raise FileNotFoundError(
+        f"Source XLSX not found: {XLSX}. "
+        "Set CNBE_SOURCE_XLSX env var to your encoding catalog file."
+    )
 print(f"Loading {XLSX}...")
 wb = load_workbook(XLSX); ws = wb.worksheets[0]; n = ws.max_row - 1
 codes = []

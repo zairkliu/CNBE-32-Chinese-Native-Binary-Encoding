@@ -1,0 +1,42 @@
+{
+  "n_cases": 40,
+  "encoders": [
+    "unicode",
+    "cnbe_full",
+    "random_bitfield"
+  ],
+  "base_model": {
+    "path": "C:\\Users\\zairk\\.cache\\huggingface\\hub\\models--Qwen--Qwen3.5-0.8B\\snapshots\\2fc06364715b967f1860aea9cf38778875588b17",
+    "results": {
+      "unicode": {
+        "ok": 26,
+        "n": 40
+      },
+      "cnbe_full": {
+        "ok": 16,
+        "n": 40
+      },
+      "random_bitfield": {
+        "ok": 15,
+        "n": 40
+      }
+    }
+  },
+  "trained_model": {
+    "path": "C:\\Users\\zairk\\cnbe-training1\\outputs\\cnbe-merged",
+    "results": {
+      "unicode": {
+        "ok": 13,
+        "n": 40
+      },
+      "cnbe_full": {
+        "ok": 8,
+        "n": 40
+      },
+      "random_bitfield": {
+        "ok": 9,
+        "n": 40
+      }
+    }
+  }
+}

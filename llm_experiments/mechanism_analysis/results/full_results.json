@@ -1,0 +1,54 @@
+{
+  "test_cases": 10,
+  "models": [
+    "qwen3.5:0.8b"
+  ],
+  "encoders": [
+    "unicode",
+    "cnbe_full",
+    "radical_only",
+    "stroke_only",
+    "structure_only",
+    "random_bitfield",
+    "radical_stroke"
+  ],
+  "results": {
+    "qwen3.5:0.8b": {
+      "unicode": {
+        "accuracy": 0.2,
+        "correct": 2,
+        "total": 10
+      },
+      "cnbe_full": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 10
+      },
+      "radical_only": {
+        "accuracy": 0.1,
+        "correct": 1,
+        "total": 10
+      },
+      "stroke_only": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 10
+      },
+      "structure_only": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 10
+      },
+      "random_bitfield": {
+        "accuracy": 0.1,
+        "correct": 1,
+        "total": 10
+      },
+      "radical_stroke": {
+        "accuracy": 0.2,
+        "correct": 2,
+        "total": 10
+      }
+    }
+  }
+}

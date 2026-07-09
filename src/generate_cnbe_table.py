@@ -9,8 +9,15 @@ CNBE-32 编码表生成器 v2.0 — 排序表 + 哈希自索引
 """
 import os, math
 
-XLSX = os.path.join(os.path.expanduser("~"), "Desktop",
-    "附件5 中文原生二进制编码实验验证原始数据", "中文原生二进制编码编码目录.xlsx")
+# Configure via CNBE_SOURCE_XLSX env var
+_DEFAULT_XLSX = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "cnbe_catalog.xlsx")
+XLSX = os.environ.get("CNBE_SOURCE_XLSX", _DEFAULT_XLSX)
+if not os.path.exists(XLSX):
+    raise FileNotFoundError(
+        f"Source XLSX not found: {XLSX}.\n"
+        "Set CNBE_SOURCE_XLSX env var to your encoding catalog file, or\n"
+        f"place the file at {_DEFAULT_XLSX}"
+    )
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)))
 
 def main():

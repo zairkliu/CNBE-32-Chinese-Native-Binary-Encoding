@@ -1,13 +1,21 @@
 #!/usr/bin/env python3
-"""CNBE-32 性能模拟器 v2 — 含二分查找和哈希自索引"""
+"""CNBE-32 performance simulator v2 — binary search + hash index"""
 import os, sys, math, random, time
 from collections import Counter
 
-TABLE = os.path.join(os.path.dirname(__file__), "..", "cnbe-riscv", "src", "table")
+# Configure via CNBE_TABLE_DIR env var, falls back to data/ sibling of src/
+_DEFAULT_TABLE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
+TABLE = os.environ.get("CNBE_TABLE_DIR", _DEFAULT_TABLE)
 
 class Loader:
     def __init__(self):
         self.codes, self.uncs, self.chars = [], [], []
+        table_path = os.path.join(TABLE, "unicode_table.h")
+        if not os.path.exists(table_path):
+            raise FileNotFoundError(
+                f"CNBE table not found at {TABLE}. "
+                "Set CNBE_TABLE_DIR or run generate_cnbe_table.py first."
+            )
         with open(os.path.join(TABLE, "unicode_table.h")) as f:
             for line in f:
                 if line.startswith("    0x"):

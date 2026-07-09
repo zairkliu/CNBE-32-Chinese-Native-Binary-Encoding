@@ -59,4 +59,4 @@ if __name__ == "__main__":
                test_non_cjk_error]:
         fn()
     print()
-    print("All 7 tests passed! (v0.4.0)")
+    print("All 7 tests passed! (v1.0.1)")

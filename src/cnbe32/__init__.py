@@ -11,13 +11,13 @@ from .constants import (
     CJK_UNICODE_START, CJK_UNICODE_COUNT, SKILL_TABLE_FILE, RADIX_TABLE_FILE,
 )
 from .exceptions import (
-    CNBEError, CNBECodePointError, CNBEValueError,
+    CNBEError, CNBEValueError,
     CNBEFormatError, CNBECharNotInTableError, CNBEStructureError,
 )
 from .encoders import (
     TreeEncoder, TyphoonEncoder, BlackHoleEncoder,
     SocialEncoder, MathEncoder, RawEncoder, OneHotEncoder, RandomEncoder,
 )
-__version__ = "0.4.0"
+__version__ = "1.0.1"
 from .db import lookup, search, batch, by_radix, stats
 

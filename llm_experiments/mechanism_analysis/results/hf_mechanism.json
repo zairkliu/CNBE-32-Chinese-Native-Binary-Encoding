@@ -1,0 +1,22 @@
+{
+  "model": "cnbe-merged",
+  "cases": 8,
+  "results": {
+    "unicode": {
+      "ok": 2,
+      "n": 8
+    },
+    "cnbe_full": {
+      "ok": 3,
+      "n": 8
+    },
+    "random_bitfield": {
+      "ok": 3,
+      "n": 8
+    },
+    "radical_only": {
+      "ok": 1,
+      "n": 8
+    }
+  }
+}

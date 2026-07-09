@@ -21,3 +21,12 @@ src/*.egg-info/
 *.egg-info/
 build/
 *.whl
+
+
+# Large binary artifacts (tracked via Git LFS or release only)
+*.db
+*.db.gz
+*.xlsx
+*.docx
+data/*.json
+data/*.gz

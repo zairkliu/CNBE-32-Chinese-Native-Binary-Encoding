@@ -56,11 +56,23 @@ def hamming_distance(a, b):
 class CNBE32:
     """CNBE-32 encoding/decoding for Chinese characters (wraps constants + SkillTable)"""
 
+    def __init__(self, skill_table=None):
+        """Initialize with optional SkillTable lookup.
+
+        Args:
+            skill_table: Optional SkillTable instance for char-to-code lookup.
+                         If omitted, encode() will raise CNBECharNotInTableError
+                         unless _table is set externally.
+        """
+        self._table = skill_table.table if skill_table is not None else None
+
     def encode(self, char):
         code_point = ord(char)
         idx = code_point - CJK_UNICODE_START
         if 0 <= idx < CJK_UNICODE_COUNT:
-            return getattr(self, "_table", np.zeros(CJK_UNICODE_COUNT, dtype=np.uint32))[idx]
+            if self._table is not None and len(self._table) > idx:
+                return self._table[idx]
+            raise CNBECharNotInTableError(char, code_point)
         raise CNBECharNotInTableError(char, code_point)
 
     def decode(self, code):

@@ -1,0 +1,614 @@
+{
+  "model": "qwen3.5:0.8b",
+  "results": {
+    "unicode": {
+      "accuracy": 0.2,
+      "correct": 2,
+      "total": 10,
+      "details": [
+        {
+          "idx": 0,
+          "sentence": "苹果是一种水果",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 1,
+          "sentence": "老虎和猫都是猫科动物",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 2,
+          "sentence": "太阳从东方升起",
+          "answer": 1,
+          "response": "1",
+          "parsed": 1,
+          "correct": true
+        },
+        {
+          "idx": 3,
+          "sentence": "水在零度时会结冰",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 4,
+          "sentence": "北京是中国的首都",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 5,
+          "sentence": "三角形有三个角",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 6,
+          "sentence": "鲸鱼是哺乳动物",
+          "answer": 1,
+          "response": "1",
+          "parsed": 1,
+          "correct": true
+        },
+        {
+          "idx": 7,
+          "sentence": "春天之后是夏天",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 8,
+          "sentence": "木头的密度比水小",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 9,
+          "sentence": "中国人口约十四亿",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        }
+      ]
+    },
+    "cnbe_full": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 10,
+      "details": [
+        {
+          "idx": 0,
+          "sentence": "苹果是一种水果",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 1,
+          "sentence": "老虎和猫都是猫科动物",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 2,
+          "sentence": "太阳从东方升起",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 3,
+          "sentence": "水在零度时会结冰",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 4,
+          "sentence": "北京是中国的首都",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 5,
+          "sentence": "三角形有三个角",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 6,
+          "sentence": "鲸鱼是哺乳动物",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 7,
+          "sentence": "春天之后是夏天",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 8,
+          "sentence": "木头的密度比水小",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 9,
+          "sentence": "中国人口约十四亿",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        }
+      ]
+    },
+    "radical_only": {
+      "accuracy": 0.1,
+      "correct": 1,
+      "total": 10,
+      "details": [
+        {
+          "idx": 0,
+          "sentence": "苹果是一种水果",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 1,
+          "sentence": "老虎和猫都是猫科动物",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 2,
+          "sentence": "太阳从东方升起",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 3,
+          "sentence": "水在零度时会结冰",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 4,
+          "sentence": "北京是中国的首都",
+          "answer": 1,
+          "response": "1",
+          "parsed": 1,
+          "correct": true
+        },
+        {
+          "idx": 5,
+          "sentence": "三角形有三个角",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 6,
+          "sentence": "鲸鱼是哺乳动物",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 7,
+          "sentence": "春天之后是夏天",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 8,
+          "sentence": "木头的密度比水小",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 9,
+          "sentence": "中国人口约十四亿",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        }
+      ]
+    },
+    "stroke_only": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 10,
+      "details": [
+        {
+          "idx": 0,
+          "sentence": "苹果是一种水果",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 1,
+          "sentence": "老虎和猫都是猫科动物",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 2,
+          "sentence": "太阳从东方升起",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 3,
+          "sentence": "水在零度时会结冰",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 4,
+          "sentence": "北京是中国的首都",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 5,
+          "sentence": "三角形有三个角",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 6,
+          "sentence": "鲸鱼是哺乳动物",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 7,
+          "sentence": "春天之后是夏天",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 8,
+          "sentence": "木头的密度比水小",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 9,
+          "sentence": "中国人口约十四亿",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        }
+      ]
+    },
+    "structure_only": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 10,
+      "details": [
+        {
+          "idx": 0,
+          "sentence": "苹果是一种水果",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 1,
+          "sentence": "老虎和猫都是猫科动物",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 2,
+          "sentence": "太阳从东方升起",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 3,
+          "sentence": "水在零度时会结冰",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 4,
+          "sentence": "北京是中国的首都",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 5,
+          "sentence": "三角形有三个角",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 6,
+          "sentence": "鲸鱼是哺乳动物",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 7,
+          "sentence": "春天之后是夏天",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 8,
+          "sentence": "木头的密度比水小",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 9,
+          "sentence": "中国人口约十四亿",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        }
+      ]
+    },
+    "random_bitfield": {
+      "accuracy": 0.1,
+      "correct": 1,
+      "total": 10,
+      "details": [
+        {
+          "idx": 0,
+          "sentence": "苹果是一种水果",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 1,
+          "sentence": "老虎和猫都是猫科动物",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 2,
+          "sentence": "太阳从东方升起",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 3,
+          "sentence": "水在零度时会结冰",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 4,
+          "sentence": "北京是中国的首都",
+          "answer": 1,
+          "response": "1",
+          "parsed": 1,
+          "correct": true
+        },
+        {
+          "idx": 5,
+          "sentence": "三角形有三个角",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 6,
+          "sentence": "鲸鱼是哺乳动物",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 7,
+          "sentence": "春天之后是夏天",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 8,
+          "sentence": "木头的密度比水小",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 9,
+          "sentence": "中国人口约十四亿",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        }
+      ]
+    },
+    "radical_stroke": {
+      "accuracy": 0.2,
+      "correct": 2,
+      "total": 10,
+      "details": [
+        {
+          "idx": 0,
+          "sentence": "苹果是一种水果",
+          "answer": 0,
+          "response": "0",
+          "parsed": 0,
+          "correct": true
+        },
+        {
+          "idx": 1,
+          "sentence": "老虎和猫都是猫科动物",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 2,
+          "sentence": "太阳从东方升起",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 3,
+          "sentence": "水在零度时会结冰",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 4,
+          "sentence": "北京是中国的首都",
+          "answer": 1,
+          "response": "1",
+          "parsed": 1,
+          "correct": true
+        },
+        {
+          "idx": 5,
+          "sentence": "三角形有三个角",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 6,
+          "sentence": "鲸鱼是哺乳动物",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 7,
+          "sentence": "春天之后是夏天",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 8,
+          "sentence": "木头的密度比水小",
+          "answer": 1,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        },
+        {
+          "idx": 9,
+          "sentence": "中国人口约十四亿",
+          "answer": 0,
+          "response": "",
+          "parsed": null,
+          "correct": false
+        }
+      ]
+    }
+  }
+}

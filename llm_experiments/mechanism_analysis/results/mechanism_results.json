@@ -1,0 +1,330 @@
+{
+  "model": "qwen3.5:0.8b",
+  "cases": 8,
+  "results": {
+    "unicode": {
+      "correct": 4,
+      "total": 8,
+      "details": [
+        {
+          "case": 0,
+          "answer": 1,
+          "got": 1,
+          "time": "54.9s"
+        },
+        {
+          "case": 1,
+          "answer": 1,
+          "got": null,
+          "time": "51.7s"
+        },
+        {
+          "case": 2,
+          "answer": 0,
+          "got": null,
+          "time": "51.9s"
+        },
+        {
+          "case": 3,
+          "answer": 0,
+          "got": null,
+          "time": "51.8s"
+        },
+        {
+          "case": 4,
+          "answer": 1,
+          "got": 1,
+          "time": "32.8s"
+        },
+        {
+          "case": 5,
+          "answer": 2,
+          "got": 2,
+          "time": "47.9s"
+        },
+        {
+          "case": 6,
+          "answer": 0,
+          "got": null,
+          "time": "51.8s"
+        },
+        {
+          "case": 7,
+          "answer": 0,
+          "got": 0,
+          "time": "42.4s"
+        }
+      ]
+    },
+    "cnbe_full": {
+      "correct": 1,
+      "total": 8,
+      "details": [
+        {
+          "case": 0,
+          "answer": 1,
+          "got": null,
+          "time": "51.3s"
+        },
+        {
+          "case": 1,
+          "answer": 1,
+          "got": null,
+          "time": "51.3s"
+        },
+        {
+          "case": 2,
+          "answer": 0,
+          "got": null,
+          "time": "51.1s"
+        },
+        {
+          "case": 3,
+          "answer": 0,
+          "got": null,
+          "time": "50.0s"
+        },
+        {
+          "case": 4,
+          "answer": 1,
+          "got": null,
+          "time": "46.8s"
+        },
+        {
+          "case": 5,
+          "answer": 2,
+          "got": null,
+          "time": "51.2s"
+        },
+        {
+          "case": 6,
+          "answer": 0,
+          "got": null,
+          "time": "44.4s"
+        },
+        {
+          "case": 7,
+          "answer": 0,
+          "got": 0,
+          "time": "50.2s"
+        }
+      ]
+    },
+    "random_bitfield": {
+      "correct": 3,
+      "total": 8,
+      "details": [
+        {
+          "case": 0,
+          "answer": 1,
+          "got": 1,
+          "time": "51.9s"
+        },
+        {
+          "case": 1,
+          "answer": 1,
+          "got": null,
+          "time": "52.0s"
+        },
+        {
+          "case": 2,
+          "answer": 0,
+          "got": null,
+          "time": "51.8s"
+        },
+        {
+          "case": 3,
+          "answer": 0,
+          "got": null,
+          "time": "52.0s"
+        },
+        {
+          "case": 4,
+          "answer": 1,
+          "got": null,
+          "time": "46.7s"
+        },
+        {
+          "case": 5,
+          "answer": 2,
+          "got": 2,
+          "time": "40.9s"
+        },
+        {
+          "case": 6,
+          "answer": 0,
+          "got": null,
+          "time": "76.9s"
+        },
+        {
+          "case": 7,
+          "answer": 0,
+          "got": 0,
+          "time": "70.1s"
+        }
+      ]
+    },
+    "radical_only": {
+      "correct": 4,
+      "total": 8,
+      "details": [
+        {
+          "case": 0,
+          "answer": 1,
+          "got": 1,
+          "time": "63.9s"
+        },
+        {
+          "case": 1,
+          "answer": 1,
+          "got": null,
+          "time": "74.8s"
+        },
+        {
+          "case": 2,
+          "answer": 0,
+          "got": null,
+          "time": "72.2s"
+        },
+        {
+          "case": 3,
+          "answer": 0,
+          "got": 0,
+          "time": "43.0s"
+        },
+        {
+          "case": 4,
+          "answer": 1,
+          "got": 1,
+          "time": "43.5s"
+        },
+        {
+          "case": 5,
+          "answer": 2,
+          "got": null,
+          "time": "45.0s"
+        },
+        {
+          "case": 6,
+          "answer": 0,
+          "got": null,
+          "time": "22.9s"
+        },
+        {
+          "case": 7,
+          "answer": 0,
+          "got": 0,
+          "time": "18.8s"
+        }
+      ]
+    },
+    "stroke_only": {
+      "correct": 2,
+      "total": 8,
+      "details": [
+        {
+          "case": 0,
+          "answer": 1,
+          "got": null,
+          "time": "23.0s"
+        },
+        {
+          "case": 1,
+          "answer": 1,
+          "got": null,
+          "time": "23.1s"
+        },
+        {
+          "case": 2,
+          "answer": 0,
+          "got": null,
+          "time": "23.4s"
+        },
+        {
+          "case": 3,
+          "answer": 0,
+          "got": null,
+          "time": "23.3s"
+        },
+        {
+          "case": 4,
+          "answer": 1,
+          "got": null,
+          "time": "24.3s"
+        },
+        {
+          "case": 5,
+          "answer": 2,
+          "got": 2,
+          "time": "24.6s"
+        },
+        {
+          "case": 6,
+          "answer": 0,
+          "got": null,
+          "time": "24.9s"
+        },
+        {
+          "case": 7,
+          "answer": 0,
+          "got": 0,
+          "time": "20.0s"
+        }
+      ]
+    },
+    "structure_only": {
+      "correct": 1,
+      "total": 8,
+      "details": [
+        {
+          "case": 0,
+          "answer": 1,
+          "got": null,
+          "time": "26.2s"
+        },
+        {
+          "case": 1,
+          "answer": 1,
+          "got": null,
+          "time": "26.3s"
+        },
+        {
+          "case": 2,
+          "answer": 0,
+          "got": null,
+          "time": "26.2s"
+        },
+        {
+          "case": 3,
+          "answer": 0,
+          "got": null,
+          "time": "26.4s"
+        },
+        {
+          "case": 4,
+          "answer": 1,
+          "got": null,
+          "time": "26.4s"
+        },
+        {
+          "case": 5,
+          "answer": 2,
+          "got": null,
+          "time": "34.1s"
+        },
+        {
+          "case": 6,
+          "answer": 0,
+          "got": null,
+          "time": "26.2s"
+        },
+        {
+          "case": 7,
+          "answer": 0,
+          "got": 0,
+          "time": "12.1s"
+        }
+      ]
+    }
+  }
+}

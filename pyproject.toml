@@ -32,7 +32,22 @@ classifiers = [
  Repository = "https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding"
  "Bug Tracker" = "https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding/issues"
 
- [tool.setuptools.packages.find]
- where = ["src"]
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP"]
+ignore = ["E501"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
 
 

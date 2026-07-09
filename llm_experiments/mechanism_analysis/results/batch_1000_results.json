@@ -1,0 +1,24 @@
+{
+  "n_cases": 325,
+  "encoders": [
+    "unicode",
+    "cnbe_full",
+    "random_bitfield"
+  ],
+  "total_queries": 975,
+  "time_s": 42.55691909790039,
+  "results": {
+    "unicode": {
+      "ok": 277,
+      "n": 325
+    },
+    "cnbe_full": {
+      "ok": 294,
+      "n": 325
+    },
+    "random_bitfield": {
+      "ok": 287,
+      "n": 325
+    }
+  }
+}

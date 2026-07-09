@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "hardware/wasm/**"
+      - "hardware/**"
       - ".github/workflows/wasm-deploy.yml"
 
 jobs:
@@ -24,18 +24,18 @@ jobs:
       - name: Build WASM with Emscripten
         run: |
           docker run --rm -v $PWD:/src emscripten/emsdk:latest \
-            emcc /src/hardware/wasm/cnbe_wasm.c \
-              -o /src/hardware/wasm/cnbe_wasm.wasm \
+            emcc /src/hardware/cnbe_wasm.c \
+              -o /src/hardware/cnbe_wasm.wasm \
               -O3 -s WASM=1 -s EXPORTED_FUNCTIONS='["_cnbe_encode","_cnbe_radix","_cnbe_stroke","_cnbe_struct_type","_cnbe_index","_cnbe_extension","_cnbe_distance","_cnbe_struct_name"]' \
               -s EXPORTED_RUNTIME_METHODS='["ccall","cwrap"]'
 
       - name: Copy WASM to docs
         run: |
           mkdir -p docs/wasm
-          cp hardware/wasm/*.wasm docs/wasm/ 2>/dev/null || true
-          cp hardware/wasm/index.html docs/wasm/
-          cp hardware/wasm/app.js docs/wasm/
-          cp hardware/wasm/style.css docs/wasm/
+          cp hardware/*.wasm docs/wasm/ 2>/dev/null || true
+          cp hardware/index.html docs/wasm/
+          cp hardware/app.js docs/wasm/
+          cp hardware/style.css docs/wasm/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
