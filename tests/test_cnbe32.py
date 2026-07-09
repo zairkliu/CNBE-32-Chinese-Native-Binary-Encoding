@@ -1,7 +1,10 @@
 # CNBE-32 test suite (v0.4.0)
-import sys, os
+import os
+import sys
+
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
-from cnbe32 import CNBE32, encode_cnbe, decode_cnbe, hamming_distance
+from cnbe32 import CNBE32, decode_cnbe, encode_cnbe, hamming_distance
+
 
 def test_encode_decode():
     c = encode_cnbe(1, 1, 0)

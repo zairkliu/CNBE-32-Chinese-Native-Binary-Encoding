@@ -1,7 +1,12 @@
 # CNBE-32
 
 > **Project status**: Research prototype.
-> **Stable**: Python bitfield encoder/decoder and Basic CJK lookup (20,902 chars), depending on available database.
+>
+> **Current stable Python SDK database**: **20,902 Basic CJK** entries (packaged in wheel).
+> **97,686 CJK** is a design target / experimental extended coverage — it is *not* the coverage of the pip-installable database.
+> The "0% collision" figure was measured on the current 20,902-character Basic CJK database and does not reflect the full theoretical 97,686-character encoding space.
+>
+> **Stable**: Python bitfield encoder/decoder and Basic CJK lookup.
 > **Experimental**: LLM, JEPA, RISC-V, OS, finance, biology, and physics prototypes.
 > See [docs/PYTHON_SDK.md](docs/PYTHON_SDK.md) for stable SDK documentation.
 

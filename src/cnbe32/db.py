@@ -38,11 +38,12 @@ def resolve_db_path() -> Path:
 
     # 2. importlib.resources (works when installed as a wheel / pip install)
     try:
-        from importlib.resources import files as _resources_files
+        from importlib.resources import as_file, files
 
-        db_file = _resources_files("cnbe32") / "data" / "cnbe32.db"
-        if db_file.is_file():
-            return db_file
+        _ref = files("cnbe32").joinpath("data", "cnbe32.db")
+        with as_file(_ref) as db_file:
+            if db_file.is_file():
+                return db_file
     except Exception:  # noqa: BLE001
         pass
 

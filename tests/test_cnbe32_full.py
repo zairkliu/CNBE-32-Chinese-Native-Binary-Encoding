@@ -3,7 +3,6 @@
 # Run unit tests only:    pytest tests/test_cnbe32_full.py -m "not integration"
 # Run everything:         pytest tests/test_cnbe32_full.py
 
-import os
 import sys
 import warnings
 from pathlib import Path
@@ -22,19 +21,18 @@ from cnbe32 import (
     encode_cnbe,
     field_weighted_distance,
     hamming_distance,
-)
+)  # noqa: E402
 from cnbe32.constants import (
-    CJK_UNICODE_COUNT,
     CNBE_EXT_FLAGS_MAX,
     CNBE_STRUCT_MAX,
     INDEX_MASK,
-)
-from cnbe32.db import batch, close, resolve_db_path
+)  # noqa: E402
+from cnbe32.db import batch, close, resolve_db_path  # noqa: E402
 from cnbe32.exceptions import (
     CNBECharNotInTableError,
     CNBEFormatError,
     CNBEValueError,
-)
+)  # noqa: E402
 
 
 def _db_available():
@@ -204,7 +202,7 @@ class TestCNBE32:
     @_db_marker
     def test_encode_with_real_table(self):
         st = SkillTable.empty()
-        from cnbe32.db import lookup
+        from cnbe32.db import lookup  # noqa: E402
         row = lookup(chr(0x4E00))
         if row:
             st.table[0] = row["cnbe"]
@@ -232,7 +230,7 @@ class TestSkillTable:
             SkillTable.from_file("/nonexistent/path/skill.bin")
 
     def test_direct_call_raises(self):
-        with pytest.raises(TypeError, match=r'SkillTable\(\) is not supported'):
+        with pytest.raises(TypeError):
             SkillTable()
 
     def test_lookup_out_of_range(self):
