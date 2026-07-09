@@ -43,7 +43,7 @@ def test_hamming():
 
 def test_skill_table():
     from cnbe32.skill_table import SkillTable
-    assert SkillTable().lookup(0x4E00) == 0
+    assert SkillTable.empty().lookup(0x4E00) == 0
     print("PASS: skill table")
 
 def test_non_cjk_error():
