@@ -9,16 +9,21 @@ The project is currently a research prototype. Releases should be treated as SDK
 Before publishing a release candidate:
 
 ```bash
-python -m pip install -U pip build pytest ruff
+python -m pip install -U pip build pytest ruff tomli
+python scripts/validate_format_integrity.py
 python -m compileall src tests
 python -m build
+python scripts/verify_release_artifacts.py
 python -m pip install --force-reinstall dist/*.whl
 python -c "import cnbe32; print(cnbe32.__all__)"
 pytest
 ruff check src tests
+make -C c/golden_vectors clean
 make -C c/golden_vectors test
 cargo test --manifest-path rust/golden_vectors/Cargo.toml
 ```
+
+Do not tag or publish unless remote `main` has passed format integrity checks.
 
 Confirm the wheel contains expected package data:
 

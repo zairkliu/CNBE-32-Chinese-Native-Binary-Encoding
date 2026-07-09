@@ -187,6 +187,7 @@ CNBE-32 includes machine-readable golden vectors in [spec/golden_vectors.json](.
 
 - [Changelog](./CHANGELOG.md)
 - [Release process](./RELEASE.md)
+- [v1.0.2 release notes draft](./docs/releases/v1.0.2.md)
 - [Contributing guide](./CONTRIBUTING.md)
 - [Security policy](./SECURITY.md)
 
