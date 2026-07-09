@@ -11,10 +11,9 @@ from __future__ import annotations
 import os
 import sqlite3
 from pathlib import Path
-from typing import Optional, Union
 
-_conn: Optional[sqlite3.Connection] = None
-_cursor: Optional[sqlite3.Cursor] = None
+_conn: sqlite3.Connection | None = None
+_cursor: sqlite3.Cursor | None = None
 
 
 def resolve_db_path() -> Path:
@@ -70,7 +69,7 @@ def _ensure_db() -> None:
     _cursor = _conn.cursor()
 
 
-def lookup(char: str) -> Optional[dict]:
+def lookup(char: str) -> dict | None:
     """Look up a single CJK character. Returns dict or None."""
     _ensure_db()
     _cursor.execute("SELECT * FROM cnbe32 WHERE char = ?", (char,))
@@ -78,7 +77,7 @@ def lookup(char: str) -> Optional[dict]:
     return dict(row) if row else None
 
 
-def search(code: int) -> Optional[dict]:
+def search(code: int) -> dict | None:
     """Search by 32-bit CNBE code. Returns dict or None."""
     _ensure_db()
     _cursor.execute("SELECT * FROM cnbe32 WHERE cnbe = ?", (code,))
@@ -86,7 +85,7 @@ def search(code: int) -> Optional[dict]:
     return dict(row) if row else None
 
 
-def batch(chars: Union[str, list[str]]) -> list[dict]:
+def batch(chars: str | list[str]) -> list[dict]:
     """Batch lookup multiple characters.
 
     Accepts a string (iterated per-character) or a list of strings.

@@ -46,6 +46,9 @@ target-version = "py310"
 select = ["E", "F", "W", "I", "N", "UP"]
 ignore = ["E501"]
 
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+
 [tool.ruff.format]
 quote-style = "double"
 

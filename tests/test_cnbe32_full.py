@@ -231,10 +231,9 @@ class TestSkillTable:
         with pytest.raises(FileNotFoundError):
             SkillTable.from_file("/nonexistent/path/skill.bin")
 
-    def test_direct_call_creates_empty(self):
-        st = SkillTable()
-        assert st.lookup(0x4E00) == 0
-        assert len(st.table) == CJK_UNICODE_COUNT
+    def test_direct_call_raises(self):
+        with pytest.raises(TypeError, match=r'SkillTable\(\) is not supported'):
+            SkillTable()
 
     def test_lookup_out_of_range(self):
         st = SkillTable.empty()

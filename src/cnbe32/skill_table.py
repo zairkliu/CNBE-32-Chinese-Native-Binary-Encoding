@@ -1,15 +1,13 @@
 """Skill table loader (v6.0 8105-character CJK encoding).
 
 The SkillTable maps Unicode code points in the Basic CJK range
-(U+4E00–U+9FFF) to CNBE-32 codes.  It can be constructed empty for
+(U+4E00-U+9FFF) to CNBE-32 codes.  It can be constructed empty for
 testing, or loaded from a ``.npy`` / ``.bin`` file on disk.
 """
 
 from __future__ import annotations
 
-import os
 from pathlib import Path
-from typing import Optional
 
 import numpy as np
 
@@ -19,32 +17,39 @@ _CJK_COUNT = 20902
 
 
 class SkillTable:
-    """81.6 KB lookup table for Basic CJK characters (20,902 entries).
+    """81.6 KB lookup table for Basic CJK characters (20902 entries).
 
-    Use :meth:`SkillTable.empty` for a zero-initialised table (safe for
-    testing), or :meth:`SkillTable.from_file` to load a real table from
-    disk.  Calling ``SkillTable()`` directly is supported but discouraged
-    in new code — it behaves identically to :meth:`SkillTable.empty`.
+    Calling ``SkillTable()`` is **not** supported — it raises
+    :exc:`TypeError`.  Use one of the factories instead:
+
+    * :meth:`SkillTable.empty` — zero-filled table (safe for testing)
+    * :meth:`SkillTable.from_file` — load a ``.npy`` / ``.bin`` from disk
     """
 
     def __init__(self) -> None:
-        self.table: np.ndarray = np.zeros(_CJK_COUNT, dtype=np.uint32)
+        raise TypeError(
+            "SkillTable() is not supported. "
+            "Use SkillTable.empty() for a zero-filled table, "
+            "or SkillTable.from_file(path) to load a real table from disk."
+        )
 
     # ------------------------------------------------------------------
     # Constructors
     # ------------------------------------------------------------------
 
     @classmethod
-    def empty(cls) -> "SkillTable":
+    def empty(cls) -> SkillTable:
         """Return a zero-filled SkillTable.
 
         This is a safe default for tests and offline usage.  A zero table
         will return 0 for every lookup, which means "no encoding found".
         """
-        return cls()
+        inst = object.__new__(cls)
+        inst.table = np.zeros(_CJK_COUNT, dtype=np.uint32)
+        return inst
 
     @classmethod
-    def from_file(cls, path: str | Path) -> "SkillTable":
+    def from_file(cls, path: str | Path) -> SkillTable:
         """Load a SkillTable from a ``.npy`` or ``.bin`` file.
 
         Args:
@@ -62,8 +67,9 @@ class SkillTable:
         if not path.is_file():
             raise FileNotFoundError(f"SkillTable file not found: {path}")
 
-        inst = cls()
-        inst.load(str(path))
+        inst = object.__new__(cls)
+        inst.table = np.zeros(_CJK_COUNT, dtype=np.uint32)
+        inst._do_load(str(path))
         return inst
 
     # ------------------------------------------------------------------
@@ -72,6 +78,9 @@ class SkillTable:
 
     def load(self, path: str) -> None:
         """Load table data from *path* (``.npy`` or ``.bin``)."""
+        self._do_load(path)
+
+    def _do_load(self, path: str) -> None:
         if path.endswith(".npy"):
             self.table = np.load(path)
         elif path.endswith(".bin"):

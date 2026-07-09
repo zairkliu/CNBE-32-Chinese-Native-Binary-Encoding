@@ -9,7 +9,7 @@
 
 A 32-bit encoding that embeds the structural semantics of Chinese characters (radical, stroke count, and structure type) directly into binary, exploring how CPUs and AI can natively understand Chinese.
 
-A structured 32-bit encoding for 97,686 CJK characters that embeds radical, stroke count, and structure type directly into the encoding space.
+A structured 32-bit encoding for 97,686 CJK characters (theoretical encoding space; current database: 20,902 Basic CJK) that embeds radical, stroke count, and structure type directly into the encoding space.
 
 <p align="center">
   <a href="docs/VISION.md"><img src="https://img.shields.io/badge/Status-Research%20Prototype-yellow?style=for-the-badge" alt="Research Prototype"></a>
@@ -118,7 +118,7 @@ CNBE-32 is **not** a "Chinese-localized" or "character-replacement" version of B
 
 | Dimension | Base32 | CNBE-32 |
 |---|--------|---|
-| **Encoding target** | Arbitrary binary data | **97,686 CJK characters themselves** |
+| **Encoding target** | Arbitrary binary data | **97,686 CJK characters (theoretical)** ≈ |
 | **Code space** | Fixed 32 letters | **Structured 32-bit bitfield** (radical, stroke, structure) |
 | **Goal** | Data compression / transmission | **Let machines "understand" character semantics** |
 | **Target audience** | Human-readable (transcription) | **AI models, CPU instruction sets, OS kernels** |
@@ -183,9 +183,9 @@ One exploratory direction of CNBE-32 is to help Chinese speakers engage with und
 | Hardware lookup extreme latency | 0.8 ns (x86) / 1 Cycle (FPGA) | Ultra-fast response for real-time interaction; suitable for low-frequency, low-power embedded chips |
 | Minimal memory footprint | Only 81.6 KB (SRAM/BRAM) | Fits easily into any L1/L2 cache or on-chip storage without external DRAM, reducing BOM cost |
 | Encoding semantic density | 32 bits containing radical/stroke/structure | Single encoding equivalent to dozens of text annotation tokens, greatly reducing learning and inference overhead for small models |
-| CJK coverage breadth | **97,686** characters | Covers ancient texts, rare names, and dialect characters, ensuring cultural diversity isn't marginalized in the AI era |
+| CJK coverage breadth | **97,686** (theoretical) / **20,902** (available in DB) | Theoretical encoding space covers all CJK extensions; current database covers Basic CJK |
 | Hard-task rare character handling | **+17.4 pp** (vs Unicode) | Dominates traditional encoding in traditional/variant/chemical equation scenarios, ensuring professional knowledge equity |
-| Lookup collision rate | **0%** (full coverage verified) | Zero-ambiguity lookup, ensuring stability and reliability on edge devices |
+| Lookup collision rate | **0%** (verified on 20,902 Basic CJK database) | Zero-ambiguity lookup on current database; theoretical collision rate across full 97,686 space not yet measured |
 
 ---
 
