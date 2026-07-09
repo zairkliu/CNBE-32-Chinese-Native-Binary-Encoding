@@ -39,6 +39,13 @@ jobs:
         run: |
           pytest
 
+      
+      - name: Run C golden vector consistency test
+        run: make -C c/golden_vectors test
+
+      - name: Run Rust golden vector consistency test
+        run: cargo test --manifest-path rust/golden_vectors/Cargo.toml
+
       - name: Lint
         run: |
           ruff check src tests
