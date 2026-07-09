@@ -1,4 +1,4 @@
-﻿"""Domain-specific CNBE encoders from v9.0-v10.8 experiments"""
+"""Domain-specific CNBE encoders from v9.0-v10.8 experiments"""
 import numpy as np
 
 class TreeEncoder:

@@ -1,4 +1,4 @@
-﻿# CNBE-32 test suite (v0.4.0)
+# CNBE-32 test suite (v0.4.0)
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 from cnbe32 import CNBE32, encode_cnbe, decode_cnbe, hamming_distance
