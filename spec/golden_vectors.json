@@ -1,0 +1,240 @@
+{
+  "version": "1.0.0",
+  "encoding": "CNBE-32",
+  "description": "Golden vectors for CNBE-32 bitfield encode/decode consistency tests.",
+  "bitfield_layout": {
+    "radix": {
+      "bits": 8,
+      "shift": 24,
+      "min": 0,
+      "max": 255
+    },
+    "stroke": {
+      "bits": 5,
+      "shift": 19,
+      "min": 0,
+      "max": 31
+    },
+    "struct": {
+      "bits": 4,
+      "shift": 15,
+      "min": 0,
+      "max": 15
+    },
+    "index": {
+      "bits": 11,
+      "shift": 4,
+      "min": 0,
+      "max": 2047
+    },
+    "ext": {
+      "bits": 4,
+      "shift": 0,
+      "min": 0,
+      "max": 15
+    }
+  },
+  "vectors": [
+    {
+      "name": "all_zero",
+      "fields": {
+        "radix": 0,
+        "stroke": 0,
+        "struct": 0,
+        "index": 0,
+        "ext": 0
+      },
+      "code_dec": 0,
+      "code_hex": "0x00000000"
+    },
+    {
+      "name": "all_max",
+      "fields": {
+        "radix": 255,
+        "stroke": 31,
+        "struct": 15,
+        "index": 2047,
+        "ext": 15
+      },
+      "code_dec": 4294967295,
+      "code_hex": "0xFFFFFFFF"
+    },
+    {
+      "name": "radix_only",
+      "fields": {
+        "radix": 1,
+        "stroke": 0,
+        "struct": 0,
+        "index": 0,
+        "ext": 0
+      },
+      "code_dec": 16777216,
+      "code_hex": "0x01000000"
+    },
+    {
+      "name": "stroke_only",
+      "fields": {
+        "radix": 0,
+        "stroke": 1,
+        "struct": 0,
+        "index": 0,
+        "ext": 0
+      },
+      "code_dec": 524288,
+      "code_hex": "0x00080000"
+    },
+    {
+      "name": "struct_only",
+      "fields": {
+        "radix": 0,
+        "stroke": 0,
+        "struct": 1,
+        "index": 0,
+        "ext": 0
+      },
+      "code_dec": 32768,
+      "code_hex": "0x00008000"
+    },
+    {
+      "name": "index_only",
+      "fields": {
+        "radix": 0,
+        "stroke": 0,
+        "struct": 0,
+        "index": 1,
+        "ext": 0
+      },
+      "code_dec": 16,
+      "code_hex": "0x00000010"
+    },
+    {
+      "name": "ext_only",
+      "fields": {
+        "radix": 0,
+        "stroke": 0,
+        "struct": 0,
+        "index": 0,
+        "ext": 1
+      },
+      "code_dec": 1,
+      "code_hex": "0x00000001"
+    },
+    {
+      "name": "sample_ming_like",
+      "note": "Illustrative field sample, not a normative character mapping.",
+      "fields": {
+        "radix": 72,
+        "stroke": 8,
+        "struct": 1,
+        "index": 123,
+        "ext": 0
+      },
+      "code_dec": 1212188592,
+      "code_hex": "0x484087B0"
+    },
+    {
+      "name": "sample_middle_values",
+      "fields": {
+        "radix": 128,
+        "stroke": 16,
+        "struct": 8,
+        "index": 1024,
+        "ext": 8
+      },
+      "code_dec": 2156150792,
+      "code_hex": "0x80844008"
+    },
+    {
+      "name": "sample_mixed_low",
+      "fields": {
+        "radix": 7,
+        "stroke": 3,
+        "struct": 2,
+        "index": 45,
+        "ext": 9
+      },
+      "code_dec": 119079641,
+      "code_hex": "0x071902D9"
+    },
+    {
+      "name": "sample_mixed_high",
+      "fields": {
+        "radix": 201,
+        "stroke": 27,
+        "struct": 14,
+        "index": 1777,
+        "ext": 6
+      },
+      "code_dec": 3386863382,
+      "code_hex": "0xC9DF6F16"
+    }
+  ],
+  "invalid_vectors": [
+    {
+      "name": "radix_negative",
+      "fields": {
+        "radix": -1,
+        "stroke": 0,
+        "struct": 0,
+        "index": 0,
+        "ext": 0
+      },
+      "error": "CNBEValueError"
+    },
+    {
+      "name": "radix_overflow",
+      "fields": {
+        "radix": 256,
+        "stroke": 0,
+        "struct": 0,
+        "index": 0,
+        "ext": 0
+      },
+      "error": "CNBEValueError"
+    },
+    {
+      "name": "stroke_overflow",
+      "fields": {
+        "radix": 0,
+        "stroke": 32,
+        "struct": 0,
+        "index": 0,
+        "ext": 0
+      },
+      "error": "CNBEValueError"
+    },
+    {
+      "name": "struct_overflow",
+      "fields": {
+        "radix": 0,
+        "stroke": 0,
+        "struct": 16,
+        "index": 0,
+        "ext": 0
+      },
+      "error": "CNBEValueError"
+    },
+    {
+      "name": "index_overflow",
+      "fields": {
+        "radix": 0,
+        "stroke": 0,
+        "struct": 0,
+        "index": 2048,
+        "ext": 0
+      },
+      "error": "CNBEValueError"
+    },
+    {
+      "name": "ext_overflow",
+      "fields": {
+        "radix": 0,
+        "stroke": 0,
+        "struct": 0,
+        "index": 0,
+        "ext": 16
+      },
+      "error": "CNBEValueError"
+    }
+  ]
+}
