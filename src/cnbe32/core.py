@@ -126,4 +126,3 @@ def hamming_distance(a: CNBE32, b: CNBE32) -> int:
         stacklevel=2,
     )
     return field_weighted_distance(a, b)
-# integrity check: 1783623667

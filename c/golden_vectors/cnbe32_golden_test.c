@@ -119,4 +119,3 @@ int main(void) {
     printf("C golden vector consistency PASS: %zu valid, %zu invalid\n", vcount, icount);
     return 0;
 }
-/* integrity check: 1783623667 */
