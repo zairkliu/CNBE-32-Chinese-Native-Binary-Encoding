@@ -46,4 +46,4 @@ All notable changes to CNBE-32 will be documented in this file.
 
 ### Notes
 
-This release remains a research-prototype SDK. It does not claim full CJK coverage, 0% collision rate, production readiness, or validated model/hardware performance.
+This release remains a research-prototype SDK. It does not claim full CJK coverage, zero collision claims, production readiness, or validated model/hardware performance.
