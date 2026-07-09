@@ -8,6 +8,50 @@ import tomllib
 import unicodedata
 from pathlib import Path
 
+"""
+
+# Usage:
+#   python scripts/validate_format_integrity.py
+#   CI runs this on every push and pull request.
+#
+# This validator checks:
+#   - File encoding (UTF-8, no BOM)
+#   - Line endings (LF only)
+#   - Hidden/control Unicode characters
+#   - Minimum line counts per file type
+#   - Python syntax (AST parse)
+#   - TOML syntax (tomllib.parse)
+#   - JSON syntax
+#   - Required content fragments (CI steps, C includes, README sections)
+#   - Forbidden claims (coverage, collision, proof-style wording)
+#   - Tracked binary artifacts
+CNBE-32 Format Integrity Validator
+
+This script validates that all key files in the repository meet minimum
+format requirements: UTF-8 encoding, LF line endings, no BOM, no hidden
+control characters, valid syntax (Python AST / TOML / JSON), minimum
+line counts, required content fragments, and no forbidden claims.
+
+Run: python scripts/validate_format_integrity.py
+CI:   integrated into .github/workflows/ci.yml
+"""
+
+# Usage:
+#   python scripts/validate_format_integrity.py
+#   CI runs this on every push and pull request.
+#
+# This validator checks:
+#   - File encoding (UTF-8, no BOM)
+#   - Line endings (LF only)
+#   - Hidden/control Unicode characters
+#   - Minimum line counts per file type
+#   - Python syntax (AST parse)
+#   - TOML syntax (tomllib.parse)
+#   - JSON syntax
+#   - Required content fragments (CI steps, C includes, README sections)
+#   - Forbidden claims (coverage, collision, proof-style wording)
+#   - Tracked binary artifacts
+
 TEXT_FILES = [
     "pyproject.toml", ".github/workflows/ci.yml",
     "src/cnbe32/core.py", "src/cnbe32/constants.py", "src/cnbe32/exceptions.py",
@@ -21,7 +65,24 @@ TEXT_FILES = [
     "CHANGELOG.md", "RELEASE.md", "CONTRIBUTING.md", "SECURITY.md",
 ]
 
-def fail(msg):
+def fail(msg: str) -> None:
+    """Report a format integrity failure and exit."""
+
+# Usage:
+#   python scripts/validate_format_integrity.py
+#   CI runs this on every push and pull request.
+#
+# This validator checks:
+#   - File encoding (UTF-8, no BOM)
+#   - Line endings (LF only)
+#   - Hidden/control Unicode characters
+#   - Minimum line counts per file type
+#   - Python syntax (AST parse)
+#   - TOML syntax (tomllib.parse)
+#   - JSON syntax
+#   - Required content fragments (CI steps, C includes, README sections)
+#   - Forbidden claims (coverage, collision, proof-style wording)
+#   - Tracked binary artifacts
     print(f"FORMAT INTEGRITY FAIL: {msg}", file=sys.stderr)
     raise SystemExit(1)
 
@@ -60,7 +121,24 @@ README_REQUIRED = {
 FORBIDDEN = ["full coverage verified", "0% collision", "validated on 90,000", "Proves",
              "Prove encoding", "production-ready", "CJK全量覆盖验证", "零碰撞全覆盖", "证明编码", "生产可用"]
 
-def main():
+def main() -> int:
+    """Validate format integrity of all key files. Returns 0 on success."""
+
+# Usage:
+#   python scripts/validate_format_integrity.py
+#   CI runs this on every push and pull request.
+#
+# This validator checks:
+#   - File encoding (UTF-8, no BOM)
+#   - Line endings (LF only)
+#   - Hidden/control Unicode characters
+#   - Minimum line counts per file type
+#   - Python syntax (AST parse)
+#   - TOML syntax (tomllib.parse)
+#   - JSON syntax
+#   - Required content fragments (CI steps, C includes, README sections)
+#   - Forbidden claims (coverage, collision, proof-style wording)
+#   - Tracked binary artifacts
     for fn in TEXT_FILES:
         p = Path(fn)
         if not p.exists(): fail(f"missing: {fn}")
