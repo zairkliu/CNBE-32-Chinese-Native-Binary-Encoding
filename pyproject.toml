@@ -48,6 +48,8 @@ ignore = ["E501", "E402"]
 
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = ["F401"]
+"test_cnbe32.py" = ["E401", "I001"]
+"test_cnbe32_full.py" = ["E402"]
 
 [tool.ruff.format]
 quote-style = "double"
