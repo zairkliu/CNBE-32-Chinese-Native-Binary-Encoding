@@ -39,7 +39,6 @@ jobs:
         run: |
           pytest
 
-      
       - name: Run C golden vector consistency test
         run: make -C c/golden_vectors test
 
