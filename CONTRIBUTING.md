@@ -35,7 +35,7 @@ Implementation changes must preserve compatibility with `spec/golden_vectors.jso
 
 ## Documentation claims
 
-Avoid unsupported claims: full coverage verified, 0% collision, proves, production-ready, validated on 90,000+.
+Avoid unsupported claims: coverage assertions without data, zero-collision statements without experiments, overly strong conclusions, unfounded readiness claims, unsupported coverage figures, prove-style claims.
 
 Preferred wording: explores, experiments with, preliminary evidence, research target, stable baseline, implementation consistency.
 

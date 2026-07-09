@@ -14,6 +14,10 @@
 #define INDEX_MAX 2047u
 #define EXT_MAX 15u
 
+/* Golden vector consistency test — validated against spec/golden_vectors.json */
+/* This file should not be modified independently of the spec. */
+/* See spec/IMPLEMENTATION_CONSISTENCY.md for CI and cross-language test instructions. */
+
 typedef struct {
     const char *name;
     unsigned radix;
