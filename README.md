@@ -38,6 +38,30 @@ A structured 32-bit encoding experiment for CJK characters. The packaged Python 
   <a href="README_ZH.md"><strong>[ 中文 ]</strong></a>  <a href="README_EN.md"><strong>[ English ]</strong></a>
 </p>
 
+
+## <span id="coverage-terminology">Coverage terminology</span>
+
+CNBE-32 uses several coverage terms that should not be mixed:
+
+- **Packaged Python SDK database**: currently 20,902 Basic CJK entries (shipped in the wheel).
+- **Experimental extended scope**: 97,686 CJK characters as a design / research target.
+- **Experiment-specific coverage**: depends on the dataset and reproduction script for each experiment.
+
+Unless otherwise stated, examples in the Python SDK documentation refer to the packaged 20,902-entry Basic CJK database.
+
+## <span id="evidence-level">Evidence level</span>
+
+This repository contains research prototypes and early experiments. Results should be interpreted as preliminary unless the corresponding experiment includes:
+
+- fixed dataset versions,
+- reproducible scripts,
+- baseline comparisons,
+- random seeds or deterministic settings,
+- raw outputs or result artifacts,
+- and clear train/test separation where applicable.
+
+The Python SDK hardening work focuses on making the core encoder, decoder, distance utilities, database loading, and tests reproducible.
+
 ---
 
 ## <span id="architecture-panorama">Architecture Panorama</span>
