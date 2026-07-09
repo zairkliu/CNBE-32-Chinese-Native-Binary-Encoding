@@ -1,4 +1,4 @@
-﻿*.pyc
+*.pyc
 __pycache__/
 .DS_Store
 *.swp
@@ -30,3 +30,6 @@ build/
 *.docx
 data/*.json
 data/*.gz
+
+# Allow the packaged database inside src/cnbe32 (needed for pip install)
+!src/cnbe32/data/cnbe32.db

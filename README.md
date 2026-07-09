@@ -1,4 +1,9 @@
-﻿# CNBE-32
+# CNBE-32
+
+> **Project status**: Research prototype.
+> **Stable**: Python bitfield encoder/decoder and Basic CJK lookup (20,902 chars), depending on available database.
+> **Experimental**: LLM, JEPA, RISC-V, OS, finance, biology, and physics prototypes.
+> See [docs/PYTHON_SDK.md](docs/PYTHON_SDK.md) for stable SDK documentation.
 
 **Chinese Native Binary Encoding**
 
