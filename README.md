@@ -14,7 +14,7 @@
 
 A 32-bit encoding that embeds the structural semantics of Chinese characters (radical, stroke count, and structure type) directly into binary, exploring how CPUs and AI can natively understand Chinese.
 
-A structured 32-bit encoding for 97,686 CJK characters that embeds radical, stroke count, and structure type directly into the encoding space.
+A structured 32-bit encoding experiment for CJK characters. The packaged Python SDK currently includes a 20,902-entry Basic CJK database; broader 97,686-character coverage is an experimental target.
 
 <p align="center">
   <a href="docs/VISION.md"><img src="https://img.shields.io/badge/Status-Research%20Prototype-yellow?style=for-the-badge" alt="Research Prototype"></a>
@@ -59,7 +59,7 @@ Inspired by the **Digital China 2035** strategy, CNBE-32's goal is:
 
 > **To let every Chinese speaker seamlessly enter the AI era through their native language.**
 
-This is an experimental research prototype with a validated technical concept. As an early-stage exploration in the field of native Chinese computing, it remains in an open research phase. In the AI Agent era, the dreams of previous generations of scientists about full-Chinese computer systems finally have a chance to be realized.
+This is an experimental research prototype with a technical concept that has been explored in preliminary experiments. As an early-stage exploration in the field of native Chinese computing, it remains in an open research phase. In the AI Agent era, the dreams of previous generations of scientists about full-Chinese computer systems finally have a chance to be realized.
 
 ---
 
@@ -123,7 +123,7 @@ CNBE-32 is **not** a "Chinese-localized" or "character-replacement" version of B
 
 | Dimension | Base32 | CNBE-32 |
 |---|--------|---|
-| **Encoding target** | Arbitrary binary data | **97,686 CJK characters themselves** |
+| **Encoding target** | Arbitrary binary data | **97,686 CJK characters (experimental target)** ⁿ |
 | **Code space** | Fixed 32 letters | **Structured 32-bit bitfield** (radical, stroke, structure) |
 | **Goal** | Data compression / transmission | **Let machines "understand" character semantics** |
 | **Target audience** | Human-readable (transcription) | **AI models, CPU instruction sets, OS kernels** |
@@ -148,7 +148,7 @@ CNBE-32 is **not** a "Chinese-localized" or "character-replacement" version of B
 | Machine Cognition | Identifies the character | Understands structural composition |
 | AI Compatibility | Learns from data | Provides structural priors |
 
-**10 cross-domain validations passed (incl. LLM LoRA training)
+**10 cross-domain experimental explorations (incl. LLM LoRA training)
 
 > *Note: Experimental accuracy metrics (e.g., "100%" in v1/v4) refer to model task performance on specific controlled test sets, not absolute encoding capability. See individual whitepapers for methodology.***: Linguistics, Ecology, Meteorology, Finance, Biology, Physics, Sociology, Pre-training, Mathematics
 
@@ -188,9 +188,9 @@ One exploratory direction of CNBE-32 is to help Chinese speakers engage with und
 | Hardware lookup extreme latency | 0.8 ns (x86) / 1 Cycle (FPGA) | Ultra-fast response for real-time interaction; suitable for low-frequency, low-power embedded chips |
 | Minimal memory footprint | Only 81.6 KB (SRAM/BRAM) | Fits easily into any L1/L2 cache or on-chip storage without external DRAM, reducing BOM cost |
 | Encoding semantic density | 32 bits containing radical/stroke/structure | Single encoding equivalent to dozens of text annotation tokens, greatly reducing learning and inference overhead for small models |
-| CJK coverage breadth | **97,686** characters | Covers ancient texts, rare names, and dialect characters, ensuring cultural diversity isn't marginalized in the AI era |
+| CJK coverage breadth | **20,902 Basic CJK (packaged DB)** / **97,686 (experimental target)** | Current packaged database covers Basic CJK; extended coverage is a design target that has not been packaged for the Python SDK |
 | Hard-task rare character handling | **+17.4 pp** (vs Unicode) | Dominates traditional encoding in traditional/variant/chemical equation scenarios, ensuring professional knowledge equity |
-| Lookup collision rate | **0%** (full coverage verified) | Zero-ambiguity lookup, ensuring stability and reliability on edge devices |
+| Lookup collision rate | **0%** (measured on the current 20,902-entry Basic CJK database) | Collision claims should be interpreted only within the scope of the datasets and scripts used for each experiment |
 
 ---
 
@@ -225,7 +225,7 @@ One exploratory direction of CNBE-32 is to help Chinese speakers engage with und
 - Text editor (built-in Tao Te Ching, 205 lines)
 - RISC-V custom instructions: `cnhe.map` / `cnhe.extract` / `cnhe.cmp`
 
-> **Note on v8.4**: This is a proof-of-concept (PoC) prototype. The agent-generated code has 9 blocking architectural issues (encoding corruption, page table mismatch, wrong instruction width, unimplemented trap handlers, etc.) and cannot compile without human review. The concept is validated, but the code requires deep human engineering involvement before it can run on QEMU. See [linux_cnbe32_riscv/WHITEPAPER.md](./linux_cnbe32_riscv/WHITEPAPER.md)
+> **Note on v8.4**: This is a proof-of-concept (PoC) prototype. The agent-generated code has 9 blocking architectural issues (encoding corruption, page table mismatch, wrong instruction width, unimplemented trap handlers, etc.) and cannot compile without human review. The concept is worth further exploration, but the code requires deep human engineering involvement before it can run on QEMU. See [linux_cnbe32_riscv/WHITEPAPER.md](./linux_cnbe32_riscv/WHITEPAPER.md)
 
 ### Mathematical Reasoning Foundation (v10.8)
 
@@ -339,11 +339,11 @@ One exploratory direction of CNBE-32 is to help Chinese speakers engage with und
 
 | Phase | Version | Role |
 | :--- | :--- | :--- |
-| **Semantic validity** | v1~v4 | Proves encoding contains semantics |
-| **Comparative superiority** | v5~v6 | Proves encoding > Unicode |
-| **Hardware feasibility** | v7 | Proves software-to-FPGA path |
-| **System-level compatibility** | v8 | Proves encoding supports full OS ecosystem |
-| **Cross-domain generalization** | v9~v10 | Proves effective across multiple domains |
+| **Semantic validity** | v1~v4 | Explores whether encoding contains structural semantics |
+| **Comparative superiority** | v5~v6 | Explores whether encoding outperforms Unicode on selected tasks |
+| **Hardware feasibility** | v7 | Explores software-to-FPGA path |
+| **System-level compatibility** | v8 | Explores whether encoding can support a full OS ecosystem |
+| **Cross-domain generalization** | v9~v10 | Explores whether CNBE-32 features are useful across multiple domains |
 </details>
 
 > \* 100% refers to model task performance on specific test sets. See individual whitepapers for methodology.
@@ -370,7 +370,7 @@ Why do 8B+ large models show diminishing returns (~0%) from CNBE, while 0.8B sma
 - **Large Model Brute Force Aesthetics**: Massive parameters can implicitly memorize Unicode through brute-force training, masking the structural flaws of the encoding
 - **Small Model Structural Priors**: On compute-constrained edge devices, CNBE transforms glyph structure directly into computational priors
 
-This is the breakthrough path for edge-side AI processing of Chinese.
+This represents an exploratory direction for edge-side AI processing of Chinese.
 
 
 > ## Key Insights III: CNBE Encoding Knowledge LoRA Fine-Tuning
@@ -380,8 +380,8 @@ This is the breakthrough path for edge-side AI processing of Chinese.
 > - **LoRA knowledge injection works**: 500 steps (22 min) + 5000 steps (4.14 h) with 25K diverse Chat Template data, loss from 0.7524 → **0.6424** (↓14.6%), augmentation artifacts eliminated
 > - **Model understands encoding concepts**: After fine-tuning, the model recognizes character radicals, stroke counts, and structure types, outputting CNBE-32 encoded information
 > - **Minimal GPU requirements**: RTX 4060 Ti (8GB) handles the entire pipeline, with peak memory usage of only 1.5GB
-> - **Edge deployment validated**: For the first time, CNBE-32 advances from inference-level semantic validation to training-level knowledge injection
-> - **Complete cross-domain chain**: From linguistics to finance to physics to biology to LLM training, CNBE's structured encoding is validated across encoding, hardware, OS, cross-domain prediction, and model fine-tuning
+> - **Edge deployment explored**: CNBE-32 was explored as a training-level knowledge injection, progressing beyond inference-level semantic experiments
+> - **Cross-domain exploration**: From linguistics to finance to physics to biology to LLM training, CNBE's structured encoding has been explored across encoding, hardware, OS, cross-domain prediction, and model fine-tuning in preliminary experiments
 >
 > Full methodology → [cnbe-llm training(demo)/](<./cnbe-llm training(demo)/>)
 
