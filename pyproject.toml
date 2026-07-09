@@ -1,39 +1,48 @@
-﻿[build-system]
+[build-system]
 requires = ["setuptools>=68.0"]
- build-backend = "setuptools.build_meta"
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "cnbe32"
- version = "1.0.1"
- description = "CNBE-32: Chinese Native Binary Encoding — Structured 32-bit CJK encoding for AI and hardware"
+version = "1.0.1"
+description = "CNBE-32: Chinese Native Binary Encoding — Structured 32-bit CJK encoding for AI and hardware"
 readme = "README.md"
- authors = [
-   {name = "zairkliu"},
- ]
- license = "MulanPSL-2.0"
+authors = [{ name = "zairkliu" }]
+license = { text = "MulanPSL-2.0" }
 requires-python = ">=3.10"
-dependencies = ["numpy>=2.0"]
- keywords = ["chinese", "encoding", "cjk", "riscv", "nlp", "structured-encoding"]
+dependencies = [
+    "numpy>=2.0",
+]
+
 classifiers = [
-    "Development Status :: 4 - Beta",
-     "Intended Audience :: Science/Research",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
-     "Programming Language :: Python :: 3.11",
-     "Programming Language :: Python :: 3.12",
-     "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
-     "Topic :: Software Development :: Embedded Systems",
-     "Topic :: Text Processing :: Linguistic",
- ]
+    "Topic :: Text Processing :: Linguistic",
+]
 
- [project.urls]
- Homepage = "https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding"
- Repository = "https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding"
- "Bug Tracker" = "https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding/issues"
+[project.urls]
+Homepage = "https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding"
+Repository = "https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding"
+Issues = "https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+cnbe32 = ["data/cnbe32.db"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+markers = [
+    "integration: tests that require the cnbe32.db database file",
+]
 
 [tool.ruff]
 line-length = 120
@@ -43,11 +52,8 @@ target-version = "py310"
 select = ["E", "F", "W", "I", "N", "UP"]
 ignore = ["E501"]
 
-[tool.ruff.format]
-quote-style = "double"
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-python_files = ["test_*.py"]
-
-
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+"CNBE编码器.py" = ["ALL"]
+"cnbe_simulator.py" = ["ALL"]
+"generate_cnbe_table.py" = ["ALL"]

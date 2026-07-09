@@ -1,82 +1,128 @@
-﻿"""CNBE-32 core encoding/decoding — uses constants.py + typed exceptions"""
-import numpy as np
+"""Core CNBE-32 bitfield encoding and distance utilities."""
+
+from __future__ import annotations
+
 import warnings
+from dataclasses import dataclass
 
 from .constants import (
-    RADIX_SHIFT, STROKE_SHIFT, STRUCT_SHIFT, INDEX_SHIFT, EXT_SHIFT,
-    RADIX_MASK, STROKE_MASK, STRUCT_MASK, INDEX_MASK, EXT_MASK,
-    STRUCT_NAMES, CNBE_STRUCT_MIN, CNBE_STRUCT_MAX,
-    CNBE_STROKE_MIN, CNBE_STROKE_MAX, CNBE_RADIX_MIN, CNBE_RADIX_MAX,
-    CJK_UNICODE_START, CJK_UNICODE_COUNT,
+    EXT_MAX,
+    EXT_MIN,
+    EXT_SHIFT,
+    INDEX_MAX,
+    INDEX_MIN,
+    INDEX_SHIFT,
+    RADIX_MAX,
+    RADIX_MIN,
+    RADIX_SHIFT,
+    STROKE_MAX,
+    STROKE_MIN,
+    STROKE_SHIFT,
+    STRUCT_MAX,
+    STRUCT_MIN,
+    STRUCT_SHIFT,
 )
-from .exceptions import CNBEValueError, CNBEFormatError, CNBECharNotInTableError
+from .exceptions import CNBEValueError
 
 
-def encode_cnbe(radix=0, stroke=0, struct=0, index=0, ext=0):
-    """Encode CJK fields into 32-bit CNBE code with boundary validation"""
-    for (name, val, lo, hi) in [
-        ("radix", radix, CNBE_RADIX_MIN, CNBE_RADIX_MAX),
-        ("stroke", stroke, CNBE_STROKE_MIN, CNBE_STROKE_MAX),
-        ("struct", struct, CNBE_STRUCT_MIN, CNBE_STRUCT_MAX),
-    ]:
-        if not lo <= val <= hi:
-            raise CNBEValueError(f"{name}={val} is out of range [{lo}, {hi}]")
-    return ((radix & 0xFF) << RADIX_SHIFT) | \
-           ((stroke & 0x1F) << STROKE_SHIFT) | \
-           ((struct & 0xF) << STRUCT_SHIFT) | \
-           ((index & INDEX_MASK) << INDEX_SHIFT) | \
-           (ext & 0xF)
+def _validate_range(name: str, value: int, minimum: int, maximum: int) -> None:
+    if not isinstance(value, int):
+        raise CNBEValueError(
+            f"{name} must be an int in range {minimum}..{maximum}; got {type(value).__name__}"
+        )
+    if not minimum <= value <= maximum:
+        raise CNBEValueError(f"{name} must be in range {minimum}..{maximum}; got {value}")
 
 
-def decode_cnbe(code):
-    """Decode 32-bit CNBE code into fields; raises CNBEFormatError on invalid code"""
-    if not 0 <= code <= 0xFFFFFFFF:
-        raise CNBEFormatError(f"code 0x{code:08X} is out of 32-bit range")
-    return {
-        "radix": (code >> RADIX_SHIFT) & 0xFF,
-        "stroke": (code >> STROKE_SHIFT) & 0x1F,
-        "structure": (code >> STRUCT_SHIFT) & 0xF,
-        "index": (code >> INDEX_SHIFT) & INDEX_MASK,
-        "extension": code & 0xF,
-        "struct_name": STRUCT_NAMES.get((code >> STRUCT_SHIFT) & 0xF, "unknown"),
-    }
-
-
-def hamming_distance(a, b):
-    """Weighted Hamming distance between two CNBE codes (radix*8 + stroke*5 + struct*4)"""
-    ra = (a >> RADIX_SHIFT) & 0xFF
-    rb = (b >> RADIX_SHIFT) & 0xFF
-    sa = (a >> STROKE_SHIFT) & 0x1F
-    sb = (b >> STROKE_SHIFT) & 0x1F
-    ta = (a >> STRUCT_SHIFT) & 0xF
-    tb = (b >> STRUCT_SHIFT) & 0xF
-    return abs(ra - rb) * 8 + abs(sa - sb) * 5 + abs(ta - tb) * 4
-
-
+@dataclass(frozen=True)
 class CNBE32:
-    """CNBE-32 encoding/decoding for Chinese characters (wraps constants + SkillTable)"""
+    """A CNBE-32 encoded value."""
 
-    def __init__(self, skill_table=None):
-        """Initialize with optional SkillTable lookup.
+    code: int
 
-        Args:
-            skill_table: Optional SkillTable instance for char-to-code lookup.
-                         If omitted, encode() will raise CNBECharNotInTableError
-                         unless _table is set externally.
-        """
-        self._table = skill_table.table if skill_table is not None else None
+    @property
+    def radix(self) -> int:
+        return (self.code >> RADIX_SHIFT) & 0xFF
 
-    def encode(self, char):
-        code_point = ord(char)
-        idx = code_point - CJK_UNICODE_START
-        if 0 <= idx < CJK_UNICODE_COUNT:
-            if self._table is not None and len(self._table) > idx:
-                return self._table[idx]
-            raise CNBECharNotInTableError(char, code_point)
-        raise CNBECharNotInTableError(char, code_point)
+    @property
+    def stroke(self) -> int:
+        return (self.code >> STROKE_SHIFT) & 0x1F
 
-    def decode(self, code):
-        return decode_cnbe(code)
+    @property
+    def struct(self) -> int:
+        return (self.code >> STRUCT_SHIFT) & 0x0F
 
-    def distance(self, a, b):
-        return hamming_distance(a, b)
+    @property
+    def index(self) -> int:
+        return (self.code >> INDEX_SHIFT) & 0x7FF
+
+    @property
+    def ext(self) -> int:
+        return (self.code >> EXT_SHIFT) & 0x0F
+
+    def to_dict(self) -> dict[str, int]:
+        return {
+            "code": self.code,
+            "radix": self.radix,
+            "stroke": self.stroke,
+            "struct": self.struct,
+            "index": self.index,
+            "ext": self.ext,
+        }
+
+
+def encode_cnbe(radix: int, stroke: int, struct: int, index: int = 0, ext: int = 0) -> CNBE32:
+    """Encode CNBE-32 fields into a 32-bit value.
+
+    This function validates every field and never silently truncates values.
+    """
+    _validate_range("radix", radix, RADIX_MIN, RADIX_MAX)
+    _validate_range("stroke", stroke, STROKE_MIN, STROKE_MAX)
+    _validate_range("struct", struct, STRUCT_MIN, STRUCT_MAX)
+    _validate_range("index", index, INDEX_MIN, INDEX_MAX)
+    _validate_range("ext", ext, EXT_MIN, EXT_MAX)
+
+    code = (
+        (radix << RADIX_SHIFT)
+        | (stroke << STROKE_SHIFT)
+        | (struct << STRUCT_SHIFT)
+        | (index << INDEX_SHIFT)
+        | (ext << EXT_SHIFT)
+    )
+    return CNBE32(code)
+
+
+def decode_cnbe(code: int | CNBE32) -> dict[str, int]:
+    """Decode a CNBE-32 integer or CNBE32 object into field values."""
+    value = code.code if isinstance(code, CNBE32) else code
+    cnbe = CNBE32(int(value))
+    return cnbe.to_dict()
+
+
+def bit_hamming_distance(a: CNBE32, b: CNBE32) -> int:
+    """Return the true bit-level Hamming distance between two CNBE-32 values."""
+    return int(a.code ^ b.code).bit_count()
+
+
+def field_weighted_distance(a: CNBE32, b: CNBE32) -> int:
+    """Return the legacy weighted field distance.
+
+    This is not a bit-level Hamming distance. It compares decoded fields and
+    weights radix, stroke, and struct differences.
+    """
+    return abs(a.radix - b.radix) * 8 + abs(a.stroke - b.stroke) * 5 + abs(a.struct - b.struct) * 4
+
+
+def hamming_distance(a: CNBE32, b: CNBE32) -> int:
+    """Deprecated alias for field_weighted_distance.
+
+    Use bit_hamming_distance for true bit-level Hamming distance, or
+    field_weighted_distance for the legacy CNBE field-weighted metric.
+    """
+    warnings.warn(
+        "hamming_distance() is deprecated because it is not a bit-level Hamming distance. "
+        "Use bit_hamming_distance() or field_weighted_distance() instead.",
+        DeprecationWarning,
+        stacklevel=2,
+    )
+    return field_weighted_distance(a, b)

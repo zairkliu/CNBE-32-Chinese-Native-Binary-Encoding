@@ -1,4 +1,14 @@
-﻿# CNBE-32
+# CNBE-32 Chinese Native Binary Encoding
+
+> Project status: research prototype.
+>
+> Current packaged Python SDK database: **20,902** Basic CJK entries.
+>
+> The broader **97,686** CJK figure refers to the intended / experimental extended encoding scope, not the current packaged SDK database coverage.
+>
+> **Stable**: Python bitfield encoder/decoder and Basic CJK lookup when the database is available.
+>
+> **Experimental**: LLM, JEPA, RISC-V, OS, finance, biology, and physics prototypes.
 
 **Chinese Native Binary Encoding**
 

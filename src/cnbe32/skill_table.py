@@ -1,24 +1,47 @@
-"""Skill table loader (v6.0 8105-character CJK encoding)"""
+"""Skill table utilities for CNBE-32 experiments."""
+
+from __future__ import annotations
+
+from pathlib import Path
+
 import numpy as np
-import os
+
+from .constants import BASIC_CJK_COUNT, CJK_BASE
+
 
 class SkillTable:
-    """81.6KB Skill table for 20902 CJK characters"""
-    def __init__(self, path=None):
-        self.table = np.zeros(20902, dtype=np.uint32)
-        if path and os.path.exists(path):
-            self.load(path)
-    def load(self, path):
-        if path.endswith(".npy"):
-            self.table = np.load(path)
-        elif path.endswith(".bin"):
-            self.table = np.frombuffer(open(path,"rb").read(), dtype=np.uint32)
-        print(f"Loaded SkillTable: {len(self.table)} chars")
-    def lookup(self, unicode):
-        if 0x4E00 <= unicode <= 0x9FA5:
-            idx = unicode - 0x4E00
-            if idx < len(self.table):
-                return self.table[idx]
-        return 0
-    def __getitem__(self, char):
-        return self.lookup(ord(char))
+    """A fixed-size table indexed by Basic CJK Unicode code point offset.
+
+    Use SkillTable.empty() explicitly for tests or zero-initialized experiments.
+    Use SkillTable.from_file(path) to load a real table from disk.
+    """
+
+    def __init__(self, table: np.ndarray) -> None:
+        if table.shape != (BASIC_CJK_COUNT,):
+            raise ValueError(
+                f"SkillTable must have shape ({BASIC_CJK_COUNT},); got {table.shape}"
+            )
+        self.table = table.astype(np.uint32, copy=False)
+
+    @classmethod
+    def empty(cls) -> SkillTable:
+        """Create an explicit all-zero skill table."""
+        return cls(np.zeros(BASIC_CJK_COUNT, dtype=np.uint32))
+
+    @classmethod
+    def from_file(cls, path: str | Path) -> SkillTable:
+        """Load a skill table from a .npy file."""
+        file_path = Path(path)
+        if not file_path.exists():
+            raise FileNotFoundError(f"Skill table file does not exist: {file_path}")
+        table = np.load(file_path)
+        return cls(table)
+
+    def lookup(self, codepoint: int) -> int:
+        """Return the table value for a Basic CJK Unicode code point."""
+        idx = codepoint - CJK_BASE
+        if idx < 0 or idx >= BASIC_CJK_COUNT:
+            raise ValueError(
+                f"codepoint must be in Basic CJK range starting at U+{CJK_BASE:04X}"
+            )
+        return int(self.table[idx])
