@@ -1,0 +1,56 @@
+name: Bug report
+description: Report a bug in the stable Python SDK or documentation
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please distinguish stable Python SDK behavior from experimental prototype behavior.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Python SDK
+        - Database loading
+        - Golden vectors
+        - Documentation
+        - C consistency test
+        - Rust consistency test
+        - Experimental prototype
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      value: |
+        - OS:
+        - Python:
+        - CNBE-32 commit/version:
+    validations:
+      required: false

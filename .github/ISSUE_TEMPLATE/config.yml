@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: CNBE-32 README
+    url: https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding
+    about: Start here for project status, stable scope, and experimental scope.

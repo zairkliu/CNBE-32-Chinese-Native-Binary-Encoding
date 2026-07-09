@@ -182,6 +182,14 @@ CNBE-32 does not claim to fully understand characters. It simply asks whether so
 
 CNBE-32 includes machine-readable golden vectors in [spec/golden_vectors.json](./spec/golden_vectors.json). These vectors define canonical bitfield encode/decode examples for Python, C, Rust, and hardware-oriented implementations. The same vector set is now exercised by Python tests, a minimal C consistency test, and a minimal Rust consistency test.
 
+
+## Project maintenance
+
+- [Changelog](./CHANGELOG.md)
+- [Release process](./RELEASE.md)
+- [Contributing guide](./CONTRIBUTING.md)
+- [Security policy](./SECURITY.md)
+
 ## License
 
 MulanPSL-2.0
