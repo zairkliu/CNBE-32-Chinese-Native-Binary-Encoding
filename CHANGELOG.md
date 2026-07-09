@@ -4,6 +4,32 @@ All notable changes to CNBE-32 will be documented in this file.
 
 ## [Unreleased]
 
+## [1.0.2] - 2026-07-10
+
+### Added
+
+- Release preparation notes for v1.0.2.
+- Release artifact verification script.
+- CI release artifact verification step.
+- Remote format-integrity validation requirement before release.
+
+### Changed
+
+- Python package version prepared as `1.0.2`.
+- Release process now requires validating source format integrity before tagging.
+- Release checklist now explicitly verifies Python, C, and Rust golden vector consistency.
+
+### Fixed
+
+- Repository-wide format integrity was restored before this release preparation.
+- Added safeguards against single-line compressed source, TOML, YAML, Markdown, C, Makefile, and Rust files.
+
+### Notes
+
+This release remains a research-prototype SDK checkpoint. It does not claim full CJK coverage, zero-collision behavior, production readiness, or validated model / hardware performance.
+
+## [1.0.1] - 2026-07-10
+
 ### Added
 
 - Release readiness documentation.
@@ -11,11 +37,6 @@ All notable changes to CNBE-32 will be documented in this file.
 - Security policy.
 - GitHub issue templates.
 - Installation smoke tests.
-
-## [1.0.1] - 2026-07-10
-
-### Added
-
 - Hardened Python SDK baseline.
 - Strict CNBE-32 bitfield validation.
 - True bit-level `bit_hamming_distance`.
@@ -46,4 +67,4 @@ All notable changes to CNBE-32 will be documented in this file.
 
 ### Notes
 
-This release remains a research-prototype SDK. It does not claim full CJK coverage, zero collision claims, production readiness, or validated model/hardware performance.
+This release remains a research-prototype SDK. It does not claim full CJK coverage, zero-collision behavior, production readiness, or validated model/hardware performance.

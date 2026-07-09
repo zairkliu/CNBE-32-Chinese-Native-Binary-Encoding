@@ -4,13 +4,18 @@ import ast
 import json
 import subprocess
 import sys
-import tomllib
 import unicodedata
 from pathlib import Path
+
+try:
+    import tomllib
+except ModuleNotFoundError:  # pragma: no cover - Python 3.10 compatibility
+    import tomli as tomllib
 
 
 TEXT_FILES = [
     ".gitattributes",
+    "MANIFEST.in",
     "pyproject.toml",
     ".github/workflows/ci.yml",
     "src/cnbe32/core.py",
@@ -26,6 +31,7 @@ TEXT_FILES = [
     "spec/golden_vectors.json",
     "spec/GOLDEN_VECTORS.md",
     "spec/IMPLEMENTATION_CONSISTENCY.md",
+    "docs/releases/v1.0.2.md",
     "c/golden_vectors/Makefile",
     "c/golden_vectors/cnbe32_golden_test.c",
     "rust/golden_vectors/Cargo.toml",
@@ -41,6 +47,7 @@ TEXT_FILES = [
 
 MIN_LINES = {
     ".gitattributes": 10,
+    "MANIFEST.in": 10,
     "pyproject.toml": 30,
     ".github/workflows/ci.yml": 35,
     "src/cnbe32/core.py": 80,
@@ -56,6 +63,7 @@ MIN_LINES = {
     "spec/golden_vectors.json": 150,
     "spec/GOLDEN_VECTORS.md": 40,
     "spec/IMPLEMENTATION_CONSISTENCY.md": 30,
+    "docs/releases/v1.0.2.md": 50,
     "c/golden_vectors/Makefile": 15,
     "c/golden_vectors/cnbe32_golden_test.c": 120,
     "rust/golden_vectors/Cargo.toml": 8,
@@ -93,6 +101,9 @@ README_REQUIRED = {
 CI_REQUIRED = [
     "python -m compileall src tests",
     "python -m build",
+    "python scripts/validate_format_integrity.py",
+    "python scripts/verify_release_artifacts.py",
+    "python -m pip install --force-reinstall dist/*.whl",
     "pytest",
     "ruff check src tests",
     "make -C c/golden_vectors test",
