@@ -1,0 +1,9 @@
+[package]
+name = "cnbe32-golden-vectors"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+name = "cnbe32_golden_vectors"
+path = "src/lib.rs"
