@@ -1,4 +1,4 @@
-﻿*.pyc
+*.pyc
 __pycache__/
 .DS_Store
 *.swp
@@ -30,3 +30,5 @@ build/
 *.docx
 data/*.json
 data/*.gz
+# CNBE-32 golden vector local build artifacts
+c/golden_vectors/cnbe32_golden_test
