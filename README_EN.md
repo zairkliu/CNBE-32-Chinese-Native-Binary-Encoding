@@ -1,84 +1,103 @@
-# CNBE-32 Chinese Native Binary Encoding
+<p align="center">
+  <strong>CNBE-32</strong><br>
+  Chinese Native Binary Encoding
+</p>
 
-> **Project status:** research prototype.
->
-> **Current packaged Python SDK database:** 20,902 Basic CJK entries.
->
-> The broader **97,686 CJK** figure refers to an intended / experimental extended encoding scope, not the current packaged Python SDK database coverage.
->
-> **Stable:** Python bitfield encoder/decoder, distance utilities, and Basic CJK lookup when the database is available.
->
-> **Experimental:** LLM, JEPA, RISC-V, OS, finance, biology, physics, and other research prototypes.
+<p align="center">
+  <a href="./README.md">English</a> ·
+  <a href="./README_ZH.md">简体中文</a> ·
+  <a href="./README_EN.md">English mirror</a>
+</p>
 
-CNBE-32 is a 32-bit structural encoding experiment for CJK characters. It explores whether CJK-specific structural fields such as radical/radix, stroke count, character structure, glyph index, and extension bits can be represented in a compact binary format for AI and hardware-oriented experiments.
+<p align="center">
+  <img alt="Project status" src="https://img.shields.io/badge/status-research%20prototype-orange">
+  <img alt="Python SDK" src="https://img.shields.io/badge/Python%20SDK-stable%20baseline-blue">
+  <img alt="Basic CJK DB" src="https://img.shields.io/badge/Basic%20CJK-20%2C902%20entries-green">
+  <img alt="Extended scope" src="https://img.shields.io/badge/97%2C686-experimental%20target-lightgrey">
+</p>
 
-This repository currently provides a hardened Python SDK baseline and a collection of research prototypes. The Python SDK is the most stable part of the repository. Other directories should be treated as experimental unless they include reproducible scripts, datasets, and validation notes.
+A 32-bit structural fingerprint for CJK characters — built for people who wonder what Chinese text would look like if it were designed closer to the metal.
 
----
-
-## Why CNBE-32?
-
-Most general-purpose text encodings represent characters as identifiers. CNBE-32 experiments with a different idea: encode selected structural properties of CJK characters directly into a fixed-width 32-bit value.
-
-The goal is not to replace Unicode. CNBE-32 is intended as an auxiliary representation for experiments involving:
-
-- CJK-aware model inputs,
-- structural character features,
-- compact lookup tables,
-- hardware-oriented encoding tests,
-- and reproducible CJK feature benchmarks.
+> **CNBE-32 is a research prototype.**
+> The packaged Python SDK currently targets **20,902 Basic CJK** entries.
+> The broader **97,686 CJK** figure is an intended / experimental extended scope, not current packaged SDK coverage.
 
 ---
 
-## Current stable scope
+## Why this is interesting
 
-The current stable Python SDK supports:
+Unicode tells computers *which* character this is.
 
-- CNBE-32 field encoding and decoding,
-- strict validation of all bitfield ranges,
-- true bit-level Hamming distance,
-- legacy field-weighted distance,
-- optional SQLite database lookup,
-- explicit `SkillTable` construction for experiments,
-- wheel build and installation,
-- pytest coverage,
-- ruff linting,
-- and GitHub Actions CI.
+CNBE-32 asks a different question:
 
-The packaged SDK currently targets the **20,902-entry Basic CJK database**.
+> Can part of a CJK character's visual and structural logic be carried directly in a compact binary form?
+
+That makes CNBE-32 interesting for experiments in CJK-aware embeddings, low-level lookup tables, hardware-friendly text features, and language-specific model inputs.
 
 ---
 
-## Experimental scope
+## The idea in one picture
 
-The repository also contains exploratory work around:
+```text
+31              24 23        19 18     15 14                 4 3        0
+┌────────────────┬────────────┬─────────┬─────────────────────┬──────────┐
+│ Radical/Radix  │  Stroke    │ Struct  │     Glyph Index     │   Ext    │
+│     8 bits     │  5 bits    │ 4 bits  │       11 bits       │  4 bits  │
+└────────────────┴────────────┴─────────┴─────────────────────┴──────────┘
+```
 
-- LLM prompting and feature experiments,
-- JEPA-style representation learning,
-- RISC-V and hardware instruction prototypes,
-- OS and kernel-level experiments,
-- finance, biology, physics, and social-science-style experiments.
+Think of it as a compact structural fingerprint, not a replacement for Unicode.
 
-These experiments should be interpreted as **preliminary research prototypes** unless the corresponding directory includes:
+---
 
-- fixed dataset versions,
-- reproducible scripts,
-- baseline comparisons,
-- random seeds or deterministic settings,
-- raw result artifacts,
-- and clear train/test separation where applicable.
+## Quick start
+
+```bash
+python -m pip install .
+```
+
+```python
+from cnbe32 import encode_cnbe, decode_cnbe, bit_hamming_distance
+
+a = encode_cnbe(radix=72, stroke=8, struct=1, index=123, ext=0)
+b = encode_cnbe(radix=72, stroke=9, struct=1, index=124, ext=0)
+
+print(decode_cnbe(a))
+print(bit_hamming_distance(a, b))
+```
+
+---
+
+## What is stable today
+
+- CNBE-32 field encoding and decoding
+- strict validation of all bitfield ranges
+- true bit-level Hamming distance and legacy field-weighted distance
+- optional SQLite database lookup
+- explicit `SkillTable` construction for experiments
+- wheel build, pip install, pytest, ruff, GitHub Actions CI
+
+---
+
+## What is experimental
+
+- LLM prompting and feature experiments
+- JEPA-style representation learning
+- RISC-V and hardware instruction prototypes
+- OS and kernel-level experiments
+- finance, biology, physics, and social-science-style experiments
+
+These should be interpreted as **preliminary research prototypes** unless the corresponding directory includes fixed datasets, reproducible scripts, baseline comparisons, random seeds, and clear train/test separation.
 
 ---
 
 ## Coverage terminology
 
-CNBE-32 uses several coverage terms that should not be mixed:
-
-- **Packaged Python SDK database:** currently 20,902 Basic CJK entries.
-- **Experimental extended scope:** 97,686 CJK characters as a design / research target.
-- **Experiment-specific coverage:** depends on the dataset and reproduction script for each experiment.
-
-Unless otherwise stated, examples in the Python SDK documentation refer to the packaged 20,902-entry Basic CJK database.
+| Term | Meaning |
+|---|---|
+| **Packaged Python SDK database** | 20,902 Basic CJK entries (shipped in the wheel) |
+| **Experimental extended scope** | 97,686 CJK characters as a design / research target |
+| **Experiment-specific coverage** | depends on the dataset and reproduction script for each experiment |
 
 Claims about collision rate, full coverage, or extended CJK breadth should be interpreted only within the scope of the specific dataset and script used for that experiment.
 
@@ -95,13 +114,9 @@ This repository contains research prototypes and early experiments. Results shou
 - raw outputs or result artifacts,
 - and clear train/test separation where applicable.
 
-The Python SDK hardening work focuses on making the core encoder, decoder, distance utilities, database loading, and tests reproducible.
-
 ---
 
 ## Bitfield layout
-
-CNBE-32 uses a 32-bit layout:
 
 | Field | Bits | Description |
 |---|---:|---|
@@ -111,35 +126,14 @@ CNBE-32 uses a 32-bit layout:
 | Glyph Index | 11 | Basic CJK glyph index field |
 | Extension | 4 | Experimental extension field |
 
-The current Python SDK validates all fields before encoding. Invalid values raise a `CNBEValueError`; values are not silently truncated.
-
----
-
-## Python SDK installation
-
-From a local checkout:
-
-```bash
-python -m pip install .
-```
-
-For development:
-
-```bash
-python -m pip install -U pip build pytest ruff
-python -m pip install -e .
-```
-
 ---
 
 ## Python SDK example
 
 ```python
 from cnbe32 import (
-    bit_hamming_distance,
-    decode_cnbe,
-    encode_cnbe,
-    field_weighted_distance,
+    encode_cnbe, decode_cnbe,
+    bit_hamming_distance, field_weighted_distance,
 )
 
 a = encode_cnbe(radix=72, stroke=8, struct=1, index=123, ext=0)
@@ -152,102 +146,34 @@ print(field_weighted_distance(a, b))
 
 ---
 
-## Distance functions
+## For geeks
 
-Use:
-
-* `bit_hamming_distance(a, b)` for true bit-level Hamming distance.
-* `field_weighted_distance(a, b)` for the legacy CNBE field-weighted distance.
-
-Deprecated:
-
-* `hamming_distance(a, b)`
-
-`hamming_distance` is retained for compatibility but is not a true bit-level Hamming distance.
+| If you like... | CNBE-32 gives you... |
+|---|---|
+| bitfields | a fixed 32-bit CJK structure layout |
+| language internals | radical, stroke, structure, glyph-index fields |
+| ML features | compact CJK-aware feature inputs |
+| hardware experiments | a layout testable near RISC-V / instruction prototypes |
+| weird text encoding ideas | a research sandbox for Chinese-native representation |
 
 ---
 
-## Database loading
+## For Chinese language enthusiasts
 
-The Python SDK resolves `cnbe32.db` in this order:
+Chinese characters are not just arbitrary symbols. Many carry visible structure: components, strokes, layout, and historical form.
 
-1. `CNBE32_DB_PATH`
-2. packaged data: `cnbe32/data/cnbe32.db`
-3. source checkout fallback: `data/cnbe32.db`
-
-Example:
-
-```bash
-export CNBE32_DB_PATH=/path/to/cnbe32.db
-```
-
-If the database is missing, database lookup functions raise a clear error explaining how to provide the file.
-
----
-
-## SkillTable
-
-`SkillTable` is intended for experiments over Basic CJK code point offsets.
-
-Use:
-
-```python
-from cnbe32 import SkillTable
-
-table = SkillTable.empty()
-```
-
-or:
-
-```python
-table = SkillTable.from_file("skill_table.npy")
-```
-
-Direct `SkillTable()` construction without a table is intentionally unsupported. This avoids silently creating an all-zero table when a real table was expected.
-
----
-
-## Development checks
-
-Run the full local validation suite:
-
-```bash
-python -m compileall src tests
-python -m build
-python -m pip install --force-reinstall dist/*.whl
-pytest
-ruff check src tests
-```
-
-The CI workflow runs compile, build, wheel installation, pytest, and ruff checks on Python 3.10, 3.11, and 3.12.
-
----
-
-## Repository status
-
-| Area                                    | Status                            |
-| --------------------------------------- | --------------------------------- |
-| Python SDK bitfield encode/decode       | Stable baseline                   |
-| Python SDK tests and CI                 | Stable baseline                   |
-| Basic CJK database lookup               | Stable when database is available |
-| Extended CJK coverage                   | Experimental target               |
-| LLM / JEPA experiments                  | Research prototype                |
-| RISC-V / hardware experiments           | Research prototype                |
-| OS / kernel experiments                 | Research prototype                |
-| Finance / biology / physics experiments | Research prototype                |
+CNBE-32 does not claim to fully understand characters. It simply asks whether some of that visible structure can be encoded in a way computers can use directly.
 
 ---
 
 ## Roadmap
-
-Suggested next steps:
 
 1. Keep the Python SDK build, install, test, and lint pipeline green.
 2. Add reproducible scripts for each experiment.
 3. Separate stable SDK claims from experiment-specific claims.
 4. Publish dataset provenance and coverage validation scripts.
 5. Add golden vectors shared across Python, C, Rust, and hardware prototypes.
-6. Add benchmark baselines such as Unicode codepoint features, one-hot, IDS-style features, and learned embeddings.
+6. Add benchmark baselines (Unicode codepoint, one-hot, IDS, learned embeddings).
 
 ---
 
