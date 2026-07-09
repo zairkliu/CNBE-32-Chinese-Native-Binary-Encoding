@@ -1,10 +1,10 @@
-﻿# CNBE-32
+# CNBE-32
 
 **Chinese Native Binary Encoding**
 
 A 32-bit encoding that embeds the structural semantics of Chinese characters (radical, stroke count, and structure type) directly into binary, exploring how CPUs and AI can natively understand Chinese.
 
-A structured 32-bit encoding for 97,686 CJK characters that embeds radical, stroke count, and structure type directly into the encoding space.
+A structured 32-bit encoding experiment for CJK characters. The packaged Python SDK currently includes a 20,902-entry Basic CJK database; broader 97,686-character coverage is an experimental target.
 
 <p align="center">
   <a href="docs/specification/bit-layout.md"><img src="https://img.shields.io/badge/Encoding-32--bit%20CNBE-blue?style=for-the-badge" alt="Encoding"></a>
@@ -108,7 +108,7 @@ CNBE-32 is **not** a "Chinese-localized" or "character-replacement" version of B
 
 | Dimension | Base32 | CNBE-32 |
 |-----------|--------|---------|
-| **Encoding target** | Arbitrary binary data | **97,686 CJK characters themselves** |
+| **Encoding target** | Arbitrary binary data | **97,686 CJK characters (experimental target)** |
 | **Code space** | Fixed 32 letters | **Structured 32-bit bitfield** (radical, stroke, structure) |
 | **Goal** | Data compression / transmission | **Let machines "understand" character semantics** |
 | **Target audience** | Human-readable (transcription) | **AI models, CPU instruction sets, OS kernels** |
@@ -171,9 +171,9 @@ The ultimate significance of CNBE-32 is to enable Chinese speakers to define und
 | Hardware lookup extreme latency | 0.8 ns (x86) / 1 Cycle (FPGA) | Ultra-fast response for real-time interaction; suitable for low-frequency, low-power embedded chips |
 | Minimal memory footprint | Only 81.6 KB (SRAM/BRAM) | Fits easily into any L1/L2 cache or on-chip storage without external DRAM, reducing BOM cost |
 | Encoding semantic density | 32 bits containing radical/stroke/structure | Single encoding equivalent to dozens of text annotation tokens, greatly reducing learning and inference overhead for small models |
-| CJK coverage breadth | **97,686** characters | Covers ancient texts, rare names, and dialect characters, ensuring cultural diversity isn't marginalized in the AI era |
+| CJK coverage breadth | **20,902 Basic CJK (packaged DB)** / **97,686 (experimental target)** | Current packaged database covers Basic CJK; extended coverage is a design target |
 | Hard-task rare character handling | **+17.4 pp** (vs Unicode) | Dominates traditional encoding in traditional/variant/chemical equation scenarios, ensuring professional knowledge equity |
-| Lookup collision rate | **0%** (full coverage verified) | Zero-ambiguity lookup, ensuring stability and reliability on edge devices |
+| Lookup collision rate | **0%** (measured on 20,902-entry Basic CJK database) | Stability claims should be interpreted within the scope of specific experiments |
 
 ---
 
@@ -247,7 +247,7 @@ The ultimate significance of CNBE-32 is to enable Chinese speakers to define und
 
 | Version | Sub-item / Task | Test Environment | Specific Data Metrics | Conclusion / Notes |
 | :---: | :--- | :--- | :--- | :--- |
-| **v1** | Single character radical/stroke/structure extraction | Qwen 0.8B | 200 Chinese characters, **100%** zero-shot effective | Proves encoding space IS semantic space |
+| **v1** | Single character radical/stroke/structure extraction | Qwen 0.8B | 200 Chinese characters, **100%** zero-shot effective on selected test set | Explores whether encoding space reflects structural semantics |
 | **v2** | Chinese sentence understanding | Qwen 0.8B | Text input 48% → CNBE **87%** | Accuracy improvement 39 pp |
 | **v3** | Encoding format ablation experiment | Qwen 0.8B | Character-by-character 87% > segmented 60% > compact 50% | Optimal: `中(丨,4 strokes, single)` |
 | **v4** | Paper-level semantic understanding | Qwen 0.8B | 90.9% → **100%**\* | Complements small model long-context reasoning shortcomings |
@@ -259,7 +259,7 @@ The ultimate significance of CNBE-32 is to enable Chinese speakers to define und
 | **v7.1.1** | Instruction integration | Spike | `map`(2 cycles) / `extract`(1) / `cmp`(3) | Three Custom-0 instruction behaviors verified |
 | **v7.2** | FPGA logic synthesis | Verilog+BRAM | **Single cycle** lookup complete | 81.6 KB table entries fit BRAM resources |
 | **v8.4** | Full Chinese system | RISC-V QEMU | Shell commands + BASIC 7 keywords + Tao Te Ching | "Full Chinese computing" feasibility validated |
-| **v9.0** | Tree growth JEPA | JEPA | CNBE **86%** better than Raw | Structured encoding improves abstract representation |
+| **v9.0** | Tree growth JEPA | JEPA | CNBE **86%** better than Raw on specific experiment | Structured encoding may improve abstract representation |
 | **v9.1** | Typhoon lifecycle | JEPA | 0.089981 → **0.000001** | Error reduced by 4 orders of magnitude |
 | **v10.3** | Typhoon Bavi path | Meteorological model | 216 km → **174 km** | Actual path prediction accuracy improved 19% |
 | **v10.4** | Protein Q3 structure | Bioinformatics | OH 44.6% vs CNBE 41.0% | Slightly below OH; biological sequence still has optimization room |
@@ -314,7 +314,7 @@ This is the breakthrough path for edge-side AI processing of Chinese.
 > - **Model understands encoding concepts**: After fine-tuning, the model recognizes character radicals, stroke counts, and structure types, outputting CNBE-32 encoded information
 > - **Minimal GPU requirements**: RTX 4060 Ti (8GB) handles the entire pipeline, with peak memory usage of only 1.5GB
 > - **Edge deployment validated**: For the first time, CNBE-32 advances from inference-level semantic validation to training-level knowledge injection
-> - **Complete cross-domain chain**: From linguistics to finance to physics to biology to LLM training, CNBE's structured encoding is validated across encoding, hardware, OS, cross-domain prediction, and model fine-tuning
+> - **Complete cross-domain chain**: From linguistics to finance to physics to biology to LLM training, CNBE's structured encoding has been explored across encoding, hardware, OS, cross-domain prediction, and model fine-tuning in preliminary experiments
 >
 > Full methodology → [cnbe-llm training(demo)/](<./cnbe-llm training(demo)/>)
 
