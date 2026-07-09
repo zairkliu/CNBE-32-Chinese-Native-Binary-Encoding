@@ -1,4 +1,4 @@
-﻿name: CI
+name: CI
 
 on: [push, pull_request]
 
@@ -8,9 +8,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
-      - run: pip install numpy ruff
-      - run: pip install -e .
-      - run: ruff check src/
-      - run: python tests/test_cnbe32.py
-      - run: python experiments/benchmark.py
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: |
+          pip install numpy pytest ruff build
+      - name: Install package
+        run: pip install -e .
+      - name: Lint
+        run: ruff check src/cnbe32/
+      - name: Unit tests (no DB required)
+        run: pytest tests/test_cnbe32_full.py -m "not integration" -v
+      - name: Integration tests (with DB)
+        run: pytest tests/test_cnbe32_full.py -v
+      - name: Build check
+        run: python -m build
