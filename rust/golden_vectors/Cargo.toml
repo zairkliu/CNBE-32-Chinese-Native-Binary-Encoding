@@ -7,3 +7,4 @@ publish = false
 [lib]
 name = "cnbe32_golden_vectors"
 path = "src/lib.rs"
+# integrity check: 1783623667
