@@ -1,0 +1,101 @@
+schema_version: 1
+experiment: v3_annotation_format_ablation
+status: protocol_draft
+purpose: >
+  Compare CNBE injection formats while holding the sentence, model,
+  task, and scoring rubric constant.
+
+global_settings:
+  language: zh
+  answer_style: concise_summary
+  max_answer_sentences: 2
+  temperature: 0
+  blind_condition_labels: true
+
+system_prompt: |
+  You are completing a controlled sentence comprehension task.
+  Focus on the sentence meaning.
+  Auxiliary metadata may or may not be useful.
+  Do not discuss the metadata format unless the task explicitly asks.
+
+output_contract:
+  format: json
+  fields:
+    - summary
+    - key_points
+    - metadata_used
+    - uncertainty
+  metadata_used_values:
+    - no
+    - maybe
+    - yes
+
+formats:
+  inline_full:
+    description: Character-level inline full annotation.
+    template: |
+      Text:
+      {inline_full_text}
+      Task: Summarize the meaning in one or two sentences.
+      Return JSON with summary, key_points, metadata_used, and uncertainty.
+
+  inline_compact:
+    description: Character-level compact annotation.
+    template: |
+      Text:
+      {inline_compact_text}
+      Task: Summarize the meaning in one or two sentences.
+      Return JSON with summary, key_points, metadata_used, and uncertainty.
+
+  prefix_table:
+    description: Metadata appears before clean text.
+    template: |
+      Character metadata:
+      {prefix_table}
+      Text:
+      {input_text}
+      Task: Summarize the meaning in one or two sentences.
+      Return JSON with summary, key_points, metadata_used, and uncertainty.
+
+  side_channel_json:
+    description: Metadata appears as a structured JSON side channel.
+    template: |
+      Text:
+      {input_text}
+      Metadata JSON:
+      {side_channel_json}
+      Task: Summarize the meaning in one or two sentences.
+      Return JSON with summary, key_points, metadata_used, and uncertainty.
+
+  selective_annotation:
+    description: Only rare, ambiguous, or keyword characters are annotated.
+    template: |
+      Text with selective metadata:
+      {selective_annotation_text}
+      Task: Summarize the meaning in one or two sentences.
+      Return JSON with summary, key_points, metadata_used, and uncertainty.
+
+  random_same_length_annotation:
+    description: Random annotation matched to the length of the CNBE condition.
+    template: |
+      Text with auxiliary annotation:
+      {random_same_length_text}
+      Task: Summarize the meaning in one or two sentences.
+      Return JSON with summary, key_points, metadata_used, and uncertainty.
+
+scoring_formula:
+  name: cost_adjusted_format_score
+  expression: score_gain - distraction_penalty - token_cost_penalty
+  components:
+    score_gain: treatment_score - pure_text_score
+    distraction_penalty: distraction_rate * distraction_weight
+    token_cost_penalty: token_overhead_ratio * token_cost_weight
+
+scoring_notes:
+  primary_metric: cost_adjusted_format_score
+  secondary_metrics:
+    - key_point_recall
+    - distraction_rate
+    - metadata_used_rate
+    - output_validity
+    - token_overhead

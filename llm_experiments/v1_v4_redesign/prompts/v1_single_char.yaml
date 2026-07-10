@@ -1,0 +1,107 @@
+schema_version: 1
+experiment: v1_single_character_incremental_signal
+status: protocol_draft
+purpose: >
+  Test whether CNBE fields provide measurable incremental signal for
+  single-character semantic classification compared with Unicode,
+  radical-only, shuffled, and random controls.
+
+global_settings:
+  language: zh
+  answer_style: concise
+  max_answer_sentences: 1
+  temperature: 0
+  repeated_runs: 1
+  blind_condition_labels: true
+
+system_prompt: |
+  You are answering a controlled linguistic evaluation task.
+  Use only the information shown in the prompt.
+  Do not mention the prompt condition.
+  If the evidence is insufficient, say that the category is uncertain.
+
+output_contract:
+  format: json
+  fields:
+    - semantic_category
+    - confidence
+    - short_reason
+  confidence_values:
+    - low
+    - medium
+    - high
+
+conditions:
+  character_only:
+    description: Character is visible, no metadata.
+    template: |
+      Character: {target_character}
+      Task: Choose the most likely semantic category for this character.
+      Return JSON with semantic_category, confidence, and short_reason.
+
+  unicode_only:
+    description: Unicode code point is visible, character may be hidden.
+    template: |
+      Unicode code point: {unicode_codepoint}
+      Task: Choose the most likely semantic category.
+      Return JSON with semantic_category, confidence, and short_reason.
+
+  radical_only:
+    description: Radical metadata only.
+    template: |
+      Radical: {radical_label}
+      Radical number: {radical_number}
+      Task: Choose the most likely semantic category for a character with this radical.
+      Return JSON with semantic_category, confidence, and short_reason.
+
+  cnbe_full:
+    description: Full CNBE fields are visible.
+    template: |
+      CNBE fields:
+      - radical: {radical_label}
+      - radical_number: {radical_number}
+      - stroke_count: {stroke_count}
+      - structure: {structure_label}
+      - index: {glyph_index}
+      - ext: {ext_value}
+      Task: Choose the most likely semantic category.
+      Return JSON with semantic_category, confidence, and short_reason.
+
+  shuffled_cnbe:
+    description: CNBE-like fields are assigned from another sample.
+    template: |
+      Metadata fields:
+      - radical: {shuffled_radical_label}
+      - radical_number: {shuffled_radical_number}
+      - stroke_count: {shuffled_stroke_count}
+      - structure: {shuffled_structure_label}
+      - index: {shuffled_glyph_index}
+      - ext: {shuffled_ext_value}
+      Task: Choose the most likely semantic category.
+      Return JSON with semantic_category, confidence, and short_reason.
+
+  random_cnbe:
+    description: Random CNBE-like metadata with matched field shape.
+    template: |
+      Metadata fields:
+      - radical: {random_radical_label}
+      - radical_number: {random_radical_number}
+      - stroke_count: {random_stroke_count}
+      - structure: {random_structure_label}
+      - index: {random_glyph_index}
+      - ext: {random_ext_value}
+      Task: Choose the most likely semantic category.
+      Return JSON with semantic_category, confidence, and short_reason.
+
+scoring_notes:
+  primary_metric: semantic_category_accuracy
+  secondary_metrics:
+    - top_k_category_hit
+    - refusal_rate
+    - hallucination_rate
+    - confidence_calibration
+  comparison_priority:
+    - cnbe_full_vs_radical_only
+    - cnbe_full_vs_unicode_only
+    - cnbe_full_vs_shuffled_cnbe
+    - cnbe_full_vs_random_cnbe

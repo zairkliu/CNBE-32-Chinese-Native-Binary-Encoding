@@ -1,0 +1,93 @@
+schema_version: 1
+experiment: v2_sentence_comprehension_gain
+status: protocol_draft
+purpose: >
+  Test whether CNBE annotation improves sentence comprehension after
+  controlling for annotation length, radical-only information, shuffled
+  metadata, and random annotation.
+
+global_settings:
+  language: zh
+  answer_style: concise_summary
+  max_answer_sentences: 2
+  temperature: 0
+  repeated_runs: 1
+  blind_condition_labels: true
+
+system_prompt: |
+  You are summarizing Chinese text for a controlled evaluation.
+  Focus on the meaning of the sentence.
+  Do not describe metadata unless it is necessary for the meaning.
+  Return only the requested JSON.
+
+output_contract:
+  format: json
+  fields:
+    - summary
+    - key_points
+    - uncertainty
+  uncertainty_values:
+    - low
+    - medium
+    - high
+
+conditions:
+  pure_text:
+    description: Sentence only.
+    template: |
+      Text:
+      {input_text}
+      Task: Summarize the meaning in one or two sentences.
+      Return JSON with summary, key_points, and uncertainty.
+
+  text_plus_cnbe:
+    description: Sentence plus full CNBE annotation.
+    template: |
+      Text with character metadata:
+      {text_with_cnbe_full}
+      Task: Summarize the sentence meaning in one or two sentences.
+      Return JSON with summary, key_points, and uncertainty.
+
+  text_plus_radical_only:
+    description: Sentence plus radical-only annotation.
+    template: |
+      Text with radical metadata:
+      {text_with_radical_only}
+      Task: Summarize the sentence meaning in one or two sentences.
+      Return JSON with summary, key_points, and uncertainty.
+
+  text_plus_shuffled_cnbe:
+    description: Sentence plus CNBE fields shuffled across characters.
+    template: |
+      Text with shuffled metadata:
+      {text_with_shuffled_cnbe}
+      Task: Summarize the sentence meaning in one or two sentences.
+      Return JSON with summary, key_points, and uncertainty.
+
+  text_plus_random_annotation:
+    description: Sentence plus random annotation of similar length.
+    template: |
+      Text with auxiliary annotation:
+      {text_with_random_annotation}
+      Task: Summarize the sentence meaning in one or two sentences.
+      Return JSON with summary, key_points, and uncertainty.
+
+length_controls:
+  record_input_tokens: true
+  record_output_tokens: true
+  compare_against_random_annotation: true
+  reject_unbounded_prompt_growth: true
+
+scoring_notes:
+  primary_metric: key_point_recall
+  secondary_metrics:
+    - factual_consistency
+    - semantic_similarity
+    - distraction_rate
+    - refusal_rate
+    - token_overhead_adjusted_score
+  comparison_priority:
+    - text_plus_cnbe_vs_pure_text
+    - text_plus_cnbe_vs_text_plus_radical_only
+    - text_plus_cnbe_vs_text_plus_shuffled_cnbe
+    - text_plus_cnbe_vs_text_plus_random_annotation

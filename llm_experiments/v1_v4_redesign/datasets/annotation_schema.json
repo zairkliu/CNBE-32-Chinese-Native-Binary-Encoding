@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CNBE-32 v1-v4 redesign annotation schema",
+  "type": "object",
+  "required": [
+    "sample_id",
+    "split",
+    "task_version",
+    "source_type",
+    "input_text",
+    "cnbe_fields",
+    "baselines",
+    "reference_answer",
+    "key_points",
+    "evaluator_notes"
+  ],
+  "properties": {
+    "sample_id": {
+      "type": "string",
+      "description": "Stable sample identifier used across all conditions."
+    },
+    "split": {
+      "type": "string",
+      "enum": ["pilot", "dev", "test"]
+    },
+    "task_version": {
+      "type": "string",
+      "enum": ["v1", "v2", "v3", "v4"]
+    },
+    "source_type": {
+      "type": "string",
+      "description": "Sampling stratum or document source class."
+    },
+    "input_text": {
+      "type": "string",
+      "description": "Visible text used by the prompt condition."
+    },
+    "target_character": {
+      "type": ["string", "null"],
+      "description": "Target character for v1 tasks, or null for text tasks."
+    },
+    "cnbe_fields": {
+      "type": "object",
+      "required": ["code", "radical", "stroke", "structure", "index", "ext"],
+      "properties": {
+        "code": { "type": ["integer", "null"] },
+        "radical": { "type": ["integer", "string", "null"] },
+        "stroke": { "type": ["integer", "null"] },
+        "structure": { "type": ["integer", "string", "null"] },
+        "index": { "type": ["integer", "null"] },
+        "ext": { "type": ["integer", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "baselines": {
+      "type": "object",
+      "properties": {
+        "unicode": { "type": ["string", "null"] },
+        "radical_only": { "type": ["string", "null"] },
+        "shuffled_cnbe": { "type": ["object", "null"] },
+        "random_annotation": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "reference_answer": {
+      "type": "string",
+      "description": "Reference answer hidden from the model."
+    },
+    "key_points": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "evaluator_notes": {
+      "type": "string",
+      "description": "Notes for blind reviewers."
+    }
+  },
+  "additionalProperties": false
+}
