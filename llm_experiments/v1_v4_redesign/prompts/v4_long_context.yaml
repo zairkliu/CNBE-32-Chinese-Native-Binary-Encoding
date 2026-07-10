@@ -1,0 +1,103 @@
+schema_version: 1
+experiment: v4_long_context_robustness
+status: protocol_draft
+purpose: >
+  Test whether CNBE annotations remain useful under long-context pressure,
+  and whether selective annotation is more practical than full annotation.
+
+global_settings:
+  language: zh
+  answer_style: evidence_grounded
+  temperature: 0
+  blind_condition_labels: true
+  record_context_length: true
+
+system_prompt: |
+  You are answering a controlled long-context comprehension task.
+  Use only the supplied text and metadata.
+  Cite the relevant passage or evidence when requested.
+  Do not mention the condition label.
+
+conditions:
+  pure_text:
+    description: Clean text only.
+    shared_input: "{long_context_text}"
+
+  selective_cnbe:
+    description: CNBE annotation only for rare, ambiguous, or task-relevant characters.
+    shared_input: "{long_context_selective_cnbe}"
+
+  full_cnbe:
+    description: CNBE annotation for all eligible characters.
+    shared_input: "{long_context_full_cnbe}"
+
+  random_annotation:
+    description: Random annotation with similar length to the selected CNBE condition.
+    shared_input: "{long_context_random_annotation}"
+
+tasks:
+  paragraph_summary:
+    template: |
+      Text:
+      {condition_input}
+      Task: Summarize the target paragraph.
+      Target paragraph ID: {paragraph_id}
+      Return JSON with summary, key_points, and evidence_ids.
+
+  argument_extraction:
+    template: |
+      Text:
+      {condition_input}
+      Task: Extract the main argument and supporting reasons.
+      Return JSON with claim, reasons, and evidence_ids.
+
+  concept_qa:
+    template: |
+      Text:
+      {condition_input}
+      Question:
+      {question}
+      Return JSON with answer, evidence_ids, and uncertainty.
+
+  cross_paragraph_evidence:
+    template: |
+      Text:
+      {condition_input}
+      Task: Answer the question using evidence from at least two paragraphs.
+      Question:
+      {question}
+      Return JSON with answer, evidence_ids, and reasoning_summary.
+
+  distractor_robustness:
+    template: |
+      Text:
+      {condition_input}
+      Distractor note:
+      {distractor_note}
+      Task: Answer the question and ignore unsupported distractors.
+      Question:
+      {question}
+      Return JSON with answer, evidence_ids, and distractor_handling.
+
+context_levels:
+  paragraph:
+    description: One paragraph or short excerpt.
+  section:
+    description: A section with several paragraphs.
+  full_document:
+    description: The longest feasible document input under the model context limit.
+
+scoring_notes:
+  primary_metric: evidence_grounded_correctness
+  secondary_metrics:
+    - key_point_recall
+    - hallucination_rate
+    - evidence_precision
+    - evidence_recall
+    - token_overhead_adjusted_score
+    - long_context_degradation
+
+interpretation_rules:
+  - Full annotation may be rejected if token overhead outweighs score gain.
+  - Selective annotation is favored when it preserves most score gain at lower cost.
+  - A null result must be reported as a valid outcome.
