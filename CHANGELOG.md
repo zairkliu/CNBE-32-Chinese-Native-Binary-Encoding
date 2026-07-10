@@ -4,6 +4,31 @@ All notable changes to CNBE-32 will be documented in this file.
 
 ## [Unreleased]
 
+## [1.0.3] - 2026-07-10
+
+### Added
+
+- SDK hardening tests for invalid CNBE-32 decode inputs.
+- Ordered database batch lookup coverage with duplicate preservation.
+- Format integrity coverage for all packaged Python modules in `src/cnbe32`.
+- Strict release artifact filename and count validation.
+
+### Changed
+
+- Python package version prepared as `1.0.3`.
+- `batch()` now preserves input order and repeated characters.
+- Release artifact verification now requires exactly one `1.0.3` wheel and one `1.0.3` source distribution.
+
+### Fixed
+
+- `decode_cnbe()` and direct `CNBE32(...)` construction now reject invalid code values instead of silently truncating or masking them.
+- Removed UTF-8 BOM from the packaged experimental encoder module.
+- Release verification now checks the packaged encoder module in wheel and source distributions.
+
+### Notes
+
+This release remains a research-prototype SDK checkpoint. It does not claim full CJK coverage, zero-collision behavior, production readiness, or validated model / hardware performance.
+
 ## [1.0.2] - 2026-07-10
 
 ### Added

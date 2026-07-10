@@ -24,9 +24,12 @@ from .constants import (
 )
 from .exceptions import CNBEValueError
 
+CODE_MIN = 0
+CODE_MAX = 0xFFFFFFFF
+
 
 def _validate_range(name: str, value: int, minimum: int, maximum: int) -> None:
-    if not isinstance(value, int):
+    if not isinstance(value, int) or isinstance(value, bool):
         raise CNBEValueError(
             f"{name} must be an int in range {minimum}..{maximum}; got {type(value).__name__}"
         )
@@ -34,11 +37,18 @@ def _validate_range(name: str, value: int, minimum: int, maximum: int) -> None:
         raise CNBEValueError(f"{name} must be in range {minimum}..{maximum}; got {value}")
 
 
+def _validate_code(value: int) -> None:
+    _validate_range("code", value, CODE_MIN, CODE_MAX)
+
+
 @dataclass(frozen=True)
 class CNBE32:
     """A CNBE-32 encoded value."""
 
     code: int
+
+    def __post_init__(self) -> None:
+        _validate_code(self.code)
 
     @property
     def radix(self) -> int:
@@ -95,7 +105,8 @@ def encode_cnbe(radix: int, stroke: int, struct: int, index: int = 0, ext: int =
 def decode_cnbe(code: int | CNBE32) -> dict[str, int]:
     """Decode a CNBE-32 integer or CNBE32 object into field values."""
     value = code.code if isinstance(code, CNBE32) else code
-    cnbe = CNBE32(int(value))
+    _validate_code(value)
+    cnbe = CNBE32(value)
     return cnbe.to_dict()
 
 

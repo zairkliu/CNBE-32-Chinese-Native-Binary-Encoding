@@ -25,6 +25,7 @@ build/
 
 # Large binary artifacts (tracked via Git LFS or release only)
 *.db
+!src/cnbe32/data/cnbe32.db
 *.db.gz
 *.xlsx
 *.docx
