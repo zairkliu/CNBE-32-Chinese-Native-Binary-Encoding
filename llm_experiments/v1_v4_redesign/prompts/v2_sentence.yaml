@@ -2,7 +2,7 @@ schema_version: 1
 experiment: v2_sentence_comprehension_gain
 status: protocol_draft
 purpose: >
-  Test whether CNBE annotation improves sentence comprehension after
+  Test whether CNBE annotation changes sentence comprehension after
   controlling for annotation length, radical-only information, shuffled
   metadata, and random annotation.
 
