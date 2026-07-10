@@ -11,13 +11,13 @@ Before publishing a release candidate:
 ```bash
 python -m pip install -U pip build pytest ruff tomli
 python scripts/validate_format_integrity.py
-python -m compileall src tests
+python -m compileall src tests scripts
 python -m build
 python scripts/verify_release_artifacts.py
 python -m pip install --force-reinstall dist/*.whl
 python -c "import cnbe32; print(cnbe32.__all__)"
 pytest
-ruff check src tests
+ruff check src tests scripts
 make -C c/golden_vectors clean
 make -C c/golden_vectors test
 cargo test --manifest-path rust/golden_vectors/Cargo.toml
@@ -53,3 +53,4 @@ Only tag after all CI checks are green and the changelog is updated. Do not tag 
 ## PyPI
 
 Do not publish to PyPI automatically. If publishing is approved later, use a separate release PR and manual publish step.
+

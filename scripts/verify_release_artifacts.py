@@ -22,7 +22,8 @@ REQUIRED_WHEEL_SUFFIXES = [
     "cnbe32/data/cnbe32.db",
 ]
 
-REQUIRED_SDIST_SUFFIXES = [
+def required_sdist_suffixes(version: str) -> list[str]:
+    return [
     "pyproject.toml",
     "README.md",
     "CHANGELOG.md",
@@ -32,13 +33,13 @@ REQUIRED_SDIST_SUFFIXES = [
     "spec/golden_vectors.json",
     "spec/GOLDEN_VECTORS.md",
     "spec/IMPLEMENTATION_CONSISTENCY.md",
-    "docs/releases/v1.0.3.md",
+    f"docs/releases/v{version}.md",
     "docs/releases/v1.0.2.md",
     "src/cnbe32/encoders.py",
     "src/cnbe32/data/cnbe32.db",
     "scripts/validate_format_integrity.py",
     "scripts/verify_release_artifacts.py",
-]
+    ]
 
 
 def fail(message: str) -> None:
@@ -93,7 +94,7 @@ def check_sdist(version: str) -> None:
     with tarfile.open(sdist, "r:gz") as tf:
         names = set(tf.getnames())
 
-    for suffix in REQUIRED_SDIST_SUFFIXES:
+    for suffix in required_sdist_suffixes(version):
         if not any(name.endswith(suffix) for name in names):
             fail(f"sdist missing required file ending with: {suffix}")
 
