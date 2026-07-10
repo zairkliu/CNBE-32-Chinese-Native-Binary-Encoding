@@ -78,9 +78,10 @@ def lookup(char: str) -> dict | None:
 
 
 def batch(chars: str | Iterable[str]) -> list[dict]:
-    """Look up multiple characters.
+    """Look up multiple characters in input order.
 
-    Empty input returns an empty list.
+    Empty input returns an empty list. Repeated characters produce repeated
+    output rows, matching the input sequence.
     """
     if isinstance(chars, str):
         items = list(chars)
@@ -88,12 +89,22 @@ def batch(chars: str | Iterable[str]) -> list[dict]:
         items = list(chars)
     if not items:
         return []
-    placeholders = ",".join("?" for _ in items)
-    conn = get_connection()
-    rows = conn.execute(
-        f"SELECT * FROM cnbe32 WHERE char IN ({placeholders})", items
-    ).fetchall()
-    return [dict(row) for row in rows]
+
+    rows_by_char: dict[str, dict] = {}
+    missing = object()
+    result: list[dict] = []
+
+    for char in items:
+        if not isinstance(char, str) or len(char) != 1:
+            raise ValueError("batch() expects one-character strings")
+        row = rows_by_char.get(char, missing)
+        if row is missing:
+            row = lookup(char)
+            rows_by_char[char] = row
+        if row is not None:
+            result.append(dict(row))
+
+    return result
 
 
 def count() -> int:

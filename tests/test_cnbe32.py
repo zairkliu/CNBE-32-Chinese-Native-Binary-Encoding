@@ -74,6 +74,18 @@ def test_encode_rejects_invalid_field_values(field: str, bad_value: int) -> None
         encode_cnbe(**kwargs)
 
 
+@pytest.mark.parametrize("bad_code", [-1, 2**32, 1.5, "123", True])
+def test_decode_rejects_invalid_code_values(bad_code: object) -> None:
+    with pytest.raises(CNBEValueError, match="code"):
+        decode_cnbe(bad_code)  # type: ignore[arg-type]
+
+
+@pytest.mark.parametrize("bad_code", [-1, 2**32, 1.5, "123", True])
+def test_cnbe32_rejects_invalid_code_values(bad_code: object) -> None:
+    with pytest.raises(CNBEValueError, match="code"):
+        CNBE32(bad_code)  # type: ignore[arg-type]
+
+
 def test_bit_hamming_distance() -> None:
     a = CNBE32(0b0000)
     b = CNBE32(0b1011)
@@ -99,6 +111,16 @@ def test_legacy_hamming_distance_warns_and_matches_field_weighted_distance() -> 
 def test_batch_empty_inputs() -> None:
     assert batch("") == []
     assert batch([]) == []
+
+
+def test_batch_preserves_input_order_and_duplicates() -> None:
+    rows = batch("丁一丁")
+    assert [row["char"] for row in rows] == ["丁", "一", "丁"]
+
+
+def test_batch_rejects_multi_character_iterable_items() -> None:
+    with pytest.raises(ValueError, match="one-character"):
+        batch(["一", "丁乙"])
 
 
 def test_skill_table_empty_is_explicit() -> None:
