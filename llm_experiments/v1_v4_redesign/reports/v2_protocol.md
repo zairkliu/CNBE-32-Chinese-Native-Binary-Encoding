@@ -8,7 +8,7 @@ It does not report completed results.
 
 ## Purpose
 
-v2 tests whether CNBE annotation improves sentence comprehension quality.
+v2 tests whether CNBE annotation changes sentence comprehension quality.
 
 The earlier exploratory experiment emphasized response rate.
 
@@ -102,7 +102,7 @@ The experiment must record:
 - total tokens,
 - annotation overhead ratio.
 
-If CNBE improves output length but not key-point recall, the result should be described as output-startup effect, not comprehension gain.
+If CNBE increases output length but not key-point recall, the result should be described as output-startup effect, not comprehension gain.
 
 ## Statistical Tests
 

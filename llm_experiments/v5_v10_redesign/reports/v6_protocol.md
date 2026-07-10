@@ -85,7 +85,7 @@ Reports must include:
 - score gain,
 - cost-adjusted gain.
 
-If score improves only because output becomes longer, the report must state that.
+If score changes only because output becomes longer, the report must state that.
 
 ## Statistical Plan
 
@@ -124,4 +124,4 @@ Disallowed conclusions:
 - CNBE numeric fields are universally better than Unicode,
 - all numerical injection formats are effective,
 - LLM performance implies hardware performance,
-- hard-task success proves complete CJK understanding.
+- hard-task success establishes complete CJK understanding.

@@ -128,6 +128,6 @@ Under the tested model matrix and dataset, CNBE metadata showed / did not show a
 Disallowed conclusions:
 
 - CNBE is generally model-readable,
-- CNBE improves all LLMs,
-- one model family proves global validity,
+- CNBE benefits all LLMs,
+- one model family establishes global validity,
 - classification demos imply production readiness.
