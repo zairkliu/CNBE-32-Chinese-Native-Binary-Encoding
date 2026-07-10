@@ -65,6 +65,8 @@ TEXT_FILES = [
     "llm_experiments/v5_v10_redesign/reports/v9_protocol.md",
     "llm_experiments/v5_v10_redesign/reports/v10_protocol.md",
     "llm_experiments/v5_v10_redesign/risk_register.md",
+    "llm_experiments/v10_cross_domain/v10_4_protein/CNBE-32_v10.4_蛋白质二级结构预测验证白皮书.md",
+    "results/v10_cross_domain/CNBE-32_v10.4_蛋白质二级结构预测验证白皮书.md",
     "scripts/verify_release_artifacts.py",
     "c/golden_vectors/Makefile",
     "c/golden_vectors/cnbe32_golden_test.c",
@@ -127,6 +129,8 @@ MIN_LINES = {
     "llm_experiments/v5_v10_redesign/reports/v9_protocol.md": 100,
     "llm_experiments/v5_v10_redesign/reports/v10_protocol.md": 130,
     "llm_experiments/v5_v10_redesign/risk_register.md": 170,
+    "llm_experiments/v10_cross_domain/v10_4_protein/CNBE-32_v10.4_蛋白质二级结构预测验证白皮书.md": 130,
+    "results/v10_cross_domain/CNBE-32_v10.4_蛋白质二级结构预测验证白皮书.md": 130,
     "scripts/verify_release_artifacts.py": 60,
     "c/golden_vectors/Makefile": 15,
     "c/golden_vectors/cnbe32_golden_test.c": 120,
@@ -192,6 +196,8 @@ FORBIDDEN_CLAIMS = [
     "Prove encoding",
     "production-ready",
     "CJK全量覆盖验证",
+    "CNBE-32 是一个跨领域通用编码范式",
+    "具有**跨领域零样本泛化能力**",
     "零碰撞全覆盖",
     "证明编码",
     "生产可用",
@@ -335,6 +341,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
-
-
 
