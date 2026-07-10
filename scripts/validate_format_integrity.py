@@ -13,6 +13,10 @@ except ModuleNotFoundError:  # pragma: no cover - Python 3.10 compatibility
     import tomli as tomllib
 
 
+# Read version at module scope for dynamic file lists
+_pyproject = tomllib.loads((Path(__file__).resolve().parent.parent / "pyproject.toml").read_text(encoding="utf-8"))
+version = _pyproject["project"]["version"]
+
 TEXT_FILES = [
     ".gitattributes",
     "MANIFEST.in",
@@ -32,7 +36,7 @@ TEXT_FILES = [
     "spec/golden_vectors.json",
     "spec/GOLDEN_VECTORS.md",
     "spec/IMPLEMENTATION_CONSISTENCY.md",
-    "docs/releases/v1.0.3.md",
+    f"docs/releases/v{version}.md",
     "docs/releases/v1.0.2.md",
     "scripts/verify_release_artifacts.py",
     "c/golden_vectors/Makefile",
@@ -67,7 +71,7 @@ MIN_LINES = {
     "spec/golden_vectors.json": 150,
     "spec/GOLDEN_VECTORS.md": 40,
     "spec/IMPLEMENTATION_CONSISTENCY.md": 30,
-    "docs/releases/v1.0.3.md": 50,
+    f"docs/releases/v{version}.md": 50,
     "docs/releases/v1.0.2.md": 50,
     "scripts/verify_release_artifacts.py": 60,
     "c/golden_vectors/Makefile": 15,
@@ -277,3 +281,7 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+
+
+
+
