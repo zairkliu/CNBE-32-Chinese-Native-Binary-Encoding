@@ -81,6 +81,11 @@ TEXT_FILES = [
     "SECURITY.md",
 ]
 
+HISTORICAL_MARKDOWN_ROOTS = [
+    "llm_experiments",
+    "results",
+]
+
 MIN_LINES = {
     ".gitattributes": 10,
     "MANIFEST.in": 10,
@@ -201,6 +206,11 @@ FORBIDDEN_CLAIMS = [
     "零碰撞全覆盖",
     "证明编码",
     "生产可用",
+    "实验证明",
+    "100% 有效",
+    "100% 有效率",
+    "CNBE 可被零样本理解",
+    "六格式全部 100% 有效",
 ]
 
 
@@ -330,8 +340,22 @@ def validate_file(path: str) -> None:
     require_readme_terms(path, text)
 
 
+def iter_text_files() -> list[str]:
+    paths = list(TEXT_FILES)
+    seen = set(paths)
+
+    for root in HISTORICAL_MARKDOWN_ROOTS:
+        for markdown_path in sorted(Path(root).rglob("*.md")):
+            path = markdown_path.as_posix()
+            if path not in seen:
+                paths.append(path)
+                seen.add(path)
+
+    return paths
+
+
 def main() -> int:
-    for path in TEXT_FILES:
+    for path in iter_text_files():
         validate_file(path)
 
     require_no_tracked_binary()
@@ -341,4 +365,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
-
