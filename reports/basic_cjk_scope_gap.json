@@ -1,0 +1,1938 @@
+{
+  "report_schema_version": 1,
+  "generated_at_utc": "2026-07-12T05:12:00.416194+00:00",
+  "analysis_scope": "Basic CJK U+4E00..U+9FFF",
+  "sources": {
+    "full_catalog": {
+      "file_name": "CNBE_编码目录_修复版_v3.xlsx",
+      "sha256": "d9e24432b9ef3bb20458179258a0371ccf7e699d02ff8b00b59c615ba2aaee84"
+    },
+    "sdk_database": {
+      "path": "data/cnbe32.db",
+      "sha256": "9bea5a8bcec1c85cf7f51f827964b2f18dd904d1db349447ae3b97892e3a6740",
+      "sqlite_integrity_check": "ok"
+    }
+  },
+  "summary": {
+    "status": "COMPLETE",
+    "coverage_boundary_status": "CONFIRMED",
+    "mapping_compatibility": "INCOMPATIBLE",
+    "sdk_replacement_gate": "NO_GO",
+    "severity": "critical"
+  },
+  "comparison": {
+    "counts": {
+      "full_basic_rows": 20992,
+      "sdk_rows": 20902,
+      "shared_unicode_rows": 20902,
+      "missing_from_sdk_rows": 90,
+      "sdk_only_rows": 0,
+      "exact_all_compared_fields_rows": 0,
+      "exact_numeric_mapping_rows": 1
+    },
+    "rates": {
+      "sdk_unicode_coverage_of_full_basic": 0.9957126524390244,
+      "exact_all_fields_among_shared": 0.0,
+      "exact_numeric_mapping_among_shared": 4.78423117405033e-05
+    },
+    "ranges": {
+      "full_basic": [
+        {
+          "start": "U+4E00",
+          "end": "U+9FFF",
+          "count": 20992
+        }
+      ],
+      "sdk": [
+        {
+          "start": "U+4E00",
+          "end": "U+9FA5",
+          "count": 20902
+        }
+      ],
+      "missing_from_sdk": [
+        {
+          "start": "U+9FA6",
+          "end": "U+9FFF",
+          "count": 90
+        }
+      ],
+      "sdk_only": []
+    },
+    "field_mismatch_counts": {
+      "char": 0,
+      "cnbe": 20901,
+      "radical": 20804,
+      "strokes": 20228,
+      "struct_type": 19297,
+      "struct_name": 20902,
+      "idx": 20870
+    },
+    "exact_numeric_mapping_codepoints": [
+      {
+        "unicode": "U+4E00",
+        "char": "一"
+      }
+    ],
+    "mismatch_samples": [
+      {
+        "unicode": "U+4E00",
+        "char": "一",
+        "differences": {
+          "struct_name": {
+            "sdk": "single",
+            "full_catalog": "独体结构"
+          }
+        }
+      },
+      {
+        "unicode": "U+4E01",
+        "char": "丁",
+        "differences": {
+          "cnbe": {
+            "sdk": 34635792,
+            "full_catalog": 17825792
+          },
+          "radical": {
+            "sdk": 2,
+            "full_catalog": 1
+          },
+          "struct_type": {
+            "sdk": 1,
+            "full_catalog": 0
+          },
+          "struct_name": {
+            "sdk": "left-right",
+            "full_catalog": "独体结构"
+          },
+          "idx": {
+            "sdk": 1,
+            "full_catalog": 0
+          }
+        }
+      },
+      {
+        "unicode": "U+4E02",
+        "char": "丂",
+        "differences": {
+          "cnbe": {
+            "sdk": 51970080,
+            "full_catalog": 17825808
+          },
+          "radical": {
+            "sdk": 3,
+            "full_catalog": 1
+          },
+          "strokes": {
+            "sdk": 3,
+            "full_catalog": 2
+          },
+          "struct_type": {
+            "sdk": 2,
+            "full_catalog": 0
+          },
+          "struct_name": {
+            "sdk": "left-mid-right",
+            "full_catalog": "独体结构"
+          },
+          "idx": {
+            "sdk": 2,
+            "full_catalog": 1
+          }
+        }
+      },
+      {
+        "unicode": "U+4E03",
+        "char": "七",
+        "differences": {
+          "cnbe": {
+            "sdk": 69304368,
+            "full_catalog": 17825824
+          },
+          "radical": {
+            "sdk": 4,
+            "full_catalog": 1
+          },
+          "strokes": {
+            "sdk": 4,
+            "full_catalog": 2
+          },
+          "struct_type": {
+            "sdk": 3,
+            "full_catalog": 0
+          },
+          "struct_name": {
+            "sdk": "up-down",
+            "full_catalog": "独体结构"
+          },
+          "idx": {
+            "sdk": 3,
+            "full_catalog": 2
+          }
+        }
+      },
+      {
+        "unicode": "U+4E04",
+        "char": "丄",
+        "differences": {
+          "cnbe": {
+            "sdk": 86638656,
+            "full_catalog": 17825840
+          },
+          "radical": {
+            "sdk": 5,
+            "full_catalog": 1
+          },
+          "strokes": {
+            "sdk": 5,
+            "full_catalog": 2
+          },
+          "struct_type": {
+            "sdk": 4,
+            "full_catalog": 0
+          },
+          "struct_name": {
+            "sdk": "up-mid-down",
+            "full_catalog": "独体结构"
+          },
+          "idx": {
+            "sdk": 4,
+            "full_catalog": 3
+          }
+        }
+      },
+      {
+        "unicode": "U+4E05",
+        "char": "丅",
+        "differences": {
+          "cnbe": {
+            "sdk": 103972944,
+            "full_catalog": 17825856
+          },
+          "radical": {
+            "sdk": 6,
+            "full_catalog": 1
+          },
+          "strokes": {
+            "sdk": 6,
+            "full_catalog": 2
+          },
+          "struct_type": {
+            "sdk": 5,
+            "full_catalog": 0
+          },
+          "struct_name": {
+            "sdk": "top-left-wrap",
+            "full_catalog": "独体结构"
+          },
+          "idx": {
+            "sdk": 5,
+            "full_catalog": 4
+          }
+        }
+      },
+      {
+        "unicode": "U+4E06",
+        "char": "丆",
+        "differences": {
+          "cnbe": {
+            "sdk": 121307232,
+            "full_catalog": 17825872
+          },
+          "radical": {
+            "sdk": 7,
+            "full_catalog": 1
+          },
+          "strokes": {
+            "sdk": 7,
+            "full_catalog": 2
+          },
+          "struct_type": {
+            "sdk": 6,
+            "full_catalog": 0
+          },
+          "struct_name": {
+            "sdk": "top-right-wrap",
+            "full_catalog": "独体结构"
+          },
+          "idx": {
+            "sdk": 6,
+            "full_catalog": 5
+          }
+        }
+      },
+      {
+        "unicode": "U+4E07",
+        "char": "万",
+        "differences": {
+          "cnbe": {
+            "sdk": 138641520,
+            "full_catalog": 18350080
+          },
+          "radical": {
+            "sdk": 8,
+            "full_catalog": 1
+          },
+          "strokes": {
+            "sdk": 8,
+            "full_catalog": 3
+          },
+          "struct_type": {
+            "sdk": 7,
+            "full_catalog": 0
+          },
+          "struct_name": {
+            "sdk": "bottom-left-wrap",
+            "full_catalog": "独体结构"
+          },
+          "idx": {
+            "sdk": 7,
+            "full_catalog": 0
+          }
+        }
+      },
+      {
+        "unicode": "U+4E08",
+        "char": "丈",
+        "differences": {
+          "cnbe": {
+            "sdk": 155975808,
+            "full_catalog": 18350096
+          },
+          "radical": {
+            "sdk": 9,
+            "full_catalog": 1
+          },
+          "strokes": {
+            "sdk": 9,
+            "full_catalog": 3
+          },
+          "struct_type": {
+            "sdk": 8,
+            "full_catalog": 0
+          },
+          "struct_name": {
+            "sdk": "top-wrap",
+            "full_catalog": "独体结构"
+          },
+          "idx": {
+            "sdk": 8,
+            "full_catalog": 1
+          }
+        }
+      },
+      {
+        "unicode": "U+4E09",
+        "char": "三",
+        "differences": {
+          "cnbe": {
+            "sdk": 173310096,
+            "full_catalog": 18350112
+          },
+          "radical": {
+            "sdk": 10,
+            "full_catalog": 1
+          },
+          "strokes": {
+            "sdk": 10,
+            "full_catalog": 3
+          },
+          "struct_type": {
+            "sdk": 9,
+            "full_catalog": 0
+          },
+          "struct_name": {
+            "sdk": "bottom-wrap",
+            "full_catalog": "独体结构"
+          },
+          "idx": {
+            "sdk": 9,
+            "full_catalog": 2
+          }
+        }
+      },
+      {
+        "unicode": "U+4E0A",
+        "char": "上",
+        "differences": {
+          "cnbe": {
+            "sdk": 190644384,
+            "full_catalog": 18350128
+          },
+          "radical": {
+            "sdk": 11,
+            "full_catalog": 1
+          },
+          "strokes": {
+            "sdk": 11,
+            "full_catalog": 3
+          },
+          "struct_type": {
+            "sdk": 10,
+            "full_catalog": 0
+          },
+          "struct_name": {
+            "sdk": "left-wrap",
+            "full_catalog": "独体结构"
+          },
+          "idx": {
+            "sdk": 10,
+            "full_catalog": 3
+          }
+        }
+      },
+      {
+        "unicode": "U+4E0B",
+        "char": "下",
+        "differences": {
+          "cnbe": {
+            "sdk": 207978672,
+            "full_catalog": 18350144
+          },
+          "radical": {
+            "sdk": 12,
+            "full_catalog": 1
+          },
+          "strokes": {
+            "sdk": 12,
+            "full_catalog": 3
+          },
+          "struct_type": {
+            "sdk": 11,
+            "full_catalog": 0
+          },
+          "struct_name": {
+            "sdk": "full-wrap",
+            "full_catalog": "独体结构"
+          },
+          "idx": {
+            "sdk": 11,
+            "full_catalog": 4
+          }
+        }
+      },
+      {
+        "unicode": "U+4E0C",
+        "char": "丌",
+        "differences": {
+          "cnbe": {
+            "sdk": 225312960,
+            "full_catalog": 18350160
+          },
+          "radical": {
+            "sdk": 13,
+            "full_catalog": 1
+          },
+          "strokes": {
+            "sdk": 13,
+            "full_catalog": 3
+          },
+          "struct_type": {
+            "sdk": 12,
+            "full_catalog": 0
+          },
+          "struct_name": {
+            "sdk": "triangle",
+            "full_catalog": "独体结构"
+          },
+          "idx": {
+            "sdk": 12,
+            "full_catalog": 5
+          }
+        }
+      },
+      {
+        "unicode": "U+4E0D",
+        "char": "不",
+        "differences": {
+          "cnbe": {
+            "sdk": 242221264,
+            "full_catalog": 18874368
+          },
+          "radical": {
+            "sdk": 14,
+            "full_catalog": 1
+          },
+          "strokes": {
+            "sdk": 14,
+            "full_catalog": 4
+          },
+          "struct_name": {
+            "sdk": "single",
+            "full_catalog": "独体结构"
+          },
+          "idx": {
+            "sdk": 13,
+            "full_catalog": 0
+          }
+        }
+      },
+      {
+        "unicode": "U+4E0E",
+        "char": "与",
+        "differences": {
+          "cnbe": {
+            "sdk": 259555552,
+            "full_catalog": 18350176
+          },
+          "radical": {
+            "sdk": 15,
+            "full_catalog": 1
+          },
+          "strokes": {
+            "sdk": 15,
+            "full_catalog": 3
+          },
+          "struct_type": {
+            "sdk": 1,
+            "full_catalog": 0
+          },
+          "struct_name": {
+            "sdk": "left-right",
+            "full_catalog": "独体结构"
+          },
+          "idx": {
+            "sdk": 14,
+            "full_catalog": 6
+          }
+        }
+      },
+      {
+        "unicode": "U+4E0F",
+        "char": "丏",
+        "differences": {
+          "cnbe": {
+            "sdk": 276889840,
+            "full_catalog": 18874384
+          },
+          "radical": {
+            "sdk": 16,
+            "full_catalog": 1
+          },
+          "strokes": {
+            "sdk": 16,
+            "full_catalog": 4
+          },
+          "struct_type": {
+            "sdk": 2,
+            "full_catalog": 0
+          },
+          "struct_name": {
+            "sdk": "left-mid-right",
+            "full_catalog": "独体结构"
+          },
+          "idx": {
+            "sdk": 15,
+            "full_catalog": 1
+          }
+        }
+      },
+      {
+        "unicode": "U+4E10",
+        "char": "丐",
+        "differences": {
+          "cnbe": {
+            "sdk": 294224128,
+            "full_catalog": 18874400
+          },
+          "radical": {
+            "sdk": 17,
+            "full_catalog": 1
+          },
+          "strokes": {
+            "sdk": 17,
+            "full_catalog": 4
+          },
+          "struct_type": {
+            "sdk": 3,
+            "full_catalog": 0
+          },
+          "struct_name": {
+            "sdk": "up-down",
+            "full_catalog": "独体结构"
+          },
+          "idx": {
+            "sdk": 16,
+            "full_catalog": 2
+          }
+        }
+      },
+      {
+        "unicode": "U+4E11",
+        "char": "丑",
+        "differences": {
+          "cnbe": {
+            "sdk": 311558416,
+            "full_catalog": 18874416
+          },
+          "radical": {
+            "sdk": 18,
+            "full_catalog": 1
+          },
+          "strokes": {
+            "sdk": 18,
+            "full_catalog": 4
+          },
+          "struct_type": {
+            "sdk": 4,
+            "full_catalog": 0
+          },
+          "struct_name": {
+            "sdk": "up-mid-down",
+            "full_catalog": "独体结构"
+          },
+          "idx": {
+            "sdk": 17,
+            "full_catalog": 3
+          }
+        }
+      },
+      {
+        "unicode": "U+4E12",
+        "char": "丒",
+        "differences": {
+          "cnbe": {
+            "sdk": 328892704,
+            "full_catalog": 18874432
+          },
+          "radical": {
+            "sdk": 19,
+            "full_catalog": 1
+          },
+          "strokes": {
+            "sdk": 19,
+            "full_catalog": 4
+          },
+          "struct_type": {
+            "sdk": 5,
+            "full_catalog": 0
+          },
+          "struct_name": {
+            "sdk": "top-left-wrap",
+            "full_catalog": "独体结构"
+          },
+          "idx": {
+            "sdk": 18,
+            "full_catalog": 4
+          }
+        }
+      },
+      {
+        "unicode": "U+4E13",
+        "char": "专",
+        "differences": {
+          "cnbe": {
+            "sdk": 346226992,
+            "full_catalog": 18874448
+          },
+          "radical": {
+            "sdk": 20,
+            "full_catalog": 1
+          },
+          "strokes": {
+            "sdk": 20,
+            "full_catalog": 4
+          },
+          "struct_type": {
+            "sdk": 6,
+            "full_catalog": 0
+          },
+          "struct_name": {
+            "sdk": "top-right-wrap",
+            "full_catalog": "独体结构"
+          },
+          "idx": {
+            "sdk": 19,
+            "full_catalog": 5
+          }
+        }
+      }
+    ],
+    "missing_from_sdk": [
+      {
+        "unicode": "U+9FA6",
+        "codepoint": 40870,
+        "char": "龦",
+        "cnbe": 1450738224,
+        "cnbe_hex": "0x56788230",
+        "radical": 86,
+        "strokes": 15,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 35,
+        "ext": 0,
+        "source_sequence": 27494
+      },
+      {
+        "unicode": "U+9FA7",
+        "codepoint": 40871,
+        "char": "龧",
+        "cnbe": 1216381344,
+        "cnbe_hex": "0x488081A0",
+        "radical": 72,
+        "strokes": 16,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 26,
+        "ext": 0,
+        "source_sequence": 27495
+      },
+      {
+        "unicode": "U+9FA8",
+        "codepoint": 40872,
+        "char": "龨",
+        "cnbe": 374636576,
+        "cnbe_hex": "0x16548020",
+        "radical": 22,
+        "strokes": 10,
+        "struct_type": 9,
+        "struct_name": "下三包围",
+        "idx": 2,
+        "ext": 0,
+        "source_sequence": 27496
+      },
+      {
+        "unicode": "U+9FA9",
+        "codepoint": 40873,
+        "char": "龩",
+        "cnbe": 2357756704,
+        "cnbe_hex": "0x8C888320",
+        "radical": 140,
+        "strokes": 17,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 50,
+        "ext": 0,
+        "source_sequence": 27497
+      },
+      {
+        "unicode": "U+9FAA",
+        "codepoint": 40874,
+        "char": "龪",
+        "cnbe": 2621997120,
+        "cnbe_hex": "0x9C488040",
+        "radical": 156,
+        "strokes": 9,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 4,
+        "ext": 0,
+        "source_sequence": 27498
+      },
+      {
+        "unicode": "U+9FAB",
+        "codepoint": 40875,
+        "char": "龫",
+        "cnbe": 2673902160,
+        "cnbe_hex": "0x9F608250",
+        "radical": 159,
+        "strokes": 12,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 37,
+        "ext": 0,
+        "source_sequence": 27499
+      },
+      {
+        "unicode": "U+9FAC",
+        "codepoint": 40876,
+        "char": "龬",
+        "cnbe": 2810218016,
+        "cnbe_hex": "0xA7808620",
+        "radical": 167,
+        "strokes": 16,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 98,
+        "ext": 0,
+        "source_sequence": 27500
+      },
+      {
+        "unicode": "U+9FAD",
+        "codepoint": 40877,
+        "char": "龭",
+        "cnbe": 3148382544,
+        "cnbe_hex": "0xBBA88150",
+        "radical": 187,
+        "strokes": 21,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 21,
+        "ext": 0,
+        "source_sequence": 27501
+      },
+      {
+        "unicode": "U+9FAE",
+        "codepoint": 40878,
+        "char": "龮",
+        "cnbe": 3151528016,
+        "cnbe_hex": "0xBBD88050",
+        "radical": 187,
+        "strokes": 27,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 5,
+        "ext": 0,
+        "source_sequence": 27502
+      },
+      {
+        "unicode": "U+9FAF",
+        "codepoint": 40879,
+        "char": "龯",
+        "cnbe": 2808645264,
+        "cnbe_hex": "0xA7688690",
+        "radical": 167,
+        "strokes": 13,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 105,
+        "ext": 0,
+        "source_sequence": 27503
+      },
+      {
+        "unicode": "U+9FB0",
+        "codepoint": 40880,
+        "char": "龰",
+        "cnbe": 1293975568,
+        "cnbe_hex": "0x4D208010",
+        "radical": 77,
+        "strokes": 4,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 1,
+        "ext": 0,
+        "source_sequence": 27504
+      },
+      {
+        "unicode": "U+9FB1",
+        "codepoint": 40881,
+        "char": "龱",
+        "cnbe": 523042896,
+        "cnbe_hex": "0x1F2D0050",
+        "radical": 31,
+        "strokes": 5,
+        "struct_type": 10,
+        "struct_name": "全包围",
+        "idx": 5,
+        "ext": 0,
+        "source_sequence": 27505
+      },
+      {
+        "unicode": "U+9FB2",
+        "codepoint": 40882,
+        "char": "龲",
+        "cnbe": 2811266176,
+        "cnbe_hex": "0xA7908480",
+        "radical": 167,
+        "strokes": 18,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 72,
+        "ext": 0,
+        "source_sequence": 27506
+      },
+      {
+        "unicode": "U+9FB3",
+        "codepoint": 40883,
+        "char": "龳",
+        "cnbe": 545358240,
+        "cnbe_hex": "0x208181A0",
+        "radical": 32,
+        "strokes": 16,
+        "struct_type": 3,
+        "struct_name": "上下结构",
+        "idx": 26,
+        "ext": 0,
+        "source_sequence": 27507
+      },
+      {
+        "unicode": "U+9FB4",
+        "codepoint": 40884,
+        "char": "龴",
+        "cnbe": 84934688,
+        "cnbe_hex": "0x05100020",
+        "radical": 5,
+        "strokes": 2,
+        "struct_type": 0,
+        "struct_name": "独体结构",
+        "idx": 2,
+        "ext": 0,
+        "source_sequence": 27508
+      },
+      {
+        "unicode": "U+9FB5",
+        "codepoint": 40885,
+        "char": "龵",
+        "cnbe": 1075347488,
+        "cnbe_hex": "0x40188020",
+        "radical": 64,
+        "strokes": 3,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 2,
+        "ext": 0,
+        "source_sequence": 27509
+      },
+      {
+        "unicode": "U+9FB6",
+        "codepoint": 40886,
+        "char": "龶",
+        "cnbe": 539066400,
+        "cnbe_hex": "0x20218020",
+        "radical": 32,
+        "strokes": 4,
+        "struct_type": 3,
+        "struct_name": "上下结构",
+        "idx": 2,
+        "ext": 0,
+        "source_sequence": 27510
+      },
+      {
+        "unicode": "U+9FB7",
+        "codepoint": 40887,
+        "char": "龷",
+        "cnbe": 2351464576,
+        "cnbe_hex": "0x8C288080",
+        "radical": 140,
+        "strokes": 5,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 8,
+        "ext": 0,
+        "source_sequence": 27511
+      },
+      {
+        "unicode": "U+9FB8",
+        "codepoint": 40888,
+        "char": "龸",
+        "cnbe": 707362880,
+        "cnbe_hex": "0x2A298040",
+        "radical": 42,
+        "strokes": 5,
+        "struct_type": 3,
+        "struct_name": "上下结构",
+        "idx": 4,
+        "ext": 0,
+        "source_sequence": 27512
+      },
+      {
+        "unicode": "U+9FB9",
+        "codepoint": 40889,
+        "char": "龹",
+        "cnbe": 204505152,
+        "cnbe_hex": "0x0C308040",
+        "radical": 12,
+        "strokes": 6,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 4,
+        "ext": 0,
+        "source_sequence": 27513
+      },
+      {
+        "unicode": "U+9FBA",
+        "codepoint": 40890,
+        "char": "龺",
+        "cnbe": 406945888,
+        "cnbe_hex": "0x18418060",
+        "radical": 24,
+        "strokes": 8,
+        "struct_type": 3,
+        "struct_name": "上下结构",
+        "idx": 6,
+        "ext": 0,
+        "source_sequence": 27514
+      },
+      {
+        "unicode": "U+9FBB",
+        "codepoint": 40891,
+        "char": "龻",
+        "cnbe": 2509800000,
+        "cnbe_hex": "0x95988240",
+        "radical": 149,
+        "strokes": 19,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 36,
+        "ext": 0,
+        "source_sequence": 27515
+      },
+      {
+        "unicode": "U+9FBC",
+        "codepoint": 40892,
+        "char": "龼",
+        "cnbe": 545882352,
+        "cnbe_hex": "0x208980F0",
+        "radical": 32,
+        "strokes": 17,
+        "struct_type": 3,
+        "struct_name": "上下结构",
+        "idx": 15,
+        "ext": 0,
+        "source_sequence": 27516
+      },
+      {
+        "unicode": "U+9FBD",
+        "codepoint": 40893,
+        "char": "龽",
+        "cnbe": 1450738240,
+        "cnbe_hex": "0x56788240",
+        "radical": 86,
+        "strokes": 15,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 36,
+        "ext": 0,
+        "source_sequence": 27517
+      },
+      {
+        "unicode": "U+9FBE",
+        "codepoint": 40894,
+        "char": "龾",
+        "cnbe": 1802010672,
+        "cnbe_hex": "0x6B688030",
+        "radical": 107,
+        "strokes": 13,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 3,
+        "ext": 0,
+        "source_sequence": 27518
+      },
+      {
+        "unicode": "U+9FBF",
+        "codepoint": 40895,
+        "char": "龿",
+        "cnbe": 2354612224,
+        "cnbe_hex": "0x8C588800",
+        "radical": 140,
+        "strokes": 11,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 128,
+        "ext": 0,
+        "source_sequence": 27519
+      },
+      {
+        "unicode": "U+9FC0",
+        "codepoint": 40896,
+        "char": "鿀",
+        "cnbe": 2359853248,
+        "cnbe_hex": "0x8CA880C0",
+        "radical": 140,
+        "strokes": 21,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 12,
+        "ext": 0,
+        "source_sequence": 27520
+      },
+      {
+        "unicode": "U+9FC1",
+        "codepoint": 40897,
+        "char": "鿁",
+        "cnbe": 2506654704,
+        "cnbe_hex": "0x956883F0",
+        "radical": 149,
+        "strokes": 13,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 63,
+        "ext": 0,
+        "source_sequence": 27521
+      },
+      {
+        "unicode": "U+9FC2",
+        "codepoint": 40898,
+        "char": "鿂",
+        "cnbe": 2677047504,
+        "cnbe_hex": "0x9F9080D0",
+        "radical": 159,
+        "strokes": 18,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 13,
+        "ext": 0,
+        "source_sequence": 27522
+      },
+      {
+        "unicode": "U+9FC3",
+        "codepoint": 40899,
+        "char": "鿃",
+        "cnbe": 1835041312,
+        "cnbe_hex": "0x6D608220",
+        "radical": 109,
+        "strokes": 12,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 34,
+        "ext": 0,
+        "source_sequence": 27523
+      },
+      {
+        "unicode": "U+9FC4",
+        "codepoint": 40900,
+        "char": "鿄",
+        "cnbe": 1263568640,
+        "cnbe_hex": "0x4B508700",
+        "radical": 75,
+        "strokes": 10,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 112,
+        "ext": 0,
+        "source_sequence": 27524
+      },
+      {
+        "unicode": "U+9FC5",
+        "codepoint": 40901,
+        "char": "鿅",
+        "cnbe": 1904771152,
+        "cnbe_hex": "0x71888050",
+        "radical": 113,
+        "strokes": 17,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 5,
+        "ext": 0,
+        "source_sequence": 27525
+      },
+      {
+        "unicode": "U+9FC6",
+        "codepoint": 40902,
+        "char": "鿆",
+        "cnbe": 1900052656,
+        "cnbe_hex": "0x714080B0",
+        "radical": 113,
+        "strokes": 8,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 11,
+        "ext": 0,
+        "source_sequence": 27526
+      },
+      {
+        "unicode": "U+9FC7",
+        "codepoint": 40903,
+        "char": "鿇",
+        "cnbe": 155223392,
+        "cnbe_hex": "0x09408560",
+        "radical": 9,
+        "strokes": 8,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 86,
+        "ext": 0,
+        "source_sequence": 27527
+      },
+      {
+        "unicode": "U+9FC8",
+        "codepoint": 40904,
+        "char": "鿈",
+        "cnbe": 1010335856,
+        "cnbe_hex": "0x3C388070",
+        "radical": 60,
+        "strokes": 7,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 7,
+        "ext": 0,
+        "source_sequence": 27528
+      },
+      {
+        "unicode": "U+9FC9",
+        "codepoint": 40905,
+        "char": "鿉",
+        "cnbe": 1010335872,
+        "cnbe_hex": "0x3C388080",
+        "radical": 60,
+        "strokes": 7,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 8,
+        "ext": 0,
+        "source_sequence": 27529
+      },
+      {
+        "unicode": "U+9FCA",
+        "codepoint": 40906,
+        "char": "鿊",
+        "cnbe": 2354612240,
+        "cnbe_hex": "0x8C588810",
+        "radical": 140,
+        "strokes": 11,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 129,
+        "ext": 0,
+        "source_sequence": 27530
+      },
+      {
+        "unicode": "U+9FCB",
+        "codepoint": 40907,
+        "char": "鿋",
+        "cnbe": 2441642480,
+        "cnbe_hex": "0x918881F0",
+        "radical": 145,
+        "strokes": 17,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 31,
+        "ext": 0,
+        "source_sequence": 27531
+      },
+      {
+        "unicode": "U+9FCC",
+        "codepoint": 40908,
+        "char": "鿌",
+        "cnbe": 1432389920,
+        "cnbe_hex": "0x55608920",
+        "radical": 85,
+        "strokes": 12,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 146,
+        "ext": 0,
+        "source_sequence": 27532
+      },
+      {
+        "unicode": "U+9FCD",
+        "codepoint": 40909,
+        "char": "鿍",
+        "cnbe": 541688720,
+        "cnbe_hex": "0x20498390",
+        "radical": 32,
+        "strokes": 9,
+        "struct_type": 3,
+        "struct_name": "上下结构",
+        "idx": 57,
+        "ext": 0,
+        "source_sequence": 27533
+      },
+      {
+        "unicode": "U+9FCE",
+        "codepoint": 40910,
+        "char": "鿎",
+        "cnbe": 1884848720,
+        "cnbe_hex": "0x70588250",
+        "radical": 112,
+        "strokes": 11,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 37,
+        "ext": 0,
+        "source_sequence": 27534
+      },
+      {
+        "unicode": "U+9FCF",
+        "codepoint": 40911,
+        "char": "鿏",
+        "cnbe": 2808120672,
+        "cnbe_hex": "0xA7608560",
+        "radical": 167,
+        "strokes": 12,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 86,
+        "ext": 0,
+        "source_sequence": 27535
+      },
+      {
+        "unicode": "U+9FD0",
+        "codepoint": 40912,
+        "char": "鿐",
+        "cnbe": 3282600544,
+        "cnbe_hex": "0xC3A88260",
+        "radical": 195,
+        "strokes": 21,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 38,
+        "ext": 0,
+        "source_sequence": 27536
+      },
+      {
+        "unicode": "U+9FD1",
+        "codepoint": 40913,
+        "char": "鿑",
+        "cnbe": 255361152,
+        "cnbe_hex": "0x0F388080",
+        "radical": 15,
+        "strokes": 7,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 8,
+        "ext": 0,
+        "source_sequence": 27537
+      },
+      {
+        "unicode": "U+9FD2",
+        "codepoint": 40914,
+        "char": "鿒",
+        "cnbe": 2353563216,
+        "cnbe_hex": "0x8C488650",
+        "radical": 140,
+        "strokes": 9,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 101,
+        "ext": 0,
+        "source_sequence": 27538
+      },
+      {
+        "unicode": "U+9FD3",
+        "codepoint": 40915,
+        "char": "鿓",
+        "cnbe": 2355136608,
+        "cnbe_hex": "0x8C608860",
+        "radical": 140,
+        "strokes": 12,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 134,
+        "ext": 0,
+        "source_sequence": 27539
+      },
+      {
+        "unicode": "U+9FD4",
+        "codepoint": 40916,
+        "char": "鿔",
+        "cnbe": 2809693632,
+        "cnbe_hex": "0xA77885C0",
+        "radical": 167,
+        "strokes": 15,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 92,
+        "ext": 0,
+        "source_sequence": 27540
+      },
+      {
+        "unicode": "U+9FD5",
+        "codepoint": 40917,
+        "char": "鿕",
+        "cnbe": 3277881440,
+        "cnbe_hex": "0xC3608060",
+        "radical": 195,
+        "strokes": 12,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 6,
+        "ext": 0,
+        "source_sequence": 27541
+      },
+      {
+        "unicode": "U+9FD6",
+        "codepoint": 40918,
+        "char": "鿖",
+        "cnbe": 20447296,
+        "cnbe_hex": "0x01380040",
+        "radical": 1,
+        "strokes": 7,
+        "struct_type": 0,
+        "struct_name": "独体结构",
+        "idx": 4,
+        "ext": 0,
+        "source_sequence": 27542
+      },
+      {
+        "unicode": "U+9FD7",
+        "codepoint": 40919,
+        "char": "鿗",
+        "cnbe": 21495808,
+        "cnbe_hex": "0x01480000",
+        "radical": 1,
+        "strokes": 9,
+        "struct_type": 0,
+        "struct_name": "独体结构",
+        "idx": 0,
+        "ext": 0,
+        "source_sequence": 27543
+      },
+      {
+        "unicode": "U+9FD8",
+        "codepoint": 40920,
+        "char": "鿘",
+        "cnbe": 157319952,
+        "cnbe_hex": "0x09608310",
+        "radical": 9,
+        "strokes": 12,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 49,
+        "ext": 0,
+        "source_sequence": 27544
+      },
+      {
+        "unicode": "U+9FD9",
+        "codepoint": 40921,
+        "char": "鿙",
+        "cnbe": 157844112,
+        "cnbe_hex": "0x09688290",
+        "radical": 9,
+        "strokes": 13,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 41,
+        "ext": 0,
+        "source_sequence": 27545
+      },
+      {
+        "unicode": "U+9FDA",
+        "codepoint": 40922,
+        "char": "鿚",
+        "cnbe": 159416624,
+        "cnbe_hex": "0x09808130",
+        "radical": 9,
+        "strokes": 16,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 19,
+        "ext": 0,
+        "source_sequence": 27546
+      },
+      {
+        "unicode": "U+9FDB",
+        "codepoint": 40923,
+        "char": "鿛",
+        "cnbe": 264273920,
+        "cnbe_hex": "0x0FC08000",
+        "radical": 15,
+        "strokes": 24,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 0,
+        "ext": 0,
+        "source_sequence": 27547
+      },
+      {
+        "unicode": "U+9FDC",
+        "codepoint": 40924,
+        "char": "鿜",
+        "cnbe": 1085309040,
+        "cnbe_hex": "0x40B08070",
+        "radical": 64,
+        "strokes": 22,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 7,
+        "ext": 0,
+        "source_sequence": 27548
+      },
+      {
+        "unicode": "U+9FDD",
+        "codepoint": 40925,
+        "char": "鿝",
+        "cnbe": 1272479744,
+        "cnbe_hex": "0x4BD88000",
+        "radical": 75,
+        "strokes": 27,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 0,
+        "ext": 0,
+        "source_sequence": 27549
+      },
+      {
+        "unicode": "U+9FDE",
+        "codepoint": 40926,
+        "char": "鿞",
+        "cnbe": 1319141408,
+        "cnbe_hex": "0x4EA08020",
+        "radical": 78,
+        "strokes": 20,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 2,
+        "ext": 0,
+        "source_sequence": 27550
+      },
+      {
+        "unicode": "U+9FDF",
+        "codepoint": 40927,
+        "char": "鿟",
+        "cnbe": 1935704448,
+        "cnbe_hex": "0x73608180",
+        "radical": 115,
+        "strokes": 12,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 24,
+        "ext": 0,
+        "source_sequence": 27551
+      },
+      {
+        "unicode": "U+9FE0",
+        "codepoint": 40928,
+        "char": "鿠",
+        "cnbe": 1940422720,
+        "cnbe_hex": "0x73A88040",
+        "radical": 115,
+        "strokes": 21,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 4,
+        "ext": 0,
+        "source_sequence": 27552
+      },
+      {
+        "unicode": "U+9FE1",
+        "codepoint": 40929,
+        "char": "鿡",
+        "cnbe": 2063171584,
+        "cnbe_hex": "0x7AF98000",
+        "radical": 122,
+        "strokes": 31,
+        "struct_type": 3,
+        "struct_name": "上下结构",
+        "idx": 0,
+        "ext": 0,
+        "source_sequence": 27553
+      },
+      {
+        "unicode": "U+9FE2",
+        "codepoint": 40930,
+        "char": "鿢",
+        "cnbe": 2154922224,
+        "cnbe_hex": "0x807180F0",
+        "radical": 128,
+        "strokes": 14,
+        "struct_type": 3,
+        "struct_name": "上下结构",
+        "idx": 15,
+        "ext": 0,
+        "source_sequence": 27554
+      },
+      {
+        "unicode": "U+9FE3",
+        "codepoint": 40931,
+        "char": "鿣",
+        "cnbe": 2155446448,
+        "cnbe_hex": "0x807980B0",
+        "radical": 128,
+        "strokes": 15,
+        "struct_type": 3,
+        "struct_name": "上下结构",
+        "idx": 11,
+        "ext": 0,
+        "source_sequence": 27555
+      },
+      {
+        "unicode": "U+9FE4",
+        "codepoint": 40932,
+        "char": "鿤",
+        "cnbe": 2157019200,
+        "cnbe_hex": "0x80918040",
+        "radical": 128,
+        "strokes": 18,
+        "struct_type": 3,
+        "struct_name": "上下结构",
+        "idx": 4,
+        "ext": 0,
+        "source_sequence": 27556
+      },
+      {
+        "unicode": "U+9FE5",
+        "codepoint": 40933,
+        "char": "鿥",
+        "cnbe": 2326888448,
+        "cnbe_hex": "0x8AB18000",
+        "radical": 138,
+        "strokes": 22,
+        "struct_type": 3,
+        "struct_name": "上下结构",
+        "idx": 0,
+        "ext": 0,
+        "source_sequence": 27557
+      },
+      {
+        "unicode": "U+9FE6",
+        "codepoint": 40934,
+        "char": "鿦",
+        "cnbe": 2360901712,
+        "cnbe_hex": "0x8CB88050",
+        "radical": 140,
+        "strokes": 23,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 5,
+        "ext": 0,
+        "source_sequence": 27558
+      },
+      {
+        "unicode": "U+9FE7",
+        "codepoint": 40935,
+        "char": "鿧",
+        "cnbe": 2865266688,
+        "cnbe_hex": "0xAAC88000",
+        "radical": 170,
+        "strokes": 25,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 0,
+        "ext": 0,
+        "source_sequence": 27559
+      },
+      {
+        "unicode": "U+9FE8",
+        "codepoint": 40936,
+        "char": "鿨",
+        "cnbe": 2916646992,
+        "cnbe_hex": "0xADD88050",
+        "radical": 173,
+        "strokes": 27,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 5,
+        "ext": 0,
+        "source_sequence": 27560
+      },
+      {
+        "unicode": "U+9FE9",
+        "codepoint": 40937,
+        "char": "鿩",
+        "cnbe": 3286794240,
+        "cnbe_hex": "0xC3E88000",
+        "radical": 195,
+        "strokes": 29,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 0,
+        "ext": 0,
+        "source_sequence": 27561
+      },
+      {
+        "unicode": "U+9FEA",
+        "codepoint": 40938,
+        "char": "鿪",
+        "cnbe": 1451786656,
+        "cnbe_hex": "0x568881A0",
+        "radical": 86,
+        "strokes": 17,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 26,
+        "ext": 0,
+        "source_sequence": 27562
+      },
+      {
+        "unicode": "U+9FEB",
+        "codepoint": 40939,
+        "char": "鿫",
+        "cnbe": 1417838608,
+        "cnbe_hex": "0x54828010",
+        "radical": 84,
+        "strokes": 16,
+        "struct_type": 5,
+        "struct_name": "左上包围",
+        "idx": 1,
+        "ext": 0,
+        "source_sequence": 27563
+      },
+      {
+        "unicode": "U+9FEC",
+        "codepoint": 40940,
+        "char": "鿬",
+        "cnbe": 1884324560,
+        "cnbe_hex": "0x705082D0",
+        "radical": 112,
+        "strokes": 10,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 45,
+        "ext": 0,
+        "source_sequence": 27564
+      },
+      {
+        "unicode": "U+9FED",
+        "codepoint": 40941,
+        "char": "鿭",
+        "cnbe": 2807071456,
+        "cnbe_hex": "0xA75082E0",
+        "radical": 167,
+        "strokes": 10,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 46,
+        "ext": 0,
+        "source_sequence": 27565
+      },
+      {
+        "unicode": "U+9FEE",
+        "codepoint": 40942,
+        "char": "鿮",
+        "cnbe": 896172192,
+        "cnbe_hex": "0x356A80A0",
+        "radical": 53,
+        "strokes": 13,
+        "struct_type": 5,
+        "struct_name": "左上包围",
+        "idx": 10,
+        "ext": 0,
+        "source_sequence": 27566
+      },
+      {
+        "unicode": "U+9FEF",
+        "codepoint": 40943,
+        "char": "鿯",
+        "cnbe": 2004975856,
+        "cnbe_hex": "0x778180F0",
+        "radical": 119,
+        "strokes": 16,
+        "struct_type": 3,
+        "struct_name": "上下结构",
+        "idx": 15,
+        "ext": 0,
+        "source_sequence": 27567
+      },
+      {
+        "unicode": "U+9FF0",
+        "codepoint": 40944,
+        "char": "鿰",
+        "cnbe": 1433962080,
+        "cnbe_hex": "0x55788660",
+        "radical": 85,
+        "strokes": 15,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 102,
+        "ext": 0,
+        "source_sequence": 27568
+      },
+      {
+        "unicode": "U+9FF1",
+        "codepoint": 40945,
+        "char": "鿱",
+        "cnbe": 1614840272,
+        "cnbe_hex": "0x604081D0",
+        "radical": 96,
+        "strokes": 8,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 29,
+        "ext": 0,
+        "source_sequence": 27569
+      },
+      {
+        "unicode": "U+9FF2",
+        "codepoint": 40946,
+        "char": "鿲",
+        "cnbe": 2540732464,
+        "cnbe_hex": "0x97708030",
+        "radical": 151,
+        "strokes": 14,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 3,
+        "ext": 0,
+        "source_sequence": 27570
+      },
+      {
+        "unicode": "U+9FF3",
+        "codepoint": 40947,
+        "char": "鿳",
+        "cnbe": 3283124800,
+        "cnbe_hex": "0xC3B08240",
+        "radical": 195,
+        "strokes": 22,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 36,
+        "ext": 0,
+        "source_sequence": 27571
+      },
+      {
+        "unicode": "U+9FF4",
+        "codepoint": 40948,
+        "char": "鿴",
+        "cnbe": 3278405920,
+        "cnbe_hex": "0xC3688120",
+        "radical": 195,
+        "strokes": 13,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 18,
+        "ext": 0,
+        "source_sequence": 27572
+      },
+      {
+        "unicode": "U+9FF5",
+        "codepoint": 40949,
+        "char": "鿵",
+        "cnbe": 3279454928,
+        "cnbe_hex": "0xC37882D0",
+        "radical": 195,
+        "strokes": 15,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 45,
+        "ext": 0,
+        "source_sequence": 27573
+      },
+      {
+        "unicode": "U+9FF6",
+        "codepoint": 40950,
+        "char": "鿶",
+        "cnbe": 3279454944,
+        "cnbe_hex": "0xC37882E0",
+        "radical": 195,
+        "strokes": 15,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 46,
+        "ext": 0,
+        "source_sequence": 27574
+      },
+      {
+        "unicode": "U+9FF7",
+        "codepoint": 40951,
+        "char": "鿷",
+        "cnbe": 3280503632,
+        "cnbe_hex": "0xC3888350",
+        "radical": 195,
+        "strokes": 17,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 53,
+        "ext": 0,
+        "source_sequence": 27575
+      },
+      {
+        "unicode": "U+9FF8",
+        "codepoint": 40952,
+        "char": "鿸",
+        "cnbe": 3281552368,
+        "cnbe_hex": "0xC39883F0",
+        "radical": 195,
+        "strokes": 19,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 63,
+        "ext": 0,
+        "source_sequence": 27576
+      },
+      {
+        "unicode": "U+9FF9",
+        "codepoint": 40953,
+        "char": "鿹",
+        "cnbe": 3281552384,
+        "cnbe_hex": "0xC3988400",
+        "radical": 195,
+        "strokes": 19,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 64,
+        "ext": 0,
+        "source_sequence": 27577
+      },
+      {
+        "unicode": "U+9FFA",
+        "codepoint": 40954,
+        "char": "鿺",
+        "cnbe": 3294658720,
+        "cnbe_hex": "0xC46080A0",
+        "radical": 196,
+        "strokes": 12,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 10,
+        "ext": 0,
+        "source_sequence": 27578
+      },
+      {
+        "unicode": "U+9FFB",
+        "codepoint": 40955,
+        "char": "鿻",
+        "cnbe": 3499131024,
+        "cnbe_hex": "0xD0908090",
+        "radical": 208,
+        "strokes": 18,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 9,
+        "ext": 0,
+        "source_sequence": 27579
+      },
+      {
+        "unicode": "U+9FFC",
+        "codepoint": 40956,
+        "char": "鿼",
+        "cnbe": 3499131040,
+        "cnbe_hex": "0xD09080A0",
+        "radical": 208,
+        "strokes": 18,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 10,
+        "ext": 0,
+        "source_sequence": 27580
+      },
+      {
+        "unicode": "U+9FFD",
+        "codepoint": 40957,
+        "char": "鿽",
+        "cnbe": 510231664,
+        "cnbe_hex": "0x1E698470",
+        "radical": 30,
+        "strokes": 13,
+        "struct_type": 3,
+        "struct_name": "上下结构",
+        "idx": 71,
+        "ext": 0,
+        "source_sequence": 27581
+      },
+      {
+        "unicode": "U+9FFE",
+        "codepoint": 40958,
+        "char": "鿾",
+        "cnbe": 543261696,
+        "cnbe_hex": "0x20618400",
+        "radical": 32,
+        "strokes": 12,
+        "struct_type": 3,
+        "struct_name": "上下结构",
+        "idx": 64,
+        "ext": 0,
+        "source_sequence": 27582
+      },
+      {
+        "unicode": "U+9FFF",
+        "codepoint": 40959,
+        "char": "鿿",
+        "cnbe": 1433437856,
+        "cnbe_hex": "0x557086A0",
+        "radical": 85,
+        "strokes": 14,
+        "struct_type": 1,
+        "struct_name": "左右结构",
+        "idx": 106,
+        "ext": 0,
+        "source_sequence": 27583
+      }
+    ],
+    "sdk_only": []
+  },
+  "findings": [
+    {
+      "id": "BASIC-COVERAGE-BOUNDARY",
+      "severity": "medium",
+      "confidence": "high",
+      "finding": "The 90-row coverage difference is one contiguous tail: the SDK ends at U+9FA5 while the full catalog continues through U+9FFF.",
+      "likely_cause": "A historical Basic CJK cutoff is strongly indicated by the exact contiguous boundary, but the repository does not yet contain provenance establishing why that cutoff was selected."
+    },
+    {
+      "id": "ENCODING-LINEAGE-MISMATCH",
+      "severity": "critical",
+      "confidence": "high",
+      "finding": "Only 1 of 20902 shared Unicode rows have the same numeric CNBE mapping fields.",
+      "impact": "The full catalog cannot be appended to or substituted for the SDK database without changing existing encoded values and lookup behavior."
+    }
+  ],
+  "decision": {
+    "direct_append_allowed": false,
+    "direct_sdk_replacement_allowed": false,
+    "publish_as_sdk_compatible_allowed": false,
+    "full_catalog_may_remain_separate_experimental_artifact": true,
+    "next_required_work": "Establish the provenance and intended authority of both encoding mappings, select a canonical mapping contract, and define an explicit migration/versioning policy before integration."
+  }
+}

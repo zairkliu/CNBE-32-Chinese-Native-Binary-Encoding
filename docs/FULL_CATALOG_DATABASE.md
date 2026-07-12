@@ -7,8 +7,9 @@ It is not the database bundled with the Python SDK.
 
 The current source workbook contains 97,686 auditable catalog rows. The
 packaged SDK database contains 20,902 rows and keeps its existing compatibility
-contract. The full catalog must remain separate until the Basic CJK scope
-difference and public API behavior have been reviewed.
+contract. The full catalog must remain separate: in addition to the 90-row
+Basic CJK coverage difference, the shared rows use a different encoding mapping
+lineage. Direct append or replacement would change existing encoded values.
 
 ## Release Boundary
 
@@ -140,6 +141,18 @@ compare the database SHA-256 values. Regenerating a PASS audit report for the
 same source must not change the database hash. The manifest separately records
 the accepted database hash and the exact audit report hash used by that run.
 
+The recovered radical-based structure classifier can be audited independently:
+
+```bash
+python scripts/audit_full_catalog_structure.py /path/to/CNBE_catalog.xlsx
+```
+
+The checked report at `reports/full_catalog_structure_audit.json` records zero
+structure-code differences and zero structure-name differences across 97,686
+rows. This establishes that the historical rule is reproducible. It does not
+establish that a radical-level heuristic is a linguistically authoritative
+description of every character's glyph structure.
+
 ## Stage 4: Query
 
 The query tool always opens SQLite in read-only mode.
@@ -191,6 +204,7 @@ and update cadence.
 PyPI packaging should be reconsidered only after:
 
 - the 20,992 versus 20,902 Basic CJK difference is resolved;
+- the incompatible shared-row encoding mappings have a documented canonical authority and migration policy;
 - license and redistribution rights for the source catalog are documented;
 - update and deprecation policies are defined;
 - download size and installation impact are accepted;

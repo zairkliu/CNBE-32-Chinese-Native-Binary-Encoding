@@ -1,0 +1,160 @@
+{
+  "report_schema_version": 1,
+  "generated_at_utc": "2026-07-12T05:39:16.826019+00:00",
+  "question": "Which mapping has sufficient provenance and authority to become the canonical CNBE-32 mapping?",
+  "summary": {
+    "status": "COMPLETE",
+    "canonical_mapping_gate": "NO_GO",
+    "sdk_reproducibility": "PASS",
+    "sdk_semantic_authority": "INSUFFICIENT",
+    "full_artifact_identity": "PASS",
+    "full_raw_input_identity": "RECOVERED_UNTRACKED",
+    "full_raw_to_catalog_reproducibility": "PASS",
+    "full_semantic_authority": "INSUFFICIENT"
+  },
+  "sdk_mapping": {
+    "database": {
+      "path": "data/cnbe32.db",
+      "sha256": "9bea5a8bcec1c85cf7f51f827964b2f18dd904d1db349447ae3b97892e3a6740"
+    },
+    "audit": {
+      "row_count": 20902,
+      "sqlite_integrity_check": "ok",
+      "formula_mismatch_count": 0,
+      "mismatch_samples": [],
+      "formula": {
+        "radical": "((unicode - U+4E00) mod 214) + 1",
+        "strokes": "((unicode - U+4E00) mod 31) + 1",
+        "structure": "(unicode - U+4E00) mod 13",
+        "index": "(unicode - U+4E00) bitwise-and 0x7FF"
+      }
+    },
+    "provenance_assessment": "Strong implementation provenance: every row is reproduced by the tracked modulo-based generator. Weak semantic authority: radical, stroke, structure, and index values are deterministic heuristics derived from Unicode position rather than cited character data."
+  },
+  "full_catalog_mapping": {
+    "source": {
+      "file_name": "CNBE_编码目录_修复版_v3.xlsx",
+      "sha256": "d9e24432b9ef3bb20458179258a0371ccf7e699d02ff8b00b59c615ba2aaee84"
+    },
+    "audit": {
+      "source_row_count": 97686,
+      "source_sha256": "d9e24432b9ef3bb20458179258a0371ccf7e699d02ff8b00b59c615ba2aaee84",
+      "historical_xlsx_blob_sha1": "352e91956af4d64df7cf9ff37a88a6beb0f66822",
+      "historical_xlsx_sha256": "d9e24432b9ef3bb20458179258a0371ccf7e699d02ff8b00b59c615ba2aaee84",
+      "source_matches_historical_xlsx_bytes": true,
+      "historical_database": {
+        "compressed_blob_sha1": "27e3e9282e8f29f4c7a04e40188fddda79809391",
+        "compressed_sha256": "397b64b0451d384c50116d79c9e17059e7cda52b0fcb5e3b200f3799c53bdf0e",
+        "database_sha256": "c683055329ec22f88d2b1440935ab0951e337197afe3b6219fc38891112b9e76",
+        "sqlite_integrity_check": "ok",
+        "row_count": 97686
+      },
+      "same_unicode_keys_as_historical_database": true,
+      "cnbe_mismatches_vs_historical_database": 0
+    },
+    "provenance_assessment": "Strong artifact identity: the supplied workbook is byte-identical to the historical Git object and all 97,686 CNBE values match the historical compressed SQLite artifact. The local Unicode 17.0.0 Unihan archive reproduces all radical and stroke fields, grouping reproduces every index, and the recovered 19-override radical classifier reproduces every structure field.",
+    "recovered_unihan_source": {
+      "file_name": "Unihan.zip",
+      "size_bytes": 8518517,
+      "sha256": "f7a48b2b545acfaa77b2d607ae28747404ce02baefee16396c5d2d7a8ef34b5e",
+      "unicode_version": "17.0.0",
+      "license_reference": "https://www.unicode.org/terms_of_use.html",
+      "archive_members": [
+        "Unihan_DictionaryIndices.txt",
+        "Unihan_DictionaryLikeData.txt",
+        "Unihan_IRGSources.txt",
+        "Unihan_NumericValues.txt",
+        "Unihan_OtherMappings.txt",
+        "Unihan_RadicalStrokeCounts.txt",
+        "Unihan_Readings.txt",
+        "Unihan_Variants.txt"
+      ],
+      "kRSUnicode_entries": 102998,
+      "kTotalStrokes_entries": 102998,
+      "catalog_radical_coverage": 97686,
+      "catalog_radical_mismatches": 0,
+      "catalog_stroke_coverage": 97686,
+      "catalog_stroke_mismatches_after_31_clamp": 0,
+      "catalog_group_count": 4425,
+      "catalog_index_mismatches": 0,
+      "catalog_max_group_size": 389,
+      "structure_rule_reconstruction": "PASS",
+      "structure_audit": {
+        "row_count": 97686,
+        "radicals_observed": 214,
+        "special_override_count": 19,
+        "structure_code_mismatches": 0,
+        "structure_name_mismatches": 0,
+        "radicals_with_multiple_observed_structures": {},
+        "expected_distribution": {
+          "0": 871,
+          "1": 73565,
+          "3": 18630,
+          "5": 1743,
+          "6": 306,
+          "7": 1235,
+          "8": 864,
+          "9": 149,
+          "10": 323
+        },
+        "actual_distribution": {
+          "0": 871,
+          "1": 73565,
+          "3": 18630,
+          "5": 1743,
+          "6": 306,
+          "7": 1235,
+          "8": 864,
+          "9": 149,
+          "10": 323
+        },
+        "mismatch_samples": []
+      }
+    }
+  },
+  "repository_evidence": {
+    "sdk_introduction_commit": "7244e3e14875cd3492c15eb567ac32d6ede1a79a|2026-07-09T03:18:35+08:00|zairkliu|Day 1: core encoding library engineering — SQLite DB + JSON + DB API + 7 tests (v0.4.0)",
+    "full_artifact_commit": "83d29eca822bd8089b780521458ee8505a1b4ba4|2026-07-02T01:06:53+08:00|zairkliu|CNBE-32 v3.0: Full CJK extension + RISC-V custom instructions",
+    "full_artifact_candidate_generator_files": [
+      "cnbe_simulator.py",
+      "generate_cnbe_table.py"
+    ],
+    "full_raw_input_files_tracked": [],
+    "observed_limitations": [
+      "The tracked full-catalog table generator consumes an already-created workbook; it does not create the 97,686-row mapping.",
+      "No pinned Unihan archive, upstream checksum, or complete raw-to-catalog generator is tracked with the full artifact commit.",
+      "Historical documentation describes Unihan V17 extraction and heuristic structure rules, but those claims are not a reproducible source chain by themselves."
+    ]
+  },
+  "authority_matrix": [
+    {
+      "mapping": "packaged SDK",
+      "artifact_identity": "strong",
+      "algorithm_reproducibility": "strong",
+      "upstream_source_traceability": "not applicable to heuristic fields",
+      "linguistic_semantic_authority": "insufficient",
+      "compatibility_status": "current SDK contract"
+    },
+    {
+      "mapping": "97,686-row full catalog",
+      "artifact_identity": "strong",
+      "algorithm_reproducibility": "strong with recovered local input",
+      "upstream_source_traceability": "recovered locally, not repository-controlled",
+      "linguistic_semantic_authority": "insufficient",
+      "compatibility_status": "separate experimental mapping"
+    }
+  ],
+  "decision": {
+    "canonical_mapping_selected": false,
+    "sdk_replacement_allowed": false,
+    "full_catalog_publication_as_authoritative_allowed": false,
+    "historical_artifact_preservation_allowed": true,
+    "required_evidence": [
+      "Add a documented, checksum-pinned retrieval procedure for Unicode 17.0.0 Unihan and its license notice.",
+      "Preserve the recovered structure classifier and its historical evidence references.",
+      "Separate source-derived fields from heuristic structure classifications in the schema.",
+      "Define a versioned canonical mapping contract and migration policy for existing SDK codes.",
+      "Run an independently reviewed stratified sample before making semantic-accuracy claims."
+    ]
+  }
+}
