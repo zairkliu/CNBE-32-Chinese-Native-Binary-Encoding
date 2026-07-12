@@ -1,0 +1,147 @@
+{
+  "report_schema_version": 1,
+  "generated_at_utc": "2026-07-12T13:43:59.342842+00:00",
+  "audit_mode": "semantic_review_results_validation",
+  "source_csv": "/Users/liuzhaoqi/Documents/Codex/2026-07-09/wan/CNBE-32-Chinese-Native-Binary-Encoding/reports/full_catalog_semantic_review_sample.csv",
+  "sample_json": "/Users/liuzhaoqi/Documents/Codex/2026-07-09/wan/CNBE-32-Chinese-Native-Binary-Encoding/reports/full_catalog_semantic_review_sample.json",
+  "columns": [
+    "sample_id",
+    "unicode",
+    "char",
+    "cnbe_hex",
+    "radical",
+    "strokes",
+    "struct_type",
+    "struct_name",
+    "idx",
+    "ext",
+    "unicode_block",
+    "source_sequence",
+    "selection_reasons",
+    "reviewer_a_radical",
+    "reviewer_a_strokes",
+    "reviewer_a_structure",
+    "reviewer_a_notes",
+    "reviewer_b_radical",
+    "reviewer_b_strokes",
+    "reviewer_b_structure",
+    "reviewer_b_notes",
+    "adjudication"
+  ],
+  "allowed_judgments": [
+    "agree",
+    "disagree",
+    "unclear"
+  ],
+  "allowed_adjudications": [
+    "accept",
+    "exclude",
+    "needs_source",
+    "no_action",
+    "revise"
+  ],
+  "summary": {
+    "status": "TEMPLATE_INCOMPLETE",
+    "strict": false,
+    "row_count": 500,
+    "sample_id_alignment": "PASS",
+    "duplicate_sample_ids": [],
+    "missing_sample_ids": [],
+    "unexpected_sample_ids": [],
+    "missing_judgment_count": 3000,
+    "invalid_judgment_count": 0,
+    "disagreement_count": 0,
+    "missing_adjudication_count": 0,
+    "missing_judgment_samples": [
+      {
+        "sample_id": "S0001",
+        "column": "reviewer_a_radical"
+      },
+      {
+        "sample_id": "S0001",
+        "column": "reviewer_a_strokes"
+      },
+      {
+        "sample_id": "S0001",
+        "column": "reviewer_a_structure"
+      },
+      {
+        "sample_id": "S0001",
+        "column": "reviewer_b_radical"
+      },
+      {
+        "sample_id": "S0001",
+        "column": "reviewer_b_strokes"
+      },
+      {
+        "sample_id": "S0001",
+        "column": "reviewer_b_structure"
+      },
+      {
+        "sample_id": "S0002",
+        "column": "reviewer_a_radical"
+      },
+      {
+        "sample_id": "S0002",
+        "column": "reviewer_a_strokes"
+      },
+      {
+        "sample_id": "S0002",
+        "column": "reviewer_a_structure"
+      },
+      {
+        "sample_id": "S0002",
+        "column": "reviewer_b_radical"
+      },
+      {
+        "sample_id": "S0002",
+        "column": "reviewer_b_strokes"
+      },
+      {
+        "sample_id": "S0002",
+        "column": "reviewer_b_structure"
+      },
+      {
+        "sample_id": "S0003",
+        "column": "reviewer_a_radical"
+      },
+      {
+        "sample_id": "S0003",
+        "column": "reviewer_a_strokes"
+      },
+      {
+        "sample_id": "S0003",
+        "column": "reviewer_a_structure"
+      },
+      {
+        "sample_id": "S0003",
+        "column": "reviewer_b_radical"
+      },
+      {
+        "sample_id": "S0003",
+        "column": "reviewer_b_strokes"
+      },
+      {
+        "sample_id": "S0003",
+        "column": "reviewer_b_structure"
+      },
+      {
+        "sample_id": "S0004",
+        "column": "reviewer_a_radical"
+      },
+      {
+        "sample_id": "S0004",
+        "column": "reviewer_a_strokes"
+      }
+    ],
+    "invalid_judgment_samples": [],
+    "disagreement_samples": [],
+    "missing_adjudication_samples": []
+  },
+  "decision_boundaries": {
+    "semantic_authority": "INSUFFICIENT_UNLESS_STRICT_PASS_AND_MANUAL_REVIEWED",
+    "sdk_replacement_allowed": false,
+    "sqlite_build_authorized": false,
+    "release_or_pypi_authorized": false
+  }
+}
