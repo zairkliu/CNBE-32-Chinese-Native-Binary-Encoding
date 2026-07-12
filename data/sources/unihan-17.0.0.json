@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "source_name": "Unicode Han Database (Unihan)",
+  "unicode_version": "17.0.0",
+  "file_name": "Unihan.zip",
+  "official_url": "https://www.unicode.org/Public/17.0.0/ucd/Unihan.zip",
+  "allowed_hosts": [
+    "www.unicode.org"
+  ],
+  "size_bytes": 8518517,
+  "sha256": "f7a48b2b545acfaa77b2d607ae28747404ce02baefee16396c5d2d7a8ef34b5e",
+  "last_modified": "2025-08-18T15:51:14Z",
+  "content_type": "application/zip",
+  "license_reference": "https://www.unicode.org/terms_of_use.html",
+  "repository_policy": {
+    "commit_archive": false,
+    "default_script_mode": "verify-only",
+    "download_requires_explicit_flag": true,
+    "delete_temporary_download_on_hash_mismatch": true
+  },
+  "verified_http_headers": {
+    "checked_at_utc": "2026-07-12T10:38:20Z",
+    "status": 200,
+    "content_length": 8518517,
+    "etag": "\"81fb75-63ca5b596cd20\"",
+    "last_modified": "Mon, 18 Aug 2025 15:51:14 GMT"
+  },
+  "local_recovery_evidence": {
+    "status": "RECOVERED_UNTRACKED",
+    "example_path": "/Users/liuzhaoqi/Documents/Codex/2026-07-01/new-chat/work/Unihan.zip",
+    "sha256_verified": true,
+    "committed_to_repository": false
+  },
+  "fields_used_by_audit": [
+    "kRSUnicode",
+    "kTotalStrokes"
+  ],
+  "script_entrypoint": {
+    "verify_only": "python scripts/fetch_unihan_source.py --archive /path/to/Unihan.zip",
+    "explicit_download": "python scripts/fetch_unihan_source.py --download"
+  },
+  "cnbe32_usage_boundary": {
+    "permitted": [
+      "Verify local Unihan archive identity.",
+      "Reproduce catalog radical and stroke fields for audit.",
+      "Record provenance for the 97,686-row experimental catalog."
+    ],
+    "not_permitted": [
+      "Claim full semantic authority for CNBE-32.",
+      "Replace the current SDK mapping.",
+      "Commit the upstream ZIP archive to this repository."
+    ]
+  }
+}
