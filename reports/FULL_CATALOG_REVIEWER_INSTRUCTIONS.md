@@ -60,6 +60,19 @@ Use `no_action` when a disagreement is understood but does not affect the curren
 
 ## Validation
 
+Export separate reviewer packets before review:
+
+```bash
+python scripts/export_semantic_review_packets.py
+```
+
+The generated files are written under `build/review_packets/`, which is ignored by Git. Reviewer A should receive
+`full_catalog_semantic_review_reviewer_A.csv`; reviewer B should receive
+`full_catalog_semantic_review_reviewer_B.csv`.
+
+After both reviewers return their packets, copy their judgment columns back into
+`reports/full_catalog_semantic_review_sample.csv`. Keep adjudication blank until both reviewer columns are present.
+
 Run the validator in template mode before review:
 
 ```bash
@@ -81,4 +94,3 @@ Strict mode must report `PASS` before this evidence can support any next-stage d
 Even a strict `PASS` does not automatically approve database construction or SDK replacement.
 
 It only means the review CSV is complete, internally consistent, and ready for repository-admin review.
-
