@@ -1,0 +1,240 @@
+{
+  "report_schema_version": 1,
+  "generated_at_utc": "2026-07-11T10:40:29.952063+00:00",
+  "audit_mode": "read_only",
+  "source": {
+    "file_name": "CNBE_编码目录_修复版_v3.xlsx",
+    "size_bytes": 6241787,
+    "sha256": "d9e24432b9ef3bb20458179258a0371ccf7e699d02ff8b00b59c615ba2aaee84",
+    "expected_data_rows": 97686
+  },
+  "summary": {
+    "status": "PASS",
+    "catalog_rows": 97686,
+    "checks_passed": 12,
+    "checks_failed": 0,
+    "failed_checks": [],
+    "sqlite_build_gate": "GO"
+  },
+  "checks": {
+    "required_worksheet": {
+      "status": "PASS",
+      "severity_if_failed": "critical",
+      "evidence": {
+        "required": "CNBE完整编码表",
+        "available": [
+          "CNBE完整编码表",
+          "GB 18030-2022标准对比"
+        ]
+      }
+    },
+    "required_columns": {
+      "status": "PASS",
+      "severity_if_failed": "critical",
+      "evidence": {
+        "header_row": 1,
+        "required": [
+          "序号",
+          "汉字",
+          "Unicode",
+          "CNBE(Hex)",
+          "CNBE(Dec)",
+          "CNBE(Bin)",
+          "部首区",
+          "笔画数",
+          "结构区",
+          "结构名称",
+          "字库区索引",
+          "扩展区"
+        ],
+        "missing": [],
+        "optional_present": [
+          "GB 18030-2022兼容性",
+          "备注说明"
+        ]
+      }
+    },
+    "expected_row_count": {
+      "status": "PASS",
+      "severity_if_failed": "critical",
+      "evidence": {
+        "expected": 97686,
+        "actual": 97686,
+        "non_data_rows": 1
+      }
+    },
+    "required_value_completeness": {
+      "status": "PASS",
+      "severity_if_failed": "critical",
+      "evidence": {
+        "rows_missing_required_values": 0
+      }
+    },
+    "row_parseability": {
+      "status": "PASS",
+      "severity_if_failed": "critical",
+      "evidence": {
+        "parse_errors": 0
+      }
+    },
+    "sequence_continuity": {
+      "status": "PASS",
+      "severity_if_failed": "critical",
+      "evidence": {
+        "errors": 0
+      }
+    },
+    "character_unicode_consistency": {
+      "status": "PASS",
+      "severity_if_failed": "critical",
+      "evidence": {
+        "mismatches": 0
+      }
+    },
+    "key_uniqueness": {
+      "status": "PASS",
+      "severity_if_failed": "critical",
+      "evidence": {
+        "unique_characters": 97686,
+        "unique_unicodes": 97686,
+        "unique_cnbe_codes": 97686,
+        "duplicate_characters": 0,
+        "duplicate_unicodes": 0,
+        "duplicate_cnbe_codes": 0
+      }
+    },
+    "cnbe_representation_consistency": {
+      "status": "PASS",
+      "severity_if_failed": "critical",
+      "evidence": {
+        "representation_mismatches": 0,
+        "invalid_binary_width": 0
+      }
+    },
+    "cnbe_bitfield_recomputation": {
+      "status": "PASS",
+      "severity_if_failed": "critical",
+      "evidence": {
+        "mismatches": 0,
+        "formula": "R<<24 | S<<19 | G<<15 | I<<4 | E"
+      }
+    },
+    "field_ranges": {
+      "status": "PASS",
+      "severity_if_failed": "critical",
+      "evidence": {
+        "errors": 0,
+        "observed": {
+          "部首区": {
+            "min": 1,
+            "max": 214
+          },
+          "笔画数": {
+            "min": 1,
+            "max": 31
+          },
+          "结构区": {
+            "min": 0,
+            "max": 10
+          },
+          "字库区索引": {
+            "min": 0,
+            "max": 388
+          },
+          "扩展区": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "allowed": {
+          "部首区": {
+            "min": 0,
+            "max": 255
+          },
+          "笔画数": {
+            "min": 0,
+            "max": 31
+          },
+          "结构区": {
+            "min": 0,
+            "max": 15
+          },
+          "字库区索引": {
+            "min": 0,
+            "max": 2047
+          },
+          "扩展区": {
+            "min": 0,
+            "max": 15
+          }
+        }
+      }
+    },
+    "structure_mapping_consistency": {
+      "status": "PASS",
+      "severity_if_failed": "high",
+      "evidence": {
+        "code_to_multiple_names": {},
+        "name_to_multiple_codes": {}
+      }
+    }
+  },
+  "profile": {
+    "data_rows": 97686,
+    "non_data_rows": 1,
+    "unicode_block_distribution": {
+      "CJK Unified Ideographs Extension B": 42720,
+      "CJK Unified Ideographs": 20992,
+      "CJK Unified Ideographs Extension F": 7473,
+      "CJK Unified Ideographs Extension A": 6592,
+      "CJK Unified Ideographs Extension E": 5774,
+      "CJK Unified Ideographs Extension G": 4939,
+      "CJK Unified Ideographs Extension H": 4192,
+      "CJK Unified Ideographs Extension C": 4160,
+      "CJK Unified Ideographs Extension I": 622,
+      "CJK Unified Ideographs Extension D": 222
+    },
+    "structure_distribution": {
+      "左右结构": 73565,
+      "上下结构": 18630,
+      "左上包围": 1743,
+      "左下包围": 1235,
+      "独体结构": 871,
+      "上三包围": 864,
+      "全包围": 323,
+      "右上包围": 306,
+      "下三包围": 149
+    },
+    "optional_column_population": {
+      "GB 18030-2022兼容性": {
+        "populated_rows": 0,
+        "population_rate": 0.0
+      },
+      "备注说明": {
+        "populated_rows": 0,
+        "population_rate": 0.0
+      }
+    }
+  },
+  "sample_issues": {
+    "non_data_rows": [
+      {
+        "worksheet_row": 97688,
+        "detail": "【说明】GB 18030-2022兼容性列：标识该汉字是否在GB 18030-2022标准范围内。M=是/否/CJK基本区全部兼容。更多对照数据详见「GB 18030-2022标准对比」工作表。"
+      }
+    ]
+  },
+  "existing_sdk_scope": {
+    "database": {
+      "status": "READ_ONLY_INSPECTED",
+      "path": "data/cnbe32.db",
+      "row_count": 20902,
+      "unicode_min": "U+4E00",
+      "unicode_max": "U+9FA5"
+    },
+    "catalog_basic_cjk_rows": 20992,
+    "basic_cjk_row_difference": 90,
+    "interpretation": "The full catalog is a separate data product. Do not replace the packaged SDK database until the Basic CJK scope difference and compatibility contract are resolved."
+  },
+  "next_step": "Implement a deterministic full-catalog SQLite builder with a separate output path, transactional writes, schema/version metadata, indexes, and post-build reconciliation against this report."
+}

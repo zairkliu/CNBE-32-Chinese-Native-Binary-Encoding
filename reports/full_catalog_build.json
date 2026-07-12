@@ -1,0 +1,78 @@
+{
+  "manifest_schema_version": 1,
+  "status": "PASS",
+  "artifact": {
+    "path": "build/full_catalog/cnbe32_full.db",
+    "size_bytes": 18075648,
+    "sha256": "2eeba79a8782b5f1527046608736009c2139fd5d526aba8f09faa383d4e3da7c",
+    "sqlite_schema_version": 1,
+    "scope": "full_catalog_experimental"
+  },
+  "source": {
+    "file_name": "CNBE_编码目录_修复版_v3.xlsx",
+    "sha256": "d9e24432b9ef3bb20458179258a0371ccf7e699d02ff8b00b59c615ba2aaee84",
+    "audit_report": "reports/full_catalog_feasibility.json",
+    "audit_report_sha256": "e0258d76f6b05ce1fddc6acc29edfdfd5d3dbb95f3e4fedf8739a12d88871807"
+  },
+  "verification": {
+    "status": "PASS",
+    "checks": {
+      "sqlite_integrity": "PASS",
+      "row_count": "PASS",
+      "unicode_uniqueness": "PASS",
+      "character_uniqueness": "PASS",
+      "cnbe_uniqueness": "PASS",
+      "source_sequence_uniqueness": "PASS",
+      "source_sequence_bounds": "PASS",
+      "bitfield_recomputation": "PASS",
+      "unicode_block_reconciliation": "PASS",
+      "structure_reconciliation": "PASS"
+    },
+    "sqlite_integrity_check": "ok",
+    "row_count": 97686,
+    "distinct_counts": {
+      "unicode": 97686,
+      "character": 97686,
+      "cnbe": 97686,
+      "source_sequence": 97686
+    },
+    "bounds": {
+      "unicode_min": "U+3400",
+      "unicode_max": "U+323AF",
+      "cnbe_min": 17301504,
+      "cnbe_max": 3606609952,
+      "source_sequence_min": 0,
+      "source_sequence_max": 97685
+    },
+    "bitfield_recomputation_mismatches": 0,
+    "unicode_block_distribution": {
+      "CJK Unified Ideographs Extension B": 42720,
+      "CJK Unified Ideographs": 20992,
+      "CJK Unified Ideographs Extension F": 7473,
+      "CJK Unified Ideographs Extension A": 6592,
+      "CJK Unified Ideographs Extension E": 5774,
+      "CJK Unified Ideographs Extension G": 4939,
+      "CJK Unified Ideographs Extension H": 4192,
+      "CJK Unified Ideographs Extension C": 4160,
+      "CJK Unified Ideographs Extension I": 622,
+      "CJK Unified Ideographs Extension D": 222
+    },
+    "structure_distribution": {
+      "左右结构": 73565,
+      "上下结构": 18630,
+      "左上包围": 1743,
+      "左下包围": 1235,
+      "独体结构": 871,
+      "上三包围": 864,
+      "全包围": 323,
+      "右上包围": 306,
+      "下三包围": 149
+    }
+  },
+  "release_boundary": {
+    "packaged_sdk_database_replaced": false,
+    "public_api_changed": false,
+    "version_changed": false,
+    "publishing_authorized": false
+  }
+}
