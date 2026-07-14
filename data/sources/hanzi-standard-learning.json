@@ -1,0 +1,393 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-07-14T16:23:16.814551+00:00",
+  "terms": [
+    {
+      "id": "stroke",
+      "zh": "笔画",
+      "evidence_domain": "stroke_count_order_and_shape",
+      "primary_sources": [
+        "source/05-笔顺规范/GF 0031—2026 通用规范汉字笔顺规范.md",
+        "source/05-笔顺规范/GF3002-1999 GB13000.1字符集汉字笔顺规范.md"
+      ],
+      "forbidden_use": "不得把 CNBE 压缩 stroke 字段等同于完整实际笔画数。"
+    },
+    {
+      "id": "stroke_shape",
+      "zh": "笔形",
+      "evidence_domain": "stroke_count_order_and_shape",
+      "primary_sources": [
+        "source/07-折笔规范/GB 13000.1 字符集汉字折笔规范.md",
+        "source/05-笔顺规范/GF 0031—2026 通用规范汉字笔顺规范.md"
+      ],
+      "forbidden_use": "不得用笔形类别替代笔画数或笔顺序列。"
+    },
+    {
+      "id": "stroke_order",
+      "zh": "笔顺",
+      "evidence_domain": "stroke_count_order_and_shape",
+      "primary_sources": [
+        "source/05-笔顺规范/GF 0031—2026 通用规范汉字笔顺规范.md"
+      ],
+      "forbidden_use": "不得把字序、Unicode 顺序或 Excel 行号当作笔顺。"
+    },
+    {
+      "id": "hanzi_component",
+      "zh": "汉字部件",
+      "evidence_domain": "component_inventory",
+      "primary_sources": [
+        "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md",
+        "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md"
+      ],
+      "forbidden_use": "不得用 AI 视觉直觉直接生成部件。"
+    },
+    {
+      "id": "character_component",
+      "zh": "成字部件",
+      "evidence_domain": "component_inventory",
+      "primary_sources": [
+        "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md"
+      ],
+      "forbidden_use": "不得因为部件能成字就自动等同为部首。"
+    },
+    {
+      "id": "non_character_component",
+      "zh": "非成字部件",
+      "evidence_domain": "component_inventory",
+      "primary_sources": [
+        "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md"
+      ],
+      "forbidden_use": "不得把非成字部件误登记为独立汉字。"
+    },
+    {
+      "id": "basic_component",
+      "zh": "基础部件",
+      "evidence_domain": "component_inventory",
+      "primary_sources": [
+        "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md"
+      ],
+      "forbidden_use": "不得无限细拆到笔画后仍称为部件规范结果。"
+    },
+    {
+      "id": "radical",
+      "zh": "部首",
+      "evidence_domain": "radical_classification",
+      "primary_sources": [
+        "source/02-汉字部首表/GG 0011-2009 汉字部首表.md"
+      ],
+      "forbidden_use": "不得混用现代部首、康熙部首和 Unicode radical-stroke。"
+    },
+    {
+      "id": "side_component",
+      "zh": "偏旁",
+      "evidence_domain": "component_inventory",
+      "primary_sources": [
+        "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md"
+      ],
+      "forbidden_use": "不得用偏旁泛称覆盖正式部件和部首字段。"
+    },
+    {
+      "id": "glyph_form",
+      "zh": "字形",
+      "evidence_domain": "single_component_and_structure",
+      "primary_sources": [
+        "source/01-通用规范汉字表/通用规范汉字表(8105).md",
+        "source/04-独体字规范/GF 0013-2009 现代常用独体字规范.md"
+      ],
+      "forbidden_use": "不得把字源语义说明当作字形规范。"
+    },
+    {
+      "id": "single_component_character",
+      "zh": "独体字",
+      "evidence_domain": "single_component_and_structure",
+      "primary_sources": [
+        "source/04-独体字规范/GF 0013-2009 现代常用独体字规范.md"
+      ],
+      "forbidden_use": "不得因为笔画少就自动判定为独体字。"
+    },
+    {
+      "id": "hanzi_structure",
+      "zh": "汉字结构",
+      "evidence_domain": "single_component_and_structure",
+      "primary_sources": [
+        "source/04-独体字规范/GF 0013-2009 现代常用独体字规范.md",
+        "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md"
+      ],
+      "forbidden_use": "不得写入品字形、三叠结构、会意结构等非规范结构字段。"
+    },
+    {
+      "id": "decomposition_method",
+      "zh": "汉字拆分方法",
+      "evidence_domain": "component_inventory",
+      "primary_sources": [
+        "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md",
+        "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md"
+      ],
+      "forbidden_use": "不得只给出语义解释而没有结构和部件证据。"
+    }
+  ],
+  "allowed_structures": [
+    {
+      "id": 1,
+      "name": "上下",
+      "description": "上部和下部组合。"
+    },
+    {
+      "id": 2,
+      "name": "上中下",
+      "description": "上、中、下三段组合。"
+    },
+    {
+      "id": 3,
+      "name": "左右",
+      "description": "左部和右部组合。"
+    },
+    {
+      "id": 4,
+      "name": "左中右",
+      "description": "左、中、右三段组合。"
+    },
+    {
+      "id": 5,
+      "name": "左上包",
+      "description": "左上方向包围或覆盖内部部件。"
+    },
+    {
+      "id": 6,
+      "name": "右上包",
+      "description": "右上方向包围或覆盖内部部件。"
+    },
+    {
+      "id": 7,
+      "name": "左三包",
+      "description": "左侧三面包围。"
+    },
+    {
+      "id": 8,
+      "name": "左下包",
+      "description": "左下方向包围或承托内部部件。"
+    },
+    {
+      "id": 9,
+      "name": "上三包",
+      "description": "上方三面包围。"
+    },
+    {
+      "id": 10,
+      "name": "下三包",
+      "description": "下方三面包围。"
+    },
+    {
+      "id": 11,
+      "name": "全包围",
+      "description": "外部部件完整包围内部部件。"
+    },
+    {
+      "id": 12,
+      "name": "镶嵌",
+      "description": "部件交错嵌合，不能简单归入普通上下或左右结构。"
+    }
+  ],
+  "special_structure": {
+    "id": 0,
+    "name": "独体字",
+    "description": "结构上不拆分为两个及以上部件。"
+  },
+  "national_standards": [
+    {
+      "id": "hanyu_pinyin_scheme_1958",
+      "pdf_filename": "汉语拼音方案 1958-2-11第一届全国人大代表大会第五次会议通过.pdf",
+      "converted_json": "source/09-汉语拼音/汉语拼音方案 1958-2-11第一届全国人大代表大会第五次会议通过.json",
+      "converted_markdown": "source/09-汉语拼音/汉语拼音方案 1958-2-11第一届全国人大代表大会第五次会议通过.md",
+      "audit_domains": [
+        "pronunciation_context",
+        "semantic_context"
+      ],
+      "encoding_authority": "context_only"
+    },
+    {
+      "id": "ai_corpus_terms_gf0031_2026",
+      "pdf_filename": "人工智能 语料库 基础术语GF 0031—2026.pdf",
+      "converted_json": "source/12-语料库基础术语/人工智能 语料库 基础术语GF 0031—2026.json",
+      "converted_markdown": "source/12-语料库基础术语/人工智能 语料库 基础术语GF 0031—2026.md",
+      "audit_domains": [
+        "corpus_methodology",
+        "review_process"
+      ],
+      "encoding_authority": "methodology_only"
+    },
+    {
+      "id": "common_standard_hanzi_8105",
+      "pdf_filename": "通用规范汉字表(8105).pdf",
+      "converted_json": "source/01-通用规范汉字表/通用规范汉字表(8105).json",
+      "converted_markdown": "source/01-通用规范汉字表/通用规范汉字表(8105).md",
+      "audit_domains": [
+        "standard_character_scope",
+        "glyph_form"
+      ],
+      "encoding_authority": "primary_standard"
+    },
+    {
+      "id": "gb13000_component_standard_1998",
+      "pdf_filename": "信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.pdf",
+      "converted_json": "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.json",
+      "converted_markdown": "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md",
+      "audit_domains": [
+        "hanzi_component",
+        "basic_component",
+        "decomposition_method"
+      ],
+      "encoding_authority": "primary_standard"
+    },
+    {
+      "id": "gb13000_fold_stroke_standard",
+      "pdf_filename": "GB 13000.1 字符集汉字折笔规范.pdf",
+      "converted_json": "source/07-折笔规范/GB 13000.1 字符集汉字折笔规范.json",
+      "converted_markdown": "source/07-折笔规范/GB 13000.1 字符集汉字折笔规范.md",
+      "audit_domains": [
+        "stroke_shape",
+        "stroke_count_order_and_shape"
+      ],
+      "encoding_authority": "primary_standard"
+    },
+    {
+      "id": "punctuation_usage_gbt15834_2011",
+      "pdf_filename": "GB T 15834-2011 标点符号用法.pdf",
+      "converted_json": "source/10-术语与标点/GB T 15834-2011 标点符号用法.json",
+      "converted_markdown": "source/10-术语与标点/GB T 15834-2011 标点符号用法.md",
+      "audit_domains": [
+        "text_context"
+      ],
+      "encoding_authority": "context_only"
+    },
+    {
+      "id": "pinyin_orthography_gbt16159_2012",
+      "pdf_filename": "GB T 16159-2012 汉语拼音正词基本规则.pdf",
+      "converted_json": "source/09-汉语拼音/GB T 16159-2012 汉语拼音正词基本规则.json",
+      "converted_markdown": "source/09-汉语拼音/GB T 16159-2012 汉语拼音正词基本规则.md",
+      "audit_domains": [
+        "pronunciation_context",
+        "semantic_context"
+      ],
+      "encoding_authority": "context_only"
+    },
+    {
+      "id": "chinese_information_terms_gb12200_1_90",
+      "pdf_filename": "GB12200.1-90汉语信息处理词汇 01部分：基本术语.pdf",
+      "converted_json": "source/10-术语与标点/GB12200.1-90汉语信息处理词汇 01部分：基本术语.json",
+      "converted_markdown": "source/10-术语与标点/GB12200.1-90汉语信息处理词汇 01部分：基本术语.md",
+      "audit_domains": [
+        "terminology",
+        "review_process"
+      ],
+      "encoding_authority": "methodology_only"
+    },
+    {
+      "id": "chinese_hanzi_terms_gbt12200_2_94",
+      "pdf_filename": "GBT12200.2-94汉语信息处理词汇 02部分：汉语和汉字.pdf",
+      "converted_json": "source/10-术语与标点/GBT12200.2-94汉语信息处理词汇 02部分：汉语和汉字.json",
+      "converted_markdown": "source/10-术语与标点/GBT12200.2-94汉语信息处理词汇 02部分：汉语和汉字.md",
+      "audit_domains": [
+        "terminology",
+        "hanzi_knowledge_terms"
+      ],
+      "encoding_authority": "methodology_only"
+    },
+    {
+      "id": "single_component_standard_gf0013_2009",
+      "pdf_filename": "GF 0013-2009 现代常用独体字规范.pdf",
+      "converted_json": "source/04-独体字规范/GF 0013-2009 现代常用独体字规范.json",
+      "converted_markdown": "source/04-独体字规范/GF 0013-2009 现代常用独体字规范.md",
+      "audit_domains": [
+        "single_component_character",
+        "hanzi_structure",
+        "glyph_form"
+      ],
+      "encoding_authority": "primary_standard"
+    },
+    {
+      "id": "common_component_name_standard_gf0014_2009",
+      "pdf_filename": "GF 0014-2009 现代常用字部件及部件名称规范.pdf",
+      "converted_json": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.json",
+      "converted_markdown": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md",
+      "audit_domains": [
+        "hanzi_component",
+        "character_component",
+        "non_character_component",
+        "side_component",
+        "decomposition_method"
+      ],
+      "encoding_authority": "primary_standard"
+    },
+    {
+      "id": "keyboard_shape_input_evaluation_gf0017_2013",
+      "pdf_filename": "GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则.pdf",
+      "converted_json": "source/11-评测与分类/GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则.json",
+      "converted_markdown": "source/11-评测与分类/GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则.md",
+      "audit_domains": [
+        "review_process",
+        "glyph_form"
+      ],
+      "encoding_authority": "methodology_only"
+    },
+    {
+      "id": "standard_hanzi_stroke_order_gf0031_2026",
+      "pdf_filename": "GF 0031—2026 通用规范汉字笔顺规范.pdf",
+      "converted_json": "source/05-笔顺规范/GF 0031—2026 通用规范汉字笔顺规范.json",
+      "converted_markdown": "source/05-笔顺规范/GF 0031—2026 通用规范汉字笔顺规范.md",
+      "audit_domains": [
+        "stroke",
+        "stroke_shape",
+        "stroke_order"
+      ],
+      "encoding_authority": "primary_standard"
+    },
+    {
+      "id": "pos_tagging_standard_gft20532_2006",
+      "pdf_filename": "GF T 20532-2006 信息处理用现代汉语词类标记规范.pdf",
+      "converted_json": "source/11-评测与分类/GF T 20532-2006 信息处理用现代汉语词类标记规范.json",
+      "converted_markdown": "source/11-评测与分类/GF T 20532-2006 信息处理用现代汉语词类标记规范.md",
+      "audit_domains": [
+        "semantic_context"
+      ],
+      "encoding_authority": "context_only"
+    },
+    {
+      "id": "gb13000_stroke_order_gf3002_1999",
+      "pdf_filename": "GF3002-1999 GB13000.1字符集汉字笔顺规范.pdf",
+      "converted_json": "source/05-笔顺规范/GF3002-1999 GB13000.1字符集汉字笔顺规范.json",
+      "converted_markdown": "source/05-笔顺规范/GF3002-1999 GB13000.1字符集汉字笔顺规范.md",
+      "audit_domains": [
+        "stroke",
+        "stroke_order"
+      ],
+      "encoding_authority": "primary_standard"
+    },
+    {
+      "id": "gb13000_stroke_ordering_gf3003_1999",
+      "pdf_filename": "GF3003-1999 GB13000.1字符集汉字字序（笔画序）规范.pdf",
+      "converted_json": "source/08-字序规范/GF3003-1999 GB13000.1字符集汉字字序（笔画序）规范.json",
+      "converted_markdown": "source/08-字序规范/GF3003-1999 GB13000.1字符集汉字字序（笔画序）规范.md",
+      "audit_domains": [
+        "stroke_based_ordering",
+        "stroke_order"
+      ],
+      "encoding_authority": "primary_standard"
+    },
+    {
+      "id": "hanzi_radical_table_gg0011_2009",
+      "pdf_filename": "GG 0011-2009 汉字部首表.pdf",
+      "converted_json": "source/02-汉字部首表/GG 0011-2009 汉字部首表.json",
+      "converted_markdown": "source/02-汉字部首表/GG 0011-2009 汉字部首表.md",
+      "audit_domains": [
+        "radical",
+        "radical_classification"
+      ],
+      "encoding_authority": "primary_standard"
+    }
+  ],
+  "gates": {
+    "encoding_generation_gate": "NO_GO",
+    "sqlite_build_gate": "NO_GO"
+  }
+}

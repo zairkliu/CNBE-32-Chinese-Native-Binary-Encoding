@@ -1,0 +1,1990 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-07-14T16:23:16.814551+00:00",
+  "audit_mode": "read_only_hanzi_standard_learning",
+  "research_root": "/Users/liuzhaoqi/Documents/cnbe-research",
+  "skill_root": "/Users/liuzhaoqi/Documents/cnbe-research/cnbe-hanzi-knowledge-builder",
+  "summary": {
+    "learning_status": "READY_FOR_HUMAN_REVIEW",
+    "required_terms": 13,
+    "national_standards": 17,
+    "allowed_structures": 12,
+    "special_structure": "独体字",
+    "encoding_generation_gate": "NO_GO",
+    "sqlite_build_gate": "NO_GO",
+    "authority_counts": {
+      "context_only": 4,
+      "methodology_only": 4,
+      "primary_standard": 9
+    }
+  },
+  "reading_stages": [
+    {
+      "stage": 1,
+      "title": "术语统一",
+      "standards": [
+        "chinese_hanzi_terms_gbt12200_2_94",
+        "chinese_information_terms_gb12200_1_90"
+      ],
+      "goal": "先统一汉字、字形、部件、结构、信息处理等基础术语。",
+      "standard_records": [
+        {
+          "id": "chinese_hanzi_terms_gbt12200_2_94",
+          "pdf_filename": "GBT12200.2-94汉语信息处理词汇 02部分：汉语和汉字.pdf",
+          "source_family": "source/10-术语与标点",
+          "converted_json": "source/10-术语与标点/GBT12200.2-94汉语信息处理词汇 02部分：汉语和汉字.json",
+          "converted_markdown": "source/10-术语与标点/GBT12200.2-94汉语信息处理词汇 02部分：汉语和汉字.md",
+          "audit_domains": [
+            "terminology",
+            "hanzi_knowledge_terms"
+          ],
+          "encoding_authority": "methodology_only"
+        },
+        {
+          "id": "chinese_information_terms_gb12200_1_90",
+          "pdf_filename": "GB12200.1-90汉语信息处理词汇 01部分：基本术语.pdf",
+          "source_family": "source/10-术语与标点",
+          "converted_json": "source/10-术语与标点/GB12200.1-90汉语信息处理词汇 01部分：基本术语.json",
+          "converted_markdown": "source/10-术语与标点/GB12200.1-90汉语信息处理词汇 01部分：基本术语.md",
+          "audit_domains": [
+            "terminology",
+            "review_process"
+          ],
+          "encoding_authority": "methodology_only"
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "title": "部件和拆字",
+      "standards": [
+        "common_component_name_standard_gf0014_2009",
+        "gb13000_component_standard_1998"
+      ],
+      "goal": "学习汉字部件、成字部件、非成字部件、基础部件、偏旁和拆分边界。",
+      "standard_records": [
+        {
+          "id": "common_component_name_standard_gf0014_2009",
+          "pdf_filename": "GF 0014-2009 现代常用字部件及部件名称规范.pdf",
+          "source_family": "source/03-部件及部件名称规范",
+          "converted_json": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.json",
+          "converted_markdown": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md",
+          "audit_domains": [
+            "hanzi_component",
+            "character_component",
+            "non_character_component",
+            "side_component",
+            "decomposition_method"
+          ],
+          "encoding_authority": "primary_standard"
+        },
+        {
+          "id": "gb13000_component_standard_1998",
+          "pdf_filename": "信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.pdf",
+          "source_family": "source/06-汉字部件规范",
+          "converted_json": "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.json",
+          "converted_markdown": "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md",
+          "audit_domains": [
+            "hanzi_component",
+            "basic_component",
+            "decomposition_method"
+          ],
+          "encoding_authority": "primary_standard"
+        }
+      ]
+    },
+    {
+      "stage": 3,
+      "title": "独体字和结构",
+      "standards": [
+        "single_component_standard_gf0013_2009",
+        "keyboard_shape_input_evaluation_gf0017_2013"
+      ],
+      "goal": "学习独体字判定和规范结构类型，不使用自造结构名。",
+      "standard_records": [
+        {
+          "id": "single_component_standard_gf0013_2009",
+          "pdf_filename": "GF 0013-2009 现代常用独体字规范.pdf",
+          "source_family": "source/04-独体字规范",
+          "converted_json": "source/04-独体字规范/GF 0013-2009 现代常用独体字规范.json",
+          "converted_markdown": "source/04-独体字规范/GF 0013-2009 现代常用独体字规范.md",
+          "audit_domains": [
+            "single_component_character",
+            "hanzi_structure",
+            "glyph_form"
+          ],
+          "encoding_authority": "primary_standard"
+        },
+        {
+          "id": "keyboard_shape_input_evaluation_gf0017_2013",
+          "pdf_filename": "GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则.pdf",
+          "source_family": "source/11-评测与分类",
+          "converted_json": "source/11-评测与分类/GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则.json",
+          "converted_markdown": "source/11-评测与分类/GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则.md",
+          "audit_domains": [
+            "review_process",
+            "glyph_form"
+          ],
+          "encoding_authority": "methodology_only"
+        }
+      ]
+    },
+    {
+      "stage": 4,
+      "title": "部首系统",
+      "standards": [
+        "hanzi_radical_table_gg0011_2009"
+      ],
+      "goal": "区分部首、偏旁、部件、康熙部首、Unicode radical-stroke 索引。",
+      "standard_records": [
+        {
+          "id": "hanzi_radical_table_gg0011_2009",
+          "pdf_filename": "GG 0011-2009 汉字部首表.pdf",
+          "source_family": "source/02-汉字部首表",
+          "converted_json": "source/02-汉字部首表/GG 0011-2009 汉字部首表.json",
+          "converted_markdown": "source/02-汉字部首表/GG 0011-2009 汉字部首表.md",
+          "audit_domains": [
+            "radical",
+            "radical_classification"
+          ],
+          "encoding_authority": "primary_standard"
+        }
+      ]
+    },
+    {
+      "stage": 5,
+      "title": "笔画、笔形、笔顺",
+      "standards": [
+        "standard_hanzi_stroke_order_gf0031_2026",
+        "gb13000_stroke_order_gf3002_1999",
+        "gb13000_fold_stroke_standard"
+      ],
+      "goal": "分离笔画数、笔形类别、折笔规则和笔顺序列。",
+      "standard_records": [
+        {
+          "id": "standard_hanzi_stroke_order_gf0031_2026",
+          "pdf_filename": "GF 0031—2026 通用规范汉字笔顺规范.pdf",
+          "source_family": "source/05-笔顺规范",
+          "converted_json": "source/05-笔顺规范/GF 0031—2026 通用规范汉字笔顺规范.json",
+          "converted_markdown": "source/05-笔顺规范/GF 0031—2026 通用规范汉字笔顺规范.md",
+          "audit_domains": [
+            "stroke",
+            "stroke_shape",
+            "stroke_order"
+          ],
+          "encoding_authority": "primary_standard"
+        },
+        {
+          "id": "gb13000_stroke_order_gf3002_1999",
+          "pdf_filename": "GF3002-1999 GB13000.1字符集汉字笔顺规范.pdf",
+          "source_family": "source/05-笔顺规范",
+          "converted_json": "source/05-笔顺规范/GF3002-1999 GB13000.1字符集汉字笔顺规范.json",
+          "converted_markdown": "source/05-笔顺规范/GF3002-1999 GB13000.1字符集汉字笔顺规范.md",
+          "audit_domains": [
+            "stroke",
+            "stroke_order"
+          ],
+          "encoding_authority": "primary_standard"
+        },
+        {
+          "id": "gb13000_fold_stroke_standard",
+          "pdf_filename": "GB 13000.1 字符集汉字折笔规范.pdf",
+          "source_family": "source/07-折笔规范",
+          "converted_json": "source/07-折笔规范/GB 13000.1 字符集汉字折笔规范.json",
+          "converted_markdown": "source/07-折笔规范/GB 13000.1 字符集汉字折笔规范.md",
+          "audit_domains": [
+            "stroke_shape",
+            "stroke_count_order_and_shape"
+          ],
+          "encoding_authority": "primary_standard"
+        }
+      ]
+    },
+    {
+      "stage": 6,
+      "title": "字序和字表范围",
+      "standards": [
+        "gb13000_stroke_ordering_gf3003_1999",
+        "common_standard_hanzi_8105"
+      ],
+      "goal": "学习字序、笔画序、字表等级和字形参照，避免混入结构判断。",
+      "standard_records": [
+        {
+          "id": "gb13000_stroke_ordering_gf3003_1999",
+          "pdf_filename": "GF3003-1999 GB13000.1字符集汉字字序（笔画序）规范.pdf",
+          "source_family": "source/08-字序规范",
+          "converted_json": "source/08-字序规范/GF3003-1999 GB13000.1字符集汉字字序（笔画序）规范.json",
+          "converted_markdown": "source/08-字序规范/GF3003-1999 GB13000.1字符集汉字字序（笔画序）规范.md",
+          "audit_domains": [
+            "stroke_based_ordering",
+            "stroke_order"
+          ],
+          "encoding_authority": "primary_standard"
+        },
+        {
+          "id": "common_standard_hanzi_8105",
+          "pdf_filename": "通用规范汉字表(8105).pdf",
+          "source_family": "source/01-通用规范汉字表",
+          "converted_json": "source/01-通用规范汉字表/通用规范汉字表(8105).json",
+          "converted_markdown": "source/01-通用规范汉字表/通用规范汉字表(8105).md",
+          "audit_domains": [
+            "standard_character_scope",
+            "glyph_form"
+          ],
+          "encoding_authority": "primary_standard"
+        }
+      ]
+    },
+    {
+      "stage": 7,
+      "title": "语音、语义和语料上下文",
+      "standards": [
+        "hanyu_pinyin_scheme_1958",
+        "pinyin_orthography_gbt16159_2012",
+        "punctuation_usage_gbt15834_2011",
+        "pos_tagging_standard_gft20532_2006",
+        "ai_corpus_terms_gf0031_2026"
+      ],
+      "goal": "建立上下文和审核方法，不把语义或语料规范直接当作 CNBE 结构字段。",
+      "standard_records": [
+        {
+          "id": "hanyu_pinyin_scheme_1958",
+          "pdf_filename": "汉语拼音方案 1958-2-11第一届全国人大代表大会第五次会议通过.pdf",
+          "source_family": "source/09-汉语拼音",
+          "converted_json": "source/09-汉语拼音/汉语拼音方案 1958-2-11第一届全国人大代表大会第五次会议通过.json",
+          "converted_markdown": "source/09-汉语拼音/汉语拼音方案 1958-2-11第一届全国人大代表大会第五次会议通过.md",
+          "audit_domains": [
+            "pronunciation_context",
+            "semantic_context"
+          ],
+          "encoding_authority": "context_only"
+        },
+        {
+          "id": "pinyin_orthography_gbt16159_2012",
+          "pdf_filename": "GB T 16159-2012 汉语拼音正词基本规则.pdf",
+          "source_family": "source/09-汉语拼音",
+          "converted_json": "source/09-汉语拼音/GB T 16159-2012 汉语拼音正词基本规则.json",
+          "converted_markdown": "source/09-汉语拼音/GB T 16159-2012 汉语拼音正词基本规则.md",
+          "audit_domains": [
+            "pronunciation_context",
+            "semantic_context"
+          ],
+          "encoding_authority": "context_only"
+        },
+        {
+          "id": "punctuation_usage_gbt15834_2011",
+          "pdf_filename": "GB T 15834-2011 标点符号用法.pdf",
+          "source_family": "source/10-术语与标点",
+          "converted_json": "source/10-术语与标点/GB T 15834-2011 标点符号用法.json",
+          "converted_markdown": "source/10-术语与标点/GB T 15834-2011 标点符号用法.md",
+          "audit_domains": [
+            "text_context"
+          ],
+          "encoding_authority": "context_only"
+        },
+        {
+          "id": "pos_tagging_standard_gft20532_2006",
+          "pdf_filename": "GF T 20532-2006 信息处理用现代汉语词类标记规范.pdf",
+          "source_family": "source/11-评测与分类",
+          "converted_json": "source/11-评测与分类/GF T 20532-2006 信息处理用现代汉语词类标记规范.json",
+          "converted_markdown": "source/11-评测与分类/GF T 20532-2006 信息处理用现代汉语词类标记规范.md",
+          "audit_domains": [
+            "semantic_context"
+          ],
+          "encoding_authority": "context_only"
+        },
+        {
+          "id": "ai_corpus_terms_gf0031_2026",
+          "pdf_filename": "人工智能 语料库 基础术语GF 0031—2026.pdf",
+          "source_family": "source/12-语料库基础术语",
+          "converted_json": "source/12-语料库基础术语/人工智能 语料库 基础术语GF 0031—2026.json",
+          "converted_markdown": "source/12-语料库基础术语/人工智能 语料库 基础术语GF 0031—2026.md",
+          "audit_domains": [
+            "corpus_methodology",
+            "review_process"
+          ],
+          "encoding_authority": "methodology_only"
+        }
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "id": "stroke",
+      "zh": "笔画",
+      "definition": "构成汉字字形的最小连续书写单位。",
+      "evidence_domain": "stroke_count_order_and_shape",
+      "primary_sources": [
+        "source/05-笔顺规范/GF 0031—2026 通用规范汉字笔顺规范.md",
+        "source/05-笔顺规范/GF3002-1999 GB13000.1字符集汉字笔顺规范.md"
+      ],
+      "supporting_sources": [
+        "knowledge/stroke_order_8105.json",
+        "knowledge/stroke_order_8105_clean.json"
+      ],
+      "learning_note": "笔画是字形书写的连续单位；CNBE 审核时必须与笔形、笔顺分开记录。",
+      "forbidden_use": "不得把 CNBE 压缩 stroke 字段等同于完整实际笔画数。",
+      "primary_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/05-笔顺规范/GF 0031—2026 通用规范汉字笔顺规范.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 616160,
+          "sha256": "5601c38ed5ec76bdc4770a281c54a0cbc6f2836d95f3b19d3853200c3ae2ae74",
+          "line_count": 14176,
+          "char_count": 551574,
+          "image_reference_count": 0,
+          "text_preview": "### 语 言 文 字 规 范\n\nGF 0023－2020\n\n# 仅供查阅\n\n### 通用规范汉字笔顺规范\n"
+        },
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/05-笔顺规范/GF3002-1999 GB13000.1字符集汉字笔顺规范.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 688,
+          "sha256": "1bd050e042f246351cf4a09ef39c3ad18019cb252aa319a7a22028b852f210dd",
+          "line_count": 16,
+          "char_count": 544,
+          "image_reference_count": 8,
+          "text_preview": "![image 1](<GF3002-1999 GB13000.1字符集汉字笔顺规范_images/imageFile1.png>)\n\n![image 2](<GF3002-1999 GB13000.1字符集汉字笔顺规范_images/imageFile2.png>)\n\n![image 3](<GF3002-1999 GB13000.1字符集汉字笔顺规范_images/imageFile3.png>)\n\n![image 4](<GF3002-1999 GB13000.1字符集汉字笔顺规范_images/imageFile4.png>)\n"
+        }
+      ],
+      "supporting_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/stroke_order_8105.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 1144204,
+          "sha256": "4e8bb4b3c2de77b911c5728bf7fb33a1cc7c995d0ded3cdc5f132ee6eeb2a0f1",
+          "json_status": "PASS",
+          "json_type": "list",
+          "json_count": 8083
+        },
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/stroke_order_8105_clean.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 1165030,
+          "sha256": "f6efaa0caa7433be4266ffbed96125629cc3d928f80f2a6eef48d1f3b3709d64",
+          "json_status": "PASS",
+          "json_type": "list",
+          "json_count": 7907
+        }
+      ],
+      "learning_status": "SOURCE_IDENTIFIED"
+    },
+    {
+      "id": "stroke_shape",
+      "zh": "笔形",
+      "definition": "笔画的形态类别及变体，例如横、竖、撇、点、折及附属笔形。",
+      "evidence_domain": "stroke_count_order_and_shape",
+      "primary_sources": [
+        "source/07-折笔规范/GB 13000.1 字符集汉字折笔规范.md",
+        "source/05-笔顺规范/GF 0031—2026 通用规范汉字笔顺规范.md"
+      ],
+      "supporting_sources": [
+        "knowledge/ocr/ocr_fold_stroke.json"
+      ],
+      "learning_note": "笔形是笔画形态类别；折笔规范负责处理折类笔形及其变体。",
+      "forbidden_use": "不得用笔形类别替代笔画数或笔顺序列。",
+      "primary_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/07-折笔规范/GB 13000.1 字符集汉字折笔规范.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 840,
+          "sha256": "c1cdbc03f2ee9d5c42a69ec53dac9db2eefed4e6173da720c4c59df533f67feb",
+          "line_count": 22,
+          "char_count": 642,
+          "image_reference_count": 11,
+          "text_preview": "![image 1](<GB 13000.1 字符集汉字折笔规范_images/imageFile1.png>)\n\n![image 2](<GB 13000.1 字符集汉字折笔规范_images/imageFile2.png>)\n\n![image 3](<GB 13000.1 字符集汉字折笔规范_images/imageFile3.png>)\n\n![image 4](<GB 13000.1 字符集汉字折笔规范_images/imageFile4.png>)\n"
+        },
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/05-笔顺规范/GF 0031—2026 通用规范汉字笔顺规范.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 616160,
+          "sha256": "5601c38ed5ec76bdc4770a281c54a0cbc6f2836d95f3b19d3853200c3ae2ae74",
+          "line_count": 14176,
+          "char_count": 551574,
+          "image_reference_count": 0,
+          "text_preview": "### 语 言 文 字 规 范\n\nGF 0023－2020\n\n# 仅供查阅\n\n### 通用规范汉字笔顺规范\n"
+        }
+      ],
+      "supporting_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/ocr/ocr_fold_stroke.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 15314,
+          "sha256": "1cfaf552a6eb88ac93fd66194759f21ab3629a6ed5f55d9fa68fb9b97f34fd66",
+          "json_status": "PASS",
+          "json_type": "list",
+          "json_count": 11
+        }
+      ],
+      "learning_status": "SOURCE_IDENTIFIED"
+    },
+    {
+      "id": "stroke_order",
+      "zh": "笔顺",
+      "definition": "书写汉字时笔画出现的先后顺序。",
+      "evidence_domain": "stroke_count_order_and_shape",
+      "primary_sources": [
+        "source/05-笔顺规范/GF 0031—2026 通用规范汉字笔顺规范.md"
+      ],
+      "supporting_sources": [
+        "knowledge/stroke_order_8105.json",
+        "knowledge/stroke_order_8105_clean.json",
+        "knowledge/ocr/ocr_stroke_order.json"
+      ],
+      "learning_note": "笔顺是笔画出现的先后顺序；可用数字序列记录。",
+      "forbidden_use": "不得把字序、Unicode 顺序或 Excel 行号当作笔顺。",
+      "primary_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/05-笔顺规范/GF 0031—2026 通用规范汉字笔顺规范.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 616160,
+          "sha256": "5601c38ed5ec76bdc4770a281c54a0cbc6f2836d95f3b19d3853200c3ae2ae74",
+          "line_count": 14176,
+          "char_count": 551574,
+          "image_reference_count": 0,
+          "text_preview": "### 语 言 文 字 规 范\n\nGF 0023－2020\n\n# 仅供查阅\n\n### 通用规范汉字笔顺规范\n"
+        }
+      ],
+      "supporting_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/stroke_order_8105.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 1144204,
+          "sha256": "4e8bb4b3c2de77b911c5728bf7fb33a1cc7c995d0ded3cdc5f132ee6eeb2a0f1",
+          "json_status": "PASS",
+          "json_type": "list",
+          "json_count": 8083
+        },
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/stroke_order_8105_clean.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 1165030,
+          "sha256": "f6efaa0caa7433be4266ffbed96125629cc3d928f80f2a6eef48d1f3b3709d64",
+          "json_status": "PASS",
+          "json_type": "list",
+          "json_count": 7907
+        },
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/ocr/ocr_stroke_order.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 10127,
+          "sha256": "f0d5323077b36f15d6319b5e5bd9bd68d7e5b1b08853ea6ec504b0a178611534",
+          "json_status": "PASS",
+          "json_type": "list",
+          "json_count": 8
+        }
+      ],
+      "learning_status": "SOURCE_IDENTIFIED"
+    },
+    {
+      "id": "hanzi_component",
+      "zh": "汉字部件",
+      "definition": "由笔画组成、具有组配汉字功能的构字单位。",
+      "evidence_domain": "component_inventory",
+      "primary_sources": [
+        "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md",
+        "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md"
+      ],
+      "supporting_sources": [
+        "knowledge/component_db.json",
+        "knowledge/decomp_rules.json"
+      ],
+      "learning_note": "汉字部件是构字单位，必须通过部件规范或审核过的拆分来源确认。",
+      "forbidden_use": "不得用 AI 视觉直觉直接生成部件。",
+      "primary_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 5872,
+          "sha256": "8da9fc36e1d62c5229e17ac2f00746dc84a6ecb6ea039b61f6c0f52aadadf981",
+          "line_count": 124,
+          "char_count": 4136,
+          "image_reference_count": 62,
+          "text_preview": "![image 1](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile1.png>)\n\n![image 2](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile2.png>)\n\n![image 3](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile3.png>)\n\n![image 4](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile4.png>)\n"
+        },
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 2142,
+          "sha256": "f6a53cc8b0b14c573845a1336de14df4c46d33a2cb18592e6450ef0c790002bb",
+          "line_count": 40,
+          "char_count": 1502,
+          "image_reference_count": 20,
+          "text_preview": "![image 1](<信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）_images/imageFile1.png>)\n\n![image 2](<信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）_images/imageFile2.png>)\n\n![image 3](<信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）_images/imageFile3.png>)\n\n![image 4](<信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）_images/imageFile4.png>)\n"
+        }
+      ],
+      "supporting_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/component_db.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 576557,
+          "sha256": "d40a8173d5a7856fc4eb6dd93009a32d459ef99f21793947ac3ac8b924acfe5e",
+          "json_status": "PASS",
+          "json_type": "dict",
+          "json_top_keys": [
+            "source",
+            "char_coverage",
+            "components",
+            "char_mappings",
+            "comp_mappings"
+          ]
+        },
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/decomp_rules.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 865,
+          "sha256": "10fb1a944c7df5836a287b40a135397014df9b398dc7827445e276c86168fc8e",
+          "json_status": "PASS",
+          "json_type": "dict",
+          "json_top_keys": [
+            "chars_with_ids",
+            "chars_single_component",
+            "chars_needing_rules",
+            "rules",
+            "sample_missing"
+          ]
+        }
+      ],
+      "learning_status": "SOURCE_IDENTIFIED"
+    },
+    {
+      "id": "character_component",
+      "zh": "成字部件",
+      "definition": "能够独立成字的汉字部件。",
+      "evidence_domain": "component_inventory",
+      "primary_sources": [
+        "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md"
+      ],
+      "supporting_sources": [
+        "knowledge/component_db.json",
+        "knowledge/knowledge_base_v2.json"
+      ],
+      "learning_note": "成字部件可以独立成字，仍需在具体拆分层级中确认其部件角色。",
+      "forbidden_use": "不得因为部件能成字就自动等同为部首。",
+      "primary_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 5872,
+          "sha256": "8da9fc36e1d62c5229e17ac2f00746dc84a6ecb6ea039b61f6c0f52aadadf981",
+          "line_count": 124,
+          "char_count": 4136,
+          "image_reference_count": 62,
+          "text_preview": "![image 1](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile1.png>)\n\n![image 2](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile2.png>)\n\n![image 3](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile3.png>)\n\n![image 4](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile4.png>)\n"
+        }
+      ],
+      "supporting_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/component_db.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 576557,
+          "sha256": "d40a8173d5a7856fc4eb6dd93009a32d459ef99f21793947ac3ac8b924acfe5e",
+          "json_status": "PASS",
+          "json_type": "dict",
+          "json_top_keys": [
+            "source",
+            "char_coverage",
+            "components",
+            "char_mappings",
+            "comp_mappings"
+          ]
+        },
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/knowledge_base_v2.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 13662,
+          "sha256": "1a7d1f36ead5f0dd49778a2c76ab32a40a5a0743b928bdc1d9b08638016f01d2",
+          "json_status": "PASS",
+          "json_type": "dict",
+          "json_top_keys": [
+            "version",
+            "concepts",
+            "radical_chars",
+            "stats",
+            "decomp_samples",
+            "std_alignment"
+          ]
+        }
+      ],
+      "learning_status": "SOURCE_IDENTIFIED"
+    },
+    {
+      "id": "non_character_component",
+      "zh": "非成字部件",
+      "definition": "不能独立成字但参与构字的汉字部件。",
+      "evidence_domain": "component_inventory",
+      "primary_sources": [
+        "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md"
+      ],
+      "supporting_sources": [
+        "knowledge/component_db.json",
+        "knowledge/knowledge_base_v2.json"
+      ],
+      "learning_note": "非成字部件不能独立成字，但可参与构字。",
+      "forbidden_use": "不得把非成字部件误登记为独立汉字。",
+      "primary_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 5872,
+          "sha256": "8da9fc36e1d62c5229e17ac2f00746dc84a6ecb6ea039b61f6c0f52aadadf981",
+          "line_count": 124,
+          "char_count": 4136,
+          "image_reference_count": 62,
+          "text_preview": "![image 1](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile1.png>)\n\n![image 2](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile2.png>)\n\n![image 3](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile3.png>)\n\n![image 4](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile4.png>)\n"
+        }
+      ],
+      "supporting_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/component_db.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 576557,
+          "sha256": "d40a8173d5a7856fc4eb6dd93009a32d459ef99f21793947ac3ac8b924acfe5e",
+          "json_status": "PASS",
+          "json_type": "dict",
+          "json_top_keys": [
+            "source",
+            "char_coverage",
+            "components",
+            "char_mappings",
+            "comp_mappings"
+          ]
+        },
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/knowledge_base_v2.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 13662,
+          "sha256": "1a7d1f36ead5f0dd49778a2c76ab32a40a5a0743b928bdc1d9b08638016f01d2",
+          "json_status": "PASS",
+          "json_type": "dict",
+          "json_top_keys": [
+            "version",
+            "concepts",
+            "radical_chars",
+            "stats",
+            "decomp_samples",
+            "std_alignment"
+          ]
+        }
+      ],
+      "learning_status": "SOURCE_IDENTIFIED"
+    },
+    {
+      "id": "basic_component",
+      "zh": "基础部件",
+      "definition": "在选定规范体系下不再继续拆分的基础构字单位。",
+      "evidence_domain": "component_inventory",
+      "primary_sources": [
+        "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md"
+      ],
+      "supporting_sources": [
+        "knowledge/component_db.json"
+      ],
+      "learning_note": "基础部件是在选定规范体系中不再继续拆分的构字单位。",
+      "forbidden_use": "不得无限细拆到笔画后仍称为部件规范结果。",
+      "primary_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 2142,
+          "sha256": "f6a53cc8b0b14c573845a1336de14df4c46d33a2cb18592e6450ef0c790002bb",
+          "line_count": 40,
+          "char_count": 1502,
+          "image_reference_count": 20,
+          "text_preview": "![image 1](<信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）_images/imageFile1.png>)\n\n![image 2](<信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）_images/imageFile2.png>)\n\n![image 3](<信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）_images/imageFile3.png>)\n\n![image 4](<信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）_images/imageFile4.png>)\n"
+        }
+      ],
+      "supporting_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/component_db.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 576557,
+          "sha256": "d40a8173d5a7856fc4eb6dd93009a32d459ef99f21793947ac3ac8b924acfe5e",
+          "json_status": "PASS",
+          "json_type": "dict",
+          "json_top_keys": [
+            "source",
+            "char_coverage",
+            "components",
+            "char_mappings",
+            "comp_mappings"
+          ]
+        }
+      ],
+      "learning_status": "SOURCE_IDENTIFIED"
+    },
+    {
+      "id": "radical",
+      "zh": "部首",
+      "definition": "用于检字、归类或索引的类首部件，必须说明采用的部首系统。",
+      "evidence_domain": "radical_classification",
+      "primary_sources": [
+        "source/02-汉字部首表/GG 0011-2009 汉字部首表.md"
+      ],
+      "supporting_sources": [
+        "knowledge/kangxi_radicals.json",
+        "knowledge/unicode_rsindex.json",
+        "source/15-Unicode-RSIndex/RSIndex.md"
+      ],
+      "learning_note": "部首是检字和归类系统，必须说明采用现代部首表、康熙或 Unicode 系统。",
+      "forbidden_use": "不得混用现代部首、康熙部首和 Unicode radical-stroke。",
+      "primary_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/02-汉字部首表/GG 0011-2009 汉字部首表.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 798,
+          "sha256": "3eb0f09fa13884230f06a2b917587cc8f7005aa109cbf4fe4677c636b207a241",
+          "line_count": 24,
+          "char_count": 678,
+          "image_reference_count": 12,
+          "text_preview": "![image 1](<GG 0011-2009 汉字部首表_images/imageFile1.png>)\n\n![image 2](<GG 0011-2009 汉字部首表_images/imageFile2.png>)\n\n![image 3](<GG 0011-2009 汉字部首表_images/imageFile3.png>)\n\n![image 4](<GG 0011-2009 汉字部首表_images/imageFile4.png>)\n"
+        }
+      ],
+      "supporting_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/kangxi_radicals.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 533759,
+          "sha256": "c2aa49ca9caa51a3befb80db14f4b2fa6d2d38ca43ee17fab36ca34d977fbae9",
+          "json_status": "PASS",
+          "json_type": "dict",
+          "json_top_keys": [
+            "source",
+            "name",
+            "count",
+            "data"
+          ]
+        },
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/unicode_rsindex.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 528736,
+          "sha256": "7ba3b114e97dc1ce7d8e59b26e6344a72849a30d72b0b6af702c4be446247ebf",
+          "json_status": "PASS",
+          "json_type": "dict",
+          "json_top_keys": [
+            "source",
+            "name",
+            "cjk_codepoints",
+            "range",
+            "codepoints"
+          ]
+        },
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/15-Unicode-RSIndex/RSIndex.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 1261878,
+          "sha256": "bf4d78506c19d21e4c9caf0f965726ee7ceec461ac0a764dbeefbc0b33feecca",
+          "line_count": 317738,
+          "char_count": 1035774,
+          "image_reference_count": 0,
+          "text_preview": "e Unicode Standard Version 17.0.0 Radical-Stroke Index\n\nTo learn about the latest version of the Unicode Standard, see https://www.unicode.org/versions/latest/. To learn about this file, see https://www.unicode.org/reports/tr38/.\n\n© 2009–2025 Unicode, Inc. is publication is protected by copyright, and permission must be obtained from Unicode, Inc. prior to any reproduction, modification, or other use not permitted by the Terms of Use. Specifically, you may make copies of this publication and may annotate and translate it solely for personal or internal business purposes and not for public distribution, provided that any such permitted copies and modifications fully reproduce all copyright and other legal notices contained in the original. You may not make copies of or modifications to this publication for public distribution, or incorporate it in whole or in part into any product or publication without the express written permission of Unicode.\n\nUnicode uses most fonts under restricted license from the original font owner. You may not extract, copy, modify, or distribute fonts or font data from any Unicode Products, including this publication, without license from the font owner.\n"
+        }
+      ],
+      "learning_status": "SOURCE_IDENTIFIED"
+    },
+    {
+      "id": "side_component",
+      "zh": "偏旁",
+      "definition": "传统分析中位于汉字某一方位、参与构字或表义表音的部件概念。",
+      "evidence_domain": "component_inventory",
+      "primary_sources": [
+        "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md"
+      ],
+      "supporting_sources": [
+        "knowledge/component_db.json",
+        "knowledge/yuanliu_chars.json"
+      ],
+      "learning_note": "偏旁是传统构字分析概念，可用于解释部件位置和功能。",
+      "forbidden_use": "不得用偏旁泛称覆盖正式部件和部首字段。",
+      "primary_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 5872,
+          "sha256": "8da9fc36e1d62c5229e17ac2f00746dc84a6ecb6ea039b61f6c0f52aadadf981",
+          "line_count": 124,
+          "char_count": 4136,
+          "image_reference_count": 62,
+          "text_preview": "![image 1](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile1.png>)\n\n![image 2](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile2.png>)\n\n![image 3](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile3.png>)\n\n![image 4](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile4.png>)\n"
+        }
+      ],
+      "supporting_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/component_db.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 576557,
+          "sha256": "d40a8173d5a7856fc4eb6dd93009a32d459ef99f21793947ac3ac8b924acfe5e",
+          "json_status": "PASS",
+          "json_type": "dict",
+          "json_top_keys": [
+            "source",
+            "char_coverage",
+            "components",
+            "char_mappings",
+            "comp_mappings"
+          ]
+        },
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/yuanliu_chars.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 3704571,
+          "sha256": "e3a214f45d48aacb16409b09441c10769aa1917173d97606112a2e28af047bb2",
+          "json_status": "PASS",
+          "json_type": "dict",
+          "json_top_keys": [
+            "⺀",
+            "⺈",
+            "⺊",
+            "⺌",
+            "⺍",
+            "⺗",
+            "⺮",
+            "⺳",
+            "⺼",
+            "㐆",
+            "㐌",
+            "㐬",
+            "㐭",
+            "㐱",
+            "㒸",
+            "㒼",
+            "㓞",
+            "㔾",
+            "㕡",
+            "㝵"
+          ]
+        }
+      ],
+      "learning_status": "SOURCE_IDENTIFIED"
+    },
+    {
+      "id": "glyph_form",
+      "zh": "字形",
+      "definition": "汉字的规范视觉形体、印刷形体或字形表现。",
+      "evidence_domain": "single_component_and_structure",
+      "primary_sources": [
+        "source/01-通用规范汉字表/通用规范汉字表(8105).md",
+        "source/04-独体字规范/GF 0013-2009 现代常用独体字规范.md"
+      ],
+      "supporting_sources": [
+        "source/01-通用规范汉字表/通用规范汉字表(8105)_images",
+        "knowledge/structured/base_character_data.json"
+      ],
+      "learning_note": "字形是方块汉字的规范视觉形体，来源应与字表或字形规范关联。",
+      "forbidden_use": "不得把字源语义说明当作字形规范。",
+      "primary_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/01-通用规范汉字表/通用规范汉字表(8105).md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 9237,
+          "sha256": "cfaca4f2f325b7a5983a5d104d62e01c7ed653400b4027ed0b1038e115b8d2b8",
+          "line_count": 274,
+          "char_count": 7319,
+          "image_reference_count": 137,
+          "text_preview": "![image 1](<通用规范汉字表(8105)_images/imageFile1.png>)\n\n![image 2](<通用规范汉字表(8105)_images/imageFile2.png>)\n\n![image 3](<通用规范汉字表(8105)_images/imageFile3.png>)\n\n![image 4](<通用规范汉字表(8105)_images/imageFile4.png>)\n"
+        },
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/04-独体字规范/GF 0013-2009 现代常用独体字规范.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 1102,
+          "sha256": "8f0d92116f1e3513bc06230860f83416fb93e16045a49531099f0f21a55aae16",
+          "line_count": 28,
+          "char_count": 850,
+          "image_reference_count": 14,
+          "text_preview": "![image 1](<GF 0013-2009 现代常用独体字规范_images/imageFile1.png>)\n\n![image 2](<GF 0013-2009 现代常用独体字规范_images/imageFile2.png>)\n\n![image 3](<GF 0013-2009 现代常用独体字规范_images/imageFile3.png>)\n\n![image 4](<GF 0013-2009 现代常用独体字规范_images/imageFile4.png>)\n"
+        }
+      ],
+      "supporting_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/01-通用规范汉字表/通用规范汉字表(8105)_images",
+          "exists": true,
+          "kind": "directory",
+          "file_count": 137,
+          "sample_files": [
+            "imageFile1.png",
+            "imageFile10.png",
+            "imageFile100.png",
+            "imageFile101.png",
+            "imageFile102.png",
+            "imageFile103.png",
+            "imageFile104.png",
+            "imageFile105.png",
+            "imageFile106.png",
+            "imageFile107.png",
+            "imageFile108.png",
+            "imageFile109.png",
+            "imageFile11.png",
+            "imageFile110.png",
+            "imageFile111.png",
+            "imageFile112.png",
+            "imageFile113.png",
+            "imageFile114.png",
+            "imageFile115.png",
+            "imageFile116.png"
+          ]
+        },
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/structured/base_character_data.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 2258871,
+          "sha256": "f0f5a765f8717769211bfde19d6bcfdf25915111a09bd0044ea9467a06a224cf",
+          "json_status": "PASS",
+          "json_type": "dict",
+          "json_top_keys": [
+            "一",
+            "乙",
+            "二",
+            "十",
+            "丁",
+            "厂",
+            "七",
+            "卜",
+            "八",
+            "人",
+            "入",
+            "乂",
+            "儿",
+            "匕",
+            "几",
+            "九",
+            "刁",
+            "了",
+            "刀",
+            "力"
+          ]
+        }
+      ],
+      "learning_status": "SOURCE_IDENTIFIED"
+    },
+    {
+      "id": "single_component_character",
+      "zh": "独体字",
+      "definition": "在对应规范下被视为不能拆分为两个及以上部件的汉字。",
+      "evidence_domain": "single_component_and_structure",
+      "primary_sources": [
+        "source/04-独体字规范/GF 0013-2009 现代常用独体字规范.md"
+      ],
+      "supporting_sources": [
+        "knowledge/decomp_rules.json",
+        "knowledge/knowledge_base_v2.json"
+      ],
+      "learning_note": "独体字是不再拆分为两个及以上部件的汉字，需要独体字规范支持。",
+      "forbidden_use": "不得因为笔画少就自动判定为独体字。",
+      "primary_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/04-独体字规范/GF 0013-2009 现代常用独体字规范.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 1102,
+          "sha256": "8f0d92116f1e3513bc06230860f83416fb93e16045a49531099f0f21a55aae16",
+          "line_count": 28,
+          "char_count": 850,
+          "image_reference_count": 14,
+          "text_preview": "![image 1](<GF 0013-2009 现代常用独体字规范_images/imageFile1.png>)\n\n![image 2](<GF 0013-2009 现代常用独体字规范_images/imageFile2.png>)\n\n![image 3](<GF 0013-2009 现代常用独体字规范_images/imageFile3.png>)\n\n![image 4](<GF 0013-2009 现代常用独体字规范_images/imageFile4.png>)\n"
+        }
+      ],
+      "supporting_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/decomp_rules.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 865,
+          "sha256": "10fb1a944c7df5836a287b40a135397014df9b398dc7827445e276c86168fc8e",
+          "json_status": "PASS",
+          "json_type": "dict",
+          "json_top_keys": [
+            "chars_with_ids",
+            "chars_single_component",
+            "chars_needing_rules",
+            "rules",
+            "sample_missing"
+          ]
+        },
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/knowledge_base_v2.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 13662,
+          "sha256": "1a7d1f36ead5f0dd49778a2c76ab32a40a5a0743b928bdc1d9b08638016f01d2",
+          "json_status": "PASS",
+          "json_type": "dict",
+          "json_top_keys": [
+            "version",
+            "concepts",
+            "radical_chars",
+            "stats",
+            "decomp_samples",
+            "std_alignment"
+          ]
+        }
+      ],
+      "learning_status": "SOURCE_IDENTIFIED"
+    },
+    {
+      "id": "hanzi_structure",
+      "zh": "汉字结构",
+      "definition": "汉字内部部件之间的空间组合关系或结构类型。",
+      "evidence_domain": "single_component_and_structure",
+      "primary_sources": [
+        "source/04-独体字规范/GF 0013-2009 现代常用独体字规范.md",
+        "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md"
+      ],
+      "supporting_sources": [
+        "knowledge/yuanliu_chars.json",
+        "knowledge/structured/cnbe_character_knowledge.json"
+      ],
+      "learning_note": "结构只能落入十二类规范结构，或单独标为独体字。",
+      "forbidden_use": "不得写入品字形、三叠结构、会意结构等非规范结构字段。",
+      "primary_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/04-独体字规范/GF 0013-2009 现代常用独体字规范.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 1102,
+          "sha256": "8f0d92116f1e3513bc06230860f83416fb93e16045a49531099f0f21a55aae16",
+          "line_count": 28,
+          "char_count": 850,
+          "image_reference_count": 14,
+          "text_preview": "![image 1](<GF 0013-2009 现代常用独体字规范_images/imageFile1.png>)\n\n![image 2](<GF 0013-2009 现代常用独体字规范_images/imageFile2.png>)\n\n![image 3](<GF 0013-2009 现代常用独体字规范_images/imageFile3.png>)\n\n![image 4](<GF 0013-2009 现代常用独体字规范_images/imageFile4.png>)\n"
+        },
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 5872,
+          "sha256": "8da9fc36e1d62c5229e17ac2f00746dc84a6ecb6ea039b61f6c0f52aadadf981",
+          "line_count": 124,
+          "char_count": 4136,
+          "image_reference_count": 62,
+          "text_preview": "![image 1](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile1.png>)\n\n![image 2](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile2.png>)\n\n![image 3](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile3.png>)\n\n![image 4](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile4.png>)\n"
+        }
+      ],
+      "supporting_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/yuanliu_chars.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 3704571,
+          "sha256": "e3a214f45d48aacb16409b09441c10769aa1917173d97606112a2e28af047bb2",
+          "json_status": "PASS",
+          "json_type": "dict",
+          "json_top_keys": [
+            "⺀",
+            "⺈",
+            "⺊",
+            "⺌",
+            "⺍",
+            "⺗",
+            "⺮",
+            "⺳",
+            "⺼",
+            "㐆",
+            "㐌",
+            "㐬",
+            "㐭",
+            "㐱",
+            "㒸",
+            "㒼",
+            "㓞",
+            "㔾",
+            "㕡",
+            "㝵"
+          ]
+        },
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/structured/cnbe_character_knowledge.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 18661305,
+          "sha256": "490625195ecc5fa2f51f56eada38b5442809e920927f1a4b03c65a080a0c3add",
+          "json_status": "PASS",
+          "json_type": "list",
+          "json_count": 8104
+        }
+      ],
+      "learning_status": "SOURCE_IDENTIFIED"
+    },
+    {
+      "id": "decomposition_method",
+      "zh": "汉字拆分方法",
+      "definition": "将汉字按规范、IDS 或审阅规则拆分为部件序列和结构关系的方法。",
+      "evidence_domain": "component_inventory",
+      "primary_sources": [
+        "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md",
+        "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md"
+      ],
+      "supporting_sources": [
+        "knowledge/decomp_rules.json",
+        "decomp-data/dictionary.json",
+        "cjk-decomp/cjk-decomp.txt"
+      ],
+      "learning_note": "拆分方法必须记录层级、部件序列、结构关系和来源。",
+      "forbidden_use": "不得只给出语义解释而没有结构和部件证据。",
+      "primary_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 5872,
+          "sha256": "8da9fc36e1d62c5229e17ac2f00746dc84a6ecb6ea039b61f6c0f52aadadf981",
+          "line_count": 124,
+          "char_count": 4136,
+          "image_reference_count": 62,
+          "text_preview": "![image 1](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile1.png>)\n\n![image 2](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile2.png>)\n\n![image 3](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile3.png>)\n\n![image 4](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile4.png>)\n"
+        },
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 2142,
+          "sha256": "f6a53cc8b0b14c573845a1336de14df4c46d33a2cb18592e6450ef0c790002bb",
+          "line_count": 40,
+          "char_count": 1502,
+          "image_reference_count": 20,
+          "text_preview": "![image 1](<信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）_images/imageFile1.png>)\n\n![image 2](<信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）_images/imageFile2.png>)\n\n![image 3](<信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）_images/imageFile3.png>)\n\n![image 4](<信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）_images/imageFile4.png>)\n"
+        }
+      ],
+      "supporting_source_identities": [
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/decomp_rules.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 865,
+          "sha256": "10fb1a944c7df5836a287b40a135397014df9b398dc7827445e276c86168fc8e",
+          "json_status": "PASS",
+          "json_type": "dict",
+          "json_top_keys": [
+            "chars_with_ids",
+            "chars_single_component",
+            "chars_needing_rules",
+            "rules",
+            "sample_missing"
+          ]
+        },
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/decomp-data/dictionary.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 9520010,
+          "sha256": "9d6d0dc83b755f763ae94b22f42716b56c42b2bcf51aee18ca837ec867ae80a4",
+          "json_status": "PASS",
+          "json_type": "list",
+          "json_count": 9574
+        },
+        {
+          "path": "/Users/liuzhaoqi/Documents/cnbe-research/cjk-decomp/cjk-decomp.txt",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 1507690,
+          "sha256": "cf770b7be3894f11a96a79789195f237fdbfc3ca533ea0763052e50cf7998fe1"
+        }
+      ],
+      "learning_status": "SOURCE_IDENTIFIED"
+    }
+  ],
+  "allowed_structures": [
+    {
+      "id": 1,
+      "name": "上下",
+      "description": "上部和下部组合。"
+    },
+    {
+      "id": 2,
+      "name": "上中下",
+      "description": "上、中、下三段组合。"
+    },
+    {
+      "id": 3,
+      "name": "左右",
+      "description": "左部和右部组合。"
+    },
+    {
+      "id": 4,
+      "name": "左中右",
+      "description": "左、中、右三段组合。"
+    },
+    {
+      "id": 5,
+      "name": "左上包",
+      "description": "左上方向包围或覆盖内部部件。"
+    },
+    {
+      "id": 6,
+      "name": "右上包",
+      "description": "右上方向包围或覆盖内部部件。"
+    },
+    {
+      "id": 7,
+      "name": "左三包",
+      "description": "左侧三面包围。"
+    },
+    {
+      "id": 8,
+      "name": "左下包",
+      "description": "左下方向包围或承托内部部件。"
+    },
+    {
+      "id": 9,
+      "name": "上三包",
+      "description": "上方三面包围。"
+    },
+    {
+      "id": 10,
+      "name": "下三包",
+      "description": "下方三面包围。"
+    },
+    {
+      "id": 11,
+      "name": "全包围",
+      "description": "外部部件完整包围内部部件。"
+    },
+    {
+      "id": 12,
+      "name": "镶嵌",
+      "description": "部件交错嵌合，不能简单归入普通上下或左右结构。"
+    }
+  ],
+  "special_structure": {
+    "id": 0,
+    "name": "独体字",
+    "description": "结构上不拆分为两个及以上部件。"
+  },
+  "national_standards": [
+    {
+      "id": "hanyu_pinyin_scheme_1958",
+      "pdf_filename": "汉语拼音方案 1958-2-11第一届全国人大代表大会第五次会议通过.pdf",
+      "source_family": "source/09-汉语拼音",
+      "converted_json": "source/09-汉语拼音/汉语拼音方案 1958-2-11第一届全国人大代表大会第五次会议通过.json",
+      "converted_markdown": "source/09-汉语拼音/汉语拼音方案 1958-2-11第一届全国人大代表大会第五次会议通过.md",
+      "audit_domains": [
+        "pronunciation_context",
+        "semantic_context"
+      ],
+      "encoding_authority": "context_only",
+      "converted_json_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/09-汉语拼音/汉语拼音方案 1958-2-11第一届全国人大代表大会第五次会议通过.json",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 1658,
+        "sha256": "fae00ae19805c06b79b0441ecd03f8d54ec3e79eaa8510b5ecbc99b74581341a",
+        "json_status": "PASS",
+        "json_type": "dict",
+        "json_top_keys": [
+          "file name",
+          "number of pages",
+          "author",
+          "title",
+          "creation date",
+          "modification date",
+          "kids"
+        ]
+      },
+      "converted_markdown_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/09-汉语拼音/汉语拼音方案 1958-2-11第一届全国人大代表大会第五次会议通过.md",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 600,
+        "sha256": "9d39dcbdd889b1dd1e7320abee3f7d2a16aca81d201b89530652ec2a82ce1560",
+        "line_count": 10,
+        "char_count": 360,
+        "image_reference_count": 5,
+        "text_preview": "![image 1](<汉语拼音方案 1958-2-11第一届全国人大代表大会第五次会议通过_images/imageFile1.png>)\n\n![image 2](<汉语拼音方案 1958-2-11第一届全国人大代表大会第五次会议通过_images/imageFile2.png>)\n\n![image 3](<汉语拼音方案 1958-2-11第一届全国人大代表大会第五次会议通过_images/imageFile3.png>)\n\n![image 4](<汉语拼音方案 1958-2-11第一届全国人大代表大会第五次会议通过_images/imageFile4.png>)\n"
+      }
+    },
+    {
+      "id": "ai_corpus_terms_gf0031_2026",
+      "pdf_filename": "人工智能 语料库 基础术语GF 0031—2026.pdf",
+      "source_family": "source/12-语料库基础术语",
+      "converted_json": "source/12-语料库基础术语/人工智能 语料库 基础术语GF 0031—2026.json",
+      "converted_markdown": "source/12-语料库基础术语/人工智能 语料库 基础术语GF 0031—2026.md",
+      "audit_domains": [
+        "corpus_methodology",
+        "review_process"
+      ],
+      "encoding_authority": "methodology_only",
+      "converted_json_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/12-语料库基础术语/人工智能 语料库 基础术语GF 0031—2026.json",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 36041,
+        "sha256": "4c4eda08c7eebefe932c9ed6a95c2512463d901f6365ce5aacab11c8e8751b07",
+        "json_status": "PASS",
+        "json_type": "dict",
+        "json_top_keys": [
+          "file name",
+          "number of pages",
+          "author",
+          "title",
+          "creation date",
+          "modification date",
+          "kids"
+        ]
+      },
+      "converted_markdown_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/12-语料库基础术语/人工智能 语料库 基础术语GF 0031—2026.md",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 949,
+        "sha256": "19f2cfdeaf7a3d67cddc6042c4fb3d0ee35b333cb0de04d6a88caa591d8a0aae",
+        "line_count": 135,
+        "char_count": 711,
+        "image_reference_count": 0,
+        "text_preview": "语 言 文 字 规 范\n\nGF 0031—2026\n\n仅供查阅\n\n## 人工智能 语料库 基础术语\n"
+      }
+    },
+    {
+      "id": "common_standard_hanzi_8105",
+      "pdf_filename": "通用规范汉字表(8105).pdf",
+      "source_family": "source/01-通用规范汉字表",
+      "converted_json": "source/01-通用规范汉字表/通用规范汉字表(8105).json",
+      "converted_markdown": "source/01-通用规范汉字表/通用规范汉字表(8105).md",
+      "audit_domains": [
+        "standard_character_scope",
+        "glyph_form"
+      ],
+      "encoding_authority": "primary_standard",
+      "converted_json_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/01-通用规范汉字表/通用规范汉字表(8105).json",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 30895,
+        "sha256": "3230e572c7eb5c892a2aebd8e0caef265049fcf6177dee32de2e0660df0ad0d5",
+        "json_status": "PASS",
+        "json_type": "dict",
+        "json_top_keys": [
+          "file name",
+          "number of pages",
+          "author",
+          "title",
+          "creation date",
+          "modification date",
+          "kids"
+        ]
+      },
+      "converted_markdown_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/01-通用规范汉字表/通用规范汉字表(8105).md",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 9237,
+        "sha256": "cfaca4f2f325b7a5983a5d104d62e01c7ed653400b4027ed0b1038e115b8d2b8",
+        "line_count": 274,
+        "char_count": 7319,
+        "image_reference_count": 137,
+        "text_preview": "![image 1](<通用规范汉字表(8105)_images/imageFile1.png>)\n\n![image 2](<通用规范汉字表(8105)_images/imageFile2.png>)\n\n![image 3](<通用规范汉字表(8105)_images/imageFile3.png>)\n\n![image 4](<通用规范汉字表(8105)_images/imageFile4.png>)\n"
+      }
+    },
+    {
+      "id": "gb13000_component_standard_1998",
+      "pdf_filename": "信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.pdf",
+      "source_family": "source/06-汉字部件规范",
+      "converted_json": "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.json",
+      "converted_markdown": "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md",
+      "audit_domains": [
+        "hanzi_component",
+        "basic_component",
+        "decomposition_method"
+      ],
+      "encoding_authority": "primary_standard",
+      "converted_json_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.json",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 5502,
+        "sha256": "ea056b911f8695c59aa2357ebd894f56e0078df19a3cb5015009b45a07d9df3a",
+        "json_status": "PASS",
+        "json_type": "dict",
+        "json_top_keys": [
+          "file name",
+          "number of pages",
+          "author",
+          "title",
+          "creation date",
+          "modification date",
+          "kids"
+        ]
+      },
+      "converted_markdown_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 2142,
+        "sha256": "f6a53cc8b0b14c573845a1336de14df4c46d33a2cb18592e6450ef0c790002bb",
+        "line_count": 40,
+        "char_count": 1502,
+        "image_reference_count": 20,
+        "text_preview": "![image 1](<信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）_images/imageFile1.png>)\n\n![image 2](<信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）_images/imageFile2.png>)\n\n![image 3](<信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）_images/imageFile3.png>)\n\n![image 4](<信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）_images/imageFile4.png>)\n"
+      }
+    },
+    {
+      "id": "gb13000_fold_stroke_standard",
+      "pdf_filename": "GB 13000.1 字符集汉字折笔规范.pdf",
+      "source_family": "source/07-折笔规范",
+      "converted_json": "source/07-折笔规范/GB 13000.1 字符集汉字折笔规范.json",
+      "converted_markdown": "source/07-折笔规范/GB 13000.1 字符集汉字折笔规范.md",
+      "audit_domains": [
+        "stroke_shape",
+        "stroke_count_order_and_shape"
+      ],
+      "encoding_authority": "primary_standard",
+      "converted_json_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/07-折笔规范/GB 13000.1 字符集汉字折笔规范.json",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 2772,
+        "sha256": "3632d59565dc31acf4d4306bd157f01248f84b10ecb7af2cc69791ceff2b963d",
+        "json_status": "PASS",
+        "json_type": "dict",
+        "json_top_keys": [
+          "file name",
+          "number of pages",
+          "author",
+          "title",
+          "creation date",
+          "modification date",
+          "kids"
+        ]
+      },
+      "converted_markdown_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/07-折笔规范/GB 13000.1 字符集汉字折笔规范.md",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 840,
+        "sha256": "c1cdbc03f2ee9d5c42a69ec53dac9db2eefed4e6173da720c4c59df533f67feb",
+        "line_count": 22,
+        "char_count": 642,
+        "image_reference_count": 11,
+        "text_preview": "![image 1](<GB 13000.1 字符集汉字折笔规范_images/imageFile1.png>)\n\n![image 2](<GB 13000.1 字符集汉字折笔规范_images/imageFile2.png>)\n\n![image 3](<GB 13000.1 字符集汉字折笔规范_images/imageFile3.png>)\n\n![image 4](<GB 13000.1 字符集汉字折笔规范_images/imageFile4.png>)\n"
+      }
+    },
+    {
+      "id": "punctuation_usage_gbt15834_2011",
+      "pdf_filename": "GB T 15834-2011 标点符号用法.pdf",
+      "source_family": "source/10-术语与标点",
+      "converted_json": "source/10-术语与标点/GB T 15834-2011 标点符号用法.json",
+      "converted_markdown": "source/10-术语与标点/GB T 15834-2011 标点符号用法.md",
+      "audit_domains": [
+        "text_context"
+      ],
+      "encoding_authority": "context_only",
+      "converted_json_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/10-术语与标点/GB T 15834-2011 标点符号用法.json",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 6133,
+        "sha256": "f75f711efcc5ee64c345a205084894af3cbfc23e140cf285b3ff9944133929c7",
+        "json_status": "PASS",
+        "json_type": "dict",
+        "json_top_keys": [
+          "file name",
+          "number of pages",
+          "author",
+          "title",
+          "creation date",
+          "modification date",
+          "kids"
+        ]
+      },
+      "converted_markdown_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/10-术语与标点/GB T 15834-2011 标点符号用法.md",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 1906,
+        "sha256": "5c1db21421e6b1b7d0a66326589ed5fa0a9eb144b66a7bee2653d2b5e4921f00",
+        "line_count": 52,
+        "char_count": 1594,
+        "image_reference_count": 26,
+        "text_preview": "![image 1](<GB T 15834-2011 标点符号用法_images/imageFile1.png>)\n\n![image 2](<GB T 15834-2011 标点符号用法_images/imageFile2.png>)\n\n![image 3](<GB T 15834-2011 标点符号用法_images/imageFile3.png>)\n\n![image 4](<GB T 15834-2011 标点符号用法_images/imageFile4.png>)\n"
+      }
+    },
+    {
+      "id": "pinyin_orthography_gbt16159_2012",
+      "pdf_filename": "GB T 16159-2012 汉语拼音正词基本规则.pdf",
+      "source_family": "source/09-汉语拼音",
+      "converted_json": "source/09-汉语拼音/GB T 16159-2012 汉语拼音正词基本规则.json",
+      "converted_markdown": "source/09-汉语拼音/GB T 16159-2012 汉语拼音正词基本规则.md",
+      "audit_domains": [
+        "pronunciation_context",
+        "semantic_context"
+      ],
+      "encoding_authority": "context_only",
+      "converted_json_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/09-汉语拼音/GB T 16159-2012 汉语拼音正词基本规则.json",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 4082,
+        "sha256": "c6c0ace59a271d5cab2b63e99ccad4799638d31b833d92c8026f9c0f3c05c4a4",
+        "json_status": "PASS",
+        "json_type": "dict",
+        "json_top_keys": [
+          "file name",
+          "number of pages",
+          "author",
+          "title",
+          "creation date",
+          "modification date",
+          "kids"
+        ]
+      },
+      "converted_markdown_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/09-汉语拼音/GB T 16159-2012 汉语拼音正词基本规则.md",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 1358,
+        "sha256": "d7c531125a0d1adfc652f7dab2d40b1b9543776fc77d7c8f62f2adbd6f38dd87",
+        "line_count": 32,
+        "char_count": 1038,
+        "image_reference_count": 16,
+        "text_preview": "![image 1](<GB T 16159-2012 汉语拼音正词基本规则_images/imageFile1.png>)\n\n![image 2](<GB T 16159-2012 汉语拼音正词基本规则_images/imageFile2.png>)\n\n![image 3](<GB T 16159-2012 汉语拼音正词基本规则_images/imageFile3.png>)\n\n![image 4](<GB T 16159-2012 汉语拼音正词基本规则_images/imageFile4.png>)\n"
+      }
+    },
+    {
+      "id": "chinese_information_terms_gb12200_1_90",
+      "pdf_filename": "GB12200.1-90汉语信息处理词汇 01部分：基本术语.pdf",
+      "source_family": "source/10-术语与标点",
+      "converted_json": "source/10-术语与标点/GB12200.1-90汉语信息处理词汇 01部分：基本术语.json",
+      "converted_markdown": "source/10-术语与标点/GB12200.1-90汉语信息处理词汇 01部分：基本术语.md",
+      "audit_domains": [
+        "terminology",
+        "review_process"
+      ],
+      "encoding_authority": "methodology_only",
+      "converted_json_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/10-术语与标点/GB12200.1-90汉语信息处理词汇 01部分：基本术语.json",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 2025,
+        "sha256": "36236fc54bcc6de10d3abfe38b1c979b041e44ee71caa56df46d6d61f0923bbf",
+        "json_status": "PASS",
+        "json_type": "dict",
+        "json_top_keys": [
+          "file name",
+          "number of pages",
+          "author",
+          "title",
+          "creation date",
+          "modification date",
+          "kids"
+        ]
+      },
+      "converted_markdown_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/10-术语与标点/GB12200.1-90汉语信息处理词汇 01部分：基本术语.md",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 686,
+        "sha256": "d0273c9e76f5dd2794eb5fd8aa325f895c541bf1daf4c41d57bc2c9ad7cf2765",
+        "line_count": 14,
+        "char_count": 476,
+        "image_reference_count": 7,
+        "text_preview": "![image 1](<GB12200.1-90汉语信息处理词汇 01部分：基本术语_images/imageFile1.png>)\n\n![image 2](<GB12200.1-90汉语信息处理词汇 01部分：基本术语_images/imageFile2.png>)\n\n![image 3](<GB12200.1-90汉语信息处理词汇 01部分：基本术语_images/imageFile3.png>)\n\n![image 4](<GB12200.1-90汉语信息处理词汇 01部分：基本术语_images/imageFile4.png>)\n"
+      }
+    },
+    {
+      "id": "chinese_hanzi_terms_gbt12200_2_94",
+      "pdf_filename": "GBT12200.2-94汉语信息处理词汇 02部分：汉语和汉字.pdf",
+      "source_family": "source/10-术语与标点",
+      "converted_json": "source/10-术语与标点/GBT12200.2-94汉语信息处理词汇 02部分：汉语和汉字.json",
+      "converted_markdown": "source/10-术语与标点/GBT12200.2-94汉语信息处理词汇 02部分：汉语和汉字.md",
+      "audit_domains": [
+        "terminology",
+        "hanzi_knowledge_terms"
+      ],
+      "encoding_authority": "methodology_only",
+      "converted_json_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/10-术语与标点/GBT12200.2-94汉语信息处理词汇 02部分：汉语和汉字.json",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 4115,
+        "sha256": "c8339dc5e5977a8573bf329862400a2255681ec523b7ac34bf548baf68306e58",
+        "json_status": "PASS",
+        "json_type": "dict",
+        "json_top_keys": [
+          "file name",
+          "number of pages",
+          "author",
+          "title",
+          "creation date",
+          "modification date",
+          "kids"
+        ]
+      },
+      "converted_markdown_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/10-术语与标点/GBT12200.2-94汉语信息处理词汇 02部分：汉语和汉字.md",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 1542,
+        "sha256": "ca3cc7104845cb2210d0d717505b9ef3d98758a7ed0e1d41b18b2155c947295e",
+        "line_count": 30,
+        "char_count": 1062,
+        "image_reference_count": 15,
+        "text_preview": "![image 1](<GBT12200.2-94汉语信息处理词汇 02部分：汉语和汉字_images/imageFile1.png>)\n\n![image 2](<GBT12200.2-94汉语信息处理词汇 02部分：汉语和汉字_images/imageFile2.png>)\n\n![image 3](<GBT12200.2-94汉语信息处理词汇 02部分：汉语和汉字_images/imageFile3.png>)\n\n![image 4](<GBT12200.2-94汉语信息处理词汇 02部分：汉语和汉字_images/imageFile4.png>)\n"
+      }
+    },
+    {
+      "id": "single_component_standard_gf0013_2009",
+      "pdf_filename": "GF 0013-2009 现代常用独体字规范.pdf",
+      "source_family": "source/04-独体字规范",
+      "converted_json": "source/04-独体字规范/GF 0013-2009 现代常用独体字规范.json",
+      "converted_markdown": "source/04-独体字规范/GF 0013-2009 现代常用独体字规范.md",
+      "audit_domains": [
+        "single_component_character",
+        "hanzi_structure",
+        "glyph_form"
+      ],
+      "encoding_authority": "primary_standard",
+      "converted_json_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/04-独体字规范/GF 0013-2009 现代常用独体字规范.json",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 3598,
+        "sha256": "6c485260ea6a4df3843058fec43f22ce2c9366ec030743cdf2c8a82e159b75f1",
+        "json_status": "PASS",
+        "json_type": "dict",
+        "json_top_keys": [
+          "file name",
+          "number of pages",
+          "author",
+          "title",
+          "creation date",
+          "modification date",
+          "kids"
+        ]
+      },
+      "converted_markdown_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/04-独体字规范/GF 0013-2009 现代常用独体字规范.md",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 1102,
+        "sha256": "8f0d92116f1e3513bc06230860f83416fb93e16045a49531099f0f21a55aae16",
+        "line_count": 28,
+        "char_count": 850,
+        "image_reference_count": 14,
+        "text_preview": "![image 1](<GF 0013-2009 现代常用独体字规范_images/imageFile1.png>)\n\n![image 2](<GF 0013-2009 现代常用独体字规范_images/imageFile2.png>)\n\n![image 3](<GF 0013-2009 现代常用独体字规范_images/imageFile3.png>)\n\n![image 4](<GF 0013-2009 现代常用独体字规范_images/imageFile4.png>)\n"
+      }
+    },
+    {
+      "id": "common_component_name_standard_gf0014_2009",
+      "pdf_filename": "GF 0014-2009 现代常用字部件及部件名称规范.pdf",
+      "source_family": "source/03-部件及部件名称规范",
+      "converted_json": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.json",
+      "converted_markdown": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md",
+      "audit_domains": [
+        "hanzi_component",
+        "character_component",
+        "non_character_component",
+        "side_component",
+        "decomposition_method"
+      ],
+      "encoding_authority": "primary_standard",
+      "converted_json_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.json",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 15995,
+        "sha256": "d379d507cbdbb4afac9f7bd9209b5fb649f0f40079682835e5b94203c55de87d",
+        "json_status": "PASS",
+        "json_type": "dict",
+        "json_top_keys": [
+          "file name",
+          "number of pages",
+          "author",
+          "title",
+          "creation date",
+          "modification date",
+          "kids"
+        ]
+      },
+      "converted_markdown_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 5872,
+        "sha256": "8da9fc36e1d62c5229e17ac2f00746dc84a6ecb6ea039b61f6c0f52aadadf981",
+        "line_count": 124,
+        "char_count": 4136,
+        "image_reference_count": 62,
+        "text_preview": "![image 1](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile1.png>)\n\n![image 2](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile2.png>)\n\n![image 3](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile3.png>)\n\n![image 4](<GF 0014-2009 现代常用字部件及部件名称规范_images/imageFile4.png>)\n"
+      }
+    },
+    {
+      "id": "keyboard_shape_input_evaluation_gf0017_2013",
+      "pdf_filename": "GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则.pdf",
+      "source_family": "source/11-评测与分类",
+      "converted_json": "source/11-评测与分类/GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则.json",
+      "converted_markdown": "source/11-评测与分类/GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则.md",
+      "audit_domains": [
+        "review_process",
+        "glyph_form"
+      ],
+      "encoding_authority": "methodology_only",
+      "converted_json_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/11-评测与分类/GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则.json",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 3227,
+        "sha256": "5ed0441fea64871dd95dbd2f7593bf387a68df2b1710b9a3dfed31aaa8ede18b",
+        "json_status": "PASS",
+        "json_type": "dict",
+        "json_top_keys": [
+          "file name",
+          "number of pages",
+          "author",
+          "title",
+          "creation date",
+          "modification date",
+          "kids"
+        ]
+      },
+      "converted_markdown_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/11-评测与分类/GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则.md",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 1258,
+        "sha256": "2e23d0b5a22bbba84cc6723e836181d3c32fa43b92a21331924998bf15e296ab",
+        "line_count": 22,
+        "char_count": 796,
+        "image_reference_count": 11,
+        "text_preview": "![image 1](<GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则_images/imageFile1.png>)\n\n![image 2](<GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则_images/imageFile2.png>)\n\n![image 3](<GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则_images/imageFile3.png>)\n\n![image 4](<GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则_images/imageFile4.png>)\n"
+      }
+    },
+    {
+      "id": "standard_hanzi_stroke_order_gf0031_2026",
+      "pdf_filename": "GF 0031—2026 通用规范汉字笔顺规范.pdf",
+      "source_family": "source/05-笔顺规范",
+      "converted_json": "source/05-笔顺规范/GF 0031—2026 通用规范汉字笔顺规范.json",
+      "converted_markdown": "source/05-笔顺规范/GF 0031—2026 通用规范汉字笔顺规范.md",
+      "audit_domains": [
+        "stroke",
+        "stroke_shape",
+        "stroke_order"
+      ],
+      "encoding_authority": "primary_standard",
+      "converted_json_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/05-笔顺规范/GF 0031—2026 通用规范汉字笔顺规范.json",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 31991914,
+        "sha256": "4898221c93984d88076c4d6ce96f6eafeee259a7f055595ced09c8ab4ad333e3",
+        "json_status": "PASS",
+        "json_type": "dict",
+        "json_top_keys": [
+          "file name",
+          "number of pages",
+          "author",
+          "title",
+          "creation date",
+          "modification date",
+          "kids"
+        ]
+      },
+      "converted_markdown_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/05-笔顺规范/GF 0031—2026 通用规范汉字笔顺规范.md",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 616160,
+        "sha256": "5601c38ed5ec76bdc4770a281c54a0cbc6f2836d95f3b19d3853200c3ae2ae74",
+        "line_count": 14176,
+        "char_count": 551574,
+        "image_reference_count": 0,
+        "text_preview": "### 语 言 文 字 规 范\n\nGF 0023－2020\n\n# 仅供查阅\n\n### 通用规范汉字笔顺规范\n"
+      }
+    },
+    {
+      "id": "pos_tagging_standard_gft20532_2006",
+      "pdf_filename": "GF T 20532-2006 信息处理用现代汉语词类标记规范.pdf",
+      "source_family": "source/11-评测与分类",
+      "converted_json": "source/11-评测与分类/GF T 20532-2006 信息处理用现代汉语词类标记规范.json",
+      "converted_markdown": "source/11-评测与分类/GF T 20532-2006 信息处理用现代汉语词类标记规范.md",
+      "audit_domains": [
+        "semantic_context"
+      ],
+      "encoding_authority": "context_only",
+      "converted_json_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/11-评测与分类/GF T 20532-2006 信息处理用现代汉语词类标记规范.json",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 2564,
+        "sha256": "0213815dc8c511ab7af797decd7be3c5cb0c857772a49554b3ae7e4525e7887e",
+        "json_status": "PASS",
+        "json_type": "dict",
+        "json_top_keys": [
+          "file name",
+          "number of pages",
+          "author",
+          "title",
+          "creation date",
+          "modification date",
+          "kids"
+        ]
+      },
+      "converted_markdown_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/11-评测与分类/GF T 20532-2006 信息处理用现代汉语词类标记规范.md",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 891,
+        "sha256": "b8649f373816cb8e6ac15750cd4b1c9e9671756856cdd3c3c548cb7e6b565b63",
+        "line_count": 18,
+        "char_count": 621,
+        "image_reference_count": 9,
+        "text_preview": "![image 1](<GF T 20532-2006 信息处理用现代汉语词类标记规范_images/imageFile1.png>)\n\n![image 2](<GF T 20532-2006 信息处理用现代汉语词类标记规范_images/imageFile2.png>)\n\n![image 3](<GF T 20532-2006 信息处理用现代汉语词类标记规范_images/imageFile3.png>)\n\n![image 4](<GF T 20532-2006 信息处理用现代汉语词类标记规范_images/imageFile4.png>)\n"
+      }
+    },
+    {
+      "id": "gb13000_stroke_order_gf3002_1999",
+      "pdf_filename": "GF3002-1999 GB13000.1字符集汉字笔顺规范.pdf",
+      "source_family": "source/05-笔顺规范",
+      "converted_json": "source/05-笔顺规范/GF3002-1999 GB13000.1字符集汉字笔顺规范.json",
+      "converted_markdown": "source/05-笔顺规范/GF3002-1999 GB13000.1字符集汉字笔顺规范.md",
+      "audit_domains": [
+        "stroke",
+        "stroke_order"
+      ],
+      "encoding_authority": "primary_standard",
+      "converted_json_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/05-笔顺规范/GF3002-1999 GB13000.1字符集汉字笔顺规范.json",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 2172,
+        "sha256": "b118b8387791e34ade2db16c18723aa80ff74a0f4a7acfa2cf9abf66fd63b4d2",
+        "json_status": "PASS",
+        "json_type": "dict",
+        "json_top_keys": [
+          "file name",
+          "number of pages",
+          "author",
+          "title",
+          "creation date",
+          "modification date",
+          "kids"
+        ]
+      },
+      "converted_markdown_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/05-笔顺规范/GF3002-1999 GB13000.1字符集汉字笔顺规范.md",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 688,
+        "sha256": "1bd050e042f246351cf4a09ef39c3ad18019cb252aa319a7a22028b852f210dd",
+        "line_count": 16,
+        "char_count": 544,
+        "image_reference_count": 8,
+        "text_preview": "![image 1](<GF3002-1999 GB13000.1字符集汉字笔顺规范_images/imageFile1.png>)\n\n![image 2](<GF3002-1999 GB13000.1字符集汉字笔顺规范_images/imageFile2.png>)\n\n![image 3](<GF3002-1999 GB13000.1字符集汉字笔顺规范_images/imageFile3.png>)\n\n![image 4](<GF3002-1999 GB13000.1字符集汉字笔顺规范_images/imageFile4.png>)\n"
+      }
+    },
+    {
+      "id": "gb13000_stroke_ordering_gf3003_1999",
+      "pdf_filename": "GF3003-1999 GB13000.1字符集汉字字序（笔画序）规范.pdf",
+      "source_family": "source/08-字序规范",
+      "converted_json": "source/08-字序规范/GF3003-1999 GB13000.1字符集汉字字序（笔画序）规范.json",
+      "converted_markdown": "source/08-字序规范/GF3003-1999 GB13000.1字符集汉字字序（笔画序）规范.md",
+      "audit_domains": [
+        "stroke_based_ordering",
+        "stroke_order"
+      ],
+      "encoding_authority": "primary_standard",
+      "converted_json_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/08-字序规范/GF3003-1999 GB13000.1字符集汉字字序（笔画序）规范.json",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 2305,
+        "sha256": "2ad4f2b4e1b8d797d550085be5e9cc60f5fbc1ffda838c1801f5fd03e47ce57b",
+        "json_status": "PASS",
+        "json_type": "dict",
+        "json_top_keys": [
+          "file name",
+          "number of pages",
+          "author",
+          "title",
+          "creation date",
+          "modification date",
+          "kids"
+        ]
+      },
+      "converted_markdown_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/08-字序规范/GF3003-1999 GB13000.1字符集汉字字序（笔画序）规范.md",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 808,
+        "sha256": "ce56632108e32458837bc6e9dffe62f87cc0cfb24909692bb016e38dabf79ac9",
+        "line_count": 16,
+        "char_count": 584,
+        "image_reference_count": 8,
+        "text_preview": "![image 1](<GF3003-1999 GB13000.1字符集汉字字序（笔画序）规范_images/imageFile1.png>)\n\n![image 2](<GF3003-1999 GB13000.1字符集汉字字序（笔画序）规范_images/imageFile2.png>)\n\n![image 3](<GF3003-1999 GB13000.1字符集汉字字序（笔画序）规范_images/imageFile3.png>)\n\n![image 4](<GF3003-1999 GB13000.1字符集汉字字序（笔画序）规范_images/imageFile4.png>)\n"
+      }
+    },
+    {
+      "id": "hanzi_radical_table_gg0011_2009",
+      "pdf_filename": "GG 0011-2009 汉字部首表.pdf",
+      "source_family": "source/02-汉字部首表",
+      "converted_json": "source/02-汉字部首表/GG 0011-2009 汉字部首表.json",
+      "converted_markdown": "source/02-汉字部首表/GG 0011-2009 汉字部首表.md",
+      "audit_domains": [
+        "radical",
+        "radical_classification"
+      ],
+      "encoding_authority": "primary_standard",
+      "converted_json_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/02-汉字部首表/GG 0011-2009 汉字部首表.json",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 2965,
+        "sha256": "97621e832e8cefc9cded7e9161029c7de68496f6ae197be426a102b2c73271e4",
+        "json_status": "PASS",
+        "json_type": "dict",
+        "json_top_keys": [
+          "file name",
+          "number of pages",
+          "author",
+          "title",
+          "creation date",
+          "modification date",
+          "kids"
+        ]
+      },
+      "converted_markdown_identity": {
+        "path": "/Users/liuzhaoqi/Documents/cnbe-research/source/02-汉字部首表/GG 0011-2009 汉字部首表.md",
+        "exists": true,
+        "kind": "file",
+        "size_bytes": 798,
+        "sha256": "3eb0f09fa13884230f06a2b917587cc8f7005aa109cbf4fe4677c636b207a241",
+        "line_count": 24,
+        "char_count": 678,
+        "image_reference_count": 12,
+        "text_preview": "![image 1](<GG 0011-2009 汉字部首表_images/imageFile1.png>)\n\n![image 2](<GG 0011-2009 汉字部首表_images/imageFile2.png>)\n\n![image 3](<GG 0011-2009 汉字部首表_images/imageFile3.png>)\n\n![image 4](<GG 0011-2009 汉字部首表_images/imageFile4.png>)\n"
+      }
+    }
+  ],
+  "validation_issues": [],
+  "next_stage": "human_reading_review_then_schema_pilot"
+}
