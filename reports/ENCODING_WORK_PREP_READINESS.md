@@ -70,6 +70,61 @@ Key issues:
 - OCR outputs require confidence, page, and source-image checks before any row can be treated as reviewed evidence.
 - Cihai and dictionary-derived definitions can support human review but should not define CNBE bit fields.
 
+## Knowledge Asset Inventory
+
+The repository now has a read-only inventory report for the local knowledge folder:
+
+```text
+reports/cnbe_research_knowledge_inventory.json
+```
+
+Inventory scope:
+
+- local root: `/Users/liuzhaoqi/Documents/cnbe-research/knowledge`;
+- total files: 221;
+- total size: 186,085,161 bytes;
+- JSON files: 216, all parse successfully;
+- ZIP files: 2, one passes Python ZIP integrity and one fails;
+- Markdown files: 2;
+- text files: 1.
+
+Asset classification:
+
+| Class | Count | Use Decision |
+|---|---:|---|
+| Primary candidate | 2 | Blocked until 8,105-row reconciliation passes |
+| Canonical external archive | 1 | Candidate identity source after manifest pinning |
+| Excluded archive | 1 | Reject unless replaced by a valid archive |
+| OCR Cihai review aids | 139 | Human navigation aid only |
+| OCR standard review aids | 31 | Human navigation aid only |
+| OCR general review aids | 20 | Human navigation aid only |
+| Reference indexes | 4 | Cross-check evidence only |
+| Structured references | 1 | Cross-check evidence only |
+| JSON references | 18 | Case-by-case review required |
+| Documentation/reference notes | 3 | Context only |
+| Diagnostic output | 1 | Not an encoding authority |
+
+Current asset-confirmation blockers:
+
+1. `knowledge/Unihan.zip` fails Python ZIP integrity and remains excluded.
+2. `knowledge/structured/base_character_data.json` has 8,104 records, not the required 8,105.
+3. `knowledge/structured/cnbe_character_knowledge.json` has 8,104 records, not the required 8,105.
+
+Additional non-blocking observations:
+
+- `knowledge/Unihan_RadicalStrokeCounts.txt` is empty.
+- Several external research files contain CRLF or UTF-8 BOM; these are recorded as source hygiene issues and are not
+  auto-normalized by this repository.
+- OCR confidence is low for multiple general OCR batches, so OCR outputs remain review navigation aids only.
+
+Result:
+
+- asset confirmation status: `ACTION_REQUIRED`;
+- encoding generation gate: `NO_GO`;
+- SQLite build gate: `NO_GO`;
+- SDK replacement allowed: `false`;
+- external assets imported into this repository: `false`.
+
 ## Evidence Tiers
 
 ### Tier 0: Identity and Integrity Inputs

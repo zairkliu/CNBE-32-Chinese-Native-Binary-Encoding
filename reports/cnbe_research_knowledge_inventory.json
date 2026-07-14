@@ -1,0 +1,7493 @@
+{
+  "report_schema_version": 1,
+  "generated_at_utc": "2026-07-14T15:11:24.722741+00:00",
+  "audit_mode": "read_only_asset_confirmation",
+  "summary": {
+    "knowledge_root": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge",
+    "total_files": 221,
+    "total_size_bytes": 186085161,
+    "suffix_counts": {
+      ".json": 216,
+      ".md": 2,
+      ".txt": 1,
+      ".zip": 2
+    },
+    "category_counts": {
+      "canonical_external_archive": 1,
+      "diagnostic": 1,
+      "documentation": 2,
+      "excluded_archive": 1,
+      "json_reference": 18,
+      "ocr_cihai_review_aid": 139,
+      "ocr_review_aid": 20,
+      "ocr_standard_review_aid": 31,
+      "primary_candidate": 2,
+      "reference_index": 4,
+      "reference_note_or_scan": 1,
+      "structured_reference": 1
+    },
+    "flag_counts": {
+      "count_mismatch": 2,
+      "empty_file": 1,
+      "non_lf_line_endings": 194,
+      "ocr_low_confidence_review_only": 18,
+      "unexpected_top_type": 1,
+      "utf8_bom": 3,
+      "zip_integrity_failed": 1
+    },
+    "json_files": 216,
+    "json_parse_pass": 216,
+    "json_parse_fail": 0,
+    "zip_files": 2,
+    "zip_integrity_pass": 1,
+    "zip_integrity_fail": 1,
+    "ocr_summary": {
+      "ocr": {
+        "file_count": 20,
+        "files_with_confidence": 20,
+        "average_of_file_average_confidence": 49.57
+      },
+      "ocr_standards": {
+        "file_count": 31,
+        "files_with_confidence": 0,
+        "average_of_file_average_confidence": null
+      },
+      "ocr_ci_hai": {
+        "file_count": 139,
+        "files_with_confidence": 0,
+        "average_of_file_average_confidence": null
+      }
+    }
+  },
+  "gates": {
+    "asset_confirmation_status": "ACTION_REQUIRED",
+    "blocker_count": 3,
+    "warning_count": 0,
+    "encoding_generation_gate": "NO_GO",
+    "sqlite_build_gate": "NO_GO",
+    "sdk_replacement_allowed": false,
+    "external_assets_imported": false
+  },
+  "action_items": [
+    {
+      "severity": "BLOCKER",
+      "asset": "Unihan.zip",
+      "issue": "zip archive failed Python zipfile integrity check",
+      "next_step": "exclude or replace before treating as authoritative input"
+    },
+    {
+      "severity": "INFO",
+      "asset": "ocr/batch_1.json",
+      "issue": "OCR confidence is low",
+      "next_step": "use as reviewer navigation aid only, not as direct authority"
+    },
+    {
+      "severity": "INFO",
+      "asset": "ocr/batch_2.json",
+      "issue": "OCR confidence is low",
+      "next_step": "use as reviewer navigation aid only, not as direct authority"
+    },
+    {
+      "severity": "INFO",
+      "asset": "ocr/batch_3.json",
+      "issue": "OCR confidence is low",
+      "next_step": "use as reviewer navigation aid only, not as direct authority"
+    },
+    {
+      "severity": "INFO",
+      "asset": "ocr/gb18030_batch1.json",
+      "issue": "OCR confidence is low",
+      "next_step": "use as reviewer navigation aid only, not as direct authority"
+    },
+    {
+      "severity": "INFO",
+      "asset": "ocr/gb18030_batch2.json",
+      "issue": "OCR confidence is low",
+      "next_step": "use as reviewer navigation aid only, not as direct authority"
+    },
+    {
+      "severity": "INFO",
+      "asset": "ocr/gb18030_batch3.json",
+      "issue": "OCR confidence is low",
+      "next_step": "use as reviewer navigation aid only, not as direct authority"
+    },
+    {
+      "severity": "INFO",
+      "asset": "ocr/gb18030_batch4.json",
+      "issue": "OCR confidence is low",
+      "next_step": "use as reviewer navigation aid only, not as direct authority"
+    },
+    {
+      "severity": "INFO",
+      "asset": "ocr/gb18030_batch5.json",
+      "issue": "OCR confidence is low",
+      "next_step": "use as reviewer navigation aid only, not as direct authority"
+    },
+    {
+      "severity": "INFO",
+      "asset": "ocr/ocr_char_order.json",
+      "issue": "OCR confidence is low",
+      "next_step": "use as reviewer navigation aid only, not as direct authority"
+    },
+    {
+      "severity": "INFO",
+      "asset": "ocr/ocr_components.json",
+      "issue": "OCR confidence is low",
+      "next_step": "use as reviewer navigation aid only, not as direct authority"
+    },
+    {
+      "severity": "INFO",
+      "asset": "ocr/ocr_components_gb13000.json",
+      "issue": "OCR confidence is low",
+      "next_step": "use as reviewer navigation aid only, not as direct authority"
+    },
+    {
+      "severity": "INFO",
+      "asset": "ocr/ocr_fold_stroke.json",
+      "issue": "OCR confidence is low",
+      "next_step": "use as reviewer navigation aid only, not as direct authority"
+    },
+    {
+      "severity": "INFO",
+      "asset": "ocr/ocr_pinyin.json",
+      "issue": "OCR confidence is low",
+      "next_step": "use as reviewer navigation aid only, not as direct authority"
+    },
+    {
+      "severity": "INFO",
+      "asset": "ocr/ocr_radicals.json",
+      "issue": "OCR confidence is low",
+      "next_step": "use as reviewer navigation aid only, not as direct authority"
+    },
+    {
+      "severity": "INFO",
+      "asset": "ocr/ocr_remaining.json",
+      "issue": "OCR confidence is low",
+      "next_step": "use as reviewer navigation aid only, not as direct authority"
+    },
+    {
+      "severity": "INFO",
+      "asset": "ocr/ocr_single_component.json",
+      "issue": "OCR confidence is low",
+      "next_step": "use as reviewer navigation aid only, not as direct authority"
+    },
+    {
+      "severity": "INFO",
+      "asset": "ocr/ocr_stroke_order.json",
+      "issue": "OCR confidence is low",
+      "next_step": "use as reviewer navigation aid only, not as direct authority"
+    },
+    {
+      "severity": "INFO",
+      "asset": "ocr/ocr_terminology.json",
+      "issue": "OCR confidence is low",
+      "next_step": "use as reviewer navigation aid only, not as direct authority"
+    },
+    {
+      "severity": "BLOCKER",
+      "asset": "structured/base_character_data.json",
+      "issue": "primary candidate count does not match 8105 target",
+      "next_step": "reconcile missing or duplicate basic CJK entry before encoding generation"
+    },
+    {
+      "severity": "BLOCKER",
+      "asset": "structured/cnbe_character_knowledge.json",
+      "issue": "primary candidate count does not match 8105 target",
+      "next_step": "reconcile missing or duplicate basic CJK entry before encoding generation"
+    }
+  ],
+  "assets": [
+    {
+      "relative_path": "Unihan.zip",
+      "suffix": ".zip",
+      "size_bytes": 8454996,
+      "sha256": "bc8f4cc3a9a0ece727fbce66171a11d7359ef8e52140690e24c7311f8189919c",
+      "category": "excluded_archive",
+      "zip": {
+        "status": "FAIL",
+        "error": "File is not a zip file"
+      },
+      "expected_checks": {
+        "purpose": "legacy Unihan archive candidate, excluded unless integrity passes",
+        "expected_top_type": "zip",
+        "top_type_status": "FAIL"
+      },
+      "flags": [
+        "zip_integrity_failed",
+        "unexpected_top_type"
+      ]
+    },
+    {
+      "relative_path": "Unihan2.zip",
+      "suffix": ".zip",
+      "size_bytes": 8518517,
+      "sha256": "f7a48b2b545acfaa77b2d607ae28747404ce02baefee16396c5d2d7a8ef34b5e",
+      "category": "canonical_external_archive",
+      "zip": {
+        "status": "PASS",
+        "member_count": 8,
+        "bad_member": null,
+        "members_sample": [
+          "Unihan_DictionaryIndices.txt",
+          "Unihan_DictionaryLikeData.txt",
+          "Unihan_IRGSources.txt",
+          "Unihan_NumericValues.txt",
+          "Unihan_OtherMappings.txt",
+          "Unihan_RadicalStrokeCounts.txt",
+          "Unihan_Readings.txt",
+          "Unihan_Variants.txt"
+        ]
+      },
+      "expected_checks": {
+        "purpose": "pinned Unihan 17.0.0 archive candidate",
+        "expected_top_type": "zip",
+        "top_type_status": "PASS"
+      }
+    },
+    {
+      "relative_path": "Unihan_RadicalStrokeCounts.txt",
+      "suffix": ".txt",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "documentation",
+      "flags": [
+        "empty_file"
+      ]
+    },
+    {
+      "relative_path": "alignment_report.json",
+      "suffix": ".json",
+      "size_bytes": 1889,
+      "sha256": "479400e5a10a22294a91f54c0bd7750b02c8c6a5ae20c4fd075fe5ab900e4380",
+      "category": "json_reference",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 140,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 121
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 7,
+        "top_keys_sample": [
+          "summary",
+          "national_standard_chars",
+          "cnbe32_chars",
+          "common_chars",
+          "missing_in_cnbe32",
+          "missing_in_standard",
+          "notes"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "alignment_report_v2.json",
+      "suffix": ".json",
+      "size_bytes": 2020,
+      "sha256": "8bb98f3ae731828a95d8beae854f9d4f236af912eb5ddea8e085582dce1f11ce",
+      "category": "json_reference",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 44,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 116
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 4,
+        "top_keys_sample": [
+          "title",
+          "date",
+          "steps",
+          "alignment_summary"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ci_hai_ocr_plan.md",
+      "suffix": ".md",
+      "size_bytes": 1593,
+      "sha256": "43769066404621f8a0f434fd2bedce0049fc2693b3aba80fb4819e81ae9202f7",
+      "category": "documentation",
+      "text": {
+        "utf8_bom": true,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 56,
+        "ends_with_lf": true,
+        "utf8_status": "PASS",
+        "max_line_length": 65
+      },
+      "flags": [
+        "utf8_bom",
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "cnbe32_addendum.json",
+      "suffix": ".json",
+      "size_bytes": 14732,
+      "sha256": "de7e274d29abf9107b6c6f969ee775d18c30176f28e6bbc11dcbc5f2917037b7",
+      "category": "json_reference",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 871,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 26
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 79,
+        "first_item_keys": [
+          "unicode",
+          "char",
+          "cnbe",
+          "radix",
+          "radix_name",
+          "strokes",
+          "struct_type",
+          "struct_name",
+          "index"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "cnbe32_updated.json",
+      "suffix": ".json",
+      "size_bytes": 4320646,
+      "sha256": "12d94240958adc009a7ec0758387b4d2b5fe4d943d70f533cddbd528e624a843",
+      "category": "diagnostic",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 229949,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 28
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 2,
+        "top_keys_sample": [
+          "metadata",
+          "characters"
+        ],
+        "first_value_keys": [
+          "version",
+          "total",
+          "generated",
+          "index_shift",
+          "index_bits",
+          "index_mask",
+          "struct_types"
+        ],
+        "character_count": 20902
+      },
+      "expected_checks": {
+        "purpose": "previous CNBE32 diagnostic output, not an encoding authority",
+        "expected_top_type": "dict",
+        "top_type_status": "PASS"
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "component_db.json",
+      "suffix": ".json",
+      "size_bytes": 576557,
+      "sha256": "d40a8173d5a7856fc4eb6dd93009a32d459ef99f21793947ac3ac8b924acfe5e",
+      "category": "reference_index",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 57527,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 68
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 5,
+        "top_keys_sample": [
+          "source",
+          "char_coverage",
+          "components",
+          "char_mappings",
+          "comp_mappings"
+        ]
+      },
+      "expected_checks": {
+        "purpose": "component and decomposition support data",
+        "expected_top_type": "dict",
+        "top_type_status": "PASS"
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "decomp_rules.json",
+      "suffix": ".json",
+      "size_bytes": 865,
+      "sha256": "10fb1a944c7df5836a287b40a135397014df9b398dc7827445e276c86168fc8e",
+      "category": "json_reference",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 18,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 50
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 5,
+        "top_keys_sample": [
+          "chars_with_ids",
+          "chars_single_component",
+          "chars_needing_rules",
+          "rules",
+          "sample_missing"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "etymology_data.json",
+      "suffix": ".json",
+      "size_bytes": 1088817,
+      "sha256": "bad9bb79cf68adf65415a975b6632ed345d09a452a3ba6a9b5841ef7fd167c26",
+      "category": "json_reference",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 54205,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 109
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 4,
+        "top_keys_sample": [
+          "source",
+          "name",
+          "count",
+          "data"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "image_catalog.json",
+      "suffix": ".json",
+      "size_bytes": 163894,
+      "sha256": "5ef6d43307057a2e97a31de7f0a55a26ca3cead9152e98d8e132bfed0dfd6d43",
+      "category": "json_reference",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 5056,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 200
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 361,
+        "first_item_keys": [
+          "topic",
+          "subdir",
+          "pdf",
+          "page",
+          "bbox",
+          "image",
+          "size"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "kangxi_radicals.json",
+      "suffix": ".json",
+      "size_bytes": 533759,
+      "sha256": "c2aa49ca9caa51a3befb80db14f4b2fa6d2d38ca43ee17fab36ca34d977fbae9",
+      "category": "json_reference",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 38303,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 30
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 4,
+        "top_keys_sample": [
+          "source",
+          "name",
+          "count",
+          "data"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "knowledge_base.json",
+      "suffix": ".json",
+      "size_bytes": 4373,
+      "sha256": "d9b2015126629a4a8bdde266838cb905e8624f2977714bb1baa1e520dad18c3e",
+      "category": "json_reference",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 177,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 63
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 5,
+        "top_keys_sample": [
+          "title",
+          "version",
+          "sources",
+          "concepts",
+          "stroke_order_data"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "knowledge_base_v2.json",
+      "suffix": ".json",
+      "size_bytes": 13662,
+      "sha256": "1a7d1f36ead5f0dd49778a2c76ab32a40a5a0743b928bdc1d9b08638016f01d2",
+      "category": "json_reference",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 753,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 70
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "version",
+          "concepts",
+          "radical_chars",
+          "stats",
+          "decomp_samples",
+          "std_alignment"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/batch_1.json",
+      "suffix": ".json",
+      "size_bytes": 93220,
+      "sha256": "365ace17e2c5546f0b19cbe883086e3387c9bb59fd8568bdb969d1fb6b647a1c",
+      "category": "ocr_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 702,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 1766
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 70,
+        "first_item_keys": [
+          "topic",
+          "subdir",
+          "pdf",
+          "page",
+          "image",
+          "text",
+          "confidence",
+          "time_ms"
+        ],
+        "confidence": {
+          "count": 70,
+          "min": 0.0,
+          "max": 88.0,
+          "average": 53.39
+        }
+      },
+      "flags": [
+        "ocr_low_confidence_review_only"
+      ]
+    },
+    {
+      "relative_path": "ocr/batch_2.json",
+      "suffix": ".json",
+      "size_bytes": 101449,
+      "sha256": "17e1a09d76a7332c17bb3fa9e64773f7b262b3e00c91721b48e3d34ed231e6ca",
+      "category": "ocr_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 702,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 1701
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 70,
+        "first_item_keys": [
+          "topic",
+          "subdir",
+          "pdf",
+          "page",
+          "image",
+          "text",
+          "confidence",
+          "time_ms"
+        ],
+        "confidence": {
+          "count": 70,
+          "min": 0.0,
+          "max": 90.0,
+          "average": 52.79
+        }
+      },
+      "flags": [
+        "ocr_low_confidence_review_only"
+      ]
+    },
+    {
+      "relative_path": "ocr/batch_3.json",
+      "suffix": ".json",
+      "size_bytes": 184739,
+      "sha256": "2a26d2139bb8a79043eaae3f787872f1a95be36b34c4576dc29de76eeb48505e",
+      "category": "ocr_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 702,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 2446
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 70,
+        "first_item_keys": [
+          "topic",
+          "subdir",
+          "pdf",
+          "page",
+          "image",
+          "text",
+          "confidence",
+          "time_ms"
+        ],
+        "confidence": {
+          "count": 70,
+          "min": 35.0,
+          "max": 90.0,
+          "average": 63.34
+        }
+      },
+      "flags": [
+        "ocr_low_confidence_review_only"
+      ]
+    },
+    {
+      "relative_path": "ocr/batch_4.json",
+      "suffix": ".json",
+      "size_bytes": 25382,
+      "sha256": "3dc73ee03aa02d978cfcaa87b60391a4d3d3326cad33355c0efbe3e406cd4b53",
+      "category": "ocr_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 142,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 1545
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 14,
+        "first_item_keys": [
+          "topic",
+          "subdir",
+          "pdf",
+          "page",
+          "image",
+          "text",
+          "confidence",
+          "time_ms"
+        ],
+        "confidence": {
+          "count": 14,
+          "min": 13.0,
+          "max": 91.0,
+          "average": 71.43
+        }
+      }
+    },
+    {
+      "relative_path": "ocr/ci_hai/checkpoint.json",
+      "suffix": ".json",
+      "size_bytes": 90,
+      "sha256": "1480354172e0bc349aceeb9959c726044cbe14751f5aeb085d71c2c1ee6c5fb7",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 7,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 21
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 5,
+        "top_keys_sample": [
+          "vol",
+          "batch",
+          "page",
+          "fail_count",
+          "batch_counter"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v01_b1.json",
+      "suffix": ".json",
+      "size_bytes": 976701,
+      "sha256": "5c32c089cdb489dcc38a05fc712566d2b86873a47b472b9f4b27aea77ba25343",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 41977,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 55
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "batch",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v01_bc1.json",
+      "suffix": ".json",
+      "size_bytes": 972493,
+      "sha256": "c46aa9547f084fabfddaacdea0dd58c67a89f192c9716822f71eab2d2df12adf",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 41793,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 53
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v01_bc10.json",
+      "suffix": ".json",
+      "size_bytes": 706374,
+      "sha256": "e2d8f6bac3a73b35eea20b4508725a889668ec10f5e07d6ddea09be93b103c26",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 29669,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 54
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v01_bc11.json",
+      "suffix": ".json",
+      "size_bytes": 679917,
+      "sha256": "f3aa5188cd7dc0655e1d5b2477616c16cb3faaab37bf8e8ae0efadb165585df6",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 28301,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 51
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v01_bc12.json",
+      "suffix": ".json",
+      "size_bytes": 699538,
+      "sha256": "e48fb6c293a5f43567f536c5ca6e337cf7fd48a7ac07d4a4d287631f275bf07e",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 29209,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 55
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v01_bc13.json",
+      "suffix": ".json",
+      "size_bytes": 340357,
+      "sha256": "588103da722cf0eb68dde6e8687efe900351f92a363ae08a2476eee713f58606",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 14337,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 46
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v01_bc2.json",
+      "suffix": ".json",
+      "size_bytes": 1014540,
+      "sha256": "b3a4f8dd850478d98f34c008fa233463118003d1b5970aa3284089d577ca6a34",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 43137,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 55
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v01_bc3.json",
+      "suffix": ".json",
+      "size_bytes": 962303,
+      "sha256": "94787053b870358edf3001d2d1f5816e24f90348d4d58013ebb2d6c4636ff257",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 40349,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 54
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v01_bc4.json",
+      "suffix": ".json",
+      "size_bytes": 1052400,
+      "sha256": "c41ed44c15b8e9573e8fe40f2eacf9a3e731602889be502ac83ab18a6338c7c0",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 44033,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 53
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v01_bc5.json",
+      "suffix": ".json",
+      "size_bytes": 1005135,
+      "sha256": "e1c09f48342aa5753b1342db646f61d0e7b5e300defb1599a02d01de232be93a",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 42729,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 56
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v01_bc6.json",
+      "suffix": ".json",
+      "size_bytes": 1019610,
+      "sha256": "39e00bd4781a59f2b952c1c0d6e2c29f28c223816a2cbe88d57d94098d71dbcc",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 42745,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 85
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v01_bc7.json",
+      "suffix": ".json",
+      "size_bytes": 691202,
+      "sha256": "2e9e296054979a7c1fc5c21f54eff2eb1ead56b9cadeb057af871d8157349818",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 29281,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 51
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v01_bc8.json",
+      "suffix": ".json",
+      "size_bytes": 657892,
+      "sha256": "49cc975aab339f1e72b3923a1f79f4c75f78569421308d841dafe805f9b96c5b",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 27081,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 50
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v01_bc9.json",
+      "suffix": ".json",
+      "size_bytes": 685134,
+      "sha256": "d20fd8caced48b32d850314baeb174b11d4422724dc0fee419eacb478d89d173",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 29237,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 49
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v02_bc14.json",
+      "suffix": ".json",
+      "size_bytes": 597047,
+      "sha256": "3dffeb053fcc56c77aaece964a6fdbc920f3cf9660348bab89e6663b91caa195",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 24892,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 51
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v02_bc15.json",
+      "suffix": ".json",
+      "size_bytes": 647288,
+      "sha256": "394d377d2f519d0dfc47d7219de132204c1619ef79f4e1c7c06096556cf99bf1",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 27317,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 49
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v02_bc16.json",
+      "suffix": ".json",
+      "size_bytes": 856495,
+      "sha256": "8654f3b5a90ceece26455bf6bf9cff6c8120655be6b1e929097e898dfa9d8da9",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35631,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 52
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v02_bc17.json",
+      "suffix": ".json",
+      "size_bytes": 848125,
+      "sha256": "aa3bcb47b56c50f03702b33dbfbf3b61e2964e85bf9304bad156020d7bcbe6da",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36007,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 54
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v02_bc18.json",
+      "suffix": ".json",
+      "size_bytes": 882231,
+      "sha256": "0384e4b8927c4a7d92460cc5f4bce6d5e62cf49bc3a6964051231bb52d114de6",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36251,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 68
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v02_bc19.json",
+      "suffix": ".json",
+      "size_bytes": 827737,
+      "sha256": "0a58b95952a40918a068f6e76e3a0fd28c3abe5387e6db9b1d17f77750834915",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 34831,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 56
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v02_bc20.json",
+      "suffix": ".json",
+      "size_bytes": 854411,
+      "sha256": "6a6a2418f4357520bb9626795d6046b4891a6dfbd467c85a854b294e8e5f2a91",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35963,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 52
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v02_bc21.json",
+      "suffix": ".json",
+      "size_bytes": 830532,
+      "sha256": "3962fe12f00d2d4a98e2080dd6e6e80ebf100f6b7c71db4d007f16ddda4fdcd5",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35411,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 55
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v02_bc22.json",
+      "suffix": ".json",
+      "size_bytes": 854218,
+      "sha256": "02903bd64736c422ca01abbaf429dc3a100808b089d6e4632f85233031b8d91e",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35723,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 53
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v02_bc23.json",
+      "suffix": ".json",
+      "size_bytes": 872958,
+      "sha256": "d68b8d60e00b28b2519c8bcbdf0d1c935595b8484612bfbd769618fa342cdd68",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36015,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 52
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v02_bc24.json",
+      "suffix": ".json",
+      "size_bytes": 855793,
+      "sha256": "09f7d520856a479532d84e850ee9996358d7649908338d7be850a75974e2decd",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36323,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 55
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v02_bc25.json",
+      "suffix": ".json",
+      "size_bytes": 850521,
+      "sha256": "ea936ab4d7e4fad780b2e023188a2b2648aae9ecdd23c9323875648c771f0e46",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35815,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 55
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v02_bc26.json",
+      "suffix": ".json",
+      "size_bytes": 847312,
+      "sha256": "9140167a877ca5f3a2bf5d068c99dff8f6cd8d62e93fe4e632d000efb40735fc",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35451,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 53
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v02_bc27.json",
+      "suffix": ".json",
+      "size_bytes": 852920,
+      "sha256": "6ff1cd6071f6eac7974ab6ac01ee6e59ce8c5d4495d3ef28beffd2f01651e3d7",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35999,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 54
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v02_bc28.json",
+      "suffix": ".json",
+      "size_bytes": 862211,
+      "sha256": "aae8855a94e0e141222a04c1432b1a640c63b271f498d3ff6a65b1b7116a9ce0",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36343,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 56
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v02_bc29.json",
+      "suffix": ".json",
+      "size_bytes": 878345,
+      "sha256": "7d3a049d2c028b4bf865e561ffbebeda610ec3fbb62f131cc71fd89b34d545ea",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36359,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 53
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v02_bc30.json",
+      "suffix": ".json",
+      "size_bytes": 881372,
+      "sha256": "15bcf5dafba0ef30ddc365eadc562166571254a93288ed2c6b35b94ba2fe5e18",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36639,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 55
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v02_bc31.json",
+      "suffix": ".json",
+      "size_bytes": 848188,
+      "sha256": "b0195e0c28de492fed4374334a87fa3c55613b4060fc6f586b8dc26798b24eda",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35343,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 54
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v02_bc32.json",
+      "suffix": ".json",
+      "size_bytes": 766673,
+      "sha256": "b72cc84e92413be02042e264315c45cd3422b5fc2f0b50f0d7f5af3e0950c5c2",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 31505,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 60
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v03_bc33.json",
+      "suffix": ".json",
+      "size_bytes": 768331,
+      "sha256": "755b1d015a992bf7051f91d203262d615dc45713d6443fdf2271387f845adc44",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 32298,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 56
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v03_bc34.json",
+      "suffix": ".json",
+      "size_bytes": 860282,
+      "sha256": "31d90e14f80c3e7586810a07ce50ecefcd3a977a77653ae11d321450ddd5fc24",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36255,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 50
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v03_bc35.json",
+      "suffix": ".json",
+      "size_bytes": 836017,
+      "sha256": "12dbf801e50f16cd403ce9162519648e8e8320d40d0d2242d7b90d4c0bd08708",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35331,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 55
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v03_bc36.json",
+      "suffix": ".json",
+      "size_bytes": 855697,
+      "sha256": "fcef852da565081ea38cdbe01dd0eb6011241778fdc38fd70eee387ff51c4ef2",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36219,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 58
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v03_bc37.json",
+      "suffix": ".json",
+      "size_bytes": 836924,
+      "sha256": "f026aa7458749f38c5b0127ae21e4e2b5bae7394b996feb7be8fb09bd0459ea5",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35631,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 53
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v03_bc38.json",
+      "suffix": ".json",
+      "size_bytes": 851671,
+      "sha256": "ed682c7d0e99e33d80f0c73afe00602e440c16ac97d9985f95b0b8c6ee51e011",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35907,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 56
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v03_bc39.json",
+      "suffix": ".json",
+      "size_bytes": 872533,
+      "sha256": "154ff62d26fb1cbf9b2c11eb7385e96b38adc0477a432502f9d2c7f8f46ce5d4",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36787,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 50
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v03_bc40.json",
+      "suffix": ".json",
+      "size_bytes": 860678,
+      "sha256": "ae4f8fe3de6a67b0dcc1561f600ea209c86a18a748f68f1ac3c832057c462ad6",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35711,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 52
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v03_bc41.json",
+      "suffix": ".json",
+      "size_bytes": 883129,
+      "sha256": "7102f01ab3d1380b61840c9cdf2e2e456d5c8b50e2a9dc25b6eb331ab3687515",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36403,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 56
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v03_bc42.json",
+      "suffix": ".json",
+      "size_bytes": 886769,
+      "sha256": "1c52b1532adeff26c3ee96b4c672475b9b536d2452099eb1ef6fe890628350eb",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36687,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 52
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v03_bc43.json",
+      "suffix": ".json",
+      "size_bytes": 860485,
+      "sha256": "65ee5806207b12b0ec353cf45b480402e07ed157b0a720ed8545efef3b78836c",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35507,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 54
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v03_bc44.json",
+      "suffix": ".json",
+      "size_bytes": 894117,
+      "sha256": "3783897c0064105bbcd95452b494cdc88298f588d3803dd3f3a8d6ad1529e4eb",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36919,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 55
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v03_bc45.json",
+      "suffix": ".json",
+      "size_bytes": 865557,
+      "sha256": "f17c08807493a7851d7aadc7c3240690bf3ca14d97b49ba203a5a8c3ce0e7759",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35839,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 57
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v03_bc46.json",
+      "suffix": ".json",
+      "size_bytes": 885476,
+      "sha256": "260898712b1b0cee0dd1bfb2b40bcb3739cc99f6ab64d10b217e32008d4585bb",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36167,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 67
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v03_bc47.json",
+      "suffix": ".json",
+      "size_bytes": 881669,
+      "sha256": "0051e07207028fb30e6401514df633fa886003b772aacb1eeae1e220e7068274",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36571,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 56
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v03_bc48.json",
+      "suffix": ".json",
+      "size_bytes": 243411,
+      "sha256": "95a077eef7ab78f3f877ec4280ab950254feadd95bc917b6b0924a009be576e1",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 9827,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 51
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v04_bc49.json",
+      "suffix": ".json",
+      "size_bytes": 775654,
+      "sha256": "e02844109b3d5d3a4d87e676f81050134dfa60f77bee846e390d8fcb51a741fa",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 32734,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 52
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v04_bc50.json",
+      "suffix": ".json",
+      "size_bytes": 847980,
+      "sha256": "dcc244a5559a39788cc419f21e38ae8ada18814da08725e80995e891e89ed6c9",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35791,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 57
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v04_bc51.json",
+      "suffix": ".json",
+      "size_bytes": 872777,
+      "sha256": "7da0ce2ebd6403e77e2c5a860cc1515d3a9e5cb5d6c4a443eb6a80372233f728",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36267,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 57
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v04_bc52.json",
+      "suffix": ".json",
+      "size_bytes": 835284,
+      "sha256": "e72ebc45d51b82d3d18ed9be488e045677a7c5a032ca43957674a3cccc771a3f",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35779,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 60
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v04_bc53.json",
+      "suffix": ".json",
+      "size_bytes": 868438,
+      "sha256": "92fa82b89eea410a7a6b33b8b6eac5af889a406fb949f8005c0bac92887edc08",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36455,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 57
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v04_bc54.json",
+      "suffix": ".json",
+      "size_bytes": 873588,
+      "sha256": "078f5b706287a00c66b46364b12315d63fc583fdeb2506a78a8d956c583a270f",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36843,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 56
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v04_bc55.json",
+      "suffix": ".json",
+      "size_bytes": 862563,
+      "sha256": "299ffb005ab895c138f9077b194956c53d1c6cfd8982b6135c14d9da5e2b1d55",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36175,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 60
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v04_bc56.json",
+      "suffix": ".json",
+      "size_bytes": 852618,
+      "sha256": "b74f5416890d3435e99a51439a22675b0c650d01d3265d359ba13635dbecf4ee",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35623,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 53
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v04_bc57.json",
+      "suffix": ".json",
+      "size_bytes": 879706,
+      "sha256": "b165bfcd1002e001ae730b20e6c46dcc45e612e7e87c615022b7f18031aabc07",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36783,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 50
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v04_bc58.json",
+      "suffix": ".json",
+      "size_bytes": 832478,
+      "sha256": "d17926dd0f580899f5a041a0581e7c1c215d16dc39b44ad684fe9ca009371df6",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35071,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 51
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v04_bc59.json",
+      "suffix": ".json",
+      "size_bytes": 859353,
+      "sha256": "68f87fbd7f672bad7d52efad962158627dddc250f64377d2404917e6cb97790a",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35883,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 54
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v04_bc60.json",
+      "suffix": ".json",
+      "size_bytes": 834475,
+      "sha256": "9833f6a4588c79c1b086c37dd6b511ad4d2fbacc03901234fed45491f4cf20be",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36067,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 56
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v04_bc61.json",
+      "suffix": ".json",
+      "size_bytes": 820096,
+      "sha256": "7d682da34826046daca34e8af43374fc92bf4e018d7549d86781ad7891c1b487",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35535,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 53
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v04_bc62.json",
+      "suffix": ".json",
+      "size_bytes": 830735,
+      "sha256": "a520c6a868ddf45fcd8d47665ee0e87a11910b859b02f45e32579ee90d1ffbe8",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35343,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 52
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v04_bc63.json",
+      "suffix": ".json",
+      "size_bytes": 855419,
+      "sha256": "72c1e8eefa7b0d6457cdd1812b8471b8fb0c5cc931cc914f34d11dd05af9dbaa",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36027,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 55
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v04_bc64.json",
+      "suffix": ".json",
+      "size_bytes": 847382,
+      "sha256": "e1b9eef6949b8d7296a866bbe2c5c9b0d6d4cc13a776c3f5119abb3545ebdd40",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35471,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 57
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v04_bc65.json",
+      "suffix": ".json",
+      "size_bytes": 449541,
+      "sha256": "4553f90b6476a0f60ef2463a18aed31f92a2df3d024d4ecc99a7146a08f20c48",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 19107,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 50
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v05_bc66.json",
+      "suffix": ".json",
+      "size_bytes": 744115,
+      "sha256": "4c5e2054b46981aea7d6da6a04853760c48ac3e21ffc2b24f17bd2e9d203d637",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 31178,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 55
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v05_bc67.json",
+      "suffix": ".json",
+      "size_bytes": 834764,
+      "sha256": "3cb17b9c7d8e5c1ee6b53d7ea624ddb1a61e583dbd398ae63b5f9a978a9dad5b",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35119,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 51
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v05_bc68.json",
+      "suffix": ".json",
+      "size_bytes": 827236,
+      "sha256": "8644a8555ec314c7648f5c3f5289877db008119fb203e5cfe8059cea8ad25c3e",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 34815,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 62
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v05_bc69.json",
+      "suffix": ".json",
+      "size_bytes": 868951,
+      "sha256": "67807608a06dd6c87f2ca43c6364bccd7bcb8f6c5a7969e341c807c57ddbcb38",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 37027,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 53
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v05_bc70.json",
+      "suffix": ".json",
+      "size_bytes": 864520,
+      "sha256": "8bc294be70d0af2644be50e4457d4f4c957c10d070ce4c8821fdbf2020506e91",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36503,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 55
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v05_bc71.json",
+      "suffix": ".json",
+      "size_bytes": 852976,
+      "sha256": "b7efb17b30f2dad7032824ba55fbae4027d938719878bc97c053b1ba689807f6",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36159,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 55
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v05_bc72.json",
+      "suffix": ".json",
+      "size_bytes": 870459,
+      "sha256": "53c6723c02be4f721dcc94d0ab35e98dae72052a6abe4b40d8269c91a38ff6a1",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36263,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 49
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v05_bc73.json",
+      "suffix": ".json",
+      "size_bytes": 842699,
+      "sha256": "33912c0fdc14c892d9328211bc5ee2bc3767d18ba9476768008a6dfd7d1ad658",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35779,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 53
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v05_bc74.json",
+      "suffix": ".json",
+      "size_bytes": 867846,
+      "sha256": "b8d92220ddce23e84fd9168963d2193ba347e0efc9cf9652e4ccc55dc4018c17",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36171,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 54
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v05_bc75.json",
+      "suffix": ".json",
+      "size_bytes": 885667,
+      "sha256": "bda22e4c5bc87eb3179cb2ee5d0c20ea601f6f45cfbcda7b959f946f4e4ac223",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36807,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 62
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v05_bc76.json",
+      "suffix": ".json",
+      "size_bytes": 872648,
+      "sha256": "0960cd4b597f6398524474b85c81859ae29d2dcbaafc0fed8294169a775370c8",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36047,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 58
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v05_bc77.json",
+      "suffix": ".json",
+      "size_bytes": 350310,
+      "sha256": "6f5fbead4c9824d01f169b4cfbe720ff043adaeb7190146060690739b39ece81",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 14565,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 52
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v06_bc78.json",
+      "suffix": ".json",
+      "size_bytes": 783283,
+      "sha256": "4daca8b39b06e3c6c42f0223977de5ef28107906915e63807b34245096d639d3",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 32746,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 55
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v06_bc79.json",
+      "suffix": ".json",
+      "size_bytes": 838025,
+      "sha256": "26db823557ea9b673828cf94c9d0cde5750bb9771a69692b7abe177403dbdff6",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35471,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 53
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v06_bc80.json",
+      "suffix": ".json",
+      "size_bytes": 853086,
+      "sha256": "1607e7d008acf870617f1aed8147e0b3fc00b01e661b5ef25683d4aad63f5ed4",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 34947,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 56
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v06_bc81.json",
+      "suffix": ".json",
+      "size_bytes": 892232,
+      "sha256": "c1baaf93766746a780e68b5ae73f2ed2a0d7ba5052fd90e2b5599e3b4c8faeb3",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36119,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 54
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v06_bc82.json",
+      "suffix": ".json",
+      "size_bytes": 879676,
+      "sha256": "f474f4f3ddeb8f49b46152f0765262407114e34bcbf461ce953e9a7fc85db74f",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35719,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 56
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v06_bc83.json",
+      "suffix": ".json",
+      "size_bytes": 869396,
+      "sha256": "a75cb219053f6d5eaa0d0198dfacc576f34b55b615968d99dc4d5de109adce80",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35947,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 58
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v06_bc84.json",
+      "suffix": ".json",
+      "size_bytes": 906785,
+      "sha256": "8b80fa700e0968dc23d2f2e07900693f9baad687bd1feb7c6a067256991f5559",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36855,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 54
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v06_bc85.json",
+      "suffix": ".json",
+      "size_bytes": 882467,
+      "sha256": "3f9e7890b690d1c008eac501f6d68ac81a6253e63d8a1bd561026b5d1256542f",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36311,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 55
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v06_bc86.json",
+      "suffix": ".json",
+      "size_bytes": 839803,
+      "sha256": "89d16216bce29cff09e39cf6f6e51294b33b81918cd25cd7447f7d5358ff6d33",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 34983,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 52
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v06_bc87.json",
+      "suffix": ".json",
+      "size_bytes": 849380,
+      "sha256": "83e24cc6ff440e2cb75db3c625ae547f1ce9150872f2936411ec282ebe91a75b",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35327,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 51
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v06_bc88.json",
+      "suffix": ".json",
+      "size_bytes": 830059,
+      "sha256": "f1b709d0a37fcbc9f7c9efc89fdd433f1b6600a6aaefb48db2aa787e97cd5f58",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35067,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 56
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v06_bc89.json",
+      "suffix": ".json",
+      "size_bytes": 837492,
+      "sha256": "ff5db23363c1e3388407fb9a01592527ba6657f522a9931ef39d8917033b6a46",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35019,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 51
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v06_bc90.json",
+      "suffix": ".json",
+      "size_bytes": 857123,
+      "sha256": "55c2beac30868dc59885dbca3a68d0926d00fffdd5a2a8ecf40dccf446bf3df6",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35787,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 54
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v06_bc91.json",
+      "suffix": ".json",
+      "size_bytes": 861542,
+      "sha256": "abb267ff077c5700c08cb0ea776f8d992c44f5cbf4a83afb2f74b5977dc8558c",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35867,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 54
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v06_bc92.json",
+      "suffix": ".json",
+      "size_bytes": 875641,
+      "sha256": "aa5c2aaa3abde51258dfa251f69df8c78aef960f6757ca63240af1027d106da7",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35967,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 55
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v06_bc93.json",
+      "suffix": ".json",
+      "size_bytes": 480012,
+      "sha256": "f5a37a0cb1a625a91813b281efcd231778b2656ec0e91d228ac2d86ac1b2078e",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 20237,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 52
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v07_bc100.json",
+      "suffix": ".json",
+      "size_bytes": 867231,
+      "sha256": "35441aaea290b0ef28e0c9c2d55d33b19fcb8d639137d5ac7ff3e868c4c0564e",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36179,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 57
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v07_bc101.json",
+      "suffix": ".json",
+      "size_bytes": 875218,
+      "sha256": "027bfef19647b39df4458f8419e623b976b3e6012eace44155ca69c687762f62",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35979,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 54
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v07_bc102.json",
+      "suffix": ".json",
+      "size_bytes": 875685,
+      "sha256": "8a20cd941b6589cdf4313e29e468280a9265c988b03428e4f6106e5706031414",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36707,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 77
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v07_bc103.json",
+      "suffix": ".json",
+      "size_bytes": 847205,
+      "sha256": "09da1e768fe36643a10dd31c1058d902af50d7644af0e7dd3fc07b2a46a074bb",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 34671,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 54
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v07_bc104.json",
+      "suffix": ".json",
+      "size_bytes": 875433,
+      "sha256": "3337d649790655f76a2e38cab8a702f21d6389566744c83515232b2d5ecd733a",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36411,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 53
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v07_bc105.json",
+      "suffix": ".json",
+      "size_bytes": 876142,
+      "sha256": "c03051f80f5a2a52d721f515372dabc16305b092c0acb11fc8614852ad53dd53",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36255,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 57
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v07_bc106.json",
+      "suffix": ".json",
+      "size_bytes": 10060,
+      "sha256": "7e60222e4fe438b1427897b59bff85fefc9568ab17651d7e6404032915ccf930",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 442,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 40
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v07_bc94.json",
+      "suffix": ".json",
+      "size_bytes": 789779,
+      "sha256": "9fa37adcade4f1d22e1a510df3fe734ddd595e25f2e5e4274c46e7461f31ab59",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 33558,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 53
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v07_bc95.json",
+      "suffix": ".json",
+      "size_bytes": 868324,
+      "sha256": "a0f30c3dc1820c8dce4ea6dd7e789bf2f7be1d40ac38f875b61477090c474e30",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36563,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 54
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v07_bc96.json",
+      "suffix": ".json",
+      "size_bytes": 876530,
+      "sha256": "0bab11b033130a8d6625b81f732f79c4fb6e007905d497c0c6d18cf424e95898",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36531,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 58
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v07_bc97.json",
+      "suffix": ".json",
+      "size_bytes": 876424,
+      "sha256": "34ea877013b9bc0c30be8f5750b55a622496db061a752e1d820fcd8f2f4e8828",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36731,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 55
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v07_bc98.json",
+      "suffix": ".json",
+      "size_bytes": 847780,
+      "sha256": "725c75d822a22cd56a661bc8aa2430a088893c0b42ac0a911d8c89ff0da78940",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35355,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 55
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v07_bc99.json",
+      "suffix": ".json",
+      "size_bytes": 817820,
+      "sha256": "05d9d2d0490b187dd58d46f7ab99aeb6aa3d5dbb249d3cee8977600bcc067fc8",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 34555,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 74
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v08_bc107.json",
+      "suffix": ".json",
+      "size_bytes": 862625,
+      "sha256": "c8f9343c43a5e6dd86def65c6669dc7222ca7cd29ce215069b328c5428ce9b8d",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36319,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 55
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v08_bc108.json",
+      "suffix": ".json",
+      "size_bytes": 873061,
+      "sha256": "d5e2955605a9b420987465305c6405bb48f87c9d8ac738fa3aec9274c3088d0d",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36559,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 52
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v08_bc109.json",
+      "suffix": ".json",
+      "size_bytes": 883536,
+      "sha256": "ec9badcecdf712f25f685d72710a1ab9aefe4f78585571be6f83dc1617f8e8bf",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36379,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 51
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v08_bc110.json",
+      "suffix": ".json",
+      "size_bytes": 849793,
+      "sha256": "e218c926531c537273415000812e6e88061de43e82ecc66b038731f3872b69ab",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 34775,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 52
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v08_bc111.json",
+      "suffix": ".json",
+      "size_bytes": 883443,
+      "sha256": "3004440f4e99067f67b68db76f0058a8716041de5ec524dbc59bd5ccbe40f5a8",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36975,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 55
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v08_bc112.json",
+      "suffix": ".json",
+      "size_bytes": 846769,
+      "sha256": "6b2b70e7dacf00155a6ed2c97ee9a3fc169af32f8dd1cbebfc72b04df6319724",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35239,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 53
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v08_bc113.json",
+      "suffix": ".json",
+      "size_bytes": 878110,
+      "sha256": "7f0450f34b322a9b89e3deb6238e0abacdc9b32f158466233567ae469b39b6d1",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36591,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 56
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v08_bc114.json",
+      "suffix": ".json",
+      "size_bytes": 874597,
+      "sha256": "d16b3c2d285bf1e66ae9ec8714871cd427468e6b639c46c651f55628124a8701",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36227,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 56
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v08_bc115.json",
+      "suffix": ".json",
+      "size_bytes": 852423,
+      "sha256": "3d5e9ef1f02bd79a4b85b75a47f1e806e78fef95eca79b00a88ae153fbfff488",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35955,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 53
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v08_bc116.json",
+      "suffix": ".json",
+      "size_bytes": 863079,
+      "sha256": "a18c75b3041ba9a6da414c16ae9ed1d00736e38137cbe275ba9a99a5ae0108ea",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36383,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 55
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v08_bc117.json",
+      "suffix": ".json",
+      "size_bytes": 871094,
+      "sha256": "5b3c7437ea63683704a0cb277cf6c64f1245068723cfd7fa32ab650fa1907a8b",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36791,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 52
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v08_bc118.json",
+      "suffix": ".json",
+      "size_bytes": 866382,
+      "sha256": "f1ad0f8a5e5025b29b9a34b6845746e4ca1da28a79bbaac3cd4cde71d7ee61eb",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36291,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 55
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v08_bc119.json",
+      "suffix": ".json",
+      "size_bytes": 902881,
+      "sha256": "1d4cd3ad7f19f879e7a82343fc92d07babf0118d9b75af69f4dea5e89e6a5636",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36987,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 53
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v08_bc120.json",
+      "suffix": ".json",
+      "size_bytes": 864862,
+      "sha256": "dbc05bd764164de208904bc10c457c618f45738b7d3c1964a70e85967a1c5042",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35211,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 57
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v08_bc121.json",
+      "suffix": ".json",
+      "size_bytes": 808301,
+      "sha256": "07b0bbf6cb9b3f6453065fd7ef36ffe4e63af2e9abdd1d871716d9b9b7594190",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 33051,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 52
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v08_bc122.json",
+      "suffix": ".json",
+      "size_bytes": 844129,
+      "sha256": "f78fce62bb5c73d91116d96a2988634ec3d9f40c2b5e95d5a4b97a0599bbd4d8",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35647,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 50
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v08_bc123.json",
+      "suffix": ".json",
+      "size_bytes": 880376,
+      "sha256": "4d30b731cffaf912645e1383f8f9987e256597dde15655b9bbea7283d1d38207",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36563,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 54
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v08_bc124.json",
+      "suffix": ".json",
+      "size_bytes": 883986,
+      "sha256": "74af05634b58170eedabd64f3b4fd3164689765f8eb059cb7b2844c515600590",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 36543,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 52
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v08_bc125.json",
+      "suffix": ".json",
+      "size_bytes": 868750,
+      "sha256": "1f9df6826f2a0f7c30766c0c50736e615f9837a70973792267a6a7580fc7cfc6",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 35971,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 55
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v08_bc126.json",
+      "suffix": ".json",
+      "size_bytes": 109435,
+      "sha256": "bea0cefc40318404a4bbca18e7726ae49fd21eade8a734552c8ee8f9b14eb49e",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 4587,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 53
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v09_bc127.json",
+      "suffix": ".json",
+      "size_bytes": 728890,
+      "sha256": "f512d59232c496a45030a641199a06a2f57409de24d409401b9269bddf305171",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 50763,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 82
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v09_bc128.json",
+      "suffix": ".json",
+      "size_bytes": 793526,
+      "sha256": "a90e9475a711bfdef992419472ab6e67c932968aa9d357112271175d12d32575",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 54835,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 77
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v09_bc129.json",
+      "suffix": ".json",
+      "size_bytes": 764179,
+      "sha256": "36c6509fe050c5de05e3f74a10becd33de760d719041d25292e34182e26381ac",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 49895,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 74
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v09_bc130.json",
+      "suffix": ".json",
+      "size_bytes": 1785569,
+      "sha256": "9fd7b0918c4dcccc4afda3d63cc1f8fec6e2a2e15bcd989edebb1a25bf2a8139",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 126395,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 83
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v09_bc131.json",
+      "suffix": ".json",
+      "size_bytes": 1212129,
+      "sha256": "e99c026fc8ac30806cccedea5f185012472e23cbd35ee6f5fc0032f115964e9c",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 86467,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 69
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v09_bc132.json",
+      "suffix": ".json",
+      "size_bytes": 1261530,
+      "sha256": "d7d98b66f79dc47cdb5e8a21a9f1f55f1067f45dc10af793dc629406b3f39a57",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 89467,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 31
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v09_bc133.json",
+      "suffix": ".json",
+      "size_bytes": 1154851,
+      "sha256": "8a90d6ccc7d4da7a4d59d81b90381cc00b718cd309d1bfeaa1a7469a507f6b33",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 81879,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 57
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v09_bc134.json",
+      "suffix": ".json",
+      "size_bytes": 1127219,
+      "sha256": "cfc8930b8bb72d5cc24715df3b7ca5bb978ca348a5845f889f0d21362fc874be",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 79703,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 96
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v09_bc135.json",
+      "suffix": ".json",
+      "size_bytes": 472107,
+      "sha256": "0c97be897078ff84af3beed8e6421a681e22e4aa0d688ae1521438dde66ccbec",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 27487,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 74
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v09_bc136.json",
+      "suffix": ".json",
+      "size_bytes": 455909,
+      "sha256": "2a7b9a43fc9bb216e528ac666b1738d26c5560216c2dfdc759df5ba6b98ef62c",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 26327,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 77
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/ci_hai/ci_hai_v09_bc137.json",
+      "suffix": ".json",
+      "size_bytes": 324104,
+      "sha256": "f437ad63d3b356cbebe02aed5a60b70aac6e1a6adede496848dce7db860656dc",
+      "category": "ocr_cihai_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 18295,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 75
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "vol",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/gb18030_batch1.json",
+      "suffix": ".json",
+      "size_bytes": 256850,
+      "sha256": "f60af0bcecab261654ea68f49ce028e1023645a1ca061727ae40ee2492306439",
+      "category": "ocr_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 1122,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 3124
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 160,
+        "first_item_keys": [
+          "image",
+          "page",
+          "text",
+          "confidence",
+          "time_ms"
+        ],
+        "confidence": {
+          "count": 160,
+          "min": 0.0,
+          "max": 62.0,
+          "average": 23.81
+        }
+      },
+      "flags": [
+        "ocr_low_confidence_review_only"
+      ]
+    },
+    {
+      "relative_path": "ocr/gb18030_batch2.json",
+      "suffix": ".json",
+      "size_bytes": 227162,
+      "sha256": "04637f4f6a86950c78e738a540ca98ea4dc38f025c186ad3d0e12a51a2df28a3",
+      "category": "ocr_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 1082,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 2893
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 180,
+        "first_item_keys": [
+          "image",
+          "text",
+          "confidence",
+          "time_ms"
+        ],
+        "confidence": {
+          "count": 180,
+          "min": 13.0,
+          "max": 52.0,
+          "average": 23.78
+        }
+      },
+      "flags": [
+        "ocr_low_confidence_review_only"
+      ]
+    },
+    {
+      "relative_path": "ocr/gb18030_batch3.json",
+      "suffix": ".json",
+      "size_bytes": 226781,
+      "sha256": "04586424e8472716a2bfd0e35e908fb754d38093a952ca234635eb905110364e",
+      "category": "ocr_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 1022,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 1687
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 170,
+        "first_item_keys": [
+          "image",
+          "text",
+          "confidence",
+          "time_ms"
+        ],
+        "confidence": {
+          "count": 170,
+          "min": 12.0,
+          "max": 42.0,
+          "average": 19.4
+        }
+      },
+      "flags": [
+        "ocr_low_confidence_review_only"
+      ]
+    },
+    {
+      "relative_path": "ocr/gb18030_batch4.json",
+      "suffix": ".json",
+      "size_bytes": 132143,
+      "sha256": "d3b141dc1eea760a4e88ce44be0e8b4e89706baac0b247b8196b20f75020338a",
+      "category": "ocr_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 1022,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 3618
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 170,
+        "first_item_keys": [
+          "image",
+          "text",
+          "confidence",
+          "time_ms"
+        ],
+        "confidence": {
+          "count": 170,
+          "min": 0.0,
+          "max": 85.0,
+          "average": 27.68
+        }
+      },
+      "flags": [
+        "ocr_low_confidence_review_only"
+      ]
+    },
+    {
+      "relative_path": "ocr/gb18030_batch5.json",
+      "suffix": ".json",
+      "size_bytes": 124992,
+      "sha256": "0c07434b43bbeca4ccff59e6c39937ee083f2d83a1334b71b78a27111e2dd077",
+      "category": "ocr_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 962,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 2521
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 160,
+        "first_item_keys": [
+          "image",
+          "text",
+          "confidence",
+          "time_ms"
+        ],
+        "confidence": {
+          "count": 160,
+          "min": 0.0,
+          "max": 53.0,
+          "average": 31.14
+        }
+      },
+      "flags": [
+        "ocr_low_confidence_review_only"
+      ]
+    },
+    {
+      "relative_path": "ocr/ocr_char_order.json",
+      "suffix": ".json",
+      "size_bytes": 12620,
+      "sha256": "0a87fab3e41dc37e7f236cf580e6892924e7115a6288c4f32974b4712ce88148",
+      "category": "ocr_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 82,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 1366
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 8,
+        "first_item_keys": [
+          "topic",
+          "subdir",
+          "pdf",
+          "page",
+          "image",
+          "text",
+          "confidence",
+          "time_ms"
+        ],
+        "confidence": {
+          "count": 8,
+          "min": 22.0,
+          "max": 73.0,
+          "average": 46.88
+        }
+      },
+      "flags": [
+        "ocr_low_confidence_review_only"
+      ]
+    },
+    {
+      "relative_path": "ocr/ocr_components.json",
+      "suffix": ".json",
+      "size_bytes": 80138,
+      "sha256": "ed37b213250a6cae8767b72f9a95c5e0da128a2872bc5d7f39c4c0f5f132d92b",
+      "category": "ocr_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 622,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 1701
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 62,
+        "first_item_keys": [
+          "topic",
+          "subdir",
+          "pdf",
+          "page",
+          "image",
+          "text",
+          "confidence",
+          "time_ms"
+        ],
+        "confidence": {
+          "count": 62,
+          "min": 0.0,
+          "max": 90.0,
+          "average": 51.31
+        }
+      },
+      "flags": [
+        "ocr_low_confidence_review_only"
+      ]
+    },
+    {
+      "relative_path": "ocr/ocr_components_gb13000.json",
+      "suffix": ".json",
+      "size_bytes": 38949,
+      "sha256": "a55b54e62c97da4620c77daebd5aeb194f7d90a6e319fca765e630006c0f03e7",
+      "category": "ocr_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 202,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 1593
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 20,
+        "first_item_keys": [
+          "topic",
+          "subdir",
+          "pdf",
+          "page",
+          "image",
+          "text",
+          "confidence",
+          "time_ms"
+        ],
+        "confidence": {
+          "count": 20,
+          "min": 14.0,
+          "max": 89.0,
+          "average": 47.3
+        }
+      },
+      "flags": [
+        "ocr_low_confidence_review_only"
+      ]
+    },
+    {
+      "relative_path": "ocr/ocr_evaluation.json",
+      "suffix": ".json",
+      "size_bytes": 36334,
+      "sha256": "aa73113654ead105660de2496e1284380e33c83d03c126b890914ad5efe3d0e6",
+      "category": "ocr_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 202,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 1545
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 20,
+        "first_item_keys": [
+          "topic",
+          "subdir",
+          "pdf",
+          "page",
+          "image",
+          "text",
+          "confidence",
+          "time_ms"
+        ],
+        "confidence": {
+          "count": 20,
+          "min": 13.0,
+          "max": 91.0,
+          "average": 74.5
+        }
+      }
+    },
+    {
+      "relative_path": "ocr/ocr_fold_stroke.json",
+      "suffix": ".json",
+      "size_bytes": 15314,
+      "sha256": "1cfaf552a6eb88ac93fd66194759f21ab3629a6ed5f55d9fa68fb9b97f34fd66",
+      "category": "ocr_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 112,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 1119
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 11,
+        "first_item_keys": [
+          "topic",
+          "subdir",
+          "pdf",
+          "page",
+          "image",
+          "text",
+          "confidence",
+          "time_ms"
+        ],
+        "confidence": {
+          "count": 11,
+          "min": 24.0,
+          "max": 88.0,
+          "average": 67.64
+        }
+      },
+      "flags": [
+        "ocr_low_confidence_review_only"
+      ]
+    },
+    {
+      "relative_path": "ocr/ocr_pinyin.json",
+      "suffix": ".json",
+      "size_bytes": 42630,
+      "sha256": "dd58914a6131ff6269817fdf22b8485de4485d2cbbe813ad477af2ddb36a97ef",
+      "category": "ocr_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 212,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 1901
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 21,
+        "first_item_keys": [
+          "topic",
+          "subdir",
+          "pdf",
+          "page",
+          "image",
+          "text",
+          "confidence",
+          "time_ms"
+        ],
+        "confidence": {
+          "count": 21,
+          "min": 15.0,
+          "max": 90.0,
+          "average": 61.95
+        }
+      },
+      "flags": [
+        "ocr_low_confidence_review_only"
+      ]
+    },
+    {
+      "relative_path": "ocr/ocr_radicals.json",
+      "suffix": ".json",
+      "size_bytes": 18531,
+      "sha256": "468d20e389af4d97fef1697889ff11a4f4483d2d23e22e3a0dfbc35683751956",
+      "category": "ocr_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 122,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 1766
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 12,
+        "first_item_keys": [
+          "topic",
+          "subdir",
+          "pdf",
+          "page",
+          "image",
+          "text",
+          "confidence",
+          "time_ms"
+        ],
+        "confidence": {
+          "count": 12,
+          "min": 42.0,
+          "max": 87.0,
+          "average": 67.25
+        }
+      },
+      "flags": [
+        "ocr_low_confidence_review_only"
+      ]
+    },
+    {
+      "relative_path": "ocr/ocr_remaining.json",
+      "suffix": ".json",
+      "size_bytes": 283302,
+      "sha256": "46724a238bdc156ad0919efa2b8d6ed78e209e36faaadcacb1857824ba509ffd",
+      "category": "ocr_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 1372,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 1715
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 137,
+        "first_item_keys": [
+          "topic",
+          "subdir",
+          "pdf",
+          "page",
+          "image",
+          "text",
+          "confidence",
+          "time_ms"
+        ],
+        "confidence": {
+          "count": 137,
+          "min": 0.0,
+          "max": 88.0,
+          "average": 49.12
+        }
+      },
+      "flags": [
+        "ocr_low_confidence_review_only"
+      ]
+    },
+    {
+      "relative_path": "ocr/ocr_single_component.json",
+      "suffix": ".json",
+      "size_bytes": 11592,
+      "sha256": "ae38a5abd546b736976c7be95b71c50a99dc08bf0f96425050d00ac72e856de6",
+      "category": "ocr_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 142,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 697
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 14,
+        "first_item_keys": [
+          "topic",
+          "subdir",
+          "pdf",
+          "page",
+          "image",
+          "text",
+          "confidence",
+          "time_ms"
+        ],
+        "confidence": {
+          "count": 14,
+          "min": 0.0,
+          "max": 88.0,
+          "average": 56.0
+        }
+      },
+      "flags": [
+        "ocr_low_confidence_review_only"
+      ]
+    },
+    {
+      "relative_path": "ocr/ocr_stroke_order.json",
+      "suffix": ".json",
+      "size_bytes": 10127,
+      "sha256": "f0d5323077b36f15d6319b5e5bd9bd68d7e5b1b08853ea6ec504b0a178611534",
+      "category": "ocr_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 82,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 1123
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 8,
+        "first_item_keys": [
+          "topic",
+          "subdir",
+          "pdf",
+          "page",
+          "image",
+          "text",
+          "confidence",
+          "time_ms"
+        ],
+        "confidence": {
+          "count": 8,
+          "min": 17.0,
+          "max": 77.0,
+          "average": 42.38
+        }
+      },
+      "flags": [
+        "ocr_low_confidence_review_only"
+      ]
+    },
+    {
+      "relative_path": "ocr/ocr_terminology.json",
+      "suffix": ".json",
+      "size_bytes": 138556,
+      "sha256": "79530b7b74259630005c91e923109405bcc7e7951928b3056f152c1c20cba5a1",
+      "category": "ocr_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 482,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 2446
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 48,
+        "first_item_keys": [
+          "topic",
+          "subdir",
+          "pdf",
+          "page",
+          "image",
+          "text",
+          "confidence",
+          "time_ms"
+        ],
+        "confidence": {
+          "count": 48,
+          "min": 35.0,
+          "max": 83.0,
+          "average": 60.4
+        }
+      },
+      "flags": [
+        "ocr_low_confidence_review_only"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/checkpoint.json",
+      "suffix": ".json",
+      "size_bytes": 655,
+      "sha256": "b0dd98c9da3538ce6bf339e796beb6024d3b1af13f4013e2be11392d128cf1c5",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": true,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 20,
+        "ends_with_lf": true,
+        "utf8_status": "PASS",
+        "max_line_length": 33
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 5,
+        "top_keys_sample": [
+          "current",
+          "page",
+          "batch_counter",
+          "fail_count",
+          "queue"
+        ]
+      },
+      "flags": [
+        "utf8_bom",
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_01-通用规范汉字表_bc1.json",
+      "suffix": ".json",
+      "size_bytes": 165859,
+      "sha256": "01ac5933463993ac8efc66b11e03e14bf43de9b596f64a4c925839fe22dfbef0",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 10281,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 54
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_01-通用规范汉字表_bc2.json",
+      "suffix": ".json",
+      "size_bytes": 251901,
+      "sha256": "3679b35034da4fd768ec792ca5362a38dee7cec3fdb5ee48ea6a59cb3cbb2704",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 17115,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 58
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_01-通用规范汉字表_bc3.json",
+      "suffix": ".json",
+      "size_bytes": 47508,
+      "sha256": "faee86b0feecfc35383d77beab5b159f98721bb8a903bb3641afbcc3c0223a99",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 2390,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 54
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_02-汉字部首表_bc1.json",
+      "suffix": ".json",
+      "size_bytes": 37546,
+      "sha256": "d2213c78874400149bad7d78190a0feaa9cf3cc7103a0d00af25c3322e036192",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 2089,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 65
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_03-部件及部件名称规范_bc1.json",
+      "suffix": ".json",
+      "size_bytes": 292675,
+      "sha256": "957601a86694ec12c9cfb843f22acf480fd8af9cb274d5afb76a87510d7e56c5",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 19323,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 77
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_03-部件及部件名称规范_bc2.json",
+      "suffix": ".json",
+      "size_bytes": 163443,
+      "sha256": "4731e65e4e002957d811f0e552011c7e6b0cfd48c41a3d3024cf7c729fd0e845",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 11893,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 29
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_04-独体字规范_bc1.json",
+      "suffix": ".json",
+      "size_bytes": 20055,
+      "sha256": "3cc612f2df173a1452e43515e839878b1f2ad4f2473aa49e45f2ceb1cae9c613",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 1139,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 75
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_06-汉字部件规范_bc1.json",
+      "suffix": ".json",
+      "size_bytes": 154603,
+      "sha256": "c756ca7dfa1209329572517a21d45cc00c70f326c2c983bd43faa9e4ce11b57c",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 10241,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 62
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_07-折笔规范_bc1.json",
+      "suffix": ".json",
+      "size_bytes": 24488,
+      "sha256": "6aba04e925dd3c5349a3dbd25c137ea295ef4bd6640dc42f0c4d7891d7761915",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 1220,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 75
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_08-字序规范_bc1.json",
+      "suffix": ".json",
+      "size_bytes": 27863,
+      "sha256": "afb0df30ba5e54bf504c5aeb93d5f890560c3ef7d056c545a277afc281e1ab1e",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 1501,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 59
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_09-汉语拼音_bc1.json",
+      "suffix": ".json",
+      "size_bytes": 60707,
+      "sha256": "041895c8f05772fc33909c798537ae12237e48faaf81bfae76eb0fb17473eb25",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 2800,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 103
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_10-术语与标点_bc1.json",
+      "suffix": ".json",
+      "size_bytes": 100659,
+      "sha256": "698badee0395e4aee0fe64862a18ee1c9e0bc1048663e7e7a0a23dee935308d9",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 3599,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 74
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_11-评测与分类_bc1.json",
+      "suffix": ".json",
+      "size_bytes": 25657,
+      "sha256": "76729cbd31248fd095455b1acba3fc70e877669b6e0071f3d0a5e5cd0d18cc4f",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 1020,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 83
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_14-GB18030_bc1.json",
+      "suffix": ".json",
+      "size_bytes": 1028342,
+      "sha256": "5986220ca8f34e5e09c5028eb402a6536d35d82f431e552a738470964f78d481",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 73434,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 29
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_14-GB18030_bc10.json",
+      "suffix": ".json",
+      "size_bytes": 958377,
+      "sha256": "c6f19ef112049f6a50e1e46978e22a1bd244b125f044f49695b1c5e42d498c20",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 67311,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 22
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_14-GB18030_bc11.json",
+      "suffix": ".json",
+      "size_bytes": 1042457,
+      "sha256": "be1194acb697b29f24d9ddab62602ada35e6df7907d6231ecd5e4ef52b5e3cca",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 73043,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 25
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_14-GB18030_bc12.json",
+      "suffix": ".json",
+      "size_bytes": 151380,
+      "sha256": "98ef667b5d8501ef6b5320484e331ed981dfa349f1420d866f1ca99820790ee3",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 10694,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 27
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_14-GB18030_bc13.json",
+      "suffix": ".json",
+      "size_bytes": 462308,
+      "sha256": "7252ab65dc44da99e89cc31c6374446ee20db900304abb0af5debc9457cd05e7",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 32627,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 28
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_14-GB18030_bc14.json",
+      "suffix": ".json",
+      "size_bytes": 444195,
+      "sha256": "077f797c5dd6a5578c02dcb5fccfd2e9094c14c2c96661ec39a3416b6fd155f5",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 31283,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 28
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_14-GB18030_bc15.json",
+      "suffix": ".json",
+      "size_bytes": 425990,
+      "sha256": "6686389ad0f61fb3d32b2f0ed603488f24ef0cf77717e712eece244cd8f26b74",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 29967,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 28
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_14-GB18030_bc16.json",
+      "suffix": ".json",
+      "size_bytes": 431382,
+      "sha256": "5940a155f5868a096eeead4d2675378f09cf7955c05f876c16286091c072f90a",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 30342,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 28
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_14-GB18030_bc17.json",
+      "suffix": ".json",
+      "size_bytes": 747728,
+      "sha256": "32d5fadac31a1ce24262428b147bfd635ec4490cb9efbbf7839353b5de5ad48c",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 52493,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 26
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_14-GB18030_bc2.json",
+      "suffix": ".json",
+      "size_bytes": 544252,
+      "sha256": "5cdaba6b75569d931cebbf584ec58a8f2ac350d6780076b2710c3737a15e8e2b",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 38955,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 29
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_14-GB18030_bc3.json",
+      "suffix": ".json",
+      "size_bytes": 1082432,
+      "sha256": "39c0630b25ba71b708ba58e0fef2ca3b5ba524dd53d844ced41d57e92912b773",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 76895,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 24
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_14-GB18030_bc4.json",
+      "suffix": ".json",
+      "size_bytes": 828605,
+      "sha256": "99da4b2de80b0902472c3d207d0d37d9a417ef7ff49553cc1b1a74734b7e46e8",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 58859,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 25
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_14-GB18030_bc5.json",
+      "suffix": ".json",
+      "size_bytes": 820953,
+      "sha256": "3cdd68e595d79743f67ef1a10fe943bca4aca6a2e3b96d931c6469076f87bbe7",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 58135,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 25
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_14-GB18030_bc6.json",
+      "suffix": ".json",
+      "size_bytes": 959441,
+      "sha256": "36273edaf12402e1a5ff459cc8d1465a30585850d6f355de057c17a19c7012ec",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 67527,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 23
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_14-GB18030_bc7.json",
+      "suffix": ".json",
+      "size_bytes": 956692,
+      "sha256": "504972bea2d0aebd7bdf5310f823bda2af2e233da765a113f05a8635ef768a2d",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 67251,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 23
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_14-GB18030_bc8.json",
+      "suffix": ".json",
+      "size_bytes": 954778,
+      "sha256": "a3b71b6e9e8aeb1974664bf89fcd5c52d33916740510a206e122ed656d5d6c1a",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 67127,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 22
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr/standards/std_14-GB18030_bc9.json",
+      "suffix": ".json",
+      "size_bytes": 903886,
+      "sha256": "09e53c660a2150e7df6c9bdb9a8b1d588f638c99634e9ab11a074fe81c4d3783",
+      "category": "ocr_standard_review_aid",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 63431,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 22
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "std",
+          "bc",
+          "pages",
+          "time_s",
+          "avg_s",
+          "results"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "ocr_char_table_all.json",
+      "suffix": ".json",
+      "size_bytes": 267544,
+      "sha256": "1b4684df4411e7e6095921768d81909fbb6e86dda80df7735270f81f156854e4",
+      "category": "json_reference",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 961,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 1715
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 137,
+        "first_item_keys": [
+          "image",
+          "page",
+          "text",
+          "confidence",
+          "time_ms"
+        ],
+        "confidence": {
+          "count": 137,
+          "min": 0.0,
+          "max": 88.0,
+          "average": 49.12
+        }
+      }
+    },
+    {
+      "relative_path": "ocr_char_table_batch1.json",
+      "suffix": ".json",
+      "size_bytes": 38136,
+      "sha256": "120db22cfd0bf02146405fe00d63550dd9ddb36ab7ca11902cbfa9790c9140c8",
+      "category": "json_reference",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 142,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 1689
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 20,
+        "first_item_keys": [
+          "image",
+          "page",
+          "text",
+          "confidence",
+          "time_ms"
+        ],
+        "confidence": {
+          "count": 20,
+          "min": 0.0,
+          "max": 88.0,
+          "average": 61.7
+        }
+      }
+    },
+    {
+      "relative_path": "radical_validation.json",
+      "suffix": ".json",
+      "size_bytes": 3558,
+      "sha256": "bfd38905b9891f14ffb17fc3c1271cd776137735650dc4aba9f46a52b178a980",
+      "category": "json_reference",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 188,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 26
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 5,
+        "top_keys_sample": [
+          "verified",
+          "match",
+          "mismatch",
+          "match_rate",
+          "mismatch_examples"
+        ],
+        "validation_match_rate": 0.5
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "references/05-维基百科中文语料.md",
+      "suffix": ".md",
+      "size_bytes": 2220,
+      "sha256": "b1b81ed17868318bcc021d5b33d9ea3d44cbea6bde9a2ac9311ffcfd7dd27744",
+      "category": "reference_note_or_scan",
+      "text": {
+        "utf8_bom": true,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 55,
+        "ends_with_lf": true,
+        "utf8_status": "PASS",
+        "max_line_length": 55
+      },
+      "flags": [
+        "utf8_bom",
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "references.json",
+      "suffix": ".json",
+      "size_bytes": 1871,
+      "sha256": "a468d26f9da7269c9bba6c827efd2b90e074d21915a0409323a717dc91845771",
+      "category": "json_reference",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 55,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 68
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 8,
+        "top_keys_sample": [
+          "reference_1",
+          "reference_2",
+          "reference_3",
+          "reference_4",
+          "reference_5",
+          "reference_6",
+          "reference_7",
+          "reference_8"
+        ],
+        "first_value_keys": [
+          "name",
+          "source",
+          "standards"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "search_summary.json",
+      "suffix": ".json",
+      "size_bytes": 992,
+      "sha256": "069e932992ba877e86c5f380d6fe78be075b4ba045f0b1e1ff86bfd2e6c755c6",
+      "category": "json_reference",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 23,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 111
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 4,
+        "top_keys_sample": [
+          "search_attempts",
+          "confirmed_approach",
+          "package_issue",
+          "final_coverage"
+        ],
+        "first_value_keys": [
+          "GitHub (amake/cjk-decomp)",
+          "npm (unihan by tobei)",
+          "npm (cjk-unihan)",
+          "pip (unihan-db)",
+          "Unicode官方UCD",
+          "国内CDN镜像(USTC)",
+          "jsDelivr CDN",
+          "Wikipedia/Wiktionary",
+          "国家语言资源服务平台"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "st_mapping.json",
+      "suffix": ".json",
+      "size_bytes": 147337,
+      "sha256": "05e2e695825aab87e2de1bd2479490944607adf764a6825878dfc7f467e4b985",
+      "category": "json_reference",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 8170,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 36
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 6,
+        "top_keys_sample": [
+          "source",
+          "name",
+          "st_count",
+          "ts_count",
+          "st",
+          "ts"
+        ],
+        "simplified_to_traditional_count": 4012,
+        "traditional_to_simplified_count": 4148
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "stroke_order_8105.json",
+      "suffix": ".json",
+      "size_bytes": 1144204,
+      "sha256": "4e8bb4b3c2de77b911c5728bf7fb33a1cc7c995d0ded3cdc5f132ee6eeb2a0f1",
+      "category": "json_reference",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 64666,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 72
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 8083,
+        "first_item_keys": [
+          "char",
+          "strokes",
+          "order",
+          "orderFormatted",
+          "tableNum",
+          "ucs"
+        ]
+      }
+    },
+    {
+      "relative_path": "stroke_order_8105_clean.json",
+      "suffix": ".json",
+      "size_bytes": 1165030,
+      "sha256": "f6efaa0caa7433be4266ffbed96125629cc3d928f80f2a6eef48d1f3b3709d64",
+      "category": "reference_index",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 63258,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 67
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 7907,
+        "first_item_keys": [
+          "char",
+          "strokes",
+          "order",
+          "order_fmt",
+          "table_num",
+          "ucs"
+        ]
+      },
+      "expected_checks": {
+        "purpose": "stroke order reference table",
+        "expected_top_type": "list",
+        "top_type_status": "PASS"
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "structured/base_character_data.json",
+      "suffix": ".json",
+      "size_bytes": 2258871,
+      "sha256": "f0f5a765f8717769211bfde19d6bcfdf25915111a09bd0044ea9467a06a224cf",
+      "category": "primary_candidate",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 169470,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 96
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 8104,
+        "top_keys_sample": [
+          "一",
+          "乙",
+          "二",
+          "十",
+          "丁",
+          "厂",
+          "七",
+          "卜",
+          "八",
+          "人",
+          "入",
+          "乂",
+          "儿",
+          "匕",
+          "几",
+          "九",
+          "刁",
+          "了",
+          "刀",
+          "力"
+        ],
+        "first_value_keys": [
+          "char",
+          "stroke_count",
+          "stroke_order",
+          "stroke_order_str",
+          "standard_rank",
+          "unicode",
+          "level"
+        ]
+      },
+      "expected_checks": {
+        "purpose": "candidate normalized basic CJK character table",
+        "expected_top_type": "dict",
+        "top_type_status": "PASS",
+        "expected_count": 8105,
+        "actual_count": 8104,
+        "count_status": "FAIL",
+        "count_delta": 1
+      },
+      "flags": [
+        "non_lf_line_endings",
+        "count_mismatch"
+      ]
+    },
+    {
+      "relative_path": "structured/cihai_search_index.json",
+      "suffix": ".json",
+      "size_bytes": 3628551,
+      "sha256": "5c7a900e4642cc176d50b58854483c9b9b33eadbd2c532876f4e916a091158e2",
+      "category": "reference_index",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 52009,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 73
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 5423,
+        "top_keys_sample": [
+          "历",
+          "史",
+          "现",
+          "象",
+          "而",
+          "不",
+          "是",
+          "作",
+          "为",
+          "行",
+          "法",
+          "规",
+          "来",
+          "进",
+          "研",
+          "墨",
+          "西",
+          "哥",
+          "诗",
+          "人"
+        ]
+      },
+      "expected_checks": {
+        "purpose": "Ci Hai OCR/search index for human verification",
+        "expected_top_type": "dict",
+        "top_type_status": "PASS"
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "structured/cnbe_character_knowledge.json",
+      "suffix": ".json",
+      "size_bytes": 18661305,
+      "sha256": "490625195ecc5fa2f51f56eada38b5442809e920927f1a4b03c65a080a0c3add",
+      "category": "primary_candidate",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 221802,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 1075
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "list",
+        "top_count": 8104,
+        "first_item_keys": [
+          "char",
+          "stroke_count",
+          "stroke_order",
+          "stroke_order_str",
+          "standard_rank",
+          "unicode",
+          "level",
+          "has_dictionary_entry",
+          "definition_sample",
+          "wiki_summary",
+          "has_wiki_entry",
+          "kangxi_def",
+          "kangxi_volume",
+          "zhonghua_def"
+        ]
+      },
+      "expected_checks": {
+        "purpose": "candidate merged character knowledge table",
+        "expected_top_type": "list",
+        "top_type_status": "PASS",
+        "expected_count": 8105,
+        "actual_count": 8104,
+        "count_status": "FAIL",
+        "count_delta": 1
+      },
+      "flags": [
+        "non_lf_line_endings",
+        "count_mismatch"
+      ]
+    },
+    {
+      "relative_path": "structured/definitions_index.json",
+      "suffix": ".json",
+      "size_bytes": 369920,
+      "sha256": "5efb2aa4bb40f8bb2535f5bb7769b3c712bedc2106ee256b24bfff7d03bd4a92",
+      "category": "structured_reference",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 19262,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 96
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 4815,
+        "top_keys_sample": [
+          "历",
+          "阿",
+          "究",
+          "安",
+          "牧",
+          "办",
+          "管",
+          "家",
+          "使",
+          "属",
+          "聘",
+          "队",
+          "区",
+          "文",
+          "亚",
+          "依",
+          "所",
+          "游",
+          "系",
+          "院"
+        ],
+        "first_value_keys": [
+          "context",
+          "source"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "unicode_rsindex.json",
+      "suffix": ".json",
+      "size_bytes": 528736,
+      "sha256": "7ba3b114e97dc1ce7d8e59b26e6344a72849a30d72b0b6af702c4be446247ebf",
+      "category": "json_reference",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 50008,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 64
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 5,
+        "top_keys_sample": [
+          "source",
+          "name",
+          "cjk_codepoints",
+          "range",
+          "codepoints"
+        ]
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    },
+    {
+      "relative_path": "unihan_radicals.json",
+      "suffix": ".json",
+      "size_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "category": "json_reference",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 1,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 2
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 0,
+        "top_keys_sample": []
+      }
+    },
+    {
+      "relative_path": "yuanliu_chars.json",
+      "suffix": ".json",
+      "size_bytes": 3704571,
+      "sha256": "e3a214f45d48aacb16409b09441c10769aa1917173d97606112a2e28af047bb2",
+      "category": "reference_index",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": true,
+        "contains_bare_cr": false,
+        "line_count": 153186,
+        "ends_with_lf": false,
+        "utf8_status": "PASS",
+        "max_line_length": 121
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 9574,
+        "top_keys_sample": [
+          "⺀",
+          "⺈",
+          "⺊",
+          "⺌",
+          "⺍",
+          "⺗",
+          "⺮",
+          "⺳",
+          "⺼",
+          "㐆",
+          "㐌",
+          "㐬",
+          "㐭",
+          "㐱",
+          "㒸",
+          "㒼",
+          "㓞",
+          "㔾",
+          "㕡",
+          "㝵"
+        ],
+        "first_value_keys": [
+          "radical",
+          "radix",
+          "decomposition",
+          "struct_type",
+          "struct_name",
+          "etym_type",
+          "etym_hint",
+          "etym_phonetic",
+          "etym_semantic",
+          "pinyin",
+          "definition",
+          "cnbe_radix",
+          "cnbe_strokes",
+          "cnbe_struct"
+        ]
+      },
+      "expected_checks": {
+        "purpose": "Chinese character origin reference index",
+        "expected_top_type": "dict",
+        "top_type_status": "PASS"
+      },
+      "flags": [
+        "non_lf_line_endings"
+      ]
+    }
+  ],
+  "recommended_next_stage": "curate_authoritative_source_map_before_encoding_or_sqlite_build"
+}
