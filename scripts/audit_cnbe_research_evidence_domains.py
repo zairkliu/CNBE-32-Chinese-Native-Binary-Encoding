@@ -15,6 +15,8 @@ from typing import Any
 DEFAULT_RESEARCH_ROOT = Path("/Users/liuzhaoqi/Documents/cnbe-research")
 DEFAULT_OUTPUT = Path("reports/cnbe_research_evidence_domains.json")
 CHUNK_SIZE = 1024 * 1024
+JSONL_SAMPLE_LIMIT = 25
+LARGE_JSON_THRESHOLD = 100 * 1024 * 1024
 
 EVIDENCE_DOMAINS: dict[str, dict[str, Any]] = {
     "standard_character_scope": {
@@ -125,6 +127,7 @@ EVIDENCE_DOMAINS: dict[str, dict[str, Any]] = {
             "knowledge/structured/cihai_search_index.json",
             "knowledge/ocr/ci_hai/checkpoint.json",
             "knowledge/references/05-维基百科中文语料.md",
+            "knowledge/wikipedia-zh-cn-20260501.json",
             "source/nlp-han-dicts/README.md",
         ],
         "decision_rule": "Use for scholarly notes, reviewer context, and conflict adjudication, not for automatic bit-field generation.",
@@ -164,10 +167,15 @@ def sha256_file(path: Path) -> str:
 
 
 def read_json_shape(path: Path) -> dict[str, Any]:
+    if path.stat().st_size >= LARGE_JSON_THRESHOLD:
+        return read_jsonl_shape(path)
     try:
         data = json.loads(path.read_text(encoding="utf-8-sig"))
     except (UnicodeDecodeError, json.JSONDecodeError) as exc:
-        return {"parse_status": "FAIL", "error": str(exc)}
+        jsonl = read_jsonl_shape(path)
+        if jsonl["parse_status"] == "PASS":
+            return jsonl
+        return {"parse_status": "FAIL", "error": str(exc), "jsonl_error": jsonl.get("error")}
     result: dict[str, Any] = {"parse_status": "PASS", "top_type": type(data).__name__}
     if isinstance(data, dict):
         result["top_count"] = len(data)
@@ -182,6 +190,39 @@ def read_json_shape(path: Path) -> dict[str, Any]:
         result["top_count"] = len(data)
         if data and isinstance(data[0], dict):
             result["first_item_keys"] = list(data[0])[:12]
+    return result
+
+
+def read_jsonl_shape(path: Path) -> dict[str, Any]:
+    result: dict[str, Any] = {
+        "parse_status": "FAIL",
+        "top_type": "jsonl",
+        "line_count": 0,
+        "sampled_record_count": 0,
+        "sample_keys": [],
+    }
+    key_counter: Counter[str] = Counter()
+    try:
+        with path.open("r", encoding="utf-8-sig") as handle:
+            for line_number, line in enumerate(handle, start=1):
+                stripped = line.strip()
+                if not stripped:
+                    continue
+                result["line_count"] += 1
+                try:
+                    record = json.loads(stripped)
+                except json.JSONDecodeError as exc:
+                    result["error"] = f"line {line_number}: {exc}"
+                    return result
+                if isinstance(record, dict) and result["sampled_record_count"] < JSONL_SAMPLE_LIMIT:
+                    result["sampled_record_count"] += 1
+                    key_counter.update(record.keys())
+    except UnicodeDecodeError as exc:
+        result["error"] = str(exc)
+        return result
+    result["parse_status"] = "PASS"
+    result["top_count"] = result["line_count"]
+    result["sample_keys"] = [key for key, _count in key_counter.most_common(30)]
     return result
 
 
@@ -248,6 +289,8 @@ def infer_role(relative_path: str) -> str:
         return "ocr_review_aid"
     if relative_path.startswith("source/"):
         return "converted_source_document"
+    if "wikipedia" in relative_path.lower() or "百科" in relative_path:
+        return "encyclopedia_semantic_index"
     if relative_path.startswith("knowledge/structured"):
         return "structured_knowledge_index"
     if relative_path.startswith("decomp-data") or relative_path.startswith("cjk-decomp"):

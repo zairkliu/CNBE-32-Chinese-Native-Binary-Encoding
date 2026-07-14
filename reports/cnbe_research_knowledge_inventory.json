@@ -1,13 +1,13 @@
 {
   "report_schema_version": 1,
-  "generated_at_utc": "2026-07-14T15:11:24.722741+00:00",
+  "generated_at_utc": "2026-07-14T15:41:31.738041+00:00",
   "audit_mode": "read_only_asset_confirmation",
   "summary": {
     "knowledge_root": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge",
-    "total_files": 221,
-    "total_size_bytes": 186085161,
+    "total_files": 222,
+    "total_size_bytes": 2579778009,
     "suffix_counts": {
-      ".json": 216,
+      ".json": 217,
       ".md": 2,
       ".txt": 1,
       ".zip": 2
@@ -16,6 +16,7 @@
       "canonical_external_archive": 1,
       "diagnostic": 1,
       "documentation": 2,
+      "encyclopedia_semantic_index": 1,
       "excluded_archive": 1,
       "json_reference": 18,
       "ocr_cihai_review_aid": 139,
@@ -35,8 +36,8 @@
       "utf8_bom": 3,
       "zip_integrity_failed": 1
     },
-    "json_files": 216,
-    "json_parse_pass": 216,
+    "json_files": 217,
+    "json_parse_pass": 217,
     "json_parse_fail": 0,
     "zip_files": 2,
     "zip_integrity_pass": 1,
@@ -266,8 +267,8 @@
         "contains_bare_cr": false,
         "line_count": 140,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 121
+        "max_line_length": 121,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -299,8 +300,8 @@
         "contains_bare_cr": false,
         "line_count": 44,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 116
+        "max_line_length": 180,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -329,8 +330,8 @@
         "contains_bare_cr": false,
         "line_count": 56,
         "ends_with_lf": true,
-        "utf8_status": "PASS",
-        "max_line_length": 65
+        "max_line_length": 65,
+        "utf8_status": "PASS"
       },
       "flags": [
         "utf8_bom",
@@ -349,8 +350,8 @@
         "contains_bare_cr": false,
         "line_count": 871,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 26
+        "max_line_length": 26,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -384,8 +385,8 @@
         "contains_bare_cr": false,
         "line_count": 229949,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 28
+        "max_line_length": 30,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -427,8 +428,8 @@
         "contains_bare_cr": false,
         "line_count": 57527,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 68
+        "max_line_length": 100,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -463,8 +464,8 @@
         "contains_bare_cr": false,
         "line_count": 18,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 50
+        "max_line_length": 93,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -494,8 +495,8 @@
         "contains_bare_cr": false,
         "line_count": 54205,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 109
+        "max_line_length": 113,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -524,8 +525,8 @@
         "contains_bare_cr": false,
         "line_count": 5056,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 200
+        "max_line_length": 251,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -557,8 +558,8 @@
         "contains_bare_cr": false,
         "line_count": 38303,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 30
+        "max_line_length": 36,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -587,8 +588,8 @@
         "contains_bare_cr": false,
         "line_count": 177,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 63
+        "max_line_length": 80,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -618,8 +619,8 @@
         "contains_bare_cr": false,
         "line_count": 753,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 70
+        "max_line_length": 86,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -650,8 +651,8 @@
         "contains_bare_cr": false,
         "line_count": 702,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 1766
+        "max_line_length": 3354,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -690,8 +691,8 @@
         "contains_bare_cr": false,
         "line_count": 702,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 1701
+        "max_line_length": 2618,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -730,8 +731,8 @@
         "contains_bare_cr": false,
         "line_count": 702,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 2446
+        "max_line_length": 4762,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -770,8 +771,8 @@
         "contains_bare_cr": false,
         "line_count": 142,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 1545
+        "max_line_length": 2845,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -807,8 +808,8 @@
         "contains_bare_cr": false,
         "line_count": 7,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 21
+        "max_line_length": 21,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -838,8 +839,8 @@
         "contains_bare_cr": false,
         "line_count": 41977,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 55
+        "max_line_length": 100,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -870,8 +871,8 @@
         "contains_bare_cr": false,
         "line_count": 41793,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 53
+        "max_line_length": 114,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -902,8 +903,8 @@
         "contains_bare_cr": false,
         "line_count": 29669,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 54
+        "max_line_length": 129,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -934,8 +935,8 @@
         "contains_bare_cr": false,
         "line_count": 28301,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 51
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -966,8 +967,8 @@
         "contains_bare_cr": false,
         "line_count": 29209,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 55
+        "max_line_length": 132,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -998,8 +999,8 @@
         "contains_bare_cr": false,
         "line_count": 14337,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 46
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1030,8 +1031,8 @@
         "contains_bare_cr": false,
         "line_count": 43137,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 55
+        "max_line_length": 86,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1062,8 +1063,8 @@
         "contains_bare_cr": false,
         "line_count": 40349,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 54
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1094,8 +1095,8 @@
         "contains_bare_cr": false,
         "line_count": 44033,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 53
+        "max_line_length": 127,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1126,8 +1127,8 @@
         "contains_bare_cr": false,
         "line_count": 42729,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 56
+        "max_line_length": 125,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1158,8 +1159,8 @@
         "contains_bare_cr": false,
         "line_count": 42745,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 85
+        "max_line_length": 213,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1190,8 +1191,8 @@
         "contains_bare_cr": false,
         "line_count": 29281,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 51
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1222,8 +1223,8 @@
         "contains_bare_cr": false,
         "line_count": 27081,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 50
+        "max_line_length": 91,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1254,8 +1255,8 @@
         "contains_bare_cr": false,
         "line_count": 29237,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 49
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1286,8 +1287,8 @@
         "contains_bare_cr": false,
         "line_count": 24892,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 51
+        "max_line_length": 82,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1318,8 +1319,8 @@
         "contains_bare_cr": false,
         "line_count": 27317,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 49
+        "max_line_length": 88,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1350,8 +1351,8 @@
         "contains_bare_cr": false,
         "line_count": 35631,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 52
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1382,8 +1383,8 @@
         "contains_bare_cr": false,
         "line_count": 36007,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 54
+        "max_line_length": 82,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1414,8 +1415,8 @@
         "contains_bare_cr": false,
         "line_count": 36251,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 68
+        "max_line_length": 123,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1446,8 +1447,8 @@
         "contains_bare_cr": false,
         "line_count": 34831,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 56
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1478,8 +1479,8 @@
         "contains_bare_cr": false,
         "line_count": 35963,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 52
+        "max_line_length": 111,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1510,8 +1511,8 @@
         "contains_bare_cr": false,
         "line_count": 35411,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 55
+        "max_line_length": 83,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1542,8 +1543,8 @@
         "contains_bare_cr": false,
         "line_count": 35723,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 53
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1574,8 +1575,8 @@
         "contains_bare_cr": false,
         "line_count": 36015,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 52
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1606,8 +1607,8 @@
         "contains_bare_cr": false,
         "line_count": 36323,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 55
+        "max_line_length": 124,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1638,8 +1639,8 @@
         "contains_bare_cr": false,
         "line_count": 35815,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 55
+        "max_line_length": 107,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1670,8 +1671,8 @@
         "contains_bare_cr": false,
         "line_count": 35451,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 53
+        "max_line_length": 88,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1702,8 +1703,8 @@
         "contains_bare_cr": false,
         "line_count": 35999,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 54
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1734,8 +1735,8 @@
         "contains_bare_cr": false,
         "line_count": 36343,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 56
+        "max_line_length": 88,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1766,8 +1767,8 @@
         "contains_bare_cr": false,
         "line_count": 36359,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 53
+        "max_line_length": 110,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1798,8 +1799,8 @@
         "contains_bare_cr": false,
         "line_count": 36639,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 55
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1830,8 +1831,8 @@
         "contains_bare_cr": false,
         "line_count": 35343,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 54
+        "max_line_length": 130,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1862,8 +1863,8 @@
         "contains_bare_cr": false,
         "line_count": 31505,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 60
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1894,8 +1895,8 @@
         "contains_bare_cr": false,
         "line_count": 32298,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 56
+        "max_line_length": 127,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1926,8 +1927,8 @@
         "contains_bare_cr": false,
         "line_count": 36255,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 50
+        "max_line_length": 82,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1958,8 +1959,8 @@
         "contains_bare_cr": false,
         "line_count": 35331,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 55
+        "max_line_length": 127,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -1990,8 +1991,8 @@
         "contains_bare_cr": false,
         "line_count": 36219,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 58
+        "max_line_length": 127,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2022,8 +2023,8 @@
         "contains_bare_cr": false,
         "line_count": 35631,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 53
+        "max_line_length": 127,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2054,8 +2055,8 @@
         "contains_bare_cr": false,
         "line_count": 35907,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 56
+        "max_line_length": 136,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2086,8 +2087,8 @@
         "contains_bare_cr": false,
         "line_count": 36787,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 50
+        "max_line_length": 91,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2118,8 +2119,8 @@
         "contains_bare_cr": false,
         "line_count": 35711,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 52
+        "max_line_length": 115,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2150,8 +2151,8 @@
         "contains_bare_cr": false,
         "line_count": 36403,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 56
+        "max_line_length": 94,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2182,8 +2183,8 @@
         "contains_bare_cr": false,
         "line_count": 36687,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 52
+        "max_line_length": 88,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2214,8 +2215,8 @@
         "contains_bare_cr": false,
         "line_count": 35507,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 54
+        "max_line_length": 127,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2246,8 +2247,8 @@
         "contains_bare_cr": false,
         "line_count": 36919,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 55
+        "max_line_length": 127,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2278,8 +2279,8 @@
         "contains_bare_cr": false,
         "line_count": 35839,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 57
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2310,8 +2311,8 @@
         "contains_bare_cr": false,
         "line_count": 36167,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 67
+        "max_line_length": 139,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2342,8 +2343,8 @@
         "contains_bare_cr": false,
         "line_count": 36571,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 56
+        "max_line_length": 88,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2374,8 +2375,8 @@
         "contains_bare_cr": false,
         "line_count": 9827,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 51
+        "max_line_length": 88,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2406,8 +2407,8 @@
         "contains_bare_cr": false,
         "line_count": 32734,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 52
+        "max_line_length": 122,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2438,8 +2439,8 @@
         "contains_bare_cr": false,
         "line_count": 35791,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 57
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2470,8 +2471,8 @@
         "contains_bare_cr": false,
         "line_count": 36267,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 57
+        "max_line_length": 115,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2502,8 +2503,8 @@
         "contains_bare_cr": false,
         "line_count": 35779,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 60
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2534,8 +2535,8 @@
         "contains_bare_cr": false,
         "line_count": 36455,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 57
+        "max_line_length": 133,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2566,8 +2567,8 @@
         "contains_bare_cr": false,
         "line_count": 36843,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 56
+        "max_line_length": 88,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2598,8 +2599,8 @@
         "contains_bare_cr": false,
         "line_count": 36175,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 60
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2630,8 +2631,8 @@
         "contains_bare_cr": false,
         "line_count": 35623,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 53
+        "max_line_length": 88,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2662,8 +2663,8 @@
         "contains_bare_cr": false,
         "line_count": 36783,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 50
+        "max_line_length": 100,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2694,8 +2695,8 @@
         "contains_bare_cr": false,
         "line_count": 35071,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 51
+        "max_line_length": 116,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2726,8 +2727,8 @@
         "contains_bare_cr": false,
         "line_count": 35883,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 54
+        "max_line_length": 84,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2758,8 +2759,8 @@
         "contains_bare_cr": false,
         "line_count": 36067,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 56
+        "max_line_length": 116,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2790,8 +2791,8 @@
         "contains_bare_cr": false,
         "line_count": 35535,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 53
+        "max_line_length": 102,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2822,8 +2823,8 @@
         "contains_bare_cr": false,
         "line_count": 35343,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 52
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2854,8 +2855,8 @@
         "contains_bare_cr": false,
         "line_count": 36027,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 55
+        "max_line_length": 91,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2886,8 +2887,8 @@
         "contains_bare_cr": false,
         "line_count": 35471,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 57
+        "max_line_length": 88,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2918,8 +2919,8 @@
         "contains_bare_cr": false,
         "line_count": 19107,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 50
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2950,8 +2951,8 @@
         "contains_bare_cr": false,
         "line_count": 31178,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 55
+        "max_line_length": 125,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -2982,8 +2983,8 @@
         "contains_bare_cr": false,
         "line_count": 35119,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 51
+        "max_line_length": 88,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3014,8 +3015,8 @@
         "contains_bare_cr": false,
         "line_count": 34815,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 62
+        "max_line_length": 114,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3046,8 +3047,8 @@
         "contains_bare_cr": false,
         "line_count": 37027,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 53
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3078,8 +3079,8 @@
         "contains_bare_cr": false,
         "line_count": 36503,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 55
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3110,8 +3111,8 @@
         "contains_bare_cr": false,
         "line_count": 36159,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 55
+        "max_line_length": 129,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3142,8 +3143,8 @@
         "contains_bare_cr": false,
         "line_count": 36263,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 49
+        "max_line_length": 93,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3174,8 +3175,8 @@
         "contains_bare_cr": false,
         "line_count": 35779,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 53
+        "max_line_length": 121,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3206,8 +3207,8 @@
         "contains_bare_cr": false,
         "line_count": 36171,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 54
+        "max_line_length": 95,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3238,8 +3239,8 @@
         "contains_bare_cr": false,
         "line_count": 36807,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 62
+        "max_line_length": 126,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3270,8 +3271,8 @@
         "contains_bare_cr": false,
         "line_count": 36047,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 58
+        "max_line_length": 118,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3302,8 +3303,8 @@
         "contains_bare_cr": false,
         "line_count": 14565,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 52
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3334,8 +3335,8 @@
         "contains_bare_cr": false,
         "line_count": 32746,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 55
+        "max_line_length": 123,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3366,8 +3367,8 @@
         "contains_bare_cr": false,
         "line_count": 35471,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 53
+        "max_line_length": 113,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3398,8 +3399,8 @@
         "contains_bare_cr": false,
         "line_count": 34947,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 56
+        "max_line_length": 130,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3430,8 +3431,8 @@
         "contains_bare_cr": false,
         "line_count": 36119,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 54
+        "max_line_length": 88,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3462,8 +3463,8 @@
         "contains_bare_cr": false,
         "line_count": 35719,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 56
+        "max_line_length": 130,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3494,8 +3495,8 @@
         "contains_bare_cr": false,
         "line_count": 35947,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 58
+        "max_line_length": 142,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3526,8 +3527,8 @@
         "contains_bare_cr": false,
         "line_count": 36855,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 54
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3558,8 +3559,8 @@
         "contains_bare_cr": false,
         "line_count": 36311,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 55
+        "max_line_length": 131,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3590,8 +3591,8 @@
         "contains_bare_cr": false,
         "line_count": 34983,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 52
+        "max_line_length": 88,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3622,8 +3623,8 @@
         "contains_bare_cr": false,
         "line_count": 35327,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 51
+        "max_line_length": 88,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3654,8 +3655,8 @@
         "contains_bare_cr": false,
         "line_count": 35067,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 56
+        "max_line_length": 118,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3686,8 +3687,8 @@
         "contains_bare_cr": false,
         "line_count": 35019,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 51
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3718,8 +3719,8 @@
         "contains_bare_cr": false,
         "line_count": 35787,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 54
+        "max_line_length": 130,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3750,8 +3751,8 @@
         "contains_bare_cr": false,
         "line_count": 35867,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 54
+        "max_line_length": 130,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3782,8 +3783,8 @@
         "contains_bare_cr": false,
         "line_count": 35967,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 55
+        "max_line_length": 132,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3814,8 +3815,8 @@
         "contains_bare_cr": false,
         "line_count": 20237,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 52
+        "max_line_length": 105,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3846,8 +3847,8 @@
         "contains_bare_cr": false,
         "line_count": 36179,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 57
+        "max_line_length": 124,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3878,8 +3879,8 @@
         "contains_bare_cr": false,
         "line_count": 35979,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 54
+        "max_line_length": 130,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3910,8 +3911,8 @@
         "contains_bare_cr": false,
         "line_count": 36707,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 77
+        "max_line_length": 184,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3942,8 +3943,8 @@
         "contains_bare_cr": false,
         "line_count": 34671,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 54
+        "max_line_length": 130,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -3974,8 +3975,8 @@
         "contains_bare_cr": false,
         "line_count": 36411,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 53
+        "max_line_length": 127,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4006,8 +4007,8 @@
         "contains_bare_cr": false,
         "line_count": 36255,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 57
+        "max_line_length": 88,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4038,8 +4039,8 @@
         "contains_bare_cr": false,
         "line_count": 442,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 40
+        "max_line_length": 79,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4070,8 +4071,8 @@
         "contains_bare_cr": false,
         "line_count": 33558,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 53
+        "max_line_length": 127,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4102,8 +4103,8 @@
         "contains_bare_cr": false,
         "line_count": 36563,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 54
+        "max_line_length": 130,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4134,8 +4135,8 @@
         "contains_bare_cr": false,
         "line_count": 36531,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 58
+        "max_line_length": 130,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4166,8 +4167,8 @@
         "contains_bare_cr": false,
         "line_count": 36731,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 55
+        "max_line_length": 133,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4198,8 +4199,8 @@
         "contains_bare_cr": false,
         "line_count": 35355,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 55
+        "max_line_length": 125,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4230,8 +4231,8 @@
         "contains_bare_cr": false,
         "line_count": 34555,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 74
+        "max_line_length": 178,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4262,8 +4263,8 @@
         "contains_bare_cr": false,
         "line_count": 36319,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 55
+        "max_line_length": 88,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4294,8 +4295,8 @@
         "contains_bare_cr": false,
         "line_count": 36559,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 52
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4326,8 +4327,8 @@
         "contains_bare_cr": false,
         "line_count": 36379,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 51
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4358,8 +4359,8 @@
         "contains_bare_cr": false,
         "line_count": 34775,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 52
+        "max_line_length": 122,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4390,8 +4391,8 @@
         "contains_bare_cr": false,
         "line_count": 36975,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 55
+        "max_line_length": 133,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4422,8 +4423,8 @@
         "contains_bare_cr": false,
         "line_count": 35239,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 53
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4454,8 +4455,8 @@
         "contains_bare_cr": false,
         "line_count": 36591,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 56
+        "max_line_length": 127,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4486,8 +4487,8 @@
         "contains_bare_cr": false,
         "line_count": 36227,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 56
+        "max_line_length": 127,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4518,8 +4519,8 @@
         "contains_bare_cr": false,
         "line_count": 35955,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 53
+        "max_line_length": 91,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4550,8 +4551,8 @@
         "contains_bare_cr": false,
         "line_count": 36383,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 55
+        "max_line_length": 121,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4582,8 +4583,8 @@
         "contains_bare_cr": false,
         "line_count": 36791,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 52
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4614,8 +4615,8 @@
         "contains_bare_cr": false,
         "line_count": 36291,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 55
+        "max_line_length": 88,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4646,8 +4647,8 @@
         "contains_bare_cr": false,
         "line_count": 36987,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 53
+        "max_line_length": 127,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4678,8 +4679,8 @@
         "contains_bare_cr": false,
         "line_count": 35211,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 57
+        "max_line_length": 124,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4710,8 +4711,8 @@
         "contains_bare_cr": false,
         "line_count": 33051,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 52
+        "max_line_length": 122,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4742,8 +4743,8 @@
         "contains_bare_cr": false,
         "line_count": 35647,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 50
+        "max_line_length": 97,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4774,8 +4775,8 @@
         "contains_bare_cr": false,
         "line_count": 36563,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 54
+        "max_line_length": 88,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4806,8 +4807,8 @@
         "contains_bare_cr": false,
         "line_count": 36543,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 52
+        "max_line_length": 85,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4838,8 +4839,8 @@
         "contains_bare_cr": false,
         "line_count": 35971,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 55
+        "max_line_length": 88,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4870,8 +4871,8 @@
         "contains_bare_cr": false,
         "line_count": 4587,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 53
+        "max_line_length": 77,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4902,8 +4903,8 @@
         "contains_bare_cr": false,
         "line_count": 50763,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 82
+        "max_line_length": 196,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4934,8 +4935,8 @@
         "contains_bare_cr": false,
         "line_count": 54835,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 77
+        "max_line_length": 196,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4966,8 +4967,8 @@
         "contains_bare_cr": false,
         "line_count": 49895,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 74
+        "max_line_length": 186,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -4998,8 +4999,8 @@
         "contains_bare_cr": false,
         "line_count": 126395,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 83
+        "max_line_length": 184,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5030,8 +5031,8 @@
         "contains_bare_cr": false,
         "line_count": 86467,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 69
+        "max_line_length": 169,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5062,8 +5063,8 @@
         "contains_bare_cr": false,
         "line_count": 89467,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 31
+        "max_line_length": 61,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5094,8 +5095,8 @@
         "contains_bare_cr": false,
         "line_count": 81879,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 57
+        "max_line_length": 139,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5126,8 +5127,8 @@
         "contains_bare_cr": false,
         "line_count": 79703,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 96
+        "max_line_length": 169,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5158,8 +5159,8 @@
         "contains_bare_cr": false,
         "line_count": 27487,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 74
+        "max_line_length": 90,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5190,8 +5191,8 @@
         "contains_bare_cr": false,
         "line_count": 26327,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 77
+        "max_line_length": 91,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5222,8 +5223,8 @@
         "contains_bare_cr": false,
         "line_count": 18295,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 75
+        "max_line_length": 95,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5254,8 +5255,8 @@
         "contains_bare_cr": false,
         "line_count": 1122,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 3124
+        "max_line_length": 3142,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5291,8 +5292,8 @@
         "contains_bare_cr": false,
         "line_count": 1082,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 2893
+        "max_line_length": 2925,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5327,8 +5328,8 @@
         "contains_bare_cr": false,
         "line_count": 1022,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 1687
+        "max_line_length": 2491,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5363,8 +5364,8 @@
         "contains_bare_cr": false,
         "line_count": 1022,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 3618
+        "max_line_length": 3628,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5399,8 +5400,8 @@
         "contains_bare_cr": false,
         "line_count": 962,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 2521
+        "max_line_length": 3185,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5435,8 +5436,8 @@
         "contains_bare_cr": false,
         "line_count": 82,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 1366
+        "max_line_length": 2618,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5475,8 +5476,8 @@
         "contains_bare_cr": false,
         "line_count": 622,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 1701
+        "max_line_length": 2319,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5515,8 +5516,8 @@
         "contains_bare_cr": false,
         "line_count": 202,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 1593
+        "max_line_length": 2311,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5555,8 +5556,8 @@
         "contains_bare_cr": false,
         "line_count": 202,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 1545
+        "max_line_length": 2845,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5592,8 +5593,8 @@
         "contains_bare_cr": false,
         "line_count": 112,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 1119
+        "max_line_length": 2089,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5632,8 +5633,8 @@
         "contains_bare_cr": false,
         "line_count": 212,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 1901
+        "max_line_length": 2869,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5672,8 +5673,8 @@
         "contains_bare_cr": false,
         "line_count": 122,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 1766
+        "max_line_length": 3354,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5712,8 +5713,8 @@
         "contains_bare_cr": false,
         "line_count": 1372,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 1715
+        "max_line_length": 2855,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5752,8 +5753,8 @@
         "contains_bare_cr": false,
         "line_count": 142,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 697
+        "max_line_length": 1187,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5792,8 +5793,8 @@
         "contains_bare_cr": false,
         "line_count": 82,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 1123
+        "max_line_length": 2059,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5832,8 +5833,8 @@
         "contains_bare_cr": false,
         "line_count": 482,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 2446
+        "max_line_length": 4762,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5872,8 +5873,8 @@
         "contains_bare_cr": false,
         "line_count": 20,
         "ends_with_lf": true,
-        "utf8_status": "PASS",
-        "max_line_length": 33
+        "max_line_length": 51,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5904,8 +5905,8 @@
         "contains_bare_cr": false,
         "line_count": 10281,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 54
+        "max_line_length": 130,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5936,8 +5937,8 @@
         "contains_bare_cr": false,
         "line_count": 17115,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 58
+        "max_line_length": 131,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -5968,8 +5969,8 @@
         "contains_bare_cr": false,
         "line_count": 2390,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 54
+        "max_line_length": 130,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6000,8 +6001,8 @@
         "contains_bare_cr": false,
         "line_count": 2089,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 65
+        "max_line_length": 152,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6032,8 +6033,8 @@
         "contains_bare_cr": false,
         "line_count": 19323,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 77
+        "max_line_length": 146,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6064,8 +6065,8 @@
         "contains_bare_cr": false,
         "line_count": 11893,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 29
+        "max_line_length": 55,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6096,8 +6097,8 @@
         "contains_bare_cr": false,
         "line_count": 1139,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 75
+        "max_line_length": 145,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6128,8 +6129,8 @@
         "contains_bare_cr": false,
         "line_count": 10241,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 62
+        "max_line_length": 145,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6160,8 +6161,8 @@
         "contains_bare_cr": false,
         "line_count": 1220,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 75
+        "max_line_length": 133,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6192,8 +6193,8 @@
         "contains_bare_cr": false,
         "line_count": 1501,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 59
+        "max_line_length": 145,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6224,8 +6225,8 @@
         "contains_bare_cr": false,
         "line_count": 2800,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 103
+        "max_line_length": 173,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6256,8 +6257,8 @@
         "contains_bare_cr": false,
         "line_count": 3599,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 74
+        "max_line_length": 182,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6288,8 +6289,8 @@
         "contains_bare_cr": false,
         "line_count": 1020,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 83
+        "max_line_length": 163,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6320,8 +6321,8 @@
         "contains_bare_cr": false,
         "line_count": 73434,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 29
+        "max_line_length": 47,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6352,8 +6353,8 @@
         "contains_bare_cr": false,
         "line_count": 67311,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 22
+        "max_line_length": 24,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6384,8 +6385,8 @@
         "contains_bare_cr": false,
         "line_count": 73043,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 25
+        "max_line_length": 25,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6416,8 +6417,8 @@
         "contains_bare_cr": false,
         "line_count": 10694,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 27
+        "max_line_length": 34,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6448,8 +6449,8 @@
         "contains_bare_cr": false,
         "line_count": 32627,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 28
+        "max_line_length": 34,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6480,8 +6481,8 @@
         "contains_bare_cr": false,
         "line_count": 31283,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 28
+        "max_line_length": 34,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6512,8 +6513,8 @@
         "contains_bare_cr": false,
         "line_count": 29967,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 28
+        "max_line_length": 34,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6544,8 +6545,8 @@
         "contains_bare_cr": false,
         "line_count": 30342,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 28
+        "max_line_length": 34,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6576,8 +6577,8 @@
         "contains_bare_cr": false,
         "line_count": 52493,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 26
+        "max_line_length": 26,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6608,8 +6609,8 @@
         "contains_bare_cr": false,
         "line_count": 38955,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 29
+        "max_line_length": 37,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6640,8 +6641,8 @@
         "contains_bare_cr": false,
         "line_count": 76895,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 24
+        "max_line_length": 24,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6672,8 +6673,8 @@
         "contains_bare_cr": false,
         "line_count": 58859,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 25
+        "max_line_length": 25,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6704,8 +6705,8 @@
         "contains_bare_cr": false,
         "line_count": 58135,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 25
+        "max_line_length": 25,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6736,8 +6737,8 @@
         "contains_bare_cr": false,
         "line_count": 67527,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 23
+        "max_line_length": 24,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6768,8 +6769,8 @@
         "contains_bare_cr": false,
         "line_count": 67251,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 23
+        "max_line_length": 24,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6800,8 +6801,8 @@
         "contains_bare_cr": false,
         "line_count": 67127,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 22
+        "max_line_length": 25,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6832,8 +6833,8 @@
         "contains_bare_cr": false,
         "line_count": 63431,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 22
+        "max_line_length": 25,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6864,8 +6865,8 @@
         "contains_bare_cr": false,
         "line_count": 961,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 1715
+        "max_line_length": 2855,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6898,8 +6899,8 @@
         "contains_bare_cr": false,
         "line_count": 142,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 1689
+        "max_line_length": 2157,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6932,8 +6933,8 @@
         "contains_bare_cr": false,
         "line_count": 188,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 26
+        "max_line_length": 28,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -6964,8 +6965,8 @@
         "contains_bare_cr": false,
         "line_count": 55,
         "ends_with_lf": true,
-        "utf8_status": "PASS",
-        "max_line_length": 55
+        "max_line_length": 91,
+        "utf8_status": "PASS"
       },
       "flags": [
         "utf8_bom",
@@ -6984,8 +6985,8 @@
         "contains_bare_cr": false,
         "line_count": 55,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 68
+        "max_line_length": 88,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -7023,8 +7024,8 @@
         "contains_bare_cr": false,
         "line_count": 23,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 111
+        "max_line_length": 173,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -7064,8 +7065,8 @@
         "contains_bare_cr": false,
         "line_count": 8170,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 36
+        "max_line_length": 42,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -7098,8 +7099,8 @@
         "contains_bare_cr": false,
         "line_count": 64666,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 72
+        "max_line_length": 72,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -7127,8 +7128,8 @@
         "contains_bare_cr": false,
         "line_count": 63258,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 67
+        "max_line_length": 67,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -7164,8 +7165,8 @@
         "contains_bare_cr": false,
         "line_count": 169470,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 96
+        "max_line_length": 96,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -7229,8 +7230,8 @@
         "contains_bare_cr": false,
         "line_count": 52009,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 73
+        "max_line_length": 156,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -7280,8 +7281,8 @@
         "contains_bare_cr": false,
         "line_count": 221802,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 1075
+        "max_line_length": 3014,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -7330,8 +7331,8 @@
         "contains_bare_cr": false,
         "line_count": 19262,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 96
+        "max_line_length": 213,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -7380,8 +7381,8 @@
         "contains_bare_cr": false,
         "line_count": 50008,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 64
+        "max_line_length": 64,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
@@ -7411,14 +7412,48 @@
         "contains_bare_cr": false,
         "line_count": 1,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 2
+        "max_line_length": 2,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
         "top_type": "dict",
         "top_count": 0,
         "top_keys_sample": []
+      }
+    },
+    {
+      "relative_path": "wikipedia-zh-cn-20260501.json",
+      "suffix": ".json",
+      "size_bytes": 2393692848,
+      "sha256": "c8c719a84d402371ffa6b99b57bc9bc524bf66e07d72dfc724e51d0224eaee62",
+      "category": "encyclopedia_semantic_index",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 1489790,
+        "ends_with_lf": true,
+        "max_line_length": 230480,
+        "utf8_status": "PASS"
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "jsonl",
+        "line_count": 1489790,
+        "sampled_record_count": 25,
+        "sample_keys": [
+          "id",
+          "title",
+          "tags",
+          "text"
+        ],
+        "top_count": 1489790
+      },
+      "expected_checks": {
+        "purpose": "offline Chinese Wikipedia semantic cross-check corpus",
+        "expected_top_type": "jsonl",
+        "top_type_status": "PASS"
       }
     },
     {
@@ -7433,8 +7468,8 @@
         "contains_bare_cr": false,
         "line_count": 153186,
         "ends_with_lf": false,
-        "utf8_status": "PASS",
-        "max_line_length": 121
+        "max_line_length": 121,
+        "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",

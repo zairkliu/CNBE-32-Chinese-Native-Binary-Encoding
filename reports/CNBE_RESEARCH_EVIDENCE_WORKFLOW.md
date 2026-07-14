@@ -144,11 +144,14 @@ Accepted source family:
 - `康熙字典`;
 - `中华大字典`;
 - offline Chinese Wikipedia references.
+- `wikipedia-zh-cn-20260501.json` offline Chinese Wikipedia JSONL corpus.
 
 Use boundary:
 
 - supports scholarly notes and adjudication;
 - does not directly assign CNBE bit fields.
+- large encyclopedia corpora must be treated as JSONL semantic evidence and queried through sampled or indexed access,
+  not loaded wholesale into memory.
 
 ### 8. Encoding And Interchange Standards
 

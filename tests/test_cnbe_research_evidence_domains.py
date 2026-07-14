@@ -10,6 +10,7 @@ from scripts.audit_cnbe_research_evidence_domains import (
     domain_status,
     infer_role,
     read_json_shape,
+    read_jsonl_shape,
 )
 
 
@@ -19,6 +20,10 @@ def test_infer_role_marks_ocr_as_review_aid() -> None:
 
 def test_infer_role_marks_source_document() -> None:
     assert infer_role("source/02-汉字部首表/GG 0011-2009 汉字部首表.md") == "converted_source_document"
+
+
+def test_infer_role_marks_wikipedia_semantic_index() -> None:
+    assert infer_role("knowledge/wikipedia-zh-cn-20260501.json") == "encyclopedia_semantic_index"
 
 
 def test_domain_status_ready_when_all_primary_available() -> None:
@@ -40,6 +45,15 @@ def test_read_json_shape_handles_pdf_conversion_metadata(tmp_path: Path) -> None
     shape = read_json_shape(sample)
     assert shape["parse_status"] == "PASS"
     assert shape["kids_count"] == 2
+
+
+def test_read_jsonl_shape_handles_offline_wikipedia_corpus(tmp_path: Path) -> None:
+    sample = tmp_path / "wikipedia.json"
+    sample.write_text('{"title": "汉字", "text": "文字体系"}\n{"title": "部首", "text": "检字法"}\n', encoding="utf-8")
+    shape = read_jsonl_shape(sample)
+    assert shape["parse_status"] == "PASS"
+    assert shape["top_type"] == "jsonl"
+    assert shape["top_count"] == 2
 
 
 def test_build_report_keeps_generation_gate_closed(tmp_path: Path) -> None:

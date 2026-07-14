@@ -1,6 +1,6 @@
 {
   "report_schema_version": 1,
-  "generated_at_utc": "2026-07-14T15:27:59.526522+00:00",
+  "generated_at_utc": "2026-07-14T15:41:27.021313+00:00",
   "audit_mode": "read_only_cnbe_weakness_evidence_domain_mapping",
   "research_root": "/Users/liuzhaoqi/Documents/cnbe-research",
   "summary": {
@@ -1240,7 +1240,7 @@
         {
           "relative_path": "knowledge/references/05-维基百科中文语料.md",
           "exists": true,
-          "role": "supporting_reference",
+          "role": "encyclopedia_semantic_index",
           "size_bytes": 2220,
           "sha256": "b1b81ed17868318bcc021d5b33d9ea3d44cbea6bde9a2ac9311ffcfd7dd27744",
           "markdown": {
@@ -1250,6 +1250,27 @@
             "image_reference_count": 0,
             "contains_crlf": true,
             "contains_bom": true
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/wikipedia-zh-cn-20260501.json",
+          "exists": true,
+          "role": "encyclopedia_semantic_index",
+          "size_bytes": 2393692848,
+          "sha256": "c8c719a84d402371ffa6b99b57bc9bc524bf66e07d72dfc724e51d0224eaee62",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "jsonl",
+            "line_count": 1489790,
+            "sampled_record_count": 25,
+            "sample_keys": [
+              "id",
+              "title",
+              "tags",
+              "text"
+            ],
+            "top_count": 1489790
           },
           "status": "AVAILABLE"
         },

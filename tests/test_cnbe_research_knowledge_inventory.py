@@ -10,6 +10,7 @@ from scripts.inventory_cnbe_research_knowledge import (
     asset_flags,
     build_inventory,
     classify_asset,
+    inspect_jsonl,
     inspect_zip,
     read_text_traits,
 )
@@ -24,6 +25,10 @@ def test_classify_asset_marks_ocr_subdirectories() -> None:
     assert classify_asset("ocr/ci_hai/page_001.json", ".json") == "ocr_cihai_review_aid"
     assert classify_asset("ocr/standards/page_001.json", ".json") == "ocr_standard_review_aid"
     assert classify_asset("ocr/page_001.json", ".json") == "ocr_review_aid"
+
+
+def test_classify_asset_marks_wikipedia_corpus() -> None:
+    assert classify_asset("wikipedia-zh-cn-20260501.json", ".json") == "encyclopedia_semantic_index"
 
 
 def test_read_text_traits_detects_crlf(tmp_path: Path) -> None:
@@ -49,6 +54,16 @@ def test_inspect_zip_rejects_invalid_archive(tmp_path: Path) -> None:
     archive.write_text("not a zip", encoding="utf-8")
     result = inspect_zip(archive)
     assert result["status"] == "FAIL"
+
+
+def test_inspect_jsonl_accepts_line_delimited_json(tmp_path: Path) -> None:
+    sample = tmp_path / "wiki.json"
+    sample.write_text('{"title": "汉字", "text": "文字"}\n{"title": "部首", "text": "索引"}\n', encoding="utf-8")
+    result = inspect_jsonl(sample)
+    assert result["parse_status"] == "PASS"
+    assert result["top_type"] == "jsonl"
+    assert result["top_count"] == 2
+    assert "title" in result["sample_keys"]
 
 
 def test_asset_flags_marks_count_mismatch() -> None:

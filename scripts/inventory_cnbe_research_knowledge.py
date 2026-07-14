@@ -16,6 +16,8 @@ from typing import Any
 DEFAULT_KNOWLEDGE_ROOT = Path("/Users/liuzhaoqi/Documents/cnbe-research/knowledge")
 DEFAULT_OUTPUT = Path("reports/cnbe_research_knowledge_inventory.json")
 CHUNK_SIZE = 1024 * 1024
+JSONL_SAMPLE_LIMIT = 25
+LARGE_JSON_THRESHOLD = 100 * 1024 * 1024
 TEXT_SUFFIXES = {".json", ".md", ".txt", ".yaml", ".yml", ".toml", ".csv"}
 CORE_DATASETS = {
     "structured/base_character_data.json": {
@@ -55,6 +57,11 @@ CORE_DATASETS = {
         "expected_top_type": "dict",
         "purpose": "component and decomposition support data",
     },
+    "wikipedia-zh-cn-20260501.json": {
+        "class": "encyclopedia_semantic_index",
+        "expected_top_type": "jsonl",
+        "purpose": "offline Chinese Wikipedia semantic cross-check corpus",
+    },
     "Unihan2.zip": {
         "class": "canonical_external_archive",
         "expected_top_type": "zip",
@@ -87,6 +94,8 @@ def relative_asset_path(root: Path, path: Path) -> str:
 def classify_asset(relative_path: str, suffix: str) -> str:
     if relative_path in CORE_DATASETS:
         return CORE_DATASETS[relative_path]["class"]
+    if "wikipedia" in relative_path.lower():
+        return "encyclopedia_semantic_index"
     if relative_path.startswith("ocr/ci_hai/"):
         return "ocr_cihai_review_aid"
     if relative_path.startswith("ocr/standards/"):
@@ -107,32 +116,51 @@ def classify_asset(relative_path: str, suffix: str) -> str:
 
 
 def read_text_traits(path: Path) -> dict[str, Any]:
-    raw = path.read_bytes()
+    size = path.stat().st_size
+    with path.open("rb") as handle:
+        first = handle.read(3) if size else b""
     traits: dict[str, Any] = {
-        "utf8_bom": raw.startswith(b"\xef\xbb\xbf"),
-        "contains_crlf": b"\r\n" in raw,
-        "contains_bare_cr": b"\r" in raw.replace(b"\r\n", b""),
-        "line_count": len(raw.splitlines()),
-        "ends_with_lf": raw.endswith(b"\n") if raw else False,
+        "utf8_bom": first.startswith(b"\xef\xbb\xbf"),
+        "contains_crlf": False,
+        "contains_bare_cr": False,
+        "line_count": 0,
+        "ends_with_lf": False,
+        "max_line_length": 0,
     }
+    previous_tail = b""
     try:
-        text = raw.decode("utf-8-sig")
+        with path.open("rb") as handle:
+            for raw_line in handle:
+                traits["line_count"] += 1
+                traits["max_line_length"] = max(traits["max_line_length"], len(raw_line.rstrip(b"\r\n")))
+                if raw_line.endswith(b"\r\n"):
+                    traits["contains_crlf"] = True
+                elif raw_line.endswith(b"\r"):
+                    traits["contains_bare_cr"] = True
+                previous_tail = raw_line[-1:]
+                raw_line.decode("utf-8-sig" if traits["line_count"] == 1 else "utf-8")
     except UnicodeDecodeError as exc:
         traits["utf8_status"] = "FAIL"
         traits["utf8_error"] = str(exc)
         return traits
     traits["utf8_status"] = "PASS"
-    traits["max_line_length"] = max((len(line) for line in text.splitlines()), default=0)
+    traits["ends_with_lf"] = previous_tail == b"\n"
     return traits
 
 
 def safe_load_json(path: Path) -> tuple[Any | None, dict[str, Any]]:
     traits: dict[str, Any] = {}
+    if path.stat().st_size >= LARGE_JSON_THRESHOLD:
+        return None, inspect_jsonl(path)
     try:
         data = json.loads(path.read_text(encoding="utf-8-sig"))
     except json.JSONDecodeError as exc:
+        jsonl = inspect_jsonl(path)
+        if jsonl["parse_status"] == "PASS":
+            return None, jsonl
         traits["parse_status"] = "FAIL"
         traits["error"] = str(exc)
+        traits["jsonl_error"] = jsonl.get("error")
         return None, traits
     except UnicodeDecodeError as exc:
         traits["parse_status"] = "FAIL"
@@ -142,6 +170,39 @@ def safe_load_json(path: Path) -> tuple[Any | None, dict[str, Any]]:
     traits.update(json_shape(data))
     traits.update(extract_json_domain_metrics(data))
     return data, traits
+
+
+def inspect_jsonl(path: Path) -> dict[str, Any]:
+    result: dict[str, Any] = {
+        "parse_status": "FAIL",
+        "top_type": "jsonl",
+        "line_count": 0,
+        "sampled_record_count": 0,
+        "sample_keys": [],
+    }
+    key_counter: Counter[str] = Counter()
+    try:
+        with path.open("r", encoding="utf-8-sig") as handle:
+            for line_number, line in enumerate(handle, start=1):
+                stripped = line.strip()
+                if not stripped:
+                    continue
+                result["line_count"] += 1
+                try:
+                    record = json.loads(stripped)
+                except json.JSONDecodeError as exc:
+                    result["error"] = f"line {line_number}: {exc}"
+                    return result
+                if isinstance(record, dict) and result["sampled_record_count"] < JSONL_SAMPLE_LIMIT:
+                    result["sampled_record_count"] += 1
+                    key_counter.update(record.keys())
+    except UnicodeDecodeError as exc:
+        result["error"] = str(exc)
+        return result
+    result["parse_status"] = "PASS"
+    result["top_count"] = result["line_count"]
+    result["sample_keys"] = [key for key, _count in key_counter.most_common(30)]
+    return result
 
 
 def json_shape(data: Any) -> dict[str, Any]:
@@ -214,6 +275,8 @@ def expected_asset_checks(relative_path: str, details: dict[str, Any]) -> dict[s
     zip_info = details.get("zip", {})
     if expected.get("expected_top_type") == "zip":
         checks["top_type_status"] = status(zip_info.get("status") == "PASS")
+    elif expected.get("expected_top_type") == "jsonl":
+        checks["top_type_status"] = status(json_info.get("top_type") == "jsonl")
     elif "expected_top_type" in expected:
         checks["top_type_status"] = status(json_info.get("top_type") == expected["expected_top_type"])
     if "expected_count" in expected:

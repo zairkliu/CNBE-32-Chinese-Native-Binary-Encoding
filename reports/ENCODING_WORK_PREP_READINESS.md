@@ -121,6 +121,8 @@ Additional non-blocking observations:
 - Several external research files contain CRLF or UTF-8 BOM; these are recorded as source hygiene issues and are not
   auto-normalized by this repository.
 - OCR confidence is low for multiple general OCR batches, so OCR outputs remain review navigation aids only.
+- `knowledge/wikipedia-zh-cn-20260501.json` is a large offline Chinese Wikipedia JSONL corpus. It is now treated as a
+  semantic cross-check source for definitions, entity context, and reviewer notes, not as formal encoding evidence.
 
 Result:
 
