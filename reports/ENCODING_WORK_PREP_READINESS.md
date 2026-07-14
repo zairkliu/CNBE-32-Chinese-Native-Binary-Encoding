@@ -8,6 +8,11 @@ It does not authorize a mapping replacement, SDK database replacement, SQLite bu
 publication. It records what must be true before CNBE-32 encoding work resumes after the earlier AI-code,
 encoding-error, and character-composition concerns.
 
+The current preparation focus is evidence construction around CNBE-32's weak fields, not a narrow pursuit of one
+standard-list row count. Character-scope reconciliation remains useful, but it must not delay work on radical,
+component, single-component, stroke-order, stroke-shape, character-order, etymology, dictionary, and semantic evidence
+domains.
+
 ## Repository Baseline
 
 - Current repository branch inspected: `data/basic-cjk-scope-gap`.
@@ -124,6 +129,47 @@ Result:
 - SQLite build gate: `NO_GO`;
 - SDK replacement allowed: `false`;
 - external assets imported into this repository: `false`.
+
+The 8,104/8,105 count mismatch is therefore treated as a source-scope reconciliation issue, not as the main project
+objective. The next allowed stage is to design and validate an evidence schema for CNBE weak fields while keeping code
+generation and SQLite construction closed.
+
+## Evidence Domain Mapping
+
+The repository now has a read-only evidence-domain audit:
+
+```text
+reports/cnbe_research_evidence_domains.json
+```
+
+This audit maps local `cnbe-research` assets to the actual CNBE weak points:
+
+- standard character scope;
+- radical classification;
+- component inventory;
+- single-component and structure evidence;
+- stroke count, stroke order, and stroke shape;
+- stroke-based ordering;
+- etymology, dictionary, and semantic context;
+- encoding and interchange standards.
+
+Current result:
+
+- 8 evidence domains inspected;
+- 7 domains are `READY_FOR_SCHEMA_DESIGN`;
+- 1 domain is `ACTION_REQUIRED` because invalid or empty Unihan-related artifacts must be excluded or replaced;
+- encoding generation gate remains `NO_GO`;
+- SQLite build gate remains `NO_GO`.
+
+The companion workflow document is:
+
+```text
+reports/CNBE_RESEARCH_EVIDENCE_WORKFLOW.md
+```
+
+That workflow defines the next construction stage as a character evidence schema with source path, source hash,
+extraction method, page or record reference, confidence, and review status columns. It explicitly forbids using OCR,
+dictionary summaries, or generated CNBE outputs as direct bit-field authority.
 
 ## Evidence Tiers
 

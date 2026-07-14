@@ -1,0 +1,1440 @@
+{
+  "report_schema_version": 1,
+  "generated_at_utc": "2026-07-14T15:27:59.526522+00:00",
+  "audit_mode": "read_only_cnbe_weakness_evidence_domain_mapping",
+  "research_root": "/Users/liuzhaoqi/Documents/cnbe-research",
+  "summary": {
+    "domains_total": 8,
+    "domain_status_counts": {
+      "ACTION_REQUIRED": 1,
+      "READY_FOR_SCHEMA_DESIGN": 7
+    },
+    "encoding_generation_gate": "NO_GO",
+    "sqlite_build_gate": "NO_GO",
+    "focus": "evidence_domain_design_before_encoding_or_database_generation"
+  },
+  "cnbe_weakness_model": {
+    "radix_field": "requires radical table separation from Kangxi and Unicode radical-stroke indexes",
+    "stroke_field": "requires actual stroke count and order evidence before compact CNBE field interpretation",
+    "structure_field": "requires component, single-component, and layout evidence before structure assignment",
+    "semantic_claims": "require dictionary, etymology, and encyclopedia context but remain non-bitfield evidence",
+    "provenance": "each accepted field must carry source path, hash, extraction method, and review status"
+  },
+  "source_hygiene_notes": {
+    "ocr": "OCR output is a review aid until source page, confidence, and extracted field are confirmed.",
+    "dictionary": "Dictionary and encyclopedia material supports interpretation and scholarship, not formal CNBE bit assignment.",
+    "third_party_decomposition": "Third-party decomposition is useful for disagreement discovery, not as a primary standard.",
+    "legacy_generated_cnbe": "Previously generated CNBE outputs are diagnostics and must not become circular evidence."
+  },
+  "domains": [
+    {
+      "domain": "standard_character_scope",
+      "status": "READY_FOR_SCHEMA_DESIGN",
+      "cnbe_risk": "character inclusion, level, and normalized ordering must not be inferred from generated codes",
+      "decision_rule": "Use for source-scope review and issue discovery, not as a standalone replacement trigger.",
+      "primary_available": 3,
+      "primary_total": 3,
+      "missing_sources": [],
+      "sources_needing_repair_or_exclusion": [],
+      "primary_sources": [
+        {
+          "relative_path": "source/01-通用规范汉字表/通用规范汉字表(8105).json",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 30895,
+          "sha256": "3230e572c7eb5c892a2aebd8e0caef265049fcf6177dee32de2e0660df0ad0d5",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 7,
+            "top_keys_sample": [
+              "file name",
+              "number of pages",
+              "author",
+              "title",
+              "creation date",
+              "modification date",
+              "kids"
+            ],
+            "kids_count": 137
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "source/01-通用规范汉字表/通用规范汉字表(8105).md",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 9237,
+          "sha256": "cfaca4f2f325b7a5983a5d104d62e01c7ed653400b4027ed0b1038e115b8d2b8",
+          "markdown": {
+            "utf8_status": "PASS",
+            "line_count": 274,
+            "char_count": 7319,
+            "image_reference_count": 137,
+            "contains_crlf": false,
+            "contains_bom": false
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/ocr_char_table_all.json",
+          "exists": true,
+          "role": "ocr_review_aid",
+          "size_bytes": 267544,
+          "sha256": "1b4684df4411e7e6095921768d81909fbb6e86dda80df7735270f81f156854e4",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "list",
+            "top_count": 137,
+            "first_item_keys": [
+              "image",
+              "page",
+              "text",
+              "confidence",
+              "time_ms"
+            ]
+          },
+          "status": "AVAILABLE"
+        }
+      ],
+      "supporting_sources": [
+        {
+          "relative_path": "knowledge/alignment_report.json",
+          "exists": true,
+          "role": "supporting_reference",
+          "size_bytes": 1889,
+          "sha256": "479400e5a10a22294a91f54c0bd7750b02c8c6a5ae20c4fd075fe5ab900e4380",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 7,
+            "top_keys_sample": [
+              "summary",
+              "national_standard_chars",
+              "cnbe32_chars",
+              "common_chars",
+              "missing_in_cnbe32",
+              "missing_in_standard",
+              "notes"
+            ]
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/alignment_report_v2.json",
+          "exists": true,
+          "role": "supporting_reference",
+          "size_bytes": 2020,
+          "sha256": "8bb98f3ae731828a95d8beae854f9d4f236af912eb5ddea8e085582dce1f11ce",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 4,
+            "top_keys_sample": [
+              "title",
+              "date",
+              "steps",
+              "alignment_summary"
+            ]
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/cnbe32_addendum.json",
+          "exists": true,
+          "role": "legacy_generated_cnbe_diagnostic",
+          "size_bytes": 14732,
+          "sha256": "de7e274d29abf9107b6c6f969ee775d18c30176f28e6bbc11dcbc5f2917037b7",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "list",
+            "top_count": 79,
+            "first_item_keys": [
+              "unicode",
+              "char",
+              "cnbe",
+              "radix",
+              "radix_name",
+              "strokes",
+              "struct_type",
+              "struct_name",
+              "index"
+            ]
+          },
+          "status": "AVAILABLE"
+        }
+      ]
+    },
+    {
+      "domain": "radical_classification",
+      "status": "READY_FOR_SCHEMA_DESIGN",
+      "cnbe_risk": "CNBE radix fields can conflate Kangxi radicals, Unicode radical-stroke data, and modern indexing radicals",
+      "decision_rule": "Separate official modern radical table from Kangxi and Unicode indexes before any CNBE radix audit.",
+      "primary_available": 3,
+      "primary_total": 3,
+      "missing_sources": [],
+      "sources_needing_repair_or_exclusion": [],
+      "primary_sources": [
+        {
+          "relative_path": "source/02-汉字部首表/GG 0011-2009 汉字部首表.json",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 2965,
+          "sha256": "97621e832e8cefc9cded7e9161029c7de68496f6ae197be426a102b2c73271e4",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 7,
+            "top_keys_sample": [
+              "file name",
+              "number of pages",
+              "author",
+              "title",
+              "creation date",
+              "modification date",
+              "kids"
+            ],
+            "kids_count": 12
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "source/02-汉字部首表/GG 0011-2009 汉字部首表.md",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 798,
+          "sha256": "3eb0f09fa13884230f06a2b917587cc8f7005aa109cbf4fe4677c636b207a241",
+          "markdown": {
+            "utf8_status": "PASS",
+            "line_count": 24,
+            "char_count": 678,
+            "image_reference_count": 12,
+            "contains_crlf": false,
+            "contains_bom": false
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/ocr/standards/std_02-汉字部首表_bc1.json",
+          "exists": true,
+          "role": "ocr_review_aid",
+          "size_bytes": 37546,
+          "sha256": "d2213c78874400149bad7d78190a0feaa9cf3cc7103a0d00af25c3322e036192",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 6,
+            "top_keys_sample": [
+              "std",
+              "bc",
+              "pages",
+              "time_s",
+              "avg_s",
+              "results"
+            ]
+          },
+          "status": "AVAILABLE"
+        }
+      ],
+      "supporting_sources": [
+        {
+          "relative_path": "knowledge/kangxi_radicals.json",
+          "exists": true,
+          "role": "supporting_reference",
+          "size_bytes": 533759,
+          "sha256": "c2aa49ca9caa51a3befb80db14f4b2fa6d2d38ca43ee17fab36ca34d977fbae9",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 4,
+            "top_keys_sample": [
+              "source",
+              "name",
+              "count",
+              "data"
+            ],
+            "data_count": 9574
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/radical_validation.json",
+          "exists": true,
+          "role": "supporting_reference",
+          "size_bytes": 3558,
+          "sha256": "bfd38905b9891f14ffb17fc3c1271cd776137735650dc4aba9f46a52b178a980",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 5,
+            "top_keys_sample": [
+              "verified",
+              "match",
+              "mismatch",
+              "match_rate",
+              "mismatch_examples"
+            ]
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/unicode_rsindex.json",
+          "exists": true,
+          "role": "supporting_reference",
+          "size_bytes": 528736,
+          "sha256": "7ba3b114e97dc1ce7d8e59b26e6344a72849a30d72b0b6af702c4be446247ebf",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 5,
+            "top_keys_sample": [
+              "source",
+              "name",
+              "cjk_codepoints",
+              "range",
+              "codepoints"
+            ]
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/unihan_radicals.json",
+          "exists": true,
+          "role": "supporting_reference",
+          "size_bytes": 2,
+          "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 0,
+            "top_keys_sample": []
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "source/15-Unicode-RSIndex/RSIndex.md",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 1261878,
+          "sha256": "bf4d78506c19d21e4c9caf0f965726ee7ceec461ac0a764dbeefbc0b33feecca",
+          "markdown": {
+            "utf8_status": "PASS",
+            "line_count": 317738,
+            "char_count": 1035774,
+            "image_reference_count": 0,
+            "contains_crlf": false,
+            "contains_bom": false
+          },
+          "status": "AVAILABLE"
+        }
+      ]
+    },
+    {
+      "domain": "component_inventory",
+      "status": "READY_FOR_SCHEMA_DESIGN",
+      "cnbe_risk": "component and decomposition fields are vulnerable to AI-inferred or heuristic composition errors",
+      "decision_rule": "Treat standards as primary; use third-party decomposition only as disagreement discovery evidence.",
+      "primary_available": 6,
+      "primary_total": 6,
+      "missing_sources": [],
+      "sources_needing_repair_or_exclusion": [],
+      "primary_sources": [
+        {
+          "relative_path": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.json",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 15995,
+          "sha256": "d379d507cbdbb4afac9f7bd9209b5fb649f0f40079682835e5b94203c55de87d",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 7,
+            "top_keys_sample": [
+              "file name",
+              "number of pages",
+              "author",
+              "title",
+              "creation date",
+              "modification date",
+              "kids"
+            ],
+            "kids_count": 62
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 5872,
+          "sha256": "8da9fc36e1d62c5229e17ac2f00746dc84a6ecb6ea039b61f6c0f52aadadf981",
+          "markdown": {
+            "utf8_status": "PASS",
+            "line_count": 124,
+            "char_count": 4136,
+            "image_reference_count": 62,
+            "contains_crlf": false,
+            "contains_bom": false
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.json",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 5502,
+          "sha256": "ea056b911f8695c59aa2357ebd894f56e0078df19a3cb5015009b45a07d9df3a",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 7,
+            "top_keys_sample": [
+              "file name",
+              "number of pages",
+              "author",
+              "title",
+              "creation date",
+              "modification date",
+              "kids"
+            ],
+            "kids_count": 20
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 2142,
+          "sha256": "f6a53cc8b0b14c573845a1336de14df4c46d33a2cb18592e6450ef0c790002bb",
+          "markdown": {
+            "utf8_status": "PASS",
+            "line_count": 40,
+            "char_count": 1502,
+            "image_reference_count": 20,
+            "contains_crlf": false,
+            "contains_bom": false
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/ocr/standards/std_03-部件及部件名称规范_bc1.json",
+          "exists": true,
+          "role": "ocr_review_aid",
+          "size_bytes": 292675,
+          "sha256": "957601a86694ec12c9cfb843f22acf480fd8af9cb274d5afb76a87510d7e56c5",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 6,
+            "top_keys_sample": [
+              "std",
+              "bc",
+              "pages",
+              "time_s",
+              "avg_s",
+              "results"
+            ]
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/ocr/standards/std_06-汉字部件规范_bc1.json",
+          "exists": true,
+          "role": "ocr_review_aid",
+          "size_bytes": 154603,
+          "sha256": "c756ca7dfa1209329572517a21d45cc00c70f326c2c983bd43faa9e4ce11b57c",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 6,
+            "top_keys_sample": [
+              "std",
+              "bc",
+              "pages",
+              "time_s",
+              "avg_s",
+              "results"
+            ]
+          },
+          "status": "AVAILABLE"
+        }
+      ],
+      "supporting_sources": [
+        {
+          "relative_path": "knowledge/component_db.json",
+          "exists": true,
+          "role": "supporting_reference",
+          "size_bytes": 576557,
+          "sha256": "d40a8173d5a7856fc4eb6dd93009a32d459ef99f21793947ac3ac8b924acfe5e",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 5,
+            "top_keys_sample": [
+              "source",
+              "char_coverage",
+              "components",
+              "char_mappings",
+              "comp_mappings"
+            ]
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/decomp_rules.json",
+          "exists": true,
+          "role": "supporting_reference",
+          "size_bytes": 865,
+          "sha256": "10fb1a944c7df5836a287b40a135397014df9b398dc7827445e276c86168fc8e",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 5,
+            "top_keys_sample": [
+              "chars_with_ids",
+              "chars_single_component",
+              "chars_needing_rules",
+              "rules",
+              "sample_missing"
+            ]
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "decomp-data/dictionary.json",
+          "exists": true,
+          "role": "third_party_decomposition",
+          "size_bytes": 9520010,
+          "sha256": "9d6d0dc83b755f763ae94b22f42716b56c42b2bcf51aee18ca837ec867ae80a4",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "list",
+            "top_count": 9574,
+            "first_item_keys": [
+              "character",
+              "definition",
+              "pinyin",
+              "decomposition",
+              "radical",
+              "matches"
+            ]
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "cjk-decomp/cjk-decomp.txt",
+          "exists": true,
+          "role": "third_party_decomposition",
+          "size_bytes": 1507690,
+          "sha256": "cf770b7be3894f11a96a79789195f237fdbfc3ca533ea0763052e50cf7998fe1",
+          "text": {
+            "utf8_status": "PASS",
+            "line_count": 85238,
+            "char_count": 1007158,
+            "image_reference_count": 0,
+            "contains_crlf": true,
+            "contains_bom": false
+          },
+          "status": "AVAILABLE"
+        }
+      ]
+    },
+    {
+      "domain": "single_component_and_structure",
+      "status": "READY_FOR_SCHEMA_DESIGN",
+      "cnbe_risk": "structure labels can be overfit by visual heuristics instead of official single-component and layout rules",
+      "decision_rule": "Use as a structure review source; do not infer CNBE structure bits until conflicts are adjudicated.",
+      "primary_available": 3,
+      "primary_total": 3,
+      "missing_sources": [],
+      "sources_needing_repair_or_exclusion": [],
+      "primary_sources": [
+        {
+          "relative_path": "source/04-独体字规范/GF 0013-2009 现代常用独体字规范.json",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 3598,
+          "sha256": "6c485260ea6a4df3843058fec43f22ce2c9366ec030743cdf2c8a82e159b75f1",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 7,
+            "top_keys_sample": [
+              "file name",
+              "number of pages",
+              "author",
+              "title",
+              "creation date",
+              "modification date",
+              "kids"
+            ],
+            "kids_count": 14
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "source/04-独体字规范/GF 0013-2009 现代常用独体字规范.md",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 1102,
+          "sha256": "8f0d92116f1e3513bc06230860f83416fb93e16045a49531099f0f21a55aae16",
+          "markdown": {
+            "utf8_status": "PASS",
+            "line_count": 28,
+            "char_count": 850,
+            "image_reference_count": 14,
+            "contains_crlf": false,
+            "contains_bom": false
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/ocr/standards/std_04-独体字规范_bc1.json",
+          "exists": true,
+          "role": "ocr_review_aid",
+          "size_bytes": 20055,
+          "sha256": "3cc612f2df173a1452e43515e839878b1f2ad4f2473aa49e45f2ceb1cae9c613",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 6,
+            "top_keys_sample": [
+              "std",
+              "bc",
+              "pages",
+              "time_s",
+              "avg_s",
+              "results"
+            ]
+          },
+          "status": "AVAILABLE"
+        }
+      ],
+      "supporting_sources": [
+        {
+          "relative_path": "knowledge/component_db.json",
+          "exists": true,
+          "role": "supporting_reference",
+          "size_bytes": 576557,
+          "sha256": "d40a8173d5a7856fc4eb6dd93009a32d459ef99f21793947ac3ac8b924acfe5e",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 5,
+            "top_keys_sample": [
+              "source",
+              "char_coverage",
+              "components",
+              "char_mappings",
+              "comp_mappings"
+            ]
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/decomp_rules.json",
+          "exists": true,
+          "role": "supporting_reference",
+          "size_bytes": 865,
+          "sha256": "10fb1a944c7df5836a287b40a135397014df9b398dc7827445e276c86168fc8e",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 5,
+            "top_keys_sample": [
+              "chars_with_ids",
+              "chars_single_component",
+              "chars_needing_rules",
+              "rules",
+              "sample_missing"
+            ]
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/structured/base_character_data.json",
+          "exists": true,
+          "role": "structured_knowledge_index",
+          "size_bytes": 2258871,
+          "sha256": "f0f5a765f8717769211bfde19d6bcfdf25915111a09bd0044ea9467a06a224cf",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 8104,
+            "top_keys_sample": [
+              "一",
+              "乙",
+              "二",
+              "十",
+              "丁",
+              "厂",
+              "七",
+              "卜",
+              "八",
+              "人",
+              "入",
+              "乂"
+            ]
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/structured/cnbe_character_knowledge.json",
+          "exists": true,
+          "role": "structured_knowledge_index",
+          "size_bytes": 18661305,
+          "sha256": "490625195ecc5fa2f51f56eada38b5442809e920927f1a4b03c65a080a0c3add",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "list",
+            "top_count": 8104,
+            "first_item_keys": [
+              "char",
+              "stroke_count",
+              "stroke_order",
+              "stroke_order_str",
+              "standard_rank",
+              "unicode",
+              "level",
+              "has_dictionary_entry",
+              "definition_sample",
+              "wiki_summary",
+              "has_wiki_entry",
+              "kangxi_def"
+            ]
+          },
+          "status": "AVAILABLE"
+        }
+      ]
+    },
+    {
+      "domain": "stroke_count_order_and_shape",
+      "status": "READY_FOR_SCHEMA_DESIGN",
+      "cnbe_risk": "stroke count, stroke order, and folded-stroke shape are separate linguistic facts but easy to collapse",
+      "decision_rule": "Keep actual stroke count, stroke order sequence, and CNBE compact stroke field as separate columns.",
+      "primary_available": 8,
+      "primary_total": 8,
+      "missing_sources": [],
+      "sources_needing_repair_or_exclusion": [],
+      "primary_sources": [
+        {
+          "relative_path": "source/05-笔顺规范/GF 0031—2026 通用规范汉字笔顺规范.json",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 31991914,
+          "sha256": "4898221c93984d88076c4d6ce96f6eafeee259a7f055595ced09c8ab4ad333e3",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 7,
+            "top_keys_sample": [
+              "file name",
+              "number of pages",
+              "author",
+              "title",
+              "creation date",
+              "modification date",
+              "kids"
+            ],
+            "kids_count": 1856
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "source/05-笔顺规范/GF 0031—2026 通用规范汉字笔顺规范.md",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 616160,
+          "sha256": "5601c38ed5ec76bdc4770a281c54a0cbc6f2836d95f3b19d3853200c3ae2ae74",
+          "markdown": {
+            "utf8_status": "PASS",
+            "line_count": 14176,
+            "char_count": 551574,
+            "image_reference_count": 0,
+            "contains_crlf": false,
+            "contains_bom": false
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "source/05-笔顺规范/GF3002-1999 GB13000.1字符集汉字笔顺规范.json",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 2172,
+          "sha256": "b118b8387791e34ade2db16c18723aa80ff74a0f4a7acfa2cf9abf66fd63b4d2",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 7,
+            "top_keys_sample": [
+              "file name",
+              "number of pages",
+              "author",
+              "title",
+              "creation date",
+              "modification date",
+              "kids"
+            ],
+            "kids_count": 8
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "source/05-笔顺规范/GF3002-1999 GB13000.1字符集汉字笔顺规范.md",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 688,
+          "sha256": "1bd050e042f246351cf4a09ef39c3ad18019cb252aa319a7a22028b852f210dd",
+          "markdown": {
+            "utf8_status": "PASS",
+            "line_count": 16,
+            "char_count": 544,
+            "image_reference_count": 8,
+            "contains_crlf": false,
+            "contains_bom": false
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "source/07-折笔规范/GB 13000.1 字符集汉字折笔规范.json",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 2772,
+          "sha256": "3632d59565dc31acf4d4306bd157f01248f84b10ecb7af2cc69791ceff2b963d",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 7,
+            "top_keys_sample": [
+              "file name",
+              "number of pages",
+              "author",
+              "title",
+              "creation date",
+              "modification date",
+              "kids"
+            ],
+            "kids_count": 11
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "source/07-折笔规范/GB 13000.1 字符集汉字折笔规范.md",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 840,
+          "sha256": "c1cdbc03f2ee9d5c42a69ec53dac9db2eefed4e6173da720c4c59df533f67feb",
+          "markdown": {
+            "utf8_status": "PASS",
+            "line_count": 22,
+            "char_count": 642,
+            "image_reference_count": 11,
+            "contains_crlf": false,
+            "contains_bom": false
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/stroke_order_8105.json",
+          "exists": true,
+          "role": "supporting_reference",
+          "size_bytes": 1144204,
+          "sha256": "4e8bb4b3c2de77b911c5728bf7fb33a1cc7c995d0ded3cdc5f132ee6eeb2a0f1",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "list",
+            "top_count": 8083,
+            "first_item_keys": [
+              "char",
+              "strokes",
+              "order",
+              "orderFormatted",
+              "tableNum",
+              "ucs"
+            ]
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/stroke_order_8105_clean.json",
+          "exists": true,
+          "role": "supporting_reference",
+          "size_bytes": 1165030,
+          "sha256": "f6efaa0caa7433be4266ffbed96125629cc3d928f80f2a6eef48d1f3b3709d64",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "list",
+            "top_count": 7907,
+            "first_item_keys": [
+              "char",
+              "strokes",
+              "order",
+              "order_fmt",
+              "table_num",
+              "ucs"
+            ]
+          },
+          "status": "AVAILABLE"
+        }
+      ],
+      "supporting_sources": [
+        {
+          "relative_path": "knowledge/ocr/ocr_stroke_order.json",
+          "exists": true,
+          "role": "ocr_review_aid",
+          "size_bytes": 10127,
+          "sha256": "f0d5323077b36f15d6319b5e5bd9bd68d7e5b1b08853ea6ec504b0a178611534",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "list",
+            "top_count": 8,
+            "first_item_keys": [
+              "topic",
+              "subdir",
+              "pdf",
+              "page",
+              "image",
+              "text",
+              "confidence",
+              "time_ms"
+            ]
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/ocr/ocr_fold_stroke.json",
+          "exists": true,
+          "role": "ocr_review_aid",
+          "size_bytes": 15314,
+          "sha256": "1cfaf552a6eb88ac93fd66194759f21ab3629a6ed5f55d9fa68fb9b97f34fd66",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "list",
+            "top_count": 11,
+            "first_item_keys": [
+              "topic",
+              "subdir",
+              "pdf",
+              "page",
+              "image",
+              "text",
+              "confidence",
+              "time_ms"
+            ]
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/ocr/standards/std_07-折笔规范_bc1.json",
+          "exists": true,
+          "role": "ocr_review_aid",
+          "size_bytes": 24488,
+          "sha256": "6aba04e925dd3c5349a3dbd25c137ea295ef4bd6640dc42f0c4d7891d7761915",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 6,
+            "top_keys_sample": [
+              "std",
+              "bc",
+              "pages",
+              "time_s",
+              "avg_s",
+              "results"
+            ]
+          },
+          "status": "AVAILABLE"
+        }
+      ]
+    },
+    {
+      "domain": "stroke_based_ordering",
+      "status": "READY_FOR_SCHEMA_DESIGN",
+      "cnbe_risk": "ordering fields must be traceable to a standard and must not be confused with Unicode or workbook order",
+      "decision_rule": "Use for review ordering and audit sort keys, not as a direct semantic encoding dimension.",
+      "primary_available": 3,
+      "primary_total": 3,
+      "missing_sources": [],
+      "sources_needing_repair_or_exclusion": [],
+      "primary_sources": [
+        {
+          "relative_path": "source/08-字序规范/GF3003-1999 GB13000.1字符集汉字字序（笔画序）规范.json",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 2305,
+          "sha256": "2ad4f2b4e1b8d797d550085be5e9cc60f5fbc1ffda838c1801f5fd03e47ce57b",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 7,
+            "top_keys_sample": [
+              "file name",
+              "number of pages",
+              "author",
+              "title",
+              "creation date",
+              "modification date",
+              "kids"
+            ],
+            "kids_count": 8
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "source/08-字序规范/GF3003-1999 GB13000.1字符集汉字字序（笔画序）规范.md",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 808,
+          "sha256": "ce56632108e32458837bc6e9dffe62f87cc0cfb24909692bb016e38dabf79ac9",
+          "markdown": {
+            "utf8_status": "PASS",
+            "line_count": 16,
+            "char_count": 584,
+            "image_reference_count": 8,
+            "contains_crlf": false,
+            "contains_bom": false
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/ocr/standards/std_08-字序规范_bc1.json",
+          "exists": true,
+          "role": "ocr_review_aid",
+          "size_bytes": 27863,
+          "sha256": "afb0df30ba5e54bf504c5aeb93d5f890560c3ef7d056c545a277afc281e1ab1e",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 6,
+            "top_keys_sample": [
+              "std",
+              "bc",
+              "pages",
+              "time_s",
+              "avg_s",
+              "results"
+            ]
+          },
+          "status": "AVAILABLE"
+        }
+      ],
+      "supporting_sources": [
+        {
+          "relative_path": "knowledge/ocr/ocr_char_order.json",
+          "exists": true,
+          "role": "ocr_review_aid",
+          "size_bytes": 12620,
+          "sha256": "0a87fab3e41dc37e7f236cf580e6892924e7115a6288c4f32974b4712ce88148",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "list",
+            "top_count": 8,
+            "first_item_keys": [
+              "topic",
+              "subdir",
+              "pdf",
+              "page",
+              "image",
+              "text",
+              "confidence",
+              "time_ms"
+            ]
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/ocr_char_table_all.json",
+          "exists": true,
+          "role": "ocr_review_aid",
+          "size_bytes": 267544,
+          "sha256": "1b4684df4411e7e6095921768d81909fbb6e86dda80df7735270f81f156854e4",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "list",
+            "top_count": 137,
+            "first_item_keys": [
+              "image",
+              "page",
+              "text",
+              "confidence",
+              "time_ms"
+            ]
+          },
+          "status": "AVAILABLE"
+        }
+      ]
+    },
+    {
+      "domain": "etymology_dictionary_semantics",
+      "status": "READY_FOR_SCHEMA_DESIGN",
+      "cnbe_risk": "semantic explanations improve academic defensibility but must not silently alter formal encoding bits",
+      "decision_rule": "Use for scholarly notes, reviewer context, and conflict adjudication, not for automatic bit-field generation.",
+      "primary_available": 4,
+      "primary_total": 4,
+      "missing_sources": [],
+      "sources_needing_repair_or_exclusion": [],
+      "primary_sources": [
+        {
+          "relative_path": "source/13-汉字源流大典/汉字源流大典 钱中立主编 9典可搜索检字 中国语言文学学科建设文库.json",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 6428919,
+          "sha256": "4d1137ceb88053abf1d4b1dec500dae356c0142c50feffce6cee0dea2c3e8e75",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 7,
+            "top_keys_sample": [
+              "file name",
+              "number of pages",
+              "author",
+              "title",
+              "creation date",
+              "modification date",
+              "kids"
+            ],
+            "kids_count": 12964
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "source/13-汉字源流大典/汉字源流大典 钱中立主编 9典可搜索检字 中国语言文学学科建设文库.md",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 159335,
+          "sha256": "eba1f4b7f596f33ea52237ce97f690ae20ebacfb5fa37da730cd6e39670be97c",
+          "markdown": {
+            "utf8_status": "PASS",
+            "line_count": 39205,
+            "char_count": 128062,
+            "image_reference_count": 0,
+            "contains_crlf": false,
+            "contains_bom": false
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/yuanliu_chars.json",
+          "exists": true,
+          "role": "dictionary_semantic_index",
+          "size_bytes": 3704571,
+          "sha256": "e3a214f45d48aacb16409b09441c10769aa1917173d97606112a2e28af047bb2",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 9574,
+            "top_keys_sample": [
+              "⺀",
+              "⺈",
+              "⺊",
+              "⺌",
+              "⺍",
+              "⺗",
+              "⺮",
+              "⺳",
+              "⺼",
+              "㐆",
+              "㐌",
+              "㐬"
+            ]
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/etymology_data.json",
+          "exists": true,
+          "role": "supporting_reference",
+          "size_bytes": 1088817,
+          "sha256": "bad9bb79cf68adf65415a975b6632ed345d09a452a3ba6a9b5841ef7fd167c26",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 4,
+            "top_keys_sample": [
+              "source",
+              "name",
+              "count",
+              "data"
+            ],
+            "data_count": 9033
+          },
+          "status": "AVAILABLE"
+        }
+      ],
+      "supporting_sources": [
+        {
+          "relative_path": "knowledge/structured/definitions_index.json",
+          "exists": true,
+          "role": "structured_knowledge_index",
+          "size_bytes": 369920,
+          "sha256": "5efb2aa4bb40f8bb2535f5bb7769b3c712bedc2106ee256b24bfff7d03bd4a92",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 4815,
+            "top_keys_sample": [
+              "历",
+              "阿",
+              "究",
+              "安",
+              "牧",
+              "办",
+              "管",
+              "家",
+              "使",
+              "属",
+              "聘",
+              "队"
+            ]
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/structured/cihai_search_index.json",
+          "exists": true,
+          "role": "structured_knowledge_index",
+          "size_bytes": 3628551,
+          "sha256": "5c7a900e4642cc176d50b58854483c9b9b33eadbd2c532876f4e916a091158e2",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 5423,
+            "top_keys_sample": [
+              "历",
+              "史",
+              "现",
+              "象",
+              "而",
+              "不",
+              "是",
+              "作",
+              "为",
+              "行",
+              "法",
+              "规"
+            ]
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/ocr/ci_hai/checkpoint.json",
+          "exists": true,
+          "role": "ocr_review_aid",
+          "size_bytes": 90,
+          "sha256": "1480354172e0bc349aceeb9959c726044cbe14751f5aeb085d71c2c1ee6c5fb7",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 5,
+            "top_keys_sample": [
+              "vol",
+              "batch",
+              "page",
+              "fail_count",
+              "batch_counter"
+            ]
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/references/05-维基百科中文语料.md",
+          "exists": true,
+          "role": "supporting_reference",
+          "size_bytes": 2220,
+          "sha256": "b1b81ed17868318bcc021d5b33d9ea3d44cbea6bde9a2ac9311ffcfd7dd27744",
+          "markdown": {
+            "utf8_status": "PASS",
+            "line_count": 55,
+            "char_count": 1297,
+            "image_reference_count": 0,
+            "contains_crlf": true,
+            "contains_bom": true
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "source/nlp-han-dicts/README.md",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 2198,
+          "sha256": "18bd0c0cf08e316beb70bf99bce9c7da6cc607d4b1e23d0c1e9e5ac57d475763",
+          "markdown": {
+            "utf8_status": "PASS",
+            "line_count": 39,
+            "char_count": 988,
+            "image_reference_count": 0,
+            "contains_crlf": true,
+            "contains_bom": false
+          },
+          "status": "AVAILABLE"
+        }
+      ]
+    },
+    {
+      "domain": "encoding_and_interchange_standards",
+      "status": "ACTION_REQUIRED",
+      "cnbe_risk": "CNBE compatibility must be distinguished from Unicode, GB18030, and SDK database compatibility",
+      "decision_rule": "Pin external standards for interoperability; reject invalid or empty artifacts from authority status.",
+      "primary_available": 5,
+      "primary_total": 5,
+      "missing_sources": [],
+      "sources_needing_repair_or_exclusion": [
+        "knowledge/Unihan.zip",
+        "knowledge/Unihan_RadicalStrokeCounts.txt"
+      ],
+      "primary_sources": [
+        {
+          "relative_path": "source/14-GB18030/GB+18030-2022.json",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 945142,
+          "sha256": "51b48fe6b0104d8419a08d4da8668bcf03e9ef0f059c4b8c60fe09e41b89aeb4",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 7,
+            "top_keys_sample": [
+              "file name",
+              "number of pages",
+              "author",
+              "title",
+              "creation date",
+              "modification date",
+              "kids"
+            ],
+            "kids_count": 1750
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "source/14-GB18030/GB+18030-2022.md",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 81660,
+          "sha256": "27ced820a8e772ae6fb949a17240921b9570b9555fae45f2084e4a52862a8760",
+          "markdown": {
+            "utf8_status": "PASS",
+            "line_count": 3698,
+            "char_count": 63248,
+            "image_reference_count": 840,
+            "contains_crlf": false,
+            "contains_bom": false
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "source/15-Unicode-RSIndex/RSIndex.md",
+          "exists": true,
+          "role": "converted_source_document",
+          "size_bytes": 1261878,
+          "sha256": "bf4d78506c19d21e4c9caf0f965726ee7ceec461ac0a764dbeefbc0b33feecca",
+          "markdown": {
+            "utf8_status": "PASS",
+            "line_count": 317738,
+            "char_count": 1035774,
+            "image_reference_count": 0,
+            "contains_crlf": false,
+            "contains_bom": false
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/Unihan2.zip",
+          "exists": true,
+          "role": "supporting_reference",
+          "size_bytes": 8518517,
+          "sha256": "f7a48b2b545acfaa77b2d607ae28747404ce02baefee16396c5d2d7a8ef34b5e",
+          "archive": {
+            "status": "PASS",
+            "member_count": 8,
+            "members_sample": [
+              "Unihan_DictionaryIndices.txt",
+              "Unihan_DictionaryLikeData.txt",
+              "Unihan_IRGSources.txt",
+              "Unihan_NumericValues.txt",
+              "Unihan_OtherMappings.txt",
+              "Unihan_RadicalStrokeCounts.txt",
+              "Unihan_Readings.txt",
+              "Unihan_Variants.txt"
+            ],
+            "bad_member": null
+          },
+          "status": "AVAILABLE"
+        },
+        {
+          "relative_path": "knowledge/unicode_rsindex.json",
+          "exists": true,
+          "role": "supporting_reference",
+          "size_bytes": 528736,
+          "sha256": "7ba3b114e97dc1ce7d8e59b26e6344a72849a30d72b0b6af702c4be446247ebf",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 5,
+            "top_keys_sample": [
+              "source",
+              "name",
+              "cjk_codepoints",
+              "range",
+              "codepoints"
+            ]
+          },
+          "status": "AVAILABLE"
+        }
+      ],
+      "supporting_sources": [
+        {
+          "relative_path": "knowledge/Unihan.zip",
+          "exists": true,
+          "role": "supporting_reference",
+          "size_bytes": 8454996,
+          "sha256": "bc8f4cc3a9a0ece727fbce66171a11d7359ef8e52140690e24c7311f8189919c",
+          "archive": {
+            "status": "FAIL",
+            "error": "File is not a zip file"
+          },
+          "status": "EXCLUDE_OR_REPLACE"
+        },
+        {
+          "relative_path": "knowledge/Unihan_RadicalStrokeCounts.txt",
+          "exists": true,
+          "role": "supporting_reference",
+          "size_bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": {
+            "utf8_status": "PASS",
+            "line_count": 0,
+            "char_count": 0,
+            "image_reference_count": 0,
+            "contains_crlf": false,
+            "contains_bom": false
+          },
+          "status": "EMPTY"
+        },
+        {
+          "relative_path": "knowledge/st_mapping.json",
+          "exists": true,
+          "role": "supporting_reference",
+          "size_bytes": 147337,
+          "sha256": "05e2e695825aab87e2de1bd2479490944607adf764a6825878dfc7f467e4b985",
+          "json": {
+            "parse_status": "PASS",
+            "top_type": "dict",
+            "top_count": 6,
+            "top_keys_sample": [
+              "source",
+              "name",
+              "st_count",
+              "ts_count",
+              "st",
+              "ts"
+            ]
+          },
+          "status": "AVAILABLE"
+        }
+      ]
+    }
+  ],
+  "recommended_next_stage": "design_character_evidence_schema_and_review_status_columns"
+}
