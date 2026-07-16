@@ -1,0 +1,372 @@
+{
+  "schema_version": "1.0",
+  "manifest_type": "cnbe_data_asset_manifest",
+  "repository": "zairkliu/CNBE-32-Chinese-Native-Binary-Encoding",
+  "scope": "data/",
+  "mode": "read_only_manifest",
+  "governance_tracks": {
+    "test": "test/legacy-ai-encoding-baseline",
+    "release": "release/standards-agent-baseline"
+  },
+  "authority_boundary": {
+    "legacy_data_status": "test_baseline_until_row_level_release_gates_pass",
+    "national_standard_rule": "GB/GF/GG and related official standards are primary for standard-required fields",
+    "agent_standard_rule": "Agent mappings are project outputs and must not be labeled as national-standard outputs without direct evidence",
+    "cross_reference_rule": "Dictionary, encyclopedia, and historical references can support review but do not replace national-standard evidence"
+  },
+  "summary": {
+    "tracked_data_files": 22,
+    "workbook_paths": 4,
+    "docx_paths": 5,
+    "csv_paths": 4,
+    "json_paths_at_data_root": 4,
+    "source_manifest_paths": 3,
+    "sqlite_paths": 1,
+    "compressed_paths": 2,
+    "invalid_or_placeholder_paths": 1
+  },
+  "classification_vocabulary": [
+    "legacy_test_baseline",
+    "runtime_package_data",
+    "standards_evidence_manifest",
+    "generated_or_derived_artifact",
+    "release_reconstruction_candidate",
+    "external_reference_manifest",
+    "invalid_or_placeholder_asset"
+  ],
+  "assets": [
+    {
+      "path": "data/CNBE-32_v3_全量验证实验白皮书.docx",
+      "size_bytes": 41692,
+      "sha256": "1087ee073f2cd612abc7e72cd563e4c74d2c14e4b336ce3bd124ce6147234c24",
+      "file_type": "Microsoft OOXML",
+      "classes": [
+        "legacy_test_baseline",
+        "generated_or_derived_artifact"
+      ],
+      "release_role": "historical_report_only",
+      "move_gate": "archive_policy_required"
+    },
+    {
+      "path": "data/CNBE-32_技术白皮书_发布版.docx",
+      "size_bytes": 45423,
+      "sha256": "180a7bb4ae4d40e3bb950d1951177c6f2c148afe9932f5048c14ae3e403302ec",
+      "file_type": "Microsoft Word 2007+",
+      "classes": [
+        "legacy_test_baseline",
+        "generated_or_derived_artifact"
+      ],
+      "release_role": "historical_report_only",
+      "move_gate": "archive_policy_required"
+    },
+    {
+      "path": "data/CNBE_White_Paper_v3_fixed_GB.docx",
+      "size_bytes": 1591126,
+      "sha256": "ed6bd3f506dca02a44879315f3b8f407306ac88aae961d73890e76b61e60b7be",
+      "file_type": "Microsoft OOXML",
+      "classes": [
+        "legacy_test_baseline",
+        "generated_or_derived_artifact"
+      ],
+      "release_role": "historical_report_only",
+      "move_gate": "archive_policy_required"
+    },
+    {
+      "path": "data/CNBE_大规模验证实验报告.docx",
+      "size_bytes": 38218,
+      "sha256": "ac893597cd0579a752d74994164aa360309efdcf130f9de64c735d9da51efb4c",
+      "file_type": "Microsoft OOXML",
+      "classes": [
+        "legacy_test_baseline",
+        "generated_or_derived_artifact"
+      ],
+      "release_role": "historical_report_only",
+      "move_gate": "archive_policy_required"
+    },
+    {
+      "path": "data/CNBE_编码目录_修复完整版.xlsx",
+      "size_bytes": 2,
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "file_type": "ASCII text with CRLF line terminators",
+      "classes": [
+        "invalid_or_placeholder_asset"
+      ],
+      "observed_shape": "not_a_zip_file",
+      "release_role": "do_not_use_as_workbook_evidence",
+      "move_gate": "cleanup_decision_required"
+    },
+    {
+      "path": "data/CNBE_编码目录_修复版_v3.xlsx",
+      "size_bytes": 6241787,
+      "sha256": "d9e24432b9ef3bb20458179258a0371ccf7e699d02ff8b00b59c615ba2aaee84",
+      "file_type": "Microsoft Excel 2007+",
+      "classes": [
+        "legacy_test_baseline",
+        "release_reconstruction_candidate"
+      ],
+      "observed_shape": {
+        "CNBE完整编码表": "A1:N97688",
+        "GB 18030-2022标准对比": "A1:F50"
+      },
+      "release_role": "candidate_input_after_schema_extraction",
+      "move_gate": "data_manifest_and_reconstruction_plan_required"
+    },
+    {
+      "path": "data/CNBE_编码目录_修复版_v3_完整统计报告.docx",
+      "size_bytes": 42410,
+      "sha256": "8f1629c0f96a64eb0f6873008d9b960c3cc861ef9165fe8b53f306ec953cbe34",
+      "file_type": "Microsoft OOXML",
+      "classes": [
+        "legacy_test_baseline",
+        "generated_or_derived_artifact"
+      ],
+      "release_role": "historical_report_only",
+      "move_gate": "archive_policy_required"
+    },
+    {
+      "path": "data/CNBE_编码目录_修复版_v4.xlsx",
+      "size_bytes": 10677086,
+      "sha256": "9c2be323ccccd774187808008cdbe19cac02a80e8f2c205b49bd9d110327d86f",
+      "file_type": "Microsoft Excel 2007+",
+      "classes": [
+        "legacy_test_baseline",
+        "release_reconstruction_candidate"
+      ],
+      "observed_shape": {
+        "CNBE完整编码表v4": "A1:P97687"
+      },
+      "release_role": "candidate_input_after_schema_extraction",
+      "move_gate": "data_manifest_and_reconstruction_plan_required"
+    },
+    {
+      "path": "data/CNBE_编码目录_修复版_v4_fixed.xlsx",
+      "size_bytes": 8534743,
+      "sha256": "08ea44768f3e1e1f14e4bbe0e2f1689f3b00676f0fab198b44453f5984271304",
+      "file_type": "Microsoft Excel 2007+",
+      "classes": [
+        "legacy_test_baseline",
+        "release_reconstruction_candidate"
+      ],
+      "observed_shape": {
+        "CNBE完整编码表v4_fixed": "A1:Q97687"
+      },
+      "release_role": "likely_latest_legacy_candidate_after_schema_extraction",
+      "move_gate": "data_manifest_and_reconstruction_plan_required"
+    },
+    {
+      "path": "data/benchmark_results.json",
+      "size_bytes": 151,
+      "sha256": "c447fe007a18d828046d7290e62999041ae2084ab23d004b449cc77c13c2aabe",
+      "file_type": "JSON data",
+      "classes": [
+        "generated_or_derived_artifact",
+        "legacy_test_baseline"
+      ],
+      "observed_shape": "dict keys=lookup_speed_us,stroke_correlation",
+      "release_role": "historical_experiment_output",
+      "move_gate": "archive_policy_required"
+    },
+    {
+      "path": "data/cnbe32.db",
+      "size_bytes": 1654784,
+      "sha256": "9bea5a8bcec1c85cf7f51f827964b2f18dd904d1db349447ae3b97892e3a6740",
+      "file_type": "SQLite 3.x database",
+      "classes": [
+        "runtime_package_data",
+        "legacy_test_baseline",
+        "release_reconstruction_candidate"
+      ],
+      "observed_shape": {
+        "tables": {
+          "cnbe32": 20902
+        }
+      },
+      "release_role": "legacy_runtime_database_snapshot",
+      "move_gate": "database_reconstruction_authorization_required"
+    },
+    {
+      "path": "data/cnbe32.json",
+      "size_bytes": 4160527,
+      "sha256": "f8bd551839a64868e7d42fbbc99d4d958459bf48a88211c3b9cbd40512c2fb75",
+      "file_type": "Unicode text, UTF-8 text",
+      "classes": [
+        "legacy_test_baseline",
+        "release_reconstruction_candidate",
+        "generated_or_derived_artifact"
+      ],
+      "observed_shape": "dict keys=metadata,characters",
+      "release_role": "legacy_json_snapshot_for_comparison",
+      "move_gate": "row_level_agent_audit_required"
+    },
+    {
+      "path": "data/cnbe_catalog_fixed.csv.gz",
+      "size_bytes": 802725,
+      "sha256": "00a47b28707fe8c2f8eed0f3b01fec44305b4d59e61a58cb20566b6bc5819839",
+      "file_type": "gzip compressed CSV",
+      "classes": [
+        "legacy_test_baseline",
+        "generated_or_derived_artifact",
+        "release_reconstruction_candidate"
+      ],
+      "observed_shape": "original file cnbe_catalog_fixed.csv, original size modulo 2^32 4926072",
+      "release_role": "derived_legacy_catalog",
+      "move_gate": "controlled_decompression_and_schema_review_required"
+    },
+    {
+      "path": "data/cnbe_catalog_fixed.db.gz",
+      "size_bytes": 1425253,
+      "sha256": "397b64b0451d384c50116d79c9e17059e7cda52b0fcb5e3b200f3799c53bdf0e",
+      "file_type": "gzip compressed SQLite database",
+      "classes": [
+        "legacy_test_baseline",
+        "generated_or_derived_artifact",
+        "release_reconstruction_candidate"
+      ],
+      "observed_shape": "original file cnbe_catalog_fixed.db, original size modulo 2^32 5349376",
+      "release_role": "derived_legacy_database",
+      "move_gate": "controlled_decompression_and_schema_review_required"
+    },
+    {
+      "path": "data/ext_db.csv",
+      "size_bytes": 78,
+      "sha256": "4040def3dc79ee39c1cdb0a8e373b88a0f974a8c48a030097d5ea5b11a95100e",
+      "file_type": "CSV text",
+      "classes": [
+        "legacy_test_baseline",
+        "runtime_package_data",
+        "release_reconstruction_candidate"
+      ],
+      "observed_shape": "3 rows; columns unicode,hanzi,ext_flags,sub_type",
+      "release_role": "legacy_lookup_seed",
+      "move_gate": "standards_rebuild_required"
+    },
+    {
+      "path": "data/radix_table.csv",
+      "size_bytes": 113,
+      "sha256": "ff2570c46c2f148ff567ccceda79b38b4f9830844062b5dd84c1e79e74890d59",
+      "file_type": "CSV text",
+      "classes": [
+        "legacy_test_baseline",
+        "runtime_package_data",
+        "release_reconstruction_candidate"
+      ],
+      "observed_shape": "5 rows; columns radix_id,unicode,hanzi,stroke_count",
+      "release_role": "legacy_lookup_seed",
+      "move_gate": "radical_code_gate_required"
+    },
+    {
+      "path": "data/sources/cnbe-research-local.json",
+      "size_bytes": 8739,
+      "sha256": "c988739046437aa865ffa4740ac9b29506032fc24a02de0fe7b24ce26d91be13",
+      "file_type": "JSON data",
+      "classes": [
+        "standards_evidence_manifest",
+        "external_reference_manifest"
+      ],
+      "observed_shape": "dict keys=schema_version,source_name,source_root,created_for,repository_policy,authority_boundary,sources,directories",
+      "release_role": "source_routing_manifest",
+      "move_gate": "keep_with_source_audit_tools"
+    },
+    {
+      "path": "data/sources/hanzi-standard-learning.json",
+      "size_bytes": 15326,
+      "sha256": "cc66d8b18777843c7509b1def9caa38a5c438da34244166374a6fb787d9ddb74",
+      "file_type": "JSON data",
+      "classes": [
+        "standards_evidence_manifest",
+        "external_reference_manifest"
+      ],
+      "observed_shape": "dict keys=schema_version,generated_at_utc,terms,allowed_structures,special_structure,national_standards,gates",
+      "release_role": "standard_learning_manifest",
+      "move_gate": "keep_with_source_audit_tools"
+    },
+    {
+      "path": "data/sources/unihan-17.0.0.json",
+      "size_bytes": 1854,
+      "sha256": "c1cbb7ec1519ea1981783937acbf970ca440e3dce55d8e0069f8110e487078e6",
+      "file_type": "JSON data",
+      "classes": [
+        "standards_evidence_manifest",
+        "external_reference_manifest"
+      ],
+      "observed_shape": "dict keys=schema_version,source_name,unicode_version,file_name,official_url,allowed_hosts,size_bytes,sha256",
+      "release_role": "unicode_source_manifest",
+      "move_gate": "keep_with_source_audit_tools"
+    },
+    {
+      "path": "data/stroke_db.csv",
+      "size_bytes": 118,
+      "sha256": "c5871d005f7a06c1549a18ef03659e2cd4c3edf705145c62d2aedc483ab554c3",
+      "file_type": "CSV text",
+      "classes": [
+        "legacy_test_baseline",
+        "runtime_package_data",
+        "release_reconstruction_candidate"
+      ],
+      "observed_shape": "7 rows; columns unicode,hanzi,stroke_count",
+      "release_role": "legacy_lookup_seed",
+      "move_gate": "stroke_evidence_gate_required"
+    },
+    {
+      "path": "data/struct_db.csv",
+      "size_bytes": 149,
+      "sha256": "3d2c113025ab50a072a2fba104032e82f18b5d82874bd759bf09d181fb0cba9e",
+      "file_type": "CSV text",
+      "classes": [
+        "legacy_test_baseline",
+        "runtime_package_data",
+        "release_reconstruction_candidate"
+      ],
+      "observed_shape": "5 rows; columns unicode,hanzi,struct_id,struct_name",
+      "release_role": "legacy_lookup_seed",
+      "move_gate": "structure_localization_gate_required"
+    },
+    {
+      "path": "data/v3_experiment_results.json",
+      "size_bytes": 143,
+      "sha256": "483b582616ed3f3f5a7e6aff0e07005b22815c6692c1f5dc268c6093638c0940",
+      "file_type": "JSON data",
+      "classes": [
+        "generated_or_derived_artifact",
+        "legacy_test_baseline"
+      ],
+      "observed_shape": "dict keys=E1,E3_5shot,E3_10shot,E3_20shot",
+      "release_role": "historical_experiment_output",
+      "move_gate": "archive_policy_required"
+    }
+  ],
+  "release_reconstruction_candidate_paths": [
+    "data/CNBE_编码目录_修复版_v4_fixed.xlsx",
+    "data/CNBE_编码目录_修复版_v4.xlsx",
+    "data/CNBE_编码目录_修复版_v3.xlsx",
+    "data/cnbe32.json",
+    "data/cnbe32.db",
+    "data/cnbe_catalog_fixed.csv.gz",
+    "data/cnbe_catalog_fixed.db.gz",
+    "data/sources/hanzi-standard-learning.json",
+    "data/sources/cnbe-research-local.json",
+    "data/sources/unihan-17.0.0.json"
+  ],
+  "required_next_gates": [
+    "confirm_docx_archive_policy",
+    "confirm_workbook_tracking_policy",
+    "decide_placeholder_xlsx_handling",
+    "build_v3_v4_v4_fixed_schema_extractors",
+    "compare_workbook_row_counts_and_columns",
+    "choose_first_reconstruction_input",
+    "run_unicode_identity_checks",
+    "run_standards_evidence_and_gf0017_gates",
+    "produce_checkpointed_reconstruction_reports"
+  ],
+  "non_goals": [
+    "no_data_file_changes",
+    "no_runtime_database_changes",
+    "no_encoding_row_changes",
+    "no_file_moves",
+    "no_file_deletions",
+    "no_tag",
+    "no_release",
+    "no_pypi"
+  ]
+}
+
