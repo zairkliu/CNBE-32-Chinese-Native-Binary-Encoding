@@ -1,0 +1,675 @@
+{
+  "allowed_agent_structures": {
+    "上三包": 9,
+    "上下": 1,
+    "上中下": 2,
+    "下三包": 10,
+    "全包围": 11,
+    "右上包": 6,
+    "左三包": 7,
+    "左上包": 5,
+    "左下包": 8,
+    "左中右": 4,
+    "左右": 3,
+    "独体字": 0,
+    "镶嵌": 12
+  },
+  "mapping": [
+    {
+      "agent_struct_type": 0,
+      "agent_structure": "独体字",
+      "confidence": 1.0,
+      "examples": [
+        {
+          "agent_struct_type": 0,
+          "agent_structure": "独体字",
+          "char": "一",
+          "legacy_struct_type": 0,
+          "unicode": "U+4E00"
+        },
+        {
+          "agent_struct_type": 0,
+          "agent_structure": "独体字",
+          "char": "不",
+          "legacy_struct_type": 0,
+          "unicode": "U+4E0D"
+        },
+        {
+          "agent_struct_type": 0,
+          "agent_structure": "独体字",
+          "char": "业",
+          "legacy_struct_type": 0,
+          "unicode": "U+4E1A"
+        },
+        {
+          "agent_struct_type": 0,
+          "agent_structure": "独体字",
+          "char": "丧",
+          "legacy_struct_type": 0,
+          "unicode": "U+4E27"
+        },
+        {
+          "agent_struct_type": 0,
+          "agent_structure": "独体字",
+          "char": "临",
+          "legacy_struct_type": 0,
+          "unicode": "U+4E34"
+        }
+      ],
+      "legacy_struct_type": 0,
+      "legacy_structure": "single",
+      "row_count": 1608,
+      "rule": "direct semantic equivalent",
+      "standard_level": "agent_standard_mapping_not_national_standard"
+    },
+    {
+      "agent_struct_type": 1,
+      "agent_structure": "上下",
+      "confidence": 1.0,
+      "examples": [
+        {
+          "agent_struct_type": 1,
+          "agent_structure": "上下",
+          "char": "七",
+          "legacy_struct_type": 3,
+          "unicode": "U+4E03"
+        },
+        {
+          "agent_struct_type": 1,
+          "agent_structure": "上下",
+          "char": "丐",
+          "legacy_struct_type": 3,
+          "unicode": "U+4E10"
+        },
+        {
+          "agent_struct_type": 1,
+          "agent_structure": "上下",
+          "char": "丝",
+          "legacy_struct_type": 3,
+          "unicode": "U+4E1D"
+        },
+        {
+          "agent_struct_type": 1,
+          "agent_structure": "上下",
+          "char": "个",
+          "legacy_struct_type": 3,
+          "unicode": "U+4E2A"
+        },
+        {
+          "agent_struct_type": 1,
+          "agent_structure": "上下",
+          "char": "丷",
+          "legacy_struct_type": 3,
+          "unicode": "U+4E37"
+        }
+      ],
+      "legacy_struct_type": 3,
+      "legacy_structure": "up-down",
+      "row_count": 1608,
+      "rule": "legacy English label maps to allowed Chinese structure",
+      "standard_level": "agent_standard_mapping_not_national_standard"
+    },
+    {
+      "agent_struct_type": 2,
+      "agent_structure": "上中下",
+      "confidence": 1.0,
+      "examples": [
+        {
+          "agent_struct_type": 2,
+          "agent_structure": "上中下",
+          "char": "丄",
+          "legacy_struct_type": 4,
+          "unicode": "U+4E04"
+        },
+        {
+          "agent_struct_type": 2,
+          "agent_structure": "上中下",
+          "char": "丑",
+          "legacy_struct_type": 4,
+          "unicode": "U+4E11"
+        },
+        {
+          "agent_struct_type": 2,
+          "agent_structure": "上中下",
+          "char": "丞",
+          "legacy_struct_type": 4,
+          "unicode": "U+4E1E"
+        },
+        {
+          "agent_struct_type": 2,
+          "agent_structure": "上中下",
+          "char": "丫",
+          "legacy_struct_type": 4,
+          "unicode": "U+4E2B"
+        },
+        {
+          "agent_struct_type": 2,
+          "agent_structure": "上中下",
+          "char": "丸",
+          "legacy_struct_type": 4,
+          "unicode": "U+4E38"
+        }
+      ],
+      "legacy_struct_type": 4,
+      "legacy_structure": "up-mid-down",
+      "row_count": 1608,
+      "rule": "legacy English label maps to allowed Chinese structure",
+      "standard_level": "agent_standard_mapping_not_national_standard"
+    },
+    {
+      "agent_struct_type": 3,
+      "agent_structure": "左右",
+      "confidence": 1.0,
+      "examples": [
+        {
+          "agent_struct_type": 3,
+          "agent_structure": "左右",
+          "char": "丁",
+          "legacy_struct_type": 1,
+          "unicode": "U+4E01"
+        },
+        {
+          "agent_struct_type": 3,
+          "agent_structure": "左右",
+          "char": "与",
+          "legacy_struct_type": 1,
+          "unicode": "U+4E0E"
+        },
+        {
+          "agent_struct_type": 3,
+          "agent_structure": "左右",
+          "char": "丛",
+          "legacy_struct_type": 1,
+          "unicode": "U+4E1B"
+        },
+        {
+          "agent_struct_type": 3,
+          "agent_structure": "左右",
+          "char": "丨",
+          "legacy_struct_type": 1,
+          "unicode": "U+4E28"
+        },
+        {
+          "agent_struct_type": 3,
+          "agent_structure": "左右",
+          "char": "丵",
+          "legacy_struct_type": 1,
+          "unicode": "U+4E35"
+        }
+      ],
+      "legacy_struct_type": 1,
+      "legacy_structure": "left-right",
+      "row_count": 1608,
+      "rule": "legacy English label maps to allowed Chinese structure",
+      "standard_level": "agent_standard_mapping_not_national_standard"
+    },
+    {
+      "agent_struct_type": 4,
+      "agent_structure": "左中右",
+      "confidence": 1.0,
+      "examples": [
+        {
+          "agent_struct_type": 4,
+          "agent_structure": "左中右",
+          "char": "丂",
+          "legacy_struct_type": 2,
+          "unicode": "U+4E02"
+        },
+        {
+          "agent_struct_type": 4,
+          "agent_structure": "左中右",
+          "char": "丏",
+          "legacy_struct_type": 2,
+          "unicode": "U+4E0F"
+        },
+        {
+          "agent_struct_type": 4,
+          "agent_structure": "左中右",
+          "char": "东",
+          "legacy_struct_type": 2,
+          "unicode": "U+4E1C"
+        },
+        {
+          "agent_struct_type": 4,
+          "agent_structure": "左中右",
+          "char": "丩",
+          "legacy_struct_type": 2,
+          "unicode": "U+4E29"
+        },
+        {
+          "agent_struct_type": 4,
+          "agent_structure": "左中右",
+          "char": "丶",
+          "legacy_struct_type": 2,
+          "unicode": "U+4E36"
+        }
+      ],
+      "legacy_struct_type": 2,
+      "legacy_structure": "left-mid-right",
+      "row_count": 1608,
+      "rule": "legacy English label maps to allowed Chinese structure",
+      "standard_level": "agent_standard_mapping_not_national_standard"
+    },
+    {
+      "agent_struct_type": 5,
+      "agent_structure": "左上包",
+      "confidence": 0.85,
+      "examples": [
+        {
+          "agent_struct_type": 5,
+          "agent_structure": "左上包",
+          "char": "丅",
+          "legacy_struct_type": 5,
+          "unicode": "U+4E05"
+        },
+        {
+          "agent_struct_type": 5,
+          "agent_structure": "左上包",
+          "char": "丒",
+          "legacy_struct_type": 5,
+          "unicode": "U+4E12"
+        },
+        {
+          "agent_struct_type": 5,
+          "agent_structure": "左上包",
+          "char": "丟",
+          "legacy_struct_type": 5,
+          "unicode": "U+4E1F"
+        },
+        {
+          "agent_struct_type": 5,
+          "agent_structure": "左上包",
+          "char": "丬",
+          "legacy_struct_type": 5,
+          "unicode": "U+4E2C"
+        },
+        {
+          "agent_struct_type": 5,
+          "agent_structure": "左上包",
+          "char": "丹",
+          "legacy_struct_type": 5,
+          "unicode": "U+4E39"
+        }
+      ],
+      "legacy_struct_type": 5,
+      "legacy_structure": "top-left-wrap",
+      "row_count": 1608,
+      "rule": "legacy directional label requires project-level localization",
+      "standard_level": "agent_standard_mapping_not_national_standard"
+    },
+    {
+      "agent_struct_type": 6,
+      "agent_structure": "右上包",
+      "confidence": 0.85,
+      "examples": [
+        {
+          "agent_struct_type": 6,
+          "agent_structure": "右上包",
+          "char": "丆",
+          "legacy_struct_type": 6,
+          "unicode": "U+4E06"
+        },
+        {
+          "agent_struct_type": 6,
+          "agent_structure": "右上包",
+          "char": "专",
+          "legacy_struct_type": 6,
+          "unicode": "U+4E13"
+        },
+        {
+          "agent_struct_type": 6,
+          "agent_structure": "右上包",
+          "char": "丠",
+          "legacy_struct_type": 6,
+          "unicode": "U+4E20"
+        },
+        {
+          "agent_struct_type": 6,
+          "agent_structure": "右上包",
+          "char": "中",
+          "legacy_struct_type": 6,
+          "unicode": "U+4E2D"
+        },
+        {
+          "agent_struct_type": 6,
+          "agent_structure": "右上包",
+          "char": "为",
+          "legacy_struct_type": 6,
+          "unicode": "U+4E3A"
+        }
+      ],
+      "legacy_struct_type": 6,
+      "legacy_structure": "top-right-wrap",
+      "row_count": 1608,
+      "rule": "legacy directional label requires project-level localization",
+      "standard_level": "agent_standard_mapping_not_national_standard"
+    },
+    {
+      "agent_struct_type": 7,
+      "agent_structure": "左三包",
+      "confidence": 0.75,
+      "examples": [
+        {
+          "agent_struct_type": 7,
+          "agent_structure": "左三包",
+          "char": "上",
+          "legacy_struct_type": 10,
+          "unicode": "U+4E0A"
+        },
+        {
+          "agent_struct_type": 7,
+          "agent_structure": "左三包",
+          "char": "丗",
+          "legacy_struct_type": 10,
+          "unicode": "U+4E17"
+        },
+        {
+          "agent_struct_type": 7,
+          "agent_structure": "左三包",
+          "char": "两",
+          "legacy_struct_type": 10,
+          "unicode": "U+4E24"
+        },
+        {
+          "agent_struct_type": 7,
+          "agent_structure": "左三包",
+          "char": "丱",
+          "legacy_struct_type": 10,
+          "unicode": "U+4E31"
+        },
+        {
+          "agent_struct_type": 7,
+          "agent_structure": "左三包",
+          "char": "举",
+          "legacy_struct_type": 10,
+          "unicode": "U+4E3E"
+        }
+      ],
+      "legacy_struct_type": 10,
+      "legacy_structure": "left-wrap",
+      "row_count": 1608,
+      "rule": "legacy broad wrap label maps to closest allowed three-side structure",
+      "standard_level": "agent_standard_mapping_not_national_standard"
+    },
+    {
+      "agent_struct_type": 8,
+      "agent_structure": "左下包",
+      "confidence": 0.75,
+      "examples": [
+        {
+          "agent_struct_type": 8,
+          "agent_structure": "左下包",
+          "char": "万",
+          "legacy_struct_type": 7,
+          "unicode": "U+4E07"
+        },
+        {
+          "agent_struct_type": 8,
+          "agent_structure": "左下包",
+          "char": "且",
+          "legacy_struct_type": 7,
+          "unicode": "U+4E14"
+        },
+        {
+          "agent_struct_type": 8,
+          "agent_structure": "左下包",
+          "char": "両",
+          "legacy_struct_type": 7,
+          "unicode": "U+4E21"
+        },
+        {
+          "agent_struct_type": 8,
+          "agent_structure": "左下包",
+          "char": "丮",
+          "legacy_struct_type": 7,
+          "unicode": "U+4E2E"
+        },
+        {
+          "agent_struct_type": 8,
+          "agent_structure": "左下包",
+          "char": "主",
+          "legacy_struct_type": 7,
+          "unicode": "U+4E3B"
+        }
+      ],
+      "legacy_struct_type": 7,
+      "legacy_structure": "bottom-left-wrap",
+      "row_count": 1608,
+      "rule": "legacy directional label maps to closest allowed lower-left structure",
+      "standard_level": "agent_standard_mapping_not_national_standard"
+    },
+    {
+      "agent_struct_type": 9,
+      "agent_structure": "上三包",
+      "confidence": 0.75,
+      "examples": [
+        {
+          "agent_struct_type": 9,
+          "agent_structure": "上三包",
+          "char": "丈",
+          "legacy_struct_type": 8,
+          "unicode": "U+4E08"
+        },
+        {
+          "agent_struct_type": 9,
+          "agent_structure": "上三包",
+          "char": "丕",
+          "legacy_struct_type": 8,
+          "unicode": "U+4E15"
+        },
+        {
+          "agent_struct_type": 9,
+          "agent_structure": "上三包",
+          "char": "丢",
+          "legacy_struct_type": 8,
+          "unicode": "U+4E22"
+        },
+        {
+          "agent_struct_type": 9,
+          "agent_structure": "上三包",
+          "char": "丯",
+          "legacy_struct_type": 8,
+          "unicode": "U+4E2F"
+        },
+        {
+          "agent_struct_type": 9,
+          "agent_structure": "上三包",
+          "char": "丼",
+          "legacy_struct_type": 8,
+          "unicode": "U+4E3C"
+        }
+      ],
+      "legacy_struct_type": 8,
+      "legacy_structure": "top-wrap",
+      "row_count": 1608,
+      "rule": "legacy broad wrap label maps to closest allowed three-side structure",
+      "standard_level": "agent_standard_mapping_not_national_standard"
+    },
+    {
+      "agent_struct_type": 10,
+      "agent_structure": "下三包",
+      "confidence": 0.75,
+      "examples": [
+        {
+          "agent_struct_type": 10,
+          "agent_structure": "下三包",
+          "char": "三",
+          "legacy_struct_type": 9,
+          "unicode": "U+4E09"
+        },
+        {
+          "agent_struct_type": 10,
+          "agent_structure": "下三包",
+          "char": "世",
+          "legacy_struct_type": 9,
+          "unicode": "U+4E16"
+        },
+        {
+          "agent_struct_type": 10,
+          "agent_structure": "下三包",
+          "char": "丣",
+          "legacy_struct_type": 9,
+          "unicode": "U+4E23"
+        },
+        {
+          "agent_struct_type": 10,
+          "agent_structure": "下三包",
+          "char": "丰",
+          "legacy_struct_type": 9,
+          "unicode": "U+4E30"
+        },
+        {
+          "agent_struct_type": 10,
+          "agent_structure": "下三包",
+          "char": "丽",
+          "legacy_struct_type": 9,
+          "unicode": "U+4E3D"
+        }
+      ],
+      "legacy_struct_type": 9,
+      "legacy_structure": "bottom-wrap",
+      "row_count": 1608,
+      "rule": "legacy broad wrap label maps to closest allowed three-side structure",
+      "standard_level": "agent_standard_mapping_not_national_standard"
+    },
+    {
+      "agent_struct_type": 11,
+      "agent_structure": "全包围",
+      "confidence": 1.0,
+      "examples": [
+        {
+          "agent_struct_type": 11,
+          "agent_structure": "全包围",
+          "char": "下",
+          "legacy_struct_type": 11,
+          "unicode": "U+4E0B"
+        },
+        {
+          "agent_struct_type": 11,
+          "agent_structure": "全包围",
+          "char": "丘",
+          "legacy_struct_type": 11,
+          "unicode": "U+4E18"
+        },
+        {
+          "agent_struct_type": 11,
+          "agent_structure": "全包围",
+          "char": "严",
+          "legacy_struct_type": 11,
+          "unicode": "U+4E25"
+        },
+        {
+          "agent_struct_type": 11,
+          "agent_structure": "全包围",
+          "char": "串",
+          "legacy_struct_type": 11,
+          "unicode": "U+4E32"
+        },
+        {
+          "agent_struct_type": 11,
+          "agent_structure": "全包围",
+          "char": "丿",
+          "legacy_struct_type": 11,
+          "unicode": "U+4E3F"
+        }
+      ],
+      "legacy_struct_type": 11,
+      "legacy_structure": "full-wrap",
+      "row_count": 1607,
+      "rule": "direct semantic equivalent",
+      "standard_level": "agent_standard_mapping_not_national_standard"
+    },
+    {
+      "agent_struct_type": 12,
+      "agent_structure": "镶嵌",
+      "confidence": 0.65,
+      "examples": [
+        {
+          "agent_struct_type": 12,
+          "agent_structure": "镶嵌",
+          "char": "丌",
+          "legacy_struct_type": 12,
+          "unicode": "U+4E0C"
+        },
+        {
+          "agent_struct_type": 12,
+          "agent_structure": "镶嵌",
+          "char": "丙",
+          "legacy_struct_type": 12,
+          "unicode": "U+4E19"
+        },
+        {
+          "agent_struct_type": 12,
+          "agent_structure": "镶嵌",
+          "char": "並",
+          "legacy_struct_type": 12,
+          "unicode": "U+4E26"
+        },
+        {
+          "agent_struct_type": 12,
+          "agent_structure": "镶嵌",
+          "char": "丳",
+          "legacy_struct_type": 12,
+          "unicode": "U+4E33"
+        },
+        {
+          "agent_struct_type": 12,
+          "agent_structure": "镶嵌",
+          "char": "乀",
+          "legacy_struct_type": 12,
+          "unicode": "U+4E40"
+        }
+      ],
+      "legacy_struct_type": 12,
+      "legacy_structure": "triangle",
+      "row_count": 1607,
+      "rule": "legacy nonstandard shape label requires Agent-level project mapping",
+      "standard_level": "agent_standard_mapping_not_national_standard"
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-07-16T13:58:27.322640+00:00",
+    "no_write": true,
+    "purpose": "legacy English structure label localization into Agent standard Chinese structure labels",
+    "row_count": 20902,
+    "source": "data/cnbe32.json"
+  },
+  "missing_label_samples": [],
+  "summary": {
+    "agent_structure_type_counts": {
+      "上三包:9": 1608,
+      "上下:1": 1608,
+      "上中下:2": 1608,
+      "下三包:10": 1608,
+      "全包围:11": 1607,
+      "右上包:6": 1608,
+      "左三包:7": 1608,
+      "左上包:5": 1608,
+      "左下包:8": 1608,
+      "左中右:4": 1608,
+      "左右:3": 1608,
+      "独体字:0": 1608,
+      "镶嵌:12": 1607
+    },
+    "all_legacy_labels_mapped": true,
+    "legacy_label_count": 13,
+    "missing_label_rows": 0,
+    "raw_structure_counts": {
+      "bottom-left-wrap": 1608,
+      "bottom-wrap": 1608,
+      "full-wrap": 1607,
+      "left-mid-right": 1608,
+      "left-right": 1608,
+      "left-wrap": 1608,
+      "single": 1608,
+      "top-left-wrap": 1608,
+      "top-right-wrap": 1608,
+      "top-wrap": 1608,
+      "triangle": 1607,
+      "up-down": 1608,
+      "up-mid-down": 1608
+    },
+    "row_count": 20902,
+    "struct_type_mismatch_after_agent_mapping": 12864
+  }
+}
