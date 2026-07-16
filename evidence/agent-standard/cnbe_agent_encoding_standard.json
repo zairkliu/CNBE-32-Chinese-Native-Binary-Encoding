@@ -1,0 +1,159 @@
+{
+  "authority_layers": {
+    "agent_standard": "Project-level mapping aligned to 8105 rules and accepted by the CNBE Agent gates",
+    "cnbe32": "Compact carrier format; not the source of linguistic authority",
+    "cnbe64_cnbe128": "Extended evidence archive for fields that do not fit CNBE32",
+    "national_standard_baseline": "8105 通用规范汉字表 and cited GF/GB/GG standards"
+  },
+  "candidate_statuses": {
+    "AGENT_STANDARD_MAPPING": "Project standard output aligned to 8105 and passed by Agent gates; not national standard.",
+    "BLOCKER": "Batch must stop before continuing.",
+    "DIRECT_EVIDENCE_CANDIDATE": "Backed by direct or standard-derived evidence.",
+    "EVIDENCE_GAP": "Standard-side evidence is incomplete.",
+    "HUMAN_REVIEW_REQUIRED": "Evidence is ambiguous or conflict-prone.",
+    "SOURCE_GAP": "Required standard source is not confirmed."
+  },
+  "cnbe32_carrier": {
+    "bits_14_4": "group index",
+    "bits_18_15": "structure type",
+    "bits_23_19": "stroke count",
+    "bits_31_24": "radical code",
+    "bits_3_0": "extension flags",
+    "rule": "CNBE32 fields may be proposed only after the evidence and Agent gates pass."
+  },
+  "current_findings": {
+    "interpretation": "Mismatch indicates old struct_type follows legacy ordering, not Agent standard ordering.",
+    "legacy_labels_all_mapped": true,
+    "legacy_rows_scanned": 20902,
+    "legacy_struct_type_mismatch_after_agent_mapping": 12864
+  },
+  "metadata": {
+    "generated_at": "2026-07-16T13:58:27.325003+00:00",
+    "no_write": true,
+    "standard_level": "agent_standard_aligned_to_8105_not_national_standard",
+    "standard_name": "CNBE Hanzi Structure Agent Encoding Standard",
+    "version": "draft-0.1"
+  },
+  "required_order": [
+    "Unicode identity",
+    "8105 or extension scope classification",
+    "source-grade evidence",
+    "Hanzi knowledge schema",
+    "GF0017 50-point audit",
+    "Agent-standard mapping for out-of-scope rows",
+    "CNBE32 dry-run candidate",
+    "roundtrip and batch checkpoint audit"
+  ],
+  "structure_standard": {
+    "allowed_structures": {
+      "上三包": 9,
+      "上下": 1,
+      "上中下": 2,
+      "下三包": 10,
+      "全包围": 11,
+      "右上包": 6,
+      "左三包": 7,
+      "左上包": 5,
+      "左下包": 8,
+      "左中右": 4,
+      "左右": 3,
+      "独体字": 0,
+      "镶嵌": 12
+    },
+    "legacy_localization": {
+      "bottom-left-wrap": {
+        "agent_struct_type": 8,
+        "agent_structure": "左下包",
+        "confidence": 0.75,
+        "standard_level": "agent_standard_mapping_not_national_standard"
+      },
+      "bottom-wrap": {
+        "agent_struct_type": 10,
+        "agent_structure": "下三包",
+        "confidence": 0.75,
+        "standard_level": "agent_standard_mapping_not_national_standard"
+      },
+      "full-wrap": {
+        "agent_struct_type": 11,
+        "agent_structure": "全包围",
+        "confidence": 1.0,
+        "standard_level": "agent_standard_mapping_not_national_standard"
+      },
+      "left-mid-right": {
+        "agent_struct_type": 4,
+        "agent_structure": "左中右",
+        "confidence": 1.0,
+        "standard_level": "agent_standard_mapping_not_national_standard"
+      },
+      "left-right": {
+        "agent_struct_type": 3,
+        "agent_structure": "左右",
+        "confidence": 1.0,
+        "standard_level": "agent_standard_mapping_not_national_standard"
+      },
+      "left-wrap": {
+        "agent_struct_type": 7,
+        "agent_structure": "左三包",
+        "confidence": 0.75,
+        "standard_level": "agent_standard_mapping_not_national_standard"
+      },
+      "single": {
+        "agent_struct_type": 0,
+        "agent_structure": "独体字",
+        "confidence": 1.0,
+        "standard_level": "agent_standard_mapping_not_national_standard"
+      },
+      "top-left-wrap": {
+        "agent_struct_type": 5,
+        "agent_structure": "左上包",
+        "confidence": 0.85,
+        "standard_level": "agent_standard_mapping_not_national_standard"
+      },
+      "top-right-wrap": {
+        "agent_struct_type": 6,
+        "agent_structure": "右上包",
+        "confidence": 0.85,
+        "standard_level": "agent_standard_mapping_not_national_standard"
+      },
+      "top-wrap": {
+        "agent_struct_type": 9,
+        "agent_structure": "上三包",
+        "confidence": 0.75,
+        "standard_level": "agent_standard_mapping_not_national_standard"
+      },
+      "triangle": {
+        "agent_struct_type": 12,
+        "agent_structure": "镶嵌",
+        "confidence": 0.65,
+        "standard_level": "agent_standard_mapping_not_national_standard"
+      },
+      "up-down": {
+        "agent_struct_type": 1,
+        "agent_structure": "上下",
+        "confidence": 1.0,
+        "standard_level": "agent_standard_mapping_not_national_standard"
+      },
+      "up-mid-down": {
+        "agent_struct_type": 2,
+        "agent_structure": "上中下",
+        "confidence": 1.0,
+        "standard_level": "agent_standard_mapping_not_national_standard"
+      }
+    },
+    "not_allowed": [
+      "Use legacy English labels as final output",
+      "Use non-listed structure names as final labels",
+      "Claim Agent localization as national standard"
+    ]
+  },
+  "unicode_identity_rule": {
+    "blocker": "Any char/codepoint mismatch blocks the batch.",
+    "required_fields": [
+      "char",
+      "unicode",
+      "codepoint",
+      "normalization_status",
+      "source_row"
+    ]
+  }
+}

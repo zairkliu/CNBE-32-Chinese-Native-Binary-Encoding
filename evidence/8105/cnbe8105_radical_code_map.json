@@ -1,0 +1,3943 @@
+{
+  "alias_radicals": [
+    {
+      "candidate_rows": 343,
+      "canonical_radical": "水",
+      "code": 85,
+      "radical": "氵",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 321,
+      "canonical_radical": "艸",
+      "code": 140,
+      "radical": "艹",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 248,
+      "canonical_radical": "手",
+      "code": 64,
+      "radical": "扌",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 209,
+      "canonical_radical": "金",
+      "code": 167,
+      "radical": "钅",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 201,
+      "canonical_radical": "人",
+      "code": 9,
+      "radical": "亻",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 133,
+      "canonical_radical": "言",
+      "code": 149,
+      "radical": "讠",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 131,
+      "canonical_radical": "肉",
+      "code": 130,
+      "radical": "⺼",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 131,
+      "canonical_radical": "糸",
+      "code": 120,
+      "radical": "纟",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 125,
+      "canonical_radical": "心",
+      "code": 61,
+      "radical": "忄",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 107,
+      "canonical_radical": "竹",
+      "code": 118,
+      "radical": "⺮",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 96,
+      "canonical_radical": "辵",
+      "code": 162,
+      "radical": "辶",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 72,
+      "canonical_radical": "魚",
+      "code": 195,
+      "radical": "鱼",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 68,
+      "canonical_radical": "犬",
+      "code": 94,
+      "radical": "犭",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 67,
+      "canonical_radical": "鳥",
+      "code": 196,
+      "radical": "鸟",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 59,
+      "canonical_radical": "貝",
+      "code": 154,
+      "radical": "贝",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 51,
+      "canonical_radical": "馬",
+      "code": 187,
+      "radical": "马",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 50,
+      "canonical_radical": "刀",
+      "code": 18,
+      "radical": "刂",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 49,
+      "canonical_radical": "衣",
+      "code": 145,
+      "radical": "衤",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 49,
+      "canonical_radical": "車",
+      "code": 159,
+      "radical": "车",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 44,
+      "canonical_radical": "門",
+      "code": 169,
+      "radical": "门",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 36,
+      "canonical_radical": "食",
+      "code": 184,
+      "radical": "饣",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 35,
+      "canonical_radical": "頁",
+      "code": 181,
+      "radical": "页",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 33,
+      "canonical_radical": "示",
+      "code": 113,
+      "radical": "礻",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 21,
+      "canonical_radical": "攴",
+      "code": 66,
+      "radical": "攵",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 19,
+      "canonical_radical": "火",
+      "code": 86,
+      "radical": "灬",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 15,
+      "canonical_radical": "网",
+      "code": 122,
+      "radical": "罒",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 13,
+      "canonical_radical": "戶",
+      "code": 63,
+      "radical": "户",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 13,
+      "canonical_radical": "見",
+      "code": 147,
+      "radical": "见",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 12,
+      "canonical_radical": "齒",
+      "code": 211,
+      "radical": "齿",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 8,
+      "canonical_radical": "風",
+      "code": 182,
+      "radical": "风",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 6,
+      "canonical_radical": "韋",
+      "code": 178,
+      "radical": "韦",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 6,
+      "canonical_radical": "龍",
+      "code": 212,
+      "radical": "龙",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "小",
+      "code": 42,
+      "radical": "⺌",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "爪",
+      "code": 87,
+      "radical": "爫",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "卜",
+      "code": 25,
+      "radical": "⺊",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "心",
+      "code": 61,
+      "radical": "⺗",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "卩",
+      "code": 26,
+      "radical": "㔾",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "彐",
+      "code": 58,
+      "radical": "彑",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "王",
+      "code": 95,
+      "radical": "玉",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "虍",
+      "code": 141,
+      "radical": "虎",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "西",
+      "code": 146,
+      "radical": "覀",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "网",
+      "code": 122,
+      "radical": "⺳",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "鹵",
+      "code": 197,
+      "radical": "卤",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "水",
+      "code": 85,
+      "radical": "氺",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "老",
+      "code": 125,
+      "radical": "耂",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "麥",
+      "code": 199,
+      "radical": "麦",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "黽",
+      "code": 205,
+      "radical": "黾",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "龜",
+      "code": 213,
+      "radical": "龟",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "冫",
+      "code": 15,
+      "radical": "⺀",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "爿",
+      "code": 90,
+      "radical": "丬",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "巛",
+      "code": 47,
+      "radical": "川",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "黃",
+      "code": 201,
+      "radical": "黄",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "齊",
+      "code": 210,
+      "radical": "齐",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    }
+  ],
+  "blocked_radicals": [
+    {
+      "candidate_rows": 116,
+      "canonical_radical": null,
+      "code": null,
+      "radical": "阝",
+      "reason": "position-sensitive: left 阝 is 阜, right 阝 is 邑; source does not preserve side.",
+      "status": "BLOCKED"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": null,
+      "code": null,
+      "radical": "丷",
+      "reason": "component-like label; no conservative modern radical code assignment in this phase.",
+      "status": "BLOCKED"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": null,
+      "code": null,
+      "radical": "乚",
+      "reason": "stroke/component-like label; no conservative radical assignment in this phase.",
+      "status": "BLOCKED"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": null,
+      "code": null,
+      "radical": "巳",
+      "reason": "ambiguous against 己/已/巳 shape group in this evidence layer.",
+      "status": "BLOCKED"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": null,
+      "code": null,
+      "radical": "民",
+      "reason": "component-like label; not a Kangxi radical main-form in the mapping source.",
+      "status": "BLOCKED"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": null,
+      "code": null,
+      "radical": "乛",
+      "reason": "stroke/component-like label; no conservative radical assignment in this phase.",
+      "status": "BLOCKED"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": null,
+      "code": null,
+      "radical": "兀",
+      "reason": "component-like label; ambiguous against 儿 in this evidence layer.",
+      "status": "BLOCKED"
+    }
+  ],
+  "direct_radicals": [
+    {
+      "candidate_rows": 324,
+      "canonical_radical": "口",
+      "code": 30,
+      "radical": "口",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 290,
+      "canonical_radical": "木",
+      "code": 75,
+      "radical": "木",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 142,
+      "canonical_radical": "虫",
+      "code": 142,
+      "radical": "虫",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 136,
+      "canonical_radical": "土",
+      "code": 32,
+      "radical": "土",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 119,
+      "canonical_radical": "女",
+      "code": 38,
+      "radical": "女",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 93,
+      "canonical_radical": "石",
+      "code": 112,
+      "radical": "石",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 90,
+      "canonical_radical": "疒",
+      "code": 104,
+      "radical": "疒",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 88,
+      "canonical_radical": "火",
+      "code": 86,
+      "radical": "火",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 87,
+      "canonical_radical": "足",
+      "code": 157,
+      "radical": "足",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 84,
+      "canonical_radical": "王",
+      "code": 95,
+      "radical": "王",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 83,
+      "canonical_radical": "日",
+      "code": 72,
+      "radical": "日",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 82,
+      "canonical_radical": "山",
+      "code": 46,
+      "radical": "山",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 77,
+      "canonical_radical": "目",
+      "code": 109,
+      "radical": "目",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 65,
+      "canonical_radical": "心",
+      "code": 61,
+      "radical": "心",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 54,
+      "canonical_radical": "宀",
+      "code": 40,
+      "radical": "宀",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 52,
+      "canonical_radical": "酉",
+      "code": 164,
+      "radical": "酉",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 47,
+      "canonical_radical": "禾",
+      "code": 115,
+      "radical": "禾",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 41,
+      "canonical_radical": "米",
+      "code": 119,
+      "radical": "米",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 39,
+      "canonical_radical": "广",
+      "code": 53,
+      "radical": "广",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 37,
+      "canonical_radical": "巾",
+      "code": 50,
+      "radical": "巾",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 35,
+      "canonical_radical": "大",
+      "code": 37,
+      "radical": "大",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 30,
+      "canonical_radical": "彳",
+      "code": 60,
+      "radical": "彳",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 29,
+      "canonical_radical": "穴",
+      "code": 116,
+      "radical": "穴",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 29,
+      "canonical_radical": "舟",
+      "code": 137,
+      "radical": "舟",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 29,
+      "canonical_radical": "雨",
+      "code": 173,
+      "radical": "雨",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 28,
+      "canonical_radical": "力",
+      "code": 19,
+      "radical": "力",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 28,
+      "canonical_radical": "囗",
+      "code": 31,
+      "radical": "囗",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 27,
+      "canonical_radical": "田",
+      "code": 102,
+      "radical": "田",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 25,
+      "canonical_radical": "尸",
+      "code": 44,
+      "radical": "尸",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 23,
+      "canonical_radical": "戈",
+      "code": 62,
+      "radical": "戈",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 23,
+      "canonical_radical": "牛",
+      "code": 93,
+      "radical": "牛",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 22,
+      "canonical_radical": "子",
+      "code": 39,
+      "radical": "子",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 22,
+      "canonical_radical": "衣",
+      "code": 145,
+      "radical": "衣",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 21,
+      "canonical_radical": "厂",
+      "code": 27,
+      "radical": "厂",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 21,
+      "canonical_radical": "羽",
+      "code": 124,
+      "radical": "羽",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 21,
+      "canonical_radical": "耳",
+      "code": 128,
+      "radical": "耳",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 20,
+      "canonical_radical": "冫",
+      "code": 15,
+      "radical": "冫",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 18,
+      "canonical_radical": "欠",
+      "code": 76,
+      "radical": "欠",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 18,
+      "canonical_radical": "气",
+      "code": 84,
+      "radical": "气",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 18,
+      "canonical_radical": "革",
+      "code": 177,
+      "radical": "革",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 17,
+      "canonical_radical": "十",
+      "code": 24,
+      "radical": "十",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 17,
+      "canonical_radical": "歹",
+      "code": 78,
+      "radical": "歹",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 17,
+      "canonical_radical": "耒",
+      "code": 127,
+      "radical": "耒",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 17,
+      "canonical_radical": "走",
+      "code": 156,
+      "radical": "走",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 16,
+      "canonical_radical": "一",
+      "code": 1,
+      "radical": "一",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 16,
+      "canonical_radical": "弓",
+      "code": 57,
+      "radical": "弓",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 16,
+      "canonical_radical": "糸",
+      "code": 120,
+      "radical": "糸",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 16,
+      "canonical_radical": "羊",
+      "code": 123,
+      "radical": "羊",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 15,
+      "canonical_radical": "白",
+      "code": 106,
+      "radical": "白",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 15,
+      "canonical_radical": "皿",
+      "code": 108,
+      "radical": "皿",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 15,
+      "canonical_radical": "隹",
+      "code": 172,
+      "radical": "隹",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 14,
+      "canonical_radical": "儿",
+      "code": 10,
+      "radical": "儿",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 14,
+      "canonical_radical": "手",
+      "code": 64,
+      "radical": "手",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 14,
+      "canonical_radical": "骨",
+      "code": 188,
+      "radical": "骨",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 14,
+      "canonical_radical": "髟",
+      "code": 190,
+      "radical": "髟",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 13,
+      "canonical_radical": "毛",
+      "code": 82,
+      "radical": "毛",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 13,
+      "canonical_radical": "立",
+      "code": 117,
+      "radical": "立",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 13,
+      "canonical_radical": "鬼",
+      "code": 194,
+      "radical": "鬼",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 12,
+      "canonical_radical": "亠",
+      "code": 8,
+      "radical": "亠",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 12,
+      "canonical_radical": "人",
+      "code": 9,
+      "radical": "人",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 12,
+      "canonical_radical": "又",
+      "code": 29,
+      "radical": "又",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 12,
+      "canonical_radical": "月",
+      "code": 74,
+      "radical": "月",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 12,
+      "canonical_radical": "金",
+      "code": 167,
+      "radical": "金",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 11,
+      "canonical_radical": "角",
+      "code": 148,
+      "radical": "角",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 11,
+      "canonical_radical": "言",
+      "code": 149,
+      "radical": "言",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 10,
+      "canonical_radical": "八",
+      "code": 12,
+      "radical": "八",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 10,
+      "canonical_radical": "彡",
+      "code": 59,
+      "radical": "彡",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 10,
+      "canonical_radical": "瓦",
+      "code": 98,
+      "radical": "瓦",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 10,
+      "canonical_radical": "豸",
+      "code": 153,
+      "radical": "豸",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 10,
+      "canonical_radical": "黑",
+      "code": 203,
+      "radical": "黑",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 9,
+      "canonical_radical": "勹",
+      "code": 20,
+      "radical": "勹",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 9,
+      "canonical_radical": "廾",
+      "code": 55,
+      "radical": "廾",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 8,
+      "canonical_radical": "丿",
+      "code": 4,
+      "radical": "丿",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 8,
+      "canonical_radical": "几",
+      "code": 16,
+      "radical": "几",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 8,
+      "canonical_radical": "水",
+      "code": 85,
+      "radical": "水",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 8,
+      "canonical_radical": "矢",
+      "code": 111,
+      "radical": "矢",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 8,
+      "canonical_radical": "食",
+      "code": 184,
+      "radical": "食",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 8,
+      "canonical_radical": "鹿",
+      "code": 198,
+      "radical": "鹿",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "二",
+      "code": 7,
+      "radical": "二",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "冂",
+      "code": 13,
+      "radical": "冂",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "冖",
+      "code": 14,
+      "radical": "冖",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "刀",
+      "code": 18,
+      "radical": "刀",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "匚",
+      "code": 22,
+      "radical": "匚",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "夕",
+      "code": 36,
+      "radical": "夕",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "寸",
+      "code": 41,
+      "radical": "寸",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "小",
+      "code": 42,
+      "radical": "小",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "斤",
+      "code": 69,
+      "radical": "斤",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "殳",
+      "code": 79,
+      "radical": "殳",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "舌",
+      "code": 135,
+      "radical": "舌",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "辛",
+      "code": 160,
+      "radical": "辛",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "鼠",
+      "code": 208,
+      "radical": "鼠",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 6,
+      "canonical_radical": "丶",
+      "code": 3,
+      "radical": "丶",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 6,
+      "canonical_radical": "彐",
+      "code": 58,
+      "radical": "彐",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 6,
+      "canonical_radical": "曰",
+      "code": 73,
+      "radical": "曰",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 6,
+      "canonical_radical": "犬",
+      "code": 94,
+      "radical": "犬",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 6,
+      "canonical_radical": "缶",
+      "code": 121,
+      "radical": "缶",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 6,
+      "canonical_radical": "豕",
+      "code": 152,
+      "radical": "豕",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "丨",
+      "code": 2,
+      "radical": "丨",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "匸",
+      "code": 23,
+      "radical": "匸",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "厶",
+      "code": 28,
+      "radical": "厶",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "尢",
+      "code": 43,
+      "radical": "尢",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "工",
+      "code": 48,
+      "radical": "工",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "文",
+      "code": 67,
+      "radical": "文",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "斗",
+      "code": 68,
+      "radical": "斗",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "止",
+      "code": 77,
+      "radical": "止",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "片",
+      "code": 91,
+      "radical": "片",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "瓜",
+      "code": 97,
+      "radical": "瓜",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "用",
+      "code": 101,
+      "radical": "用",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "示",
+      "code": 113,
+      "radical": "示",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "臼",
+      "code": 134,
+      "radical": "臼",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "虍",
+      "code": 141,
+      "radical": "虍",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "行",
+      "code": 144,
+      "radical": "行",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "青",
+      "code": 174,
+      "radical": "青",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "卜",
+      "code": 25,
+      "radical": "卜",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "士",
+      "code": 33,
+      "radical": "士",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "夂",
+      "code": 34,
+      "radical": "夂",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "比",
+      "code": 81,
+      "radical": "比",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "父",
+      "code": 88,
+      "radical": "父",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "老",
+      "code": 125,
+      "radical": "老",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "肉",
+      "code": 130,
+      "radical": "肉",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "豆",
+      "code": 151,
+      "radical": "豆",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "赤",
+      "code": 155,
+      "radical": "赤",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "身",
+      "code": 158,
+      "radical": "身",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "里",
+      "code": 166,
+      "radical": "里",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "音",
+      "code": 180,
+      "radical": "音",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "亅",
+      "code": 6,
+      "radical": "亅",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "凵",
+      "code": 17,
+      "radical": "凵",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "匕",
+      "code": 21,
+      "radical": "匕",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "卩",
+      "code": 26,
+      "radical": "卩",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "干",
+      "code": 51,
+      "radical": "干",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "廴",
+      "code": 54,
+      "radical": "廴",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "弋",
+      "code": 56,
+      "radical": "弋",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "甘",
+      "code": 99,
+      "radical": "甘",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "生",
+      "code": 100,
+      "radical": "生",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "皮",
+      "code": 107,
+      "radical": "皮",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "禸",
+      "code": 114,
+      "radical": "禸",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "而",
+      "code": 126,
+      "radical": "而",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "聿",
+      "code": 129,
+      "radical": "聿",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "臣",
+      "code": 131,
+      "radical": "臣",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "至",
+      "code": 133,
+      "radical": "至",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "色",
+      "code": 139,
+      "radical": "色",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "血",
+      "code": 143,
+      "radical": "血",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "谷",
+      "code": 150,
+      "radical": "谷",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "非",
+      "code": 175,
+      "radical": "非",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "首",
+      "code": 185,
+      "radical": "首",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "麻",
+      "code": 200,
+      "radical": "麻",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "鼓",
+      "code": 207,
+      "radical": "鼓",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "乙",
+      "code": 5,
+      "radical": "乙",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "入",
+      "code": 11,
+      "radical": "入",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "夊",
+      "code": 35,
+      "radical": "夊",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "巛",
+      "code": 47,
+      "radical": "巛",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "幺",
+      "code": 52,
+      "radical": "幺",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "方",
+      "code": 70,
+      "radical": "方",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "母",
+      "code": 80,
+      "radical": "母",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "爻",
+      "code": 89,
+      "radical": "爻",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "疋",
+      "code": 103,
+      "radical": "疋",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "癶",
+      "code": 105,
+      "radical": "癶",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "矛",
+      "code": 110,
+      "radical": "矛",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "自",
+      "code": 132,
+      "radical": "自",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "舛",
+      "code": 136,
+      "radical": "舛",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "邑",
+      "code": 163,
+      "radical": "邑",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "釆",
+      "code": 165,
+      "radical": "釆",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "香",
+      "code": 186,
+      "radical": "香",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "鬲",
+      "code": 193,
+      "radical": "鬲",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "黍",
+      "code": 202,
+      "radical": "黍",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "黹",
+      "code": 204,
+      "radical": "黹",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "鼻",
+      "code": 209,
+      "radical": "鼻",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "屮",
+      "code": 45,
+      "radical": "屮",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "支",
+      "code": 65,
+      "radical": "支",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "攴",
+      "code": 66,
+      "radical": "攴",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "无",
+      "code": 71,
+      "radical": "无",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "氏",
+      "code": 83,
+      "radical": "氏",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "爪",
+      "code": 87,
+      "radical": "爪",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "爿",
+      "code": 90,
+      "radical": "爿",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "牙",
+      "code": 92,
+      "radical": "牙",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "玄",
+      "code": 96,
+      "radical": "玄",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "网",
+      "code": 122,
+      "radical": "网",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "艮",
+      "code": 138,
+      "radical": "艮",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "辰",
+      "code": 161,
+      "radical": "辰",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "阜",
+      "code": 170,
+      "radical": "阜",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "隶",
+      "code": 171,
+      "radical": "隶",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "韭",
+      "code": 179,
+      "radical": "韭",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "高",
+      "code": 189,
+      "radical": "高",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "鼎",
+      "code": 206,
+      "radical": "鼎",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    }
+  ],
+  "metadata": {
+    "apply_gate": "NO_APPLY_IN_THIS_PHASE",
+    "generated_at": "2026-07-16T13:58:26.393271+00:00",
+    "rule": "Only direct main-form radicals and conservative aliases are radix-ready.",
+    "scope": "radical numeric code readiness for 8105 auto-fix candidates",
+    "source": {
+      "actual_count": 214,
+      "declared_count": 201,
+      "max_code": 214,
+      "source": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/knowledge_base_v2.json"
+    }
+  },
+  "records": [
+    {
+      "candidate_rows": 343,
+      "canonical_radical": "水",
+      "code": 85,
+      "radical": "氵",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 324,
+      "canonical_radical": "口",
+      "code": 30,
+      "radical": "口",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 321,
+      "canonical_radical": "艸",
+      "code": 140,
+      "radical": "艹",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 290,
+      "canonical_radical": "木",
+      "code": 75,
+      "radical": "木",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 248,
+      "canonical_radical": "手",
+      "code": 64,
+      "radical": "扌",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 209,
+      "canonical_radical": "金",
+      "code": 167,
+      "radical": "钅",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 201,
+      "canonical_radical": "人",
+      "code": 9,
+      "radical": "亻",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 142,
+      "canonical_radical": "虫",
+      "code": 142,
+      "radical": "虫",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 136,
+      "canonical_radical": "土",
+      "code": 32,
+      "radical": "土",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 133,
+      "canonical_radical": "言",
+      "code": 149,
+      "radical": "讠",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 131,
+      "canonical_radical": "肉",
+      "code": 130,
+      "radical": "⺼",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 131,
+      "canonical_radical": "糸",
+      "code": 120,
+      "radical": "纟",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 125,
+      "canonical_radical": "心",
+      "code": 61,
+      "radical": "忄",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 119,
+      "canonical_radical": "女",
+      "code": 38,
+      "radical": "女",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 116,
+      "canonical_radical": null,
+      "code": null,
+      "radical": "阝",
+      "reason": "position-sensitive: left 阝 is 阜, right 阝 is 邑; source does not preserve side.",
+      "status": "BLOCKED"
+    },
+    {
+      "candidate_rows": 107,
+      "canonical_radical": "竹",
+      "code": 118,
+      "radical": "⺮",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 96,
+      "canonical_radical": "辵",
+      "code": 162,
+      "radical": "辶",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 93,
+      "canonical_radical": "石",
+      "code": 112,
+      "radical": "石",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 90,
+      "canonical_radical": "疒",
+      "code": 104,
+      "radical": "疒",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 88,
+      "canonical_radical": "火",
+      "code": 86,
+      "radical": "火",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 87,
+      "canonical_radical": "足",
+      "code": 157,
+      "radical": "足",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 84,
+      "canonical_radical": "王",
+      "code": 95,
+      "radical": "王",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 83,
+      "canonical_radical": "日",
+      "code": 72,
+      "radical": "日",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 82,
+      "canonical_radical": "山",
+      "code": 46,
+      "radical": "山",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 77,
+      "canonical_radical": "目",
+      "code": 109,
+      "radical": "目",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 72,
+      "canonical_radical": "魚",
+      "code": 195,
+      "radical": "鱼",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 68,
+      "canonical_radical": "犬",
+      "code": 94,
+      "radical": "犭",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 67,
+      "canonical_radical": "鳥",
+      "code": 196,
+      "radical": "鸟",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 65,
+      "canonical_radical": "心",
+      "code": 61,
+      "radical": "心",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 59,
+      "canonical_radical": "貝",
+      "code": 154,
+      "radical": "贝",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 54,
+      "canonical_radical": "宀",
+      "code": 40,
+      "radical": "宀",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 52,
+      "canonical_radical": "酉",
+      "code": 164,
+      "radical": "酉",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 51,
+      "canonical_radical": "馬",
+      "code": 187,
+      "radical": "马",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 50,
+      "canonical_radical": "刀",
+      "code": 18,
+      "radical": "刂",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 49,
+      "canonical_radical": "衣",
+      "code": 145,
+      "radical": "衤",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 49,
+      "canonical_radical": "車",
+      "code": 159,
+      "radical": "车",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 47,
+      "canonical_radical": "禾",
+      "code": 115,
+      "radical": "禾",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 44,
+      "canonical_radical": "門",
+      "code": 169,
+      "radical": "门",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 41,
+      "canonical_radical": "米",
+      "code": 119,
+      "radical": "米",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 39,
+      "canonical_radical": "广",
+      "code": 53,
+      "radical": "广",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 37,
+      "canonical_radical": "巾",
+      "code": 50,
+      "radical": "巾",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 36,
+      "canonical_radical": "食",
+      "code": 184,
+      "radical": "饣",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 35,
+      "canonical_radical": "大",
+      "code": 37,
+      "radical": "大",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 35,
+      "canonical_radical": "頁",
+      "code": 181,
+      "radical": "页",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 33,
+      "canonical_radical": "示",
+      "code": 113,
+      "radical": "礻",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 30,
+      "canonical_radical": "彳",
+      "code": 60,
+      "radical": "彳",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 29,
+      "canonical_radical": "穴",
+      "code": 116,
+      "radical": "穴",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 29,
+      "canonical_radical": "舟",
+      "code": 137,
+      "radical": "舟",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 29,
+      "canonical_radical": "雨",
+      "code": 173,
+      "radical": "雨",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 28,
+      "canonical_radical": "力",
+      "code": 19,
+      "radical": "力",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 28,
+      "canonical_radical": "囗",
+      "code": 31,
+      "radical": "囗",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 27,
+      "canonical_radical": "田",
+      "code": 102,
+      "radical": "田",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 25,
+      "canonical_radical": "尸",
+      "code": 44,
+      "radical": "尸",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 23,
+      "canonical_radical": "戈",
+      "code": 62,
+      "radical": "戈",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 23,
+      "canonical_radical": "牛",
+      "code": 93,
+      "radical": "牛",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 22,
+      "canonical_radical": "子",
+      "code": 39,
+      "radical": "子",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 22,
+      "canonical_radical": "衣",
+      "code": 145,
+      "radical": "衣",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 21,
+      "canonical_radical": "厂",
+      "code": 27,
+      "radical": "厂",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 21,
+      "canonical_radical": "攴",
+      "code": 66,
+      "radical": "攵",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 21,
+      "canonical_radical": "羽",
+      "code": 124,
+      "radical": "羽",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 21,
+      "canonical_radical": "耳",
+      "code": 128,
+      "radical": "耳",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 20,
+      "canonical_radical": "冫",
+      "code": 15,
+      "radical": "冫",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 19,
+      "canonical_radical": "火",
+      "code": 86,
+      "radical": "灬",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 18,
+      "canonical_radical": "欠",
+      "code": 76,
+      "radical": "欠",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 18,
+      "canonical_radical": "气",
+      "code": 84,
+      "radical": "气",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 18,
+      "canonical_radical": "革",
+      "code": 177,
+      "radical": "革",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 17,
+      "canonical_radical": "十",
+      "code": 24,
+      "radical": "十",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 17,
+      "canonical_radical": "歹",
+      "code": 78,
+      "radical": "歹",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 17,
+      "canonical_radical": "耒",
+      "code": 127,
+      "radical": "耒",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 17,
+      "canonical_radical": "走",
+      "code": 156,
+      "radical": "走",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 16,
+      "canonical_radical": "一",
+      "code": 1,
+      "radical": "一",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 16,
+      "canonical_radical": "弓",
+      "code": 57,
+      "radical": "弓",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 16,
+      "canonical_radical": "糸",
+      "code": 120,
+      "radical": "糸",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 16,
+      "canonical_radical": "羊",
+      "code": 123,
+      "radical": "羊",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 15,
+      "canonical_radical": "白",
+      "code": 106,
+      "radical": "白",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 15,
+      "canonical_radical": "皿",
+      "code": 108,
+      "radical": "皿",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 15,
+      "canonical_radical": "网",
+      "code": 122,
+      "radical": "罒",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 15,
+      "canonical_radical": "隹",
+      "code": 172,
+      "radical": "隹",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 14,
+      "canonical_radical": "儿",
+      "code": 10,
+      "radical": "儿",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 14,
+      "canonical_radical": "手",
+      "code": 64,
+      "radical": "手",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 14,
+      "canonical_radical": "骨",
+      "code": 188,
+      "radical": "骨",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 14,
+      "canonical_radical": "髟",
+      "code": 190,
+      "radical": "髟",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 13,
+      "canonical_radical": "戶",
+      "code": 63,
+      "radical": "户",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 13,
+      "canonical_radical": "毛",
+      "code": 82,
+      "radical": "毛",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 13,
+      "canonical_radical": "立",
+      "code": 117,
+      "radical": "立",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 13,
+      "canonical_radical": "見",
+      "code": 147,
+      "radical": "见",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 13,
+      "canonical_radical": "鬼",
+      "code": 194,
+      "radical": "鬼",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 12,
+      "canonical_radical": "亠",
+      "code": 8,
+      "radical": "亠",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 12,
+      "canonical_radical": "人",
+      "code": 9,
+      "radical": "人",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 12,
+      "canonical_radical": "又",
+      "code": 29,
+      "radical": "又",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 12,
+      "canonical_radical": "月",
+      "code": 74,
+      "radical": "月",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 12,
+      "canonical_radical": "金",
+      "code": 167,
+      "radical": "金",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 12,
+      "canonical_radical": "齒",
+      "code": 211,
+      "radical": "齿",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 11,
+      "canonical_radical": "角",
+      "code": 148,
+      "radical": "角",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 11,
+      "canonical_radical": "言",
+      "code": 149,
+      "radical": "言",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 10,
+      "canonical_radical": "八",
+      "code": 12,
+      "radical": "八",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 10,
+      "canonical_radical": "彡",
+      "code": 59,
+      "radical": "彡",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 10,
+      "canonical_radical": "瓦",
+      "code": 98,
+      "radical": "瓦",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 10,
+      "canonical_radical": "豸",
+      "code": 153,
+      "radical": "豸",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 10,
+      "canonical_radical": "黑",
+      "code": 203,
+      "radical": "黑",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 9,
+      "canonical_radical": "勹",
+      "code": 20,
+      "radical": "勹",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 9,
+      "canonical_radical": "廾",
+      "code": 55,
+      "radical": "廾",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 8,
+      "canonical_radical": "丿",
+      "code": 4,
+      "radical": "丿",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 8,
+      "canonical_radical": "几",
+      "code": 16,
+      "radical": "几",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 8,
+      "canonical_radical": "水",
+      "code": 85,
+      "radical": "水",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 8,
+      "canonical_radical": "矢",
+      "code": 111,
+      "radical": "矢",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 8,
+      "canonical_radical": "風",
+      "code": 182,
+      "radical": "风",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 8,
+      "canonical_radical": "食",
+      "code": 184,
+      "radical": "食",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 8,
+      "canonical_radical": "鹿",
+      "code": 198,
+      "radical": "鹿",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "二",
+      "code": 7,
+      "radical": "二",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "冂",
+      "code": 13,
+      "radical": "冂",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "冖",
+      "code": 14,
+      "radical": "冖",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "刀",
+      "code": 18,
+      "radical": "刀",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "匚",
+      "code": 22,
+      "radical": "匚",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "夕",
+      "code": 36,
+      "radical": "夕",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "寸",
+      "code": 41,
+      "radical": "寸",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "小",
+      "code": 42,
+      "radical": "小",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "斤",
+      "code": 69,
+      "radical": "斤",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "殳",
+      "code": 79,
+      "radical": "殳",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "舌",
+      "code": 135,
+      "radical": "舌",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "辛",
+      "code": 160,
+      "radical": "辛",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 7,
+      "canonical_radical": "鼠",
+      "code": 208,
+      "radical": "鼠",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 6,
+      "canonical_radical": "丶",
+      "code": 3,
+      "radical": "丶",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 6,
+      "canonical_radical": "彐",
+      "code": 58,
+      "radical": "彐",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 6,
+      "canonical_radical": "曰",
+      "code": 73,
+      "radical": "曰",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 6,
+      "canonical_radical": "犬",
+      "code": 94,
+      "radical": "犬",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 6,
+      "canonical_radical": "缶",
+      "code": 121,
+      "radical": "缶",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 6,
+      "canonical_radical": "豕",
+      "code": 152,
+      "radical": "豕",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 6,
+      "canonical_radical": "韋",
+      "code": 178,
+      "radical": "韦",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 6,
+      "canonical_radical": "龍",
+      "code": 212,
+      "radical": "龙",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "丨",
+      "code": 2,
+      "radical": "丨",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": null,
+      "code": null,
+      "radical": "丷",
+      "reason": "component-like label; no conservative modern radical code assignment in this phase.",
+      "status": "BLOCKED"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "匸",
+      "code": 23,
+      "radical": "匸",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "厶",
+      "code": 28,
+      "radical": "厶",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "尢",
+      "code": 43,
+      "radical": "尢",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "工",
+      "code": 48,
+      "radical": "工",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "文",
+      "code": 67,
+      "radical": "文",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "斗",
+      "code": 68,
+      "radical": "斗",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "止",
+      "code": 77,
+      "radical": "止",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "片",
+      "code": 91,
+      "radical": "片",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "瓜",
+      "code": 97,
+      "radical": "瓜",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "用",
+      "code": 101,
+      "radical": "用",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "示",
+      "code": 113,
+      "radical": "示",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "臼",
+      "code": 134,
+      "radical": "臼",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "虍",
+      "code": 141,
+      "radical": "虍",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "行",
+      "code": 144,
+      "radical": "行",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 5,
+      "canonical_radical": "青",
+      "code": 174,
+      "radical": "青",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "小",
+      "code": 42,
+      "radical": "⺌",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "卜",
+      "code": 25,
+      "radical": "卜",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "士",
+      "code": 33,
+      "radical": "士",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "夂",
+      "code": 34,
+      "radical": "夂",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "比",
+      "code": 81,
+      "radical": "比",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "爪",
+      "code": 87,
+      "radical": "爫",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "父",
+      "code": 88,
+      "radical": "父",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "老",
+      "code": 125,
+      "radical": "老",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "肉",
+      "code": 130,
+      "radical": "肉",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "豆",
+      "code": 151,
+      "radical": "豆",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "赤",
+      "code": 155,
+      "radical": "赤",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "身",
+      "code": 158,
+      "radical": "身",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "里",
+      "code": 166,
+      "radical": "里",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 4,
+      "canonical_radical": "音",
+      "code": 180,
+      "radical": "音",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "卜",
+      "code": 25,
+      "radical": "⺊",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "心",
+      "code": 61,
+      "radical": "⺗",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "卩",
+      "code": 26,
+      "radical": "㔾",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": null,
+      "code": null,
+      "radical": "乚",
+      "reason": "stroke/component-like label; no conservative radical assignment in this phase.",
+      "status": "BLOCKED"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "亅",
+      "code": 6,
+      "radical": "亅",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "凵",
+      "code": 17,
+      "radical": "凵",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "匕",
+      "code": 21,
+      "radical": "匕",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "卩",
+      "code": 26,
+      "radical": "卩",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "干",
+      "code": 51,
+      "radical": "干",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "廴",
+      "code": 54,
+      "radical": "廴",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "弋",
+      "code": 56,
+      "radical": "弋",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "彐",
+      "code": 58,
+      "radical": "彑",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "王",
+      "code": 95,
+      "radical": "玉",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "甘",
+      "code": 99,
+      "radical": "甘",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "生",
+      "code": 100,
+      "radical": "生",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "皮",
+      "code": 107,
+      "radical": "皮",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "禸",
+      "code": 114,
+      "radical": "禸",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "而",
+      "code": 126,
+      "radical": "而",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "聿",
+      "code": 129,
+      "radical": "聿",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "臣",
+      "code": 131,
+      "radical": "臣",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "至",
+      "code": 133,
+      "radical": "至",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "色",
+      "code": 139,
+      "radical": "色",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "虍",
+      "code": 141,
+      "radical": "虎",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "血",
+      "code": 143,
+      "radical": "血",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "西",
+      "code": 146,
+      "radical": "覀",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "谷",
+      "code": 150,
+      "radical": "谷",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "非",
+      "code": 175,
+      "radical": "非",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "首",
+      "code": 185,
+      "radical": "首",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "麻",
+      "code": 200,
+      "radical": "麻",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 3,
+      "canonical_radical": "鼓",
+      "code": 207,
+      "radical": "鼓",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "网",
+      "code": 122,
+      "radical": "⺳",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "乙",
+      "code": 5,
+      "radical": "乙",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "入",
+      "code": 11,
+      "radical": "入",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "鹵",
+      "code": 197,
+      "radical": "卤",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "夊",
+      "code": 35,
+      "radical": "夊",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "巛",
+      "code": 47,
+      "radical": "巛",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": null,
+      "code": null,
+      "radical": "巳",
+      "reason": "ambiguous against 己/已/巳 shape group in this evidence layer.",
+      "status": "BLOCKED"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "幺",
+      "code": 52,
+      "radical": "幺",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "方",
+      "code": 70,
+      "radical": "方",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "母",
+      "code": 80,
+      "radical": "母",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": null,
+      "code": null,
+      "radical": "民",
+      "reason": "component-like label; not a Kangxi radical main-form in the mapping source.",
+      "status": "BLOCKED"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "水",
+      "code": 85,
+      "radical": "氺",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "爻",
+      "code": 89,
+      "radical": "爻",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "疋",
+      "code": 103,
+      "radical": "疋",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "癶",
+      "code": 105,
+      "radical": "癶",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "矛",
+      "code": 110,
+      "radical": "矛",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "老",
+      "code": 125,
+      "radical": "耂",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "自",
+      "code": 132,
+      "radical": "自",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "舛",
+      "code": 136,
+      "radical": "舛",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "邑",
+      "code": 163,
+      "radical": "邑",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "釆",
+      "code": 165,
+      "radical": "釆",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "香",
+      "code": 186,
+      "radical": "香",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "鬲",
+      "code": 193,
+      "radical": "鬲",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "麥",
+      "code": 199,
+      "radical": "麦",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "黍",
+      "code": 202,
+      "radical": "黍",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "黹",
+      "code": 204,
+      "radical": "黹",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "黽",
+      "code": 205,
+      "radical": "黾",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "鼻",
+      "code": 209,
+      "radical": "鼻",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 2,
+      "canonical_radical": "龜",
+      "code": 213,
+      "radical": "龟",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "冫",
+      "code": 15,
+      "radical": "⺀",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "爿",
+      "code": 90,
+      "radical": "丬",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": null,
+      "code": null,
+      "radical": "乛",
+      "reason": "stroke/component-like label; no conservative radical assignment in this phase.",
+      "status": "BLOCKED"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": null,
+      "code": null,
+      "radical": "兀",
+      "reason": "component-like label; ambiguous against 儿 in this evidence layer.",
+      "status": "BLOCKED"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "屮",
+      "code": 45,
+      "radical": "屮",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "巛",
+      "code": 47,
+      "radical": "川",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "支",
+      "code": 65,
+      "radical": "支",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "攴",
+      "code": 66,
+      "radical": "攴",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "无",
+      "code": 71,
+      "radical": "无",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "氏",
+      "code": 83,
+      "radical": "氏",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "爪",
+      "code": 87,
+      "radical": "爪",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "爿",
+      "code": 90,
+      "radical": "爿",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "牙",
+      "code": 92,
+      "radical": "牙",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "玄",
+      "code": 96,
+      "radical": "玄",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "网",
+      "code": 122,
+      "radical": "网",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "艮",
+      "code": 138,
+      "radical": "艮",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "辰",
+      "code": 161,
+      "radical": "辰",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "阜",
+      "code": 170,
+      "radical": "阜",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "隶",
+      "code": 171,
+      "radical": "隶",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "韭",
+      "code": 179,
+      "radical": "韭",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "高",
+      "code": 189,
+      "radical": "高",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "黃",
+      "code": 201,
+      "radical": "黄",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "鼎",
+      "code": 206,
+      "radical": "鼎",
+      "reason": "main-form radical found in mapping source",
+      "status": "DIRECT"
+    },
+    {
+      "candidate_rows": 1,
+      "canonical_radical": "齊",
+      "code": 210,
+      "radical": "齐",
+      "reason": "conservative variant or simplified radical alias",
+      "status": "ALIAS"
+    }
+  ],
+  "summary": {
+    "alias_radical_names": 53,
+    "blocked_candidate_rows": 130,
+    "blocked_radical_names": 7,
+    "candidate_rows": 6314,
+    "direct_radical_names": 184,
+    "ready_candidate_rows": 6184,
+    "resolution_status_counts": {
+      "ALIAS": 53,
+      "BLOCKED": 7,
+      "DIRECT": 184
+    },
+    "source_actual_count": 214,
+    "source_count_consistent": false,
+    "source_declared_count": 201,
+    "unique_candidate_radicals": 244
+  }
+}

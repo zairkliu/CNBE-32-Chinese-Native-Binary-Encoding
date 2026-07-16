@@ -1,0 +1,44 @@
+{
+  "report_schema_version": 1,
+  "generated_at_utc": "2026-07-12T05:38:30.323260+00:00",
+  "source_file": "CNBE_编码目录_修复版_v3.xlsx",
+  "status": "PASS",
+  "rule_order": [
+    "19 explicit radical overrides",
+    "LEFT_RADICALS maps to left-right",
+    "TOP_RADICALS maps to top-bottom",
+    "default maps to left-right"
+  ],
+  "evidence_boundary": "A zero-difference result establishes historical algorithm reproducibility. It does not establish that radical-only structure labels are linguistically authoritative.",
+  "audit": {
+    "row_count": 97686,
+    "radicals_observed": 214,
+    "special_override_count": 19,
+    "structure_code_mismatches": 0,
+    "structure_name_mismatches": 0,
+    "radicals_with_multiple_observed_structures": {},
+    "expected_distribution": {
+      "0": 871,
+      "1": 73565,
+      "3": 18630,
+      "5": 1743,
+      "6": 306,
+      "7": 1235,
+      "8": 864,
+      "9": 149,
+      "10": 323
+    },
+    "actual_distribution": {
+      "0": 871,
+      "1": 73565,
+      "3": 18630,
+      "5": 1743,
+      "6": 306,
+      "7": 1235,
+      "8": 864,
+      "9": 149,
+      "10": 323
+    },
+    "mismatch_samples": []
+  }
+}

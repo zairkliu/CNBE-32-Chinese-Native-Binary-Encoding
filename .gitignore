@@ -28,6 +28,7 @@ build/
 !src/cnbe32/data/cnbe32.db
 *.db.gz
 *.xlsx
+!evidence/validation/**/*.xlsx
 *.docx
 data/*.json
 data/*.gz

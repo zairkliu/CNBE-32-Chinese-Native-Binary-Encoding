@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "source_name": "CNBE Chinese standard research workspace",
+  "source_root": "/Users/liuzhaoqi/Documents/cnbe-research",
+  "created_for": "pre-encoding exploration and evidence gating",
+  "repository_policy": {
+    "copy_large_payloads": false,
+    "default_mode": "read-only audit",
+    "encoding_generation_allowed": false,
+    "sdk_replacement_allowed": false,
+    "sqlite_build_allowed": false
+  },
+  "authority_boundary": {
+    "statement": "The listed files are treated as authoritative research inputs after identity and schema checks.",
+    "limits": [
+      "Identity and schema checks do not authorize CNBE code changes.",
+      "OCR-derived rows require confidence and page-source review.",
+      "Third-party decomposition data is cross-check evidence unless separately adjudicated.",
+      "Exploratory scripts with local paths are diagnostic only."
+    ]
+  },
+  "sources": [
+    {
+      "id": "research_plan",
+      "relative_path": "PLAN.md",
+      "kind": "workflow_plan",
+      "size_bytes": 6311,
+      "sha256": "ffa9d86d6e1cd24b1ba264d4361bf1869eab89d6ac20d111ec7ed0236128b81a",
+      "expected": {"format": "markdown"},
+      "acceptance": "reference"
+    },
+    {
+      "id": "cnbe_standard_skill",
+      "relative_path": "cnbe-standard-skill/SKILL.md",
+      "kind": "codex_skill",
+      "size_bytes": 5506,
+      "sha256": "8d7377f07944db42c9ecf9cb42c218b73a39e5a3fb8a77f6d692bcf6a3a87349",
+      "expected": {"format": "markdown"},
+      "acceptance": "workflow_source"
+    },
+    {
+      "id": "base_character_data",
+      "relative_path": "knowledge/structured/base_character_data.json",
+      "kind": "standard_character_table",
+      "size_bytes": 2258871,
+      "sha256": "f0f5a765f8717769211bfde19d6bcfdf25915111a09bd0044ea9467a06a224cf",
+      "expected": {"type": "dict", "target_count": 8105},
+      "acceptance": "needs_count_reconciliation"
+    },
+    {
+      "id": "cnbe_character_knowledge",
+      "relative_path": "knowledge/structured/cnbe_character_knowledge.json",
+      "kind": "enriched_character_knowledge",
+      "size_bytes": 18661305,
+      "sha256": "490625195ecc5fa2f51f56eada38b5442809e920927f1a4b03c65a080a0c3add",
+      "expected": {"type": "list", "target_count": 8105},
+      "acceptance": "needs_unicode_label_normalization"
+    },
+    {
+      "id": "definitions_index",
+      "relative_path": "knowledge/structured/definitions_index.json",
+      "kind": "definition_index",
+      "size_bytes": 369920,
+      "sha256": "5efb2aa4bb40f8bb2535f5bb7769b3c712bedc2106ee256b24bfff7d03bd4a92",
+      "expected": {"type": "dict", "min_count": 4000},
+      "acceptance": "review_aid"
+    },
+    {
+      "id": "cihai_search_index",
+      "relative_path": "knowledge/structured/cihai_search_index.json",
+      "kind": "dictionary_search_index",
+      "size_bytes": 3628551,
+      "sha256": "5c7a900e4642cc176d50b58854483c9b9b33eadbd2c532876f4e916a091158e2",
+      "expected": {"type": "dict", "min_count": 5000},
+      "acceptance": "review_aid"
+    },
+    {
+      "id": "component_db",
+      "relative_path": "knowledge/component_db.json",
+      "kind": "component_mapping",
+      "size_bytes": 576557,
+      "sha256": "d40a8173d5a7856fc4eb6dd93009a32d459ef99f21793947ac3ac8b924acfe5e",
+      "expected": {"type": "dict", "char_mappings_min": 9000, "component_mappings_min": 1700},
+      "acceptance": "candidate_component_evidence"
+    },
+    {
+      "id": "decomp_rules",
+      "relative_path": "knowledge/decomp_rules.json",
+      "kind": "decomposition_gap_rules",
+      "size_bytes": 865,
+      "sha256": "10fb1a944c7df5836a287b40a135397014df9b398dc7827445e276c86168fc8e",
+      "expected": {"type": "dict", "chars_needing_rules": 1047},
+      "acceptance": "gap_map"
+    },
+    {
+      "id": "kangxi_radicals",
+      "relative_path": "knowledge/kangxi_radicals.json",
+      "kind": "radical_cross_check",
+      "size_bytes": 533759,
+      "sha256": "c2aa49ca9caa51a3befb80db14f4b2fa6d2d38ca43ee17fab36ca34d977fbae9",
+      "expected": {"type": "dict", "data_count": 9574},
+      "acceptance": "candidate_radical_evidence"
+    },
+    {
+      "id": "cnbe32_updated",
+      "relative_path": "knowledge/cnbe32_updated.json",
+      "kind": "exploratory_mapping",
+      "size_bytes": 4320646,
+      "sha256": "12d94240958adc009a7ec0758387b4d2b5fe4d943d70f533cddbd528e624a843",
+      "expected": {"type": "dict", "character_count": 20902},
+      "acceptance": "diagnostic_only"
+    },
+    {
+      "id": "cnbe32_addendum",
+      "relative_path": "knowledge/cnbe32_addendum.json",
+      "kind": "missing_character_diagnostic",
+      "size_bytes": 14732,
+      "sha256": "de7e274d29abf9107b6c6f969ee775d18c30176f28e6bbc11dcbc5f2917037b7",
+      "expected": {"type": "list", "count": 79},
+      "acceptance": "diagnostic_only"
+    },
+    {
+      "id": "alignment_report",
+      "relative_path": "knowledge/alignment_report.json",
+      "kind": "alignment_diagnostic",
+      "size_bytes": 1889,
+      "sha256": "479400e5a10a22294a91f54c0bd7750b02c8c6a5ae20c4fd075fe5ab900e4380",
+      "expected": {"type": "dict"},
+      "acceptance": "diagnostic_only"
+    },
+    {
+      "id": "alignment_report_v2",
+      "relative_path": "knowledge/alignment_report_v2.json",
+      "kind": "alignment_diagnostic",
+      "size_bytes": 2020,
+      "sha256": "8bb98f3ae731828a95d8beae854f9d4f236af912eb5ddea8e085582dce1f11ce",
+      "expected": {"type": "dict"},
+      "acceptance": "diagnostic_only"
+    },
+    {
+      "id": "unihan_17_archive",
+      "relative_path": "knowledge/Unihan2.zip",
+      "kind": "unicode_unihan_archive",
+      "size_bytes": 8518517,
+      "sha256": "f7a48b2b545acfaa77b2d607ae28747404ce02baefee16396c5d2d7a8ef34b5e",
+      "expected": {"zip": true, "members_min": 8},
+      "acceptance": "identity_source"
+    },
+    {
+      "id": "decomposition_dictionary",
+      "relative_path": "decomp-data/dictionary.json",
+      "kind": "ids_decomposition_dictionary",
+      "size_bytes": 9520010,
+      "sha256": "9d6d0dc83b755f763ae94b22f42716b56c42b2bcf51aee18ca837ec867ae80a4",
+      "expected": {"type": "list", "count": 9574},
+      "acceptance": "third_party_cross_check"
+    },
+    {
+      "id": "decomposition_dictionary_schema",
+      "relative_path": "decomp-data/dictionary_schema_description.md",
+      "kind": "schema_documentation",
+      "size_bytes": 2662,
+      "sha256": "4f051e35a5482d78e62bb31550f900e9c87821d323fb31d997a2509787ddf83a",
+      "expected": {"format": "markdown"},
+      "acceptance": "schema_reference"
+    },
+    {
+      "id": "cjk_decomp_data",
+      "relative_path": "cjk-decomp/cjk-decomp.txt",
+      "kind": "graphical_decomposition_data",
+      "size_bytes": 1507690,
+      "sha256": "cf770b7be3894f11a96a79789195f237fdbfc3ca533ea0763052e50cf7998fe1",
+      "expected": {"format": "text", "min_lines": 70000},
+      "acceptance": "third_party_secondary"
+    },
+    {
+      "id": "cjk_decomp_readme",
+      "relative_path": "cjk-decomp/README.md",
+      "kind": "license_and_quality_note",
+      "size_bytes": 4146,
+      "sha256": "7bd419b2d8ec11ff6e572d689f946ca225d7f75a477b0151d303cb8ca4b889a2",
+      "expected": {"format": "markdown"},
+      "acceptance": "license_reference"
+    }
+  ],
+  "directories": [
+    {
+      "id": "standard_source_conversions",
+      "relative_path": "source",
+      "kind": "converted_standard_documents",
+      "expected": {"json_files_min": 10, "markdown_files_min": 10},
+      "acceptance": "needs_document_level_audit"
+    },
+    {
+      "id": "standard_ocr_batches",
+      "relative_path": "knowledge/ocr/standards",
+      "kind": "standard_ocr_outputs",
+      "expected": {"json_files_min": 25},
+      "acceptance": "needs_confidence_review"
+    },
+    {
+      "id": "cihai_ocr_batches",
+      "relative_path": "knowledge/ocr/ci_hai",
+      "kind": "dictionary_ocr_outputs",
+      "expected": {"json_files_min": 100},
+      "acceptance": "review_aid"
+    }
+  ],
+  "excluded_sources": [
+    {
+      "relative_path": "knowledge/Unihan.zip",
+      "reason": "Observed size differs from the pinned archive and local inspection showed it is not a valid ZIP."
+    },
+    {
+      "relative_path": "build_knowledge.py",
+      "reason": "Exploratory script with local Windows paths; useful as diagnostic history only."
+    },
+    {
+      "relative_path": "remap_struct.py",
+      "reason": "Exploratory script rewrites CNBE structure fields heuristically; not an encoding authority."
+    },
+    {
+      "relative_path": "parse_stroke_order.py",
+      "reason": "Exploratory parser with local Windows paths; logic must be ported before repository use."
+    },
+    {
+      "relative_path": "ocr_pipeline.py",
+      "reason": "Exploratory OCR cataloging script with local Windows paths."
+    }
+  ]
+}

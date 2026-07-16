@@ -1,0 +1,436 @@
+{
+  "report_schema_version": 1,
+  "generated_at_utc": "2026-07-12T10:41:24.589755+00:00",
+  "summary": {
+    "status": "PASS",
+    "canonical_mapping_gate": "NO_GO",
+    "sqlite_build_gate": "NO_GO",
+    "sdk_replacement_allowed": false,
+    "semantic_authority": "INSUFFICIENT"
+  },
+  "inputs": {
+    "catalog": {
+      "path": "/Users/liuzhaoqi/Downloads/CNBE_编码目录_修复版_v3.xlsx",
+      "sha256": "d9e24432b9ef3bb20458179258a0371ccf7e699d02ff8b00b59c615ba2aaee84"
+    },
+    "unihan_manifest": "/Users/liuzhaoqi/Documents/Codex/2026-07-09/wan/CNBE-32-Chinese-Native-Binary-Encoding/data/sources/unihan-17.0.0.json",
+    "unihan_archive": {
+      "path": "/Users/liuzhaoqi/Documents/Codex/2026-07-01/new-chat/work/Unihan.zip",
+      "size_bytes": 8518517,
+      "expected_size_bytes": 8518517,
+      "sha256": "f7a48b2b545acfaa77b2d607ae28747404ce02baefee16396c5d2d7a8ef34b5e",
+      "expected_sha256": "f7a48b2b545acfaa77b2d607ae28747404ce02baefee16396c5d2d7a8ef34b5e",
+      "status": "PASS"
+    },
+    "sdk_database": {
+      "path": "/Users/liuzhaoqi/Documents/Codex/2026-07-09/wan/CNBE-32-Chinese-Native-Binary-Encoding/data/cnbe32.db",
+      "sha256": "9bea5a8bcec1c85cf7f51f827964b2f18dd904d1db349447ae3b97892e3a6740"
+    }
+  },
+  "gates": {
+    "catalog_quality": "PASS",
+    "unihan_identity": "PASS",
+    "historical_full_artifact_identity": "PASS",
+    "raw_to_catalog_reproducibility": "PASS",
+    "sdk_current_contract_reproducibility": "PASS",
+    "semantic_authority": "INSUFFICIENT"
+  },
+  "field_evidence_matrix": [
+    {
+      "field": "unicode",
+      "classification": "source_identity",
+      "authority": "Unicode code point identity from the workbook and historical artifact.",
+      "boundary": "Does not validate CNBE semantic field choices by itself."
+    },
+    {
+      "field": "char",
+      "classification": "source_identity",
+      "authority": "Character/code point equality is checked row by row.",
+      "boundary": "Representative glyph variation is outside this audit."
+    },
+    {
+      "field": "radical",
+      "classification": "upstream_derived",
+      "authority": "Reproduced from Unicode 17.0.0 Unihan kRSUnicode.",
+      "boundary": "Accepts Unihan data as upstream input; no independent radical adjudication."
+    },
+    {
+      "field": "strokes",
+      "classification": "upstream_derived_with_31_clamp",
+      "authority": "Reproduced from Unicode 17.0.0 Unihan kTotalStrokes with documented clamp.",
+      "boundary": "Stroke counts above 31 are intentionally saturated by the CNBE bit field."
+    },
+    {
+      "field": "struct_type",
+      "classification": "heuristic_derived",
+      "authority": "Reproduced from the recovered radical-level structure classifier.",
+      "boundary": "Not a character-level glyph decomposition and not semantic authority."
+    },
+    {
+      "field": "idx",
+      "classification": "algorithm_derived",
+      "authority": "Reproduced by grouping on radical, clamped strokes, and structure.",
+      "boundary": "Only establishes deterministic historical indexing."
+    },
+    {
+      "field": "cnbe",
+      "classification": "bitfield_derived",
+      "authority": "Recomputed as R<<24 | S<<19 | G<<15 | I<<4 | E.",
+      "boundary": "Depends on the upstream and heuristic fields above."
+    }
+  ],
+  "catalog_quality_audit": {
+    "report_schema_version": 1,
+    "generated_at_utc": "2026-07-12T10:41:19.168763+00:00",
+    "audit_mode": "read_only",
+    "source": {
+      "file_name": "CNBE_编码目录_修复版_v3.xlsx",
+      "size_bytes": 6241787,
+      "sha256": "d9e24432b9ef3bb20458179258a0371ccf7e699d02ff8b00b59c615ba2aaee84",
+      "expected_data_rows": 97686
+    },
+    "summary": {
+      "status": "PASS",
+      "catalog_rows": 97686,
+      "checks_passed": 12,
+      "checks_failed": 0,
+      "failed_checks": [],
+      "sqlite_build_gate": "GO"
+    },
+    "checks": {
+      "required_worksheet": {
+        "status": "PASS",
+        "severity_if_failed": "critical",
+        "evidence": {
+          "required": "CNBE完整编码表",
+          "available": [
+            "CNBE完整编码表",
+            "GB 18030-2022标准对比"
+          ]
+        }
+      },
+      "required_columns": {
+        "status": "PASS",
+        "severity_if_failed": "critical",
+        "evidence": {
+          "header_row": 1,
+          "required": [
+            "序号",
+            "汉字",
+            "Unicode",
+            "CNBE(Hex)",
+            "CNBE(Dec)",
+            "CNBE(Bin)",
+            "部首区",
+            "笔画数",
+            "结构区",
+            "结构名称",
+            "字库区索引",
+            "扩展区"
+          ],
+          "missing": [],
+          "optional_present": [
+            "GB 18030-2022兼容性",
+            "备注说明"
+          ]
+        }
+      },
+      "expected_row_count": {
+        "status": "PASS",
+        "severity_if_failed": "critical",
+        "evidence": {
+          "expected": 97686,
+          "actual": 97686,
+          "non_data_rows": 1
+        }
+      },
+      "required_value_completeness": {
+        "status": "PASS",
+        "severity_if_failed": "critical",
+        "evidence": {
+          "rows_missing_required_values": 0
+        }
+      },
+      "row_parseability": {
+        "status": "PASS",
+        "severity_if_failed": "critical",
+        "evidence": {
+          "parse_errors": 0
+        }
+      },
+      "sequence_continuity": {
+        "status": "PASS",
+        "severity_if_failed": "critical",
+        "evidence": {
+          "errors": 0
+        }
+      },
+      "character_unicode_consistency": {
+        "status": "PASS",
+        "severity_if_failed": "critical",
+        "evidence": {
+          "mismatches": 0
+        }
+      },
+      "key_uniqueness": {
+        "status": "PASS",
+        "severity_if_failed": "critical",
+        "evidence": {
+          "unique_characters": 97686,
+          "unique_unicodes": 97686,
+          "unique_cnbe_codes": 97686,
+          "duplicate_characters": 0,
+          "duplicate_unicodes": 0,
+          "duplicate_cnbe_codes": 0
+        }
+      },
+      "cnbe_representation_consistency": {
+        "status": "PASS",
+        "severity_if_failed": "critical",
+        "evidence": {
+          "representation_mismatches": 0,
+          "invalid_binary_width": 0
+        }
+      },
+      "cnbe_bitfield_recomputation": {
+        "status": "PASS",
+        "severity_if_failed": "critical",
+        "evidence": {
+          "mismatches": 0,
+          "formula": "R<<24 | S<<19 | G<<15 | I<<4 | E"
+        }
+      },
+      "field_ranges": {
+        "status": "PASS",
+        "severity_if_failed": "critical",
+        "evidence": {
+          "errors": 0,
+          "observed": {
+            "部首区": {
+              "min": 1,
+              "max": 214
+            },
+            "笔画数": {
+              "min": 1,
+              "max": 31
+            },
+            "结构区": {
+              "min": 0,
+              "max": 10
+            },
+            "字库区索引": {
+              "min": 0,
+              "max": 388
+            },
+            "扩展区": {
+              "min": 0,
+              "max": 0
+            }
+          },
+          "allowed": {
+            "部首区": {
+              "min": 0,
+              "max": 255
+            },
+            "笔画数": {
+              "min": 0,
+              "max": 31
+            },
+            "结构区": {
+              "min": 0,
+              "max": 15
+            },
+            "字库区索引": {
+              "min": 0,
+              "max": 2047
+            },
+            "扩展区": {
+              "min": 0,
+              "max": 15
+            }
+          }
+        }
+      },
+      "structure_mapping_consistency": {
+        "status": "PASS",
+        "severity_if_failed": "high",
+        "evidence": {
+          "code_to_multiple_names": {},
+          "name_to_multiple_codes": {}
+        }
+      }
+    },
+    "profile": {
+      "data_rows": 97686,
+      "non_data_rows": 1,
+      "unicode_block_distribution": {
+        "CJK Unified Ideographs Extension B": 42720,
+        "CJK Unified Ideographs": 20992,
+        "CJK Unified Ideographs Extension F": 7473,
+        "CJK Unified Ideographs Extension A": 6592,
+        "CJK Unified Ideographs Extension E": 5774,
+        "CJK Unified Ideographs Extension G": 4939,
+        "CJK Unified Ideographs Extension H": 4192,
+        "CJK Unified Ideographs Extension C": 4160,
+        "CJK Unified Ideographs Extension I": 622,
+        "CJK Unified Ideographs Extension D": 222
+      },
+      "structure_distribution": {
+        "左右结构": 73565,
+        "上下结构": 18630,
+        "左上包围": 1743,
+        "左下包围": 1235,
+        "独体结构": 871,
+        "上三包围": 864,
+        "全包围": 323,
+        "右上包围": 306,
+        "下三包围": 149
+      },
+      "optional_column_population": {
+        "GB 18030-2022兼容性": {
+          "populated_rows": 0,
+          "population_rate": 0.0
+        },
+        "备注说明": {
+          "populated_rows": 0,
+          "population_rate": 0.0
+        }
+      }
+    },
+    "sample_issues": {
+      "non_data_rows": [
+        {
+          "worksheet_row": 97688,
+          "detail": "【说明】GB 18030-2022兼容性列：标识该汉字是否在GB 18030-2022标准范围内。M=是/否/CJK基本区全部兼容。更多对照数据详见「GB 18030-2022标准对比」工作表。"
+        }
+      ]
+    },
+    "existing_sdk_scope": {
+      "database": {
+        "status": "READ_ONLY_INSPECTED",
+        "path": "data/cnbe32.db",
+        "row_count": 20902,
+        "unicode_min": "U+4E00",
+        "unicode_max": "U+9FA5"
+      },
+      "catalog_basic_cjk_rows": 20992,
+      "basic_cjk_row_difference": 90,
+      "interpretation": "The full catalog is a separate data product. Do not replace the packaged SDK database until the Basic CJK scope difference and compatibility contract are resolved."
+    },
+    "next_step": "Implement a deterministic full-catalog SQLite builder with a separate output path, transactional writes, schema/version metadata, indexes, and post-build reconciliation against this report."
+  },
+  "historical_full_artifact_audit": {
+    "source_row_count": 97686,
+    "source_sha256": "d9e24432b9ef3bb20458179258a0371ccf7e699d02ff8b00b59c615ba2aaee84",
+    "historical_xlsx_blob_sha1": "352e91956af4d64df7cf9ff37a88a6beb0f66822",
+    "historical_xlsx_sha256": "d9e24432b9ef3bb20458179258a0371ccf7e699d02ff8b00b59c615ba2aaee84",
+    "source_matches_historical_xlsx_bytes": true,
+    "historical_database": {
+      "compressed_blob_sha1": "27e3e9282e8f29f4c7a04e40188fddda79809391",
+      "compressed_sha256": "397b64b0451d384c50116d79c9e17059e7cda52b0fcb5e3b200f3799c53bdf0e",
+      "database_sha256": "c683055329ec22f88d2b1440935ab0951e337197afe3b6219fc38891112b9e76",
+      "sqlite_integrity_check": "ok",
+      "row_count": 97686
+    },
+    "same_unicode_keys_as_historical_database": true,
+    "cnbe_mismatches_vs_historical_database": 0
+  },
+  "unihan_reproduction_audit": {
+    "file_name": "Unihan.zip",
+    "size_bytes": 8518517,
+    "sha256": "f7a48b2b545acfaa77b2d607ae28747404ce02baefee16396c5d2d7a8ef34b5e",
+    "unicode_version": "17.0.0",
+    "license_reference": "https://www.unicode.org/terms_of_use.html",
+    "archive_members": [
+      "Unihan_DictionaryIndices.txt",
+      "Unihan_DictionaryLikeData.txt",
+      "Unihan_IRGSources.txt",
+      "Unihan_NumericValues.txt",
+      "Unihan_OtherMappings.txt",
+      "Unihan_RadicalStrokeCounts.txt",
+      "Unihan_Readings.txt",
+      "Unihan_Variants.txt"
+    ],
+    "kRSUnicode_entries": 102998,
+    "kTotalStrokes_entries": 102998,
+    "catalog_radical_coverage": 97686,
+    "catalog_radical_mismatches": 0,
+    "catalog_stroke_coverage": 97686,
+    "catalog_stroke_mismatches_after_31_clamp": 0,
+    "catalog_group_count": 4425,
+    "catalog_index_mismatches": 0,
+    "catalog_max_group_size": 389,
+    "structure_rule_reconstruction": "PASS",
+    "structure_audit": {
+      "row_count": 97686,
+      "radicals_observed": 214,
+      "special_override_count": 19,
+      "structure_code_mismatches": 0,
+      "structure_name_mismatches": 0,
+      "radicals_with_multiple_observed_structures": {},
+      "expected_distribution": {
+        "0": 871,
+        "1": 73565,
+        "3": 18630,
+        "5": 1743,
+        "6": 306,
+        "7": 1235,
+        "8": 864,
+        "9": 149,
+        "10": 323
+      },
+      "actual_distribution": {
+        "0": 871,
+        "1": 73565,
+        "3": 18630,
+        "5": 1743,
+        "6": 306,
+        "7": 1235,
+        "8": 864,
+        "9": 149,
+        "10": 323
+      },
+      "mismatch_samples": []
+    }
+  },
+  "sdk_current_contract_audit": {
+    "row_count": 20902,
+    "sqlite_integrity_check": "ok",
+    "formula_mismatch_count": 0,
+    "mismatch_samples": [],
+    "formula": {
+      "radical": "((unicode - U+4E00) mod 214) + 1",
+      "strokes": "((unicode - U+4E00) mod 31) + 1",
+      "structure": "(unicode - U+4E00) mod 13",
+      "index": "(unicode - U+4E00) bitwise-and 0x7FF"
+    }
+  },
+  "repository_evidence": {
+    "sdk_introduction_commit": "7244e3e14875cd3492c15eb567ac32d6ede1a79a|2026-07-09T03:18:35+08:00|zairkliu|Day 1: core encoding library engineering — SQLite DB + JSON + DB API + 7 tests (v0.4.0)",
+    "full_artifact_commit": "83d29eca822bd8089b780521458ee8505a1b4ba4|2026-07-02T01:06:53+08:00|zairkliu|CNBE-32 v3.0: Full CJK extension + RISC-V custom instructions",
+    "full_artifact_candidate_generator_files": [
+      "cnbe_simulator.py",
+      "generate_cnbe_table.py"
+    ],
+    "full_raw_input_files_tracked": [],
+    "observed_limitations": [
+      "The tracked full-catalog table generator consumes an already-created workbook; it does not create the 97,686-row mapping.",
+      "No pinned Unihan archive, upstream checksum, or complete raw-to-catalog generator is tracked with the full artifact commit.",
+      "Historical documentation describes Unihan V17 extraction and heuristic structure rules, but those claims are not a reproducible source chain by themselves."
+    ]
+  },
+  "decision": {
+    "allowed_next_step": "semantic_stratified_review_protocol",
+    "blocked_actions": [
+      "Do not replace data/cnbe32.db.",
+      "Do not publish the full catalog as authoritative.",
+      "Do not tag, release, or publish to PyPI from this audit.",
+      "Do not commit upstream ZIP or generated SQLite artifacts."
+    ],
+    "required_before_sqlite_build": [
+      "Keep the full catalog under an experimental provenance boundary.",
+      "Record the pinned Unihan source manifest.",
+      "Complete an independent stratified semantic review before accuracy claims."
+    ]
+  }
+}

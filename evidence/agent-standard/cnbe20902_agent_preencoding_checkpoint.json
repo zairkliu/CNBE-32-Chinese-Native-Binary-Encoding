@@ -1,0 +1,10 @@
+{
+  "batch_id": "cnbe20902-agent-preencoding-test",
+  "blocker_char": null,
+  "blocker_offset": null,
+  "blocker_unicode": null,
+  "failed_gate": null,
+  "last_verified_offset": 20901,
+  "mode": "scan_all_with_strict_stop_simulation",
+  "resume_from": 20902
+}
