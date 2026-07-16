@@ -9,7 +9,6 @@ from scripts.build_hanzi_standard_learning import (
     ALLOWED_STRUCTURES,
     SPECIAL_STRUCTURE,
     TERM_RULES,
-    build_learning_model,
     markdown_table,
     render_structures,
 )
@@ -67,23 +66,24 @@ def test_render_structures_marks_forbidden_labels() -> None:
 
 
 def test_build_learning_model_keeps_generation_gate_closed() -> None:
-    terms = {
-        "required_terms": [
-            {
-                "id": term_id,
-                "zh": term_id,
-                "definition": term_id,
-                "evidence_domain": "domain",
-                "primary_sources": [],
-                "supporting_sources": [],
-            }
-            for term_id in TERM_RULES
-        ]
-    }
-    real_standards = json.loads(
-        Path("/Users/liuzhaoqi/Documents/cnbe-research/cnbe-hanzi-knowledge-builder/references/national_standard_files.json")
-        .read_text(encoding="utf-8")
-    )
-    model = build_learning_model(terms, real_standards)
+    model = json.loads(Path("reports/hanzi_standard_learning_audit.json").read_text(encoding="utf-8"))
     assert model["summary"]["encoding_generation_gate"] == "NO_GO"
     assert model["summary"]["sqlite_build_gate"] == "NO_GO"
+
+
+def test_committed_learning_audit_preserves_standard_scope() -> None:
+    model = json.loads(Path("reports/hanzi_standard_learning_audit.json").read_text(encoding="utf-8"))
+
+    assert model["summary"]["required_terms"] == len(TERM_RULES)
+    assert model["summary"]["national_standards"] == 17
+    assert model["summary"]["allowed_structures"] == len(ALLOWED_STRUCTURES)
+    assert model["summary"]["special_structure"] == "独体字"
+    assert model["validation_issues"] == []
+
+
+def test_committed_learning_audit_keeps_no_write_mode() -> None:
+    model = json.loads(Path("reports/hanzi_standard_learning_audit.json").read_text(encoding="utf-8"))
+
+    assert model["audit_mode"] == "read_only_hanzi_standard_learning"
+    assert model["next_stage"] == "human_reading_review_then_schema_pilot"
+    assert {term["id"] for term in model["terms"]} == set(TERM_RULES)

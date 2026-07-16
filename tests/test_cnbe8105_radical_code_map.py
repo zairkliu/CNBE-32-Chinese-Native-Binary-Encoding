@@ -7,25 +7,39 @@ from pathlib import Path
 
 from scripts.build_cnbe8105_radical_code_map import (
     DEFAULT_CANDIDATE_INPUT,
-    KNOWLEDGE_BASE,
     build_radical_mapping,
-    load_radical_code_source,
     resolve_radical,
 )
 
+RADICAL_MAP_EVIDENCE = Path("evidence/8105/cnbe8105_radical_code_map.json")
+
+
+def load_radical_map_evidence() -> dict:
+    return json.loads(RADICAL_MAP_EVIDENCE.read_text(encoding="utf-8"))
+
+
+def radical_to_code_from_evidence(model: dict) -> dict[str, int]:
+    mapping = {}
+    for record in model["direct_radicals"] + model["alias_radicals"]:
+        if record["status"] == "DIRECT":
+            mapping[record["radical"]] = record["code"]
+        if record["canonical_radical"]:
+            mapping[record["canonical_radical"]] = record["code"]
+    return mapping
+
 
 def test_radical_source_exposes_214_codes_and_count_mismatch() -> None:
-    source = load_radical_code_source(KNOWLEDGE_BASE)
-    assert source["metadata"]["actual_count"] == 214
-    assert source["metadata"]["declared_count"] != source["metadata"]["actual_count"]
-    assert source["radical_to_code"]["宀"] == 40
-    assert source["radical_to_code"]["水"] == 85
-    assert source["radical_to_code"]["辵"] == 162
+    model = load_radical_map_evidence()
+    assert model["summary"]["source_actual_count"] == 214
+    assert model["summary"]["source_declared_count"] != model["summary"]["source_actual_count"]
+    radical_to_code = radical_to_code_from_evidence(model)
+    assert radical_to_code["宀"] == 40
+    assert radical_to_code["水"] == 85
+    assert radical_to_code["辵"] == 162
 
 
 def test_resolve_radical_direct_alias_and_blocked() -> None:
-    source = load_radical_code_source(KNOWLEDGE_BASE)
-    mapping = source["radical_to_code"]
+    mapping = radical_to_code_from_evidence(load_radical_map_evidence())
     assert resolve_radical("宀", mapping)["status"] == "DIRECT"
 
     water = resolve_radical("氵", mapping)
@@ -45,7 +59,15 @@ def test_resolve_radical_direct_alias_and_blocked() -> None:
 
 def test_build_radical_mapping_keeps_blocked_rows_out_of_ready_pool() -> None:
     candidate_model = json.loads(Path(DEFAULT_CANDIDATE_INPUT).read_text(encoding="utf-8"))
-    source = load_radical_code_source(KNOWLEDGE_BASE)
+    evidence_model = load_radical_map_evidence()
+    source = {
+        "metadata": {
+            "actual_count": evidence_model["summary"]["source_actual_count"],
+            "declared_count": evidence_model["summary"]["source_declared_count"],
+            "source": evidence_model["metadata"]["source"]["source"],
+        },
+        "radical_to_code": radical_to_code_from_evidence(evidence_model),
+    }
     model = build_radical_mapping(candidate_model, source)
     summary = model["summary"]
     assert summary["candidate_rows"] == 6314

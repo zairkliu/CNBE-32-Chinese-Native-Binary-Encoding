@@ -2,12 +2,22 @@
 
 from __future__ import annotations
 
+import json
+from pathlib import Path
+
 from scripts.audit_cnbe8105_encoding_comparison import (
     ALLOWED_STRUCTURE_SET,
-    RESEARCH_ROOT,
-    build_outputs,
     normalize_structure,
 )
+
+BASELINE_EVIDENCE = Path("evidence/8105/cnbe8105_standard_baseline.json")
+SNAPSHOT_EVIDENCE = Path("evidence/8105/cnbe8105_current_cnbe_snapshot.json")
+COMPARISON_EVIDENCE = Path("evidence/8105/cnbe8105_encoding_comparison.json")
+MARKDOWN_EVIDENCE = Path("evidence/8105/CNBE8105_ENCODING_COMPARISON_REPORT.md")
+
+
+def load_json(path: Path) -> dict:
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def test_structure_policy_excludes_right_bottom_label() -> None:
@@ -17,7 +27,10 @@ def test_structure_policy_excludes_right_bottom_label() -> None:
 
 
 def test_build_outputs_contains_expected_8105_scope() -> None:
-    baseline, snapshot, comparison, markdown = build_outputs(RESEARCH_ROOT)
+    baseline = load_json(BASELINE_EVIDENCE)
+    snapshot = load_json(SNAPSHOT_EVIDENCE)
+    comparison = load_json(COMPARISON_EVIDENCE)
+    markdown = MARKDOWN_EVIDENCE.read_text(encoding="utf-8")
     assert baseline["summary"]["row_count"] == 8105
     assert baseline["summary"]["row_count_matches_expected"] is True
     assert snapshot["summary"]["baseline_rows"] == 8105
@@ -26,7 +39,7 @@ def test_build_outputs_contains_expected_8105_scope() -> None:
 
 
 def test_known_high_confidence_failures_are_detected() -> None:
-    _, _, comparison, _ = build_outputs(RESEARCH_ROOT)
+    comparison = load_json(COMPARISON_EVIDENCE)
     characters = comparison["characters"]
 
     assert characters["家"]["status"] == "FAIL_FIXABLE"
@@ -40,7 +53,7 @@ def test_known_high_confidence_failures_are_detected() -> None:
 
 
 def test_review_required_and_normalized_structure_samples() -> None:
-    _, _, comparison, _ = build_outputs(RESEARCH_ROOT)
+    comparison = load_json(COMPARISON_EVIDENCE)
     characters = comparison["characters"]
 
     assert characters["与"]["status"] == "FAIL_REVIEW_REQUIRED"

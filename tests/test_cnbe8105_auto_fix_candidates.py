@@ -2,16 +2,19 @@
 
 from __future__ import annotations
 
-from scripts.audit_cnbe8105_encoding_comparison import RESEARCH_ROOT, build_outputs
+import json
+from pathlib import Path
+
 from scripts.build_cnbe8105_auto_fix_candidates import (
     BLOCKED_FIELDS,
     build_candidates,
 )
 
+COMPARISON_EVIDENCE = Path("evidence/8105/cnbe8105_encoding_comparison.json")
+
 
 def comparison_model() -> dict:
-    _, _, comparison, _ = build_outputs(RESEARCH_ROOT)
-    return comparison
+    return json.loads(COMPARISON_EVIDENCE.read_text(encoding="utf-8"))
 
 
 def test_candidate_pool_uses_only_fail_fixable_rows() -> None:
