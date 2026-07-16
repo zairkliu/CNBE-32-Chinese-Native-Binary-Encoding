@@ -1,0 +1,382 @@
+{
+  "authority_boundary": {
+    "does_not_modify_data_files": true,
+    "does_not_reconstruct_encoding": true,
+    "does_not_validate_rows": true,
+    "release_gate": "schema comparison precedes Unicode and GF0017 row gates",
+    "scope": "schema_only"
+  },
+  "comparison": {
+    "column_count_range": {
+      "max": 17,
+      "min": 14
+    },
+    "invalid_workbooks": [],
+    "primary_sheet_column_counts": {
+      "data/CNBE_编码目录_修复版_v3.xlsx": 14,
+      "data/CNBE_编码目录_修复版_v4.xlsx": 16,
+      "data/CNBE_编码目录_修复版_v4_fixed.xlsx": 17
+    },
+    "primary_sheet_headers": {
+      "data/CNBE_编码目录_修复版_v3.xlsx": [
+        "序号",
+        "汉字",
+        "Unicode",
+        "CNBE(Hex)",
+        "CNBE(Dec)",
+        "CNBE(Bin)",
+        "部首区",
+        "笔画数",
+        "结构区",
+        "结构名称",
+        "字库区索引",
+        "扩展区",
+        "GB 18030-2022兼容性",
+        "备注说明"
+      ],
+      "data/CNBE_编码目录_修复版_v4.xlsx": [
+        "序号",
+        "汉字",
+        "Unicode",
+        "CNBE(Hex)",
+        "CNBE(Dec)",
+        "CNBE(Bin)",
+        "部首区",
+        "笔画数",
+        "结构区",
+        "结构名称",
+        "字库索引",
+        "扩展区",
+        "是否现代",
+        "Space_Label",
+        "Category_Label",
+        "Time_Label"
+      ],
+      "data/CNBE_编码目录_修复版_v4_fixed.xlsx": [
+        "序号",
+        "汉字",
+        "Unicode",
+        "CNBE(Hex)",
+        "CNBE(Dec)",
+        "CNBE(Bin)",
+        "部首区",
+        "笔画数",
+        "结构区(v4)",
+        "结构名称(v4)",
+        "字库索引",
+        "扩展区",
+        "是否现代",
+        "Space_Label",
+        "Category_Label",
+        "Time_Label",
+        "备注(v3原结构)"
+      ]
+    },
+    "primary_sheet_names": [
+      "CNBE完整编码表",
+      "CNBE完整编码表v4",
+      "CNBE完整编码表v4_fixed"
+    ],
+    "primary_sheet_row_counts": {
+      "data/CNBE_编码目录_修复版_v3.xlsx": 97688,
+      "data/CNBE_编码目录_修复版_v4.xlsx": 97687,
+      "data/CNBE_编码目录_修复版_v4_fixed.xlsx": 97687
+    },
+    "required_field_presence": {
+      "data/CNBE_编码目录_修复版_v3.xlsx": {
+        "character": true,
+        "cnbe": true,
+        "radical": true,
+        "stroke": true,
+        "structure": true,
+        "unicode": true
+      },
+      "data/CNBE_编码目录_修复版_v4.xlsx": {
+        "character": true,
+        "cnbe": true,
+        "radical": true,
+        "stroke": true,
+        "structure": true,
+        "unicode": true
+      },
+      "data/CNBE_编码目录_修复版_v4_fixed.xlsx": {
+        "character": true,
+        "cnbe": true,
+        "radical": true,
+        "stroke": true,
+        "structure": true,
+        "unicode": true
+      }
+    },
+    "row_count_range": {
+      "max": 97688,
+      "min": 97687
+    },
+    "valid_workbook_count": 3
+  },
+  "generated_at_utc": "2026-07-16T16:32:36.403900+00:00",
+  "mode": "read_only_excel_schema_inspection",
+  "next_gates": [
+    "select first release reconstruction input",
+    "extract full header-to-field mapping",
+    "run Unicode identity sampling",
+    "run full Unicode identity gate",
+    "run source evidence and GF0017 gates"
+  ],
+  "schema_version": "1.0",
+  "source_paths": [
+    "data/CNBE_编码目录_修复版_v3.xlsx",
+    "data/CNBE_编码目录_修复版_v4.xlsx",
+    "data/CNBE_编码目录_修复版_v4_fixed.xlsx"
+  ],
+  "summary": {
+    "blockers_or_review_items": [],
+    "status": "PASS",
+    "valid_workbooks": 3,
+    "workbooks_requested": 3
+  },
+  "workbooks": [
+    {
+      "exists": true,
+      "path": "data/CNBE_编码目录_修复版_v3.xlsx",
+      "sha256": "d9e24432b9ef3bb20458179258a0371ccf7e699d02ff8b00b59c615ba2aaee84",
+      "sheet_count": 2,
+      "sheets": [
+        {
+          "dimension": {
+            "column_count": 14,
+            "end_cell": "N97688",
+            "raw": "A1:N97688",
+            "row_count": 97688,
+            "start_cell": "A1"
+          },
+          "first_non_empty_row": 1,
+          "header": {
+            "character_candidates": [
+              "汉字"
+            ],
+            "cnbe_candidates": [
+              "CNBE(Hex)",
+              "CNBE(Dec)",
+              "CNBE(Bin)"
+            ],
+            "duplicate_headers": [],
+            "extension_candidates": [
+              "扩展区"
+            ],
+            "header_count": 14,
+            "headers": [
+              "序号",
+              "汉字",
+              "Unicode",
+              "CNBE(Hex)",
+              "CNBE(Dec)",
+              "CNBE(Bin)",
+              "部首区",
+              "笔画数",
+              "结构区",
+              "结构名称",
+              "字库区索引",
+              "扩展区",
+              "GB 18030-2022兼容性",
+              "备注说明"
+            ],
+            "index_candidates": [
+              "字库区索引"
+            ],
+            "radical_candidates": [
+              "部首区"
+            ],
+            "stroke_candidates": [
+              "笔画数"
+            ],
+            "structure_candidates": [
+              "结构区",
+              "结构名称"
+            ],
+            "unicode_candidates": [
+              "Unicode"
+            ]
+          },
+          "name": "CNBE完整编码表",
+          "path": "xl/worksheets/sheet1.xml"
+        },
+        {
+          "dimension": {
+            "column_count": 6,
+            "end_cell": "F50",
+            "raw": "A1:F50",
+            "row_count": 50,
+            "start_cell": "A1"
+          },
+          "first_non_empty_row": 1,
+          "header": {
+            "character_candidates": [],
+            "cnbe_candidates": [
+              "CNBE-32 vs GB 18030-2022 标准对比报告"
+            ],
+            "duplicate_headers": [],
+            "extension_candidates": [],
+            "header_count": 1,
+            "headers": [
+              "CNBE-32 vs GB 18030-2022 标准对比报告"
+            ],
+            "index_candidates": [],
+            "radical_candidates": [],
+            "stroke_candidates": [],
+            "structure_candidates": [],
+            "unicode_candidates": []
+          },
+          "name": "GB 18030-2022标准对比",
+          "path": "xl/worksheets/sheet2.xml"
+        }
+      ],
+      "size_bytes": 6241787,
+      "status": "READ_ONLY_SCHEMA_INSPECTED"
+    },
+    {
+      "exists": true,
+      "path": "data/CNBE_编码目录_修复版_v4.xlsx",
+      "sha256": "9c2be323ccccd774187808008cdbe19cac02a80e8f2c205b49bd9d110327d86f",
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "dimension": {
+            "column_count": 16,
+            "end_cell": "P97687",
+            "raw": "A1:P97687",
+            "row_count": 97687,
+            "start_cell": "A1"
+          },
+          "first_non_empty_row": 1,
+          "header": {
+            "character_candidates": [
+              "汉字"
+            ],
+            "cnbe_candidates": [
+              "CNBE(Hex)",
+              "CNBE(Dec)",
+              "CNBE(Bin)"
+            ],
+            "duplicate_headers": [],
+            "extension_candidates": [
+              "扩展区"
+            ],
+            "header_count": 16,
+            "headers": [
+              "序号",
+              "汉字",
+              "Unicode",
+              "CNBE(Hex)",
+              "CNBE(Dec)",
+              "CNBE(Bin)",
+              "部首区",
+              "笔画数",
+              "结构区",
+              "结构名称",
+              "字库索引",
+              "扩展区",
+              "是否现代",
+              "Space_Label",
+              "Category_Label",
+              "Time_Label"
+            ],
+            "index_candidates": [
+              "字库索引"
+            ],
+            "radical_candidates": [
+              "部首区"
+            ],
+            "stroke_candidates": [
+              "笔画数"
+            ],
+            "structure_candidates": [
+              "结构区",
+              "结构名称"
+            ],
+            "unicode_candidates": [
+              "Unicode"
+            ]
+          },
+          "name": "CNBE完整编码表v4",
+          "path": "xl/worksheets/sheet1.xml"
+        }
+      ],
+      "size_bytes": 10677086,
+      "status": "READ_ONLY_SCHEMA_INSPECTED"
+    },
+    {
+      "exists": true,
+      "path": "data/CNBE_编码目录_修复版_v4_fixed.xlsx",
+      "sha256": "08ea44768f3e1e1f14e4bbe0e2f1689f3b00676f0fab198b44453f5984271304",
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "dimension": {
+            "column_count": 17,
+            "end_cell": "Q97687",
+            "raw": "A1:Q97687",
+            "row_count": 97687,
+            "start_cell": "A1"
+          },
+          "first_non_empty_row": 1,
+          "header": {
+            "character_candidates": [
+              "汉字"
+            ],
+            "cnbe_candidates": [
+              "CNBE(Hex)",
+              "CNBE(Dec)",
+              "CNBE(Bin)"
+            ],
+            "duplicate_headers": [],
+            "extension_candidates": [
+              "扩展区"
+            ],
+            "header_count": 17,
+            "headers": [
+              "序号",
+              "汉字",
+              "Unicode",
+              "CNBE(Hex)",
+              "CNBE(Dec)",
+              "CNBE(Bin)",
+              "部首区",
+              "笔画数",
+              "结构区(v4)",
+              "结构名称(v4)",
+              "字库索引",
+              "扩展区",
+              "是否现代",
+              "Space_Label",
+              "Category_Label",
+              "Time_Label",
+              "备注(v3原结构)"
+            ],
+            "index_candidates": [
+              "字库索引"
+            ],
+            "radical_candidates": [
+              "部首区"
+            ],
+            "stroke_candidates": [
+              "笔画数"
+            ],
+            "structure_candidates": [
+              "结构区(v4)",
+              "结构名称(v4)",
+              "备注(v3原结构)"
+            ],
+            "unicode_candidates": [
+              "Unicode"
+            ]
+          },
+          "name": "CNBE完整编码表v4_fixed",
+          "path": "xl/worksheets/sheet1.xml"
+        }
+      ],
+      "size_bytes": 8534743,
+      "status": "READ_ONLY_SCHEMA_INSPECTED"
+    }
+  ]
+}
