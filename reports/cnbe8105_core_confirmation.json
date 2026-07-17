@@ -1,0 +1,68 @@
+{
+  "checks": {
+    "agent_preencoding_has_no_first_blocker": true,
+    "agent_preencoding_is_read_only": true,
+    "baseline_row_count_is_8105": true,
+    "baseline_row_count_matches_expected": true,
+    "comparison_standard_rows_are_8105": true,
+    "current_cnbe_not_claimed_complete": true,
+    "full_gf0017_not_claimed_complete": true,
+    "gf0017_score_rows_are_8105": true
+  },
+  "confirmation": {
+    "8105_is_controlling_core": true,
+    "cnbe32_write_allowed": false,
+    "current_cnbe_requires_repair_or_review": true,
+    "database_rebuild_allowed": false,
+    "gf0017_full_scoring_not_complete": true,
+    "push_scope_is_lightweight_core_confirmation": true,
+    "release_or_pypi_allowed": false,
+    "unicode_first_core_confirmed": true
+  },
+  "mode": "cnbe8105_core_confirmation",
+  "next_workflow_status": "READY_FOR_REMOTE_REVIEW_OF_8105_CORE_CONFIRMATION",
+  "overall_status": "PASS_CNBE8105_CORE_CONFIRMATION_READY_TO_PUSH",
+  "report_schema_version": "1.0",
+  "scope": {
+    "core": "8105 通用规范汉字表",
+    "core_status": "national_standard_core",
+    "outside_8105_status": "agent_standard_candidate_not_national_standard"
+  },
+  "summary": {
+    "agent_preencoding_rows": 20902,
+    "agent_preencoding_status_counts": {
+      "CNBE32_REVIEW_REQUIRED": 4058,
+      "EVIDENCE_GAP": 14042,
+      "HUMAN_REVIEW_REQUIRED": 292,
+      "SOURCE_GAP": 2510
+    },
+    "baseline_complete_rows": 6569,
+    "baseline_review_required_rows": 1536,
+    "baseline_rows": 8105,
+    "comparison_status_counts": {
+      "EVIDENCE_GAP": 1244,
+      "FAIL_FIXABLE": 6314,
+      "FAIL_REVIEW_REQUIRED": 547
+    },
+    "current_cnbe_rows_in_scope": 7829,
+    "gf0017_average_score": 44.4524,
+    "gf0017_max_score": 49,
+    "gf0017_min_score": 33,
+    "gf0017_overall_status_counts": {
+      "EVIDENCE_GAP": 1244,
+      "PARTIAL": 6569,
+      "REVIEW_REQUIRED": 292
+    },
+    "gf0017_source_gap_items": [
+      "character_set_coverage",
+      "stroke_shape"
+    ],
+    "missing_from_current_cnbe": 276
+  },
+  "tracked_inputs": {
+    "agent_preencoding": "evidence/agent-standard/cnbe20902_agent_preencoding_test.json",
+    "baseline": "evidence/8105/cnbe8105_standard_baseline.json",
+    "comparison": "evidence/8105/cnbe8105_encoding_comparison.json",
+    "gf0017_scores": "evidence/gf0017/cnbe8105_gf0017_normativity_scores.json"
+  }
+}
