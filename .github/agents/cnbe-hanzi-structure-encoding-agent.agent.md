@@ -82,5 +82,7 @@ docs/CNBE8105_ENCODING_GOVERNANCE.md
 skill/agents/cnbe-hanzi-structure-encoding-agent.yaml
 ```
 
-This profile is the GitHub-native listing entry for the repository `/agents`
-page. The repository skill remains the full operational rulebook.
+This `.agent.md` profile is the GitHub-native listing entry for custom Copilot
+agents. The repository `/agents` page also shows Copilot cloud agent task
+sessions, so an empty task list does not mean this profile is missing. The
+repository skill remains the full operational rulebook.

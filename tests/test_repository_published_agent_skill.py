@@ -45,18 +45,18 @@ def test_skill_directory_separates_current_agent_from_legacy_experiment_skill() 
     assert "Current Operational Agent" in text
     assert "skill/cnbe-hanzi-structure-encoding-agent/SKILL.md" in text
     assert "skill/agents/cnbe-hanzi-structure-encoding-agent.yaml" in text
-    assert ".github/agents/cnbe-hanzi-structure-encoding-agent.md" in text
+    assert ".github/agents/cnbe-hanzi-structure-encoding-agent.agent.md" in text
     assert "Historical Experiment Skill" in text
     assert "skill/agents/openai.yaml" in text
     assert "must not be used as authority" in text
 
 
 def test_github_agents_page_profile_publishes_current_agent() -> None:
-    text = read_text(".github/agents/cnbe-hanzi-structure-encoding-agent.md")
+    text = read_text(".github/agents/cnbe-hanzi-structure-encoding-agent.agent.md")
 
     assert "name: cnbe-hanzi-structure-encoding-agent" in text
     assert "description: Standards-aligned total-control Agent" in text
-    assert "GitHub-native listing entry" in text
+    assert "GitHub-native listing entry for custom Copilot" in text
     assert "Unicode identity" in text
     assert "8105" in text
     assert "GF0017" in text
@@ -99,4 +99,4 @@ def test_public_docs_link_to_repository_agent_skill() -> None:
     assert "Skill Layer" in structure_doc
     assert "Repository-published total-control Agent" in structure_doc
     assert "skill/agents/cnbe-hanzi-structure-encoding-agent.yaml" in structure_doc
-    assert ".github/agents/cnbe-hanzi-structure-encoding-agent.md" in structure_doc
+    assert ".github/agents/cnbe-hanzi-structure-encoding-agent.agent.md" in structure_doc
