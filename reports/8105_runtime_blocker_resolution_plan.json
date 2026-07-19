@@ -1,0 +1,871 @@
+{
+  "checks": {
+    "all_rows_have_resolution_class": true,
+    "all_rows_keep_no_database_status": true,
+    "all_rows_keep_no_write_status": true,
+    "blocked_reason_counts_match_expected": true,
+    "blocked_row_count_matches_runtime": true,
+    "missing_current_rows_are_missing_from_source_model": true,
+    "non_missing_current_rows_have_recoverable_index": true
+  },
+  "decision": {
+    "may_rebuild_sqlite_now": false,
+    "may_review_resolution_plan": true,
+    "may_write_source_table_now": false,
+    "recommended_next_step": "Run bounded remediation in policy order. First join missing radical/stroke evidence, then audit position-sensitive and component-to-radical mappings, and only then design an insertion/index policy for 276 8105 rows absent from the current runtime model."
+  },
+  "metadata": {
+    "generated_at": "2026-07-19T08:54:35.781974+00:00",
+    "mode": "read_only_8105_runtime_blocker_resolution_plan",
+    "runtime_promotion_report": "reports/8105_cnbe32_runtime_promotion.json",
+    "source": "evidence/agent-standard/cnbe8105_approved_cnbe32_dry_run_human_force_approval.json",
+    "source_model": "data/cnbe32.json",
+    "write_gate": "NO_SOURCE_TABLE_WRITE_NO_DATABASE_REBUILD"
+  },
+  "outputs": {
+    "csv_queue": "review_packets/8105_full/8105_runtime_blocker_resolution_queue.csv",
+    "json_report": "reports/8105_runtime_blocker_resolution_plan.json",
+    "markdown_report": "reports/8105_RUNTIME_BLOCKER_RESOLUTION_PLAN.md"
+  },
+  "overall_status": "PASS_8105_RUNTIME_BLOCKER_RESOLUTION_PLAN_READY",
+  "policy_order": [
+    {
+      "recommended_gate": "join standard radical and stroke evidence; no CNBE32 writes",
+      "resolution_class": "requires_standard_radical_and_stroke_join",
+      "scope": 964,
+      "step": 1
+    },
+    {
+      "recommended_gate": "audit 阝 side rule against decomposition/source evidence",
+      "resolution_class": "requires_position_sensitive_radical_rule",
+      "scope": 124,
+      "step": 2
+    },
+    {
+      "recommended_gate": "decide whether component-like labels may map to canonical radicals",
+      "resolution_class": "requires_component_to_radical_policy_review",
+      "scope": 16,
+      "step": 3
+    },
+    {
+      "recommended_gate": "resolve 己/已/巳 and similar groups from standard sources",
+      "resolution_class": "requires_shape_group_disambiguation",
+      "scope": 4,
+      "step": 4
+    },
+    {
+      "recommended_gate": "extend radical alias map only with explicit evidence",
+      "resolution_class": "requires_radical_alias_extension_review",
+      "scope": 9,
+      "step": 5
+    },
+    {
+      "recommended_gate": "design insertion/index policy before adding missing 8105 rows",
+      "resolution_class": "requires_index_allocation_and_source_row_insertion_plan",
+      "scope": 276,
+      "step": 6
+    }
+  ],
+  "samples": {
+    "first_queue_rows": [
+      {
+        "approved_agent_struct_type": "0",
+        "approved_agent_structure": "独体字",
+        "approved_radical": "刁",
+        "approved_strokes": 2,
+        "block_reason": "radical_resolution_blocked",
+        "char": "刁",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 1025,
+        "decoded_ext": 0,
+        "next_required_action": "Approved radical label is outside the conservative radical map and needs an audited alias or fallback policy.",
+        "resolution_class": "requires_radical_alias_extension_review",
+        "source_model_presence": "present",
+        "standard_rank": "16",
+        "unicode": "U+5201",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "0",
+        "approved_agent_structure": "独体字",
+        "approved_radical": "巳",
+        "approved_strokes": 3,
+        "block_reason": "radical_resolution_blocked",
+        "char": "巳",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 2035,
+        "decoded_ext": 0,
+        "next_required_action": "Approved radical label belongs to an ambiguous shape group and needs explicit standard-source disambiguation.",
+        "resolution_class": "requires_shape_group_disambiguation",
+        "source_model_presence": "present",
+        "standard_rank": "62",
+        "unicode": "U+5DF3",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "0",
+        "approved_agent_structure": "独体字",
+        "approved_radical": "乛",
+        "approved_strokes": 3,
+        "block_reason": "radical_resolution_blocked",
+        "char": "卫",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 1387,
+        "decoded_ext": 0,
+        "next_required_action": "Approved radical label is a component or stroke-like form that is not safely mapped to a CNBE32 radix yet.",
+        "resolution_class": "requires_component_to_radical_policy_review",
+        "source_model_presence": "present",
+        "standard_rank": "65",
+        "unicode": "U+536B",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "0",
+        "approved_agent_structure": "独体字",
+        "approved_radical": "乚",
+        "approved_strokes": 3,
+        "block_reason": "radical_resolution_blocked",
+        "char": "也",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 95,
+        "decoded_ext": 0,
+        "next_required_action": "Approved radical label is a component or stroke-like form that is not safely mapped to a CNBE32 radix yet.",
+        "resolution_class": "requires_component_to_radical_policy_review",
+        "source_model_presence": "present",
+        "standard_rank": "66",
+        "unicode": "U+4E5F",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "0",
+        "approved_agent_structure": "独体字",
+        "approved_radical": "飞",
+        "approved_strokes": 3,
+        "block_reason": "radical_resolution_blocked",
+        "char": "飞",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 734,
+        "decoded_ext": 0,
+        "next_required_action": "Approved radical label is outside the conservative radical map and needs an audited alias or fallback policy.",
+        "resolution_class": "requires_radical_alias_extension_review",
+        "source_model_presence": "present",
+        "standard_rank": "69",
+        "unicode": "U+98DE",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "0",
+        "approved_agent_structure": "独体字",
+        "approved_radical": "长",
+        "approved_strokes": 4,
+        "block_reason": "radical_resolution_blocked",
+        "char": "长",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 1919,
+        "decoded_ext": 0,
+        "next_required_action": "Approved radical label is outside the conservative radical map and needs an audited alias or fallback policy.",
+        "resolution_class": "requires_radical_alias_extension_review",
+        "source_model_presence": "present",
+        "standard_rank": "127",
+        "unicode": "U+957F",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "0",
+        "approved_agent_structure": "独体字",
+        "approved_radical": "巳",
+        "approved_strokes": 4,
+        "block_reason": "radical_resolution_blocked",
+        "char": "巴",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 2036,
+        "decoded_ext": 0,
+        "next_required_action": "Approved radical label belongs to an ambiguous shape group and needs explicit standard-source disambiguation.",
+        "resolution_class": "requires_shape_group_disambiguation",
+        "source_model_presence": "present",
+        "standard_rank": "178",
+        "unicode": "U+5DF4",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "3",
+        "approved_agent_structure": "左右",
+        "approved_radical": "阝",
+        "approved_strokes": 4,
+        "block_reason": "radical_resolution_blocked",
+        "char": "队",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 31,
+        "decoded_ext": 0,
+        "next_required_action": "阝 must be resolved as 阜 or 邑 by side/position evidence; current queue preserves the block until that rule is audited.",
+        "resolution_class": "requires_position_sensitive_radical_rule",
+        "source_model_presence": "present",
+        "standard_rank": "180",
+        "unicode": "U+961F",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "3",
+        "approved_agent_structure": "左右",
+        "approved_radical": "阝",
+        "approved_strokes": 4,
+        "block_reason": "radical_resolution_blocked",
+        "char": "邓",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 659,
+        "decoded_ext": 0,
+        "next_required_action": "阝 must be resolved as 阜 or 邑 by side/position evidence; current queue preserves the block until that rule is audited.",
+        "resolution_class": "requires_position_sensitive_radical_rule",
+        "source_model_presence": "present",
+        "standard_rank": "185",
+        "unicode": "U+9093",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "1",
+        "approved_agent_structure": "上下",
+        "approved_radical": "丷",
+        "approved_strokes": 5,
+        "block_reason": "radical_resolution_blocked",
+        "char": "兰",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 880,
+        "decoded_ext": 0,
+        "next_required_action": "Approved radical label is a component or stroke-like form that is not safely mapped to a CNBE32 radix yet.",
+        "resolution_class": "requires_component_to_radical_policy_review",
+        "source_model_presence": "present",
+        "standard_rank": "306",
+        "unicode": "U+5170",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "0",
+        "approved_agent_structure": "独体字",
+        "approved_radical": "民",
+        "approved_strokes": 5,
+        "block_reason": "radical_resolution_blocked",
+        "char": "民",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 1553,
+        "decoded_ext": 0,
+        "next_required_action": "Approved radical label is a component or stroke-like form that is not safely mapped to a CNBE32 radix yet.",
+        "resolution_class": "requires_component_to_radical_policy_review",
+        "source_model_presence": "present",
+        "standard_rank": "327",
+        "unicode": "U+6C11",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "3",
+        "approved_agent_structure": "左右",
+        "approved_radical": "阝",
+        "approved_strokes": 6,
+        "block_reason": "radical_resolution_blocked",
+        "char": "邦",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 678,
+        "decoded_ext": 0,
+        "next_required_action": "阝 must be resolved as 阜 or 邑 by side/position evidence; current queue preserves the block until that rule is audited.",
+        "resolution_class": "requires_position_sensitive_radical_rule",
+        "source_model_presence": "present",
+        "standard_rank": "348",
+        "unicode": "U+90A6",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "3",
+        "approved_agent_structure": "左右",
+        "approved_radical": "阝",
+        "approved_strokes": 6,
+        "block_reason": "radical_resolution_blocked",
+        "char": "邪",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 682,
+        "decoded_ext": 0,
+        "next_required_action": "阝 must be resolved as 阜 or 邑 by side/position evidence; current queue preserves the block until that rule is audited.",
+        "resolution_class": "requires_position_sensitive_radical_rule",
+        "source_model_presence": "present",
+        "standard_rank": "405",
+        "unicode": "U+90AA",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "1",
+        "approved_agent_structure": "上下",
+        "approved_radical": "丷",
+        "approved_strokes": 6,
+        "block_reason": "radical_resolution_blocked",
+        "char": "关",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 883,
+        "decoded_ext": 0,
+        "next_required_action": "Approved radical label is a component or stroke-like form that is not safely mapped to a CNBE32 radix yet.",
+        "resolution_class": "requires_component_to_radical_policy_review",
+        "source_model_presence": "present",
+        "standard_rank": "532",
+        "unicode": "U+5173",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "3",
+        "approved_agent_structure": "左右",
+        "approved_radical": "阝",
+        "approved_strokes": 6,
+        "block_reason": "radical_resolution_blocked",
+        "char": "那",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 675,
+        "decoded_ext": 0,
+        "next_required_action": "阝 must be resolved as 阜 or 邑 by side/position evidence; current queue preserves the block until that rule is audited.",
+        "resolution_class": "requires_position_sensitive_radical_rule",
+        "source_model_presence": "present",
+        "standard_rank": "564",
+        "unicode": "U+90A3",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "3",
+        "approved_agent_structure": "左右",
+        "approved_radical": "阝",
+        "approved_strokes": 6,
+        "block_reason": "radical_resolution_blocked",
+        "char": "阵",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 53,
+        "decoded_ext": 0,
+        "next_required_action": "阝 must be resolved as 阜 or 邑 by side/position evidence; current queue preserves the block until that rule is audited.",
+        "resolution_class": "requires_position_sensitive_radical_rule",
+        "source_model_presence": "present",
+        "standard_rank": "571",
+        "unicode": "U+9635",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "3",
+        "approved_agent_structure": "左右",
+        "approved_radical": "阝",
+        "approved_strokes": 6,
+        "block_reason": "radical_resolution_blocked",
+        "char": "阳",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 51,
+        "decoded_ext": 0,
+        "next_required_action": "阝 must be resolved as 阜 or 邑 by side/position evidence; current queue preserves the block until that rule is audited.",
+        "resolution_class": "requires_position_sensitive_radical_rule",
+        "source_model_presence": "present",
+        "standard_rank": "572",
+        "unicode": "U+9633",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "3",
+        "approved_agent_structure": "左右",
+        "approved_radical": "阝",
+        "approved_strokes": 6,
+        "block_reason": "radical_resolution_blocked",
+        "char": "阶",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 54,
+        "decoded_ext": 0,
+        "next_required_action": "阝 must be resolved as 阜 or 邑 by side/position evidence; current queue preserves the block until that rule is audited.",
+        "resolution_class": "requires_position_sensitive_radical_rule",
+        "source_model_presence": "present",
+        "standard_rank": "574",
+        "unicode": "U+9636",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "3",
+        "approved_agent_structure": "左右",
+        "approved_radical": "阝",
+        "approved_strokes": 6,
+        "block_reason": "radical_resolution_blocked",
+        "char": "阴",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 52,
+        "decoded_ext": 0,
+        "next_required_action": "阝 must be resolved as 阜 or 邑 by side/position evidence; current queue preserves the block until that rule is audited.",
+        "resolution_class": "requires_position_sensitive_radical_rule",
+        "source_model_presence": "present",
+        "standard_rank": "575",
+        "unicode": "U+9634",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "3",
+        "approved_agent_structure": "左右",
+        "approved_radical": "阝",
+        "approved_strokes": 6,
+        "block_reason": "radical_resolution_blocked",
+        "char": "防",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 50,
+        "decoded_ext": 0,
+        "next_required_action": "阝 must be resolved as 阜 or 邑 by side/position evidence; current queue preserves the block until that rule is audited.",
+        "resolution_class": "requires_position_sensitive_radical_rule",
+        "source_model_presence": "present",
+        "standard_rank": "576",
+        "unicode": "U+9632",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "3",
+        "approved_agent_structure": "左右",
+        "approved_radical": "阝",
+        "approved_strokes": 7,
+        "block_reason": "radical_resolution_blocked",
+        "char": "邮",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 686,
+        "decoded_ext": 0,
+        "next_required_action": "阝 must be resolved as 阜 or 邑 by side/position evidence; current queue preserves the block until that rule is audited.",
+        "resolution_class": "requires_position_sensitive_radical_rule",
+        "source_model_presence": "present",
+        "standard_rank": "732",
+        "unicode": "U+90AE",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "3",
+        "approved_agent_structure": "左右",
+        "approved_radical": "乚",
+        "approved_strokes": 7,
+        "block_reason": "radical_resolution_blocked",
+        "char": "乱",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 113,
+        "decoded_ext": 0,
+        "next_required_action": "Approved radical label is a component or stroke-like form that is not safely mapped to a CNBE32 radix yet.",
+        "resolution_class": "requires_component_to_radical_policy_review",
+        "source_model_presence": "present",
+        "standard_rank": "762",
+        "unicode": "U+4E71",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "3",
+        "approved_agent_structure": "左右",
+        "approved_radical": "阝",
+        "approved_strokes": 7,
+        "block_reason": "radical_resolution_blocked",
+        "char": "邻",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 699,
+        "decoded_ext": 0,
+        "next_required_action": "阝 must be resolved as 阜 or 邑 by side/position evidence; current queue preserves the block until that rule is audited.",
+        "resolution_class": "requires_position_sensitive_radical_rule",
+        "source_model_presence": "present",
+        "standard_rank": "801",
+        "unicode": "U+90BB",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "3",
+        "approved_agent_structure": "左右",
+        "approved_radical": "阝",
+        "approved_strokes": 7,
+        "block_reason": "radical_resolution_blocked",
+        "char": "际",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 69,
+        "decoded_ext": 0,
+        "next_required_action": "阝 must be resolved as 阜 or 邑 by side/position evidence; current queue preserves the block until that rule is audited.",
+        "resolution_class": "requires_position_sensitive_radical_rule",
+        "source_model_presence": "present",
+        "standard_rank": "911",
+        "unicode": "U+9645",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "3",
+        "approved_agent_structure": "左右",
+        "approved_radical": "阝",
+        "approved_strokes": 7,
+        "block_reason": "radical_resolution_blocked",
+        "char": "陆",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 70,
+        "decoded_ext": 0,
+        "next_required_action": "阝 must be resolved as 阜 or 邑 by side/position evidence; current queue preserves the block until that rule is audited.",
+        "resolution_class": "requires_position_sensitive_radical_rule",
+        "source_model_presence": "present",
+        "standard_rank": "912",
+        "unicode": "U+9646",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "3",
+        "approved_agent_structure": "左右",
+        "approved_radical": "阝",
+        "approved_strokes": 7,
+        "block_reason": "radical_resolution_blocked",
+        "char": "阿",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 63,
+        "decoded_ext": 0,
+        "next_required_action": "阝 must be resolved as 阜 or 邑 by side/position evidence; current queue preserves the block until that rule is audited.",
+        "resolution_class": "requires_position_sensitive_radical_rule",
+        "source_model_presence": "present",
+        "standard_rank": "913",
+        "unicode": "U+963F",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "3",
+        "approved_agent_structure": "左右",
+        "approved_radical": "阝",
+        "approved_strokes": 7,
+        "block_reason": "radical_resolution_blocked",
+        "char": "陈",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 72,
+        "decoded_ext": 0,
+        "next_required_action": "阝 must be resolved as 阜 or 邑 by side/position evidence; current queue preserves the block until that rule is audited.",
+        "resolution_class": "requires_position_sensitive_radical_rule",
+        "source_model_presence": "present",
+        "standard_rank": "914",
+        "unicode": "U+9648",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "3",
+        "approved_agent_structure": "左右",
+        "approved_radical": "阝",
+        "approved_strokes": 7,
+        "block_reason": "radical_resolution_blocked",
+        "char": "阻",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 59,
+        "decoded_ext": 0,
+        "next_required_action": "阝 must be resolved as 阜 or 邑 by side/position evidence; current queue preserves the block until that rule is audited.",
+        "resolution_class": "requires_position_sensitive_radical_rule",
+        "source_model_presence": "present",
+        "standard_rank": "915",
+        "unicode": "U+963B",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "3",
+        "approved_agent_structure": "左右",
+        "approved_radical": "阝",
+        "approved_strokes": 7,
+        "block_reason": "radical_resolution_blocked",
+        "char": "附",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 68,
+        "decoded_ext": 0,
+        "next_required_action": "阝 must be resolved as 阜 or 邑 by side/position evidence; current queue preserves the block until that rule is audited.",
+        "resolution_class": "requires_position_sensitive_radical_rule",
+        "source_model_presence": "present",
+        "standard_rank": "916",
+        "unicode": "U+9644",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      {
+        "approved_agent_struct_type": "3",
+        "approved_agent_structure": "左右",
+        "approved_radical": "阝",
+        "approved_strokes": 8,
+        "block_reason": "radical_resolution_blocked",
+        "char": "郁",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 705,
+        "decoded_ext": 0,
+        "next_required_action": "阝 must be resolved as 阜 or 邑 by side/position evidence; current queue preserves the block until that rule is audited.",
+        "resolution_class": "requires_position_sensitive_radical_rule",
+        "source_model_presence": "present",
+        "standard_rank": "1043",
+        "unicode": "U+90C1",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      }
+    ],
+    "known_rows": {
+      "㑇": {
+        "approved_agent_struct_type": "3",
+        "approved_agent_structure": "左右",
+        "approved_radical": "",
+        "approved_strokes": "",
+        "block_reason": "missing_current_model_row",
+        "char": "㑇",
+        "current_index_recoverable": false,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": "",
+        "decoded_ext": "",
+        "next_required_action": "8105 character is absent from the current 20,902-row runtime model; no current index/ext can be preserved.",
+        "resolution_class": "requires_index_allocation_and_source_row_insertion_plan",
+        "source_model_presence": "missing",
+        "standard_rank": "6602",
+        "unicode": "U+3447",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      "冁": {
+        "approved_agent_struct_type": "3",
+        "approved_agent_structure": "左右",
+        "approved_radical": "丷",
+        "approved_strokes": 18,
+        "block_reason": "radical_resolution_blocked",
+        "char": "冁",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 897,
+        "decoded_ext": 0,
+        "next_required_action": "Approved radical label is a component or stroke-like form that is not safely mapped to a CNBE32 radix yet.",
+        "resolution_class": "requires_component_to_radical_policy_review",
+        "source_model_presence": "present",
+        "standard_rank": "8023",
+        "unicode": "U+5181",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      "刁": {
+        "approved_agent_struct_type": "0",
+        "approved_agent_structure": "独体字",
+        "approved_radical": "刁",
+        "approved_strokes": 2,
+        "block_reason": "radical_resolution_blocked",
+        "char": "刁",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 1025,
+        "decoded_ext": 0,
+        "next_required_action": "Approved radical label is outside the conservative radical map and needs an audited alias or fallback policy.",
+        "resolution_class": "requires_radical_alias_extension_review",
+        "source_model_presence": "present",
+        "standard_rank": "16",
+        "unicode": "U+5201",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      "匜": {
+        "approved_agent_struct_type": "7",
+        "approved_agent_structure": "左三包",
+        "approved_radical": "",
+        "approved_strokes": "",
+        "block_reason": "missing_approved_radical",
+        "char": "匜",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 1308,
+        "decoded_ext": 0,
+        "next_required_action": "Approved Agent structure exists, but radical/stroke evidence is blank and must be joined before CNBE32 bitfields can be recomputed.",
+        "resolution_class": "requires_standard_radical_and_stroke_join",
+        "source_model_presence": "present",
+        "standard_rank": "3536",
+        "unicode": "U+531C",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      "玕": {
+        "approved_agent_struct_type": "3",
+        "approved_agent_structure": "左右",
+        "approved_radical": "",
+        "approved_strokes": "",
+        "block_reason": "missing_approved_radical",
+        "char": "玕",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 1429,
+        "decoded_ext": 0,
+        "next_required_action": "Approved Agent structure exists, but radical/stroke evidence is blank and must be joined before CNBE32 bitfields can be recomputed.",
+        "resolution_class": "requires_standard_radical_and_stroke_join",
+        "source_model_presence": "present",
+        "standard_rank": "3648",
+        "unicode": "U+7395",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      },
+      "队": {
+        "approved_agent_struct_type": "3",
+        "approved_agent_structure": "左右",
+        "approved_radical": "阝",
+        "approved_strokes": 4,
+        "block_reason": "radical_resolution_blocked",
+        "char": "队",
+        "current_index_recoverable": true,
+        "database_status": "NO_DATABASE_REBUILD",
+        "decoded_current_index": 31,
+        "decoded_ext": 0,
+        "next_required_action": "阝 must be resolved as 阜 or 邑 by side/position evidence; current queue preserves the block until that rule is audited.",
+        "resolution_class": "requires_position_sensitive_radical_rule",
+        "source_model_presence": "present",
+        "standard_rank": "180",
+        "unicode": "U+961F",
+        "write_status": "NO_SOURCE_TABLE_WRITE"
+      }
+    }
+  },
+  "summary": {
+    "block_reason_counts": {
+      "missing_approved_radical": 964,
+      "missing_current_model_row": 276,
+      "radical_resolution_blocked": 153
+    },
+    "current_index_recoverable_counts": {
+      "False": 276,
+      "True": 1117
+    },
+    "database_rebuild_allowed": false,
+    "resolution_class_counts": {
+      "requires_component_to_radical_policy_review": 16,
+      "requires_index_allocation_and_source_row_insertion_plan": 276,
+      "requires_position_sensitive_radical_rule": 124,
+      "requires_radical_alias_extension_review": 9,
+      "requires_shape_group_disambiguation": 4,
+      "requires_standard_radical_and_stroke_join": 964
+    },
+    "source_model_presence_counts": {
+      "missing": 276,
+      "present": 1117
+    },
+    "source_table_rows_written": 0,
+    "total_blocked_rows": 1393
+  },
+  "top_profiles": {
+    "approved_radicals": [
+      {
+        "count": 1240,
+        "value": ""
+      },
+      {
+        "count": 124,
+        "value": "阝"
+      },
+      {
+        "count": 7,
+        "value": "丷"
+      },
+      {
+        "count": 5,
+        "value": "乚"
+      },
+      {
+        "count": 4,
+        "value": "巳"
+      },
+      {
+        "count": 2,
+        "value": "民"
+      },
+      {
+        "count": 2,
+        "value": "毋"
+      },
+      {
+        "count": 1,
+        "value": "刁"
+      },
+      {
+        "count": 1,
+        "value": "乛"
+      },
+      {
+        "count": 1,
+        "value": "飞"
+      },
+      {
+        "count": 1,
+        "value": "长"
+      },
+      {
+        "count": 1,
+        "value": "肀"
+      },
+      {
+        "count": 1,
+        "value": "旡"
+      },
+      {
+        "count": 1,
+        "value": "兀"
+      },
+      {
+        "count": 1,
+        "value": "孑"
+      },
+      {
+        "count": 1,
+        "value": "羋"
+      }
+    ],
+    "structures": [
+      {
+        "count": 1146,
+        "value": "左右"
+      },
+      {
+        "count": 175,
+        "value": "上下"
+      },
+      {
+        "count": 21,
+        "value": "左上包"
+      },
+      {
+        "count": 13,
+        "value": "左下包"
+      },
+      {
+        "count": 12,
+        "value": "独体字"
+      },
+      {
+        "count": 10,
+        "value": "上中下"
+      },
+      {
+        "count": 4,
+        "value": "上三包"
+      },
+      {
+        "count": 4,
+        "value": "左中右"
+      },
+      {
+        "count": 2,
+        "value": "镶嵌"
+      },
+      {
+        "count": 2,
+        "value": "左三包"
+      },
+      {
+        "count": 2,
+        "value": "全包围"
+      },
+      {
+        "count": 1,
+        "value": "右上包"
+      },
+      {
+        "count": 1,
+        "value": "下三包"
+      }
+    ]
+  }
+}

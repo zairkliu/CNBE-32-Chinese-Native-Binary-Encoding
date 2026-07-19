@@ -1,0 +1,354 @@
+{
+  "checks": {
+    "all_applied_roundtrip_pass": true,
+    "all_databases_integrity_ok": true,
+    "applied_plus_remaining_matches_prior_queue": true,
+    "known_samples": true,
+    "missing_current_rows_not_inserted": true,
+    "runtime_row_count_preserved": true,
+    "runtime_unique_char_preserved": true,
+    "runtime_unique_unicode_preserved": true
+  },
+  "databases": [
+    {
+      "distinct_char": 20902,
+      "distinct_unicode": 20902,
+      "path": "data/cnbe32.db",
+      "row_count": 20902,
+      "samples": {
+        "㑇": null,
+        "侵": {
+          "char": "侵",
+          "cnbe": 155818832,
+          "idx": 437,
+          "radix": 9,
+          "radix_name": "亻",
+          "strokes": 9,
+          "struct_name": "左右",
+          "struct_type": 3,
+          "unicode": 20405
+        },
+        "偶": {
+          "char": "偶",
+          "cnbe": 156870496,
+          "idx": 630,
+          "radix": 9,
+          "radix_name": "亻",
+          "strokes": 11,
+          "struct_name": "左右",
+          "struct_type": 3,
+          "unicode": 20598
+        },
+        "冁": {
+          "char": "冁",
+          "cnbe": 720386064,
+          "idx": 897,
+          "radix": 42,
+          "radix_name": "小",
+          "strokes": 30,
+          "struct_name": "single",
+          "struct_type": 0,
+          "unicode": 20865
+        },
+        "刁": {
+          "char": "刁",
+          "cnbe": 2854076432,
+          "idx": 1025,
+          "radix": 170,
+          "radix_name": "阜",
+          "strokes": 3,
+          "struct_name": "full-wrap",
+          "struct_type": 11,
+          "unicode": 20993
+        },
+        "孓": {
+          "char": "孓",
+          "cnbe": 655906096,
+          "idx": 1363,
+          "radix": 39,
+          "radix_name": "子",
+          "strokes": 3,
+          "struct_name": "独体字",
+          "struct_type": 0,
+          "unicode": 23379
+        },
+        "家": {
+          "char": "家",
+          "cnbe": 676387680,
+          "idx": 1462,
+          "radix": 40,
+          "radix_name": "宀",
+          "strokes": 10,
+          "struct_name": "上下",
+          "struct_type": 1,
+          "unicode": 23478
+        },
+        "玕": {
+          "char": "玕",
+          "cnbe": 1597626704,
+          "idx": 1429,
+          "radix": 95,
+          "radix_name": "王",
+          "strokes": 7,
+          "struct_name": "左右",
+          "struct_type": 3,
+          "unicode": 29589
+        },
+        "队": {
+          "char": "队",
+          "cnbe": 2854322672,
+          "idx": 31,
+          "radix": 170,
+          "radix_name": "阜",
+          "strokes": 4,
+          "struct_name": "左右",
+          "struct_type": 3,
+          "unicode": 38431
+        }
+      },
+      "size_bytes": 1634304,
+      "sqlite_integrity_check": "ok"
+    },
+    {
+      "distinct_char": 20902,
+      "distinct_unicode": 20902,
+      "path": "src/cnbe32/data/cnbe32.db",
+      "row_count": 20902,
+      "samples": {
+        "㑇": null,
+        "侵": {
+          "char": "侵",
+          "cnbe": 155818832,
+          "idx": 437,
+          "radix": 9,
+          "radix_name": "亻",
+          "strokes": 9,
+          "struct_name": "左右",
+          "struct_type": 3,
+          "unicode": 20405
+        },
+        "偶": {
+          "char": "偶",
+          "cnbe": 156870496,
+          "idx": 630,
+          "radix": 9,
+          "radix_name": "亻",
+          "strokes": 11,
+          "struct_name": "左右",
+          "struct_type": 3,
+          "unicode": 20598
+        },
+        "冁": {
+          "char": "冁",
+          "cnbe": 720386064,
+          "idx": 897,
+          "radix": 42,
+          "radix_name": "小",
+          "strokes": 30,
+          "struct_name": "single",
+          "struct_type": 0,
+          "unicode": 20865
+        },
+        "刁": {
+          "char": "刁",
+          "cnbe": 2854076432,
+          "idx": 1025,
+          "radix": 170,
+          "radix_name": "阜",
+          "strokes": 3,
+          "struct_name": "full-wrap",
+          "struct_type": 11,
+          "unicode": 20993
+        },
+        "孓": {
+          "char": "孓",
+          "cnbe": 655906096,
+          "idx": 1363,
+          "radix": 39,
+          "radix_name": "子",
+          "strokes": 3,
+          "struct_name": "独体字",
+          "struct_type": 0,
+          "unicode": 23379
+        },
+        "家": {
+          "char": "家",
+          "cnbe": 676387680,
+          "idx": 1462,
+          "radix": 40,
+          "radix_name": "宀",
+          "strokes": 10,
+          "struct_name": "上下",
+          "struct_type": 1,
+          "unicode": 23478
+        },
+        "玕": {
+          "char": "玕",
+          "cnbe": 1597626704,
+          "idx": 1429,
+          "radix": 95,
+          "radix_name": "王",
+          "strokes": 7,
+          "struct_name": "左右",
+          "struct_type": 3,
+          "unicode": 29589
+        },
+        "队": {
+          "char": "队",
+          "cnbe": 2854322672,
+          "idx": 31,
+          "radix": 170,
+          "radix_name": "阜",
+          "strokes": 4,
+          "struct_name": "左右",
+          "struct_type": 3,
+          "unicode": 38431
+        }
+      },
+      "size_bytes": 1634304,
+      "sqlite_integrity_check": "ok"
+    }
+  ],
+  "decision": {
+    "may_review_runtime_repair": true,
+    "may_tag_release_or_publish": false,
+    "remaining_requires_index_or_radical_policy": true
+  },
+  "known_samples": {
+    "㑇": null,
+    "侵": {
+      "char": "侵",
+      "cnbe": 155818832,
+      "index": 437,
+      "radix": 9,
+      "radix_name": "亻",
+      "strokes": 9,
+      "struct_name": "左右",
+      "struct_type": 3,
+      "unicode": 20405
+    },
+    "偶": {
+      "char": "偶",
+      "cnbe": 156870496,
+      "index": 630,
+      "radix": 9,
+      "radix_name": "亻",
+      "strokes": 11,
+      "struct_name": "左右",
+      "struct_type": 3,
+      "unicode": 20598
+    },
+    "冁": {
+      "char": "冁",
+      "cnbe": 720386064,
+      "index": 897,
+      "radix": 42,
+      "radix_name": "小",
+      "strokes": 30,
+      "struct_name": "single",
+      "struct_type": 0,
+      "unicode": 20865
+    },
+    "刁": {
+      "char": "刁",
+      "cnbe": 2854076432,
+      "index": 1025,
+      "radix": 170,
+      "radix_name": "阜",
+      "strokes": 3,
+      "struct_name": "full-wrap",
+      "struct_type": 11,
+      "unicode": 20993
+    },
+    "孓": {
+      "char": "孓",
+      "cnbe": 655906096,
+      "index": 1363,
+      "radix": 39,
+      "radix_name": "子",
+      "strokes": 3,
+      "struct_name": "独体字",
+      "struct_type": 0,
+      "unicode": 23379
+    },
+    "家": {
+      "char": "家",
+      "cnbe": 676387680,
+      "index": 1462,
+      "radix": 40,
+      "radix_name": "宀",
+      "strokes": 10,
+      "struct_name": "上下",
+      "struct_type": 1,
+      "unicode": 23478
+    },
+    "玕": {
+      "char": "玕",
+      "cnbe": 1597626704,
+      "index": 1429,
+      "radix": 95,
+      "radix_name": "王",
+      "strokes": 7,
+      "struct_name": "左右",
+      "struct_type": 3,
+      "unicode": 29589
+    },
+    "队": {
+      "char": "队",
+      "cnbe": 2854322672,
+      "index": 31,
+      "radix": 170,
+      "radix_name": "阜",
+      "strokes": 4,
+      "struct_name": "左右",
+      "struct_type": 3,
+      "unicode": 38431
+    }
+  },
+  "metadata": {
+    "approved_packet": "review_packets/8105_full/8105_hanzi_decomp_v03_human_approved_structure_packet.csv",
+    "authority_boundary": "8105_agent_standard_runtime_repair_not_full_national_standard_claim",
+    "blocker_queue": "review_packets/8105_full/8105_runtime_blocker_resolution_queue.csv",
+    "generated_at": "2026-07-19T09:24:03.072466+00:00",
+    "mode": "authorized_8105_standardized_runtime_repair",
+    "repair_id": "CNBE8105_STANDARDIZED_RUNTIME_REPAIR_2026_07_19",
+    "runtime_json": "data/cnbe32.json",
+    "zdic_cache": "reports/zdic_8105_gap_cache"
+  },
+  "outputs": {
+    "applied_csv": "review_packets/8105_full/8105_standardized_runtime_repair_applied.csv",
+    "json_report": "reports/8105_standardized_runtime_repair.json",
+    "markdown_report": "reports/8105_STANDARDIZED_RUNTIME_REPAIR.md",
+    "package_db": "src/cnbe32/data/cnbe32.db",
+    "remaining_csv": "review_packets/8105_full/8105_standardized_runtime_repair_remaining_blockers.csv",
+    "root_db": "data/cnbe32.db",
+    "runtime_json": "data/cnbe32.json"
+  },
+  "overall_status": "PASS_8105_STANDARDIZED_RUNTIME_REPAIR",
+  "summary": {
+    "applied_radical_resolution_counts": {
+      "ALIAS": 166,
+      "DIRECT": 299,
+      "POSITION_LEFT_ALIAS": 61,
+      "POSITION_RIGHT_ALIAS": 72
+    },
+    "applied_radical_source_counts": {
+      "approved_8105_packet": 123,
+      "zdic_cached_cross_reference_radical": 475
+    },
+    "applied_repair_rows": 598,
+    "databases_rebuilt": 2,
+    "patched_8105_rows_after_repair": 7310,
+    "previous_force_approved_not_patched_rows": 1393,
+    "previous_patched_8105_rows": 6712,
+    "prior_runtime_rows": 20902,
+    "remaining_force_approved_not_patched_rows": 795,
+    "remaining_reason_counts": {
+      "invalid_or_missing_stroke_count": 1,
+      "missing_current_model_row": 276,
+      "missing_radical_after_cross_reference_join": 486,
+      "radical_resolution_blocked": 32
+    },
+    "runtime_rows": 20902
+  }
+}

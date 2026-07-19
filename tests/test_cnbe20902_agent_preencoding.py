@@ -35,10 +35,10 @@ def test_legacy_structure_labels_are_localized_but_not_silently_accepted() -> No
     report, _, _ = build_outputs(DEFAULT_CNBE_INPUT, DEFAULT_GF0017_SCORES)
 
     assert report["summary"]["structure_source_counts"] == {
-        "direct_chinese": 6712,
-        "english_alias": 14190,
+        "direct_chinese": 7310,
+        "english_alias": 13592,
     }
-    assert report["summary"]["issue_counts"]["structure_label_requires_localization"] == 14190
+    assert report["summary"]["issue_counts"]["structure_label_requires_localization"] == 13592
     legacy_record = next(
         record
         for record in report["records"]
@@ -72,12 +72,12 @@ def test_agent_exposes_gf0017_scope_gap_for_non_8105_rows() -> None:
     assert report["summary"]["issue_counts"]["outside_8105_gf0017_score_scope"] == 13073
     assert report["summary"]["agent_status_counts"]["EVIDENCE_GAP"] == 14042
     assert report["summary"]["agent_status_counts"]["HUMAN_REVIEW_REQUIRED"] == 292
-    assert report["summary"]["agent_status_counts"]["SOURCE_GAP"] == 6481
+    assert report["summary"]["agent_status_counts"]["SOURCE_GAP"] == 6558
 
 
 def test_cnbe32_bitfield_review_is_separate_from_unicode_identity() -> None:
     report, _, _ = build_outputs(DEFAULT_CNBE_INPUT, DEFAULT_GF0017_SCORES)
 
-    assert report["summary"]["bitfield_status_counts"]["PASS"] == 12182
-    assert report["summary"]["bitfield_status_counts"]["REVIEW_REQUIRED"] == 8720
-    assert report["summary"]["issue_counts"]["struct_type_name_mismatch_after_normalization"] == 8720
+    assert report["summary"]["bitfield_status_counts"]["PASS"] == 12560
+    assert report["summary"]["bitfield_status_counts"]["REVIEW_REQUIRED"] == 8342
+    assert report["summary"]["issue_counts"]["struct_type_name_mismatch_after_normalization"] == 8342

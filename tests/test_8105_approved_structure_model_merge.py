@@ -11,8 +11,8 @@ def test_approved_structure_merge_covers_8105_and_current_model() -> None:
     assert summary["current_model_intersection_rows"] == 7829
     assert summary["missing_from_current_model_rows"] == 276
     assert summary["current_model_intersection_rows"] + summary["missing_from_current_model_rows"] == 8105
-    assert summary["current_model_confirmed_rows"] == 6783
-    assert summary["current_model_structure_repair_candidate_rows"] == 1046
+    assert summary["current_model_confirmed_rows"] == 7337
+    assert summary["current_model_structure_repair_candidate_rows"] == 492
 
 
 def test_approved_structure_merge_has_valid_agent_structure_codes() -> None:

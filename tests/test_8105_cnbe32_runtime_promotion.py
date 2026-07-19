@@ -14,8 +14,9 @@ def test_runtime_json_contains_promoted_8105_samples() -> None:
     by_char = {row["char"]: row for row in model["characters"]}
 
     assert model["metadata"]["runtime_promotion"] == "8105_human_force_approved_cnbe32_runtime"
-    assert model["metadata"]["patched_8105_rows"] == 6712
-    assert model["metadata"]["force_approved_not_patched_rows"] == 1393
+    assert model["metadata"]["runtime_repair"] == "CNBE8105_STANDARDIZED_RUNTIME_REPAIR_2026_07_19"
+    assert model["metadata"]["patched_8105_rows"] == 7310
+    assert model["metadata"]["force_approved_not_patched_rows"] == 795
     assert len(model["characters"]) == 20902
     assert by_char["家"]["radix_name"] == "宀"
     assert by_char["家"]["strokes"] == 10
@@ -23,6 +24,13 @@ def test_runtime_json_contains_promoted_8105_samples() -> None:
     assert by_char["侵"]["struct_name"] == "左右"
     assert by_char["偶"]["struct_name"] == "左右"
     assert by_char["孓"]["struct_name"] == "独体字"
+    assert by_char["队"]["radix_name"] == "阜"
+    assert by_char["队"]["strokes"] == 4
+    assert by_char["队"]["struct_name"] == "左右"
+    assert by_char["玕"]["radix_name"] == "王"
+    assert by_char["玕"]["strokes"] == 7
+    assert by_char["玕"]["struct_name"] == "左右"
+    assert "㑇" not in by_char
 
 
 def test_runtime_json_bitfields_recompute() -> None:
@@ -44,6 +52,8 @@ def test_rebuilt_databases_match_runtime_samples() -> None:
         "侵": (20405, "侵", 155818832, 9, "亻", 9, 3, "左右", 437),
         "偶": (20598, "偶", 156870496, 9, "亻", 11, 3, "左右", 630),
         "孓": (23379, "孓", 655906096, 39, "子", 3, 0, "独体字", 1363),
+        "队": (38431, "队", 2854322672, 170, "阜", 4, 3, "左右", 31),
+        "玕": (29589, "玕", 1597626704, 95, "王", 7, 3, "左右", 1429),
     }
     for db_path in (Path("data/cnbe32.db"), Path("src/cnbe32/data/cnbe32.db")):
         with sqlite3.connect(db_path) as connection:
@@ -68,5 +78,7 @@ def test_sdk_lookup_can_read_promoted_runtime_database(monkeypatch) -> None:
         assert lookup("侵")["struct_name"] == "左右"
         assert lookup("偶")["struct_name"] == "左右"
         assert lookup("孓")["struct_name"] == "独体字"
+        assert lookup("队")["struct_name"] == "左右"
+        assert lookup("玕")["strokes"] == 7
     finally:
         close_connection()

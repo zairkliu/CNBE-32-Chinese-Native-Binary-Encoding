@@ -37,7 +37,9 @@ Current confirmed state:
 - missing current CNBE rows inside 8105 scope: `276`
 - human-approved 8105 Agent structure baseline: `8105 / 8105`
 - runtime CNBE32 rows patched from the approved 8105 dry run: `6712`
-- force-approved rows retained for later insertion/radical strategy: `1393`
+- additional conservative standardized runtime repairs: `598`
+- total patched 8105 runtime rows after repair: `7310`
+- force-approved rows retained for later insertion/radical strategy: `795`
 - runtime JSON and SQLite databases rebuilt from the approved 20,902-row source
 
 Governance documents:
@@ -48,6 +50,11 @@ Governance documents:
 - [Repository Structure](./docs/REPOSITORY_STRUCTURE.md)
 - [CNBE 8105 Core Confirmation](./reports/CNBE8105_CORE_CONFIRMATION.md)
 - [CNBE 8105 Runtime Promotion](./reports/8105_CNBE32_RUNTIME_PROMOTION.md)
+- [CNBE 8105 Standardized Runtime Repair](./reports/8105_STANDARDIZED_RUNTIME_REPAIR.md)
+
+Earlier AI-generated catalog fields are now treated as a historical test
+baseline only. They remain useful for regression localization, but they are not
+used as authority for structure, radical, stroke, teaching, or research claims.
 
 ---
 
@@ -214,7 +221,7 @@ CNBE-32 includes machine-readable golden vectors in [spec/golden_vectors.json](.
 
 - [Changelog](./CHANGELOG.md)
 - [Release process](./RELEASE.md)
-- [v1.0.3 release notes draft](./docs/releases/v1.0.3.md)
+- [v1.0.4 release notes candidate](./docs/releases/v1.0.4.md)
 - [Contributing guide](./CONTRIBUTING.md)
 - [Security policy](./SECURITY.md)
 
