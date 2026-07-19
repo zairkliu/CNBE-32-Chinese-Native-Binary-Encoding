@@ -17,6 +17,12 @@ It is also listed for Agent discovery at:
 skill/agents/cnbe-hanzi-structure-encoding-agent.yaml
 ```
 
+It is exposed to GitHub's repository Agents page at:
+
+```text
+.github/agents/cnbe-hanzi-structure-encoding-agent.md
+```
+
 Use it for CNBE32/CNBE64/CNBE128 structure encoding planning, 8105 alignment,
 GF0017 gates, source-evidence workflow design, review packets, and batch
 quality control.

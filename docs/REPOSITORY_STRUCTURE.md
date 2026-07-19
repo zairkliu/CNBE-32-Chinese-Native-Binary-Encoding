@@ -65,6 +65,8 @@ The operational Agent workflow is defined in
 
 | Path | Purpose |
 |---|---|
+| `.github/agents/` | GitHub-native repository Agent profiles for the `/agents` page |
+| `.github/agents/cnbe-hanzi-structure-encoding-agent.md` | GitHub listing profile for the standards-aligned CNBE Agent |
 | `skill/README.md` | Skill directory index and authority boundary |
 | `skill/agents/` | Agent discovery metadata and short usage descriptions |
 | `skill/cnbe-hanzi-structure-encoding-agent/SKILL.md` | Repository-published total-control Agent for standards-aligned Hanzi encoding |
@@ -74,7 +76,9 @@ The repository-published Agent skill is the portable entry point for the
 post-`v1.0.4` standards restart. It must stay aligned with
 `docs/CNBE_HANZI_STRUCTURE_AGENT_MODEL.md` and
 `docs/CNBE_REPRODUCIBLE_AGENT_WORKFLOW.md`. Its discovery metadata is
-`skill/agents/cnbe-hanzi-structure-encoding-agent.yaml`.
+`skill/agents/cnbe-hanzi-structure-encoding-agent.yaml`, and its GitHub
+repository Agents page profile is
+`.github/agents/cnbe-hanzi-structure-encoding-agent.md`.
 
 ## Historical Experiment Layer
 
