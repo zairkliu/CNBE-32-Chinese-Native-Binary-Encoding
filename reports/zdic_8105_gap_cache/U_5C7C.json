@@ -1,0 +1,14 @@
+{
+  "authority_boundary": "ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD",
+  "character": "屼",
+  "error": "ReadTimeout: HTTPSConnectionPool(host='zdic.net', port=443): Read timed out. (read timeout=8)",
+  "fields": {},
+  "found_field_count": 0,
+  "found_fields": [],
+  "parse_status": "NETWORK_OR_PARSE_GAP",
+  "source_kind": "online_fetch_failed",
+  "source_level": "network_cross_reference",
+  "source_path": "",
+  "unicode_codepoint": "U+5C7C",
+  "zdic_url": "https://www.zdic.net/hans/%E5%B1%BC"
+}

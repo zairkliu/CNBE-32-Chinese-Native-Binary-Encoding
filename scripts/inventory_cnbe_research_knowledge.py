@@ -405,6 +405,11 @@ def summarize_assets(root: Path, assets: list[dict[str, Any]]) -> dict[str, Any]
 
 def action_items(assets: list[dict[str, Any]]) -> list[dict[str, Any]]:
     items: list[dict[str, Any]] = []
+    canonical_unihan_pass = any(
+        asset["relative_path"] == "Unihan2.zip"
+        and asset.get("zip", {}).get("status") == "PASS"
+        for asset in assets
+    )
     for asset in assets:
         flags = asset.get("flags", [])
         if not flags:
@@ -420,12 +425,17 @@ def action_items(assets: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 }
             )
         if "zip_integrity_failed" in flags:
+            excluded_legacy_unihan = relative_path == "Unihan.zip" and canonical_unihan_pass
             items.append(
                 {
-                    "severity": "BLOCKER" if relative_path == "Unihan.zip" else "WARN",
+                    "severity": "WARN" if excluded_legacy_unihan else "BLOCKER" if relative_path == "Unihan.zip" else "WARN",
                     "asset": relative_path,
                     "issue": "zip archive failed Python zipfile integrity check",
-                    "next_step": "exclude or replace before treating as authoritative input",
+                    "next_step": (
+                        "keep excluded because canonical Unihan2.zip passes integrity"
+                        if excluded_legacy_unihan
+                        else "exclude or replace before treating as authoritative input"
+                    ),
                 }
             )
         if "json_parse_failed" in flags:

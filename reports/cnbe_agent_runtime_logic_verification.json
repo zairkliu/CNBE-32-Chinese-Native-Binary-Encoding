@@ -1,0 +1,82 @@
+{
+  "agent": "cnbe-hanzi-structure-encoding-agent",
+  "blocker_assertion_policy": {
+    "critical_blockers_to_preserve_until_resolved": [],
+    "current_encoding_generation_gate": "REVIEW_REQUIRED",
+    "current_inventory_blocker_count": 0,
+    "current_inventory_warning_count": 1,
+    "current_sqlite_build_gate": "REVIEW_REQUIRED",
+    "do_not_hardcode_historical_blocker_totals": true,
+    "reason": "Knowledge-asset blockers can be resolved by authorized repairs. Regression tests should fail only when the current inventory and runtime report disagree, or when a known critical blocker disappears without an explicit repair record.",
+    "resolved_historical_blocker_classes": [
+      "structured/base_character_data.json 8105 count mismatch",
+      "structured/cnbe_character_knowledge.json 8105 count mismatch",
+      "legacy Unihan.zip invalid archive when canonical Unihan2.zip passes"
+    ],
+    "review_required_semantics": "A REVIEW_REQUIRED source gate permits read-only evidence-index design. It does not permit formal scoring, CNBE row writes, or database reconstruction.",
+    "source": "reports/cnbe_research_knowledge_inventory.json",
+    "test_rule": "assert inventory consistency and named critical blockers"
+  },
+  "decision": {
+    "may_publish_release": false,
+    "may_rebuild_database": false,
+    "may_start_batch_gf0017_scoring": false,
+    "may_start_gf0017_preflight_plan": true,
+    "reason": "Runtime logic passes, but source evidence mapping and review-required asset notes must be handled before batch scoring or database reconstruction."
+  },
+  "expected_no_go_reasons": [],
+  "failed_gates": [],
+  "gates": {
+    "checkpoint_resume_gate": {
+      "message": "Checkpoint reports a complete no-blocker scan and a resume offset after the final row.",
+      "status": "PASS"
+    },
+    "cnbe32_carrier_separation_gate": {
+      "message": "CNBE32 bitfield review is separated from Unicode identity and cannot silently repair rows.",
+      "status": "PASS"
+    },
+    "full_catalog_pre_gf0017_gate": {
+      "message": "Full catalog preparation passes schema, sample, and Unicode identity gates.",
+      "status": "PASS"
+    },
+    "gf0017_status_preservation_gate": {
+      "message": "GF0017 scoring preserves EVIDENCE_GAP, REVIEW_REQUIRED, and repair-candidate statuses.",
+      "status": "PASS"
+    },
+    "knowledge_asset_stop_gate": {
+      "message": "Knowledge assets preserve a gated state before scoring or database generation.",
+      "status": "PASS"
+    },
+    "legacy_structure_localization_gate": {
+      "message": "All legacy English structure labels are localized and preserved as review signals.",
+      "status": "PASS"
+    },
+    "unicode_first_agent_gate": {
+      "message": "20,902 legacy CNBE rows have unique Unicode identity and no Unicode blocker.",
+      "status": "PASS"
+    }
+  },
+  "inputs": {
+    "agent_checkpoint": "evidence/agent-standard/cnbe20902_agent_preencoding_checkpoint.json",
+    "agent_report": "evidence/agent-standard/cnbe20902_agent_preencoding_test.json",
+    "gf0017_report": "evidence/gf0017/cnbe8105_gf0017_normativity_scores.json",
+    "knowledge_inventory": "reports/cnbe_research_knowledge_inventory.json",
+    "sample_report": "reports/full_catalog_v4_fixed_sample_rows.json",
+    "schema_report": "reports/full_catalog_excel_schema_comparison.json",
+    "unicode_identity_report": "reports/full_catalog_v4_fixed_unicode_identity.json"
+  },
+  "key_counts": {
+    "agent_rows": 20902,
+    "agent_unicode_pass": 20902,
+    "cnbe32_review_required": 12864,
+    "full_catalog_rows": 97686,
+    "gf0017_rows": 8105,
+    "knowledge_blockers": 0,
+    "knowledge_warnings": 1,
+    "legacy_structure_localization_required": 20902
+  },
+  "mode": "read_only_runtime_logic_verification",
+  "next_workflow_status": "PREFLIGHT_ALLOWED_BATCH_SCORING_BLOCKED",
+  "overall_status": "PASS",
+  "report_schema_version": "1.0"
+}

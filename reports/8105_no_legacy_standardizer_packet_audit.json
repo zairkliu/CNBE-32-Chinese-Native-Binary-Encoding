@@ -1,0 +1,56 @@
+{
+  "candidate_standard_mismatches": [],
+  "checks": {
+    "all_candidates_match_standard_evidence": true,
+    "no_cnbe_rows_written": true,
+    "no_database_rebuild": true,
+    "no_forbidden_legacy_fields": true,
+    "no_forbidden_pollution_values": true,
+    "no_new_gf0017_points": true,
+    "regression_chars_match_corrected_structures": true,
+    "row_count_is_100": true
+  },
+  "decision": {
+    "may_assign_gf0017_structure_points": false,
+    "may_rebuild_database": false,
+    "may_start_human_recheck": true,
+    "may_write_cnbe_rows": false,
+    "reason": "The packet is clean enough for human recheck only. GF0017 structure scoring and CNBE writes remain blocked until human review confirms the corrected structure candidates."
+  },
+  "forbidden_fields": [],
+  "mode": "no_legacy_8105_standardizer_packet_audit",
+  "next_workflow_status": "READY_FOR_HUMAN_RECHECK_PACKET_REVIEW",
+  "outputs": {
+    "human_recheck_csv": "review_packets/300_character_8105_pilot/8105_no_legacy_human_recheck_packet.csv",
+    "json_report": "reports/8105_no_legacy_standardizer_packet_audit.json",
+    "markdown_report": "reports/8105_NO_LEGACY_STANDARDIZER_PACKET_AUDIT.md"
+  },
+  "overall_status": "PASS_8105_NO_LEGACY_STANDARDIZER_PACKET_AUDIT",
+  "pollution_hits": [],
+  "regression_failures": [],
+  "report_schema_version": "1.0",
+  "summary": {
+    "candidate_standard_mismatch_count": 0,
+    "candidate_status_counts": {
+      "CANDIDATE_COMPONENTS_REVIEW_REQUIRED": 32,
+      "CANDIDATE_COMPONENTS_WITH_DICTIONARY_CONTEXT_REVIEW_REQUIRED": 56,
+      "DICTIONARY_CONTEXT_ONLY_REVIEW_REQUIRED": 1,
+      "STANDARDIZER_EVIDENCE_GAP": 11
+    },
+    "forbidden_field_count": 0,
+    "human_recheck_rows": 21,
+    "packet_rows": 100,
+    "pollution_hit_count": 0,
+    "regression_failure_count": 0,
+    "structure_counts": {
+      "UNRESOLVED": 12,
+      "上三包": 2,
+      "上下": 23,
+      "全包围": 1,
+      "右上包": 3,
+      "左上包": 2,
+      "左下包": 2,
+      "左右": 55
+    }
+  }
+}

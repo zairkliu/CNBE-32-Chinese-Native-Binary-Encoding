@@ -1,0 +1,410 @@
+{
+  "authority_boundary": {
+    "agent_standard_is_not_national_standard": true,
+    "cnbe32_is_carrier_not_authority": true,
+    "does_not_modify_workbook": true,
+    "does_not_publish_release": true,
+    "does_not_rebuild_database": true,
+    "does_not_score_rows": true
+  },
+  "blocker_rules": [
+    {
+      "action": "stop batch and write checkpoint",
+      "code": "UNICODE_IDENTITY_MISMATCH",
+      "gate": "Unicode identity"
+    },
+    {
+      "action": "stop or isolate affected row/item before scoring",
+      "code": "SOURCE_GRADE_UNRESOLVED",
+      "gate": "Source evidence"
+    },
+    {
+      "action": "stop until legacy label maps to one of the 13 Agent labels",
+      "code": "LEGACY_STRUCTURE_NOT_LOCALIZED",
+      "gate": "Agent standard localization"
+    },
+    {
+      "action": "stop and correct standard_level",
+      "code": "AGENT_STANDARD_MISLABELED_AS_NATIONAL",
+      "gate": "Authority boundary"
+    },
+    {
+      "action": "stop; this phase cannot modify workbook/database/CNBE rows",
+      "code": "CNBE32_WRITE_ATTEMPT",
+      "gate": "No-write boundary"
+    },
+    {
+      "action": "reconcile or explicitly exclude the blocker before batch scoring",
+      "code": "KNOWLEDGE_ASSET_BLOCKER",
+      "gate": "Knowledge inventory"
+    }
+  ],
+  "checkpoint_contract": {
+    "blocker_file": "reports/full_catalog_gf0017_join_blockers.json",
+    "checkpoint_file": "reports/full_catalog_gf0017_join_checkpoint.json",
+    "last_verified_offset": null,
+    "resume_from": null,
+    "resume_rule": "restart from last_verified_offset + 1 after blocker evidence is resolved"
+  },
+  "decision": {
+    "may_modify_workbook": false,
+    "may_rebuild_database": false,
+    "may_start_batch_gf0017_scoring": false,
+    "may_start_blocker_reconciliation": true,
+    "reason": "The join schema is explicit, but knowledge blockers and source-evidence joins must be reconciled before row scoring."
+  },
+  "evidence_tables": [
+    {
+      "controls": [
+        "Unicode identity gate",
+        "row offset checkpoint"
+      ],
+      "join_key": [
+        "char",
+        "unicode"
+      ],
+      "required_fields": [
+        "row_offset",
+        "worksheet_row",
+        "char",
+        "unicode",
+        "codepoint"
+      ],
+      "source": "reports/full_catalog_v4_fixed_unicode_identity.json",
+      "status_policy": "BLOCKER on mismatch",
+      "table_id": "unicode_identity"
+    },
+    {
+      "controls": [
+        "character_set_coverage",
+        "stroke_shape",
+        "stroke_order",
+        "component_validity",
+        "component_name_validity",
+        "radical_validity",
+        "independent_character_rule",
+        "structure_first_decomposition"
+      ],
+      "join_key": [
+        "gf0017_item_id"
+      ],
+      "required_fields": [
+        "id",
+        "points",
+        "source_status",
+        "controlling_sources",
+        "workbook_fields"
+      ],
+      "source": "reports/full_catalog_gf0017_source_mapping.json",
+      "status_policy": "SOURCE_GAP and SOURCE_EVIDENCE_REQUIRED must be preserved",
+      "table_id": "gf0017_source_items"
+    },
+    {
+      "controls": [
+        "structure_first_decomposition",
+        "independent_character_rule"
+      ],
+      "join_key": [
+        "legacy_structure_label"
+      ],
+      "required_fields": [
+        "legacy_struct_name",
+        "legacy_struct_type",
+        "agent_structure",
+        "agent_struct_type",
+        "standard_level",
+        "localization_confidence"
+      ],
+      "source": "evidence/agent-standard/cnbe_legacy_structure_localization.json",
+      "status_policy": "BLOCKER if a legacy label has no Agent localization",
+      "table_id": "agent_structure_localization"
+    },
+    {
+      "controls": [
+        "stroke_shape",
+        "stroke_order",
+        "component_validity",
+        "component_name_validity",
+        "radical_validity",
+        "independent_character_rule",
+        "structure_first_decomposition"
+      ],
+      "join_key": [
+        "char",
+        "unicode"
+      ],
+      "required_fields": [
+        "stroke_count",
+        "stroke_order",
+        "stroke_shape_sequence",
+        "radical",
+        "component_list",
+        "component_names",
+        "independent_character_status",
+        "structure",
+        "decomposition_tree",
+        "source_references",
+        "source_grades"
+      ],
+      "source": "future standard-derived evidence extraction",
+      "status_policy": "BLOCKER if required source grade is unresolved",
+      "table_id": "standard_hanzi_knowledge"
+    },
+    {
+      "controls": [
+        "carrier consistency only"
+      ],
+      "join_key": [
+        "char",
+        "unicode"
+      ],
+      "required_fields": [
+        "cnbe_hex",
+        "cnbe_dec",
+        "cnbe_bin",
+        "legacy_radical_code",
+        "legacy_stroke_count",
+        "legacy_structure_code",
+        "legacy_structure_name",
+        "legacy_index",
+        "legacy_extension_flags"
+      ],
+      "source": "v4_fixed workbook columns",
+      "status_policy": "review signal only; cannot prove normative correctness",
+      "table_id": "cnbe32_carrier_snapshot"
+    }
+  ],
+  "mode": "read_only_full_catalog_gf0017_join_schema_design",
+  "next_artifacts": [
+    "reports/full_catalog_gf0017_blocker_reconciliation.json",
+    "reports/FULL_CATALOG_GF0017_BLOCKER_RECONCILIATION.md",
+    "scripts/reconcile_full_catalog_gf0017_blockers.py"
+  ],
+  "next_workflow_status": "JOIN_SCHEMA_READY_BLOCKER_RECONCILIATION_REQUIRED",
+  "overall_status": "PASS",
+  "preconditions": {
+    "agent_standard_level": "agent_standard_aligned_to_8105_not_national_standard",
+    "knowledge_blockers": 3,
+    "legacy_localization_complete": true,
+    "preflight_plan_status": "PASS",
+    "source_mapping_status": "PASS",
+    "unicode_identity_status": "PASS"
+  },
+  "report_schema_version": "1.0",
+  "row_schema": {
+    "gf0017_item_ids": [
+      "character_set_coverage",
+      "stroke_shape",
+      "stroke_order",
+      "component_validity",
+      "component_name_validity",
+      "radical_validity",
+      "independent_character_rule",
+      "structure_first_decomposition"
+    ],
+    "gf0017_item_shape": {
+      "blocker": "null or blocker code",
+      "evidence_refs": "list of source path/hash/page references",
+      "item_id": "string",
+      "points": "integer",
+      "score": "null in join-schema phase",
+      "source_grade": "source-grade label for controlling evidence",
+      "source_status": "direct_standard | standard_derived | cross_reference | referenced_not_direct | unresolved | SOURCE_GAP | SOURCE_EVIDENCE_REQUIRED",
+      "status": "null in join-schema phase"
+    },
+    "record_id": "full_catalog_gf0017_join_row_v1",
+    "required_top_level_fields": [
+      "row_offset",
+      "worksheet_row",
+      "char",
+      "unicode",
+      "codepoint",
+      "normalization_status",
+      "scope_status",
+      "workbook_fields",
+      "source_evidence",
+      "agent_localization",
+      "gf0017_items",
+      "blockers",
+      "checkpoint"
+    ],
+    "score_policy": {
+      "numeric_score_before_batch_phase": "FORBIDDEN",
+      "score_values_allowed": false,
+      "source_gap_as_pass": "FORBIDDEN",
+      "status_without_source_grade": "FORBIDDEN"
+    }
+  },
+  "source_sheet": "CNBE完整编码表v4_fixed",
+  "source_workbook": "data/CNBE_编码目录_修复版_v4_fixed.xlsx",
+  "summary": {
+    "blocker_rules": 6,
+    "data_rows": 97686,
+    "evidence_tables": 5,
+    "gf0017_items": 8,
+    "gf0017_total_points": 50,
+    "knowledge_blockers": 3,
+    "workbook_columns": 17
+  },
+  "workbook_columns": [
+    {
+      "agent_role": "source_row_sequence",
+      "authority": "workbook_metadata_not_standard",
+      "gf0017_use": [
+        "character_set_coverage"
+      ],
+      "index": 0,
+      "name": "序号",
+      "required_for_join": true
+    },
+    {
+      "agent_role": "literal_character",
+      "authority": "identity_candidate",
+      "gf0017_use": [
+        "character_set_coverage"
+      ],
+      "index": 1,
+      "name": "汉字",
+      "required_for_join": true
+    },
+    {
+      "agent_role": "unicode_codepoint",
+      "authority": "identity_candidate",
+      "gf0017_use": [
+        "character_set_coverage"
+      ],
+      "index": 2,
+      "name": "Unicode",
+      "required_for_join": true
+    },
+    {
+      "agent_role": "cnbe32_carrier_hex",
+      "authority": "legacy_cnbe_candidate",
+      "gf0017_use": [],
+      "index": 3,
+      "name": "CNBE(Hex)",
+      "required_for_join": false
+    },
+    {
+      "agent_role": "cnbe32_carrier_decimal",
+      "authority": "legacy_cnbe_candidate",
+      "gf0017_use": [],
+      "index": 4,
+      "name": "CNBE(Dec)",
+      "required_for_join": false
+    },
+    {
+      "agent_role": "cnbe32_carrier_binary",
+      "authority": "legacy_cnbe_candidate",
+      "gf0017_use": [],
+      "index": 5,
+      "name": "CNBE(Bin)",
+      "required_for_join": false
+    },
+    {
+      "agent_role": "legacy_radical_code",
+      "authority": "legacy_cnbe_candidate",
+      "gf0017_use": [
+        "radical_validity"
+      ],
+      "index": 6,
+      "name": "部首区",
+      "required_for_join": false
+    },
+    {
+      "agent_role": "legacy_stroke_count",
+      "authority": "legacy_cnbe_candidate",
+      "gf0017_use": [
+        "stroke_shape",
+        "stroke_order"
+      ],
+      "index": 7,
+      "name": "笔画数",
+      "required_for_join": false
+    },
+    {
+      "agent_role": "legacy_structure_code",
+      "authority": "legacy_cnbe_candidate",
+      "gf0017_use": [
+        "structure_first_decomposition",
+        "independent_character_rule"
+      ],
+      "index": 8,
+      "name": "结构区(v4)",
+      "required_for_join": false
+    },
+    {
+      "agent_role": "legacy_structure_name",
+      "authority": "legacy_cnbe_candidate",
+      "gf0017_use": [
+        "structure_first_decomposition",
+        "independent_character_rule"
+      ],
+      "index": 9,
+      "name": "结构名称(v4)",
+      "required_for_join": false
+    },
+    {
+      "agent_role": "legacy_catalog_index",
+      "authority": "workbook_metadata_not_standard",
+      "gf0017_use": [
+        "character_set_coverage"
+      ],
+      "index": 10,
+      "name": "字库索引",
+      "required_for_join": false
+    },
+    {
+      "agent_role": "legacy_extension_flags",
+      "authority": "legacy_cnbe_candidate",
+      "gf0017_use": [],
+      "index": 11,
+      "name": "扩展区",
+      "required_for_join": false
+    },
+    {
+      "agent_role": "legacy_modern_flag",
+      "authority": "legacy_cnbe_candidate",
+      "gf0017_use": [
+        "character_set_coverage"
+      ],
+      "index": 12,
+      "name": "是否现代",
+      "required_for_join": false
+    },
+    {
+      "agent_role": "legacy_space_label",
+      "authority": "legacy_metadata_not_standard",
+      "gf0017_use": [],
+      "index": 13,
+      "name": "Space_Label",
+      "required_for_join": false
+    },
+    {
+      "agent_role": "legacy_category_label",
+      "authority": "legacy_metadata_not_standard",
+      "gf0017_use": [],
+      "index": 14,
+      "name": "Category_Label",
+      "required_for_join": false
+    },
+    {
+      "agent_role": "legacy_time_label",
+      "authority": "legacy_metadata_not_standard",
+      "gf0017_use": [],
+      "index": 15,
+      "name": "Time_Label",
+      "required_for_join": false
+    },
+    {
+      "agent_role": "legacy_v3_structure_note",
+      "authority": "legacy_metadata_not_standard",
+      "gf0017_use": [
+        "structure_first_decomposition"
+      ],
+      "index": 16,
+      "name": "备注(v3原结构)",
+      "required_for_join": false
+    }
+  ]
+}

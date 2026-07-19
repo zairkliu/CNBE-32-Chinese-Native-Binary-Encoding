@@ -1,0 +1,555 @@
+{
+  "agent_model_stage": {
+    "automatic_until": "row_level_extraction_specs",
+    "human_decision_required_for": [
+      "character_set_coverage_scoring_policy",
+      "formal_gf0017_scoring_authorization",
+      "cnbe_row_write_authorization",
+      "database_rebuild_authorization"
+    ],
+    "inputs": [
+      "reports/full_catalog_agent_mapping_evidence_join.json",
+      "reports/full_catalog_agent_mapping_evidence_join_design.json",
+      "reports/full_catalog_gf0017_source_mapping.json"
+    ],
+    "invariants": [
+      "unicode_identity_is_preserved",
+      "national_standard_and_agent_standard_are_distinct",
+      "source_gap_is_not_success",
+      "row_level_pending_evidence_is_not_a_score",
+      "cnbe_rows_are_not_modified",
+      "database_is_not_rebuilt"
+    ],
+    "outputs": [
+      "reports/full_catalog_source_resolution_plan.json",
+      "reports/FULL_CATALOG_SOURCE_RESOLUTION_PLAN.md"
+    ],
+    "stage_id": "source_resolution"
+  },
+  "authority_boundary": {
+    "does_not_assign_gf0017_scores": true,
+    "does_not_claim_national_standard_for_outside_8105": true,
+    "does_not_modify_cnbe_rows": true,
+    "does_not_modify_workbook": true,
+    "does_not_publish_release": true,
+    "does_not_rebuild_database": true
+  },
+  "decision": {
+    "may_modify_cnbe_rows": false,
+    "may_rebuild_database": false,
+    "may_start_formal_gf0017_scoring": false,
+    "may_start_row_level_extraction_specs": true,
+    "reason": "Source-resolution planning is ready. The Agent may continue with read-only row-level extraction specs, but formal scoring remains blocked by scope policy and unresolved row-level evidence.",
+    "requires_human_policy_decision_before_scoring": true
+  },
+  "mode": "read_only_full_catalog_source_resolution_plan",
+  "next_artifacts": [
+    "scripts/design_full_catalog_row_level_extraction_specs.py",
+    "reports/full_catalog_row_level_extraction_specs.json",
+    "reports/FULL_CATALOG_ROW_LEVEL_EXTRACTION_SPECS.md",
+    "docs/CNBE_HANZI_STRUCTURE_AGENT_MODEL.md"
+  ],
+  "next_workflow_status": "ROW_LEVEL_EXTRACTION_SPECS_ALLOWED_FORMAL_SCORING_BLOCKED",
+  "overall_status": "PASS_SOURCE_RESOLUTION_PLAN_READY",
+  "report_schema_version": "1.0",
+  "resolution_items": [
+    {
+      "automation_allowed": false,
+      "blocked_rows": 89581,
+      "current_source_status": "SOURCE_GAP",
+      "evidence_counts": {
+        "SOURCE_GAP_NOT_SCORABLE": 89581
+      },
+      "item": "character_set_coverage",
+      "next_action": "define_project_scope_scoring_policy_before_points",
+      "points": 3,
+      "resolution_class": "POLICY_DECISION_REQUIRED",
+      "safe_agent_action": "keep_not_scorable_and_document_scope_boundary",
+      "score_allowed_after_this_plan": false,
+      "source_paths": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "line_count": 22,
+          "relative_path": "source/11-评测与分类/GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "cross_reference",
+          "kind": "controlling_sources",
+          "line_count": 274,
+          "relative_path": "source/01-通用规范汉字表/通用规范汉字表(8105).md"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "line_count": null,
+          "relative_path": "knowledge/ocr_char_table_all.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "line_count": null,
+          "relative_path": "knowledge/alignment_report.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "line_count": null,
+          "relative_path": "knowledge/alignment_report_v2.json"
+        }
+      ],
+      "why": "GF0017 references specific required character sets, while this project uses 8105 as baseline and treats outside-8105 rows as Agent scope."
+    },
+    {
+      "automation_allowed": true,
+      "blocked_rows": 89581,
+      "current_source_status": "SOURCE_GAP",
+      "evidence_counts": {
+        "SOURCE_GAP_NOT_SCORABLE": 89581
+      },
+      "item": "stroke_shape",
+      "next_action": "build_stroke_shape_extraction_spec",
+      "points": 3,
+      "resolution_class": "SOURCE_EXTRACTION_SPEC_REQUIRED",
+      "safe_agent_action": "design_parser_and_validation_without_scoring",
+      "score_allowed_after_this_plan": false,
+      "source_paths": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "line_count": 22,
+          "relative_path": "source/11-评测与分类/GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "cross_reference",
+          "kind": "controlling_sources",
+          "line_count": 22,
+          "relative_path": "source/07-折笔规范/GB 13000.1 字符集汉字折笔规范.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "line_count": null,
+          "relative_path": "knowledge/ocr/ocr_fold_stroke.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "line_count": null,
+          "relative_path": "knowledge/ocr/standards/std_07-折笔规范_bc1.json"
+        }
+      ],
+      "why": "Folded-stroke and stroke-shape sources exist, but row-level normalized stroke-shape evidence has not been extracted for outside-8105 rows."
+    },
+    {
+      "automation_allowed": true,
+      "blocked_rows": 89581,
+      "current_source_status": "SOURCE_EVIDENCE_REQUIRED",
+      "evidence_counts": {
+        "ROW_LEVEL_EVIDENCE_JOIN_PENDING": 89581
+      },
+      "item": "stroke_order",
+      "next_action": "build_stroke_order_join_runner",
+      "points": 3,
+      "resolution_class": "ROW_LEVEL_EXTRACTION_REQUIRED",
+      "safe_agent_action": "materialize evidence_status_without_points",
+      "score_allowed_after_this_plan": false,
+      "source_paths": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "line_count": 14176,
+          "relative_path": "source/05-笔顺规范/GF 0031—2026 通用规范汉字笔顺规范.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "line_count": 16,
+          "relative_path": "source/05-笔顺规范/GF3002-1999 GB13000.1字符集汉字笔顺规范.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "line_count": null,
+          "relative_path": "knowledge/stroke_order_8105.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "line_count": null,
+          "relative_path": "knowledge/stroke_order_8105_clean.json"
+        }
+      ],
+      "why": "Stroke-order sources exist, but row-level joins are pending."
+    },
+    {
+      "automation_allowed": true,
+      "blocked_rows": 89581,
+      "current_source_status": "SOURCE_EVIDENCE_REQUIRED",
+      "evidence_counts": {
+        "ROW_LEVEL_EVIDENCE_JOIN_PENDING": 89581
+      },
+      "item": "component_validity",
+      "next_action": "build_component_inventory_join_runner",
+      "points": 3,
+      "resolution_class": "ROW_LEVEL_EXTRACTION_REQUIRED",
+      "safe_agent_action": "materialize evidence_status_without_points",
+      "score_allowed_after_this_plan": false,
+      "source_paths": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "line_count": 124,
+          "relative_path": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "line_count": 40,
+          "relative_path": "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "line_count": null,
+          "relative_path": "knowledge/component_db.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "line_count": null,
+          "relative_path": "knowledge/decomp_rules.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "line_count": null,
+          "relative_path": "decomp-data/dictionary.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "line_count": 85238,
+          "relative_path": "cjk-decomp/cjk-decomp.txt"
+        }
+      ],
+      "why": "Component sources exist, but row-level component inventories are pending."
+    },
+    {
+      "automation_allowed": true,
+      "blocked_rows": 89581,
+      "current_source_status": "SOURCE_EVIDENCE_REQUIRED",
+      "evidence_counts": {
+        "ROW_LEVEL_EVIDENCE_JOIN_PENDING": 89581
+      },
+      "item": "component_name_validity",
+      "next_action": "build_component_name_validation_join_runner",
+      "points": 8,
+      "resolution_class": "ROW_LEVEL_EXTRACTION_REQUIRED",
+      "safe_agent_action": "materialize evidence_status_without_points",
+      "score_allowed_after_this_plan": false,
+      "source_paths": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "line_count": 124,
+          "relative_path": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "line_count": null,
+          "relative_path": "knowledge/component_db.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "line_count": null,
+          "relative_path": "knowledge/ocr/standards/std_03-部件及部件名称规范_bc1.json"
+        }
+      ],
+      "why": "Component-name authority exists, but names must be normalized per row."
+    },
+    {
+      "automation_allowed": true,
+      "blocked_rows": 89581,
+      "current_source_status": "SOURCE_EVIDENCE_REQUIRED",
+      "evidence_counts": {
+        "ROW_LEVEL_EVIDENCE_JOIN_PENDING": 89581
+      },
+      "item": "radical_validity",
+      "next_action": "build_radical_evidence_join_runner",
+      "points": 3,
+      "resolution_class": "ROW_LEVEL_EXTRACTION_REQUIRED",
+      "safe_agent_action": "materialize evidence_status_without_points",
+      "score_allowed_after_this_plan": false,
+      "source_paths": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "line_count": 24,
+          "relative_path": "source/02-汉字部首表/GG 0011-2009 汉字部首表.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "line_count": null,
+          "relative_path": "knowledge/kangxi_radicals.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "line_count": null,
+          "relative_path": "knowledge/radical_validation.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "line_count": null,
+          "relative_path": "knowledge/unicode_rsindex.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "line_count": 317738,
+          "relative_path": "source/15-Unicode-RSIndex/RSIndex.md"
+        }
+      ],
+      "why": "Radical sources exist, but numeric legacy radical fields require row-level validation."
+    },
+    {
+      "automation_allowed": true,
+      "blocked_rows": 89581,
+      "current_source_status": "SOURCE_EVIDENCE_REQUIRED",
+      "evidence_counts": {
+        "ROW_LEVEL_EVIDENCE_JOIN_PENDING": 89581
+      },
+      "item": "independent_character_rule",
+      "next_action": "build_independent_character_join_runner",
+      "points": 7,
+      "resolution_class": "ROW_LEVEL_EXTRACTION_REQUIRED",
+      "safe_agent_action": "materialize evidence_status_without_points",
+      "score_allowed_after_this_plan": false,
+      "source_paths": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "line_count": 28,
+          "relative_path": "source/04-独体字规范/GF 0013-2009 现代常用独体字规范.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "line_count": 124,
+          "relative_path": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "line_count": null,
+          "relative_path": "knowledge/decomp_rules.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "line_count": null,
+          "relative_path": "knowledge/component_db.json"
+        }
+      ],
+      "why": "Independent-character evidence must be joined before split/decomposition checks."
+    },
+    {
+      "automation_allowed": true,
+      "blocked_rows": 89581,
+      "current_source_status": "SOURCE_EVIDENCE_REQUIRED",
+      "evidence_counts": {
+        "ROW_LEVEL_EVIDENCE_JOIN_PENDING": 89581
+      },
+      "item": "structure_first_decomposition",
+      "next_action": "build_structure_decomposition_join_runner",
+      "points": 20,
+      "resolution_class": "ROW_LEVEL_EXTRACTION_REQUIRED",
+      "safe_agent_action": "materialize evidence_status_without_points",
+      "score_allowed_after_this_plan": false,
+      "source_paths": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "line_count": 124,
+          "relative_path": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "line_count": 40,
+          "relative_path": "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "unresolved",
+          "kind": "supporting_sources",
+          "line_count": null,
+          "relative_path": "evidence/agent-standard/cnbe_legacy_structure_localization.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "line_count": null,
+          "relative_path": "knowledge/component_db.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "line_count": null,
+          "relative_path": "knowledge/decomp_rules.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "line_count": null,
+          "relative_path": "decomp-data/dictionary.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "line_count": 85238,
+          "relative_path": "cjk-decomp/cjk-decomp.txt"
+        }
+      ],
+      "why": "The 20-point item requires standard-backed decomposition and Agent 13-label localization."
+    }
+  ],
+  "summary": {
+    "automated_resolution_items": [
+      "stroke_shape",
+      "stroke_order",
+      "component_validity",
+      "component_name_validity",
+      "radical_validity",
+      "independent_character_rule",
+      "structure_first_decomposition"
+    ],
+    "blocked_rows_by_item": {
+      "character_set_coverage": 89581,
+      "component_name_validity": 89581,
+      "component_validity": 89581,
+      "independent_character_rule": 89581,
+      "radical_validity": 89581,
+      "stroke_order": 89581,
+      "stroke_shape": 89581,
+      "structure_first_decomposition": 89581
+    },
+    "cnbe_row_write_allowed": false,
+    "database_rebuild_allowed": false,
+    "formal_gf0017_scoring_allowed": false,
+    "gf0017_items": 8,
+    "outside_8105_rows": 89581,
+    "policy_decision_items": [
+      "character_set_coverage"
+    ],
+    "resolution_class_counts": {
+      "POLICY_DECISION_REQUIRED": 1,
+      "ROW_LEVEL_EXTRACTION_REQUIRED": 6,
+      "SOURCE_EXTRACTION_SPEC_REQUIRED": 1
+    },
+    "source_mapping_status": "PASS"
+  },
+  "work_packages": [
+    {
+      "automation_allowed": false,
+      "blocks_formal_scoring": true,
+      "id": "SRP1_policy_scope_boundary",
+      "items": [
+        "character_set_coverage"
+      ],
+      "output": "human-reviewed scope and scoring boundary decision",
+      "purpose": "Resolve scoring policy for source gaps that cannot be treated as automatic passes."
+    },
+    {
+      "automation_allowed": true,
+      "blocks_formal_scoring": true,
+      "id": "SRP2_row_level_extraction_specs",
+      "items": [
+        "stroke_shape",
+        "stroke_order",
+        "component_validity",
+        "component_name_validity",
+        "radical_validity",
+        "independent_character_rule",
+        "structure_first_decomposition"
+      ],
+      "output": "parser/join specifications and validation fixtures",
+      "purpose": "Create read-only extraction specs for row-level evidence joins."
+    },
+    {
+      "automation_allowed": true,
+      "blocks_formal_scoring": true,
+      "id": "SRP3_evidence_join_runners",
+      "items": [
+        "stroke_shape",
+        "stroke_order",
+        "component_validity",
+        "component_name_validity",
+        "radical_validity",
+        "independent_character_rule",
+        "structure_first_decomposition"
+      ],
+      "output": "row-level evidence tables with source anchors",
+      "purpose": "Materialize source-backed evidence status rows without assigning points."
+    },
+    {
+      "automation_allowed": false,
+      "blocks_formal_scoring": true,
+      "id": "SRP4_scoring_gate_review",
+      "items": [
+        "character_set_coverage",
+        "stroke_shape",
+        "stroke_order",
+        "component_validity",
+        "component_name_validity",
+        "radical_validity",
+        "independent_character_rule",
+        "structure_first_decomposition"
+      ],
+      "output": "human authorization or blocker report",
+      "purpose": "Review whether enough row-level evidence exists to authorize formal GF0017 scoring."
+    }
+  ]
+}

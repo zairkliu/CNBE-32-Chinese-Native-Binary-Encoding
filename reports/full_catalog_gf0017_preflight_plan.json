@@ -1,0 +1,340 @@
+{
+  "checkpoint_plan": {
+    "batch_id": "full-catalog-v4-fixed-gf0017-preflight",
+    "blocker_file": "reports/full_catalog_gf0017_preflight_blockers.json",
+    "checkpoint_file": "reports/full_catalog_gf0017_preflight_checkpoint.json",
+    "end_offset": 97685,
+    "mode": "plan_only_no_row_scoring",
+    "resume_rule": "restart from last_verified_offset + 1 after blocker evidence is resolved",
+    "row_count": 97686,
+    "source_workbook": "data/CNBE_编码目录_修复版_v4_fixed.xlsx",
+    "start_offset": 0,
+    "stop_conditions": [
+      "Unicode identity mismatch",
+      "source grade unresolved for a required scoring item",
+      "legacy structure label without Agent localization",
+      "Agent standard mapping mislabeled as national standard",
+      "database rewrite attempted before explicit authorization"
+    ]
+  },
+  "decision": {
+    "may_modify_workbook": false,
+    "may_publish_release": false,
+    "may_rebuild_database": false,
+    "may_start_batch_gf0017_scoring": false,
+    "may_start_source_evidence_mapping": true,
+    "reason": "The workbook can enter source-evidence mapping, but final GF0017 scoring is blocked until required source grades and review-required asset notes are resolved or accepted."
+  },
+  "field_mapping": {
+    "CNBE(Bin)": {
+      "agent_role": "cnbe32_carrier_binary",
+      "authority": "legacy_cnbe_candidate",
+      "evidence_role": "carrier consistency only",
+      "gf0017_use": []
+    },
+    "CNBE(Dec)": {
+      "agent_role": "cnbe32_carrier_decimal",
+      "authority": "legacy_cnbe_candidate",
+      "evidence_role": "carrier consistency only",
+      "gf0017_use": []
+    },
+    "CNBE(Hex)": {
+      "agent_role": "cnbe32_carrier_hex",
+      "authority": "legacy_cnbe_candidate",
+      "evidence_role": "carrier consistency only",
+      "gf0017_use": []
+    },
+    "Category_Label": {
+      "agent_role": "legacy_category_label",
+      "authority": "legacy_metadata_not_standard",
+      "evidence_role": "legacy metadata for CNBE64/CNBE128 archive consideration",
+      "gf0017_use": []
+    },
+    "Space_Label": {
+      "agent_role": "legacy_space_label",
+      "authority": "legacy_metadata_not_standard",
+      "evidence_role": "legacy metadata for CNBE64/CNBE128 archive consideration",
+      "gf0017_use": []
+    },
+    "Time_Label": {
+      "agent_role": "legacy_time_label",
+      "authority": "legacy_metadata_not_standard",
+      "evidence_role": "legacy metadata for CNBE64/CNBE128 archive consideration",
+      "gf0017_use": []
+    },
+    "Unicode": {
+      "agent_role": "unicode_codepoint",
+      "authority": "identity_candidate",
+      "evidence_role": "Unicode identity input",
+      "gf0017_use": [
+        "character_set_coverage"
+      ]
+    },
+    "备注(v3原结构)": {
+      "agent_role": "legacy_v3_structure_note",
+      "authority": "legacy_metadata_not_standard",
+      "evidence_role": "legacy structure evidence to preserve, not a standard source",
+      "gf0017_use": [
+        "structure_first_decomposition"
+      ]
+    },
+    "字库索引": {
+      "agent_role": "legacy_catalog_index",
+      "authority": "workbook_metadata_not_standard",
+      "evidence_role": "catalog ordering only",
+      "gf0017_use": [
+        "character_set_coverage"
+      ]
+    },
+    "序号": {
+      "agent_role": "source_row_sequence",
+      "authority": "workbook_metadata_not_standard",
+      "evidence_role": "row ordering and checkpoint offset",
+      "gf0017_use": [
+        "character_set_coverage"
+      ]
+    },
+    "扩展区": {
+      "agent_role": "legacy_extension_flags",
+      "authority": "legacy_cnbe_candidate",
+      "evidence_role": "CNBE32 extension carrier only",
+      "gf0017_use": []
+    },
+    "是否现代": {
+      "agent_role": "legacy_modern_flag",
+      "authority": "legacy_cnbe_candidate",
+      "evidence_role": "candidate scope flag requiring standard-set evidence",
+      "gf0017_use": [
+        "character_set_coverage"
+      ]
+    },
+    "汉字": {
+      "agent_role": "literal_character",
+      "authority": "identity_candidate",
+      "evidence_role": "Unicode identity input",
+      "gf0017_use": [
+        "character_set_coverage"
+      ]
+    },
+    "笔画数": {
+      "agent_role": "legacy_stroke_count",
+      "authority": "legacy_cnbe_candidate",
+      "evidence_role": "candidate stroke-count field requiring stroke-order evidence",
+      "gf0017_use": [
+        "stroke_shape",
+        "stroke_order"
+      ]
+    },
+    "结构区(v4)": {
+      "agent_role": "legacy_structure_code",
+      "authority": "legacy_cnbe_candidate",
+      "evidence_role": "candidate structure-code field requiring Agent localization",
+      "gf0017_use": [
+        "structure_first_decomposition",
+        "independent_character_rule"
+      ]
+    },
+    "结构名称(v4)": {
+      "agent_role": "legacy_structure_name",
+      "authority": "legacy_cnbe_candidate",
+      "evidence_role": "candidate structure label requiring 13-label normalization",
+      "gf0017_use": [
+        "structure_first_decomposition",
+        "independent_character_rule"
+      ]
+    },
+    "部首区": {
+      "agent_role": "legacy_radical_code",
+      "authority": "legacy_cnbe_candidate",
+      "evidence_role": "candidate radical-code field requiring GG0011/radical map validation",
+      "gf0017_use": [
+        "radical_validity"
+      ]
+    }
+  },
+  "gf0017_item_mapping": [
+    {
+      "blocking_rule": "Do not calculate final GF0017 score until every required source requirement has a source grade and unresolved requirements are isolated.",
+      "gf0017_clause": "5.1.1",
+      "id": "character_set_coverage",
+      "points": 3,
+      "preflight_status": "SOURCE_EVIDENCE_REQUIRED",
+      "source_requirements": [
+        "GF0017 clause 5.1.1",
+        "confirmed required-set source or project-approved 8105 baseline"
+      ],
+      "workbook_fields": [
+        "序号",
+        "汉字",
+        "Unicode",
+        "字库索引",
+        "是否现代"
+      ],
+      "workbook_support_level": "identity_or_candidate"
+    },
+    {
+      "blocking_rule": "Do not calculate final GF0017 score until every required source requirement has a source grade and unresolved requirements are isolated.",
+      "gf0017_clause": "5.1.2",
+      "id": "stroke_shape",
+      "points": 3,
+      "preflight_status": "SOURCE_EVIDENCE_REQUIRED",
+      "source_requirements": [
+        "GF0017 clause 5.1.2",
+        "stroke-shape classification source",
+        "GB 13000.1 fold-stroke evidence where applicable"
+      ],
+      "workbook_fields": [
+        "笔画数"
+      ],
+      "workbook_support_level": "identity_or_candidate"
+    },
+    {
+      "blocking_rule": "Do not calculate final GF0017 score until every required source requirement has a source grade and unresolved requirements are isolated.",
+      "gf0017_clause": "5.1.3",
+      "id": "stroke_order",
+      "points": 3,
+      "preflight_status": "SOURCE_EVIDENCE_REQUIRED",
+      "source_requirements": [
+        "GF0017 clause 5.1.3",
+        "GF0031/GF3002 stroke-order source"
+      ],
+      "workbook_fields": [
+        "笔画数"
+      ],
+      "workbook_support_level": "identity_or_candidate"
+    },
+    {
+      "blocking_rule": "Do not calculate final GF0017 score until every required source requirement has a source grade and unresolved requirements are isolated.",
+      "gf0017_clause": "5.1.4",
+      "id": "component_validity",
+      "points": 3,
+      "preflight_status": "SOURCE_EVIDENCE_REQUIRED",
+      "source_requirements": [
+        "GF0014/GF3001 component and decomposition evidence"
+      ],
+      "workbook_fields": [],
+      "workbook_support_level": "none"
+    },
+    {
+      "blocking_rule": "Do not calculate final GF0017 score until every required source requirement has a source grade and unresolved requirements are isolated.",
+      "gf0017_clause": "5.1.5",
+      "id": "component_name_validity",
+      "points": 8,
+      "preflight_status": "SOURCE_EVIDENCE_REQUIRED",
+      "source_requirements": [
+        "GF0014 component naming evidence"
+      ],
+      "workbook_fields": [],
+      "workbook_support_level": "none"
+    },
+    {
+      "blocking_rule": "Do not calculate final GF0017 score until every required source requirement has a source grade and unresolved requirements are isolated.",
+      "gf0017_clause": "5.1.6",
+      "id": "radical_validity",
+      "points": 3,
+      "preflight_status": "SOURCE_EVIDENCE_REQUIRED",
+      "source_requirements": [
+        "GG0011 radical evidence",
+        "validated radical-code map"
+      ],
+      "workbook_fields": [
+        "部首区"
+      ],
+      "workbook_support_level": "identity_or_candidate"
+    },
+    {
+      "blocking_rule": "Do not calculate final GF0017 score until every required source requirement has a source grade and unresolved requirements are isolated.",
+      "gf0017_clause": "5.1.7",
+      "id": "independent_character_rule",
+      "points": 7,
+      "preflight_status": "SOURCE_EVIDENCE_REQUIRED",
+      "source_requirements": [
+        "GF0013 independent-character evidence",
+        "GF0014 decomposition compatibility"
+      ],
+      "workbook_fields": [
+        "结构区(v4)",
+        "结构名称(v4)"
+      ],
+      "workbook_support_level": "identity_or_candidate"
+    },
+    {
+      "blocking_rule": "Do not calculate final GF0017 score until every required source requirement has a source grade and unresolved requirements are isolated.",
+      "gf0017_clause": "5.1.8",
+      "id": "structure_first_decomposition",
+      "points": 20,
+      "preflight_status": "SOURCE_EVIDENCE_REQUIRED",
+      "source_requirements": [
+        "GF0014 structure/decomposition evidence",
+        "Agent 13-label structure normalization"
+      ],
+      "workbook_fields": [
+        "结构区(v4)",
+        "结构名称(v4)",
+        "备注(v3原结构)"
+      ],
+      "workbook_support_level": "identity_or_candidate"
+    }
+  ],
+  "gf0017_total_points": 50,
+  "known_blockers": [],
+  "mode": "read_only_full_catalog_gf0017_preflight_plan",
+  "next_artifacts": [
+    "reports/full_catalog_gf0017_source_mapping.json",
+    "reports/FULL_CATALOG_GF0017_SOURCE_MAPPING.md",
+    "scripts/map_full_catalog_gf0017_sources.py"
+  ],
+  "next_workflow_status": "PREFLIGHT_PLAN_READY_SOURCE_ASSETS_REQUIRE_REVIEW",
+  "overall_status": "PASS",
+  "pre_gates": {
+    "agent_runtime_status": "PASS",
+    "headers_match_expected": true,
+    "sample_status": "PASS",
+    "schema_status": "PASS",
+    "unicode_identity_status": "PASS"
+  },
+  "report_schema_version": "1.0",
+  "source_grading_contract": {
+    "allowed_grades": [
+      "direct_standard",
+      "standard_derived",
+      "cross_reference",
+      "referenced_not_direct",
+      "unresolved"
+    ],
+    "required_behavior": {
+      "cross_reference": "review support only unless promoted by a separate gate",
+      "direct_standard": "may support national-standard evidence when the source is the scoring authority",
+      "referenced_not_direct": "must be reported as SOURCE_GAP",
+      "standard_derived": "may support scoring when derivation is reproducible",
+      "unresolved": "must stop or isolate the affected row/item before batch scoring"
+    }
+  },
+  "source_sheet": "CNBE完整编码表v4_fixed",
+  "source_workbook": "data/CNBE_编码目录_修复版_v4_fixed.xlsx",
+  "workbook": {
+    "column_count": 17,
+    "data_rows": 97686,
+    "headers": [
+      "序号",
+      "汉字",
+      "Unicode",
+      "CNBE(Hex)",
+      "CNBE(Dec)",
+      "CNBE(Bin)",
+      "部首区",
+      "笔画数",
+      "结构区(v4)",
+      "结构名称(v4)",
+      "字库索引",
+      "扩展区",
+      "是否现代",
+      "Space_Label",
+      "Category_Label",
+      "Time_Label",
+      "备注(v3原结构)"
+    ],
+    "sha256": "08ea44768f3e1e1f14e4bbe0e2f1689f3b00676f0fab198b44453f5984271304",
+    "worksheet_rows": 97687
+  }
+}

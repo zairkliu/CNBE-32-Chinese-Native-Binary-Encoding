@@ -1,0 +1,864 @@
+{
+  "authority_boundary": {
+    "dictionary_sources_are_cross_reference_context": true,
+    "does_not_assign_gf0017_scores": true,
+    "does_not_emit_final_structure_labels": true,
+    "does_not_modify_cnbe_research_knowledge": true,
+    "does_not_modify_cnbe_rows": true,
+    "does_not_rebuild_database": true,
+    "not_national_standard_structure_authority": true
+  },
+  "candidates": {
+    "he426100_kangxi": {
+      "data_shape": "PostgreSQL insert dump plus MDB/EXE/ZIP assets",
+      "head": "e5eba28d8154f661c28e486a02c1098bf7ca6e27",
+      "human_review_150_coverage": {
+        "hit_count": 0,
+        "hit_rate": 0.0,
+        "hit_samples": [],
+        "miss_count": 150,
+        "miss_samples": [
+          "㐁",
+          "㒋",
+          "㔐",
+          "㖩",
+          "㘲",
+          "㛋",
+          "㝁",
+          "㟡",
+          "㡱",
+          "㣱",
+          "㦊",
+          "㨜",
+          "㪘",
+          "㬻",
+          "㯗",
+          "㱜",
+          "㳶",
+          "㶘",
+          "㸹",
+          "㻇",
+          "㽋",
+          "㿍",
+          "䁏",
+          "䃃",
+          "䅅",
+          "䇂",
+          "䈿",
+          "䊮",
+          "䌭",
+          "䎵",
+          "䐪",
+          "䒥",
+          "䔪",
+          "䖯",
+          "䘾",
+          "䚵",
+          "䜻",
+          "䞹",
+          "䠰",
+          "䢥",
+          "䤚",
+          "䦲",
+          "䨽",
+          "䪷",
+          "䬱",
+          "䮧",
+          "䰥",
+          "䲯",
+          "䴶",
+          "䶴"
+        ],
+        "target_unique_chars": 150
+      },
+      "license": "not_found_in_repository_snapshot",
+      "local_path": "build/external_dictionary_candidates/kangxi",
+      "readme_quality_note": "Repository README states one packaged database has data errors.",
+      "recommended_role": "secondary_comparison_only_until_license_and_quality_are_resolved",
+      "remaining_73831_coverage": {
+        "hit_count": 0,
+        "hit_rate": 0.0,
+        "hit_samples": [],
+        "miss_count": 73831,
+        "miss_samples": [
+          "㐁",
+          "㐃",
+          "㐇",
+          "㐈",
+          "㐉",
+          "㐊",
+          "㐋",
+          "㐍",
+          "㐎",
+          "㐏",
+          "㐑",
+          "㐒",
+          "㐓",
+          "㐔",
+          "㐕",
+          "㐗",
+          "㐘",
+          "㐙",
+          "㐚",
+          "㐛",
+          "㐝",
+          "㐞",
+          "㐟",
+          "㐠",
+          "㐢",
+          "㐣",
+          "㐥",
+          "㐦",
+          "㐪",
+          "㐮",
+          "㐯",
+          "㐳",
+          "㐴",
+          "㐶",
+          "㐸",
+          "㐹",
+          "㐼",
+          "㐿",
+          "㑁",
+          "㑂",
+          "㑃",
+          "㑄",
+          "㑅",
+          "㑆",
+          "㑉",
+          "㑌",
+          "㑍",
+          "㑏",
+          "㑐",
+          "㑑"
+        ],
+        "target_unique_chars": 73831
+      },
+      "repo": "https://github.com/he426100/kangxi",
+      "source_grade_for_cnbe": "cross_reference_dictionary_context_with_license_blocker",
+      "sql_bytes": 5265063,
+      "sql_word_count": 6346
+    },
+    "kanripo_KR1j0048": {
+      "data_shape": "41 plain text Mandoku/Kanripo source files for 御定康熙字典",
+      "head": "054af958de99ac3193c295c05ac172d910fbc9fc",
+      "human_review_150_text_hit_count": 92,
+      "human_review_150_text_hit_samples": {
+        "㐁": [
+          "KR1j0048_010.txt",
+          "KR1j0048_002.txt",
+          "KR1j0048_001.txt"
+        ],
+        "㒋": [
+          "KR1j0048_010.txt",
+          "KR1j0048_003.txt"
+        ],
+        "㔐": [
+          "KR1j0048_004.txt"
+        ],
+        "㖩": [
+          "KR1j0048_033.txt",
+          "KR1j0048_005.txt",
+          "KR1j0048_016.txt",
+          "KR1j0048_029.txt"
+        ],
+        "㘲": [
+          "KR1j0048_033.txt",
+          "KR1j0048_009.txt",
+          "KR1j0048_006.txt",
+          "KR1j0048_017.txt"
+        ],
+        "㛋": [
+          "KR1j0048_007.txt"
+        ],
+        "㝁": [
+          "KR1j0048_008.txt",
+          "KR1j0048_010.txt"
+        ],
+        "㟡": [
+          "KR1j0048_009.txt"
+        ],
+        "㡱": [
+          "KR1j0048_010.txt"
+        ],
+        "㣱": [
+          "KR1j0048_030.txt",
+          "KR1j0048_010.txt"
+        ],
+        "㦊": [
+          "KR1j0048_011.txt"
+        ],
+        "㨜": [
+          "KR1j0048_023.txt",
+          "KR1j0048_012.txt"
+        ],
+        "㬻": [
+          "KR1j0048_025.txt"
+        ],
+        "㯗": [
+          "KR1j0048_015.txt"
+        ],
+        "㱜": [
+          "KR1j0048_016.txt"
+        ],
+        "㳶": [
+          "KR1j0048_017.txt"
+        ],
+        "㶘": [
+          "KR1j0048_017.txt"
+        ],
+        "㸹": [
+          "KR1j0048_019.txt"
+        ],
+        "㽋": [
+          "KR1j0048_020.txt"
+        ],
+        "㿍": [
+          "KR1j0048_026.txt",
+          "KR1j0048_021.txt"
+        ],
+        "䁏": [
+          "KR1j0048_021.txt"
+        ],
+        "䅅": [
+          "KR1j0048_022.txt"
+        ],
+        "䇂": [
+          "KR1j0048_031.txt",
+          "KR1j0048_022.txt",
+          "KR1j0048_007.txt",
+          "KR1j0048_001.txt",
+          "KR1j0048_029.txt"
+        ],
+        "䈿": [
+          "KR1j0048_023.txt"
+        ],
+        "䊮": [
+          "KR1j0048_023.txt"
+        ],
+        "䌭": [
+          "KR1j0048_024.txt"
+        ],
+        "䎵": [
+          "KR1j0048_024.txt",
+          "KR1j0048_021.txt"
+        ],
+        "䒥": [
+          "KR1j0048_026.txt",
+          "KR1j0048_017.txt"
+        ],
+        "䔪": [
+          "KR1j0048_026.txt"
+        ],
+        "䖯": [
+          "KR1j0048_027.txt",
+          "KR1j0048_001.txt"
+        ],
+        "䘾": [
+          "KR1j0048_028.txt"
+        ],
+        "䚵": [
+          "KR1j0048_024.txt",
+          "KR1j0048_029.txt"
+        ],
+        "䜻": [
+          "KR1j0048_030.txt"
+        ],
+        "䞹": [
+          "KR1j0048_030.txt"
+        ],
+        "䠰": [
+          "KR1j0048_030.txt"
+        ],
+        "䢥": [
+          "KR1j0048_038.txt"
+        ],
+        "䤚": [
+          "KR1j0048_031.txt",
+          "KR1j0048_001.txt"
+        ],
+        "䦲": [
+          "KR1j0048_032.txt"
+        ],
+        "䨽": [
+          "KR1j0048_033.txt"
+        ],
+        "䪷": [
+          "KR1j0048_034.txt"
+        ],
+        "䬱": [
+          "KR1j0048_034.txt"
+        ],
+        "䮧": [
+          "KR1j0048_035.txt",
+          "KR1j0048_016.txt",
+          "KR1j0048_001.txt"
+        ],
+        "䰥": [
+          "KR1j0048_035.txt"
+        ],
+        "䲯": [
+          "KR1j0048_036.txt"
+        ],
+        "䴶": [
+          "KR1j0048_037.txt"
+        ],
+        "䶴": [
+          "KR1j0048_037.txt"
+        ],
+        "俁": [
+          "KR1j0048_037.txt",
+          "KR1j0048_003.txt"
+        ],
+        "墰": [
+          "KR1j0048_006.txt"
+        ],
+        "嬇": [
+          "KR1j0048_009.txt",
+          "KR1j0048_007.txt",
+          "KR1j0048_006.txt"
+        ],
+        "嵾": [
+          "KR1j0048_022.txt",
+          "KR1j0048_009.txt",
+          "KR1j0048_035.txt",
+          "KR1j0048_004.txt",
+          "KR1j0048_012.txt"
+        ],
+        "彠": [
+          "KR1j0048_021.txt",
+          "KR1j0048_010.txt",
+          "KR1j0048_007.txt",
+          "KR1j0048_001.txt"
+        ],
+        "掚": [
+          "KR1j0048_012.txt"
+        ],
+        "斸": [
+          "KR1j0048_030.txt",
+          "KR1j0048_032.txt",
+          "KR1j0048_008.txt",
+          "KR1j0048_004.txt",
+          "KR1j0048_013.txt"
+        ],
+        "槼": [
+          "KR1j0048_015.txt"
+        ],
+        "湋": [
+          "KR1j0048_017.txt"
+        ],
+        "濆": [
+          "KR1j0048_031.txt",
+          "KR1j0048_032.txt",
+          "KR1j0048_020.txt",
+          "KR1j0048_038.txt",
+          "KR1j0048_005.txt"
+        ],
+        "煇": [
+          "KR1j0048_031.txt",
+          "KR1j0048_025.txt",
+          "KR1j0048_024.txt",
+          "KR1j0048_018.txt",
+          "KR1j0048_032.txt"
+        ],
+        "獁": [
+          "KR1j0048_019.txt"
+        ],
+        "璊": [
+          "KR1j0048_020.txt",
+          "KR1j0048_016.txt",
+          "KR1j0048_015.txt"
+        ],
+        "瘺": [
+          "KR1j0048_021.txt"
+        ],
+        "竪": [
+          "KR1j0048_030.txt",
+          "KR1j0048_022.txt",
+          "KR1j0048_008.txt",
+          "KR1j0048_028.txt"
+        ],
+        "糺": [
+          "KR1j0048_040.txt",
+          "KR1j0048_024.txt",
+          "KR1j0048_026.txt",
+          "KR1j0048_007.txt",
+          "KR1j0048_002.txt"
+        ],
+        "綆": [
+          "KR1j0048_031.txt",
+          "KR1j0048_024.txt",
+          "KR1j0048_026.txt",
+          "KR1j0048_027.txt",
+          "KR1j0048_012.txt"
+        ],
+        "緟": [
+          "KR1j0048_031.txt",
+          "KR1j0048_024.txt",
+          "KR1j0048_028.txt"
+        ],
+        "縺": [
+          "KR1j0048_024.txt"
+        ],
+        "罃": [
+          "KR1j0048_024.txt",
+          "KR1j0048_020.txt",
+          "KR1j0048_021.txt",
+          "KR1j0048_004.txt",
+          "KR1j0048_003.txt"
+        ],
+        "艣": [
+          "KR1j0048_025.txt",
+          "KR1j0048_018.txt"
+        ],
+        "蕝": [
+          "KR1j0048_019.txt",
+          "KR1j0048_025.txt",
+          "KR1j0048_024.txt",
+          "KR1j0048_018.txt",
+          "KR1j0048_026.txt"
+        ],
+        "蟶": [
+          "KR1j0048_027.txt"
+        ],
+        "覛": [
+          "KR1j0048_031.txt",
+          "KR1j0048_021.txt",
+          "KR1j0048_029.txt"
+        ],
+        "詘": [
+          "KR1j0048_025.txt",
+          "KR1j0048_024.txt",
+          "KR1j0048_030.txt",
+          "KR1j0048_026.txt",
+          "KR1j0048_033.txt"
+        ],
+        "諰": [
+          "KR1j0048_005.txt",
+          "KR1j0048_029.txt"
+        ],
+        "譾": [
+          "KR1j0048_029.txt"
+        ],
+        "賾": [
+          "KR1j0048_024.txt",
+          "KR1j0048_030.txt",
+          "KR1j0048_033.txt",
+          "KR1j0048_037.txt",
+          "KR1j0048_036.txt"
+        ],
+        "軉": [
+          "KR1j0048_030.txt"
+        ],
+        "輢": [
+          "KR1j0048_019.txt",
+          "KR1j0048_031.txt",
+          "KR1j0048_033.txt",
+          "KR1j0048_003.txt"
+        ],
+        "釟": [
+          "KR1j0048_032.txt",
+          "KR1j0048_001.txt"
+        ],
+        "銁": [
+          "KR1j0048_032.txt"
+        ],
+        "錜": [
+          "KR1j0048_032.txt"
+        ],
+        "鐏": [
+          "KR1j0048_025.txt",
+          "KR1j0048_018.txt",
+          "KR1j0048_032.txt",
+          "KR1j0048_023.txt",
+          "KR1j0048_036.txt"
+        ],
+        "鞾": [
+          "KR1j0048_025.txt",
+          "KR1j0048_024.txt",
+          "KR1j0048_033.txt",
+          "KR1j0048_008.txt"
+        ],
+        "顢": [
+          "KR1j0048_034.txt"
+        ],
+        "餳": [
+          "KR1j0048_023.txt",
+          "KR1j0048_034.txt",
+          "KR1j0048_001.txt"
+        ],
+        "駫": [
+          "KR1j0048_035.txt"
+        ],
+        "騴": [
+          "KR1j0048_035.txt"
+        ],
+        "魵": [
+          "KR1j0048_036.txt",
+          "KR1j0048_011.txt"
+        ],
+        "鯄": [
+          "KR1j0048_036.txt"
+        ],
+        "鰜": [
+          "KR1j0048_036.txt"
+        ],
+        "鳽": [
+          "KR1j0048_033.txt",
+          "KR1j0048_036.txt",
+          "KR1j0048_029.txt"
+        ],
+        "鶄": [
+          "KR1j0048_033.txt",
+          "KR1j0048_023.txt",
+          "KR1j0048_036.txt",
+          "KR1j0048_021.txt",
+          "KR1j0048_038.txt"
+        ],
+        "鸋": [
+          "KR1j0048_033.txt",
+          "KR1j0048_036.txt"
+        ],
+        "龓": [
+          "KR1j0048_033.txt",
+          "KR1j0048_037.txt"
+        ]
+      },
+      "license": "not_found_in_repository_snapshot",
+      "local_path": "build/external_dictionary_candidates/KR1j0048",
+      "recommended_role": "primary_text_witness_for_spot_validation_after_parser_design",
+      "repo": "https://github.com/kanripo/KR1j0048",
+      "source_grade_for_cnbe": "cross_reference_primary_text_context_with_parser_required",
+      "txt_file_count": 41,
+      "txt_total_bytes": 7557716
+    },
+    "leechenhwa2_nlp_han_dicts": {
+      "data_shape": "SQLite Dict(word, content, word1, word2) plus Kangxi volume in kangxi.4w.db",
+      "head": "b436fd32d8ffeb3cb14607e8eea033d39155eb9e",
+      "human_review_150_coverage": {
+        "hit_count": 104,
+        "hit_rate": 0.693333,
+        "hit_samples": [
+          "㐁",
+          "㒋",
+          "㔐",
+          "㖩",
+          "㘲",
+          "㝁",
+          "㡱",
+          "㣱",
+          "㦊",
+          "㨜",
+          "㬻",
+          "㯗",
+          "㱜",
+          "㳶",
+          "㶘",
+          "㸹",
+          "㽋",
+          "㿍",
+          "䁏",
+          "䅅",
+          "䇂",
+          "䈿",
+          "䊮",
+          "䌭",
+          "䎵",
+          "䒥",
+          "䔪",
+          "䖯",
+          "䘾",
+          "䚵",
+          "䜻",
+          "䞹",
+          "䠰",
+          "䢥",
+          "䤚",
+          "䦲",
+          "䨽",
+          "䪷",
+          "䬱",
+          "䮧",
+          "䰥",
+          "䲯",
+          "䴶",
+          "䶴",
+          "俁",
+          "墰",
+          "嬇",
+          "嵾",
+          "彠",
+          "掚"
+        ],
+        "miss_count": 46,
+        "miss_samples": [
+          "㛋",
+          "㟡",
+          "㪘",
+          "㻇",
+          "䃃",
+          "䐪",
+          "劏",
+          "噚",
+          "欍",
+          "碸",
+          "𠀁",
+          "𡌄",
+          "𡗇",
+          "𢝚",
+          "𤷭",
+          "𥡷",
+          "𥰆",
+          "𦉜",
+          "𧡱",
+          "𨩜",
+          "𩯽",
+          "𪳭",
+          "𫊹",
+          "𫎶",
+          "𫪘",
+          "𫸓",
+          "𫻪",
+          "𫼬",
+          "𬁱",
+          "𬉽",
+          "𬖮",
+          "𭒭",
+          "𭷩",
+          "𭹋",
+          "𮍭",
+          "𮒿",
+          "𮭹",
+          "𰎪",
+          "𰛣",
+          "𰭷",
+          "𱈚",
+          "𱡩",
+          "𲂔",
+          "𲅞",
+          "𲋟",
+          "𲎯"
+        ],
+        "target_unique_chars": 150
+      },
+      "kangxi_db": {
+        "bytes": 16142336,
+        "dict_count": 48709,
+        "distinct_word_count": 48709,
+        "exists": true,
+        "path": "build/external_dictionary_candidates/nlp-han-dicts/extracted/kangxi.4w.db",
+        "samples": [
+          {
+            "content_preview": "【集韻】同懶。字頭字从忄从柬。",
+            "word": "〈忄柬〉"
+          },
+          {
+            "content_preview": "【唐韻】【集韻】【韻會】【正韻】𠀤於何切，音娿。【爾雅·釋地】大陵曰阿。【玉篇】水岸也，邸也。【詩·小雅】菁菁者莪，在彼中阿。【傳】中阿，阿中也。又【大雅】有卷者阿。　又【爾雅·釋地】偏高曰阿丘。【釋名】阿，荷也。如人擔荷物，一邊偏高也。【",
+            "word": "阿"
+          },
+          {
+            "content_preview": "【集韻】安賀切，音侉。愛惡聲也。",
+            "word": "啊"
+          },
+          {
+            "content_preview": "【韻海】與向同。詳向字註。",
+            "word": "𥥩"
+          },
+          {
+            "content_preview": "【集韻】於河切，音阿。本作鈳。鈳䥈，釜屬。",
+            "word": "锕"
+          }
+        ],
+        "schema": "CREATE INDEX IDX_Dict on dict (word)\nCREATE TABLE dict (id INTEGER PRIMARY KEY AUTOINCREMENT, word text, content text, word1 text, word2 text, volume VARCHAR(50))\nCREATE TABLE info (id INTEGER PRIMARY KEY AUTOINCREMENT, word varchar(250), content text, word1 text)\nCREATE TABLE sqlite_sequence(name,seq)",
+        "single_char_count": 48708,
+        "tables": [
+          "dict",
+          "info",
+          "sqlite_sequence"
+        ]
+      },
+      "license": "BSD-2-Clause",
+      "local_path": "build/external_dictionary_candidates/nlp-han-dicts",
+      "recommended_role": "primary_structured_dictionary_context_source",
+      "remaining_73831_coverage": {
+        "hit_count": 28960,
+        "hit_rate": 0.392247,
+        "hit_samples": [
+          "㐁",
+          "㐯",
+          "㐳",
+          "㐴",
+          "㐸",
+          "㐹",
+          "㐼",
+          "㑁",
+          "㑂",
+          "㑃",
+          "㑄",
+          "㑉",
+          "㑌",
+          "㑍",
+          "㑏",
+          "㑐",
+          "㑗",
+          "㑘",
+          "㑙",
+          "㑛",
+          "㑜",
+          "㑞",
+          "㑟",
+          "㑢",
+          "㑣",
+          "㑤",
+          "㑦",
+          "㑮",
+          "㑯",
+          "㑰",
+          "㑳",
+          "㑴",
+          "㑵",
+          "㑶",
+          "㑸",
+          "㑻",
+          "㑼",
+          "㑽",
+          "㑾",
+          "㑿",
+          "㒀",
+          "㒁",
+          "㒂",
+          "㒃",
+          "㒅",
+          "㒆",
+          "㒇",
+          "㒈",
+          "㒉",
+          "㒊"
+        ],
+        "miss_count": 44871,
+        "miss_samples": [
+          "㐃",
+          "㐇",
+          "㐈",
+          "㐉",
+          "㐊",
+          "㐋",
+          "㐍",
+          "㐎",
+          "㐏",
+          "㐑",
+          "㐒",
+          "㐓",
+          "㐔",
+          "㐕",
+          "㐗",
+          "㐘",
+          "㐙",
+          "㐚",
+          "㐛",
+          "㐝",
+          "㐞",
+          "㐟",
+          "㐠",
+          "㐢",
+          "㐣",
+          "㐥",
+          "㐦",
+          "㐪",
+          "㐮",
+          "㐶",
+          "㐿",
+          "㑅",
+          "㑆",
+          "㑑",
+          "㑒",
+          "㑓",
+          "㑕",
+          "㑖",
+          "㑠",
+          "㑡",
+          "㑨",
+          "㑪",
+          "㑫",
+          "㑬",
+          "㑭",
+          "㑱",
+          "㑲",
+          "㒍",
+          "㒎",
+          "㒏"
+        ],
+        "target_unique_chars": 73831
+      },
+      "repo": "https://github.com/leechenhwa2/nlp-han-dicts",
+      "source_grade_for_cnbe": "cross_reference_dictionary_context",
+      "zhonghua_dazidian_db": {
+        "bytes": 29749248,
+        "dict_count": 21668,
+        "distinct_word_count": 19688,
+        "exists": true,
+        "path": "build/external_dictionary_candidates/nlp-han-dicts/extracted/zhdzd_simpledict.db",
+        "samples": [
+          {
+            "content_preview": "1、㐀釋文：同丘。《風俗通》：二人立一上。一者地也。象形。\n2、丘讀音：袪尤切，音蚯，尤韻。釋文：\n❶土之高也。非人所爲也。一曰四方高中央下爲～。見《說文》。\n　〔按周禮大司樂。凡樂。冬日至於地上之圜～而奏之。疏云。土之高者曰～。因高以事天",
+            "word": "㐀"
+          },
+          {
+            "content_preview": "1、㐁讀音：他點切，音忝，琰韻。釋文：舌貌。見《說文》。《段注》：魯靈光殿賦。玄熊䑙舕以齗齗。善曰。䑙舕吐舌貌。吐玷、吐暫、二切。䑙蓋即～之俗也。\n　〔按六書精蕰。～以舌在口外。露舌端舐物〕。\n2、臵釋文：古㐁字。《說文》：讀若三年導服之導",
+            "word": "㐁"
+          },
+          {
+            "content_preview": "1、㐅釋文：古五字。見《說文》。〔今商碼用作四字。又西式算學。乘數符號作㐅〕。\n2、五讀音：阮古切，音午，麌韻。釋文：\n❶五行也。從二。陰陽在天地間交午也。見《說文》。\n　〔按水、火、木、金、土、相尅相生。即陰陽交午也〕。\n❷中數也。《易繫",
+            "word": "㐅"
+          },
+          {
+            "content_preview": "1、㐌讀音：余支切，音移，支韻。釋文：\n❶粤中猺種。見《類篇》。\n❷人名。後魏主猗～。見《北史》。",
+            "word": "㐌"
+          },
+          {
+            "content_preview": "1、㐜讀音：渠尤切，音仇，尤韻。釋文：匹也。《太玄內》：謹於媐～。初貞後寧。《范注》：～、匹也。謹其妃匹。男女道正。夫婦別。家室安。\n2、仇讀音：渠尤切，音求，尤韻。釋文：\n❶讎也。見《說文》。\n❷合也。見《爾雅釋詁》。\n❸怨耦也。《左桓二",
+            "word": "㐜"
+          }
+        ],
+        "schema": "CREATE TABLE Dict (\r\n\tid INTEGER PRIMARY KEY AUTOINCREMENT,\r\n\tword TEXT,\r\n\tcontent TEXT, word1 TEXT, word2 TEXT)\nCREATE INDEX IDX_Dict on dict (word)\nCREATE TABLE info (id INTEGER PRIMARY KEY AUTOINCREMENT, word varchar(250), content text, word1 text)\nCREATE TABLE sqlite_sequence(name,seq)",
+        "single_char_count": 21667,
+        "tables": [
+          "Dict",
+          "info",
+          "sqlite_sequence"
+        ]
+      }
+    }
+  },
+  "checks": {
+    "human_review_packet_rows_150": true,
+    "nlp_kangxi_sqlite_exists": true,
+    "nlp_license_is_declared_bsd_2_clause": true,
+    "nlp_zhonghua_dazidian_sqlite_exists": true,
+    "no_formal_scoring_allowed": true,
+    "no_knowledge_write_performed": true,
+    "remaining_feature_rows_73831": true
+  },
+  "decision": {
+    "may_emit_final_structure_labels": false,
+    "may_modify_cnbe_research_knowledge": false,
+    "may_plan_dictionary_context_import": true,
+    "may_start_formal_gf0017_scoring": false,
+    "reason": "Use nlp-han-dicts as the primary structured dictionary context source because it contains licensed SQLite Kangxi and Zhonghua Dazidian databases. Use KR1j0048 as a primary-text witness after parser design. Keep he426100/kangxi as secondary comparison only until licensing and data-quality blockers are resolved.",
+    "recommended_next_script": "scripts/plan_external_dictionary_context_import.py"
+  },
+  "mode": "read_only_external_dictionary_source_candidate_evaluation",
+  "next_workflow_status": "DICTIONARY_CONTEXT_IMPORT_PLAN_ALLOWED_KNOWLEDGE_WRITE_BLOCKED",
+  "overall_status": "PASS_EXTERNAL_DICTIONARY_SOURCE_EVALUATION_READY",
+  "report_schema_version": "1.0",
+  "summary": {
+    "formal_gf0017_scoring_allowed": false,
+    "full_catalog_rows": 97686,
+    "human_review_packet_rows": 150,
+    "knowledge_write_allowed": false,
+    "recommended_primary_source": "leechenhwa2/nlp-han-dicts",
+    "recommended_secondary_comparison_source": "he426100/kangxi",
+    "recommended_supporting_source": "kanripo/KR1j0048",
+    "remaining_agent_standard_rows": 73831
+  }
+}

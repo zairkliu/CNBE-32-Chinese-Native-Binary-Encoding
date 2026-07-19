@@ -1,0 +1,90 @@
+{
+  "authority_boundary": {
+    "dictionary_context_is_cross_reference_only": true,
+    "does_not_assign_gf0017_scores": true,
+    "does_not_emit_final_structure_labels": true,
+    "does_not_rebuild_cnbe_database": true,
+    "does_not_write_cnbe_rows": true,
+    "not_national_standard_structure_authority": true
+  },
+  "checks": {
+    "base_character_data_hash_unchanged": true,
+    "cnbe_character_knowledge_hash_unchanged": true,
+    "cnbe_rows_written": true,
+    "database_rebuilds": true,
+    "dictionary_context_not_scoring_authority": true,
+    "final_structure_labels_emitted": true,
+    "merge_report_authorized": true,
+    "merge_report_executed": true,
+    "references_backup_created": true,
+    "references_count_is_nine": true,
+    "references_updated": true,
+    "score_values_assigned": true,
+    "target_index_absent_before_merge": true,
+    "target_index_created": true,
+    "target_index_entry_count": true,
+    "target_index_present_after_merge": true
+  },
+  "mode": "post_merge_dictionary_context_knowledge_audit",
+  "next_workflow_status": "KNOWLEDGE_MERGED_REVALIDATE_SOURCE_AUDIT_BEFORE_SCORING",
+  "overall_status": "PASS_DICTIONARY_CONTEXT_KNOWLEDGE_MERGE_AUDITED",
+  "reference_entry": {
+    "created_at_utc": "20260717T031651Z",
+    "data": "68,395 staged dictionary context rows; 49,085 unique characters",
+    "file": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/structured/dictionary_context_index.json",
+    "license": "BSD-2-Clause",
+    "name": "康熙字典与中华大字典交叉参考上下文索引",
+    "source": "GitHub: leechenhwa2/nlp-han-dicts",
+    "source_grade": "cross_reference_dictionary_context",
+    "standard_boundary": "not national-standard structure authority; not GF0017 scoring evidence"
+  },
+  "report_schema_version": "1.0",
+  "sample_chars": {
+    "㐀": {
+      "exists": true,
+      "import_status": "OFFICIAL_KNOWLEDGE_CONTEXT_INDEXED_NOT_SCORING_AUTHORITY",
+      "source_count": 2,
+      "source_grade": "cross_reference_dictionary_context",
+      "standard_level": "cross_reference_context_not_national_standard",
+      "unicode": "U+3400"
+    },
+    "㐁": {
+      "exists": true,
+      "import_status": "OFFICIAL_KNOWLEDGE_CONTEXT_INDEXED_NOT_SCORING_AUTHORITY",
+      "source_count": 2,
+      "source_grade": "cross_reference_dictionary_context",
+      "standard_level": "cross_reference_context_not_national_standard",
+      "unicode": "U+3401"
+    },
+    "家": {
+      "exists": true,
+      "import_status": "OFFICIAL_KNOWLEDGE_CONTEXT_INDEXED_NOT_SCORING_AUTHORITY",
+      "source_count": 2,
+      "source_grade": "cross_reference_dictionary_context",
+      "standard_level": "cross_reference_context_not_national_standard",
+      "unicode": "U+5BB6"
+    },
+    "鑫": {
+      "exists": true,
+      "import_status": "OFFICIAL_KNOWLEDGE_CONTEXT_INDEXED_NOT_SCORING_AUTHORITY",
+      "source_count": 2,
+      "source_grade": "cross_reference_dictionary_context",
+      "standard_level": "cross_reference_context_not_national_standard",
+      "unicode": "U+946B"
+    }
+  },
+  "summary": {
+    "backups": [
+      "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/references.json.bak.20260717T031651Z"
+    ],
+    "base_character_data_unchanged": true,
+    "cnbe_character_knowledge_unchanged": true,
+    "reference_key": "reference_9",
+    "references_entries": 9,
+    "references_path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/references.json",
+    "target_index": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/structured/dictionary_context_index.json",
+    "target_index_bytes": 92848595,
+    "target_index_entries": 49085,
+    "target_index_lines": 1204577
+  }
+}

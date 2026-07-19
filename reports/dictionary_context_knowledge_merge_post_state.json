@@ -1,0 +1,26 @@
+{
+  "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/references.json": {
+    "bytes": 2381,
+    "exists": true,
+    "lines": 65,
+    "sha256": "b32d25c2c89783dff7d1334ac04c22fb634ee4d5e41c0f0a85fc758daf415292"
+  },
+  "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/structured/base_character_data.json": {
+    "bytes": 2493021,
+    "exists": true,
+    "lines": 169496,
+    "sha256": "3590a9372f46dca3baade96bb7196db7ad51142807630860a4b2f500f90b33eb"
+  },
+  "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/structured/cnbe_character_knowledge.json": {
+    "bytes": 18947148,
+    "exists": true,
+    "lines": 221841,
+    "sha256": "976a2f314c158b481b730493799240079d638573490f1be84e006a76eb2fb63f"
+  },
+  "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/structured/dictionary_context_index.json": {
+    "bytes": 92848595,
+    "exists": true,
+    "lines": 1204577,
+    "sha256": "38370b4660a738bb5295fbeb87f0a673f4f32b56d013754244c6122f420c28cd"
+  }
+}

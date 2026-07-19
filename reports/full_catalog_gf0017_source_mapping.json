@@ -1,0 +1,506 @@
+{
+  "authority_boundary": {
+    "does_not_modify_workbook": true,
+    "does_not_publish_release": true,
+    "does_not_rebuild_database": true,
+    "does_not_score_rows": true,
+    "national_standard_vs_agent_standard_preserved": true,
+    "ocr_dictionary_wiki_are_not_bitfield_authority": true
+  },
+  "decision": {
+    "may_modify_workbook": false,
+    "may_rebuild_database": false,
+    "may_start_batch_gf0017_scoring": false,
+    "may_start_schema_join_design": true,
+    "reason": "The GF0017 source map is now explicit. The next allowed step is schema join design and blocker reconciliation; row scoring remains blocked."
+  },
+  "items": [
+    {
+      "batch_scoring_rule": "do_not_score_rows_until_source_status_is_not_unresolved",
+      "controlling_sources": [
+        {
+          "exists": true,
+          "grade": "direct_standard",
+          "grade_status": "direct_standard",
+          "line_count": 22,
+          "name": "GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则",
+          "relative_path": "source/11-评测与分类/GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则.md",
+          "role": "scoring_methodology",
+          "sha256": "2e23d0b5a22bbba84cc6723e836181d3c32fa43b92a21331924998bf15e296ab",
+          "size_bytes": 1258
+        },
+        {
+          "exists": true,
+          "grade": "cross_reference",
+          "grade_status": "cross_reference",
+          "line_count": 274,
+          "name": "通用规范汉字表 8105",
+          "relative_path": "source/01-通用规范汉字表/通用规范汉字表(8105).md",
+          "role": "project national-standard baseline",
+          "sha256": "cfaca4f2f325b7a5983a5d104d62e01c7ed653400b4027ed0b1038e115b8d2b8",
+          "size_bytes": 9237
+        }
+      ],
+      "domain": "standard_character_scope",
+      "id": "character_set_coverage",
+      "points": 3,
+      "reason": "GF0017 references GB2312 and 现代汉语通用字表 for this item. The current project uses 8105 as the baseline, so full-catalog scoring must report this as SOURCE_GAP until required-set handling is explicitly resolved.",
+      "source_status": "SOURCE_GAP",
+      "supporting_sources": [
+        {
+          "exists": true,
+          "line_count": null,
+          "relative_path": "knowledge/ocr_char_table_all.json",
+          "sha256": "1b4684df4411e7e6095921768d81909fbb6e86dda80df7735270f81f156854e4",
+          "size_bytes": 267544
+        },
+        {
+          "exists": true,
+          "line_count": null,
+          "relative_path": "knowledge/alignment_report.json",
+          "sha256": "479400e5a10a22294a91f54c0bd7750b02c8c6a5ae20c4fd075fe5ab900e4380",
+          "size_bytes": 1889
+        },
+        {
+          "exists": true,
+          "line_count": null,
+          "relative_path": "knowledge/alignment_report_v2.json",
+          "sha256": "8bb98f3ae731828a95d8beae854f9d4f236af912eb5ddea8e085582dce1f11ce",
+          "size_bytes": 2020
+        }
+      ],
+      "workbook_fields": [
+        "序号",
+        "汉字",
+        "Unicode",
+        "字库索引",
+        "是否现代"
+      ]
+    },
+    {
+      "batch_scoring_rule": "do_not_score_rows_until_source_status_is_not_unresolved",
+      "controlling_sources": [
+        {
+          "exists": true,
+          "grade": "direct_standard",
+          "grade_status": "direct_standard",
+          "line_count": 22,
+          "name": "GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则",
+          "relative_path": "source/11-评测与分类/GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则.md",
+          "role": "scoring_methodology",
+          "sha256": "2e23d0b5a22bbba84cc6723e836181d3c32fa43b92a21331924998bf15e296ab",
+          "size_bytes": 1258
+        },
+        {
+          "exists": true,
+          "grade": "cross_reference",
+          "grade_status": "cross_reference",
+          "line_count": 22,
+          "name": "GB 13000.1 字符集汉字折笔规范",
+          "relative_path": "source/07-折笔规范/GB 13000.1 字符集汉字折笔规范.md",
+          "role": "folded-stroke and stroke-shape review source",
+          "sha256": "c1cdbc03f2ee9d5c42a69ec53dac9db2eefed4e6173da720c4c59df533f67feb",
+          "size_bytes": 840
+        }
+      ],
+      "domain": "stroke_shape_order",
+      "id": "stroke_shape",
+      "points": 3,
+      "reason": "The workbook only has stroke count. Stroke-shape classification requires standard-derived extraction before final scoring.",
+      "source_status": "SOURCE_GAP",
+      "supporting_sources": [
+        {
+          "exists": true,
+          "line_count": null,
+          "relative_path": "knowledge/ocr/ocr_fold_stroke.json",
+          "sha256": "1cfaf552a6eb88ac93fd66194759f21ab3629a6ed5f55d9fa68fb9b97f34fd66",
+          "size_bytes": 15314
+        },
+        {
+          "exists": true,
+          "line_count": null,
+          "relative_path": "knowledge/ocr/standards/std_07-折笔规范_bc1.json",
+          "sha256": "6aba04e925dd3c5349a3dbd25c137ea295ef4bd6640dc42f0c4d7891d7761915",
+          "size_bytes": 24488
+        }
+      ],
+      "workbook_fields": [
+        "笔画数"
+      ]
+    },
+    {
+      "batch_scoring_rule": "do_not_score_rows_until_source_status_is_not_unresolved",
+      "controlling_sources": [
+        {
+          "exists": true,
+          "grade": "direct_standard",
+          "grade_status": "direct_standard",
+          "line_count": 14176,
+          "name": "GF 0031-2026 通用规范汉字笔顺规范",
+          "relative_path": "source/05-笔顺规范/GF 0031—2026 通用规范汉字笔顺规范.md",
+          "role": "current stroke-order standard source",
+          "sha256": "5601c38ed5ec76bdc4770a281c54a0cbc6f2836d95f3b19d3853200c3ae2ae74",
+          "size_bytes": 616160
+        },
+        {
+          "exists": true,
+          "grade": "direct_standard",
+          "grade_status": "direct_standard",
+          "line_count": 16,
+          "name": "GF3002-1999 GB13000.1字符集汉字笔顺规范",
+          "relative_path": "source/05-笔顺规范/GF3002-1999 GB13000.1字符集汉字笔顺规范.md",
+          "role": "GB13000.1 stroke-order source",
+          "sha256": "1bd050e042f246351cf4a09ef39c3ad18019cb252aa319a7a22028b852f210dd",
+          "size_bytes": 688
+        }
+      ],
+      "domain": "stroke_shape_order",
+      "id": "stroke_order",
+      "points": 3,
+      "reason": "The workbook stroke-count field can be compared only after stroke-order records are mapped to Unicode identities.",
+      "source_status": "SOURCE_EVIDENCE_REQUIRED",
+      "supporting_sources": [
+        {
+          "exists": true,
+          "line_count": null,
+          "relative_path": "knowledge/stroke_order_8105.json",
+          "sha256": "4e8bb4b3c2de77b911c5728bf7fb33a1cc7c995d0ded3cdc5f132ee6eeb2a0f1",
+          "size_bytes": 1144204
+        },
+        {
+          "exists": true,
+          "line_count": null,
+          "relative_path": "knowledge/stroke_order_8105_clean.json",
+          "sha256": "f6efaa0caa7433be4266ffbed96125629cc3d928f80f2a6eef48d1f3b3709d64",
+          "size_bytes": 1165030
+        }
+      ],
+      "workbook_fields": [
+        "笔画数"
+      ]
+    },
+    {
+      "batch_scoring_rule": "do_not_score_rows_until_source_status_is_not_unresolved",
+      "controlling_sources": [
+        {
+          "exists": true,
+          "grade": "direct_standard",
+          "grade_status": "direct_standard",
+          "line_count": 124,
+          "name": "GF 0014-2009 现代常用字部件及部件名称规范",
+          "relative_path": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md",
+          "role": "modern common-character component source",
+          "sha256": "8da9fc36e1d62c5229e17ac2f00746dc84a6ecb6ea039b61f6c0f52aadadf981",
+          "size_bytes": 5872
+        },
+        {
+          "exists": true,
+          "grade": "direct_standard",
+          "grade_status": "direct_standard",
+          "line_count": 40,
+          "name": "信息处理用GB 13000.1 字符集汉字部件规范",
+          "relative_path": "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md",
+          "role": "information-processing component source",
+          "sha256": "f6a53cc8b0b14c573845a1336de14df4c46d33a2cb18592e6450ef0c790002bb",
+          "size_bytes": 2142
+        }
+      ],
+      "domain": "component_inventory",
+      "id": "component_validity",
+      "points": 3,
+      "reason": "The workbook has no component list. Component validity must be built from standard evidence before any row score is calculated.",
+      "source_status": "SOURCE_EVIDENCE_REQUIRED",
+      "supporting_sources": [
+        {
+          "exists": true,
+          "line_count": null,
+          "relative_path": "knowledge/component_db.json",
+          "sha256": "d40a8173d5a7856fc4eb6dd93009a32d459ef99f21793947ac3ac8b924acfe5e",
+          "size_bytes": 576557
+        },
+        {
+          "exists": true,
+          "line_count": null,
+          "relative_path": "knowledge/decomp_rules.json",
+          "sha256": "10fb1a944c7df5836a287b40a135397014df9b398dc7827445e276c86168fc8e",
+          "size_bytes": 865
+        },
+        {
+          "exists": true,
+          "line_count": null,
+          "relative_path": "decomp-data/dictionary.json",
+          "sha256": "9d6d0dc83b755f763ae94b22f42716b56c42b2bcf51aee18ca837ec867ae80a4",
+          "size_bytes": 9520010
+        },
+        {
+          "exists": true,
+          "line_count": 85238,
+          "relative_path": "cjk-decomp/cjk-decomp.txt",
+          "sha256": "cf770b7be3894f11a96a79789195f237fdbfc3ca533ea0763052e50cf7998fe1",
+          "size_bytes": 1507690
+        }
+      ],
+      "workbook_fields": []
+    },
+    {
+      "batch_scoring_rule": "do_not_score_rows_until_source_status_is_not_unresolved",
+      "controlling_sources": [
+        {
+          "exists": true,
+          "grade": "direct_standard",
+          "grade_status": "direct_standard",
+          "line_count": 124,
+          "name": "GF 0014-2009 现代常用字部件及部件名称规范",
+          "relative_path": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md",
+          "role": "component-name source",
+          "sha256": "8da9fc36e1d62c5229e17ac2f00746dc84a6ecb6ea039b61f6c0f52aadadf981",
+          "size_bytes": 5872
+        }
+      ],
+      "domain": "component_inventory",
+      "id": "component_name_validity",
+      "points": 8,
+      "reason": "Component names carry the largest non-decomposition sub-score outside structure. OCR-only component names must remain review aids.",
+      "source_status": "SOURCE_EVIDENCE_REQUIRED",
+      "supporting_sources": [
+        {
+          "exists": true,
+          "line_count": null,
+          "relative_path": "knowledge/component_db.json",
+          "sha256": "d40a8173d5a7856fc4eb6dd93009a32d459ef99f21793947ac3ac8b924acfe5e",
+          "size_bytes": 576557
+        },
+        {
+          "exists": true,
+          "line_count": null,
+          "relative_path": "knowledge/ocr/standards/std_03-部件及部件名称规范_bc1.json",
+          "sha256": "957601a86694ec12c9cfb843f22acf480fd8af9cb274d5afb76a87510d7e56c5",
+          "size_bytes": 292675
+        }
+      ],
+      "workbook_fields": []
+    },
+    {
+      "batch_scoring_rule": "do_not_score_rows_until_source_status_is_not_unresolved",
+      "controlling_sources": [
+        {
+          "exists": true,
+          "grade": "direct_standard",
+          "grade_status": "direct_standard",
+          "line_count": 24,
+          "name": "GG 0011-2009 汉字部首表",
+          "relative_path": "source/02-汉字部首表/GG 0011-2009 汉字部首表.md",
+          "role": "modern radical classification source",
+          "sha256": "3eb0f09fa13884230f06a2b917587cc8f7005aa109cbf4fe4677c636b207a241",
+          "size_bytes": 798
+        }
+      ],
+      "domain": "radical_classification",
+      "id": "radical_validity",
+      "points": 3,
+      "reason": "The workbook has a numeric radical field. It cannot be trusted until the GG0011 radical source and numeric radical-code map agree.",
+      "source_status": "SOURCE_EVIDENCE_REQUIRED",
+      "supporting_sources": [
+        {
+          "exists": true,
+          "line_count": null,
+          "relative_path": "knowledge/kangxi_radicals.json",
+          "sha256": "c2aa49ca9caa51a3befb80db14f4b2fa6d2d38ca43ee17fab36ca34d977fbae9",
+          "size_bytes": 533759
+        },
+        {
+          "exists": true,
+          "line_count": null,
+          "relative_path": "knowledge/radical_validation.json",
+          "sha256": "bfd38905b9891f14ffb17fc3c1271cd776137735650dc4aba9f46a52b178a980",
+          "size_bytes": 3558
+        },
+        {
+          "exists": true,
+          "line_count": null,
+          "relative_path": "knowledge/unicode_rsindex.json",
+          "sha256": "7ba3b114e97dc1ce7d8e59b26e6344a72849a30d72b0b6af702c4be446247ebf",
+          "size_bytes": 528736
+        },
+        {
+          "exists": true,
+          "line_count": 317738,
+          "relative_path": "source/15-Unicode-RSIndex/RSIndex.md",
+          "sha256": "bf4d78506c19d21e4c9caf0f965726ee7ceec461ac0a764dbeefbc0b33feecca",
+          "size_bytes": 1261878
+        }
+      ],
+      "workbook_fields": [
+        "部首区"
+      ]
+    },
+    {
+      "batch_scoring_rule": "do_not_score_rows_until_source_status_is_not_unresolved",
+      "controlling_sources": [
+        {
+          "exists": true,
+          "grade": "direct_standard",
+          "grade_status": "direct_standard",
+          "line_count": 28,
+          "name": "GF 0013-2009 现代常用独体字规范",
+          "relative_path": "source/04-独体字规范/GF 0013-2009 现代常用独体字规范.md",
+          "role": "single-component character source",
+          "sha256": "8f0d92116f1e3513bc06230860f83416fb93e16045a49531099f0f21a55aae16",
+          "size_bytes": 1102
+        },
+        {
+          "exists": true,
+          "grade": "direct_standard",
+          "grade_status": "direct_standard",
+          "line_count": 124,
+          "name": "GF 0014-2009 现代常用字部件及部件名称规范",
+          "relative_path": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md",
+          "role": "decomposition compatibility source",
+          "sha256": "8da9fc36e1d62c5229e17ac2f00746dc84a6ecb6ea039b61f6c0f52aadadf981",
+          "size_bytes": 5872
+        }
+      ],
+      "domain": "single_component_and_structure",
+      "id": "independent_character_rule",
+      "points": 7,
+      "reason": "The workbook structure fields must be checked against independent-character evidence so an independent character is not split into invalid components.",
+      "source_status": "SOURCE_EVIDENCE_REQUIRED",
+      "supporting_sources": [
+        {
+          "exists": true,
+          "line_count": null,
+          "relative_path": "knowledge/decomp_rules.json",
+          "sha256": "10fb1a944c7df5836a287b40a135397014df9b398dc7827445e276c86168fc8e",
+          "size_bytes": 865
+        },
+        {
+          "exists": true,
+          "line_count": null,
+          "relative_path": "knowledge/component_db.json",
+          "sha256": "d40a8173d5a7856fc4eb6dd93009a32d459ef99f21793947ac3ac8b924acfe5e",
+          "size_bytes": 576557
+        }
+      ],
+      "workbook_fields": [
+        "结构区(v4)",
+        "结构名称(v4)"
+      ]
+    },
+    {
+      "batch_scoring_rule": "do_not_score_rows_until_source_status_is_not_unresolved",
+      "controlling_sources": [
+        {
+          "exists": true,
+          "grade": "direct_standard",
+          "grade_status": "direct_standard",
+          "line_count": 124,
+          "name": "GF 0014-2009 现代常用字部件及部件名称规范",
+          "relative_path": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md",
+          "role": "structure and decomposition source",
+          "sha256": "8da9fc36e1d62c5229e17ac2f00746dc84a6ecb6ea039b61f6c0f52aadadf981",
+          "size_bytes": 5872
+        },
+        {
+          "exists": true,
+          "grade": "direct_standard",
+          "grade_status": "direct_standard",
+          "line_count": 40,
+          "name": "信息处理用GB 13000.1 字符集汉字部件规范",
+          "relative_path": "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md",
+          "role": "GB13000.1 component/decomposition source",
+          "sha256": "f6a53cc8b0b14c573845a1336de14df4c46d33a2cb18592e6450ef0c790002bb",
+          "size_bytes": 2142
+        }
+      ],
+      "domain": "single_component_and_structure",
+      "id": "structure_first_decomposition",
+      "points": 20,
+      "reason": "This 20-point item cannot be scored from a workbook structure label alone. The Agent 13-label localization must be joined with standard decomposition evidence.",
+      "source_status": "SOURCE_EVIDENCE_REQUIRED",
+      "supporting_sources": [
+        {
+          "exists": false,
+          "grade_status": "unresolved",
+          "relative_path": "evidence/agent-standard/cnbe_legacy_structure_localization.json"
+        },
+        {
+          "exists": true,
+          "line_count": null,
+          "relative_path": "knowledge/component_db.json",
+          "sha256": "d40a8173d5a7856fc4eb6dd93009a32d459ef99f21793947ac3ac8b924acfe5e",
+          "size_bytes": 576557
+        },
+        {
+          "exists": true,
+          "line_count": null,
+          "relative_path": "knowledge/decomp_rules.json",
+          "sha256": "10fb1a944c7df5836a287b40a135397014df9b398dc7827445e276c86168fc8e",
+          "size_bytes": 865
+        },
+        {
+          "exists": true,
+          "line_count": null,
+          "relative_path": "decomp-data/dictionary.json",
+          "sha256": "9d6d0dc83b755f763ae94b22f42716b56c42b2bcf51aee18ca837ec867ae80a4",
+          "size_bytes": 9520010
+        },
+        {
+          "exists": true,
+          "line_count": 85238,
+          "relative_path": "cjk-decomp/cjk-decomp.txt",
+          "sha256": "cf770b7be3894f11a96a79789195f237fdbfc3ca533ea0763052e50cf7998fe1",
+          "size_bytes": 1507690
+        }
+      ],
+      "workbook_fields": [
+        "结构区(v4)",
+        "结构名称(v4)",
+        "备注(v3原结构)"
+      ]
+    }
+  ],
+  "known_blockers": [
+    {
+      "asset": "Unihan.zip",
+      "issue": "zip archive failed Python zipfile integrity check",
+      "next_step": "exclude or replace before treating as authoritative input",
+      "severity": "BLOCKER"
+    }
+  ],
+  "missing_sources": [],
+  "mode": "read_only_full_catalog_gf0017_source_mapping",
+  "next_artifacts": [
+    "reports/full_catalog_gf0017_join_schema.json",
+    "reports/FULL_CATALOG_GF0017_JOIN_SCHEMA.md",
+    "scripts/design_full_catalog_gf0017_join_schema.py"
+  ],
+  "next_workflow_status": "SOURCE_MAPPING_READY_KNOWLEDGE_BLOCKERS_REMAIN",
+  "overall_status": "PASS",
+  "report_schema_version": "1.0",
+  "source_grades": [
+    "cross_reference",
+    "direct_standard",
+    "referenced_not_direct",
+    "standard_derived",
+    "unresolved"
+  ],
+  "source_sheet": "CNBE完整编码表v4_fixed",
+  "source_workbook": "data/CNBE_编码目录_修复版_v4_fixed.xlsx",
+  "summary": {
+    "direct_standard_items": 8,
+    "evidence_domain_status_counts": {
+      "ACTION_REQUIRED": 1,
+      "READY_FOR_SCHEMA_DESIGN": 7
+    },
+    "gf0017_items": 8,
+    "gf0017_total_points": 50,
+    "knowledge_blockers": 1,
+    "missing_controlling_sources": 0,
+    "preflight_status": "PASS",
+    "source_audit_status": "ACTION_REQUIRED",
+    "source_status_counts": {
+      "SOURCE_EVIDENCE_REQUIRED": 6,
+      "SOURCE_GAP": 2
+    }
+  }
+}

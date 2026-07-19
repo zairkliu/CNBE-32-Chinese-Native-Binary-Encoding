@@ -1,0 +1,149 @@
+{
+  "authority_boundary": {
+    "agent_standard_not_national_standard": true,
+    "dictionary_context_cross_reference_only": true,
+    "does_not_assign_gf0017_scores": true,
+    "does_not_emit_final_structure_labels": true,
+    "does_not_rebuild_database": true,
+    "does_not_write_cnbe_rows": true,
+    "national_standard_core_separate": true,
+    "unicode_first": true,
+    "wikipedia_lowest_tier_cross_reference_only": true
+  },
+  "build_plan": {
+    "batching": {
+      "checkpoint": "reports/unified_hanzi_evidence_index_checkpoint.json",
+      "primary_key": "unicode",
+      "resume_key": "catalog_offset",
+      "stop_on_unicode_mismatch": true
+    },
+    "build_mode": "read_only_index_materialization",
+    "recommended_json_output": "reports/unified_hanzi_evidence_index.json",
+    "recommended_markdown_output": "reports/UNIFIED_HANZI_EVIDENCE_INDEX.md",
+    "recommended_script": "scripts/build_unified_hanzi_evidence_index.py"
+  },
+  "checks": {
+    "agent_join_ready": true,
+    "base_8105_count": true,
+    "cnbe_8105_count": true,
+    "dictionary_context_count": true,
+    "dictionary_merge_audited": true,
+    "formal_scoring_blocked": true,
+    "full_catalog_rows_match": true,
+    "knowledge_inventory_no_blockers": true,
+    "knowledge_inventory_review_required": true,
+    "source_audit_passed": true,
+    "source_audit_review_required": true,
+    "unicode_identity_passed": true
+  },
+  "decision": {
+    "may_build_unified_evidence_index": true,
+    "may_rebuild_database": false,
+    "may_start_formal_gf0017_scoring": false,
+    "may_write_cnbe_rows": false,
+    "reason": "Source gates are now REVIEW_REQUIRED rather than NO_GO, so a read-only evidence index may be materialized. Scoring and database work remain blocked until the index is audited."
+  },
+  "input_summaries": {
+    "base_character_data": {
+      "count": 8105,
+      "layer": "national_standard_core",
+      "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/structured/base_character_data.json",
+      "top_type": "dict"
+    },
+    "cihai_index": {
+      "count": 5423,
+      "layer": "dictionary_cross_reference_context",
+      "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/structured/cihai_search_index.json",
+      "top_type": "dict"
+    },
+    "cnbe_character_knowledge": {
+      "count": 8105,
+      "layer": "national_standard_core_enriched",
+      "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/structured/cnbe_character_knowledge.json",
+      "top_type": "list"
+    },
+    "dictionary_context_index": {
+      "count": 49085,
+      "layer": "dictionary_cross_reference_context",
+      "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/structured/dictionary_context_index.json",
+      "top_type": "dict"
+    },
+    "full_catalog_rows": 97686,
+    "legacy_unihan_archive": {
+      "layer": "excluded_legacy_artifact",
+      "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/Unihan.zip",
+      "status": "warning_only_when_unihan2_passes"
+    },
+    "unihan2_archive": {
+      "layer": "unicode_identity_cross_reference",
+      "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/Unihan2.zip",
+      "status": "canonical_archive_integrity_passed"
+    },
+    "unique_unicode": 97686,
+    "wikipedia_corpus": {
+      "count": 1489790,
+      "layer": "lowest_tier_semantic_cross_reference",
+      "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/wikipedia-zh-cn-20260501.json",
+      "top_type": "jsonl"
+    },
+    "yuanliu_index": {
+      "count": 9574,
+      "layer": "character_origin_cross_reference",
+      "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/yuanliu_chars.json",
+      "top_type": "dict"
+    }
+  },
+  "layer_contract": {
+    "agent_standard_context": {
+      "allowed_use": "project-level candidate routing after gates",
+      "must_not_use_as": "national_standard claim",
+      "source_grade": "agent_standard_candidate_not_national_standard"
+    },
+    "dictionary_cross_reference_context": {
+      "allowed_use": "human review, source-gap triage, semantic/context support",
+      "must_not_use_as": "national-standard structure authority",
+      "source_grade": "cross_reference_dictionary_context"
+    },
+    "national_standard_core": {
+      "allowed_use": "GF0017 evidence candidate after item-level validation",
+      "must_not_mix_with": "dictionary_context_as_direct_standard",
+      "source_grade": "direct_standard_or_standard_derived"
+    },
+    "wikipedia_lowest_tier_cross_reference": {
+      "allowed_use": "semantic disambiguation and review navigation only",
+      "must_not_use_as": "GF0017 scoring evidence",
+      "source_grade": "lowest_tier_cross_reference"
+    }
+  },
+  "mode": "read_only_unified_hanzi_evidence_index_plan",
+  "next_workflow_status": "UNIFIED_EVIDENCE_INDEX_BUILD_READY_FORMAL_SCORING_BLOCKED",
+  "overall_status": "PASS_UNIFIED_EVIDENCE_INDEX_PLAN_READY",
+  "planned_index_schema": {
+    "entry_fields": [
+      "unicode",
+      "char",
+      "codepoint",
+      "catalog_scope",
+      "national_standard_core",
+      "dictionary_context",
+      "origin_context",
+      "wiki_context",
+      "legacy_cnbe_context",
+      "agent_standard_context",
+      "gf0017_item_statuses",
+      "evidence_gaps",
+      "review_status",
+      "allowed_next_action"
+    ],
+    "entry_key": "unicode",
+    "forbidden_fields_before_later_gates": [
+      "gf0017_score",
+      "final_structure_label",
+      "cnbe32_repair_value",
+      "database_write_record"
+    ],
+    "top_level": "object keyed by Unicode label"
+  },
+  "purpose": "Plan a Unicode-keyed evidence graph before any CNBE row repair, formal GF0017 scoring, or database reconstruction.",
+  "report_schema_version": "1.0"
+}

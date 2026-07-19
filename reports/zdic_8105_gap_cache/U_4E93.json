@@ -1,0 +1,29 @@
+{
+  "authority_boundary": "ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD",
+  "character": "亓",
+  "fields": {
+    "glyph_analysis": "象形",
+    "normalized_structure": "独体字",
+    "radical": "二",
+    "raw_structure": "单一结构",
+    "stroke_order": "1132",
+    "total_strokes": "4",
+    "unicode_value": "CJK 4E93"
+  },
+  "found_field_count": 7,
+  "found_fields": [
+    "radical",
+    "total_strokes",
+    "unicode_value",
+    "stroke_order",
+    "raw_structure",
+    "normalized_structure",
+    "glyph_analysis"
+  ],
+  "parse_status": "PARSED_WITH_STRUCTURE",
+  "source_kind": "online_fetch",
+  "source_level": "network_cross_reference",
+  "source_path": "https://zdic.net/hans/%E4%BA%93",
+  "unicode_codepoint": "U+4E93",
+  "zdic_url": "https://www.zdic.net/hans/%E4%BA%93"
+}

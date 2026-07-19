@@ -1,0 +1,14 @@
+{
+  "authority_boundary": "ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD",
+  "character": "𬭊",
+  "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.zdic.net/hans/%F0%AC%AD%8A",
+  "fields": {},
+  "found_field_count": 0,
+  "found_fields": [],
+  "parse_status": "NETWORK_OR_PARSE_GAP",
+  "source_kind": "online_fetch_failed",
+  "source_level": "network_cross_reference",
+  "source_path": "",
+  "unicode_codepoint": "U+2CB4A",
+  "zdic_url": "https://www.zdic.net/hans/%F0%AC%AD%8A"
+}

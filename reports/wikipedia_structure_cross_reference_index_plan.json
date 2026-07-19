@@ -1,0 +1,76 @@
+{
+  "authority_boundary": {
+    "does_not_assign_gf0017_scores": true,
+    "does_not_claim_national_standard_for_outside_8105": true,
+    "does_not_modify_cnbe_rows": true,
+    "does_not_modify_source_assets": true,
+    "does_not_modify_workbook": true,
+    "does_not_publish_release": true,
+    "does_not_rebuild_database": true
+  },
+  "decision": {
+    "may_implement_read_only_wiki_streaming_index": true,
+    "may_modify_cnbe_rows": false,
+    "may_modify_source_assets": false,
+    "may_rebuild_database": false,
+    "may_start_formal_gf0017_scoring": false,
+    "reason": "Offline Wikipedia can be indexed only as a lowest-tier cross-reference for rows without dictionary hits. The index should support human review and source discovery, not scoring or encoding."
+  },
+  "index_design": {
+    "evidence_grade": "lowest_tier_cross_reference",
+    "forbidden_uses": [
+      "do_not_assign_gf0017_points_from_wiki",
+      "do_not_claim_national_standard_evidence_from_wiki",
+      "do_not_write_cnbe_rows_from_wiki",
+      "do_not_modify_source_assets"
+    ],
+    "index_mode": "streaming_read_only_target_char_index",
+    "join_key": "char and unicode after Unicode identity verification",
+    "max_hits_per_char": 3,
+    "search_fields": [
+      "title",
+      "tags",
+      "text"
+    ],
+    "stored_fields": [
+      "id",
+      "title",
+      "tags",
+      "snippet",
+      "text_len"
+    ],
+    "target_chars_source": "reports/structure_decomposition_dictionary_gap_extractor.json rows with NO_DICTIONARY_REVIEW_HIT"
+  },
+  "mode": "read_only_wikipedia_structure_cross_reference_index_plan",
+  "next_artifacts": [
+    "scripts/run_wikipedia_structure_cross_reference_index.py",
+    "reports/wikipedia_structure_cross_reference_index.json",
+    "reports/WIKIPEDIA_STRUCTURE_CROSS_REFERENCE_INDEX.md"
+  ],
+  "next_workflow_status": "OPTIONAL_WIKI_STREAMING_INDEX_REQUIRES_REVIEW_FORMAL_SCORING_BLOCKED",
+  "overall_status": "PASS_WIKIPEDIA_CROSS_REFERENCE_INDEX_PLAN_READY",
+  "report_schema_version": "1.0",
+  "summary": {
+    "cnbe_row_write_allowed": false,
+    "database_rebuild_allowed": false,
+    "formal_gf0017_scoring_allowed": false,
+    "rows_without_dictionary_review_hit": 84939,
+    "score_values_assigned": 0,
+    "source_asset_write_allowed": false,
+    "source_gap_rows": 85001,
+    "wiki_file_exists": true,
+    "wiki_file_size_bytes": 2393692848,
+    "wiki_schema": {
+      "keys": [
+        "id",
+        "tags",
+        "text",
+        "title"
+      ],
+      "sample_id": "100",
+      "sample_tags_present": true,
+      "sample_text_length": 15730,
+      "sample_title": "农业"
+    }
+  }
+}

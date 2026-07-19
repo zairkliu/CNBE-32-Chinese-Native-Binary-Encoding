@@ -1,0 +1,38 @@
+{
+  "authority_boundary": {
+    "dictionary_sources_are_cross_reference_context": true,
+    "does_not_assign_gf0017_scores": true,
+    "does_not_emit_final_structure_labels": true,
+    "does_not_modify_cnbe_research_knowledge": true,
+    "does_not_modify_cnbe_rows": true,
+    "does_not_rebuild_cnbe_database": true,
+    "not_national_standard_structure_authority": true
+  },
+  "checks": {
+    "formal_scoring_blocked": true,
+    "knowledge_write_blocked": true,
+    "plan_passed": true,
+    "staged_rows_positive": true,
+    "staging_db_created": true,
+    "unique_chars_positive": true
+  },
+  "mode": "staging_external_dictionary_context_build",
+  "next_workflow_status": "STAGING_READY_KNOWLEDGE_IMPORT_REQUIRES_AUTHORIZATION",
+  "overall_status": "PASS_DICTIONARY_CONTEXT_STAGING_READY",
+  "report_schema_version": "1.0",
+  "summary": {
+    "formal_gf0017_scoring_allowed": false,
+    "knowledge_write_allowed": false,
+    "raw_single_character_rows": {
+      "nlp_han_dicts_kangxi_4w": 48708,
+      "nlp_han_dicts_zhonghua_dazidian": 21667
+    },
+    "source_counts": {
+      "nlp_han_dicts_kangxi_4w": 48708,
+      "nlp_han_dicts_zhonghua_dazidian": 19687
+    },
+    "staged_rows": 68395,
+    "staging_db": "build/dictionary_context_staging/dictionary_context_entries.sqlite",
+    "unique_chars": 49085
+  }
+}

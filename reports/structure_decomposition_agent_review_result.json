@@ -1,0 +1,117 @@
+{
+  "authority_boundary": {
+    "does_not_assign_gf0017_points": true,
+    "does_not_duplicate_full_97686_table": true,
+    "does_not_emit_final_structure_labels": true,
+    "does_not_modify_original_editable_copy": true,
+    "does_not_modify_source_report": true,
+    "does_not_rebuild_database": true,
+    "does_not_write_cnbe_rows": true,
+    "uses_bounded_packet_only": true
+  },
+  "checks": {
+    "agent_reviewed_copy_is_separate": true,
+    "does_not_read_or_duplicate_full_97686_table": true,
+    "no_database_generated": true,
+    "no_final_structure_labels_written": true,
+    "no_gf0017_points_assigned": true,
+    "no_xlsx_generated": true,
+    "original_editable_row_count_unchanged": true,
+    "packet_manifest_passed": true,
+    "uses_bounded_packet_only": true
+  },
+  "decision": {
+    "may_assign_gf0017_points": false,
+    "may_emit_final_structure_labels": false,
+    "may_modify_agent_reviewed_editable_copy": true,
+    "may_modify_source_report": false,
+    "may_rebuild_database": false,
+    "may_start_human_decision_or_merge_plan": true,
+    "may_write_cnbe_rows": false,
+    "reason": "Agent review completed on the bounded packet. The reviewed copy contains triage notes only and must not be treated as source evidence until a later merge-and-audit gate."
+  },
+  "mode": "bounded_structure_decomposition_agent_review",
+  "next_workflow_status": "AGENT_REVIEW_READY_FOR_HUMAN_DECISION_OR_MERGE_PLAN",
+  "outputs": {
+    "agent_review_json": "reports/structure_decomposition_agent_review_result.json",
+    "agent_review_markdown": "reports/STRUCTURE_DECOMPOSITION_AGENT_REVIEW_RESULT.md",
+    "agent_reviewed_editable_csv": "review_packets/structure_decomposition/structure_decomposition_review_packet_AGENT_REVIEWED_EDITABLE.csv"
+  },
+  "overall_status": "PASS_STRUCTURE_DECOMPOSITION_AGENT_REVIEW_COMPLETED_NO_SCORING",
+  "report_schema_version": "1.0",
+  "review_rules": {
+    "CORE_8105_STRUCTURE_STANDARD_JOIN_REQUIRED": {
+      "agent_review_status": "STANDARD_JOIN_REQUIRED",
+      "blocks_scoring": true,
+      "human_review_status": "需要查标准原文",
+      "note": "8105 core row needs standard-derived structure/decomposition join before any GF0017 structure score or final structure label.",
+      "review_class": "8105_core_standard_join"
+    },
+    "STRUCTURE_DECOMPOSITION_AGENT_STANDARD_QUEUE_ONLY": {
+      "agent_review_status": "AGENT_STANDARD_QUEUE_REVIEW_REQUIRED",
+      "blocks_scoring": true,
+      "human_review_status": "暂缓",
+      "note": "No direct structure evidence in packet. Keep as Agent-standard queue candidate, not national-standard output.",
+      "review_class": "agent_standard_queue_only"
+    },
+    "STRUCTURE_DECOMPOSITION_PARTIAL_REVIEW_REQUIRED": {
+      "agent_review_status": "PARTIAL_REPAIR_REQUIRED",
+      "blocks_scoring": true,
+      "human_review_status": "需要查标准原文",
+      "note": "Partial structure/decomposition context needs source repair before scoring.",
+      "review_class": "partial_context_needs_repair"
+    },
+    "STRUCTURE_DECOMPOSITION_REVIEWABLE_CONTEXT_READY": {
+      "agent_review_status": "READY_FOR_HUMAN_ADJUDICATION",
+      "blocks_scoring": true,
+      "human_review_status": "证据可采纳",
+      "note": "Review context is available. Treat it as adjudication input only; do not promote it to a final label without merge-and-audit.",
+      "review_class": "context_ready_for_adjudication"
+    },
+    "STRUCTURE_DECOMPOSITION_SOURCE_GAP_WITH_DICTIONARY_CONTEXT": {
+      "agent_review_status": "DICTIONARY_CONTEXT_CHECK_REQUIRED",
+      "blocks_scoring": true,
+      "human_review_status": "需要查字典/字源",
+      "note": "Dictionary context may guide review but is not direct GF0017 structure authority.",
+      "review_class": "dictionary_context_only"
+    },
+    "STRUCTURE_DECOMPOSITION_SOURCE_GAP_WITH_REVIEW_CONTEXT": {
+      "agent_review_status": "REVIEW_CONTEXT_SOURCE_CHECK_REQUIRED",
+      "blocks_scoring": true,
+      "human_review_status": "需要查字典/字源",
+      "note": "Cross-reference context exists; verify against standards before any final label.",
+      "review_class": "cross_reference_context_only"
+    }
+  },
+  "summary": {
+    "agent_review_class_counts": {
+      "8105_core_standard_join": 40,
+      "agent_standard_queue_only": 40,
+      "context_ready_for_adjudication": 40,
+      "cross_reference_context_only": 40,
+      "dictionary_context_only": 12,
+      "partial_context_needs_repair": 40
+    },
+    "database_generation_allowed": false,
+    "final_structure_labels_written": 0,
+    "full_table_duplicate_allowed": false,
+    "gf0017_points_assigned": 0,
+    "human_review_status_counts": {
+      "暂缓": 40,
+      "证据可采纳": 40,
+      "需要查字典/字源": 52,
+      "需要查标准原文": 80
+    },
+    "reviewed_rows": 212,
+    "source_structure_status_counts": {
+      "CORE_8105_STRUCTURE_STANDARD_JOIN_REQUIRED": 40,
+      "STRUCTURE_DECOMPOSITION_AGENT_STANDARD_QUEUE_ONLY": 40,
+      "STRUCTURE_DECOMPOSITION_PARTIAL_REVIEW_REQUIRED": 40,
+      "STRUCTURE_DECOMPOSITION_REVIEWABLE_CONTEXT_READY": 40,
+      "STRUCTURE_DECOMPOSITION_SOURCE_GAP_WITH_DICTIONARY_CONTEXT": 12,
+      "STRUCTURE_DECOMPOSITION_SOURCE_GAP_WITH_REVIEW_CONTEXT": 40
+    },
+    "source_total_rows": 97686,
+    "xlsx_generation_allowed": false
+  }
+}

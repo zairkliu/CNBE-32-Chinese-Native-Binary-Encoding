@@ -1,0 +1,269 @@
+{
+  "authority_boundary": {
+    "dictionary_sources_are_cross_reference_context": true,
+    "does_not_assign_gf0017_scores": true,
+    "does_not_emit_final_structure_labels": true,
+    "does_not_modify_cnbe_research_knowledge": true,
+    "does_not_modify_cnbe_rows": true,
+    "does_not_rebuild_cnbe_database": true,
+    "not_national_standard_structure_authority": true
+  },
+  "blocked_actions": [
+    "modify base_character_data.json",
+    "modify cnbe_character_knowledge.json",
+    "assign GF0017 scores",
+    "emit final structure labels",
+    "write CNBE rows",
+    "rebuild CNBE database"
+  ],
+  "checks": {
+    "core_8105_files_not_modified": true,
+    "formal_scoring_blocked": true,
+    "knowledge_write_blocked_pending_authorization": false,
+    "review_join_passed": true,
+    "staged_rows_match_manifest": true,
+    "staging_db_exists": true,
+    "target_index_state_valid": true,
+    "target_structured_root_exists": true,
+    "unique_chars_match_manifest": true
+  },
+  "decision": {
+    "may_execute_official_knowledge_merge_now": false,
+    "may_generate_authorized_merge_script": true,
+    "recommended_next_script_after_authorization": "scripts/merge_dictionary_context_into_cnbe_research_knowledge.py",
+    "requires_human_authorization": false
+  },
+  "mode": "read_only_dictionary_context_knowledge_merge_plan",
+  "next_workflow_status": "KNOWLEDGE_MERGE_ALREADY_EXECUTED_RUN_POST_MERGE_AUDIT",
+  "overall_status": "PASS_DICTIONARY_CONTEXT_KNOWLEDGE_MERGE_ALREADY_EXECUTED",
+  "planned_index_schema": {
+    "dictionary_context_entry_fields": [
+      "source_id",
+      "source_repo",
+      "source_commit",
+      "license",
+      "content_preview",
+      "content"
+    ],
+    "entry_fields": [
+      "char",
+      "unicode",
+      "standard_level",
+      "source_grade",
+      "dictionary_context_entries",
+      "source_count",
+      "has_kangxi_context",
+      "has_zhonghua_dazidian_context",
+      "import_status"
+    ],
+    "top_level_type": "object keyed by character"
+  },
+  "planned_write_set": [
+    {
+      "action": "create",
+      "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/structured/dictionary_context_index.json",
+      "requires_authorization": true
+    },
+    {
+      "action": "backup_then_update_reference_entry",
+      "path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/references.json",
+      "requires_authorization": true
+    }
+  ],
+  "report_schema_version": "1.0",
+  "staging_summary": {
+    "dual_source_chars": 19310,
+    "samples": [
+      {
+        "char": "㐀",
+        "content_preview": "【正字通】同丘。【風俗通】二人立一上。一者，地也。象形。",
+        "license": "BSD-2-Clause",
+        "source_grade": "cross_reference_dictionary_context",
+        "source_id": "nlp_han_dicts_kangxi_4w",
+        "unicode": "U+3400"
+      },
+      {
+        "char": "㐀",
+        "content_preview": "1、㐀釋文：同丘。《風俗通》：二人立一上。一者地也。象形。\n2、丘讀音：袪尤切，音蚯，尤韻。釋文：\n❶土之高也。非人所爲也。一曰四方高中央下爲～。見《說文》。\n　〔按周禮大司樂。凡樂。冬日至於地上之圜～而奏之。疏云。土之高者曰～。因高以事天。故於地上。又爾雅釋～。非人爲之～。又淮南墬形。和～在其東北陬。注云。四方高曰～",
+        "license": "BSD-2-Clause",
+        "source_grade": "cross_reference_dictionary_context",
+        "source_id": "nlp_han_dicts_zhonghua_dazidian",
+        "unicode": "U+3400"
+      },
+      {
+        "char": "㐁",
+        "content_preview": "〔古文〕𠀬【集韻】他點切，音忝。以舌鉤取也。【說文】舌貌。从谷省，象形。【精薀】㐁以舌在口外，露舌耑舐物。人有持短長術，以言鉤人者，孟子斥爲穿窬。　又【玉篇】【唐韻】【集韻】𠀤他念切，添去聲。義同。〇按㐁字，今通作餂。",
+        "license": "BSD-2-Clause",
+        "source_grade": "cross_reference_dictionary_context",
+        "source_id": "nlp_han_dicts_kangxi_4w",
+        "unicode": "U+3401"
+      },
+      {
+        "char": "㐁",
+        "content_preview": "1、㐁讀音：他點切，音忝，琰韻。釋文：舌貌。見《說文》。《段注》：魯靈光殿賦。玄熊䑙舕以齗齗。善曰。䑙舕吐舌貌。吐玷、吐暫、二切。䑙蓋即～之俗也。\n　〔按六書精蕰。～以舌在口外。露舌端舐物〕。\n2、臵釋文：古㐁字。《說文》：讀若三年導服之導。一曰竹上皮。讀若沾。一曰讀若誓。弻字从此。\n3、䑙讀音：他甘切，音耼，覃韻。吐",
+        "license": "BSD-2-Clause",
+        "source_grade": "cross_reference_dictionary_context",
+        "source_id": "nlp_han_dicts_zhonghua_dazidian",
+        "unicode": "U+3401"
+      },
+      {
+        "char": "㐄",
+        "content_preview": "【唐韻】【集韻】𠀤苦瓦切。𡕒字之譌。【說文】跨步也。从反夊，中直畫，不上出，而左拽，𡕒載丑集夊部。【字彙】譌作㐄，附丨部，非。",
+        "license": "BSD-2-Clause",
+        "source_grade": "cross_reference_dictionary_context",
+        "source_id": "nlp_han_dicts_kangxi_4w",
+        "unicode": "U+3404"
+      },
+      {
+        "char": "㐅",
+        "content_preview": "【說文】古文五字。註詳二部二畫。",
+        "license": "BSD-2-Clause",
+        "source_grade": "cross_reference_dictionary_context",
+        "source_id": "nlp_han_dicts_kangxi_4w",
+        "unicode": "U+3405"
+      },
+      {
+        "char": "㐅",
+        "content_preview": "1、㐅釋文：古五字。見《說文》。〔今商碼用作四字。又西式算學。乘數符號作㐅〕。\n2、五讀音：阮古切，音午，麌韻。釋文：\n❶五行也。從二。陰陽在天地間交午也。見《說文》。\n　〔按水、火、木、金、土、相尅相生。即陰陽交午也〕。\n❷中數也。《易繫辭》：天數～。地數～。《同文舉要》：聖人畫卦。由四而～。有君道。故曰～位天地之中",
+        "license": "BSD-2-Clause",
+        "source_grade": "cross_reference_dictionary_context",
+        "source_id": "nlp_han_dicts_zhonghua_dazidian",
+        "unicode": "U+3405"
+      },
+      {
+        "char": "㐌",
+        "content_preview": "【類篇】余支切，音移。粵中猺種。【北史】後魏主猗㐌。",
+        "license": "BSD-2-Clause",
+        "source_grade": "cross_reference_dictionary_context",
+        "source_id": "nlp_han_dicts_kangxi_4w",
+        "unicode": "U+340C"
+      },
+      {
+        "char": "㐌",
+        "content_preview": "1、㐌讀音：余支切，音移，支韻。釋文：\n❶粤中猺種。見《類篇》。\n❷人名。後魏主猗～。見《北史》。",
+        "license": "BSD-2-Clause",
+        "source_grade": "cross_reference_dictionary_context",
+        "source_id": "nlp_han_dicts_zhonghua_dazidian",
+        "unicode": "U+340C"
+      },
+      {
+        "char": "㐖",
+        "content_preview": "【集韻】奚結切，音頁。㐖毒，國名。",
+        "license": "BSD-2-Clause",
+        "source_grade": "cross_reference_dictionary_context",
+        "source_id": "nlp_han_dicts_kangxi_4w",
+        "unicode": "U+3416"
+      },
+      {
+        "char": "㐜",
+        "content_preview": "【集韻】【類篇】𠀤渠尤切，音仇。正也。【揚子·太𤣥經】君子利用取媐，謹於媐㐜，初貞後寧。【註】女謂之媐。㐜，正也。男女道正，故室家安也。媐音熙。",
+        "license": "BSD-2-Clause",
+        "source_grade": "cross_reference_dictionary_context",
+        "source_id": "nlp_han_dicts_kangxi_4w",
+        "unicode": "U+341C"
+      },
+      {
+        "char": "㐜",
+        "content_preview": "1、㐜讀音：渠尤切，音仇，尤韻。釋文：匹也。《太玄內》：謹於媐～。初貞後寧。《范注》：～、匹也。謹其妃匹。男女道正。夫婦別。家室安。\n2、仇讀音：渠尤切，音求，尤韻。釋文：\n❶讎也。見《說文》。\n❷合也。見《爾雅釋詁》。\n❸怨耦也。《左桓二年傳》：怨耦曰～。\n❹匹也。《詩無衣》：與子同～。\n❺怨也。《書五子之歌》：萬姓",
+        "license": "BSD-2-Clause",
+        "source_grade": "cross_reference_dictionary_context",
+        "source_id": "nlp_han_dicts_zhonghua_dazidian",
+        "unicode": "U+341C"
+      },
+      {
+        "char": "㐡",
+        "content_preview": "【集韻】同懦。",
+        "license": "BSD-2-Clause",
+        "source_grade": "cross_reference_dictionary_context",
+        "source_id": "nlp_han_dicts_kangxi_4w",
+        "unicode": "U+3421"
+      },
+      {
+        "char": "㐡",
+        "content_preview": "1、㐡釋文：同懦。見《集韻》。\n2、懦讀音：汝朱切，音儒，虞韻。乳兗切，音耎，銑韻。奴亂切，音愞，翰韻。奴臥切，音稬，箇韻。釋文：\n❶駑弱者也。見《說文》。《通訓定聲》：與偠、媆、嬬、俱略同。段氏玉裁訂卽偠。字亦作愞。按耎、需、偏㫄。古多相亂。莫能定也。\n❷下也。《文選陸機樂府》：急絃無～響。\n❸舒～。所畏在前也。見《",
+        "license": "BSD-2-Clause",
+        "source_grade": "cross_reference_dictionary_context",
+        "source_id": "nlp_han_dicts_zhonghua_dazidian",
+        "unicode": "U+3421"
+      },
+      {
+        "char": "㐤",
+        "content_preview": "【字彙補】都寒切，音丹。太上作，見《亳州老君𥓓》。又其鳩切，音求。義同。",
+        "license": "BSD-2-Clause",
+        "source_grade": "cross_reference_dictionary_context",
+        "source_id": "nlp_han_dicts_kangxi_4w",
+        "unicode": "U+3424"
+      },
+      {
+        "char": "㐨",
+        "content_preview": "【集韻】象呂切【類篇】時與切，𠀤音序。【山海經】犲山有堪㐨之魚，狀如夸父而彘尾。一曰魚子。俗譌作㜿。",
+        "license": "BSD-2-Clause",
+        "source_grade": "cross_reference_dictionary_context",
+        "source_id": "nlp_han_dicts_kangxi_4w",
+        "unicode": "U+3428"
+      },
+      {
+        "char": "㐨",
+        "content_preview": "1、㐨讀音：時與切，音序，語韻。釋文：犲山有堪～之魚。見《山海經東山經》。\n　〔按張自烈云。俗本譌作㜿。畢沅云。俗本譌作～。从二予。攷玉篇、有㜿無訓。集韻類篇引山海經、皆作从子从予。字不作二予。",
+        "license": "BSD-2-Clause",
+        "source_grade": "cross_reference_dictionary_context",
+        "source_id": "nlp_han_dicts_zhonghua_dazidian",
+        "unicode": "U+3428"
+      },
+      {
+        "char": "㐩",
+        "content_preview": "【字彙補】何仍切，音𠛬。酒器。",
+        "license": "BSD-2-Clause",
+        "source_grade": "cross_reference_dictionary_context",
+        "source_id": "nlp_han_dicts_kangxi_4w",
+        "unicode": "U+3429"
+      },
+      {
+        "char": "㐬",
+        "content_preview": "【字彙補】與荒同。　又【集韻】力求切，音留。與旒同。旌旗之旓也。【廣雅】天子十二旒至地，諸侯九旒至軫，大夫七旒至轂，士五旈至肩。後又或作斿游𦀠。",
+        "license": "BSD-2-Clause",
+        "source_grade": "cross_reference_dictionary_context",
+        "source_id": "nlp_han_dicts_kangxi_4w",
+        "unicode": "U+342C"
+      },
+      {
+        "char": "㐬",
+        "content_preview": "1、㐬讀音：力求切，音畱，尤韻。釋文：同旒。旌旗之旓也。見《集韻》。\n　〔按字彙補云。與荒同。誤〕。\n2、旒讀音：力求切，音劉，尤韻。釋文：\n❶旌旗下埀之旓也。《詩干旄箋》：以縫紕旌旗之～縿。\n❷以絲繩貫玉垂。冕前後者。《禮記玉藻》：天子玉藻。十有二～。\n3、荒讀音：呼光切，音荒，陽韻。\n　〔按～大之～、本作賮〕。釋文",
+        "license": "BSD-2-Clause",
+        "source_grade": "cross_reference_dictionary_context",
+        "source_id": "nlp_han_dicts_zhonghua_dazidian",
+        "unicode": "U+342C"
+      }
+    ],
+    "single_source_chars": 29775,
+    "source_counts": {
+      "nlp_han_dicts_kangxi_4w": 48708,
+      "nlp_han_dicts_zhonghua_dazidian": 19687
+    },
+    "staged_rows": 68395,
+    "staging_db": "build/dictionary_context_staging/dictionary_context_entries.sqlite",
+    "unique_chars": 49085
+  },
+  "summary": {
+    "formal_gf0017_scoring_allowed": false,
+    "knowledge_write_allowed": false,
+    "planned_backup_suffix": ".bak.<UTC_TIMESTAMP>",
+    "planned_reference_update": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/references.json",
+    "planned_target_index": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/structured/dictionary_context_index.json",
+    "reason": "Dictionary context covers 49,085 chars, far beyond the 8,105 national-standard core. Keeping it separate preserves the 8105 baseline and source-grade boundary.",
+    "recommended_strategy": "create_separate_dictionary_context_index",
+    "target_index_already_exists": true
+  },
+  "target_summary": {
+    "base_character_data_chars": 8105,
+    "base_character_data_exists": true,
+    "cnbe_character_knowledge_exists": true,
+    "cnbe_character_knowledge_rows": 8105,
+    "references_entries": 9,
+    "references_exists": true,
+    "staging_chars_outside_8105_base": 41764,
+    "staging_chars_overlapping_8105_base": 7321,
+    "staging_chars_overlapping_cnbe_8105": 7321,
+    "target_index_exists": true
+  }
+}

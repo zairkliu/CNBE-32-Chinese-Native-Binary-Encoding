@@ -1,0 +1,28 @@
+{
+  "authority_boundary": "ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD",
+  "character": "旻",
+  "fields": {
+    "glyph_analysis": "",
+    "normalized_structure": "上下",
+    "radical": "日",
+    "raw_structure": "上下结构",
+    "stroke_order": "25114134",
+    "total_strokes": "8",
+    "unicode_value": "CJK 65FB"
+  },
+  "found_field_count": 6,
+  "found_fields": [
+    "radical",
+    "total_strokes",
+    "unicode_value",
+    "stroke_order",
+    "raw_structure",
+    "normalized_structure"
+  ],
+  "parse_status": "PARSED_WITH_STRUCTURE",
+  "source_kind": "online_fetch",
+  "source_level": "network_cross_reference",
+  "source_path": "https://zdic.net/hans/%E6%97%BB",
+  "unicode_codepoint": "U+65FB",
+  "zdic_url": "https://www.zdic.net/hans/%E6%97%BB"
+}

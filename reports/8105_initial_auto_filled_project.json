@@ -1,0 +1,65 @@
+{
+  "checks": {
+    "all_structures_allowed_or_blank": true,
+    "auto_fill_rows_expected": true,
+    "no_cnbe_rows_written": true,
+    "no_database_rebuild": true,
+    "remaining_rows_accounted_for": true,
+    "row_count_is_8105": true,
+    "source_packet_not_modified": true
+  },
+  "decision": {
+    "initial_project_review_packet_ready": true,
+    "may_rebuild_database": false,
+    "may_write_cnbe_rows": false,
+    "recommended_next_step": "Human review the 30 auto-filled rows, then decide whether to authorize a separate source-merge gate for accepted rows."
+  },
+  "mode": "8105_initial_auto_filled_review_packet",
+  "outputs": {
+    "initial_filled_rows_csv": "review_packets/8105_full/8105_initial_auto_filled_rows.csv",
+    "initial_packet_csv": "review_packets/8105_full/8105_initial_auto_filled_review_packet.csv",
+    "initial_remaining_gap_queue_csv": "review_packets/8105_full/8105_initial_remaining_gap_queue.csv",
+    "json_report": "reports/8105_initial_auto_filled_project.json",
+    "markdown_report": "reports/8105_INITIAL_AUTO_FILLED_PROJECT.md"
+  },
+  "overall_status": "PASS_8105_INITIAL_AUTO_FILLED_PROJECT_READY",
+  "report_schema_version": "1.0",
+  "summary": {
+    "auto_filled_review_rows": 30,
+    "cnbe_rows_written": 0,
+    "complete_candidates_before_auto_fill": 6568,
+    "completion_status_counts": {
+      "COMPLETE_CANDIDATE_UNCHANGED": 6568,
+      "INITIAL_AUTO_FILLED_REVIEW_REQUIRED": 30,
+      "REMAINING_GAP_REVIEW_REQUIRED": 1507
+    },
+    "database_rebuild_allowed": false,
+    "fill_rule_counts": {
+      "standard_side_single_component_identity": 29,
+      "yuanliu_ids_consistent_structure_candidate": 1
+    },
+    "initial_review_ready_rows": 6598,
+    "remaining_gap_rows": 1507,
+    "source_priority_counts": {
+      "existing_8105_standard_side": 29,
+      "yuanliu_core_reference": 1
+    },
+    "structure_counts": {
+      "UNRESOLVED": 1244,
+      "上三包": 79,
+      "上下": 1626,
+      "上中下": 47,
+      "下三包": 7,
+      "全包围": 35,
+      "右上包": 52,
+      "左三包": 15,
+      "左上包": 281,
+      "左下包": 162,
+      "左中右": 18,
+      "左右": 4358,
+      "独体字": 29,
+      "镶嵌": 152
+    },
+    "total_rows": 8105
+  }
+}
