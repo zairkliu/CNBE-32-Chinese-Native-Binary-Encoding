@@ -1,0 +1,27 @@
+{
+  "authority_boundary": "ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD",
+  "character": "毌",
+  "fields": {
+    "glyph_analysis": "",
+    "normalized_structure": "",
+    "radical": "毋",
+    "raw_structure": "单体结构",
+    "stroke_order": "5521",
+    "total_strokes": "4",
+    "unicode_value": "CJK 6BCC"
+  },
+  "found_field_count": 5,
+  "found_fields": [
+    "radical",
+    "total_strokes",
+    "unicode_value",
+    "stroke_order",
+    "raw_structure"
+  ],
+  "parse_status": "PARSED_WITHOUT_NORMALIZED_STRUCTURE",
+  "source_kind": "online_fetch",
+  "source_level": "network_cross_reference",
+  "source_path": "https://zdic.net/hans/%E6%AF%8C",
+  "unicode_codepoint": "U+6BCC",
+  "zdic_url": "https://www.zdic.net/hans/%E6%AF%8C"
+}

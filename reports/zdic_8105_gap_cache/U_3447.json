@@ -1,0 +1,21 @@
+{
+  "authority_boundary": "ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD",
+  "character": "㑇",
+  "fields": {
+    "glyph_analysis": "",
+    "normalized_structure": "",
+    "radical": "",
+    "raw_structure": "",
+    "stroke_order": "",
+    "total_strokes": "",
+    "unicode_value": ""
+  },
+  "found_field_count": 0,
+  "found_fields": [],
+  "parse_status": "PARSED_WITHOUT_NORMALIZED_STRUCTURE",
+  "source_kind": "local_snapshot",
+  "source_level": "network_cross_reference",
+  "source_path": "reports/zdic_snapshots/U_3447_dom_snapshot.txt",
+  "unicode_codepoint": "U+3447",
+  "zdic_url": "https://www.zdic.net/hans/%E3%91%87"
+}

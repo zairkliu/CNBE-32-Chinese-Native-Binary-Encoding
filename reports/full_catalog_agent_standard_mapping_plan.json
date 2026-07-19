@@ -1,0 +1,3242 @@
+{
+  "agent_context": {
+    "agent_standard_schema_version": null,
+    "agent_standard_status": null,
+    "legacy_localization_schema_version": null,
+    "legacy_localization_status": null
+  },
+  "authority_boundary": {
+    "does_not_assign_gf0017_scores": true,
+    "does_not_claim_national_standard_for_outside_8105": true,
+    "does_not_modify_cnbe_rows": true,
+    "does_not_modify_workbook": true,
+    "does_not_publish_release": true,
+    "does_not_rebuild_database": true
+  },
+  "decision": {
+    "may_modify_cnbe_rows": false,
+    "may_rebuild_database": false,
+    "may_start_formal_gf0017_scoring": false,
+    "may_start_row_level_evidence_join_design": true,
+    "reason": "Outside-8105 rows are stratified and ready for row-level evidence join planning. They remain Agent-standard mapping candidates, not national-standard outputs."
+  },
+  "gf0017_gate_plan": [
+    {
+      "can_assign_points_now": false,
+      "current_source_status": "SOURCE_GAP",
+      "item": "character_set_coverage",
+      "next_action": "resolve_controlling_source_or_keep_unscored",
+      "points": 3
+    },
+    {
+      "can_assign_points_now": false,
+      "current_source_status": "SOURCE_GAP",
+      "item": "stroke_shape",
+      "next_action": "resolve_controlling_source_or_keep_unscored",
+      "points": 3
+    },
+    {
+      "can_assign_points_now": false,
+      "current_source_status": "SOURCE_EVIDENCE_REQUIRED",
+      "item": "stroke_order",
+      "next_action": "build_row_level_evidence_join_before_scoring",
+      "points": 3
+    },
+    {
+      "can_assign_points_now": false,
+      "current_source_status": "SOURCE_EVIDENCE_REQUIRED",
+      "item": "component_validity",
+      "next_action": "build_row_level_evidence_join_before_scoring",
+      "points": 3
+    },
+    {
+      "can_assign_points_now": false,
+      "current_source_status": "SOURCE_EVIDENCE_REQUIRED",
+      "item": "component_name_validity",
+      "next_action": "build_row_level_evidence_join_before_scoring",
+      "points": 8
+    },
+    {
+      "can_assign_points_now": false,
+      "current_source_status": "SOURCE_EVIDENCE_REQUIRED",
+      "item": "radical_validity",
+      "next_action": "build_row_level_evidence_join_before_scoring",
+      "points": 3
+    },
+    {
+      "can_assign_points_now": false,
+      "current_source_status": "SOURCE_EVIDENCE_REQUIRED",
+      "item": "independent_character_rule",
+      "next_action": "build_row_level_evidence_join_before_scoring",
+      "points": 7
+    },
+    {
+      "can_assign_points_now": false,
+      "current_source_status": "SOURCE_EVIDENCE_REQUIRED",
+      "item": "structure_first_decomposition",
+      "next_action": "build_row_level_evidence_join_before_scoring",
+      "points": 20
+    }
+  ],
+  "mapping_work_packages": [
+    {
+      "id": "WP1_unicode_and_scope",
+      "input": "reports/full_catalog_v4_fixed_unicode_identity.json",
+      "may_write_cnbe_rows": false,
+      "output_status": "ready",
+      "purpose": "Preserve Unicode identity and classify each outside-8105 row by Unicode block and plane."
+    },
+    {
+      "id": "WP2_legacy_field_localization",
+      "input": "evidence/agent-standard/cnbe_legacy_structure_localization.json",
+      "may_write_cnbe_rows": false,
+      "output_status": "requires_row_level_join",
+      "purpose": "Treat legacy CNBE fields as non-authoritative hints and localize only through Agent standard tables."
+    },
+    {
+      "id": "WP3_source_evidence_join",
+      "input": "cnbe-research knowledge assets and repository GF0017 source map",
+      "may_write_cnbe_rows": false,
+      "output_status": "required_before_scoring",
+      "purpose": "Join row-level stroke, component, radical, independent-character, and decomposition evidence."
+    },
+    {
+      "id": "WP4_agent_mapping_candidate_generation",
+      "input": "WP3 evidence join output",
+      "may_write_cnbe_rows": false,
+      "output_status": "blocked_until_evidence_join",
+      "purpose": "Generate Agent-standard mapping candidates only after WP3 resolves evidence status per row."
+    }
+  ],
+  "mode": "read_only_full_catalog_agent_standard_mapping_plan",
+  "next_artifacts": [
+    "scripts/design_full_catalog_agent_mapping_evidence_join.py",
+    "reports/full_catalog_agent_mapping_evidence_join_design.json",
+    "reports/FULL_CATALOG_AGENT_MAPPING_EVIDENCE_JOIN_DESIGN.md"
+  ],
+  "next_workflow_status": "ROW_LEVEL_EVIDENCE_JOIN_PLAN_REQUIRED_FORMAL_SCORING_BLOCKED",
+  "overall_status": "PASS_AGENT_STANDARD_MAPPING_PLAN_READY",
+  "report_schema_version": "1.0",
+  "review_sample": [
+    {
+      "block": "CJK Unified Ideographs",
+      "char": "丂",
+      "offset": 33,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+4E02",
+      "worksheet_row": 35
+    },
+    {
+      "block": "CJK Unified Ideographs",
+      "char": "丄",
+      "offset": 34,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+4E04",
+      "worksheet_row": 36
+    },
+    {
+      "block": "CJK Unified Ideographs",
+      "char": "丅",
+      "offset": 35,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+4E05",
+      "worksheet_row": 37
+    },
+    {
+      "block": "CJK Unified Ideographs Extension A",
+      "char": "㐀",
+      "offset": 29,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+3400",
+      "worksheet_row": 31
+    },
+    {
+      "block": "CJK Unified Ideographs Extension A",
+      "char": "㐁",
+      "offset": 30,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+3401",
+      "worksheet_row": 32
+    },
+    {
+      "block": "CJK Unified Ideographs Extension A",
+      "char": "㐂",
+      "offset": 31,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+3402",
+      "worksheet_row": 33
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𠀀",
+      "offset": 49,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+20000",
+      "worksheet_row": 51
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𠀁",
+      "offset": 50,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+20001",
+      "worksheet_row": 52
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𠀂",
+      "offset": 51,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+20002",
+      "worksheet_row": 53
+    },
+    {
+      "block": "CJK Unified Ideographs Extension C",
+      "char": "𪜀",
+      "offset": 139,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2A700",
+      "worksheet_row": 141
+    },
+    {
+      "block": "CJK Unified Ideographs Extension C",
+      "char": "𪜁",
+      "offset": 140,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2A701",
+      "worksheet_row": 142
+    },
+    {
+      "block": "CJK Unified Ideographs Extension C",
+      "char": "𪜂",
+      "offset": 141,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2A702",
+      "worksheet_row": 143
+    },
+    {
+      "block": "CJK Unified Ideographs Extension D",
+      "char": "𫝀",
+      "offset": 147,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2B740",
+      "worksheet_row": 149
+    },
+    {
+      "block": "CJK Unified Ideographs Extension D",
+      "char": "𫝁",
+      "offset": 148,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2B741",
+      "worksheet_row": 150
+    },
+    {
+      "block": "CJK Unified Ideographs Extension D",
+      "char": "𫝂",
+      "offset": 149,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2B742",
+      "worksheet_row": 151
+    },
+    {
+      "block": "CJK Unified Ideographs Extension E",
+      "char": "𫠡",
+      "offset": 151,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2B821",
+      "worksheet_row": 153
+    },
+    {
+      "block": "CJK Unified Ideographs Extension E",
+      "char": "𫠢",
+      "offset": 152,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2B822",
+      "worksheet_row": 154
+    },
+    {
+      "block": "CJK Unified Ideographs Extension E",
+      "char": "𫠣",
+      "offset": 153,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2B823",
+      "worksheet_row": 155
+    },
+    {
+      "block": "CJK Unified Ideographs Extension F",
+      "char": "𬺰",
+      "offset": 187,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2CEB0",
+      "worksheet_row": 189
+    },
+    {
+      "block": "CJK Unified Ideographs Extension F",
+      "char": "𬺱",
+      "offset": 188,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2CEB1",
+      "worksheet_row": 190
+    },
+    {
+      "block": "CJK Unified Ideographs Extension F",
+      "char": "𬺲",
+      "offset": 189,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2CEB2",
+      "worksheet_row": 191
+    },
+    {
+      "block": "CJK Unified Ideographs Extension G",
+      "char": "𰀀",
+      "offset": 254,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+30000",
+      "worksheet_row": 256
+    },
+    {
+      "block": "CJK Unified Ideographs Extension G",
+      "char": "𰀁",
+      "offset": 255,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+30001",
+      "worksheet_row": 257
+    },
+    {
+      "block": "CJK Unified Ideographs Extension G",
+      "char": "𰀂",
+      "offset": 256,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+30002",
+      "worksheet_row": 258
+    },
+    {
+      "block": "CJK Unified Ideographs Extension H",
+      "char": "𱍐",
+      "offset": 286,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+31350",
+      "worksheet_row": 288
+    },
+    {
+      "block": "CJK Unified Ideographs Extension H",
+      "char": "𱍑",
+      "offset": 287,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+31351",
+      "worksheet_row": 289
+    },
+    {
+      "block": "CJK Unified Ideographs Extension H",
+      "char": "𱍒",
+      "offset": 288,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+31352",
+      "worksheet_row": 290
+    },
+    {
+      "block": "CJK Unified Ideographs Extension I",
+      "char": "𮯰",
+      "offset": 253,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2EBF0",
+      "worksheet_row": 255
+    },
+    {
+      "block": "CJK Unified Ideographs Extension I",
+      "char": "𮯱",
+      "offset": 421,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2EBF1",
+      "worksheet_row": 423
+    },
+    {
+      "block": "CJK Unified Ideographs Extension I",
+      "char": "𮯲",
+      "offset": 560,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2EBF2",
+      "worksheet_row": 562
+    },
+    {
+      "block": "CJK Unified Ideographs Extension F",
+      "char": "𬽈",
+      "offset": 1101,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2CF48",
+      "worksheet_row": 1103
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𠍾",
+      "offset": 2371,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2037E",
+      "worksheet_row": 2373
+    },
+    {
+      "block": "CJK Unified Ideographs Extension E",
+      "char": "𫤢",
+      "offset": 3384,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2B922",
+      "worksheet_row": 3386
+    },
+    {
+      "block": "CJK Unified Ideographs Extension E",
+      "char": "𫥫",
+      "offset": 4460,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2B96B",
+      "worksheet_row": 4462
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𠢛",
+      "offset": 5559,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2089B",
+      "worksheet_row": 5561
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𠩷",
+      "offset": 6643,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+20A77",
+      "worksheet_row": 6645
+    },
+    {
+      "block": "CJK Unified Ideographs",
+      "char": "嗈",
+      "offset": 8025,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+55C8",
+      "worksheet_row": 8027
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𠻂",
+      "offset": 9020,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+20EC2",
+      "worksheet_row": 9022
+    },
+    {
+      "block": "CJK Unified Ideographs Extension E",
+      "char": "𫫗",
+      "offset": 10015,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2BAD7",
+      "worksheet_row": 10017
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𡆿",
+      "offset": 11040,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+211BF",
+      "worksheet_row": 11042
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𡏥",
+      "offset": 12237,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+213E5",
+      "worksheet_row": 12239
+    },
+    {
+      "block": "CJK Unified Ideographs",
+      "char": "壻",
+      "offset": 13240,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+58FB",
+      "worksheet_row": 13242
+    },
+    {
+      "block": "CJK Unified Ideographs",
+      "char": "姃",
+      "offset": 14453,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+59C3",
+      "worksheet_row": 14455
+    },
+    {
+      "block": "CJK Unified Ideographs Extension C",
+      "char": "𪦥",
+      "offset": 15448,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2A9A5",
+      "worksheet_row": 15450
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𡪡",
+      "offset": 16531,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+21AA1",
+      "worksheet_row": 16533
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𡱊",
+      "offset": 17583,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+21C4A",
+      "worksheet_row": 17585
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𡸢",
+      "offset": 18709,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+21E22",
+      "worksheet_row": 18711
+    },
+    {
+      "block": "CJK Unified Ideographs Extension G",
+      "char": "𰏎",
+      "offset": 19715,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+303CE",
+      "worksheet_row": 19717
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𢈨",
+      "offset": 20817,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+22228",
+      "worksheet_row": 20819
+    },
+    {
+      "block": "CJK Unified Ideographs Extension G",
+      "char": "𰐛",
+      "offset": 21851,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+3041B",
+      "worksheet_row": 21853
+    },
+    {
+      "block": "CJK Unified Ideographs",
+      "char": "愋",
+      "offset": 23122,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+610B",
+      "worksheet_row": 23124
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𢣇",
+      "offset": 24117,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+228C7",
+      "worksheet_row": 24119
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𢧡",
+      "offset": 25140,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+229E1",
+      "worksheet_row": 25142
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𢫄",
+      "offset": 26449,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+22AC4",
+      "worksheet_row": 26451
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𢺨",
+      "offset": 27444,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+22EA8",
+      "worksheet_row": 27446
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𢽄",
+      "offset": 28470,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+22F44",
+      "worksheet_row": 28472
+    },
+    {
+      "block": "CJK Unified Ideographs Extension A",
+      "char": "㫥",
+      "offset": 29633,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+3AE5",
+      "worksheet_row": 29635
+    },
+    {
+      "block": "CJK Unified Ideographs Extension F",
+      "char": "𭧥",
+      "offset": 30628,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2D9E5",
+      "worksheet_row": 30630
+    },
+    {
+      "block": "CJK Unified Ideographs",
+      "char": "梪",
+      "offset": 32005,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+68AA",
+      "worksheet_row": 32007
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𣖿",
+      "offset": 33000,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+235BF",
+      "worksheet_row": 33002
+    },
+    {
+      "block": "CJK Unified Ideographs Extension E",
+      "char": "𬃽",
+      "offset": 33995,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2C0FD",
+      "worksheet_row": 33997
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𣥉",
+      "offset": 35016,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+23949",
+      "worksheet_row": 35018
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𣬸",
+      "offset": 36065,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+23B38",
+      "worksheet_row": 36067
+    },
+    {
+      "block": "CJK Unified Ideographs",
+      "char": "溑",
+      "offset": 37566,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+6E91",
+      "worksheet_row": 37568
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𣼐",
+      "offset": 38561,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+23F10",
+      "worksheet_row": 38563
+    },
+    {
+      "block": "CJK Unified Ideographs Extension F",
+      "char": "𭰞",
+      "offset": 39556,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2DC1E",
+      "worksheet_row": 39558
+    },
+    {
+      "block": "CJK Unified Ideographs",
+      "char": "煩",
+      "offset": 40705,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+7169",
+      "worksheet_row": 40707
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𤓒",
+      "offset": 41700,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+244D2",
+      "worksheet_row": 41702
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𤕦",
+      "offset": 42706,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+24566",
+      "worksheet_row": 42708
+    },
+    {
+      "block": "CJK Unified Ideographs",
+      "char": "玂",
+      "offset": 43825,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+7382",
+      "worksheet_row": 43827
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𤣽",
+      "offset": 44999,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+248FD",
+      "worksheet_row": 45001
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𤫺",
+      "offset": 46000,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+24AFA",
+      "worksheet_row": 46002
+    },
+    {
+      "block": "CJK Unified Ideographs Extension F",
+      "char": "𭻻",
+      "offset": 47061,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2DEFB",
+      "worksheet_row": 47063
+    },
+    {
+      "block": "CJK Unified Ideographs Extension G",
+      "char": "𰣪",
+      "offset": 48162,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+308EA",
+      "worksheet_row": 48164
+    },
+    {
+      "block": "CJK Unified Ideographs Extension A",
+      "char": "䀹",
+      "offset": 49291,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+4039",
+      "worksheet_row": 49293
+    },
+    {
+      "block": "CJK Unified Ideographs Extension F",
+      "char": "𭿉",
+      "offset": 50286,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2DFC9",
+      "worksheet_row": 50288
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𥓵",
+      "offset": 51427,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+254F5",
+      "worksheet_row": 51429
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𥛽",
+      "offset": 52476,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+256FD",
+      "worksheet_row": 52478
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𥣔",
+      "offset": 53534,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+258D4",
+      "worksheet_row": 53536
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𥪇",
+      "offset": 54576,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+25A87",
+      "worksheet_row": 54578
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𥱭",
+      "offset": 55699,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+25C6D",
+      "worksheet_row": 55701
+    },
+    {
+      "block": "CJK Unified Ideographs",
+      "char": "糑",
+      "offset": 56742,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+7CD1",
+      "worksheet_row": 56744
+    },
+    {
+      "block": "CJK Unified Ideographs",
+      "char": "緑",
+      "offset": 57921,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+7DD1",
+      "worksheet_row": 57923
+    },
+    {
+      "block": "CJK Unified Ideographs Extension E",
+      "char": "𬗝",
+      "offset": 58916,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2C5DD",
+      "worksheet_row": 58918
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𦍎",
+      "offset": 59962,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2634E",
+      "worksheet_row": 59964
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𦖅",
+      "offset": 61046,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+26585",
+      "worksheet_row": 61048
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𦞳",
+      "offset": 62206,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+267B3",
+      "worksheet_row": 62208
+    },
+    {
+      "block": "CJK Unified Ideographs Extension G",
+      "char": "𰯹",
+      "offset": 63217,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+30BF9",
+      "worksheet_row": 63219
+    },
+    {
+      "block": "CJK Unified Ideographs",
+      "char": "萅",
+      "offset": 64664,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+8405",
+      "worksheet_row": 64666
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𦴷",
+      "offset": 65659,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+26D37",
+      "worksheet_row": 65661
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𧄛",
+      "offset": 66654,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2711B",
+      "worksheet_row": 66656
+    },
+    {
+      "block": "CJK Unified Ideographs Extension H",
+      "char": "𱽗",
+      "offset": 67649,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+31F57",
+      "worksheet_row": 67651
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𧋹",
+      "offset": 68828,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+272F9",
+      "worksheet_row": 68830
+    },
+    {
+      "block": "CJK Unified Ideographs Extension G",
+      "char": "𰳢",
+      "offset": 69823,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+30CE2",
+      "worksheet_row": 69825
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𧟘",
+      "offset": 70922,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+277D8",
+      "worksheet_row": 70924
+    },
+    {
+      "block": "CJK Unified Ideographs Extension A",
+      "char": "䛋",
+      "offset": 72122,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+46CB",
+      "worksheet_row": 72124
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𧭄",
+      "offset": 73117,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+27B44",
+      "worksheet_row": 73119
+    },
+    {
+      "block": "CJK Unified Ideographs Extension F",
+      "char": "𮙜",
+      "offset": 74129,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2E65C",
+      "worksheet_row": 74131
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𧹻",
+      "offset": 75212,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+27E7B",
+      "worksheet_row": 75214
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𨂝",
+      "offset": 76328,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2809D",
+      "worksheet_row": 76330
+    },
+    {
+      "block": "CJK Unified Ideographs Extension A",
+      "char": "䡌",
+      "offset": 77388,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+484C",
+      "worksheet_row": 77390
+    },
+    {
+      "block": "CJK Unified Ideographs",
+      "char": "迀",
+      "offset": 78501,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+8FC0",
+      "worksheet_row": 78503
+    },
+    {
+      "block": "CJK Unified Ideographs Extension H",
+      "char": "𲅱",
+      "offset": 79496,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+32171",
+      "worksheet_row": 79498
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𨡭",
+      "offset": 80646,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2886D",
+      "worksheet_row": 80648
+    },
+    {
+      "block": "CJK Unified Ideographs",
+      "char": "鏁",
+      "offset": 81931,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+93C1",
+      "worksheet_row": 81933
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𨱖",
+      "offset": 82926,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+28C56",
+      "worksheet_row": 82928
+    },
+    {
+      "block": "CJK Unified Ideographs Extension A",
+      "char": "䦴",
+      "offset": 83973,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+49B4",
+      "worksheet_row": 83975
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𨻐",
+      "offset": 85036,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+28ED0",
+      "worksheet_row": 85038
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𩃟",
+      "offset": 86085,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+290DF",
+      "worksheet_row": 86087
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𩌭",
+      "offset": 87123,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2932D",
+      "worksheet_row": 87125
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𩕬",
+      "offset": 88185,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2956C",
+      "worksheet_row": 88187
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𩛸",
+      "offset": 89246,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+296F8",
+      "worksheet_row": 89248
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𩢑",
+      "offset": 90324,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+29891",
+      "worksheet_row": 90326
+    },
+    {
+      "block": "CJK Unified Ideographs Extension E",
+      "char": "𬴙",
+      "offset": 91338,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2CD19",
+      "worksheet_row": 91340
+    },
+    {
+      "block": "CJK Unified Ideographs Extension A",
+      "char": "䱣",
+      "offset": 92488,
+      "plane": "BMP",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+4C63",
+      "worksheet_row": 92490
+    },
+    {
+      "block": "CJK Unified Ideographs Extension C",
+      "char": "𫙿",
+      "offset": 93483,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2B67F",
+      "worksheet_row": 93485
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𪁅",
+      "offset": 94575,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2A045",
+      "worksheet_row": 94577
+    },
+    {
+      "block": "CJK Unified Ideographs Extension H",
+      "char": "𲍹",
+      "offset": 95570,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+32379",
+      "worksheet_row": 95572
+    },
+    {
+      "block": "CJK Unified Ideographs Extension B",
+      "char": "𪓃",
+      "offset": 96606,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+2A4C3",
+      "worksheet_row": 96608
+    },
+    {
+      "block": "CJK Unified Ideographs Extension G",
+      "char": "𱍇",
+      "offset": 97653,
+      "plane": "SUPPLEMENTARY",
+      "standard_level": "agent_standard_required_not_national_standard",
+      "unicode": "U+31347",
+      "worksheet_row": 97655
+    }
+  ],
+  "strata": {
+    "compound_strata_counts": {
+      "BMP::CJK Unified Ideographs": 13160,
+      "BMP::CJK Unified Ideographs Extension A": 6515,
+      "SUPPLEMENTARY::CJK Unified Ideographs Extension B": 42684,
+      "SUPPLEMENTARY::CJK Unified Ideographs Extension C": 4116,
+      "SUPPLEMENTARY::CJK Unified Ideographs Extension D": 214,
+      "SUPPLEMENTARY::CJK Unified Ideographs Extension E": 5666,
+      "SUPPLEMENTARY::CJK Unified Ideographs Extension F": 7473,
+      "SUPPLEMENTARY::CJK Unified Ideographs Extension G": 4939,
+      "SUPPLEMENTARY::CJK Unified Ideographs Extension H": 4192,
+      "SUPPLEMENTARY::CJK Unified Ideographs Extension I": 622
+    },
+    "largest_unicode_range_bands": [
+      {
+        "count": 4096,
+        "range": "U+30000-U+30FFF",
+        "samples": [
+          {
+            "block": "CJK Unified Ideographs Extension G",
+            "char": "𰀀",
+            "offset": 254,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+30000",
+            "worksheet_row": 256
+          },
+          {
+            "block": "CJK Unified Ideographs Extension G",
+            "char": "𰀁",
+            "offset": 255,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+30001",
+            "worksheet_row": 257
+          },
+          {
+            "block": "CJK Unified Ideographs Extension G",
+            "char": "𰀂",
+            "offset": 256,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+30002",
+            "worksheet_row": 258
+          }
+        ]
+      },
+      {
+        "count": 4096,
+        "range": "U+22000-U+22FFF",
+        "samples": [
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𢆡",
+            "offset": 717,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+221A1",
+            "worksheet_row": 719
+          },
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𢇕",
+            "offset": 4443,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+221D5",
+            "worksheet_row": 4445
+          },
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𢍭",
+            "offset": 4444,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+2236D",
+            "worksheet_row": 4446
+          }
+        ]
+      },
+      {
+        "count": 4096,
+        "range": "U+2D000-U+2DFFF",
+        "samples": [
+          {
+            "block": "CJK Unified Ideographs Extension F",
+            "char": "𭀀",
+            "offset": 3005,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+2D000",
+            "worksheet_row": 3007
+          },
+          {
+            "block": "CJK Unified Ideographs Extension F",
+            "char": "𭀁",
+            "offset": 3006,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+2D001",
+            "worksheet_row": 3008
+          },
+          {
+            "block": "CJK Unified Ideographs Extension F",
+            "char": "𭀂",
+            "offset": 3007,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+2D002",
+            "worksheet_row": 3009
+          }
+        ]
+      },
+      {
+        "count": 4095,
+        "range": "U+27000-U+27FFF",
+        "samples": [
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𧮥",
+            "offset": 9751,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+27BA5",
+            "worksheet_row": 9753
+          },
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𧯧",
+            "offset": 12544,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+27BE7",
+            "worksheet_row": 12546
+          },
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𧆆",
+            "offset": 52538,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+27186",
+            "worksheet_row": 52540
+          }
+        ]
+      },
+      {
+        "count": 4094,
+        "range": "U+21000-U+21FFF",
+        "samples": [
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𡥋",
+            "offset": 6365,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+2194B",
+            "worksheet_row": 6367
+          },
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𡪞",
+            "offset": 7158,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+21A9E",
+            "worksheet_row": 7160
+          },
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𡀀",
+            "offset": 9337,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+21000",
+            "worksheet_row": 9339
+          }
+        ]
+      },
+      {
+        "count": 4093,
+        "range": "U+20000-U+20FFF",
+        "samples": [
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𠀀",
+            "offset": 49,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+20000",
+            "worksheet_row": 51
+          },
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𠀁",
+            "offset": 50,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+20001",
+            "worksheet_row": 52
+          },
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𠀂",
+            "offset": 51,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+20002",
+            "worksheet_row": 53
+          }
+        ]
+      },
+      {
+        "count": 4093,
+        "range": "U+24000-U+24FFF",
+        "samples": [
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𤳏",
+            "offset": 136,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+24CCF",
+            "worksheet_row": 138
+          },
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𤱡",
+            "offset": 718,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+24C61",
+            "worksheet_row": 720
+          },
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𤔗",
+            "offset": 11164,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+24517",
+            "worksheet_row": 11166
+          }
+        ]
+      },
+      {
+        "count": 4093,
+        "range": "U+29000-U+29FFF",
+        "samples": [
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𩠮",
+            "offset": 28723,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+2982E",
+            "worksheet_row": 28725
+          },
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𩠰",
+            "offset": 28724,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+29830",
+            "worksheet_row": 28726
+          },
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𩖰",
+            "offset": 28968,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+295B0",
+            "worksheet_row": 28970
+          }
+        ]
+      },
+      {
+        "count": 4092,
+        "range": "U+23000-U+23FFF",
+        "samples": [
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𣶒",
+            "offset": 352,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+23D92",
+            "worksheet_row": 354
+          },
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𣥥",
+            "offset": 6216,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+23965",
+            "worksheet_row": 6218
+          },
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𣑧",
+            "offset": 12542,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+23467",
+            "worksheet_row": 12544
+          }
+        ]
+      },
+      {
+        "count": 4092,
+        "range": "U+25000-U+25FFF",
+        "samples": [
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𥝀",
+            "offset": 719,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+25740",
+            "worksheet_row": 721
+          },
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𥂳",
+            "offset": 4114,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+250B3",
+            "worksheet_row": 4116
+          },
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𥇴",
+            "offset": 29178,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+251F4",
+            "worksheet_row": 29180
+          }
+        ]
+      },
+      {
+        "count": 4091,
+        "range": "U+31000-U+31FFF",
+        "samples": [
+          {
+            "block": "CJK Unified Ideographs Extension H",
+            "char": "𱍐",
+            "offset": 286,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+31350",
+            "worksheet_row": 288
+          },
+          {
+            "block": "CJK Unified Ideographs Extension H",
+            "char": "𱍑",
+            "offset": 287,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+31351",
+            "worksheet_row": 289
+          },
+          {
+            "block": "CJK Unified Ideographs Extension H",
+            "char": "𱍒",
+            "offset": 288,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+31352",
+            "worksheet_row": 290
+          }
+        ]
+      },
+      {
+        "count": 4090,
+        "range": "U+26000-U+26FFF",
+        "samples": [
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𦎅",
+            "offset": 6947,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+26385",
+            "worksheet_row": 6949
+          },
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𦥈",
+            "offset": 12543,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+26948",
+            "worksheet_row": 12545
+          },
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𦊤",
+            "offset": 19161,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+262A4",
+            "worksheet_row": 19163
+          }
+        ]
+      },
+      {
+        "count": 4086,
+        "range": "U+28000-U+28FFF",
+        "samples": [
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𨗓",
+            "offset": 9752,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+285D3",
+            "worksheet_row": 9754
+          },
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𨹴",
+            "offset": 16022,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+28E74",
+            "worksheet_row": 16024
+          },
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𨐳",
+            "offset": 25390,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+28433",
+            "worksheet_row": 25392
+          }
+        ]
+      },
+      {
+        "count": 4057,
+        "range": "U+2A000-U+2AFFF",
+        "samples": [
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𪛙",
+            "offset": 137,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+2A6D9",
+            "worksheet_row": 139
+          },
+          {
+            "block": "CJK Unified Ideographs Extension B",
+            "char": "𪛚",
+            "offset": 138,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+2A6DA",
+            "worksheet_row": 140
+          },
+          {
+            "block": "CJK Unified Ideographs Extension C",
+            "char": "𪜀",
+            "offset": 139,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+2A700",
+            "worksheet_row": 141
+          }
+        ]
+      },
+      {
+        "count": 4038,
+        "range": "U+2B000-U+2BFFF",
+        "samples": [
+          {
+            "block": "CJK Unified Ideographs Extension D",
+            "char": "𫝀",
+            "offset": 147,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+2B740",
+            "worksheet_row": 149
+          },
+          {
+            "block": "CJK Unified Ideographs Extension D",
+            "char": "𫝁",
+            "offset": 148,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+2B741",
+            "worksheet_row": 150
+          },
+          {
+            "block": "CJK Unified Ideographs Extension D",
+            "char": "𫝂",
+            "offset": 149,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+2B742",
+            "worksheet_row": 151
+          }
+        ]
+      },
+      {
+        "count": 3997,
+        "range": "U+2C000-U+2CFFF",
+        "samples": [
+          {
+            "block": "CJK Unified Ideographs Extension E",
+            "char": "𬺢",
+            "offset": 185,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+2CEA2",
+            "worksheet_row": 187
+          },
+          {
+            "block": "CJK Unified Ideographs Extension E",
+            "char": "𬺣",
+            "offset": 186,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+2CEA3",
+            "worksheet_row": 188
+          },
+          {
+            "block": "CJK Unified Ideographs Extension F",
+            "char": "𬺰",
+            "offset": 187,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+2CEB0",
+            "worksheet_row": 189
+          }
+        ]
+      },
+      {
+        "count": 3706,
+        "range": "U+4000-U+4FFF",
+        "samples": [
+          {
+            "block": "CJK Unified Ideographs Extension A",
+            "char": "䶶",
+            "offset": 32,
+            "plane": "BMP",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+4DB6",
+            "worksheet_row": 34
+          },
+          {
+            "block": "CJK Unified Ideographs",
+            "char": "丂",
+            "offset": 33,
+            "plane": "BMP",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+4E02",
+            "worksheet_row": 35
+          },
+          {
+            "block": "CJK Unified Ideographs",
+            "char": "丄",
+            "offset": 34,
+            "plane": "BMP",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+4E04",
+            "worksheet_row": 36
+          }
+        ]
+      },
+      {
+        "count": 3663,
+        "range": "U+2E000-U+2EFFF",
+        "samples": [
+          {
+            "block": "CJK Unified Ideographs Extension I",
+            "char": "𮯰",
+            "offset": 253,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+2EBF0",
+            "worksheet_row": 255
+          },
+          {
+            "block": "CJK Unified Ideographs Extension I",
+            "char": "𮯱",
+            "offset": 421,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+2EBF1",
+            "worksheet_row": 423
+          },
+          {
+            "block": "CJK Unified Ideographs Extension I",
+            "char": "𮯲",
+            "offset": 560,
+            "plane": "SUPPLEMENTARY",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+2EBF2",
+            "worksheet_row": 562
+          }
+        ]
+      },
+      {
+        "count": 3034,
+        "range": "U+3000-U+3FFF",
+        "samples": [
+          {
+            "block": "CJK Unified Ideographs Extension A",
+            "char": "㐀",
+            "offset": 29,
+            "plane": "BMP",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+3400",
+            "worksheet_row": 31
+          },
+          {
+            "block": "CJK Unified Ideographs Extension A",
+            "char": "㐁",
+            "offset": 30,
+            "plane": "BMP",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+3401",
+            "worksheet_row": 32
+          },
+          {
+            "block": "CJK Unified Ideographs Extension A",
+            "char": "㐂",
+            "offset": 31,
+            "plane": "BMP",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+3402",
+            "worksheet_row": 33
+          }
+        ]
+      },
+      {
+        "count": 2897,
+        "range": "U+9000-U+9FFF",
+        "samples": [
+          {
+            "block": "CJK Unified Ideographs",
+            "char": "鿖",
+            "offset": 47,
+            "plane": "BMP",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+9FD6",
+            "worksheet_row": 49
+          },
+          {
+            "block": "CJK Unified Ideographs",
+            "char": "鿗",
+            "offset": 48,
+            "plane": "BMP",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+9FD7",
+            "worksheet_row": 50
+          },
+          {
+            "block": "CJK Unified Ideographs",
+            "char": "龴",
+            "offset": 649,
+            "plane": "BMP",
+            "standard_level": "agent_standard_required_not_national_standard",
+            "unicode": "U+9FB4",
+            "worksheet_row": 651
+          }
+        ]
+      }
+    ],
+    "plane_counts": {
+      "BMP": 19675,
+      "SUPPLEMENTARY": 69906
+    },
+    "plane_samples": {
+      "BMP": [
+        {
+          "block": "CJK Unified Ideographs Extension A",
+          "char": "㐀",
+          "offset": 29,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+3400",
+          "worksheet_row": 31
+        },
+        {
+          "block": "CJK Unified Ideographs Extension A",
+          "char": "㐁",
+          "offset": 30,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+3401",
+          "worksheet_row": 32
+        },
+        {
+          "block": "CJK Unified Ideographs Extension A",
+          "char": "㐂",
+          "offset": 31,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+3402",
+          "worksheet_row": 33
+        },
+        {
+          "block": "CJK Unified Ideographs Extension A",
+          "char": "䶶",
+          "offset": 32,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+4DB6",
+          "worksheet_row": 34
+        },
+        {
+          "block": "CJK Unified Ideographs",
+          "char": "丂",
+          "offset": 33,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+4E02",
+          "worksheet_row": 35
+        },
+        {
+          "block": "CJK Unified Ideographs",
+          "char": "丄",
+          "offset": 34,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+4E04",
+          "worksheet_row": 36
+        },
+        {
+          "block": "CJK Unified Ideographs",
+          "char": "丅",
+          "offset": 35,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+4E05",
+          "worksheet_row": 37
+        },
+        {
+          "block": "CJK Unified Ideographs",
+          "char": "丆",
+          "offset": 36,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+4E06",
+          "worksheet_row": 38
+        },
+        {
+          "block": "CJK Unified Ideographs",
+          "char": "丌",
+          "offset": 37,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+4E0C",
+          "worksheet_row": 39
+        },
+        {
+          "block": "CJK Unified Ideographs",
+          "char": "丒",
+          "offset": 38,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+4E12",
+          "worksheet_row": 40
+        },
+        {
+          "block": "CJK Unified Ideographs",
+          "char": "丗",
+          "offset": 39,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+4E17",
+          "worksheet_row": 41
+        },
+        {
+          "block": "CJK Unified Ideographs",
+          "char": "丟",
+          "offset": 40,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+4E1F",
+          "worksheet_row": 42
+        }
+      ],
+      "SUPPLEMENTARY": [
+        {
+          "block": "CJK Unified Ideographs Extension B",
+          "char": "𠀀",
+          "offset": 49,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+20000",
+          "worksheet_row": 51
+        },
+        {
+          "block": "CJK Unified Ideographs Extension B",
+          "char": "𠀁",
+          "offset": 50,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+20001",
+          "worksheet_row": 52
+        },
+        {
+          "block": "CJK Unified Ideographs Extension B",
+          "char": "𠀂",
+          "offset": 51,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+20002",
+          "worksheet_row": 53
+        },
+        {
+          "block": "CJK Unified Ideographs Extension B",
+          "char": "𠀃",
+          "offset": 52,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+20003",
+          "worksheet_row": 54
+        },
+        {
+          "block": "CJK Unified Ideographs Extension B",
+          "char": "𠀄",
+          "offset": 53,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+20004",
+          "worksheet_row": 55
+        },
+        {
+          "block": "CJK Unified Ideographs Extension B",
+          "char": "𠀅",
+          "offset": 54,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+20005",
+          "worksheet_row": 56
+        },
+        {
+          "block": "CJK Unified Ideographs Extension B",
+          "char": "𠀆",
+          "offset": 55,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+20006",
+          "worksheet_row": 57
+        },
+        {
+          "block": "CJK Unified Ideographs Extension B",
+          "char": "𠀇",
+          "offset": 56,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+20007",
+          "worksheet_row": 58
+        },
+        {
+          "block": "CJK Unified Ideographs Extension B",
+          "char": "𠀈",
+          "offset": 57,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+20008",
+          "worksheet_row": 59
+        },
+        {
+          "block": "CJK Unified Ideographs Extension B",
+          "char": "𠀉",
+          "offset": 58,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+20009",
+          "worksheet_row": 60
+        },
+        {
+          "block": "CJK Unified Ideographs Extension B",
+          "char": "𠀊",
+          "offset": 59,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2000A",
+          "worksheet_row": 61
+        },
+        {
+          "block": "CJK Unified Ideographs Extension B",
+          "char": "𠀋",
+          "offset": 60,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2000B",
+          "worksheet_row": 62
+        }
+      ]
+    },
+    "standard_level_counts": {
+      "agent_standard_required_not_national_standard": 89581
+    },
+    "unicode_block_counts": {
+      "CJK Unified Ideographs": 13160,
+      "CJK Unified Ideographs Extension A": 6515,
+      "CJK Unified Ideographs Extension B": 42684,
+      "CJK Unified Ideographs Extension C": 4116,
+      "CJK Unified Ideographs Extension D": 214,
+      "CJK Unified Ideographs Extension E": 5666,
+      "CJK Unified Ideographs Extension F": 7473,
+      "CJK Unified Ideographs Extension G": 4939,
+      "CJK Unified Ideographs Extension H": 4192,
+      "CJK Unified Ideographs Extension I": 622
+    },
+    "unicode_block_samples": {
+      "CJK Unified Ideographs": [
+        {
+          "block": "CJK Unified Ideographs",
+          "char": "丂",
+          "offset": 33,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+4E02",
+          "worksheet_row": 35
+        },
+        {
+          "block": "CJK Unified Ideographs",
+          "char": "丄",
+          "offset": 34,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+4E04",
+          "worksheet_row": 36
+        },
+        {
+          "block": "CJK Unified Ideographs",
+          "char": "丅",
+          "offset": 35,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+4E05",
+          "worksheet_row": 37
+        },
+        {
+          "block": "CJK Unified Ideographs",
+          "char": "丆",
+          "offset": 36,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+4E06",
+          "worksheet_row": 38
+        },
+        {
+          "block": "CJK Unified Ideographs",
+          "char": "丌",
+          "offset": 37,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+4E0C",
+          "worksheet_row": 39
+        },
+        {
+          "block": "CJK Unified Ideographs",
+          "char": "丒",
+          "offset": 38,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+4E12",
+          "worksheet_row": 40
+        },
+        {
+          "block": "CJK Unified Ideographs",
+          "char": "丗",
+          "offset": 39,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+4E17",
+          "worksheet_row": 41
+        },
+        {
+          "block": "CJK Unified Ideographs",
+          "char": "丟",
+          "offset": 40,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+4E1F",
+          "worksheet_row": 42
+        },
+        {
+          "block": "CJK Unified Ideographs",
+          "char": "丠",
+          "offset": 41,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+4E20",
+          "worksheet_row": 43
+        },
+        {
+          "block": "CJK Unified Ideographs",
+          "char": "両",
+          "offset": 42,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+4E21",
+          "worksheet_row": 44
+        },
+        {
+          "block": "CJK Unified Ideographs",
+          "char": "丣",
+          "offset": 43,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+4E23",
+          "worksheet_row": 45
+        },
+        {
+          "block": "CJK Unified Ideographs",
+          "char": "並",
+          "offset": 44,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+4E26",
+          "worksheet_row": 46
+        }
+      ],
+      "CJK Unified Ideographs Extension A": [
+        {
+          "block": "CJK Unified Ideographs Extension A",
+          "char": "㐀",
+          "offset": 29,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+3400",
+          "worksheet_row": 31
+        },
+        {
+          "block": "CJK Unified Ideographs Extension A",
+          "char": "㐁",
+          "offset": 30,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+3401",
+          "worksheet_row": 32
+        },
+        {
+          "block": "CJK Unified Ideographs Extension A",
+          "char": "㐂",
+          "offset": 31,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+3402",
+          "worksheet_row": 33
+        },
+        {
+          "block": "CJK Unified Ideographs Extension A",
+          "char": "䶶",
+          "offset": 32,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+4DB6",
+          "worksheet_row": 34
+        },
+        {
+          "block": "CJK Unified Ideographs Extension A",
+          "char": "㐃",
+          "offset": 319,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+3403",
+          "worksheet_row": 321
+        },
+        {
+          "block": "CJK Unified Ideographs Extension A",
+          "char": "㐄",
+          "offset": 320,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+3404",
+          "worksheet_row": 322
+        },
+        {
+          "block": "CJK Unified Ideographs Extension A",
+          "char": "㐅",
+          "offset": 440,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+3405",
+          "worksheet_row": 442
+        },
+        {
+          "block": "CJK Unified Ideographs Extension A",
+          "char": "㐆",
+          "offset": 441,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+3406",
+          "worksheet_row": 443
+        },
+        {
+          "block": "CJK Unified Ideographs Extension A",
+          "char": "㐇",
+          "offset": 588,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+3407",
+          "worksheet_row": 590
+        },
+        {
+          "block": "CJK Unified Ideographs Extension A",
+          "char": "㐈",
+          "offset": 589,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+3408",
+          "worksheet_row": 591
+        },
+        {
+          "block": "CJK Unified Ideographs Extension A",
+          "char": "㐉",
+          "offset": 590,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+3409",
+          "worksheet_row": 592
+        },
+        {
+          "block": "CJK Unified Ideographs Extension A",
+          "char": "㐊",
+          "offset": 591,
+          "plane": "BMP",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+340A",
+          "worksheet_row": 593
+        }
+      ],
+      "CJK Unified Ideographs Extension B": [
+        {
+          "block": "CJK Unified Ideographs Extension B",
+          "char": "𠀀",
+          "offset": 49,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+20000",
+          "worksheet_row": 51
+        },
+        {
+          "block": "CJK Unified Ideographs Extension B",
+          "char": "𠀁",
+          "offset": 50,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+20001",
+          "worksheet_row": 52
+        },
+        {
+          "block": "CJK Unified Ideographs Extension B",
+          "char": "𠀂",
+          "offset": 51,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+20002",
+          "worksheet_row": 53
+        },
+        {
+          "block": "CJK Unified Ideographs Extension B",
+          "char": "𠀃",
+          "offset": 52,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+20003",
+          "worksheet_row": 54
+        },
+        {
+          "block": "CJK Unified Ideographs Extension B",
+          "char": "𠀄",
+          "offset": 53,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+20004",
+          "worksheet_row": 55
+        },
+        {
+          "block": "CJK Unified Ideographs Extension B",
+          "char": "𠀅",
+          "offset": 54,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+20005",
+          "worksheet_row": 56
+        },
+        {
+          "block": "CJK Unified Ideographs Extension B",
+          "char": "𠀆",
+          "offset": 55,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+20006",
+          "worksheet_row": 57
+        },
+        {
+          "block": "CJK Unified Ideographs Extension B",
+          "char": "𠀇",
+          "offset": 56,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+20007",
+          "worksheet_row": 58
+        },
+        {
+          "block": "CJK Unified Ideographs Extension B",
+          "char": "𠀈",
+          "offset": 57,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+20008",
+          "worksheet_row": 59
+        },
+        {
+          "block": "CJK Unified Ideographs Extension B",
+          "char": "𠀉",
+          "offset": 58,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+20009",
+          "worksheet_row": 60
+        },
+        {
+          "block": "CJK Unified Ideographs Extension B",
+          "char": "𠀊",
+          "offset": 59,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2000A",
+          "worksheet_row": 61
+        },
+        {
+          "block": "CJK Unified Ideographs Extension B",
+          "char": "𠀋",
+          "offset": 60,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2000B",
+          "worksheet_row": 62
+        }
+      ],
+      "CJK Unified Ideographs Extension C": [
+        {
+          "block": "CJK Unified Ideographs Extension C",
+          "char": "𪜀",
+          "offset": 139,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2A700",
+          "worksheet_row": 141
+        },
+        {
+          "block": "CJK Unified Ideographs Extension C",
+          "char": "𪜁",
+          "offset": 140,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2A701",
+          "worksheet_row": 142
+        },
+        {
+          "block": "CJK Unified Ideographs Extension C",
+          "char": "𪜂",
+          "offset": 141,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2A702",
+          "worksheet_row": 143
+        },
+        {
+          "block": "CJK Unified Ideographs Extension C",
+          "char": "𪜃",
+          "offset": 142,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2A703",
+          "worksheet_row": 144
+        },
+        {
+          "block": "CJK Unified Ideographs Extension C",
+          "char": "𪜄",
+          "offset": 143,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2A704",
+          "worksheet_row": 145
+        },
+        {
+          "block": "CJK Unified Ideographs Extension C",
+          "char": "𪜅",
+          "offset": 144,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2A705",
+          "worksheet_row": 146
+        },
+        {
+          "block": "CJK Unified Ideographs Extension C",
+          "char": "𪜆",
+          "offset": 145,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2A706",
+          "worksheet_row": 147
+        },
+        {
+          "block": "CJK Unified Ideographs Extension C",
+          "char": "𪜇",
+          "offset": 146,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2A707",
+          "worksheet_row": 148
+        },
+        {
+          "block": "CJK Unified Ideographs Extension C",
+          "char": "𪜈",
+          "offset": 353,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2A708",
+          "worksheet_row": 355
+        },
+        {
+          "block": "CJK Unified Ideographs Extension C",
+          "char": "𪜉",
+          "offset": 354,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2A709",
+          "worksheet_row": 356
+        },
+        {
+          "block": "CJK Unified Ideographs Extension C",
+          "char": "𪜊",
+          "offset": 414,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2A70A",
+          "worksheet_row": 416
+        },
+        {
+          "block": "CJK Unified Ideographs Extension C",
+          "char": "𪜋",
+          "offset": 415,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2A70B",
+          "worksheet_row": 417
+        }
+      ],
+      "CJK Unified Ideographs Extension D": [
+        {
+          "block": "CJK Unified Ideographs Extension D",
+          "char": "𫝀",
+          "offset": 147,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2B740",
+          "worksheet_row": 149
+        },
+        {
+          "block": "CJK Unified Ideographs Extension D",
+          "char": "𫝁",
+          "offset": 148,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2B741",
+          "worksheet_row": 150
+        },
+        {
+          "block": "CJK Unified Ideographs Extension D",
+          "char": "𫝂",
+          "offset": 149,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2B742",
+          "worksheet_row": 151
+        },
+        {
+          "block": "CJK Unified Ideographs Extension D",
+          "char": "𫝃",
+          "offset": 150,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2B743",
+          "worksheet_row": 152
+        },
+        {
+          "block": "CJK Unified Ideographs Extension D",
+          "char": "𫝄",
+          "offset": 517,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2B744",
+          "worksheet_row": 519
+        },
+        {
+          "block": "CJK Unified Ideographs Extension D",
+          "char": "𫝅",
+          "offset": 1081,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2B745",
+          "worksheet_row": 1083
+        },
+        {
+          "block": "CJK Unified Ideographs Extension D",
+          "char": "𫝆",
+          "offset": 2697,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2B746",
+          "worksheet_row": 2699
+        },
+        {
+          "block": "CJK Unified Ideographs Extension D",
+          "char": "𫝇",
+          "offset": 2698,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2B747",
+          "worksheet_row": 2700
+        },
+        {
+          "block": "CJK Unified Ideographs Extension D",
+          "char": "𫝈",
+          "offset": 2699,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2B748",
+          "worksheet_row": 2701
+        },
+        {
+          "block": "CJK Unified Ideographs Extension D",
+          "char": "𫝉",
+          "offset": 2700,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2B749",
+          "worksheet_row": 2702
+        },
+        {
+          "block": "CJK Unified Ideographs Extension D",
+          "char": "𫝊",
+          "offset": 2701,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2B74A",
+          "worksheet_row": 2703
+        },
+        {
+          "block": "CJK Unified Ideographs Extension D",
+          "char": "𫝋",
+          "offset": 2702,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2B74B",
+          "worksheet_row": 2704
+        }
+      ],
+      "CJK Unified Ideographs Extension E": [
+        {
+          "block": "CJK Unified Ideographs Extension E",
+          "char": "𫠡",
+          "offset": 151,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2B821",
+          "worksheet_row": 153
+        },
+        {
+          "block": "CJK Unified Ideographs Extension E",
+          "char": "𫠢",
+          "offset": 152,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2B822",
+          "worksheet_row": 154
+        },
+        {
+          "block": "CJK Unified Ideographs Extension E",
+          "char": "𫠣",
+          "offset": 153,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2B823",
+          "worksheet_row": 155
+        },
+        {
+          "block": "CJK Unified Ideographs Extension E",
+          "char": "𫠤",
+          "offset": 154,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2B824",
+          "worksheet_row": 156
+        },
+        {
+          "block": "CJK Unified Ideographs Extension E",
+          "char": "𫠥",
+          "offset": 155,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2B825",
+          "worksheet_row": 157
+        },
+        {
+          "block": "CJK Unified Ideographs Extension E",
+          "char": "𫠦",
+          "offset": 156,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2B826",
+          "worksheet_row": 158
+        },
+        {
+          "block": "CJK Unified Ideographs Extension E",
+          "char": "𫠧",
+          "offset": 157,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2B827",
+          "worksheet_row": 159
+        },
+        {
+          "block": "CJK Unified Ideographs Extension E",
+          "char": "𫠨",
+          "offset": 158,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2B828",
+          "worksheet_row": 160
+        },
+        {
+          "block": "CJK Unified Ideographs Extension E",
+          "char": "𫠩",
+          "offset": 159,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2B829",
+          "worksheet_row": 161
+        },
+        {
+          "block": "CJK Unified Ideographs Extension E",
+          "char": "𫠪",
+          "offset": 160,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2B82A",
+          "worksheet_row": 162
+        },
+        {
+          "block": "CJK Unified Ideographs Extension E",
+          "char": "𫠫",
+          "offset": 161,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2B82B",
+          "worksheet_row": 163
+        },
+        {
+          "block": "CJK Unified Ideographs Extension E",
+          "char": "𫠬",
+          "offset": 162,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2B82C",
+          "worksheet_row": 164
+        }
+      ],
+      "CJK Unified Ideographs Extension F": [
+        {
+          "block": "CJK Unified Ideographs Extension F",
+          "char": "𬺰",
+          "offset": 187,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2CEB0",
+          "worksheet_row": 189
+        },
+        {
+          "block": "CJK Unified Ideographs Extension F",
+          "char": "𬺱",
+          "offset": 188,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2CEB1",
+          "worksheet_row": 190
+        },
+        {
+          "block": "CJK Unified Ideographs Extension F",
+          "char": "𬺲",
+          "offset": 189,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2CEB2",
+          "worksheet_row": 191
+        },
+        {
+          "block": "CJK Unified Ideographs Extension F",
+          "char": "𬺳",
+          "offset": 190,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2CEB3",
+          "worksheet_row": 192
+        },
+        {
+          "block": "CJK Unified Ideographs Extension F",
+          "char": "𬺴",
+          "offset": 191,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2CEB4",
+          "worksheet_row": 193
+        },
+        {
+          "block": "CJK Unified Ideographs Extension F",
+          "char": "𬺵",
+          "offset": 192,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2CEB5",
+          "worksheet_row": 194
+        },
+        {
+          "block": "CJK Unified Ideographs Extension F",
+          "char": "𬺶",
+          "offset": 193,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2CEB6",
+          "worksheet_row": 195
+        },
+        {
+          "block": "CJK Unified Ideographs Extension F",
+          "char": "𬺷",
+          "offset": 194,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2CEB7",
+          "worksheet_row": 196
+        },
+        {
+          "block": "CJK Unified Ideographs Extension F",
+          "char": "𬺸",
+          "offset": 195,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2CEB8",
+          "worksheet_row": 197
+        },
+        {
+          "block": "CJK Unified Ideographs Extension F",
+          "char": "𬺹",
+          "offset": 196,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2CEB9",
+          "worksheet_row": 198
+        },
+        {
+          "block": "CJK Unified Ideographs Extension F",
+          "char": "𬺺",
+          "offset": 197,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2CEBA",
+          "worksheet_row": 199
+        },
+        {
+          "block": "CJK Unified Ideographs Extension F",
+          "char": "𬺻",
+          "offset": 198,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2CEBB",
+          "worksheet_row": 200
+        }
+      ],
+      "CJK Unified Ideographs Extension G": [
+        {
+          "block": "CJK Unified Ideographs Extension G",
+          "char": "𰀀",
+          "offset": 254,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+30000",
+          "worksheet_row": 256
+        },
+        {
+          "block": "CJK Unified Ideographs Extension G",
+          "char": "𰀁",
+          "offset": 255,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+30001",
+          "worksheet_row": 257
+        },
+        {
+          "block": "CJK Unified Ideographs Extension G",
+          "char": "𰀂",
+          "offset": 256,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+30002",
+          "worksheet_row": 258
+        },
+        {
+          "block": "CJK Unified Ideographs Extension G",
+          "char": "𰀃",
+          "offset": 257,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+30003",
+          "worksheet_row": 259
+        },
+        {
+          "block": "CJK Unified Ideographs Extension G",
+          "char": "𰀄",
+          "offset": 258,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+30004",
+          "worksheet_row": 260
+        },
+        {
+          "block": "CJK Unified Ideographs Extension G",
+          "char": "𰀅",
+          "offset": 259,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+30005",
+          "worksheet_row": 261
+        },
+        {
+          "block": "CJK Unified Ideographs Extension G",
+          "char": "𰀆",
+          "offset": 260,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+30006",
+          "worksheet_row": 262
+        },
+        {
+          "block": "CJK Unified Ideographs Extension G",
+          "char": "𰀇",
+          "offset": 261,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+30007",
+          "worksheet_row": 263
+        },
+        {
+          "block": "CJK Unified Ideographs Extension G",
+          "char": "𰀈",
+          "offset": 262,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+30008",
+          "worksheet_row": 264
+        },
+        {
+          "block": "CJK Unified Ideographs Extension G",
+          "char": "𰀉",
+          "offset": 263,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+30009",
+          "worksheet_row": 265
+        },
+        {
+          "block": "CJK Unified Ideographs Extension G",
+          "char": "𰀊",
+          "offset": 264,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+3000A",
+          "worksheet_row": 266
+        },
+        {
+          "block": "CJK Unified Ideographs Extension G",
+          "char": "𰀋",
+          "offset": 265,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+3000B",
+          "worksheet_row": 267
+        }
+      ],
+      "CJK Unified Ideographs Extension H": [
+        {
+          "block": "CJK Unified Ideographs Extension H",
+          "char": "𱍐",
+          "offset": 286,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+31350",
+          "worksheet_row": 288
+        },
+        {
+          "block": "CJK Unified Ideographs Extension H",
+          "char": "𱍑",
+          "offset": 287,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+31351",
+          "worksheet_row": 289
+        },
+        {
+          "block": "CJK Unified Ideographs Extension H",
+          "char": "𱍒",
+          "offset": 288,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+31352",
+          "worksheet_row": 290
+        },
+        {
+          "block": "CJK Unified Ideographs Extension H",
+          "char": "𱍓",
+          "offset": 289,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+31353",
+          "worksheet_row": 291
+        },
+        {
+          "block": "CJK Unified Ideographs Extension H",
+          "char": "𱍔",
+          "offset": 290,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+31354",
+          "worksheet_row": 292
+        },
+        {
+          "block": "CJK Unified Ideographs Extension H",
+          "char": "𱍕",
+          "offset": 291,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+31355",
+          "worksheet_row": 293
+        },
+        {
+          "block": "CJK Unified Ideographs Extension H",
+          "char": "𱍖",
+          "offset": 292,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+31356",
+          "worksheet_row": 294
+        },
+        {
+          "block": "CJK Unified Ideographs Extension H",
+          "char": "𱍗",
+          "offset": 293,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+31357",
+          "worksheet_row": 295
+        },
+        {
+          "block": "CJK Unified Ideographs Extension H",
+          "char": "𱍘",
+          "offset": 294,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+31358",
+          "worksheet_row": 296
+        },
+        {
+          "block": "CJK Unified Ideographs Extension H",
+          "char": "𱍙",
+          "offset": 295,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+31359",
+          "worksheet_row": 297
+        },
+        {
+          "block": "CJK Unified Ideographs Extension H",
+          "char": "𱍚",
+          "offset": 296,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+3135A",
+          "worksheet_row": 298
+        },
+        {
+          "block": "CJK Unified Ideographs Extension H",
+          "char": "𱍛",
+          "offset": 297,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+3135B",
+          "worksheet_row": 299
+        }
+      ],
+      "CJK Unified Ideographs Extension I": [
+        {
+          "block": "CJK Unified Ideographs Extension I",
+          "char": "𮯰",
+          "offset": 253,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2EBF0",
+          "worksheet_row": 255
+        },
+        {
+          "block": "CJK Unified Ideographs Extension I",
+          "char": "𮯱",
+          "offset": 421,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2EBF1",
+          "worksheet_row": 423
+        },
+        {
+          "block": "CJK Unified Ideographs Extension I",
+          "char": "𮯲",
+          "offset": 560,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2EBF2",
+          "worksheet_row": 562
+        },
+        {
+          "block": "CJK Unified Ideographs Extension I",
+          "char": "𮯳",
+          "offset": 1126,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2EBF3",
+          "worksheet_row": 1128
+        },
+        {
+          "block": "CJK Unified Ideographs Extension I",
+          "char": "𮯴",
+          "offset": 3027,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2EBF4",
+          "worksheet_row": 3029
+        },
+        {
+          "block": "CJK Unified Ideographs Extension I",
+          "char": "𮯵",
+          "offset": 3028,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2EBF5",
+          "worksheet_row": 3030
+        },
+        {
+          "block": "CJK Unified Ideographs Extension I",
+          "char": "𮯶",
+          "offset": 3029,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2EBF6",
+          "worksheet_row": 3031
+        },
+        {
+          "block": "CJK Unified Ideographs Extension I",
+          "char": "𮯷",
+          "offset": 3030,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2EBF7",
+          "worksheet_row": 3032
+        },
+        {
+          "block": "CJK Unified Ideographs Extension I",
+          "char": "𮯸",
+          "offset": 3031,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2EBF8",
+          "worksheet_row": 3033
+        },
+        {
+          "block": "CJK Unified Ideographs Extension I",
+          "char": "𮯹",
+          "offset": 3032,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2EBF9",
+          "worksheet_row": 3034
+        },
+        {
+          "block": "CJK Unified Ideographs Extension I",
+          "char": "𮯺",
+          "offset": 3033,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2EBFA",
+          "worksheet_row": 3035
+        },
+        {
+          "block": "CJK Unified Ideographs Extension I",
+          "char": "𮯻",
+          "offset": 3034,
+          "plane": "SUPPLEMENTARY",
+          "standard_level": "agent_standard_required_not_national_standard",
+          "unicode": "U+2EBFB",
+          "worksheet_row": 3036
+        }
+      ]
+    }
+  },
+  "summary": {
+    "agent_standard_mapping_design_allowed": true,
+    "blocked_gf0017_items": [
+      "character_set_coverage",
+      "stroke_shape",
+      "stroke_order",
+      "component_validity",
+      "component_name_validity",
+      "radical_validity",
+      "independent_character_rule",
+      "structure_first_decomposition"
+    ],
+    "database_rebuild_allowed": false,
+    "expected_outside_8105_rows": 89581,
+    "formal_gf0017_scoring_allowed": false,
+    "outside_8105_rows": 89581,
+    "source_join_next_status": "FORMAL_SCORING_BLOCKED_SOURCE_EVIDENCE_JOIN_REQUIRED",
+    "source_join_status": "PASS_SOURCE_JOIN_BATCH_ASSESSED",
+    "total_catalog_rows": 97686,
+    "unicode_identity_gap_count": 0
+  }
+}

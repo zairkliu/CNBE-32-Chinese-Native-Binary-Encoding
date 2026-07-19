@@ -1,0 +1,262 @@
+- navigation "站点导航":
+  - link "汉典":
+    - /url: //zdic.net
+  - generic: "|"
+  - link "古籍":
+    - /url: //gj.zdic.net
+  - generic: "|"
+  - link "诗词":
+    - /url: //sc.zdic.net
+  - generic: "|"
+  - link "书法":
+    - /url: //sf.zdic.net
+  - generic: "|"
+  - link "通识":
+    - /url: /ts/
+- button "查询索引":
+  - text: 查询索引
+- generic: "|"
+- link "繁體":
+  - /url: /hant/鑫
+- button "切换深色模式":
+- banner:
+  - link "漢典":
+    - /url: /
+    - img "漢典"
+  - search "汉字搜索":
+    - combobox "搜索类型":
+      - option "条目" [selected]
+      - option "汉字"
+      - option "词语"
+      - option "成语"
+      - option "义项"
+      - option "书证"
+      - option "例句"
+      - option "近反义词"
+      - option "拆分"
+      - option "拼音"
+      - option "笔顺"
+      - option "五笔"
+      - option "仓颉"
+      - option "四角"
+      - option "Unicode"
+    - searchbox "请输入汉字或词语"
+    - button "搜索":
+- insertion
+- main:
+  - article:
+    - figure:
+      - img "鑫"
+      - button "播放笔顺动画":
+    - generic: 拼音
+    - text: xīn
+    - button "播放xīn":
+    - generic: 注音
+    - text: ㄒㄧㄣ
+    - button "播放注音ㄒㄧㄣ":
+    - generic: 部首
+    - link "金":
+      - /url: /zd/bs/?bs=%E9%87%91
+    - generic: 部外
+    - generic: "8"
+    - generic: 总笔画
+    - generic: "24"
+    - generic: 统一码
+    - generic: CJK 946B
+    - generic: 笔顺
+    - generic: "341124313411243134112431"
+    - generic: 字形结构
+    - generic: 上下结构
+    - generic: 字形分析
+    - generic: 会意
+  - navigation "字典内容导航":
+    - tablist:
+      - tab "基本解释"
+      - tab "详细解释"
+      - tab "國語辭典"
+      - tab "康熙字典"
+      - tab "音韵方言"
+      - tab "字源字形"
+  - heading "鑫 基本解释" [level=2]:
+    - generic: 鑫
+    - text: 基本解释
+  - generic: ●鑫
+  - generic: xīn
+  - button "播放xīn":
+  - generic: ㄒㄧㄣ
+  - list:
+    - listitem: 商店字号及人名常用字，取金多兴盛的意思。
+  - link "反馈":
+    - /url: "#"
+  - insertion
+  - heading "鑫 详细解释" [level=2]:
+    - generic: 鑫
+    - text: 详细解释
+  - generic: ◎鑫
+  - generic: xīn
+  - button "播放xīn":
+  - generic: ㄒㄧㄣ
+  - generic: 名
+  - list:
+    - text: 旧时商店字号、人名用字，取其金多兴旺之意
+    - generic: "[prospering or good profit]"
+    - generic: 书证
+    - list:
+      - listitem: 鑫，金长。——《篇海类编》
+      - listitem: 鑫，宋子虚名友，五子以鑫、森、淼、焱、垚立名。——《正字通》
+  - link "反馈":
+    - /url: "#"
+  - heading "鑫 國語辭典" [level=2]:
+    - generic: 鑫
+    - text: 國語辭典
+  - generic: 鑫
+  - generic: xīn
+  - button "播放xīn":
+  - generic: ㄒㄧㄣ
+  - generic: 形
+  - paragraph: 兴盛、多财。常用于人名或店名。
+  - link "反馈":
+    - /url: "#"
+  - insertion
+  - heading "鑫 康熙字典" [level=2]:
+    - generic: 鑫
+    - text: 康熙字典
+  - paragraph: 【戌集上】【金字部】 康熙笔画：24 部外笔画：16
+  - img "鑫"
+  - paragraph: 【玉篇】呼龍切，音胷。
+  - paragraph:
+    - text: 又許金切，音歆。義
+    - generic: 𠀤
+    - text: 闕。【正字通·钃字註】宋子虛名友五子，以鑫森淼焱垚立名。
+  - paragraph: 又【南康郡志】黃鑫由明經辟薦，任餘杭令，擢監察御史。
+  - link "反馈":
+    - /url: "#"
+  - heading "鑫 音韵方言" [level=2]:
+    - generic: 鑫
+    - text: 音韵方言
+  - tabpanel:
+    - heading "音标 & 周边语言" [level=3]
+    - term: 国际音标
+    - definition: ɕin˥
+    - heading "方言读音 （旧版简文）" [level=3]
+    - term: 广东话
+    - definition: jam1
+    - term: 客家话
+    - definition: "[客语拼音字汇] him1 [宝安腔] him1"
+  - link "韵书":
+    - /url: /hans/%E9%91%AB/yunshu
+    - generic: 韵书
+  - link "上古音":
+    - /url: /hans/%E9%91%AB/shangguyin
+    - generic: 上古音
+  - link "中古音":
+    - /url: /hans/%E9%91%AB/zhongguyin
+    - generic: 中古音
+  - link "反馈":
+    - /url: "#"
+  - heading "鑫 字源字形" [level=2]:
+    - generic: 鑫
+    - text: 字源字形
+  - heading "字形对比" [level=3]
+  - img "中国大陆"
+  - generic: 中国大陆
+  - img "香港"
+  - generic: 香港
+  - img "台湾"
+  - generic: 台湾
+  - img "日本"
+  - generic: 日本
+  - generic: 五笔
+  - generic: qqqf
+  - generic: 仓颉
+  - generic: ccc
+  - generic: 郑码
+  - generic: ppp
+  - generic: 四角号码
+  - generic: "80119"
+  - link "反馈":
+    - /url: "#"
+- complementary "相关信息":
+  - region "同音字":
+    - heading "同音字" [level=3]
+    - link "殉":
+      - /url: /hans/%E6%AE%89
+    - link "巺":
+      - /url: /hans/%E5%B7%BA
+    - link "䭀":
+      - /url: /hans/%E4%AD%80
+    - link "㛙":
+      - /url: /hans/%E3%9B%99
+    - link "焮":
+      - /url: /hans/%E7%84%AE
+    - link "逊":
+      - /url: /hans/%E9%80%8A
+    - link "训":
+      - /url: /hans/%E8%AE%AD
+    - link "廞":
+      - /url: /hans/%E5%BB%9E
+    - link "昕":
+      - /url: /hans/%E6%98%95
+    - link "殾":
+      - /url: /hans/%E6%AE%BE
+    - link "稄":
+      - /url: /hans/%E7%A8%84
+    - link "䛥":
+      - /url: /hans/%E4%9B%A5
+    - paragraph: 与 鑫 读音相同或相近
+  - insertion
+  - region "同部首":
+    - heading "同部首" [level=3]
+    - link "鍪":
+      - /url: /hans/%E9%8D%AA
+    - link "鋻":
+      - /url: /hans/%E9%8B%BB
+    - link "錾":
+      - /url: /hans/%E9%8C%BE
+    - link "釜":
+      - /url: /hans/%E9%87%9C
+    - link "銎":
+      - /url: /hans/%E9%8A%8E
+    - link "鏨":
+      - /url: /hans/%E9%8F%A8
+    - link "龬":
+      - /url: /hans/%E9%BE%AC
+    - link "鐢":
+      - /url: /hans/%E9%90%A2
+    - link "錅":
+      - /url: /hans/%E9%8C%85
+    - link "鎏":
+      - /url: /hans/%E9%8E%8F
+    - link "鐆":
+      - /url: /hans/%E9%90%86
+    - link "鑒":
+      - /url: /hans/%E9%91%92
+    - paragraph: 与「金」部相关的字
+  - region "热搜":
+    - heading "热搜" [level=3]
+    - link "为":
+      - /url: /hans/%E4%B8%BA
+    - link "以":
+      - /url: /hans/%E4%BB%A5
+    - link "人":
+      - /url: /hans/%E4%BA%BA
+    - link "行":
+      - /url: /hans/%E8%A1%8C
+    - link "我":
+      - /url: /hans/%E6%88%91
+    - link "其":
+      - /url: /hans/%E5%85%B6
+    - link "一":
+      - /url: /hans/%E4%B8%80
+    - link "之":
+      - /url: /hans/%E4%B9%8B
+    - paragraph: 常被查询的字
+- contentinfo:
+  - list:
+    - link "关于":
+      - /url: /about/
+    - link "条款":
+      - /url: /terms/
+    - link "反馈":
+      - /url: https://support.qq.com/products/315677
+  - generic: © 2004-2026 汉典 ZDIC.NET

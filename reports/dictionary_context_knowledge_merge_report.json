@@ -1,0 +1,41 @@
+{
+  "authority_boundary": {
+    "dictionary_sources_are_cross_reference_context": true,
+    "does_not_assign_gf0017_scores": true,
+    "does_not_emit_final_structure_labels": true,
+    "does_not_modify_8105_core_files": true,
+    "does_not_modify_cnbe_rows": true,
+    "does_not_rebuild_cnbe_database": true,
+    "not_national_standard_structure_authority": true
+  },
+  "checks": {
+    "base_character_data_not_modified_by_script": true,
+    "cnbe_character_knowledge_not_modified_by_script": true,
+    "cnbe_rows_written": 0,
+    "database_rebuilds": 0,
+    "final_structure_labels_emitted": 0,
+    "index_unique_chars": true,
+    "merge_plan_passed": true,
+    "official_write_requires_authorization": true,
+    "score_values_assigned": 0,
+    "staging_db_exists": true
+  },
+  "mode": "execute_dictionary_context_knowledge_merge",
+  "next_workflow_status": "KNOWLEDGE_MERGED_RUN_AUDIT_BEFORE_SCORING",
+  "overall_status": "PASS_DICTIONARY_CONTEXT_KNOWLEDGE_MERGE_EXECUTED",
+  "report_schema_version": "1.0",
+  "summary": {
+    "authorized": true,
+    "backups": [
+      "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/references.json.bak.20260717T031651Z"
+    ],
+    "base_character_data_path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/structured/base_character_data.json",
+    "cnbe_character_knowledge_path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/structured/cnbe_character_knowledge.json",
+    "execute_requested": true,
+    "index_entries": 49085,
+    "knowledge_root": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge",
+    "reference_entries_after_merge": 9,
+    "references_path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/references.json",
+    "target_index": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/structured/dictionary_context_index.json"
+  }
+}

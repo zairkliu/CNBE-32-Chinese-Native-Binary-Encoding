@@ -1,0 +1,51 @@
+character,unicode_codepoint,parse_status,source_kind,radical,total_strokes,unicode_value,stroke_order,raw_structure,normalized_structure,glyph_analysis,authority_boundary,zdic_url
+一,U+4E00,PARSED_WITH_STRUCTURE,online_fetch,一,1,CJK 4E00,1,单一结构,独体字,指事,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E4%B8%80
+乙,U+4E59,PARSED_WITH_STRUCTURE,online_fetch,乙,1,CJK 4E59,5,单一结构,独体字,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E4%B9%99
+丁,U+4E01,PARSED_WITH_STRUCTURE,online_fetch,一,2,CJK 4E01,12,单一结构,独体字,象形,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E4%B8%81
+厂,U+5382,PARSED_WITH_STRUCTURE,online_fetch,厂,2,CJK 5382,13,单一结构,独体字,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E5%8E%82
+八,U+516B,PARSED_WITH_STRUCTURE,online_fetch,八,2,CJK 516B,34,单一结构,独体字,指事,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E5%85%AB
+人,U+4EBA,PARSED_WITH_STRUCTURE,online_fetch,人,2,CJK 4EBA,34,单一结构,独体字,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E4%BA%BA
+入,U+5165,PARSED_WITH_STRUCTURE,online_fetch,入,2,CJK 5165,34,单一结构,独体字,象形,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E5%85%A5
+刁,U+5201,PARSED_WITH_STRUCTURE,online_fetch,刀,2,CJK 5201,51,单一结构,独体字,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E5%88%81
+刀,U+5200,PARSED_WITH_STRUCTURE,online_fetch,刀,2,CJK 5200,53,单一结构,独体字,象形,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E5%88%80
+力,U+529B,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E5%8A%9B
+乃,U+4E43,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E4%B9%83
+又,U+53C8,PARSED_WITH_STRUCTURE,online_fetch,又,2,CJK 53C8,54,单一结构,独体字,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E5%8F%88
+亏,U+4E8F,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E4%BA%8F
+士,U+58EB,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E5%A3%AB
+才,U+624D,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E6%89%8D
+寸,U+5BF8,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E5%AF%B8
+与,U+4E0E,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E4%B8%8E
+万,U+4E07,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E4%B8%87
+乞,U+4E5E,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E4%B9%9E
+久,U+4E45,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E4%B9%85
+及,U+53CA,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E5%8F%8A
+亡,U+4EA1,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E4%BA%A1
+门,U+95E8,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E9%97%A8
+之,U+4E4B,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E4%B9%8B
+尸,U+5C38,PARSED_WITH_STRUCTURE,online_fetch,尸,3,CJK 5C38,513,单一结构,独体字,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E5%B0%B8
+己,U+5DF1,PARSED_WITH_STRUCTURE,online_fetch,己,3,CJK 5DF1,515,单一结构,独体字,象形,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E5%B7%B1
+已,U+5DF2,PARSED_WITH_STRUCTURE,online_fetch,己,3,CJK 5DF2,515,单一结构,独体字,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E5%B7%B2
+巳,U+5DF3,PARSED_WITH_STRUCTURE,online_fetch,巳,3,CJK 5DF3,515,单一结构,独体字,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E5%B7%B3
+弓,U+5F13,PARSED_WITH_STRUCTURE,online_fetch,弓,3,CJK 5F13,515,单一结构,独体字,象形,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E5%BC%93
+也,U+4E5F,PARSED_WITH_STRUCTURE,online_fetch,乙,3,CJK 4E5F,525,单一结构,独体字,指事,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E4%B9%9F
+女,U+5973,PARSED_WITH_STRUCTURE,online_fetch,女,3,CJK 5973,531,单一结构,独体字,象形,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E5%A5%B3
+飞,U+98DE,PARSED_WITH_STRUCTURE,online_fetch,飞,3,CJK 98DE,534,单一结构,独体字,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E9%A3%9E
+习,U+4E60,PARSED_WITH_STRUCTURE,online_fetch,乙,3,CJK 4E60,541,单一结构,独体字,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E4%B9%A0
+马,U+9A6C,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E9%A9%AC
+乡,U+4E61,PARSED_WITH_STRUCTURE,online_fetch,乙,3,CJK 4E61,553,单一结构,独体字,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E4%B9%A1
+井,U+4E95,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E4%BA%95
+专,U+4E13,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E4%B8%93
+丐,U+4E10,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E4%B8%90
+五,U+4E94,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E4%BA%94
+不,U+4E0D,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E4%B8%8D
+友,U+53CB,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E5%8F%8B
+巨,U+5DE8,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E5%B7%A8
+牙,U+7259,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E7%89%99
+戈,U+6208,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E6%88%88
+互,U+4E92,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E4%BA%92
+瓦,U+74E6,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E7%93%A6
+水,U+6C34,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E6%B0%B4
+牛,U+725B,NETWORK_OR_PARSE_GAP,online_fetch_failed,,,,,,,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E7%89%9B
+手,U+624B,PARSED_WITH_STRUCTURE,online_fetch,手,4,CJK 624B,3112,单一结构,独体字,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E6%89%8B
+气,U+6C14,PARSED_WITH_STRUCTURE,online_fetch,气,4,CJK 6C14,3115,单一结构,独体字,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD,https://www.zdic.net/hans/%E6%B0%94

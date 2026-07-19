@@ -1,0 +1,28 @@
+{
+  "authority_boundary": "ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD",
+  "character": "璠",
+  "fields": {
+    "glyph_analysis": "",
+    "normalized_structure": "左右",
+    "radical": "王",
+    "raw_structure": "左右结构",
+    "stroke_order": "1121343123425121",
+    "total_strokes": "16",
+    "unicode_value": "CJK 74A0"
+  },
+  "found_field_count": 6,
+  "found_fields": [
+    "radical",
+    "total_strokes",
+    "unicode_value",
+    "stroke_order",
+    "raw_structure",
+    "normalized_structure"
+  ],
+  "parse_status": "PARSED_WITH_STRUCTURE",
+  "source_kind": "online_fetch",
+  "source_level": "network_cross_reference",
+  "source_path": "https://zdic.net/hans/%E7%92%A0",
+  "unicode_codepoint": "U+74A0",
+  "zdic_url": "https://www.zdic.net/hans/%E7%92%A0"
+}

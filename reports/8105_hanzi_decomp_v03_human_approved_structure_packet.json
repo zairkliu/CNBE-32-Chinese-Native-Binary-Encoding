@@ -1,0 +1,75 @@
+{
+  "checks": {
+    "all_structures_allowed": true,
+    "all_structures_have_agent_code": true,
+    "all_structures_nonblank": true,
+    "jue_is_independent": true,
+    "known_legacy_regressions_are_left_right": true,
+    "no_cnbe32_writes": true,
+    "no_database_rebuild": true,
+    "no_source_table_writes": true,
+    "row_count_is_8105": true,
+    "unique_character_count_is_8105": true,
+    "unique_unicode_count_is_8105": true
+  },
+  "decision": {
+    "may_rebuild_database": false,
+    "may_start_next_merge_plan": true,
+    "may_use_as_8105_agent_structure_candidate_baseline": true,
+    "may_write_cnbe32": false,
+    "recommended_next_step": "Prepare a separate source-merge plan that maps the approved Agent structure candidates into the repository structure model. Do not modify source tables or rebuild databases without a new explicit authorization."
+  },
+  "human_decision": {
+    "decision_id": "HUMAN_REVIEW_2026_07_19_V03_ACCEPTED_JUE_DUTIZI",
+    "decision_text": "孓为独体，其余审核通过，0.3为准",
+    "jue_char": "孓",
+    "jue_unicode": "U+5B53",
+    "not_authorized_as": [
+      "national_standard_output",
+      "source_table_write",
+      "cnbe32_write",
+      "sqlite_database_rebuild"
+    ],
+    "v03_authorized_as": "agent_standard_candidate_reference"
+  },
+  "mode": "hanzi_decomp_v03_human_approved_8105_agent_structure_packet",
+  "outputs": {
+    "approved_changes_csv": "review_packets/8105_full/8105_hanzi_decomp_v03_human_approved_changes.csv",
+    "approved_packet_csv": "review_packets/8105_full/8105_hanzi_decomp_v03_human_approved_structure_packet.csv",
+    "approved_workbook_xlsx": "outputs/8105_hanzi_decomp_v03_human_approved_structure_review.xlsx",
+    "json_report": "reports/8105_hanzi_decomp_v03_human_approved_structure_packet.json",
+    "markdown_report": "reports/8105_HANZI_DECOMP_V03_HUMAN_APPROVED_STRUCTURE_PACKET.md"
+  },
+  "overall_status": "PASS_HUMAN_APPROVED_V03_8105_AGENT_STRUCTURE_PACKET_READY",
+  "report_schema_version": "1.0",
+  "summary": {
+    "bad_structures": [],
+    "changed_by_human_approval_rows": 1191,
+    "cnbe32_rows_written": 0,
+    "database_rebuild_allowed": false,
+    "duplicate_chars": [],
+    "duplicate_unicode": [],
+    "human_review_basis_counts": {
+      "HUMAN_CONFIRMED_EXISTING_CANDIDATE_WHEN_V03_TOOL_GAP": 29,
+      "HUMAN_CONFIRMED_HANZI_DECOMP_V03": 8075,
+      "HUMAN_CONFIRMED_JUE_U5B53_DUTIZI": 1
+    },
+    "source_table_rows_written": 0,
+    "structure_counts": {
+      "上三包": 70,
+      "上下": 1716,
+      "上中下": 64,
+      "下三包": 7,
+      "全包围": 27,
+      "右上包": 53,
+      "左三包": 17,
+      "左上包": 292,
+      "左下包": 174,
+      "左中右": 26,
+      "左右": 5376,
+      "独体字": 258,
+      "镶嵌": 25
+    },
+    "total_rows": 8105
+  }
+}

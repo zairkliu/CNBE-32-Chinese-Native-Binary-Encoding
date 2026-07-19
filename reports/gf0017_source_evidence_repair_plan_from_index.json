@@ -1,0 +1,517 @@
+{
+  "authority_boundary": {
+    "does_not_assign_new_gf0017_points": true,
+    "does_not_emit_final_structure_labels": true,
+    "does_not_modify_cnbe_rows": true,
+    "does_not_rebuild_database": true,
+    "does_not_regenerate_full_unicode_catalog": true,
+    "uses_existing_unified_index_only": true
+  },
+  "checks": {
+    "does_not_assign_new_points": true,
+    "does_not_rebuild_database": true,
+    "does_not_regenerate_unicode": true,
+    "does_not_write_cnbe_rows": true,
+    "scoring_report_passed_with_source_gaps": true,
+    "unified_index_row_count_match": true,
+    "uses_existing_unified_index_only": true
+  },
+  "decision": {
+    "may_assign_new_gf0017_points": false,
+    "may_emit_final_structure_labels": false,
+    "may_rebuild_database": false,
+    "may_start_structure_decomposition_evidence_repair": true,
+    "may_write_cnbe_rows": false,
+    "reason": "The scoring pass proved that source evidence, especially the 20-point structure/decomposition item, must be materialized before full GF0017 scoring. The next allowed work is read-only evidence repair, not scoring or encoding writes."
+  },
+  "item_repair_plans": [
+    {
+      "assigned_or_ready_rows": 0,
+      "automation_allowed": true,
+      "blocked_by": "structure/decomposition evidence is missing or only review-context for most rows",
+      "blocked_point_weight": 1953720,
+      "blocked_rows": 97686,
+      "current_status_counts": {
+        "NOT_SCORABLE_EVIDENCE_REQUIRED": 97686
+      },
+      "evidence_target": "13-label structure, decomposition tree, and source-grade status",
+      "existing_spec_id": "extract_structure_decomposition_v1",
+      "existing_spec_input_paths": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "relative_path": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "relative_path": "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "unresolved",
+          "kind": "supporting_sources",
+          "relative_path": "evidence/agent-standard/cnbe_legacy_structure_localization.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/component_db.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/decomp_rules.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "decomp-data/dictionary.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "cjk-decomp/cjk-decomp.txt"
+        }
+      ],
+      "item": "structure_first_decomposition",
+      "label_zh": "结构优先拆分",
+      "points": 20,
+      "primary_sources": [
+        "GF0014",
+        "GB13000.1 component specification",
+        "Agent 13-label localization"
+      ],
+      "repair_class": "structure_decomposition_authority_join",
+      "required_output_status": "ROW_LEVEL_EVIDENCE_MATERIALIZED_NOT_SCORED",
+      "score_allowed_after_repair_plan": false
+    },
+    {
+      "assigned_or_ready_rows": 0,
+      "automation_allowed": true,
+      "blocked_by": "component names are not joined and source-graded per row",
+      "blocked_point_weight": 781488,
+      "blocked_rows": 97686,
+      "current_status_counts": {
+        "NOT_SCORABLE_EVIDENCE_REQUIRED": 97686
+      },
+      "evidence_target": "component names normalized to GF0014 naming inventory",
+      "existing_spec_id": "extract_component_name_validation_v1",
+      "existing_spec_input_paths": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "relative_path": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/component_db.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/ocr/standards/std_03-部件及部件名称规范_bc1.json"
+        }
+      ],
+      "item": "component_name_validity",
+      "label_zh": "部件名称",
+      "points": 8,
+      "primary_sources": [
+        "GF0014 现代常用字部件及部件名称规范"
+      ],
+      "repair_class": "component_name_authority_join",
+      "required_output_status": "ROW_LEVEL_EVIDENCE_MATERIALIZED_NOT_SCORED",
+      "score_allowed_after_repair_plan": false
+    },
+    {
+      "assigned_or_ready_rows": 0,
+      "automation_allowed": true,
+      "blocked_by": "independent-character status is not materialized per row",
+      "blocked_point_weight": 683802,
+      "blocked_rows": 97686,
+      "current_status_counts": {
+        "NOT_SCORABLE_EVIDENCE_REQUIRED": 97686
+      },
+      "evidence_target": "独体字 status and component-split rule compliance",
+      "existing_spec_id": "extract_independent_character_status_v1",
+      "existing_spec_input_paths": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "relative_path": "source/04-独体字规范/GF 0013-2009 现代常用独体字规范.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "relative_path": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/decomp_rules.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/component_db.json"
+        }
+      ],
+      "item": "independent_character_rule",
+      "label_zh": "独体字规则",
+      "points": 7,
+      "primary_sources": [
+        "GF0013 现代常用独体字规范",
+        "GF0014 component/decomposition evidence"
+      ],
+      "repair_class": "independent_character_join",
+      "required_output_status": "ROW_LEVEL_EVIDENCE_MATERIALIZED_NOT_SCORED",
+      "score_allowed_after_repair_plan": false
+    },
+    {
+      "assigned_or_ready_rows": 0,
+      "automation_allowed": true,
+      "blocked_by": "component inventory is not present as scoring evidence",
+      "blocked_point_weight": 293058,
+      "blocked_rows": 97686,
+      "current_status_counts": {
+        "NOT_SCORABLE_EVIDENCE_REQUIRED": 97686
+      },
+      "evidence_target": "component inventory, basic components, and unresolved-marker status",
+      "existing_spec_id": "extract_component_inventory_v1",
+      "existing_spec_input_paths": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "relative_path": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "relative_path": "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/component_db.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/decomp_rules.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "decomp-data/dictionary.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "cjk-decomp/cjk-decomp.txt"
+        }
+      ],
+      "item": "component_validity",
+      "label_zh": "汉字部件",
+      "points": 3,
+      "primary_sources": [
+        "GF0014",
+        "GB13000.1 component specification",
+        "review-only decomposition cross-references"
+      ],
+      "repair_class": "row_level_component_join",
+      "required_output_status": "ROW_LEVEL_EVIDENCE_MATERIALIZED_NOT_SCORED",
+      "score_allowed_after_repair_plan": false
+    },
+    {
+      "assigned_or_ready_rows": 0,
+      "automation_allowed": true,
+      "blocked_by": "radical evidence is not present in the scoring index",
+      "blocked_point_weight": 293058,
+      "blocked_rows": 97686,
+      "current_status_counts": {
+        "NOT_SCORABLE_EVIDENCE_REQUIRED": 97686
+      },
+      "evidence_target": "radical identity and radical-system source grade",
+      "existing_spec_id": "extract_radical_evidence_v1",
+      "existing_spec_input_paths": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "relative_path": "source/02-汉字部首表/GG 0011-2009 汉字部首表.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/kangxi_radicals.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/radical_validation.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/unicode_rsindex.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "source/15-Unicode-RSIndex/RSIndex.md"
+        }
+      ],
+      "item": "radical_validity",
+      "label_zh": "部首",
+      "points": 3,
+      "primary_sources": [
+        "GG0011 汉字部首表",
+        "8105 structured data",
+        "Unicode RSIndex as cross-reference only"
+      ],
+      "repair_class": "radical_authority_join",
+      "required_output_status": "ROW_LEVEL_EVIDENCE_MATERIALIZED_NOT_SCORED",
+      "score_allowed_after_repair_plan": false
+    },
+    {
+      "assigned_or_ready_rows": 0,
+      "automation_allowed": true,
+      "blocked_by": "stroke-order source evidence has not been joined into the unified index",
+      "blocked_point_weight": 293058,
+      "blocked_rows": 97686,
+      "current_status_counts": {
+        "NOT_SCORABLE_EVIDENCE_REQUIRED": 97686
+      },
+      "evidence_target": "stroke count and stroke-order sequence with source anchor",
+      "existing_spec_id": "extract_stroke_order_evidence_v1",
+      "existing_spec_input_paths": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "relative_path": "source/05-笔顺规范/GF 0031—2026 通用规范汉字笔顺规范.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "relative_path": "source/05-笔顺规范/GF3002-1999 GB13000.1字符集汉字笔顺规范.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/stroke_order_8105.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/stroke_order_8105_clean.json"
+        }
+      ],
+      "item": "stroke_order",
+      "label_zh": "笔顺",
+      "points": 3,
+      "primary_sources": [
+        "GF3002",
+        "GF0031",
+        "8105 structured stroke-order extracts"
+      ],
+      "repair_class": "row_level_standard_join",
+      "required_output_status": "ROW_LEVEL_EVIDENCE_MATERIALIZED_NOT_SCORED",
+      "score_allowed_after_repair_plan": false
+    },
+    {
+      "assigned_or_ready_rows": 0,
+      "automation_allowed": true,
+      "blocked_by": "stroke-shape source has not been materialized into the unified index",
+      "blocked_point_weight": 293058,
+      "blocked_rows": 97686,
+      "current_status_counts": {
+        "NOT_SCORABLE_SOURCE_GAP": 97686
+      },
+      "evidence_target": "row-level stroke-shape or folded-stroke status",
+      "existing_spec_id": "extract_stroke_shape_evidence_v1",
+      "existing_spec_input_paths": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "relative_path": "source/11-评测与分类/GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "cross_reference",
+          "kind": "controlling_sources",
+          "relative_path": "source/07-折笔规范/GB 13000.1 字符集汉字折笔规范.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/ocr/ocr_fold_stroke.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/ocr/standards/std_07-折笔规范_bc1.json"
+        }
+      ],
+      "item": "stroke_shape",
+      "label_zh": "笔形",
+      "points": 3,
+      "primary_sources": [
+        "GB 13000.1 字符集汉字折笔规范",
+        "GF0017 normative item"
+      ],
+      "repair_class": "source_extraction_and_normalization",
+      "required_output_status": "ROW_LEVEL_EVIDENCE_MATERIALIZED_NOT_SCORED",
+      "score_allowed_after_repair_plan": false
+    },
+    {
+      "assigned_or_ready_rows": 8105,
+      "automation_allowed": false,
+      "blocked_by": "outside-8105 rows are Agent candidates, not national-standard coverage rows",
+      "blocked_point_weight": 268743,
+      "blocked_rows": 89581,
+      "current_status_counts": {
+        "NOT_SCORABLE_SOURCE_GAP": 89581,
+        "PASS_8105_CORE_COVERAGE": 8105
+      },
+      "evidence_target": "outside-8105 project scope policy and inclusion/exclusion review",
+      "existing_spec_id": null,
+      "existing_spec_input_paths": [],
+      "item": "character_set_coverage",
+      "label_zh": "字符集覆盖",
+      "points": 3,
+      "primary_sources": [
+        "8105 baseline",
+        "project scope manifest",
+        "Unicode block classification"
+      ],
+      "repair_class": "policy_scope_boundary",
+      "required_output_status": "ROW_LEVEL_EVIDENCE_MATERIALIZED_NOT_SCORED",
+      "score_allowed_after_repair_plan": false
+    }
+  ],
+  "mode": "read_only_gf0017_source_evidence_repair_plan_from_existing_index",
+  "next_artifacts": [
+    "scripts/repair_structure_decomposition_evidence_from_index.py",
+    "reports/gf0017_structure_decomposition_evidence_repair_from_index.json",
+    "reports/GF0017_STRUCTURE_DECOMPOSITION_EVIDENCE_REPAIR_FROM_INDEX.md"
+  ],
+  "next_workflow_status": "STRUCTURE_DECOMPOSITION_EVIDENCE_REPAIR_ALLOWED_NO_SCORING",
+  "overall_status": "PASS_GF0017_SOURCE_EVIDENCE_REPAIR_PLAN_READY",
+  "report_schema_version": "1.0",
+  "summary": {
+    "automatable_repair_items": [
+      "structure_first_decomposition",
+      "component_name_validity",
+      "independent_character_rule",
+      "component_validity",
+      "radical_validity",
+      "stroke_order",
+      "stroke_shape"
+    ],
+    "cnbe_row_write_allowed": false,
+    "database_rebuild_allowed": false,
+    "formal_scoring_allowed_after_plan": false,
+    "highest_priority_item": "structure_first_decomposition",
+    "policy_decision_items": [
+      "character_set_coverage"
+    ],
+    "rows_fully_scored": 0,
+    "rows_with_any_assigned_points": 8105,
+    "total_blocked_point_weight": 4859985,
+    "total_rows": 97686
+  },
+  "work_packages": [
+    {
+      "automation_allowed": true,
+      "expected_output": "row-level structure/decomposition evidence status, no final labels",
+      "id": "GER1_structure_decomposition_first",
+      "items": [
+        "structure_first_decomposition"
+      ],
+      "priority": 1,
+      "reason": "20-point item and current dominant blocker; repair here unlocks component and independent-character review."
+    },
+    {
+      "automation_allowed": true,
+      "expected_output": "GF0014-aligned component/name evidence statuses, no scores",
+      "id": "GER2_component_name_and_component_inventory",
+      "items": [
+        "component_name_validity",
+        "component_validity"
+      ],
+      "priority": 2,
+      "reason": "component names carry 8 points and depend on component inventory evidence."
+    },
+    {
+      "automation_allowed": true,
+      "expected_output": "row-level evidence statuses and source anchors, no CNBE writes",
+      "id": "GER3_independent_radical_stroke_evidence",
+      "items": [
+        "independent_character_rule",
+        "radical_validity",
+        "stroke_order",
+        "stroke_shape"
+      ],
+      "priority": 3,
+      "reason": "remaining row-level evidence items required before a complete 50-point score is possible."
+    },
+    {
+      "automation_allowed": false,
+      "expected_output": "human policy decision before outside-8105 coverage points",
+      "id": "GER4_character_set_policy_boundary",
+      "items": [
+        "character_set_coverage"
+      ],
+      "priority": 4,
+      "reason": "outside-8105 character-set coverage requires project-scope policy, not automatic national-standard scoring."
+    },
+    {
+      "automation_allowed": false,
+      "expected_output": "explicit authorization to rescore; no CNBE/database writes",
+      "id": "GER5_rescore_from_repaired_index",
+      "items": [
+        "structure_first_decomposition",
+        "component_name_validity",
+        "independent_character_rule",
+        "component_validity",
+        "radical_validity",
+        "stroke_order",
+        "stroke_shape",
+        "character_set_coverage"
+      ],
+      "priority": 5,
+      "reason": "rescore only after repaired evidence is materialized into the existing index schema."
+    }
+  ]
+}

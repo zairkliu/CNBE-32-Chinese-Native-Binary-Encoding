@@ -1,0 +1,41 @@
+{
+  "checks": {
+    "forbidden_legacy_structures_absent": true,
+    "gap_rows_accounted_for": true,
+    "network_references_not_national_standard": true,
+    "no_cnbe_rows_written": true,
+    "no_database_rebuild": true,
+    "proposed_structures_allowed": true,
+    "standardizer_row_count_is_8105": true
+  },
+  "decision": {
+    "may_human_review_auto_fill_candidates": true,
+    "may_rebuild_database": false,
+    "may_write_cnbe_rows": false,
+    "reason": "Only deterministic single-component and IDS-operator rules are used. Network references remain review context and all candidates require human/source review before any merge."
+  },
+  "mode": "full_8105_gap_auto_fill_candidates_no_write",
+  "outputs": {
+    "auto_fill_candidates_csv": "review_packets/8105_full/8105_full_gap_auto_fill_candidates.csv",
+    "json_report": "reports/8105_full_gap_auto_fill_candidates.json",
+    "markdown_report": "reports/8105_FULL_GAP_AUTO_FILL_CANDIDATES.md",
+    "remaining_gap_review_queue_csv": "review_packets/8105_full/8105_full_gap_remaining_review_queue.csv"
+  },
+  "overall_status": "PASS_8105_GAP_AUTO_FILL_CANDIDATES_READY",
+  "report_schema_version": "1.0",
+  "summary": {
+    "auto_fill_candidate_rows": 29,
+    "auto_fill_structure_counts": {
+      "独体字": 29
+    },
+    "cnbe_rows_written": 0,
+    "database_rebuild_allowed": false,
+    "fill_rule_counts": {
+      "no_safe_auto_fill": 1508,
+      "single_component_identity_decomposition": 29
+    },
+    "gap_rows": 1537,
+    "remaining_review_rows": 1508,
+    "standardizer_rows": 8105
+  }
+}

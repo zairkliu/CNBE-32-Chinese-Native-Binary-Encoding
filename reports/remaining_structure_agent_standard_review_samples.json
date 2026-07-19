@@ -1,0 +1,3835 @@
+{
+  "authority_boundary": {
+    "does_not_assign_gf0017_scores": true,
+    "does_not_claim_national_standard_for_outside_8105": true,
+    "does_not_emit_final_structure_labels": true,
+    "does_not_modify_cnbe_rows": true,
+    "does_not_modify_source_assets": true,
+    "does_not_modify_workbook": true,
+    "does_not_rebuild_database": true
+  },
+  "checks": {
+    "duplicate_sample_keys_zero": true,
+    "feature_rows_match_expected": true,
+    "feature_table_passed": true,
+    "forbidden_field_leaks_zero": true,
+    "point_assignment_leaks_zero": true,
+    "review_prior_audit_passed": true,
+    "sample_prior_counts_match_quota": true,
+    "sample_total_matches_expected": true
+  },
+  "decision": {
+    "may_emit_final_structure_labels": false,
+    "may_modify_cnbe_rows": false,
+    "may_modify_source_assets": false,
+    "may_rebuild_database": false,
+    "may_start_formal_gf0017_scoring": false,
+    "may_start_human_review_packet": true,
+    "reason": "Deterministic review samples are ready for human or expert review packet construction. Formal scoring and encoding writes remain blocked."
+  },
+  "mode": "read_only_remaining_structure_agent_standard_review_sample_plan",
+  "next_artifacts": [
+    "reports/remaining_structure_agent_standard_human_review_packet.json",
+    "reports/REMAINING_STRUCTURE_AGENT_STANDARD_HUMAN_REVIEW_PACKET.md"
+  ],
+  "next_workflow_status": "HUMAN_REVIEW_SAMPLE_PACKET_READY_FORMAL_SCORING_BLOCKED",
+  "overall_status": "PASS_AGENT_STANDARD_REVIEW_SAMPLE_PLAN_READY",
+  "report_schema_version": "1.0",
+  "samples": [
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "俁",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 1645,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:001",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+4FC1",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 1647
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "劏",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 4687,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:002",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+528F",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 4689
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "噚",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 8106,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:003",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+565A",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 8108
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "墰",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 11758,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:004",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+58B0",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 11760
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "嬇",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 14661,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:005",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+5B07",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 14663
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "嵾",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 18387,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:006",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+5D7E",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 18389
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "彠",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 21883,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:007",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+5F60",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 21885
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "掚",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 26072,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:008",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+639A",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 26074
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "斸",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 29108,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:009",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+65B8",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 29110
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "槼",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 32224,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:010",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+69FC",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 32226
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "欍",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 32456,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:011",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+6B0D",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 32458
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "湋",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 37523,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:012",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+6E4B",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 37525
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "濆",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 37750,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:013",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+6FC6",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 37752
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "煇",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 40683,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:014",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+7147",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 40685
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "獁",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 43770,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:015",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+7341",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 43772
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "璊",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 44918,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:016",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+748A",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 44920
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "瘺",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 47481,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:017",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+763A",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 47483
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "碸",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 51098,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:018",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+78B8",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 51100
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "竪",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 54514,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:019",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+7AEA",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 54516
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "糺",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 57718,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:020",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+7CFA",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 57720
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "綆",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 57848,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:021",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+7D86",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 57850
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "緟",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 57935,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:022",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+7DDF",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 57937
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "縺",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 58024,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:023",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+7E3A",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 58026
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "罃",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 59344,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:024",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+7F43",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 59346
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "艣",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 63479,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:025",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+8263",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 63481
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "蕝",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 64885,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:026",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+855D",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 64887
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "蟶",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 68544,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:027",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+87F6",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 68546
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "覛",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 71331,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:028",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+899B",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 71333
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "詘",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 72298,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:029",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+8A58",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 72300
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "諰",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 72445,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:030",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+8AF0",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 72447
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "譾",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 72584,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:031",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+8B7E",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 72586
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "賾",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 74572,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:032",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+8CFE",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 74574
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "軉",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 77085,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:033",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+8EC9",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 77087
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "輢",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 77531,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:034",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+8F22",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 77533
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "釟",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 81457,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:035",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+91DF",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 81459
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "銁",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 81618,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:036",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+9281",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 81620
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "錜",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 81769,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:037",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+931C",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 81771
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "鐏",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 82007,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:038",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+940F",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 82009
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "鞾",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 86900,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:039",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+97BE",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 86902
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "顢",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 87874,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:040",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+9862",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 87876
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "餳",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 89069,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:041",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+9933",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 89071
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "駫",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 90150,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:042",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+99EB",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 90152
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "騴",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 90223,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:043",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+9A34",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 90225
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "魵",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 92578,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:044",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+9B75",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 92580
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "鯄",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 92657,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:045",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+9BC4",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 92659
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "鰜",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 92745,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:046",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+9C1C",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 92747
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "鳽",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 94099,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:047",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+9CFD",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 94101
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "鶄",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 94233,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:048",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+9D84",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 94235
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "鸋",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 94367,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:049",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+9E0B",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 94369
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "龓",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 97551,
+      "review_prior": "review_prior_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_medium:050",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+9F93",
+      "unicode_block": "CJK Unified Ideographs",
+      "worksheet_row": 97553
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "㐁",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 30,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:001",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+3401",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 32
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "㒋",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 1498,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:002",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+348B",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 1500
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "㔐",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 4607,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:003",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+3510",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 4609
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "㖩",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 7693,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:004",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+35A9",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 7695
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "㘲",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 11464,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:005",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+3632",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 11466
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "㛋",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 14298,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:006",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+36CB",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 14300
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "㝁",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 15867,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:007",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+3741",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 15869
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "㟡",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 18154,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:008",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+37E1",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 18156
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "㡱",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 20615,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:009",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+3871",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 20617
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "㣱",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 22132,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:010",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+38F1",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 22134
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "㦊",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 22926,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:011",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+398A",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 22928
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "㨜",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 25815,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:012",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+3A1C",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 25817
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "㪘",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 28303,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:013",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+3A98",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 28305
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "㬻",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 30982,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:014",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+3B3B",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 30984
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "㯗",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 31742,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:015",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+3BD7",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 31744
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "㱜",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 35272,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:016",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+3C5C",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 35274
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "㳶",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 37115,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:017",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+3CF6",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 37117
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "㶘",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 37275,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:018",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+3D98",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 37277
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "㸹",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 43084,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:019",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+3E39",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 43086
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "㻇",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 44742,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:020",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+3EC7",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 44744
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "㽋",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 46131,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:021",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+3F4B",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 46133
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "㿍",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 47384,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:022",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+3FCD",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 47386
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䁏",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 49313,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:023",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+404F",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 49315
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䃃",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 50940,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:024",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+40C3",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 50942
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䅅",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 52940,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:025",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+4145",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 52942
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䇂",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 54474,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:026",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+41C2",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 54476
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䈿",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 54984,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:027",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+423F",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 54986
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䊮",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 56674,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:028",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+42AE",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 56676
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䌭",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 57696,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:029",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+432D",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 57698
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䎵",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 60879,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:030",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+43B5",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 60881
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䐪",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 61578,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:031",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+442A",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 61580
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䒥",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 64265,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:032",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+44A5",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 64267
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䔪",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 64393,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:033",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+452A",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 64395
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䖯",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 68212,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:034",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+45AF",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 68214
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䘾",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 70210,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:035",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+463E",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 70212
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䚵",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 72100,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:036",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+46B5",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 72102
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䜻",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 73804,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:037",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+473B",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 73806
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䞹",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 75289,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:038",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+47B9",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 75291
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䠰",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 75952,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:039",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+4830",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 75954
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䢥",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 78480,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:040",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+48A5",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 78482
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䤚",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 80985,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:041",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+491A",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 80987
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䦲",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 83971,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:042",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+49B2",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 83973
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䨽",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 86567,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:043",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+4A3D",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 86569
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䪷",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 87712,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:044",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+4AB7",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 87714
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䬱",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 88932,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:045",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+4B31",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 88934
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䮧",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 90056,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:046",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+4BA7",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 90058
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䰥",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 92032,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:047",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+4C25",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 92034
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䲯",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 93975,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:048",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+4CAF",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 93977
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䴶",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 95894,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:049",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+4D36",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 95896
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "䶴",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 97659,
+      "review_prior": "review_prior_low_medium",
+      "review_queue": "agent_standard_rule_learning_candidate",
+      "sample_id": "review_prior_low_medium:050",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+4DB4",
+      "unicode_block": "CJK Unified Ideographs Extension A",
+      "worksheet_row": 97661
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𠀁",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 50,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:001",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+20001",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 52
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𠏤",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 2468,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:002",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+203E4",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 2470
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𠘇",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 4082,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:003",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+20607",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 4084
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𠤪",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 5895,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:004",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+2092A",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 5897
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𠳎",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 8523,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:005",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+20CCE",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 8525
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𫪘",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 9953,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:006",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+2BA98",
+      "unicode_block": "CJK Unified Ideographs Extension E",
+      "worksheet_row": 9955
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𡌄",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 12013,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:007",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+21304",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 12015
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𡗇",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 13541,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:008",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+215C7",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 13543
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𭒭",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 15698,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:009",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+2D4AD",
+      "unicode_block": "CJK Unified Ideographs Extension F",
+      "worksheet_row": 15700
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𡰑",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 17429,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:010",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+21C11",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 17431
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𰎪",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 19449,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:011",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+303AA",
+      "unicode_block": "CJK Unified Ideographs Extension G",
+      "worksheet_row": 19451
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𫸓",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 21277,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:012",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+2BE13",
+      "unicode_block": "CJK Unified Ideographs Extension E",
+      "worksheet_row": 21279
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𢝚",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 23752,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:013",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+2275A",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 23754
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𫻪",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 25225,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:014",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+2BEEA",
+      "unicode_block": "CJK Unified Ideographs Extension E",
+      "worksheet_row": 25227
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𫼬",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 27593,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:015",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+2BF2C",
+      "unicode_block": "CJK Unified Ideographs Extension E",
+      "worksheet_row": 27595
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𱡩",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 29205,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:016",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+31869",
+      "unicode_block": "CJK Unified Ideographs Extension H",
+      "worksheet_row": 29207
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𬁱",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 31124,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:017",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+2C071",
+      "unicode_block": "CJK Unified Ideographs Extension E",
+      "worksheet_row": 31126
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𪳭",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 33826,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:018",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+2ACED",
+      "unicode_block": "CJK Unified Ideographs Extension C",
+      "worksheet_row": 33828
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𣨳",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 35468,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:019",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+23A33",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 35470
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𣹺",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 38411,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:020",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+23E7A",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 38413
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𰛣",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 39835,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:021",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+306E3",
+      "unicode_block": "CJK Unified Ideographs Extension G",
+      "worksheet_row": 39837
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𬉽",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 41868,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:022",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+2C27D",
+      "unicode_block": "CJK Unified Ideographs Extension E",
+      "worksheet_row": 41870
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𭷩",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 43483,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:023",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+2DDE9",
+      "unicode_block": "CJK Unified Ideographs Extension F",
+      "worksheet_row": 43485
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𭹋",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 45697,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:024",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+2DE4B",
+      "unicode_block": "CJK Unified Ideographs Extension F",
+      "worksheet_row": 45699
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𤷭",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 47726,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:025",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+24DED",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 47728
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𥅩",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 49658,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:026",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+25169",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 49660
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𥕷",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 51555,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:027",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+25577",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 51557
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𥡷",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 53441,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:028",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+25877",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 53443
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𥰆",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 55596,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:029",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+25C06",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 55598
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𬖮",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 57201,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:030",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+2C5AE",
+      "unicode_block": "CJK Unified Ideographs Extension E",
+      "worksheet_row": 57203
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𦉜",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 59414,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:031",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+2625C",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 59416
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𰭷",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 61263,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:032",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+30B77",
+      "unicode_block": "CJK Unified Ideographs Extension G",
+      "worksheet_row": 61265
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𮍭",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 63209,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:033",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+2E36D",
+      "unicode_block": "CJK Unified Ideographs Extension F",
+      "worksheet_row": 63211
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𦺱",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 66037,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:034",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+26EB1",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 66039
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𮒿",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 67458,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:035",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+2E4BF",
+      "unicode_block": "CJK Unified Ideographs Extension F",
+      "worksheet_row": 67460
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𫊹",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 69533,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:036",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+2B2B9",
+      "unicode_block": "CJK Unified Ideographs Extension C",
+      "worksheet_row": 69535
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𧡱",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 71478,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:037",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+27871",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 71480
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𲂔",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 73691,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:038",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+32094",
+      "unicode_block": "CJK Unified Ideographs Extension H",
+      "worksheet_row": 73693
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𫎶",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 75676,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:039",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+2B3B6",
+      "unicode_block": "CJK Unified Ideographs Extension C",
+      "worksheet_row": 75678
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𨍀",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 77761,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:040",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+28340",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 77763
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𲅞",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 79477,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:041",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+3215E",
+      "unicode_block": "CJK Unified Ideographs Extension H",
+      "worksheet_row": 79479
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𨩜",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 82425,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:042",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+28A5C",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 82427
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𨳾",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 84140,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:043",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+28CFE",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 84142
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𩂂",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 85992,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:044",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+29082",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 85994
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𩑽",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 87946,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:045",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+2947D",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 87948
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𲋟",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 89734,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:046",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+322DF",
+      "unicode_block": "CJK Unified Ideographs Extension H",
+      "worksheet_row": 89736
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𩯽",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 91749,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:047",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+29BFD",
+      "unicode_block": "CJK Unified Ideographs Extension B",
+      "worksheet_row": 91751
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𱈚",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 93824,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:048",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+3121A",
+      "unicode_block": "CJK Unified Ideographs Extension G",
+      "worksheet_row": 93826
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𮭹",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 95870,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:049",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+2EB79",
+      "unicode_block": "CJK Unified Ideographs Extension F",
+      "worksheet_row": 95872
+    },
+    {
+      "allowed_next_action": "human_review_or_agent_rule_learning_design_only",
+      "char": "𲎯",
+      "feature_flags": {
+        "allowed_structure_label_set_available": true,
+        "has_dictionary_review_hit": false,
+        "has_stronger_authoritative_row_level_ids": false,
+        "has_unresolved_structure_gap": true,
+        "has_wiki_cross_reference": false,
+        "unicode_identity_available": true
+      },
+      "offset": 97685,
+      "review_prior": "review_prior_low",
+      "review_queue": "agent_standard_extension_review_candidate",
+      "sample_id": "review_prior_low:050",
+      "score_status": "NOT_SCORED_AGENT_STANDARD_FEATURE_ONLY",
+      "source_gap_failure_codes": [
+        "MISSING_DECOMPOSITION_COMPONENTS",
+        "MISSING_STRUCTURE"
+      ],
+      "standard_level": "agent_standard_candidate_not_national_standard",
+      "unicode": "U+323AF",
+      "unicode_block": "CJK Unified Ideographs Extension H",
+      "worksheet_row": 97687
+    }
+  ],
+  "sampling_method": {
+    "method": "deterministic_even_spread_by_review_prior",
+    "quotas": {
+      "review_prior_low": 50,
+      "review_prior_low_medium": 50,
+      "review_prior_medium": 50
+    },
+    "random_seed": null,
+    "reason": "Use evenly spaced offsets inside each audited review-prior bucket so the sample can be reproduced without random state and without changing source data.",
+    "total_samples": 150
+  },
+  "summary": {
+    "cnbe_row_write_allowed": false,
+    "database_rebuild_allowed": false,
+    "duplicate_sample_key_count": 0,
+    "feature_rows": 73831,
+    "final_structure_labels_emitted": 0,
+    "forbidden_field_leak_count": 0,
+    "formal_gf0017_scoring_allowed": false,
+    "point_assignment_leak_count": 0,
+    "sample_prior_counts": {
+      "review_prior_low": 50,
+      "review_prior_low_medium": 50,
+      "review_prior_medium": 50
+    },
+    "sample_queue_counts": {
+      "agent_standard_extension_review_candidate": 50,
+      "agent_standard_rule_learning_candidate": 100
+    },
+    "sample_rows": 150,
+    "sample_unicode_block_counts": {
+      "CJK Unified Ideographs": 50,
+      "CJK Unified Ideographs Extension A": 50,
+      "CJK Unified Ideographs Extension B": 25,
+      "CJK Unified Ideographs Extension C": 3,
+      "CJK Unified Ideographs Extension E": 7,
+      "CJK Unified Ideographs Extension F": 6,
+      "CJK Unified Ideographs Extension G": 4,
+      "CJK Unified Ideographs Extension H": 5
+    },
+    "score_values_assigned": 0,
+    "source_asset_write_allowed": false,
+    "source_bucket_counts": {
+      "review_prior_low": 67946,
+      "review_prior_low_medium": 4805,
+      "review_prior_medium": 1080
+    }
+  }
+}

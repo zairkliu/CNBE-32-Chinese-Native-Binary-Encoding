@@ -1,0 +1,28 @@
+{
+  "authority_boundary": "ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD",
+  "character": "疢",
+  "fields": {
+    "glyph_analysis": "会意",
+    "normalized_structure": "",
+    "radical": "疒",
+    "raw_structure": "半包围结构",
+    "stroke_order": "413414334",
+    "total_strokes": "9",
+    "unicode_value": "CJK 75A2"
+  },
+  "found_field_count": 6,
+  "found_fields": [
+    "radical",
+    "total_strokes",
+    "unicode_value",
+    "stroke_order",
+    "raw_structure",
+    "glyph_analysis"
+  ],
+  "parse_status": "PARSED_WITHOUT_NORMALIZED_STRUCTURE",
+  "source_kind": "online_fetch",
+  "source_level": "network_cross_reference",
+  "source_path": "https://zdic.net/hans/%E7%96%A2",
+  "unicode_codepoint": "U+75A2",
+  "zdic_url": "https://www.zdic.net/hans/%E7%96%A2"
+}

@@ -1,0 +1,158 @@
+{
+  "checks": {
+    "conflicts_are_separated": true,
+    "forbidden_structure_labels_absent": true,
+    "no_cnbe32_writes": true,
+    "no_database_rebuild": true,
+    "source_packet_row_count_is_8105": true,
+    "tool_structures_approved_or_blank": true,
+    "zip_chars8105_row_count_is_8105": true,
+    "zip_chars_match_source_packet_set": true
+  },
+  "decision": {
+    "may_promote_to_national_standard": false,
+    "may_rebuild_database": false,
+    "may_use_as_agent_reference_candidates": true,
+    "may_write_cnbe32": false,
+    "recommended_next_step": "Review the gap-fill candidates first, and separately audit the conflicts before any source merge or encoding write."
+  },
+  "manifest": [
+    {
+      "compressed_size": 838,
+      "name": "server.py",
+      "size": 1751
+    },
+    {
+      "compressed_size": 257,
+      "name": "start.py",
+      "size": 303
+    },
+    {
+      "compressed_size": 66,
+      "name": "run.bat",
+      "size": 65
+    },
+    {
+      "compressed_size": 422,
+      "name": "static/index.html",
+      "size": 610
+    },
+    {
+      "compressed_size": 826,
+      "name": "static/style.css",
+      "size": 2187
+    },
+    {
+      "compressed_size": 1164,
+      "name": "static/script.js",
+      "size": 3267
+    },
+    {
+      "compressed_size": 2287,
+      "name": "radicals.py",
+      "size": 13449
+    },
+    {
+      "compressed_size": 2651,
+      "name": "dutizi.py",
+      "size": 10039
+    },
+    {
+      "compressed_size": 21378,
+      "name": "bujian.py",
+      "size": 72712
+    },
+    {
+      "compressed_size": 2455,
+      "name": "decomposer.py",
+      "size": 8438
+    },
+    {
+      "compressed_size": 632064,
+      "name": "ids_data_v6.json",
+      "size": 1948040
+    },
+    {
+      "compressed_size": 5331,
+      "name": "ids_data_v2.json",
+      "size": 18694
+    },
+    {
+      "compressed_size": 637,
+      "name": "ids_data.json",
+      "size": 1668
+    },
+    {
+      "compressed_size": 10282,
+      "name": "bujian_v2.json",
+      "size": 65512
+    },
+    {
+      "compressed_size": 20892,
+      "name": "chars8105.json",
+      "size": 56931
+    },
+    {
+      "compressed_size": 23666,
+      "name": "stroke_order_db.json",
+      "size": 296591
+    },
+    {
+      "compressed_size": 92889,
+      "name": "source_repo/data/full_table_index.json",
+      "size": 916563
+    }
+  ],
+  "mode": "hanzi_decomp_v03_8105_read_only_adapter",
+  "outputs": {
+    "all_rows_csv": "review_packets/8105_full/8105_hanzi_decomp_v03_adapter_all.csv",
+    "conflicts_csv": "review_packets/8105_full/8105_hanzi_decomp_v03_conflicts.csv",
+    "gap_fill_candidates_csv": "review_packets/8105_full/8105_hanzi_decomp_v03_gap_fill_candidates.csv",
+    "json_report": "reports/8105_hanzi_decomp_v03_adapter.json",
+    "markdown_report": "reports/8105_HANZI_DECOMP_V03_ADAPTER.md"
+  },
+  "overall_status": "PASS_HANZI_DECOMP_V03_ADAPTER_READY_FOR_REVIEW",
+  "report_schema_version": "1.0",
+  "summary": {
+    "cnbe32_rows_written": 0,
+    "database_rebuild_allowed": false,
+    "ids_data_rows": 88343,
+    "source_packet_rows": 8105,
+    "tool_8105_ids_or_dutizi_coverage": 8075,
+    "tool_confirms_current_rows": 6475,
+    "tool_conflict_rows": 357,
+    "tool_gap_fill_candidate_rows": 1243,
+    "tool_gap_rows": 30,
+    "tool_status_counts": {
+      "TOOL_CONFIRMS_CURRENT": 6475,
+      "TOOL_CONFLICT_REVIEW_REQUIRED": 357,
+      "TOOL_FILLS_CURRENT_GAP_REVIEW_REQUIRED": 1243,
+      "TOOL_GAP": 30
+    },
+    "tool_structure_counts": {
+      "UNRESOLVED": 30,
+      "上三包": 70,
+      "上下": 1705,
+      "上中下": 63,
+      "下三包": 7,
+      "全包围": 27,
+      "右上包": 52,
+      "左三包": 17,
+      "左上包": 288,
+      "左下包": 174,
+      "左中右": 26,
+      "左右": 5372,
+      "独体字": 255,
+      "镶嵌": 19
+    },
+    "zip_chars8105_rows": 8105
+  },
+  "tool_risks": {
+    "hardcoded_windows_base_path": true,
+    "opens_browser": true,
+    "starts_local_http_server": true,
+    "uses_subprocess": true,
+    "writes_files": true
+  },
+  "zip_path": "/Volumes/u盘 256g/hanzi_decomp_v0.3.zip"
+}

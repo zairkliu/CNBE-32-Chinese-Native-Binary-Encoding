@@ -1,13 +1,15 @@
 {
   "report_schema_version": 1,
-  "generated_at_utc": "2026-07-14T15:41:31.738041+00:00",
+  "generated_at_utc": "2026-07-17T03:39:15.095842+00:00",
   "audit_mode": "read_only_asset_confirmation",
   "summary": {
     "knowledge_root": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge",
-    "total_files": 222,
-    "total_size_bytes": 2579778009,
+    "total_files": 226,
+    "total_size_bytes": 2694069154,
     "suffix_counts": {
-      ".json": 217,
+      ".20260716t183315z": 2,
+      ".20260717t031651z": 1,
+      ".json": 218,
       ".md": 2,
       ".txt": 1,
       ".zip": 2
@@ -22,22 +24,22 @@
       "ocr_cihai_review_aid": 139,
       "ocr_review_aid": 20,
       "ocr_standard_review_aid": 31,
+      "other": 1,
       "primary_candidate": 2,
       "reference_index": 4,
       "reference_note_or_scan": 1,
-      "structured_reference": 1
+      "structured_reference": 4
     },
     "flag_counts": {
-      "count_mismatch": 2,
       "empty_file": 1,
-      "non_lf_line_endings": 194,
+      "non_lf_line_endings": 191,
       "ocr_low_confidence_review_only": 18,
       "unexpected_top_type": 1,
       "utf8_bom": 3,
       "zip_integrity_failed": 1
     },
-    "json_files": 217,
-    "json_parse_pass": 217,
+    "json_files": 218,
+    "json_parse_pass": 218,
     "json_parse_fail": 0,
     "zip_files": 2,
     "zip_integrity_pass": 1,
@@ -61,20 +63,20 @@
     }
   },
   "gates": {
-    "asset_confirmation_status": "ACTION_REQUIRED",
-    "blocker_count": 3,
-    "warning_count": 0,
-    "encoding_generation_gate": "NO_GO",
-    "sqlite_build_gate": "NO_GO",
+    "asset_confirmation_status": "PASS_WITH_NOTES",
+    "blocker_count": 0,
+    "warning_count": 1,
+    "encoding_generation_gate": "REVIEW_REQUIRED",
+    "sqlite_build_gate": "REVIEW_REQUIRED",
     "sdk_replacement_allowed": false,
     "external_assets_imported": false
   },
   "action_items": [
     {
-      "severity": "BLOCKER",
+      "severity": "WARN",
       "asset": "Unihan.zip",
       "issue": "zip archive failed Python zipfile integrity check",
-      "next_step": "exclude or replace before treating as authoritative input"
+      "next_step": "keep excluded because canonical Unihan2.zip passes integrity"
     },
     {
       "severity": "INFO",
@@ -183,18 +185,6 @@
       "asset": "ocr/ocr_terminology.json",
       "issue": "OCR confidence is low",
       "next_step": "use as reviewer navigation aid only, not as direct authority"
-    },
-    {
-      "severity": "BLOCKER",
-      "asset": "structured/base_character_data.json",
-      "issue": "primary candidate count does not match 8105 target",
-      "next_step": "reconcile missing or duplicate basic CJK entry before encoding generation"
-    },
-    {
-      "severity": "BLOCKER",
-      "asset": "structured/cnbe_character_knowledge.json",
-      "issue": "primary candidate count does not match 8105 target",
-      "next_step": "reconcile missing or duplicate basic CJK entry before encoding generation"
     }
   ],
   "assets": [
@@ -6976,22 +6966,22 @@
     {
       "relative_path": "references.json",
       "suffix": ".json",
-      "size_bytes": 1871,
-      "sha256": "a468d26f9da7269c9bba6c827efd2b90e074d21915a0409323a717dc91845771",
+      "size_bytes": 2381,
+      "sha256": "b32d25c2c89783dff7d1334ac04c22fb634ee4d5e41c0f0a85fc758daf415292",
       "category": "json_reference",
       "text": {
         "utf8_bom": false,
-        "contains_crlf": true,
+        "contains_crlf": false,
         "contains_bare_cr": false,
-        "line_count": 55,
-        "ends_with_lf": false,
-        "max_line_length": 88,
+        "line_count": 65,
+        "ends_with_lf": true,
+        "max_line_length": 106,
         "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
         "top_type": "dict",
-        "top_count": 8,
+        "top_count": 9,
         "top_keys_sample": [
           "reference_1",
           "reference_2",
@@ -7000,17 +6990,22 @@
           "reference_5",
           "reference_6",
           "reference_7",
-          "reference_8"
+          "reference_8",
+          "reference_9"
         ],
         "first_value_keys": [
           "name",
           "source",
           "standards"
         ]
-      },
-      "flags": [
-        "non_lf_line_endings"
-      ]
+      }
+    },
+    {
+      "relative_path": "references.json.bak.20260717T031651Z",
+      "suffix": ".20260717t031651z",
+      "size_bytes": 1871,
+      "sha256": "a468d26f9da7269c9bba6c827efd2b90e074d21915a0409323a717dc91845771",
+      "category": "other"
     },
     {
       "relative_path": "search_summary.json",
@@ -7156,52 +7151,52 @@
     {
       "relative_path": "structured/base_character_data.json",
       "suffix": ".json",
-      "size_bytes": 2258871,
-      "sha256": "f0f5a765f8717769211bfde19d6bcfdf25915111a09bd0044ea9467a06a224cf",
+      "size_bytes": 2493021,
+      "sha256": "3590a9372f46dca3baade96bb7196db7ad51142807630860a4b2f500f90b33eb",
       "category": "primary_candidate",
       "text": {
         "utf8_bom": false,
-        "contains_crlf": true,
+        "contains_crlf": false,
         "contains_bare_cr": false,
-        "line_count": 169470,
-        "ends_with_lf": false,
-        "max_line_length": 96,
+        "line_count": 169496,
+        "ends_with_lf": true,
+        "max_line_length": 98,
         "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
         "top_type": "dict",
-        "top_count": 8104,
+        "top_count": 8105,
         "top_keys_sample": [
-          "一",
-          "乙",
-          "二",
-          "十",
-          "丁",
-          "厂",
-          "七",
-          "卜",
-          "八",
-          "人",
-          "入",
-          "乂",
-          "儿",
-          "匕",
-          "几",
-          "九",
-          "刁",
-          "了",
-          "刀",
-          "力"
+          "㑇",
+          "㑊",
+          "㕮",
+          "㘎",
+          "㙍",
+          "㙘",
+          "㙦",
+          "㛃",
+          "㛚",
+          "㛹",
+          "㟃",
+          "㠇",
+          "㠓",
+          "㤘",
+          "㥄",
+          "㧐",
+          "㧑",
+          "㧟",
+          "㫰",
+          "㬊"
         ],
         "first_value_keys": [
           "char",
+          "level",
+          "standard_rank",
           "stroke_count",
           "stroke_order",
           "stroke_order_str",
-          "standard_rank",
-          "unicode",
-          "level"
+          "unicode"
         ]
       },
       "expected_checks": {
@@ -7209,14 +7204,17 @@
         "expected_top_type": "dict",
         "top_type_status": "PASS",
         "expected_count": 8105,
-        "actual_count": 8104,
-        "count_status": "FAIL",
-        "count_delta": 1
-      },
-      "flags": [
-        "non_lf_line_endings",
-        "count_mismatch"
-      ]
+        "actual_count": 8105,
+        "count_status": "PASS",
+        "count_delta": 0
+      }
+    },
+    {
+      "relative_path": "structured/base_character_data.json.bak.20260716T183315Z",
+      "suffix": ".20260716t183315z",
+      "size_bytes": 2258871,
+      "sha256": "f0f5a765f8717769211bfde19d6bcfdf25915111a09bd0044ea9467a06a224cf",
+      "category": "structured_reference"
     },
     {
       "relative_path": "structured/cihai_search_index.json",
@@ -7272,36 +7270,36 @@
     {
       "relative_path": "structured/cnbe_character_knowledge.json",
       "suffix": ".json",
-      "size_bytes": 18661305,
-      "sha256": "490625195ecc5fa2f51f56eada38b5442809e920927f1a4b03c65a080a0c3add",
+      "size_bytes": 18947148,
+      "sha256": "976a2f314c158b481b730493799240079d638573490f1be84e006a76eb2fb63f",
       "category": "primary_candidate",
       "text": {
         "utf8_bom": false,
-        "contains_crlf": true,
+        "contains_crlf": false,
         "contains_bare_cr": false,
-        "line_count": 221802,
-        "ends_with_lf": false,
-        "max_line_length": 3014,
+        "line_count": 221841,
+        "ends_with_lf": true,
+        "max_line_length": 3016,
         "utf8_status": "PASS"
       },
       "json": {
         "parse_status": "PASS",
         "top_type": "list",
-        "top_count": 8104,
+        "top_count": 8105,
         "first_item_keys": [
           "char",
-          "stroke_count",
-          "stroke_order",
-          "stroke_order_str",
-          "standard_rank",
-          "unicode",
-          "level",
-          "has_dictionary_entry",
           "definition_sample",
-          "wiki_summary",
+          "has_dictionary_entry",
           "has_wiki_entry",
           "kangxi_def",
           "kangxi_volume",
+          "level",
+          "standard_rank",
+          "stroke_count",
+          "stroke_order",
+          "stroke_order_str",
+          "unicode",
+          "wiki_summary",
           "zhonghua_def"
         ]
       },
@@ -7310,14 +7308,17 @@
         "expected_top_type": "list",
         "top_type_status": "PASS",
         "expected_count": 8105,
-        "actual_count": 8104,
-        "count_status": "FAIL",
-        "count_delta": 1
-      },
-      "flags": [
-        "non_lf_line_endings",
-        "count_mismatch"
-      ]
+        "actual_count": 8105,
+        "count_status": "PASS",
+        "count_delta": 0
+      }
+    },
+    {
+      "relative_path": "structured/cnbe_character_knowledge.json.bak.20260716T183315Z",
+      "suffix": ".20260716t183315z",
+      "size_bytes": 18661305,
+      "sha256": "490625195ecc5fa2f51f56eada38b5442809e920927f1a4b03c65a080a0c3add",
+      "category": "structured_reference"
     },
     {
       "relative_path": "structured/definitions_index.json",
@@ -7368,6 +7369,60 @@
       "flags": [
         "non_lf_line_endings"
       ]
+    },
+    {
+      "relative_path": "structured/dictionary_context_index.json",
+      "suffix": ".json",
+      "size_bytes": 92848595,
+      "sha256": "38370b4660a738bb5295fbeb87f0a673f4f32b56d013754244c6122f420c28cd",
+      "category": "structured_reference",
+      "text": {
+        "utf8_bom": false,
+        "contains_crlf": false,
+        "contains_bare_cr": false,
+        "line_count": 1204577,
+        "ends_with_lf": true,
+        "max_line_length": 11113,
+        "utf8_status": "PASS"
+      },
+      "json": {
+        "parse_status": "PASS",
+        "top_type": "dict",
+        "top_count": 49085,
+        "top_keys_sample": [
+          "㐀",
+          "㐁",
+          "㐄",
+          "㐅",
+          "㐌",
+          "㐖",
+          "㐜",
+          "㐡",
+          "㐤",
+          "㐨",
+          "㐩",
+          "㐬",
+          "㐭",
+          "㐯",
+          "㐰",
+          "㐱",
+          "㐲",
+          "㐳",
+          "㐴",
+          "㐸"
+        ],
+        "first_value_keys": [
+          "char",
+          "dictionary_context_entries",
+          "has_kangxi_context",
+          "has_zhonghua_dazidian_context",
+          "import_status",
+          "source_count",
+          "source_grade",
+          "standard_level",
+          "unicode"
+        ]
+      }
     },
     {
       "relative_path": "unicode_rsindex.json",

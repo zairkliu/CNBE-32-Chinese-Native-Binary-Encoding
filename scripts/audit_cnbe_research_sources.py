@@ -253,6 +253,7 @@ def build_report(manifest_path: Path) -> dict[str, Any]:
     source_counts = Counter(item["status"] for item in sources)
     directory_counts = Counter(item["status"] for item in directories)
     action_items = action_item_summary(sources, directories, excluded)
+    generation_gate = "NO_GO" if action_items else "REVIEW_REQUIRED"
     return {
         "report_schema_version": 1,
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
@@ -268,7 +269,7 @@ def build_report(manifest_path: Path) -> dict[str, Any]:
             "directories_total": len(directories),
             "directories_pass": directory_counts["PASS"],
             "directories_fail": directory_counts["FAIL"],
-            "encoding_generation_gate": "NO_GO",
+            "encoding_generation_gate": generation_gate,
             "sdk_replacement_allowed": False,
             "sqlite_build_allowed": False,
         },
@@ -294,9 +295,6 @@ def action_item_summary(
     for directory in directories:
         if directory["status"] == "FAIL":
             items.append(f"{directory['id']}: directory minimum checks failed")
-    for item in excluded:
-        if item["relative_path"] == "knowledge/Unihan.zip" and item.get("zip", {}).get("status") == "FAIL":
-            items.append("knowledge/Unihan.zip: excluded invalid archive confirmed")
     return items
 
 

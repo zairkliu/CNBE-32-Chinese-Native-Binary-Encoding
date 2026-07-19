@@ -1,0 +1,28 @@
+{
+  "authority_boundary": "ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD",
+  "character": "哉",
+  "fields": {
+    "glyph_analysis": "形声",
+    "normalized_structure": "",
+    "radical": "口",
+    "raw_structure": "半包围结构",
+    "stroke_order": "121251534",
+    "total_strokes": "9",
+    "unicode_value": "CJK 54C9"
+  },
+  "found_field_count": 6,
+  "found_fields": [
+    "radical",
+    "total_strokes",
+    "unicode_value",
+    "stroke_order",
+    "raw_structure",
+    "glyph_analysis"
+  ],
+  "parse_status": "PARSED_WITHOUT_NORMALIZED_STRUCTURE",
+  "source_kind": "online_fetch",
+  "source_level": "network_cross_reference",
+  "source_path": "https://zdic.net/hans/%E5%93%89",
+  "unicode_codepoint": "U+54C9",
+  "zdic_url": "https://www.zdic.net/hans/%E5%93%89"
+}

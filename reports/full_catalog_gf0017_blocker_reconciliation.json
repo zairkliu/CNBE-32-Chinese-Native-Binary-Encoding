@@ -1,0 +1,65 @@
+{
+  "authority_boundary": {
+    "does_not_modify_knowledge_assets": true,
+    "does_not_publish_release": true,
+    "does_not_rebuild_database": true,
+    "does_not_score_rows": true,
+    "preserves_source_gap": true
+  },
+  "blockers": [
+    {
+      "allowed_now": "document decision options only",
+      "asset": "Unihan.zip",
+      "automation_level": "requires_human_or_network_asset_decision",
+      "batch_scoring_impact": "blocks external archive authority but does not block 8105 Unicode identity gates already passed",
+      "blocker_code": "CORRUPT_EXTERNAL_ARCHIVE",
+      "classification": "EXCLUDE_OR_REPLACE_EXTERNAL_ARCHIVE",
+      "forbidden_now": "delete, replace, or download archive without authorization",
+      "issue": "zip archive failed Python zipfile integrity check",
+      "next_step": "exclude or replace before treating as authoritative input",
+      "recommended_action": "Use the already verified Unihan2.zip or exclude Unihan.zip from authoritative inputs after human approval.",
+      "severity": "BLOCKER"
+    }
+  ],
+  "decision_point": {
+    "decision_needed": "Choose whether to exclude/replace the corrupt Unihan.zip and whether to authorize read-only diff packet generation for the two structured 8105 knowledge files.",
+    "requires_authorization_before_write": [
+      "delete or replace Unihan.zip",
+      "modify structured/base_character_data.json",
+      "modify structured/cnbe_character_knowledge.json",
+      "start batch GF0017 scoring",
+      "rebuild database"
+    ],
+    "requires_human_decision": true,
+    "safe_next_step_without_data_write": "create read-only structured-knowledge diff packet"
+  },
+  "inputs": {
+    "join_schema": "reports/full_catalog_gf0017_join_schema.json",
+    "knowledge_inventory": "reports/cnbe_research_knowledge_inventory.json",
+    "source_audit": "reports/cnbe_research_source_audit.json",
+    "source_mapping": "reports/full_catalog_gf0017_source_mapping.json"
+  },
+  "mode": "read_only_full_catalog_gf0017_blocker_reconciliation",
+  "next_artifacts": [
+    "reports/structured_8105_knowledge_diff_packet.json",
+    "reports/STRUCTURED_8105_KNOWLEDGE_DIFF_PACKET.md",
+    "scripts/diff_structured_8105_knowledge.py"
+  ],
+  "next_workflow_status": "DECISION_POINT_REACHED_READ_ONLY_DIFF_ALLOWED",
+  "overall_status": "PASS",
+  "report_schema_version": "1.0",
+  "summary": {
+    "automation_level_counts": {
+      "requires_human_or_network_asset_decision": 1
+    },
+    "batch_scoring_allowed": false,
+    "blockers": 1,
+    "classification_counts": {
+      "EXCLUDE_OR_REPLACE_EXTERNAL_ARCHIVE": 1
+    },
+    "database_rebuild_allowed": false,
+    "join_schema_status": "PASS",
+    "source_audit_status": "ACTION_REQUIRED",
+    "source_mapping_status": "PASS"
+  }
+}

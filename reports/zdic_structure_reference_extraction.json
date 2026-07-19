@@ -1,0 +1,179 @@
+{
+  "checks": {
+    "bounded_character_list": true,
+    "does_not_assign_gf0017_points": true,
+    "does_not_rebuild_database": true,
+    "does_not_write_cnbe_rows": true,
+    "zdic_is_network_cross_reference_only": true
+  },
+  "decision": {
+    "may_assign_gf0017_points_directly": false,
+    "may_promote_to_national_standard": false,
+    "may_use_as_network_cross_reference": true,
+    "may_write_cnbe_rows": false,
+    "reason": "ZDIC fields are now machine-extracted as network cross-reference evidence. They can reduce manual lookup work but still require standards-aware review before scoring or encoding changes."
+  },
+  "mode": "zdic_structure_reference_extraction",
+  "next_workflow_status": "ZDIC_STRUCTURE_REFERENCES_AVAILABLE_FOR_REVIEW_NOT_SCORING",
+  "outputs": {
+    "csv": "review_packets/300_character_8105_pilot/zdic_structure_reference_extraction.csv",
+    "json_report": "reports/zdic_structure_reference_extraction.json",
+    "markdown_report": "reports/ZDIC_STRUCTURE_REFERENCE_EXTRACTION.md"
+  },
+  "overall_status": "PASS_ZDIC_STRUCTURE_REFERENCE_EXTRACTION_READY",
+  "records": [
+    {
+      "authority_boundary": "ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD",
+      "character": "丁",
+      "fields": {
+        "glyph_analysis": "象形",
+        "normalized_structure": "独体字",
+        "radical": "一",
+        "raw_structure": "单一结构",
+        "stroke_order": "12",
+        "total_strokes": "2",
+        "unicode_value": "CJK 4E01"
+      },
+      "found_field_count": 7,
+      "found_fields": [
+        "radical",
+        "total_strokes",
+        "unicode_value",
+        "stroke_order",
+        "raw_structure",
+        "normalized_structure",
+        "glyph_analysis"
+      ],
+      "parse_status": "PARSED_WITH_STRUCTURE",
+      "source_kind": "online_fetch",
+      "source_level": "network_cross_reference",
+      "source_path": "https://zdic.net/hans/%E4%B8%81",
+      "unicode_codepoint": "U+4E01",
+      "zdic_url": "https://www.zdic.net/hans/%E4%B8%81"
+    },
+    {
+      "authority_boundary": "ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD",
+      "character": "已",
+      "fields": {
+        "glyph_analysis": "",
+        "normalized_structure": "独体字",
+        "radical": "己",
+        "raw_structure": "单一结构",
+        "stroke_order": "515",
+        "total_strokes": "3",
+        "unicode_value": "CJK 5DF2"
+      },
+      "found_field_count": 6,
+      "found_fields": [
+        "radical",
+        "total_strokes",
+        "unicode_value",
+        "stroke_order",
+        "raw_structure",
+        "normalized_structure"
+      ],
+      "parse_status": "PARSED_WITH_STRUCTURE",
+      "source_kind": "online_fetch",
+      "source_level": "network_cross_reference",
+      "source_path": "https://zdic.net/hans/%E5%B7%B2",
+      "unicode_codepoint": "U+5DF2",
+      "zdic_url": "https://www.zdic.net/hans/%E5%B7%B2"
+    },
+    {
+      "authority_boundary": "ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD",
+      "character": "亡",
+      "fields": {
+        "glyph_analysis": "会意",
+        "normalized_structure": "独体字",
+        "radical": "亠",
+        "raw_structure": "单一结构",
+        "stroke_order": "415",
+        "total_strokes": "3",
+        "unicode_value": "CJK 4EA1"
+      },
+      "found_field_count": 7,
+      "found_fields": [
+        "radical",
+        "total_strokes",
+        "unicode_value",
+        "stroke_order",
+        "raw_structure",
+        "normalized_structure",
+        "glyph_analysis"
+      ],
+      "parse_status": "PARSED_WITH_STRUCTURE",
+      "source_kind": "online_fetch",
+      "source_level": "network_cross_reference",
+      "source_path": "https://zdic.net/hans/%E4%BA%A1",
+      "unicode_codepoint": "U+4EA1",
+      "zdic_url": "https://www.zdic.net/hans/%E4%BA%A1"
+    },
+    {
+      "authority_boundary": "ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD",
+      "character": "与",
+      "fields": {
+        "glyph_analysis": "",
+        "normalized_structure": "独体字",
+        "radical": "一",
+        "raw_structure": "单一结构",
+        "stroke_order": "151",
+        "total_strokes": "3",
+        "unicode_value": "CJK 4E0E"
+      },
+      "found_field_count": 6,
+      "found_fields": [
+        "radical",
+        "total_strokes",
+        "unicode_value",
+        "stroke_order",
+        "raw_structure",
+        "normalized_structure"
+      ],
+      "parse_status": "PARSED_WITH_STRUCTURE",
+      "source_kind": "online_fetch",
+      "source_level": "network_cross_reference",
+      "source_path": "https://zdic.net/hans/%E4%B8%8E",
+      "unicode_codepoint": "U+4E0E",
+      "zdic_url": "https://www.zdic.net/hans/%E4%B8%8E"
+    },
+    {
+      "authority_boundary": "ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD",
+      "character": "焱",
+      "fields": {
+        "glyph_analysis": "会意",
+        "normalized_structure": "上下",
+        "radical": "火",
+        "raw_structure": "上下结构",
+        "stroke_order": "433443344334",
+        "total_strokes": "12",
+        "unicode_value": "CJK 7131"
+      },
+      "found_field_count": 7,
+      "found_fields": [
+        "radical",
+        "total_strokes",
+        "unicode_value",
+        "stroke_order",
+        "raw_structure",
+        "normalized_structure",
+        "glyph_analysis"
+      ],
+      "parse_status": "PARSED_WITH_STRUCTURE",
+      "source_kind": "local_snapshot",
+      "source_level": "network_cross_reference",
+      "source_path": "reports/zdic_snapshots/U_7131_dom_snapshot.txt",
+      "unicode_codepoint": "U+7131",
+      "zdic_url": "https://www.zdic.net/hans/%E7%84%B1"
+    }
+  ],
+  "report_schema_version": "1.0",
+  "summary": {
+    "cnbe_rows_written": 0,
+    "database_rebuild_allowed": false,
+    "gf0017_points_assigned": 0,
+    "online_fetch_enabled": true,
+    "parsed_with_structure": 5,
+    "records_with_any_fields": 5,
+    "requested_chars": 5
+  }
+}

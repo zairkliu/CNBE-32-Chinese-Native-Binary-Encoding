@@ -1,0 +1,6 @@
+character,unicode_codepoint,zdic_url,source_kind,parse_status,radical,total_strokes,unicode_value,stroke_order,raw_structure,normalized_structure,glyph_analysis,authority_boundary
+丁,U+4E01,https://www.zdic.net/hans/%E4%B8%81,online_fetch,PARSED_WITH_STRUCTURE,一,2,CJK 4E01,12,单一结构,独体字,象形,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD
+已,U+5DF2,https://www.zdic.net/hans/%E5%B7%B2,online_fetch,PARSED_WITH_STRUCTURE,己,3,CJK 5DF2,515,单一结构,独体字,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD
+亡,U+4EA1,https://www.zdic.net/hans/%E4%BA%A1,online_fetch,PARSED_WITH_STRUCTURE,亠,3,CJK 4EA1,415,单一结构,独体字,会意,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD
+与,U+4E0E,https://www.zdic.net/hans/%E4%B8%8E,online_fetch,PARSED_WITH_STRUCTURE,一,3,CJK 4E0E,151,单一结构,独体字,,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD
+焱,U+7131,https://www.zdic.net/hans/%E7%84%B1,local_snapshot,PARSED_WITH_STRUCTURE,火,12,CJK 7131,433443344334,上下结构,上下,会意,ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD

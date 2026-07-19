@@ -1,0 +1,44 @@
+{
+  "checks": {
+    "component_names_remain_blocked": true,
+    "independent_character_rule_remains_blocked": true,
+    "no_cnbe_rows_written": true,
+    "no_database_rebuild": true,
+    "row_count_is_8105": true,
+    "standardizer_passed": true,
+    "stroke_shape_remains_blocked": true
+  },
+  "decision": {
+    "may_rebuild_database": false,
+    "may_review_full_8105_structure_scores": true,
+    "may_write_cnbe_rows": false,
+    "reason": "Full 8105 structure-related scores are assigned only where standard-side structure, decomposition, component, and radical evidence is complete. Remaining rows are routed to gap repair."
+  },
+  "mode": "full_8105_no_legacy_gf0017_structure_item_scoring",
+  "next_workflow_status": "READY_FOR_FULL_8105_GAP_REPAIR_AND_HUMAN_REVIEW",
+  "outputs": {
+    "json_report": "reports/8105_full_no_legacy_gf0017_structure_scoring.json",
+    "markdown_report": "reports/8105_FULL_NO_LEGACY_GF0017_STRUCTURE_SCORING.md",
+    "scoring_csv": "review_packets/8105_full/8105_full_no_legacy_gf0017_structure_scoring.csv"
+  },
+  "overall_status": "PASS_8105_FULL_NO_LEGACY_GF0017_STRUCTURE_SCORING",
+  "report_schema_version": "1.0",
+  "summary": {
+    "cnbe_rows_written": 0,
+    "database_rebuild_allowed": false,
+    "max_assigned_score": 32,
+    "min_assigned_score": 6,
+    "new_points_per_complete_row": 26,
+    "row_score_status_counts": {
+      "BASE_SCORE_ONLY_STRUCTURE_ITEMS_BLOCKED": 1537,
+      "STRUCTURE_ITEMS_SCORED_REMAINING_ITEMS_BLOCKED": 6568
+    },
+    "rows_with_structure_item_score": 6568,
+    "rows_without_structure_item_score": 1537,
+    "score_counts": {
+      "32": 6568,
+      "6": 1537
+    },
+    "scored_rows": 8105
+  }
+}

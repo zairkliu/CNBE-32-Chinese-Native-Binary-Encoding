@@ -1,19 +1,19 @@
 {
   "report_schema_version": 1,
-  "generated_at_utc": "2026-07-14T14:52:01.060918+00:00",
+  "generated_at_utc": "2026-07-17T03:39:15.634471+00:00",
   "audit_mode": "read_only_external_research_exploration",
   "manifest": "/Users/liuzhaoqi/Documents/Codex/2026-07-09/wan/CNBE-32-Chinese-Native-Binary-Encoding/data/sources/cnbe-research-local.json",
   "source_root": "/Users/liuzhaoqi/Documents/cnbe-research",
   "summary": {
-    "status": "ACTION_REQUIRED",
+    "status": "PASS",
     "sources_total": 18,
-    "sources_pass": 16,
-    "sources_attention": 2,
+    "sources_pass": 18,
+    "sources_attention": 0,
     "sources_fail": 0,
     "directories_total": 3,
     "directories_pass": 3,
     "directories_fail": 0,
-    "encoding_generation_gate": "NO_GO",
+    "encoding_generation_gate": "REVIEW_REQUIRED",
     "sdk_replacement_allowed": false,
     "sqlite_build_allowed": false
   },
@@ -40,13 +40,13 @@
       "kind": "codex_skill",
       "acceptance": "workflow_source",
       "exists": true,
-      "size_bytes": 5506,
-      "expected_size_bytes": 5506,
-      "sha256": "8d7377f07944db42c9ecf9cb42c218b73a39e5a3fb8a77f6d692bcf6a3a87349",
-      "expected_sha256": "8d7377f07944db42c9ecf9cb42c218b73a39e5a3fb8a77f6d692bcf6a3a87349",
+      "size_bytes": 18236,
+      "expected_size_bytes": 18236,
+      "sha256": "d74ec0b7f4d7748b3e7b4fb85212acb73ad27e2ea4361f0d1fefb57b744a03b0",
+      "expected_sha256": "d74ec0b7f4d7748b3e7b4fb85212acb73ad27e2ea4361f0d1fefb57b744a03b0",
       "identity_status": "PASS",
       "text": {
-        "line_count": 132
+        "line_count": 660
       },
       "status": "PASS"
     },
@@ -54,300 +54,98 @@
       "id": "base_character_data",
       "relative_path": "knowledge/structured/base_character_data.json",
       "kind": "standard_character_table",
-      "acceptance": "needs_count_reconciliation",
+      "acceptance": "standard_derived_after_8105_reconciliation",
       "exists": true,
-      "size_bytes": 2258871,
-      "expected_size_bytes": 2258871,
-      "sha256": "f0f5a765f8717769211bfde19d6bcfdf25915111a09bd0044ea9467a06a224cf",
-      "expected_sha256": "f0f5a765f8717769211bfde19d6bcfdf25915111a09bd0044ea9467a06a224cf",
+      "size_bytes": 2493021,
+      "expected_size_bytes": 2493021,
+      "sha256": "3590a9372f46dca3baade96bb7196db7ad51142807630860a4b2f500f90b33eb",
+      "expected_sha256": "3590a9372f46dca3baade96bb7196db7ad51142807630860a4b2f500f90b33eb",
       "identity_status": "PASS",
       "json": {
         "json_type": "dict",
-        "top_level_count": 8104,
+        "top_level_count": 8105,
         "top_level_keys_sample": [
-          "一",
-          "乙",
-          "二",
-          "十",
-          "丁",
-          "厂",
-          "七",
-          "卜",
-          "八",
-          "人",
-          "入",
-          "乂",
-          "儿",
-          "匕",
-          "几",
-          "九",
-          "刁",
-          "了",
-          "刀",
-          "力"
+          "㑇",
+          "㑊",
+          "㕮",
+          "㘎",
+          "㙍",
+          "㙘",
+          "㙦",
+          "㛃",
+          "㛚",
+          "㛹",
+          "㟃",
+          "㠇",
+          "㠓",
+          "㤘",
+          "㥄",
+          "㧐",
+          "㧑",
+          "㧟",
+          "㫰",
+          "㬊"
         ],
         "type_status": "PASS",
-        "target_count_status": "FAIL",
+        "target_count_status": "PASS",
         "target_count": 8105
       },
       "domain": {
-        "actual_count": 8104,
-        "target_8105_delta": 1,
+        "actual_count": 8105,
+        "target_8105_delta": 0,
         "has_duplicate_keys": false,
         "unicode_label_issues": {
-          "count": 7909,
-          "samples": [
-            {
-              "char": "一",
-              "unicode": "U+04E00",
-              "expected": "U+4E00"
-            },
-            {
-              "char": "乙",
-              "unicode": "U+04E59",
-              "expected": "U+4E59"
-            },
-            {
-              "char": "二",
-              "unicode": "U+04E8C",
-              "expected": "U+4E8C"
-            },
-            {
-              "char": "十",
-              "unicode": "U+05341",
-              "expected": "U+5341"
-            },
-            {
-              "char": "丁",
-              "unicode": "U+04E01",
-              "expected": "U+4E01"
-            },
-            {
-              "char": "厂",
-              "unicode": "U+05382",
-              "expected": "U+5382"
-            },
-            {
-              "char": "七",
-              "unicode": "U+04E03",
-              "expected": "U+4E03"
-            },
-            {
-              "char": "卜",
-              "unicode": "U+0535C",
-              "expected": "U+535C"
-            },
-            {
-              "char": "八",
-              "unicode": "U+0516B",
-              "expected": "U+516B"
-            },
-            {
-              "char": "人",
-              "unicode": "U+04EBA",
-              "expected": "U+4EBA"
-            },
-            {
-              "char": "入",
-              "unicode": "U+05165",
-              "expected": "U+5165"
-            },
-            {
-              "char": "乂",
-              "unicode": "U+04E42",
-              "expected": "U+4E42"
-            },
-            {
-              "char": "儿",
-              "unicode": "U+0513F",
-              "expected": "U+513F"
-            },
-            {
-              "char": "匕",
-              "unicode": "U+05315",
-              "expected": "U+5315"
-            },
-            {
-              "char": "几",
-              "unicode": "U+051E0",
-              "expected": "U+51E0"
-            },
-            {
-              "char": "九",
-              "unicode": "U+04E5D",
-              "expected": "U+4E5D"
-            },
-            {
-              "char": "刁",
-              "unicode": "U+05201",
-              "expected": "U+5201"
-            },
-            {
-              "char": "了",
-              "unicode": "U+04E86",
-              "expected": "U+4E86"
-            },
-            {
-              "char": "刀",
-              "unicode": "U+05200",
-              "expected": "U+5200"
-            },
-            {
-              "char": "力",
-              "unicode": "U+0529B",
-              "expected": "U+529B"
-            }
-          ]
+          "count": 0,
+          "samples": []
         }
       },
-      "status": "ATTENTION"
+      "status": "PASS"
     },
     {
       "id": "cnbe_character_knowledge",
       "relative_path": "knowledge/structured/cnbe_character_knowledge.json",
       "kind": "enriched_character_knowledge",
-      "acceptance": "needs_unicode_label_normalization",
+      "acceptance": "structured_reference_after_unicode_label_normalization",
       "exists": true,
-      "size_bytes": 18661305,
-      "expected_size_bytes": 18661305,
-      "sha256": "490625195ecc5fa2f51f56eada38b5442809e920927f1a4b03c65a080a0c3add",
-      "expected_sha256": "490625195ecc5fa2f51f56eada38b5442809e920927f1a4b03c65a080a0c3add",
+      "size_bytes": 18947148,
+      "expected_size_bytes": 18947148,
+      "sha256": "976a2f314c158b481b730493799240079d638573490f1be84e006a76eb2fb63f",
+      "expected_sha256": "976a2f314c158b481b730493799240079d638573490f1be84e006a76eb2fb63f",
       "identity_status": "PASS",
       "json": {
         "json_type": "list",
-        "top_level_count": 8104,
+        "top_level_count": 8105,
         "first_item_keys": [
           "char",
-          "stroke_count",
-          "stroke_order",
-          "stroke_order_str",
-          "standard_rank",
-          "unicode",
-          "level",
-          "has_dictionary_entry",
           "definition_sample",
-          "wiki_summary",
+          "has_dictionary_entry",
           "has_wiki_entry",
           "kangxi_def",
           "kangxi_volume",
+          "level",
+          "standard_rank",
+          "stroke_count",
+          "stroke_order",
+          "stroke_order_str",
+          "unicode",
+          "wiki_summary",
           "zhonghua_def"
         ],
         "type_status": "PASS",
-        "target_count_status": "FAIL",
+        "target_count_status": "PASS",
         "target_count": 8105
       },
       "domain": {
-        "actual_count": 8104,
-        "target_8105_delta": 1,
+        "actual_count": 8105,
+        "target_8105_delta": 0,
         "unicode_label_issues": {
-          "count": 7909,
-          "samples": [
-            {
-              "char": "一",
-              "unicode": "U+04E00",
-              "expected": "U+4E00"
-            },
-            {
-              "char": "乙",
-              "unicode": "U+04E59",
-              "expected": "U+4E59"
-            },
-            {
-              "char": "二",
-              "unicode": "U+04E8C",
-              "expected": "U+4E8C"
-            },
-            {
-              "char": "十",
-              "unicode": "U+05341",
-              "expected": "U+5341"
-            },
-            {
-              "char": "丁",
-              "unicode": "U+04E01",
-              "expected": "U+4E01"
-            },
-            {
-              "char": "厂",
-              "unicode": "U+05382",
-              "expected": "U+5382"
-            },
-            {
-              "char": "七",
-              "unicode": "U+04E03",
-              "expected": "U+4E03"
-            },
-            {
-              "char": "卜",
-              "unicode": "U+0535C",
-              "expected": "U+535C"
-            },
-            {
-              "char": "八",
-              "unicode": "U+0516B",
-              "expected": "U+516B"
-            },
-            {
-              "char": "人",
-              "unicode": "U+04EBA",
-              "expected": "U+4EBA"
-            },
-            {
-              "char": "入",
-              "unicode": "U+05165",
-              "expected": "U+5165"
-            },
-            {
-              "char": "儿",
-              "unicode": "U+0513F",
-              "expected": "U+513F"
-            },
-            {
-              "char": "匕",
-              "unicode": "U+05315",
-              "expected": "U+5315"
-            },
-            {
-              "char": "几",
-              "unicode": "U+051E0",
-              "expected": "U+51E0"
-            },
-            {
-              "char": "九",
-              "unicode": "U+04E5D",
-              "expected": "U+4E5D"
-            },
-            {
-              "char": "刁",
-              "unicode": "U+05201",
-              "expected": "U+5201"
-            },
-            {
-              "char": "了",
-              "unicode": "U+04E86",
-              "expected": "U+4E86"
-            },
-            {
-              "char": "刀",
-              "unicode": "U+05200",
-              "expected": "U+5200"
-            },
-            {
-              "char": "力",
-              "unicode": "U+0529B",
-              "expected": "U+529B"
-            },
-            {
-              "char": "乃",
-              "unicode": "U+04E43",
-              "expected": "U+4E43"
-            }
-          ]
+          "count": 0,
+          "samples": []
         },
         "with_dictionary_entry": 4815,
-        "with_wiki_entry": 2524
+        "with_wiki_entry": 2523
       },
-      "status": "ATTENTION"
+      "status": "PASS"
     },
     {
       "id": "definitions_index",
@@ -915,10 +713,6 @@
       "sha256": "23e27044ab4485c8a372f2af565a687afd790e5792db9089f9a9a67a2c72e88f"
     }
   ],
-  "action_items": [
-    "base_character_data: schema/count/normalization attention required",
-    "cnbe_character_knowledge: schema/count/normalization attention required",
-    "knowledge/Unihan.zip: excluded invalid archive confirmed"
-  ],
+  "action_items": [],
   "recommended_next_stage": "normalize_standard_character_table_and_unicode_labels"
 }

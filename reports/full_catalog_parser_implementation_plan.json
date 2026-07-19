@@ -1,0 +1,554 @@
+{
+  "agent_model_stage": {
+    "input": "reports/full_catalog_evidence_review_plan.json",
+    "invariants": [
+      "parser_plan_is_not_parser_execution",
+      "source_assets_are_read_only",
+      "parser_outputs_are_evidence_statuses_before_scores",
+      "phase_1_targets_structure_first_decomposition"
+    ],
+    "outputs": [
+      "reports/full_catalog_parser_implementation_plan.json",
+      "reports/FULL_CATALOG_PARSER_IMPLEMENTATION_PLAN.md"
+    ],
+    "stage_id": "parser_implementation_plan"
+  },
+  "authority_boundary": {
+    "does_not_assign_gf0017_scores": true,
+    "does_not_claim_national_standard_for_outside_8105": true,
+    "does_not_modify_cnbe_rows": true,
+    "does_not_modify_source_assets": true,
+    "does_not_modify_workbook": true,
+    "does_not_publish_release": true,
+    "does_not_rebuild_database": true
+  },
+  "decision": {
+    "may_modify_cnbe_rows": false,
+    "may_modify_source_assets": false,
+    "may_rebuild_database": false,
+    "may_start_formal_gf0017_scoring": false,
+    "may_start_parser_phase_1_implementation": true,
+    "reason": "Parser implementation planning is ready. The next decision point is whether to implement phase 1 as a read-only structure/decomposition parser."
+  },
+  "implementation_phases": [
+    {
+      "allowed_now": true,
+      "assigns_points": false,
+      "failure_codes": [
+        "MISSING_STRUCTURE",
+        "STRUCTURE_LABEL_OUT_OF_SET",
+        "AMBIGUOUS_DECOMPOSITION"
+      ],
+      "gf0017_item": "structure_first_decomposition",
+      "implementation_unit": "structure_decomposition_parser",
+      "input_sources": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "relative_path": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "relative_path": "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "unresolved",
+          "kind": "supporting_sources",
+          "relative_path": "evidence/agent-standard/cnbe_legacy_structure_localization.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/component_db.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/decomp_rules.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "decomp-data/dictionary.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "cjk-decomp/cjk-decomp.txt"
+        }
+      ],
+      "output_fields": [
+        "unicode",
+        "char",
+        "structure_label",
+        "decomposition",
+        "source_grade",
+        "source_anchor"
+      ],
+      "output_table": "structure_evidence",
+      "pending_rows": 89581,
+      "phase": 1,
+      "points": 20,
+      "rebuilds_database": false,
+      "review_sample_size": 300,
+      "runner_name": "run_structure_decomposition_evidence_parser",
+      "stop_conditions": [
+        "source_path_missing",
+        "unicode_join_mismatch",
+        "ambiguous_evidence_value",
+        "source_grade_unresolved",
+        "attempted_point_assignment",
+        "attempted_cnbe_row_write"
+      ],
+      "validation_focus": [
+        "13_label_structure_set",
+        "legacy_label_preservation",
+        "decomposition_ambiguity_detection"
+      ],
+      "writes_cnbe_rows": false,
+      "writes_source_assets": false
+    },
+    {
+      "allowed_now": true,
+      "assigns_points": false,
+      "failure_codes": [
+        "MISSING_COMPONENT_NAMES",
+        "COMPONENT_NAME_MISMATCH",
+        "OCR_ONLY_NAME"
+      ],
+      "gf0017_item": "component_name_validity",
+      "implementation_unit": "component_name_parser",
+      "input_sources": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "relative_path": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/component_db.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/ocr/standards/std_03-部件及部件名称规范_bc1.json"
+        }
+      ],
+      "output_fields": [
+        "unicode",
+        "char",
+        "component_names",
+        "name_source",
+        "source_grade"
+      ],
+      "output_table": "component_evidence",
+      "pending_rows": 89581,
+      "phase": 2,
+      "points": 8,
+      "rebuilds_database": false,
+      "review_sample_size": 240,
+      "runner_name": "run_component_name_evidence_parser",
+      "stop_conditions": [
+        "source_path_missing",
+        "unicode_join_mismatch",
+        "ambiguous_evidence_value",
+        "source_grade_unresolved",
+        "attempted_point_assignment",
+        "attempted_cnbe_row_write"
+      ],
+      "validation_focus": [
+        "gf0014_name_alignment",
+        "ocr_only_name_is_review_aid",
+        "component_name_mismatch_detection"
+      ],
+      "writes_cnbe_rows": false,
+      "writes_source_assets": false
+    },
+    {
+      "allowed_now": true,
+      "assigns_points": false,
+      "failure_codes": [
+        "MISSING_INDEPENDENT_STATUS",
+        "INVALID_INDEPENDENT_SPLIT",
+        "CONFLICTING_COMPONENT_STATUS"
+      ],
+      "gf0017_item": "independent_character_rule",
+      "implementation_unit": "independent_character_parser",
+      "input_sources": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "relative_path": "source/04-独体字规范/GF 0013-2009 现代常用独体字规范.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "relative_path": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/decomp_rules.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/component_db.json"
+        }
+      ],
+      "output_fields": [
+        "unicode",
+        "char",
+        "independent_status",
+        "component_split_allowed",
+        "source_grade"
+      ],
+      "output_table": "structure_evidence",
+      "pending_rows": 89581,
+      "phase": 3,
+      "points": 7,
+      "rebuilds_database": false,
+      "review_sample_size": 200,
+      "runner_name": "run_independent_character_evidence_parser",
+      "stop_conditions": [
+        "source_path_missing",
+        "unicode_join_mismatch",
+        "ambiguous_evidence_value",
+        "source_grade_unresolved",
+        "attempted_point_assignment",
+        "attempted_cnbe_row_write"
+      ],
+      "validation_focus": [
+        "gf0013_status_join",
+        "invalid_component_split_detection",
+        "unknown_status_preserved"
+      ],
+      "writes_cnbe_rows": false,
+      "writes_source_assets": false
+    },
+    {
+      "allowed_now": true,
+      "assigns_points": false,
+      "failure_codes": [
+        "MISSING_COMPONENTS",
+        "UNKNOWN_COMPONENT_MARKER",
+        "CONTEXT_ONLY_COMPONENTS"
+      ],
+      "gf0017_item": "component_validity",
+      "implementation_unit": "component_inventory_parser",
+      "input_sources": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "relative_path": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "relative_path": "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/component_db.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/decomp_rules.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "decomp-data/dictionary.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "cjk-decomp/cjk-decomp.txt"
+        }
+      ],
+      "output_fields": [
+        "unicode",
+        "char",
+        "components",
+        "basic_components",
+        "component_source",
+        "source_grade"
+      ],
+      "output_table": "component_evidence",
+      "pending_rows": 89581,
+      "phase": 4,
+      "points": 3,
+      "rebuilds_database": false,
+      "review_sample_size": 180,
+      "runner_name": "run_component_inventory_evidence_parser",
+      "stop_conditions": [
+        "source_path_missing",
+        "unicode_join_mismatch",
+        "ambiguous_evidence_value",
+        "source_grade_unresolved",
+        "attempted_point_assignment",
+        "attempted_cnbe_row_write"
+      ],
+      "validation_focus": [
+        "component_inventory_join",
+        "contextual_decomposition_boundary",
+        "unknown_marker_detection"
+      ],
+      "writes_cnbe_rows": false,
+      "writes_source_assets": false
+    },
+    {
+      "allowed_now": true,
+      "assigns_points": false,
+      "failure_codes": [
+        "MISSING_RADICAL",
+        "RADICAL_CODE_MISMATCH",
+        "RSINDEX_ONLY"
+      ],
+      "gf0017_item": "radical_validity",
+      "implementation_unit": "radical_evidence_parser",
+      "input_sources": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "relative_path": "source/02-汉字部首表/GG 0011-2009 汉字部首表.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/kangxi_radicals.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/radical_validation.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/unicode_rsindex.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "source/15-Unicode-RSIndex/RSIndex.md"
+        }
+      ],
+      "output_fields": [
+        "unicode",
+        "char",
+        "radical",
+        "radical_code",
+        "rs_index",
+        "source_grade"
+      ],
+      "output_table": "radical_evidence",
+      "pending_rows": 89581,
+      "phase": 5,
+      "points": 3,
+      "rebuilds_database": false,
+      "review_sample_size": 160,
+      "runner_name": "run_radical_evidence_parser",
+      "stop_conditions": [
+        "source_path_missing",
+        "unicode_join_mismatch",
+        "ambiguous_evidence_value",
+        "source_grade_unresolved",
+        "attempted_point_assignment",
+        "attempted_cnbe_row_write"
+      ],
+      "validation_focus": [
+        "gg0011_radical_alignment",
+        "numeric_radical_code_check",
+        "rsindex_cross_reference_boundary"
+      ],
+      "writes_cnbe_rows": false,
+      "writes_source_assets": false
+    },
+    {
+      "allowed_now": true,
+      "assigns_points": false,
+      "failure_codes": [
+        "MISSING_STROKE_ORDER",
+        "STROKE_COUNT_ORDER_MISMATCH",
+        "INVALID_STROKE_CODE"
+      ],
+      "gf0017_item": "stroke_order",
+      "implementation_unit": "stroke_order_parser",
+      "input_sources": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "relative_path": "source/05-笔顺规范/GF 0031—2026 通用规范汉字笔顺规范.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "relative_path": "source/05-笔顺规范/GF3002-1999 GB13000.1字符集汉字笔顺规范.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/stroke_order_8105.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/stroke_order_8105_clean.json"
+        }
+      ],
+      "output_fields": [
+        "unicode",
+        "char",
+        "stroke_count",
+        "stroke_order",
+        "stroke_order_source",
+        "source_grade"
+      ],
+      "output_table": "stroke_evidence",
+      "pending_rows": 89581,
+      "phase": 6,
+      "points": 3,
+      "rebuilds_database": false,
+      "review_sample_size": 160,
+      "runner_name": "run_stroke_order_evidence_parser",
+      "stop_conditions": [
+        "source_path_missing",
+        "unicode_join_mismatch",
+        "ambiguous_evidence_value",
+        "source_grade_unresolved",
+        "attempted_point_assignment",
+        "attempted_cnbe_row_write"
+      ],
+      "validation_focus": [
+        "stroke_count_order_length_match",
+        "normalized_stroke_code_domain",
+        "outside_8105_missing_order_preserved"
+      ],
+      "writes_cnbe_rows": false,
+      "writes_source_assets": false
+    },
+    {
+      "allowed_now": true,
+      "assigns_points": false,
+      "failure_codes": [
+        "MISSING_STROKE_SHAPE",
+        "AMBIGUOUS_STROKE_SHAPE",
+        "SOURCE_ANCHOR_MISSING"
+      ],
+      "gf0017_item": "stroke_shape",
+      "implementation_unit": "stroke_shape_parser",
+      "input_sources": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "kind": "controlling_sources",
+          "relative_path": "source/11-评测与分类/GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "cross_reference",
+          "kind": "controlling_sources",
+          "relative_path": "source/07-折笔规范/GB 13000.1 字符集汉字折笔规范.md"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/ocr/ocr_fold_stroke.json"
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "kind": "supporting_sources",
+          "relative_path": "knowledge/ocr/standards/std_07-折笔规范_bc1.json"
+        }
+      ],
+      "output_fields": [
+        "unicode",
+        "char",
+        "stroke_shape",
+        "stroke_shape_source",
+        "source_grade",
+        "source_anchor"
+      ],
+      "output_table": "stroke_evidence",
+      "pending_rows": 89581,
+      "phase": 7,
+      "points": 3,
+      "rebuilds_database": false,
+      "review_sample_size": 160,
+      "runner_name": "run_stroke_shape_evidence_parser",
+      "stop_conditions": [
+        "source_path_missing",
+        "unicode_join_mismatch",
+        "ambiguous_evidence_value",
+        "source_grade_unresolved",
+        "attempted_point_assignment",
+        "attempted_cnbe_row_write"
+      ],
+      "validation_focus": [
+        "folded_stroke_evidence_boundary",
+        "shape_status_not_direct_without_anchor",
+        "ambiguous_shape_detection"
+      ],
+      "writes_cnbe_rows": false,
+      "writes_source_assets": false
+    }
+  ],
+  "mode": "read_only_full_catalog_parser_implementation_plan",
+  "next_artifacts": [
+    "scripts/run_structure_decomposition_evidence_parser.py",
+    "reports/structure_decomposition_evidence_parser.json",
+    "reports/STRUCTURE_DECOMPOSITION_EVIDENCE_PARSER.md"
+  ],
+  "next_workflow_status": "PARSER_PHASE_1_PLANNING_COMPLETE_IMPLEMENTATION_REQUIRES_REVIEW",
+  "overall_status": "PASS_PARSER_IMPLEMENTATION_PLAN_READY",
+  "report_schema_version": "1.0",
+  "summary": {
+    "cnbe_row_write_allowed": false,
+    "database_rebuild_allowed": false,
+    "formal_gf0017_scoring_allowed": false,
+    "outside_8105_rows": 89581,
+    "phase_1_item": "structure_first_decomposition",
+    "phases": 7,
+    "policy_decision_items": [
+      "character_set_coverage"
+    ],
+    "score_values_assigned": 0,
+    "source_asset_write_allowed": false
+  }
+}

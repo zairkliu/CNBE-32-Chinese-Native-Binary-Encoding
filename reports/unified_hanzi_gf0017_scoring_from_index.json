@@ -1,0 +1,584 @@
+{
+  "authority_boundary": {
+    "does_not_emit_final_structure_labels": true,
+    "does_not_modify_cnbe_rows": true,
+    "does_not_rebuild_database": true,
+    "does_not_regenerate_full_unicode_catalog": true,
+    "uses_existing_unified_index_only": true
+  },
+  "checks": {
+    "does_not_regenerate_unicode_identity": true,
+    "index_audit_passed": true,
+    "no_cnbe_row_writes": true,
+    "no_database_rebuild": true,
+    "no_final_structure_labels": true,
+    "row_count_match": true,
+    "scope_counts_match": true,
+    "uses_existing_unified_index_only": true
+  },
+  "decision": {
+    "may_claim_full_gf0017_scores": false,
+    "may_continue_source_evidence_repair": true,
+    "may_rebuild_database": false,
+    "may_write_cnbe_rows": false,
+    "reason": "Formal scoring has started from the existing index, but most GF0017 items remain not scorable because row-level evidence is not yet materialized in the index."
+  },
+  "gf0017_points": {
+    "character_set_coverage": 3,
+    "component_name_validity": 8,
+    "component_validity": 3,
+    "independent_character_rule": 7,
+    "radical_validity": 3,
+    "stroke_order": 3,
+    "stroke_shape": 3,
+    "structure_first_decomposition": 20
+  },
+  "item_status_counts": {
+    "character_set_coverage": {
+      "NOT_SCORABLE_SOURCE_GAP": 89581,
+      "PASS_8105_CORE_COVERAGE": 8105
+    },
+    "component_name_validity": {
+      "NOT_SCORABLE_EVIDENCE_REQUIRED": 97686
+    },
+    "component_validity": {
+      "NOT_SCORABLE_EVIDENCE_REQUIRED": 97686
+    },
+    "independent_character_rule": {
+      "NOT_SCORABLE_EVIDENCE_REQUIRED": 97686
+    },
+    "radical_validity": {
+      "NOT_SCORABLE_EVIDENCE_REQUIRED": 97686
+    },
+    "stroke_order": {
+      "NOT_SCORABLE_EVIDENCE_REQUIRED": 97686
+    },
+    "stroke_shape": {
+      "NOT_SCORABLE_SOURCE_GAP": 97686
+    },
+    "structure_first_decomposition": {
+      "NOT_SCORABLE_EVIDENCE_REQUIRED": 97686
+    }
+  },
+  "mode": "formal_gf0017_scoring_from_existing_unified_index",
+  "next_workflow_status": "GF0017_SOURCE_EVIDENCE_REPAIR_REQUIRED_BEFORE_FULL_SCORING",
+  "overall_status": "PASS_GF0017_SCORING_FROM_EXISTING_INDEX_WITH_SOURCE_GAPS",
+  "report_schema_version": "1.0",
+  "samples": {
+    "U+323AF": {
+      "assigned_max": 0,
+      "assigned_score": 0,
+      "catalog_scope": "outside_8105_agent_candidate",
+      "char": "𲎯",
+      "formal_total_max": 50,
+      "items": {
+        "character_set_coverage": {
+          "agent_evidence_status": "SOURCE_GAP_NOT_SCORABLE",
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_GAP",
+          "status": "NOT_SCORABLE_SOURCE_GAP"
+        },
+        "component_name_validity": {
+          "agent_evidence_status": "ROW_LEVEL_EVIDENCE_JOIN_PENDING",
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 8,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "component_validity": {
+          "agent_evidence_status": "ROW_LEVEL_EVIDENCE_JOIN_PENDING",
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "independent_character_rule": {
+          "agent_evidence_status": "ROW_LEVEL_EVIDENCE_JOIN_PENDING",
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 7,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "radical_validity": {
+          "agent_evidence_status": "ROW_LEVEL_EVIDENCE_JOIN_PENDING",
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "stroke_order": {
+          "agent_evidence_status": "ROW_LEVEL_EVIDENCE_JOIN_PENDING",
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "stroke_shape": {
+          "agent_evidence_status": "SOURCE_GAP_NOT_SCORABLE",
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_GAP",
+          "status": "NOT_SCORABLE_SOURCE_GAP"
+        },
+        "structure_first_decomposition": {
+          "agent_evidence_status": "ROW_LEVEL_EVIDENCE_JOIN_PENDING",
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 20,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        }
+      },
+      "score_status": "NOT_SCORABLE_FROM_CURRENT_INDEX",
+      "unicode": "U+323AF"
+    },
+    "U+3400": {
+      "assigned_max": 0,
+      "assigned_score": 0,
+      "catalog_scope": "outside_8105_agent_candidate",
+      "char": "㐀",
+      "formal_total_max": 50,
+      "items": {
+        "character_set_coverage": {
+          "agent_evidence_status": "SOURCE_GAP_NOT_SCORABLE",
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_GAP",
+          "status": "NOT_SCORABLE_SOURCE_GAP"
+        },
+        "component_name_validity": {
+          "agent_evidence_status": "ROW_LEVEL_EVIDENCE_JOIN_PENDING",
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 8,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "component_validity": {
+          "agent_evidence_status": "ROW_LEVEL_EVIDENCE_JOIN_PENDING",
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "independent_character_rule": {
+          "agent_evidence_status": "ROW_LEVEL_EVIDENCE_JOIN_PENDING",
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 7,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "radical_validity": {
+          "agent_evidence_status": "ROW_LEVEL_EVIDENCE_JOIN_PENDING",
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "stroke_order": {
+          "agent_evidence_status": "ROW_LEVEL_EVIDENCE_JOIN_PENDING",
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "stroke_shape": {
+          "agent_evidence_status": "SOURCE_GAP_NOT_SCORABLE",
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_GAP",
+          "status": "NOT_SCORABLE_SOURCE_GAP"
+        },
+        "structure_first_decomposition": {
+          "agent_evidence_status": "ROW_LEVEL_EVIDENCE_JOIN_PENDING",
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 20,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        }
+      },
+      "score_status": "NOT_SCORABLE_FROM_CURRENT_INDEX",
+      "unicode": "U+3400"
+    },
+    "U+3401": {
+      "assigned_max": 0,
+      "assigned_score": 0,
+      "catalog_scope": "outside_8105_agent_candidate",
+      "char": "㐁",
+      "formal_total_max": 50,
+      "items": {
+        "character_set_coverage": {
+          "agent_evidence_status": "SOURCE_GAP_NOT_SCORABLE",
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_GAP",
+          "status": "NOT_SCORABLE_SOURCE_GAP"
+        },
+        "component_name_validity": {
+          "agent_evidence_status": "ROW_LEVEL_EVIDENCE_JOIN_PENDING",
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 8,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "component_validity": {
+          "agent_evidence_status": "ROW_LEVEL_EVIDENCE_JOIN_PENDING",
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "independent_character_rule": {
+          "agent_evidence_status": "ROW_LEVEL_EVIDENCE_JOIN_PENDING",
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 7,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "radical_validity": {
+          "agent_evidence_status": "ROW_LEVEL_EVIDENCE_JOIN_PENDING",
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "stroke_order": {
+          "agent_evidence_status": "ROW_LEVEL_EVIDENCE_JOIN_PENDING",
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "stroke_shape": {
+          "agent_evidence_status": "SOURCE_GAP_NOT_SCORABLE",
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_GAP",
+          "status": "NOT_SCORABLE_SOURCE_GAP"
+        },
+        "structure_first_decomposition": {
+          "agent_evidence_status": "ROW_LEVEL_EVIDENCE_JOIN_PENDING",
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 20,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        }
+      },
+      "score_status": "NOT_SCORABLE_FROM_CURRENT_INDEX",
+      "unicode": "U+3401"
+    },
+    "U+4E00": {
+      "assigned_max": 3,
+      "assigned_score": 3,
+      "catalog_scope": "8105_core",
+      "char": "一",
+      "formal_total_max": 50,
+      "items": {
+        "character_set_coverage": {
+          "agent_evidence_status": null,
+          "can_assign_points": true,
+          "evidence_basis": "catalog_scope:8105_core",
+          "max_points": 3,
+          "score": 3,
+          "source_status": "SOURCE_GAP",
+          "status": "PASS_8105_CORE_COVERAGE"
+        },
+        "component_name_validity": {
+          "agent_evidence_status": null,
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 8,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "component_validity": {
+          "agent_evidence_status": null,
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "independent_character_rule": {
+          "agent_evidence_status": null,
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 7,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "radical_validity": {
+          "agent_evidence_status": null,
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "stroke_order": {
+          "agent_evidence_status": null,
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "stroke_shape": {
+          "agent_evidence_status": null,
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_GAP",
+          "status": "NOT_SCORABLE_SOURCE_GAP"
+        },
+        "structure_first_decomposition": {
+          "agent_evidence_status": null,
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 20,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        }
+      },
+      "score_status": "PARTIALLY_SCORED_REMAINING_ITEMS_NOT_SCORABLE",
+      "unicode": "U+4E00"
+    },
+    "U+5BB6": {
+      "assigned_max": 3,
+      "assigned_score": 3,
+      "catalog_scope": "8105_core",
+      "char": "家",
+      "formal_total_max": 50,
+      "items": {
+        "character_set_coverage": {
+          "agent_evidence_status": null,
+          "can_assign_points": true,
+          "evidence_basis": "catalog_scope:8105_core",
+          "max_points": 3,
+          "score": 3,
+          "source_status": "SOURCE_GAP",
+          "status": "PASS_8105_CORE_COVERAGE"
+        },
+        "component_name_validity": {
+          "agent_evidence_status": null,
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 8,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "component_validity": {
+          "agent_evidence_status": null,
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "independent_character_rule": {
+          "agent_evidence_status": null,
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 7,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "radical_validity": {
+          "agent_evidence_status": null,
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "stroke_order": {
+          "agent_evidence_status": null,
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "stroke_shape": {
+          "agent_evidence_status": null,
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_GAP",
+          "status": "NOT_SCORABLE_SOURCE_GAP"
+        },
+        "structure_first_decomposition": {
+          "agent_evidence_status": null,
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 20,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        }
+      },
+      "score_status": "PARTIALLY_SCORED_REMAINING_ITEMS_NOT_SCORABLE",
+      "unicode": "U+5BB6"
+    },
+    "U+946B": {
+      "assigned_max": 3,
+      "assigned_score": 3,
+      "catalog_scope": "8105_core",
+      "char": "鑫",
+      "formal_total_max": 50,
+      "items": {
+        "character_set_coverage": {
+          "agent_evidence_status": null,
+          "can_assign_points": true,
+          "evidence_basis": "catalog_scope:8105_core",
+          "max_points": 3,
+          "score": 3,
+          "source_status": "SOURCE_GAP",
+          "status": "PASS_8105_CORE_COVERAGE"
+        },
+        "component_name_validity": {
+          "agent_evidence_status": null,
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 8,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "component_validity": {
+          "agent_evidence_status": null,
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "independent_character_rule": {
+          "agent_evidence_status": null,
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 7,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "radical_validity": {
+          "agent_evidence_status": null,
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "stroke_order": {
+          "agent_evidence_status": null,
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        },
+        "stroke_shape": {
+          "agent_evidence_status": null,
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 3,
+          "score": null,
+          "source_status": "SOURCE_GAP",
+          "status": "NOT_SCORABLE_SOURCE_GAP"
+        },
+        "structure_first_decomposition": {
+          "agent_evidence_status": null,
+          "can_assign_points": false,
+          "evidence_basis": "existing_unified_index_profile_only",
+          "max_points": 20,
+          "score": null,
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "status": "NOT_SCORABLE_EVIDENCE_REQUIRED"
+        }
+      },
+      "score_status": "PARTIALLY_SCORED_REMAINING_ITEMS_NOT_SCORABLE",
+      "unicode": "U+946B"
+    }
+  },
+  "summary": {
+    "assigned_item_policy": "Only character_set_coverage for existing 8105_core rows is assigned from the current index. All other items remain unscored until source evidence is materialized.",
+    "catalog_scope_counts": {
+      "8105_core": 8105,
+      "outside_8105_agent_candidate": 89581
+    },
+    "formal_max_points_per_row": 50,
+    "row_score_status_counts": {
+      "NOT_SCORABLE_FROM_CURRENT_INDEX": 89581,
+      "PARTIALLY_SCORED_REMAINING_ITEMS_NOT_SCORABLE": 8105
+    },
+    "rows_fully_scored": 0,
+    "rows_not_scorable_from_current_index": 89581,
+    "rows_with_any_assigned_points": 8105,
+    "total_assigned_points_across_rows": 24315,
+    "total_rows_evaluated": 97686
+  }
+}
