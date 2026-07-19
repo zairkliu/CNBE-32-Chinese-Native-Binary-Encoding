@@ -48,6 +48,7 @@ when the output is a complete reproducibility snapshot.
 |---|---|
 | `README.md`, `README_EN.md`, `README_ZH.md` | Public project overview |
 | `docs/` | Public documentation and repository structure docs |
+| `docs/COPILOT_CLOUD_AGENT_LIMITATION.md` | Copilot cloud agent paid-access status and open-source fallback boundary |
 | `docs/releases/` | Release documentation |
 | `CHANGELOG.md`, `RELEASE.md` | Release process and current release notes |
 
@@ -79,6 +80,10 @@ post-`v1.0.4` standards restart. It must stay aligned with
 `skill/agents/cnbe-hanzi-structure-encoding-agent.yaml`, and its GitHub
 repository Agents page profile is
 `.github/agents/cnbe-hanzi-structure-encoding-agent.agent.md`.
+
+GitHub Copilot cloud agent execution is optional paid automation. It is not a
+required reproducibility path for the CNBE project. Its access boundary is
+documented in `docs/COPILOT_CLOUD_AGENT_LIMITATION.md`.
 
 ## Historical Experiment Layer
 
