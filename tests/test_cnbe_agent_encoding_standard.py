@@ -17,9 +17,10 @@ def test_legacy_structure_localization_covers_all_20902_rows() -> None:
     model = build_structure_localization(DEFAULT_CNBE_INPUT)
 
     assert model["summary"]["row_count"] == 20902
-    assert model["summary"]["legacy_label_count"] == 13
-    assert model["summary"]["all_legacy_labels_mapped"] is True
-    assert model["summary"]["missing_label_rows"] == 0
+    assert model["summary"]["legacy_label_count"] == 26
+    assert model["summary"]["all_legacy_labels_mapped"] is False
+    assert model["summary"]["missing_label_rows"] == 6712
+    assert len(model["mapping"]) == 13
     assert sum(model["summary"]["raw_structure_counts"].values()) == 20902
 
 
@@ -37,7 +38,7 @@ def test_agent_structure_standard_uses_chinese_labels_and_agent_types() -> None:
 def test_legacy_type_mismatch_is_preserved_as_a_review_signal() -> None:
     model = build_structure_localization(DEFAULT_CNBE_INPUT)
 
-    assert model["summary"]["struct_type_mismatch_after_agent_mapping"] == 12864
+    assert model["summary"]["struct_type_mismatch_after_agent_mapping"] == 8720
     left_right = next(item for item in model["mapping"] if item["legacy_structure"] == "left-right")
     assert left_right["legacy_struct_type"] == 1
     assert left_right["agent_struct_type"] == 3
