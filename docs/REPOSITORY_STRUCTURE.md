@@ -28,6 +28,11 @@ Runtime-layer changes must preserve package build behavior and pass CI.
 Evidence files are research and review assets. They are not runtime package
 data, and they must not be described as automatic CNBE database changes.
 
+The 8105 layer is the current national-standard core. The Agent-standard and
+full-catalog layers must align to it, but they must not be presented as
+national-standard output unless direct standards evidence has been joined and
+reviewed. See `docs/CNBE8105_ENCODING_GOVERNANCE.md`.
+
 ## General Report Layer
 
 | Path | Purpose |
@@ -48,6 +53,13 @@ when the output is a complete reproducibility snapshot.
 
 Documentation must keep the boundary clear between national standards, CNBE
 Agent standards, research evidence, and runtime encoding data.
+
+Documentation is part of the reproducibility surface. Public docs must explain
+which layer is runtime behavior, which layer is standards evidence, which layer
+is Agent workflow, and which layer is historical experiment context.
+
+The operational Agent workflow is defined in
+`docs/CNBE_REPRODUCIBLE_AGENT_WORKFLOW.md`.
 
 ## Historical Experiment Layer
 
@@ -82,6 +94,10 @@ the Python package runtime.
 
 The `data/` directory needs a separate asset inventory before any files are
 moved. Do not move or delete data files without a migration report.
+
+Source catalog rewrites and SQLite database rebuilds are separate authorized
+implementation rounds. Governance reports and pilot scoring reports do not, by
+themselves, authorize editing runtime package data.
 
 ## Generated Local Artifacts
 

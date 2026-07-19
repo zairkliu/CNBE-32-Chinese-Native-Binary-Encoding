@@ -22,6 +22,33 @@ A 32-bit structural fingerprint for CJK characters — built for people who wond
 > The packaged Python SDK currently targets **20,902 Basic CJK** entries.
 > The broader **97,686 CJK** figure is an intended / experimental extended scope, not current packaged SDK coverage.
 
+## Current standards restart
+
+CNBE is being reorganized around a stricter standards-aligned workflow.
+
+The **8105 common standardized Chinese character table** is now the national-standard core for the rebuild. Existing CNBE rows are treated as legacy/current runtime data until they pass the renewed evidence gates. The 20,902-row Agent pre-encoding pool is a project candidate pool, and the 97,686-row full catalog remains an extended research target.
+
+The restart target is to rebuild CNBE as a national-language-standard-aligned encoding project: the Agent performs controlled Hanzi structure work, every promoted row carries evidence and review state, and the repository separates runtime code, evidence, reports, historical experiments, and reproducible research outputs.
+
+Current confirmed state:
+
+- 8105 baseline rows: `8105`
+- current CNBE rows inside 8105 scope: `7829`
+- missing current CNBE rows inside 8105 scope: `276`
+- human-approved 8105 Agent structure baseline: `8105 / 8105`
+- runtime CNBE32 rows patched from the approved 8105 dry run: `6712`
+- force-approved rows retained for later insertion/radical strategy: `1393`
+- runtime JSON and SQLite databases rebuilt from the approved 20,902-row source
+
+Governance documents:
+
+- [CNBE 8105 Encoding Governance](./docs/CNBE8105_ENCODING_GOVERNANCE.md)
+- [CNBE Reproducible Agent Workflow](./docs/CNBE_REPRODUCIBLE_AGENT_WORKFLOW.md)
+- [CNBE Version Governance](./docs/CNBE_VERSION_GOVERNANCE.md)
+- [Repository Structure](./docs/REPOSITORY_STRUCTURE.md)
+- [CNBE 8105 Core Confirmation](./reports/CNBE8105_CORE_CONFIRMATION.md)
+- [CNBE 8105 Runtime Promotion](./reports/8105_CNBE32_RUNTIME_PROMOTION.md)
+
 ---
 
 ## Why this is interesting

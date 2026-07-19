@@ -217,4 +217,3 @@ candidates.
 
 After the manifest exists, the project can plan controlled reconstruction of
 test-version rows into the release-version workflow.
-
