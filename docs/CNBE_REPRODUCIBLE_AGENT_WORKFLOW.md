@@ -156,3 +156,32 @@ python3 -m pytest tests/test_8105_runtime_blocker_resolution_plan.py
 
 The blocker-resolution outputs are review artifacts only. They must not rebuild
 SQLite databases or modify `data/cnbe32.json`.
+
+For the authorized standardized runtime repair round, run:
+
+```bash
+python3 scripts/apply_8105_standardized_runtime_repair.py
+python3 -m pytest tests/test_8105_standardized_runtime_repair.py
+```
+
+This repair may update `data/cnbe32.json` and rebuild the two packaged SQLite
+databases only after source-write authorization. It must preserve current
+runtime index/ext bits, keep missing-current-model rows out of the runtime
+table, keep ZDIC/cache data labeled as cross-reference context, and keep tag,
+release, and PyPI publication blocked.
+
+After this repair, continue from the remaining queue rather than regenerating
+the full catalog:
+
+- `486` rows still need stronger radical evidence or a conservative mapping;
+- `276` rows need an insertion/index policy because they are absent from the
+  current 20,902-row runtime table;
+- `32` rows need radical policy review;
+- `1` row needs stroke-count evidence repair.
+
+Use these committed artifacts as the restart point:
+
+```text
+reports/8105_standardized_runtime_repair.json
+review_packets/8105_full/8105_standardized_runtime_repair_remaining_blockers.csv
+```

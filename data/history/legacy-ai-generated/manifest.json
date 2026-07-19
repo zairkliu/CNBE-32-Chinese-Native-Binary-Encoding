@@ -1,0 +1,24 @@
+{
+  "boundary": "historical_test_baseline_not_release_track_authority",
+  "description": "Pre-standards-restart CNBE catalog fields may contain AI-generated or non-standard structure, radical, and stroke assignments. They are preserved for compatibility and regression localization only.",
+  "forbidden_uses": [
+    "national_standard_evidence",
+    "gf0017_scoring_authority",
+    "teaching_ready_ground_truth",
+    "research_ready_hanzi_structure_ground_truth",
+    "future_release_track_field_source"
+  ],
+  "historical_retrieval": {
+    "legacy_reference": "v1.0.3:data/cnbe32.json",
+    "runtime_promotion_reference": "reports/8105_CNBE32_RUNTIME_PROMOTION.md",
+    "standardized_repair_reference": "reports/8105_STANDARDIZED_RUNTIME_REPAIR.md"
+  },
+  "current_release_track": {
+    "core_scope": "8105 common standardized Chinese character table",
+    "runtime_rows": 20902,
+    "patched_8105_rows_after_standardized_repair": 7310,
+    "remaining_force_approved_not_patched_rows": 795,
+    "tag_release_pypi_authorized": false
+  },
+  "status": "active_history_boundary"
+}

@@ -44,7 +44,9 @@ The current confirmed evidence snapshot is:
 - missing current CNBE rows inside 8105 scope: `276`
 - human-approved 8105 Agent structure baseline: `8105 / 8105`
 - approved CNBE32 dry-run rows promoted into runtime copy: `6712`
-- force-approved but not patched rows retained for later strategy: `1393`
+- conservative standardized runtime repairs after promotion: `598`
+- patched 8105 runtime rows after standardized repair: `7310`
+- force-approved but not patched rows retained for later strategy: `795`
 - production runtime source rows: `20902`
 - rebuilt runtime databases: `data/cnbe32.db` and
   `src/cnbe32/data/cnbe32.db`
@@ -55,6 +57,19 @@ The main confirmation report is
 
 The runtime promotion report is
 [`reports/8105_CNBE32_RUNTIME_PROMOTION.md`](../reports/8105_CNBE32_RUNTIME_PROMOTION.md).
+
+The standardized runtime repair report is
+[`reports/8105_STANDARDIZED_RUNTIME_REPAIR.md`](../reports/8105_STANDARDIZED_RUNTIME_REPAIR.md).
+
+## Historical Test Baseline
+
+The pre-restart CNBE catalog was useful as a test/runtime seed, but many of its
+structure, radical, and stroke fields were AI-generated or otherwise not
+aligned to the current GF/GB/GG standards workflow. Those rows are now
+classified as a historical test baseline. They may be used for regression
+localization, diff review, and compatibility analysis, but they must not be
+used as evidence for teaching, research claims, or new release-track encoding
+decisions.
 
 ## Encoding Rebuild Gate
 
@@ -177,13 +192,16 @@ they have been reviewed and intentionally committed.
 
 ## Next Safe Implementation Round
 
-The next safe implementation round is blocked-queue resolution for the `1393`
-force-approved rows that were not patched into runtime fields:
+The next safe implementation round is blocked-queue resolution for the `795`
+force-approved rows that remain unpatched after the standardized runtime
+repair:
 
-1. resolve `964` rows with missing approved radicals;
+1. resolve `486` rows still missing a usable radical after approved-packet and
+   cached cross-reference joins;
 2. define insertion/index strategy for `276` rows missing from current runtime
    data;
-3. resolve `153` rows with non-conservative radical mappings;
-4. generate another copied dataset and dry-run report before any additional
+3. resolve `32` rows with non-conservative radical mappings;
+4. resolve `1` row with invalid or missing stroke-count evidence;
+5. generate another copied dataset and dry-run report before any additional
    source-table write;
-5. keep release, tag, and PyPI work separate.
+6. keep release, tag, and PyPI work separate.

@@ -4,6 +4,32 @@ All notable changes to CNBE-32 will be documented in this file.
 
 ## [Unreleased]
 
+## [1.0.4] - 2026-07-19
+
+### Added
+
+- Standardized 8105 runtime repair workflow for the post-promotion blocker queue.
+- Runtime repair reports and review packets for applied repairs and remaining blockers.
+- Historical baseline boundary for legacy AI-generated catalog fields.
+- Tests covering standardized runtime repair counts, known samples, database integrity, and release boundary.
+
+### Changed
+
+- Python package version prepared as `1.0.4`.
+- Runtime CNBE32 data now records `7310` patched 8105 rows after conservative standardized repair.
+- Runtime SQLite databases were rebuilt from the updated 20,902-row runtime source.
+- Documentation now separates legacy AI-generated test data from the standards-aligned release track.
+
+### Fixed
+
+- Repaired `598` additional 8105 runtime rows that had enough conservative evidence to preserve runtime index/ext bits and pass CNBE32 bitfield roundtrip.
+- Corrected known runtime samples including `队` to `阜 / 4 / 左右 / 3` and `玕` to `王 / 7 / 左右 / 3`.
+- Preserved `795` unresolved force-approved rows as explicit blockers rather than inventing missing numeric fields.
+
+### Notes
+
+This release candidate remains a research-prototype SDK checkpoint. It does not claim 97,686-row validation, teaching-ready full-catalog data, production readiness, GitHub release publication, or PyPI publication until separately authorized.
+
 ## [1.0.3] - 2026-07-10
 
 ### Added
