@@ -2,13 +2,22 @@
 
 from __future__ import annotations
 
+import pytest
+
 from scripts.run_external_dictionary_context_review_join import (
+    STAGING_DB,
     build_review_join,
     render_markdown,
 )
 
 
+def require_dictionary_context_staging() -> None:
+    if not STAGING_DB.exists():
+        pytest.skip(f"dictionary-context staging database is a local integration asset: {STAGING_DB}")
+
+
 def test_dictionary_context_review_join_is_ready() -> None:
+    require_dictionary_context_staging()
     report = build_review_join()
 
     assert report["overall_status"] == "PASS_DICTIONARY_CONTEXT_REVIEW_JOIN_READY"
@@ -17,6 +26,7 @@ def test_dictionary_context_review_join_is_ready() -> None:
 
 
 def test_dictionary_context_review_join_preserves_known_coverage() -> None:
+    require_dictionary_context_staging()
     report = build_review_join()
 
     assert report["summary"]["human_review_coverage"]["hit_rows"] == 104
@@ -27,6 +37,7 @@ def test_dictionary_context_review_join_preserves_known_coverage() -> None:
 
 
 def test_dictionary_context_review_join_keeps_authority_boundaries() -> None:
+    require_dictionary_context_staging()
     report = build_review_join()
 
     assert all(report["checks"].values())
@@ -38,6 +49,7 @@ def test_dictionary_context_review_join_keeps_authority_boundaries() -> None:
 
 
 def test_dictionary_context_review_join_contains_context_for_xin() -> None:
+    require_dictionary_context_staging()
     report = build_review_join()
 
     rows = [row for row in report["human_review_join_rows"] if row["char"] == "鑫"]
@@ -50,6 +62,7 @@ def test_dictionary_context_review_join_contains_context_for_xin() -> None:
 
 
 def test_dictionary_context_review_join_markdown_states_scope() -> None:
+    require_dictionary_context_staging()
     markdown = render_markdown(build_review_join())
 
     assert "# External Dictionary Context Review Join" in markdown

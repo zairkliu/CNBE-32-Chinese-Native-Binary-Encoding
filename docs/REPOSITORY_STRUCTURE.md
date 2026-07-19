@@ -10,7 +10,7 @@ experiments, and maintenance outputs.
 |---|---|
 | `src/` | Python package implementation |
 | `src/cnbe32/data/cnbe32.db` | Packaged runtime database |
-| `spec/` | Golden vectors and implementation consistency specs |
+| `spec/` | Golden vectors, structure-type guardrails, and implementation consistency specs |
 | `c/`, `rust/`, `bindings/` | Cross-language golden vector and binding work |
 | `tests/` | Runtime, reproducibility, and audit tests |
 
@@ -50,6 +50,7 @@ when the output is a complete reproducibility snapshot.
 | `docs/` | Public documentation and repository structure docs |
 | `docs/COPILOT_CLOUD_AGENT_LIMITATION.md` | Copilot cloud agent paid-access status and open-source fallback boundary |
 | `docs/CNBE_RESEARCH_POSITION_STATEMENT.md` | Short research framing for direction, time point, reproducibility, feasibility, and scientific value |
+| `docs/DATA_REPRODUCIBILITY_CONTRACT.md` | Runtime JSON/SQLite rebuild contract and review boundary |
 | `docs/releases/` | Release documentation |
 | `CHANGELOG.md`, `RELEASE.md` | Release process and current release notes |
 
@@ -91,6 +92,7 @@ documented in `docs/COPILOT_CLOUD_AGENT_LIMITATION.md`.
 | Path | Purpose |
 |---|---|
 | `llm_experiments/` | Historical LLM experiment reports and workbooks |
+| `cnbe-llm-training-demo/` | Archived ASCII-path LLM training demo |
 | `results/` | Historical experiment outputs and duplicate report exports |
 | `experiments/` | Early experiment scripts and notes |
 

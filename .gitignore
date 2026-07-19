@@ -1,28 +1,34 @@
-*.pyc
+# Python caches and local environments
 __pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Editor and OS metadata
 .DS_Store
 *.swp
 *.swo
 *~
 .vscode/
 .idea/
+
+# JavaScript tooling
 node_modules/
+
+# Native and package build outputs
 *.o
 *.elf
 build/
+dist/
+src/*.egg-info/
+*.egg-info/
+*.whl
 
 # Generated data files
 data/skill_table*.bin
 data/skill_table*.npy
 data/skill_table*.hex
 data/skill_table_data.h
-
-dist/
-src/*.egg-info/
-*.egg-info/
-build/
-*.whl
-
 
 # Large binary artifacts (tracked via Git LFS or release only)
 *.db
@@ -40,7 +46,6 @@ outputs/.~*.xlsx
 outputs/
 reports/full_catalog_row_level_extraction_results.json
 reports/full_catalog_agent_mapping_evidence_join.json
-# CNBE-32 golden vector local build artifacts
-c/golden_vectors/cnbe32_golden_test
+
 # CNBE-32 golden vector local build artifacts
 c/golden_vectors/cnbe32_golden_test

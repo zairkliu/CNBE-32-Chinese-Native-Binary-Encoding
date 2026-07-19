@@ -2,13 +2,27 @@
 
 from __future__ import annotations
 
+import pytest
+
 from scripts.plan_dictionary_context_knowledge_merge import (
+    REVIEW_JOIN,
+    STAGING_DB,
     build_merge_plan,
     render_markdown,
 )
 
 
+def require_dictionary_context_staging() -> None:
+    missing = [path for path in (STAGING_DB, REVIEW_JOIN) if not path.exists()]
+    if missing:
+        pytest.skip(
+            "dictionary-context staging outputs are local integration assets: "
+            + ", ".join(str(path) for path in missing)
+        )
+
+
 def test_dictionary_context_merge_plan_is_ready() -> None:
+    require_dictionary_context_staging()
     report = build_merge_plan()
 
     assert report["overall_status"] in {
@@ -21,6 +35,7 @@ def test_dictionary_context_merge_plan_is_ready() -> None:
 
 
 def test_dictionary_context_merge_plan_keeps_core_8105_files_unchanged() -> None:
+    require_dictionary_context_staging()
     report = build_merge_plan()
 
     blocked = set(report["blocked_actions"])
@@ -30,6 +45,7 @@ def test_dictionary_context_merge_plan_keeps_core_8105_files_unchanged() -> None
 
 
 def test_dictionary_context_merge_plan_declares_schema_and_write_set() -> None:
+    require_dictionary_context_staging()
     report = build_merge_plan()
 
     fields = set(report["planned_index_schema"]["entry_fields"])
@@ -40,6 +56,7 @@ def test_dictionary_context_merge_plan_declares_schema_and_write_set() -> None:
 
 
 def test_dictionary_context_merge_plan_requires_authorization() -> None:
+    require_dictionary_context_staging()
     report = build_merge_plan()
 
     assert all(value for key, value in report["checks"].items() if key != "knowledge_write_blocked_pending_authorization")
@@ -49,6 +66,7 @@ def test_dictionary_context_merge_plan_requires_authorization() -> None:
 
 
 def test_dictionary_context_merge_plan_markdown_states_scope() -> None:
+    require_dictionary_context_staging()
     markdown = render_markdown(build_merge_plan())
 
     assert "# Dictionary Context Knowledge Merge Plan" in markdown

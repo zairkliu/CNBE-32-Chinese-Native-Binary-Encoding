@@ -529,4 +529,4 @@ v9-v10.8: 跨领域泛化            ← 编码在多领域有效
 ---
 
 *白皮书编写：2026-07-08 | CNBE-32 项目组 | 许可证：木兰宽松许可证 v2*
-*目录：`cnbe-llm training(demo)/` | 仓库：https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding*
+*目录：`cnbe-llm-training-demo/` | 仓库：https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding*
