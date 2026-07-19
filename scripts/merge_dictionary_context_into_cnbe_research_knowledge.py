@@ -12,7 +12,7 @@ import json
 import shutil
 import sqlite3
 from collections import defaultdict
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -134,7 +134,7 @@ def build_report(
     references_path = knowledge_root / "references.json"
     base_character_data = structured_root / "base_character_data.json"
     cnbe_character_knowledge = structured_root / "cnbe_character_knowledge.json"
-    timestamp = datetime.now(UTC).strftime("%Y%m%dT%H%M%SZ")
+    timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
 
     merge_plan = load_json(MERGE_PLAN)
     index = load_staging_index(staging_db)
