@@ -11,6 +11,12 @@ The current standards-aligned Hanzi encoding Agent is:
 skill/cnbe-hanzi-structure-encoding-agent/SKILL.md
 ```
 
+It is also listed for Agent discovery at:
+
+```text
+skill/agents/cnbe-hanzi-structure-encoding-agent.yaml
+```
+
 Use it for CNBE32/CNBE64/CNBE128 structure encoding planning, 8105 alignment,
 GF0017 gates, source-evidence workflow design, review packets, and batch
 quality control.
@@ -36,7 +42,12 @@ The legacy file below remains for historical experiment reproduction only:
 skill/SKILL.md
 ```
 
+Its legacy Agent entry is:
+
+```text
+skill/agents/openai.yaml
+```
+
 It predates the standards restart and must not be used as authority for
 structure, radical, stroke, teaching, research, or release-track encoding
 claims.
-

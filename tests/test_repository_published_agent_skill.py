@@ -44,8 +44,21 @@ def test_skill_directory_separates_current_agent_from_legacy_experiment_skill() 
 
     assert "Current Operational Agent" in text
     assert "skill/cnbe-hanzi-structure-encoding-agent/SKILL.md" in text
+    assert "skill/agents/cnbe-hanzi-structure-encoding-agent.yaml" in text
     assert "Historical Experiment Skill" in text
+    assert "skill/agents/openai.yaml" in text
     assert "must not be used as authority" in text
+
+
+def test_agents_index_publishes_current_agent_metadata() -> None:
+    text = read_text("skill/agents/cnbe-hanzi-structure-encoding-agent.yaml")
+
+    assert "CNBE Hanzi Structure Encoding Agent" in text
+    assert "../cnbe-hanzi-structure-encoding-agent/SKILL.md" in text
+    assert "8105 is the national-standard core" in text
+    assert "outside-8105 rows remain Agent-standard candidates" in text
+    assert "v1.0.4 publishes the 20,902-row runtime package" in text
+    assert "not 97,686-row validation" in text
 
 
 def test_public_docs_link_to_repository_agent_skill() -> None:
@@ -56,4 +69,4 @@ def test_public_docs_link_to_repository_agent_skill() -> None:
     structure_doc = read_text("docs/REPOSITORY_STRUCTURE.md")
     assert "Skill Layer" in structure_doc
     assert "Repository-published total-control Agent" in structure_doc
-
+    assert "skill/agents/cnbe-hanzi-structure-encoding-agent.yaml" in structure_doc
