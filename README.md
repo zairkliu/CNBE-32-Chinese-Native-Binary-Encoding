@@ -52,6 +52,7 @@ Governance documents:
 - [CNBE Reproducible Agent Workflow](./docs/CNBE_REPRODUCIBLE_AGENT_WORKFLOW.md)
 - [CNBE Version Governance](./docs/CNBE_VERSION_GOVERNANCE.md)
 - [Repository Structure](./docs/REPOSITORY_STRUCTURE.md)
+- [Repository-published Agent skill](./skill/cnbe-hanzi-structure-encoding-agent/SKILL.md)
 - [CNBE 8105 Encoding Comparison](./evidence/8105/CNBE8105_ENCODING_COMPARISON_REPORT.md)
 - [CNBE 8105 Runtime Promotion](./reports/8105_CNBE32_RUNTIME_PROMOTION.md)
 - [CNBE 8105 Standardized Runtime Repair](./reports/8105_STANDARDIZED_RUNTIME_REPAIR.md)

@@ -52,6 +52,7 @@ CNBE 正在按更严格的国家语言文字规范证据链重新组织。
 - [CNBE 可复现 Agent 工作流](./docs/CNBE_REPRODUCIBLE_AGENT_WORKFLOW.md)
 - [CNBE 版本治理](./docs/CNBE_VERSION_GOVERNANCE.md)
 - [仓库结构](./docs/REPOSITORY_STRUCTURE.md)
+- [仓库发布版 Agent skill](./skill/cnbe-hanzi-structure-encoding-agent/SKILL.md)
 - [CNBE 8105 编码比对报告](./evidence/8105/CNBE8105_ENCODING_COMPARISON_REPORT.md)
 - [CNBE 8105 运行时提升报告](./reports/8105_CNBE32_RUNTIME_PROMOTION.md)
 - [CNBE 8105 标准化运行时修复](./reports/8105_STANDARDIZED_RUNTIME_REPAIR.md)
