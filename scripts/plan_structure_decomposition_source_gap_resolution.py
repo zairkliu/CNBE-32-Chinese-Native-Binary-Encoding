@@ -75,7 +75,6 @@ def build_resolution_plan() -> dict[str, Any]:
     root = research_root()
     review = load_json(REVIEW_PLAN)
     records = source_gap_records()
-    chars = [record["char"] for record in records]
 
     yuanliu = load_optional_dict(root / "knowledge/yuanliu_chars.json")
     cihai = load_optional_dict(root / "knowledge/structured/cihai_search_index.json")

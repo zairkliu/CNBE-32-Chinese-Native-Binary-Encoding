@@ -37,7 +37,6 @@ def write_text(path: Path, text: str) -> None:
 
 def classify_blocker(item: dict[str, Any]) -> dict[str, Any]:
     asset = item["asset"]
-    issue = item["issue"]
     if asset == "Unihan.zip":
         return {
             **item,

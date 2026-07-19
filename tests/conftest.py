@@ -5,7 +5,6 @@ from pathlib import Path
 
 import pytest
 
-
 LOCAL_KNOWLEDGE_ROOT = Path(
     os.environ.get(
         "CNBE_RESEARCH_KNOWLEDGE_ROOT",

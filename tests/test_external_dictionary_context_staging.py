@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import sqlite3
-from pathlib import Path
 
 from scripts.build_external_dictionary_context_staging import (
     DEFAULT_DB_OUTPUT,

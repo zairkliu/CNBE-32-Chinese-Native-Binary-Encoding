@@ -172,7 +172,6 @@ def build_item_plans(scoring: dict[str, Any], specs_by_item: dict[str, dict[str,
 
 
 def build_work_packages(item_plans: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    automatic_items = [item for item in item_plans if item["automation_allowed"]]
     policy_items = [item for item in item_plans if not item["automation_allowed"]]
     return [
         {

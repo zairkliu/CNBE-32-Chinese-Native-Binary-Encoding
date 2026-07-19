@@ -7,8 +7,8 @@ from pathlib import Path
 from scripts.run_structure_decomposition_agent_review_packet import (
     AGENT_REVIEWED_EDITABLE,
     ORIGINAL_EDITABLE,
-    run_agent_review,
     render_markdown,
+    run_agent_review,
 )
 
 
