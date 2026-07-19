@@ -61,6 +61,19 @@ is Agent workflow, and which layer is historical experiment context.
 The operational Agent workflow is defined in
 `docs/CNBE_REPRODUCIBLE_AGENT_WORKFLOW.md`.
 
+## Skill Layer
+
+| Path | Purpose |
+|---|---|
+| `skill/README.md` | Skill directory index and authority boundary |
+| `skill/cnbe-hanzi-structure-encoding-agent/SKILL.md` | Repository-published total-control Agent for standards-aligned Hanzi encoding |
+| `skill/SKILL.md` | Historical experiment-reproduction skill, not release-track authority |
+
+The repository-published Agent skill is the portable entry point for the
+post-`v1.0.4` standards restart. It must stay aligned with
+`docs/CNBE_HANZI_STRUCTURE_AGENT_MODEL.md` and
+`docs/CNBE_REPRODUCIBLE_AGENT_WORKFLOW.md`.
+
 ## Historical Experiment Layer
 
 | Path | Purpose |
