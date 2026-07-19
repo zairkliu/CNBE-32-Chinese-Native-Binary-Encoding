@@ -70,7 +70,14 @@ Every batch must follow the same lifecycle:
    - write only to a copied work table first;
    - promote to source catalog only after explicit authorization;
    - rebuild SQLite only in a separate authorized round.
-10. **Reproducibility Report**
+10. **Runtime Blocker Resolution**
+    - classify retained force-approved rows by missing field or policy blocker;
+    - do not treat force approval as a substitute for missing radix, stroke,
+      index, or bitfield values;
+    - resolve blank radical/stroke joins, position-sensitive radical rules,
+      component-like radical policy, and missing runtime indices as separate
+      queues.
+11. **Reproducibility Report**
     - write source manifests, script names, tests, score summaries, and
       generated artifact paths.
 
@@ -82,6 +89,8 @@ The Agent must stop and report instead of continuing when any of these occur:
 - 8105 scope cannot be determined for an 8105-targeted batch;
 - structure label falls outside the approved set;
 - component or radical evidence is missing for a release-track promotion;
+- force-approved rows still lack numeric CNBE32 fields, radical/stroke joins,
+  or runtime index allocation policy;
 - GF0017 scoring attempts to award unsupported points;
 - output would overwrite runtime data without authorization;
 - generated artifact size indicates accidental full-catalog regeneration;
@@ -137,3 +146,13 @@ git diff --check
 
 Batch-specific scripts must add their own tests before source-table writes are
 considered.
+
+For post-runtime 8105 blocker planning, run:
+
+```bash
+python3 scripts/plan_8105_runtime_blocker_resolution.py
+python3 -m pytest tests/test_8105_runtime_blocker_resolution_plan.py
+```
+
+The blocker-resolution outputs are review artifacts only. They must not rebuild
+SQLite databases or modify `data/cnbe32.json`.
