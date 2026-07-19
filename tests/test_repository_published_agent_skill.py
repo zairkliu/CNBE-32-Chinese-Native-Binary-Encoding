@@ -124,3 +124,36 @@ def test_copilot_cloud_agent_limitation_is_documented_as_optional() -> None:
     structure_doc = read_text("docs/REPOSITORY_STRUCTURE.md")
     assert "docs/COPILOT_CLOUD_AGENT_LIMITATION.md" in structure_doc
     assert "optional paid automation" in structure_doc
+
+
+def test_research_position_statement_covers_project_framing() -> None:
+    text = read_text("docs/CNBE_RESEARCH_POSITION_STATEMENT.md")
+
+    for required_phrase in (
+        "One-Sentence Position",
+        "Current Time Point",
+        "What Has Been Demonstrated",
+        "What Has Not Been Demonstrated",
+        "Why 8105 Is The Core",
+        "Why 97,686 Is Not A Release Claim",
+        "CNBE32, CNBE64, And CNBE128",
+        "Reproducibility Path",
+        "Technical Feasibility",
+        "Scientific Value",
+    ):
+        assert required_phrase in text
+
+    assert "v1.0.4 / cnbe32==1.0.4" in text
+    assert "20,902 Basic CJK rows" in text
+    assert "7,310 8105 runtime rows" in text
+    assert "795 force-approved rows remain intentionally blocked" in text
+    assert "97,686-row full catalog remains an extended research target" in text
+    assert "not current validated coverage" in text
+    assert "Paid GitHub Copilot cloud agent execution is optional" in text
+
+    for relative_path in ("README.md", "README_EN.md", "README_ZH.md"):
+        readme = read_text(relative_path)
+        assert "docs/CNBE_RESEARCH_POSITION_STATEMENT.md" in readme
+
+    structure_doc = read_text("docs/REPOSITORY_STRUCTURE.md")
+    assert "docs/CNBE_RESEARCH_POSITION_STATEMENT.md" in structure_doc

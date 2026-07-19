@@ -49,6 +49,7 @@ Current confirmed state:
 Governance documents:
 
 - [CNBE 8105 Encoding Governance](./docs/CNBE8105_ENCODING_GOVERNANCE.md)
+- [CNBE Research Position Statement](./docs/CNBE_RESEARCH_POSITION_STATEMENT.md)
 - [CNBE Reproducible Agent Workflow](./docs/CNBE_REPRODUCIBLE_AGENT_WORKFLOW.md)
 - [CNBE Version Governance](./docs/CNBE_VERSION_GOVERNANCE.md)
 - [Repository Structure](./docs/REPOSITORY_STRUCTURE.md)
@@ -83,6 +84,10 @@ AI-generated catalog that inspired it. The current project rationale is:
 
 This makes the repository a standards-aligned research workflow rather than a
 large generated table with unclear authority.
+
+For a one-page research framing of the current direction, time point,
+reproducibility path, technical feasibility, and scientific value, see
+[CNBE Research Position Statement](./docs/CNBE_RESEARCH_POSITION_STATEMENT.md).
 
 ## Agent and automation boundary
 
