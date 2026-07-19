@@ -100,3 +100,27 @@ def test_public_docs_link_to_repository_agent_skill() -> None:
     assert "Repository-published total-control Agent" in structure_doc
     assert "skill/agents/cnbe-hanzi-structure-encoding-agent.yaml" in structure_doc
     assert ".github/agents/cnbe-hanzi-structure-encoding-agent.agent.md" in structure_doc
+
+
+def test_copilot_cloud_agent_limitation_is_documented_as_optional() -> None:
+    text = read_text("docs/COPILOT_CLOUD_AGENT_LIMITATION.md")
+
+    assert "optional paid integration" in text
+    assert "does not" in text
+    assert "require GitHub Copilot cloud agent access" in text
+    assert "required CNBE project dependency" in text
+    assert "No Copilot cloud agent access" in text
+    assert "issue `#35`" in text
+    assert "must remain reproducible without a paid GitHub Copilot cloud agent" in text
+    assert "license" in text
+    assert ".github/agents/cnbe-hanzi-structure-encoding-agent.agent.md" in text
+    assert ".github/copilot-instructions.md" in text
+    assert ".github/workflows/copilot-setup-steps.yml" in text
+
+    for relative_path in ("README.md", "README_EN.md", "README_ZH.md"):
+        readme = read_text(relative_path)
+        assert "docs/COPILOT_CLOUD_AGENT_LIMITATION.md" in readme
+
+    structure_doc = read_text("docs/REPOSITORY_STRUCTURE.md")
+    assert "docs/COPILOT_CLOUD_AGENT_LIMITATION.md" in structure_doc
+    assert "optional paid automation" in structure_doc

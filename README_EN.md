@@ -53,6 +53,7 @@ Governance documents:
 - [CNBE Version Governance](./docs/CNBE_VERSION_GOVERNANCE.md)
 - [Repository Structure](./docs/REPOSITORY_STRUCTURE.md)
 - [Repository-published Agent skill](./skill/cnbe-hanzi-structure-encoding-agent/SKILL.md)
+- [GitHub Copilot Cloud Agent Status](./docs/COPILOT_CLOUD_AGENT_LIMITATION.md)
 - [CNBE 8105 Encoding Comparison](./evidence/8105/CNBE8105_ENCODING_COMPARISON_REPORT.md)
 - [CNBE 8105 Runtime Promotion](./reports/8105_CNBE32_RUNTIME_PROMOTION.md)
 - [CNBE 8105 Standardized Runtime Repair](./reports/8105_STANDARDIZED_RUNTIME_REPAIR.md)
@@ -82,6 +83,19 @@ AI-generated catalog that inspired it. The current project rationale is:
 
 This makes the repository a standards-aligned research workflow rather than a
 large generated table with unclear authority.
+
+## Agent and automation boundary
+
+The repository includes a GitHub-compatible Agent profile and Copilot
+instructions, but GitHub Copilot cloud agent execution is an optional paid
+integration. It is not required for open-source reproduction, research review,
+or release-track CNBE work.
+
+The project keeps its reproducible baseline in committed skills, tests,
+reports, review packets, and ordinary GitHub Actions. Maintainers without
+Copilot cloud agent access can still run the CNBE Agent workflow locally or
+through normal pull requests. See
+[GitHub Copilot Cloud Agent Status](./docs/COPILOT_CLOUD_AGENT_LIMITATION.md).
 
 ---
 
