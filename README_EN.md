@@ -12,6 +12,7 @@
 <p align="center">
   <img alt="Project status" src="https://img.shields.io/badge/status-research%20prototype-orange">
   <img alt="Python SDK" src="https://img.shields.io/badge/Python%20SDK-stable%20baseline-blue">
+  <a href="https://pypi.org/project/cnbe32/"><img alt="PyPI" src="https://img.shields.io/pypi/v/cnbe32.svg"></a>
   <img alt="Basic CJK DB" src="https://img.shields.io/badge/Basic%20CJK-20%2C902%20entries-green">
   <img alt="Extended scope" src="https://img.shields.io/badge/97%2C686-experimental%20target-lightgrey">
 </p>
@@ -21,6 +22,7 @@ A 32-bit structural fingerprint for CJK characters — built for people who wond
 > **CNBE-32 is a research prototype.**
 > The packaged Python SDK currently targets **20,902 Basic CJK** entries.
 > The broader **97,686 CJK** figure is an intended / experimental extended scope, not current packaged SDK coverage.
+> The latest published package is **cnbe32 1.0.4**, matching the GitHub `v1.0.4` release checkpoint.
 
 ## Current standards restart
 
@@ -32,6 +34,8 @@ The restart target is to rebuild CNBE as a national-language-standard-aligned en
 
 Current confirmed state:
 
+- release checkpoint: `v1.0.4`
+- published Python package: `cnbe32==1.0.4`
 - 8105 baseline rows: `8105`
 - current CNBE rows inside 8105 scope: `7829`
 - missing current CNBE rows inside 8105 scope: `276`
@@ -48,13 +52,35 @@ Governance documents:
 - [CNBE Reproducible Agent Workflow](./docs/CNBE_REPRODUCIBLE_AGENT_WORKFLOW.md)
 - [CNBE Version Governance](./docs/CNBE_VERSION_GOVERNANCE.md)
 - [Repository Structure](./docs/REPOSITORY_STRUCTURE.md)
-- [CNBE 8105 Core Confirmation](./reports/CNBE8105_CORE_CONFIRMATION.md)
+- [CNBE 8105 Encoding Comparison](./evidence/8105/CNBE8105_ENCODING_COMPARISON_REPORT.md)
 - [CNBE 8105 Runtime Promotion](./reports/8105_CNBE32_RUNTIME_PROMOTION.md)
 - [CNBE 8105 Standardized Runtime Repair](./reports/8105_STANDARDIZED_RUNTIME_REPAIR.md)
 
 Earlier AI-generated catalog fields are now treated as a historical test
 baseline only. They remain useful for regression localization, but they are not
 used as authority for structure, radical, stroke, teaching, or research claims.
+
+## Project rationale
+
+CNBE-32 is useful only if the encoding process is stricter than the early
+AI-generated catalog that inspired it. The current project rationale is:
+
+- use Unicode as the compatibility identity, never as something CNBE replaces;
+- use the 8105 common standardized Chinese character table as the release-track
+  national-standard core;
+- use GF/GB/GG language and writing standards for strokes, stroke order,
+  components, radicals, independent-character status, structure, and
+  decomposition;
+- use dictionaries, character-origin resources, Wikipedia, and ZDIC only as
+  review context or source-discovery aids unless a field is explicitly labeled
+  as non-national-standard context;
+- keep CNBE32 as a compact runtime carrier while preserving richer evidence for
+  CNBE64/CNBE128 or review archives when 32 bits are too narrow;
+- publish only checkpoints that can be traced to committed evidence, reports,
+  tests, and release notes.
+
+This makes the repository a standards-aligned research workflow rather than a
+large generated table with unclear authority.
 
 ---
 
@@ -87,7 +113,7 @@ Think of it as a compact structural fingerprint, not a replacement for Unicode.
 ## Quick start
 
 ```bash
-python -m pip install .
+python -m pip install cnbe32
 ```
 
 ```python
@@ -129,8 +155,10 @@ These should be interpreted as **preliminary research prototypes** unless the co
 
 | Term | Meaning |
 |---|---|
-| **Packaged Python SDK database** | 20,902 Basic CJK entries (shipped in the wheel) |
-| **Experimental extended scope** | 97,686 CJK characters as a design / research target |
+| **8105 national-standard core** | 8,105 common standardized Chinese characters used as the release-track standards baseline |
+| **Packaged Python SDK database** | 20,902 Basic CJK runtime entries shipped in the wheel |
+| **Agent-standard candidate scope** | project-controlled candidate outputs that must align to 8105 before promotion |
+| **Experimental extended scope** | 97,686 CJK characters as a design / research target, not a validated release claim |
 | **Experiment-specific coverage** | depends on the dataset and reproduction script for each experiment |
 
 Claims about collision rate, full coverage, or extended CJK breadth should be interpreted only within the scope of the specific dataset and script used for that experiment.
@@ -221,7 +249,7 @@ CNBE-32 includes machine-readable golden vectors in [spec/golden_vectors.json](.
 
 - [Changelog](./CHANGELOG.md)
 - [Release process](./RELEASE.md)
-- [v1.0.4 release notes candidate](./docs/releases/v1.0.4.md)
+- [v1.0.4 release notes](./docs/releases/v1.0.4.md)
 - [Contributing guide](./CONTRIBUTING.md)
 - [Security policy](./SECURITY.md)
 

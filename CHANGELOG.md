@@ -28,7 +28,7 @@ All notable changes to CNBE-32 will be documented in this file.
 
 ### Notes
 
-This release candidate remains a research-prototype SDK checkpoint. It does not claim 97,686-row validation, teaching-ready full-catalog data, production readiness, GitHub release publication, or PyPI publication until separately authorized.
+This release remains a research-prototype SDK checkpoint. It does not claim 97,686-row validation, teaching-ready full-catalog data, production readiness, or outside-8105 national-standard output.
 
 ## [1.0.3] - 2026-07-10
 
