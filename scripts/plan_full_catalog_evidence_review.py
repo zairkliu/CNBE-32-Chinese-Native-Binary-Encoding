@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
@@ -64,6 +65,16 @@ REVIEW_PRIORITY = {
 
 def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+@lru_cache(maxsize=1)
+def load_or_build_extraction_results() -> dict[str, Any]:
+    if EXTRACTION_RESULTS.exists():
+        return load_json(EXTRACTION_RESULTS)
+
+    from scripts.run_full_catalog_row_level_extraction_specs import build_extraction_results
+
+    return build_extraction_results()
 
 
 def write_json(path: Path, data: Any) -> None:
@@ -136,7 +147,7 @@ def build_work_packages(review_items: list[dict[str, Any]]) -> list[dict[str, An
 
 
 def build_evidence_review_plan() -> dict[str, Any]:
-    results = load_json(EXTRACTION_RESULTS)
+    results = load_or_build_extraction_results()
     specs = load_json(EXTRACTION_SPECS)
     review_items = build_review_items(results, specs)
     pending_rows_total = sum(item["pending_rows"] for item in review_items)

@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 from collections import Counter, defaultdict
+from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
@@ -21,6 +22,16 @@ SAMPLE_LIMIT = 20
 
 def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+@lru_cache(maxsize=1)
+def load_or_build_evidence_join() -> dict[str, Any]:
+    if EVIDENCE_JOIN.exists():
+        return load_json(EVIDENCE_JOIN)
+
+    from scripts.run_full_catalog_agent_mapping_evidence_join import build_evidence_join
+
+    return build_evidence_join()
 
 
 def write_json(path: Path, data: Any) -> None:
@@ -58,7 +69,7 @@ def extraction_status_for_spec(spec: dict[str, Any]) -> dict[str, Any]:
 
 
 def build_extraction_results() -> dict[str, Any]:
-    evidence_join = load_json(EVIDENCE_JOIN)
+    evidence_join = load_or_build_evidence_join()
     extraction_specs = load_json(EXTRACTION_SPECS)
     specs = extraction_specs["extraction_specs"]
     row_records: list[dict[str, Any]] = []
