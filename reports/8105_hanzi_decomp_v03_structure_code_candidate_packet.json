@@ -1,0 +1,56 @@
+{
+  "checks": {
+    "all_nonblank_structures_have_code": true,
+    "all_structures_allowed_or_blank": true,
+    "applied_rows_match_adapter_fill_rows": true,
+    "conflict_rows_not_applied": true,
+    "no_cnbe32_writes": true,
+    "no_database_rebuild": true,
+    "row_count_is_8105": true
+  },
+  "decision": {
+    "may_human_review_structure_code_candidates": true,
+    "may_rebuild_database": false,
+    "may_write_cnbe32": false,
+    "recommended_next_step": "Human-review the 1,243 applied v0.3 gap fills and the 357 conflicts before authorizing any source merge."
+  },
+  "mode": "hanzi_decomp_v03_8105_structure_code_candidate_packet",
+  "outputs": {
+    "applied_rows_csv": "review_packets/8105_full/8105_hanzi_decomp_v03_applied_gap_rows.csv",
+    "candidate_packet_csv": "review_packets/8105_full/8105_hanzi_decomp_v03_structure_code_candidate_packet.csv",
+    "json_report": "reports/8105_hanzi_decomp_v03_structure_code_candidate_packet.json",
+    "markdown_report": "reports/8105_HANZI_DECOMP_V03_STRUCTURE_CODE_CANDIDATE_PACKET.md",
+    "remaining_blank_rows_csv": "review_packets/8105_full/8105_hanzi_decomp_v03_remaining_blank_rows.csv"
+  },
+  "overall_status": "PASS_HANZI_DECOMP_V03_STRUCTURE_CODE_PACKET_READY",
+  "report_schema_version": "1.0",
+  "summary": {
+    "applied_v03_gap_fill_rows": 1243,
+    "cnbe32_rows_written": 0,
+    "database_rebuild_allowed": false,
+    "materialize_status_counts": {
+      "APPLIED_GAP_FILL_REVIEW_REQUIRED": 1243,
+      "UNCHANGED": 6862
+    },
+    "remaining_blank_structure_rows": 1,
+    "structure_code_candidate_rows": 8104,
+    "structure_counts": {
+      "UNRESOLVED": 1,
+      "上三包": 83,
+      "上下": 1792,
+      "上中下": 55,
+      "下三包": 8,
+      "全包围": 37,
+      "右上包": 53,
+      "左三包": 17,
+      "左上包": 302,
+      "左下包": 175,
+      "左中右": 22,
+      "左右": 5375,
+      "独体字": 33,
+      "镶嵌": 152
+    },
+    "total_rows": 8105,
+    "v03_conflict_rows_excluded": 357
+  }
+}

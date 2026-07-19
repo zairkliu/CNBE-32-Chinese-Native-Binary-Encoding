@@ -1,0 +1,60 @@
+{
+  "agent_version": "CNBE 8105 bounded standardizer pilot v2-no-legacy-structure",
+  "authority_boundary": {
+    "candidate_structure_is_review_only": true,
+    "dictionary_context_is_cross_reference_only": true,
+    "does_not_assign_new_gf0017_points": true,
+    "does_not_read_full_97686_catalog": true,
+    "does_not_read_legacy_cnbe_structure": true,
+    "does_not_rebuild_database": true,
+    "does_not_write_cnbe_rows": true,
+    "reads_100_row_handoff_only": true
+  },
+  "checks": {
+    "all_rows_are_8105_core": true,
+    "all_rows_keep_unicode_identity": true,
+    "bounded_row_count_is_100": true,
+    "legacy_cnbe_fields_absent": true,
+    "legacy_structure_fields_absent": true,
+    "no_cnbe_source_rows_written": true,
+    "no_database_rebuild": true,
+    "no_new_gf0017_points_assigned": true,
+    "no_proposed_cnbe32_written": true
+  },
+  "decision": {
+    "may_assign_more_gf0017_points": false,
+    "may_rebuild_database": false,
+    "may_start_human_review": true,
+    "may_use_packet_for_candidate_repair": true,
+    "may_write_cnbe_rows": false,
+    "reason": "The packet contains candidate decomposition/component evidence only. Legacy CNBE structure fields are not read. Human review and standards-source adjudication are required before GF0017 points or CNBE32 values can be promoted."
+  },
+  "mode": "bounded_8105_standardizer_candidate_review",
+  "next_workflow_status": "READY_FOR_HUMAN_REVIEW_OF_8105_BOUNDED_STANDARDIZER_PACKET",
+  "outputs": {
+    "copied_work_table_csv": "outputs/8105_core_bounded_standardizer_work_table.csv",
+    "json_report": "reports/8105_core_bounded_standardizer_pilot.json",
+    "markdown_report": "reports/8105_CORE_BOUNDED_STANDARDIZER_PILOT.md",
+    "optional_review_packet_xlsx": "review_packets/300_character_8105_pilot/8105_core_bounded_standardizer_review_packet.xlsx",
+    "review_packet_csv": "review_packets/300_character_8105_pilot/8105_core_bounded_standardizer_review_packet.csv"
+  },
+  "overall_status": "PASS_8105_BOUNDED_STANDARDIZER_PILOT_REVIEW_PACKET_READY",
+  "report_schema_version": "1.0",
+  "summary": {
+    "candidate_status_counts": {
+      "CANDIDATE_COMPONENTS_REVIEW_REQUIRED": 32,
+      "CANDIDATE_COMPONENTS_WITH_DICTIONARY_CONTEXT_REVIEW_REQUIRED": 56,
+      "DICTIONARY_CONTEXT_ONLY_REVIEW_REQUIRED": 1,
+      "STANDARDIZER_EVIDENCE_GAP": 11
+    },
+    "cnbe_rows_written": 0,
+    "database_rebuild_allowed": false,
+    "gf0017_existing_score_per_row": 6,
+    "gf0017_new_points_assigned": 0,
+    "review_rows": 100,
+    "rows_with_component_candidates": 88,
+    "rows_with_dictionary_context": 57,
+    "rows_with_standard_decomposition_candidates": 88,
+    "rows_with_standard_structure_candidates": 88
+  }
+}

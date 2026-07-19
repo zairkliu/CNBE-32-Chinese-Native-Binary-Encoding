@@ -1,0 +1,232 @@
+{
+  "allowed_structure_labels": [
+    "独体字",
+    "上下",
+    "上中下",
+    "左右",
+    "左中右",
+    "左上包",
+    "右上包",
+    "左三包",
+    "左下包",
+    "上三包",
+    "下三包",
+    "全包围",
+    "镶嵌"
+  ],
+  "catalog_scope": {
+    "core_8105_rows": 8105,
+    "outside_8105_rows": 89581,
+    "outside_8105_status": "agent_standard_candidate_not_national_standard",
+    "total_rows": 97686
+  },
+  "checks": {
+    "catalog_total_matches": true,
+    "cnbe_writes_blocked": true,
+    "core_8105_count_matches": true,
+    "database_rebuild_blocked": true,
+    "formal_scoring_still_blocked": true,
+    "outside_8105_count_matches": true,
+    "source_repair_plan_ready": true,
+    "structure_repair_materialized_no_scoring": true,
+    "unified_index_audited": true,
+    "zdic_validated_as_cross_reference_only": true
+  },
+  "cnbe_layer_policy": {
+    "cnbe128": "research archive for multiple evidence witnesses, confidence, and review history",
+    "cnbe32": "compact carrier only after evidence gates pass; never overrides Hanzi evidence",
+    "cnbe64": "extended archive for stroke sequence, component tree, and source anchors"
+  },
+  "core_position": {
+    "core_resource": "通用规范汉字表 8105",
+    "core_rows": 8105,
+    "rule": "8105 is the controlling baseline for national-standard claims. Outside-8105 rows may align to 8105-derived project rules only as Agent-standard candidates.",
+    "status": "national_standard_core"
+  },
+  "current_blockers": {
+    "8105_structure_join": "8105 core rows require standard-derived structure/decomposition join",
+    "formal_full_catalog_gf0017_scoring": "blocked until item-level source evidence is complete",
+    "outside_8105_agent_queue": "44871 rows currently agent-standard queue only",
+    "source_gap_rows": 40130,
+    "structure_first_decomposition": "highest-priority repair item"
+  },
+  "decision": {
+    "may_create_300_character_pilot_plan": true,
+    "may_rebuild_database": false,
+    "may_start_formal_gf0017_scoring": false,
+    "may_start_full_catalog_encoding": false,
+    "may_write_cnbe_rows": false,
+    "reason": "The project is ready to plan a bounded 300-character pilot around the frozen 8105 core. It is not ready for full-catalog encoding writes or database reconstruction."
+  },
+  "evidence_layers": {
+    "cross_reference_only": {
+      "allowed_sources": [
+        "ZDIC",
+        "offline Chinese Wikipedia",
+        "Unihan cross-reference data"
+      ],
+      "allowed_use": "review navigation, source discovery, semantic disambiguation",
+      "forbidden_use": "final labels, GF0017 points, CNBE row writes, database reconstruction",
+      "priority": 3
+    },
+    "national_standard": {
+      "allowed_sources": [
+        "通用规范汉字表",
+        "GF/GG/GB 国家语言文字规范",
+        "structured 8105 knowledge derived from local standard assets"
+      ],
+      "allowed_use": "direct or standard-derived evidence after row-level validation",
+      "forbidden_use": "none; this is the only layer for national-standard claims",
+      "priority": 1
+    },
+    "standard_aligned": {
+      "allowed_sources": [
+        "8105-learned rule patterns",
+        "辞海",
+        "康熙字典",
+        "中华大字典",
+        "汉字源流大典",
+        "licensed dictionary context index"
+      ],
+      "allowed_use": "project-level evidence support and human review after standard alignment",
+      "forbidden_use": "direct national-standard authority or automatic GF0017 scoring",
+      "priority": 2
+    }
+  },
+  "frozen_rule_core_fields": [
+    "unicode_identity",
+    "target_scope_membership",
+    "stroke_shape",
+    "stroke_order",
+    "stroke_count",
+    "component_validity",
+    "component_name_validity",
+    "radical_validity",
+    "side_component_or偏旁",
+    "independent_character_rule",
+    "allowed_structure_label",
+    "structure_first_decomposition",
+    "source_grade",
+    "gf0017_item_status"
+  ],
+  "gf0017_model": {
+    "current_policy": "Do not assign formal full-row scores until every item has validated source evidence. Existing partial character-set coverage points do not authorize final labels or CNBE writes.",
+    "items": [
+      {
+        "item": "character_set_coverage",
+        "points": 3,
+        "required_evidence": "8105 scope decision"
+      },
+      {
+        "item": "stroke_shape",
+        "points": 3,
+        "required_evidence": "GF/GB stroke-shape evidence"
+      },
+      {
+        "item": "stroke_order",
+        "points": 3,
+        "required_evidence": "通用规范汉字笔顺规范 evidence"
+      },
+      {
+        "item": "component_validity",
+        "points": 3,
+        "required_evidence": "现代常用字部件规范 evidence"
+      },
+      {
+        "item": "component_name_validity",
+        "points": 8,
+        "required_evidence": "部件及部件名称规范 evidence"
+      },
+      {
+        "item": "radical_validity",
+        "points": 3,
+        "required_evidence": "汉字部首表 evidence"
+      },
+      {
+        "item": "independent_character_rule",
+        "points": 7,
+        "required_evidence": "现代常用独体字规范 evidence"
+      },
+      {
+        "item": "structure_first_decomposition",
+        "points": 20,
+        "required_evidence": "结构类型 and decomposition evidence"
+      }
+    ],
+    "total_points": 50
+  },
+  "implementation_sequence": [
+    "create 8105 frozen rule-core manifest",
+    "audit 8105 item-level evidence joins for the 8 GF0017 items",
+    "design deterministic 300-character pilot sample",
+    "run pilot evidence join without scores or CNBE writes",
+    "produce human review packet with blank final fields",
+    "merge reviewed evidence only after explicit authorization and audit",
+    "then consider formal scoring and CNBE32/64/128 candidate mapping"
+  ],
+  "mode": "read_only_8105_core_rule_to_full_catalog_encoding_plan",
+  "next_workflow_status": "READY_FOR_300_CHARACTER_PILOT_PLAN_NO_ENCODING_WRITES",
+  "outside_8105_fill_strategy": [
+    {
+      "action": "confirm literal character, Unicode scalar, normalization, and scope",
+      "stage": "unicode_identity",
+      "stop_condition": "ambiguous identity or row drift"
+    },
+    {
+      "action": "compare structure, radical, stroke, and component patterns against frozen 8105 rules",
+      "stage": "8105_rule_alignment",
+      "stop_condition": "no 8105 support examples or conflicting rule family"
+    },
+    {
+      "action": "attach Cihai, Kangxi, Zhonghua Dazidian, and Yuanliu context when available",
+      "stage": "dictionary_origin_support",
+      "stop_condition": "dictionary conflict or no usable source context"
+    },
+    {
+      "action": "use ZDIC/Wiki only for reviewer navigation and gap discovery",
+      "stage": "online_cross_reference_navigation",
+      "stop_condition": "attempted promotion to national-standard evidence"
+    },
+    {
+      "action": "emit review candidate metadata only after all no-write gates pass",
+      "stage": "agent_standard_candidate",
+      "stop_condition": "attempted final label, score, CNBE row, database, or release claim"
+    }
+  ],
+  "overall_status": "PASS_8105_CORE_RULE_TO_FULL_CATALOG_ENCODING_PLAN_READY",
+  "pilot_design": {
+    "recommended_size": 300,
+    "sampling_rule": "deterministic by Unicode, catalog scope, evidence status, and blocker class",
+    "strata": [
+      {
+        "expected_output": "evidence status and review packet, not rewritten CNBE rows",
+        "name": "8105_core_control",
+        "purpose": "prove national-standard core evidence and GF0017 item joins",
+        "rows": 100
+      },
+      {
+        "expected_output": "Agent-standard candidates requiring human review",
+        "name": "outside_8105_strong_dictionary_context",
+        "purpose": "test 8105-aligned rule transfer with strong dictionary/origin support",
+        "rows": 100
+      },
+      {
+        "expected_output": "review queues and blockers, not filled values",
+        "name": "outside_8105_extension_or_gap",
+        "purpose": "stress-test gaps, extension characters, ZDIC navigation, and stop gates",
+        "rows": 100
+      }
+    ],
+    "write_policy": "read_only_reports_only"
+  },
+  "purpose": "Freeze 8105 as the national-standard core and define how the full 97,686-row catalog can be filled through standard-aligned and Agent-standard evidence gates without repeating AI hallucination.",
+  "report_schema_version": "1.0",
+  "stop_gates": [
+    "do not generate final structure labels from visual intuition",
+    "do not assign GF0017 scores from cross-reference-only evidence",
+    "do not write CNBE rows before source-evidence merge and audit",
+    "do not rebuild SQLite databases in this planning phase",
+    "do not duplicate the 97,686-row catalog into another XLSX/database",
+    "do not label outside-8105 rows as national-standard outputs"
+  ]
+}

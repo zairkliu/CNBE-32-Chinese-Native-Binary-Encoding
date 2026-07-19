@@ -23,6 +23,11 @@ make -C c/golden_vectors test
 cargo test --manifest-path rust/golden_vectors/Cargo.toml
 ```
 
+Public CI runs the repository-reproducible pytest subset. The complete
+administrator validation may run plain `pytest` on a workstation that has the
+local `cnbe-research` authority workspace mounted. Do not require public CI to
+read private local knowledge assets.
+
 Do not tag or publish unless remote `main` has passed format integrity checks.
 
 Confirm the wheel contains expected package data:
@@ -53,4 +58,3 @@ Only tag after all CI checks are green and the changelog is updated. Do not tag 
 ## PyPI
 
 Do not publish to PyPI automatically. If publishing is approved later, use a separate release PR and manual publish step.
-

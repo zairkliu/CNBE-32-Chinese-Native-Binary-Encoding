@@ -1,0 +1,312 @@
+Window: "焱 yàn、biāo - 汉典", App: Google Chrome.
+0 标准窗口 焱 yàn、biāo - 汉典 - Google Chrome, URL: zdic.net/hans/%E7%84%B1, Secondary Actions: Raise
+	1 container 焱 yàn、biāo - 汉典 - Google Chrome, URL: zdic.net/hans/%E7%84%B1
+		2 container
+			3 工具栏
+				4 按钮 返回
+				5 按钮 (disabled) 前进
+				6 按钮 重新加载
+				7 container
+					8 弹出式按钮 查看网站信息
+					9 文本栏 (settable, string) Description: 地址和搜索栏, Value: zdic.net/hans/焱, Placeholder: 问问 Google 或输入网址
+					10 按钮 为此标签页添加书签
+				11 container
+					12 弹出式按钮 篡改猴
+可以访问此网站
+					13 弹出式按钮 某些 URL 受到浏览器或设置限制！
+可以访问此网站
+					14 弹出式按钮 ChatGPT
+可以访问此网站
+					15 弹出式按钮 扩展程序
+				16 按钮 liu
+				17 弹出式按钮 Chrome
+			18 container
+				19 HTML 内容 焱 yàn、biāo - 汉典, URL: zdic.net/hans/%E7%84%B1
+					20 container
+						21 container 站点导航
+							22 link Description: 汉典, Value: zdic.net/
+							23 文本 |
+							24 link Description: 古籍, Value: gj.zdic.net/
+							25 文本 |
+							26 link Description: 诗词, Value: sc.zdic.net/
+							27 文本 |
+							28 link Description: 书法, Value: sf.zdic.net/
+							29 文本 |
+							30 link Description: 通识, Value: zdic.net/ts/
+						31 弹出式按钮 查询索引
+							32 图像
+							33 文本 查询索引
+						34 文本 |
+						35 link Description: 繁體, Value: zdic.net/hant/%E7%84%B1
+						36 按钮 切换深色模式
+							37 图像
+						38 link Description: 汉典首页. 要获取缺失的图片说明，请打开上下文菜单。, Value: zdic.net/
+						39 container 汉字搜索
+							40 弹出式按钮 Description: 搜索类型, Value: 条目
+								41 (selected) 条目
+							42 搜索文本字段 (settable, string) 请输入汉字或词语
+							43 按钮 搜索
+								44 图像
+					45 container
+						46 container
+							47 未加标签的图片 焱
+							48 按钮 播放笔顺动画
+						49 text 拼音 yàn
+						50 按钮 播放yàn
+						51 text 注音 ㄧㄢˋ
+						52 按钮 播放注音ㄧㄢˋ
+						53 文本 部首
+						54 link Description: 火, Value: zdic.net/zd/bs/?bs=%E7%81%AB
+						55 text 部外 4 总笔画 12 统一码 CJK 7131 笔顺 433443344334 字形结构 上下结构 字形分析 会意 异体
+						56 内容列表
+							57 link Description: 焲, Value: zdic.net/hans/%E7%84%B2
+						58 container 字典内容导航
+							59 标签组
+								60 标签 (settable, integer) 基本解释, Value: 0
+								61 标签 (settable, integer) 详细解释, Value: 0
+								62 标签 (settable, integer) 國語辭典, Value: 0
+								63 标签 (settable, integer) 康熙字典, Value: 0
+								64 标签 (settable, integer) 说文解字, Value: 0
+								65 标签 (settable, integer) 音韵方言, Value: 0
+								66 标签 (settable, integer) 字源字形, Value: 0
+						67 标题 焱 基本解释, Value: 2
+							68 text 焱 基本解释
+						69 container
+							70 text ● 焱 yàn
+							71 按钮 播放yàn
+							72 文本 ㄧㄢˋ
+							73 内容列表
+								74 文本 火花，火焰。
+						75 link Description: 反馈, Value: zdic.net/hans/%E7%84%B1#
+						76 标题 焱 详细解释, Value: 2
+							77 text 焱 详细解释
+						78 container
+							79 text ◎ 焱 yàn
+							80 按钮 播放yàn
+							81 文本 ㄧㄢˋ
+							82 文本 名
+							83 内容列表
+								84 container
+									85 text 光华，光焰 [flame of fire] 书证
+									86 内容列表
+										87 container
+											88 text 焱，光华也。 —— 《说文》
+										89 container
+											90 text 日暾暾其西舍兮，阳焱焱而复顾。 —— 《楚辞》
+										91 container
+											92 text 纷翼翼以徐戾兮，焱回回其扬灵。 —— 张衡 《文选·张衡·思玄赋》
+									93 text 例如 焱飞;焱悠;焱焰;焱焱;焱攸;焱炎;焱烘烘
+						94 link Description: 反馈, Value: zdic.net/hans/%E7%84%B1#
+						95 container
+							96 标题 焱 國語辭典, Value: 2
+								97 text 焱 國語辭典
+							98 复选框 Description: 书证, Value: 1
+							99 container 显示或隐藏书证
+								100 文本 书证
+						101 container
+							102 text 焱 yàn
+							103 按钮 播放yàn
+							104 文本 ㄧㄢˋ
+							105 文本 名
+							106 文本 火花、火焰。
+							107 文本 书证
+							108 内容列表
+								109 container
+									110 text 《说文解字· 焱 部》 ： 「 焱 ，火华也。」
+								111 container
+									112 text 《文选·曹植·七启》 ： 「腾山赴壑，风厉 焱 举。」
+						113 link Description: 反馈, Value: zdic.net/hans/%E7%84%B1#
+						114 标题 焱 康熙字典, Value: 2
+							115 text 焱 康熙字典
+						116 文本 【巳集中】【火字部】 康熙笔画：12 部外笔画：8
+						117 未加标签的图片 焱
+						118 文本 【唐韻】【集韻】
+						119 未加标签的图片 /20024.svg
+						120 text 𠀤 以冉切，音琰。【說文】火華也。从三火。 又【廣韻】【集韻】【韻會】【正韻】
+						121 未加标签的图片 /20024.svg
+						122 text 𠀤 以贍切，音豔。義同。 又【班固·東都賦】焱焱炎炎，楊光飛文，吐燄生風，欱野歕山。【註】
+						123 未加标签的图片 /20024.svg
+						124 text 𠀤 戈矛車馬之光。 又【廣韻】【韻會】【正韻】呼臭切【集韻】呼役切，
+						125 未加标签的图片 /20024.svg
+						126 text 𠀤 音砉。【玉篇】火華。【廣韻】又火焰也。 又【集韻】夷益切，音繹。本作焲。亦同煬。詳焲字註。 又營隻切，音役。火貌。 又馨激切，音鬩。亦火華也。琰字原誤从焱作。
+						127 link Description: 反馈, Value: zdic.net/hans/%E7%84%B1#
+						128 标题 焱 说文解字, Value: 2
+							129 text 焱 说文解字
+						130 标题 说文解字·焱, Value: 3
+							131 文本 说文解字·焱
+						132 文本 卷十
+						133 未加标签的图片 焱
+						134 文本 火華也。从三火。凡焱之屬皆从焱。以冄切
+						135 标题 说文解字注, Value: 3
+							136 文本 说文解字注
+						137 未加标签的图片 /7131_3689.svg
+						138 文本 (焱)
+						139 文本 火
+						140 未加标签的图片 /26F93.svg
+						141 text 𦾓 也。 古書焱與猋二字多互譌。如曹植七啟風厲猋舉、當作焱舉。班固東都賦焱焱炎炎、當作猋猋炎炎。王逸曰。猋、去疾皃也。李善注幾不別二字。 从三火。 凡物盛則三之。以冉切。八部。廣韵以贍切。 凡焱之屬皆从焱。
+						142 link Description: 反馈, Value: zdic.net/hans/%E7%84%B1#
+						143 标题 焱 音韵方言, Value: 2
+							144 text 焱 音韵方言
+						145 container
+							146 标题 音标 & 周边语言, Value: 3
+								147 文本 音标 & 周边语言
+							148 定义列表
+								149 container 国际音标
+									150 文本 国际音标
+								151 文本 jĄn˥˧
+								152 container 日语读音
+									153 文本 日语读音
+								154 文本 HONOO
+								155 container 韩语罗马
+									156 文本 韩语罗马
+								157 文本 HYEK
+								158 container 现代韩语
+									159 文本 现代韩语
+								160 文本 혁
+							161 标题 方言读音 （旧版简文）, Value: 3
+								162 text 方言读音  （旧版简文）
+							163 定义列表
+								164 container 广东话
+									165 文本 广东话
+								166 文本 jim6
+								167 container 客家话
+									168 文本 客家话
+								169 文本 [宝安腔] jam3 jam5 [客语拼音字汇] yam4 [海陆腔] ram6 [客英字典] jam5 [台湾四县腔] jam5 [梅县腔] jam5
+							170 标题 音系简文, Value: 3
+								171 文本 音系简文
+							172 定义列表
+								173 container 中古音
+									174 文本 中古音
+								175 文本 喻以母 豔韻 去聲 豔小韻 以贍切 三等 開口；曉母 錫韻 入聲 𥍟小韻 呼狊切 四等 合口；
+								176 container 上古音
+									177 文本 上古音
+								178 文本 黄侃系统：影母 添部 ；王力系统：餘母 談部 ；
+						179 container
+							180 link Description: 韵书, Value: zdic.net/hans/%E7%84%B1/yunshu
+							181 link Description: 上古音, Value: zdic.net/hans/%E7%84%B1/shangguyin
+							182 link Description: 中古音, Value: zdic.net/hans/%E7%84%B1/zhongguyin
+						183 link Description: 反馈, Value: zdic.net/hans/%E7%84%B1#
+						184 标题 焱 字源字形, Value: 2
+							185 text 焱 字源字形
+						186 标题 字源演变, Value: 3
+							187 文本 字源演变
+						188 link Description: 甲骨文, Help: 点击查看甲骨文实例, Value: zdic.net/hans/%E7%84%B1/jiaguwen
+						189 文本 甲骨文
+						190 link Description: 说文, Help: 点击查看说文实例, Value: zdic.net/hans/%E7%84%B1/xiaozhuan
+						191 文本 说文
+						192 未加标签的图片 楷書
+						193 文本 楷书
+						194 标题 字形对比, Value: 3
+							195 文本 字形对比
+						196 图像 中国大陆
+						197 文本 中国大陆
+						198 未加标签的图片 香港
+						199 文本 香港
+						200 未加标签的图片 台湾
+						201 文本 台湾
+						202 未加标签的图片 日本
+						203 文本 日本
+						204 标题 各书体字形实例, Value: 3
+							205 文本 各书体字形实例
+						206 container
+							207 开合三角标记 甲骨文 3
+								208 文本 甲骨文
+								209 文本 3
+							210 开合三角标记 说文小篆 1
+								211 文本 说文小篆
+								212 文本 1
+							213 开合三角标记 传抄古文字 3
+								214 文本 传抄古文字
+								215 文本 3
+						216 标题 异体字, Value: 3
+							217 文本 异体字
+						218 link Description: 焲, Value: zdic.net/hans/%E7%84%B2
+						219 text 焲 五笔 ooou 仓颉 fff 郑码 uouu 四角号码 90889
+						220 link Description: 反馈, Value: zdic.net/hans/%E7%84%B1#
+					221 container 相关信息
+						222 container 同音字
+							223 标题 同音字, Value: 3
+								224 文本 同音字
+							225 link Description: 傿, Value: zdic.net/hans/%E5%82%BF
+							226 link Description: 䂩, Value: zdic.net/hans/%E4%82%A9
+							227 link Description: 艶, Value: zdic.net/hans/%E8%89%B6
+							228 link Description: 暥, Value: zdic.net/hans/%E6%9A%A5
+							229 link Description: 灔, Value: zdic.net/hans/%E7%81%94
+							230 link Description: 験, Value: zdic.net/hans/%E9%A8%93
+							231 link Description: 彦, Value: zdic.net/hans/%E5%BD%A6
+							232 link Description: 豔, Value: zdic.net/hans/%E8%B1%94
+							233 link Description: 殗, Value: zdic.net/hans/%E6%AE%97
+							234 link Description: 騐, Value: zdic.net/hans/%E9%A8%90
+							235 link Description: 豜, Value: zdic.net/hans/%E8%B1%9C
+							236 link Description: 㛪, Value: zdic.net/hans/%E3%9B%AA
+							237 文本 与 焱 读音相同或相近
+						238 container 同部首
+							239 标题 同部首, Value: 3
+								240 文本 同部首
+							241 link Description: 㷅, Value: zdic.net/hans/%E3%B7%85
+							242 link Description: 焈, Value: zdic.net/hans/%E7%84%88
+							243 link Description: 㷁, Value: zdic.net/hans/%E3%B7%81
+							244 link Description: 煑, Value: zdic.net/hans/%E7%85%91
+							245 link Description: 烑, Value: zdic.net/hans/%E7%83%91
+							246 link Description: 㶱, Value: zdic.net/hans/%E3%B6%B1
+							247 link Description: 焿, Value: zdic.net/hans/%E7%84%BF
+							248 link Description: 烁, Value: zdic.net/hans/%E7%83%81
+							249 link Description: 灸, Value: zdic.net/hans/%E7%81%B8
+							250 link Description: 烧, Value: zdic.net/hans/%E7%83%A7
+							251 link Description: 㷗, Value: zdic.net/hans/%E3%B7%97
+							252 link Description: 煯, Value: zdic.net/hans/%E7%85%AF
+							253 文本 与「火」部相关的字
+						254 container 热搜
+							255 标题 热搜, Value: 3
+								256 文本 热搜
+							257 link Description: 为, Value: zdic.net/hans/%E4%B8%BA
+							258 link Description: 以, Value: zdic.net/hans/%E4%BB%A5
+							259 link Description: 人, Value: zdic.net/hans/%E4%BA%BA
+							260 link Description: 行, Value: zdic.net/hans/%E8%A1%8C
+							261 link Description: 我, Value: zdic.net/hans/%E6%88%91
+							262 link Description: 其, Value: zdic.net/hans/%E5%85%B6
+							263 link Description: 一, Value: zdic.net/hans/%E4%B8%80
+							264 link Description: 之, Value: zdic.net/hans/%E4%B9%8B
+							265 文本 常被查询的字
+					266 container
+						267 内容列表
+							268 link Description: 关于, Value: zdic.net/about/
+							269 link Description: 条款, Value: zdic.net/terms/
+							270 link Description: 反馈, Value: support.qq.com/products/315677
+						271 文本 © 2004-2026 汉典 ZDIC.NET
+			272 弹出式按钮 标签页搜索
+			273 container
+				274 标签组
+					275 标签 (settable, boolean) Description: lagrange-landada/shuowen: 说文解字段注（LTSC）, Value: off
+						276 按钮 关闭
+					277 标签 (settable, boolean) Description: DeepSeek | 深度求索, Value: off
+						278 按钮 关闭
+					279 标签 (settable, boolean) Description: DeepSeek-V4 预览版：迈入百万上下文普惠时代, Value: off
+						280 按钮 关闭
+					281 标签 (settable, boolean) Description: 䧹_百度搜索 - 内存用量 - 139 MB, Value: off
+						282 按钮 关闭
+					283 标签 (selected, settable, boolean) Description: 焱 yàn、biāo - 汉典, Value: on
+						284 按钮 关闭
+					285 标签 (settable, boolean) Description: 䧹_百度百科, Value: off
+						286 按钮 关闭
+					287 标签 (settable, boolean) Description: 㸌_百度百科, Value: off
+						288 按钮 关闭
+					289 标签 (settable, boolean) Description: 百科参考资料, Value: off
+						290 按钮 关闭
+			291 按钮 新标签页
+	292 关闭按钮
+	293 全屏幕按钮 Help: 此按钮也可以执行缩放窗口的操作, Secondary Actions: 缩放窗口
+	294 最小化按钮
+295 menu bar
+	296 Chrome
+	297 文件
+	298 编辑
+	299 显示
+	300 历史记录
+	301 书签
+	302 个人资料
+	303 标签页
+	304 窗口
+	305 帮助
+
+The focused UI element is 19 HTML 内容 焱 yàn、biāo - 汉典, URL: zdic.net/hans/%E7%84%B1

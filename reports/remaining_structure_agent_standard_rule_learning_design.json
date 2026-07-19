@@ -1,0 +1,1840 @@
+{
+  "authority_boundary": {
+    "does_not_assign_gf0017_scores": true,
+    "does_not_claim_national_standard_for_outside_8105": true,
+    "does_not_modify_cnbe_rows": true,
+    "does_not_modify_source_assets": true,
+    "does_not_modify_workbook": true,
+    "does_not_publish_release": true,
+    "does_not_rebuild_database": true
+  },
+  "decision": {
+    "may_build_agent_standard_feature_table_runner": true,
+    "may_modify_cnbe_rows": false,
+    "may_modify_source_assets": false,
+    "may_rebuild_database": false,
+    "may_start_formal_gf0017_scoring": false,
+    "reason": "Agent-standard rule-learning design is ready. The next runner may build read-only feature tables and review priors, but must not emit final structures, scores, or CNBE rows."
+  },
+  "design_phases": [
+    {
+      "allowed": true,
+      "assigns_points": false,
+      "input_rows": 5885,
+      "name": "feature_table_design",
+      "output": "read_only_agent_standard_feature_table_schema",
+      "phase": 1,
+      "writes_cnbe_rows": false
+    },
+    {
+      "allowed": true,
+      "assigns_points": false,
+      "input_rows": 5885,
+      "name": "8105_rule_prior_design",
+      "output": "review_prior_rules_with_support_counts",
+      "phase": 2,
+      "writes_cnbe_rows": false
+    },
+    {
+      "allowed": true,
+      "assigns_points": false,
+      "input_rows": 5885,
+      "name": "candidate_bucket_design",
+      "output": "candidate_buckets_no_final_structure",
+      "phase": 3,
+      "writes_cnbe_rows": false
+    },
+    {
+      "allowed": true,
+      "assigns_points": false,
+      "input_rows": 67946,
+      "name": "extension_review_holding_design",
+      "output": "extension_review_holding_queue",
+      "phase": 4,
+      "writes_cnbe_rows": false
+    }
+  ],
+  "learning_features": [
+    {
+      "can_assign_points": false,
+      "feature": "unicode_identity",
+      "purpose": "guarantee candidate identity before rule learning",
+      "source": "reports/wikipedia_structure_cross_reference_index.json and previous Unicode gates"
+    },
+    {
+      "can_assign_points": false,
+      "feature": "allowed_13_structure_labels",
+      "purpose": "restrict candidate output labels to the approved Agent structure set",
+      "source": "evidence/agent-standard/cnbe_legacy_structure_localization.json"
+    },
+    {
+      "can_assign_points": false,
+      "feature": "8105_structure_distribution",
+      "purpose": "learn review priors from national-standard baseline distribution",
+      "source": "evidence/8105/cnbe8105_standard_baseline.json"
+    },
+    {
+      "can_assign_points": false,
+      "feature": "gf0017_8105_issue_distribution",
+      "purpose": "reuse known risk classes without applying scores to remaining rows",
+      "source": "evidence/gf0017/cnbe8105_gf0017_normativity_scores.json"
+    },
+    {
+      "can_assign_points": false,
+      "feature": "cross_reference_presence",
+      "purpose": "rank review priority, not determine final structure",
+      "source": "Unihan, Kangxi, cjk-decomp, Wiki, dictionary review packets"
+    }
+  ],
+  "mode": "read_only_remaining_structure_agent_standard_rule_learning_design",
+  "next_artifacts": [
+    "scripts/run_remaining_structure_agent_standard_feature_table.py",
+    "reports/remaining_structure_agent_standard_feature_table.json",
+    "reports/REMAINING_STRUCTURE_AGENT_STANDARD_FEATURE_TABLE.md"
+  ],
+  "next_workflow_status": "AGENT_STANDARD_FEATURE_TABLE_RUNNER_ALLOWED_FORMAL_SCORING_BLOCKED",
+  "overall_status": "PASS_AGENT_STANDARD_RULE_LEARNING_DESIGN_READY",
+  "report_schema_version": "1.0",
+  "review_policy": {
+    "candidate_output_level": "agent_standard_candidate_not_national_standard",
+    "may_assign_gf0017_score": false,
+    "may_emit_confidence_bucket": true,
+    "may_emit_final_structure_label": false,
+    "may_emit_review_prior": true,
+    "may_write_cnbe32_fields": false,
+    "required_human_review_before_acceptance": true
+  },
+  "samples": {
+    "agent_standard_extension_review_candidate": [
+      {
+        "char": "𠀁",
+        "offset": 50,
+        "unicode": "U+20001",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 52
+      },
+      {
+        "char": "𠀂",
+        "offset": 51,
+        "unicode": "U+20002",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 53
+      },
+      {
+        "char": "𠀃",
+        "offset": 52,
+        "unicode": "U+20003",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 54
+      },
+      {
+        "char": "𠀄",
+        "offset": 53,
+        "unicode": "U+20004",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 55
+      },
+      {
+        "char": "𠀅",
+        "offset": 54,
+        "unicode": "U+20005",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 56
+      },
+      {
+        "char": "𠀆",
+        "offset": 55,
+        "unicode": "U+20006",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 57
+      },
+      {
+        "char": "𠀇",
+        "offset": 56,
+        "unicode": "U+20007",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 58
+      },
+      {
+        "char": "𠀈",
+        "offset": 57,
+        "unicode": "U+20008",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 59
+      },
+      {
+        "char": "𠀉",
+        "offset": 58,
+        "unicode": "U+20009",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 60
+      },
+      {
+        "char": "𠀊",
+        "offset": 59,
+        "unicode": "U+2000A",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 61
+      },
+      {
+        "char": "𠀋",
+        "offset": 60,
+        "unicode": "U+2000B",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 62
+      },
+      {
+        "char": "𠀌",
+        "offset": 61,
+        "unicode": "U+2000C",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 63
+      },
+      {
+        "char": "𠀍",
+        "offset": 62,
+        "unicode": "U+2000D",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 64
+      },
+      {
+        "char": "𠀎",
+        "offset": 63,
+        "unicode": "U+2000E",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 65
+      },
+      {
+        "char": "𠀏",
+        "offset": 64,
+        "unicode": "U+2000F",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 66
+      },
+      {
+        "char": "𠀐",
+        "offset": 65,
+        "unicode": "U+20010",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 67
+      },
+      {
+        "char": "𠀒",
+        "offset": 67,
+        "unicode": "U+20012",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 69
+      },
+      {
+        "char": "𠀓",
+        "offset": 68,
+        "unicode": "U+20013",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 70
+      },
+      {
+        "char": "𠀔",
+        "offset": 69,
+        "unicode": "U+20014",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 71
+      },
+      {
+        "char": "𠀕",
+        "offset": 70,
+        "unicode": "U+20015",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 72
+      },
+      {
+        "char": "𠀖",
+        "offset": 71,
+        "unicode": "U+20016",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 73
+      },
+      {
+        "char": "𠀗",
+        "offset": 72,
+        "unicode": "U+20017",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 74
+      },
+      {
+        "char": "𠀘",
+        "offset": 73,
+        "unicode": "U+20018",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 75
+      },
+      {
+        "char": "𠀙",
+        "offset": 74,
+        "unicode": "U+20019",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 76
+      },
+      {
+        "char": "𠀚",
+        "offset": 75,
+        "unicode": "U+2001A",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 77
+      },
+      {
+        "char": "𠀜",
+        "offset": 76,
+        "unicode": "U+2001C",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 78
+      },
+      {
+        "char": "𠀞",
+        "offset": 77,
+        "unicode": "U+2001E",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 79
+      },
+      {
+        "char": "𠀟",
+        "offset": 78,
+        "unicode": "U+2001F",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 80
+      },
+      {
+        "char": "𠀡",
+        "offset": 80,
+        "unicode": "U+20021",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 82
+      },
+      {
+        "char": "𠀢",
+        "offset": 81,
+        "unicode": "U+20022",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 83
+      },
+      {
+        "char": "𠀣",
+        "offset": 82,
+        "unicode": "U+20023",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 84
+      },
+      {
+        "char": "𠀦",
+        "offset": 84,
+        "unicode": "U+20026",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 86
+      },
+      {
+        "char": "𠀨",
+        "offset": 86,
+        "unicode": "U+20028",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 88
+      },
+      {
+        "char": "𠀪",
+        "offset": 87,
+        "unicode": "U+2002A",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 89
+      },
+      {
+        "char": "𠀫",
+        "offset": 88,
+        "unicode": "U+2002B",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 90
+      },
+      {
+        "char": "𠀬",
+        "offset": 89,
+        "unicode": "U+2002C",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 91
+      },
+      {
+        "char": "𠀭",
+        "offset": 90,
+        "unicode": "U+2002D",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 92
+      },
+      {
+        "char": "𠀮",
+        "offset": 91,
+        "unicode": "U+2002E",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 93
+      },
+      {
+        "char": "𠀰",
+        "offset": 92,
+        "unicode": "U+20030",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 94
+      },
+      {
+        "char": "𠀱",
+        "offset": 93,
+        "unicode": "U+20031",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 95
+      },
+      {
+        "char": "𠀲",
+        "offset": 94,
+        "unicode": "U+20032",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 96
+      },
+      {
+        "char": "𠀳",
+        "offset": 95,
+        "unicode": "U+20033",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 97
+      },
+      {
+        "char": "𠀴",
+        "offset": 96,
+        "unicode": "U+20034",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 98
+      },
+      {
+        "char": "𠀵",
+        "offset": 97,
+        "unicode": "U+20035",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 99
+      },
+      {
+        "char": "𠀶",
+        "offset": 98,
+        "unicode": "U+20036",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 100
+      },
+      {
+        "char": "𠀸",
+        "offset": 99,
+        "unicode": "U+20038",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 101
+      },
+      {
+        "char": "𠀺",
+        "offset": 100,
+        "unicode": "U+2003A",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 102
+      },
+      {
+        "char": "𠀻",
+        "offset": 101,
+        "unicode": "U+2003B",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 103
+      },
+      {
+        "char": "𠀽",
+        "offset": 102,
+        "unicode": "U+2003D",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 104
+      },
+      {
+        "char": "𠀿",
+        "offset": 104,
+        "unicode": "U+2003F",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 106
+      },
+      {
+        "char": "𠁀",
+        "offset": 105,
+        "unicode": "U+20040",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 107
+      },
+      {
+        "char": "𠁂",
+        "offset": 107,
+        "unicode": "U+20042",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 109
+      },
+      {
+        "char": "𠁃",
+        "offset": 108,
+        "unicode": "U+20043",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 110
+      },
+      {
+        "char": "𠁄",
+        "offset": 109,
+        "unicode": "U+20044",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 111
+      },
+      {
+        "char": "𠁅",
+        "offset": 110,
+        "unicode": "U+20045",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 112
+      },
+      {
+        "char": "𠁆",
+        "offset": 111,
+        "unicode": "U+20046",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 113
+      },
+      {
+        "char": "𠁇",
+        "offset": 112,
+        "unicode": "U+20047",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 114
+      },
+      {
+        "char": "𠁈",
+        "offset": 113,
+        "unicode": "U+20048",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 115
+      },
+      {
+        "char": "𠁊",
+        "offset": 114,
+        "unicode": "U+2004A",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 116
+      },
+      {
+        "char": "𠁋",
+        "offset": 115,
+        "unicode": "U+2004B",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 117
+      },
+      {
+        "char": "𠁌",
+        "offset": 116,
+        "unicode": "U+2004C",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 118
+      },
+      {
+        "char": "𠁍",
+        "offset": 117,
+        "unicode": "U+2004D",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 119
+      },
+      {
+        "char": "𠁎",
+        "offset": 118,
+        "unicode": "U+2004E",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 120
+      },
+      {
+        "char": "𠁏",
+        "offset": 119,
+        "unicode": "U+2004F",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 121
+      },
+      {
+        "char": "𠁐",
+        "offset": 120,
+        "unicode": "U+20050",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 122
+      },
+      {
+        "char": "𠁑",
+        "offset": 121,
+        "unicode": "U+20051",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 123
+      },
+      {
+        "char": "𠁒",
+        "offset": 122,
+        "unicode": "U+20052",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 124
+      },
+      {
+        "char": "𠁓",
+        "offset": 123,
+        "unicode": "U+20053",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 125
+      },
+      {
+        "char": "𠁔",
+        "offset": 124,
+        "unicode": "U+20054",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 126
+      },
+      {
+        "char": "𠁕",
+        "offset": 125,
+        "unicode": "U+20055",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 127
+      },
+      {
+        "char": "𠁖",
+        "offset": 126,
+        "unicode": "U+20056",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 128
+      },
+      {
+        "char": "𠁗",
+        "offset": 127,
+        "unicode": "U+20057",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 129
+      },
+      {
+        "char": "𠁘",
+        "offset": 128,
+        "unicode": "U+20058",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 130
+      },
+      {
+        "char": "𠁙",
+        "offset": 129,
+        "unicode": "U+20059",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 131
+      },
+      {
+        "char": "𠁚",
+        "offset": 130,
+        "unicode": "U+2005A",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 132
+      },
+      {
+        "char": "𠁛",
+        "offset": 131,
+        "unicode": "U+2005B",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 133
+      },
+      {
+        "char": "𠁝",
+        "offset": 132,
+        "unicode": "U+2005D",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 134
+      },
+      {
+        "char": "𠁟",
+        "offset": 133,
+        "unicode": "U+2005F",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 135
+      },
+      {
+        "char": "𠁠",
+        "offset": 134,
+        "unicode": "U+20060",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 136
+      },
+      {
+        "char": "𠤢",
+        "offset": 135,
+        "unicode": "U+20922",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 137
+      },
+      {
+        "char": "𤳏",
+        "offset": 136,
+        "unicode": "U+24CCF",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 138
+      },
+      {
+        "char": "𪛙",
+        "offset": 137,
+        "unicode": "U+2A6D9",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 139
+      },
+      {
+        "char": "𪛚",
+        "offset": 138,
+        "unicode": "U+2A6DA",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 140
+      },
+      {
+        "char": "𪜀",
+        "offset": 139,
+        "unicode": "U+2A700",
+        "unicode_block": "CJK Unified Ideographs Extension C",
+        "worksheet_row": 141
+      },
+      {
+        "char": "𪜁",
+        "offset": 140,
+        "unicode": "U+2A701",
+        "unicode_block": "CJK Unified Ideographs Extension C",
+        "worksheet_row": 142
+      },
+      {
+        "char": "𪜂",
+        "offset": 141,
+        "unicode": "U+2A702",
+        "unicode_block": "CJK Unified Ideographs Extension C",
+        "worksheet_row": 143
+      },
+      {
+        "char": "𪜃",
+        "offset": 142,
+        "unicode": "U+2A703",
+        "unicode_block": "CJK Unified Ideographs Extension C",
+        "worksheet_row": 144
+      },
+      {
+        "char": "𪜄",
+        "offset": 143,
+        "unicode": "U+2A704",
+        "unicode_block": "CJK Unified Ideographs Extension C",
+        "worksheet_row": 145
+      },
+      {
+        "char": "𪜅",
+        "offset": 144,
+        "unicode": "U+2A705",
+        "unicode_block": "CJK Unified Ideographs Extension C",
+        "worksheet_row": 146
+      },
+      {
+        "char": "𪜆",
+        "offset": 145,
+        "unicode": "U+2A706",
+        "unicode_block": "CJK Unified Ideographs Extension C",
+        "worksheet_row": 147
+      },
+      {
+        "char": "𪜇",
+        "offset": 146,
+        "unicode": "U+2A707",
+        "unicode_block": "CJK Unified Ideographs Extension C",
+        "worksheet_row": 148
+      },
+      {
+        "char": "𫝀",
+        "offset": 147,
+        "unicode": "U+2B740",
+        "unicode_block": "CJK Unified Ideographs Extension D",
+        "worksheet_row": 149
+      },
+      {
+        "char": "𫝁",
+        "offset": 148,
+        "unicode": "U+2B741",
+        "unicode_block": "CJK Unified Ideographs Extension D",
+        "worksheet_row": 150
+      },
+      {
+        "char": "𫝂",
+        "offset": 149,
+        "unicode": "U+2B742",
+        "unicode_block": "CJK Unified Ideographs Extension D",
+        "worksheet_row": 151
+      },
+      {
+        "char": "𫝃",
+        "offset": 150,
+        "unicode": "U+2B743",
+        "unicode_block": "CJK Unified Ideographs Extension D",
+        "worksheet_row": 152
+      },
+      {
+        "char": "𫠡",
+        "offset": 151,
+        "unicode": "U+2B821",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 153
+      },
+      {
+        "char": "𫠢",
+        "offset": 152,
+        "unicode": "U+2B822",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 154
+      },
+      {
+        "char": "𫠣",
+        "offset": 153,
+        "unicode": "U+2B823",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 155
+      },
+      {
+        "char": "𫠤",
+        "offset": 154,
+        "unicode": "U+2B824",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 156
+      },
+      {
+        "char": "𫠥",
+        "offset": 155,
+        "unicode": "U+2B825",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 157
+      },
+      {
+        "char": "𫠦",
+        "offset": 156,
+        "unicode": "U+2B826",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 158
+      },
+      {
+        "char": "𫠧",
+        "offset": 157,
+        "unicode": "U+2B827",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 159
+      },
+      {
+        "char": "𫠨",
+        "offset": 158,
+        "unicode": "U+2B828",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 160
+      },
+      {
+        "char": "𫠩",
+        "offset": 159,
+        "unicode": "U+2B829",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 161
+      },
+      {
+        "char": "𫠪",
+        "offset": 160,
+        "unicode": "U+2B82A",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 162
+      },
+      {
+        "char": "𫠫",
+        "offset": 161,
+        "unicode": "U+2B82B",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 163
+      },
+      {
+        "char": "𫠬",
+        "offset": 162,
+        "unicode": "U+2B82C",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 164
+      },
+      {
+        "char": "𫠭",
+        "offset": 163,
+        "unicode": "U+2B82D",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 165
+      },
+      {
+        "char": "𫠮",
+        "offset": 164,
+        "unicode": "U+2B82E",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 166
+      },
+      {
+        "char": "𫠯",
+        "offset": 165,
+        "unicode": "U+2B82F",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 167
+      },
+      {
+        "char": "𫠰",
+        "offset": 166,
+        "unicode": "U+2B830",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 168
+      },
+      {
+        "char": "𫠱",
+        "offset": 167,
+        "unicode": "U+2B831",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 169
+      },
+      {
+        "char": "𫠲",
+        "offset": 168,
+        "unicode": "U+2B832",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 170
+      },
+      {
+        "char": "𫠳",
+        "offset": 169,
+        "unicode": "U+2B833",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 171
+      },
+      {
+        "char": "𫠴",
+        "offset": 170,
+        "unicode": "U+2B834",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 172
+      },
+      {
+        "char": "𫠵",
+        "offset": 171,
+        "unicode": "U+2B835",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 173
+      },
+      {
+        "char": "𫠶",
+        "offset": 172,
+        "unicode": "U+2B836",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 174
+      },
+      {
+        "char": "𫠷",
+        "offset": 173,
+        "unicode": "U+2B837",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 175
+      },
+      {
+        "char": "𫠸",
+        "offset": 174,
+        "unicode": "U+2B838",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 176
+      },
+      {
+        "char": "𫠹",
+        "offset": 175,
+        "unicode": "U+2B839",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 177
+      }
+    ],
+    "agent_standard_rule_learning_candidate": [
+      {
+        "char": "㐁",
+        "offset": 30,
+        "unicode": "U+3401",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 32
+      },
+      {
+        "char": "䶶",
+        "offset": 32,
+        "unicode": "U+4DB6",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 34
+      },
+      {
+        "char": "㐃",
+        "offset": 319,
+        "unicode": "U+3403",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 321
+      },
+      {
+        "char": "㐇",
+        "offset": 588,
+        "unicode": "U+3407",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 590
+      },
+      {
+        "char": "㐈",
+        "offset": 589,
+        "unicode": "U+3408",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 591
+      },
+      {
+        "char": "㐉",
+        "offset": 590,
+        "unicode": "U+3409",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 592
+      },
+      {
+        "char": "㐊",
+        "offset": 591,
+        "unicode": "U+340A",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 593
+      },
+      {
+        "char": "㐋",
+        "offset": 592,
+        "unicode": "U+340B",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 594
+      },
+      {
+        "char": "㐍",
+        "offset": 594,
+        "unicode": "U+340D",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 596
+      },
+      {
+        "char": "㐎",
+        "offset": 595,
+        "unicode": "U+340E",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 597
+      },
+      {
+        "char": "㐏",
+        "offset": 596,
+        "unicode": "U+340F",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 598
+      },
+      {
+        "char": "㐑",
+        "offset": 598,
+        "unicode": "U+3411",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 600
+      },
+      {
+        "char": "㐒",
+        "offset": 599,
+        "unicode": "U+3412",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 601
+      },
+      {
+        "char": "㐓",
+        "offset": 600,
+        "unicode": "U+3413",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 602
+      },
+      {
+        "char": "㐔",
+        "offset": 601,
+        "unicode": "U+3414",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 603
+      },
+      {
+        "char": "㐕",
+        "offset": 602,
+        "unicode": "U+3415",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 604
+      },
+      {
+        "char": "㐗",
+        "offset": 604,
+        "unicode": "U+3417",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 606
+      },
+      {
+        "char": "㐘",
+        "offset": 605,
+        "unicode": "U+3418",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 607
+      },
+      {
+        "char": "㐙",
+        "offset": 606,
+        "unicode": "U+3419",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 608
+      },
+      {
+        "char": "㐚",
+        "offset": 607,
+        "unicode": "U+341A",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 609
+      },
+      {
+        "char": "㐛",
+        "offset": 608,
+        "unicode": "U+341B",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 610
+      },
+      {
+        "char": "㐝",
+        "offset": 610,
+        "unicode": "U+341D",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 612
+      },
+      {
+        "char": "㐞",
+        "offset": 611,
+        "unicode": "U+341E",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 613
+      },
+      {
+        "char": "㐟",
+        "offset": 612,
+        "unicode": "U+341F",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 614
+      },
+      {
+        "char": "㐠",
+        "offset": 613,
+        "unicode": "U+3420",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 615
+      },
+      {
+        "char": "㐢",
+        "offset": 615,
+        "unicode": "U+3422",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 617
+      },
+      {
+        "char": "㐣",
+        "offset": 616,
+        "unicode": "U+3423",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 618
+      },
+      {
+        "char": "㐥",
+        "offset": 618,
+        "unicode": "U+3425",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 620
+      },
+      {
+        "char": "㐦",
+        "offset": 619,
+        "unicode": "U+3426",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 621
+      },
+      {
+        "char": "㐪",
+        "offset": 975,
+        "unicode": "U+342A",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 977
+      },
+      {
+        "char": "㐮",
+        "offset": 979,
+        "unicode": "U+342E",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 981
+      },
+      {
+        "char": "㐯",
+        "offset": 980,
+        "unicode": "U+342F",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 982
+      },
+      {
+        "char": "㐳",
+        "offset": 1412,
+        "unicode": "U+3433",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1414
+      },
+      {
+        "char": "㐴",
+        "offset": 1413,
+        "unicode": "U+3434",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1415
+      },
+      {
+        "char": "㐶",
+        "offset": 1415,
+        "unicode": "U+3436",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1417
+      },
+      {
+        "char": "㐸",
+        "offset": 1417,
+        "unicode": "U+3438",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1419
+      },
+      {
+        "char": "㐹",
+        "offset": 1418,
+        "unicode": "U+3439",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1420
+      },
+      {
+        "char": "㐼",
+        "offset": 1421,
+        "unicode": "U+343C",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1423
+      },
+      {
+        "char": "㐿",
+        "offset": 1424,
+        "unicode": "U+343F",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1426
+      },
+      {
+        "char": "㑁",
+        "offset": 1426,
+        "unicode": "U+3441",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1428
+      },
+      {
+        "char": "㑂",
+        "offset": 1427,
+        "unicode": "U+3442",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1429
+      },
+      {
+        "char": "㑃",
+        "offset": 1428,
+        "unicode": "U+3443",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1430
+      },
+      {
+        "char": "㑄",
+        "offset": 1429,
+        "unicode": "U+3444",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1431
+      },
+      {
+        "char": "㑅",
+        "offset": 1430,
+        "unicode": "U+3445",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1432
+      },
+      {
+        "char": "㑆",
+        "offset": 1431,
+        "unicode": "U+3446",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1433
+      },
+      {
+        "char": "㑉",
+        "offset": 1433,
+        "unicode": "U+3449",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1435
+      },
+      {
+        "char": "㑌",
+        "offset": 1435,
+        "unicode": "U+344C",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1437
+      },
+      {
+        "char": "㑍",
+        "offset": 1436,
+        "unicode": "U+344D",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1438
+      },
+      {
+        "char": "㑏",
+        "offset": 1438,
+        "unicode": "U+344F",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1440
+      },
+      {
+        "char": "㑐",
+        "offset": 1439,
+        "unicode": "U+3450",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1441
+      },
+      {
+        "char": "㑑",
+        "offset": 1440,
+        "unicode": "U+3451",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1442
+      },
+      {
+        "char": "㑒",
+        "offset": 1441,
+        "unicode": "U+3452",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1443
+      },
+      {
+        "char": "㑓",
+        "offset": 1442,
+        "unicode": "U+3453",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1444
+      },
+      {
+        "char": "㑕",
+        "offset": 1444,
+        "unicode": "U+3455",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1446
+      },
+      {
+        "char": "㑖",
+        "offset": 1445,
+        "unicode": "U+3456",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1447
+      },
+      {
+        "char": "㑗",
+        "offset": 1446,
+        "unicode": "U+3457",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1448
+      },
+      {
+        "char": "㑘",
+        "offset": 1447,
+        "unicode": "U+3458",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1449
+      },
+      {
+        "char": "㑙",
+        "offset": 1448,
+        "unicode": "U+3459",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1450
+      },
+      {
+        "char": "㑛",
+        "offset": 1450,
+        "unicode": "U+345B",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1452
+      },
+      {
+        "char": "㑜",
+        "offset": 1451,
+        "unicode": "U+345C",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1453
+      },
+      {
+        "char": "㑞",
+        "offset": 1453,
+        "unicode": "U+345E",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1455
+      },
+      {
+        "char": "㑟",
+        "offset": 1454,
+        "unicode": "U+345F",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1456
+      },
+      {
+        "char": "㑠",
+        "offset": 1455,
+        "unicode": "U+3460",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1457
+      },
+      {
+        "char": "㑡",
+        "offset": 1456,
+        "unicode": "U+3461",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1458
+      },
+      {
+        "char": "㑢",
+        "offset": 1457,
+        "unicode": "U+3462",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1459
+      },
+      {
+        "char": "㑣",
+        "offset": 1458,
+        "unicode": "U+3463",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1460
+      },
+      {
+        "char": "㑤",
+        "offset": 1459,
+        "unicode": "U+3464",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1461
+      },
+      {
+        "char": "㑦",
+        "offset": 1461,
+        "unicode": "U+3466",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1463
+      },
+      {
+        "char": "㑨",
+        "offset": 1463,
+        "unicode": "U+3468",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1465
+      },
+      {
+        "char": "㑪",
+        "offset": 1465,
+        "unicode": "U+346A",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1467
+      },
+      {
+        "char": "㑫",
+        "offset": 1466,
+        "unicode": "U+346B",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1468
+      },
+      {
+        "char": "㑬",
+        "offset": 1467,
+        "unicode": "U+346C",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1469
+      },
+      {
+        "char": "㑭",
+        "offset": 1468,
+        "unicode": "U+346D",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1470
+      },
+      {
+        "char": "㑮",
+        "offset": 1469,
+        "unicode": "U+346E",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1471
+      },
+      {
+        "char": "㑯",
+        "offset": 1470,
+        "unicode": "U+346F",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1472
+      },
+      {
+        "char": "㑰",
+        "offset": 1471,
+        "unicode": "U+3470",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1473
+      },
+      {
+        "char": "㑱",
+        "offset": 1472,
+        "unicode": "U+3471",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1474
+      },
+      {
+        "char": "㑲",
+        "offset": 1473,
+        "unicode": "U+3472",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1475
+      },
+      {
+        "char": "㑳",
+        "offset": 1474,
+        "unicode": "U+3473",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1476
+      },
+      {
+        "char": "㑴",
+        "offset": 1475,
+        "unicode": "U+3474",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1477
+      },
+      {
+        "char": "㑵",
+        "offset": 1476,
+        "unicode": "U+3475",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1478
+      },
+      {
+        "char": "㑶",
+        "offset": 1477,
+        "unicode": "U+3476",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1479
+      },
+      {
+        "char": "㑸",
+        "offset": 1479,
+        "unicode": "U+3478",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1481
+      },
+      {
+        "char": "㑻",
+        "offset": 1482,
+        "unicode": "U+347B",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1484
+      },
+      {
+        "char": "㑼",
+        "offset": 1483,
+        "unicode": "U+347C",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1485
+      },
+      {
+        "char": "㑽",
+        "offset": 1484,
+        "unicode": "U+347D",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1486
+      },
+      {
+        "char": "㑾",
+        "offset": 1485,
+        "unicode": "U+347E",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1487
+      },
+      {
+        "char": "㑿",
+        "offset": 1486,
+        "unicode": "U+347F",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1488
+      },
+      {
+        "char": "㒀",
+        "offset": 1487,
+        "unicode": "U+3480",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1489
+      },
+      {
+        "char": "㒁",
+        "offset": 1488,
+        "unicode": "U+3481",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1490
+      },
+      {
+        "char": "㒂",
+        "offset": 1489,
+        "unicode": "U+3482",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1491
+      },
+      {
+        "char": "㒃",
+        "offset": 1490,
+        "unicode": "U+3483",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1492
+      },
+      {
+        "char": "㒅",
+        "offset": 1492,
+        "unicode": "U+3485",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1494
+      },
+      {
+        "char": "㒆",
+        "offset": 1493,
+        "unicode": "U+3486",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1495
+      },
+      {
+        "char": "㒇",
+        "offset": 1494,
+        "unicode": "U+3487",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1496
+      },
+      {
+        "char": "㒈",
+        "offset": 1495,
+        "unicode": "U+3488",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1497
+      },
+      {
+        "char": "㒉",
+        "offset": 1496,
+        "unicode": "U+3489",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1498
+      },
+      {
+        "char": "㒊",
+        "offset": 1497,
+        "unicode": "U+348A",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1499
+      },
+      {
+        "char": "㒋",
+        "offset": 1498,
+        "unicode": "U+348B",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1500
+      },
+      {
+        "char": "㒌",
+        "offset": 1499,
+        "unicode": "U+348C",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1501
+      },
+      {
+        "char": "㒍",
+        "offset": 1500,
+        "unicode": "U+348D",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1502
+      },
+      {
+        "char": "㒎",
+        "offset": 1501,
+        "unicode": "U+348E",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1503
+      },
+      {
+        "char": "㒏",
+        "offset": 1502,
+        "unicode": "U+348F",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1504
+      },
+      {
+        "char": "㒐",
+        "offset": 1503,
+        "unicode": "U+3490",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1505
+      },
+      {
+        "char": "㒑",
+        "offset": 1504,
+        "unicode": "U+3491",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1506
+      },
+      {
+        "char": "㒓",
+        "offset": 1506,
+        "unicode": "U+3493",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1508
+      },
+      {
+        "char": "㒔",
+        "offset": 1507,
+        "unicode": "U+3494",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1509
+      },
+      {
+        "char": "㒕",
+        "offset": 1508,
+        "unicode": "U+3495",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1510
+      },
+      {
+        "char": "㒖",
+        "offset": 1509,
+        "unicode": "U+3496",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1511
+      },
+      {
+        "char": "㒗",
+        "offset": 1510,
+        "unicode": "U+3497",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1512
+      },
+      {
+        "char": "㒘",
+        "offset": 1511,
+        "unicode": "U+3498",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1513
+      },
+      {
+        "char": "㒙",
+        "offset": 1512,
+        "unicode": "U+3499",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1514
+      },
+      {
+        "char": "㒛",
+        "offset": 1514,
+        "unicode": "U+349B",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1516
+      },
+      {
+        "char": "㒝",
+        "offset": 1516,
+        "unicode": "U+349D",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1518
+      },
+      {
+        "char": "㒠",
+        "offset": 1519,
+        "unicode": "U+34A0",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1521
+      },
+      {
+        "char": "㒢",
+        "offset": 1521,
+        "unicode": "U+34A2",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1523
+      },
+      {
+        "char": "㒣",
+        "offset": 1522,
+        "unicode": "U+34A3",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1524
+      },
+      {
+        "char": "㒤",
+        "offset": 1523,
+        "unicode": "U+34A4",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1525
+      },
+      {
+        "char": "㒥",
+        "offset": 1524,
+        "unicode": "U+34A5",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1526
+      },
+      {
+        "char": "㒦",
+        "offset": 1525,
+        "unicode": "U+34A6",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1527
+      }
+    ]
+  },
+  "summary": {
+    "baseline_8105_rows": 8105,
+    "baseline_structure_distribution": {
+      "UNRESOLVED": 1244,
+      "上三包": 79,
+      "上下": 1626,
+      "上中下": 47,
+      "下三包": 7,
+      "全包围": 35,
+      "右上包": 52,
+      "左三包": 15,
+      "左上包": 281,
+      "左下包": 162,
+      "左中右": 18,
+      "左右": 4358,
+      "独体字": 29,
+      "镶嵌": 152
+    },
+    "cnbe_row_write_allowed": false,
+    "database_rebuild_allowed": false,
+    "extension_review_candidates": 67946,
+    "formal_gf0017_scoring_allowed": false,
+    "gf0017_8105_status_distribution": {
+      "EVIDENCE_GAP": 1244,
+      "FAIL_FIXABLE": 6314,
+      "FAIL_REVIEW_REQUIRED": 547
+    },
+    "legacy_localization_distribution": {
+      "上三包": 1608,
+      "上下": 1608,
+      "上中下": 1608,
+      "下三包": 1608,
+      "全包围": 1607,
+      "右上包": 1608,
+      "左三包": 1608,
+      "左上包": 1608,
+      "左下包": 1608,
+      "左中右": 1608,
+      "左右": 1608,
+      "独体字": 1608,
+      "镶嵌": 1607
+    },
+    "rule_learning_candidates": 5885,
+    "score_values_assigned": 0,
+    "source_asset_write_allowed": false,
+    "standard_level": "agent_standard_candidate_not_national_standard"
+  }
+}

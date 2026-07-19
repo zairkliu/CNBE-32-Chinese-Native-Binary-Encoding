@@ -1,0 +1,57 @@
+{
+  "checks": {
+    "final_structure_labels_emitted_zero": true,
+    "forbidden_score_rows_zero": true,
+    "malformed_rows_zero": true,
+    "repair_report_passed": true,
+    "report_blocks_cnbe_writes": true,
+    "report_blocks_database_rebuild": true,
+    "report_blocks_scoring": true,
+    "required_statuses_present": true,
+    "row_count_match": true,
+    "scope_8105_count_match": true,
+    "score_values_assigned_zero": true
+  },
+  "decision": {
+    "may_assign_gf0017_points": false,
+    "may_emit_final_structure_labels": false,
+    "may_generate_bounded_review_packet": true,
+    "may_generate_full_table_or_database": false,
+    "reason": "Agent audit passed. The next packet must reference the existing 97,686-row evidence report instead of duplicating it."
+  },
+  "issue_samples": {
+    "forbidden_score_rows": [],
+    "malformed_rows": []
+  },
+  "mode": "read_only_structure_decomposition_evidence_repair_agent_audit",
+  "next_workflow_status": "STRUCTURE_DECOMPOSITION_REVIEW_PACKET_ALLOWED_NO_FULL_TABLE_DUPLICATION",
+  "overall_status": "PASS_STRUCTURE_DECOMPOSITION_AGENT_AUDIT_READY_FOR_REVIEW_PACKET",
+  "report_schema_version": "1.0",
+  "source_report": {
+    "path": "reports/gf0017_structure_decomposition_evidence_repair_from_index.json",
+    "row_count": 97686,
+    "sha256": "a3336ef410d8441e15a55d0bb7e5f5b42973d997337e3f7b6d0f74148cd315f5"
+  },
+  "summary": {
+    "forbidden_score_row_sample_count": 0,
+    "malformed_row_sample_count": 0,
+    "may_assign_gf0017_points": false,
+    "may_duplicate_full_97686_table": false,
+    "may_emit_final_structure_labels": false,
+    "may_generate_database": false,
+    "may_generate_review_packet": true,
+    "scope_counts": {
+      "8105_core": 8105,
+      "outside_8105_agent_candidate": 89581
+    },
+    "status_counts": {
+      "CORE_8105_STRUCTURE_STANDARD_JOIN_REQUIRED": 8105,
+      "STRUCTURE_DECOMPOSITION_AGENT_STANDARD_QUEUE_ONLY": 44871,
+      "STRUCTURE_DECOMPOSITION_PARTIAL_REVIEW_REQUIRED": 2029,
+      "STRUCTURE_DECOMPOSITION_REVIEWABLE_CONTEXT_READY": 2551,
+      "STRUCTURE_DECOMPOSITION_SOURCE_GAP_WITH_DICTIONARY_CONTEXT": 12,
+      "STRUCTURE_DECOMPOSITION_SOURCE_GAP_WITH_REVIEW_CONTEXT": 40118
+    },
+    "total_rows": 97686
+  }
+}

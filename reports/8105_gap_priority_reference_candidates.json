@@ -1,0 +1,50 @@
+{
+  "checks": {
+    "all_gap_rows_accounted_for": true,
+    "cihai_wiki_do_not_assign_structure": true,
+    "gap_row_count_expected": true,
+    "no_cnbe_rows_written": true,
+    "no_database_rebuild": true,
+    "proposed_structures_allowed": true,
+    "zdic_not_used_by_default": true
+  },
+  "decision": {
+    "may_human_review_candidates": true,
+    "may_rebuild_database": false,
+    "may_write_cnbe_rows": false,
+    "reason": "The workflow uses Yuanliu only when IDS and structure are self-consistent. Cihai and offline Wiki are attached as review context only. ZDIC is excluded from the default priority path."
+  },
+  "mode": "full_8105_gap_priority_reference_candidates",
+  "outputs": {
+    "candidate_csv": "review_packets/8105_full/8105_gap_priority_reference_candidates.csv",
+    "json_report": "reports/8105_gap_priority_reference_candidates.json",
+    "markdown_report": "reports/8105_GAP_PRIORITY_REFERENCE_CANDIDATES.md",
+    "remaining_queue_csv": "review_packets/8105_full/8105_gap_priority_remaining_queue.csv"
+  },
+  "overall_status": "PASS_8105_GAP_PRIORITY_REFERENCE_CANDIDATES_READY",
+  "report_schema_version": "1.0",
+  "summary": {
+    "candidate_rows": 30,
+    "candidate_rule_counts": {
+      "context_only_no_safe_structure_candidate": 1507,
+      "standard_side_single_component_identity": 29,
+      "yuanliu_ids_consistent_structure_candidate": 1
+    },
+    "cihai_hits": 279,
+    "cnbe_rows_written": 0,
+    "database_rebuild_allowed": false,
+    "gap_rows": 1537,
+    "proposed_structure_counts": {
+      "上下": 1,
+      "独体字": 29
+    },
+    "remaining_rows": 1507,
+    "source_priority_counts": {
+      "cihai_wiki_context_only": 1507,
+      "existing_8105_standard_side": 29,
+      "yuanliu_core_reference": 1
+    },
+    "wiki_hits": 0,
+    "yuanliu_hits": 298
+  }
+}

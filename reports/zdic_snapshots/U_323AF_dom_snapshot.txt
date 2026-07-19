@@ -1,0 +1,133 @@
+- navigation "站点导航":
+  - link "汉典":
+    - /url: //zdic.net
+  - generic: "|"
+  - link "古籍":
+    - /url: //gj.zdic.net
+  - generic: "|"
+  - link "诗词":
+    - /url: //sc.zdic.net
+  - generic: "|"
+  - link "书法":
+    - /url: //sf.zdic.net
+  - generic: "|"
+  - link "通识":
+    - /url: /ts/
+- button "查询索引":
+  - text: 查询索引
+- generic: "|"
+- link "繁體":
+  - /url: /hant/𲎯
+- button "切换深色模式":
+- banner:
+  - link "漢典":
+    - /url: /
+    - img "漢典"
+  - search "汉字搜索":
+    - combobox "搜索类型":
+      - option "条目" [selected]
+      - option "汉字"
+      - option "词语"
+      - option "成语"
+      - option "义项"
+      - option "书证"
+      - option "例句"
+      - option "近反义词"
+      - option "拆分"
+      - option "拼音"
+      - option "笔顺"
+      - option "五笔"
+      - option "仓颉"
+      - option "四角"
+      - option "Unicode"
+    - searchbox "请输入汉字或词语"
+    - button "搜索":
+- insertion
+- main:
+  - article:
+    - figure:
+      - img "𲎯"
+    - generic: 部首
+    - link "龠":
+      - /url: /zd/bs/?bs=%E9%BE%A0
+    - generic: 部外
+    - generic: "14"
+    - generic: 总笔画
+    - generic: "23"
+    - generic: 统一码
+    - generic: 323AF
+  - navigation "字典内容导航":
+    - tablist:
+      - tab "基本解释"
+  - heading "𲎯 基本解释" [level=2]:
+    - generic: 𲎯
+    - text: 基本解释
+  - list:
+    - text: 同“
+    - link "吹":
+      - /url: /hans/%E5%90%B9
+    - text: ”。
+  - link "反馈":
+    - /url: "#"
+  - insertion
+  - insertion
+- complementary "相关信息":
+  - region "同音字":
+    - heading "同音字" [level=3]
+    - paragraph: 暂无同音字数据
+  - insertion
+  - region "同部首":
+    - heading "同部首" [level=3]
+    - link "𮯠":
+      - /url: /hans/%F0%AE%AF%A0
+    - link "𪛐":
+      - /url: /hans/%F0%AA%9B%90
+    - link "龡":
+      - /url: /hans/%E9%BE%A1
+    - link "𪛍":
+      - /url: /hans/%F0%AA%9B%8D
+    - link "龤":
+      - /url: /hans/%E9%BE%A4
+    - link "𪛋":
+      - /url: /hans/%F0%AA%9B%8B
+    - link "䶵":
+      - /url: /hans/%E4%B6%B5
+    - link "䶴":
+      - /url: /hans/%E4%B6%B4
+    - link "𬺟":
+      - /url: /hans/%F0%AC%BA%9F
+    - link "䶳":
+      - /url: /hans/%E4%B6%B3
+    - link "𪛊":
+      - /url: /hans/%F0%AA%9B%8A
+    - link "𪛒":
+      - /url: /hans/%F0%AA%9B%92
+    - paragraph: 与「龠」部相关的字
+  - region "热搜":
+    - heading "热搜" [level=3]
+    - link "为":
+      - /url: /hans/%E4%B8%BA
+    - link "以":
+      - /url: /hans/%E4%BB%A5
+    - link "人":
+      - /url: /hans/%E4%BA%BA
+    - link "行":
+      - /url: /hans/%E8%A1%8C
+    - link "我":
+      - /url: /hans/%E6%88%91
+    - link "其":
+      - /url: /hans/%E5%85%B6
+    - link "一":
+      - /url: /hans/%E4%B8%80
+    - link "之":
+      - /url: /hans/%E4%B9%8B
+    - paragraph: 常被查询的字
+- contentinfo:
+  - list:
+    - link "关于":
+      - /url: /about/
+    - link "条款":
+      - /url: /terms/
+    - link "反馈":
+      - /url: https://support.qq.com/products/315677
+  - generic: © 2004-2026 汉典 ZDIC.NET

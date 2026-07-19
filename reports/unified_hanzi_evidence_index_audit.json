@@ -1,0 +1,58 @@
+{
+  "checks": {
+    "final_structure_labels_emitted_zero": true,
+    "forbidden_sample_field_issues_zero": true,
+    "index_status_pass": true,
+    "malformed_rows_zero": true,
+    "profile_reference_issues_zero": true,
+    "row_count_match": true,
+    "sample_set_complete": true,
+    "schema_has_required_profile_refs": true,
+    "scope_counts_match": true,
+    "score_values_assigned_zero": true,
+    "summary_blocks_cnbe_writes": true,
+    "summary_blocks_database_rebuild": true,
+    "summary_blocks_scoring": true
+  },
+  "decision": {
+    "may_rebuild_database": false,
+    "may_start_formal_gf0017_scoring": false,
+    "may_start_human_review": true,
+    "may_write_cnbe_rows": false,
+    "reason": "The unified evidence index is internally consistent and read-only. Formal scoring, CNBE row writes, and database rebuilds still require separate human authorization."
+  },
+  "issue_samples": {
+    "forbidden_sample_field_issues": [],
+    "malformed_rows": [],
+    "profile_reference_issues": []
+  },
+  "mode": "read_only_unified_hanzi_evidence_index_audit",
+  "next_workflow_status": "HUMAN_REVIEW_OR_FORMAL_SCORING_AUTHORIZATION_REQUIRED",
+  "overall_status": "PASS_UNIFIED_EVIDENCE_INDEX_AUDITED",
+  "report_schema_version": "1.0",
+  "summary": {
+    "catalog_scope_counts": {
+      "8105_core": 8105,
+      "outside_8105_agent_candidate": 89581
+    },
+    "cnbe_row_write_allowed": false,
+    "database_rebuild_allowed": false,
+    "forbidden_sample_field_issue_count": 0,
+    "formal_gf0017_scoring_allowed": false,
+    "malformed_row_sample_count": 0,
+    "profile_counts": {
+      "agent_evidence_item_statuses": 2,
+      "evidence_gaps": 13,
+      "feature_flags": 2,
+      "forbidden_outputs": 1,
+      "source_join_item_statuses": 1
+    },
+    "profile_reference_issue_sample_count": 0,
+    "review_status_counts": {
+      "OUTSIDE_8105_REVIEW_CONTEXT_AVAILABLE": 44307,
+      "OUTSIDE_8105_SOURCE_GAP_REVIEW_REQUIRED": 45274,
+      "READY_FOR_8105_CORE_ITEM_LEVEL_REVIEW": 8105
+    },
+    "total_entries": 97686
+  }
+}

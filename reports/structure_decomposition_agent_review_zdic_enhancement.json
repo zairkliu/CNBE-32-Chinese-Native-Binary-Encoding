@@ -1,0 +1,47 @@
+{
+  "authority_boundary": {
+    "does_not_assign_gf0017_points": true,
+    "does_not_emit_final_structure_labels": true,
+    "does_not_modify_source_report": true,
+    "does_not_promote_zdic_to_national_standard": true,
+    "does_not_rebuild_database": true,
+    "does_not_write_cnbe_rows": true,
+    "zdic_cross_reference_only": true
+  },
+  "checks": {
+    "all_rows_have_zdic_url": true,
+    "does_not_assign_points": true,
+    "does_not_create_database": true,
+    "does_not_emit_final_labels": true,
+    "does_not_modify_original_agent_reviewed_copy": true,
+    "does_not_modify_source_report": true,
+    "row_count_matches_manifest": true,
+    "zdic_manifest_passed": true
+  },
+  "decision": {
+    "may_assign_gf0017_points": false,
+    "may_emit_final_structure_labels": false,
+    "may_promote_zdic_to_national_standard": false,
+    "may_rebuild_database": false,
+    "may_use_zdic_enhanced_copy_for_review": true,
+    "may_write_cnbe_rows": false,
+    "reason": "ZDIC references were added to a separate reviewed editable copy. They are online cross-reference context only."
+  },
+  "mode": "bounded_agent_review_zdic_reference_enhancement",
+  "next_workflow_status": "ZDIC_ENHANCED_REVIEW_COPY_READY_NOT_SOURCE_EVIDENCE",
+  "outputs": {
+    "enhancement_json": "reports/structure_decomposition_agent_review_zdic_enhancement.json",
+    "enhancement_markdown": "reports/STRUCTURE_DECOMPOSITION_AGENT_REVIEW_ZDIC_ENHANCEMENT.md",
+    "zdic_enhanced_editable_csv": "review_packets/structure_decomposition/structure_decomposition_review_packet_AGENT_REVIEWED_ZDIC_EDITABLE.csv"
+  },
+  "overall_status": "PASS_AGENT_REVIEW_ZDIC_REFERENCES_APPLIED",
+  "report_schema_version": "1.0",
+  "summary": {
+    "database_generation_allowed": false,
+    "enhanced_rows": 212,
+    "final_structure_labels_emitted": 0,
+    "gf0017_points_assigned": 0,
+    "packet_snapshot_references_available": 2,
+    "snapshot_references_available": 5
+  }
+}

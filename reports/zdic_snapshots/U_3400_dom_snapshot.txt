@@ -1,0 +1,251 @@
+- navigation "站点导航":
+  - link "汉典":
+    - /url: //zdic.net
+  - generic: "|"
+  - link "古籍":
+    - /url: //gj.zdic.net
+  - generic: "|"
+  - link "诗词":
+    - /url: //sc.zdic.net
+  - generic: "|"
+  - link "书法":
+    - /url: //sf.zdic.net
+  - generic: "|"
+  - link "通识":
+    - /url: /ts/
+- button "查询索引":
+  - text: 查询索引
+- generic: "|"
+- link "繁體":
+  - /url: /hant/㐀
+- button "切换深色模式":
+- banner:
+  - link "漢典":
+    - /url: /
+    - img "漢典"
+  - search "汉字搜索":
+    - combobox "搜索类型":
+      - option "条目" [selected]
+      - option "汉字"
+      - option "词语"
+      - option "成语"
+      - option "义项"
+      - option "书证"
+      - option "例句"
+      - option "近反义词"
+      - option "拆分"
+      - option "拼音"
+      - option "笔顺"
+      - option "五笔"
+      - option "仓颉"
+      - option "四角"
+      - option "Unicode"
+    - searchbox "请输入汉字或词语"
+    - button "搜索":
+- insertion
+- main:
+  - article:
+    - figure:
+      - img "㐀"
+    - generic: 拼音
+    - text: qiū
+    - button "播放qiū":
+    - generic: 注音
+    - text: ㄑㄧㄡ
+    - button "播放注音ㄑㄧㄡ":
+    - generic: 部首
+    - link "一":
+      - /url: /zd/bs/?bs=%E4%B8%80
+    - generic: 部外
+    - generic: "1"
+    - generic: 总笔画
+    - generic: "5"
+    - generic: 统一码
+    - generic: CJK-A 3400
+    - generic: 笔顺
+    - generic: "21211"
+    - generic: 字形结构
+    - generic: 上下结构
+    - generic: 异体
+    - list:
+      - link "丘":
+        - /url: /hans/%E4%B8%98
+        - img "丘"
+  - navigation "字典内容导航":
+    - tablist:
+      - tab "基本解释"
+      - tab "康熙字典"
+      - tab "说文解字"
+      - tab "音韵方言"
+      - tab "字源字形"
+  - heading "㐀 基本解释" [level=2]:
+    - generic: 㐀
+    - text: 基本解释
+  - generic: ●㐀
+  - generic: qiū
+  - button "播放qiū":
+  - generic: ㄑㄧㄡ
+  - list:
+    - text: 同“
+    - link "丘":
+      - /url: /hans/%E4%B8%98
+    - text: ”。
+  - link "反馈":
+    - /url: "#"
+  - insertion
+  - insertion
+  - heading "㐀 康熙字典" [level=2]:
+    - generic: 㐀
+    - text: 康熙字典
+  - paragraph: 【子集上】【一字部】 康熙笔画：5 部外笔画：4
+  - img "㐀"
+  - paragraph: 【正字通】同丘。【風俗通】二人立一上。一者，地也。象形。
+  - link "反馈":
+    - /url: "#"
+  - heading "↳ 丘 说文解字" [level=2]
+  - paragraph:
+    - text: （说文解字未收录「㐀」字头，请参考「
+    - link "丘":
+      - /url: /hans/%E4%B8%98
+    - text: 」字：）
+  - heading "说文解字·丘" [level=3]
+  - paragraph: 卷八
+  - img "丘"
+  - paragraph:
+    - text: 土之高也，非人所爲也。从北从一。一，地也，人居在丘南，故从北。中邦之居，在崐崘東南。一曰四方高，中央下爲丘。象形。凡丘之屬皆从丘。今隷變作丘。
+    - generic: 𡊣
+    - text: ，古文从土。去鳩切
+  - heading "说文解字注·丘" [level=3]
+  - paragraph:
+    - generic: (丘)
+    - text: 土之高也。大司徒注曰：土高曰丘。非人所爲也。釋丘曰：非人爲之丘，謂非人力所爲也。从北从一。會意。去鳩切。古音在一部，讀如欺。漢時讀入今之尤韵。故禮記嫌名注曰：宇與禹、丘與區之類，漢時區亦去鳩切也。一，地也。釋从一之意。人凥在丠南，故从北。釋从北之意。中邦之凥，在昆侖東南。昆侖下當有丘字，嫌人居不必在丘南，故言倉頡造字之初，取意於此。一曰四方高，中央下爲丘。淮南墬形訓注曰：四方而高曰丘。象形。與上會意別。凡丠之屬皆从丠。
+  - paragraph:
+    - generic: (㘳)
+    - text: 古文从土。从土猶从一。
+  - link "反馈":
+    - /url: "#"
+  - heading "㐀 音韵方言" [level=2]:
+    - generic: 㐀
+    - text: 音韵方言
+  - tabpanel:
+    - heading "方言读音 （旧版简文）" [level=3]
+    - term: 广东话
+    - definition: jau1
+  - link "韵书":
+    - /url: /hans/%E3%90%80/yunshu
+    - generic: 韵书
+  - link "上古音":
+    - /url: /hans/%E3%90%80/shangguyin
+    - generic: 上古音
+  - link "中古音":
+    - /url: /hans/%E3%90%80/zhongguyin
+    - generic: 中古音
+  - link "反馈":
+    - /url: "#"
+  - heading "㐀 字源字形" [level=2]:
+    - generic: 㐀
+    - text: 字源字形
+  - heading "字形对比" [level=3]
+  - img "中国大陆"
+  - generic: 中国大陆
+  - img "台湾"
+  - generic: 台湾
+  - heading "异体字" [level=3]
+  - link "丘":
+    - /url: /hans/%E4%B8%98
+    - img "丘"
+  - text: 丘
+  - generic: 五笔
+  - generic: gjgg
+  - generic: 仓颉
+  - generic: tm
+  - generic: 郑码
+  - generic: aiia
+  - generic: 四角号码
+  - generic: "11102"
+  - link "反馈":
+    - /url: "#"
+- complementary "相关信息":
+  - region "同音字":
+    - heading "同音字" [level=3]
+    - link "恘":
+      - /url: /hans/%E6%81%98
+    - link "丠":
+      - /url: /hans/%E4%B8%A0
+    - link "秌":
+      - /url: /hans/%E7%A7%8C
+    - link "鰌":
+      - /url: /hans/%E9%B0%8C
+    - link "緧":
+      - /url: /hans/%E7%B7%A7
+    - link "龝":
+      - /url: /hans/%E9%BE%9D
+    - link "橚":
+      - /url: /hans/%E6%A9%9A
+    - link "蚯":
+      - /url: /hans/%E8%9A%AF
+    - link "蓲":
+      - /url: /hans/%E8%93%B2
+    - link "媝":
+      - /url: /hans/%E5%AA%9D
+    - link "蝵":
+      - /url: /hans/%E8%9D%B5
+    - link "湬":
+      - /url: /hans/%E6%B9%AC
+    - paragraph: 与 㐀 读音相同或相近
+  - insertion
+  - region "同部首":
+    - heading "同部首" [level=3]
+    - link "丒":
+      - /url: /hans/%E4%B8%92
+    - link "万":
+      - /url: /hans/%E4%B8%87
+    - link "丽":
+      - /url: /hans/%E4%B8%BD
+    - link "专":
+      - /url: /hans/%E4%B8%93
+    - link "䶶":
+      - /url: /hans/%E4%B6%B6
+    - link "㐂":
+      - /url: /hans/%E3%90%82
+    - link "更":
+      - /url: /hans/%E6%9B%B4
+    - link "且":
+      - /url: /hans/%E4%B8%94
+    - link "丐":
+      - /url: /hans/%E4%B8%90
+    - link "下":
+      - /url: /hans/%E4%B8%8B
+    - link "两":
+      - /url: /hans/%E4%B8%A4
+    - link "与":
+      - /url: /hans/%E4%B8%8E
+    - paragraph: 与「一」部相关的字
+  - region "热搜":
+    - heading "热搜" [level=3]
+    - link "为":
+      - /url: /hans/%E4%B8%BA
+    - link "以":
+      - /url: /hans/%E4%BB%A5
+    - link "人":
+      - /url: /hans/%E4%BA%BA
+    - link "行":
+      - /url: /hans/%E8%A1%8C
+    - link "我":
+      - /url: /hans/%E6%88%91
+    - link "其":
+      - /url: /hans/%E5%85%B6
+    - link "一":
+      - /url: /hans/%E4%B8%80
+    - link "之":
+      - /url: /hans/%E4%B9%8B
+    - paragraph: 常被查询的字
+- contentinfo:
+  - list:
+    - link "关于":
+      - /url: /about/
+    - link "条款":
+      - /url: /terms/
+    - link "反馈":
+      - /url: https://support.qq.com/products/315677
+  - generic: © 2004-2026 汉典 ZDIC.NET

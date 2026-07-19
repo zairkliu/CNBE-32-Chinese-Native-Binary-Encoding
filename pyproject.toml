@@ -43,6 +43,7 @@ python_files = ["test_*.py"]
 pythonpath = ["."]
 markers = [
     "integration: tests that require the cnbe32.db database file",
+    "local_knowledge: tests that require the local cnbe-research knowledge workspace",
 ]
 
 [tool.ruff]
@@ -58,3 +59,4 @@ ignore = ["E501"]
 "CNBE编码器.py" = ["ALL"]
 "cnbe_simulator.py" = ["ALL"]
 "generate_cnbe_table.py" = ["ALL"]
+"scripts/*.py" = ["E402"]

@@ -1,0 +1,3343 @@
+{
+  "authority_boundary": {
+    "does_not_assign_gf0017_scores": true,
+    "does_not_claim_national_standard_for_outside_8105": true,
+    "does_not_emit_final_structure_labels": true,
+    "does_not_modify_cnbe_rows": true,
+    "does_not_modify_source_assets": true,
+    "does_not_modify_workbook": true,
+    "does_not_publish_release": true,
+    "does_not_rebuild_database": true
+  },
+  "checks": {
+    "feature_table_passed": true,
+    "forbidden_field_rows_zero": true,
+    "point_assignment_rows_zero": true,
+    "prior_counts_match_expected": true,
+    "prior_mismatches_zero": true,
+    "queue_counts_match_expected": true,
+    "row_count_matches_expected": true
+  },
+  "decision": {
+    "may_emit_final_structure_labels": false,
+    "may_modify_cnbe_rows": false,
+    "may_modify_source_assets": false,
+    "may_rebuild_database": false,
+    "may_start_formal_gf0017_scoring": false,
+    "may_start_review_sample_plan": true,
+    "reason": "Review-prior audit passed. The next step may design deterministic review samples, but final structures, GF0017 points, and CNBE rows remain blocked."
+  },
+  "mode": "read_only_remaining_structure_agent_standard_review_prior_audit",
+  "next_artifacts": [
+    "scripts/plan_remaining_structure_agent_standard_review_samples.py",
+    "reports/remaining_structure_agent_standard_review_samples.json",
+    "reports/REMAINING_STRUCTURE_AGENT_STANDARD_REVIEW_SAMPLES.md"
+  ],
+  "next_workflow_status": "AGENT_STANDARD_REVIEW_SAMPLE_PLAN_ALLOWED_FORMAL_SCORING_BLOCKED",
+  "overall_status": "PASS_AGENT_STANDARD_REVIEW_PRIOR_AUDIT_READY",
+  "report_schema_version": "1.0",
+  "samples": {
+    "forbidden_field_rows": [],
+    "point_assignment_rows": [],
+    "prior_mismatches": [],
+    "review_prior_low": [
+      {
+        "char": "𠀁",
+        "offset": 50,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20001",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 52
+      },
+      {
+        "char": "𠀂",
+        "offset": 51,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20002",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 53
+      },
+      {
+        "char": "𠀃",
+        "offset": 52,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20003",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 54
+      },
+      {
+        "char": "𠀄",
+        "offset": 53,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20004",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 55
+      },
+      {
+        "char": "𠀅",
+        "offset": 54,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20005",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 56
+      },
+      {
+        "char": "𠀆",
+        "offset": 55,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20006",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 57
+      },
+      {
+        "char": "𠀇",
+        "offset": 56,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20007",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 58
+      },
+      {
+        "char": "𠀈",
+        "offset": 57,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20008",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 59
+      },
+      {
+        "char": "𠀉",
+        "offset": 58,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20009",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 60
+      },
+      {
+        "char": "𠀊",
+        "offset": 59,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2000A",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 61
+      },
+      {
+        "char": "𠀋",
+        "offset": 60,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2000B",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 62
+      },
+      {
+        "char": "𠀌",
+        "offset": 61,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2000C",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 63
+      },
+      {
+        "char": "𠀍",
+        "offset": 62,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2000D",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 64
+      },
+      {
+        "char": "𠀎",
+        "offset": 63,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2000E",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 65
+      },
+      {
+        "char": "𠀏",
+        "offset": 64,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2000F",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 66
+      },
+      {
+        "char": "𠀐",
+        "offset": 65,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20010",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 67
+      },
+      {
+        "char": "𠀒",
+        "offset": 67,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20012",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 69
+      },
+      {
+        "char": "𠀓",
+        "offset": 68,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20013",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 70
+      },
+      {
+        "char": "𠀔",
+        "offset": 69,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20014",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 71
+      },
+      {
+        "char": "𠀕",
+        "offset": 70,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20015",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 72
+      },
+      {
+        "char": "𠀖",
+        "offset": 71,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20016",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 73
+      },
+      {
+        "char": "𠀗",
+        "offset": 72,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20017",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 74
+      },
+      {
+        "char": "𠀘",
+        "offset": 73,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20018",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 75
+      },
+      {
+        "char": "𠀙",
+        "offset": 74,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20019",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 76
+      },
+      {
+        "char": "𠀚",
+        "offset": 75,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2001A",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 77
+      },
+      {
+        "char": "𠀜",
+        "offset": 76,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2001C",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 78
+      },
+      {
+        "char": "𠀞",
+        "offset": 77,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2001E",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 79
+      },
+      {
+        "char": "𠀟",
+        "offset": 78,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2001F",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 80
+      },
+      {
+        "char": "𠀡",
+        "offset": 80,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20021",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 82
+      },
+      {
+        "char": "𠀢",
+        "offset": 81,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20022",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 83
+      },
+      {
+        "char": "𠀣",
+        "offset": 82,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20023",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 84
+      },
+      {
+        "char": "𠀦",
+        "offset": 84,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20026",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 86
+      },
+      {
+        "char": "𠀨",
+        "offset": 86,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20028",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 88
+      },
+      {
+        "char": "𠀪",
+        "offset": 87,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2002A",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 89
+      },
+      {
+        "char": "𠀫",
+        "offset": 88,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2002B",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 90
+      },
+      {
+        "char": "𠀬",
+        "offset": 89,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2002C",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 91
+      },
+      {
+        "char": "𠀭",
+        "offset": 90,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2002D",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 92
+      },
+      {
+        "char": "𠀮",
+        "offset": 91,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2002E",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 93
+      },
+      {
+        "char": "𠀰",
+        "offset": 92,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20030",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 94
+      },
+      {
+        "char": "𠀱",
+        "offset": 93,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20031",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 95
+      },
+      {
+        "char": "𠀲",
+        "offset": 94,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20032",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 96
+      },
+      {
+        "char": "𠀳",
+        "offset": 95,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20033",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 97
+      },
+      {
+        "char": "𠀴",
+        "offset": 96,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20034",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 98
+      },
+      {
+        "char": "𠀵",
+        "offset": 97,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20035",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 99
+      },
+      {
+        "char": "𠀶",
+        "offset": 98,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20036",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 100
+      },
+      {
+        "char": "𠀸",
+        "offset": 99,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20038",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 101
+      },
+      {
+        "char": "𠀺",
+        "offset": 100,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2003A",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 102
+      },
+      {
+        "char": "𠀻",
+        "offset": 101,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2003B",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 103
+      },
+      {
+        "char": "𠀽",
+        "offset": 102,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2003D",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 104
+      },
+      {
+        "char": "𠀿",
+        "offset": 104,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2003F",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 106
+      },
+      {
+        "char": "𠁀",
+        "offset": 105,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20040",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 107
+      },
+      {
+        "char": "𠁂",
+        "offset": 107,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20042",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 109
+      },
+      {
+        "char": "𠁃",
+        "offset": 108,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20043",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 110
+      },
+      {
+        "char": "𠁄",
+        "offset": 109,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20044",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 111
+      },
+      {
+        "char": "𠁅",
+        "offset": 110,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20045",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 112
+      },
+      {
+        "char": "𠁆",
+        "offset": 111,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20046",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 113
+      },
+      {
+        "char": "𠁇",
+        "offset": 112,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20047",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 114
+      },
+      {
+        "char": "𠁈",
+        "offset": 113,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20048",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 115
+      },
+      {
+        "char": "𠁊",
+        "offset": 114,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2004A",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 116
+      },
+      {
+        "char": "𠁋",
+        "offset": 115,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2004B",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 117
+      },
+      {
+        "char": "𠁌",
+        "offset": 116,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2004C",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 118
+      },
+      {
+        "char": "𠁍",
+        "offset": 117,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2004D",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 119
+      },
+      {
+        "char": "𠁎",
+        "offset": 118,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2004E",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 120
+      },
+      {
+        "char": "𠁏",
+        "offset": 119,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2004F",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 121
+      },
+      {
+        "char": "𠁐",
+        "offset": 120,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20050",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 122
+      },
+      {
+        "char": "𠁑",
+        "offset": 121,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20051",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 123
+      },
+      {
+        "char": "𠁒",
+        "offset": 122,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20052",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 124
+      },
+      {
+        "char": "𠁓",
+        "offset": 123,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20053",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 125
+      },
+      {
+        "char": "𠁔",
+        "offset": 124,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20054",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 126
+      },
+      {
+        "char": "𠁕",
+        "offset": 125,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20055",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 127
+      },
+      {
+        "char": "𠁖",
+        "offset": 126,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20056",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 128
+      },
+      {
+        "char": "𠁗",
+        "offset": 127,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20057",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 129
+      },
+      {
+        "char": "𠁘",
+        "offset": 128,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20058",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 130
+      },
+      {
+        "char": "𠁙",
+        "offset": 129,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20059",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 131
+      },
+      {
+        "char": "𠁚",
+        "offset": 130,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2005A",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 132
+      },
+      {
+        "char": "𠁛",
+        "offset": 131,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2005B",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 133
+      },
+      {
+        "char": "𠁝",
+        "offset": 132,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2005D",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 134
+      },
+      {
+        "char": "𠁟",
+        "offset": 133,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2005F",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 135
+      },
+      {
+        "char": "𠁠",
+        "offset": 134,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20060",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 136
+      },
+      {
+        "char": "𠤢",
+        "offset": 135,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+20922",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 137
+      },
+      {
+        "char": "𤳏",
+        "offset": 136,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+24CCF",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 138
+      },
+      {
+        "char": "𪛙",
+        "offset": 137,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2A6D9",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 139
+      },
+      {
+        "char": "𪛚",
+        "offset": 138,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2A6DA",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 140
+      },
+      {
+        "char": "𪜀",
+        "offset": 139,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2A700",
+        "unicode_block": "CJK Unified Ideographs Extension C",
+        "worksheet_row": 141
+      },
+      {
+        "char": "𪜁",
+        "offset": 140,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2A701",
+        "unicode_block": "CJK Unified Ideographs Extension C",
+        "worksheet_row": 142
+      },
+      {
+        "char": "𪜂",
+        "offset": 141,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2A702",
+        "unicode_block": "CJK Unified Ideographs Extension C",
+        "worksheet_row": 143
+      },
+      {
+        "char": "𪜃",
+        "offset": 142,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2A703",
+        "unicode_block": "CJK Unified Ideographs Extension C",
+        "worksheet_row": 144
+      },
+      {
+        "char": "𪜄",
+        "offset": 143,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2A704",
+        "unicode_block": "CJK Unified Ideographs Extension C",
+        "worksheet_row": 145
+      },
+      {
+        "char": "𪜅",
+        "offset": 144,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2A705",
+        "unicode_block": "CJK Unified Ideographs Extension C",
+        "worksheet_row": 146
+      },
+      {
+        "char": "𪜆",
+        "offset": 145,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2A706",
+        "unicode_block": "CJK Unified Ideographs Extension C",
+        "worksheet_row": 147
+      },
+      {
+        "char": "𪜇",
+        "offset": 146,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2A707",
+        "unicode_block": "CJK Unified Ideographs Extension C",
+        "worksheet_row": 148
+      },
+      {
+        "char": "𫝀",
+        "offset": 147,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B740",
+        "unicode_block": "CJK Unified Ideographs Extension D",
+        "worksheet_row": 149
+      },
+      {
+        "char": "𫝁",
+        "offset": 148,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B741",
+        "unicode_block": "CJK Unified Ideographs Extension D",
+        "worksheet_row": 150
+      },
+      {
+        "char": "𫝂",
+        "offset": 149,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B742",
+        "unicode_block": "CJK Unified Ideographs Extension D",
+        "worksheet_row": 151
+      },
+      {
+        "char": "𫝃",
+        "offset": 150,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B743",
+        "unicode_block": "CJK Unified Ideographs Extension D",
+        "worksheet_row": 152
+      },
+      {
+        "char": "𫠡",
+        "offset": 151,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B821",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 153
+      },
+      {
+        "char": "𫠢",
+        "offset": 152,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B822",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 154
+      },
+      {
+        "char": "𫠣",
+        "offset": 153,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B823",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 155
+      },
+      {
+        "char": "𫠤",
+        "offset": 154,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B824",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 156
+      },
+      {
+        "char": "𫠥",
+        "offset": 155,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B825",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 157
+      },
+      {
+        "char": "𫠦",
+        "offset": 156,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B826",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 158
+      },
+      {
+        "char": "𫠧",
+        "offset": 157,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B827",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 159
+      },
+      {
+        "char": "𫠨",
+        "offset": 158,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B828",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 160
+      },
+      {
+        "char": "𫠩",
+        "offset": 159,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B829",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 161
+      },
+      {
+        "char": "𫠪",
+        "offset": 160,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B82A",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 162
+      },
+      {
+        "char": "𫠫",
+        "offset": 161,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B82B",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 163
+      },
+      {
+        "char": "𫠬",
+        "offset": 162,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B82C",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 164
+      },
+      {
+        "char": "𫠭",
+        "offset": 163,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B82D",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 165
+      },
+      {
+        "char": "𫠮",
+        "offset": 164,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B82E",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 166
+      },
+      {
+        "char": "𫠯",
+        "offset": 165,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B82F",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 167
+      },
+      {
+        "char": "𫠰",
+        "offset": 166,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B830",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 168
+      },
+      {
+        "char": "𫠱",
+        "offset": 167,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B831",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 169
+      },
+      {
+        "char": "𫠲",
+        "offset": 168,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B832",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 170
+      },
+      {
+        "char": "𫠳",
+        "offset": 169,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B833",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 171
+      },
+      {
+        "char": "𫠴",
+        "offset": 170,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B834",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 172
+      },
+      {
+        "char": "𫠵",
+        "offset": 171,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B835",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 173
+      },
+      {
+        "char": "𫠶",
+        "offset": 172,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B836",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 174
+      },
+      {
+        "char": "𫠷",
+        "offset": 173,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B837",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 175
+      },
+      {
+        "char": "𫠸",
+        "offset": 174,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B838",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 176
+      },
+      {
+        "char": "𫠹",
+        "offset": 175,
+        "review_prior": "review_prior_low",
+        "review_queue": "agent_standard_extension_review_candidate",
+        "unicode": "U+2B839",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 177
+      }
+    ],
+    "review_prior_low_medium": [
+      {
+        "char": "㐁",
+        "offset": 30,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3401",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 32
+      },
+      {
+        "char": "䶶",
+        "offset": 32,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+4DB6",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 34
+      },
+      {
+        "char": "㐃",
+        "offset": 319,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3403",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 321
+      },
+      {
+        "char": "㐇",
+        "offset": 588,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3407",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 590
+      },
+      {
+        "char": "㐈",
+        "offset": 589,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3408",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 591
+      },
+      {
+        "char": "㐉",
+        "offset": 590,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3409",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 592
+      },
+      {
+        "char": "㐊",
+        "offset": 591,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+340A",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 593
+      },
+      {
+        "char": "㐋",
+        "offset": 592,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+340B",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 594
+      },
+      {
+        "char": "㐍",
+        "offset": 594,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+340D",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 596
+      },
+      {
+        "char": "㐎",
+        "offset": 595,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+340E",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 597
+      },
+      {
+        "char": "㐏",
+        "offset": 596,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+340F",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 598
+      },
+      {
+        "char": "㐑",
+        "offset": 598,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3411",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 600
+      },
+      {
+        "char": "㐒",
+        "offset": 599,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3412",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 601
+      },
+      {
+        "char": "㐓",
+        "offset": 600,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3413",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 602
+      },
+      {
+        "char": "㐔",
+        "offset": 601,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3414",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 603
+      },
+      {
+        "char": "㐕",
+        "offset": 602,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3415",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 604
+      },
+      {
+        "char": "㐗",
+        "offset": 604,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3417",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 606
+      },
+      {
+        "char": "㐘",
+        "offset": 605,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3418",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 607
+      },
+      {
+        "char": "㐙",
+        "offset": 606,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3419",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 608
+      },
+      {
+        "char": "㐚",
+        "offset": 607,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+341A",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 609
+      },
+      {
+        "char": "㐛",
+        "offset": 608,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+341B",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 610
+      },
+      {
+        "char": "㐝",
+        "offset": 610,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+341D",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 612
+      },
+      {
+        "char": "㐞",
+        "offset": 611,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+341E",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 613
+      },
+      {
+        "char": "㐟",
+        "offset": 612,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+341F",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 614
+      },
+      {
+        "char": "㐠",
+        "offset": 613,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3420",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 615
+      },
+      {
+        "char": "㐢",
+        "offset": 615,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3422",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 617
+      },
+      {
+        "char": "㐣",
+        "offset": 616,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3423",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 618
+      },
+      {
+        "char": "㐥",
+        "offset": 618,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3425",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 620
+      },
+      {
+        "char": "㐦",
+        "offset": 619,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3426",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 621
+      },
+      {
+        "char": "㐪",
+        "offset": 975,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+342A",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 977
+      },
+      {
+        "char": "㐮",
+        "offset": 979,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+342E",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 981
+      },
+      {
+        "char": "㐯",
+        "offset": 980,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+342F",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 982
+      },
+      {
+        "char": "㐳",
+        "offset": 1412,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3433",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1414
+      },
+      {
+        "char": "㐴",
+        "offset": 1413,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3434",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1415
+      },
+      {
+        "char": "㐶",
+        "offset": 1415,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3436",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1417
+      },
+      {
+        "char": "㐸",
+        "offset": 1417,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3438",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1419
+      },
+      {
+        "char": "㐹",
+        "offset": 1418,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3439",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1420
+      },
+      {
+        "char": "㐼",
+        "offset": 1421,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+343C",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1423
+      },
+      {
+        "char": "㐿",
+        "offset": 1424,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+343F",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1426
+      },
+      {
+        "char": "㑁",
+        "offset": 1426,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3441",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1428
+      },
+      {
+        "char": "㑂",
+        "offset": 1427,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3442",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1429
+      },
+      {
+        "char": "㑃",
+        "offset": 1428,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3443",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1430
+      },
+      {
+        "char": "㑄",
+        "offset": 1429,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3444",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1431
+      },
+      {
+        "char": "㑅",
+        "offset": 1430,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3445",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1432
+      },
+      {
+        "char": "㑆",
+        "offset": 1431,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3446",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1433
+      },
+      {
+        "char": "㑉",
+        "offset": 1433,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3449",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1435
+      },
+      {
+        "char": "㑌",
+        "offset": 1435,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+344C",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1437
+      },
+      {
+        "char": "㑍",
+        "offset": 1436,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+344D",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1438
+      },
+      {
+        "char": "㑏",
+        "offset": 1438,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+344F",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1440
+      },
+      {
+        "char": "㑐",
+        "offset": 1439,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3450",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1441
+      },
+      {
+        "char": "㑑",
+        "offset": 1440,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3451",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1442
+      },
+      {
+        "char": "㑒",
+        "offset": 1441,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3452",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1443
+      },
+      {
+        "char": "㑓",
+        "offset": 1442,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3453",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1444
+      },
+      {
+        "char": "㑕",
+        "offset": 1444,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3455",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1446
+      },
+      {
+        "char": "㑖",
+        "offset": 1445,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3456",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1447
+      },
+      {
+        "char": "㑗",
+        "offset": 1446,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3457",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1448
+      },
+      {
+        "char": "㑘",
+        "offset": 1447,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3458",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1449
+      },
+      {
+        "char": "㑙",
+        "offset": 1448,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3459",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1450
+      },
+      {
+        "char": "㑛",
+        "offset": 1450,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+345B",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1452
+      },
+      {
+        "char": "㑜",
+        "offset": 1451,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+345C",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1453
+      },
+      {
+        "char": "㑞",
+        "offset": 1453,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+345E",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1455
+      },
+      {
+        "char": "㑟",
+        "offset": 1454,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+345F",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1456
+      },
+      {
+        "char": "㑠",
+        "offset": 1455,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3460",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1457
+      },
+      {
+        "char": "㑡",
+        "offset": 1456,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3461",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1458
+      },
+      {
+        "char": "㑢",
+        "offset": 1457,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3462",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1459
+      },
+      {
+        "char": "㑣",
+        "offset": 1458,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3463",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1460
+      },
+      {
+        "char": "㑤",
+        "offset": 1459,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3464",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1461
+      },
+      {
+        "char": "㑦",
+        "offset": 1461,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3466",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1463
+      },
+      {
+        "char": "㑨",
+        "offset": 1463,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3468",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1465
+      },
+      {
+        "char": "㑪",
+        "offset": 1465,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+346A",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1467
+      },
+      {
+        "char": "㑫",
+        "offset": 1466,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+346B",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1468
+      },
+      {
+        "char": "㑬",
+        "offset": 1467,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+346C",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1469
+      },
+      {
+        "char": "㑭",
+        "offset": 1468,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+346D",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1470
+      },
+      {
+        "char": "㑮",
+        "offset": 1469,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+346E",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1471
+      },
+      {
+        "char": "㑯",
+        "offset": 1470,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+346F",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1472
+      },
+      {
+        "char": "㑰",
+        "offset": 1471,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3470",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1473
+      },
+      {
+        "char": "㑱",
+        "offset": 1472,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3471",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1474
+      },
+      {
+        "char": "㑲",
+        "offset": 1473,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3472",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1475
+      },
+      {
+        "char": "㑳",
+        "offset": 1474,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3473",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1476
+      },
+      {
+        "char": "㑴",
+        "offset": 1475,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3474",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1477
+      },
+      {
+        "char": "㑵",
+        "offset": 1476,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3475",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1478
+      },
+      {
+        "char": "㑶",
+        "offset": 1477,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3476",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1479
+      },
+      {
+        "char": "㑸",
+        "offset": 1479,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3478",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1481
+      },
+      {
+        "char": "㑻",
+        "offset": 1482,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+347B",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1484
+      },
+      {
+        "char": "㑼",
+        "offset": 1483,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+347C",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1485
+      },
+      {
+        "char": "㑽",
+        "offset": 1484,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+347D",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1486
+      },
+      {
+        "char": "㑾",
+        "offset": 1485,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+347E",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1487
+      },
+      {
+        "char": "㑿",
+        "offset": 1486,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+347F",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1488
+      },
+      {
+        "char": "㒀",
+        "offset": 1487,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3480",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1489
+      },
+      {
+        "char": "㒁",
+        "offset": 1488,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3481",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1490
+      },
+      {
+        "char": "㒂",
+        "offset": 1489,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3482",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1491
+      },
+      {
+        "char": "㒃",
+        "offset": 1490,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3483",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1492
+      },
+      {
+        "char": "㒅",
+        "offset": 1492,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3485",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1494
+      },
+      {
+        "char": "㒆",
+        "offset": 1493,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3486",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1495
+      },
+      {
+        "char": "㒇",
+        "offset": 1494,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3487",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1496
+      },
+      {
+        "char": "㒈",
+        "offset": 1495,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3488",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1497
+      },
+      {
+        "char": "㒉",
+        "offset": 1496,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3489",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1498
+      },
+      {
+        "char": "㒊",
+        "offset": 1497,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+348A",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1499
+      },
+      {
+        "char": "㒋",
+        "offset": 1498,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+348B",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1500
+      },
+      {
+        "char": "㒌",
+        "offset": 1499,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+348C",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1501
+      },
+      {
+        "char": "㒍",
+        "offset": 1500,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+348D",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1502
+      },
+      {
+        "char": "㒎",
+        "offset": 1501,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+348E",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1503
+      },
+      {
+        "char": "㒏",
+        "offset": 1502,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+348F",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1504
+      },
+      {
+        "char": "㒐",
+        "offset": 1503,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3490",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1505
+      },
+      {
+        "char": "㒑",
+        "offset": 1504,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3491",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1506
+      },
+      {
+        "char": "㒓",
+        "offset": 1506,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3493",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1508
+      },
+      {
+        "char": "㒔",
+        "offset": 1507,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3494",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1509
+      },
+      {
+        "char": "㒕",
+        "offset": 1508,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3495",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1510
+      },
+      {
+        "char": "㒖",
+        "offset": 1509,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3496",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1511
+      },
+      {
+        "char": "㒗",
+        "offset": 1510,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3497",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1512
+      },
+      {
+        "char": "㒘",
+        "offset": 1511,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3498",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1513
+      },
+      {
+        "char": "㒙",
+        "offset": 1512,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+3499",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1514
+      },
+      {
+        "char": "㒛",
+        "offset": 1514,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+349B",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1516
+      },
+      {
+        "char": "㒝",
+        "offset": 1516,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+349D",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1518
+      },
+      {
+        "char": "㒠",
+        "offset": 1519,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+34A0",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1521
+      },
+      {
+        "char": "㒢",
+        "offset": 1521,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+34A2",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1523
+      },
+      {
+        "char": "㒣",
+        "offset": 1522,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+34A3",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1524
+      },
+      {
+        "char": "㒤",
+        "offset": 1523,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+34A4",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1525
+      },
+      {
+        "char": "㒥",
+        "offset": 1524,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+34A5",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1526
+      },
+      {
+        "char": "㒦",
+        "offset": 1525,
+        "review_prior": "review_prior_low_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+34A6",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 1527
+      }
+    ],
+    "review_prior_medium": [
+      {
+        "char": "俁",
+        "offset": 1645,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+4FC1",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 1647
+      },
+      {
+        "char": "俓",
+        "offset": 1654,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+4FD3",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 1656
+      },
+      {
+        "char": "俔",
+        "offset": 1655,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+4FD4",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 1657
+      },
+      {
+        "char": "俥",
+        "offset": 1662,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+4FE5",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 1664
+      },
+      {
+        "char": "倈",
+        "offset": 1682,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5008",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 1684
+      },
+      {
+        "char": "倲",
+        "offset": 1701,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5032",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 1703
+      },
+      {
+        "char": "偑",
+        "offset": 1720,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5051",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 1722
+      },
+      {
+        "char": "傌",
+        "offset": 1759,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+508C",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 1761
+      },
+      {
+        "char": "傴",
+        "offset": 1789,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+50B4",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 1791
+      },
+      {
+        "char": "僞",
+        "offset": 1823,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+50DE",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 1825
+      },
+      {
+        "char": "僨",
+        "offset": 1831,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+50E8",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 1833
+      },
+      {
+        "char": "儁",
+        "offset": 1849,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5101",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 1851
+      },
+      {
+        "char": "儎",
+        "offset": 1859,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+510E",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 1861
+      },
+      {
+        "char": "儐",
+        "offset": 1861,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5110",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 1863
+      },
+      {
+        "char": "儔",
+        "offset": 1864,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5114",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 1866
+      },
+      {
+        "char": "儣",
+        "offset": 1878,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5123",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 1880
+      },
+      {
+        "char": "儭",
+        "offset": 1887,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+512D",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 1889
+      },
+      {
+        "char": "凙",
+        "offset": 3984,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+51D9",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 3986
+      },
+      {
+        "char": "剄",
+        "offset": 4638,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5244",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 4640
+      },
+      {
+        "char": "剗",
+        "offset": 4647,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5257",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 4649
+      },
+      {
+        "char": "剴",
+        "offset": 4666,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5274",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 4668
+      },
+      {
+        "char": "剾",
+        "offset": 4675,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+527E",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 4677
+      },
+      {
+        "char": "劏",
+        "offset": 4687,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+528F",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 4689
+      },
+      {
+        "char": "劚",
+        "offset": 4696,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+529A",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 4698
+      },
+      {
+        "char": "勣",
+        "offset": 5433,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+52E3",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 5435
+      },
+      {
+        "char": "勩",
+        "offset": 5438,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+52E9",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 5440
+      },
+      {
+        "char": "勱",
+        "offset": 5445,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+52F1",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 5447
+      },
+      {
+        "char": "卽",
+        "offset": 6419,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+537D",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 6421
+      },
+      {
+        "char": "厙",
+        "offset": 6547,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5399",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 6549
+      },
+      {
+        "char": "厠",
+        "offset": 6551,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+53A0",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 6553
+      },
+      {
+        "char": "厴",
+        "offset": 6564,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+53B4",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 6566
+      },
+      {
+        "char": "叄",
+        "offset": 6875,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+53C4",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 6877
+      },
+      {
+        "char": "哯",
+        "offset": 7903,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+54EF",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 7905
+      },
+      {
+        "char": "唓",
+        "offset": 7925,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5513",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 7927
+      },
+      {
+        "char": "啢",
+        "offset": 7972,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5562",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 7974
+      },
+      {
+        "char": "喎",
+        "offset": 7987,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+558E",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 7989
+      },
+      {
+        "char": "喫",
+        "offset": 8006,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+55AB",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 8008
+      },
+      {
+        "char": "嗰",
+        "offset": 8042,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+55F0",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 8044
+      },
+      {
+        "char": "嗹",
+        "offset": 8047,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+55F9",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 8049
+      },
+      {
+        "char": "嘓",
+        "offset": 8064,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5613",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 8066
+      },
+      {
+        "char": "嘪",
+        "offset": 8078,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+562A",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 8080
+      },
+      {
+        "char": "嘵",
+        "offset": 8084,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5635",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 8086
+      },
+      {
+        "char": "嘺",
+        "offset": 8087,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+563A",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 8089
+      },
+      {
+        "char": "噅",
+        "offset": 8094,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5645",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 8096
+      },
+      {
+        "char": "噚",
+        "offset": 8106,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+565A",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 8108
+      },
+      {
+        "char": "噞",
+        "offset": 8109,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+565E",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 8111
+      },
+      {
+        "char": "嚌",
+        "offset": 8141,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+568C",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 8143
+      },
+      {
+        "char": "嚐",
+        "offset": 8143,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5690",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 8145
+      },
+      {
+        "char": "嚛",
+        "offset": 8152,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+569B",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 8154
+      },
+      {
+        "char": "嚦",
+        "offset": 8162,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+56A6",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 8164
+      },
+      {
+        "char": "嚧",
+        "offset": 8163,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+56A7",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 8165
+      },
+      {
+        "char": "嚲",
+        "offset": 8172,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+56B2",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 8174
+      },
+      {
+        "char": "嚶",
+        "offset": 8176,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+56B6",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 8178
+      },
+      {
+        "char": "嚽",
+        "offset": 8181,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+56BD",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 8183
+      },
+      {
+        "char": "囁",
+        "offset": 8185,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+56C1",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 8187
+      },
+      {
+        "char": "囃",
+        "offset": 8187,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+56C3",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 8189
+      },
+      {
+        "char": "囅",
+        "offset": 8189,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+56C5",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 8191
+      },
+      {
+        "char": "圞",
+        "offset": 11005,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+571E",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 11007
+      },
+      {
+        "char": "埬",
+        "offset": 11632,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+57EC",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 11634
+      },
+      {
+        "char": "埰",
+        "offset": 11634,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+57F0",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 11636
+      },
+      {
+        "char": "堖",
+        "offset": 11653,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5816",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 11655
+      },
+      {
+        "char": "堚",
+        "offset": 11656,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+581A",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 11658
+      },
+      {
+        "char": "塏",
+        "offset": 11691,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+584F",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 11693
+      },
+      {
+        "char": "塒",
+        "offset": 11693,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5852",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 11695
+      },
+      {
+        "char": "塤",
+        "offset": 11707,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5864",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 11709
+      },
+      {
+        "char": "塿",
+        "offset": 11729,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+587F",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 11731
+      },
+      {
+        "char": "墰",
+        "offset": 11758,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+58B0",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 11760
+      },
+      {
+        "char": "墲",
+        "offset": 11760,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+58B2",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 11762
+      },
+      {
+        "char": "壈",
+        "offset": 11779,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+58C8",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 11781
+      },
+      {
+        "char": "壋",
+        "offset": 11782,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+58CB",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 11784
+      },
+      {
+        "char": "壎",
+        "offset": 11785,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+58CE",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 11787
+      },
+      {
+        "char": "壚",
+        "offset": 11795,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+58DA",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 11797
+      },
+      {
+        "char": "壜",
+        "offset": 11797,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+58DC",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 11799
+      },
+      {
+        "char": "壠",
+        "offset": 11801,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+58E0",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 11803
+      },
+      {
+        "char": "壣",
+        "offset": 11803,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+58E3",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 11805
+      },
+      {
+        "char": "壪",
+        "offset": 11809,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+58EA",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 11811
+      },
+      {
+        "char": "壼",
+        "offset": 13241,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+58FC",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 13243
+      },
+      {
+        "char": "奬",
+        "offset": 13702,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+596C",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 13704
+      },
+      {
+        "char": "姍",
+        "offset": 14459,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+59CD",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 14461
+      },
+      {
+        "char": "婡",
+        "offset": 14548,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5A61",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 14550
+      },
+      {
+        "char": "媈",
+        "offset": 14570,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5A88",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 14572
+      },
+      {
+        "char": "媯",
+        "offset": 14601,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5AAF",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 14603
+      },
+      {
+        "char": "媰",
+        "offset": 14602,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5AB0",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 14604
+      },
+      {
+        "char": "媼",
+        "offset": 14609,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5ABC",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 14611
+      },
+      {
+        "char": "嫋",
+        "offset": 14619,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5ACB",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 14621
+      },
+      {
+        "char": "嫺",
+        "offset": 14649,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5AFA",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 14651
+      },
+      {
+        "char": "嫿",
+        "offset": 14653,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5AFF",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 14655
+      },
+      {
+        "char": "嬃",
+        "offset": 14657,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5B03",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 14659
+      },
+      {
+        "char": "嬇",
+        "offset": 14661,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5B07",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 14663
+      },
+      {
+        "char": "嬙",
+        "offset": 14676,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5B19",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 14678
+      },
+      {
+        "char": "嬡",
+        "offset": 14683,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5B21",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 14685
+      },
+      {
+        "char": "嬣",
+        "offset": 14685,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5B23",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 14687
+      },
+      {
+        "char": "嬤",
+        "offset": 14686,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5B24",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 14688
+      },
+      {
+        "char": "嬦",
+        "offset": 14687,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5B26",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 14689
+      },
+      {
+        "char": "嬻",
+        "offset": 14705,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5B3B",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 14707
+      },
+      {
+        "char": "孄",
+        "offset": 14712,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5B44",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 14714
+      },
+      {
+        "char": "孆",
+        "offset": 14713,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5B46",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 14715
+      },
+      {
+        "char": "孋",
+        "offset": 14718,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5B4B",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 14720
+      },
+      {
+        "char": "孎",
+        "offset": 14721,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5B4E",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 14723
+      },
+      {
+        "char": "孻",
+        "offset": 15891,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5B7B",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 15893
+      },
+      {
+        "char": "孾",
+        "offset": 15893,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5B7E",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 15895
+      },
+      {
+        "char": "寀",
+        "offset": 16263,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5BC0",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 16265
+      },
+      {
+        "char": "寠",
+        "offset": 16282,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5BE0",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 16284
+      },
+      {
+        "char": "屓",
+        "offset": 17525,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5C53",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 17527
+      },
+      {
+        "char": "屩",
+        "offset": 17539,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5C69",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 17541
+      },
+      {
+        "char": "峯",
+        "offset": 18294,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5CEF",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 18296
+      },
+      {
+        "char": "崍",
+        "offset": 18312,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5D0D",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 18314
+      },
+      {
+        "char": "崬",
+        "offset": 18330,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5D2C",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 18332
+      },
+      {
+        "char": "嵗",
+        "offset": 18358,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5D57",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 18360
+      },
+      {
+        "char": "嵼",
+        "offset": 18385,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5D7C",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 18387
+      },
+      {
+        "char": "嵾",
+        "offset": 18387,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5D7E",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 18389
+      },
+      {
+        "char": "嶈",
+        "offset": 18395,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5D88",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 18397
+      },
+      {
+        "char": "嶔",
+        "offset": 18404,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5D94",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 18406
+      },
+      {
+        "char": "嶘",
+        "offset": 18408,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5D98",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 18410
+      },
+      {
+        "char": "嶠",
+        "offset": 18413,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5DA0",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 18415
+      },
+      {
+        "char": "嶢",
+        "offset": 18415,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5DA2",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 18417
+      },
+      {
+        "char": "嶨",
+        "offset": 18420,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5DA8",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 18422
+      },
+      {
+        "char": "嶮",
+        "offset": 18426,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5DAE",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 18428
+      },
+      {
+        "char": "嶹",
+        "offset": 18435,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5DB9",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 18437
+      },
+      {
+        "char": "巊",
+        "offset": 18449,
+        "review_prior": "review_prior_medium",
+        "review_queue": "agent_standard_rule_learning_candidate",
+        "unicode": "U+5DCA",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 18451
+      }
+    ]
+  },
+  "summary": {
+    "cnbe_row_write_allowed": false,
+    "database_rebuild_allowed": false,
+    "feature_rows": 73831,
+    "final_structure_labels_emitted": 0,
+    "forbidden_field_row_count": 0,
+    "formal_gf0017_scoring_allowed": false,
+    "point_assignment_row_count": 0,
+    "prior_by_unicode_block": {
+      "CJK Unified Ideographs": {
+        "review_prior_medium": 1080
+      },
+      "CJK Unified Ideographs Extension A": {
+        "review_prior_low_medium": 4805
+      },
+      "CJK Unified Ideographs Extension B": {
+        "review_prior_low": 41288
+      },
+      "CJK Unified Ideographs Extension C": {
+        "review_prior_low": 3760
+      },
+      "CJK Unified Ideographs Extension D": {
+        "review_prior_low": 170
+      },
+      "CJK Unified Ideographs Extension E": {
+        "review_prior_low": 5631
+      },
+      "CJK Unified Ideographs Extension F": {
+        "review_prior_low": 7434
+      },
+      "CJK Unified Ideographs Extension G": {
+        "review_prior_low": 4869
+      },
+      "CJK Unified Ideographs Extension H": {
+        "review_prior_low": 4173
+      },
+      "CJK Unified Ideographs Extension I": {
+        "review_prior_low": 621
+      }
+    },
+    "prior_mismatch_count": 0,
+    "review_prior_counts": {
+      "review_prior_low": 67946,
+      "review_prior_low_medium": 4805,
+      "review_prior_medium": 1080
+    },
+    "review_queue_counts": {
+      "agent_standard_extension_review_candidate": 67946,
+      "agent_standard_rule_learning_candidate": 5885
+    },
+    "score_values_assigned": 0,
+    "source_asset_write_allowed": false
+  }
+}

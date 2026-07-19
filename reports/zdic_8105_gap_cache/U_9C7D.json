@@ -1,0 +1,28 @@
+{
+  "authority_boundary": "ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD",
+  "character": "鱽",
+  "fields": {
+    "glyph_analysis": "",
+    "normalized_structure": "左右",
+    "radical": "鱼",
+    "raw_structure": "左右结构",
+    "stroke_order": "3525121153",
+    "total_strokes": "10",
+    "unicode_value": "CJK 9C7D"
+  },
+  "found_field_count": 6,
+  "found_fields": [
+    "radical",
+    "total_strokes",
+    "unicode_value",
+    "stroke_order",
+    "raw_structure",
+    "normalized_structure"
+  ],
+  "parse_status": "PARSED_WITH_STRUCTURE",
+  "source_kind": "online_fetch",
+  "source_level": "network_cross_reference",
+  "source_path": "https://zdic.net/hans/%E9%B1%BD",
+  "unicode_codepoint": "U+9C7D",
+  "zdic_url": "https://www.zdic.net/hans/%E9%B1%BD"
+}

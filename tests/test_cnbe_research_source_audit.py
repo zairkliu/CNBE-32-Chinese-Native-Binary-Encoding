@@ -55,7 +55,7 @@ def test_build_report_keeps_encoding_gate_closed(tmp_path: Path) -> None:
                 "source_root": str(source_root),
                 "sources": [
                     {
-                        "id": "base_character_data",
+                        "id": "generic_reference",
                         "relative_path": "sample.json",
                         "kind": "standard_character_table",
                         "size_bytes": payload.stat().st_size,
@@ -73,3 +73,42 @@ def test_build_report_keeps_encoding_gate_closed(tmp_path: Path) -> None:
     report = build_report(manifest)
     assert report["summary"]["encoding_generation_gate"] == "NO_GO"
     assert report["summary"]["sdk_replacement_allowed"] is False
+
+
+def test_build_report_marks_review_required_without_action_items(tmp_path: Path) -> None:
+    source_root = tmp_path / "research"
+    source_root.mkdir()
+    payload = source_root / "sample.json"
+    payload.write_text(json.dumps({"一": {"char": "一", "unicode": "U+4E00"}}), encoding="utf-8")
+    manifest = tmp_path / "manifest.json"
+    manifest.write_text(
+        json.dumps(
+            {
+                "schema_version": 1,
+                "source_root": str(source_root),
+                "sources": [
+                    {
+                        "id": "generic_reference",
+                        "relative_path": "sample.json",
+                        "kind": "standard_character_table",
+                        "size_bytes": payload.stat().st_size,
+                        "sha256": __import__("hashlib").sha256(payload.read_bytes()).hexdigest(),
+                        "expected": {"type": "dict"},
+                        "acceptance": "identity_source",
+                    }
+                ],
+                "directories": [],
+                "excluded_sources": [
+                    {
+                        "relative_path": "legacy.zip",
+                        "reason": "excluded legacy artifact",
+                    }
+                ],
+            }
+        ),
+        encoding="utf-8",
+    )
+    report = build_report(manifest)
+    assert report["summary"]["status"] == "PASS"
+    assert report["summary"]["encoding_generation_gate"] == "REVIEW_REQUIRED"
+    assert report["summary"]["sqlite_build_allowed"] is False

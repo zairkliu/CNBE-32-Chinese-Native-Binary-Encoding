@@ -6,6 +6,7 @@ __pycache__/
 *~
 .vscode/
 .idea/
+node_modules/
 *.o
 *.elf
 build/
@@ -28,10 +29,17 @@ build/
 !src/cnbe32/data/cnbe32.db
 *.db.gz
 *.xlsx
+*.xlsx.inspect.ndjson
 !evidence/validation/**/*.xlsx
 *.docx
 data/*.json
 data/*.gz
+outputs/*.png
+outputs/**/*.png
+outputs/.~*.xlsx
+outputs/
+reports/full_catalog_row_level_extraction_results.json
+reports/full_catalog_agent_mapping_evidence_join.json
 # CNBE-32 golden vector local build artifacts
 c/golden_vectors/cnbe32_golden_test
 # CNBE-32 golden vector local build artifacts

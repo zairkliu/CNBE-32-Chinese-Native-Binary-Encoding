@@ -1,0 +1,27 @@
+{
+  "authority_boundary": "ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD",
+  "character": "闿",
+  "fields": {
+    "glyph_analysis": "",
+    "normalized_structure": "",
+    "radical": "门",
+    "raw_structure": "半包围结构",
+    "stroke_order": "425252515",
+    "total_strokes": "9",
+    "unicode_value": "CJK 95FF"
+  },
+  "found_field_count": 5,
+  "found_fields": [
+    "radical",
+    "total_strokes",
+    "unicode_value",
+    "stroke_order",
+    "raw_structure"
+  ],
+  "parse_status": "PARSED_WITHOUT_NORMALIZED_STRUCTURE",
+  "source_kind": "online_fetch",
+  "source_level": "network_cross_reference",
+  "source_path": "https://zdic.net/hans/%E9%97%BF",
+  "unicode_codepoint": "U+95FF",
+  "zdic_url": "https://www.zdic.net/hans/%E9%97%BF"
+}

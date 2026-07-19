@@ -1,0 +1,2190 @@
+{
+  "authority_boundary": {
+    "does_not_assign_gf0017_scores": true,
+    "does_not_claim_national_standard_for_outside_8105": true,
+    "does_not_modify_cnbe_rows": true,
+    "does_not_modify_source_assets": true,
+    "does_not_modify_workbook": true,
+    "does_not_publish_release": true,
+    "does_not_rebuild_database": true
+  },
+  "decision": {
+    "may_modify_cnbe_rows": false,
+    "may_modify_source_assets": false,
+    "may_rebuild_database": false,
+    "may_start_formal_gf0017_scoring": false,
+    "may_start_read_only_cihai_review_packet": true,
+    "may_start_read_only_wikipedia_index_plan": true,
+    "may_start_read_only_yuanliu_extractor": true,
+    "reason": "Source-gap resolution can proceed through read-only extractors and review packets. Dictionaries and Wikipedia may enrich evidence review, but they do not authorize formal scoring or CNBE row writes."
+  },
+  "mode": "read_only_structure_decomposition_source_gap_resolution_plan",
+  "next_artifacts": [
+    "scripts/run_structure_decomposition_yuanliu_gap_extractor.py",
+    "reports/structure_decomposition_yuanliu_gap_extractor.json",
+    "reports/STRUCTURE_DECOMPOSITION_YUANLIU_GAP_EXTRACTOR.md"
+  ],
+  "next_workflow_status": "READ_ONLY_SOURCE_GAP_EXTRACTORS_ALLOWED_FORMAL_SCORING_BLOCKED",
+  "overall_status": "PASS_STRUCTURE_SOURCE_GAP_RESOLUTION_PLAN_READY",
+  "report_schema_version": "1.0",
+  "resolution_phases": [
+    {
+      "can_assign_points": false,
+      "eligible_rows": 85001,
+      "input_sources": [
+        "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md",
+        "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md"
+      ],
+      "phase": 1,
+      "phase_name": "authoritative_standard_recheck",
+      "purpose": "confirm the source gap is real before adding dictionary context",
+      "source_tier": "national_standard_or_standard_derived",
+      "writes_source_assets": false
+    },
+    {
+      "can_assign_points": false,
+      "eligible_rows": 32,
+      "input_sources": [
+        "knowledge/yuanliu_chars.json",
+        "source/13-汉字源流大典/汉字源流大典 钱中立主编 9典可搜索检字 中国语言文学学科建设文库.md"
+      ],
+      "phase": 2,
+      "phase_name": "hanzi_yuanliu_structure_clue_extraction",
+      "purpose": "extract etymology, definition, decomposition, and structure clues for human review",
+      "source_tier": "dictionary_or_character_origin_cross_reference",
+      "writes_source_assets": false
+    },
+    {
+      "can_assign_points": false,
+      "eligible_rows": 32,
+      "input_sources": [
+        "knowledge/structured/cihai_search_index.json",
+        "knowledge/structured/definitions_index.json",
+        "source/10-辞海/"
+      ],
+      "phase": 3,
+      "phase_name": "cihai_definition_review_packet",
+      "purpose": "provide dictionary contexts for meaning and usage; do not derive final structure labels from definitions alone",
+      "source_tier": "dictionary_cross_reference",
+      "writes_source_assets": false
+    },
+    {
+      "can_assign_points": false,
+      "eligible_rows": 85001,
+      "input_sources": [
+        "knowledge/wikipedia-zh-cn-20260501.json"
+      ],
+      "phase": 4,
+      "phase_name": "offline_wikipedia_lowest_tier_cross_reference",
+      "purpose": "use only after dictionary and standard evidence is insufficient; requires a streaming Unicode-keyed index before row-level use",
+      "requires_new_read_only_indexer": true,
+      "source_tier": "encyclopedia_lowest_tier_cross_reference",
+      "writes_source_assets": false
+    },
+    {
+      "can_assign_points": false,
+      "eligible_rows": 85001,
+      "input_sources": [
+        "reports/structure_decomposition_evidence_parser.json",
+        "reports/structure_decomposition_evidence_review.json",
+        "reports/structure_decomposition_source_gap_resolution_plan.json"
+      ],
+      "phase": 5,
+      "phase_name": "human_review_and_rule_learning_packet",
+      "purpose": "prepare review packets and identify 8105-aligned rule-learning candidates without writing CNBE rows",
+      "source_tier": "agent_standard_review",
+      "writes_source_assets": false
+    }
+  ],
+  "samples": {
+    "cihai_hits": [
+      {
+        "char": "両",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 42,
+        "unicode": "U+4E21",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 44
+      },
+      {
+        "char": "丨",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 321,
+        "unicode": "U+4E28",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 323
+      },
+      {
+        "char": "俬",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 1664,
+        "unicode": "U+4FEC",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 1666
+      },
+      {
+        "char": "儱",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 1891,
+        "unicode": "U+5131",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 1893
+      },
+      {
+        "char": "勑",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 5423,
+        "unicode": "U+52D1",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 5425
+      },
+      {
+        "char": "喰",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 8011,
+        "unicode": "U+55B0",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 8013
+      },
+      {
+        "char": "嚞",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 8155,
+        "unicode": "U+569E",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 8157
+      },
+      {
+        "char": "囍",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 8196,
+        "unicode": "U+56CD",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 8198
+      },
+      {
+        "char": "寳",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 16295,
+        "unicode": "U+5BF3",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 16297
+      },
+      {
+        "char": "廰",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 20728,
+        "unicode": "U+5EF0",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 20730
+      },
+      {
+        "char": "徳",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 22177,
+        "unicode": "U+5FB3",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 22179
+      },
+      {
+        "char": "撃",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 26220,
+        "unicode": "U+6483",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 26222
+      },
+      {
+        "char": "枱",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 31873,
+        "unicode": "U+67B1",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 31875
+      },
+      {
+        "char": "楽",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 32136,
+        "unicode": "U+697D",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 32138
+      },
+      {
+        "char": "様",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 32196,
+        "unicode": "U+69D8",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 32198
+      },
+      {
+        "char": "滙",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 37601,
+        "unicode": "U+6ED9",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 37603
+      },
+      {
+        "char": "煖",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 40693,
+        "unicode": "U+7156",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 40695
+      },
+      {
+        "char": "碁",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 51070,
+        "unicode": "U+7881",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 51072
+      },
+      {
+        "char": "粧",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 56717,
+        "unicode": "U+7CA7",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 56719
+      },
+      {
+        "char": "綫",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 57884,
+        "unicode": "U+7DAB",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 57886
+      },
+      {
+        "char": "荘",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 64577,
+        "unicode": "U+8358",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 64579
+      },
+      {
+        "char": "菓",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 64634,
+        "unicode": "U+83D3",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 64636
+      },
+      {
+        "char": "薬",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 64943,
+        "unicode": "U+85AC",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 64945
+      },
+      {
+        "char": "説",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 72377,
+        "unicode": "U+8AAC",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 72379
+      },
+      {
+        "char": "逹",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 78552,
+        "unicode": "U+9039",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 78554
+      },
+      {
+        "char": "関",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 84012,
+        "unicode": "U+95A2",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 84014
+      },
+      {
+        "char": "頔",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 87796,
+        "unicode": "U+9814",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 87798
+      },
+      {
+        "char": "餠",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 89051,
+        "unicode": "U+9920",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 89053
+      },
+      {
+        "char": "髪",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 91439,
+        "unicode": "U+9AEA",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 91441
+      },
+      {
+        "char": "麺",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 95929,
+        "unicode": "U+9EBA",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 95931
+      },
+      {
+        "char": "黒",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 96409,
+        "unicode": "U+9ED2",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 96411
+      },
+      {
+        "char": "齊",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS"
+        ],
+        "offset": 97108,
+        "unicode": "U+9F4A",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 97110
+      }
+    ],
+    "definitions_hits": [],
+    "source_gap_rows": [
+      {
+        "char": "㐀",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 29,
+        "unicode": "U+3400",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 31
+      },
+      {
+        "char": "㐁",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 30,
+        "unicode": "U+3401",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 32
+      },
+      {
+        "char": "㐂",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 31,
+        "unicode": "U+3402",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 33
+      },
+      {
+        "char": "䶶",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 32,
+        "unicode": "U+4DB6",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 34
+      },
+      {
+        "char": "丅",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 35,
+        "unicode": "U+4E05",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 37
+      },
+      {
+        "char": "丆",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 36,
+        "unicode": "U+4E06",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 38
+      },
+      {
+        "char": "丒",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 38,
+        "unicode": "U+4E12",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 40
+      },
+      {
+        "char": "丗",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 39,
+        "unicode": "U+4E17",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 41
+      },
+      {
+        "char": "丠",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 41,
+        "unicode": "U+4E20",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 43
+      },
+      {
+        "char": "両",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 42,
+        "unicode": "U+4E21",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 44
+      },
+      {
+        "char": "丣",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 43,
+        "unicode": "U+4E23",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 45
+      },
+      {
+        "char": "𠀀",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 49,
+        "unicode": "U+20000",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 51
+      },
+      {
+        "char": "𠀁",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 50,
+        "unicode": "U+20001",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 52
+      },
+      {
+        "char": "𠀂",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 51,
+        "unicode": "U+20002",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 53
+      },
+      {
+        "char": "𠀃",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 52,
+        "unicode": "U+20003",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 54
+      },
+      {
+        "char": "𠀄",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 53,
+        "unicode": "U+20004",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 55
+      },
+      {
+        "char": "𠀅",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 54,
+        "unicode": "U+20005",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 56
+      },
+      {
+        "char": "𠀆",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 55,
+        "unicode": "U+20006",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 57
+      },
+      {
+        "char": "𠀇",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 56,
+        "unicode": "U+20007",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 58
+      },
+      {
+        "char": "𠀈",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 57,
+        "unicode": "U+20008",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 59
+      },
+      {
+        "char": "𠀉",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 58,
+        "unicode": "U+20009",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 60
+      },
+      {
+        "char": "𠀊",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 59,
+        "unicode": "U+2000A",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 61
+      },
+      {
+        "char": "𠀋",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 60,
+        "unicode": "U+2000B",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 62
+      },
+      {
+        "char": "𠀌",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 61,
+        "unicode": "U+2000C",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 63
+      },
+      {
+        "char": "𠀍",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 62,
+        "unicode": "U+2000D",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 64
+      },
+      {
+        "char": "𠀎",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 63,
+        "unicode": "U+2000E",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 65
+      },
+      {
+        "char": "𠀏",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 64,
+        "unicode": "U+2000F",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 66
+      },
+      {
+        "char": "𠀐",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 65,
+        "unicode": "U+20010",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 67
+      },
+      {
+        "char": "𠀑",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 66,
+        "unicode": "U+20011",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 68
+      },
+      {
+        "char": "𠀒",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 67,
+        "unicode": "U+20012",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 69
+      },
+      {
+        "char": "𠀓",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 68,
+        "unicode": "U+20013",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 70
+      },
+      {
+        "char": "𠀔",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 69,
+        "unicode": "U+20014",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 71
+      },
+      {
+        "char": "𠀕",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 70,
+        "unicode": "U+20015",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 72
+      },
+      {
+        "char": "𠀖",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 71,
+        "unicode": "U+20016",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 73
+      },
+      {
+        "char": "𠀗",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 72,
+        "unicode": "U+20017",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 74
+      },
+      {
+        "char": "𠀘",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 73,
+        "unicode": "U+20018",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 75
+      },
+      {
+        "char": "𠀙",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 74,
+        "unicode": "U+20019",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 76
+      },
+      {
+        "char": "𠀚",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 75,
+        "unicode": "U+2001A",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 77
+      },
+      {
+        "char": "𠀜",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 76,
+        "unicode": "U+2001C",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 78
+      },
+      {
+        "char": "𠀞",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 77,
+        "unicode": "U+2001E",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 79
+      },
+      {
+        "char": "𠀟",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 78,
+        "unicode": "U+2001F",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 80
+      },
+      {
+        "char": "𠀠",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 79,
+        "unicode": "U+20020",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 81
+      },
+      {
+        "char": "𠀡",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 80,
+        "unicode": "U+20021",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 82
+      },
+      {
+        "char": "𠀢",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 81,
+        "unicode": "U+20022",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 83
+      },
+      {
+        "char": "𠀣",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 82,
+        "unicode": "U+20023",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 84
+      },
+      {
+        "char": "𠀤",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 83,
+        "unicode": "U+20024",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 85
+      },
+      {
+        "char": "𠀦",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 84,
+        "unicode": "U+20026",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 86
+      },
+      {
+        "char": "𠀧",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 85,
+        "unicode": "U+20027",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 87
+      },
+      {
+        "char": "𠀨",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 86,
+        "unicode": "U+20028",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 88
+      },
+      {
+        "char": "𠀪",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 87,
+        "unicode": "U+2002A",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 89
+      },
+      {
+        "char": "𠀫",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 88,
+        "unicode": "U+2002B",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 90
+      },
+      {
+        "char": "𠀬",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 89,
+        "unicode": "U+2002C",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 91
+      },
+      {
+        "char": "𠀭",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 90,
+        "unicode": "U+2002D",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 92
+      },
+      {
+        "char": "𠀮",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 91,
+        "unicode": "U+2002E",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 93
+      },
+      {
+        "char": "𠀰",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 92,
+        "unicode": "U+20030",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 94
+      },
+      {
+        "char": "𠀱",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 93,
+        "unicode": "U+20031",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 95
+      },
+      {
+        "char": "𠀲",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 94,
+        "unicode": "U+20032",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 96
+      },
+      {
+        "char": "𠀳",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 95,
+        "unicode": "U+20033",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 97
+      },
+      {
+        "char": "𠀴",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 96,
+        "unicode": "U+20034",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 98
+      },
+      {
+        "char": "𠀵",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 97,
+        "unicode": "U+20035",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 99
+      },
+      {
+        "char": "𠀶",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 98,
+        "unicode": "U+20036",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 100
+      },
+      {
+        "char": "𠀸",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 99,
+        "unicode": "U+20038",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 101
+      },
+      {
+        "char": "𠀺",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 100,
+        "unicode": "U+2003A",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 102
+      },
+      {
+        "char": "𠀻",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 101,
+        "unicode": "U+2003B",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 103
+      },
+      {
+        "char": "𠀽",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 102,
+        "unicode": "U+2003D",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 104
+      },
+      {
+        "char": "𠀾",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 103,
+        "unicode": "U+2003E",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 105
+      },
+      {
+        "char": "𠀿",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 104,
+        "unicode": "U+2003F",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 106
+      },
+      {
+        "char": "𠁀",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 105,
+        "unicode": "U+20040",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 107
+      },
+      {
+        "char": "𠁁",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 106,
+        "unicode": "U+20041",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 108
+      },
+      {
+        "char": "𠁂",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 107,
+        "unicode": "U+20042",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 109
+      },
+      {
+        "char": "𠁃",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 108,
+        "unicode": "U+20043",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 110
+      },
+      {
+        "char": "𠁄",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 109,
+        "unicode": "U+20044",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 111
+      },
+      {
+        "char": "𠁅",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 110,
+        "unicode": "U+20045",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 112
+      },
+      {
+        "char": "𠁆",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 111,
+        "unicode": "U+20046",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 113
+      },
+      {
+        "char": "𠁇",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 112,
+        "unicode": "U+20047",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 114
+      },
+      {
+        "char": "𠁈",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 113,
+        "unicode": "U+20048",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 115
+      },
+      {
+        "char": "𠁊",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 114,
+        "unicode": "U+2004A",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 116
+      },
+      {
+        "char": "𠁋",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 115,
+        "unicode": "U+2004B",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 117
+      },
+      {
+        "char": "𠁌",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 116,
+        "unicode": "U+2004C",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 118
+      },
+      {
+        "char": "𠁍",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 117,
+        "unicode": "U+2004D",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 119
+      },
+      {
+        "char": "𠁎",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 118,
+        "unicode": "U+2004E",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 120
+      },
+      {
+        "char": "𠁏",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 119,
+        "unicode": "U+2004F",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 121
+      },
+      {
+        "char": "𠁐",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 120,
+        "unicode": "U+20050",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 122
+      },
+      {
+        "char": "𠁑",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 121,
+        "unicode": "U+20051",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 123
+      },
+      {
+        "char": "𠁒",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 122,
+        "unicode": "U+20052",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 124
+      },
+      {
+        "char": "𠁓",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 123,
+        "unicode": "U+20053",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 125
+      },
+      {
+        "char": "𠁔",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 124,
+        "unicode": "U+20054",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 126
+      },
+      {
+        "char": "𠁕",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 125,
+        "unicode": "U+20055",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 127
+      },
+      {
+        "char": "𠁖",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 126,
+        "unicode": "U+20056",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 128
+      },
+      {
+        "char": "𠁗",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 127,
+        "unicode": "U+20057",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 129
+      },
+      {
+        "char": "𠁘",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 128,
+        "unicode": "U+20058",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 130
+      },
+      {
+        "char": "𠁙",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 129,
+        "unicode": "U+20059",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 131
+      },
+      {
+        "char": "𠁚",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 130,
+        "unicode": "U+2005A",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 132
+      },
+      {
+        "char": "𠁛",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 131,
+        "unicode": "U+2005B",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 133
+      },
+      {
+        "char": "𠁝",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 132,
+        "unicode": "U+2005D",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 134
+      },
+      {
+        "char": "𠁟",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 133,
+        "unicode": "U+2005F",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 135
+      },
+      {
+        "char": "𠁠",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 134,
+        "unicode": "U+20060",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 136
+      },
+      {
+        "char": "𠤢",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 135,
+        "unicode": "U+20922",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 137
+      },
+      {
+        "char": "𤳏",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 136,
+        "unicode": "U+24CCF",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 138
+      },
+      {
+        "char": "𪛙",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 137,
+        "unicode": "U+2A6D9",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 139
+      },
+      {
+        "char": "𪛚",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 138,
+        "unicode": "U+2A6DA",
+        "unicode_block": "CJK Unified Ideographs Extension B",
+        "worksheet_row": 140
+      },
+      {
+        "char": "𪜀",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 139,
+        "unicode": "U+2A700",
+        "unicode_block": "CJK Unified Ideographs Extension C",
+        "worksheet_row": 141
+      },
+      {
+        "char": "𪜁",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 140,
+        "unicode": "U+2A701",
+        "unicode_block": "CJK Unified Ideographs Extension C",
+        "worksheet_row": 142
+      },
+      {
+        "char": "𪜂",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 141,
+        "unicode": "U+2A702",
+        "unicode_block": "CJK Unified Ideographs Extension C",
+        "worksheet_row": 143
+      },
+      {
+        "char": "𪜃",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 142,
+        "unicode": "U+2A703",
+        "unicode_block": "CJK Unified Ideographs Extension C",
+        "worksheet_row": 144
+      },
+      {
+        "char": "𪜄",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 143,
+        "unicode": "U+2A704",
+        "unicode_block": "CJK Unified Ideographs Extension C",
+        "worksheet_row": 145
+      },
+      {
+        "char": "𪜅",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 144,
+        "unicode": "U+2A705",
+        "unicode_block": "CJK Unified Ideographs Extension C",
+        "worksheet_row": 146
+      },
+      {
+        "char": "𪜆",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 145,
+        "unicode": "U+2A706",
+        "unicode_block": "CJK Unified Ideographs Extension C",
+        "worksheet_row": 147
+      },
+      {
+        "char": "𪜇",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 146,
+        "unicode": "U+2A707",
+        "unicode_block": "CJK Unified Ideographs Extension C",
+        "worksheet_row": 148
+      },
+      {
+        "char": "𫝀",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 147,
+        "unicode": "U+2B740",
+        "unicode_block": "CJK Unified Ideographs Extension D",
+        "worksheet_row": 149
+      },
+      {
+        "char": "𫝁",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 148,
+        "unicode": "U+2B741",
+        "unicode_block": "CJK Unified Ideographs Extension D",
+        "worksheet_row": 150
+      },
+      {
+        "char": "𫝂",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 149,
+        "unicode": "U+2B742",
+        "unicode_block": "CJK Unified Ideographs Extension D",
+        "worksheet_row": 151
+      },
+      {
+        "char": "𫝃",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 150,
+        "unicode": "U+2B743",
+        "unicode_block": "CJK Unified Ideographs Extension D",
+        "worksheet_row": 152
+      },
+      {
+        "char": "𫠡",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 151,
+        "unicode": "U+2B821",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 153
+      },
+      {
+        "char": "𫠢",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 152,
+        "unicode": "U+2B822",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 154
+      },
+      {
+        "char": "𫠣",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 153,
+        "unicode": "U+2B823",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 155
+      },
+      {
+        "char": "𫠤",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 154,
+        "unicode": "U+2B824",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 156
+      },
+      {
+        "char": "𫠥",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 155,
+        "unicode": "U+2B825",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 157
+      },
+      {
+        "char": "𫠦",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 156,
+        "unicode": "U+2B826",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 158
+      },
+      {
+        "char": "𫠧",
+        "failure_codes": [
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 157,
+        "unicode": "U+2B827",
+        "unicode_block": "CJK Unified Ideographs Extension E",
+        "worksheet_row": 159
+      }
+    ],
+    "yuanliu_hits": [
+      {
+        "char": "丨",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 321,
+        "unicode": "U+4E28",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 323
+      },
+      {
+        "char": "丶",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 402,
+        "unicode": "U+4E36",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 404
+      },
+      {
+        "char": "乚",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 620,
+        "unicode": "U+4E5A",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 622
+      },
+      {
+        "char": "乛",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 621,
+        "unicode": "U+4E5B",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 623
+      },
+      {
+        "char": "亅",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 836,
+        "unicode": "U+4E85",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 838
+      },
+      {
+        "char": "亻",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 1530,
+        "unicode": "U+4EBB",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 1532
+      },
+      {
+        "char": "冖",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 3805,
+        "unicode": "U+5196",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 3807
+      },
+      {
+        "char": "凵",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 4397,
+        "unicode": "U+51F5",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 4399
+      },
+      {
+        "char": "㔾",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 6407,
+        "unicode": "U+353E",
+        "unicode_block": "CJK Unified Ideographs Extension A",
+        "worksheet_row": 6409
+      },
+      {
+        "char": "厶",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 6866,
+        "unicode": "U+53B6",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 6868
+      },
+      {
+        "char": "夊",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 13370,
+        "unicode": "U+590A",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 13372
+      },
+      {
+        "char": "巛",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS"
+        ],
+        "offset": 19559,
+        "unicode": "U+5DDB",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 19561
+      },
+      {
+        "char": "廴",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 21238,
+        "unicode": "U+5EF4",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 21240
+      },
+      {
+        "char": "廾",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 21300,
+        "unicode": "U+5EFE",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 21302
+      },
+      {
+        "char": "旡",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 29466,
+        "unicode": "U+65E1",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 29468
+      },
+      {
+        "char": "氵",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS"
+        ],
+        "offset": 37284,
+        "unicode": "U+6C35",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 37286
+      },
+      {
+        "char": "灬",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 40554,
+        "unicode": "U+706C",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 40556
+      },
+      {
+        "char": "爫",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 42463,
+        "unicode": "U+722B",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 42465
+      },
+      {
+        "char": "疋",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 47155,
+        "unicode": "U+758B",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 47157
+      },
+      {
+        "char": "癶",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS"
+        ],
+        "offset": 48241,
+        "unicode": "U+7676",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 48243
+      },
+      {
+        "char": "罓",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 59510,
+        "unicode": "U+7F53",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 59512
+      },
+      {
+        "char": "羋",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS"
+        ],
+        "offset": 59927,
+        "unicode": "U+7F8B",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 59929
+      },
+      {
+        "char": "艹",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 64488,
+        "unicode": "U+8279",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 64490
+      },
+      {
+        "char": "衤",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 70262,
+        "unicode": "U+8864",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 70264
+      },
+      {
+        "char": "襾",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 71193,
+        "unicode": "U+897E",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 71195
+      },
+      {
+        "char": "覀",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 71194,
+        "unicode": "U+8980",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 71196
+      },
+      {
+        "char": "訁",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 72216,
+        "unicode": "U+8A01",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 72218
+      },
+      {
+        "char": "讠",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS"
+        ],
+        "offset": 72618,
+        "unicode": "U+8BA0",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 72620
+      },
+      {
+        "char": "辶",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 78495,
+        "unicode": "U+8FB6",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 78497
+      },
+      {
+        "char": "釒",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_STRUCTURE"
+        ],
+        "offset": 81445,
+        "unicode": "U+91D2",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 81447
+      },
+      {
+        "char": "黽",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS"
+        ],
+        "offset": 96664,
+        "unicode": "U+9EFD",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 96666
+      },
+      {
+        "char": "齊",
+        "failure_codes": [
+          "AMBIGUOUS_DECOMPOSITION",
+          "MISSING_DECOMPOSITION_COMPONENTS"
+        ],
+        "offset": 97108,
+        "unicode": "U+9F4A",
+        "unicode_block": "CJK Unified Ideographs",
+        "worksheet_row": 97110
+      }
+    ]
+  },
+  "source_policy": {
+    "cihai": "dictionary meaning and usage context for review, not direct structure authority",
+    "hanzi_yuanliu": "character-origin and decomposition clue source for review, not direct national-standard authority",
+    "llm_memory": "not an evidence source",
+    "national_standards": "direct evidence for standard fields when present",
+    "wikipedia_offline": "lowest-tier cross-reference only after standards and dictionaries; never direct scoring authority"
+  },
+  "summary": {
+    "cnbe_row_write_allowed": false,
+    "database_rebuild_allowed": false,
+    "formal_gf0017_scoring_allowed": false,
+    "score_values_assigned": 0,
+    "source_asset_write_allowed": false,
+    "source_gap_rows": 85001,
+    "source_gap_unicode_block_counts": {
+      "CJK Unified Ideographs": 9236,
+      "CJK Unified Ideographs Extension A": 5859,
+      "CJK Unified Ideographs Extension B": 42684,
+      "CJK Unified Ideographs Extension C": 4116,
+      "CJK Unified Ideographs Extension D": 214,
+      "CJK Unified Ideographs Extension E": 5666,
+      "CJK Unified Ideographs Extension F": 7473,
+      "CJK Unified Ideographs Extension G": 4939,
+      "CJK Unified Ideographs Extension H": 4192,
+      "CJK Unified Ideographs Extension I": 622
+    },
+    "source_hit_counts": {
+      "cihai_search_index": 32,
+      "definitions_index": 0,
+      "hanzi_yuanliu_chars": 32,
+      "wikipedia_offline_file_available": 1
+    }
+  }
+}

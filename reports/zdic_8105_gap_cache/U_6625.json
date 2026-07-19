@@ -1,0 +1,29 @@
+{
+  "authority_boundary": "ZDIC_STRUCTURE_REFERENCE_NOT_NATIONAL_STANDARD",
+  "character": "春",
+  "fields": {
+    "glyph_analysis": "会意",
+    "normalized_structure": "上下",
+    "radical": "日",
+    "raw_structure": "上下结构",
+    "stroke_order": "111342511",
+    "total_strokes": "9",
+    "unicode_value": "CJK 6625"
+  },
+  "found_field_count": 7,
+  "found_fields": [
+    "radical",
+    "total_strokes",
+    "unicode_value",
+    "stroke_order",
+    "raw_structure",
+    "normalized_structure",
+    "glyph_analysis"
+  ],
+  "parse_status": "PARSED_WITH_STRUCTURE",
+  "source_kind": "online_fetch",
+  "source_level": "network_cross_reference",
+  "source_path": "https://zdic.net/hans/%E6%98%A5",
+  "unicode_codepoint": "U+6625",
+  "zdic_url": "https://www.zdic.net/hans/%E6%98%A5"
+}

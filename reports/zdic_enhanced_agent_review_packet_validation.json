@@ -1,0 +1,156 @@
+{
+  "checks": {
+    "agent_review_passed": true,
+    "all_rows_have_zdic_url": true,
+    "all_rows_keep_blank_decomposition": true,
+    "all_rows_keep_blank_structure_label": true,
+    "all_rows_marked_editable_not_source_evidence": true,
+    "does_not_assign_gf0017_points": true,
+    "does_not_create_database_or_xlsx": true,
+    "does_not_duplicate_full_97686_table": true,
+    "does_not_emit_final_structure_labels": true,
+    "no_final_agent_structure_column_added": true,
+    "no_score_columns_added": true,
+    "packet_manifest_passed": true,
+    "row_count_is_bounded_packet": true,
+    "row_count_is_not_full_catalog": true,
+    "snapshot_core_navigation_fields_present": true,
+    "snapshot_files_exist_with_hashes": true,
+    "snapshot_supplemental_fields_recorded_with_gaps": true,
+    "uses_bounded_packet_only": true,
+    "zdic_enhancement_passed": true,
+    "zdic_manifest_passed": true,
+    "zdic_remains_cross_reference_only": true
+  },
+  "decision": {
+    "may_assign_gf0017_points": false,
+    "may_emit_final_structure_labels": false,
+    "may_promote_zdic_to_national_standard": false,
+    "may_rebuild_database": false,
+    "may_use_zdic_enhanced_packet_for_human_review": true,
+    "may_write_cnbe_rows": false,
+    "reason": "ZDIC is validated as online navigation and cross-reference context for the bounded review packet only. Any source-evidence merge or score assignment requires a later standards-validation gate."
+  },
+  "mode": "validate_zdic_enhanced_agent_review_packet",
+  "next_workflow_status": "ZDIC_ENHANCED_PACKET_READY_FOR_HUMAN_REVIEW_NOT_SCORING",
+  "outputs": {
+    "enhanced_packet": "review_packets/structure_decomposition/structure_decomposition_review_packet_AGENT_REVIEWED_ZDIC_EDITABLE.csv",
+    "validation_json": "reports/zdic_enhanced_agent_review_packet_validation.json",
+    "validation_markdown": "reports/ZDIC_ENHANCED_AGENT_REVIEW_PACKET_VALIDATION.md"
+  },
+  "overall_status": "PASS_ZDIC_ENHANCED_AGENT_REVIEW_PACKET_VALIDATED",
+  "report_schema_version": "1.0",
+  "snapshot_file_checks": [
+    {
+      "authority_boundary": "online_cross_reference_not_national_standard",
+      "char": "鑫",
+      "dom_snapshot_exists": true,
+      "dom_snapshot_path": "reports/zdic_snapshots/U_946B_dom_snapshot.txt",
+      "dom_snapshot_sha256": "9adc83295465fe2d784ba17c41aee2f14d1036ed7b35cb9dcf90a7c27a78cde3",
+      "observed_fields": {
+        "has_kangxi": true,
+        "has_origin_shape": true,
+        "has_radical": true,
+        "has_stroke_order": true,
+        "has_structure": true,
+        "has_total_strokes": true,
+        "has_unicode": true
+      },
+      "unicode": "U+946B",
+      "viewport_png_exists": true,
+      "viewport_png_path": "reports/zdic_snapshots/U_946B_viewport.png",
+      "viewport_png_sha256": "11827437084f6e3075a2021711ce45d6a3bfed2471447f800c53be84eddc85d5"
+    },
+    {
+      "authority_boundary": "online_cross_reference_not_national_standard",
+      "char": "焱",
+      "dom_snapshot_exists": true,
+      "dom_snapshot_path": "reports/zdic_snapshots/U_7131_dom_snapshot.txt",
+      "dom_snapshot_sha256": "c5c9c043a8083f601f07bef658862b5f5afa45dec75b1d24a1c9190b9676b18a",
+      "observed_fields": {
+        "has_kangxi": true,
+        "has_origin_shape": true,
+        "has_radical": true,
+        "has_stroke_order": true,
+        "has_structure": true,
+        "has_total_strokes": true,
+        "has_unicode": true
+      },
+      "unicode": "U+7131",
+      "viewport_png_exists": true,
+      "viewport_png_path": "reports/zdic_snapshots/U_7131_viewport.png",
+      "viewport_png_sha256": "fed0fcfafbe39f6122e079773a52a72acc7539fbdb909d712038cc89be4deb8a"
+    },
+    {
+      "authority_boundary": "online_cross_reference_not_national_standard",
+      "char": "㐀",
+      "dom_snapshot_exists": true,
+      "dom_snapshot_path": "reports/zdic_snapshots/U_3400_dom_snapshot.txt",
+      "dom_snapshot_sha256": "58b7975aede5228c005958468186792c415151f12a91985ee49dbc625b4dbf22",
+      "observed_fields": {
+        "has_kangxi": true,
+        "has_origin_shape": true,
+        "has_radical": true,
+        "has_stroke_order": true,
+        "has_structure": true,
+        "has_total_strokes": true,
+        "has_unicode": true
+      },
+      "unicode": "U+3400",
+      "viewport_png_exists": true,
+      "viewport_png_path": "reports/zdic_snapshots/U_3400_viewport.png",
+      "viewport_png_sha256": "565211fedf538eb36cac5722f96650c33e084276f69d2e186795ed0a77b0366b"
+    },
+    {
+      "authority_boundary": "online_cross_reference_not_national_standard",
+      "char": "㑇",
+      "dom_snapshot_exists": true,
+      "dom_snapshot_path": "reports/zdic_snapshots/U_3447_dom_snapshot.txt",
+      "dom_snapshot_sha256": "1622a96266036744b6f3bf808740332079c23f0584cf122cbe3ec4cd6c329391",
+      "observed_fields": {
+        "has_kangxi": true,
+        "has_origin_shape": true,
+        "has_radical": true,
+        "has_stroke_order": true,
+        "has_structure": true,
+        "has_total_strokes": true,
+        "has_unicode": true
+      },
+      "unicode": "U+3447",
+      "viewport_png_exists": true,
+      "viewport_png_path": "reports/zdic_snapshots/U_3447_viewport.png",
+      "viewport_png_sha256": "1b3a3378e706ff0bc595cb17b29b77eef94e47d7addb6fb7afb732ff08b2a1a6"
+    },
+    {
+      "authority_boundary": "online_cross_reference_not_national_standard",
+      "char": "𲎯",
+      "dom_snapshot_exists": true,
+      "dom_snapshot_path": "reports/zdic_snapshots/U_323AF_dom_snapshot.txt",
+      "dom_snapshot_sha256": "bdbd3c936adf5805aa2ff340b707b2edff3d02f2289f7e180feb3b25b847d72e",
+      "observed_fields": {
+        "has_kangxi": false,
+        "has_origin_shape": false,
+        "has_radical": true,
+        "has_stroke_order": true,
+        "has_structure": false,
+        "has_total_strokes": true,
+        "has_unicode": true
+      },
+      "unicode": "U+323AF",
+      "viewport_png_exists": true,
+      "viewport_png_path": "reports/zdic_snapshots/U_323AF_viewport.png",
+      "viewport_png_sha256": "d3d1fe9cd4fd2a24b0838c032d89ca043da3f3cd11e9aebb218c0120f4631cbd"
+    }
+  ],
+  "summary": {
+    "database_generation_allowed": false,
+    "enhanced_packet_rows": 212,
+    "final_structure_labels_emitted": 0,
+    "full_catalog_rows": 97686,
+    "gf0017_points_assigned": 0,
+    "snapshot_files_verified": 5,
+    "snapshot_records": 5,
+    "snapshot_records_with_supplemental_field_gaps": 1,
+    "xlsx_generation_allowed": false
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "authority_boundary": {
+    "does_not_modify_research_assets": true,
+    "does_not_publish_release": true,
+    "does_not_rebuild_database": true,
+    "does_not_score_rows": true
+  },
+  "datasets": [
+    {
+      "baseline_count": 8105,
+      "dataset_count": 8105,
+      "dataset_id": "base_character_data",
+      "extra_chars": [],
+      "extra_count": 0,
+      "missing_chars": [],
+      "missing_count": 0,
+      "repair_plan": {
+        "requires_review_before_write": true,
+        "safe_automatic_candidate": false,
+        "steps": [
+          "review missing character against 8105 baseline",
+          "normalize Unicode labels to U+XXXX or wider without unnecessary leading zero",
+          "regenerate enriched knowledge only after base_character_data is reconciled",
+          "rerun source audit and knowledge inventory"
+        ]
+      },
+      "source_exists": true,
+      "source_path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/structured/base_character_data.json",
+      "unicode_label_issue_count": 0,
+      "unicode_label_issue_samples": []
+    },
+    {
+      "baseline_count": 8105,
+      "dataset_count": 8105,
+      "dataset_id": "cnbe_character_knowledge",
+      "extra_chars": [],
+      "extra_count": 0,
+      "missing_chars": [],
+      "missing_count": 0,
+      "repair_plan": {
+        "requires_review_before_write": true,
+        "safe_automatic_candidate": false,
+        "steps": [
+          "review missing character against 8105 baseline",
+          "normalize Unicode labels to U+XXXX or wider without unnecessary leading zero",
+          "regenerate enriched knowledge only after base_character_data is reconciled",
+          "rerun source audit and knowledge inventory"
+        ]
+      },
+      "source_exists": true,
+      "source_path": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/structured/cnbe_character_knowledge.json",
+      "unicode_label_issue_count": 0,
+      "unicode_label_issue_samples": []
+    }
+  ],
+  "decision_point": {
+    "requires_human_authorization": true,
+    "safe_patch_scope_if_authorized": [
+      "add missing 8105 rows to base_character_data.json",
+      "review or exclude extra rows that are outside the repository 8105 baseline",
+      "add or regenerate corresponding enriched knowledge rows",
+      "normalize Unicode labels in both structured files"
+    ],
+    "still_forbidden_without_authorization": [
+      "write to cnbe-research/knowledge/structured",
+      "start full-catalog GF0017 row scoring",
+      "rebuild CNBE SQLite database"
+    ]
+  },
+  "inputs": {
+    "base_character_data": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/structured/base_character_data.json",
+    "baseline": "evidence/8105/cnbe8105_standard_baseline.json",
+    "blocker_reconciliation": "reports/full_catalog_gf0017_blocker_reconciliation.json",
+    "cnbe_character_knowledge": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/structured/cnbe_character_knowledge.json"
+  },
+  "mode": "read_only_structured_8105_knowledge_diff_packet",
+  "next_artifacts_after_authorization": [
+    "reports/structured_8105_knowledge_patch_plan.json",
+    "reports/STRUCTURED_8105_KNOWLEDGE_PATCH_PLAN.md",
+    "scripts/patch_structured_8105_knowledge.py"
+  ],
+  "next_workflow_status": "PATCH_REVIEW_REQUIRED_BEFORE_SOURCE_WRITE",
+  "overall_status": "PASS",
+  "report_schema_version": "1.0",
+  "summary": {
+    "baseline_count": 8105,
+    "batch_scoring_allowed": false,
+    "blockers_from_previous_gate": 1,
+    "datasets_checked": 2,
+    "source_write_allowed": false,
+    "total_extra": 0,
+    "total_missing": 0,
+    "total_unicode_label_issues": 0
+  }
+}

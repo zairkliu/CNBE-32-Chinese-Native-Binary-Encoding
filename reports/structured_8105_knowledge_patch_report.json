@@ -1,0 +1,59 @@
+{
+  "authority_boundary": {
+    "does_not_modify_cnbe_encoding_tables": true,
+    "does_not_publish_release": true,
+    "does_not_rebuild_database": true,
+    "does_not_score_rows": true,
+    "modified_authorized_structured_knowledge": true
+  },
+  "backups": {
+    "base_character_data": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/structured/base_character_data.json.bak.20260716T183315Z",
+    "cnbe_character_knowledge": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/structured/cnbe_character_knowledge.json.bak.20260716T183315Z"
+  },
+  "inputs": {
+    "base_character_data": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/structured/base_character_data.json",
+    "baseline": "evidence/8105/cnbe8105_standard_baseline.json",
+    "cnbe_character_knowledge": "/Users/liuzhaoqi/Documents/cnbe-research/knowledge/structured/cnbe_character_knowledge.json"
+  },
+  "mode": "apply_patch",
+  "next_steps": [
+    "rerun structured 8105 diff packet",
+    "rerun cnbe-research source audit",
+    "rerun knowledge inventory",
+    "rerun GF0017 readiness gates",
+    "then evaluate whether batch scoring can start"
+  ],
+  "overall_status": "PASS",
+  "report_schema_version": "1.0",
+  "summary": {
+    "base_character_data": {
+      "extra_before": [
+        " ",
+        ""
+      ],
+      "missing_before": [
+        "㧐",
+        "栲",
+        "𬺈"
+      ],
+      "rows_after": 8105,
+      "unicode_repairs": 7907
+    },
+    "baseline_rows": 8105,
+    "batch_scoring_allowed": false,
+    "cnbe_character_knowledge": {
+      "extra_before": [
+        " ",
+        ""
+      ],
+      "missing_before": [
+        "㧐",
+        "栲",
+        "𬺈"
+      ],
+      "rows_after": 8105,
+      "unicode_repairs": 7907
+    },
+    "source_write_applied": true
+  }
+}

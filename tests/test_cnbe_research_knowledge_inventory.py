@@ -96,3 +96,21 @@ def test_build_inventory_keeps_gates_closed_for_count_mismatch(tmp_path: Path) -
     assert inventory["gates"]["encoding_generation_gate"] == "NO_GO"
     assert inventory["gates"]["sdk_replacement_allowed"] is False
     assert any(item["asset"] == "structured/base_character_data.json" for item in inventory["action_items"])
+
+
+def test_build_inventory_downgrades_legacy_unihan_when_canonical_archive_passes(tmp_path: Path) -> None:
+    knowledge = tmp_path / "knowledge"
+    knowledge.mkdir(parents=True)
+    canonical = knowledge / "Unihan2.zip"
+    with zipfile.ZipFile(canonical, "w") as handle:
+        handle.writestr("Unihan_Readings.txt", "U+4E00\tkMandarin\tyi\n")
+    (knowledge / "Unihan.zip").write_text("not a zip", encoding="utf-8")
+
+    inventory = build_inventory(knowledge)
+
+    assert inventory["gates"]["blocker_count"] == 0
+    assert inventory["gates"]["encoding_generation_gate"] == "REVIEW_REQUIRED"
+    legacy_items = [item for item in inventory["action_items"] if item["asset"] == "Unihan.zip"]
+    assert legacy_items
+    assert legacy_items[0]["severity"] == "WARN"
+    assert "canonical Unihan2.zip passes" in legacy_items[0]["next_step"]

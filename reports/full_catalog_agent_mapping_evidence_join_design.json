@@ -1,0 +1,739 @@
+{
+  "authority_boundary": {
+    "does_not_assign_gf0017_scores": true,
+    "does_not_claim_national_standard_for_outside_8105": true,
+    "does_not_modify_cnbe_rows": true,
+    "does_not_modify_workbook": true,
+    "does_not_publish_release": true,
+    "does_not_rebuild_database": true
+  },
+  "checkpoint_contract": {
+    "batch_id": "full_catalog_agent_mapping_evidence_join_v1",
+    "checkpoint_fields": [
+      "last_verified_unicode",
+      "last_verified_offset",
+      "blocker_unicode",
+      "blocker_offset",
+      "failed_gf0017_item",
+      "failed_source_path",
+      "next_required_action"
+    ],
+    "resume_key": "unicode",
+    "row_count": 89581,
+    "source_plan": "reports/full_catalog_agent_standard_mapping_plan.json",
+    "stop_rules": [
+      "unicode_identity_gap",
+      "source_grade_unresolved",
+      "agent_standard_mislabeled_as_national",
+      "missing_required_row_level_evidence",
+      "attempted_cnbe_row_write",
+      "attempted_database_rebuild"
+    ]
+  },
+  "decision": {
+    "may_implement_row_level_evidence_join": true,
+    "may_modify_cnbe_rows": false,
+    "may_rebuild_database": false,
+    "may_start_formal_gf0017_scoring": false,
+    "reason": "The join design is ready for a read-only implementation pass. Formal scoring remains blocked until each row receives item-level evidence status."
+  },
+  "gf0017_item_join_designs": [
+    {
+      "blocker_code": "SOURCE_GAP_CHARACTER_SET_COVERAGE",
+      "can_assign_points_now": false,
+      "controlling_sources": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "line_count": 22,
+          "relative_path": "source/11-评测与分类/GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则.md",
+          "sha256": "2e23d0b5a22bbba84cc6723e836181d3c32fa43b92a21331924998bf15e296ab",
+          "size_bytes": 1258
+        },
+        {
+          "exists": true,
+          "grade_status": "cross_reference",
+          "line_count": 274,
+          "relative_path": "source/01-通用规范汉字表/通用规范汉字表(8105).md",
+          "sha256": "cfaca4f2f325b7a5983a5d104d62e01c7ed653400b4027ed0b1038e115b8d2b8",
+          "size_bytes": 9237
+        }
+      ],
+      "current_source_status": "SOURCE_GAP",
+      "domain": "standard_character_scope",
+      "item": "character_set_coverage",
+      "join_keys": [
+        "unicode"
+      ],
+      "join_tables": [
+        "unicode_identity",
+        "scope_membership"
+      ],
+      "missing_source_paths": [],
+      "next_action": "resolve_source_gap_before_scoring",
+      "points": 3,
+      "required_source_status_before_points": "resolved_scope_policy",
+      "source_policy": "Resolve required scope first. 8105 is project baseline; outside-8105 rows stay Agent scope.",
+      "supporting_sources": [
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "line_count": null,
+          "relative_path": "knowledge/ocr_char_table_all.json",
+          "sha256": "1b4684df4411e7e6095921768d81909fbb6e86dda80df7735270f81f156854e4",
+          "size_bytes": 267544
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "line_count": null,
+          "relative_path": "knowledge/alignment_report.json",
+          "sha256": "479400e5a10a22294a91f54c0bd7750b02c8c6a5ae20c4fd075fe5ab900e4380",
+          "size_bytes": 1889
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "line_count": null,
+          "relative_path": "knowledge/alignment_report_v2.json",
+          "sha256": "8bb98f3ae731828a95d8beae854f9d4f236af912eb5ddea8e085582dce1f11ce",
+          "size_bytes": 2020
+        }
+      ],
+      "workbook_fields": [
+        "序号",
+        "汉字",
+        "Unicode",
+        "字库索引",
+        "是否现代"
+      ]
+    },
+    {
+      "blocker_code": "SOURCE_GAP_STROKE_SHAPE",
+      "can_assign_points_now": false,
+      "controlling_sources": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "line_count": 22,
+          "relative_path": "source/11-评测与分类/GF 0017-2013 识字教学用通用键盘汉字字形输入系统评测规则.md",
+          "sha256": "2e23d0b5a22bbba84cc6723e836181d3c32fa43b92a21331924998bf15e296ab",
+          "size_bytes": 1258
+        },
+        {
+          "exists": true,
+          "grade_status": "cross_reference",
+          "line_count": 22,
+          "relative_path": "source/07-折笔规范/GB 13000.1 字符集汉字折笔规范.md",
+          "sha256": "c1cdbc03f2ee9d5c42a69ec53dac9db2eefed4e6173da720c4c59df533f67feb",
+          "size_bytes": 840
+        }
+      ],
+      "current_source_status": "SOURCE_GAP",
+      "domain": "stroke_shape_order",
+      "item": "stroke_shape",
+      "join_keys": [
+        "unicode"
+      ],
+      "join_tables": [
+        "unicode_identity",
+        "stroke_evidence"
+      ],
+      "missing_source_paths": [],
+      "next_action": "resolve_source_gap_before_scoring",
+      "points": 3,
+      "required_source_status_before_points": "row_level_stroke_shape_evidence",
+      "source_policy": "Join folded-stroke and stroke-shape evidence before assigning the 3-point item.",
+      "supporting_sources": [
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "line_count": null,
+          "relative_path": "knowledge/ocr/ocr_fold_stroke.json",
+          "sha256": "1cfaf552a6eb88ac93fd66194759f21ab3629a6ed5f55d9fa68fb9b97f34fd66",
+          "size_bytes": 15314
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "line_count": null,
+          "relative_path": "knowledge/ocr/standards/std_07-折笔规范_bc1.json",
+          "sha256": "6aba04e925dd3c5349a3dbd25c137ea295ef4bd6640dc42f0c4d7891d7761915",
+          "size_bytes": 24488
+        }
+      ],
+      "workbook_fields": [
+        "笔画数"
+      ]
+    },
+    {
+      "blocker_code": "MISSING_STROKE_ORDER_EVIDENCE",
+      "can_assign_points_now": false,
+      "controlling_sources": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "line_count": 14176,
+          "relative_path": "source/05-笔顺规范/GF 0031—2026 通用规范汉字笔顺规范.md",
+          "sha256": "5601c38ed5ec76bdc4770a281c54a0cbc6f2836d95f3b19d3853200c3ae2ae74",
+          "size_bytes": 616160
+        },
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "line_count": 16,
+          "relative_path": "source/05-笔顺规范/GF3002-1999 GB13000.1字符集汉字笔顺规范.md",
+          "sha256": "1bd050e042f246351cf4a09ef39c3ad18019cb252aa319a7a22028b852f210dd",
+          "size_bytes": 688
+        }
+      ],
+      "current_source_status": "SOURCE_EVIDENCE_REQUIRED",
+      "domain": "stroke_shape_order",
+      "item": "stroke_order",
+      "join_keys": [
+        "unicode"
+      ],
+      "join_tables": [
+        "unicode_identity",
+        "stroke_evidence"
+      ],
+      "missing_source_paths": [],
+      "next_action": "build_row_level_evidence_join_before_scoring",
+      "points": 3,
+      "required_source_status_before_points": "row_level_stroke_order_evidence",
+      "source_policy": "Join GF0031/GF3002-derived stroke-order records and compare only after source row is anchored.",
+      "supporting_sources": [
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "line_count": null,
+          "relative_path": "knowledge/stroke_order_8105.json",
+          "sha256": "4e8bb4b3c2de77b911c5728bf7fb33a1cc7c995d0ded3cdc5f132ee6eeb2a0f1",
+          "size_bytes": 1144204
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "line_count": null,
+          "relative_path": "knowledge/stroke_order_8105_clean.json",
+          "sha256": "f6efaa0caa7433be4266ffbed96125629cc3d928f80f2a6eef48d1f3b3709d64",
+          "size_bytes": 1165030
+        }
+      ],
+      "workbook_fields": [
+        "笔画数"
+      ]
+    },
+    {
+      "blocker_code": "MISSING_COMPONENT_EVIDENCE",
+      "can_assign_points_now": false,
+      "controlling_sources": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "line_count": 124,
+          "relative_path": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md",
+          "sha256": "8da9fc36e1d62c5229e17ac2f00746dc84a6ecb6ea039b61f6c0f52aadadf981",
+          "size_bytes": 5872
+        },
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "line_count": 40,
+          "relative_path": "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md",
+          "sha256": "f6a53cc8b0b14c573845a1336de14df4c46d33a2cb18592e6450ef0c790002bb",
+          "size_bytes": 2142
+        }
+      ],
+      "current_source_status": "SOURCE_EVIDENCE_REQUIRED",
+      "domain": "component_inventory",
+      "item": "component_validity",
+      "join_keys": [
+        "unicode"
+      ],
+      "join_tables": [
+        "unicode_identity",
+        "component_evidence"
+      ],
+      "missing_source_paths": [],
+      "next_action": "build_row_level_evidence_join_before_scoring",
+      "points": 3,
+      "required_source_status_before_points": "row_level_component_inventory",
+      "source_policy": "Join GF0014/GB13000.1 component evidence; contextual decompositions are review aids.",
+      "supporting_sources": [
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "line_count": null,
+          "relative_path": "knowledge/component_db.json",
+          "sha256": "d40a8173d5a7856fc4eb6dd93009a32d459ef99f21793947ac3ac8b924acfe5e",
+          "size_bytes": 576557
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "line_count": null,
+          "relative_path": "knowledge/decomp_rules.json",
+          "sha256": "10fb1a944c7df5836a287b40a135397014df9b398dc7827445e276c86168fc8e",
+          "size_bytes": 865
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "line_count": null,
+          "relative_path": "decomp-data/dictionary.json",
+          "sha256": "9d6d0dc83b755f763ae94b22f42716b56c42b2bcf51aee18ca837ec867ae80a4",
+          "size_bytes": 9520010
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "line_count": 85238,
+          "relative_path": "cjk-decomp/cjk-decomp.txt",
+          "sha256": "cf770b7be3894f11a96a79789195f237fdbfc3ca533ea0763052e50cf7998fe1",
+          "size_bytes": 1507690
+        }
+      ],
+      "workbook_fields": []
+    },
+    {
+      "blocker_code": "MISSING_COMPONENT_NAME_EVIDENCE",
+      "can_assign_points_now": false,
+      "controlling_sources": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "line_count": 124,
+          "relative_path": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md",
+          "sha256": "8da9fc36e1d62c5229e17ac2f00746dc84a6ecb6ea039b61f6c0f52aadadf981",
+          "size_bytes": 5872
+        }
+      ],
+      "current_source_status": "SOURCE_EVIDENCE_REQUIRED",
+      "domain": "component_inventory",
+      "item": "component_name_validity",
+      "join_keys": [
+        "unicode"
+      ],
+      "join_tables": [
+        "unicode_identity",
+        "component_evidence"
+      ],
+      "missing_source_paths": [],
+      "next_action": "build_row_level_evidence_join_before_scoring",
+      "points": 8,
+      "required_source_status_before_points": "row_level_component_name_inventory",
+      "source_policy": "Validate component names against GF0014-derived component names before scoring.",
+      "supporting_sources": [
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "line_count": null,
+          "relative_path": "knowledge/component_db.json",
+          "sha256": "d40a8173d5a7856fc4eb6dd93009a32d459ef99f21793947ac3ac8b924acfe5e",
+          "size_bytes": 576557
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "line_count": null,
+          "relative_path": "knowledge/ocr/standards/std_03-部件及部件名称规范_bc1.json",
+          "sha256": "957601a86694ec12c9cfb843f22acf480fd8af9cb274d5afb76a87510d7e56c5",
+          "size_bytes": 292675
+        }
+      ],
+      "workbook_fields": []
+    },
+    {
+      "blocker_code": "MISSING_RADICAL_EVIDENCE",
+      "can_assign_points_now": false,
+      "controlling_sources": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "line_count": 24,
+          "relative_path": "source/02-汉字部首表/GG 0011-2009 汉字部首表.md",
+          "sha256": "3eb0f09fa13884230f06a2b917587cc8f7005aa109cbf4fe4677c636b207a241",
+          "size_bytes": 798
+        }
+      ],
+      "current_source_status": "SOURCE_EVIDENCE_REQUIRED",
+      "domain": "radical_classification",
+      "item": "radical_validity",
+      "join_keys": [
+        "unicode"
+      ],
+      "join_tables": [
+        "unicode_identity",
+        "radical_evidence"
+      ],
+      "missing_source_paths": [],
+      "next_action": "build_row_level_evidence_join_before_scoring",
+      "points": 3,
+      "required_source_status_before_points": "row_level_radical_evidence",
+      "source_policy": "Join GG0011/Kangxi/RSIndex evidence and validate numeric radical-code mapping separately.",
+      "supporting_sources": [
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "line_count": null,
+          "relative_path": "knowledge/kangxi_radicals.json",
+          "sha256": "c2aa49ca9caa51a3befb80db14f4b2fa6d2d38ca43ee17fab36ca34d977fbae9",
+          "size_bytes": 533759
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "line_count": null,
+          "relative_path": "knowledge/radical_validation.json",
+          "sha256": "bfd38905b9891f14ffb17fc3c1271cd776137735650dc4aba9f46a52b178a980",
+          "size_bytes": 3558
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "line_count": null,
+          "relative_path": "knowledge/unicode_rsindex.json",
+          "sha256": "7ba3b114e97dc1ce7d8e59b26e6344a72849a30d72b0b6af702c4be446247ebf",
+          "size_bytes": 528736
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "line_count": 317738,
+          "relative_path": "source/15-Unicode-RSIndex/RSIndex.md",
+          "sha256": "bf4d78506c19d21e4c9caf0f965726ee7ceec461ac0a764dbeefbc0b33feecca",
+          "size_bytes": 1261878
+        }
+      ],
+      "workbook_fields": [
+        "部首区"
+      ]
+    },
+    {
+      "blocker_code": "MISSING_INDEPENDENT_CHARACTER_EVIDENCE",
+      "can_assign_points_now": false,
+      "controlling_sources": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "line_count": 28,
+          "relative_path": "source/04-独体字规范/GF 0013-2009 现代常用独体字规范.md",
+          "sha256": "8f0d92116f1e3513bc06230860f83416fb93e16045a49531099f0f21a55aae16",
+          "size_bytes": 1102
+        },
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "line_count": 124,
+          "relative_path": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md",
+          "sha256": "8da9fc36e1d62c5229e17ac2f00746dc84a6ecb6ea039b61f6c0f52aadadf981",
+          "size_bytes": 5872
+        }
+      ],
+      "current_source_status": "SOURCE_EVIDENCE_REQUIRED",
+      "domain": "single_component_and_structure",
+      "item": "independent_character_rule",
+      "join_keys": [
+        "unicode"
+      ],
+      "join_tables": [
+        "unicode_identity",
+        "component_evidence",
+        "structure_evidence"
+      ],
+      "missing_source_paths": [],
+      "next_action": "build_row_level_evidence_join_before_scoring",
+      "points": 7,
+      "required_source_status_before_points": "row_level_independent_character_evidence",
+      "source_policy": "Join GF0013/GF0014 evidence so independent characters are not split incorrectly.",
+      "supporting_sources": [
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "line_count": null,
+          "relative_path": "knowledge/decomp_rules.json",
+          "sha256": "10fb1a944c7df5836a287b40a135397014df9b398dc7827445e276c86168fc8e",
+          "size_bytes": 865
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "line_count": null,
+          "relative_path": "knowledge/component_db.json",
+          "sha256": "d40a8173d5a7856fc4eb6dd93009a32d459ef99f21793947ac3ac8b924acfe5e",
+          "size_bytes": 576557
+        }
+      ],
+      "workbook_fields": [
+        "结构区(v4)",
+        "结构名称(v4)"
+      ]
+    },
+    {
+      "blocker_code": "MISSING_STRUCTURE_DECOMPOSITION_EVIDENCE",
+      "can_assign_points_now": false,
+      "controlling_sources": [
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "line_count": 124,
+          "relative_path": "source/03-部件及部件名称规范/GF 0014-2009 现代常用字部件及部件名称规范.md",
+          "sha256": "8da9fc36e1d62c5229e17ac2f00746dc84a6ecb6ea039b61f6c0f52aadadf981",
+          "size_bytes": 5872
+        },
+        {
+          "exists": true,
+          "grade_status": "direct_standard",
+          "line_count": 40,
+          "relative_path": "source/06-汉字部件规范/信息处理用GB 13000.1 字符集汉字部件规范 （1998-5-1）.md",
+          "sha256": "f6a53cc8b0b14c573845a1336de14df4c46d33a2cb18592e6450ef0c790002bb",
+          "size_bytes": 2142
+        }
+      ],
+      "current_source_status": "SOURCE_EVIDENCE_REQUIRED",
+      "domain": "single_component_and_structure",
+      "item": "structure_first_decomposition",
+      "join_keys": [
+        "unicode"
+      ],
+      "join_tables": [
+        "unicode_identity",
+        "component_evidence",
+        "structure_evidence"
+      ],
+      "missing_source_paths": [],
+      "next_action": "build_row_level_evidence_join_before_scoring",
+      "points": 20,
+      "required_source_status_before_points": "row_level_structure_decomposition_evidence",
+      "source_policy": "Join Agent 13-label localization with standard-backed decomposition evidence.",
+      "supporting_sources": [
+        {
+          "exists": true,
+          "grade_status": "unresolved",
+          "line_count": null,
+          "relative_path": "evidence/agent-standard/cnbe_legacy_structure_localization.json",
+          "sha256": null,
+          "size_bytes": null
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "line_count": null,
+          "relative_path": "knowledge/component_db.json",
+          "sha256": "d40a8173d5a7856fc4eb6dd93009a32d459ef99f21793947ac3ac8b924acfe5e",
+          "size_bytes": 576557
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "line_count": null,
+          "relative_path": "knowledge/decomp_rules.json",
+          "sha256": "10fb1a944c7df5836a287b40a135397014df9b398dc7827445e276c86168fc8e",
+          "size_bytes": 865
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "line_count": null,
+          "relative_path": "decomp-data/dictionary.json",
+          "sha256": "9d6d0dc83b755f763ae94b22f42716b56c42b2bcf51aee18ca837ec867ae80a4",
+          "size_bytes": 9520010
+        },
+        {
+          "exists": true,
+          "grade_status": "unspecified",
+          "line_count": 85238,
+          "relative_path": "cjk-decomp/cjk-decomp.txt",
+          "sha256": "cf770b7be3894f11a96a79789195f237fdbfc3ca533ea0763052e50cf7998fe1",
+          "size_bytes": 1507690
+        }
+      ],
+      "workbook_fields": [
+        "结构区(v4)",
+        "结构名称(v4)",
+        "备注(v3原结构)"
+      ]
+    }
+  ],
+  "implementation_order": [
+    {
+      "allowed_now": true,
+      "name": "materialize_unicode_identity_view",
+      "step": 1,
+      "writes_source_assets": false
+    },
+    {
+      "allowed_now": true,
+      "name": "materialize_scope_membership_view",
+      "step": 2,
+      "writes_source_assets": false
+    },
+    {
+      "allowed_now": true,
+      "name": "materialize_stroke_component_radical_structure_views",
+      "step": 3,
+      "writes_source_assets": false
+    },
+    {
+      "allowed_now": true,
+      "name": "join_gf0017_item_evidence_status",
+      "step": 4,
+      "writes_source_assets": false
+    },
+    {
+      "allowed_now": false,
+      "name": "assign_formal_gf0017_scores",
+      "step": 5,
+      "writes_source_assets": false
+    },
+    {
+      "allowed_now": false,
+      "name": "generate_or_repair_cnbe_rows",
+      "step": 6,
+      "writes_source_assets": false
+    }
+  ],
+  "join_output_tables": [
+    {
+      "authority": "identity_only",
+      "grain": "one row per full-catalog character",
+      "name": "unicode_identity",
+      "primary_key": [
+        "unicode"
+      ],
+      "required_fields": [
+        "char",
+        "unicode",
+        "codepoint",
+        "worksheet_row",
+        "offset"
+      ]
+    },
+    {
+      "authority": "direct_or_project_scope",
+      "grain": "one row per character per scope source",
+      "name": "scope_membership",
+      "primary_key": [
+        "unicode",
+        "scope_source"
+      ],
+      "required_fields": [
+        "scope_source",
+        "membership_status",
+        "source_grade",
+        "source_anchor"
+      ]
+    },
+    {
+      "authority": "standard_derived_or_contextual",
+      "grain": "one row per character per stroke source",
+      "name": "stroke_evidence",
+      "primary_key": [
+        "unicode",
+        "stroke_source"
+      ],
+      "required_fields": [
+        "stroke_count",
+        "stroke_order",
+        "stroke_shape",
+        "source_grade",
+        "source_anchor"
+      ]
+    },
+    {
+      "authority": "standard_derived_or_contextual",
+      "grain": "one row per character per decomposition source",
+      "name": "component_evidence",
+      "primary_key": [
+        "unicode",
+        "component_source"
+      ],
+      "required_fields": [
+        "components",
+        "component_names",
+        "basic_components",
+        "source_grade",
+        "source_anchor"
+      ]
+    },
+    {
+      "authority": "direct_standard_or_cross_reference",
+      "grain": "one row per character per radical source",
+      "name": "radical_evidence",
+      "primary_key": [
+        "unicode",
+        "radical_source"
+      ],
+      "required_fields": [
+        "radical",
+        "radical_code",
+        "rs_index",
+        "source_grade",
+        "source_anchor"
+      ]
+    },
+    {
+      "authority": "agent_standard_after_validation",
+      "grain": "one row per character per structure source",
+      "name": "structure_evidence",
+      "primary_key": [
+        "unicode",
+        "structure_source"
+      ],
+      "required_fields": [
+        "structure_label",
+        "decomposition",
+        "independent_status",
+        "source_grade",
+        "source_anchor"
+      ]
+    },
+    {
+      "authority": "audit_gate",
+      "grain": "one row per character per GF0017 item",
+      "name": "gf0017_item_evidence_status",
+      "primary_key": [
+        "unicode",
+        "gf0017_item"
+      ],
+      "required_fields": [
+        "item_status",
+        "points_possible",
+        "evidence_sources",
+        "blocker_code"
+      ]
+    }
+  ],
+  "mode": "read_only_full_catalog_agent_mapping_evidence_join_design",
+  "next_artifacts": [
+    "scripts/run_full_catalog_agent_mapping_evidence_join.py",
+    "reports/full_catalog_agent_mapping_evidence_join.json",
+    "reports/FULL_CATALOG_AGENT_MAPPING_EVIDENCE_JOIN.md"
+  ],
+  "next_workflow_status": "ROW_LEVEL_EVIDENCE_JOIN_IMPLEMENTATION_ALLOWED_FORMAL_SCORING_BLOCKED",
+  "overall_status": "PASS_EVIDENCE_JOIN_DESIGN_READY",
+  "report_schema_version": "1.0",
+  "summary": {
+    "cnbe_row_write_allowed": false,
+    "database_rebuild_allowed": false,
+    "formal_gf0017_scoring_allowed": false,
+    "gf0017_items": 8,
+    "join_output_tables": 7,
+    "missing_source_paths": [],
+    "outside_8105_rows": 89581,
+    "source_evidence_required_items": [
+      "stroke_order",
+      "component_validity",
+      "component_name_validity",
+      "radical_validity",
+      "independent_character_rule",
+      "structure_first_decomposition"
+    ],
+    "source_gap_items": [
+      "character_set_coverage",
+      "stroke_shape"
+    ],
+    "source_join_schema_status": "PASS"
+  }
+}

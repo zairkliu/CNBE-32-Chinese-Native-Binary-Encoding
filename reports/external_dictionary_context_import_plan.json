@@ -1,0 +1,152 @@
+{
+  "authority_boundary": {
+    "dictionary_sources_are_cross_reference_context": true,
+    "does_not_assign_gf0017_scores": true,
+    "does_not_emit_final_structure_labels": true,
+    "does_not_modify_cnbe_research_knowledge": true,
+    "does_not_modify_cnbe_rows": true,
+    "does_not_rebuild_cnbe_database": true,
+    "not_national_standard_structure_authority": true
+  },
+  "checks": {
+    "evaluation_passed": true,
+    "formal_scoring_blocked": true,
+    "knowledge_write_blocked": true,
+    "primary_kangxi_rows_available": true,
+    "primary_source_has_license": true,
+    "primary_zhonghua_rows_available": true,
+    "staging_schema_declared": true
+  },
+  "mode": "read_only_external_dictionary_context_import_plan",
+  "next_step": {
+    "allowed": true,
+    "requires_authorization_before_cnbe_research_knowledge_write": true,
+    "script": "scripts/build_external_dictionary_context_staging.py",
+    "writes_only_to_build_staging": true
+  },
+  "next_workflow_status": "STAGING_DICTIONARY_CONTEXT_BUILD_ALLOWED_KNOWLEDGE_WRITE_BLOCKED",
+  "overall_status": "PASS_DICTIONARY_CONTEXT_IMPORT_PLAN_READY",
+  "report_schema_version": "1.0",
+  "source_priority": [
+    {
+      "allowed_use": "dictionary context and human-review evidence discovery",
+      "commit": "b436fd32d8ffeb3cb14607e8eea033d39155eb9e",
+      "forbidden_use": "national-standard structure authority or formal GF0017 point assignment",
+      "license": "BSD-2-Clause",
+      "path": "build/external_dictionary_candidates/nlp-han-dicts/extracted/kangxi.4w.db",
+      "repo": "https://github.com/leechenhwa2/nlp-han-dicts",
+      "role": "primary_structured_kangxi_context",
+      "row_count": 48709,
+      "source_id": "nlp_han_dicts_kangxi_4w"
+    },
+    {
+      "allowed_use": "dictionary context and human-review evidence discovery",
+      "commit": "b436fd32d8ffeb3cb14607e8eea033d39155eb9e",
+      "forbidden_use": "national-standard structure authority or formal GF0017 point assignment",
+      "license": "BSD-2-Clause",
+      "path": "build/external_dictionary_candidates/nlp-han-dicts/extracted/zhdzd_simpledict.db",
+      "repo": "https://github.com/leechenhwa2/nlp-han-dicts",
+      "role": "primary_structured_zhonghua_dazidian_context",
+      "row_count": 21668,
+      "source_id": "nlp_han_dicts_zhonghua_dazidian"
+    },
+    {
+      "allowed_use": "spot validation against Kangxi source text after parser design",
+      "commit": "054af958de99ac3193c295c05ac172d910fbc9fc",
+      "forbidden_use": "bulk structured import before parser and license review",
+      "license": "not_found_in_repository_snapshot",
+      "path": "build/external_dictionary_candidates/KR1j0048",
+      "repo": "https://github.com/kanripo/KR1j0048",
+      "role": "supporting_primary_text_witness_after_parser_design",
+      "row_count": null,
+      "source_id": "kanripo_kr1j0048_text_witness"
+    },
+    {
+      "allowed_use": "secondary comparison only",
+      "commit": "e5eba28d8154f661c28e486a02c1098bf7ca6e27",
+      "forbidden_use": "primary source, formal scoring, or production import before license resolution",
+      "license": "not_found_in_repository_snapshot",
+      "path": "build/external_dictionary_candidates/kangxi",
+      "repo": "https://github.com/he426100/kangxi",
+      "role": "secondary_comparison_only",
+      "row_count": 6346,
+      "source_id": "he426100_kangxi_secondary"
+    }
+  ],
+  "staging_schema": {
+    "fields": [
+      {
+        "description": "e.g. nlp_han_dicts_kangxi_4w",
+        "name": "source_id",
+        "type": "text"
+      },
+      {
+        "name": "source_repo",
+        "type": "text"
+      },
+      {
+        "name": "source_commit",
+        "type": "text"
+      },
+      {
+        "name": "license",
+        "type": "text"
+      },
+      {
+        "name": "source_grade",
+        "type": "text",
+        "value": "cross_reference_dictionary_context"
+      },
+      {
+        "name": "char",
+        "type": "text"
+      },
+      {
+        "name": "unicode",
+        "type": "text"
+      },
+      {
+        "name": "content",
+        "type": "text"
+      },
+      {
+        "name": "content_preview",
+        "type": "text"
+      },
+      {
+        "name": "word1",
+        "type": "text"
+      },
+      {
+        "name": "word2",
+        "type": "text"
+      },
+      {
+        "name": "volume",
+        "type": "text"
+      },
+      {
+        "name": "import_status",
+        "type": "text"
+      },
+      {
+        "name": "review_notes",
+        "type": "text"
+      }
+    ],
+    "primary_key": [
+      "source_id",
+      "char"
+    ],
+    "table": "dictionary_context_entries"
+  },
+  "summary": {
+    "formal_gf0017_scoring_allowed": false,
+    "knowledge_write_allowed": false,
+    "planned_manifest": "reports/external_dictionary_context_import_manifest.json",
+    "planned_staging_output": "build/dictionary_context_staging/dictionary_context_entries.sqlite",
+    "recommended_primary_source": "leechenhwa2/nlp-han-dicts",
+    "recommended_secondary_comparison_source": "he426100/kangxi",
+    "recommended_supporting_source": "kanripo/KR1j0048"
+  }
+}

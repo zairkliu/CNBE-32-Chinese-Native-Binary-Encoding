@@ -1,0 +1,252 @@
+- navigation "站点导航":
+  - link "汉典":
+    - /url: //zdic.net
+  - generic: "|"
+  - link "古籍":
+    - /url: //gj.zdic.net
+  - generic: "|"
+  - link "诗词":
+    - /url: //sc.zdic.net
+  - generic: "|"
+  - link "书法":
+    - /url: //sf.zdic.net
+  - generic: "|"
+  - link "通识":
+    - /url: /ts/
+- button "查询索引":
+  - text: 查询索引
+- generic: "|"
+- link "繁體":
+  - /url: /hant/㑇
+- button "切换深色模式":
+- banner:
+  - link "漢典":
+    - /url: /
+    - img "漢典"
+  - search "汉字搜索":
+    - combobox "搜索类型":
+      - option "条目" [selected]
+      - option "汉字"
+      - option "词语"
+      - option "成语"
+      - option "义项"
+      - option "书证"
+      - option "例句"
+      - option "近反义词"
+      - option "拆分"
+      - option "拼音"
+      - option "笔顺"
+      - option "五笔"
+      - option "仓颉"
+      - option "四角"
+      - option "Unicode"
+    - searchbox "请输入汉字或词语"
+    - button "搜索":
+- insertion
+- main:
+  - article:
+    - figure:
+      - img "㑇"
+    - generic: 拼音
+    - text: zhòu
+    - button "播放zhòu":
+    - text: zhū
+    - button "播放zhū":
+    - generic: 注音
+    - text: ㄓㄡˋ
+    - button "播放注音ㄓㄡˋ":
+    - text: ㄓㄨ
+    - button "播放注音ㄓㄨ":
+    - generic: 部首
+    - link "亻":
+      - /url: /zd/bs/?bs=%E4%BA%BB
+    - generic: 部外
+    - generic: "2"
+    - generic: 总笔画
+    - generic: "7"
+    - generic: 统一码
+    - generic: CJK-A 3447
+    - generic: 笔顺
+    - generic: "3235511"
+    - generic: 字形结构
+    - generic: 左右结构
+    - generic: 异体
+    - list:
+      - link "㑳":
+        - /url: /hans/%E3%91%B3
+        - img "㑳"
+  - navigation "字典内容导航":
+    - tablist:
+      - tab "基本解释"
+      - tab "康熙字典"
+      - tab "音韵方言"
+      - tab "字源字形"
+  - heading "㑇 基本解释" [level=2]:
+    - generic: 㑇
+    - text: 基本解释
+  - generic: ●㑇
+  - generic: zhòu
+  - button "播放zhòu":
+  - generic: ㄓㄡˋ
+  - text: （
+  - img "繁体字"
+  - text: 㑳）
+  - list:
+    - text: “
+    - link "㑳":
+      - /url: /hans/%E3%91%B3
+    - text: ”的简化字。
+    - generic "参见": →
+    - listitem: （性情）凶狠暴戾。
+  - generic: ●㑇
+  - generic: zhū
+  - button "播放zhū":
+  - generic: ㄓㄨ
+  - text: （
+  - img "繁体字"
+  - text: 㑳）
+  - list:
+    - text: 见“
+    - link "偛":
+      - /url: /hans/%E5%81%9B
+    - text: ”。
+  - link "反馈":
+    - /url: "#"
+  - insertion
+  - insertion
+  - heading "↳ 㑳 康熙字典" [level=2]
+  - paragraph:
+    - text: （康熙字典未收录「㑇」字头，请参考「
+    - link "㑳":
+      - /url: /hans/%E3%91%B3
+    - text: 」字：）
+  - paragraph: 【子集中】【人字部】 康熙笔画：12 部外笔画：10
+  - img "㑳"
+  - paragraph: 【廣韻】卽就切【集韻】側救切。【焦竑·俗用雜字】任身傭作曰㑳，音縐。
+  - link "反馈":
+    - /url: "#"
+  - heading "㑇 音韵方言" [level=2]:
+    - generic: 㑇
+    - text: 音韵方言
+  - tabpanel:
+    - heading "方言读音 （旧版简文）" [level=3]
+    - term: 广东话
+    - definition: zaau3
+  - link "韵书":
+    - /url: /hans/%E3%91%87/yunshu
+    - generic: 韵书
+  - link "上古音":
+    - /url: /hans/%E3%91%87/shangguyin
+    - generic: 上古音
+  - link "中古音":
+    - /url: /hans/%E3%91%87/zhongguyin
+    - generic: 中古音
+  - link "反馈":
+    - /url: "#"
+  - heading "㑇 字源字形" [level=2]:
+    - generic: 㑇
+    - text: 字源字形
+  - heading "字形对比" [level=3]
+  - img "中国大陆"
+  - generic: 中国大陆
+  - img "台湾"
+  - generic: 台湾
+  - heading "异体字" [level=3]
+  - link "㑳":
+    - /url: /hans/%E3%91%B3
+    - img "㑳"
+  - text: 㑳
+  - generic: 五笔
+  - generic: wqvg
+  - generic: 仓颉
+  - generic: onsm
+  - generic: 郑码
+  - generic: nrxb
+  - generic: 四角号码
+  - generic: "27277"
+  - link "反馈":
+    - /url: "#"
+- complementary "相关信息":
+  - region "同音字":
+    - heading "同音字" [level=3]
+    - link "䭥":
+      - /url: /hans/%E4%AD%A5
+    - link "駎":
+      - /url: /hans/%E9%A7%8E
+    - link "鴸":
+      - /url: /hans/%E9%B4%B8
+    - link "䶇":
+      - /url: /hans/%E4%B6%87
+    - link "薵":
+      - /url: /hans/%E8%96%B5
+    - link "僽":
+      - /url: /hans/%E5%83%BD
+    - link "鼄":
+      - /url: /hans/%E9%BC%84
+    - link "宙":
+      - /url: /hans/%E5%AE%99
+    - link "呪":
+      - /url: /hans/%E5%91%AA
+    - link "諸":
+      - /url: /hans/%E8%AB%B8
+    - link "葤":
+      - /url: /hans/%E8%91%A4
+    - link "铢":
+      - /url: /hans/%E9%93%A2
+    - paragraph: 与 㑇 读音相同或相近
+  - insertion
+  - region "同部首":
+    - heading "同部首" [level=3]
+    - link "伅":
+      - /url: /hans/%E4%BC%85
+    - link "㑸":
+      - /url: /hans/%E3%91%B8
+    - link "偉":
+      - /url: /hans/%E5%81%89
+    - link "㑁":
+      - /url: /hans/%E3%91%81
+    - link "㑥":
+      - /url: /hans/%E3%91%A5
+    - link "倔":
+      - /url: /hans/%E5%80%94
+    - link "俋":
+      - /url: /hans/%E4%BF%8B
+    - link "佞":
+      - /url: /hans/%E4%BD%9E
+    - link "侕":
+      - /url: /hans/%E4%BE%95
+    - link "㑰":
+      - /url: /hans/%E3%91%B0
+    - link "伵":
+      - /url: /hans/%E4%BC%B5
+    - link "僝":
+      - /url: /hans/%E5%83%9D
+    - paragraph: 与「亻」部相关的字
+  - region "热搜":
+    - heading "热搜" [level=3]
+    - link "为":
+      - /url: /hans/%E4%B8%BA
+    - link "以":
+      - /url: /hans/%E4%BB%A5
+    - link "人":
+      - /url: /hans/%E4%BA%BA
+    - link "行":
+      - /url: /hans/%E8%A1%8C
+    - link "我":
+      - /url: /hans/%E6%88%91
+    - link "其":
+      - /url: /hans/%E5%85%B6
+    - link "一":
+      - /url: /hans/%E4%B8%80
+    - link "之":
+      - /url: /hans/%E4%B9%8B
+    - paragraph: 常被查询的字
+- contentinfo:
+  - list:
+    - link "关于":
+      - /url: /about/
+    - link "条款":
+      - /url: /terms/
+    - link "反馈":
+      - /url: https://support.qq.com/products/315677
+  - generic: © 2004-2026 汉典 ZDIC.NET
