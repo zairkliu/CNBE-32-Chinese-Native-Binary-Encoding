@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """CNBE-32 performance simulator v2 — binary search + hash index"""
-import os, sys, math, random, time
-from collections import Counter
+import os
 
 # Configure via CNBE_TABLE_DIR env var, falls back to data/ sibling of src/
 _DEFAULT_TABLE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
@@ -37,7 +36,8 @@ class Loader:
                         e0 = int(vals.split(",")[0].strip())
                         e1 = int(vals.split(",")[1].strip())
                         self.hash_tbl[h] = (e0, e1)
-        except: pass
+        except Exception:
+            pass
         self.has_hash = len(self.hash_tbl) > 0
 
     def linear_enc(self, u):
@@ -177,7 +177,6 @@ def run():
     print("  | 操作                 | 软件     | 二分硬件 | 哈希硬件 |")
     print("  +----------------------+----------+----------+----------+")
     print(f"  | 编码查表 (8105字)    | {linear_total:>8,} | {binary_total:>8,} | {hash_total:>8,} |")
-    sp_l = linear_total
     sp_b = linear_total / max(binary_total, 1)
     sp_h = linear_total / max(hash_total, 1)
     print(f"  | 加速比               |     1.0x | {sp_b:>7.1f}x | {sp_h:>7.1f}x |")
@@ -192,7 +191,7 @@ def run():
     print("─" * 62)
     print("  结论")
     print("─" * 62)
-    print(f"""
+    print("""
   编码查表:
     线性搜索:  13 字/秒  (4053 比较/次)
     二分查找:  312x 加速 (13 比较/次)  ★ 零成本

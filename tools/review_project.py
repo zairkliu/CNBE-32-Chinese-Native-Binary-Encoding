@@ -48,7 +48,7 @@ except Exception as e:
 
 # 3. README structure
 print("\n3. README Structure:")
-for fn in ["README.md", "README_EN.md", "README_ZH.md"]:
+for fn in ["README.md", "README_ZH.md"]:
     fp = os.path.join(REPO, fn)
     with open(fp, "r", encoding="utf-8") as f:
         text = f.read()
@@ -58,7 +58,7 @@ for fn in ["README.md", "README_EN.md", "README_ZH.md"]:
 # 4. Broken links
 print("\n4. Broken Links:")
 b_total = 0
-for fn in ["README.md", "README_EN.md", "README_ZH.md"]:
+for fn in ["README.md", "README_ZH.md"]:
     fp = os.path.join(REPO, fn)
     with open(fp, "r", encoding="utf-8") as f:
         text = f.read()

@@ -91,7 +91,7 @@ def test_agents_index_publishes_current_agent_metadata() -> None:
 
 
 def test_public_docs_link_to_repository_agent_skill() -> None:
-    for relative_path in ("README.md", "README_EN.md", "README_ZH.md"):
+    for relative_path in ("README.md", "README_ZH.md"):
         text = read_text(relative_path)
         assert "skill/cnbe-hanzi-structure-encoding-agent/SKILL.md" in text
 
@@ -117,7 +117,7 @@ def test_copilot_cloud_agent_limitation_is_documented_as_optional() -> None:
     assert ".github/copilot-instructions.md" in text
     assert ".github/workflows/copilot-setup-steps.yml" in text
 
-    for relative_path in ("README.md", "README_EN.md", "README_ZH.md"):
+    for relative_path in ("README.md", "README_ZH.md"):
         readme = read_text(relative_path)
         assert "docs/COPILOT_CLOUD_AGENT_LIMITATION.md" in readme
 
@@ -151,7 +151,7 @@ def test_research_position_statement_covers_project_framing() -> None:
     assert "not current validated coverage" in text
     assert "Paid GitHub Copilot cloud agent execution is optional" in text
 
-    for relative_path in ("README.md", "README_EN.md", "README_ZH.md"):
+    for relative_path in ("README.md", "README_ZH.md"):
         readme = read_text(relative_path)
         assert "docs/CNBE_RESEARCH_POSITION_STATEMENT.md" in readme
 

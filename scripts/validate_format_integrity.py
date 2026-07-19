@@ -259,7 +259,6 @@ TEXT_FILES = [
     "rust/golden_vectors/Cargo.toml",
     "rust/golden_vectors/src/lib.rs",
     "README.md",
-    "README_EN.md",
     "README_ZH.md",
     "CHANGELOG.md",
     "RELEASE.md",
@@ -515,7 +514,6 @@ MIN_LINES = {
     "rust/golden_vectors/Cargo.toml": 8,
     "rust/golden_vectors/src/lib.rs": 100,
     "README.md": 120,
-    "README_EN.md": 120,
     "README_ZH.md": 120,
     "CHANGELOG.md": 40,
     "RELEASE.md": 40,
@@ -525,12 +523,6 @@ MIN_LINES = {
 
 README_REQUIRED = {
     "README.md": [
-        "Coverage terminology",
-        "Evidence level",
-        "20,902",
-        "97,686",
-    ],
-    "README_EN.md": [
         "Coverage terminology",
         "Evidence level",
         "20,902",

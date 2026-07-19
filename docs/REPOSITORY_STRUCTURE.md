@@ -46,7 +46,7 @@ when the output is a complete reproducibility snapshot.
 
 | Path | Purpose |
 |---|---|
-| `README.md`, `README_EN.md`, `README_ZH.md` | Public project overview |
+| `README.md`, `README_ZH.md` | Public project overview |
 | `docs/` | Public documentation and repository structure docs |
 | `docs/COPILOT_CLOUD_AGENT_LIMITATION.md` | Copilot cloud agent paid-access status and open-source fallback boundary |
 | `docs/CNBE_RESEARCH_POSITION_STATEMENT.md` | Short research framing for direction, time point, reproducibility, feasibility, and scientific value |

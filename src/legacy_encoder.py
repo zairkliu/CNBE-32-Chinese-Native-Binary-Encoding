@@ -120,13 +120,12 @@ print(f"\n  8105字覆盖: {covered}/{len(chars)} ({100*covered/len(chars):.1f}%
 
 # If still missing, try harder parsing
 if len(missing) > 0:
-    print(f"  尝试二次解析...")
+    print("  尝试二次解析...")
     # Read file as raw and try different parsing
     unihan2 = {}
     with zipfile.ZipFile("C:\\tmp\\Unihan.zip") as z:
         with z.open("Unihan_IRGSources.txt") as f:
             for line in f:
-                raw_line = line  # keep as bytes
                 line = line.decode("utf-8", errors="replace").strip()
                 if "kRSUnicode" not in line or line.startswith("#"): continue
                 parts = line.split("\t")
@@ -164,7 +163,6 @@ def get_strokes(char):
 def get_struct(char, rc, sc):
     if char in KNOWN_STRUCT: return KNOWN_STRUCT[char]
     # 检查包围结构
-    cp = ord(char)
     for hub_cp, st in HUBS.items():
         hub_char = chr(hub_cp)
         if hub_char in char and char != hub_char: return st
@@ -229,7 +227,7 @@ rad_cnt = defaultdict(int)
 for r in results: rad_cnt[r["rc"]] += 1
 print("  部首Top10:")
 for rc, cnt in sorted(rad_cnt.items(), key=lambda x: -x[1])[:10]:
-    rn = f"无" if rc==0 else f"#{rc}"
+    rn = "无" if rc==0 else f"#{rc}"
     print(f"    {rn}: {cnt}")
 
 print("\n[5/5] Excel...")

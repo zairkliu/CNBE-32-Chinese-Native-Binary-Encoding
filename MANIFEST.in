@@ -4,7 +4,6 @@ include RELEASE.md
 include SECURITY.md
 include pyproject.toml
 include README.md
-include README_EN.md
 include README_ZH.md
 include .gitattributes
 

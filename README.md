@@ -5,8 +5,7 @@
 
 <p align="center">
   <a href="./README.md">English</a> ·
-  <a href="./README_ZH.md">简体中文</a> ·
-  <a href="./README_EN.md">English mirror</a>
+  <a href="./README_ZH.md">简体中文</a>
 </p>
 
 <p align="center">

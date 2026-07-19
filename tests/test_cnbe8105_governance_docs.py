@@ -8,7 +8,7 @@ def read_text(relative_path: str) -> str:
 
 
 def test_readmes_declare_8105_core_and_runtime_boundary() -> None:
-    for relative_path in ("README.md", "README_EN.md", "README_ZH.md"):
+    for relative_path in ("README.md", "README_ZH.md"):
         text = read_text(relative_path)
         lower_text = text.lower()
         assert "8105" in text

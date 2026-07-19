@@ -22,7 +22,7 @@ def test_readme_variants_use_the_same_current_version_set() -> None:
     version = doc_version.read_version()
     expected = {version}
 
-    for relative_path in ("README.md", "README_EN.md", "README_ZH.md"):
+    for relative_path in ("README.md", "README_ZH.md"):
         versions = set(doc_version.collect_semver_versions(ROOT / relative_path))
         assert versions == expected
 
@@ -30,7 +30,7 @@ def test_readme_variants_use_the_same_current_version_set() -> None:
 def test_release_links_point_to_current_existing_release_note() -> None:
     version = doc_version.read_version()
 
-    for relative_path in ("README.md", "README_EN.md", "README_ZH.md"):
+    for relative_path in ("README.md", "README_ZH.md"):
         links = doc_version.collect_release_links(ROOT / relative_path)
         assert set(links) <= {version}
         for link_version in links:

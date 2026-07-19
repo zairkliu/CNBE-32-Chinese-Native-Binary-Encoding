@@ -24,7 +24,6 @@ PYPROJECT = REPO_ROOT / "pyproject.toml"
 CHANGELOG = REPO_ROOT / "CHANGELOG.md"
 README_PATHS = (
     REPO_ROOT / "README.md",
-    REPO_ROOT / "README_EN.md",
     REPO_ROOT / "README_ZH.md",
 )
 
