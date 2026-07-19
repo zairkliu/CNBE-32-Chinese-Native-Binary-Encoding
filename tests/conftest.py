@@ -34,6 +34,9 @@ LOCAL_KNOWLEDGE_TESTS = {
     "test_structured_8105_knowledge_diff_packet.py",
     "test_structured_8105_knowledge_patch.py",
     "test_unified_hanzi_evidence_index.py",
+    "test_unified_hanzi_evidence_index_plan.py",
+    "test_wikipedia_structure_cross_reference_index.py",
+    "test_wikipedia_structure_cross_reference_index_plan.py",
 }
 
 
