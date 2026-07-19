@@ -9,8 +9,13 @@ The model is designed for auditability. It separates Unicode identity,
 standard-side evidence, Agent-standard mapping, GF0017 scoring gates, and CNBE
 carrier fields.
 
-It does not define a release claim. It does not state that the full catalog is
-ready for teaching, research, release, database rebuild, or PyPI publication.
+It does not define a full-catalog release claim. It does not state that the full
+catalog is ready for teaching, research, database rebuild, or PyPI publication.
+
+`v1.0.4` is the current released SDK checkpoint. That release publishes the
+20,902-row runtime package and the 8105 standards-restart runtime repair state;
+it does not publish 97,686-row validation or outside-8105 national-standard
+claims.
 
 ## Authority Boundary
 
@@ -83,6 +88,29 @@ Every Agent state must preserve these invariants:
 - Reports are machine-readable and human-readable.
 - Tests cover every new runner.
 - `scripts/validate_format_integrity.py` passes before handoff.
+
+## Invocation Contract
+
+Every Agent run must declare its contract before reading or writing batch
+outputs:
+
+```text
+run_id
+operator_role
+input_scope
+input_artifacts
+unicode_gate
+authority_order
+allowed_outputs
+forbidden_outputs
+stop_conditions
+verification_commands
+```
+
+The contract is intentionally stricter than a chat instruction. It prevents the
+Agent from confusing a read-only evidence run with a source-write, database, or
+release run. If the contract is absent or conflicts with the governance docs,
+the run must stop and request a corrected contract.
 
 ## Current Full-Catalog Status
 

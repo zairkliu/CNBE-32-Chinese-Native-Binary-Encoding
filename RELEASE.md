@@ -57,4 +57,5 @@ Only tag after all CI checks are green and the changelog is updated. Do not tag 
 
 ## PyPI
 
-Do not publish to PyPI automatically. If publishing is approved later, use a separate release PR and manual publish step.
+Do not publish to PyPI automatically. Future PyPI releases require explicit
+manual authorization, a clean release checklist, and post-upload verification.

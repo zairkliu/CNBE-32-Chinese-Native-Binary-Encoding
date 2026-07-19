@@ -50,10 +50,12 @@ The current confirmed evidence snapshot is:
 - production runtime source rows: `20902`
 - rebuilt runtime databases: `data/cnbe32.db` and
   `src/cnbe32/data/cnbe32.db`
-- release, tag, and PyPI publication: not performed
+- release checkpoint: `v1.0.4`
+- GitHub release: published
+- PyPI package: `cnbe32==1.0.4`
 
-The main confirmation report is
-[`reports/CNBE8105_CORE_CONFIRMATION.md`](../reports/CNBE8105_CORE_CONFIRMATION.md).
+The main 8105 comparison report is
+[`evidence/8105/CNBE8105_ENCODING_COMPARISON_REPORT.md`](../evidence/8105/CNBE8105_ENCODING_COMPARISON_REPORT.md).
 
 The runtime promotion report is
 [`reports/8105_CNBE32_RUNTIME_PROMOTION.md`](../reports/8105_CNBE32_RUNTIME_PROMOTION.md).
@@ -178,14 +180,15 @@ metadata needed for reproducible research.
 The following actions are not allowed from this governance document alone and
 still require explicit authorization:
 
-- publishing a tag, GitHub release, or PyPI package;
+- publishing a new tag, GitHub release, or PyPI package;
 - claiming 97,686-row validation;
 - promoting Agent-standard rows as national-standard rows.
 
 The 8105 runtime promotion already performed the specifically authorized
 source-table and SQLite database rebuild for the 20,902-row runtime package.
-That authorization does not extend to release publishing, PyPI publishing, or
-97,686-row validation claims.
+The separate `v1.0.4` release authorization published that checkpoint to GitHub
+and PyPI. It does not extend to future release publishing or 97,686-row
+validation claims.
 
 Large generated artifacts should remain local or be packaged separately unless
 they have been reviewed and intentionally committed.
@@ -204,4 +207,4 @@ repair:
 4. resolve `1` row with invalid or missing stroke-count evidence;
 5. generate another copied dataset and dry-run report before any additional
    source-table write;
-6. keep release, tag, and PyPI work separate.
+6. keep any future release, tag, and PyPI work separate.

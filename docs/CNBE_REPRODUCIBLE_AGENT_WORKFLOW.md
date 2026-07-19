@@ -8,6 +8,26 @@ repeatable Agent process with audit checkpoints.
 
 The workflow is mandatory for future CNBE32, CNBE64, and CNBE128 rebuild work.
 
+## Project Rationale
+
+The CNBE standards restart exists because the legacy generated catalog was not
+professional enough to support teaching, research, or standards-facing claims.
+The rebuilt workflow treats CNBE as a carrier for audited Hanzi evidence rather
+than as a model-generated final table.
+
+The workflow is reasonable only when these conditions stay true:
+
+- Unicode remains the first compatibility key for every row.
+- 8105 remains the national-standard core for release-track work.
+- GF/GB/GG source evidence controls stroke, stroke order, component, radical,
+  independent-character, structure, and decomposition fields.
+- Dictionary, character-origin, Wikipedia, and ZDIC material stays review
+  context unless explicitly labeled as non-national-standard output.
+- CNBE32 field pressure never overrides Hanzi evidence; richer evidence is
+  retained for CNBE64/CNBE128 or review archives.
+- Every promoted row can be traced to source manifests, scripts, review
+  packets, tests, and release notes.
+
 ## Authority Order
 
 The Agent must read sources in this order:
@@ -31,6 +51,36 @@ Network references should be parsed by code before model interpretation. For
 ZDIC pages, use the local extractor to cache `部首`, `总笔画`, `统一码`, `笔顺`,
 `字形结构`, and `字形分析`. Missing pages or network failures must be recorded as
 gaps, not filled by visual memory.
+
+## Agent Invocation Contract
+
+Every Agent run must begin with a machine-readable invocation block. A reviewer
+must be able to reproduce or reject the run from this block alone.
+
+Required fields:
+
+| Field | Requirement |
+|---|---|
+| `run_id` | Stable identifier for the batch or repair round |
+| `operator_role` | `repository_admin`, `repository_executor`, or `agent_runner` |
+| `input_scope` | `single_char`, `8105_core`, `runtime_20902`, `full_97686`, or bounded sample |
+| `input_artifacts` | Paths and checksums for every source file used |
+| `unicode_gate` | Required and must run before structure, radical, stroke, or CNBE fields |
+| `authority_order` | Must name standard, core-reference, and cross-reference layers |
+| `allowed_outputs` | Reports, review packets, copied tables, source writes, database rebuilds, or release artifacts |
+| `forbidden_outputs` | Anything explicitly out of scope for the run |
+| `stop_conditions` | Batch blockers and checkpoint path |
+| `verification_commands` | Commands required before handoff |
+
+The Agent must not accept a free-form instruction such as "finish the 8105
+encoding" as sufficient authorization to write source tables or rebuild
+databases. The invocation block must say which write layer is allowed.
+
+For read-only or review-packet work, `allowed_outputs` must exclude source
+catalog writes, database rebuilds, tags, GitHub releases, and PyPI uploads.
+For runtime-write work, the Agent must first write to a copied table, emit a
+diff packet, and stop before source promotion unless promotion was separately
+authorized.
 
 ## Batch Lifecycle
 
@@ -168,7 +218,7 @@ This repair may update `data/cnbe32.json` and rebuild the two packaged SQLite
 databases only after source-write authorization. It must preserve current
 runtime index/ext bits, keep missing-current-model rows out of the runtime
 table, keep ZDIC/cache data labeled as cross-reference context, and keep tag,
-release, and PyPI publication blocked.
+release, and PyPI publication as separate manual gates.
 
 After this repair, continue from the remaining queue rather than regenerating
 the full catalog:

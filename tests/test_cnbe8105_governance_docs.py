@@ -30,8 +30,12 @@ def test_governance_doc_records_runtime_promotion_boundary() -> None:
     assert "Unicode code point" in text
     assert "SQLite rebuild is a separate authorized step" in text
     assert "8105 runtime promotion" in text
-    assert "release, tag, and PyPI publication: not performed" in text
-    assert "97,686-row validation claims" in text
+    assert "release checkpoint: `v1.0.4`" in text
+    assert "GitHub release: published" in text
+    assert "PyPI package: `cnbe32==1.0.4`" in text
+    assert "publishing a new tag, GitHub release, or PyPI package" in text
+    assert "claiming 97,686-row validation" in text
+    assert "future release publishing" in text
     assert "Research Reproducibility Boundary" in text
 
 
@@ -48,6 +52,7 @@ def test_reproducible_agent_workflow_declares_stop_conditions() -> None:
     assert "Authority Order" in text
     assert "Unicode identity and code point compatibility" in text
     assert "8105 common standardized Chinese character table" in text
+    assert "Agent Invocation Contract" in text
     assert "Stop Conditions" in text
     assert "dictionary context is being promoted as national-standard evidence" in text
     assert "Large full-catalog intermediate files should not be committed" in text
