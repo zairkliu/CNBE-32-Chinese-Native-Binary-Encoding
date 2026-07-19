@@ -1,0 +1,7 @@
+interface:
+  display_name: "CNBE Hanzi Structure Encoding Agent"
+  short_description: "Standards-aligned total-control Agent for CNBE Hanzi structure encoding, 8105 alignment, GF0017 gates, and reproducible review workflows."
+  default_prompt: "Use the repository-published CNBE Hanzi Structure Encoding Agent to prepare a Unicode-first, 8105-aligned, GF0017-gated encoding or audit workflow. Start by declaring run_id, input_scope, authority_order, allowed_outputs, forbidden_outputs, stop_conditions, and verification_commands."
+  skill_path: "../cnbe-hanzi-structure-encoding-agent/SKILL.md"
+  authority_boundary: "8105 is the national-standard core; outside-8105 rows remain Agent-standard candidates until evidence gates approve project-level mappings."
+  release_boundary: "v1.0.4 publishes the 20,902-row runtime package and 8105 standards-restart repair state, not 97,686-row validation."
