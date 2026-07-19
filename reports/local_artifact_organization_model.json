@@ -1,0 +1,70 @@
+{
+  "artifact_policy": {
+    "committed_asset_classes": [
+      "source code under src scripts and tests",
+      "runtime database files explicitly allowed by gitignore",
+      "bounded evidence reports and reproducible JSON summaries",
+      "review-packet CSV files",
+      "small ZDIC snapshots and representative viewport images",
+      "governance and technical documentation",
+      "source manifests for local knowledge assets"
+    ],
+    "local_only_asset_classes": [
+      "outputs rendered workbooks screenshots previews and inspection dumps",
+      "build cloned dictionaries staging databases and temporary extraction products",
+      "Python pytest ruff and package build caches",
+      "generated Excel workbooks outside committed evidence exceptions",
+      "full intermediates that exceed GitHub single-file limits"
+    ]
+  },
+  "branch": "data/basic-cjk-scope-gap",
+  "commit_groups": [
+    {
+      "purpose": "Promote the human-approved 8105 CNBE32 runtime copy",
+      "role": "runtime data and SQLite package baseline",
+      "short_name": "runtime_promotion"
+    },
+    {
+      "purpose": "Codify 8105 governance README boundaries SDK notes and format checks",
+      "role": "public project boundary",
+      "short_name": "governance_workflow"
+    },
+    {
+      "purpose": "Add scripts reports tests ZDIC snapshots and review packets",
+      "role": "research reproducibility trail",
+      "short_name": "reproducible_evidence_workflows"
+    },
+    {
+      "purpose": "Record committed-vs-local artifact policy",
+      "role": "push-readiness and repository hygiene",
+      "short_name": "local_artifact_organization"
+    }
+  ],
+  "excluded_large_intermediates": [
+    {
+      "path": "reports/full_catalog_row_level_extraction_results.json",
+      "policy": "regenerate_from_script_do_not_commit",
+      "role": "full row-level extraction materialization"
+    },
+    {
+      "path": "reports/full_catalog_agent_mapping_evidence_join.json",
+      "policy": "regenerate_from_script_do_not_commit",
+      "role": "full Agent mapping evidence join materialization"
+    }
+  ],
+  "non_goals": {
+    "github_release": false,
+    "pypi_publish": false,
+    "tag": false,
+    "validate_97686_full_catalog_claim": false
+  },
+  "push_gate": [
+    "git status shows only intentional ahead commits",
+    "no tracked file exceeds 100 MB",
+    "PYTHONPATH=src python3 -m pytest passes",
+    "python3 scripts/validate_format_integrity.py passes",
+    "git diff --check is clean",
+    "ignored local artifacts remain ignored"
+  ],
+  "status": "LOCAL_ARTIFACT_ORGANIZATION_MODEL_READY"
+}
