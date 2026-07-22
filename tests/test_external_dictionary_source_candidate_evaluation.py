@@ -2,13 +2,27 @@
 
 from __future__ import annotations
 
+import pytest
+
 from scripts.evaluate_external_dictionary_source_candidates import (
+    NLP_KANGXI_DB,
+    NLP_ZHDZD_DB,
     build_evaluation,
     render_markdown,
 )
 
 
+def require_external_dictionary_assets() -> None:
+    missing = [path for path in (NLP_KANGXI_DB, NLP_ZHDZD_DB) if not path.exists()]
+    if missing:
+        pytest.skip(
+            "external dictionary candidate databases are local integration assets: "
+            + ", ".join(str(path) for path in missing)
+        )
+
+
 def test_external_dictionary_evaluation_is_ready() -> None:
+    require_external_dictionary_assets()
     report = build_evaluation()
 
     assert report["overall_status"] == "PASS_EXTERNAL_DICTIONARY_SOURCE_EVALUATION_READY"
@@ -17,6 +31,7 @@ def test_external_dictionary_evaluation_is_ready() -> None:
 
 
 def test_external_dictionary_evaluation_recommends_structured_primary_source() -> None:
+    require_external_dictionary_assets()
     report = build_evaluation()
 
     assert report["summary"]["recommended_primary_source"] == "leechenhwa2/nlp-han-dicts"
@@ -27,6 +42,7 @@ def test_external_dictionary_evaluation_recommends_structured_primary_source() -
 
 
 def test_external_dictionary_evaluation_keeps_authority_boundaries() -> None:
+    require_external_dictionary_assets()
     report = build_evaluation()
 
     assert all(report["checks"].values())
@@ -38,6 +54,7 @@ def test_external_dictionary_evaluation_keeps_authority_boundaries() -> None:
 
 
 def test_external_dictionary_evaluation_marks_secondary_sources() -> None:
+    require_external_dictionary_assets()
     report = build_evaluation()
 
     he = report["candidates"]["he426100_kangxi"]
@@ -47,6 +64,7 @@ def test_external_dictionary_evaluation_marks_secondary_sources() -> None:
 
 
 def test_external_dictionary_evaluation_markdown_states_scope() -> None:
+    require_external_dictionary_assets()
     markdown = render_markdown(build_evaluation())
 
     assert "# External Dictionary Source Candidate Evaluation" in markdown

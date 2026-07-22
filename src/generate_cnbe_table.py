@@ -114,7 +114,7 @@ def main():
     total_buckets = len(buckets)
     collisions_1 = sum(1 for v in buckets.values() if len(v) == 1)
     collisions_2 = sum(1 for v in buckets.values() if len(v) == 2)
-    print(f"\n哈希分析 (Unicode低15bit):")
+    print("\n哈希分析 (Unicode低15bit):")
     print(f"  总桶数: {total_buckets}, 最大碰撞: {max_collision}")
     print(f"  单条目桶: {collisions_1} ({100*collisions_1/total_buckets:.1f}%)")
     print(f"  双条目桶: {collisions_2} ({100*collisions_2/total_buckets:.1f}%)")
@@ -157,19 +157,19 @@ def main():
         if not found:
             errors += 1
     print(f"  验证 {len(unicodes)} 次查找, 错误: {errors}")
-    print(f"  ✓ 100% 查找正确" if errors == 0 else f"  ✗ {errors} 错误")
+    print("  ✓ 100% 查找正确" if errors == 0 else f"  ✗ {errors} 错误")
 
     # 加速比总结
     n = len(unicodes)
     print(f"\n{'='*60}")
-    print(f"查表优化总结")
+    print("查表优化总结")
     print(f"{'='*60}")
     print(f"  线性搜索:      {n//2:>7} 比较/次, 总 {n*n//2:>12,} 周期")
     print(f"  二分查找:      {math.ceil(math.log2(n)):>7} 比较/次, 总 {n*math.ceil(math.log2(n)):>12,} 周期")
     print(f"  哈希表:        1-2 比较/次, 总 {n:>12,} 周期")
     print(f"  二分加速比:    ~{n//2//math.ceil(math.log2(n)):>5}x")
     print(f"  哈希加速比:    ~{n//2:>5}x")
-    print(f"\n完成！")
+    print("\n完成！")
 
 if __name__ == "__main__":
     main()

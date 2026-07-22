@@ -94,7 +94,7 @@ Primary examples:
 - `llm_experiments/`
 - `experiments/`
 - `results/`
-- `cnbe-llm training(demo)/`
+- `cnbe-llm-training-demo/`
 
 Handling rule: keep them as historical archives unless a human authorizes an
 archive move. Do not rewrite their claims while doing structural cleanup.
@@ -227,7 +227,7 @@ Create an archive policy for:
 - `llm_experiments/`
 - `results/`
 - `experiments/`
-- `cnbe-llm training(demo)/`
+- `cnbe-llm-training-demo/`
 - `hardware/`
 - `riscv/`
 - `linux_cnbe32_riscv/`

@@ -1,0 +1,77 @@
+{
+  "schema": "cnbe32-structure-types-v1",
+  "status": "runtime-compatibility-spec",
+  "note": "This file is a repository guardrail for the v1.0.4 runtime database. It records the allowed structure labels currently found in the runtime and names the national-standard review target. It does not certify every legacy runtime row as nationally standardized.",
+  "national_standard_target": {
+    "source": "GF/GG Hanzi structure workflow aligned to the 8105 common standardized Chinese character table",
+    "allowed_review_labels": [
+      "独体字",
+      "上下",
+      "上中下",
+      "左右",
+      "左中右",
+      "左上包",
+      "右上包",
+      "左三包",
+      "左下包",
+      "上三包",
+      "下三包",
+      "全包围",
+      "镶嵌"
+    ]
+  },
+  "runtime_v1_0_4": {
+    "0": {
+      "canonical_review_label": "独体字",
+      "runtime_aliases": ["独体字", "single"]
+    },
+    "1": {
+      "canonical_review_label": "上下",
+      "runtime_aliases": ["上下", "left-right"]
+    },
+    "2": {
+      "canonical_review_label": "上中下",
+      "runtime_aliases": ["上中下", "left-mid-right"]
+    },
+    "3": {
+      "canonical_review_label": "左右",
+      "runtime_aliases": ["左右", "up-down"]
+    },
+    "4": {
+      "canonical_review_label": "左中右",
+      "runtime_aliases": ["左中右", "up-mid-down"]
+    },
+    "5": {
+      "canonical_review_label": "左上包",
+      "runtime_aliases": ["左上包", "top-left-wrap"]
+    },
+    "6": {
+      "canonical_review_label": "右上包",
+      "runtime_aliases": ["右上包", "top-right-wrap"]
+    },
+    "7": {
+      "canonical_review_label": "左三包",
+      "runtime_aliases": ["左三包", "bottom-left-wrap"]
+    },
+    "8": {
+      "canonical_review_label": "左下包",
+      "runtime_aliases": ["左下包", "top-wrap"]
+    },
+    "9": {
+      "canonical_review_label": "上三包",
+      "runtime_aliases": ["上三包", "bottom-wrap"]
+    },
+    "10": {
+      "canonical_review_label": "下三包",
+      "runtime_aliases": ["下三包", "left-wrap"]
+    },
+    "11": {
+      "canonical_review_label": "全包围",
+      "runtime_aliases": ["全包围", "full-wrap"]
+    },
+    "12": {
+      "canonical_review_label": "镶嵌",
+      "runtime_aliases": ["镶嵌", "triangle"]
+    }
+  }
+}

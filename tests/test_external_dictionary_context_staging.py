@@ -4,14 +4,28 @@ from __future__ import annotations
 
 import sqlite3
 
+import pytest
+
 from scripts.build_external_dictionary_context_staging import (
     DEFAULT_DB_OUTPUT,
+    NLP_KANGXI_DB,
+    NLP_ZHDZD_DB,
     build_staging_database,
     render_markdown,
 )
 
 
+def require_external_dictionary_assets() -> None:
+    missing = [path for path in (NLP_KANGXI_DB, NLP_ZHDZD_DB) if not path.exists()]
+    if missing:
+        pytest.skip(
+            "external dictionary candidate databases are local integration assets: "
+            + ", ".join(str(path) for path in missing)
+        )
+
+
 def test_dictionary_context_staging_is_ready() -> None:
+    require_external_dictionary_assets()
     report = build_staging_database()
 
     assert report["overall_status"] == "PASS_DICTIONARY_CONTEXT_STAGING_READY"
@@ -20,6 +34,7 @@ def test_dictionary_context_staging_is_ready() -> None:
 
 
 def test_dictionary_context_staging_contains_expected_sources() -> None:
+    require_external_dictionary_assets()
     report = build_staging_database()
 
     assert set(report["summary"]["source_counts"]) == {
@@ -29,6 +44,7 @@ def test_dictionary_context_staging_contains_expected_sources() -> None:
 
 
 def test_dictionary_context_staging_schema_and_lookup() -> None:
+    require_external_dictionary_assets()
     build_staging_database()
 
     assert DEFAULT_DB_OUTPUT.exists()
@@ -44,6 +60,7 @@ def test_dictionary_context_staging_schema_and_lookup() -> None:
 
 
 def test_dictionary_context_staging_keeps_writes_and_scores_blocked() -> None:
+    require_external_dictionary_assets()
     report = build_staging_database()
 
     assert all(report["checks"].values())
@@ -54,6 +71,7 @@ def test_dictionary_context_staging_keeps_writes_and_scores_blocked() -> None:
 
 
 def test_dictionary_context_staging_markdown_states_scope() -> None:
+    require_external_dictionary_assets()
     markdown = render_markdown(build_staging_database())
 
     assert "# External Dictionary Context Import Manifest" in markdown

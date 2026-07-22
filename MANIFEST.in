@@ -8,6 +8,8 @@ include README_EN.md
 include README_ZH.md
 include .gitattributes
 
+recursive-include agents *.md
+recursive-include agents *.json
 recursive-include docs/releases *.md
 recursive-include scripts *.py
 recursive-include spec *.json
