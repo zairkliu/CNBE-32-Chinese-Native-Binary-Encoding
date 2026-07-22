@@ -5,7 +5,8 @@
 
 <p align="center">
   <a href="./README.md">English</a> ·
-  <a href="./README_ZH.md">简体中文</a>
+  <a href="./README_ZH.md">简体中文</a> ·
+  <a href="./README_EN.md">English mirror</a>
 </p>
 
 <p align="center">
@@ -54,6 +55,7 @@ CNBE 正在按更严格的国家语言文字规范证据链重新组织。
 - [CNBE 版本治理](./docs/CNBE_VERSION_GOVERNANCE.md)
 - [仓库结构](./docs/REPOSITORY_STRUCTURE.md)
 - [CNBE 结构类型运行时规范](./spec/struct_types.json)
+- [顶层 Agent 目录](./agents/README.md)
 - [仓库发布版 Agent skill](./skill/cnbe-hanzi-structure-encoding-agent/SKILL.md)
 - [GitHub Copilot 云端智能体状态](./docs/COPILOT_CLOUD_AGENT_LIMITATION.md)
 - [CNBE 8105 编码比对报告](./evidence/8105/CNBE8105_ENCODING_COMPARISON_REPORT.md)

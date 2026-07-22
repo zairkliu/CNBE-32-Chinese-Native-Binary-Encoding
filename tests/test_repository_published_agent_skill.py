@@ -91,12 +91,17 @@ def test_agents_index_publishes_current_agent_metadata() -> None:
 
 
 def test_public_docs_link_to_repository_agent_skill() -> None:
-    for relative_path in ("README.md", "README_ZH.md"):
+    for relative_path in ("README.md", "README_EN.md", "README_ZH.md"):
         text = read_text(relative_path)
+        assert "agents/README.md" in text
         assert "skill/cnbe-hanzi-structure-encoding-agent/SKILL.md" in text
 
     structure_doc = read_text("docs/REPOSITORY_STRUCTURE.md")
-    assert "Skill Layer" in structure_doc
+    assert "Agent Layer" in structure_doc
+    assert "agents/README.md" in structure_doc
+    assert "agents/manifests/cnbe-hanzi-structure-encoding-agent.invocation.json" in structure_doc
+    assert "agents/templates/cnbe-agent-run-report.md" in structure_doc
+    assert "non-destructive structure bridge" in structure_doc
     assert "Repository-published total-control Agent" in structure_doc
     assert "skill/agents/cnbe-hanzi-structure-encoding-agent.yaml" in structure_doc
     assert ".github/agents/cnbe-hanzi-structure-encoding-agent.agent.md" in structure_doc
@@ -117,7 +122,7 @@ def test_copilot_cloud_agent_limitation_is_documented_as_optional() -> None:
     assert ".github/copilot-instructions.md" in text
     assert ".github/workflows/copilot-setup-steps.yml" in text
 
-    for relative_path in ("README.md", "README_ZH.md"):
+    for relative_path in ("README.md", "README_EN.md", "README_ZH.md"):
         readme = read_text(relative_path)
         assert "docs/COPILOT_CLOUD_AGENT_LIMITATION.md" in readme
 
@@ -151,9 +156,49 @@ def test_research_position_statement_covers_project_framing() -> None:
     assert "not current validated coverage" in text
     assert "Paid GitHub Copilot cloud agent execution is optional" in text
 
-    for relative_path in ("README.md", "README_ZH.md"):
+    for relative_path in ("README.md", "README_EN.md", "README_ZH.md"):
         readme = read_text(relative_path)
         assert "docs/CNBE_RESEARCH_POSITION_STATEMENT.md" in readme
 
     structure_doc = read_text("docs/REPOSITORY_STRUCTURE.md")
     assert "docs/CNBE_RESEARCH_POSITION_STATEMENT.md" in structure_doc
+
+
+def test_top_level_agents_directory_is_a_non_destructive_index() -> None:
+    text = read_text("agents/README.md")
+
+    assert "non-destructive structure bridge" in text
+    assert "skill/cnbe-hanzi-structure-encoding-agent/SKILL.md" in text
+    assert ".github/agents/cnbe-hanzi-structure-encoding-agent.agent.md" in text
+    assert "skill/SKILL.md" in text
+    assert "Unicode identity" in text
+    assert "8105 is the national-standard release-track core" in text
+    assert "CNBE32 is a compact runtime carrier" in text
+    assert "database rebuild" in text
+    assert "PyPI" in text
+
+
+def test_top_level_agent_manifest_declares_reproducible_contract() -> None:
+    text = read_text("agents/manifests/cnbe-hanzi-structure-encoding-agent.invocation.json")
+
+    for required_field in (
+        "run_id",
+        "operator_role",
+        "input_scope",
+        "input_artifacts",
+        "unicode_gate",
+        "authority_order",
+        "allowed_outputs",
+        "forbidden_outputs",
+        "stop_conditions",
+        "verification_commands",
+        "review_required_before",
+        "resume_policy",
+    ):
+        assert required_field in text
+
+    assert "skill/cnbe-hanzi-structure-encoding-agent/SKILL.md" in text
+    assert ".github/agents/cnbe-hanzi-structure-encoding-agent.agent.md" in text
+    assert "national-language-writing-standards" in text
+    assert "8105-core-baseline" in text
+    assert "unapproved PyPI publish" in text

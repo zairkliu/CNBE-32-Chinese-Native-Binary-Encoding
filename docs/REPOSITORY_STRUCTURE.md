@@ -46,7 +46,7 @@ when the output is a complete reproducibility snapshot.
 
 | Path | Purpose |
 |---|---|
-| `README.md`, `README_ZH.md` | Public project overview |
+| `README.md`, `README_EN.md`, `README_ZH.md` | Public project overview |
 | `docs/` | Public documentation and repository structure docs |
 | `docs/COPILOT_CLOUD_AGENT_LIMITATION.md` | Copilot cloud agent paid-access status and open-source fallback boundary |
 | `docs/CNBE_RESEARCH_POSITION_STATEMENT.md` | Short research framing for direction, time point, reproducibility, feasibility, and scientific value |
@@ -64,10 +64,15 @@ is Agent workflow, and which layer is historical experiment context.
 The operational Agent workflow is defined in
 `docs/CNBE_REPRODUCIBLE_AGENT_WORKFLOW.md`.
 
-## Skill Layer
+## Agent Layer
 
 | Path | Purpose |
 |---|---|
+| `agents/` | Top-level public entry point for Agent-driven CNBE structure work |
+| `agents/README.md` | Human-facing index for Agent authority boundaries and non-destructive structure policy |
+| `agents/skills/` | Pointer map for portable skills and GitHub-native Agent profiles |
+| `agents/manifests/` | Reproducible invocation contracts and examples |
+| `agents/templates/` | Human-reviewable Agent run report templates |
 | `.github/agents/` | GitHub-native repository Agent profiles for the `/agents` page |
 | `.github/agents/cnbe-hanzi-structure-encoding-agent.agent.md` | GitHub custom Agent profile for the standards-aligned CNBE Agent |
 | `skill/README.md` | Skill directory index and authority boundary |
@@ -75,7 +80,11 @@ The operational Agent workflow is defined in
 | `skill/cnbe-hanzi-structure-encoding-agent/SKILL.md` | Repository-published total-control Agent for standards-aligned Hanzi encoding |
 | `skill/SKILL.md` | Historical experiment-reproduction skill, not release-track authority |
 
-The repository-published Agent skill is the portable entry point for the
+The top-level `agents/` directory is a non-destructive structure bridge. It
+makes Agent work visible at repository root without moving or deleting the
+existing `skill/` and `.github/agents/` content.
+
+The repository-published Agent skill is the portable operating rulebook for the
 post-`v1.0.4` standards restart. It must stay aligned with
 `docs/CNBE_HANZI_STRUCTURE_AGENT_MODEL.md` and
 `docs/CNBE_REPRODUCIBLE_AGENT_WORKFLOW.md`. Its discovery metadata is
@@ -83,9 +92,18 @@ post-`v1.0.4` standards restart. It must stay aligned with
 repository Agents page profile is
 `.github/agents/cnbe-hanzi-structure-encoding-agent.agent.md`.
 
+The reproducible invocation example is
+`agents/manifests/cnbe-hanzi-structure-encoding-agent.invocation.json`.
+Human-facing run reports should use
+`agents/templates/cnbe-agent-run-report.md`.
+
 GitHub Copilot cloud agent execution is optional paid automation. It is not a
 required reproducibility path for the CNBE project. Its access boundary is
 documented in `docs/COPILOT_CLOUD_AGENT_LIMITATION.md`.
+
+Future consolidation may move files into a stricter Agent layout, but that must
+be handled as a separate migration PR with compatibility notes. This structure
+round only adds visible indexes and keeps existing paths valid.
 
 ## Historical Experiment Layer
 
