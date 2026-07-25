@@ -1,0 +1,14 @@
+{
+  "schema_version": "penc276-t3-169-276-owner-structure-approval-v1",
+  "input_backlog_sha256": "650e0f461e41902697349bd604b809cd5605f1b1bdbfec6471030ea7361a3b17",
+  "approved_rows": 108,
+  "approval_scope": "structure_label_only",
+  "approval_reference": "project_owner_human_audit_2026-07-25",
+  "decision": {
+    "status": "PASS_STRUCTURE_HUMAN_APPROVED_DECOMPOSITION_AND_EVIDENCE_PENDING",
+    "may_use_structure_label_in_future_review": true,
+    "may_treat_as_dual_source_structure": false,
+    "may_generate_cnbe_candidates": false,
+    "may_modify_source_tables": false
+  }
+}
