@@ -1,0 +1,16 @@
+{
+  "schema_version": "penc276-t3-radical-adjudication-v1",
+  "records": 108,
+  "counts": {
+    "RADICAL_CONFIRMED": 97,
+    "RADICAL_DUAL_DISAGREE": 2,
+    "RADICAL_UNMAPPED_OR_AMBIGUOUS": 4,
+    "RADICAL_ZDIC_GAP": 5
+  },
+  "decision": {
+    "status": "PASS_T3_RADICAL_ADJUDICATION_REVIEW_ONLY",
+    "may_generate_cnbe_candidates": false,
+    "may_modify_source_tables": false,
+    "may_claim_national_standard": false
+  }
+}
