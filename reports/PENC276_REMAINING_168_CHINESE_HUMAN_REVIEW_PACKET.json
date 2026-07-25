@@ -1,0 +1,30 @@
+{
+  "schema_version": "penc276-remaining168-chinese-human-review-packet-v1",
+  "input_inventory_sha256": "39d7e3295d18d6d262d8049de3465b10a47c760e0358b913276c82920931debf",
+  "completed_human_audit_baseline_rows_excluded": 108,
+  "review_packet_rows": 168,
+  "tier_counts": {
+    "T0": 1,
+    "T1": 124,
+    "T2": 36,
+    "T3": 3,
+    "T4": 4
+  },
+  "scope": {
+    "included": "PENC276 rows outside completed PENC_169 through PENC_276 human-audit baseline",
+    "excluded": "108 completed human-audit baseline rows"
+  },
+  "decision": {
+    "status": "PASS_REMAINING_168_CHINESE_HUMAN_REVIEW_PACKET_READY",
+    "may_generate_cnbe_candidates": false,
+    "may_modify_source_tables": false,
+    "may_modify_sqlite": false,
+    "may_claim_national_standard": false
+  },
+  "reviewer_conclusion_options": [
+    "通过",
+    "需复核",
+    "无法显示",
+    "不纳入本批"
+  ]
+}
