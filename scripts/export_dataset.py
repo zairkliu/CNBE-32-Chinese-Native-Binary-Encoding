@@ -53,6 +53,7 @@ COL_CANDIDATES = {
     "ext": ("ext", "extension"),
     "evidence_tier": ("evidence_tier", "tier", "evidence_level"),
     "review_status": ("review_status", "status", "review_state"),
+    "track": ("track",),
 }
 
 RADIX_SHIFT = 24
@@ -101,8 +102,14 @@ def export_dataset(
     out_dir: Path,
     scope_file: Path | None = None,
     table: str = "cnbe32",
+    track: str | None = None,
 ) -> dict:
-    """Export the runtime table to JSONL and write a SHA256 manifest."""
+    """Export the runtime table to JSONL and write a SHA256 manifest.
+
+    If ``track`` is given (e.g. "standard"), only rows whose ``track`` column
+    matches are exported; requires the v1.1 migration (WS-8) to have added the
+    column. Without ``track`` the export is unfiltered (v1.0 behavior).
+    """
     conn, col = _resolve_columns(db_path)
 
     scope: set[str] | None = None
@@ -113,9 +120,20 @@ def export_dataset(
             if line.strip() and not line.startswith("#")
         }
 
+    if track is not None and col["track"] is None:
+        conn.close()
+        raise SystemExit(
+            "--track requires the v1.1 migration (no 'track' column in db)")
+
     select_cols = sorted({c for c in col.values() if c})
     quoted = ", ".join(f'"{c}"' for c in select_cols)
-    rows = conn.execute(f'SELECT {quoted} FROM "{table}" ORDER BY "{col["char"]}"').fetchall()
+    sql = f'SELECT {quoted} FROM "{table}"'
+    params: tuple = ()
+    if track is not None:
+        sql += f' WHERE "{col["track"]}" = ?'
+        params = (track,)
+    sql += f' ORDER BY "{col["char"]}"'
+    rows = conn.execute(sql, params).fetchall()
     conn.close()
 
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -161,6 +179,7 @@ def export_dataset(
                 "evidence_tier": tier,
                 "tier_source": tier_source,
                 "review_status": (row[col["review_status"]] if col["review_status"] else None),
+                "track": (row[col["track"]] if col["track"] else None),
                 "source_refs": [],
                 "in_8105": (char in scope if scope is not None else None),
             }
@@ -185,12 +204,14 @@ def export_dataset(
         "source_db": str(db_path),
         "source_commit": os.environ.get("GITHUB_SHA", "unknown"),
         "scope_filter": (str(scope_file) if scope_file else None),
+        "track_filter": track,
         "row_count": n_rows,
         "evidence_tier_distribution": tier_dist,
         "schema": [
             "unicode_cp", "char", "radical_id", "stroke_count", "structure_id",
             "structure_name", "glyph_index", "ext", "cnbe32_hex",
-            "evidence_tier", "tier_source", "review_status", "source_refs", "in_8105",
+            "evidence_tier", "tier_source", "review_status", "track",
+            "source_refs", "in_8105",
         ],
         "outputs": {
             name: {"path": p, "sha256": _sha256(Path(p))} for name, p in outputs.items()
@@ -209,11 +230,16 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--out", type=Path, default=Path("datasets/8105"))
     parser.add_argument("--scope-file", type=Path, default=None,
                         help="text file with one 8105 character per line")
+    parser.add_argument("--track", choices=["standard", "provisional", "legacy"],
+                        default=None,
+                        help="export only rows with this track (requires the"
+                             " v1.1 WS-8 migration); default exports all rows")
     args = parser.parse_args(argv)
 
     if not args.db.exists():
         raise SystemExit(f"database not found: {args.db}")
-    manifest = export_dataset(args.db, args.out, args.scope_file)
+    manifest = export_dataset(args.db, args.out, args.scope_file,
+                              track=args.track)
     print(json.dumps({
         "row_count": manifest["row_count"],
         "evidence_tier_distribution": manifest["evidence_tier_distribution"],
