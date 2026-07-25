@@ -73,6 +73,14 @@ Governance documents:
 - [276 Pending 8105 Encoding Workflow](./docs/CNBE276_PENDING_ENCODING_WORKFLOW.md) — governed plan for the 276 pending rows, with a SHA-256 pinned inventory triage
 - [WS-4 Benchmark Pre-Registration](./docs/benchmarks/WS4_BENCHMARK_PRE_REGISTRATION.md)
 
+### T3 exploratory batch: human audit first
+
+For the PENC276 T3 subset (`PENC_169`–`PENC_276`, 108 characters), the recorded **human audit** is the final project working baseline. 8105 and related national language-and-writing standards, Unihan, and ZDIC are used for alignment, cross-checking, and difference discovery; they are not a “gold standard” that automatically overrides human conclusions. When external sources disagree, are incomplete, or expose glyph-rendering limits, the workflow preserves the original discrepancy and pending-adjudication state. It does not generate candidate CNBE codes or write back to the source table or SQLite database.
+
+- [Human-audit evidence policy](./docs/PENC276_T3_HUMAN_AUDIT_EVIDENCE_POLICY.md)
+- [Final 108-character human-audit baseline](./evidence/8105/pending276/T3_169_276_FINAL_HUMAN_AUDIT_BASELINE.csv)
+- [Machine-readable baseline summary](./reports/PENC276_T3_169_276_FINAL_HUMAN_AUDIT_BASELINE.json)
+
 Mathematics and review program:
 
 - [CNBE-32 Mathematical Structure](./docs/CNBE32_MATHEMATICAL_STRUCTURE.md) — standalone presentation of the 13 research formulas

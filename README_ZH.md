@@ -73,6 +73,14 @@ CNBE 正在按更严格的国家语言文字规范证据链重新组织。
 - [8105 待编码 276 行受治理编码工作流](./docs/CNBE276_PENDING_ENCODING_WORKFLOW.md) — 276 行待编码字符的受治理方案，含 SHA-256 锚定清单分层
 - [WS-4 基准预注册](./docs/benchmarks/WS4_BENCHMARK_PRE_REGISTRATION.md)
 
+### T3 探索批次：人工审核优先
+
+PENC276 的 T3 子批次（`PENC_169`–`PENC_276`，108 字）以已记录的**人工审核**作为本项目的最终工作基线。8105 及相关国家语言文字规范、Unihan 和 ZDIC 在此批次中用于对齐、交叉核验和暴露差异；它们不是自动覆盖人工结论的“金标准”。外部来源存在分歧、缺项或字形显示限制时，系统保留原始差异和待裁决状态，不生成候选 CNBE 编码，也不回写源表或 SQLite 数据库。
+
+- [人工审核证据政策](./docs/PENC276_T3_HUMAN_AUDIT_EVIDENCE_POLICY.md)
+- [108 字最终人工审核基线](./evidence/8105/pending276/T3_169_276_FINAL_HUMAN_AUDIT_BASELINE.csv)
+- [机器可读基线摘要](./reports/PENC276_T3_169_276_FINAL_HUMAN_AUDIT_BASELINE.json)
+
 数学与评审计划：
 
 - [CNBE-32 数学结构](./docs/CNBE32_MATHEMATICAL_STRUCTURE.md) — 13 个研究公式的独立呈现
