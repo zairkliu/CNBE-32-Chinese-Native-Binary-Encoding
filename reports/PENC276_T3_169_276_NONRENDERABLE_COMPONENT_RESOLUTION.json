@@ -1,0 +1,13 @@
+{
+  "schema_version": "penc276-t3-nonrenderable-component-resolution-v1",
+  "input_ledger_sha256": "13102846a1337c4488c55f046c96d05ad425cac21e8c55c21d5e0c08ce2f0444",
+  "approved_rows": 3,
+  "approval_reference": "project_owner_human_audit_2026-07-26",
+  "decision": {
+    "status": "PASS_HUMAN_APPROVED_NONRENDERABLE_COMPONENT_GLYPHS",
+    "may_use_human_decomposition_for_review": true,
+    "may_substitute_missing_component_glyphs": false,
+    "may_generate_cnbe_candidates": false,
+    "may_modify_source_tables": false
+  }
+}
