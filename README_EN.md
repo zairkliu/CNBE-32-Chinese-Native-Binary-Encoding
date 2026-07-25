@@ -49,8 +49,8 @@ Current confirmed state:
 Post-migration state (v1.1, applied 2026-07-25 under owner authorization):
 
 - dual-source repairs applied: `620` (503 strokes, 111 structure, 6 radical)
-- 8105 missing characters inserted as pending-encoding rows: `276` (cnbe=NULL, needs_encoding=1)
-- dual-source disagreements left hung for expert adjudication: `348`
+- 8105 missing characters inserted as pending-encoding rows: `276` (`cnbe=NULL`, `needs_encoding=1`). This is a database state of **no CNBE value written yet**, not a claim that every row is unaudited; the 108 PENC276 T3 characters have completed human structure/decomposition audit, but the evidence policy deliberately does not auto-generate codes.
+- dual-source disagreements held from the migration period for expert adjudication: `348`. This is a separate historical v1.1 migration queue, not a failure or revocation of the 108-character human audit.
 - total runtime rows: `21178`
 - track column: `standard 7327 / provisional 275 / legacy 13576`
 - migration is idempotent (second dry-run plans 0 ops) and recorded in `migration_meta`
@@ -76,6 +76,8 @@ Governance documents:
 ### T3 exploratory batch: human audit first
 
 For the PENC276 T3 subset (`PENC_169`–`PENC_276`, 108 characters), the recorded **human audit** is the final project working baseline. 8105 and related national language-and-writing standards, Unihan, and ZDIC are used for alignment, cross-checking, and difference discovery; they are not a “gold standard” that automatically overrides human conclusions. When external sources disagree, are incomplete, or expose glyph-rendering limits, the workflow preserves the original discrepancy and pending-adjudication state. It does not generate candidate CNBE codes or write back to the source table or SQLite database.
+
+The completed human-audit scope is 108 characters. The remaining `168` pending-encoding rows, including three other T3 rows (`PENC_078`–`PENC_080`), were not part of this audit. They are a separate work queue from the 348 historical migration disagreements and cannot be closed by this result.
 
 - [Human-audit evidence policy](./docs/PENC276_T3_HUMAN_AUDIT_EVIDENCE_POLICY.md)
 - [Final 108-character human-audit baseline](./evidence/8105/pending276/T3_169_276_FINAL_HUMAN_AUDIT_BASELINE.csv)
@@ -312,7 +314,7 @@ The project's structure taxonomy (independent, top-bottom, left-right, enclosure
 5. Add golden vectors shared across Python, C, Rust, and hardware prototypes.
 6. Add benchmark baselines (Unicode codepoint, one-hot, IDS, learned embeddings).
 7. Run the P1 external independent review, then execute the pre-registered WS-4 benchmarks.
-8. Encode the 276 pending 8105 rows through the [governed encoding workflow](./docs/CNBE276_PENDING_ENCODING_WORKFLOW.md): 1 ready row + 124 dual-source-confirmed candidates first; 151 rows routed to evidence-completion or expert adjudication queues ([SHA-256 pinned inventory](./evidence/8105/PENDING_276_ENCODING_INVENTORY.csv)).
+8. Beyond the completed 108-character T3 human-audit baseline, process the remaining 168 pending 8105 rows through the [governed encoding workflow](./docs/CNBE276_PENDING_ENCODING_WORKFLOW.md). Candidate CNBE generation remains blocked until independent radical/stroke adjudication and later written authorization ([SHA-256 pinned inventory](./evidence/8105/PENDING_276_ENCODING_INVENTORY.csv)).
 
 ---
 
