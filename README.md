@@ -23,6 +23,7 @@ A 32-bit structural fingerprint for CJK characters — built for people who wond
 > The packaged Python SDK currently targets **20,902 Basic CJK** entries.
 > The broader **97,686 CJK** figure is an intended / experimental extended scope, not current packaged SDK coverage.
 > The latest published package is **cnbe32 1.0.4**, matching the GitHub `v1.0.4` release checkpoint.
+> The repository database has since been migrated to **v1.1** (21,178 rows); see the confirmed state below.
 
 ## Current standards restart
 
@@ -37,14 +38,21 @@ Current confirmed state:
 - release checkpoint: `v1.0.4`
 - published Python package: `cnbe32==1.0.4`
 - 8105 baseline rows: `8105`
-- current CNBE rows inside 8105 scope: `7829`
-- missing current CNBE rows inside 8105 scope: `276`
 - human-approved 8105 Agent structure baseline: `8105 / 8105`
 - runtime CNBE32 rows patched from the approved 8105 dry run: `6712`
 - additional conservative standardized runtime repairs: `598`
 - total patched 8105 runtime rows after repair: `7310`
 - force-approved rows retained for later insertion/radical strategy: `795`
 - runtime JSON and SQLite databases rebuilt from the approved 20,902-row source
+
+Post-migration state (v1.1, applied 2026-07-25 under owner authorization):
+
+- dual-source repairs applied: `620` (503 strokes, 111 structure, 6 radical)
+- 8105 missing characters inserted as pending-encoding rows: `276` (cnbe=NULL, needs_encoding=1)
+- dual-source disagreements left hung for expert adjudication: `348`
+- total runtime rows: `21178`
+- track column: `standard 7327 / provisional 275 / legacy 13576`
+- migration is idempotent (second dry-run plans 0 ops) and recorded in `migration_meta`
 
 Governance documents:
 
@@ -58,7 +66,18 @@ Governance documents:
 - [CNBE 8105 Encoding Comparison](./evidence/8105/CNBE8105_ENCODING_COMPARISON_REPORT.md)
 - [CNBE 8105 Runtime Promotion](./reports/8105_CNBE32_RUNTIME_PROMOTION.md)
 - [CNBE 8105 Standardized Runtime Repair](./reports/8105_STANDARDIZED_RUNTIME_REPAIR.md)
+- [v1.1 Migration Tooling and Verification](./reports/MIGRATION_V1_1_WS7WS8.md)
 - [WS-4 Benchmark Pre-Registration](./docs/benchmarks/WS4_BENCHMARK_PRE_REGISTRATION.md)
+
+Mathematics and review program:
+
+- [CNBE-32 Mathematical Structure](./docs/CNBE32_MATHEMATICAL_STRUCTURE.md) — standalone presentation of the 13 research formulas
+- [Formal Mathematical Specification (EN)](./docs/specification/CNBE_FORMAL_MATHEMATICAL_SPECIFICATION.md) / [中文版](./docs/specification/CNBE_FORMAL_MATHEMATICAL_SPECIFICATION_ZH.md)
+- [Formula Verification Report](./experiments/morphology_computing/reports/FORMAL_FORMULA_VERIFICATION_REPORT.md) — 13/13 mathematical PASS, 0 scientific performance claims validated
+- [Verification Manifest](./experiments/morphology_computing/reports/formal_formula_verification_manifest.json) — machine-readable, SHA-256 pinned
+- [P1 External Review Method (EN)](./docs/specification/P1_EXTERNAL_REVIEW_METHOD.md) / [中文版](./docs/specification/P1_EXTERNAL_REVIEW_METHOD_ZH.md)
+- [P1 External Review Execution Kit](./docs/review/P1_EXTERNAL_REVIEW_EXECUTION_KIT.md) — reviewer-facing instructions for the 600-row blinded packet
+- [External Review Packet](./experiments/morphology_computing/review_packets/P1_EXTERNAL_INDEPENDENT_REVIEW_PACKET_EDITABLE.csv) — 600 blinded rows awaiting independent review
 
 Earlier AI-generated catalog fields are now treated as a historical test
 baseline only. They remain useful for regression localization, but they are not
@@ -154,7 +173,7 @@ print(bit_hamming_distance(a, b))
 - CNBE-32 field encoding and decoding
 - strict validation of all bitfield ranges
 - true bit-level Hamming distance and legacy field-weighted distance
-- optional SQLite database lookup
+- optional SQLite database lookup (v1.1 migrated schema with `track` column)
 - explicit `SkillTable` construction for experiments
 - wheel build, pip install, pytest, ruff, GitHub Actions CI
 
@@ -178,6 +197,7 @@ These should be interpreted as **preliminary research prototypes** unless the co
 |---|---|
 | **8105 national-standard core** | 8,105 common standardized Chinese characters used as the release-track standards baseline |
 | **Packaged Python SDK database** | 20,902 Basic CJK runtime entries shipped in the wheel |
+| **Repository database (v1.1)** | 21,178 rows after migration: 7,327 standard + 275 provisional + 13,576 legacy, incl. 276 pending-encoding 8105 rows |
 | **Agent-standard candidate scope** | project-controlled candidate outputs that must align to 8105 before promotion |
 | **Experimental extended scope** | 97,686 CJK characters as a design / research target, not a validated release claim |
 | **Experiment-specific coverage** | depends on the dataset and reproduction script for each experiment |
@@ -217,7 +237,7 @@ The encoding admits a compact formalization: bitfield extraction and binary-vect
 
 Every formula group has a reference implementation with numerical property tests (reversibility, identity, symmetry, bounds, closure). These are **research definitions**: they do not certify the linguistic correctness of any field, and they do not by themselves demonstrate task-level gains. Candidate layers remain gated on external independent review.
 
-Full presentation: [CNBE-32 Mathematical Structure](./docs/CNBE32_MATHEMATICAL_STRUCTURE.md).
+Full presentation: [CNBE-32 Mathematical Structure](./docs/CNBE32_MATHEMATICAL_STRUCTURE.md). Verification evidence: [13/13 formula report](./experiments/morphology_computing/reports/FORMAL_FORMULA_VERIFICATION_REPORT.md) and [SHA-256 pinned manifest](./experiments/morphology_computing/reports/formal_formula_verification_manifest.json). Task-level evaluation is pre-registered in [WS-4](./docs/benchmarks/WS4_BENCHMARK_PRE_REGISTRATION.md) and blocked pending the [P1 external review](./docs/review/P1_EXTERNAL_REVIEW_EXECUTION_KIT.md).
 
 ---
 
@@ -267,6 +287,8 @@ CNBE-32 does not claim to fully understand characters. It simply asks whether so
 4. Publish dataset provenance and coverage validation scripts.
 5. Add golden vectors shared across Python, C, Rust, and hardware prototypes.
 6. Add benchmark baselines (Unicode codepoint, one-hot, IDS, learned embeddings).
+7. Run the P1 external independent review, then execute the pre-registered WS-4 benchmarks.
+8. Encode the 276 pending 8105 rows through the governed Agent workflow.
 
 ---
 
