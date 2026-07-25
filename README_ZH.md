@@ -24,6 +24,7 @@
 > 当前 Python SDK 随包数据库目标是 **20,902 个 Basic CJK** 条目。
 > 更大的 **97,686 CJK** 数字是计划中 / 实验性的扩展范围，不代表当前随包 SDK 覆盖。
 > 最新发布包是 **cnbe32 1.0.4**，对应 GitHub `v1.0.4` 发布检查点。
+> 仓库数据库此后已迁移至 **v1.1**（21,178 行）；迁移后已确认状态见下文。
 
 ## 当前标准重启状态
 
@@ -38,14 +39,21 @@ CNBE 正在按更严格的国家语言文字规范证据链重新组织。
 - 发布检查点：`v1.0.4`
 - 已发布 Python 包：`cnbe32==1.0.4`
 - 8105 基线行数：`8105`
-- 当前 CNBE 中落入 8105 范围的行数：`7829`
-- 当前 CNBE 中缺失的 8105 行数：`276`
 - 人工审核通过的 8105 Agent 结构基线：`8105 / 8105`
 - 已从批准后的 8105 dry run 提升到运行时 CNBE32 的行数：`6712`
 - 额外完成的保守标准化运行时修复行数：`598`
 - 当前已修复的 8105 运行时总行数：`7310`
 - 强制通过但保留到后续插入 / 部首策略队列的行数：`795`
 - 运行时 JSON 和 SQLite 数据库已从批准后的 20,902 行源表重建
+
+迁移后状态（v1.1，2026-07-25 经所有者授权执行）：
+
+- 双源一致修复：`620`（笔画 503、结构 111、部首 6）
+- 8105 缺失字以"待编码"行补录：`276`（cnbe=NULL、needs_encoding=1）
+- 双源分歧挂起待专家裁决：`348`
+- 运行时总行数：`21178`
+- track 列：`standard 7327 / provisional 275 / legacy 13576`
+- 迁移幂等（二次 dry-run 计划 0 操作），并记录于 `migration_meta`
 
 治理文档：
 
@@ -60,6 +68,20 @@ CNBE 正在按更严格的国家语言文字规范证据链重新组织。
 - [CNBE 8105 编码比对报告](./evidence/8105/CNBE8105_ENCODING_COMPARISON_REPORT.md)
 - [CNBE 8105 运行时提升报告](./reports/8105_CNBE32_RUNTIME_PROMOTION.md)
 - [CNBE 8105 标准化运行时修复](./reports/8105_STANDARDIZED_RUNTIME_REPAIR.md)
+- [字段语义冻结规范 v1.1](./docs/FIELD_SEMANTICS_FREEZE_v1.1.md)
+- [v1.1 迁移工具与验证报告](./reports/MIGRATION_V1_1_WS7WS8.md)
+- [8105 待编码 276 行受治理编码工作流](./docs/CNBE276_PENDING_ENCODING_WORKFLOW.md) — 276 行待编码字符的受治理方案，含 SHA-256 锚定清单分层
+- [WS-4 基准预注册](./docs/benchmarks/WS4_BENCHMARK_PRE_REGISTRATION.md)
+
+数学与评审计划：
+
+- [CNBE-32 数学结构](./docs/CNBE32_MATHEMATICAL_STRUCTURE.md) — 13 个研究公式的独立呈现
+- [形式数学规范（EN）](./docs/specification/CNBE_FORMAL_MATHEMATICAL_SPECIFICATION.md) / [中文版](./docs/specification/CNBE_FORMAL_MATHEMATICAL_SPECIFICATION_ZH.md)
+- [公式验证报告](./experiments/morphology_computing/reports/FORMAL_FORMULA_VERIFICATION_REPORT.md) — 13/13 数学性质 PASS，0 项科学性能声明被验证
+- [验证 manifest](./experiments/morphology_computing/reports/formal_formula_verification_manifest.json) — 机器可读，SHA-256 锚定
+- [P1 外部评审方法（EN）](./docs/specification/P1_EXTERNAL_REVIEW_METHOD.md) / [中文版](./docs/specification/P1_EXTERNAL_REVIEW_METHOD_ZH.md)
+- [P1 外部评审执行包](./docs/review/P1_EXTERNAL_REVIEW_EXECUTION_KIT.md) — 600 行盲审包的评审人操作手册
+- [外部评审包](./experiments/morphology_computing/review_packets/P1_EXTERNAL_INDEPENDENT_REVIEW_PACKET_EDITABLE.csv) — 600 行盲审数据，等待独立评审
 
 早期 AI 生成的目录字段现在只作为历史测试基线处理。它们可用于定位旧版
 回归问题，但不能作为结构、部首、笔画、教学或科研声明的依据。
@@ -156,7 +178,7 @@ print(bit_hamming_distance(a, b))
 - CNBE-32 字段编码与解码
 - 所有位域范围的严格校验
 - 真正的 bit-level Hamming distance 及旧版字段加权距离
-- 可选 SQLite 数据库查询
+- 可选 SQLite 数据库查询（v1.1 迁移后 schema，含 `track` 列）
 - 显式 `SkillTable` 构造
 - wheel 构建、pip install、pytest、ruff、GitHub Actions CI
 
@@ -180,6 +202,7 @@ print(bit_hamming_distance(a, b))
 |---|---|
 | **8105 国家标准核心** | 8,105 个通用规范汉字，作为发布轨道的标准基线 |
 | **Python SDK 随包数据库** | 20,902 个 Basic CJK 运行时条目（随 wheel 发布） |
+| **仓库数据库（v1.1）** | 迁移后 21,178 行：7,327 standard + 275 provisional + 13,576 legacy，含 276 行 8105 待编码补录 |
 | **Agent-standard 候选范围** | 项目受控候选输出，必须向 8105 对齐后才能提升 |
 | **实验性扩展范围** | 97,686 个 CJK 字符作为设计 / 研究目标，不是已验证发布声明；该数字锚定 Unicode CJK 统一表意文字总量，须随 Unicode 版本与 GB 18030-2022 修改单同步更新 |
 | **具体实验覆盖范围** | 取决于每个实验使用的数据集和复现脚本 |
@@ -211,12 +234,22 @@ print(bit_hamming_distance(a, b))
 | Glyph Index | 11 | Basic CJK 字形索引字段 |
 | Extension | 4 | 实验性扩展字段 |
 
-> **字段语义冻结状态（截至 v1.0.4）：**
-> - **Radical/Radix：未冻结。** 拟锚定 GF 0011-2009《汉字部首表》201 部首体系，裁定中。
-> - **Stroke：部分冻结。** 5 位字段上限 31 画；超出 31 画汉字的溢出语义未定义。
-> - **Structure：已冻结。** 13 个标签与 GF 0017-2013 §3.12 一一对应。
-> - **Glyph Index：未冻结。** 11 位（2,048 槽）不足以全局寻址 20,902 个 Basic CJK；全局索引还是部首内局部索引，未冻结。
+> **字段语义冻结状态（v1.1，2026-07-25 迁移后，详见[字段语义冻结规范 v1.1](./docs/FIELD_SEMANTICS_FREEZE_v1.1.md)）：**
+> - **Radical/Radix：口径过渡中。** 当前按康熙 214 部首口径存储；锚定 GF 0011-2009《汉字部首表》201 主部首的换锚迁移待权威映射表（冻结 §4）。
+> - **Stroke：语义已冻结。** 数据层按 GF 0013-2009 如实存真值；5 位字段（上限 31）的溢出表示归编码协议（WS-6）处理，数据层不截断。
+> - **Structure：已冻结。** 13 个标签与 GF 0017-2013 §3.12 一一对应；`struct_type` 冻结为中文轨 13 值编号（0=独体字 … 12=镶嵌），英文轨编号已废弃。
+> - **Glyph Index：已弃用（deprecated）。** `idx = (unicode − 0x4E00) mod 2048` 是有损哈希，不能作寻址键；唯一标识符为 Unicode 码位，idx 列 v1.1 起只读兼容，v1.2 移除。
 > - **Ext：实验性。** 不作任何兼容承诺。
+
+---
+
+## 形式数学（研究定义）
+
+该编码可以被紧凑地形式化：位域提取与二元向量算子、字段加权形态距离，以及三个候选计算层——带形态对齐损失的 Poincaré 球嵌入、按位 MoE 路由器、超维（HDC/VSA）表示。
+
+每组公式都有参考实现和数值性质测试（可逆性、恒等性、对称性、有界性、封闭性）。这些是**研究定义**：它们不证明任何字段的语言学正确性，其本身也不证明任务层面的收益。候选计算层在外部独立评审通过前保持阻断。
+
+完整呈现见 [CNBE-32 数学结构](./docs/CNBE32_MATHEMATICAL_STRUCTURE.md)；验证证据见 [13/13 公式报告](./experiments/morphology_computing/reports/FORMAL_FORMULA_VERIFICATION_REPORT.md) 与 [SHA-256 锚定 manifest](./experiments/morphology_computing/reports/formal_formula_verification_manifest.json)。任务层面评估已在 [WS-4](./docs/benchmarks/WS4_BENCHMARK_PRE_REGISTRATION.md) 预注册，等待 [P1 外部评审](./docs/review/P1_EXTERNAL_REVIEW_EXECUTION_KIT.md) 解锁。
 
 ---
 
@@ -269,9 +302,10 @@ CNBE-32 不声称"理解"汉字。它只是试着把其中一部分可见结构�
 4. 发布数据来源和覆盖验证脚本。
 5. 为 Python、C、Rust、硬件原型增加共享 golden vectors。
 6. 增加 baseline（Unicode codepoint、one-hot、IDS、learned embeddings）。
-7. 冻结 v1.1 字段语义（部首锚定 GF 0011-2009、笔画溢出语义、字形索引寻址协议）。
-8. 建设 CNBE-32 ↔ Unicode ↔ GB 18030 双向映射层。
-9. 发布 8105 结构标注数据集（ML 可读格式，含证据等级字段）与汉字结构评测基准。
+7. 运行 P1 外部独立评审，然后执行已预注册的 WS-4 基准。
+8. 按[受治理编码工作流](./docs/CNBE276_PENDING_ENCODING_WORKFLOW.md)完成 276 行待编码 8105 字符：先行 1 行就绪 + 124 行双源确认候选；151 行进入证据补齐或专家裁决队列（[SHA-256 锚定清单](./evidence/8105/PENDING_276_ENCODING_INVENTORY.csv)）。
+9. 建设 CNBE-32 ↔ Unicode ↔ GB 18030 双向映射层。
+10. 发布 8105 结构标注数据集（ML 可读格式，含证据等级字段）与汉字结构评测基准。
 
 ---
 
