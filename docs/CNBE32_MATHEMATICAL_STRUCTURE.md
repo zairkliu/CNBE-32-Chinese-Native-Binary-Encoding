@@ -41,7 +41,7 @@ Five fields partition the word, LSB-first:
 The $k$-th field is recovered from the word by mask-and-shift:
 
 $$
-\operatorname{Extract}(c, M_k, S_k) = (c \land M_k) \gg S_k
+\mathrm{Extract}(c, M_k, S_k) = (c \land M_k) \gg S_k
 $$
 
 This is the hardware-friendly primitive: one AND, one shift, no branching. It is the only operation every higher layer in this document is built from.
@@ -51,15 +51,13 @@ This is the hardware-friendly primitive: one AND, one shift, no branching. It is
 The LSB-first binary vector of the word:
 
 $$
-\Phi(c) = [b_0, b_1, \ldots, b_{31}]^{\mathsf{T}},
-\qquad
-b_i = \left\lfloor \frac{c}{2^i} \right\rfloor \bmod 2
+\Phi(c) = [b_0, b_1, \ldots, b_{31}]^{\mathsf{T}}, \qquad b_i = \left\lfloor \frac{c}{2^i} \right\rfloor \bmod 2
 $$
 
 with exact inverse:
 
 $$
-c = \sum_{i=0}^{31} \Phi(c)_i \, 2^i.
+c = \sum_{i=0}^{31} \Phi(c)_i \cdot 2^i
 $$
 
 The representation layer is **reversible**: it round-trips losslessly over 6,568 frozen P0 records and 11 cross-language golden vectors. Reversibility is a property of the *carrier* — it does not make adjacent bits or numeric field codes linguistic distances.
@@ -71,26 +69,16 @@ The representation layer is **reversible**: it round-trips losslessly over 6,568
 The project-level similarity measure between two codes is a field-wise normalized Hamming distance with research weights:
 
 $$
-\mathcal{D}_{\mathrm{morph}}(c_1, c_2)
-=
-\sum_{k \in K}
-w_k \,
-\frac{
-\operatorname{POPCNT}\!\left( (c_1 \land M_k) \oplus (c_2 \land M_k) \right)
-}{d_k}
+\mathcal{D}_{\mathrm{morph}}(c_1, c_2) = \sum_{k \in K} w_k \cdot \frac{\mathrm{POPCNT}\Big( (c_1 \land M_k) \oplus (c_2 \land M_k) \Big)}{d_k}
 $$
 
-where $\oplus$ is XOR, $\operatorname{POPCNT}$ counts set bits, and $d_k$ is the field width from §1. The supplied research weights:
+where $\oplus$ is bitwise XOR, $\mathrm{POPCNT}(\cdot)$ is the hardware population-count instruction, and $d_k$ is the field width from §1. The supplied research weights:
 
 $$
-(w_{\mathrm{radix}}, w_{\mathrm{stroke}}, w_{\mathrm{struct}}, w_{\mathrm{index}}, w_{\mathrm{ext}})
-=
-(0.4,\ 0.2,\ 0.2,\ 0.1,\ 0.1),
-\qquad
-\sum_k w_k = 1.
+(w_{\mathrm{radix}},\ w_{\mathrm{stroke}},\ w_{\mathrm{struct}},\ w_{\mathrm{index}},\ w_{\mathrm{ext}}) = (0.4,\ 0.2,\ 0.2,\ 0.1,\ 0.1), \qquad \sum_{k} w_k = 1
 $$
 
-**Verified numerical properties:** identity of indiscernibles, symmetry, $[0,1]$ boundedness, and field-isolation increments (a difference confined to field $k$ contributes exactly $w_k \cdot (\text{bits differed}) / d_k$).
+**Verified numerical properties:** identity of indiscernibles, symmetry, $[0, 1]$ boundedness, and field-isolation increments — a difference confined to field $k$ contributes exactly $w_k$ times the fraction of bits that differ in that field.
 
 **Explicit caveat:** the weights have no independent linguistic-task validation. In particular, `index` and `ext` are not thereby established as morphology evidence. $\mathcal{D}_{\mathrm{morph}}$ is a *computable hypothesis* about morphological similarity, not a certified one.
 
@@ -101,60 +89,35 @@ $$
 Chinese characters form hierarchy-heavy structures (character → component → stroke), which motivates a hyperbolic candidate space:
 
 $$
-\mathbb{B}^{d} = \left\{ \mathbf{x} \in \mathbb{R}^{d} \;\middle|\; \lVert \mathbf{x} \rVert < 1 \right\}
+\mathbb{B}^{d} = \{ \mathbf{x} \in \mathbb{R}^{d} : \| \mathbf{x} \| < 1 \}
 $$
 
 ### 4.1 Geodesic distance
 
 $$
-d_{\mathbb{B}}(\mathbf{u}, \mathbf{v})
-=
-\operatorname{arcosh}\!\left(
-1 + 2 \,
-\frac{\lVert \mathbf{u} - \mathbf{v} \rVert^2}
-{(1 - \lVert \mathbf{u} \rVert^2)(1 - \lVert \mathbf{v} \rVert^2)}
-\right)
+d_{\mathbb{B}}(\mathbf{u}, \mathbf{v}) = \mathrm{arcosh} \left( 1 + 2 \, \frac{\| \mathbf{u} - \mathbf{v} \|^{2}}{(1 - \| \mathbf{u} \|^{2})(1 - \| \mathbf{v} \|^{2})} \right)
 $$
 
 ### 4.2 Möbius addition
 
 $$
-\mathbf{u} \oplus_{\mathbb{B}} \mathbf{v}
-=
-\frac{
-\left(1 + 2\langle \mathbf{u}, \mathbf{v} \rangle + \lVert \mathbf{v} \rVert^2\right) \mathbf{u}
-+
-\left(1 - \lVert \mathbf{u} \rVert^2\right) \mathbf{v}
-}{
-1 + 2\langle \mathbf{u}, \mathbf{v} \rangle
-+ \lVert \mathbf{u} \rVert^2 \lVert \mathbf{v} \rVert^2
-}
+\mathbf{u} \oplus_{\mathbb{B}} \mathbf{v} = \frac{(1 + 2 \langle \mathbf{u}, \mathbf{v} \rangle + \| \mathbf{v} \|^{2}) \, \mathbf{u} + (1 - \| \mathbf{u} \|^{2}) \, \mathbf{v}}{1 + 2 \langle \mathbf{u}, \mathbf{v} \rangle + \| \mathbf{u} \|^{2} \| \mathbf{v} \|^{2}}
 $$
 
 ### 4.3 Origin exponential map
 
 $$
-\exp_{\mathbf{0}}(\mathbf{v})
-=
-\tanh\!\left(\lVert \mathbf{v} \rVert\right)
-\frac{\mathbf{v}}{\lVert \mathbf{v} \rVert},
-\qquad
-\exp_{\mathbf{0}}(\mathbf{0}) = \mathbf{0}
-\ \text{by continuous extension.}
+\exp_{\mathbf{0}}(\mathbf{v}) = \tanh(\| \mathbf{v} \|) \, \frac{\mathbf{v}}{\| \mathbf{v} \|}
 $$
+
+with $\exp_{\mathbf{0}}(\mathbf{0}) = \mathbf{0}$ by continuous extension.
 
 ### 4.4 Character composition
 
 A character's embedding is the Möbius composition of its three structural field embeddings:
 
 $$
-\mathbf{z}_c
-=
-\mathbf{e}_{\mathrm{radix}}
-\oplus_{\mathbb{B}}
-\mathbf{e}_{\mathrm{struct}}
-\oplus_{\mathbb{B}}
-\mathbf{e}_{\mathrm{stroke}}
+\mathbf{z}_c = \mathbf{e}_{\mathrm{radix}} \oplus_{\mathbb{B}} \mathbf{e}_{\mathrm{struct}} \oplus_{\mathbb{B}} \mathbf{e}_{\mathrm{stroke}}
 $$
 
 ### 4.5 Geometry-alignment loss
@@ -162,15 +125,7 @@ $$
 The hyperbolic geometry is trained to mirror the morphological distance of §3:
 
 $$
-\mathcal{L}_{\mathrm{hyperbolic}}
-=
-\frac{1}{N^2}
-\sum_{i=1}^{N} \sum_{j=1}^{N}
-\left|
-d_{\mathbb{B}}(\mathbf{z}_{c_i}, \mathbf{z}_{c_j})
--
-\gamma \, \mathcal{D}_{\mathrm{morph}}(c_i, c_j)
-\right|^2
+\mathcal{L}_{\mathrm{hyperbolic}} = \frac{1}{N^{2}} \sum_{i=1}^{N} \sum_{j=1}^{N} \left| d_{\mathbb{B}}(\mathbf{z}_{c_i}, \mathbf{z}_{c_j}) - \gamma \cdot \mathcal{D}_{\mathrm{morph}}(c_i, c_j) \right|^{2}
 $$
 
 **Verified numerical properties:** ball domain and closure under $\oplus_{\mathbb{B}}$, additive identity at $\mathbf{0}$, symmetry of $d_{\mathbb{B}}$, sampled triangle inequality, and finite non-negative loss.
@@ -181,22 +136,16 @@ $$
 
 ## 5. Candidate bitwise MoE router
 
-The radix field can act as a zero-cost routing hint for a mixture-of-experts layer:
+The radix field can act as a zero-cost routing hint for a mixture-of-experts layer with $E$ experts:
 
 $$
-e_{\mathrm{pred}}(c)
-=
-\operatorname{Extract}(c, \mathtt{0xFF000000}, 24) \bmod E
+e_{\mathrm{pred}}(c) = \mathrm{Extract}(c, \text{0xFF000000}, 24) \bmod E
 $$
 
 combined with a learned gate by interpolation:
 
 $$
-P(e \mid x, c)
-=
-(1 - \alpha) \, \operatorname{Softmax}_e(\mathbf{W}_g \mathbf{h}_x)
-+
-\alpha \, \delta\!\left(e, e_{\mathrm{pred}}(c)\right)
+P(e \mid x, c) = (1 - \alpha) \cdot \mathrm{Softmax}_{e}(\mathbf{W}_g \mathbf{h}_x) + \alpha \cdot \delta \big( e,\ e_{\mathrm{pred}}(c) \big)
 $$
 
 **Verified numerical properties:** routing range $[0, E)$, modulo consistency, non-negative normalized probabilities, and correct $\alpha = 0$ / $\alpha = 1$ endpoints.
@@ -212,33 +161,24 @@ For dimension $D = 10{,}000$ and field basis vectors $\mathbf{B}_k \in \{-1, +1\
 **Cyclic permutation (binding by position):**
 
 $$
-\Pi^{p}([v_0, v_1, \ldots, v_{D-1}])
-=
-[v_{D-p}, \ldots, v_{D-1}, v_0, \ldots, v_{D-p-1}]
+\Pi^{p}([v_0, v_1, \ldots, v_{D-1}]) = [v_{D-p}, \ldots, v_{D-1}, v_0, \ldots, v_{D-p-1}]
 $$
 
 **Bundled character hypervector** — each field's basis is permuted by that field's extracted value, then superposed:
 
 $$
-\mathbf{H}(c)
-=
-\operatorname{sign}\!\left(
-\sum_{k \in K}
-\Pi^{\operatorname{Extract}(c, M_k, S_k)}(\mathbf{B}_k)
-\right),
-\qquad
-\operatorname{sign}(0) \coloneqq +1
+\mathbf{H}(c) = \mathrm{sign} \left( \sum_{k \in K} \Pi^{\mathrm{Extract}(c, M_k, S_k)}(\mathbf{B}_k) \right)
 $$
+
+with the fixed convention $\mathrm{sign}(0) = +1$.
 
 **Similarity:**
 
 $$
-\operatorname{Sim}_{\mathrm{HDC}}(\mathbf{H}_1, \mathbf{H}_2)
-=
-\frac{\mathbf{H}_1 \cdot \mathbf{H}_2}{D}
+\mathrm{Sim}_{\mathrm{HDC}}(\mathbf{H}_1, \mathbf{H}_2) = \frac{\mathbf{H}_1 \cdot \mathbf{H}_2}{D}
 $$
 
-**Verified numerical properties:** permutation composition ($\Pi^{p} \circ \Pi^{q} = \Pi^{p+q}$), output range, self-similarity $= 1$, symmetry, and $[-1, 1]$ boundedness.
+**Verified numerical properties:** permutation composition ($\Pi^{p} \circ \Pi^{q} = \Pi^{p+q}$), output range, self-similarity equal to $1$, symmetry, and $[-1, 1]$ boundedness.
 
 **Explicit caveat:** task quality, memory, and latency benefits are unverified. Basis vectors are reproducible fixtures, not learned representations.
 
@@ -248,11 +188,11 @@ $$
 
 | Formula group | Definition frozen | Numerical property tests | Linguistic validation | Task-level benchmark |
 |---|:---:|:---:|:---:|:---:|
-| §2 Bitfields, $\operatorname{Extract}$, $\Phi$ | ✅ | ✅ reversibility (6,568 P0 records, 11 golden vectors) | ❌ not claimed | n/a |
+| §2 Bitfields, $\mathrm{Extract}$, $\Phi$ | ✅ | ✅ reversibility (6,568 P0 records, 11 golden vectors) | ❌ not claimed | n/a |
 | §3 $\mathcal{D}_{\mathrm{morph}}$ | ✅ | ✅ identity / symmetry / bounds / field isolation | ❌ weights unvalidated | ❌ |
-| §4 Poincaré layer ($d_{\mathbb{B}}$, $\oplus_{\mathbb{B}}$, $\exp_{\mathbf{0}}$, $\mathbf{z}_c$, $\mathcal{L}_{\mathrm{hyperbolic}}$) | ✅ | ✅ domain / closure / identity / symmetry / sampled triangle inequality | ❌ | ❌ synthetic fixtures only |
+| §4 Poincaré layer | ✅ | ✅ domain / closure / identity / symmetry / sampled triangle inequality | ❌ | ❌ synthetic fixtures only |
 | §5 Bitwise MoE router | ✅ | ✅ range / modulo / normalization / endpoints | ❌ | ❌ |
-| §6 HDC/VSA ($\Pi$, $\mathbf{H}$, $\operatorname{Sim}_{\mathrm{HDC}}$) | ✅ | ✅ composition / range / self-similarity / bounds | ❌ | ❌ |
+| §6 HDC/VSA representation | ✅ | ✅ composition / range / self-similarity / bounds | ❌ | ❌ |
 
 Passing mathematics does not lift the scientific gate. Retrieval, geometry, routing, and HDC task claims remain gated on the P1 external-review method: row-level source confirmation, independently reviewed negatives, and frozen candidate pools.
 
