@@ -135,11 +135,11 @@ $$
 
 ## 6. 验证与外部复核入口
 
-以下验证产物随形态计算实验包存放于研究分支，待实验轨合并时一并入库：
+- [统一公式验证报告](../../experiments/morphology_computing/reports/FORMAL_FORMULA_VERIFICATION_REPORT.md)
+- [机器可读验证清单](../../experiments/morphology_computing/reports/formal_formula_verification_manifest.json)
+- [自验证与外部独立审阅方法](P1_EXTERNAL_REVIEW_METHOD_ZH.md)（[English](P1_EXTERNAL_REVIEW_METHOD.md)）
+- [外部独立审阅包](../../experiments/morphology_computing/review_packets/P1_EXTERNAL_INDEPENDENT_REVIEW_PACKET_EDITABLE.csv)
 
-- 统一公式验证报告（`experiments/morphology_computing/reports/FORMAL_FORMULA_VERIFICATION_REPORT.md`）
-- 机器可读验证清单（`experiments/morphology_computing/reports/formal_formula_verification_manifest.json`）
-- 自验证与外部独立审阅方法（`docs/specification/P1_EXTERNAL_REVIEW_METHOD_ZH.md`，研究分支）
-- 外部独立审阅包（`experiments/morphology_computing/review_packets/P1_EXTERNAL_INDEPENDENT_REVIEW_PACKET_EDITABLE.csv`）
+其余实验产物（关系账本、自验证包构建脚本与测试）随形态计算实验包存放，待实验轨合并时一并入库。
 
 数学层通过不解除科学验证门槛。P1 仍需要外部人员逐行来源确认、独立审核的负例和固定候选池，之后才可评价检索、几何、路由或 HDC 的任务表现。
