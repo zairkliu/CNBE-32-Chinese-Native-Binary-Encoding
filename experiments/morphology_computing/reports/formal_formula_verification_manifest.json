@@ -1,0 +1,119 @@
+{
+  "schema_version": "cnbe-morphology-formal-formula-unified-report-v1",
+  "run_id": "CNBE_MORPHOLOGY_FORMAL_FORMULA_UNIFIED_REPORT_V1",
+  "scope": "mathematical_and_numerical_verification_only",
+  "inputs": {
+    "experiments/morphology_computing/manifests/p0_8105_bitfield_conformance_manifest.json": "0c4fcc9ee4aa69b0975d56d1e4044f46a95a006a913413d8787a68de309e3739",
+    "experiments/morphology_computing/reports/e1_bit_vector_conformance.json": "ac6e0359413584c9d079cce2dd775063478dff4e9e624fa151bac777044136a8",
+    "experiments/morphology_computing/reports/e2_weighted_hamming_math.json": "50de995f8c59ffe229fe64c3d41d3d313b5555b20d24cc81420c5eb5a2a956f1",
+    "experiments/morphology_computing/reports/e3_e5_formal_formula_math.json": "01e7d6c39047bb5b49c53a7e0f5b1a8d1a969fa0089436e701b7074dad494a6c",
+    "experiments/morphology_computing/reports/p1_radical_auxiliary_math_verification.json": "e9aad4cf837a3b7eb6f418609a00ab6080b16c5522b166297b58b6d99c7b4764"
+  },
+  "summary": {
+    "supplied_formulas_total": 13,
+    "mathematical_or_numerical_pass": 13,
+    "mathematical_or_numerical_fail": 0,
+    "scientific_performance_claims_validated": 0,
+    "unverified_scientific_claim_families": [
+      "linguistic_weight_validity",
+      "morphology_retrieval_quality",
+      "hyperbolic_advantage_over_euclidean_baseline",
+      "moe_routing_quality_or_latency_advantage",
+      "hdc_quality_or_resource_advantage"
+    ]
+  },
+  "formulas": [
+    {
+      "id": "F01",
+      "formula": "Extract(c, M_k, S_k)",
+      "verification": "P0 bitfield and golden-vector conformance",
+      "status": "PASS"
+    },
+    {
+      "id": "F02",
+      "formula": "Phi(c)",
+      "verification": "E1 32-bit round trip",
+      "status": "PASS_E1_BIT_VECTOR_CONFORMANCE"
+    },
+    {
+      "id": "F03",
+      "formula": "D_morph formal weighted Hamming",
+      "verification": "E2 identity, symmetry, bounds, field isolation",
+      "status": "PASS_E2_WEIGHTED_HAMMING_ALGEBRA"
+    },
+    {
+      "id": "F04",
+      "formula": "Poincare geodesic distance",
+      "verification": "E3 domain, identity, symmetry, triangle samples",
+      "status": "PASS"
+    },
+    {
+      "id": "F05",
+      "formula": "Mobius addition",
+      "verification": "E3 ball closure and zero identity",
+      "status": "PASS"
+    },
+    {
+      "id": "F06",
+      "formula": "exp_0",
+      "verification": "E3 zero identity and ball-domain output",
+      "status": "PASS"
+    },
+    {
+      "id": "F07",
+      "formula": "z_c hyperbolic composition",
+      "verification": "E3 deterministic composition stays in ball",
+      "status": "PASS"
+    },
+    {
+      "id": "F08",
+      "formula": "hyperbolic alignment loss",
+      "verification": "E3 finite non-negative all-pairs loss",
+      "status": "PASS"
+    },
+    {
+      "id": "F09",
+      "formula": "e_pred(c)",
+      "verification": "E4 radix modulo expert count",
+      "status": "PASS"
+    },
+    {
+      "id": "F10",
+      "formula": "P(e | x, c)",
+      "verification": "E4 normalization, non-negativity, alpha endpoints",
+      "status": "PASS"
+    },
+    {
+      "id": "F11",
+      "formula": "Pi^p",
+      "verification": "E5 cyclic permutation composition",
+      "status": "PASS"
+    },
+    {
+      "id": "F12",
+      "formula": "H(c)",
+      "verification": "E5 deterministic +/-1 encoding",
+      "status": "PASS"
+    },
+    {
+      "id": "F13",
+      "formula": "Sim_HDC",
+      "verification": "E5 self-similarity, symmetry, bounds",
+      "status": "PASS"
+    }
+  ],
+  "project_specific_auxiliary": {
+    "formula_count": 2,
+    "status": "PASS_RADICAL_MASKED_MATH_VERIFICATION",
+    "role": "radical-masked review priority only; not part of the supplied 13-formula specification"
+  },
+  "decision": {
+    "status": "PASS_ALL_SUPPLIED_FORMULAS_MATHEMATICALLY_VERIFIED",
+    "may_claim_linguistic_validity": false,
+    "may_claim_retrieval_quality": false,
+    "may_claim_model_quality": false,
+    "may_modify_source_encoding": false,
+    "may_rebuild_sqlite": false,
+    "next_scientific_gate": "BLOCKED_INDEPENDENT_SOURCE_ANCHORED_RELATION_LABELS_REQUIRED"
+  }
+}

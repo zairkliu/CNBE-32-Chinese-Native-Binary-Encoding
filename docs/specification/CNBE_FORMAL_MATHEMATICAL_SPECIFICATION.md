@@ -119,11 +119,11 @@ The reference fixes $\mathrm{sign}(0) = +1$ and derives bases from SHA-256 for r
 
 ## 6. Verification and External Review
 
-The verification artifacts for these formulas are staged with the morphology-computing experiment package (research branch, pending experiment-track merge):
+- [Unified formula verification report](../../experiments/morphology_computing/reports/FORMAL_FORMULA_VERIFICATION_REPORT.md)
+- [Machine-readable verification manifest](../../experiments/morphology_computing/reports/formal_formula_verification_manifest.json)
+- [P1 self-validation and external-review method](P1_EXTERNAL_REVIEW_METHOD.md) ([中文版](P1_EXTERNAL_REVIEW_METHOD_ZH.md))
+- [External review packet](../../experiments/morphology_computing/review_packets/P1_EXTERNAL_INDEPENDENT_REVIEW_PACKET_EDITABLE.csv)
 
-- Unified formula verification report (`experiments/morphology_computing/reports/FORMAL_FORMULA_VERIFICATION_REPORT.md`)
-- Machine-readable verification manifest (`experiments/morphology_computing/reports/formal_formula_verification_manifest.json`)
-- P1 self-validation and external-review method (`docs/specification/P1_EXTERNAL_REVIEW_METHOD.md`, research branch)
-- External review packet (`experiments/morphology_computing/review_packets/P1_EXTERNAL_INDEPENDENT_REVIEW_PACKET_EDITABLE.csv`)
+Additional experiment artifacts (relation ledgers, self-validation package builder, reproduction scripts and tests) remain with the morphology-computing experiment package and land with the experiment-track merge.
 
 Passing mathematics does not lift the scientific gate. P1 still needs external row-level source confirmation, independently reviewed negatives, and frozen candidate pools before retrieval, geometry, routing, or HDC task claims can be evaluated.
