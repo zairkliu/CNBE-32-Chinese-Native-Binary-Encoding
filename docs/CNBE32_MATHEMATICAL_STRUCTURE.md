@@ -210,6 +210,7 @@ Passing mathematics does not lift the scientific gate. Retrieval, geometry, rout
 ## See also
 
 - [Repository README](../README.md) — project status, coverage terminology, and evidence levels
+- [CNBE-32 Formal Mathematical Specification](./specification/CNBE_FORMAL_MATHEMATICAL_SPECIFICATION.md) — terse reference form of the same 13 formulas（[中文版](./specification/CNBE_FORMAL_MATHEMATICAL_SPECIFICATION_ZH.md)）
 - [Specification directory](./specification/) — bit layout, architecture, and validation notes
 - [CNBE Research Position Statement](./CNBE_RESEARCH_POSITION_STATEMENT.md) — research framing and reproducibility path
 
