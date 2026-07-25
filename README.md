@@ -11,6 +11,7 @@
 
 <p align="center">
   <img alt="Project status" src="https://img.shields.io/badge/status-research%20prototype-orange">
+  <img alt="Standards aligned" src="https://img.shields.io/badge/standards--aligned-in%20progress-orange">
   <img alt="Python SDK" src="https://img.shields.io/badge/Python%20SDK-stable%20baseline-blue">
   <a href="https://pypi.org/project/cnbe32/"><img alt="PyPI" src="https://img.shields.io/pypi/v/cnbe32.svg"></a>
   <img alt="Basic CJK DB" src="https://img.shields.io/badge/Basic%20CJK-20%2C902%20entries-green">
@@ -56,6 +57,7 @@ Post-migration state (v1.1, applied 2026-07-25 under owner authorization):
 
 Governance documents:
 
+- [CNBE Standards Compliance Statement](./docs/CNBE_STANDARDS_COMPLIANCE_STATEMENT.md)
 - [CNBE 8105 Encoding Governance](./docs/CNBE8105_ENCODING_GOVERNANCE.md)
 - [CNBE Research Position Statement](./docs/CNBE_RESEARCH_POSITION_STATEMENT.md)
 - [CNBE Reproducible Agent Workflow](./docs/CNBE_REPRODUCIBLE_AGENT_WORKFLOW.md)
@@ -66,6 +68,7 @@ Governance documents:
 - [CNBE 8105 Encoding Comparison](./evidence/8105/CNBE8105_ENCODING_COMPARISON_REPORT.md)
 - [CNBE 8105 Runtime Promotion](./reports/8105_CNBE32_RUNTIME_PROMOTION.md)
 - [CNBE 8105 Standardized Runtime Repair](./reports/8105_STANDARDIZED_RUNTIME_REPAIR.md)
+- [Field Semantics Freeze v1.1](./docs/FIELD_SEMANTICS_FREEZE_v1.1.md)
 - [v1.1 Migration Tooling and Verification](./reports/MIGRATION_V1_1_WS7WS8.md)
 - [276 Pending 8105 Encoding Workflow](./docs/CNBE276_PENDING_ENCODING_WORKFLOW.md) — governed plan for the 276 pending rows, with a SHA-256 pinned inventory triage
 - [WS-4 Benchmark Pre-Registration](./docs/benchmarks/WS4_BENCHMARK_PRE_REGISTRATION.md)
@@ -84,6 +87,8 @@ Earlier AI-generated catalog fields are now treated as a historical test
 baseline only. They remain useful for regression localization, but they are not
 used as authority for structure, radical, stroke, teaching, or research claims.
 
+> **Wording red line**: this project is *aligning to* national language and writing standards. Until every item in the standards-alignment matrix reads "aligned", the project does not claim to "conform to national standards". Full alignment status and known gaps: [CNBE Standards Compliance Statement](./docs/CNBE_STANDARDS_COMPLIANCE_STATEMENT.md).
+
 ## Project rationale
 
 CNBE-32 is useful only if the encoding process is stricter than the early
@@ -92,9 +97,13 @@ AI-generated catalog that inspired it. The current project rationale is:
 - use Unicode as the compatibility identity, never as something CNBE replaces;
 - use the 8105 common standardized Chinese character table as the release-track
   national-standard core;
-- use GF/GB/GG language and writing standards for strokes, stroke order,
-  components, radicals, independent-character status, structure, and
-  decomposition;
+- use GF/GB/GG language and writing standards for each Hanzi attribute (alignment status: [Standards Compliance Statement](./docs/CNBE_STANDARDS_COMPLIANCE_STATEMENT.md)):
+  - structure → GF 0017-2013 §3.12 (independent + 12 compound types; the project's 13 labels map one-to-one)
+  - radicals → GF 0011-2009 / GF 0012-2009 (anchoring in progress)
+  - independent characters → GF 0013-2009 (direction aligned, not yet verified per character)
+  - components and decomposition → GF 0014-2009 / GF 3001-1997 (direction aligned, not yet verified per character)
+  - stroke order and stroke shapes → GF 0023-2020 / GF 3002-1999
+- character identity is carried by the Unicode code point; a bidirectional mapping layer with GB 18030-2022 is on the roadmap;
 - use dictionaries, character-origin resources, Wikipedia, and ZDIC only as
   review context or source-discovery aids unless a field is explicitly labeled
   as non-national-standard context;
@@ -160,6 +169,8 @@ python -m pip install cnbe32
 ```python
 from cnbe32 import encode_cnbe, decode_cnbe, bit_hamming_distance
 
+# Note: radix is a project-internal radical/root numbering, not yet anchored to
+# GF 0011-2009; do not use it for cross-project exchange before anchoring lands.
 a = encode_cnbe(radix=72, stroke=8, struct=1, index=123, ext=0)
 b = encode_cnbe(radix=72, stroke=9, struct=1, index=124, ext=0)
 
@@ -185,7 +196,7 @@ print(bit_hamming_distance(a, b))
 - LLM prompting and feature experiments
 - JEPA-style representation learning
 - RISC-V and hardware instruction prototypes
-- OS and kernel-level experiments
+- OS and kernel-level experiments (teaching proof-of-concept: the current code does not compile and serves only as an Agent-workflow research sample, not a usable system)
 - finance, biology, physics, and social-science-style experiments
 
 These should be interpreted as **preliminary research prototypes** unless the corresponding directory includes fixed datasets, reproducible scripts, baseline comparisons, random seeds, and clear train/test separation.
@@ -200,7 +211,7 @@ These should be interpreted as **preliminary research prototypes** unless the co
 | **Packaged Python SDK database** | 20,902 Basic CJK runtime entries shipped in the wheel |
 | **Repository database (v1.1)** | 21,178 rows after migration: 7,327 standard + 275 provisional + 13,576 legacy, incl. 276 pending-encoding 8105 rows |
 | **Agent-standard candidate scope** | project-controlled candidate outputs that must align to 8105 before promotion |
-| **Experimental extended scope** | 97,686 CJK characters as a design / research target, not a validated release claim |
+| **Experimental extended scope** | 97,686 CJK characters as a design / research target, not a validated release claim; the figure anchors the Unicode CJK Unified Ideographs total and must be updated with Unicode versions and GB 18030-2022 amendments |
 | **Experiment-specific coverage** | depends on the dataset and reproduction script for each experiment |
 
 Claims about collision rate, full coverage, or extended CJK breadth should be interpreted only within the scope of the specific dataset and script used for that experiment.
@@ -250,6 +261,8 @@ from cnbe32 import (
     bit_hamming_distance, field_weighted_distance,
 )
 
+# radix is a project-internal numbering; do not use it for cross-project
+# exchange before GF 0011-2009 anchoring lands (see Field Semantics Freeze v1.1).
 a = encode_cnbe(radix=72, stroke=8, struct=1, index=123, ext=0)
 b = encode_cnbe(radix=72, stroke=9, struct=1, index=124, ext=0)
 
@@ -277,6 +290,8 @@ print(field_weighted_distance(a, b))
 Chinese characters are not just arbitrary symbols. Many carry visible structure: components, strokes, layout, and historical form.
 
 CNBE-32 does not claim to fully understand characters. It simply asks whether some of that visible structure can be encoded in a way computers can use directly.
+
+The project's structure taxonomy (independent, top-bottom, left-right, enclosure, and the other approved types — 13 labels in total) maps one-to-one to the Hanzi structure classification in GF 0017-2013.
 
 ---
 
