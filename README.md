@@ -67,6 +67,7 @@ Governance documents:
 - [CNBE 8105 Runtime Promotion](./reports/8105_CNBE32_RUNTIME_PROMOTION.md)
 - [CNBE 8105 Standardized Runtime Repair](./reports/8105_STANDARDIZED_RUNTIME_REPAIR.md)
 - [v1.1 Migration Tooling and Verification](./reports/MIGRATION_V1_1_WS7WS8.md)
+- [276 Pending 8105 Encoding Workflow](./docs/CNBE276_PENDING_ENCODING_WORKFLOW.md) — governed plan for the 276 pending rows, with a SHA-256 pinned inventory triage
 - [WS-4 Benchmark Pre-Registration](./docs/benchmarks/WS4_BENCHMARK_PRE_REGISTRATION.md)
 
 Mathematics and review program:
@@ -288,7 +289,7 @@ CNBE-32 does not claim to fully understand characters. It simply asks whether so
 5. Add golden vectors shared across Python, C, Rust, and hardware prototypes.
 6. Add benchmark baselines (Unicode codepoint, one-hot, IDS, learned embeddings).
 7. Run the P1 external independent review, then execute the pre-registered WS-4 benchmarks.
-8. Encode the 276 pending 8105 rows through the governed Agent workflow.
+8. Encode the 276 pending 8105 rows through the [governed encoding workflow](./docs/CNBE276_PENDING_ENCODING_WORKFLOW.md): 1 ready row + 124 dual-source-confirmed candidates first; 151 rows routed to evidence-completion or expert adjudication queues ([SHA-256 pinned inventory](./evidence/8105/PENDING_276_ENCODING_INVENTORY.csv)).
 
 ---
 
