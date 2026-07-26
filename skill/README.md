@@ -34,7 +34,7 @@ standards restart. It preserves these boundaries:
 - 8105 is the national-standard core.
 - Outside-8105 rows remain Agent-standard candidates until later evidence
   gates approve a project-level mapping.
-- Dictionary, Wikipedia, ZDIC, OCR, and old generated CNBE fields are not
+- Dictionary, Wikipedia, ZDIC, ihandian, OCR, and old generated CNBE fields are not
   direct national-standard authority.
 - CNBE32 is a compact carrier layer, not the authority.
 - Database rebuilds, source-table writes, tags, GitHub releases, and PyPI

@@ -1,0 +1,68 @@
+{
+  "authority_boundary": "IHANDIAN_REFERENCE_NOT_NATIONAL_STANDARD_NOT_GOLD_STANDARD",
+  "character": "𫠊",
+  "decision": {
+    "may_assign_gf0017_points": false,
+    "may_claim_national_standard": false,
+    "may_generate_cnbe_candidate": false,
+    "may_modify_source_tables": false,
+    "may_modify_sqlite": false,
+    "may_use_for_review_context": true
+  },
+  "fields": {
+    "cangjie": "NMYVI",
+    "character_table": "通用规范汉字表",
+    "character_table_level": "三级字表",
+    "character_table_sequence": "6752",
+    "cjk_block": "中日韩统一表意文字 (扩展D)",
+    "decimal": "178186",
+    "decomposition": [
+      "马",
+      "玄"
+    ],
+    "pinyin": "xuán",
+    "radical": "马部",
+    "sijiao": "无",
+    "structure": "左右结构",
+    "total_strokes": "8",
+    "unicode_hex": "2B80A",
+    "utf32": "0002B80A",
+    "utf8": "F0ABA08A",
+    "zhengma": "XSZZ"
+  },
+  "found_fields": [
+    "pinyin",
+    "radical",
+    "total_strokes",
+    "structure",
+    "decomposition",
+    "cangjie",
+    "sijiao",
+    "zhengma",
+    "unicode_hex",
+    "cjk_block",
+    "decimal",
+    "utf32",
+    "utf8",
+    "character_table",
+    "character_table_level",
+    "character_table_sequence"
+  ],
+  "identity_matches_unicode": true,
+  "page_overview_layout": [
+    "拼音、部首、笔画",
+    "结构、拆字结构",
+    "仓颉码、四角号码、郑码",
+    "统一字码、CJK、十进制、UTF-32、UTF-8",
+    "汉字表格信息"
+  ],
+  "parse_status": "PARSED_IDENTITY_ALIGNED",
+  "retrieval": {
+    "input_sha256": "a821d94a6b60e6b78c72f60e5804b72fe2e1336b3e7f101fe91f37b57cc45501",
+    "method": "local_html_capture"
+  },
+  "schema_version": "ihandian-character-reference-v1",
+  "source_level": "network_dictionary_cross_reference",
+  "source_url": "https://www.ihandian.com/zidian/zi-2b80a.html",
+  "unicode_codepoint": "U+2B80A"
+}

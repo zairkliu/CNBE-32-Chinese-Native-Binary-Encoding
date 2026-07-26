@@ -19,7 +19,7 @@ batch quality gates, and reproducible research workflow design.
   evidence gates approve project-level mappings.
 - Use national language standards first, then repository core reference files,
   then dictionary or network cross-references as review context.
-- Do not present dictionary text, OCR text, Wikipedia text, ZDIC pages, or old
+- Do not present dictionary text, OCR text, Wikipedia text, ZDIC/iHandian pages, or old
   AI-generated CNBE fields as direct national-standard authority.
 - Do not let CNBE32 bit pressure override Hanzi evidence. CNBE64 and CNBE128
   may preserve extended evidence when CNBE32 is too compact.

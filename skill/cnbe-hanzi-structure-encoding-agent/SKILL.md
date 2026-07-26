@@ -372,6 +372,19 @@ For structure work, ZDIC should be parsed by program rather than interpreted
 freehand. Extract fields such as `字形结构`, `字形分析`, `部首`, `总笔画`, `统一码`,
 and `笔顺` into cache records. Missing pages, network timeouts, and missing
 fields are blockers or review gaps, not reasons to guess.
+
+`ihandian.com` may be used at the same network-dictionary cross-reference tier
+as ZDIC and dictionary context. Its verified overview layout may expose: (1)
+pinyin, radical, and strokes; (2) structure and decomposition; (3) Cangjie,
+four-corner, and Zhengma codes; (4) Unicode/CJK/decimal/UTF-32/UTF-8 identity
+fields; and (5) character-table metadata. Before any model interpretation,
+use `scripts/extract_ihandian_character_reference.py` for one bounded,
+Unicode-identified character and preserve the output as
+`network_dictionary_cross_reference`. The ihandian record is not a national
+standard, is not a gold standard for this exploratory project, cannot override
+human audit, and cannot directly assign GF0017 points, generate a CNBE
+candidate, write a source table, or modify SQLite. Page-body blanks, parser
+gaps, and network failures must stay explicit gaps.
 After ZDIC and bounded review validation, freeze the 8105 national-standard
 core before any encoding rewrite. A valid 8105-to-full-catalog plan must keep
 8105 as the only national-standard core, classify all outside-8105 rows as
