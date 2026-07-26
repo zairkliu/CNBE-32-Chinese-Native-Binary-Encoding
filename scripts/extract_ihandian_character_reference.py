@@ -15,7 +15,6 @@ import json
 import re
 from pathlib import Path
 from typing import Any
-from urllib.request import Request, urlopen
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -127,9 +126,15 @@ def parse_ihandian_html(codepoint: str, raw_html: str, source_url: str) -> dict[
 
 
 def fetch_html(url: str, timeout: int) -> str:
-    request = Request(url, headers={"User-Agent": "CNBE research ihandian reference extractor"})
-    with urlopen(request, timeout=timeout) as response:  # nosec B310: fixed https source provided by user.
-        return response.read().decode("utf-8")
+    import requests
+
+    response = requests.get(
+        url,
+        timeout=timeout,
+        headers={"User-Agent": "CNBE research ihandian reference extractor"},
+    )
+    response.raise_for_status()
+    return response.text
 
 
 def write_json(path: Path, value: dict[str, Any]) -> None:
