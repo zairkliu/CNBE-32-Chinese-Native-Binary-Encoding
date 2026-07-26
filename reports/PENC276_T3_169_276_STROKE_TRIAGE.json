@@ -1,0 +1,11 @@
+{
+  "schema_version": "penc276-t3-stroke-triage-v1",
+  "rows": 5,
+  "counts": {
+    "BASELINE_ZDIC_AGREE_UNIHAN_DIFFERS": 5
+  },
+  "decision": {
+    "status": "STROKE_TRIAGE_READY_HUMAN_OR_GF0013_ADJUDICATION_REQUIRED",
+    "may_generate_cnbe_candidates": false
+  }
+}

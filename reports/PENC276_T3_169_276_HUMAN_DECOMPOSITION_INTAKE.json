@@ -1,0 +1,32 @@
+{
+  "schema_version": "penc276-t3-169-276-human-decomposition-intake-v1",
+  "inputs": {
+    "evidence/8105/pending276/T3_169_276_DECOMPOSITION_BACKLOG.csv": "650e0f461e41902697349bd604b809cd5605f1b1bdbfec6471030ea7361a3b17",
+    "evidence/8105/pending276/T3_169_276_HUMAN_DECOMPOSITION_INPUT.csv": "732731be6b370446ff797562bf690b86a9b24ef090b3a1b92868dc2cad58afa7"
+  },
+  "rows": 108,
+  "human_decomposition_recorded": 105,
+  "pending_clarification": [
+    {
+      "row_id": "PENC_194",
+      "char": "𬒈",
+      "note": "component_1_unknown"
+    },
+    {
+      "row_id": "PENC_247",
+      "char": "𬮿",
+      "note": "provided_as_阝_岂; possible_门_岂"
+    },
+    {
+      "row_id": "PENC_271",
+      "char": "𬸣",
+      "note": "component_1_unknown"
+    }
+  ],
+  "decision": {
+    "status": "PARTIAL_HUMAN_DECOMPOSITION_RECORDED_CLARIFICATION_REQUIRED",
+    "may_generate_cnbe_candidates": false,
+    "may_modify_source_tables": false,
+    "may_claim_national_standard": false
+  }
+}

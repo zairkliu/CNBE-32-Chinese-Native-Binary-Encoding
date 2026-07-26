@@ -1,0 +1,20 @@
+{
+  "schema_version": "penc276-t3-169-276-human-audit-merge-v1",
+  "inputs": {
+    "evidence/8105/pending276/T3_169_276_STRUCTURE_OWNER_APPROVAL.csv": "255b253760645150524768ba47dbfa538ab45108f4e5d27319ad76ae1e8e98a8",
+    "evidence/8105/pending276/T3_169_276_HUMAN_DECOMPOSITION_LEDGER.csv": "13102846a1337c4488c55f046c96d05ad425cac21e8c55c21d5e0c08ce2f0444",
+    "evidence/8105/pending276/T3_169_276_NONRENDERABLE_COMPONENT_RESOLUTION.csv": "403716e40a85b955a8e05c60a0d5fe3e5e47bc5a80a675d3c0b19e1decfb539b"
+  },
+  "summary": {
+    "rows": 108,
+    "human_approved_structure_rows": 108,
+    "human_decomposition_recorded_rows": 105,
+    "human_approved_nonrenderable_component_rows": 3
+  },
+  "decision": {
+    "status": "PASS_HUMAN_AUDIT_MERGED_EVIDENCE_GATES_REMAINING",
+    "may_generate_cnbe_candidates": false,
+    "may_modify_source_tables": false,
+    "may_claim_national_standard": false
+  }
+}

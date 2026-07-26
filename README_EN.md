@@ -49,8 +49,8 @@ Current confirmed state:
 Post-migration state (v1.1, applied 2026-07-25 under owner authorization):
 
 - dual-source repairs applied: `620` (503 strokes, 111 structure, 6 radical)
-- 8105 missing characters inserted as pending-encoding rows: `276` (cnbe=NULL, needs_encoding=1)
-- dual-source disagreements left hung for expert adjudication: `348`
+- 8105 missing characters inserted as pending-encoding rows: `276` (`cnbe=NULL`, `needs_encoding=1`). This is a database state of **no CNBE value written yet**, not a claim that the rows are unaudited. Human structure/decomposition audit is complete for all 276 characters (the 108-character T3 baseline plus the remaining 168); the evidence policy deliberately does not auto-generate codes after review.
+- dual-source disagreements held from the migration period for expert adjudication: `348`. This is a separate historical v1.1 migration queue, not a failure or revocation of the 108-character human audit.
 - total runtime rows: `21178`
 - track column: `standard 7327 / provisional 275 / legacy 13576`
 - migration is idempotent (second dry-run plans 0 ops) and recorded in `migration_meta`
@@ -71,7 +71,19 @@ Governance documents:
 - [Field Semantics Freeze v1.1](./docs/FIELD_SEMANTICS_FREEZE_v1.1.md)
 - [v1.1 Migration Tooling and Verification](./reports/MIGRATION_V1_1_WS7WS8.md)
 - [276 Pending 8105 Encoding Workflow](./docs/CNBE276_PENDING_ENCODING_WORKFLOW.md) — governed plan for the 276 pending rows, with a SHA-256 pinned inventory triage
+- [276-character human-review intake audit](./reports/PENC276_REMAINING_168_HUMAN_REVIEW_INTAKE_AUDIT.md) — the 168-character completion audit plus the prior 108-character baseline cover all 276 rows; no CNBE source-table or SQLite write
+- [iHandian network-dictionary cross-reference rule](./skill/references/ihandian.md) — Unicode-first, single-character, read-only reference at the same review tier as dictionary/ZDIC context
 - [WS-4 Benchmark Pre-Registration](./docs/benchmarks/WS4_BENCHMARK_PRE_REGISTRATION.md)
+
+### T3 exploratory batch: human audit first
+
+All 276 PENC276 characters have completed **human structure/decomposition audit**: the first 108 characters (`PENC_169`–`PENC_276`) form the T3 baseline, and the remaining 168 were completed through the same Chinese review packet. The recorded human audit is the final project working baseline. 8105 and related national language-and-writing standards, Unihan, ZDIC, dictionaries, and iHandian are used for alignment, cross-checking, and difference discovery; they are not a “gold standard” that automatically overrides human conclusions. When external sources disagree, are incomplete, or expose glyph-rendering limits, the workflow preserves the original discrepancy and pending-adjudication state. It does not generate candidate CNBE codes or write back to the source table or SQLite database.
+
+The 168-character completion audit means all 276 rows now have human-reviewed structure/decomposition records. A stratified iHandian smoke test aligned Unicode and returned decomposition fields for 14/14 samples; 13 matched human decomposition exactly. `PENC_022` contains a human-approved nonrenderable component-glyph exception: its human decomposition is retained and it is not counted as a web-reference difference. The 348 historical migration disagreements remain a separate queue and are not closed by this result.
+
+- [Human-audit evidence policy](./docs/PENC276_T3_HUMAN_AUDIT_EVIDENCE_POLICY.md)
+- [Final 108-character human-audit baseline](./evidence/8105/pending276/T3_169_276_FINAL_HUMAN_AUDIT_BASELINE.csv)
+- [Machine-readable baseline summary](./reports/PENC276_T3_169_276_FINAL_HUMAN_AUDIT_BASELINE.json)
 
 Mathematics and review program:
 
@@ -304,7 +316,7 @@ The project's structure taxonomy (independent, top-bottom, left-right, enclosure
 5. Add golden vectors shared across Python, C, Rust, and hardware prototypes.
 6. Add benchmark baselines (Unicode codepoint, one-hot, IDS, learned embeddings).
 7. Run the P1 external independent review, then execute the pre-registered WS-4 benchmarks.
-8. Encode the 276 pending 8105 rows through the [governed encoding workflow](./docs/CNBE276_PENDING_ENCODING_WORKFLOW.md): 1 ready row + 124 dual-source-confirmed candidates first; 151 rows routed to evidence-completion or expert adjudication queues ([SHA-256 pinned inventory](./evidence/8105/PENDING_276_ENCODING_INVENTORY.csv)).
+8. Use the completed 276-character human-audit record as the project baseline for separately authorized radical/stroke adjudication and CNBE candidate generation through the [governed encoding workflow](./docs/CNBE276_PENDING_ENCODING_WORKFLOW.md). Any source-table or database write still requires separate written authorization ([SHA-256 pinned inventory](./evidence/8105/PENDING_276_ENCODING_INVENTORY.csv)).
 
 ---
 

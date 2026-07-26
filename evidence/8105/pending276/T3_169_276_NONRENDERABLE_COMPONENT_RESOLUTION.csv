@@ -1,0 +1,4 @@
+row_id,char,unicode,original_component_1,component_2,prior_note,resolution_status,resolution_reason,approval_reference,component_substitution,candidate_cnbe_status,source_table_write_authorized
+PENC_194,𬒈,U+2C488,,石,component_1_unknown,HUMAN_APPROVED_NONRENDERABLE_COMPONENT_GLYPH,"component glyph unavailable, blank, or malformed in the current decomposition display set",project_owner_human_audit_2026-07-26,PROHIBITED,NOT_GENERATED,false
+PENC_247,𬮿,U+2CBBF,阝,岂,provided_as_阝_岂; possible_门_岂,HUMAN_APPROVED_NONRENDERABLE_COMPONENT_GLYPH,"component glyph unavailable, blank, or malformed in the current decomposition display set",project_owner_human_audit_2026-07-26,PROHIBITED,NOT_GENERATED,false
+PENC_271,𬸣,U+2CE23,,鸟,component_1_unknown,HUMAN_APPROVED_NONRENDERABLE_COMPONENT_GLYPH,"component glyph unavailable, blank, or malformed in the current decomposition display set",project_owner_human_audit_2026-07-26,PROHIBITED,NOT_GENERATED,false

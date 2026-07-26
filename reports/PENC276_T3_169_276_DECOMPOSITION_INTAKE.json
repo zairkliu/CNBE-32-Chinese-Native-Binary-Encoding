@@ -1,0 +1,21 @@
+{
+  "schema_version": "penc276-t3-169-276-decomposition-intake-v1",
+  "input_inventory_sha256": "39d7e3295d18d6d262d8049de3465b10a47c760e0358b913276c82920931debf",
+  "scope": {
+    "row_id_start": "PENC_169",
+    "row_id_end": "PENC_276",
+    "tier": "T3",
+    "rows": 108
+  },
+  "facts": {
+    "cjkdecomp_missing_rows": 108,
+    "struct_cjkvi_present_rows": 108,
+    "owner_audit_assertion": "struct_cjkvi_accurate"
+  },
+  "decision": {
+    "status": "BACKLOG_READY_DECOMPOSITION_EVIDENCE_REQUIRED",
+    "may_generate_cnbe_candidates": false,
+    "may_modify_source_tables": false,
+    "may_treat_as_dual_source_structure": false
+  }
+}

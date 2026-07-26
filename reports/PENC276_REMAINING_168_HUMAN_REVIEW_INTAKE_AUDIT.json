@@ -1,0 +1,285 @@
+{
+  "canonical_packet_sha256": "d2cf979eeb2f919fd56cee7b50b852a56ecf48d8f97b88001033073c6e137402",
+  "decision": {
+    "may_claim_national_standard": false,
+    "may_generate_cnbe_candidates": false,
+    "may_modify_source_tables": false,
+    "may_modify_sqlite": false,
+    "status": "PASS_COMPLETED_HUMAN_REVIEW_IHANDIAN_OPERATIONAL_WITH_HUMAN_APPROVED_DISPLAY_EXCEPTION"
+  },
+  "ihandian_smoke_test": {
+    "authority_boundary": "network_dictionary_cross_reference_only_not_gold_standard",
+    "exact_human_decomposition_matches": 13,
+    "human_approved_nonrenderable_reference_rows": {
+      "PENC_022": "网页拆字含暂时不可显现的组件字形；保留人工拆解，不计为参考差异。"
+    },
+    "identity_aligned_records": 14,
+    "records": [
+      {
+        "character": "㬎",
+        "decomposition_exact_match": true,
+        "human_decomposition": "日𢇁",
+        "identity_matches_unicode": true,
+        "parse_status": "PARSED_IDENTITY_ALIGNED",
+        "retrieval_attempts": 1,
+        "row_id": "PENC_021",
+        "source_level": "network_dictionary_cross_reference",
+        "tier": "T0",
+        "unicode": "U+3B0E",
+        "web_decomposition": [
+          "日",
+          "𢇁"
+        ],
+        "web_structure": "上下结构"
+      },
+      {
+        "character": "㑇",
+        "decomposition_exact_match": true,
+        "human_decomposition": "亻刍",
+        "identity_matches_unicode": true,
+        "parse_status": "PARSED_IDENTITY_ALIGNED",
+        "retrieval_attempts": 1,
+        "row_id": "PENC_001",
+        "source_level": "network_dictionary_cross_reference",
+        "tier": "T1",
+        "unicode": "U+3447",
+        "web_decomposition": [
+          "亻",
+          "刍"
+        ],
+        "web_structure": "左右结构"
+      },
+      {
+        "character": "𥻗",
+        "decomposition_exact_match": true,
+        "human_decomposition": "米查",
+        "identity_matches_unicode": true,
+        "parse_status": "PARSED_IDENTITY_ALIGNED",
+        "retrieval_attempts": 1,
+        "row_id": "PENC_096",
+        "source_level": "network_dictionary_cross_reference",
+        "tier": "T1",
+        "unicode": "U+25ED7",
+        "web_decomposition": [
+          "米",
+          "查"
+        ],
+        "web_structure": "左右结构"
+      },
+      {
+        "character": "𫠜",
+        "decomposition_exact_match": true,
+        "human_decomposition": "齿兒",
+        "identity_matches_unicode": true,
+        "parse_status": "PARSED_IDENTITY_ALIGNED",
+        "retrieval_attempts": 1,
+        "row_id": "PENC_168",
+        "source_level": "network_dictionary_cross_reference",
+        "tier": "T1",
+        "unicode": "U+2B81C",
+        "web_decomposition": [
+          "齿",
+          "兒"
+        ],
+        "web_structure": "左右结构"
+      },
+      {
+        "character": "㘎",
+        "decomposition_exact_match": true,
+        "human_decomposition": "口阚",
+        "identity_matches_unicode": true,
+        "parse_status": "PARSED_IDENTITY_ALIGNED",
+        "retrieval_attempts": 1,
+        "row_id": "PENC_004",
+        "source_level": "network_dictionary_cross_reference",
+        "tier": "T2",
+        "unicode": "U+360E",
+        "web_decomposition": [
+          "口",
+          "阚"
+        ],
+        "web_structure": "左右结构"
+      },
+      {
+        "character": "䴓",
+        "decomposition_exact_match": true,
+        "human_decomposition": "帀鸟",
+        "identity_matches_unicode": true,
+        "parse_status": "PARSED_IDENTITY_ALIGNED",
+        "retrieval_attempts": 1,
+        "row_id": "PENC_070",
+        "source_level": "network_dictionary_cross_reference",
+        "tier": "T2",
+        "unicode": "U+4D13",
+        "web_decomposition": [
+          "帀",
+          "鸟"
+        ],
+        "web_structure": "左右结构"
+      },
+      {
+        "character": "𫟼",
+        "decomposition_exact_match": true,
+        "human_decomposition": "钅达",
+        "identity_matches_unicode": true,
+        "parse_status": "PARSED_IDENTITY_ALIGNED",
+        "retrieval_attempts": 1,
+        "row_id": "PENC_165",
+        "source_level": "network_dictionary_cross_reference",
+        "tier": "T2",
+        "unicode": "U+2B7FC",
+        "web_decomposition": [
+          "钅",
+          "达"
+        ],
+        "web_structure": "左右结构"
+      },
+      {
+        "character": "鿍",
+        "decomposition_exact_match": true,
+        "human_decomposition": "土夅",
+        "identity_matches_unicode": true,
+        "parse_status": "PARSED_IDENTITY_ALIGNED",
+        "retrieval_attempts": 1,
+        "row_id": "PENC_078",
+        "source_level": "network_dictionary_cross_reference",
+        "tier": "T3",
+        "unicode": "U+9FCD",
+        "web_decomposition": [
+          "土",
+          "夅"
+        ],
+        "web_structure": "左右结构"
+      },
+      {
+        "character": "鿎",
+        "decomposition_exact_match": true,
+        "human_decomposition": "石达",
+        "identity_matches_unicode": true,
+        "parse_status": "PARSED_IDENTITY_ALIGNED",
+        "retrieval_attempts": 1,
+        "row_id": "PENC_079",
+        "source_level": "network_dictionary_cross_reference",
+        "tier": "T3",
+        "unicode": "U+9FCE",
+        "web_decomposition": [
+          "石",
+          "达"
+        ],
+        "web_structure": "左右结构"
+      },
+      {
+        "character": "鿏",
+        "decomposition_exact_match": true,
+        "human_decomposition": "钅麦",
+        "identity_matches_unicode": true,
+        "parse_status": "PARSED_IDENTITY_ALIGNED",
+        "retrieval_attempts": 1,
+        "row_id": "PENC_080",
+        "source_level": "network_dictionary_cross_reference",
+        "tier": "T3",
+        "unicode": "U+9FCF",
+        "web_decomposition": [
+          "钅",
+          "麦"
+        ],
+        "web_structure": "左右结构"
+      },
+      {
+        "character": "㬚",
+        "decomposition_exact_match": false,
+        "human_decomposition": "日育攵",
+        "identity_matches_unicode": true,
+        "parse_status": "PARSED_IDENTITY_ALIGNED",
+        "retrieval_attempts": 1,
+        "row_id": "PENC_022",
+        "source_level": "network_dictionary_cross_reference",
+        "tier": "T4",
+        "unicode": "U+3B1A",
+        "web_decomposition": [
+          "日",
+          "𰕎"
+        ],
+        "web_structure": "左中右结构"
+      },
+      {
+        "character": "𠙶",
+        "decomposition_exact_match": true,
+        "human_decomposition": "凵了",
+        "identity_matches_unicode": true,
+        "parse_status": "PARSED_IDENTITY_ALIGNED",
+        "retrieval_attempts": 1,
+        "row_id": "PENC_082",
+        "source_level": "network_dictionary_cross_reference",
+        "tier": "T4",
+        "unicode": "U+20676",
+        "web_decomposition": [
+          "凵",
+          "了"
+        ],
+        "web_structure": "半包围结构"
+      },
+      {
+        "character": "𪨶",
+        "decomposition_exact_match": true,
+        "human_decomposition": "山大车",
+        "identity_matches_unicode": true,
+        "parse_status": "PARSED_IDENTITY_ALIGNED",
+        "retrieval_attempts": 1,
+        "row_id": "PENC_121",
+        "source_level": "network_dictionary_cross_reference",
+        "tier": "T4",
+        "unicode": "U+2AA36",
+        "web_decomposition": [
+          "山",
+          "大",
+          "车"
+        ],
+        "web_structure": "上中下结构"
+      },
+      {
+        "character": "𫔶",
+        "decomposition_exact_match": true,
+        "human_decomposition": "门臬",
+        "identity_matches_unicode": true,
+        "parse_status": "PARSED_IDENTITY_ALIGNED",
+        "retrieval_attempts": 1,
+        "row_id": "PENC_144",
+        "source_level": "network_dictionary_cross_reference",
+        "tier": "T4",
+        "unicode": "U+2B536",
+        "web_decomposition": [
+          "门",
+          "臬"
+        ],
+        "web_structure": "上包围结构"
+      }
+    ],
+    "records_with_web_decomposition": 14,
+    "reference_difference_rows": [],
+    "sample_size": 14
+  },
+  "review": {
+    "all_conclusions_pass": true,
+    "all_decompositions_nonempty": true,
+    "fixed_column_mismatch_rows": [],
+    "fixed_column_presentation_variations": {
+      "证据边界": 168
+    },
+    "review_dates": [
+      "2026-07-26"
+    ],
+    "reviewer_ids": [
+      "zairkliu"
+    ],
+    "row_ids_match_canonical": true,
+    "rows": 168,
+    "status_fill_mode": true
+  },
+  "review_export_sha256": "89c3add60aab4d480ba04c204a5ad72fc6e1a3a84895916199d070cbcf363aaf",
+  "schema_version": "penc276-remaining168-completed-human-review-intake-audit-v1",
+  "source_workbook": {
+    "name": "PENC276_REMAINING_168_CHINESE_HUMAN_REVIEW_PACKET_EDITABLE.xlsx",
+    "sha256": "8c8f8367019858eefa6d3404e1d31c2f8d040f7f827d4d5a82438e3b3ed42a7e"
+  }
+}

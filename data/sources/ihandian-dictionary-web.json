@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "source_name": "汉典籍网（ihandian.com）",
+  "base_url": "https://www.ihandian.com/zidian/",
+  "source_kind": "network_dictionary_cross_reference",
+  "observed_example": {
+    "character": "𫠊",
+    "unicode": "U+2B80A",
+    "url": "https://www.ihandian.com/zidian/zi-2b80a.html",
+    "browser_observation": "Chrome reached the URL and page title, but the rendered body was blank in this environment; the same URL returned an HTTP 200 UTF-8 source response for bounded parser verification."
+  },
+  "overview_field_groups": [
+    "拼音、部首、笔画",
+    "结构、拆字结构",
+    "仓颉码、四角号码、郑码",
+    "统一字码、CJK、十进制、UTF-32、UTF-8",
+    "汉字表格信息"
+  ],
+  "repository_policy": {
+    "default_mode": "bounded_single_character_review_context",
+    "require_unicode_identity_check": true,
+    "require_cached_structured_record": true,
+    "allow_bulk_catalog_scrape": false,
+    "allow_gf0017_point_assignment": false,
+    "allow_cnbe_candidate_generation": false,
+    "allow_source_table_write": false,
+    "allow_sqlite_write": false
+  },
+  "authority_boundary": {
+    "statement": "iHandian is a network dictionary cross-reference at the same review tier as other dictionary and ZDIC context. It supports reviewer navigation, field comparison, and gap discovery only.",
+    "not_a_gold_standard": true,
+    "not_national_standard_authority": true,
+    "cannot_override_human_audit": true
+  },
+  "extractor": {
+    "script": "scripts/extract_ihandian_character_reference.py",
+    "sample_output": "evidence/validation/ihandian/U_2B80A_IHANDIAN_REFERENCE.json",
+    "sample_report": "reports/IHANDIAN_U_2B80A_REFERENCE.md"
+  }
+}

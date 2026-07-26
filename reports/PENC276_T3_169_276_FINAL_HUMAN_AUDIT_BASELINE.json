@@ -1,0 +1,12 @@
+{
+  "schema_version": "penc276-t3-final-human-audit-baseline-v1",
+  "rows": 108,
+  "final_project_basis": "HUMAN_AUDIT",
+  "external_reference_role": "ALIGNMENT_ONLY_NOT_GOLD_STANDARD",
+  "decision": {
+    "status": "PASS_HUMAN_AUDIT_FINAL_EXPLORATORY_BASELINE",
+    "may_generate_cnbe_candidates": false,
+    "may_modify_source_tables": false,
+    "may_claim_national_standard": false
+  }
+}
