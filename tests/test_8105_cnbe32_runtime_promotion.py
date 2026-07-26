@@ -17,7 +17,7 @@ def test_runtime_json_contains_promoted_8105_samples() -> None:
     assert model["metadata"]["runtime_repair"] == "CNBE8105_STANDARDIZED_RUNTIME_REPAIR_2026_07_19"
     assert model["metadata"]["patched_8105_rows"] == 7310
     assert model["metadata"]["force_approved_not_patched_rows"] == 795
-    assert len(model["characters"]) == 20902
+    assert len(model["characters"]) == 21178
     assert by_char["家"]["radix_name"] == "宀"
     assert by_char["家"]["strokes"] == 10
     assert by_char["家"]["struct_name"] == "上下"
@@ -30,7 +30,8 @@ def test_runtime_json_contains_promoted_8105_samples() -> None:
     assert by_char["玕"]["radix_name"] == "王"
     assert by_char["玕"]["strokes"] == 7
     assert by_char["玕"]["struct_name"] == "左右"
-    assert "㑇" not in by_char
+    assert by_char["㑇"]["struct_name"] == "左右"
+    assert by_char["㑇"]["cnbe"] == 154788976
 
 
 def test_runtime_json_bitfields_recompute() -> None:
@@ -58,7 +59,7 @@ def test_rebuilt_databases_match_runtime_samples() -> None:
     for db_path in (Path("data/cnbe32.db"), Path("src/cnbe32/data/cnbe32.db")):
         with sqlite3.connect(db_path) as connection:
             assert connection.execute("PRAGMA integrity_check").fetchone()[0] == "ok"
-            assert connection.execute("SELECT COUNT(*) FROM cnbe32").fetchone()[0] == 20902
+            assert connection.execute("SELECT COUNT(*) FROM cnbe32").fetchone()[0] == 21178
             for char, row in expected.items():
                 assert (
                     connection.execute(
@@ -80,5 +81,6 @@ def test_sdk_lookup_can_read_promoted_runtime_database(monkeypatch) -> None:
         assert lookup("孓")["struct_name"] == "独体字"
         assert lookup("队")["struct_name"] == "左右"
         assert lookup("玕")["strokes"] == 7
+        assert lookup("㑇")["needs_encoding"] == 0
     finally:
         close_connection()

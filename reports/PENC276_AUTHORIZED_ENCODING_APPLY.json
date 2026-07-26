@@ -1,0 +1,22 @@
+{
+  "status": "PASS_PENC276_AUTHORIZED_ENCODING_APPLIED",
+  "candidate_rows": 276,
+  "candidate_sha256": "0fb3ef8c370432c34788b8efee029878a35200e07b6c021e41a10d0025d8c881",
+  "source_table_write_authorized": true,
+  "runtime_rows": 21178,
+  "databases": [
+    {
+      "path": "data/cnbe32.db",
+      "rows": 21178,
+      "integrity": "ok",
+      "sha256": "a283869871bdb328f17921feb506c818b3188920dc236d07de308af6d7d196a4"
+    },
+    {
+      "path": "src/cnbe32/data/cnbe32.db",
+      "rows": 21178,
+      "integrity": "ok",
+      "sha256": "4fc228aba62fc52d178a05186d69909cbd8345238dbcbcfd0cb46c28822a907d"
+    }
+  ],
+  "backup": "build/penc276-authorized-backup"
+}
