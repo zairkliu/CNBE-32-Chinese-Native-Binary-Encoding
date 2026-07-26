@@ -8,7 +8,6 @@ import hashlib
 import json
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parents[1]
 STRUCTURE = ROOT / "evidence" / "8105" / "pending276" / "T3_169_276_STRUCTURE_OWNER_APPROVAL.csv"
 DECOMPOSITION = ROOT / "evidence" / "8105" / "pending276" / "T3_169_276_HUMAN_DECOMPOSITION_LEDGER.csv"

@@ -145,8 +145,11 @@ def main() -> None:
 
     # Optional third-party evidence
     if args.scope_file:
-        scope = {l.strip() for l in args.scope_file.read_text(encoding="utf-8").splitlines()
-                 if l.strip() and not l.startswith("#")}
+        scope = {
+            line.strip()
+            for line in args.scope_file.read_text(encoding="utf-8").splitlines()
+            if line.strip() and not line.startswith("#")
+        }
         in_scope = [r for r in rows if r["char"] in scope]
         track = Counter(
             "chinese" if r["struct_name"] in CN_LABELS

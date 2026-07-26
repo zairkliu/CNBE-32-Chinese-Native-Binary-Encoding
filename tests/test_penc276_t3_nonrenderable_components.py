@@ -8,7 +8,6 @@ import subprocess
 import sys
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "scripts" / "resolve_penc276_t3_nonrenderable_components.py"
 RESOLUTION = ROOT / "evidence" / "8105" / "pending276" / "T3_169_276_NONRENDERABLE_COMPONENT_RESOLUTION.csv"

@@ -9,7 +9,6 @@ import json
 from collections import Counter
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parents[1]
 INVENTORY = ROOT / "evidence" / "8105" / "PENDING_276_ENCODING_INVENTORY.csv"
 T3_HUMAN_BASELINE = ROOT / "evidence" / "8105" / "pending276" / "T3_169_276_FINAL_HUMAN_AUDIT_BASELINE.csv"

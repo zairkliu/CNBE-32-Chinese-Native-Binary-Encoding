@@ -8,7 +8,6 @@ import hashlib
 import json
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "evidence" / "8105" / "pending276" / "T3_169_276_HUMAN_DECOMPOSITION_LEDGER.csv"
 RESOLUTION = ROOT / "evidence" / "8105" / "pending276" / "T3_169_276_NONRENDERABLE_COMPONENT_RESOLUTION.csv"

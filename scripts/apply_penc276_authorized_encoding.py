@@ -17,7 +17,6 @@ import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parents[1]
 INVENTORY = ROOT / "evidence/8105/PENDING_276_ENCODING_INVENTORY.csv"
 STRUCTURES = ROOT / "review_packets/8105_full/8105_hanzi_decomp_v03_human_approved_structure_packet.csv"
@@ -121,12 +120,14 @@ def write_csv(path: Path, rows: list[dict[str, str]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8", newline="") as stream:
         writer = csv.DictWriter(stream, fieldnames=list(rows[0]), lineterminator="\n")
-        writer.writeheader(); writer.writerows(rows)
+        writer.writeheader()
+        writer.writerows(rows)
 
 
 def rebuild(path: Path, rows: list[dict]) -> dict[str, object]:
     temporary = path.with_suffix(".tmp.db")
-    if temporary.exists(): temporary.unlink()
+    if temporary.exists():
+        temporary.unlink()
     with sqlite3.connect(temporary) as connection:
         connection.executescript(CREATE_SQL)
         connection.executemany("INSERT INTO cnbe32 VALUES (?,?,?,?,?,?,?,?,?,?,?)", [
@@ -162,19 +163,28 @@ def copy_backup_once(source: Path, destination: Path) -> None:
 
 
 def apply(candidates: list[dict[str, str]], baseline_json: Path, baseline_db: Path) -> dict:
-    model=json.loads(baseline_json.read_text(encoding="utf-8")); original=model["characters"]
-    if len(original)!=20902 or len({r["unicode"] for r in original})!=20902: raise ValueError("unexpected source JSON baseline")
+    model = json.loads(baseline_json.read_text(encoding="utf-8"))
+    original = model["characters"]
+    if len(original) != 20902 or len({row["unicode"] for row in original}) != 20902:
+        raise ValueError("unexpected source JSON baseline")
     baseline_rows = database_baseline(baseline_db)
     additions=[{"char":r["char"],"unicode":int(r["unicode"]),"cnbe":int(r["cnbe"]),"radix":int(r["radix"]),"radix_name":r["radix_name"],"strokes":int(r["strokes"]),"struct_type":int(r["struct_type"]),"struct_name":r["struct_name"],"index":int(r["idx"]),"track":"standard","needs_encoding":0} for r in candidates]
-    if set(r["unicode"] for r in original) & set(r["unicode"] for r in additions): raise ValueError("candidate already exists in source JSON")
-    rows=original+additions
+    if set(row["unicode"] for row in original) & set(row["unicode"] for row in additions):
+        raise ValueError("candidate already exists in source JSON")
+    rows = original + additions
     updates = {int(row["unicode"]): row for row in additions}
     if not set(updates) <= {row["unicode"] for row in baseline_rows}:
         raise ValueError("candidate is absent from database baseline")
     # Preserve every non-target database value exactly; this migration owns 276 rows only.
     database_rows = [dict(row, **updates[row["unicode"]]) if row["unicode"] in updates else row for row in baseline_rows]
-    model["characters"]=rows; model.setdefault("metadata",{}).update({"total":21178,"penc276_authorized_encoding_rows":276,"penc276_authority":"human_audit_project_baseline_user_authorized_2026_07_27"})
-    backup=ROOT/"build/penc276-authorized-backup"; backup.mkdir(parents=True,exist_ok=True)
+    model["characters"] = rows
+    model.setdefault("metadata", {}).update({
+        "total": 21178,
+        "penc276_authorized_encoding_rows": 276,
+        "penc276_authority": "human_audit_project_baseline_user_authorized_2026_07_27",
+    })
+    backup = ROOT / "build/penc276-authorized-backup"
+    backup.mkdir(parents=True, exist_ok=True)
     copy_backup_once(RUNTIME_JSON, backup / "cnbe32.json")
     copy_backup_once(ROOT_DB, backup / "root_cnbe32.db")
     copy_backup_once(PACKAGE_DB, backup / "package_cnbe32.db")
@@ -184,15 +194,21 @@ def apply(candidates: list[dict[str, str]], baseline_json: Path, baseline_db: Pa
 
 
 def main() -> None:
-    parser=argparse.ArgumentParser(); parser.add_argument("--review-xlsx",type=Path,required=True); parser.add_argument("--apply",action="store_true")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--review-xlsx", type=Path, required=True)
+    parser.add_argument("--apply", action="store_true")
     parser.add_argument("--baseline-json", type=Path, default=RUNTIME_JSON)
     parser.add_argument("--baseline-db", type=Path, default=ROOT_DB)
-    args=parser.parse_args(); candidates=materialize(args.review_xlsx); write_csv(CANDIDATES,candidates)
+    args = parser.parse_args()
+    candidates = materialize(args.review_xlsx)
+    write_csv(CANDIDATES, candidates)
     result={"status":"DRY_RUN_READY","candidate_rows":len(candidates),"candidate_sha256":sha256(CANDIDATES),"source_table_write_authorized":False}
     if args.apply:
-        result.update(apply(candidates, args.baseline_json, args.baseline_db)); result.update({"status":"PASS_PENC276_AUTHORIZED_ENCODING_APPLIED","source_table_write_authorized":True})
+        result.update(apply(candidates, args.baseline_json, args.baseline_db))
+        result.update({"status": "PASS_PENC276_AUTHORIZED_ENCODING_APPLIED", "source_table_write_authorized": True})
     REPORT_JSON.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     REPORT_MD.write_text(f"# PENC276 授权 CNBE 编码报告\n\n- 状态：`{result['status']}`\n- 候选行：`{len(candidates)}`\n- 候选 SHA-256：`{result['candidate_sha256']}`\n- 源表写入：`{result['source_table_write_authorized']}`\n",encoding="utf-8")
     print(result["status"])
 
-if __name__ == "__main__": main()
+if __name__ == "__main__":
+    main()
