@@ -21,7 +21,7 @@
 A 32-bit structural fingerprint for CJK characters — built for people who wonder what Chinese text would look like if it were designed closer to the metal.
 
 > **CNBE-32 is a research prototype.**
-> The packaged Python SDK currently targets **20,902 Basic CJK** entries.
+> The checked-in Python SDK runtime now contains **21,178 entries**, including the 276 PENC276 characters completed under the project human-audit baseline.
 > The broader **97,686 CJK** figure is an intended / experimental extended scope, not current packaged SDK coverage.
 > The latest published package is **cnbe32 1.0.4**, matching the GitHub `v1.0.4` release checkpoint.
 > The repository database has since been migrated to **v1.1** (21,178 rows); see the confirmed state below.
@@ -30,7 +30,7 @@ A 32-bit structural fingerprint for CJK characters — built for people who wond
 
 CNBE is being reorganized around a stricter standards-aligned workflow.
 
-The **8105 common standardized Chinese character table** is now the national-standard core for the rebuild. Existing CNBE rows are treated as legacy/current runtime data until they pass the renewed evidence gates. The 20,902-row Agent pre-encoding pool is a project candidate pool, and the 97,686-row full catalog remains an extended research target.
+The **8105 common standardized Chinese character table** is now the national-standard core for the rebuild. Existing CNBE rows are treated as legacy/current runtime data until they pass the renewed evidence gates. The former 20,902-row Agent pre-encoding pool is preserved as the pre-PENC276 baseline; the current checked-in runtime contains 21,178 rows. The 97,686-row full catalog remains an extended research target.
 
 The restart target is to rebuild CNBE as a national-language-standard-aligned encoding project: the Agent performs controlled Hanzi structure work, every promoted row carries evidence and review state, and the repository separates runtime code, evidence, reports, historical experiments, and reproducible research outputs.
 
@@ -44,15 +44,15 @@ Current confirmed state:
 - additional conservative standardized runtime repairs: `598`
 - total patched 8105 runtime rows after repair: `7310`
 - force-approved rows retained for later insertion/radical strategy: `795`
-- runtime JSON and SQLite databases rebuilt from the approved 20,902-row source
+- runtime JSON and SQLite databases now contain the 21,178-row authorized project runtime
 
 Post-migration state (v1.1, applied 2026-07-25 under owner authorization):
 
 - dual-source repairs applied: `620` (503 strokes, 111 structure, 6 radical)
-- 8105 missing characters inserted as pending-encoding rows: `276` (`cnbe=NULL`, `needs_encoding=1`). This is a database state of **no CNBE value written yet**, not a claim that the rows are unaudited. Human structure/decomposition audit is complete for all 276 characters (the 108-character T3 baseline plus the remaining 168); the evidence policy deliberately does not auto-generate codes after review.
+- authorized PENC276 encoding write: `276` human-audited rows now have CNBE values in JSON and both SQLite runtime databases (`cnbe` non-null; `needs_encoding=0`). Their authority label is `HUMAN_AUDIT_PROJECT_BASELINE_USER_AUTHORIZED_2026_07_27`: a project human-audit baseline, not a national-standard claim.
 - dual-source disagreements held from the migration period for expert adjudication: `348`. This is a separate historical v1.1 migration queue, not a failure or revocation of the 108-character human audit.
 - total runtime rows: `21178`
-- track column: `standard 7327 / provisional 275 / legacy 13576`
+- track column: `standard 7602 / legacy 13576`
 - migration is idempotent (second dry-run plans 0 ops) and recorded in `migration_meta`
 
 Governance documents:
@@ -70,14 +70,14 @@ Governance documents:
 - [CNBE 8105 Standardized Runtime Repair](./reports/8105_STANDARDIZED_RUNTIME_REPAIR.md)
 - [Field Semantics Freeze v1.1](./docs/FIELD_SEMANTICS_FREEZE_v1.1.md)
 - [v1.1 Migration Tooling and Verification](./reports/MIGRATION_V1_1_WS7WS8.md)
-- [276 Pending 8105 Encoding Workflow](./docs/CNBE276_PENDING_ENCODING_WORKFLOW.md) — governed plan for the 276 pending rows, with a SHA-256 pinned inventory triage
-- [276-character human-review intake audit](./reports/PENC276_REMAINING_168_HUMAN_REVIEW_INTAKE_AUDIT.md) — the 168-character completion audit plus the prior 108-character baseline cover all 276 rows; no CNBE source-table or SQLite write
+- [276-character authorized encoding candidates](./evidence/8105/pending276/PENC276_AUTHORIZED_ENCODING_CANDIDATES.csv) — Unicode-first, human-audited candidate table used for the completed runtime write
+- [276-character authorized encoding report](./reports/PENC276_AUTHORIZED_ENCODING_APPLY.md) — reproducible write result for JSON and both SQLite runtime databases
 - [iHandian network-dictionary cross-reference rule](./skill/references/ihandian.md) — Unicode-first, single-character, read-only reference at the same review tier as dictionary/ZDIC context
 - [WS-4 Benchmark Pre-Registration](./docs/benchmarks/WS4_BENCHMARK_PRE_REGISTRATION.md)
 
 ### T3 exploratory batch: human audit first
 
-All 276 PENC276 characters have completed **human structure/decomposition audit**: the first 108 characters (`PENC_169`–`PENC_276`) form the T3 baseline, and the remaining 168 were completed through the same Chinese review packet. The recorded human audit is the final project working baseline. 8105 and related national language-and-writing standards, Unihan, ZDIC, dictionaries, and iHandian are used for alignment, cross-checking, and difference discovery; they are not a “gold standard” that automatically overrides human conclusions. When external sources disagree, are incomplete, or expose glyph-rendering limits, the workflow preserves the original discrepancy and pending-adjudication state. It does not generate candidate CNBE codes or write back to the source table or SQLite database.
+All 276 PENC276 characters have completed **human structure/decomposition audit**: the first 108 characters (`PENC_169`–`PENC_276`) form the T3 baseline, and the remaining 168 were completed through the same Chinese review packet. The recorded human audit is the final project working baseline. 8105 and related national language-and-writing standards, Unihan, ZDIC, dictionaries, and iHandian are used for alignment, cross-checking, and difference discovery; they are not a “gold standard” that automatically overrides human conclusions. When external sources disagree, are incomplete, or expose glyph-rendering limits, the workflow preserves the original discrepancy and pending-adjudication state. Candidate generation and the runtime write were performed only after explicit owner authorization; the completed codes retain the project human-audit authority label rather than claiming national-standard certification.
 
 The 168-character completion audit means all 276 rows now have human-reviewed structure/decomposition records. A stratified iHandian smoke test aligned Unicode and returned decomposition fields for 14/14 samples; 13 matched human decomposition exactly. `PENC_022` contains a human-approved nonrenderable component-glyph exception: its human decomposition is retained and it is not counted as a web-reference difference. The 348 historical migration disagreements remain a separate queue and are not closed by this result.
 
@@ -220,8 +220,8 @@ These should be interpreted as **preliminary research prototypes** unless the co
 | Term | Meaning |
 |---|---|
 | **8105 national-standard core** | 8,105 common standardized Chinese characters used as the release-track standards baseline |
-| **Packaged Python SDK database** | 20,902 Basic CJK runtime entries shipped in the wheel |
-| **Repository database (v1.1)** | 21,178 rows after migration: 7,327 standard + 275 provisional + 13,576 legacy, incl. 276 pending-encoding 8105 rows |
+| **Published package checkpoint** | `cnbe32==1.0.4`; release metadata is distinct from the checked-in runtime data state |
+| **Repository and checked-in SDK database** | 21,178 rows: 7,602 standard + 13,576 legacy; all 276 PENC276 rows have an authorized project-baseline CNBE value |
 | **Agent-standard candidate scope** | project-controlled candidate outputs that must align to 8105 before promotion |
 | **Experimental extended scope** | 97,686 CJK characters as a design / research target, not a validated release claim; the figure anchors the Unicode CJK Unified Ideographs total and must be updated with Unicode versions and GB 18030-2022 amendments |
 | **Experiment-specific coverage** | depends on the dataset and reproduction script for each experiment |
@@ -316,7 +316,7 @@ The project's structure taxonomy (independent, top-bottom, left-right, enclosure
 5. Add golden vectors shared across Python, C, Rust, and hardware prototypes.
 6. Add benchmark baselines (Unicode codepoint, one-hot, IDS, learned embeddings).
 7. Run the P1 external independent review, then execute the pre-registered WS-4 benchmarks.
-8. Use the completed 276-character human-audit record as the project baseline for separately authorized radical/stroke adjudication and CNBE candidate generation through the [governed encoding workflow](./docs/CNBE276_PENDING_ENCODING_WORKFLOW.md). Any source-table or database write still requires separate written authorization ([SHA-256 pinned inventory](./evidence/8105/PENDING_276_ENCODING_INVENTORY.csv)).
+8. Maintain the completed 276-character encoding as a reproducible project human-audit baseline through the [candidate table](./evidence/8105/pending276/PENC276_AUTHORIZED_ENCODING_CANDIDATES.csv) and [write report](./reports/PENC276_AUTHORIZED_ENCODING_APPLY.md); future changes require new evidence and explicit authorization.
 
 ---
 
