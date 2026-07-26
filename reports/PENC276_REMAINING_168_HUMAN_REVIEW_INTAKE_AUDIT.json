@@ -5,11 +5,14 @@
     "may_generate_cnbe_candidates": false,
     "may_modify_source_tables": false,
     "may_modify_sqlite": false,
-    "status": "PASS_COMPLETED_HUMAN_REVIEW_IHANDIAN_OPERATIONAL_WITH_REFERENCE_DIFFERENCE"
+    "status": "PASS_COMPLETED_HUMAN_REVIEW_IHANDIAN_OPERATIONAL_WITH_HUMAN_APPROVED_DISPLAY_EXCEPTION"
   },
   "ihandian_smoke_test": {
     "authority_boundary": "network_dictionary_cross_reference_only_not_gold_standard",
     "exact_human_decomposition_matches": 13,
+    "human_approved_nonrenderable_reference_rows": {
+      "PENC_022": "网页拆字含暂时不可显现的组件字形；保留人工拆解，不计为参考差异。"
+    },
     "identity_aligned_records": 14,
     "records": [
       {
@@ -253,9 +256,7 @@
       }
     ],
     "records_with_web_decomposition": 14,
-    "reference_difference_rows": [
-      "PENC_022"
-    ],
+    "reference_difference_rows": [],
     "sample_size": 14
   },
   "review": {

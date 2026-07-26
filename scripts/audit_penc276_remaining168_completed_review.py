@@ -37,6 +37,9 @@ EDITABLE_FIELDS = {
     "审核人（填写）",
     "审核日期（填写）",
 }
+HUMAN_APPROVED_NONRENDERABLE_REFERENCE_ROWS = {
+    "PENC_022": "网页拆字含暂时不可显现的组件字形；保留人工拆解，不计为参考差异。",
+}
 
 
 def sha256(path: Path) -> str:
@@ -199,7 +202,13 @@ def main() -> None:
     review = audit_rows(rows, read_csv(CANONICAL_PACKET))
     sample = smoke_test_ihandian(rows, args.timeout)
     sample_success = [row for row in sample if row["parse_status"] == "PARSED_IDENTITY_ALIGNED"]
-    reference_difference_rows = [row["row_id"] for row in sample if row.get("web_decomposition") and not row.get("decomposition_exact_match")]
+    raw_reference_difference_rows = [row["row_id"] for row in sample if row.get("web_decomposition") and not row.get("decomposition_exact_match")]
+    approved_display_exception_rows = [
+        row_id for row_id in raw_reference_difference_rows if row_id in HUMAN_APPROVED_NONRENDERABLE_REFERENCE_ROWS
+    ]
+    reference_difference_rows = [
+        row_id for row_id in raw_reference_difference_rows if row_id not in HUMAN_APPROVED_NONRENDERABLE_REFERENCE_ROWS
+    ]
     review_is_complete = (
         review["row_ids_match_canonical"]
         and not review["fixed_column_mismatch_rows"]
@@ -209,7 +218,9 @@ def main() -> None:
     extractor_is_operational = len(sample_success) == len(sample)
     if review_is_complete and extractor_is_operational:
         status = (
-            "PASS_COMPLETED_HUMAN_REVIEW_IHANDIAN_OPERATIONAL_WITH_REFERENCE_DIFFERENCE"
+            "PASS_COMPLETED_HUMAN_REVIEW_IHANDIAN_OPERATIONAL_WITH_HUMAN_APPROVED_DISPLAY_EXCEPTION"
+            if approved_display_exception_rows
+            else "PASS_COMPLETED_HUMAN_REVIEW_IHANDIAN_OPERATIONAL_WITH_REFERENCE_DIFFERENCE"
             if reference_difference_rows
             else "PASS_COMPLETED_HUMAN_REVIEW_IHANDIAN_OPERATIONAL"
         )
@@ -232,6 +243,10 @@ def main() -> None:
             "records_with_web_decomposition": sum(bool(row.get("web_decomposition")) for row in sample),
             "exact_human_decomposition_matches": sum(bool(row.get("decomposition_exact_match")) for row in sample),
             "reference_difference_rows": reference_difference_rows,
+            "human_approved_nonrenderable_reference_rows": {
+                row_id: HUMAN_APPROVED_NONRENDERABLE_REFERENCE_ROWS[row_id]
+                for row_id in approved_display_exception_rows
+            },
             "records": sample,
             "authority_boundary": "network_dictionary_cross_reference_only_not_gold_standard",
         },
@@ -259,7 +274,9 @@ def main() -> None:
         f"- 网页解析与 Unicode 对齐成功：`{len(sample_success)} / {len(sample)}`。\n"
         f"- 网页提供拆字：`{report['ihandian_smoke_test']['records_with_web_decomposition']} / {len(sample)}`；"
         f"与人工拆字逐字串完全一致：`{report['ihandian_smoke_test']['exact_human_decomposition_matches']} / {len(sample)}`。\n\n"
-        f"- 保留的网页参考差异行：`{', '.join(reference_difference_rows) if reference_difference_rows else '无'}`。\n\n"
+        f"- 保留的网页参考差异行：`{', '.join(reference_difference_rows) if reference_difference_rows else '无'}`。\n"
+        f"- 人工确认的不可显现组件字形例外：`{', '.join(approved_display_exception_rows) if approved_display_exception_rows else '无'}`。"
+        "此类例外不替代人工拆解，也不计为网页参考差异。\n\n"
         "本测试只证明 ihandian 的单字提取器可为审核导航提供字段；它是网络字典交叉参考，"
         "不是国家标准或金标准。人工审核结果不会被网页自动覆盖，且本轮不生成 CNBE 候选、"
         "不修改源表或 SQLite。\n",
