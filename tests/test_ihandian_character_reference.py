@@ -2,7 +2,6 @@
 
 from scripts.extract_ihandian_character_reference import parse_ihandian_html
 
-
 SAMPLE = """
 <p>〔𫠊〕字拼音是（xuán），部首是<em>马部</em>，总笔画是<em>8画</em>。</p>
 <p>〔𫠊〕字是左右结构，可拆字为“<em>马、玄</em>”。</p>

@@ -159,9 +159,9 @@ def build() -> dict[str, Any]:
         "unique_character_count_is_8105": len({row["character"] for row in records}) == EXPECTED_8105_ROWS,
         "unique_unicode_count_is_8105": len({row["unicode_codepoint"] for row in records}) == EXPECTED_8105_ROWS,
         "no_unicode_mismatch": "UNICODE_MISMATCH_BLOCKER" not in unicode_status_counts,
-        "known_regressions_are_repair_or_insert_candidates": all(
+        "known_regressions_are_reconciled_or_repair_candidates": all(
             known[char]["merge_status"]
-            in {"CURRENT_MODEL_STRUCTURE_REPAIR_CANDIDATE", "MISSING_FROM_CURRENT_CNBE_AGENT_INSERT_CANDIDATE"}
+            in {"CURRENT_MODEL_STRUCTURE_CONFIRMED", "CURRENT_MODEL_STRUCTURE_REPAIR_CANDIDATE"}
             for char in KNOWN_REGRESSION_CHARS
         ),
         "no_source_table_writes": all(row["source_table_write_status"] == "NO_SOURCE_TABLE_WRITE" for row in records),

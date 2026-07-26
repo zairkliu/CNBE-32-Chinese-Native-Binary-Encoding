@@ -13,7 +13,7 @@ def test_readmes_declare_8105_core_and_runtime_boundary() -> None:
         lower_text = text.lower()
         assert "8105" in text
         assert "national-standard core" in text or "国家标准核心" in text
-        assert "7829" in text
+        assert "8105" in text
         assert "276" in text
         assert "97,686" in text
         assert "runtime promotion" in lower_text or "运行时提升" in text

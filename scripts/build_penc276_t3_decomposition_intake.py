@@ -8,7 +8,6 @@ import hashlib
 import json
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parents[1]
 INVENTORY = ROOT / "evidence" / "8105" / "PENDING_276_ENCODING_INVENTORY.csv"
 EXPECTED_SHA256 = "39d7e3295d18d6d262d8049de3465b10a47c760e0358b913276c82920931debf"

@@ -112,7 +112,6 @@ def build_plan(db_path: Path, baseline: dict, ids: dict, unihan: dict,
                with_insertions: bool) -> tuple[list[dict], dict]:
     conn = sqlite3.connect(str(db_path))
     conn.row_factory = sqlite3.Row
-    cols = {r["name"] for r in conn.execute("PRAGMA table_info(cnbe32)")}
     rows = {r["char"]: dict(r) for r in conn.execute("SELECT * FROM cnbe32")}
     conn.close()
 
@@ -226,8 +225,9 @@ def apply_plan(db_path: Path, plan: list[dict]) -> dict:
         #   legacy      = English/triangle runtime rows (isolate, do not alter)
         conn.execute("UPDATE cnbe32 SET track=NULL")
         conn.execute(
-            "UPDATE cnbe32 SET track='standard' WHERE struct_name IN (%s)"
-            % ",".join("?" * len(CN_LABELS)), tuple(CN_LABELS))
+            f"UPDATE cnbe32 SET track='standard' WHERE struct_name IN ({','.join('?' * len(CN_LABELS))})",
+            tuple(CN_LABELS),
+        )
         conn.execute(
             "UPDATE cnbe32 SET track='provisional'"
             " WHERE track IS NULL AND struct_name IS NULL")

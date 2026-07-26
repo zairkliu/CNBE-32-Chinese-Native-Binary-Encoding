@@ -29,10 +29,9 @@ JSON_OUTPUT = Path("reports/8105_runtime_blocker_resolution_plan.json")
 MD_OUTPUT = Path("reports/8105_RUNTIME_BLOCKER_RESOLUTION_PLAN.md")
 CSV_OUTPUT = Path("review_packets/8105_full/8105_runtime_blocker_resolution_queue.csv")
 
-EXPECTED_BLOCKED_ROWS = 1393
+EXPECTED_BLOCKED_ROWS = 1117
 EXPECTED_REASON_COUNTS = {
     "missing_approved_radical": 964,
-    "missing_current_model_row": 276,
     "radical_resolution_blocked": 153,
 }
 
@@ -76,6 +75,16 @@ def blocked_force_rows() -> list[dict[str, Any]]:
         for row in model["records"]
         if row["implementation_queue"] == "CNBE32_FORCE_APPROVED_BLOCKER_RESOLUTION_PLAN_CANDIDATE"
     ]
+
+
+def is_completed_penc276_row(row: dict[str, Any], source_by_char: dict[str, dict[str, Any]]) -> bool:
+    source = source_by_char.get(row["character"])
+    return bool(
+        row.get("block_reason") == "missing_current_model_row"
+        and source is not None
+        and source.get("cnbe") is not None
+        and source.get("needs_encoding", 0) == 0
+    )
 
 
 def decoded_current_fields(row: dict[str, Any]) -> dict[str, Any]:
@@ -165,8 +174,12 @@ def top_counter(counter: Counter[str], limit: int = 20) -> list[dict[str, Any]]:
 
 
 def build() -> dict[str, Any]:
-    rows = blocked_force_rows()
     source_by_char = source_rows_by_char()
+    historical_rows = blocked_force_rows()
+    completed_penc276_rows = [
+        row for row in historical_rows if is_completed_penc276_row(row, source_by_char)
+    ]
+    rows = [row for row in historical_rows if row not in completed_penc276_rows]
     runtime = read_json(RUNTIME_PROMOTION)
     queue = [queue_record(row, source_by_char) for row in rows]
     reason_counts = Counter(row["block_reason"] for row in queue)
@@ -214,9 +227,11 @@ def build() -> dict[str, Any]:
         },
     ]
     checks = {
-        "blocked_row_count_matches_runtime": len(queue)
-        == runtime["summary"]["force_approved_not_patched_rows"]
-        == EXPECTED_BLOCKED_ROWS,
+        "blocked_row_count_matches_runtime": (
+            len(queue)
+            == runtime["summary"]["force_approved_not_patched_rows"] - len(completed_penc276_rows)
+            == EXPECTED_BLOCKED_ROWS
+        ),
         "blocked_reason_counts_match_expected": dict(reason_counts) == EXPECTED_REASON_COUNTS,
         "all_rows_keep_no_write_status": all(row["write_status"] == "NO_SOURCE_TABLE_WRITE" for row in queue),
         "all_rows_keep_no_database_status": all(row["database_status"] == "NO_DATABASE_REBUILD" for row in queue),
@@ -245,6 +260,8 @@ def build() -> dict[str, Any]:
         "overall_status": "PASS_8105_RUNTIME_BLOCKER_RESOLUTION_PLAN_READY" if all_checks_pass else "BLOCKED",
         "summary": {
             "total_blocked_rows": len(queue),
+            "historical_blocked_rows": len(historical_rows),
+            "penc276_completed_rows": len(completed_penc276_rows),
             "block_reason_counts": dict(reason_counts),
             "resolution_class_counts": dict(class_counts),
             "source_model_presence_counts": dict(source_presence_counts),

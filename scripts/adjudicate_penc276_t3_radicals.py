@@ -9,7 +9,6 @@ import sqlite3
 from collections import defaultdict
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parents[1]
 DB = ROOT / "data" / "cnbe32.db"
 INVENTORY = ROOT / "evidence" / "8105" / "PENDING_276_ENCODING_INVENTORY.csv"

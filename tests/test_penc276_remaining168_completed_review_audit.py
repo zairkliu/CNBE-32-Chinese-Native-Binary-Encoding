@@ -1,6 +1,12 @@
 """Cover no-write intake checks and deterministic ihandian sample selection."""
 
-from scripts.audit_penc276_remaining168_completed_review import HUMAN_APPROVED_NONRENDERABLE_REFERENCE_ROWS, comparable_fixed_value, compact_decomposition, excel_date, select_stratified_smoke_sample
+from scripts.audit_penc276_remaining168_completed_review import (
+    HUMAN_APPROVED_NONRENDERABLE_REFERENCE_ROWS,
+    compact_decomposition,
+    comparable_fixed_value,
+    excel_date,
+    select_stratified_smoke_sample,
+)
 
 
 def test_completed_review_helpers_keep_decomposition_and_excel_date_stable() -> None:

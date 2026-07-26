@@ -16,7 +16,6 @@ import re
 from pathlib import Path
 from typing import Any
 
-
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CODEPOINT = "2B80A"
 DEFAULT_OUTPUT = ROOT / "evidence" / "validation" / "ihandian" / "U_2B80A_IHANDIAN_REFERENCE.json"

@@ -8,7 +8,6 @@ import subprocess
 import sys
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "scripts" / "build_penc276_remaining168_chinese_review_packet.py"
 PACKET = ROOT / "review_packets" / "pending276" / "PENC276_REMAINING_168_CHINESE_HUMAN_REVIEW_PACKET_EDITABLE.csv"
