@@ -25,9 +25,9 @@ BLOCKED_CSV = OUTPUT_DIR / "cnbe32_8105_human_force_approved_copy_blocked_queue.
 JSON_REPORT = Path("evidence/agent-standard/cnbe8105_copied_dataset_write_plan.json")
 MD_REPORT = Path("evidence/agent-standard/CNBE8105_COPIED_DATASET_WRITE_PLAN.md")
 
-EXPECTED_SOURCE_ROWS = 20902
+EXPECTED_SOURCE_ROWS = 21178
 EXPECTED_READY_ROWS = 6712
-EXPECTED_FORCE_BLOCKED_ROWS = 1393
+EXPECTED_FORCE_BLOCKED_ROWS = 1117
 HUMAN_DECISION_ID = "HUMAN_REVIEW_2026_07_19_CNBE32_DRY_RUN_FORCE_PASS"
 
 
@@ -126,10 +126,21 @@ def build() -> dict[str, Any]:
         for row in force_model["records"]
         if row["implementation_queue"] == "CNBE32_READY_WRITE_PLAN_CANDIDATE"
     ]
-    force_blocked_rows = [
+    historical_blocked_rows = [
         row
         for row in force_model["records"]
         if row["implementation_queue"] == "CNBE32_FORCE_APPROVED_BLOCKER_RESOLUTION_PLAN_CANDIDATE"
+    ]
+    # The authorized PENC276 batch resolved the former missing-runtime rows.
+    force_blocked_rows = [
+        row
+        for row in historical_blocked_rows
+        if not (
+            row.get("block_reason") == "missing_current_model_row"
+            and (source := source_by_char.get(row["character"])) is not None
+            and source.get("cnbe") is not None
+            and source.get("needs_encoding", 0) == 0
+        )
     ]
     updated_by_char = {row["char"]: dict(row) for row in source_rows}
     patch_rows: list[dict[str, Any]] = []
@@ -182,7 +193,7 @@ def build() -> dict[str, Any]:
             "偶": any(row["char"] == "偶" and row["proposed_struct_name"] == "左右" for row in patch_rows),
             "孓": any(row["char"] == "孓" and row["proposed_struct_name"] == "独体字" for row in patch_rows),
             "冁": any(row["char"] == "冁" and row["block_reason"] == "radical_resolution_blocked" for row in blocked_rows),
-            "㑇": any(row["char"] == "㑇" and row["block_reason"] == "missing_current_model_row" for row in blocked_rows),
+            "㑇": source_by_char["㑇"]["cnbe"] is not None and source_by_char["㑇"].get("needs_encoding", 0) == 0,
         },
         "no_source_table_writes": True,
         "no_database_rebuild": True,
@@ -239,7 +250,7 @@ def build() -> dict[str, Any]:
             "recommended_next_step": (
                 "Review the copied dataset and blocked queue. A later source-table "
                 "write requires explicit authorization plus a strategy for 964 "
-                "missing radicals, 276 missing current-model rows, and 153 "
+                "missing radicals and 153 "
                 "non-conservative radical mappings."
             ),
         },

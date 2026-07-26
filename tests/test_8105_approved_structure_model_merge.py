@@ -5,13 +5,13 @@ def test_approved_structure_merge_covers_8105_and_current_model() -> None:
     model = build()
     summary = model["summary"]
 
-    assert model["overall_status"] == "BLOCKED"
+    assert model["overall_status"] == "PASS_8105_APPROVED_STRUCTURE_MODEL_MERGE_READY"
     assert summary["total_rows"] == 8105
-    assert summary["current_model_rows"] == 20902
-    assert summary["current_model_intersection_rows"] == 7829
-    assert summary["missing_from_current_model_rows"] == 276
+    assert summary["current_model_rows"] == 21178
+    assert summary["current_model_intersection_rows"] == 8105
+    assert summary["missing_from_current_model_rows"] == 0
     assert summary["current_model_intersection_rows"] + summary["missing_from_current_model_rows"] == 8105
-    assert summary["current_model_confirmed_rows"] == 7337
+    assert summary["current_model_confirmed_rows"] == 7613
     assert summary["current_model_structure_repair_candidate_rows"] == 492
 
 
@@ -39,7 +39,7 @@ def test_known_regressions_are_marked_for_repair_or_insert() -> None:
     assert known["冁"]["merge_status"] == "CURRENT_MODEL_STRUCTURE_REPAIR_CANDIDATE"
     assert known["孓"]["approved_agent_structure"] == "独体字"
     assert known["孓"]["merge_status"] == "CURRENT_MODEL_STRUCTURE_CONFIRMED"
-    assert known["㑇"]["merge_status"] == "MISSING_FROM_CURRENT_CNBE_AGENT_INSERT_CANDIDATE"
+    assert known["㑇"]["merge_status"] == "CURRENT_MODEL_STRUCTURE_CONFIRMED"
 
 
 def test_approved_structure_merge_keeps_no_write_boundary() -> None:
