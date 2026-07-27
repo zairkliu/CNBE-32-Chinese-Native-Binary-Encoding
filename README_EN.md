@@ -1,4 +1,4 @@
-﻿<p align="center">
+<p align="center">
   <strong>CNBE-32</strong><br>
   Chinese Native Binary Encoding
 </p>
@@ -131,6 +131,45 @@ For a one-page research framing of the current direction, time point,
 reproducibility path, technical feasibility, and scientific value, see
 [CNBE Research Position Statement](./docs/CNBE_RESEARCH_POSITION_STATEMENT.md).
 
+## v11: 8105 QLoRA Deep Learning Training (Jul 2026)
+
+5,000-step QLoRA fine-tuning on DeepSeek-R1-Distill-Qwen-1.5B with 8105 national-standard data.
+
+| Metric | Value |
+|--------|:-----:|
+| Training steps | 5,000 |
+| Training time | 5.8h (RTX 4060 Ti) |
+| Final training loss | 0.1493 |
+| Final eval loss | 0.09179 |
+| LoRA adapter size | 73.9 MB |
+
+### Evaluation Results
+
+| Task | Result |
+|:-----|:------:|
+| Structure classification | **66.0%** |
+| Confusing character discrimination | **92.7%** |
+| Stroke count (+-2) | **54.0%** |
+| Unseen character generalization | Matches seen chars |
+| Semantic clustering | ratio=0.99x (boundary: structural encoding != semantic embedding) |
+
+### Deployment
+
+- **API Server**: FastAPI REST service on port 8000
+- **Ollama**: `ollama create cnbe-32`
+- **OCR Pipeline**: PDF → deepseek-ocr → CNBE encoding
+
+See `tools/deploy/` for details.
+
+### Model and documentation
+
+- **ModelScope model page**: [zairkliu/CNBE-32](https://www.modelscope.cn/models/zairkliu/CNBE-32) — GGUF FP16 inference model (3.55 GB), ready for `ollama create`
+- [Technical White Paper v1.1](./docs/CNBE32_技术白皮书_v1.1.md)
+- [v11 experiment notes](./llm_experiments/v11_8105_qlora/README.md)
+- [Training Report](./reports/v11_8105_qlora/TRAINING_REPORT.md)
+- [Field-level evaluation supplement](./reports/v11_8105_qlora/FIELD_EVAL_SUPPLEMENT.md)
+- [Deployment Guide](./tools/deploy/README.md)
+
 ## Agent and automation boundary
 
 The repository includes a GitHub-compatible Agent profile and Copilot
@@ -253,6 +292,13 @@ This repository contains research prototypes and early experiments. Results shou
 | Glyph Index | 11 | Basic CJK glyph index field |
 | Extension | 4 | Experimental extension field |
 
+> **Field semantics freeze status (v1.1, after the 2026-07-25 migration; see [Field Semantics Freeze v1.1](./docs/FIELD_SEMANTICS_FREEZE_v1.1.md)):**
+> - **Radical/Radix: in transition.** Currently stored under the Kangxi 214-radical convention; re-anchoring to the 201 main radicals of GF 0011-2009 awaits an authoritative mapping table (freeze §4).
+> - **Stroke: semantics frozen.** The data layer stores true values per GF 0013-2009; overflow representation beyond the 5-bit field (max 31) is an encoding-protocol concern (WS-6), and the data layer does not truncate.
+> - **Structure: frozen.** The 13 labels map one-to-one to GF 0017-2013 §3.12; `struct_type` is frozen to the Chinese-track 13-value numbering (0=independent ... 12=inlay), and the English-track numbering is deprecated.
+> - **Glyph Index: deprecated.** `idx = (unicode - 0x4E00) mod 2048` is a lossy hash and must not be used as an addressing key; the Unicode code point is the sole identifier. idx is read-only compatibility from v1.1 and will be removed in v1.2.
+> - **Ext: experimental.** No compatibility promises.
+
 ---
 
 ## Formal mathematics (research definitions)
@@ -334,43 +380,6 @@ CNBE-32 includes machine-readable golden vectors in [spec/golden_vectors.json](.
 - [Contributing guide](./CONTRIBUTING.md)
 - [Security policy](./SECURITY.md)
 
-
-## v11: 8105 QLoRA Deep Learning Training (Jul 2026)
-
-5,000-step QLoRA fine-tuning on DeepSeek-R1-Distill-Qwen-1.5B with 8105 national-standard data.
-
-| Metric | Value |
-|--------|:-----:|
-| Training steps | 5,000 |
-| Training time | 5.8h (RTX 4060 Ti) |
-| Final training loss | 0.1493 |
-| Final eval loss | 0.09179 |
-| LoRA adapter size | 73.9 MB |
-
-### Evaluation Results
-
-| Task | Result |
-|:-----|:------:|
-| Structure classification | **66.0%** |
-| Confusing character discrimination | **92.7%** |
-| Stroke count (+-2) | **54.0%** |
-| Unseen character generalization | Matches seen chars |
-| Semantic clustering | ratio=0.99x (boundary) |
-
-### Deployment
-
-- **API Server**: FastAPI REST service on port 8000
-- **Ollama**: `ollama create cnbe-32`
-- **OCR Pipeline**: PDF → deepseek-ocr → CNBE encoding
-
-See `tools/deploy/` for details.
-
-### Documentation
-
-- [Technical White Paper v1.1](./docs/CNBE32_技术白皮书_v1.1.md)
-- [Training Report](./reports/v11_8105_qlora/TRAINING_REPORT.md)
-- [Deployment Guide](./tools/deploy/README.md)
 ## License
 
 MulanPSL-2.0
-

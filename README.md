@@ -1,11 +1,11 @@
-﻿<p align="center">
+<p align="center">
   <strong>CNBE-32</strong><br>
   Chinese Native Binary Encoding
 </p>
 
 <p align="center">
-  <a href="./README.md">English</a> 路
-  <a href="./README_ZH.md">绠€浣撲腑鏂?/a> 路
+  <a href="./README.md">English</a> ·
+  <a href="./README_ZH.md">简体中文</a> ·
   <a href="./README_EN.md">English mirror</a>
 </p>
 
@@ -18,7 +18,7 @@
   <img alt="Extended scope" src="https://img.shields.io/badge/97%2C686-experimental%20target-lightgrey">
 </p>
 
-A 32-bit structural fingerprint for CJK characters 鈥?built for people who wonder what Chinese text would look like if it were designed closer to the metal.
+A 32-bit structural fingerprint for CJK characters — built for people who wonder what Chinese text would look like if it were designed closer to the metal.
 
 > **CNBE-32 is a research prototype.**
 > The checked-in Python SDK runtime now contains **21,178 entries**, including the 276 PENC276 characters completed under the project human-audit baseline.
@@ -70,14 +70,14 @@ Governance documents:
 - [CNBE 8105 Standardized Runtime Repair](./reports/8105_STANDARDIZED_RUNTIME_REPAIR.md)
 - [Field Semantics Freeze v1.1](./docs/FIELD_SEMANTICS_FREEZE_v1.1.md)
 - [v1.1 Migration Tooling and Verification](./reports/MIGRATION_V1_1_WS7WS8.md)
-- [276-character authorized encoding candidates](./evidence/8105/pending276/PENC276_AUTHORIZED_ENCODING_CANDIDATES.csv) 鈥?Unicode-first, human-audited candidate table used for the completed runtime write
-- [276-character authorized encoding report](./reports/PENC276_AUTHORIZED_ENCODING_APPLY.md) 鈥?reproducible write result for JSON and both SQLite runtime databases
-- [iHandian network-dictionary cross-reference rule](./skill/references/ihandian.md) 鈥?Unicode-first, single-character, read-only reference at the same review tier as dictionary/ZDIC context
+- [276-character authorized encoding candidates](./evidence/8105/pending276/PENC276_AUTHORIZED_ENCODING_CANDIDATES.csv) — Unicode-first, human-audited candidate table used for the completed runtime write
+- [276-character authorized encoding report](./reports/PENC276_AUTHORIZED_ENCODING_APPLY.md) — reproducible write result for JSON and both SQLite runtime databases
+- [iHandian network-dictionary cross-reference rule](./skill/references/ihandian.md) — Unicode-first, single-character, read-only reference at the same review tier as dictionary/ZDIC context
 - [WS-4 Benchmark Pre-Registration](./docs/benchmarks/WS4_BENCHMARK_PRE_REGISTRATION.md)
 
 ### T3 exploratory batch: human audit first
 
-All 276 PENC276 characters have completed **human structure/decomposition audit**: the first 108 characters (`PENC_169`鈥揱PENC_276`) form the T3 baseline, and the remaining 168 were completed through the same Chinese review packet. The recorded human audit is the final project working baseline. 8105 and related national language-and-writing standards, Unihan, ZDIC, dictionaries, and iHandian are used for alignment, cross-checking, and difference discovery; they are not a 鈥済old standard鈥?that automatically overrides human conclusions. When external sources disagree, are incomplete, or expose glyph-rendering limits, the workflow preserves the original discrepancy and pending-adjudication state. Candidate generation and the runtime write were performed only after explicit owner authorization; the completed codes retain the project human-audit authority label rather than claiming national-standard certification.
+All 276 PENC276 characters have completed **human structure/decomposition audit**: the first 108 characters (`PENC_169`–`PENC_276`) form the T3 baseline, and the remaining 168 were completed through the same Chinese review packet. The recorded human audit is the final project working baseline. 8105 and related national language-and-writing standards, Unihan, ZDIC, dictionaries, and iHandian are used for alignment, cross-checking, and difference discovery; they are not a “gold standard” that automatically overrides human conclusions. When external sources disagree, are incomplete, or expose glyph-rendering limits, the workflow preserves the original discrepancy and pending-adjudication state. Candidate generation and the runtime write were performed only after explicit owner authorization; the completed codes retain the project human-audit authority label rather than claiming national-standard certification.
 
 The 168-character completion audit means all 276 rows now have human-reviewed structure/decomposition records. A stratified iHandian smoke test aligned Unicode and returned decomposition fields for 14/14 samples; 13 matched human decomposition exactly. `PENC_022` contains a human-approved nonrenderable component-glyph exception: its human decomposition is retained and it is not counted as a web-reference difference. The 348 historical migration disagreements remain a separate queue and are not closed by this result.
 
@@ -87,13 +87,13 @@ The 168-character completion audit means all 276 rows now have human-reviewed st
 
 Mathematics and review program:
 
-- [CNBE-32 Mathematical Structure](./docs/CNBE32_MATHEMATICAL_STRUCTURE.md) 鈥?standalone presentation of the 13 research formulas
-- [Formal Mathematical Specification (EN)](./docs/specification/CNBE_FORMAL_MATHEMATICAL_SPECIFICATION.md) / [涓枃鐗圿(./docs/specification/CNBE_FORMAL_MATHEMATICAL_SPECIFICATION_ZH.md)
-- [Formula Verification Report](./experiments/morphology_computing/reports/FORMAL_FORMULA_VERIFICATION_REPORT.md) 鈥?13/13 mathematical PASS, 0 scientific performance claims validated
-- [Verification Manifest](./experiments/morphology_computing/reports/formal_formula_verification_manifest.json) 鈥?machine-readable, SHA-256 pinned
-- [P1 External Review Method (EN)](./docs/specification/P1_EXTERNAL_REVIEW_METHOD.md) / [涓枃鐗圿(./docs/specification/P1_EXTERNAL_REVIEW_METHOD_ZH.md)
-- [P1 External Review Execution Kit](./docs/review/P1_EXTERNAL_REVIEW_EXECUTION_KIT.md) 鈥?reviewer-facing instructions for the 600-row blinded packet
-- [External Review Packet](./experiments/morphology_computing/review_packets/P1_EXTERNAL_INDEPENDENT_REVIEW_PACKET_EDITABLE.csv) 鈥?600 blinded rows awaiting independent review
+- [CNBE-32 Mathematical Structure](./docs/CNBE32_MATHEMATICAL_STRUCTURE.md) — standalone presentation of the 13 research formulas
+- [Formal Mathematical Specification (EN)](./docs/specification/CNBE_FORMAL_MATHEMATICAL_SPECIFICATION.md) / [中文版](./docs/specification/CNBE_FORMAL_MATHEMATICAL_SPECIFICATION_ZH.md)
+- [Formula Verification Report](./experiments/morphology_computing/reports/FORMAL_FORMULA_VERIFICATION_REPORT.md) — 13/13 mathematical PASS, 0 scientific performance claims validated
+- [Verification Manifest](./experiments/morphology_computing/reports/formal_formula_verification_manifest.json) — machine-readable, SHA-256 pinned
+- [P1 External Review Method (EN)](./docs/specification/P1_EXTERNAL_REVIEW_METHOD.md) / [中文版](./docs/specification/P1_EXTERNAL_REVIEW_METHOD_ZH.md)
+- [P1 External Review Execution Kit](./docs/review/P1_EXTERNAL_REVIEW_EXECUTION_KIT.md) — reviewer-facing instructions for the 600-row blinded packet
+- [External Review Packet](./experiments/morphology_computing/review_packets/P1_EXTERNAL_INDEPENDENT_REVIEW_PACKET_EDITABLE.csv) — 600 blinded rows awaiting independent review
 
 Earlier AI-generated catalog fields are now treated as a historical test
 baseline only. They remain useful for regression localization, but they are not
@@ -110,11 +110,11 @@ AI-generated catalog that inspired it. The current project rationale is:
 - use the 8105 common standardized Chinese character table as the release-track
   national-standard core;
 - use GF/GB/GG language and writing standards for each Hanzi attribute (alignment status: [Standards Compliance Statement](./docs/CNBE_STANDARDS_COMPLIANCE_STATEMENT.md)):
-  - structure 鈫?GF 0017-2013 搂3.12 (independent + 12 compound types; the project's 13 labels map one-to-one)
-  - radicals 鈫?GF 0011-2009 / GF 0012-2009 (anchoring in progress)
-  - independent characters 鈫?GF 0013-2009 (direction aligned, not yet verified per character)
-  - components and decomposition 鈫?GF 0014-2009 / GF 3001-1997 (direction aligned, not yet verified per character)
-  - stroke order and stroke shapes 鈫?GF 0023-2020 / GF 3002-1999
+  - structure → GF 0017-2013 §3.12 (independent + 12 compound types; the project's 13 labels map one-to-one)
+  - radicals → GF 0011-2009 / GF 0012-2009 (anchoring in progress)
+  - independent characters → GF 0013-2009 (direction aligned, not yet verified per character)
+  - components and decomposition → GF 0014-2009 / GF 3001-1997 (direction aligned, not yet verified per character)
+  - stroke order and stroke shapes → GF 0023-2020 / GF 3002-1999
 - character identity is carried by the Unicode code point; a bidirectional mapping layer with GB 18030-2022 is on the roadmap;
 - use dictionaries, character-origin resources, Wikipedia, and ZDIC only as
   review context or source-discovery aids unless a field is explicitly labeled
@@ -131,75 +131,46 @@ For a one-page research framing of the current direction, time point,
 reproducibility path, technical feasibility, and scientific value, see
 [CNBE Research Position Statement](./docs/CNBE_RESEARCH_POSITION_STATEMENT.md).
 
-## v11: 8105 QLoRA 深度学习训练（2026-07）
+## v11: 8105 QLoRA Deep Learning Training (Jul 2026)
 
-基于 8105 国家标准的 QLoRA 微调实验，在 DeepSeek-R1-Distill-Qwen-1.5B 上完成 5000 步训练。
+5,000-step QLoRA fine-tuning on DeepSeek-R1-Distill-Qwen-1.5B with 8105 national-standard data.
 
-### 训练结果
+| Metric | Value |
+|--------|:-----:|
+| Training steps | 5,000 |
+| Training time | 5.8h (RTX 4060 Ti) |
+| Final training loss | 0.1493 |
+| Final eval loss | 0.09179 |
+| LoRA adapter size | 73.9 MB |
 
-| 指标 | 值 |
-|------|:----:|
-| 训练步数 | 5,000 |
-| 训练时间 | 5.8 小时（RTX 4060 Ti） |
-| 最终训练 loss | 0.1493 |
-| 最终验证 loss | 0.09179 |
-| LoRA 适配器 | 73.9 MB（18.5M 参数） |
+### Evaluation Results
 
-### 实验验证
+| Task | Result |
+|:-----|:------:|
+| Structure classification | **66.0%** |
+| Confusing character discrimination | **92.7%** |
+| Stroke count (+-2) | **54.0%** |
+| Unseen character generalization | Matches seen chars |
+| Semantic clustering | ratio=0.99x (boundary: structural encoding != semantic embedding) |
 
-| 实验 | 结果 | 说明 |
-|:----|:----:|:-----|
-| 结构分类 | **66.0%** | 13 种结构类型（左右/上下/包围等） |
-| 形近字区分 | **92.7%** | 戊/戌/戍、己/已/巳 等混淆对 |
-| 笔画感知 | **54% ±2** | 笔画数预测在 ±2 容忍度内 |
-| 生僻字泛化 | 持平 | 未见字符表现与已见字符一致 |
-| 语义聚类 | ratio=0.99x | 边界确认：结构编码≠语义嵌入 |
+### Deployment
 
-### 古籍 OCR 验证
+- **API Server**: FastAPI REST service on port 8000
+- **Ollama**: `ollama create cnbe-32`
+- **OCR Pipeline**: PDF → deepseek-ocr → CNBE encoding
 
-| 古籍 | 识别字数 | OCR引擎 | 编码模型 |
-|:-----|:--------:|:--------:|:--------:|
-| 大明会典（明内府刻本） | 7,480/5页 | deepseek-ocr | 5000步 |
-| 永乐大典·卷981（哈佛藏） | 3,373/5页 | deepseek-ocr | 5000步 |
+See `tools/deploy/` for details.
 
-### 部署方式
+### Model and documentation
 
-提供三种部署方案（详见 `tools/deploy/`）：
+- **ModelScope model page**: [zairkliu/CNBE-32](https://www.modelscope.cn/models/zairkliu/CNBE-32) — GGUF FP16 inference model (3.55 GB), ready for `ollama create`
+- [Technical White Paper v1.1](./docs/CNBE32_技术白皮书_v1.1.md)
+- [v11 experiment notes](./llm_experiments/v11_8105_qlora/README.md)
+- [Training Report](./reports/v11_8105_qlora/TRAINING_REPORT.md)
+- [Field-level evaluation supplement](./reports/v11_8105_qlora/FIELD_EVAL_SUPPLEMENT.md)
+- [Deployment Guide](./tools/deploy/README.md)
 
-1. **API Server**: FastAPI REST 服务
-2. **Ollama 自定义模型**: `ollama create cnbe-32`
-3. **OCR 管线**: 古籍 PDF → OCR → CNBE 编码
-
-### 快速启动
-
-```bash
-# 合并 LoRA 适配器
-python tools/deploy/merge_adapter.py \
-    --adapter llm_experiments/v11_8105_qlora/checkpoints/lora-adapter \
-    --output merged-model
-
-# 启动 API 服务
-python tools/deploy/api_server.py --model merged-model
-
-# 调用编码接口
-curl -X POST http://localhost:8000/encode \
-    -H "Content-Type: application/json" \
-    -d '{"char": "好"}'
-# 返回: {"cnbe":{"radix":38,"stroke":6,"struct":1,"hex":"0x274C6010"}}
-```
-
-### 完整文档
-
-- [技术白皮书 v1.1](./docs/CNBE32_技术白皮书_v1.1.md)
-- [v11 实验说明](./llm_experiments/v11_8105_qlora/README.md)
-- [训练报告](./reports/v11_8105_qlora/TRAINING_REPORT.md)
-- [位域评估补充](./reports/v11_8105_qlora/FIELD_EVAL_SUPPLEMENT.md)
-- [部署文档](./tools/deploy/README.md)
-
----
-
-> **项目状态**: 研究原型 — 经过 AI 实证验证  
-> 8105 标准重建工作中。详细状态见 [CNBE 8105 编码治理](./docs/CNBE8105_ENCODING_GOVERNANCE.md)。## Agent and automation boundary
+## Agent and automation boundary
 
 The repository includes a GitHub-compatible Agent profile and Copilot
 instructions, but GitHub Copilot cloud agent execution is an optional paid
@@ -230,7 +201,11 @@ That makes CNBE-32 interesting for experiments in CJK-aware embeddings, low-leve
 
 ```text
 31              24 23        19 18     15 14                 4 3        0
-鈹屸攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹?鈹?Radical/Radix  鈹? Stroke    鈹?Struct  鈹?    Glyph Index     鈹?  Ext    鈹?鈹?    8 bits     鈹? 5 bits    鈹?4 bits  鈹?      11 bits       鈹? 4 bits  鈹?鈹斺攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹粹攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹粹攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹粹攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹粹攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹?```
+┌────────────────┬────────────┬─────────┬─────────────────────┬──────────┐
+│ Radical/Radix  │  Stroke    │ Struct  │     Glyph Index     │   Ext    │
+│     8 bits     │  5 bits    │ 4 bits  │       11 bits       │  4 bits  │
+└────────────────┴────────────┴─────────┴─────────────────────┴──────────┘
+```
 
 Think of it as a compact structural fingerprint, not a replacement for Unicode.
 
@@ -317,11 +292,18 @@ This repository contains research prototypes and early experiments. Results shou
 | Glyph Index | 11 | Basic CJK glyph index field |
 | Extension | 4 | Experimental extension field |
 
+> **Field semantics freeze status (v1.1, after the 2026-07-25 migration; see [Field Semantics Freeze v1.1](./docs/FIELD_SEMANTICS_FREEZE_v1.1.md)):**
+> - **Radical/Radix: in transition.** Currently stored under the Kangxi 214-radical convention; re-anchoring to the 201 main radicals of GF 0011-2009 awaits an authoritative mapping table (freeze §4).
+> - **Stroke: semantics frozen.** The data layer stores true values per GF 0013-2009; overflow representation beyond the 5-bit field (max 31) is an encoding-protocol concern (WS-6), and the data layer does not truncate.
+> - **Structure: frozen.** The 13 labels map one-to-one to GF 0017-2013 §3.12; `struct_type` is frozen to the Chinese-track 13-value numbering (0=independent ... 12=inlay), and the English-track numbering is deprecated.
+> - **Glyph Index: deprecated.** `idx = (unicode - 0x4E00) mod 2048` is a lossy hash and must not be used as an addressing key; the Unicode code point is the sole identifier. idx is read-only compatibility from v1.1 and will be removed in v1.2.
+> - **Ext: experimental.** No compatibility promises.
+
 ---
 
 ## Formal mathematics (research definitions)
 
-The encoding admits a compact formalization: bitfield extraction and binary-vector operators, a field-weighted morphological distance, and three candidate computational layers 鈥?a Poincar茅-ball embedding with a morphology-alignment loss, a bitwise MoE router, and a hyperdimensional (HDC/VSA) representation.
+The encoding admits a compact formalization: bitfield extraction and binary-vector operators, a field-weighted morphological distance, and three candidate computational layers — a Poincaré-ball embedding with a morphology-alignment loss, a bitwise MoE router, and a hyperdimensional (HDC/VSA) representation.
 
 Every formula group has a reference implementation with numerical property tests (reversibility, identity, symmetry, bounds, closure). These are **research definitions**: they do not certify the linguistic correctness of any field, and they do not by themselves demonstrate task-level gains. Candidate layers remain gated on external independent review.
 
@@ -367,7 +349,7 @@ Chinese characters are not just arbitrary symbols. Many carry visible structure:
 
 CNBE-32 does not claim to fully understand characters. It simply asks whether some of that visible structure can be encoded in a way computers can use directly.
 
-The project's structure taxonomy (independent, top-bottom, left-right, enclosure, and the other approved types 鈥?13 labels in total) maps one-to-one to the Hanzi structure classification in GF 0017-2013.
+The project's structure taxonomy (independent, top-bottom, left-right, enclosure, and the other approved types — 13 labels in total) maps one-to-one to the Hanzi structure classification in GF 0017-2013.
 
 ---
 
@@ -401,5 +383,3 @@ CNBE-32 includes machine-readable golden vectors in [spec/golden_vectors.json](.
 ## License
 
 MulanPSL-2.0
-
-
