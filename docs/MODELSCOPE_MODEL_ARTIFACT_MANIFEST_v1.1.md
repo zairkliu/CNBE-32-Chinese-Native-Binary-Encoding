@@ -6,6 +6,14 @@
 
 本清单把 GitHub 仓库与 ModelScope 下载制品之间可以直接核验的部分固定下来。它不把模型卡中的自述训练指标升级为独立复现实验结论。
 
+## 公开读取 API 与同步源
+
+- 元数据读取：`GET https://www.modelscope.cn/api/v1/models/zairkliu/CNBE-32`
+- 模型卡源文件读取：`GET https://www.modelscope.cn/api/v1/models/zairkliu/CNBE-32/repo?Revision=master&FilePath=README.md`
+- 待同步的中文模型卡源文件：[MODEL SCOPE CNBE-32 Model Card](./model_cards/MODELSCOPE_CNBE32_MODEL_CARD.md)
+
+公开 API 只用于核验读取。对 ModelScope 模型仓库 `README.md` 的写入必须经已认证账户完成，并在写入后重新读取上述端点核对内容与文件哈希。
+
 ## 已核验制品
 
 | 项目 | 值 |
