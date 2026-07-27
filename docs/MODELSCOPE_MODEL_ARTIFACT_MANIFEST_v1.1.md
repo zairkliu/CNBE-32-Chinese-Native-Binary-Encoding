@@ -1,18 +1,18 @@
 # CNBE-32 ModelScope 制品对齐清单 v1.1
 
-**状态：已核验下载制品；实验性能结论待复核**  
+**状态：当前发布模型基线的可核验制品记录**  
 **核验日期：2026-07-28**  
 **制品页：** <https://www.modelscope.cn/models/zairkliu/CNBE-32/summary>
 
-本清单把 GitHub 仓库与 ModelScope 下载制品之间可以直接核验的部分固定下来。它不把模型卡中的自述训练指标升级为独立复现实验结论。
+经项目所有者确认，ModelScope 的 `zairkliu/CNBE-32` GGUF 制品及其模型卡，是当前重编码后 DeepSeek-R1-Distill-Qwen-1.5B、5,000 步 QLoRA 发布模型的项目基线。本清单固定制品身份、字段编号、发布实验摘要与使用边界。
 
 ## 公开读取 API 与同步源
 
 - 元数据读取：`GET https://www.modelscope.cn/api/v1/models/zairkliu/CNBE-32`
 - 模型卡源文件读取：`GET https://www.modelscope.cn/api/v1/models/zairkliu/CNBE-32/repo?Revision=master&FilePath=README.md`
-- 待同步的中文模型卡源文件：[MODEL SCOPE CNBE-32 Model Card](./model_cards/MODELSCOPE_CNBE32_MODEL_CARD.md)
+- GitHub 中文模型卡源文件：[MODELSCOPE_CNBE32_MODEL_CARD.md](./model_cards/MODELSCOPE_CNBE32_MODEL_CARD.md)
 
-公开 API 只用于核验读取。对 ModelScope 模型仓库 `README.md` 的写入必须经已认证账户完成，并在写入后重新读取上述端点核对内容与文件哈希。
+公开 API 仅用于读取核验。对 ModelScope 模型仓库 `README.md` 的写入必须经已认证账户完成，并在写入后重新读取上述端点核对内容与文件哈希。
 
 ## 已核验制品
 
@@ -38,6 +38,12 @@ sha256sum model-f16.gguf
 # 必须等于 542e5edd7594194749de13953bd7d00903ebb4fcdbafdfa07c7ffc4b97eef5f9
 ```
 
+## 发布训练与评测摘要
+
+当前发布模型卡记录：12,163 个训练样本、7,602 个标准轨字符、RTX 4060 Ti 8GB、5.8 小时训练、5,000 steps、最终训练 loss 0.1493、最终验证 loss 0.09179。其任务内结果包括 13 类结构 66.0%、41 对形近字区分 92.7%、笔画数 ±2 为 54.0%、任意单字段正确 70.0%。
+
+这些数字是当前发布制品在模型卡所述任务与样本条件下的发布实验记录；它们不构成国家标准符合性、逐字编码正确率、通用 OCR 性能或自动数据写入授权。
+
 ## 结构编号的唯一规范
 
 模型提示、GitHub 部署文件和数据解释统一采用字段冻结草案中的中文轨 13 值编号：
@@ -60,9 +66,14 @@ sha256sum model-f16.gguf
 
 来源：[字段语义冻结规范 v1.1 §2](./FIELD_SEMANTICS_FREEZE_v1.1.md)。历史英文轨编号及历史部署提示不得与本表混用。
 
+## 历史材料与归档
+
+- `reports/v11_8105_qlora/TRAINING_REPORT.md` 的 1,000-step DeepSeek 记录，是模型上传期间的历史中间状态；它不覆盖当前发布的 5,000-step ModelScope 基线。
+- 重编码前 Qwen3.5-0.8B 的演示、脚本、日志与白皮书已归档至 [legacy-ai-encoding-baseline 分支](https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding/tree/test/legacy-ai-encoding-baseline)，不属于当前发布模型或数据主线。
+
 ## 对齐的 Ollama 使用方式
 
-ModelScope 制品中的 `Modelfile` 已记录为当前下载制品的提示模板。仓库的 `tools/deploy/Modelfile` 使用同一结构编号，并额外写入候选结果与人工审核边界；在 ModelScope 模型卡同步该边界前，两者不宣称字节一致。下载文件与仓库的 `tools/deploy/Modelfile` 置于同一目录后：
+ModelScope 制品中的 `Modelfile` 已记录为当前下载制品的提示模板。仓库的 `tools/deploy/Modelfile` 使用同一结构编号，并额外写入候选结果与人工审核边界；两者不宣称字节一致。下载文件与仓库的 `tools/deploy/Modelfile` 置于同一目录后：
 
 ```bash
 ollama create cnbe-32 -f Modelfile
@@ -71,25 +82,15 @@ ollama run cnbe-32 "汉字：好"
 
 建议 `temperature <= 0.1`。这只完成模型推理调用，不验证输出字段的语言文字正确性。
 
-## 实验结果的当前边界
+## 使用边界
 
-ModelScope 模型卡自述包含 5,000 步训练与若干评测数字；但 GitHub 已提交的 `reports/v11_8105_qlora/TRAINING_REPORT.md` 记录的是 1,000 步完成。两者尚未由同一不可变运行清单关联，因此：
-
-- 不在项目首页将 5,000 步、训练时长、loss、66.0%、92.7% 或泛化结论作为已确认项目结果；
-- 不以模型输出替代 Unicode 对齐、国家标准证据或人工审核；
-- 不允许模型自动写入 CNBE 运行时表；
-- 在补齐清单前，模型制品只能作为研究性候选预测器发布。
-
-重新确认实验结论至少需要：模型 revision 或文件哈希、基础模型版本与许可证、训练配置、数据输入哈希、训练/验证/测试切分与随机种子、适配器哈希、原始评测 JSON、评测命令、以及基线比较。
-
-## 未完成的互操作性项
-
-`tools/deploy/api_server.py` 面向 Hugging Face 基础模型加 LoRA 适配器；ModelScope 下载物是 GGUF 推理文件。两者尚未提供“同一权重、同一提示模板、同一输出”的可复现等价验证。因此 API 路径是独立实验路径，不能宣称与 ModelScope GGUF 制品结果等价。
+- 模型输出必须作为候选结果保存，并先完成 Unicode 身份对齐。
+- 结构、部首、笔画、笔顺与拆分仍须经过国家规范对齐、来源证据和人工审核。
+- 模型输出不得自动写入 JSON、SQLite 或发布运行时表。
+- `tools/deploy/api_server.py` 使用 Hugging Face 基础模型与可选 LoRA；它与 GGUF 制品尚未提供逐权重、逐提示、逐输出等价证明，因此是独立实验部署路径。
 
 相关材料：
 
-- [ModelScope 模型页](https://www.modelscope.cn/models/zairkliu/CNBE-32)
-- [v11 实验说明](../llm_experiments/v11_8105_qlora/README.md)
-- [训练报告](../reports/v11_8105_qlora/TRAINING_REPORT.md)
-- [字段评测补充](../reports/v11_8105_qlora/FIELD_EVAL_SUPPLEMENT.md)
+- [ModelScope 发布基线](./V11_MODELSCOPE_RELEASE_BASELINE.md)
+- [ModelScope 中文模型卡](./model_cards/MODELSCOPE_CNBE32_MODEL_CARD.md)
 - [README 证据状态说明](./README_EVIDENCE_STATUS.md)
