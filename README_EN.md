@@ -1,4 +1,4 @@
-<p align="center">
+﻿<p align="center">
   <strong>CNBE-32</strong><br>
   Chinese Native Binary Encoding
 </p>
@@ -334,6 +334,43 @@ CNBE-32 includes machine-readable golden vectors in [spec/golden_vectors.json](.
 - [Contributing guide](./CONTRIBUTING.md)
 - [Security policy](./SECURITY.md)
 
+
+## v11: 8105 QLoRA Deep Learning Training (Jul 2026)
+
+5,000-step QLoRA fine-tuning on DeepSeek-R1-Distill-Qwen-1.5B with 8105 national-standard data.
+
+| Metric | Value |
+|--------|:-----:|
+| Training steps | 5,000 |
+| Training time | 5.8h (RTX 4060 Ti) |
+| Final training loss | 0.1493 |
+| Final eval loss | 0.09179 |
+| LoRA adapter size | 73.9 MB |
+
+### Evaluation Results
+
+| Task | Result |
+|:-----|:------:|
+| Structure classification | **66.0%** |
+| Confusing character discrimination | **92.7%** |
+| Stroke count (+-2) | **54.0%** |
+| Unseen character generalization | Matches seen chars |
+| Semantic clustering | ratio=0.99x (boundary) |
+
+### Deployment
+
+- **API Server**: FastAPI REST service on port 8000
+- **Ollama**: `ollama create cnbe-32`
+- **OCR Pipeline**: PDF → deepseek-ocr → CNBE encoding
+
+See `tools/deploy/` for details.
+
+### Documentation
+
+- [Technical White Paper v1.1](./docs/CNBE32_技术白皮书_v1.1.md)
+- [Training Report](./reports/v11_8105_qlora/TRAINING_REPORT.md)
+- [Deployment Guide](./tools/deploy/README.md)
 ## License
 
 MulanPSL-2.0
+
