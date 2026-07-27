@@ -15,14 +15,18 @@
 | 数学程序 | 13 组公式性质测试通过；这仅验证实现性质，不验证语言学正确性或任务性能。 | `experiments/morphology_computing/reports/FORMAL_FORMULA_VERIFICATION_REPORT.md` |
 | 外部评审 | P1 独立评审仍是待完成门禁。 | `docs/review/P1_EXTERNAL_REVIEW_EXECUTION_KIT.md` |
 
-## 模型实验的证据边界
+## 模型发布基线与边界
 
-仓库目前同时存在“5,000 步”描述和一份记录“1,000 步完成”的训练报告；字段评测补充文件的 66.0%、92.7% 等数值也没有在同一份不可变实验清单中绑定完整数据切分、随机种子、模型制品哈希和测试输出。因此：
+项目所有者指定 [ModelScope 发布页](https://www.modelscope.cn/models/zairkliu/CNBE-32) 及其 GGUF 文件为当前 v11 模型发布基线：DeepSeek-R1-Distill-Qwen-1.5B 的 5,000 步 QLoRA 制品。该文件的大小与 SHA-256 固定于 [ModelScope 制品对齐清单](./MODELSCOPE_MODEL_ARTIFACT_MANIFEST_v1.1.md)。
 
-1. README 不把上述数值表述为已确认的项目性能结论。
-2. 模型入口可保留为实验制品入口，但必须标注“研究性候选预测器”。
-3. 任何模型输出不得自动写入运行时编码表。
-4. 重新发布性能数字前，必须提交训练配置、数据清单、切分与种子、模型或适配器校验和、原始评测 JSON、复现实验命令及基线比较。
+仓库中记录 1,000 步的 DeepSeek 训练报告属于模型上传过程的临时历史材料，不覆盖当前发布基线。重编码前的 Qwen3.5-0.8B 训练、日志和旧编码实验已迁移到 [test/legacy-ai-encoding-baseline](https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding/tree/test/legacy-ai-encoding-baseline) 分支，不参与当前模型和数据主线。
+
+README 可引用 ModelScope 发布基线中列出的训练与评测摘要，但必须同时保留以下限制：
+
+1. 模型为研究性候选预测器，不是语言文字标准的权威解释器。
+2. 任何模型输出不得自动写入运行时编码表。
+3. 评测数字仅适用于模型卡定义的实验任务、样本与制品版本，不外推为逐字编码正确率、国家标准符合性或通用 OCR 性能。
+4. 后续重新训练或替换 GGUF 时，必须更新制品 SHA-256、模型卡和发布基线文件。
 
 ## 维护要求
 
