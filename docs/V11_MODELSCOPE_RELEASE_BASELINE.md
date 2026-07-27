@@ -41,7 +41,7 @@
 ## 历史材料的归属
 
 - `reports/v11_8105_qlora/TRAINING_REPORT.md` 所记录的 1,000 步 DeepSeek 训练，是模型上传过程中的临时历史状态，不是当前 ModelScope 发布基线。
-- Qwen3.5-0.8B 与旧编码相关的演示、脚本、日志和白皮书均归档至 [test/legacy-ai-encoding-baseline](../../tree/test/legacy-ai-encoding-baseline) 分支，不属于重编码后的当前模型。
+- Qwen3.5-0.8B 与旧编码相关的演示、脚本、日志和白皮书均归档至 [test/legacy-ai-encoding-baseline](https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding/tree/test/legacy-ai-encoding-baseline) 分支，不属于重编码后的当前模型。
 - 当前发布模型不使用旧 AI 编码作为国家标准或人工审核的替代依据。
 
 ## 使用边界
@@ -56,4 +56,4 @@
 - [ModelScope 发布页](https://www.modelscope.cn/models/zairkliu/CNBE-32)
 - [ModelScope 制品对齐清单](./MODELSCOPE_MODEL_ARTIFACT_MANIFEST_v1.1.md)
 - [字段语义冻结规范](./FIELD_SEMANTICS_FREEZE_v1.1.md)
-- [历史 Qwen 归档分支](../../tree/test/legacy-ai-encoding-baseline)
+- [历史 Qwen 归档分支](https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding/tree/test/legacy-ai-encoding-baseline)
