@@ -1,4 +1,4 @@
-﻿# CNBE-32 Experiment Design Reference (v1-v7)
+# CNBE-32 Experiment Design Reference (v1-v7)
 
 ## v1: Single-Character Validation
 

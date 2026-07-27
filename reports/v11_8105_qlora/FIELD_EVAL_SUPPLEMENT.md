@@ -1,4 +1,4 @@
-﻿
+
 ## Field-Level Evaluation Results (Updated)
 
 After fixing the evaluation to use the **proper chat template** (which matches the training format), the results changed dramatically:

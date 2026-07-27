@@ -1,4 +1,4 @@
-﻿# CNBE-32 技术白皮书
+# CNBE-32 技术白皮书
 
 ## Chinese Native Binary Encoding 32-bit
 

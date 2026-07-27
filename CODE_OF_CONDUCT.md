@@ -1,4 +1,4 @@
-﻿# 贡献者公约行为准则 / Contributor Covenant Code of Conduct
+# 贡献者公约行为准则 / Contributor Covenant Code of Conduct
 
 ## 我们的承诺 / Our Pledge
 

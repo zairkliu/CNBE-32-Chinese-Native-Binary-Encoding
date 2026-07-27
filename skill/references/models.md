@@ -1,4 +1,4 @@
-﻿# Ollama Model Setup
+# Ollama Model Setup
 
 ## Installation
 

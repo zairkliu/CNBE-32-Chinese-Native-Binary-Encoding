@@ -1,4 +1,4 @@
-﻿---
+---
 name: cnbe32-experiment
 description: "Reproduce and extend CNBE-32 experiments (v1-v8.1) using local LLMs via Ollama, supporting DeepSeek, Qwen, Gemma, and OPT models. Use when the task involves: (1) encoding Chinese text with CNBE structural codes, (2) running controlled experiments comparing LLM understanding with and without CNBE annotation, (3) reproducing published white-paper results across all v1-v8 experiments, (4) evaluating CNBE vs Unicode numerical encoding, (5) testing model size vs encoding benefit, (6) preparing RISC-V cross-compilation tests, or (7) compiling Chinese source code to CNBE-enhanced RISC-V assembly."
 ---

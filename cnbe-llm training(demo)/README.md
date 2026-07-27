@@ -1,4 +1,4 @@
-﻿# CNBE-32 LLM Training Demo
+# CNBE-32 LLM Training Demo
 
 This directory contains the **Qwen3.5-0.8B LoRA fine-tuning demo** for CNBE-32 encoding knowledge injection.
 

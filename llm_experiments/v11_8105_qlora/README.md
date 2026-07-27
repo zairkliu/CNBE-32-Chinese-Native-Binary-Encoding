@@ -1,4 +1,4 @@
-﻿# v11: 8105 QLoRA Fine-tuning Experiment
+# v11: 8105 QLoRA Fine-tuning Experiment
 
 ## Overview
 Fine-tune DeepSeek-R1-Distill-Qwen-1.5B on CNBE-32 8105 standardized character encodings using QLoRA (4-bit NF4).

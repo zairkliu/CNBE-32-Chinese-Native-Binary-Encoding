@@ -1,4 +1,4 @@
-﻿# Linux 0.01 CNBE-32 RISC-V
+# Linux 0.01 CNBE-32 RISC-V
 
 A technical exploration: porting **Linux 0.01** (the first Linux kernel by Linus Torvalds, 1991) from x86 to **RISC-V 64** with **CNBE-32 (Chinese Native Binary Encoding)** — creating a fully Chinese-native operating system kernel.
 

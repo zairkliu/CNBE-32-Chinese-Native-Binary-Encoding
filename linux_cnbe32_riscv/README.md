@@ -1,4 +1,4 @@
-﻿# Linux 0.01 CNBE-32 RISC-V
+# Linux 0.01 CNBE-32 RISC-V
 
 将 Linux 0.01 转译为 **RISC-V 64 + CNBE-32 中文原生二进制编码** 的全中文操作系统内核技术探讨。
 

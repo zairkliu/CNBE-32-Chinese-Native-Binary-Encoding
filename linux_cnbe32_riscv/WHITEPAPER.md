@@ -1,4 +1,4 @@
-﻿# CNBE-32 Linux RISC-V 技术白皮书
+# CNBE-32 Linux RISC-V 技术白皮书
 
 ## 项目定位
 

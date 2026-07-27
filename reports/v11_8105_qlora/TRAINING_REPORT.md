@@ -1,4 +1,4 @@
-﻿# CNBE-32 8105 LLM Training Report
+# CNBE-32 8105 LLM Training Report
 
 ## Project Overview
 This report documents the targeted LoRA fine-tuning of deepseek-r1:1.5b on the CNBE-32 8105 Chinese character encoding scheme.
