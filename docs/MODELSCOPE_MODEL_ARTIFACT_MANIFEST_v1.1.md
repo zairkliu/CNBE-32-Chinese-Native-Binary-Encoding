@@ -54,7 +54,7 @@ sha256sum model-f16.gguf
 
 ## 对齐的 Ollama 使用方式
 
-仓库的 `tools/deploy/Modelfile` 与 ModelScope 制品中的 `Modelfile` 保持同一内容。下载文件与该文件置于同一目录后：
+ModelScope 制品中的 `Modelfile` 已记录为当前下载制品的提示模板。仓库的 `tools/deploy/Modelfile` 使用同一结构编号，并额外写入候选结果与人工审核边界；在 ModelScope 模型卡同步该边界前，两者不宣称字节一致。下载文件与仓库的 `tools/deploy/Modelfile` 置于同一目录后：
 
 ```bash
 ollama create cnbe-32 -f Modelfile
