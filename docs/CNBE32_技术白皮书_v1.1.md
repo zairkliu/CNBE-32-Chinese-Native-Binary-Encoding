@@ -94,7 +94,7 @@ CNBE-32 使用32位无符号整数作为编码载体，分为5个字段：
 
 | 汉字 | CNBE (hex) | 部首 | 索引 | 笔画 | 结构 |
 |:----:|:----------:|:----:|:----:|:----:|:----:|
-| 中 | 0x274C6010 | 女(38) | — | 6 | 左右(1) |
+| 好 | 0x26502030 | 女(38) | — | 6 | 左右(1) |
 | 国 | 0x04808001 | 囗(31) | — | 8 | 全包围(11) |
 | 是 | 0x0072C008 | 日(72) | — | 9 | 上下(3) |
 | 说 | 0x00944009 | 讠(149) | — | 9 | 左右(1) |
@@ -311,9 +311,26 @@ CNBE-32擅长:                     CNBE-32边界:
 | 古籍 | 版本 | 页数 | OCR字数 | 
 |:-----|:-----|:----:|:-------:|
 | 大明会典 | 明内府刻本 | 645/册×8 | 7,480/5页 |
-| 永乐大典·卷981 | 哈佛藏本 | 70 | 3,373/5页 |
+| 永乐大典·卷981·5页 | 哈佛藏本 | 70 | 3,373/5页 | deepseek-ocr |
+| 永乐大典·卷981·70页 | 哈佛藏本 | 70 | 45,214/70页 | deepseek-ocr |
 
-### 6.3 OCR识别效果
+### 6.3 全量验证结果（永乐大典70页）
+
+对全部70页进行全量OCR和CNBE编码评估：
+
+| 指标 | 5页样本 | 70页全量 |
+|:-----|:-------:|:--------:|
+| OCR总字数 | 3,373 | 45,214 |
+| 唯一字符 | 229 | 1,086 |
+| 频次范围 | — | 2,100~1 |
+| 同页对数 | 376 | 7,542 |
+| 同页距离 | 11.01 | 10.95 |
+| 随机距离 | 11.17 | 11.27 |
+| **比率** | **0.99x** | **0.97x** |
+
+**结论：** 5页样本与70页全量结果高度一致（ratio 0.97x vs 0.99x），CNBE语义边界结论在大样本量下被确认。同时跨古籍复现（大明会典0.97x = 永乐大典0.97x）。
+
+### 6.4 OCR识别效果
 
 `deepseek-ocr` 对古籍竖排文本识别效果良好：
 
@@ -346,6 +363,14 @@ POST /encode {"char": "好"}
 **方式二：Ollama自定义模型**
 ```bash
 ollama create cnbe-32 -f Modelfile
+
+Modelfile内容：
+```dockerfile
+FROM ./model-f16.gguf
+TEMPLATE """{{ .Prompt }}"""
+PARAMETER temperature 0.1
+``` (3.55 GB)
+    | Modelfile
 ollama run cnbe-32
 ```
 
@@ -354,14 +379,46 @@ ollama run cnbe-32
 python ocr_pipeline.py "古籍.pdf" 2 3 4
 ```
 
-### 7.2 部署文件结构
+### 7.2 GGUF封装与Ollama部署
+
+将LoRA适配器合并后转换为GGUF格式并注册到Ollama：
+
+```bash
+# 安装转换工具
+pip install convert-hf-to-gguf
+
+# HF to GGUF 转换（约60秒）
+python -m convert_hf_to_gguf merged-model     --outfile model-f16.gguf --outtype f16
+
+# Ollama 注册（约25秒）
+ollama create cnbe-32 -f Modelfile
+
+Modelfile内容：
+```dockerfile
+FROM ./model-f16.gguf
+TEMPLATE """{{ .Prompt }}"""
+PARAMETER temperature 0.1
+``` (3.55 GB)
+    | Modelfile
+
+# 运行（交互模式）
+ollama run cnbe-32 "汉字：好"
+
+# 运行（API模式）
+curl http://localhost:11434/api/generate   -d '{"model":"cnbe-32","prompt":"汉字：好","stream":false}'
+```
+
+GGUF模型规格：FP16 / 3.55 GB / Qwen2架构 / 28层 / 1536维 / 上下文131072
+
+### 7.3 部署文件结构
 
 ```
 outputs/deploy/
 ├── merge_adapter.py    # LoRA适配器合并（73.9MB→2.7GB FP16）
 ├── api_server.py       # FastAPI REST服务
 ├── ocr_pipeline.py     # 古籍OCR+CNBE一体化管线
-├── Modelfile           # Ollama自定义模型定义
+├── model-f16.gguf (3.55 GB)
+    | Modelfile           # Ollama自定义模型定义
 └── DEPLOY.md           # 完整部署文档
 ```
 
@@ -389,7 +446,7 @@ outputs/deploy/
 | 更高LoRA rank（32/64）实验 | ★★☆ | 1天 |
 | 古籍OCR后处理纠错验证 | ★☆☆ | 1-2天 |
 
-### 8.3 关键文件
+### 8.3 产出物清单
 
 | 文件 | 路径 |
 |:-----|:-----|

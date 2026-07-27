@@ -169,6 +169,12 @@ See `tools/deploy/` for details.
 - [Training Report](./reports/v11_8105_qlora/TRAINING_REPORT.md)
 - [Field-level evaluation supplement](./reports/v11_8105_qlora/FIELD_EVAL_SUPPLEMENT.md)
 - [Deployment Guide](./tools/deploy/README.md)
+| 平台 | 链接 |
+|:-----|:-----|
+| GitHub | https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding |
+| ModelScope | https://www.modelscope.cn/zairkliu/CNBE-32 |
+
+提供三种部署方案（详见 `tools/deploy/`）：
 
 ## Agent and automation boundary
 
@@ -383,3 +389,6 @@ CNBE-32 includes machine-readable golden vectors in [spec/golden_vectors.json](.
 ## License
 
 MulanPSL-2.0
+
+
+
