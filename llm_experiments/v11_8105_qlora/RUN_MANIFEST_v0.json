@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "manifest_id": "CNBE-V11-EVIDENCE-RECOVERY-20260728",
+  "status": "blocked_evidence_incomplete",
+  "claim_policy": {
+    "public_performance_claims": "prohibited",
+    "model_card_metrics": "prohibited",
+    "runtime_table_write_from_model": "prohibited"
+  },
+  "scope": {
+    "purpose": "Record the currently committed v11-related evidence without merging distinct training lineages.",
+    "non_goal": "This file does not certify a training run, a model-to-artifact relationship, or any performance result."
+  },
+  "artifact": {
+    "platform": "ModelScope",
+    "model_id": "zairkliu/CNBE-32",
+    "revision": "master",
+    "file": "model-f16.gguf",
+    "format": "GGUF F16",
+    "size_bytes": 3560415968,
+    "sha256": "542e5edd7594194749de13953bd7d00903ebb4fcdbafdfa07c7ffc4b97eef5f9",
+    "relationship_to_training_lineage": "unproven"
+  },
+  "lineages": [
+    {
+      "id": "qwen35_08b_5k_demo",
+      "base_model": "Qwen/Qwen3.5-0.8B",
+      "declared_steps": 5000,
+      "seed": 42,
+      "source_files": [
+        {
+          "path": "cnbe-llm training(demo)/scripts/train_5k.py",
+          "git_blob_sha": "eeba365579fdcfff402f8625c169aae3efacac6c"
+        },
+        {
+          "path": "cnbe-llm training(demo)/training_5k_log.txt",
+          "git_blob_sha": "feec8b9030b35f9cd587f10ec23106fe04461711"
+        }
+      ],
+      "data_description": "178,034 input rows loaded; first 25,000 shuffled rows selected by script.",
+      "status": "incomplete_evidence",
+      "missing": [
+        "immutable input dataset hash",
+        "saved checkpoint or adapter hash",
+        "completion record bound to the saved artifact",
+        "held-out evaluation split and outputs",
+        "software environment lockfile"
+      ]
+    },
+    {
+      "id": "deepseek_r1_distill_qwen_15b_report",
+      "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+      "reported_completed_steps": 1000,
+      "source_files": [
+        {
+          "path": "reports/v11_8105_qlora/TRAINING_REPORT.md",
+          "git_blob_sha": "d367b5ce9b4490eaaad3cd7ed734d6c601aa7c79"
+        }
+      ],
+      "status": "incomplete_evidence",
+      "missing": [
+        "training script and immutable configuration",
+        "base-model revision",
+        "dataset snapshot hash and split seed",
+        "adapter hash",
+        "link proving relationship to the published GGUF"
+      ]
+    }
+  ],
+  "committed_evaluations": [
+    {
+      "path": "llm_experiments/v11_8105_qlora/results/field_eval.json",
+      "git_blob_sha": "4134449f056f3e56586eb32cd32bd1e039220a29",
+      "sample_count": 50,
+      "valid_format_count": 44,
+      "unique_valid_predicted_hex_count": 9,
+      "most_frequent_predicted_hex_count": 14,
+      "interpretation": "Format and field values are recorded, but this sample does not establish correct encoding ability; all-field exact accuracy is 0% in the committed summary."
+    },
+    {
+      "path": "llm_experiments/v11_8105_qlora/results/downstream_eval.json",
+      "git_blob_sha": "af0fd75e1506c22b349870d892f3c2177487ccc4",
+      "interpretation": "The 41-pair differing-output rate is not an accuracy metric and must not be used as a character-encoding correctness claim."
+    },
+    {
+      "path": "llm_experiments/v11_8105_qlora/results/semantic_eval.json",
+      "git_blob_sha": "218e70c1af1e18f36731d775fcae866ae22df184",
+      "interpretation": "This is an exploratory 50-character clustering calculation; it is not a semantic benchmark."
+    },
+    {
+      "path": "llm_experiments/v11_8105_qlora/results/yongle_full_eval.json",
+      "git_blob_sha": "5c359085456776101f9fbdc3dd9c42bf2ffe7981",
+      "interpretation": "This records distance statistics over OCR-derived text, not OCR correctness or CNBE field correctness."
+    }
+  ],
+  "release_gate": {
+    "required_for_verified_status": [
+      "immutable model or adapter hash linked to the GGUF artifact",
+      "base-model revision and license",
+      "training configuration and software lockfile",
+      "input dataset hash",
+      "deterministic train/validation/test split with seed",
+      "raw evaluation outputs and executable command",
+      "baseline comparison",
+      "human review of claim wording"
+    ],
+    "until_then": "Keep status blocked_evidence_incomplete and do not publish performance claims."
+  }
+}
