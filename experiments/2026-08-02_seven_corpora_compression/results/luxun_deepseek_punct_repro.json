@@ -1,0 +1,261 @@
+{
+  "n": 10,
+  "model": "deepseek-v4-flash",
+  "average": {
+    "precision": 0.5837,
+    "recall": 0.6788,
+    "f1": 0.6018
+  },
+  "samples": [
+    {
+      "input_chars": 144,
+      "gold_punct": 6,
+      "pred_punct": 26,
+      "score": {
+        "precision": 0.0385,
+        "recall": 0.1667,
+        "f1": 0.0625,
+        "correct": 1
+      },
+      "elapsed": 2.1,
+      "usage": {
+        "input_tokens": 115,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 171,
+        "output_tokens_details": {
+          "reasoning_tokens": 48
+        },
+        "total_tokens": 286
+      },
+      "gold": "书刊注释说明\n\n\n人物注释\n\n\n首字检索表\n\n\n注释条目\n\n\n书刊注释\n\n\n首字检索表\n\n\n注释条目\n\n\n鲁迅全集.18",
+      "pred": "书刊注释说明。人物注释首字检索表，注释条目。书刊注释首字检索表，注释条目。鲁迅全集版权页，文前彩插。鲁迅生平著译简表。鲁"
+    },
+    {
+      "input_chars": 120,
+      "gold_punct": 6,
+      "pred_punct": 0,
+      "score": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "correct": 0
+      },
+      "elapsed": 1.48,
+      "usage": {
+        "input_tokens": 94,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 112,
+        "output_tokens_details": {
+          "reasoning_tokens": 25
+        },
+        "total_tokens": 206
+      },
+      "gold": "地名类\n\n\n首字检索表\n\n\n注释条目\n\n\n历史事件及其他社会事项类\n\n\n首字检索表\n\n\n注释条目\n\n\n引语、掌故、名物、",
+      "pred": "地名类首字检索表注释条目  \n历史事件及其他社会事项类首字检索表注释条目  \n引语掌故名物古迹词语类首字检索表注释条目 "
+    },
+    {
+      "input_chars": 150,
+      "gold_punct": 8,
+      "pred_punct": 33,
+      "score": {
+        "precision": 0.2424,
+        "recall": 1.0,
+        "f1": 0.3902,
+        "correct": 8
+      },
+      "elapsed": 2.36,
+      "usage": {
+        "input_tokens": 114,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 164,
+        "output_tokens_details": {
+          "reasoning_tokens": 34
+        },
+        "total_tokens": 278
+      },
+      "gold": "2005.11\n\n\nISBN 978-7-02-005033-8\n\n\nⅠ.鲁… Ⅱ.鲁… Ⅲ.①鲁迅著作-全集②鲁迅杂文",
+      "pred": "鲁鲁鲁迅著作全集。鲁迅杂文，鲁迅小说。中国版本图书馆数据核字，第号。总编注：鲁迅全集修订编辑委员会。封面题字：沈尹默。鲁"
+    },
+    {
+      "input_chars": 84,
+      "gold_punct": 9,
+      "pred_punct": 0,
+      "score": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "correct": 0
+      },
+      "elapsed": 21.91,
+      "usage": {
+        "input_tokens": 69,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 2048,
+        "output_tokens_details": {
+          "reasoning_tokens": 2048
+        },
+        "total_tokens": 2117
+      },
+      "gold": "数 46001—51000\n\n\nISBN 978-7-02-005033-8\n\n\n定价 990.00元（全十八卷）\n\n\n",
+      "pred": "数定价元全十八卷如有印装质量问题请与本社图书销售中心调换电话出版说明出版说明鲁迅全集最早的版本由鲁迅先生纪念委员会编辑收"
+    },
+    {
+      "input_chars": 140,
+      "gold_punct": 16,
+      "pred_punct": 14,
+      "score": {
+        "precision": 1.0,
+        "recall": 0.875,
+        "f1": 0.9333,
+        "correct": 14
+      },
+      "elapsed": 2.99,
+      "usage": {
+        "input_tokens": 106,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 281,
+        "output_tokens_details": {
+          "reasoning_tokens": 172
+        },
+        "total_tokens": 387
+      },
+      "gold": "\n\n\n新中国成立后，我社重新编辑出版新的注释本《鲁迅全集》。这部《全集》只收作者自己的原创著作，包括创作、评论、文学史专",
+      "pred": "新中国成立后，我社重新编辑出版新的注释本《鲁迅全集》。这部全集只收作者自己的原创著作，包括创作、评论、文学史专著及部分书"
+    },
+    {
+      "input_chars": 93,
+      "gold_punct": 9,
+      "pred_punct": 9,
+      "score": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 9
+      },
+      "elapsed": 1.87,
+      "usage": {
+        "input_tokens": 84,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 169,
+        "output_tokens_details": {
+          "reasoning_tokens": 91
+        },
+        "total_tokens": 253
+      },
+      "gold": "另加附集一卷，收作者著译年表、《全集》篇目索引和注释索引。全书共十六卷。\n\n\n本版《全集》以1981年版为基础进行修订，",
+      "pred": "另加附集一卷，收作者著译年表、全集篇目索引和注释索引。全书共十六卷。本版全集以年版为基础进行修订，根据增补不足、修正错讹"
+    },
+    {
+      "input_chars": 120,
+      "gold_punct": 8,
+      "pred_punct": 9,
+      "score": {
+        "precision": 0.8889,
+        "recall": 1.0,
+        "f1": 0.9412,
+        "correct": 8
+      },
+      "elapsed": 1.63,
+      "usage": {
+        "input_tokens": 98,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 131,
+        "output_tokens_details": {
+          "reasoning_tokens": 31
+        },
+        "total_tokens": 229
+      },
+      "gold": "对原有注释作了增补和修改，所收著作又据作者生前审定（或写定）的文本作了校核。此外，作者翻译的外国作品和校辑的中国文史古籍",
+      "pred": "对原有注释作了增补和修改。所收著作，又据作者生前审定或写定的文本作了校核。此外，作者翻译的外国作品和校辑的中国文史古籍，"
+    },
+    {
+      "input_chars": 116,
+      "gold_punct": 9,
+      "pred_punct": 8,
+      "score": {
+        "precision": 1.0,
+        "recall": 0.8889,
+        "f1": 0.9412,
+        "correct": 8
+      },
+      "elapsed": 3.0,
+      "usage": {
+        "input_tokens": 79,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 311,
+        "output_tokens_details": {
+          "reasoning_tokens": 235
+        },
+        "total_tokens": 390
+      },
+      "gold": "\n\n\n修订后的《鲁迅全集》共十八卷，吸纳了迄今鲁迅研究的新成果，是目前最为完备的《鲁迅全集》的新版本。\n\n\n《鲁迅全集》",
+      "pred": "修订后的《鲁迅全集》共十八卷，吸纳了迄今鲁迅研究的新成果，是目前最为完备的《鲁迅全集》的新版本。  \n《鲁迅全集》的编注"
+    },
+    {
+      "input_chars": 135,
+      "gold_punct": 7,
+      "pred_punct": 7,
+      "score": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 7
+      },
+      "elapsed": 2.11,
+      "usage": {
+        "input_tokens": 105,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 150,
+        "output_tokens_details": {
+          "reasoning_tokens": 46
+        },
+        "total_tokens": 255
+      },
+      "gold": "对他们为《全集》的出版所做的贡献，我们在此表示衷心的感谢。\n\n\n《鲁迅全集》注释涉及的范围十分广泛和繁杂，虽然作了努力，",
+      "pred": "对他们为全集的出版所做的贡献，我们在此表示衷心的感谢。鲁迅全集注释涉及的范围十分广泛和繁杂，虽然作了努力，但疏漏还会难以"
+    },
+    {
+      "input_chars": 93,
+      "gold_punct": 7,
+      "pred_punct": 9,
+      "score": {
+        "precision": 0.6667,
+        "recall": 0.8571,
+        "f1": 0.75,
+        "correct": 6
+      },
+      "elapsed": 3.0,
+      "usage": {
+        "input_tokens": 78,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 316,
+        "output_tokens_details": {
+          "reasoning_tokens": 246
+        },
+        "total_tokens": 394
+      },
+      "gold": "1927年3月由北京未名社初版，1929年3月第二次印刷时曾经作者校订。1930年4月第三次印刷改由上海北新书局出版。作",
+      "pred": "年月由北京未名社初版；年月第二次印刷时，曾经作者校订；年月第三次印刷，改由上海北新书局出版。作者生前共印行四版次。  \n"
+    }
+  ]
+}

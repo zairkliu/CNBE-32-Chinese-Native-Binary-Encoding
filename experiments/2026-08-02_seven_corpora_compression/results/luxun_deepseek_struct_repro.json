@@ -1,0 +1,19 @@
+{
+  "n_chars": 15,
+  "parsed": 15,
+  "structure_accuracy": 0.2,
+  "model": "deepseek-v4-flash",
+  "elapsed": 3.86,
+  "usage": {
+    "input_tokens": 135,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 306,
+    "output_tokens_details": {
+      "reasoning_tokens": 238
+    },
+    "total_tokens": 441
+  },
+  "raw_output": "鲁 上下\n迅 左下包围\n全 上下\n集 上下\n书 独体字\n名 上下\n页 独体字\n目 独体字\n录 上下\n鲁 上下\n迅 左下包围\n全 上下\n集 上下\n版 左右\n权 左右"
+}

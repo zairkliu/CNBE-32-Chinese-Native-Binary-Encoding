@@ -1,0 +1,19 @@
+{
+  "n_chars": 15,
+  "parsed": 15,
+  "structure_accuracy": 0.0667,
+  "model": "deepseek-v4-flash",
+  "elapsed": 8.11,
+  "usage": {
+    "input_tokens": 135,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 668,
+    "output_tokens_details": {
+      "reasoning_tokens": 604
+    },
+    "total_tokens": 803
+  },
+  "raw_output": "版 左右  \n权 左右  \n信 左右  \n息 上下  \n作 左右  \n者 上下  \n简 上下  \n介 独体字  \n未 独体字  \n知 左右  \n阿 左右  \n加 左右  \n莎 上下  \n克 上下  \n里 上下"
+}

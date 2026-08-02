@@ -1,0 +1,261 @@
+{
+  "n": 10,
+  "model": "deepseek-v4-flash",
+  "average": {
+    "precision": 0.7471,
+    "recall": 0.8222,
+    "f1": 0.7803
+  },
+  "samples": [
+    {
+      "input_chars": 147,
+      "gold_punct": 13,
+      "pred_punct": 16,
+      "score": {
+        "precision": 0.8125,
+        "recall": 1.0,
+        "f1": 0.8966,
+        "correct": 13
+      },
+      "elapsed": 1.94,
+      "usage": {
+        "input_tokens": 111,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 144,
+        "output_tokens_details": {
+          "reasoning_tokens": 30
+        },
+        "total_tokens": 255
+      },
+      "gold": "版权信息\n\n\n作者简介\n\n\n未知\n\n\n阿加莎·克里斯蒂（1890～1976），英国著名女侦探小说家、剧作家，三大推理文学",
+      "pred": "版权信息：作者简介未知。阿加莎·克里斯蒂，英国著名女侦探小说家、剧作家，三大推理文学宗师之一。阿加莎·克里斯蒂是一名高产"
+    },
+    {
+      "input_chars": 89,
+      "gold_punct": 6,
+      "pred_punct": 5,
+      "score": {
+        "precision": 1.0,
+        "recall": 0.8333,
+        "f1": 0.9091,
+        "correct": 5
+      },
+      "elapsed": 17.55,
+      "usage": {
+        "input_tokens": 70,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 1730,
+        "output_tokens_details": {
+          "reasoning_tokens": 1671
+        },
+        "total_tokens": 1800
+      },
+      "gold": "2部诗集，2本与侦探俱乐部的会员作家们合写的长篇推理小说。据吉尼斯世界纪录统计，阿加莎·克里斯蒂是人类史上最畅销的著书作",
+      "pred": "部诗集本与侦探俱乐部的会员作家们合写的长篇推理小说。据吉尼斯世界纪录统计，阿加莎·克里斯蒂是人类史上最畅销的著书作家。而"
+    },
+    {
+      "input_chars": 92,
+      "gold_punct": 6,
+      "pred_punct": 7,
+      "score": {
+        "precision": 0.8571,
+        "recall": 1.0,
+        "f1": 0.9231,
+        "correct": 6
+      },
+      "elapsed": 1.84,
+      "usage": {
+        "input_tokens": 73,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 171,
+        "output_tokens_details": {
+          "reasoning_tokens": 107
+        },
+        "total_tokens": 244
+      },
+      "gold": "至今其著作曾翻译成超过103种语言，总销突破20亿本。\n\n\n阿加莎·克里斯蒂开创了侦探小说的“乡间别墅派”，即凶杀案发生",
+      "pred": "至今，其著作曾翻译成超过种语言，总销突破亿本。阿加莎·克里斯蒂开创了侦探小说的“乡间别墅派”，即凶杀案发生在一个特定封闭"
+    },
+    {
+      "input_chars": 83,
+      "gold_punct": 6,
+      "pred_punct": 7,
+      "score": {
+        "precision": 0.8571,
+        "recall": 1.0,
+        "f1": 0.9231,
+        "correct": 6
+      },
+      "elapsed": 1.66,
+      "usage": {
+        "input_tokens": 63,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 134,
+        "output_tokens_details": {
+          "reasoning_tokens": 81
+        },
+        "total_tokens": 197
+      },
+      "gold": "她始终以动机和分析人性，为读者展现一个个特异怪诞的丰富心理世界，由此揭露人心之丰富，展现丰富多彩的人物性格，深层揭示曲折",
+      "pred": "她始终以动机和分析人性，为读者展现一个个特异怪诞的丰富心理世界，由此揭露人心之丰富，展现丰富多彩的人物性格，深层揭示曲折"
+    },
+    {
+      "input_chars": 105,
+      "gold_punct": 6,
+      "pred_punct": 7,
+      "score": {
+        "precision": 0.8571,
+        "recall": 1.0,
+        "f1": 0.9231,
+        "correct": 6
+      },
+      "elapsed": 1.86,
+      "usage": {
+        "input_tokens": 89,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 134,
+        "output_tokens_details": {
+          "reasoning_tokens": 40
+        },
+        "total_tokens": 223
+      },
+      "gold": "因为她的推理小说，她也被称为“推理女王”。代表作品有《东方快车谋杀案》和《尼罗河谋杀案》等。\n\n\n童年启蒙\n\n\n1890",
+      "pred": "因为她的推理小说，她也被称为“推理女王”，代表作品有《东方快车谋杀案》和《尼罗河谋杀案》等。\n\n童年启蒙：1890年9月"
+    },
+    {
+      "input_chars": 137,
+      "gold_punct": 6,
+      "pred_punct": 6,
+      "score": {
+        "precision": 0.1667,
+        "recall": 0.1667,
+        "f1": 0.1667,
+        "correct": 1
+      },
+      "elapsed": 4.2,
+      "usage": {
+        "input_tokens": 115,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 391,
+        "output_tokens_details": {
+          "reasoning_tokens": 274
+        },
+        "total_tokens": 506
+      },
+      "gold": "她是家中的的第3个孩子，有1个姐姐玛格丽特·弗蕾莉·米勒和1个哥哥路易斯·蒙坦特·米勒。\n\n\n 阿加莎·克里斯蒂获得的文",
+      "pred": "她是家中的第三个孩子，有一个姐姐玛格丽特·弗蕾莉·米勒和一个哥哥路易斯·蒙坦特·米勒。阿加莎·克里斯蒂获得的文化素养完全"
+    },
+    {
+      "input_chars": 83,
+      "gold_punct": 6,
+      "pred_punct": 7,
+      "score": {
+        "precision": 0.8571,
+        "recall": 1.0,
+        "f1": 0.9231,
+        "correct": 6
+      },
+      "elapsed": 2.12,
+      "usage": {
+        "input_tokens": 69,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 162,
+        "output_tokens_details": {
+          "reasoning_tokens": 102
+        },
+        "total_tokens": 231
+      },
+      "gold": "然后又灵感突发地认为应该保护孩子的视力和大脑，把阿加莎·克里斯蒂留在了身边，不让她在8岁前接受教育。可阿加莎·克里斯蒂还",
+      "pred": "然后又灵感突发地认为，应该保护孩子的视力和大脑，把阿加莎·克里斯蒂留在了身边，不让她在岁前接受教育。可阿加莎·克里斯蒂还"
+    },
+    {
+      "input_chars": 99,
+      "gold_punct": 9,
+      "pred_punct": 9,
+      "score": {
+        "precision": 0.8889,
+        "recall": 0.8889,
+        "f1": 0.8889,
+        "correct": 8
+      },
+      "elapsed": 1.52,
+      "usage": {
+        "input_tokens": 80,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 112,
+        "output_tokens_details": {
+          "reasoning_tokens": 39
+        },
+        "total_tokens": 192
+      },
+      "gold": "从此阿加莎·克里斯蒂开始翻阅各种儿童读物，接受她的文学启蒙。\n\n\n由于父亲不善理财，家庭条件开始每况愈下。为了暂避英国的",
+      "pred": "从此，阿加莎·克里斯蒂开始翻阅各种儿童读物，接受她的文学启蒙。由于父亲不善理财，家庭条件开始每况愈下。为了暂避英国的高额"
+    },
+    {
+      "input_chars": 89,
+      "gold_punct": 9,
+      "pred_punct": 10,
+      "score": {
+        "precision": 0.3,
+        "recall": 0.3333,
+        "f1": 0.3158,
+        "correct": 3
+      },
+      "elapsed": 2.29,
+      "usage": {
+        "input_tokens": 77,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 111,
+        "output_tokens_details": {
+          "reasoning_tokens": 41
+        },
+        "total_tokens": 188
+      },
+      "gold": "这是阿加莎·克里斯蒂学习法语和了解社交活动的开端。\n\n\n回到英国后，父亲的身体状况逐渐恶化。1901年，父亲因急性肺炎于",
+      "pred": "这是阿加莎·克里斯蒂学习法语和了解社交活动的开端。回到英国后，父亲的身体状况逐渐恶化。那年，父亲因急性肺炎于伦敦伊灵离开"
+    },
+    {
+      "input_chars": 94,
+      "gold_punct": 7,
+      "pred_punct": 8,
+      "score": {
+        "precision": 0.875,
+        "recall": 1.0,
+        "f1": 0.9333,
+        "correct": 7
+      },
+      "elapsed": 1.89,
+      "usage": {
+        "input_tokens": 79,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 111,
+        "output_tokens_details": {
+          "reasoning_tokens": 40
+        },
+        "total_tokens": 190
+      },
+      "gold": "因此家中只剩下阿加莎·克里斯蒂与母亲相依为命。\n\n\n此时的阿加莎·克里斯蒂开始阅读一些英法名著，如狄更斯、萨克雷和大仲马",
+      "pred": "因此，家中只剩下阿加莎·克里斯蒂与母亲相依为命。此时的阿加莎·克里斯蒂开始阅读一些英法名著，如狄更斯、萨克雷和大仲马的作"
+    }
+  ]
+}

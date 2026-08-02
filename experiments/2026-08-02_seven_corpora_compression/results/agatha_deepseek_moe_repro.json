@@ -1,0 +1,19 @@
+{
+  "n_chars": 20,
+  "parsed": 20,
+  "agreement": 0.0,
+  "model": "deepseek-v4-flash",
+  "elapsed": 72.27,
+  "usage": {
+    "input_tokens": 193,
+    "input_tokens_details": {
+      "cached_tokens": 128
+    },
+    "output_tokens": 6973,
+    "output_tokens_details": {
+      "reasoning_tokens": 6913
+    },
+    "total_tokens": 7166
+  },
+  "raw_output": "版 A\n权 B\n信 C\n息 H\n作 C\n者 I\n简 J\n介 O\n未 M\n知 G\n阿 D\n加 E\n莎 K\n克 L\n里 N\n斯 F\n蒂 K\n英 K\n国 P\n著 K"
+}

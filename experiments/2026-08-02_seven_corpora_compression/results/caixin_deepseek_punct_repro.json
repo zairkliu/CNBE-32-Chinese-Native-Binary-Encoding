@@ -1,0 +1,261 @@
+{
+  "n": 10,
+  "model": "deepseek-v4-flash",
+  "average": {
+    "precision": 0.7835,
+    "recall": 0.8785,
+    "f1": 0.8206
+  },
+  "samples": [
+    {
+      "input_chars": 91,
+      "gold_punct": 7,
+      "pred_punct": 13,
+      "score": {
+        "precision": 0.5385,
+        "recall": 1.0,
+        "f1": 0.7,
+        "correct": 7
+      },
+      "elapsed": 2.82,
+      "usage": {
+        "input_tokens": 78,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 218,
+        "output_tokens_details": {
+          "reasoning_tokens": 141
+        },
+        "total_tokens": 296
+      },
+      "gold": "未知\n\n\n版权页\n\n\n\n\n\n\n\n\n\n\n未知\n\n\n\n\n【编辑絮语·王烁】身份的解药\n\n\n多重身份，理性思考，个人选择\n　　",
+      "pred": "未知版权页。  \n未知编辑絮语。  \n\n王烁：身份的解药，多重身份，理性思考，个人选择。  \n\n麦亚满身鲜血闯进森家讨水"
+    },
+    {
+      "input_chars": 108,
+      "gold_punct": 12,
+      "pred_punct": 10,
+      "score": {
+        "precision": 1.0,
+        "recall": 0.8333,
+        "f1": 0.9091,
+        "correct": 10
+      },
+      "elapsed": 2.93,
+      "usage": {
+        "input_tokens": 86,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 321,
+        "output_tokens_details": {
+          "reasoning_tokens": 239
+        },
+        "total_tokens": 407
+      },
+      "gold": "森家住在印度教徒聚居的街区，麦亚是穆斯林。麦亚临死前说，他不该出门，但他以打短工为生，一天不出来找活干，全家就没吃的。\n",
+      "pred": "森家住在印度教徒聚居的街区，麦亚是穆斯林。麦亚临死前说他不该出门，但他以打短工为生，一天不出来找活干，全家就没吃的。承受"
+    },
+    {
+      "input_chars": 84,
+      "gold_punct": 14,
+      "pred_punct": 14,
+      "score": {
+        "precision": 0.1429,
+        "recall": 0.1429,
+        "f1": 0.1429,
+        "correct": 2
+      },
+      "elapsed": 2.07,
+      "usage": {
+        "input_tokens": 61,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 176,
+        "output_tokens_details": {
+          "reasoning_tokens": 118
+        },
+        "total_tokens": 237
+      },
+      "gold": "\n\n\n\n　　每个人都有许许多多种身份。有些身份可选择，职业、兴趣、经历；有些身份不可选择，如国籍、民族、籍贯；有些身份介",
+      "pred": "每个人都有许许多多种身份。有些身份可选择，如职业、兴趣、经历；有些身份不可选择，如国籍、民族、籍贯；有些身份介于两者之间"
+    },
+    {
+      "input_chars": 97,
+      "gold_punct": 10,
+      "pred_punct": 11,
+      "score": {
+        "precision": 0.8182,
+        "recall": 0.9,
+        "f1": 0.8571,
+        "correct": 9
+      },
+      "elapsed": 2.05,
+      "usage": {
+        "input_tokens": 72,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 168,
+        "output_tokens_details": {
+          "reasoning_tokens": 103
+        },
+        "total_tokens": 240
+      },
+      "gold": "最重要的身份是那个能给自己安全的最小群体。这可以用一个画面来解释：当拿着刀枪的陌生人逼近你，问你是什么人，你只有一秒钟说",
+      "pred": "最重要的身份，是那个能给自己安全的最小群体。这可以用一个画面来解释：当拿着刀枪的陌生人逼近你，问你是什么人，你只有一秒钟"
+    },
+    {
+      "input_chars": 82,
+      "gold_punct": 11,
+      "pred_punct": 11,
+      "score": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 11
+      },
+      "elapsed": 1.91,
+      "usage": {
+        "input_tokens": 67,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 161,
+        "output_tokens_details": {
+          "reasoning_tokens": 101
+        },
+        "total_tokens": 228
+      },
+      "gold": "\n\n\n\n　　越是岁月静好，一个人的身份就越是丰富多元。如果风云突变，环境险恶，人的身份就扁平化。不管你愿不愿意降维，只要",
+      "pred": "越是岁月静好，一个人的身份就越是丰富多元。如果风云突变，环境险恶，人的身份就扁平化。不管你愿不愿意降维，只要环境在降维，"
+    },
+    {
+      "input_chars": 123,
+      "gold_punct": 9,
+      "pred_punct": 10,
+      "score": {
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9474,
+        "correct": 9
+      },
+      "elapsed": 1.28,
+      "usage": {
+        "input_tokens": 87,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 110,
+        "output_tokens_details": {
+          "reasoning_tokens": 31
+        },
+        "total_tokens": 197
+      },
+      "gold": "降维是个加速度过程，越到后期速度越快。被挤掉的第一个身份是最不重要的，但挤掉它所需要的时间往往是最长的。被挤掉的倒数第二",
+      "pred": "降维是个加速度过程，越到后期速度越快。被挤掉的第一个身份是最不重要的，但挤掉它所需要的时间往往是最长的。被挤掉的倒数第二"
+    },
+    {
+      "input_chars": 96,
+      "gold_punct": 11,
+      "pred_punct": 13,
+      "score": {
+        "precision": 0.7692,
+        "recall": 0.9091,
+        "f1": 0.8333,
+        "correct": 10
+      },
+      "elapsed": 2.04,
+      "usage": {
+        "input_tokens": 76,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 164,
+        "output_tokens_details": {
+          "reasoning_tokens": 91
+        },
+        "total_tokens": 240
+      },
+      "gold": "漫长的溃散，突然的崩解，同属一个进程。\n\n\n\n　　阿玛蒂亚·森说，煽动暴力的诀窍在于激发人们的生存本能，突出每个人惟一重",
+      "pred": "漫长的溃散，突然的崩解，同属一个进程。阿玛蒂亚·森说：煽动暴力的诀窍，在于激发人们的生存本能，突出每个人惟一重要的最后身"
+    },
+    {
+      "input_chars": 146,
+      "gold_punct": 13,
+      "pred_punct": 13,
+      "score": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 13
+      },
+      "elapsed": 1.93,
+      "usage": {
+        "input_tokens": 96,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 128,
+        "output_tokens_details": {
+          "reasoning_tokens": 36
+        },
+        "total_tokens": 224
+      },
+      "gold": "只剩下一个身份后，全世界更是只剩下武装到牙齿的我们与他们！单一身份与暴力互相驱动，是个通向地狱的双螺旋结构。\n\n\n\n　　",
+      "pred": "只剩下一个身份后，全世界更是只剩下武装到牙齿的我们与他们。单一身份与暴力互相驱动，是个通向地狱的双螺旋结构。阿玛蒂亚·森"
+    },
+    {
+      "input_chars": 129,
+      "gold_punct": 14,
+      "pred_punct": 18,
+      "score": {
+        "precision": 0.7778,
+        "recall": 1.0,
+        "f1": 0.875,
+        "correct": 14
+      },
+      "elapsed": 1.92,
+      "usage": {
+        "input_tokens": 89,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 125,
+        "output_tokens_details": {
+          "reasoning_tokens": 37
+        },
+        "total_tokens": 214
+      },
+      "gold": "信仰、政治、职业、生于斯长于斯之地，请问哪个身份不重要？它们也只是一个简易标签，多个简易标签共存于一身，才有丰富内涵。森",
+      "pred": "信仰、政治、职业，生于斯、长于斯之地。请问哪个身份不重要？它们也只是一个简易标签。多个简易标签共存于一身，才有丰富内涵。"
+    },
+    {
+      "input_chars": 94,
+      "gold_punct": 8,
+      "pred_punct": 9,
+      "score": {
+        "precision": 0.8889,
+        "recall": 1.0,
+        "f1": 0.9412,
+        "correct": 8
+      },
+      "elapsed": 1.83,
+      "usage": {
+        "input_tokens": 73,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 144,
+        "output_tokens_details": {
+          "reasoning_tokens": 80
+        },
+        "total_tokens": 217
+      },
+      "gold": "生于何种信仰的家庭，自己要不要接受这种信仰，不是一出生就注定的思想钢印，而是个人的自主权利，最好是经过理性思考深思熟虑后",
+      "pred": "生于何种信仰的家庭，自己要不要接受这种信仰，不是一出生就注定的思想钢印，而是个人的自主权利。最好是经过理性思考、深思熟虑"
+    }
+  ]
+}

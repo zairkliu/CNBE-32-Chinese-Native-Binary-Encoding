@@ -1,0 +1,261 @@
+{
+  "n": 10,
+  "model": "deepseek-v4-flash",
+  "average": {
+    "precision": 0.3478,
+    "recall": 0.905,
+    "f1": 0.4834
+  },
+  "samples": [
+    {
+      "input_chars": 60,
+      "gold_punct": 5,
+      "pred_punct": 6,
+      "score": {
+        "precision": 0.5,
+        "recall": 0.6,
+        "f1": 0.5455,
+        "correct": 3
+      },
+      "elapsed": 3.02,
+      "usage": {
+        "input_tokens": 74,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 222,
+        "output_tokens_details": {
+          "reasoning_tokens": 155
+        },
+        "total_tokens": 296
+      },
+      "gold": "如汪師 \n韓《蘇詩選評審釋》、查慎行《初白唐詩評》、趙克宜《蘇詩評注摧鈔》、紀的評《蘇文忠公詩集》等,就中又以紀評《蘇詩",
+      "pred": "如汪師韓《蘇詩選評》、審釋查慎行《初白唐詩評》、趙克宜《蘇詩評注》、摧鈔紀昀《評蘇文忠公詩集》等。就中又以紀評蘇詩成就最"
+    },
+    {
+      "input_chars": 71,
+      "gold_punct": 4,
+      "pred_punct": 9,
+      "score": {
+        "precision": 0.3333,
+        "recall": 0.75,
+        "f1": 0.4615,
+        "correct": 3
+      },
+      "elapsed": 1.89,
+      "usage": {
+        "input_tokens": 83,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 110,
+        "output_tokens_details": {
+          "reasoning_tokens": 36
+        },
+        "total_tokens": 193
+      },
+      "gold": "道光十四年刊本,皆昧墨套印,正文有圈、點,書眉有昧批。茲編係李香巖在道光本基礎上,重加評 \n點,為壘筆(間用誅筆)于批。",
+      "pred": "道光十四年刊本，皆昧墨套印。正文有圈點，書眉有昧批。茲編係李香巖在道光本基礎上重加評點，為壘筆間用誅筆于批。原書共裝十二"
+    },
+    {
+      "input_chars": 78,
+      "gold_punct": 10,
+      "pred_punct": 15,
+      "score": {
+        "precision": 0.6,
+        "recall": 0.9,
+        "f1": 0.72,
+        "correct": 9
+      },
+      "elapsed": 3.62,
+      "usage": {
+        "input_tokens": 98,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 321,
+        "output_tokens_details": {
+          "reasoning_tokens": 237
+        },
+        "total_tokens": 419
+      },
+      "gold": "金住關、巢縣、會山縣、和州、蕪湖縣、太平府、說甫。芳伯統領所部主己字營,銜故 \n疾馳,直祇雨花臺下,轍石頭城如在益底。楊",
+      "pred": "金住关、巢县、会山县、和州、芜湖县、太平府。说甫芳伯统领所部主己字营，衔故疾驰，直抵雨花台下，辙石头城如在益底。杨厚庸、"
+    },
+    {
+      "input_chars": 62,
+      "gold_punct": 5,
+      "pred_punct": 11,
+      "score": {
+        "precision": 0.3636,
+        "recall": 0.8,
+        "f1": 0.5,
+        "correct": 4
+      },
+      "elapsed": 1.71,
+      "usage": {
+        "input_tokens": 79,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 110,
+        "output_tokens_details": {
+          "reasoning_tokens": 38
+        },
+        "total_tokens": 189
+      },
+      "gold": "少奎 \n新募之推軍,乘輪船而至上海者,送報虹橋三江口、四江口之捷D朝廷授蘇撫。平吳羽翼已成矣。瞋府飛書之暇,浮白快讀,吐",
+      "pred": "少奎新募之推軍，乘輪船而至上海者，送報虹橋、三江口、四江口之捷。朝廷授蘇撫，平吳羽翼已成矣。瞋府飛書之暇，浮白快讀，吐氣"
+    },
+    {
+      "input_chars": 90,
+      "gold_punct": 3,
+      "pred_punct": 17,
+      "score": {
+        "precision": 0.1765,
+        "recall": 1.0,
+        "f1": 0.3,
+        "correct": 3
+      },
+      "elapsed": 2.17,
+      "usage": {
+        "input_tokens": 100,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 126,
+        "output_tokens_details": {
+          "reasoning_tokens": 27
+        },
+        "total_tokens": 226
+      },
+      "gold": "......國塞進軍江寧鎮,屯極楠,潛襲 \n株睦闕,進破大勝關、一一一波河,直掠雨花臺軍焉。」又卷四百四十二李鴻章傳》.",
+      "pred": "國塞進軍，江寧鎮屯極楠，潛襲株睦，闕進破大勝關，一一一波河，直掠雨花臺。軍焉。\n\n又卷四百四十二，李鴻章傳：同治元年，遂"
+    },
+    {
+      "input_chars": 115,
+      "gold_punct": 5,
+      "pred_punct": 15,
+      "score": {
+        "precision": 0.3333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "correct": 5
+      },
+      "elapsed": 2.68,
+      "usage": {
+        "input_tokens": 126,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 160,
+        "output_tokens_details": {
+          "reasoning_tokens": 32
+        },
+        "total_tokens": 286
+      },
+      "gold": "......九月,進克其城。......捷人,授江蘇巡撫。」正 \n與題記所盲形勢相合。香巖題記自釵「瞋府飛書之暇,潭,臼",
+      "pred": "九月，進克其城。捷人授江蘇巡撫，正與題記所言形勢相合。香巖題記，自釵瞋府飛書之暇，潭臼快讀云。一苔其人，當為曾國藩幕僚。"
+    },
+    {
+      "input_chars": 75,
+      "gold_punct": 4,
+      "pred_punct": 12,
+      "score": {
+        "precision": 0.3333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "correct": 4
+      },
+      "elapsed": 1.98,
+      "usage": {
+        "input_tokens": 86,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 118,
+        "output_tokens_details": {
+          "reasoning_tokens": 38
+        },
+        "total_tokens": 204
+      },
+      "gold": "四川中江杰典人。晚清名士,善書工詩。成豐初中舉,人仕為兵部主事,以詩文顧名京師。成豐十年,南游江准,胡林翼 \n以湖北巡撫",
+      "pred": "四川中江杰典人，晚清名士。善書工詩，成豐初中舉人，仕為兵部主事，以詩文顧名京師。成豐十年，南游江准。胡林翼以湖北巡撫駐軍"
+    },
+    {
+      "input_chars": 79,
+      "gold_punct": 4,
+      "pred_punct": 13,
+      "score": {
+        "precision": 0.3077,
+        "recall": 1.0,
+        "f1": 0.4706,
+        "correct": 4
+      },
+      "elapsed": 2.01,
+      "usage": {
+        "input_tokens": 94,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 127,
+        "output_tokens_details": {
+          "reasoning_tokens": 39
+        },
+        "total_tokens": 221
+      },
+      "gold": "旋林翼兵敗嘔血而死,曾國藩遨邁李鴻裔人幕,甚得 \n親信。同治三年,湘軍攻陷天京(南京),既而太平天國消亡,李鴻裔任江蘇十",
+      "pred": "旋林翼兵敗，嘔血而死。曾國藩遨邁李鴻裔入幕，甚得親信。同治三年，湘軍攻陷天京，南京既而太平天國消亡。李鴻裔任江蘇十府糧道"
+    },
+    {
+      "input_chars": 73,
+      "gold_punct": 3,
+      "pred_punct": 13,
+      "score": {
+        "precision": 0.2308,
+        "recall": 1.0,
+        "f1": 0.375,
+        "correct": 3
+      },
+      "elapsed": 2.53,
+      "usage": {
+        "input_tokens": 90,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 212,
+        "output_tokens_details": {
+          "reasoning_tokens": 127
+        },
+        "total_tokens": 302
+      },
+      "gold": "鴻裔醉心詩書翰壘,無意功名利祿,到任不久,即以耳疾為由懇求開缺。隨即離職賦閑,移居於蘇州罔師 \n園,以吟詩作書,裁花種竹",
+      "pred": "鴻裔醉心詩書翰壘，無意功名利祿。到任不久，即以耳疾為由，懇求開缺，隨即離職賦閑。移居於蘇州罔師園，以吟詩作書、裁花種竹自"
+    },
+    {
+      "input_chars": 64,
+      "gold_punct": 3,
+      "pred_punct": 10,
+      "score": {
+        "precision": 0.3,
+        "recall": 1.0,
+        "f1": 0.4615,
+        "correct": 3
+      },
+      "elapsed": 1.92,
+      "usage": {
+        "input_tokens": 76,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 169,
+        "output_tokens_details": {
+          "reasoning_tokens": 100
+        },
+        "total_tokens": 245
+      },
+      "gold": "鴻裔撰有《蘇鄰遺詩》,又嘗整理和評點蘇舜 \n欽、蘇東坡詩,此書為其參曾國藩兄弟幕府時所批,有圈有點,亦有批語。見解獨到,",
+      "pred": "鴻裔撰有《蘇鄰遺詩》，又嘗整理和評點蘇舜欽、蘇東坡詩。此書為其參曾國藩兄弟幕府時所批，有圈有點，亦有批語。見解獨到，議論"
+    }
+  ]
+}

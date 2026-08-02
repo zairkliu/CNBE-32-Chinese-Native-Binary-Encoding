@@ -1,0 +1,19 @@
+{
+  "n_chars": 15,
+  "parsed": 15,
+  "structure_accuracy": 0.2667,
+  "model": "deepseek-v4-flash",
+  "elapsed": 5.59,
+  "usage": {
+    "input_tokens": 135,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 486,
+    "output_tokens_details": {
+      "reasoning_tokens": 419
+    },
+    "total_tokens": 621
+  },
+  "raw_output": "程 左右\n序 左上包围\n设 左右\n计 左右\n第 上下\n版 左右\n图 全包围\n灵 上下\n程 左右\n序 左上包围\n设 左右\n计 左右\n丛 上下\n书 独体字\n系 独体字"
+}

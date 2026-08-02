@@ -237,6 +237,18 @@ CNBE-32 只有在编码流程比早期 AI 生成目录更严格时才有研究�
 大模型权重与完整训练数据（约 1.47 GB）不放入 Git，归档于本地
 `outputs/training_data_2026-08-02_full.zip`。
 
+### 2026-08-02：七语料 CNBE 压缩验证
+
+同日完成七类语料（资治通鉴、鲁迅全集、阿加莎全集、Linux 程序设计、金庸全集、
+财新周刊、蘇文忠公詩集）共 24,381,237 字的 CNBE 压缩、Volume 随机访问、
+MoE 路由代理与 DeepSeek V4 API 复现。核心结论：gzip 仍是最优纯压缩；
+CNBE Volume 以约 +40% 体积换 O(1) 随机定位；CNBE 结构路由负载近似完全均衡。
+
+- [七语料压缩验证总报告](./experiments/2026-08-02_seven_corpora_compression/README.md)
+- [压缩验证详情](./experiments/2026-08-02_seven_corpora_compression/SEVEN_CORPORA_COMPRESSION.md)
+- [MoE 训练准备](./experiments/2026-08-02_seven_corpora_compression/MOE_TRAINING_PREP.md)
+- [可复现结果](./experiments/2026-08-02_seven_corpora_compression/results/)
+
 ---
 
 ## Agent 与自动化边界

@@ -1,0 +1,19 @@
+{
+  "n_chars": 15,
+  "parsed": 15,
+  "structure_accuracy": 0.2667,
+  "model": "deepseek-v4-flash",
+  "elapsed": 2.86,
+  "usage": {
+    "input_tokens": 135,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 225,
+    "output_tokens_details": {
+      "reasoning_tokens": 158
+    },
+    "total_tokens": 360
+  },
+  "raw_output": "目 独体字\n錄 左右\n版 左右\n權 左右\n信 左右\n息 上下\n胡 左右\n刻 左右\n通 左下包围\n鑑 左右\n正 独体字\n文 独体字\n校 左右\n宋 上下\n記 左右"
+}

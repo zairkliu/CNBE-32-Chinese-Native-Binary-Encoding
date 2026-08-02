@@ -1,0 +1,19 @@
+{
+  "n_chars": 15,
+  "parsed": 15,
+  "structure_accuracy": 0.3333,
+  "model": "deepseek-v4-flash",
+  "elapsed": 3.12,
+  "usage": {
+    "input_tokens": 135,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 247,
+    "output_tokens_details": {
+      "reasoning_tokens": 177
+    },
+    "total_tokens": 382
+  },
+  "raw_output": "未 独体字\n知 左右\n版 左右\n权 左右\n页 独体字\n未 独体字\n知 左右\n编 左右\n辑 左右\n絮 上下\n语 左右\n王 独体字\n烁 左右\n身 独体字\n份 左右"
+}

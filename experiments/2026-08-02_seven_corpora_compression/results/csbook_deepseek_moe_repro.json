@@ -1,0 +1,19 @@
+{
+  "n_chars": 20,
+  "parsed": 20,
+  "agreement": 0.15,
+  "model": "deepseek-v4-flash",
+  "elapsed": 85.21,
+  "usage": {
+    "input_tokens": 193,
+    "input_tokens_details": {
+      "cached_tokens": 128
+    },
+    "output_tokens": 7847,
+    "output_tokens_details": {
+      "reasoning_tokens": 7787
+    },
+    "total_tokens": 8040
+  },
+  "raw_output": "程 L\n序 G\n设 F\n计 D\n第 K\n版 H\n图 H\n灵 G\n程 L\n序 G\n设 F\n计 D\n丛 E\n书 D\n系 G\n列 F\n前 I\n折 G\n页 F\n陈 G"
+}

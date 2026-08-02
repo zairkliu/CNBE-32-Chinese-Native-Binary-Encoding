@@ -240,6 +240,19 @@ Documents:
 Model weights and the complete training archive (about 1.47 GB) are not stored
 in Git; they are archived locally in `outputs/training_data_2026-08-02_full.zip`.
 
+### 2026-08-02: Seven-Corpus CNBE Compression Validation
+
+The same day, a 24,381,237-character, seven-corpus CNBE validation was completed
+(Zizhi Tongjian, Lu Xun, Agatha Christie, Linux Programming, Jin Yong, Caixin
+Weekly, and Su Shi's poetry collection). gzip remains the best pure compressor;
+CNBE Volume trades about +40% size for O(1) random access; CNBE structural
+routing is near-perfectly load balanced.
+
+- [Seven-Corpus Validation Overview](./experiments/2026-08-02_seven_corpora_compression/README.md)
+- [Compression Details](./experiments/2026-08-02_seven_corpora_compression/SEVEN_CORPORA_COMPRESSION.md)
+- [MoE Training Preparation](./experiments/2026-08-02_seven_corpora_compression/MOE_TRAINING_PREP.md)
+- [Reproducible Results](./experiments/2026-08-02_seven_corpora_compression/results/)
+
 ## Agent and automation boundary
 
 The repository includes a GitHub-compatible Agent profile and Copilot

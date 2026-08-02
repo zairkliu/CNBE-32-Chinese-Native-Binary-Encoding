@@ -1,0 +1,19 @@
+{
+  "n_chars": 15,
+  "parsed": 14,
+  "structure_accuracy": 0.2143,
+  "model": "deepseek-v4-flash",
+  "elapsed": 4.21,
+  "usage": {
+    "input_tokens": 135,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 249,
+    "output_tokens_details": {
+      "reasoning_tokens": 185
+    },
+    "total_tokens": 384
+  },
+  "raw_output": "金 独体字\n庸 左上包围\n作 左右\n品 品字\n全 上下\n集 上下\n新 左右\n修 左右\n版 左右\n全 上下\n册 独体字\n目 独体字\n录 上下\n总 上下"
+}

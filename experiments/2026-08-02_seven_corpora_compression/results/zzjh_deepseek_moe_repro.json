@@ -1,0 +1,19 @@
+{
+  "n_chars": 20,
+  "parsed": 20,
+  "agreement": 0.1,
+  "model": "deepseek-v4-flash",
+  "elapsed": 40.72,
+  "usage": {
+    "input_tokens": 193,
+    "input_tokens_details": {
+      "cached_tokens": 128
+    },
+    "output_tokens": 3555,
+    "output_tokens_details": {
+      "reasoning_tokens": 3495
+    },
+    "total_tokens": 3748
+  },
+  "raw_output": "目 F\n錄 A\n版 I\n權 F\n信 J\n息 K\n胡 J\n刻 I\n通 K\n鑑 G\n正 F\n文 E\n校 K\n宋 H\n記 K\n述 I\n略 L\n新 N\n註 M\n資 N"
+}

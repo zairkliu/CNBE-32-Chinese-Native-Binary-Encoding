@@ -1,0 +1,261 @@
+{
+  "n": 10,
+  "model": "deepseek-v4-flash",
+  "average": {
+    "precision": 0.619,
+    "recall": 0.65,
+    "f1": 0.6299
+  },
+  "samples": [
+    {
+      "input_chars": 80,
+      "gold_punct": 6,
+      "pred_punct": 9,
+      "score": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "correct": 6
+      },
+      "elapsed": 1.58,
+      "usage": {
+        "input_tokens": 61,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 138,
+        "output_tokens_details": {
+          "reasoning_tokens": 84
+        },
+        "total_tokens": 199
+      },
+      "gold": "Linux程序设计(第4版) (图灵程序设计丛书·Linux/UNIX系列)\n\n\n前折页\n\n\n\n\n陈健\n\n\n毕业于南京大",
+      "pred": "程序设计（第版）。图灵程序设计丛书系列前折页。  \n陈健，毕业于南京大学，年获电子学学士，年获计算机硕士。现工作于南京大"
+    },
+    {
+      "input_chars": 62,
+      "gold_punct": 6,
+      "pred_punct": 7,
+      "score": {
+        "precision": 0.8571,
+        "recall": 1.0,
+        "f1": 0.9231,
+        "correct": 6
+      },
+      "elapsed": 1.78,
+      "usage": {
+        "input_tokens": 50,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 124,
+        "output_tokens_details": {
+          "reasoning_tokens": 85
+        },
+        "total_tokens": 174
+      },
+      "gold": "\n\n\n\n\n\n\n宋健建\n\n\n毕业于南京大学计算机系，分别于1997年和2003年获学士、硕士学位，从事软件开发多年，现任教",
+      "pred": "宋健建，毕业于南京大学计算机系，分别于年和年获学士、硕士学位。从事软件开发多年，现任教于南京大学软件学院。主要研究方向为"
+    },
+    {
+      "input_chars": 142,
+      "gold_punct": 9,
+      "pred_punct": 9,
+      "score": {
+        "precision": 0.6667,
+        "recall": 0.6667,
+        "f1": 0.6667,
+        "correct": 6
+      },
+      "elapsed": 2.77,
+      "usage": {
+        "input_tokens": 98,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 219,
+        "output_tokens_details": {
+          "reasoning_tokens": 33
+        },
+        "total_tokens": 317
+      },
+      "gold": "\n\n\n\n\n书名页\n\n\n版权页\n\n\n图书在版编目（CIP）数据\n\n\n\n\nLinux程序设计：第4版/（英）马修（Matth",
+      "pred": "书名页  \n版权页  \n图书在版编目数据  \n\n程序设计（第3版）/（英）马修，（英）斯通斯著；陈健，宋健建译。—北京："
+    },
+    {
+      "input_chars": 89,
+      "gold_punct": 6,
+      "pred_punct": 6,
+      "score": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 6
+      },
+      "elapsed": 1.93,
+      "usage": {
+        "input_tokens": 64,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 162,
+        "output_tokens_details": {
+          "reasoning_tokens": 109
+        },
+        "total_tokens": 226
+      },
+      "gold": "大多数标准Linux开发工具的使用方法，通过DBM和MySQL数据库系统存储Linux中的数据，为X视窗系统建立图形化用",
+      "pred": "大多数标准开发工具的使用方法，通过和数据库系统存储中的数据，为视窗系统建立图形化用户界面等。  \n本书通过先介绍程序设计"
+    },
+    {
+      "input_chars": 150,
+      "gold_punct": 9,
+      "pred_punct": 42,
+      "score": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "correct": 0
+      },
+      "elapsed": 3.28,
+      "usage": {
+        "input_tokens": 113,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 275,
+        "output_tokens_details": {
+          "reasoning_tokens": 29
+        },
+        "total_tokens": 388
+      },
+      "gold": "\n\n\n\n\n图灵程序设计丛书\n\n\nLinux程序设计（第4版）\n\n\n◆　著　　　　［英］Neil Matthew　Rich",
+      "pred": "图灵程序设计丛书。程序设计（第4版）著，[英]译。陈健、宋健建译。责任编辑：傅志红。执行编辑：印星星。人民邮电出版社出版"
+    },
+    {
+      "input_chars": 138,
+      "gold_punct": 10,
+      "pred_punct": 12,
+      "score": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "correct": 0
+      },
+      "elapsed": 1.62,
+      "usage": {
+        "input_tokens": 99,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 123,
+        "output_tokens_details": {
+          "reasoning_tokens": 29
+        },
+        "total_tokens": 222
+      },
+      "gold": "权人民邮电出社独家出版。\n\n\n本书封底贴有Wiley & Sons, Inc.激光防伪标签，无标签者不得销售。\n\n\n版权",
+      "pred": "权人民邮电出版社独家出版。本书封底贴有激光防伪标签，无标签者不得销售。版权所有，侵权必究。\n\n序\n\n序\n\n所有的计算机程"
+    },
+    {
+      "input_chars": 89,
+      "gold_punct": 6,
+      "pred_punct": 5,
+      "score": {
+        "precision": 1.0,
+        "recall": 0.8333,
+        "f1": 0.9091,
+        "correct": 5
+      },
+      "elapsed": 2.26,
+      "usage": {
+        "input_tokens": 68,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 183,
+        "output_tokens_details": {
+          "reasoning_tokens": 129
+        },
+        "total_tokens": 251
+      },
+      "gold": "并且从来没有停止过对其中代码的使用），但釆用这种风格的图书可以说少之又少，这不能不说是一件很奇怪的事情。在因特网中，存在",
+      "pred": "并且从来没有停止过对其中代码的使用，但采用这种风格的图书可以说少之又少，这不能不说是一件很奇怪的事情。  \n\n在因特网中"
+    },
+    {
+      "input_chars": 62,
+      "gold_punct": 4,
+      "pred_punct": 0,
+      "score": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "correct": 0
+      },
+      "elapsed": 20.28,
+      "usage": {
+        "input_tokens": 51,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 2048,
+        "output_tokens_details": {
+          "reasoning_tokens": 2048
+        },
+        "total_tokens": 2099
+      },
+      "gold": "Linux文档项目发表了一系列的文档，内容涵盖了Linux的各个方面，从在同一台机器上同时安装Linux和Windows",
+      "pred": "文档项目发表了一系列的文档内容涵盖了的各个方面从在同一台机器上同时安装和到将你的咖啡机连接到系统你可以通过网址来查看文档"
+    },
+    {
+      "input_chars": 89,
+      "gold_punct": 7,
+      "pred_punct": 7,
+      "score": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 7
+      },
+      "elapsed": 1.91,
+      "usage": {
+        "input_tokens": 63,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 87,
+        "output_tokens_details": {
+          "reasoning_tokens": 35
+        },
+        "total_tokens": 150
+      },
+      "gold": "\n\n\n从另一方面来看，现在的图书市场充斥着大量这样的图书，它们要么是大部头的巨著，内容详尽而全面，使得你没有时间把它们读",
+      "pred": "从另一方面来看，现在的图书市场充斥着大量这样的图书：它们要么是大部头的巨著，内容详尽而全面，使得你没有时间把它们读完；要"
+    },
+    {
+      "input_chars": 82,
+      "gold_punct": 5,
+      "pred_punct": 5,
+      "score": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 5
+      },
+      "elapsed": 3.66,
+      "usage": {
+        "input_tokens": 66,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 233,
+        "output_tokens_details": {
+          "reasoning_tokens": 178
+        },
+        "total_tokens": 299
+      },
+      "gold": "只有很少的书籍尝试着对大量实际应用领域的基本概念和做法进行介绍。本书就是其中之一，它是对程序员笔记的摘要，经过破译（要认",
+      "pred": "只有很少的书籍尝试着对大量实际应用领域的基本概念和做法进行介绍，本书就是其中之一。它是对程序员笔记的摘要，经过破译——要"
+    }
+  ]
+}

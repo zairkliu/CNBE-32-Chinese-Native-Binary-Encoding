@@ -1,0 +1,261 @@
+{
+  "n": 10,
+  "model": "deepseek-v4-flash",
+  "average": {
+    "precision": 0.8145,
+    "recall": 0.8198,
+    "f1": 0.814
+  },
+  "samples": [
+    {
+      "input_chars": 150,
+      "gold_punct": 9,
+      "pred_punct": 22,
+      "score": {
+        "precision": 0.0455,
+        "recall": 0.1111,
+        "f1": 0.0645,
+        "correct": 1
+      },
+      "elapsed": 2.18,
+      "usage": {
+        "input_tokens": 152,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 232,
+        "output_tokens_details": {
+          "reasoning_tokens": 21
+        },
+        "total_tokens": 384
+      },
+      "gold": "金庸作品全集（新修版）（全36册）\n\n\n目录\n\n\n总目录\n\n\n金庸作品集：书剑恩仇录（新修版）（全2册）\n\n\n金庸作品集",
+      "pred": "金庸作品全集·新修版全册目录。\n\n总目录：\n\n《金庸作品集·书剑恩仇录》（新修版，全一册）；  \n《金庸作品集·碧血剑》"
+    },
+    {
+      "input_chars": 106,
+      "gold_punct": 15,
+      "pred_punct": 13,
+      "score": {
+        "precision": 0.9231,
+        "recall": 0.8,
+        "f1": 0.8571,
+        "correct": 12
+      },
+      "elapsed": 2.69,
+      "usage": {
+        "input_tokens": 105,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 247,
+        "output_tokens_details": {
+          "reasoning_tokens": 145
+        },
+        "total_tokens": 352
+      },
+      "gold": "原图为作者所藏。\n\n\n\n\n海宁城及海塘：录自《海宁州志稿》，家兄良鉴所赠。\n\n\n\n\n长春园图卷：郎世宁作。长春园为西式建",
+      "pred": "原图为作者所藏海宁城及海塘录，自《海宁州志稿》。家兄良鉴所赠《长春园图卷》，郎世宁作。长春园为西式建筑，乾隆身畔陪坐之嫔"
+    },
+    {
+      "input_chars": 88,
+      "gold_punct": 12,
+      "pred_punct": 13,
+      "score": {
+        "precision": 0.9231,
+        "recall": 1.0,
+        "f1": 0.96,
+        "correct": 12
+      },
+      "elapsed": 1.49,
+      "usage": {
+        "input_tokens": 93,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 115,
+        "output_tokens_details": {
+          "reasoning_tokens": 27
+        },
+        "total_tokens": 208
+      },
+      "gold": "作画工细逼真，虽乏意境，但可代摄影。\n\n\n\n\n乾隆南巡时之行营：该图与“南巡阅兵图”均为南巡长卷之一部份，原图现藏巴黎 ",
+      "pred": "作画工细逼真，虽乏意境，但可代摄影。乾隆南巡时之行营，该图与南巡阅兵图均为南巡长卷之一部份，原图现藏巴黎博物馆。哈萨克人"
+    },
+    {
+      "input_chars": 88,
+      "gold_punct": 11,
+      "pred_punct": 9,
+      "score": {
+        "precision": 0.5556,
+        "recall": 0.4545,
+        "f1": 0.5,
+        "correct": 5
+      },
+      "elapsed": 1.9,
+      "usage": {
+        "input_tokens": 89,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 130,
+        "output_tokens_details": {
+          "reasoning_tokens": 43
+        },
+        "total_tokens": 219
+      },
+      "gold": "由此图可以想像霍青桐率众东来夺经、陆菲青塞上行旅之情景。\n\n\n\n\n乾隆所绘之“烟波钓艇”图：作于乾隆九年，时年三十四岁。",
+      "pred": "由此图可以想像霍青桐率众东来夺经、陆菲青塞上行旅之情景。乾隆所绘之《烟波钓艇图》作于乾隆九年，时年三十四岁。《乾隆游江南"
+    },
+    {
+      "input_chars": 89,
+      "gold_punct": 12,
+      "pred_punct": 13,
+      "score": {
+        "precision": 0.9231,
+        "recall": 1.0,
+        "f1": 0.96,
+        "correct": 12
+      },
+      "elapsed": 1.7,
+      "usage": {
+        "input_tokens": 84,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 116,
+        "output_tokens_details": {
+          "reasoning_tokens": 37
+        },
+        "total_tokens": 200
+      },
+      "gold": "\n\n\n\n\n乾隆采芝图：乾隆时为宝亲王，年二十四岁。图有乾隆自题诗，下有梁诗正题诗，时为雍正甲寅夏四月，即雍正十二年。乾隆",
+      "pred": "乾隆采芝图。乾隆时为宝亲王，年二十四岁。图有乾隆自题诗，下有梁诗正题诗。时为雍正甲寅夏四月，即雍正十二年。乾隆自号长春居"
+    },
+    {
+      "input_chars": 101,
+      "gold_punct": 12,
+      "pred_punct": 13,
+      "score": {
+        "precision": 0.9231,
+        "recall": 1.0,
+        "f1": 0.96,
+        "correct": 12
+      },
+      "elapsed": 3.05,
+      "usage": {
+        "input_tokens": 92,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 190,
+        "output_tokens_details": {
+          "reasoning_tokens": 102
+        },
+        "total_tokens": 282
+      },
+      "gold": "由此图可想像陈家洛与福康安之容貌。梁诗正，杭州人，乾隆时为东阁大学士。\n\n\n\n\n董邦达作 “天竺寺图”：陈家洛与乾隆在杭",
+      "pred": "由此图可想像陈家洛与福康安之容貌。梁诗正，杭州人，乾隆时为东阁大学士。董邦达作《天竺寺图》，陈家洛与乾隆在杭州天竺初次相"
+    },
+    {
+      "input_chars": 98,
+      "gold_punct": 17,
+      "pred_punct": 17,
+      "score": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 17
+      },
+      "elapsed": 2.36,
+      "usage": {
+        "input_tokens": 100,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 228,
+        "output_tokens_details": {
+          "reasoning_tokens": 129
+        },
+        "total_tokens": 328
+      },
+      "gold": "乾隆题记云：“董邦达所作西湖诸景，辛未南巡，携之行笥，遇境辄相印证，信能曲尽其胜。”又云：“即景成吟，辞不尽高，质之图中",
+      "pred": "乾隆题记云：“董邦达所作西湖诸景，辛未南巡，携之行笥，遇境辄相印证，信能曲尽其胜。”又云：“即景成吟，辞不尽高，质之图中"
+    },
+    {
+      "input_chars": 84,
+      "gold_punct": 11,
+      "pred_punct": 10,
+      "score": {
+        "precision": 1.0,
+        "recall": 0.9091,
+        "f1": 0.9524,
+        "correct": 10
+      },
+      "elapsed": 2.83,
+      "usage": {
+        "input_tokens": 94,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 304,
+        "output_tokens_details": {
+          "reasoning_tokens": 218
+        },
+        "total_tokens": 398
+      },
+      "gold": "了如说法无多子，且喜入山不厌深。七佛总空法化报，三生曾话去来今。未能习静催归辔，已听钟流云外音。”图右为西湖。图中远处之",
+      "pred": "了如说法无多子，且喜入山不厌深。七佛总空法化报，三生曾话去来今。未能习静催归辔，已听钟流云外音。\n\n图右为西湖，图中远处"
+    },
+    {
+      "input_chars": 92,
+      "gold_punct": 13,
+      "pred_punct": 14,
+      "score": {
+        "precision": 0.9286,
+        "recall": 1.0,
+        "f1": 0.963,
+        "correct": 13
+      },
+      "elapsed": 2.07,
+      "usage": {
+        "input_tokens": 89,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 195,
+        "output_tokens_details": {
+          "reasoning_tokens": 110
+        },
+        "total_tokens": 284
+      },
+      "gold": "黄易，杭州人，西泠八家之一，该印边款谓作于丙辰年。乾隆于丙辰年登基，丙辰年退位，整整在位六十年。黄易生于乾隆九年，卒于嘉",
+      "pred": "黄易，杭州人，西泠八家之一。该印边款谓作于丙辰年。乾隆于丙辰年登基，丙辰年退位，整整在位六十年。黄易生于乾隆九年，卒于嘉"
+    },
+    {
+      "input_chars": 121,
+      "gold_punct": 13,
+      "pred_punct": 13,
+      "score": {
+        "precision": 0.9231,
+        "recall": 0.9231,
+        "f1": 0.9231,
+        "correct": 12
+      },
+      "elapsed": 2.17,
+      "usage": {
+        "input_tokens": 95,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 213,
+        "output_tokens_details": {
+          "reasoning_tokens": 122
+        },
+        "total_tokens": 308
+      },
+      "gold": "该印为作者所藏，幼时不知宝爱，收藏未妥，笔划有残缺矣。\n“金庸作品”新序\n\n\n\n\n“金庸作品”新序\n\n\n小说是写给人看的",
+      "pred": "该印为作者所藏，幼时不知宝爱，收藏未妥，笔划有残缺矣。\n\n金庸作品新序\n\n金庸作品新序\n\n小说是写给人看的。小说的内容是"
+    }
+  ]
+}

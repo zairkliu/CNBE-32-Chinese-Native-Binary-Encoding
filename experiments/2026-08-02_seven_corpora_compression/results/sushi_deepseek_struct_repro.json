@@ -1,0 +1,19 @@
+{
+  "n_chars": 20,
+  "parsed": 20,
+  "structure_accuracy": 0.2,
+  "model": "deepseek-v4-flash",
+  "elapsed": 4.7,
+  "usage": {
+    "input_tokens": 146,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 384,
+    "output_tokens_details": {
+      "reasoning_tokens": 295
+    },
+    "total_tokens": 530
+  },
+  "raw_output": "苏 上下\n文 独体字\n忠 上下\n公 上下\n詩 左右\n集 上下\n蘇 上下\n文 独体字\n忠 上下\n告 上下\n詩 左右\n集 上下\n五 独体字\n十 独体字\n卷 上下\n蘇 上下\n軾 左右\n撰 左右\n清 左右\n紀 左右"
+}

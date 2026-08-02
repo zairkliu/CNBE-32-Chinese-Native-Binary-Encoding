@@ -1,0 +1,12 @@
+{
+  "num_experts": 16,
+  "d_model": 4096,
+  "tokens": 4096,
+  "traditional_flops": 268435456,
+  "cnbe_flops": 33558528,
+  "speedup_flops": 7.999023556694739,
+  "traditional_time_ms": 0.0552,
+  "cnbe_time_ms": 0.0767,
+  "speedup_time": 0.72,
+  "extrapolated_896_speedup": 448.0
+}

@@ -1,0 +1,19 @@
+{
+  "n_chars": 20,
+  "parsed": 20,
+  "agreement": 0.05,
+  "model": "deepseek-v4-flash",
+  "elapsed": 70.55,
+  "usage": {
+    "input_tokens": 194,
+    "input_tokens_details": {
+      "cached_tokens": 128
+    },
+    "output_tokens": 6126,
+    "output_tokens_details": {
+      "reasoning_tokens": 6065
+    },
+    "total_tokens": 6320
+  },
+  "raw_output": "苏 A\n文 B\n忠 C\n公 D\n詩 E\n集 F\n蘇 A\n文 B\n忠 C\n告 G\n詩 E\n集 F\n五 H\n十 I\n卷 J\n蘇 A\n軾 K\n撰 L\n清 M\n紀 N"
+}

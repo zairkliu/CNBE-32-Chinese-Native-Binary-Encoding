@@ -1,0 +1,386 @@
+{
+  "0": {
+    "radix": 106,
+    "stroke": 8,
+    "struct": 3,
+    "freq": 103810
+  },
+  "1": {
+    "radix": 1,
+    "stroke": 1,
+    "struct": 0,
+    "freq": 61930
+  },
+  "2": {
+    "radix": 1,
+    "stroke": 3,
+    "struct": 0,
+    "freq": 60909
+  },
+  "3": {
+    "radix": 72,
+    "stroke": 9,
+    "struct": 1,
+    "freq": 46971
+  },
+  "4": {
+    "radix": 1,
+    "stroke": 4,
+    "struct": 0,
+    "freq": 44349
+  },
+  "5": {
+    "radix": 9,
+    "stroke": 7,
+    "struct": 3,
+    "freq": 44166
+  },
+  "6": {
+    "radix": 2,
+    "stroke": 4,
+    "struct": 0,
+    "freq": 41657
+  },
+  "7": {
+    "radix": 4,
+    "stroke": 3,
+    "struct": 0,
+    "freq": 40450
+  },
+  "8": {
+    "radix": 162,
+    "stroke": 7,
+    "struct": 8,
+    "freq": 39119
+  },
+  "9": {
+    "radix": 9,
+    "stroke": 5,
+    "struct": 3,
+    "freq": 38132
+  },
+  "10": {
+    "radix": 9,
+    "stroke": 2,
+    "struct": 0,
+    "freq": 36725
+  },
+  "11": {
+    "radix": 74,
+    "stroke": 6,
+    "struct": 5,
+    "freq": 33142
+  },
+  "12": {
+    "radix": 9,
+    "stroke": 4,
+    "struct": 3,
+    "freq": 32984
+  },
+  "13": {
+    "radix": 75,
+    "stroke": 5,
+    "struct": 0,
+    "freq": 32839
+  },
+  "14": {
+    "radix": 72,
+    "stroke": 4,
+    "struct": 0,
+    "freq": 31764
+  },
+  "15": {
+    "radix": 24,
+    "stroke": 2,
+    "struct": 0,
+    "freq": 30124
+  },
+  "16": {
+    "radix": 9,
+    "stroke": 9,
+    "struct": 3,
+    "freq": 29205
+  },
+  "17": {
+    "radix": 67,
+    "stroke": 4,
+    "struct": 0,
+    "freq": 28602
+  },
+  "18": {
+    "radix": 6,
+    "stroke": 2,
+    "struct": 0,
+    "freq": 26867
+  },
+  "19": {
+    "radix": 32,
+    "stroke": 6,
+    "struct": 5,
+    "freq": 26435
+  },
+  "20": {
+    "radix": 149,
+    "stroke": 9,
+    "struct": 3,
+    "freq": 26046
+  },
+  "21": {
+    "radix": 62,
+    "stroke": 7,
+    "struct": 0,
+    "freq": 26026
+  },
+  "22": {
+    "radix": 7,
+    "stroke": 2,
+    "struct": 0,
+    "freq": 25396
+  },
+  "23": {
+    "radix": 51,
+    "stroke": 6,
+    "struct": 0,
+    "freq": 25227
+  },
+  "24": {
+    "radix": 3,
+    "stroke": 4,
+    "struct": 0,
+    "freq": 24917
+  },
+  "25": {
+    "radix": 31,
+    "stroke": 8,
+    "struct": 11,
+    "freq": 24217
+  },
+  "26": {
+    "radix": 75,
+    "stroke": 7,
+    "struct": 0,
+    "freq": 24152
+  },
+  "27": {
+    "radix": 9,
+    "stroke": 6,
+    "struct": 3,
+    "freq": 22577
+  },
+  "28": {
+    "radix": 39,
+    "stroke": 8,
+    "struct": 2,
+    "freq": 21754
+  },
+  "29": {
+    "radix": 37,
+    "stroke": 3,
+    "struct": 0,
+    "freq": 21682
+  },
+  "30": {
+    "radix": 96,
+    "stroke": 3,
+    "struct": 4,
+    "freq": 20654
+  },
+  "31": {
+    "radix": 74,
+    "stroke": 4,
+    "struct": 0,
+    "freq": 19970
+  },
+  "32": {
+    "radix": 7,
+    "stroke": 3,
+    "struct": 0,
+    "freq": 19568
+  },
+  "33": {
+    "radix": 60,
+    "stroke": 11,
+    "struct": 3,
+    "freq": 18566
+  },
+  "34": {
+    "radix": 38,
+    "stroke": 6,
+    "struct": 3,
+    "freq": 18517
+  },
+  "35": {
+    "radix": 37,
+    "stroke": 4,
+    "struct": 0,
+    "freq": 18274
+  },
+  "36": {
+    "radix": 162,
+    "stroke": 6,
+    "struct": 8,
+    "freq": 17488
+  },
+  "37": {
+    "radix": 18,
+    "stroke": 8,
+    "struct": 3,
+    "freq": 17454
+  },
+  "38": {
+    "radix": 149,
+    "stroke": 6,
+    "struct": 3,
+    "freq": 16944
+  },
+  "39": {
+    "radix": 149,
+    "stroke": 7,
+    "struct": 3,
+    "freq": 16614
+  },
+  "40": {
+    "radix": 149,
+    "stroke": 8,
+    "struct": 3,
+    "freq": 16609
+  },
+  "41": {
+    "radix": 126,
+    "stroke": 6,
+    "struct": 0,
+    "freq": 16577
+  },
+  "42": {
+    "radix": 63,
+    "stroke": 8,
+    "struct": 3,
+    "freq": 16349
+  },
+  "43": {
+    "radix": 1,
+    "stroke": 5,
+    "struct": 0,
+    "freq": 16347
+  },
+  "44": {
+    "radix": 85,
+    "stroke": 10,
+    "struct": 3,
+    "freq": 16172
+  },
+  "45": {
+    "radix": 17,
+    "stroke": 5,
+    "struct": 0,
+    "freq": 16165
+  },
+  "46": {
+    "radix": 30,
+    "stroke": 6,
+    "struct": 5,
+    "freq": 16096
+  },
+  "47": {
+    "radix": 30,
+    "stroke": 6,
+    "struct": 1,
+    "freq": 15992
+  },
+  "48": {
+    "radix": 100,
+    "stroke": 5,
+    "struct": 0,
+    "freq": 15983
+  },
+  "49": {
+    "radix": 30,
+    "stroke": 8,
+    "struct": 3,
+    "freq": 15878
+  },
+  "50": {
+    "radix": 85,
+    "stroke": 8,
+    "struct": 3,
+    "freq": 15771
+  },
+  "51": {
+    "radix": 40,
+    "stroke": 8,
+    "struct": 1,
+    "freq": 15760
+  },
+  "52": {
+    "radix": 61,
+    "stroke": 13,
+    "struct": 1,
+    "freq": 15702
+  },
+  "53": {
+    "radix": 72,
+    "stroke": 7,
+    "struct": 3,
+    "freq": 15682
+  },
+  "54": {
+    "radix": 40,
+    "stroke": 10,
+    "struct": 1,
+    "freq": 15410
+  },
+  "55": {
+    "radix": 30,
+    "stroke": 5,
+    "struct": 1,
+    "freq": 15359
+  },
+  "56": {
+    "radix": 7,
+    "stroke": 4,
+    "struct": 0,
+    "freq": 15167
+  },
+  "57": {
+    "radix": 125,
+    "stroke": 8,
+    "struct": 5,
+    "freq": 14693
+  },
+  "58": {
+    "radix": 30,
+    "stroke": 5,
+    "struct": 6,
+    "freq": 14632
+  },
+  "59": {
+    "radix": 64,
+    "stroke": 7,
+    "struct": 3,
+    "freq": 14167
+  },
+  "60": {
+    "radix": 147,
+    "stroke": 4,
+    "struct": 0,
+    "freq": 14056
+  },
+  "61": {
+    "radix": 39,
+    "stroke": 3,
+    "struct": 0,
+    "freq": 14036
+  },
+  "62": {
+    "radix": 24,
+    "stroke": 4,
+    "struct": 0,
+    "freq": 14026
+  },
+  "63": {
+    "radix": 75,
+    "stroke": 10,
+    "struct": 3,
+    "freq": 13883
+  }
+}

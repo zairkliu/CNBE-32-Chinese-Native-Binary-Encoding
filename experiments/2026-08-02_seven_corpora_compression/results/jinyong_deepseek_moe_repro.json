@@ -1,0 +1,19 @@
+{
+  "n_chars": 20,
+  "parsed": 20,
+  "agreement": 0.0,
+  "model": "deepseek-v4-flash",
+  "elapsed": 22.19,
+  "usage": {
+    "input_tokens": 193,
+    "input_tokens_details": {
+      "cached_tokens": 128
+    },
+    "output_tokens": 2121,
+    "output_tokens_details": {
+      "reasoning_tokens": 2061
+    },
+    "total_tokens": 2314
+  },
+  "raw_output": "金 H\n庸 K\n作 G\n品 I\n全 F\n集 L\n新 M\n修 I\n版 H\n全 F\n册 E\n目 E\n录 H\n总 I\n目 E\n录 H\n金 H\n庸 K\n作 G\n品 I"
+}

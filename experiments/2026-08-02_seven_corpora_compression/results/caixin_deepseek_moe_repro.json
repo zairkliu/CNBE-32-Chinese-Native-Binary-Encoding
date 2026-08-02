@@ -1,0 +1,19 @@
+{
+  "n_chars": 20,
+  "parsed": 20,
+  "agreement": 0.0,
+  "model": "deepseek-v4-flash",
+  "elapsed": 52.6,
+  "usage": {
+    "input_tokens": 193,
+    "input_tokens_details": {
+      "cached_tokens": 128
+    },
+    "output_tokens": 5073,
+    "output_tokens_details": {
+      "reasoning_tokens": 5013
+    },
+    "total_tokens": 5266
+  },
+  "raw_output": "未 F  \n知 I  \n版 I  \n权 G  \n页 G  \n未 F  \n知 I  \n编 M  \n辑 N  \n絮 M  \n语 J  \n王 E  \n烁 J  \n身 H  \n份 G  \n的 I  \n解 N  \n药 J  \n多 G  \n重 J"
+}

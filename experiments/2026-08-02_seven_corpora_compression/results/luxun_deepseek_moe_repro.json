@@ -1,0 +1,19 @@
+{
+  "n_chars": 20,
+  "parsed": 19,
+  "agreement": 0.1579,
+  "model": "deepseek-v4-flash",
+  "elapsed": 24.6,
+  "usage": {
+    "input_tokens": 193,
+    "input_tokens_details": {
+      "cached_tokens": 128
+    },
+    "output_tokens": 2302,
+    "output_tokens_details": {
+      "reasoning_tokens": 2245
+    },
+    "total_tokens": 2495
+  },
+  "raw_output": "鲁 M\n迅 G\n全 G\n集 M\n书 E\n名 G\n页 G\n目 F\n录 H\n鲁 M\n迅 G\n全 G\n版 I\n权 G\n页 G\n出 F\n版 I\n说 J\n明 I"
+}

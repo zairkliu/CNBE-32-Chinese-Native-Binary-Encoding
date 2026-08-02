@@ -1,0 +1,8 @@
+{
+  "train_templates": 1284,
+  "test_tokens": 50000,
+  "traditional_accuracy": 0.0629,
+  "cnbe_accuracy": 0.8367,
+  "accuracy_gap": -0.7738,
+  "expert_load_gini": 0.1092
+}

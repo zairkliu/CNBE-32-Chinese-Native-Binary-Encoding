@@ -1,0 +1,211 @@
+{
+  "n": 8,
+  "model": "deepseek-v4-flash",
+  "average": {
+    "precision": 0.8383,
+    "recall": 0.8661,
+    "f1": 0.8505
+  },
+  "samples": [
+    {
+      "input_chars": 97,
+      "gold_punct": 14,
+      "pred_punct": 14,
+      "score": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "correct": 0
+      },
+      "elapsed": 2.39,
+      "usage": {
+        "input_tokens": 118,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 145,
+        "output_tokens_details": {
+          "reasoning_tokens": 35
+        },
+        "total_tokens": 263
+      },
+      "gold": "唐學士院。在右銀臺内。含元殿宴罷歸院。多從叡武樓過。故鄭略酬通義劉相瞻曰。劉綱暗借飆輪便。叡武樓中似去年。嘗同爲學士侍宴",
+      "pred": "唐学士院在右银台门内。含元殿宴罢，归院多从睿武楼过。故郑略酬通义刘相瞻曰：“刘纲暗借飙轮便，睿武楼中似去年。”尝同为学士"
+    },
+    {
+      "input_chars": 39,
+      "gold_punct": 5,
+      "pred_punct": 5,
+      "score": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 5
+      },
+      "elapsed": 1.98,
+      "usage": {
+        "input_tokens": 56,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 126,
+        "output_tokens_details": {
+          "reasoning_tokens": 78
+        },
+        "total_tokens": 182
+      },
+      "gold": "多病愛閑。始見南史王儉傳。樂天有經忙始愛閑。劉夢得有功成却愛閑。杜牧之有愛閑能有幾人來。",
+      "pred": "多病愛閑，始見《南史·王儉傳》。樂天有“經忙始愛閑”，劉夢得有“功成却愛閑”，杜牧之有“愛閑能有幾人來”。"
+    },
+    {
+      "input_chars": 30,
+      "gold_punct": 4,
+      "pred_punct": 4,
+      "score": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 4
+      },
+      "elapsed": 2.77,
+      "usage": {
+        "input_tokens": 52,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 220,
+        "output_tokens_details": {
+          "reasoning_tokens": 187
+        },
+        "total_tokens": 272
+      },
+      "gold": "春蠶到死絲方盡。蠟燭成灰泪始乾。此名倡王幼玉之詩也。非渠無能道此者。",
+      "pred": "春蚕到死丝方尽，蜡烛成灰泪始干。此名倡王幼玉之诗也，非渠无能道此者。"
+    },
+    {
+      "input_chars": 70,
+      "gold_punct": 10,
+      "pred_punct": 10,
+      "score": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 10
+      },
+      "elapsed": 1.77,
+      "usage": {
+        "input_tokens": 83,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 105,
+        "output_tokens_details": {
+          "reasoning_tokens": 26
+        },
+        "total_tokens": 188
+      },
+      "gold": "我今半月忍飢渴。求死不死更無術。精神常與天往來。不知飲食爲何物。若非功行積未成。便是業債償未畢。太清神仙多宴會。鳳簫龍笛",
+      "pred": "我今半月忍飢渴，求死不死更無術。  \n精神常與天往來，不知飲食爲何物。  \n若非功行積未成，便是業債償未畢。  \n太清神"
+    },
+    {
+      "input_chars": 82,
+      "gold_punct": 14,
+      "pred_punct": 14,
+      "score": {
+        "precision": 0.9286,
+        "recall": 0.9286,
+        "f1": 0.9286,
+        "correct": 13
+      },
+      "elapsed": 2.71,
+      "usage": {
+        "input_tokens": 99,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 229,
+        "output_tokens_details": {
+          "reasoning_tokens": 130
+        },
+        "total_tokens": 328
+      },
+      "gold": "司空圖論詩。謂元白力勍而氣孱。乃都市之豪估耳。郊島非附於寒澀。無所置才。皆中其病。自評已作。乃以南樓山最秀。北路邑偏清。",
+      "pred": "司空圖論詩，謂元白力勍而氣孱，乃都市之豪估耳；郊島非附於寒澀，無所置才。皆中其病。自評已作，乃以“南樓山最秀，北路邑偏清"
+    },
+    {
+      "input_chars": 49,
+      "gold_punct": 7,
+      "pred_punct": 9,
+      "score": {
+        "precision": 0.7778,
+        "recall": 1.0,
+        "f1": 0.875,
+        "correct": 7
+      },
+      "elapsed": 1.76,
+      "usage": {
+        "input_tokens": 71,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 153,
+        "output_tokens_details": {
+          "reasoning_tokens": 91
+        },
+        "total_tokens": 224
+      },
+      "gold": "丹地深嚴隔世塵。錢若水云。日上花稍檐捲後。柳遮鈴索雨晴初。楊徽之云詔出紫泥封去潤。朝回蓮燭賜來香。皆粲然有貴氣。",
+      "pred": "丹地深嚴，隔世塵。錢若水云：“日上花稍檐捲後，柳遮鈴索雨晴初。”楊徽之云：“詔出紫泥封去潤，朝回蓮燭賜來香。”皆粲然有貴"
+    },
+    {
+      "input_chars": 82,
+      "gold_punct": 13,
+      "pred_punct": 13,
+      "score": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 13
+      },
+      "elapsed": 3.87,
+      "usage": {
+        "input_tokens": 102,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 381,
+        "output_tokens_details": {
+          "reasoning_tokens": 282
+        },
+        "total_tokens": 483
+      },
+      "gold": "月明星稀。烏鵲南飛。文選載曹丕之詩也。蘇東坡作前赤壁賦云。月明星稀。烏鵲南飛。此豈非曹孟德之詩乎。孟德乃丕之父。亦錯記焉",
+      "pred": "月明星稀，烏鵲南飛。《文選》載曹丕之詩也。蘇東坡作《前赤壁賦》云：“月明星稀，烏鵲南飛。”此豈非曹孟德之詩乎？孟德乃丕之"
+    },
+    {
+      "input_chars": 48,
+      "gold_punct": 10,
+      "pred_punct": 10,
+      "score": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 10
+      },
+      "elapsed": 2.08,
+      "usage": {
+        "input_tokens": 61,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 151,
+        "output_tokens_details": {
+          "reasoning_tokens": 98
+        },
+        "total_tokens": 212
+      },
+      "gold": "東坡詩。口業向詩猶小小。眼花因酒尚紛紛。又云。口業不停詩有債。眼花亂墜酒生風。若眼花。則或然或否。若口業。則信有之。",
+      "pred": "東坡詩：“口業向詩猶小小，眼花因酒尚紛紛。”又云：“口業不停詩有債，眼花亂墜酒生風。”若眼花，則或然或否；若口業，則信有"
+    }
+  ]
+}
