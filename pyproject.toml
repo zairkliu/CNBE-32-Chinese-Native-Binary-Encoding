@@ -14,6 +14,14 @@ dependencies = [
     "numpy>=2.0",
 ]
 
+[project.optional-dependencies]
+demo = [
+    "pyinstaller>=6.10",
+]
+
+[project.scripts]
+cnbe32-demo = "cnbe32_demo:main"
+
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
@@ -40,7 +48,7 @@ cnbe32 = ["data/cnbe32.db"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py"]
-pythonpath = ["."]
+pythonpath = ["src", "."]
 markers = [
     "integration: tests that require the cnbe32.db database file",
     "local_knowledge: tests that require the local cnbe-research knowledge workspace",
