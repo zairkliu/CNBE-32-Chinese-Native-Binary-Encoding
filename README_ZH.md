@@ -14,6 +14,7 @@
   <img alt="标准对齐" src="https://img.shields.io/badge/standards--aligned-in%20progress-orange">
   <img alt="Python SDK" src="https://img.shields.io/badge/Python%20SDK-stable%20baseline-blue">
   <a href="https://pypi.org/project/cnbe32/"><img alt="PyPI" src="https://img.shields.io/pypi/v/cnbe32.svg"></a>
+  <a href="https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding/releases/tag/demo-v1.0.0"><img alt="Desktop Demo" src="https://img.shields.io/badge/demo-v1.0.0-blue"></a>
   <img alt="Basic CJK DB" src="https://img.shields.io/badge/Basic%20CJK-20%2C902%20entries-green">
   <img alt="Extended scope" src="https://img.shields.io/badge/97%2C686-experimental%20target-lightgrey">
 </p>
@@ -25,6 +26,41 @@
 > 更大的 **97,686 CJK** 数字是计划中 / 实验性的扩展范围，不代表当前随包 SDK 覆盖。
 > 最新发布包是 **cnbe32 1.0.4**，对应 GitHub `v1.0.4` 发布检查点。
 > 仓库数据库此后已迁移至 **v1.1**（21,178 行）；迁移后已确认状态见下文。
+
+## 桌面展示 Demo
+
+本仓库提供 **CNBE-32 中文原生二进制编码展示程序**，用于软件著作权申请、项目路演和内部评审演示。展示程序支持输入汉字并输出 Unicode、CNBE-32 十六进制 / 十进制 / 32 位二进制、部首/根编号、笔画、结构、索引、扩展位和运行时状态。
+
+- Demo 发布页：[CNBE-32 Desktop Demo v1.0.0](https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding/releases/tag/demo-v1.0.0)
+- 程序源码：`src/cnbe32_demo/`
+- 软著说明与操作文档：[`docs/soft_copyright/CNBE32_DEMO_EXE_GUIDE.md`](./docs/soft_copyright/CNBE32_DEMO_EXE_GUIDE.md)
+- Windows 11 x64 打包：`tools/windows/build_demo_exe.ps1`
+- macOS 打包：`tools/macos/build_demo_app.sh`
+- Linux x64 打包：`tools/linux/build_demo_exe.sh`
+
+本地运行：
+
+```bash
+python -m pip install -e .
+cnbe32-demo
+```
+
+打包示例：
+
+```powershell
+# Windows 11 x64
+.\tools\windows\build_demo_exe.ps1
+```
+
+```bash
+# macOS
+bash tools/macos/build_demo_app.sh
+
+# Linux x64
+bash tools/linux/build_demo_exe.sh
+```
+
+说明：该 Demo 是项目展示和运行时查询软件，不改变 CNBE 的标准边界；项目仍表述为“以国家语言文字规范为对齐目标”，不宣称已获得国家标准认证。
 
 ## 当前标准重启状态
 

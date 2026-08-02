@@ -14,6 +14,7 @@
   <img alt="Standards aligned" src="https://img.shields.io/badge/standards--aligned-in%20progress-orange">
   <img alt="Python SDK" src="https://img.shields.io/badge/Python%20SDK-stable%20baseline-blue">
   <a href="https://pypi.org/project/cnbe32/"><img alt="PyPI" src="https://img.shields.io/pypi/v/cnbe32.svg"></a>
+  <a href="https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding/releases/tag/demo-v1.0.0"><img alt="Desktop Demo" src="https://img.shields.io/badge/demo-v1.0.0-blue"></a>
   <img alt="Basic CJK DB" src="https://img.shields.io/badge/Basic%20CJK-20%2C902%20entries-green">
   <img alt="Extended scope" src="https://img.shields.io/badge/97%2C686-experimental%20target-lightgrey">
 </p>
@@ -25,6 +26,41 @@ A 32-bit structural fingerprint for CJK characters — built for people who wond
 > The broader **97,686 CJK** figure is an intended / experimental extended scope, not current packaged SDK coverage.
 > The latest published package is **cnbe32 1.0.4**, matching the GitHub `v1.0.4` release checkpoint.
 > The repository database has since been migrated to **v1.1** (21,178 rows); see the confirmed state below.
+
+## Desktop demo
+
+This repository includes the **CNBE-32 Desktop Demo**, a Tkinter/SQLite application for software-copyright application materials, live project demos, and internal review. It accepts Hanzi input and displays Unicode identity, CNBE-32 hexadecimal / decimal / 32-bit binary output, radical/root, stroke count, structure type, glyph index, extension bits, and runtime status.
+
+- Demo release: [CNBE-32 Desktop Demo v1.0.0](https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding/releases/tag/demo-v1.0.0)
+- Demo source: `src/cnbe32_demo/`
+- Copyright/demo guide: [`docs/soft_copyright/CNBE32_DEMO_EXE_GUIDE.md`](./docs/soft_copyright/CNBE32_DEMO_EXE_GUIDE.md)
+- Windows 11 x64 packaging: `tools/windows/build_demo_exe.ps1`
+- macOS packaging: `tools/macos/build_demo_app.sh`
+- Linux x64 packaging: `tools/linux/build_demo_exe.sh`
+
+Run locally:
+
+```bash
+python -m pip install -e .
+cnbe32-demo
+```
+
+Package examples:
+
+```powershell
+# Windows 11 x64
+.\tools\windows\build_demo_exe.ps1
+```
+
+```bash
+# macOS
+bash tools/macos/build_demo_app.sh
+
+# Linux x64
+bash tools/linux/build_demo_exe.sh
+```
+
+The demo is a project presentation and runtime lookup application. It does not change the standards boundary: CNBE remains a research prototype aligning to national language and writing standards, not a claim of completed national-standard certification.
 
 ## Current standards restart
 
@@ -389,6 +425,5 @@ CNBE-32 includes machine-readable golden vectors in [spec/golden_vectors.json](.
 ## License
 
 MulanPSL-2.0
-
 
 
