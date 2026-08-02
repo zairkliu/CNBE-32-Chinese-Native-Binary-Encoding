@@ -19,6 +19,7 @@ For redesigned confirmatory protocols, see:
 | `v5_model_comparison/` | v5-v5.9 | Model comparison (7 models, 0.8B-20B) |
 | `v6_numerical_features/` | v6-v6.6 | Numerical format, Unicode comparison, hard tasks |
 | `results/` | All | Raw Excel results for all experiments |
+| `2026-08-02_yongle_failures/` | 2026-08-02 | Yongle OCR failure postmortem, punctuation pivot, 14B training plan, boundary analysis |
 
 ## Historical Series Overview
 
@@ -64,6 +65,13 @@ Raw experiment spreadsheets are in the `results/` directory as Excel files.
 Those spreadsheets are historical source material for future reruns.
 
 They are not by themselves confirmatory evidence.
+
+## 2026-08-02 永乐大典失败实验
+
+2026-08-02 完成《永乐大典》37 页人工校订实验，确认 1.5B 无法做整页 OCR
+转录（精确匹配约 20%），并基于识典古籍交叉验证（逐字一致 100%）把大模型
+重新定位为古籍句读专家。完整失败总结、白皮书、14B 训练配置与能力边界
+讨论见 `2026-08-02_yongle_failures/`。
 
 ## See Also
 
