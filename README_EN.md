@@ -206,6 +206,40 @@ See `tools/deploy/` for details.
 - [Field-level evaluation supplement](./reports/v11_8105_qlora/FIELD_EVAL_SUPPLEMENT.md)
 - [Deployment Guide](./tools/deploy/README.md)
 
+## 2026-08-02: Ancient OCR Failure Postmortem and Punctuation Pivot
+
+On the 37-page human-corrected 《永乐大典》卷821-823 experiment, a 1.5B
+generative model failed page-level OCR transcription (400-500 chars): exact
+match was about 20%, and eval loss could rise to 9.9.
+
+| Path | Result |
+|---|---:|
+| PaddleOCR PP-OCRv4 coverage | 18.05% |
+| DeepSeek-OCR v1 (deduplicated) coverage | 37.76% |
+| 1.5B page correction (v3/v4) | about 20-21% |
+| Page-anchored truth library | 37/37 hits, score=1.0 |
+| Shidianguji 《诗话六十三》 cross-validation | 16,082/16,082 (100%) |
+
+Conclusions:
+
+1. Small LLMs must not perform page-level sequence transcription. OCR plus the
+   truth library handles transcription; the LLM only punctuates and segments.
+2. The existing CNBE model (Qwen3.5-0.8B, 178K samples / 8,105 chars /
+   5,000 steps) remains the knowledge base; the 14B model uses knowledge
+   transfer with mixed original CNBE data to prevent forgetting.
+3. Next step: train DeepSeek-R1-Distill-Qwen-14B as the ancient-text
+   punctuation model.
+
+Documents:
+
+- [Failure Summary](./llm_experiments/2026-08-02_yongle_failures/FAILURE_SUMMARY_2026-08-02.md)
+- [14B Training White Paper](./llm_experiments/2026-08-02_yongle_failures/WHITEPAPER_2026-08-02_14B.md)
+- [Small-Model Boundary Analysis](./llm_experiments/2026-08-02_yongle_failures/BOUNDARY_ANALYSIS.md)
+- [14B QLoRA Config](./llm_experiments/2026-08-02_yongle_failures/qlora_config_14b.yaml)
+
+Model weights and the complete training archive (about 1.47 GB) are not stored
+in Git; they are archived locally in `outputs/training_data_2026-08-02_full.zip`.
+
 ## Agent and automation boundary
 
 The repository includes a GitHub-compatible Agent profile and Copilot

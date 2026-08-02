@@ -205,6 +205,40 @@ CNBE-32 只有在编码流程比早期 AI 生成目录更严格时才有研究�
 
 ---
 
+## 2026-08-02：古籍 OCR 失败复盘与句读转向
+
+在《永乐大典》卷821-823“诗字”37 页人工校订实验中发现：1.5B 生成式模型
+无法完成 400-500 字整页 OCR 转录，精确匹配仅约 20%，Eval Loss 可升至 9.9。
+
+### 关键实验数据
+
+| 路径 | 结果 |
+|---|---:|
+| PaddleOCR PP-OCRv4 覆盖率 | 18.05% |
+| DeepSeek-OCR v1 去重后覆盖率 | 37.76% |
+| 1.5B 整页修正（v3/v4） | 约 20-21% |
+| 页面锚定真值库 | 37/37 命中，score=1.0 |
+| 识典公开《诗话六十三》交叉验证 | 16,082/16,082 逐字一致（100%） |
+
+### 结论
+
+1. 小模型不能做整页序列转录；转录交给 OCR + 真值库，大模型只做句读与分段。
+2. 原有 CNBE 模型（Qwen3.5-0.8B，178K 样本 / 8,105 字 / 5,000 步）
+   保留为知识基座；14B 采用知识迁移并混入原 CNBE 数据防遗忘。
+3. 下一步训练 DeepSeek-R1-Distill-Qwen-14B 古籍句读模型。
+
+完整文档：
+
+- [失败总结](./llm_experiments/2026-08-02_yongle_failures/FAILURE_SUMMARY_2026-08-02.md)
+- [14B 训练白皮书](./llm_experiments/2026-08-02_yongle_failures/WHITEPAPER_2026-08-02_14B.md)
+- [小模型能力边界讨论](./llm_experiments/2026-08-02_yongle_failures/BOUNDARY_ANALYSIS.md)
+- [14B QLoRA 配置](./llm_experiments/2026-08-02_yongle_failures/qlora_config_14b.yaml)
+
+大模型权重与完整训练数据（约 1.47 GB）不放入 Git，归档于本地
+`outputs/training_data_2026-08-02_full.zip`。
+
+---
+
 ## Agent 与自动化边界
 
 仓库包含 GitHub 兼容的 Agent profile 和 Copilot 指令，但 GitHub Copilot cloud agent 执行能力属于可选付费集成，不是开源复现、科研审核或发布轨道 CNBE 工作的必要依赖。
