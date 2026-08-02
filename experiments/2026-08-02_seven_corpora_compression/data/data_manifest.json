@@ -1,0 +1,56 @@
+{
+  "version": "1.0",
+  "official_scale": "24,381,237",
+  "total_chars": 24381237,
+  "corpora": [
+    {
+      "corpus": "zzjh_294",
+      "file": "zzjh_294.chars.txt",
+      "chars": 4558886,
+      "bytes": 13676724,
+      "sha256": "eaa34edaba6ccdd2cc32f1742510631bc9b058a01546fb418542e1e0852f4ade"
+    },
+    {
+      "corpus": "luxun_18",
+      "file": "luxun_18.chars.txt",
+      "chars": 3864304,
+      "bytes": 11592912,
+      "sha256": "31cf6cce3c7bc9667e05e77c76946ad21077f35216d0fd545f689f0ebf11bca3"
+    },
+    {
+      "corpus": "agatha",
+      "file": "agatha.chars.txt",
+      "chars": 7804198,
+      "bytes": 23412594,
+      "sha256": "1a29ea4669d8962115ec28c12588582b9122431164382616c29ba9f4043dfbd9"
+    },
+    {
+      "corpus": "csbook",
+      "file": "csbook.chars.txt",
+      "chars": 280766,
+      "bytes": 842298,
+      "sha256": "216e0d22f1ee03921addce1790b3304092d5fbb177be456aab2e0adb71e73a74"
+    },
+    {
+      "corpus": "jinyong",
+      "file": "jinyong.chars.txt",
+      "chars": 7558400,
+      "bytes": 22675213,
+      "sha256": "cb7a14929ae9f4341980db918358c21679a5b35657ec16ee1119d1c1eb674a33"
+    },
+    {
+      "corpus": "caixin",
+      "file": "caixin.chars.txt",
+      "chars": 286399,
+      "bytes": 859197,
+      "sha256": "f43e68a308b71790315e7a8bf1c5918161082a29f9042daedae49aa29263dce9"
+    },
+    {
+      "corpus": "sushi",
+      "file": "sushi.chars.txt",
+      "chars": 28284,
+      "bytes": 84852,
+      "sha256": "343af0844bac2d804e7617156a9958b687402ef04d223d2b67daf29bafda4ba9"
+    }
+  ]
+}
