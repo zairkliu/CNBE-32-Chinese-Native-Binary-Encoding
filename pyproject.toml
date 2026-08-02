@@ -14,14 +14,6 @@ dependencies = [
     "numpy>=2.0",
 ]
 
-[project.optional-dependencies]
-demo = [
-    "pyinstaller>=6.10",
-]
-
-[project.scripts]
-cnbe32-demo = "cnbe32_demo:main"
-
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
@@ -38,6 +30,14 @@ classifiers = [
 Homepage = "https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding"
 Repository = "https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding"
 Issues = "https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding/issues"
+
+[project.optional-dependencies]
+demo = [
+    "pyinstaller>=6.10",
+]
+
+[project.scripts]
+cnbe32-demo = "cnbe32_demo:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
