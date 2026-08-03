@@ -253,6 +253,18 @@ routing is near-perfectly load balanced.
 - [MoE Training Preparation](./experiments/2026-08-02_seven_corpora_compression/MOE_TRAINING_PREP.md)
 - [Reproducible Results](./experiments/2026-08-02_seven_corpora_compression/results/)
 
+### 2026-08-03: CNBE-MoE Prototype and API Ablation
+
+Completed 8/16/64-expert CNBE-MoE prototypes, three-field balanced mapping,
+Triton grouped GEMM kernels, learned-router comparison, and DeepSeek V4 API
+field-hint ablation. Recommendation: 64-expert three-field hard routing
+(Gini 0.153); CNBE structural fields help confusable-character disambiguation
+but not punctuation.
+
+- [CNBE-MoE Entry](./experiments/2026-08-03_cnbe_moe/README.md)
+- [Final Report](./experiments/2026-08-03_cnbe_moe/CNBE_MoE_最终报告.md)
+- [API Ablation Report](./experiments/2026-08-03_cnbe_moe/CNBE_MoE_API消融实验报告.md)
+
 ## Agent and automation boundary
 
 The repository includes a GitHub-compatible Agent profile and Copilot

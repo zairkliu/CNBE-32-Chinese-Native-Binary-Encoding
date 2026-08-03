@@ -249,6 +249,16 @@ CNBE Volume 以约 +40% 体积换 O(1) 随机定位；CNBE 结构路由负载近
 - [MoE 训练准备](./experiments/2026-08-02_seven_corpora_compression/MOE_TRAINING_PREP.md)
 - [可复现结果](./experiments/2026-08-02_seven_corpora_compression/results/)
 
+### 2026-08-03：CNBE-MoE 原型与 API 消融
+
+完成 8/16/64 专家 CNBE-MoE 原型、三字段均衡映射、Triton grouped GEMM kernel、
+学习式路由对比与 DeepSeek V4 API 字段提示消融。结论：64 专家三字段硬路由为
+当前推荐配置（Gini 0.153）；CNBE 结构字段对形近字消歧收益显著，对句读无增益。
+
+- [CNBE-MoE 实验入口](./experiments/2026-08-03_cnbe_moe/README.md)
+- [最终报告](./experiments/2026-08-03_cnbe_moe/CNBE_MoE_最终报告.md)
+- [API 消融报告](./experiments/2026-08-03_cnbe_moe/CNBE_MoE_API消融实验报告.md)
+
 ---
 
 ## Agent 与自动化边界

@@ -1,0 +1,12 @@
+num_experts: 8
+top_k: 2
+d_model: 256
+d_ff: 1024
+n_layers: 2
+n_heads: 4
+max_train_tokens: 3000000
+max_eval_tokens: 300000
+seq_len: 64
+batch_size: 32
+steps: 800
+learning_rate: 0.0003
