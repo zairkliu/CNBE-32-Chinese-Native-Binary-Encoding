@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "cnbe32"
 version = "1.0.4"
-description = "CNBE-32: Chinese Native Binary Encoding — Structured 32-bit CJK encoding for AI and hardware"
+description = "CNBE-32: Chinese Native Computing Foundation — compatible structural computing layer for CJK, AI, and hardware"
 readme = "README.md"
 authors = [{ name = "zairkliu" }]
 license = "MulanPSL-2.0"

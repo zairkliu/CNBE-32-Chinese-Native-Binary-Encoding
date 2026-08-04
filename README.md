@@ -328,9 +328,9 @@ A100/H100 compute, estimated at 2-4 hours per experiment:
 
 ## Desktop demo
 
-This repository includes the **CNBE-32 Desktop Demo**, a Tkinter/SQLite application for software-copyright application materials, live project demos, and internal review. It accepts Hanzi input and displays Unicode identity, CNBE-32 hexadecimal / decimal / 32-bit binary output, radical/root, stroke count, structure type, glyph index, extension bits, and runtime status.
+This repository includes the **CNBE-32 Chinese Native Computing Foundation Demo**, a Tkinter/SQLite application for software-copyright application materials, live project demos, and internal review. The demo is built around the **Chinese Native Binary Encoding** core and displays Unicode identity, CNBE-32 hexadecimal / decimal / 32-bit binary output, radical/root, stroke count, structure type, glyph index, extension bits, and runtime status.
 
-- Demo release: [CNBE-32 Desktop Demo v1.0.0](https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding/releases/tag/demo-v1.0.0)
+- Demo release: [CNBE-32 Chinese Native Computing Foundation Demo v1.0.0](https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding/releases/tag/demo-v1.0.0)
 - Demo source: `src/cnbe32_demo/`
 - Copyright/demo guide: [`docs/soft_copyright/CNBE32_DEMO_EXE_GUIDE.md`](./docs/soft_copyright/CNBE32_DEMO_EXE_GUIDE.md)
 - Windows 11 x64 packaging: `tools/windows/build_demo_exe.ps1`

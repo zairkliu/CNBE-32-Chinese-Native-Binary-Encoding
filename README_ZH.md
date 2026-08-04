@@ -283,9 +283,9 @@ CNBE-32 兼容现有 CJK/Unicode/GB 编码体系，而非彻底取代，这一�
 
 ## 桌面展示 Demo
 
-本仓库提供 **CNBE-32 中文原生二进制编码展示程序**，用于软件著作权申请、项目路演和内部评审演示。展示程序支持输入汉字并输出 Unicode、CNBE-32 十六进制 / 十进制 / 32 位二进制、部首/根编号、笔画、结构、索引、扩展位和运行时状态。
+本仓库提供 **CNBE-32 中文原生计算基座展示程序**，用于软件著作权申请、项目路演和内部评审演示。展示程序以 **中文原生二进制编码** 为核心，支持输入汉字并输出 Unicode、CNBE-32 十六进制 / 十进制 / 32 位二进制、部首/根编号、笔画、结构、索引、扩展位和运行时状态。
 
-- Demo 发布页：[CNBE-32 Desktop Demo v1.0.0](https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding/releases/tag/demo-v1.0.0)
+- Demo 发布页：[CNBE-32 Chinese Native Computing Foundation Demo v1.0.0](https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding/releases/tag/demo-v1.0.0)
 - 程序源码：`src/cnbe32_demo/`
 - 软著说明与操作文档：[`docs/soft_copyright/CNBE32_DEMO_EXE_GUIDE.md`](./docs/soft_copyright/CNBE32_DEMO_EXE_GUIDE.md)
 - Windows 11 x64 打包：`tools/windows/build_demo_exe.ps1`

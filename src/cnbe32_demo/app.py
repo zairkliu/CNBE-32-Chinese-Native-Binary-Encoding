@@ -9,7 +9,7 @@ from cnbe32 import count, resolve_db_path
 
 from .presenter import CharacterEncoding, encode_text_for_demo
 
-APP_TITLE = "CNBE-32 中文原生二进制编码展示程序"
+APP_TITLE = "CNBE-32 中文原生计算基座展示程序"
 
 PROJECT_OVERVIEW = """CNBE-32 是面向 CJK 汉字的 32 位结构指纹研究原型。
 
@@ -61,7 +61,8 @@ ROADMAP = """项目规划展示
 
 COPYRIGHT_NOTES = """软著申请材料建议
 
-软件名称：CNBE-32 中文原生二进制编码展示程序
+软件名称：CNBE-32 中文原生计算基座展示程序
+技术内核：CNBE-32 中文原生二进制编码
 建议版本：V1.0
 运行环境：Windows 11 64 位
 开发语言：Python 3 / Tkinter / SQLite
