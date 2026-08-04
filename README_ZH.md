@@ -19,10 +19,12 @@
   <img alt="Extended scope" src="https://img.shields.io/badge/97%2C686-experimental%20target-lightgrey">
 </p>
 
-CNBE-32 是面向中文的完整原生编码体系，而非依附于 CJK 的字符格式：
-它让中文从机器码、RISC-V 指令、操作系统，到编译/解码器、编程语言与应用
-都拥有原生表达。与 CJK/Unicode 的兼容只是现有计算机和网络协议下的
-最大公约数互操作层，不是项目定义。
+CNBE-32 是面向中文的完整原生编码体系，而非依附于 CJK 的字符格式。
+它以 32 位字段代数承载可计算的形态学信息（部首/笔画/结构/索引/扩展位），
+形式化定义形态距离与二进制向量空间，并贯通 RISC-V 指令、Verilog 硬件原型、
+Linux 内核层、编译/解码器、C++/Python/Rust 语言与应用。与现代规范汉字（8105）
+及 GB 18030/Unicode 的兼容，仅是现有计算机与网络协议下的最大公约数互操作层；
+其学术价值体现在计算语言学、汉字学与古籍数字人文的结构感知编码基座。
 
 项目定位见 [CNBE32_PROJECT_POSITION_ZH.md](./docs/CNBE32_PROJECT_POSITION_ZH.md)。
 
