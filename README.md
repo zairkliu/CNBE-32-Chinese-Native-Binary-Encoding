@@ -230,18 +230,11 @@ Conclusions:
 
 1. Small LLMs must not perform page-level sequence transcription. OCR plus the
    truth library handles transcription; the LLM only punctuates and segments.
-2. The existing CNBE model (Qwen3.5-0.8B, 178K samples / 8,105 chars /
-   5,000 steps) remains the knowledge base; the 14B model uses knowledge
-   transfer with mixed original CNBE data to prevent forgetting.
-3. Next step: train DeepSeek-R1-Distill-Qwen-14B as the ancient-text
-   punctuation model.
 
 Documents:
 
 - [Failure Summary](./llm_experiments/2026-08-02_yongle_failures/FAILURE_SUMMARY_2026-08-02.md)
-- [14B Training White Paper](./llm_experiments/2026-08-02_yongle_failures/WHITEPAPER_2026-08-02_14B.md)
 - [Small-Model Boundary Analysis](./llm_experiments/2026-08-02_yongle_failures/BOUNDARY_ANALYSIS.md)
-- [14B QLoRA Config](./llm_experiments/2026-08-02_yongle_failures/qlora_config_14b.yaml)
 
 Model weights and the complete training archive (about 1.47 GB) are not stored
 in Git; they are archived locally in `outputs/training_data_2026-08-02_full.zip`.
@@ -256,7 +249,6 @@ routing is near-perfectly load balanced.
 
 - [Seven-Corpus Validation Overview](./experiments/2026-08-02_seven_corpora_compression/README.md)
 - [Compression Details](./experiments/2026-08-02_seven_corpora_compression/SEVEN_CORPORA_COMPRESSION.md)
-- [MoE Training Preparation](./experiments/2026-08-02_seven_corpora_compression/MOE_TRAINING_PREP.md)
 - [Reproducible Results](./experiments/2026-08-02_seven_corpora_compression/results/)
 
 ### 2026-08-03: CNBE-MoE Prototype and API Ablation

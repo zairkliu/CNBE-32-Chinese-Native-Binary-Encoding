@@ -6,7 +6,6 @@
 |---|---|
 | `CNBE_MoE_最终报告.md` | CNBE-MoE Phase 0/1/2 最终报告 |
 | `CNBE_MoE_API消融实验报告.md` | DeepSeek V4 API 字段提示消融实验 |
-| `cnbe-qwen9b-punct_MODEL_REPORT.md` | 9B 古籍句读模型交付报告 |
 | `cnbe_moe_base/` | 可运行原型：8/16/64 专家、三字段映射、Triton kernel、学习式路由 |
 | `demo_8105/` | Win11 8105 规范汉字演示程序源码 |
 
@@ -44,6 +43,4 @@
 
 ## 三、下一步
 
-1. 以“64 专家三字段硬路由”为 A100 训练默认配置；
-2. 字符级任务（消歧/路由）走 CNBE 结构字段，语言级任务走普通文本；
-3. 更大模型与 persistent Triton kernel 的收益验证。
+后续工程方向与训练计划见本地交接文档，不在仓库公开。

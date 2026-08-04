@@ -2,7 +2,7 @@
 
 ## 一句话总结
 
-今日完成两件事：一是《永乐大典》OCR 失败实验的系统复盘与 14B 句读训练转向；
+今日完成两件事：一是《永乐大典》OCR 失败实验的系统复盘；
 二是七类语料（约 2,438 万字）的 CNBE 压缩、Volume 随机访问、MoE 路由代理与
 DeepSeek V4 API 复现全链路验证。
 
@@ -47,9 +47,7 @@ DeepSeek V4 API 复现全链路验证。
 5. DeepSeek V4 API 可复现句读，专家编号一致性不能作为标签来源。
 
 详细报告见
-[`SEVEN_CORPORA_COMPRESSION.md`](SEVEN_CORPORA_COMPRESSION.md)；
-MoE 训练准备见
-[`MOE_TRAINING_PREP.md`](MOE_TRAINING_PREP.md)。
+[`SEVEN_CORPORA_COMPRESSION.md`](SEVEN_CORPORA_COMPRESSION.md)。
 
 ## 三、目录结构
 
@@ -57,7 +55,6 @@ MoE 训练准备见
 |---|---|
 | `SEVEN_CORPORA_COMPRESSION.md` | 七语料压缩验证总报告 |
 | `OCR_FAILURE_SUMMARY_2026-08-02.md` | OCR 失败实验简明总结 |
-| `MOE_TRAINING_PREP.md` | 下一步 MoE 训练准备清单 |
 | `data/` | 正式数据集：24,381,237 字，含 SHA-256 清单 |
 | `results/` | 七语料压缩/Volume/MoE/DeepSeek 结果文件 |
 | `scripts/` | 可复现脚本（编码、压缩、Volume、MoE、OCR、句读） |

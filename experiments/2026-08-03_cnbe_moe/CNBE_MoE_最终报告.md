@@ -158,12 +158,7 @@ persistent kernel 与 block 调参，并扩大模型规模后再比较。
 
 ## 五、下一步（生产化）
 
-1. 用 CUDA grouped GEMM / Triton 消除 Python 分组的墙钟开销（Windows 当前
-   无法安装 Triton，64 专家吞吐仅 5 steps/s）；
-2. 训练损失加入路由均衡项，解决 64 专家 Gini 0.22-0.30 的问题；
-3. 扩大模型与数据（d_model 512+，七语料全量）；
-4. 将 CNBE 字段作为 9B QLoRA 模型的 router 输入，验证下游句读 F1；
-5. RISC-V 位运算对齐作为硬件阶段目标，需先完成软件收益验证。
+后续工程方向与训练计划见本地交接文档，不在仓库公开。
 
 ## 六、产物
 

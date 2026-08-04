@@ -223,16 +223,11 @@ CNBE-32 只有在编码流程比早期 AI 生成目录更严格时才有研究�
 ### 结论
 
 1. 小模型不能做整页序列转录；转录交给 OCR + 真值库，大模型只做句读与分段。
-2. 原有 CNBE 模型（Qwen3.5-0.8B，178K 样本 / 8,105 字 / 5,000 步）
-   保留为知识基座；14B 采用知识迁移并混入原 CNBE 数据防遗忘。
-3. 下一步训练 DeepSeek-R1-Distill-Qwen-14B 古籍句读模型。
 
 完整文档：
 
 - [失败总结](./llm_experiments/2026-08-02_yongle_failures/FAILURE_SUMMARY_2026-08-02.md)
-- [14B 训练白皮书](./llm_experiments/2026-08-02_yongle_failures/WHITEPAPER_2026-08-02_14B.md)
 - [小模型能力边界讨论](./llm_experiments/2026-08-02_yongle_failures/BOUNDARY_ANALYSIS.md)
-- [14B QLoRA 配置](./llm_experiments/2026-08-02_yongle_failures/qlora_config_14b.yaml)
 
 大模型权重与完整训练数据（约 1.47 GB）不放入 Git，归档于本地
 `outputs/training_data_2026-08-02_full.zip`。
@@ -246,7 +241,6 @@ CNBE Volume 以约 +40% 体积换 O(1) 随机定位；CNBE 结构路由负载近
 
 - [七语料压缩验证总报告](./experiments/2026-08-02_seven_corpora_compression/README.md)
 - [压缩验证详情](./experiments/2026-08-02_seven_corpora_compression/SEVEN_CORPORA_COMPRESSION.md)
-- [MoE 训练准备](./experiments/2026-08-02_seven_corpora_compression/MOE_TRAINING_PREP.md)
 - [可复现结果](./experiments/2026-08-02_seven_corpora_compression/results/)
 
 ### 2026-08-03：CNBE-MoE 原型与 API 消融
