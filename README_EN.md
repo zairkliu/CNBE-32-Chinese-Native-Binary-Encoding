@@ -19,16 +19,16 @@
   <img alt="Extended scope" src="https://img.shields.io/badge/97%2C686-experimental%20target-lightgrey">
 </p>
 
-CNBE-32 is a complete native encoding infrastructure for Chinese, not a
-CJK-dependent character format. It carries computable morphology in a 32-bit
-field algebra (radix/stroke/struct/index/ext), formalizes morphological distance
-and a binary vector space, and spans RISC-V instructions, Verilog prototypes,
-the Linux kernel layer, compilers/decoders, C++/Python/Rust, and applications.
-Compatibility with the 8105 standard, GB 18030, and Unicode is only an
-interoperability layer built on the common denominator of existing computers
-and network protocols; its academic value lies in a structure-aware encoding
-substrate for computational linguistics, Chinese philology, and digital
-humanities on classical texts.
+CNBE-32 is a complete native encoding infrastructure for Chinese, aiming to
+provide a unified, computable Chinese structural representation across machine
+code, instruction sets, operating systems, compilers/decoders, programming
+languages, and applications. It carries computable morphology in a 32-bit field
+algebra (radix/stroke/struct/index/ext), spans RISC-V instructions, Verilog
+prototypes, the Linux kernel layer, compilers/decoders, C++/Python/Rust, and
+applications. Compatibility with existing CJK/Unicode/GB encodings is a gradual,
+patch-friendly evolution path for current computer systems, not a rewrite; its
+academic value lies in a structure-aware encoding substrate for computational
+linguistics, Chinese philology, and digital humanities on classical texts.
 With AI, domestic chips, RISC-V, and open-source AI systems advancing rapidly,
 the historical vision of a complete Chinese computing system now has a concrete
 basis for renewed discussion and engineering.
