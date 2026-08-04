@@ -36,6 +36,37 @@ In the AI era, Chinese should be one of the foundations, not an option.
 
 See [CNBE32_PROJECT_POSITION_ZH.md](./docs/CNBE32_PROJECT_POSITION_ZH.md).
 
+## TL;DR
+
+**What is CNBE-32?** A Unicode/GB-compatible Chinese structural computing layer
+that encodes radix/stroke/structure/index/ext in 32-bit fields, exposing Hanzi
+structure to SDKs, databases, instructions, hardware prototypes, and AI models.
+
+**Who should care?** LLM and MoE researchers, RISC-V and systems engineers,
+classical-text digitization/OCR engineers, Chinese NLP researchers,
+policy/standards readers, and Chinese-language technology enthusiasts.
+
+**Where is it now?** The project has a 21,178-row runtime database,
+multi-language SDKs, a desktop demo, a 24.38M-character seven-corpus validation,
+MoE-64 three-field hard routing, local QLoRA experiments, and DeepSeek/Ollama
+reproduction materials. The next stage is cloud-GPU scale validation, CNBE
+Studio, and a classical-text cleanup pipeline.
+
+## Maturity Statement
+
+- **Locked / reproducible**: CNBE32 bitfield encode/decode, golden vectors,
+  Python SDK, SQLite runtime lookup, the checked-in 21,178-row database,
+  desktop demo, and core tests.
+- **Locally validated**: seven-corpus compression and Volume, MoE-8/16/64 hard
+  routing, three-field balanced mapping, DeepSeek V4 API ablation, and the
+  1.5B small-model boundary postmortem.
+- **Planned / awaiting scale validation**: 128/256-expert MoE, d_model
+  512-1024, 9B punctuation-model fusion, end-to-end classical-text cleanup,
+  and CNBE64/CNBE128 evidence archives.
+- **Project status**: research prototype -> engineering validation. The
+  repository explicitly separates stable releases, experimental observations,
+  and planned work.
+
 ## Abstract
 
 CNBE-32 asks a specific systems question: given that Unicode already carries
@@ -56,6 +87,34 @@ This is a Chinese-computing idea that becomes discussable again in the AI era:
 compute, open-source models, RISC-V, domestic chips, and agentic workflows turn
 "can Chinese structure enter lower levels of computation?" from a historical
 vision into a reproducible engineering research question.
+
+## Why Now
+
+Many foundations of computing were shaped around linear alphabetic text, ASCII,
+early operating systems, and early network protocols before Chinese was deeply
+integrated into the stack. Unicode successfully solved character identity and
+interchange, but "the character is encoded" is not the same as "Hanzi structure
+is directly computable by systems." Radicals, strokes, layouts, visual
+confusability, and historical forms still mostly live in fonts, dictionaries,
+input methods, OCR post-processing, and human knowledge bases.
+
+The AI era changes the feasibility boundary:
+
+- **Agentic workflows** make long-running data organization, audit, refactoring,
+  testing, and documentation maintenance practical;
+- **Open models and local inference** let Chinese structural features enter
+  small-model, punctuation, disambiguation, and classical-text experiments;
+- **MoE architectures** turn "structural fields as hard-routing priors" into a
+  trainable and comparable model question;
+- **RISC-V and open hardware** allow Chinese structural fields to be tested near
+  instructions and hardware prototypes;
+- **Chinese data and domestic compute ecosystems** let Chinese be an input to
+  model architecture, toolchains, and systems design, not only an object handled
+  by generic models.
+
+CNBE-32 is therefore not a nostalgic attempt to remake a character table. It is
+a concrete AI-era question: can Chinese structure become part of computation
+itself?
 
 ## Contributions
 
@@ -151,6 +210,16 @@ from encoding, evidence, software, models, and systems prototypes:
 | LLM and small-model boundary | QLoRA, DeepSeek/Ollama reproduction, 1.5B failure boundary | 1.5B/7B/14B scale curves, length scans, punctuation F1 and confusable-disambiguation stability |
 | Standards and evidence | 8105 baseline, GF0017 gates, unified evidence index | Keep no-write gates, design CNBE64/CNBE128 evidence archive paths |
 | Low-level systems | RISC-V instructions, Verilog, Linux prototypes, C/Rust/Python SDKs | Move the structural layer from demos into toolchains and measurable benchmarks |
+
+## Roadmap With Acceptance Criteria
+
+| Phase | Time horizon | Goal | Acceptance criteria |
+|---|---|---|---|
+| Phase 0: local validation | Done | Encoding spec, 21,178-row database, SDKs, demo, seven-corpus validation, MoE-64, API ablation | Key results have reports, scripts, or result files; core SDK tests pass |
+| Phase 1: cloud-GPU scaling | Near term | 128/256 experts, d_model 512-1024, Triton retest at larger scale | Equal-parameter/equal-compute Dense controls; report loss, next-code, Gini, throughput |
+| Phase 2: CNBE Studio | Near term | Batch encoding, Volume viewer, MoE routing visualization, copyright/demo improvements | Desktop app packages and runs; README and copyright docs stay synchronized |
+| Phase 3: classical-text pipeline | Mid term | OCR/truth DB -> CNBE coverage check -> confusable risk -> LLM punctuation/segmentation -> human review | At least one public sample pack with inputs, outputs, error analysis, and review queue |
+| Phase 4: extended width and standardization | Long term | CNBE64/CNBE128, GB 18030/Unicode bidirectional mapping, external review | Design docs, golden vectors, evidence-archive schema, P1/WS-4 review results |
 
 ## Project Positioning
 
