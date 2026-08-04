@@ -36,6 +36,55 @@ In the AI era, Chinese should be one of the foundations, not an option.
 
 See [CNBE32_PROJECT_POSITION_ZH.md](./docs/CNBE32_PROJECT_POSITION_ZH.md).
 
+## How to Read This Project
+
+CNBE-32 is both a runnable software project and a growing body of research
+notes, evidence boundaries, and engineering roadmap. Different readers can
+enter from different angles:
+
+| Reader | Best entry point | What you will find |
+|---|---|---|
+| Chinese NLP / AI practitioners | [Experiment Summary](#experiment-summary), [CNBE-MoE](#2026-08-03-cnbe-moe-prototype-and-api-ablation) | CNBE as a small-model feature, MoE routing prior, and confusable-character signal |
+| Chinese philology / digital humanities | [Ancient OCR postmortem](#2026-08-02-ancient-ocr-failure-postmortem-and-punctuation-pivot), [Project rationale](#project-rationale) | OCR, truth databases, punctuation, segmentation, collation, and Hanzi evidence boundaries |
+| Systems / chip / compiler engineers | [Technology Stack by Layer](#technology-stack-by-layer), [Bitfield layout](#bitfield-layout), [For geeks](#for-geeks) | How bitfields, RISC-V, Verilog, Linux, and SDKs connect into a full-stack prototype |
+| Policy / standards / industry readers | [Compatibility Strategy](#compatibility-strategy-gradual-evolution-not-a-rewrite), [Current standards restart](#current-standards-restart), [Evidence level](#evidence-level) | How CNBE stays compatible with Unicode/GB and separates prototype claims from standards evidence |
+| Demo / copyright users | [Desktop demo](#desktop-demo) | Runnable demo software, cross-platform packaging, and software-copyright materials |
+
+## Thesis: Vision, Paper, Boundary, Deployment
+
+This project is not merely another character table. It reopens, under AI-era
+compute and model conditions, a question that was historically difficult to
+engineer: can Chinese have a computable structural representation at lower
+levels of the computing stack?
+
+The rest of this README is organized around four threads:
+
+1. **Vision**: Chinese structure belongs not only in dictionaries and fonts, but
+   can enter bitfields, instructions, systems, and models;
+2. **Paper**: bitfield algebra, morphological distance, hyperbolic embeddings,
+   MoE routing, and HDC/VSA are treated as candidate computational layers with
+   verifiable definitions;
+3. **Boundary**: CNBE does not replace Unicode, does not ask LLMs to perform
+   deterministic encoding, and does not treat OCR/dictionaries/model outputs as
+   direct national-standard authority;
+4. **Deployment**: SDKs, the desktop demo, seven-corpus experiments,
+   classical-text cleanup, RISC-V/Verilog prototypes, and MoE experiments form
+   a runnable engineering path.
+
+## Result Map and Next Direction
+
+The most important result is not a single metric. The project now has a loop
+from encoding, evidence, software, models, and systems prototypes:
+
+| Direction | Current result | Next step |
+|---|---|---|
+| CNBE Studio / demo | Desktop demo, cross-platform packaging scripts, copyright guide | Batch encoding, Volume viewer, MoE routing visualization, classical-text cleanup demo |
+| Classical-text cleanup | Yongle failure postmortem, OCR/truth boundary, punctuation pivot | OCR/truth DB -> CNBE coverage check -> confusable risk -> LLM punctuation/segmentation -> human review queue |
+| CNBE-MoE | 8/16/64 experts, three-field hard routing, DeepSeek V4 ablation | Equal-parameter/equal-compute controls, 128/256-expert cloud-GPU validation |
+| LLM and small-model boundary | QLoRA, DeepSeek/Ollama reproduction, 1.5B failure boundary | 1.5B/7B/14B scale curves, length scans, punctuation F1 and confusable-disambiguation stability |
+| Standards and evidence | 8105 baseline, GF0017 gates, unified evidence index | Keep no-write gates, design CNBE64/CNBE128 evidence archive paths |
+| Low-level systems | RISC-V instructions, Verilog, Linux prototypes, C/Rust/Python SDKs | Move the structural layer from demos into toolchains and measurable benchmarks |
+
 ## Project Positioning
 
 **CNBE-32 is a complete native encoding infrastructure for Chinese**, aiming to
