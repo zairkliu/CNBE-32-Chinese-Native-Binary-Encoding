@@ -19,7 +19,14 @@
   <img alt="Extended scope" src="https://img.shields.io/badge/97%2C686-experimental%20target-lightgrey">
 </p>
 
-A 32-bit structural fingerprint for CJK characters — built for people who wonder what Chinese text would look like if it were designed closer to the metal.
+CNBE-32 is a complete native encoding infrastructure for Chinese, not a
+CJK-dependent character format: it spans machine code, RISC-V instructions,
+operating systems, compilers/decoders, programming languages, and applications.
+CJK/Unicode compatibility is only an interoperability layer built on the common
+denominator of existing computers and network protocols, not the project
+definition.
+
+See [CNBE32_PROJECT_POSITION_ZH.md](./docs/CNBE32_PROJECT_POSITION_ZH.md).
 
 > **CNBE-32 is a research prototype.**
 > The checked-in Python SDK runtime now contains **21,178 entries**, including the 276 PENC276 characters completed under the project human-audit baseline.
