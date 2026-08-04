@@ -32,6 +32,67 @@ CNBE-32 是一项面向中文的完整原生编码体系，目标是在机器码
 
 项目定位见 [CNBE32_PROJECT_POSITION_ZH.md](./docs/CNBE32_PROJECT_POSITION_ZH.md)。
 
+## 摘要
+
+CNBE-32 研究的问题是：在 Unicode 已经承担字符身份、GB/Unicode 已经构成
+现实生态基础的前提下，中文是否还能拥有一个兼容的、可计算的结构层，使汉字的
+部首、笔画、构型与字形索引能够进入 SDK、数据库、指令、硬件原型和 AI 模型？
+
+本项目给出的答案不是“替代现有编码”，而是构建一个兼容层：Unicode/GB 负责
+字符身份与交换，CNBE-32 负责结构指纹与可计算特征。当前仓库已经包含 21,178 行
+运行时数据库、Python/C/Rust SDK、RISC-V 与 Verilog 原型、桌面 Demo、七语料
+24.38M 字实验、QLoRA 小模型训练、CNBE-MoE 路由原型，以及按 8105 和 GF0017
+治理的证据边界。
+
+这是一项 AI 时代重新具备讨论条件的中文计算构想：算力、开源模型、RISC-V、
+国产芯片和 Agent 工作流让“中文结构能否进入计算底层”从历史设想变成可复现的
+工程研究问题。
+
+## 核心贡献
+
+| 贡献 | 说明 | 可复现入口 |
+|---|---|---|
+| 兼容型中文结构编码 | 以 32 位位域承载部首/笔画/结构/索引/扩展位，不替代 Unicode/GB | [`src/cnbe32/`](./src/cnbe32)、[`spec/golden_vectors.json`](./spec/golden_vectors.json) |
+| 标准与证据治理 | 以 8105 为国家标准核心，区分 `standard`、`legacy`、Agent-standard 候选 | [标准符合性声明](./docs/CNBE_STANDARDS_COMPLIANCE_STATEMENT.md)、[字段语义冻结](./docs/FIELD_SEMANTICS_FREEZE_v1.1.md) |
+| 软件与展示落地 | Python SDK、SQLite 查询、桌面 Demo、Windows/macOS/Linux 打包脚本 | [桌面 Demo](#桌面展示-demo)、[`docs/soft_copyright/`](./docs/soft_copyright/) |
+| AI 与 MoE 验证 | QLoRA、DeepSeek/Ollama 复现、64 专家三字段硬路由、API 消融 | [`llm_experiments/`](./llm_experiments/)、[`experiments/2026-08-03_cnbe_moe/`](./experiments/2026-08-03_cnbe_moe/) |
+| 古籍数字化边界 | 证明小模型不适合整页精确转录，转向 OCR/真值库 + CNBE 校验 + LLM 句读 | [`llm_experiments/2026-08-02_yongle_failures/`](./llm_experiments/2026-08-02_yongle_failures/) |
+| 全栈原型 | 位域、C/Rust、RISC-V、Verilog、Linux 原型贯通同一字段语义 | [`riscv/`](./riscv/)、[`hardware/`](./hardware/)、[`linux_cnbe32_riscv/`](./linux_cnbe32_riscv/) |
+
+## 系统结构
+
+```mermaid
+flowchart TD
+  A["Unicode / GB 字符身份"] --> B["CNBE-32 结构层"]
+  B --> C["SQLite 运行时数据库<br/>21,178 rows"]
+  B --> D["Python / C / Rust SDK"]
+  B --> E["RISC-V / Verilog / Linux 原型"]
+  B --> F["AI 特征与 MoE 路由"]
+  B --> G["古籍整理 pipeline"]
+  C --> H["桌面 Demo / CNBE Studio"]
+  D --> H
+  F --> I["形近字消歧 / 小模型增强"]
+  G --> J["OCR / 真值库 / 句读 / 人工校对"]
+  K["8105 / GF0017 / 审计证据"] --> B
+  L["CNBE64 / CNBE128 证据归档方向"] -.-> B
+```
+
+顺读本文时，可以把下面各章理解为一篇系统论文的展开：问题提出、相关历史经验、
+系统设计、标准治理、实验结果、能力边界、复现入口与路线图。
+
+## 可复现索引
+
+| 你想复现什么 | 入口 | 说明 |
+|---|---|---|
+| SDK 安装与基础编码 | [快速开始](#快速开始)、[Python SDK 示例](#python-sdk-示例) | 位域编码/解码、Hamming distance、SQLite 查询 |
+| 位域一致性 | [`spec/golden_vectors.json`](./spec/golden_vectors.json)、[实现一致性](#实现一致性) | Python/C/Rust/硬件方向共享 golden vectors |
+| 桌面软件 | [桌面展示 Demo](#桌面展示-demo) | 本地运行与 Win/macOS/Linux 打包 |
+| 七语料压缩与 Volume | [`experiments/2026-08-02_seven_corpora_compression/`](./experiments/2026-08-02_seven_corpora_compression/) | 24.38M 字，压缩、随机访问、路由代理 |
+| MoE 原型 | [`experiments/2026-08-03_cnbe_moe/`](./experiments/2026-08-03_cnbe_moe/) | Dense/MoE、硬路由、三字段映射、Triton 实验 |
+| 古籍 OCR 边界 | [`llm_experiments/2026-08-02_yongle_failures/`](./llm_experiments/2026-08-02_yongle_failures/) | 永乐大典失败复盘、真值库与句读转向 |
+| 数学定义与外部评审 | [CNBE-32 数学结构](./docs/CNBE32_MATHEMATICAL_STRUCTURE.md)、[P1 外部评审包](./docs/review/P1_EXTERNAL_REVIEW_EXECUTION_KIT.md) | 13/13 公式验证、WS-4 预注册 |
+| 标准治理 | [当前标准重启状态](#当前标准重启状态)、[证据等级](#证据等级) | 8105、GF0017、no-write gate、证据边界 |
+
 ## 如何阅读这个项目
 
 CNBE-32 既是一个可运行的软件项目，也是一组正在形成的研究论文、工程边界与

@@ -36,6 +36,73 @@ In the AI era, Chinese should be one of the foundations, not an option.
 
 See [CNBE32_PROJECT_POSITION_ZH.md](./docs/CNBE32_PROJECT_POSITION_ZH.md).
 
+## Abstract
+
+CNBE-32 asks a specific systems question: given that Unicode already carries
+character identity and Unicode/GB already anchor the real-world ecosystem, can
+Chinese still have a compatible, computable structural layer that exposes
+radicals, strokes, layouts, and glyph indices to SDKs, databases, instructions,
+hardware prototypes, and AI models?
+
+The answer proposed here is not to replace existing encodings. Unicode/GB carry
+identity and interchange; CNBE-32 carries structural fingerprints and
+computable features. The repository now contains a 21,178-row runtime database,
+Python/C/Rust SDKs, RISC-V and Verilog prototypes, a desktop demo, a
+24.38M-character seven-corpus validation, QLoRA small-model training,
+CNBE-MoE routing prototypes, and evidence boundaries governed by the 8105
+common standardized Chinese character table and GF0017.
+
+This is a Chinese-computing idea that becomes discussable again in the AI era:
+compute, open-source models, RISC-V, domestic chips, and agentic workflows turn
+"can Chinese structure enter lower levels of computation?" from a historical
+vision into a reproducible engineering research question.
+
+## Contributions
+
+| Contribution | Description | Reproducible entry |
+|---|---|---|
+| Compatible Chinese structural encoding | 32-bit bitfields carry radix/stroke/structure/index/ext without replacing Unicode/GB | [`src/cnbe32/`](./src/cnbe32), [`spec/golden_vectors.json`](./spec/golden_vectors.json) |
+| Standards and evidence governance | 8105 as the national-standard core; `standard`, `legacy`, and Agent-standard candidates remain separated | [Standards statement](./docs/CNBE_STANDARDS_COMPLIANCE_STATEMENT.md), [field freeze](./docs/FIELD_SEMANTICS_FREEZE_v1.1.md) |
+| Software and demo deployment | Python SDK, SQLite lookup, desktop demo, Windows/macOS/Linux packaging scripts | [Desktop demo](#desktop-demo), [`docs/soft_copyright/`](./docs/soft_copyright/) |
+| AI and MoE validation | QLoRA, DeepSeek/Ollama reproduction, 64-expert three-field hard routing, API ablation | [`llm_experiments/`](./llm_experiments/), [`experiments/2026-08-03_cnbe_moe/`](./experiments/2026-08-03_cnbe_moe/) |
+| Classical-text boundary work | Shows that small LLMs should not do page-level exact transcription; pivots to OCR/truth DB + CNBE checks + LLM punctuation | [`llm_experiments/2026-08-02_yongle_failures/`](./llm_experiments/2026-08-02_yongle_failures/) |
+| Full-stack prototype | Bitfields, C/Rust, RISC-V, Verilog, and Linux prototypes share the same field semantics | [`riscv/`](./riscv/), [`hardware/`](./hardware/), [`linux_cnbe32_riscv/`](./linux_cnbe32_riscv/) |
+
+## System Overview
+
+```mermaid
+flowchart TD
+  A["Unicode / GB character identity"] --> B["CNBE-32 structural layer"]
+  B --> C["SQLite runtime database<br/>21,178 rows"]
+  B --> D["Python / C / Rust SDKs"]
+  B --> E["RISC-V / Verilog / Linux prototypes"]
+  B --> F["AI features and MoE routing"]
+  B --> G["Classical-text cleanup pipeline"]
+  C --> H["Desktop Demo / CNBE Studio"]
+  D --> H
+  F --> I["Confusable disambiguation / small-model support"]
+  G --> J["OCR / truth DB / punctuation / human review"]
+  K["8105 / GF0017 / audited evidence"] --> B
+  L["CNBE64 / CNBE128 evidence archive direction"] -.-> B
+```
+
+Read linearly, the README follows the shape of a systems paper: problem
+statement, historical compatibility strategy, system design, standards
+governance, experiments, limitations, reproducibility, and roadmap.
+
+## Reproducibility Map
+
+| What to reproduce | Entry | Notes |
+|---|---|---|
+| SDK install and basic encoding | [Quick start](#quick-start), [Python SDK example](#python-sdk-example) | Bitfield encode/decode, Hamming distance, SQLite lookup |
+| Bitfield consistency | [`spec/golden_vectors.json`](./spec/golden_vectors.json), [Implementation consistency](#implementation-consistency) | Shared golden vectors for Python/C/Rust/hardware directions |
+| Desktop software | [Desktop demo](#desktop-demo) | Local run and Windows/macOS/Linux packaging |
+| Seven-corpus compression and Volume | [`experiments/2026-08-02_seven_corpora_compression/`](./experiments/2026-08-02_seven_corpora_compression/) | 24.38M characters, compression, random access, routing proxies |
+| MoE prototype | [`experiments/2026-08-03_cnbe_moe/`](./experiments/2026-08-03_cnbe_moe/) | Dense/MoE, hard routing, three-field mapping, Triton experiments |
+| Classical OCR boundary | [`llm_experiments/2026-08-02_yongle_failures/`](./llm_experiments/2026-08-02_yongle_failures/) | Yongle postmortem, truth library, punctuation pivot |
+| Mathematical definitions and review | [CNBE-32 Mathematical Structure](./docs/CNBE32_MATHEMATICAL_STRUCTURE.md), [P1 external review kit](./docs/review/P1_EXTERNAL_REVIEW_EXECUTION_KIT.md) | 13/13 formula verification, WS-4 pre-registration |
+| Standards governance | [Current standards restart](#current-standards-restart), [Evidence level](#evidence-level) | 8105, GF0017, no-write gates, evidence boundaries |
+
 ## How to Read This Project
 
 CNBE-32 is both a runnable software project and a growing body of research
