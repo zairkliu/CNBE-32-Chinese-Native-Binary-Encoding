@@ -32,6 +32,7 @@ humanities on classical texts.
 With AI, domestic chips, RISC-V, and open-source AI systems advancing rapidly,
 the historical vision of a complete Chinese computing system now has a concrete
 basis for renewed discussion and engineering.
+In the AI era, Chinese should be one of the foundations, not an option.
 
 See [CNBE32_PROJECT_POSITION_ZH.md](./docs/CNBE32_PROJECT_POSITION_ZH.md).
 
