@@ -29,6 +29,9 @@ interoperability layer built on the common denominator of existing computers
 and network protocols; its academic value lies in a structure-aware encoding
 substrate for computational linguistics, Chinese philology, and digital
 humanities on classical texts.
+With AI, domestic chips, RISC-V, and open-source AI systems advancing rapidly,
+the historical vision of a complete Chinese computing system now has a concrete
+basis for renewed discussion and engineering.
 
 See [CNBE32_PROJECT_POSITION_ZH.md](./docs/CNBE32_PROJECT_POSITION_ZH.md).
 
