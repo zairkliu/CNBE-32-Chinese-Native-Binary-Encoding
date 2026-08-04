@@ -1,6 +1,6 @@
 <p align="center">
   <strong>CNBE-32</strong><br>
-  Chinese Native Binary Encoding
+  Chinese Native Computing Foundation · Unified Chinese Structural Representation from Machine Code to Applications
 </p>
 
 <p align="center">
@@ -35,6 +35,105 @@ basis for renewed discussion and engineering.
 In the AI era, Chinese should be one of the foundations, not an option.
 
 See [CNBE32_PROJECT_POSITION_ZH.md](./docs/CNBE32_PROJECT_POSITION_ZH.md).
+
+## Project Positioning
+
+**CNBE-32 is a complete native encoding infrastructure for Chinese**, aiming to
+provide a unified, computable Chinese structural representation across machine
+code, instruction sets, operating systems, compilers/decoders, programming
+languages, and applications.
+
+| Layer | CNBE-32 Counterpart |
+|---|---|
+| Machine code / registers | 32-bit field layout aligned with bitwise operations |
+| Instruction set | RISC-V custom instructions (extract / compare / lookup) |
+| Operating system | Kernel, filesystem, terminal character handling |
+| Compiler / decoder | CNBE ↔ Unicode/GB bidirectional conversion |
+| Programming languages | Python / C / Rust SDKs |
+| Applications | Classical-text OCR, MoE structural routing, desktop demo |
+
+The 32-bit width is the current carrier best suited for simulating Chinese
+structural encoding, not the end goal; future work may extend the bit width or
+introduce variable-length encodings to cover classical and historical Chinese.
+
+## Compatibility Strategy: Gradual Evolution, Not a Rewrite
+
+CNBE-32 is compatible with existing CJK/Unicode/GB encodings rather than
+replacing them, based on historical lessons:
+
+- Failed radical approaches (proprietary Chinese terminal encodings, overdesigned
+  DBCS, HZ protocol) paid high ecosystem costs because of incompatibility;
+- Successful cases (UTF-8 backward compatibility with ASCII, the GB series
+  stepwise evolution, modular RISC-V extensions) show that compatible evolution
+  is the viable path for major change;
+- CNBE-32 route: bidirectional conversion SDK; land in niche scenarios first
+  (classical-text digitization, OCR correction, confusable-character
+  disambiguation); then gradually move into OS, compilers, and AI models;
+  add CNBE support as patches, not replacements, in Linux kernels and RISC-V
+  toolchains.
+
+> Core principle: CNBE-32 is not "starting over" but "adding bricks"—making
+> Chinese structural information an optional, compatible layer of the existing
+> computing system.
+
+## Current Status and Roadmap (2026-08-04)
+
+### Completed (locally validated)
+
+| Module | Content | Status |
+|---|---|:---:|
+| Encoding spec | 32-bit field layout, national-standard alignment | ✅ Done |
+| Dataset | 21,178 entries, 7,602 standard-track 8105 rows | ✅ Done |
+| Software stack | Python / C / Rust SDKs, desktop demo | ✅ Done |
+| Compression | Seven-corpus (24.38M chars) CNBE stream and Volume | ✅ Done |
+| MoE routing | 8/16/64 experts, three-field mapping, Gini 0.15 | ✅ Done |
+| Hardware prototype | RISC-V custom instructions, Verilog core | ✅ Done |
+| API ablation | Confusable-character +33.3pp vs plain text | ✅ Done |
+| Copyright materials | Software copyright application submitted | ✅ Done |
+
+### Planned (requires cloud GPU large-scale validation)
+
+The following work is **not yet started** and is planned after obtaining
+A100/H100 compute, estimated at 2-4 hours per experiment:
+
+- Scale MoE experts to 128-256 and validate hard-routing gains on larger data;
+- Increase d_model to 512-1024 and evaluate Triton kernel gains;
+- Fuse with a 9B QLoRA punctuation model to validate downstream F1;
+- Build an end-to-end classical-text cleanup tool integrating CNBE into OCR
+  post-processing.
+
+> ⚠️ These items are in the **planning stage**; the current core deliverable is
+> a locally validated research prototype.
+
+## Technology Stack by Layer
+
+1. Bit-field spec: `radix(8) | stroke(5) | struct(4) | index(11) | ext(4)`,
+   see `docs/specification/bit-layout.md`;
+2. Formal mathematics: morphological Hamming distance, hyperbolic embeddings,
+   golden-vector consistency;
+3. Instruction set and hardware: RISC-V custom instructions
+   (map / extract / cmp / skill), Verilog core and FPGA validation;
+4. Operating system: Linux kernel patch examples (`linux_cnbe32_riscv/`);
+5. Compiler / decoder: `cnbe32` Python package, C/Rust bindings,
+   bidirectional conversion;
+6. Applications and tools: desktop demo, classical-text OCR validation,
+   MoE structural routing.
+
+## Experiment Summary
+
+| Experiment | Result | Conclusion |
+|---|---|---|
+| Seven-corpus compression | CNBE stream ≈ gzip +13~47% | Compression is not the main edge; computable structure is |
+| CNBE Volume | O(1) random access | Suitable for random access |
+| MoE-64 hard routing | Next-code +3.26pp, Gini 0.153 | Hard routing works; three-field mapping is more balanced |
+| API confusable disambiguation | CNBE hint 0.933 vs plain 0.600 | Structural fields help character-level tasks significantly |
+
+## Version History
+
+- **v1.1.0 (2026-08-04)**: positioning redefined; added compatibility
+  strategy, status/roadmap, technology-stack layering, and limitations;
+- **v1.0.4 (2026-07-27)**: first stable release with 21,178 entries,
+  desktop demo, and MoE prototype.
 
 > **CNBE-32 is a research prototype.**
 > The checked-in Python SDK runtime now contains **21,178 entries**, including the 276 PENC276 characters completed under the project human-audit baseline.
