@@ -1,0 +1,86 @@
+[
+  {
+    "char": "㻛",
+    "codepoint": "U+3EDB",
+    "proposed": {
+      "radix": 96,
+      "radix_name": "玄",
+      "strokes": 12,
+      "struct_name": "左右",
+      "struct_type": 3,
+      "index": 219,
+      "ext": 0,
+      "track": "provisional"
+    }
+  },
+  {
+    "char": "㳅",
+    "codepoint": "U+3CC5",
+    "proposed": {
+      "radix": 85,
+      "radix_name": "水",
+      "strokes": 7,
+      "struct_name": "左右",
+      "struct_type": 3,
+      "index": 1733,
+      "ext": 0,
+      "track": "provisional"
+    }
+  },
+  {
+    "char": "㸔",
+    "codepoint": "U+3E14",
+    "proposed": {
+      "radix": 87,
+      "radix_name": "爪",
+      "strokes": 11,
+      "struct_name": "左上包",
+      "struct_type": 5,
+      "index": 20,
+      "ext": 0,
+      "track": "provisional"
+    }
+  },
+  {
+    "char": "䄂",
+    "codepoint": "U+4102",
+    "proposed": {
+      "radix": 113,
+      "radix_name": "示",
+      "strokes": 10,
+      "struct_name": "左右",
+      "struct_type": 3,
+      "index": 770,
+      "ext": 0,
+      "track": "provisional"
+    }
+  },
+  {
+    "char": "㮣",
+    "codepoint": "U+3BA3",
+    "proposed": {
+      "radix": 75,
+      "radix_name": "木",
+      "strokes": 13,
+      "struct_name": "上下",
+      "struct_type": 1,
+      "index": 1443,
+      "ext": 0,
+      "track": "provisional"
+    }
+  },
+  {
+    "char": "㴠",
+    "codepoint": "U+3D20",
+    "proposed": {
+      "radix": 85,
+      "radix_name": "水",
+      "strokes": 12,
+      "struct_name": "左右",
+      "struct_type": 3,
+      "index": 1824,
+      "ext": 0,
+      "track": "provisional"
+    }
+  }
+]

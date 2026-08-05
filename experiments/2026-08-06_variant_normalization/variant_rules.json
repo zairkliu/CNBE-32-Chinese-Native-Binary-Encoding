@@ -1,0 +1,302 @@
+[
+  {
+    "ocr": "䖏",
+    "target": "處",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "义",
+    "target": "義",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "內",
+    "target": "内",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "凜",
+    "target": "凛",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "刋",
+    "target": "刊",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "別",
+    "target": "别",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "刪",
+    "target": "删",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "劒",
+    "target": "劍",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "効",
+    "target": "效",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "叅",
+    "target": "參",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "吳",
+    "target": "呉",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "呂",
+    "target": "吕",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "噓",
+    "target": "嘘",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "囬",
+    "target": "回",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "宮",
+    "target": "宫",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "寫",
+    "target": "冩",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "寳",
+    "target": "寶",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "峯",
+    "target": "峰",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "往",
+    "target": "徃",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "恠",
+    "target": "怪",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "戯",
+    "target": "戲",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "搖",
+    "target": "揺",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "橫",
+    "target": "横",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "氷",
+    "target": "冰",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "涼",
+    "target": "凉",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "湏",
+    "target": "須",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "為",
+    "target": "爲",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "煑",
+    "target": "煮",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "瑤",
+    "target": "瑶",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "皷",
+    "target": "鼓",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "盖",
+    "target": "蓋",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "眥",
+    "target": "眦",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "竒",
+    "target": "奇",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "簷",
+    "target": "檐",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "絕",
+    "target": "絶",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "綠",
+    "target": "緑",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "羙",
+    "target": "美",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "脫",
+    "target": "脱",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "臯",
+    "target": "皋",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "茲",
+    "target": "兹",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "蘂",
+    "target": "蕊",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "虛",
+    "target": "虚",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "詠",
+    "target": "咏",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "說",
+    "target": "説",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "錄",
+    "target": "録",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "隂",
+    "target": "陰",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "顏",
+    "target": "顔",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "髙",
+    "target": "高",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "鴈",
+    "target": "雁",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  },
+  {
+    "ocr": "黃",
+    "target": "黄",
+    "min_count": 2,
+    "source": "yongle_vl16_37p_variant_pairs"
+  }
+]
