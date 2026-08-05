@@ -1,0 +1,9 @@
+{
+  "authorizer": "项目负责人",
+  "authorized_at": "2026-08-06T03:43:47",
+  "scope": "CNBE coverage-gap human review for 812 unique truth chars",
+  "gate": "review_conclusion_only_no_release_db_write",
+  "review_required": 16,
+  "batch_candidates": 796,
+  "workbook": "C:\\Users\\zairk\\Documents\\Codex\\2026-07-27\\https-github-com-zairkliu-cnbe-32\\repo\\evidence\\validation\\CNBE覆盖缺口人工复核_2026-08-06.xlsx"
+}
