@@ -1,0 +1,373 @@
+{
+  "logId": "f47ba556-086a-46cb-bdb0-5446d6929137",
+  "result": {
+    "layoutParsingResults": [
+      {
+        "prunedResult": {
+          "page_count": null,
+          "width": 864,
+          "height": 1696,
+          "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_layout_detection": true,
+            "use_chart_recognition": false,
+            "use_seal_recognition": false,
+            "use_ocr_for_image_block": false,
+            "format_block_content": false,
+            "merge_layout_blocks": true,
+            "markdown_ignore_labels": [
+              "number",
+              "footnote",
+              "header",
+              "header_image",
+              "footer",
+              "footer_image",
+              "aside_text"
+            ],
+            "return_layout_polygon_points": true
+          },
+          "parsing_res_list": [
+            {
+              "block_label": "vertical_text",
+              "block_content": "疑詩字是時字而蘇東坡詩云颯颯催詩白雨來又詩云急雨豈無意催\n詩走羣龍盖與子美意同則知子美詩是用詩字無疑遯齋閑覽嘗稱\n羅可雪詩云斜侵潘岳鬢橫上馬良眉誠佳句也不知如何是佳句而遯\n齋稱之若此每笑青矜詩其詠席云孔堂曾子避漢殿戴憑重殆與羅可\n雪詩無異許慎說文云瓊赤玉也然前輩多以比白物韓退之雪詩\n云今朝踏作瓊瑤跡爲有詩從鳳沼來又雪詩云屑瓊瑰瓊本是赤玉今\n以比雪則誤矣故晏元獻公拒霜花云江城嘉號木芙蓉金蘂瓊芳綻曉\n風又紅梅詩云巧綴琱瓊蘂色絲三千宮女宿燕脂又紅蓼詩云絳英瓊\n粒傲霜前冷落池臺亦自妍其意盖欲證退之之誤耳余觀元微之石榴\n花詩云寥落山榴深映葉紅霞淺帶碧霄雲趨塵枝下年年見别似衣裳\n不似裙謂榴花不可以比裙也至歐陽公榴花詩云東堂榴花好點綴裙\n腰鮮又榴花詩云榴花㝡晚今又折紅緑點綴如裙腰乃特以比裙者豈\n亦證微之之悞邪余先父作詩至少每得句湏不凡其和倪彦逹雪詩\n云猛穿窻紙寒無敵亂積簷茅曉未知此一聯絶佳嘗謂前輩作詩正不\n欲區區比類惟善形容者自能體帖使人一見便知詠某物如此方爲竒\n特老父之作正有合前人之意矣又嘗作絶句嘲雪云六出勻如剪無根",
+              "block_bbox": [
+                31,
+                415,
+                801,
+                1516
+              ],
+              "block_id": 0,
+              "block_order": 1,
+              "group_id": 0,
+              "block_polygon_points": [
+                [
+                  31.0,
+                  415.0
+                ],
+                [
+                  801.0,
+                  415.0
+                ],
+                [
+                  801.0,
+                  1516.0
+                ],
+                [
+                  31.0,
+                  1516.0
+                ]
+              ]
+            },
+            {
+              "block_label": "footer_image",
+              "block_content": "",
+              "block_bbox": [
+                0,
+                624,
+                35,
+                695
+              ],
+              "block_id": 1,
+              "block_order": null,
+              "group_id": 1,
+              "block_polygon_points": [
+                [
+                  0.0,
+                  624.0
+                ],
+                [
+                  35.0,
+                  624.0
+                ],
+                [
+                  35.0,
+                  695.0
+                ],
+                [
+                  0.0,
+                  695.0
+                ]
+              ]
+            },
+            {
+              "block_label": "footer",
+              "block_content": "クレジット",
+              "block_bbox": [
+                0,
+                670,
+                23,
+                936
+              ],
+              "block_id": 2,
+              "block_order": null,
+              "group_id": 2,
+              "block_polygon_points": [
+                [
+                  0.0,
+                  688.0
+                ],
+                [
+                  0.0,
+                  935.0
+                ],
+                [
+                  22.0,
+                  935.0
+                ],
+                [
+                  22.0,
+                  705.0
+                ],
+                [
+                  18.0,
+                  688.0
+                ]
+              ]
+            },
+            {
+              "block_label": "footer_image",
+              "block_content": "",
+              "block_bbox": [
+                0,
+                1057,
+                33,
+                1119
+              ],
+              "block_id": 3,
+              "block_order": null,
+              "group_id": 3,
+              "block_polygon_points": [
+                [
+                  0.0,
+                  1057.0
+                ],
+                [
+                  33.0,
+                  1057.0
+                ],
+                [
+                  33.0,
+                  1119.0
+                ],
+                [
+                  0.0,
+                  1119.0
+                ]
+              ]
+            },
+            {
+              "block_label": "number",
+              "block_content": "2",
+              "block_bbox": [
+                0,
+                1144,
+                15,
+                1176
+              ],
+              "block_id": 4,
+              "block_order": null,
+              "group_id": 4,
+              "block_polygon_points": [
+                [
+                  -9.491012644313908e-16,
+                  1144.0
+                ],
+                [
+                  14.0,
+                  1144.0
+                ],
+                [
+                  14.0,
+                  1175.0
+                ],
+                [
+                  0.0,
+                  1175.0
+                ]
+              ]
+            }
+          ],
+          "layout_det_res": {
+            "boxes": [
+              {
+                "cls_id": 23,
+                "label": "vertical_text",
+                "score": 0.9627801179885864,
+                "coordinate": [
+                  31,
+                  415,
+                  801,
+                  1516
+                ],
+                "order": 1,
+                "polygon_points": [
+                  [
+                    31.0,
+                    415.0
+                  ],
+                  [
+                    801.0,
+                    415.0
+                  ],
+                  [
+                    801.0,
+                    1516.0
+                  ],
+                  [
+                    31.0,
+                    1516.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 9,
+                "label": "footer_image",
+                "score": 0.326871782541275,
+                "coordinate": [
+                  0,
+                  624,
+                  35,
+                  695
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    0.0,
+                    624.0
+                  ],
+                  [
+                    35.0,
+                    624.0
+                  ],
+                  [
+                    35.0,
+                    695.0
+                  ],
+                  [
+                    0.0,
+                    695.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.5844383239746094,
+                "coordinate": [
+                  0,
+                  670,
+                  23,
+                  936
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    0.0,
+                    688.0
+                  ],
+                  [
+                    0.0,
+                    935.0
+                  ],
+                  [
+                    22.0,
+                    935.0
+                  ],
+                  [
+                    22.0,
+                    705.0
+                  ],
+                  [
+                    18.0,
+                    688.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 9,
+                "label": "footer_image",
+                "score": 0.533484697341919,
+                "coordinate": [
+                  0,
+                  1057,
+                  33,
+                  1119
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    0.0,
+                    1057.0
+                  ],
+                  [
+                    33.0,
+                    1057.0
+                  ],
+                  [
+                    33.0,
+                    1119.0
+                  ],
+                  [
+                    0.0,
+                    1119.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.36791884899139404,
+                "coordinate": [
+                  0,
+                  1144,
+                  15,
+                  1176
+                ],
+                "order": 2,
+                "polygon_points": [
+                  [
+                    -9.491012644313908e-16,
+                    1144.0
+                  ],
+                  [
+                    14.0,
+                    1144.0
+                  ],
+                  [
+                    14.0,
+                    1175.0
+                  ],
+                  [
+                    0.0,
+                    1175.0
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        "markdown": {
+          "text": "疑詩字是時字而蘇東坡詩云颯颯催詩白雨來又詩云急雨豈無意催\n\n詩走羣龍盖與子美意同則知子美詩是用詩字無疑遯齋閑覽嘗稱\n\n羅可雪詩云斜侵潘岳鬢橫上馬良眉誠佳句也不知如何是佳句而遯\n\n齋稱之若此每笑青矜詩其詠席云孔堂曾子避漢殿戴憑重殆與羅可\n\n雪詩無異許慎說文云瓊赤玉也然前輩多以比白物韓退之雪詩\n\n云今朝踏作瓊瑤跡爲有詩從鳳沼來又雪詩云屑瓊瑰瓊本是赤玉今\n\n以比雪則誤矣故晏元獻公拒霜花云江城嘉號木芙蓉金蘂瓊芳綻曉\n\n風又紅梅詩云巧綴琱瓊蘂色絲三千宮女宿燕脂又紅蓼詩云絳英瓊\n\n粒傲霜前冷落池臺亦自妍其意盖欲證退之之誤耳余觀元微之石榴\n\n花詩云寥落山榴深映葉紅霞淺帶碧霄雲趨塵枝下年年見别似衣裳\n\n不似裙謂榴花不可以比裙也至歐陽公榴花詩云東堂榴花好點綴裙\n\n腰鮮又榴花詩云榴花㝡晚今又折紅緑點綴如裙腰乃特以比裙者豈\n\n亦證微之之悞邪余先父作詩至少每得句湏不凡其和倪彦逹雪詩\n\n云猛穿窻紙寒無敵亂積簷茅曉未知此一聯絶佳嘗謂前輩作詩正不\n\n欲區區比類惟善形容者自能體帖使人一見便知詠某物如此方爲竒\n\n特老父之作正有合前人之意矣又嘗作絶句嘲雪云六出勻如剪無根",
+          "images": {
+            "imgs/img_in_footer_image_box_0_624_35_695.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f47ba556-086a-46cb-bdb0-5446d6929137/markdown_0/imgs/img_in_footer_image_box_0_624_35_695.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A44Z%2F-1%2F%2F5c2c225d9ced779dc810f4730c18728d5c8a4bceb773e8d5054111d45c43c889",
+            "imgs/img_in_footer_image_box_0_1057_33_1119.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f47ba556-086a-46cb-bdb0-5446d6929137/markdown_0/imgs/img_in_footer_image_box_0_1057_33_1119.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A44Z%2F-1%2F%2Ff33df1206b6e03c927f0aac9466535c5e2e4dbcbfb9d39af5821cea52083c299"
+          }
+        },
+        "outputImages": {
+          "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f47ba556-086a-46cb-bdb0-5446d6929137/layout_det_res_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A44Z%2F-1%2F%2F1b8fe846e3abd333541ad3bdf4341e325407bf4fd4d0a3cfa11fb047654aa87e"
+        },
+        "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f47ba556-086a-46cb-bdb0-5446d6929137/input_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A44Z%2F-1%2F%2F2fc68f5662cd9b2b692be1f2db0f550cc56b46b1c152ec9878c4dd141209dcb2"
+      }
+    ],
+    "dataInfo": {
+      "width": 864,
+      "height": 1696,
+      "type": "image"
+    },
+    "preprocessedImages": [
+      "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f47ba556-086a-46cb-bdb0-5446d6929137/preprocessed_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A44Z%2F-1%2F%2F44cad6482905aabc6d1e9d5e15956abdac60f0dff66bd11c5cc81d0cb7bc38a2"
+    ]
+  },
+  "errorCode": 0,
+  "errorMsg": "Success"
+}

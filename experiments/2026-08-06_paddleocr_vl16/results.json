@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "ocr_engine": "PaddleOCR-VL-1.6 (cloud API)",
+  "pages": 37,
+  "truth_chars": 16123,
+  "matched": 14657,
+  "accuracy": 0.9091,
+  "substitutions": 603,
+  "error_breakdown": {
+    "ocr_char_in_standard": 148,
+    "truth_char_in_standard": 315,
+    "both_in_standard": 65,
+    "confusing_group_errors_all": 16
+  },
+  "real_substitution_cnbe_analysis": {
+    "substitutions": 603,
+    "both_in_cnbe_standard": 65,
+    "truth_in_topK": {
+      "1": 4,
+      "3": 6,
+      "5": 9,
+      "10": 10,
+      "20": 17
+    },
+    "confusing_group_errors": 10,
+    "confusing_group_top1": 10,
+    "group_top1_rate": 1.0
+  },
+  "applied_group_verifier": {
+    "baseline_accuracy": 0.9091,
+    "group_verifier_accuracy": 0.9085,
+    "changes": 16,
+    "correct_changes": 0
+  },
+  "previous_baselines": {
+    "best_per_page": 0.3764,
+    "deepseek_v1": 0.3871,
+    "paddle_local": 0.1188
+  }
+}

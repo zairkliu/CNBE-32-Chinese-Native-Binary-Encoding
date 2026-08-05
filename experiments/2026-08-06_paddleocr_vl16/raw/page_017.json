@@ -1,0 +1,427 @@
+{
+  "logId": "9657e4ed-6733-44dc-a3db-4dc6d8a64664",
+  "result": {
+    "layoutParsingResults": [
+      {
+        "prunedResult": {
+          "page_count": null,
+          "width": 864,
+          "height": 1706,
+          "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_layout_detection": true,
+            "use_chart_recognition": false,
+            "use_seal_recognition": false,
+            "use_ocr_for_image_block": false,
+            "format_block_content": false,
+            "merge_layout_blocks": true,
+            "markdown_ignore_labels": [
+              "number",
+              "footnote",
+              "header",
+              "header_image",
+              "footer",
+              "footer_image",
+              "aside_text"
+            ],
+            "return_layout_polygon_points": true
+          },
+          "parsing_res_list": [
+            {
+              "block_label": "paragraph_title",
+              "block_content": "大永",
+              "block_bbox": [
+                124,
+                380,
+                275,
+                437
+              ],
+              "block_id": 0,
+              "block_order": 1,
+              "group_id": 0,
+              "block_polygon_points": [
+                [
+                  124.0,
+                  380.0
+                ],
+                [
+                  275.0,
+                  380.0
+                ],
+                [
+                  275.0,
+                  437.0
+                ],
+                [
+                  124.0,
+                  437.0
+                ]
+              ]
+            },
+            {
+              "block_label": "vertical_text",
+              "block_content": "作婢春黄糜夫孝絢得珊瑚其母令衣青衣而春初無糜字也穿雲透石不辭勞遠地方知出處高溪洞豈能留得住終歸大海作波濤此唐宣宗瀑布詩也其命意如此豈非天子氣象邪唐韓文公蘇東坡皆誤用莊子中子桑衆飮事作子來文公詩云昔者一日雨子來寒且飢其友名子輿忽然憂且思褰裳涉泥水褰飮往從之東坡詩云殺鷄未肯邀季路褰飮應須問子來余原此字之失盖來字與桑字頗相類文公巳爲誤用東坡又承其誤爾釣艇歸時菖葉雨并寺官官小未朝叅此二絶首句也蘇東坡集云僕作此詩時年二十九歲至春渚紀聞乃云此開子容詩誤載在東坡集中未知其孰是也朱希真避地廣中作小盡行云藤州三月作小盡梧州三月作大盡哀哉官曆今不須憶昔昇平泪成陣云云此詩前押兩盡字殆類杜子美前年渝州殺刺史今年開州殺刺史與夫西川有杜鵑東川無杜鵑洪萬無杜鵑雲安有杜鵑也蘇東坡和編禮公水官詩云長安三月火至寳隨飛煙尚有脫身者漂流東出關夫出東闢三字出前漢終軍傳東坡用古人句語押韻精切如此而舊本乃作出東闢且長安之地初無東闢可見舊本之誤也學者其可不知香彎類藁嘗病蘇東坡和陶詩押游字陶詩云命室携童弱良日登遠遊而東坡和",
+              "block_bbox": [
+                26,
+                431,
+                810,
+                1540
+              ],
+              "block_id": 1,
+              "block_order": 2,
+              "group_id": 1,
+              "block_polygon_points": [
+                [
+                  26.0,
+                  431.0
+                ],
+                [
+                  810.0,
+                  431.0
+                ],
+                [
+                  810.0,
+                  1540.0
+                ],
+                [
+                  26.0,
+                  1540.0
+                ]
+              ]
+            },
+            {
+              "block_label": "footer_image",
+              "block_content": "",
+              "block_bbox": [
+                0,
+                649,
+                33,
+                705
+              ],
+              "block_id": 2,
+              "block_order": null,
+              "group_id": 2,
+              "block_polygon_points": [
+                [
+                  0.0,
+                  649.0
+                ],
+                [
+                  33.0,
+                  649.0
+                ],
+                [
+                  33.0,
+                  705.0
+                ],
+                [
+                  0.0,
+                  705.0
+                ]
+              ]
+            },
+            {
+              "block_label": "footer",
+              "block_content": "ン",
+              "block_bbox": [
+                0,
+                707,
+                22,
+                952
+              ],
+              "block_id": 3,
+              "block_order": null,
+              "group_id": 3,
+              "block_polygon_points": [
+                [
+                  -1.0,
+                  707.0
+                ],
+                [
+                  22.0,
+                  707.0
+                ],
+                [
+                  22.0,
+                  952.0
+                ],
+                [
+                  -1.0,
+                  952.0
+                ]
+              ]
+            },
+            {
+              "block_label": "footer_image",
+              "block_content": "",
+              "block_bbox": [
+                0,
+                1088,
+                35,
+                1150
+              ],
+              "block_id": 4,
+              "block_order": null,
+              "group_id": 4,
+              "block_polygon_points": [
+                [
+                  0.0,
+                  1088.0
+                ],
+                [
+                  35.0,
+                  1088.0
+                ],
+                [
+                  35.0,
+                  1150.0
+                ],
+                [
+                  0.0,
+                  1150.0
+                ]
+              ]
+            },
+            {
+              "block_label": "footer_image",
+              "block_content": "",
+              "block_bbox": [
+                0,
+                1265,
+                36,
+                1328
+              ],
+              "block_id": 5,
+              "block_order": null,
+              "group_id": 5,
+              "block_polygon_points": [
+                [
+                  0.0,
+                  1265.0
+                ],
+                [
+                  36.0,
+                  1265.0
+                ],
+                [
+                  36.0,
+                  1328.0
+                ],
+                [
+                  0.0,
+                  1328.0
+                ]
+              ]
+            }
+          ],
+          "layout_det_res": {
+            "boxes": [
+              {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.3266790807247162,
+                "coordinate": [
+                  124,
+                  380,
+                  275,
+                  437
+                ],
+                "order": 1,
+                "polygon_points": [
+                  [
+                    124.0,
+                    380.0
+                  ],
+                  [
+                    275.0,
+                    380.0
+                  ],
+                  [
+                    275.0,
+                    437.0
+                  ],
+                  [
+                    124.0,
+                    437.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 23,
+                "label": "vertical_text",
+                "score": 0.9711046814918518,
+                "coordinate": [
+                  26,
+                  431,
+                  810,
+                  1540
+                ],
+                "order": 2,
+                "polygon_points": [
+                  [
+                    26.0,
+                    431.0
+                  ],
+                  [
+                    810.0,
+                    431.0
+                  ],
+                  [
+                    810.0,
+                    1540.0
+                  ],
+                  [
+                    26.0,
+                    1540.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 9,
+                "label": "footer_image",
+                "score": 0.547787606716156,
+                "coordinate": [
+                  0,
+                  649,
+                  33,
+                  705
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    0.0,
+                    649.0
+                  ],
+                  [
+                    33.0,
+                    649.0
+                  ],
+                  [
+                    33.0,
+                    705.0
+                  ],
+                  [
+                    0.0,
+                    705.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.6714033484458923,
+                "coordinate": [
+                  0,
+                  707,
+                  22,
+                  952
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    -1.0,
+                    707.0
+                  ],
+                  [
+                    22.0,
+                    707.0
+                  ],
+                  [
+                    22.0,
+                    952.0
+                  ],
+                  [
+                    -1.0,
+                    952.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 9,
+                "label": "footer_image",
+                "score": 0.3702496290206909,
+                "coordinate": [
+                  0,
+                  1088,
+                  35,
+                  1150
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    0.0,
+                    1088.0
+                  ],
+                  [
+                    35.0,
+                    1088.0
+                  ],
+                  [
+                    35.0,
+                    1150.0
+                  ],
+                  [
+                    0.0,
+                    1150.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 9,
+                "label": "footer_image",
+                "score": 0.4269266426563263,
+                "coordinate": [
+                  0,
+                  1265,
+                  36,
+                  1328
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    0.0,
+                    1265.0
+                  ],
+                  [
+                    36.0,
+                    1265.0
+                  ],
+                  [
+                    36.0,
+                    1328.0
+                  ],
+                  [
+                    0.0,
+                    1328.0
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        "markdown": {
+          "text": "## 大永\n\n作婢春黄糜夫孝絢得珊瑚其母令衣青衣而春初無糜字也穿雲透石不辭勞遠地方知出處高溪洞豈能留得住終歸大海作波濤此唐宣宗瀑布詩也其命意如此豈非天子氣象邪唐韓文公蘇東坡皆誤用莊子中子桑衆飮事作子來文公詩云昔者一日雨子來寒且飢其友名子輿忽然憂且思褰裳涉泥水褰飮往從之東坡詩云殺鷄未肯邀季路褰飮應須問子來余原此字之失盖來字與桑字頗相類文公巳爲誤用東坡又承其誤爾釣艇歸時菖葉雨并寺官官小未朝叅此二絶首句也蘇東坡集云僕作此詩時年二十九歲至春渚紀聞乃云此開子容詩誤載在東坡集中未知其孰是也朱希真避地廣中作小盡行云藤州三月作小盡梧州三月作大盡哀哉官曆今不須憶昔昇平泪成陣云云此詩前押兩盡字殆類杜子美前年渝州殺刺史今年開州殺刺史與夫西川有杜鵑東川無杜鵑洪萬無杜鵑雲安有杜鵑也蘇東坡和編禮公水官詩云長安三月火至寳隨飛煙尚有脫身者漂流東出關夫出東闢三字出前漢終軍傳東坡用古人句語押韻精切如此而舊本乃作出東闢且長安之地初無東闢可見舊本之誤也學者其可不知香彎類藁嘗病蘇東坡和陶詩押游字陶詩云命室携童弱良日登遠遊而東坡和",
+          "images": {
+            "imgs/img_in_footer_image_box_0_649_33_705.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//9657e4ed-6733-44dc-a3db-4dc6d8a64664/markdown_0/imgs/img_in_footer_image_box_0_649_33_705.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A55Z%2F-1%2F%2F5a96ecd325c4195aff091291c8824d2de01a8b9eff9e8bdd140c90e43954c1df",
+            "imgs/img_in_footer_image_box_0_1088_35_1150.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//9657e4ed-6733-44dc-a3db-4dc6d8a64664/markdown_0/imgs/img_in_footer_image_box_0_1088_35_1150.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A55Z%2F-1%2F%2Fd046f6d10e21a5e31f25024ed4dcc8bf442890d3bc8daf646a8c33808d27a446",
+            "imgs/img_in_footer_image_box_0_1265_36_1328.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//9657e4ed-6733-44dc-a3db-4dc6d8a64664/markdown_0/imgs/img_in_footer_image_box_0_1265_36_1328.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A55Z%2F-1%2F%2F1f79c4f1619bcfe5544696b073ecd079f62cb69d3df88d2a2db7b92c2f174e90"
+          }
+        },
+        "outputImages": {
+          "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//9657e4ed-6733-44dc-a3db-4dc6d8a64664/layout_det_res_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A56Z%2F-1%2F%2F49880b4d6fddaeea2ca7b514dc22344d6c636c56c988403bb6a37168b921ef3d"
+        },
+        "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//9657e4ed-6733-44dc-a3db-4dc6d8a64664/input_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A56Z%2F-1%2F%2F5b196e2704fde2dca0feff45c728f68929cabb4f16058e8a9c1325a9b65b1b14"
+      }
+    ],
+    "dataInfo": {
+      "width": 864,
+      "height": 1706,
+      "type": "image"
+    },
+    "preprocessedImages": [
+      "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//9657e4ed-6733-44dc-a3db-4dc6d8a64664/preprocessed_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A56Z%2F-1%2F%2Fa7f121b00073ebf5694c9e9ce71d1a73431740bbca65678c13557f965b6571a6"
+    ]
+  },
+  "errorCode": 0,
+  "errorMsg": "Success"
+}

@@ -1,0 +1,427 @@
+{
+  "logId": "49d1a617-2940-4c84-871f-85c722d73287",
+  "result": {
+    "layoutParsingResults": [
+      {
+        "prunedResult": {
+          "page_count": null,
+          "width": 864,
+          "height": 1739,
+          "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_layout_detection": true,
+            "use_chart_recognition": false,
+            "use_seal_recognition": false,
+            "use_ocr_for_image_block": false,
+            "format_block_content": false,
+            "merge_layout_blocks": true,
+            "markdown_ignore_labels": [
+              "number",
+              "footnote",
+              "header",
+              "header_image",
+              "footer",
+              "footer_image",
+              "aside_text"
+            ],
+            "return_layout_polygon_points": true
+          },
+          "parsing_res_list": [
+            {
+              "block_label": "header_image",
+              "block_content": "",
+              "block_bbox": [
+                828,
+                658,
+                864,
+                710
+              ],
+              "block_id": 0,
+              "block_order": null,
+              "group_id": 0,
+              "block_polygon_points": [
+                [
+                  828.0,
+                  658.0
+                ],
+                [
+                  864.0,
+                  658.0
+                ],
+                [
+                  864.0,
+                  710.0
+                ],
+                [
+                  828.0,
+                  710.0
+                ]
+              ]
+            },
+            {
+              "block_label": "header",
+              "block_content": "永樂大典卷一百二十",
+              "block_bbox": [
+                842,
+                711,
+                864,
+                960
+              ],
+              "block_id": 1,
+              "block_order": null,
+              "group_id": 1,
+              "block_polygon_points": [
+                [
+                  842.0,
+                  711.0
+                ],
+                [
+                  864.0,
+                  711.0
+                ],
+                [
+                  864.0,
+                  960.0
+                ],
+                [
+                  842.0,
+                  960.0
+                ]
+              ]
+            },
+            {
+              "block_label": "header_image",
+              "block_content": "",
+              "block_bbox": [
+                825,
+                1105,
+                864,
+                1165
+              ],
+              "block_id": 2,
+              "block_order": null,
+              "group_id": 2,
+              "block_polygon_points": [
+                [
+                  825.0,
+                  1105.0
+                ],
+                [
+                  864.0,
+                  1105.0
+                ],
+                [
+                  864.0,
+                  1165.0
+                ],
+                [
+                  825.0,
+                  1165.0
+                ]
+              ]
+            },
+            {
+              "block_label": "header_image",
+              "block_content": "",
+              "block_bbox": [
+                824,
+                1281,
+                864,
+                1328
+              ],
+              "block_id": 3,
+              "block_order": null,
+              "group_id": 3,
+              "block_polygon_points": [
+                [
+                  824.0,
+                  1281.0
+                ],
+                [
+                  864.0,
+                  1281.0
+                ],
+                [
+                  864.0,
+                  1328.0
+                ],
+                [
+                  824.0,
+                  1328.0
+                ]
+              ]
+            },
+            {
+              "block_label": "vertical_text",
+              "block_content": "虎狼都各易一字最爲妙䖏洪氏辨證謂急急能鳴鴈輕輕不下鷗能鳴用莊子不下用列子語於此見其用出處下字之法莊子外篇莊子舍於故人之家故人喜殺鴈而烹之莊子請曰一能鳴其一不能鳴請奚殺主人曰殺不能鳴者列子黃帝篇海上之人有好漚鳥者每從漚鳥游其父曰吾聞漚鳥皆從汝游汝取來吾玩之明日之海上漚鳥舞而不下杜牧之詩授圖黃石老學劒白猿翁盖出庾信字文盛墓誌云授圖黃石不無師表之心學劒白猿遂得風雲之志杜牧之詩老翁四百牙爪利擲火萬里精神高盖用天蓬呪蒼舌綠齒四目老翁而今本誤以目爲百爾擲火萬里亦用度人經擲火萬里流鈴八衝之語而東坡亦用之於芙蓉城詩云仙風鏘然韻流鈴也東坡謂老杜竊比稷與契盖求之於其詩舜舉十六相身尊道何高秦時用商鞅法令如牛毛意特有所指余以爲見此老容民畜衆之度莫若水深魚極樂林茂鳥知歸又林茂鳥攸歸水深魚知聚重言之此其意有在荆公次韻酬龔深甫詩云北尋五柞固未憗東挽三楊仍有樛輿地志鍾山本少林木宋時使諸州刺史罷職還者栽松三千株下至郡守各有差焉山之最高峰有五願樹柞木也元嘉中百姓祈禱率有驗又李太白白下亭詩驛亭三樹楊正當白下門王詩三楊",
+              "block_bbox": [
+                54,
+                435,
+                825,
+                1560
+              ],
+              "block_id": 4,
+              "block_order": 1,
+              "group_id": 4,
+              "block_polygon_points": [
+                [
+                  54.0,
+                  435.0
+                ],
+                [
+                  825.0,
+                  435.0
+                ],
+                [
+                  825.0,
+                  1560.0
+                ],
+                [
+                  54.0,
+                  1560.0
+                ]
+              ]
+            },
+            {
+              "block_label": "paragraph_title",
+              "block_content": "大永",
+              "block_bbox": [
+                125,
+                387,
+                286,
+                446
+              ],
+              "block_id": 5,
+              "block_order": 2,
+              "group_id": 5,
+              "block_polygon_points": [
+                [
+                  125.0,
+                  387.0
+                ],
+                [
+                  286.0,
+                  387.0
+                ],
+                [
+                  286.0,
+                  446.0
+                ],
+                [
+                  125.0,
+                  446.0
+                ]
+              ]
+            }
+          ],
+          "layout_det_res": {
+            "boxes": [
+              {
+                "cls_id": 13,
+                "label": "header_image",
+                "score": 0.5945237874984741,
+                "coordinate": [
+                  828,
+                  658,
+                  864,
+                  710
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    828.0,
+                    658.0
+                  ],
+                  [
+                    864.0,
+                    658.0
+                  ],
+                  [
+                    864.0,
+                    710.0
+                  ],
+                  [
+                    828.0,
+                    710.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.6865966320037842,
+                "coordinate": [
+                  842,
+                  711,
+                  864,
+                  960
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    842.0,
+                    711.0
+                  ],
+                  [
+                    864.0,
+                    711.0
+                  ],
+                  [
+                    864.0,
+                    960.0
+                  ],
+                  [
+                    842.0,
+                    960.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 13,
+                "label": "header_image",
+                "score": 0.37289607524871826,
+                "coordinate": [
+                  825,
+                  1105,
+                  864,
+                  1165
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    825.0,
+                    1105.0
+                  ],
+                  [
+                    864.0,
+                    1105.0
+                  ],
+                  [
+                    864.0,
+                    1165.0
+                  ],
+                  [
+                    825.0,
+                    1165.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 13,
+                "label": "header_image",
+                "score": 0.4372938871383667,
+                "coordinate": [
+                  824,
+                  1281,
+                  864,
+                  1328
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    824.0,
+                    1281.0
+                  ],
+                  [
+                    864.0,
+                    1281.0
+                  ],
+                  [
+                    864.0,
+                    1328.0
+                  ],
+                  [
+                    824.0,
+                    1328.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 23,
+                "label": "vertical_text",
+                "score": 0.9655066728591919,
+                "coordinate": [
+                  54,
+                  435,
+                  825,
+                  1560
+                ],
+                "order": 1,
+                "polygon_points": [
+                  [
+                    54.0,
+                    435.0
+                  ],
+                  [
+                    825.0,
+                    435.0
+                  ],
+                  [
+                    825.0,
+                    1560.0
+                  ],
+                  [
+                    54.0,
+                    1560.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.40931588411331177,
+                "coordinate": [
+                  125,
+                  387,
+                  286,
+                  446
+                ],
+                "order": 2,
+                "polygon_points": [
+                  [
+                    125.0,
+                    387.0
+                  ],
+                  [
+                    286.0,
+                    387.0
+                  ],
+                  [
+                    286.0,
+                    446.0
+                  ],
+                  [
+                    125.0,
+                    446.0
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        "markdown": {
+          "text": "虎狼都各易一字最爲妙䖏洪氏辨證謂急急能鳴鴈輕輕不下鷗能鳴用莊子不下用列子語於此見其用出處下字之法莊子外篇莊子舍於故人之家故人喜殺鴈而烹之莊子請曰一能鳴其一不能鳴請奚殺主人曰殺不能鳴者列子黃帝篇海上之人有好漚鳥者每從漚鳥游其父曰吾聞漚鳥皆從汝游汝取來吾玩之明日之海上漚鳥舞而不下杜牧之詩授圖黃石老學劒白猿翁盖出庾信字文盛墓誌云授圖黃石不無師表之心學劒白猿遂得風雲之志杜牧之詩老翁四百牙爪利擲火萬里精神高盖用天蓬呪蒼舌綠齒四目老翁而今本誤以目爲百爾擲火萬里亦用度人經擲火萬里流鈴八衝之語而東坡亦用之於芙蓉城詩云仙風鏘然韻流鈴也東坡謂老杜竊比稷與契盖求之於其詩舜舉十六相身尊道何高秦時用商鞅法令如牛毛意特有所指余以爲見此老容民畜衆之度莫若水深魚極樂林茂鳥知歸又林茂鳥攸歸水深魚知聚重言之此其意有在荆公次韻酬龔深甫詩云北尋五柞固未憗東挽三楊仍有樛輿地志鍾山本少林木宋時使諸州刺史罷職還者栽松三千株下至郡守各有差焉山之最高峰有五願樹柞木也元嘉中百姓祈禱率有驗又李太白白下亭詩驛亭三樹楊正當白下門王詩三楊\n\n## 大永",
+          "images": {
+            "imgs/img_in_header_image_box_828_658_864_710.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//49d1a617-2940-4c84-871f-85c722d73287/markdown_0/imgs/img_in_header_image_box_828_658_864_710.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A04Z%2F-1%2F%2Ff71c4f86aaefee38cbaf38578c0e41591558f67f4bd1e1ce3440e51ff10178a3",
+            "imgs/img_in_header_image_box_825_1105_864_1165.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//49d1a617-2940-4c84-871f-85c722d73287/markdown_0/imgs/img_in_header_image_box_825_1105_864_1165.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A04Z%2F-1%2F%2F4ab32029d1f28ebd8d104450025f2f09220c904e4b02b80355d953b085bdb25e",
+            "imgs/img_in_header_image_box_824_1281_864_1328.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//49d1a617-2940-4c84-871f-85c722d73287/markdown_0/imgs/img_in_header_image_box_824_1281_864_1328.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A04Z%2F-1%2F%2F012ae40443394215834fb3b7481b95bc588616215ed3be08cae4404cbf2d6d7a"
+          }
+        },
+        "outputImages": {
+          "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//49d1a617-2940-4c84-871f-85c722d73287/layout_det_res_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A05Z%2F-1%2F%2F2ff2ffeb4a8767e0f9ef3db0dd6a6b45613443263fd88a851dda7407f93dc92c"
+        },
+        "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//49d1a617-2940-4c84-871f-85c722d73287/input_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A05Z%2F-1%2F%2Ffa739407b851af0200fcb81e3596f8db60998931c7907c00f4bddf51fc0d93f0"
+      }
+    ],
+    "dataInfo": {
+      "width": 864,
+      "height": 1739,
+      "type": "image"
+    },
+    "preprocessedImages": [
+      "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//49d1a617-2940-4c84-871f-85c722d73287/preprocessed_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A06Z%2F-1%2F%2F35cc2e2505f3fe7290718e99a6dfdd163598d9446a7f9e9770711370e741e52e"
+    ]
+  },
+  "errorCode": 0,
+  "errorMsg": "Success"
+}

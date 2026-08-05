@@ -1,0 +1,489 @@
+{
+  "logId": "6245e386-097c-4a85-9be2-6a2408cc14e0",
+  "result": {
+    "layoutParsingResults": [
+      {
+        "prunedResult": {
+          "page_count": null,
+          "width": 864,
+          "height": 1718,
+          "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_layout_detection": true,
+            "use_chart_recognition": false,
+            "use_seal_recognition": false,
+            "use_ocr_for_image_block": false,
+            "format_block_content": false,
+            "merge_layout_blocks": true,
+            "markdown_ignore_labels": [
+              "number",
+              "footnote",
+              "header",
+              "header_image",
+              "footer",
+              "footer_image",
+              "aside_text"
+            ],
+            "return_layout_polygon_points": true
+          },
+          "parsing_res_list": [
+            {
+              "block_label": "vertical_text",
+              "block_content": "太史又嘗謂人云杜荀鶴詩舉世盡從愁裏老可對韓退之詩何人肯向\n死前休此一聯尤更竒絶雖尚未成全篇則知太史真能集句矣第恨所\n見者不多爾然其譬集句爲百家衣又喜王荆公莫言常爲此詩而謂正\n堪一笑者亦其所優爲之故也黃太史詩云莫作秋蟲促機杼貧家能\n有幾絢絲絢者履絢也盖言履絢之上用絲無幾爾絢音渠非王荆公用\n一絢絲之比也荆公之詩只向貧家促機杼幾家能有一絢絲乃用隋唐\n嘉話一絢絲得幾時絡者宋景文公作仲商晦日集晏相國西園詩末\n句云三入功名始白頭始下音試以是知杜工部詩皂鵰寒始急白樂天\n詩千呼萬喚始出來如此等始字當皆音試可也石林詩話記黃太史\n詩云人得交游是風月天開圖畫即江山以謂止此二句乃晚年冣得意\n者每舉以教人而終不能成篇盖不欲以常語雜之然太史集中載王厚\n頌二絕後一絕云夕陽盡處望清閑想見千嵓細菊班其下二句即前面\n一聯石林何不細考如此白樂天詩云而今格在頸成雪元微之詩云\n隅是身如夢格隔二字殊不曉其義二公用之又不同容齋隨筆云猶言\n已是也余謂只是巳是不須作猶言第未知出處耳且如差池二字前漢\n中自作柴池注云柴音差委蛇二字橫塘詩中自作委羽注云羽音俱依",
+              "block_bbox": [
+                32,
+                435,
+                803,
+                1546
+              ],
+              "block_id": 0,
+              "block_order": 1,
+              "group_id": 0,
+              "block_polygon_points": [
+                [
+                  32.0,
+                  435.0
+                ],
+                [
+                  803.0,
+                  435.0
+                ],
+                [
+                  803.0,
+                  1546.0
+                ],
+                [
+                  32.0,
+                  1546.0
+                ]
+              ]
+            },
+            {
+              "block_label": "footer_image",
+              "block_content": "",
+              "block_bbox": [
+                0,
+                652,
+                37,
+                704
+              ],
+              "block_id": 1,
+              "block_order": null,
+              "group_id": 1,
+              "block_polygon_points": [
+                [
+                  0.0,
+                  652.0
+                ],
+                [
+                  37.0,
+                  652.0
+                ],
+                [
+                  37.0,
+                  704.0
+                ],
+                [
+                  0.0,
+                  704.0
+                ]
+              ]
+            },
+            {
+              "block_label": "footer_image",
+              "block_content": "",
+              "block_bbox": [
+                0,
+                600,
+                35,
+                657
+              ],
+              "block_id": 2,
+              "block_order": null,
+              "group_id": 2,
+              "block_polygon_points": [
+                [
+                  0.0,
+                  600.0
+                ],
+                [
+                  35.0,
+                  600.0
+                ],
+                [
+                  35.0,
+                  657.0
+                ],
+                [
+                  0.0,
+                  657.0
+                ]
+              ]
+            },
+            {
+              "block_label": "footer",
+              "block_content": "トーパン",
+              "block_bbox": [
+                0,
+                707,
+                22,
+                955
+              ],
+              "block_id": 3,
+              "block_order": null,
+              "group_id": 3,
+              "block_polygon_points": [
+                [
+                  -1.0,
+                  716.0
+                ],
+                [
+                  21.0,
+                  716.0
+                ],
+                [
+                  21.0,
+                  954.0
+                ],
+                [
+                  -1.0,
+                  954.0
+                ]
+              ]
+            },
+            {
+              "block_label": "footer_image",
+              "block_content": "",
+              "block_bbox": [
+                0,
+                1092,
+                35,
+                1143
+              ],
+              "block_id": 4,
+              "block_order": null,
+              "group_id": 4,
+              "block_polygon_points": [
+                [
+                  -1.0,
+                  1092.0
+                ],
+                [
+                  35.0,
+                  1092.0
+                ],
+                [
+                  35.0,
+                  1143.0
+                ],
+                [
+                  -1.0,
+                  1143.0
+                ]
+              ]
+            },
+            {
+              "block_label": "number",
+              "block_content": "1",
+              "block_bbox": [
+                0,
+                1179,
+                13,
+                1209
+              ],
+              "block_id": 5,
+              "block_order": null,
+              "group_id": 5,
+              "block_polygon_points": [
+                [
+                  -8.878689879765814e-16,
+                  1179.0
+                ],
+                [
+                  12.0,
+                  1179.0
+                ],
+                [
+                  12.0,
+                  1208.0
+                ],
+                [
+                  0.0,
+                  1208.0
+                ]
+              ]
+            },
+            {
+              "block_label": "footer_image",
+              "block_content": "",
+              "block_bbox": [
+                0,
+                1266,
+                34,
+                1316
+              ],
+              "block_id": 6,
+              "block_order": null,
+              "group_id": 6,
+              "block_polygon_points": [
+                [
+                  0.0,
+                  1266.0
+                ],
+                [
+                  34.0,
+                  1266.0
+                ],
+                [
+                  34.0,
+                  1316.0
+                ],
+                [
+                  0.0,
+                  1316.0
+                ]
+              ]
+            }
+          ],
+          "layout_det_res": {
+            "boxes": [
+              {
+                "cls_id": 23,
+                "label": "vertical_text",
+                "score": 0.9697057008743286,
+                "coordinate": [
+                  32,
+                  435,
+                  803,
+                  1546
+                ],
+                "order": 1,
+                "polygon_points": [
+                  [
+                    32.0,
+                    435.0
+                  ],
+                  [
+                    803.0,
+                    435.0
+                  ],
+                  [
+                    803.0,
+                    1546.0
+                  ],
+                  [
+                    32.0,
+                    1546.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 9,
+                "label": "footer_image",
+                "score": 0.6917305588722229,
+                "coordinate": [
+                  0,
+                  652,
+                  37,
+                  704
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    0.0,
+                    652.0
+                  ],
+                  [
+                    37.0,
+                    652.0
+                  ],
+                  [
+                    37.0,
+                    704.0
+                  ],
+                  [
+                    0.0,
+                    704.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 9,
+                "label": "footer_image",
+                "score": 0.36599016189575195,
+                "coordinate": [
+                  0,
+                  600,
+                  35,
+                  657
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    0.0,
+                    600.0
+                  ],
+                  [
+                    35.0,
+                    600.0
+                  ],
+                  [
+                    35.0,
+                    657.0
+                  ],
+                  [
+                    0.0,
+                    657.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.6759634613990784,
+                "coordinate": [
+                  0,
+                  707,
+                  22,
+                  955
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    -1.0,
+                    716.0
+                  ],
+                  [
+                    21.0,
+                    716.0
+                  ],
+                  [
+                    21.0,
+                    954.0
+                  ],
+                  [
+                    -1.0,
+                    954.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 9,
+                "label": "footer_image",
+                "score": 0.6831901669502258,
+                "coordinate": [
+                  0,
+                  1092,
+                  35,
+                  1143
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    -1.0,
+                    1092.0
+                  ],
+                  [
+                    35.0,
+                    1092.0
+                  ],
+                  [
+                    35.0,
+                    1143.0
+                  ],
+                  [
+                    -1.0,
+                    1143.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.524310827255249,
+                "coordinate": [
+                  0,
+                  1179,
+                  13,
+                  1209
+                ],
+                "order": 2,
+                "polygon_points": [
+                  [
+                    -8.878689879765814e-16,
+                    1179.0
+                  ],
+                  [
+                    12.0,
+                    1179.0
+                  ],
+                  [
+                    12.0,
+                    1208.0
+                  ],
+                  [
+                    0.0,
+                    1208.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 9,
+                "label": "footer_image",
+                "score": 0.7634257674217224,
+                "coordinate": [
+                  0,
+                  1266,
+                  34,
+                  1316
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    0.0,
+                    1266.0
+                  ],
+                  [
+                    34.0,
+                    1266.0
+                  ],
+                  [
+                    34.0,
+                    1316.0
+                  ],
+                  [
+                    0.0,
+                    1316.0
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        "markdown": {
+          "text": "太史又嘗謂人云杜荀鶴詩舉世盡從愁裏老可對韓退之詩何人肯向\n\n死前休此一聯尤更竒絶雖尚未成全篇則知太史真能集句矣第恨所\n\n見者不多爾然其譬集句爲百家衣又喜王荆公莫言常爲此詩而謂正\n\n堪一笑者亦其所優爲之故也黃太史詩云莫作秋蟲促機杼貧家能\n\n有幾絢絲絢者履絢也盖言履絢之上用絲無幾爾絢音渠非王荆公用\n\n一絢絲之比也荆公之詩只向貧家促機杼幾家能有一絢絲乃用隋唐\n\n嘉話一絢絲得幾時絡者宋景文公作仲商晦日集晏相國西園詩末\n\n句云三入功名始白頭始下音試以是知杜工部詩皂鵰寒始急白樂天\n\n詩千呼萬喚始出來如此等始字當皆音試可也石林詩話記黃太史\n\n詩云人得交游是風月天開圖畫即江山以謂止此二句乃晚年冣得意\n\n者每舉以教人而終不能成篇盖不欲以常語雜之然太史集中載王厚\n\n頌二絕後一絕云夕陽盡處望清閑想見千嵓細菊班其下二句即前面\n\n一聯石林何不細考如此白樂天詩云而今格在頸成雪元微之詩云\n\n隅是身如夢格隔二字殊不曉其義二公用之又不同容齋隨筆云猶言\n\n已是也余謂只是巳是不須作猶言第未知出處耳且如差池二字前漢\n\n中自作柴池注云柴音差委蛇二字橫塘詩中自作委羽注云羽音俱依",
+          "images": {
+            "imgs/img_in_footer_image_box_0_652_37_704.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6245e386-097c-4a85-9be2-6a2408cc14e0/markdown_0/imgs/img_in_footer_image_box_0_652_37_704.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A51Z%2F-1%2F%2F91b47a0b5ca35135847f0a461b2e212fd17550b4de1c2735bc9f0aef8a05e678",
+            "imgs/img_in_footer_image_box_0_600_35_657.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6245e386-097c-4a85-9be2-6a2408cc14e0/markdown_0/imgs/img_in_footer_image_box_0_600_35_657.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A51Z%2F-1%2F%2Fa11e63a268a2c6453b526e36c41a68bac336dbfd25d7f3f4408f35347ade453a",
+            "imgs/img_in_footer_image_box_0_1092_35_1143.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6245e386-097c-4a85-9be2-6a2408cc14e0/markdown_0/imgs/img_in_footer_image_box_0_1092_35_1143.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A51Z%2F-1%2F%2Fc30391c3d0170ce137a0431a6b4487aea014053704b26eec5464140eed20de4d",
+            "imgs/img_in_footer_image_box_0_1266_34_1316.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6245e386-097c-4a85-9be2-6a2408cc14e0/markdown_0/imgs/img_in_footer_image_box_0_1266_34_1316.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A51Z%2F-1%2F%2F12451228ae8ac5b1b25ed58c7b0dcb6ebfd605a7cf57785dd91f230dbbbb9a38"
+          }
+        },
+        "outputImages": {
+          "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6245e386-097c-4a85-9be2-6a2408cc14e0/layout_det_res_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A52Z%2F-1%2F%2F356651e65960c005bcbc9a7b4107b0c7e46376da6027c63b587840faee050a01"
+        },
+        "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6245e386-097c-4a85-9be2-6a2408cc14e0/input_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A52Z%2F-1%2F%2F9d6c2d8feef6f915553700ea9ca4d310e9b2f386caa8f7a16b98def020cda7bc"
+      }
+    ],
+    "dataInfo": {
+      "width": 864,
+      "height": 1718,
+      "type": "image"
+    },
+    "preprocessedImages": [
+      "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6245e386-097c-4a85-9be2-6a2408cc14e0/preprocessed_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A52Z%2F-1%2F%2Fee8bc158717e1bab07d6712985ada175ab20048e8fdc95161c726524bfb1269a"
+    ]
+  },
+  "errorCode": 0,
+  "errorMsg": "Success"
+}

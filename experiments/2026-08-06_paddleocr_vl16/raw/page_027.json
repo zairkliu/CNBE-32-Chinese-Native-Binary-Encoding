@@ -1,0 +1,382 @@
+{
+  "logId": "03702fd8-432d-4034-a27d-f721068a1af6",
+  "result": {
+    "layoutParsingResults": [
+      {
+        "prunedResult": {
+          "page_count": null,
+          "width": 864,
+          "height": 1700,
+          "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_layout_detection": true,
+            "use_chart_recognition": false,
+            "use_seal_recognition": false,
+            "use_ocr_for_image_block": false,
+            "format_block_content": false,
+            "merge_layout_blocks": true,
+            "markdown_ignore_labels": [
+              "number",
+              "footnote",
+              "header",
+              "header_image",
+              "footer",
+              "footer_image",
+              "aside_text"
+            ],
+            "return_layout_polygon_points": true
+          },
+          "parsing_res_list": [
+            {
+              "block_label": "vertical_text",
+              "block_content": "云水冷冷而北出山靡靡以旁圗欲窮源而不得竟悵望以空歸晁無咎\n編續楚詞謂此詩具六藝群書之餘味故與其經學典冊之文俱傳朱文\n公編楚詞後語亦收此篇自陳黃之後詩人無逾陳簡齋其詩繇簡古\n而發穠纖值靖康之亂崎嶇流落感時恨别頗有一飯不忘君之意如凉\n風又落宮南木老鴈孤鳴漢北州乾坤萬事集雙鬢臣子一謫今五年天\n翻地覆傷春色齒豁頭童祝聖時近得㑹稽消息不稍傳荆渚路岐寛東\n南鬼火成何事終藉胡鋒作爭臣龍沙此日西風冷誰折黃花壽兩宫皆\n可味也徐淵子九日詩云衰容不似秋容好坐上誰憐老孟嘉牢裹烏\n紗莫吹却免教白髮見黃花時一士和云呼兒爲我整烏紗不是無心學\n孟嘉要摘金英滿頭揷明朝還是過時花二詩興致皆佳未易優劣唐\n李商隱漢宫詩云青雀西飛竟未囬君王猶在集靈臺侍臣最有相如渴\n不賜金莖露一盃譏武帝求仙言青雀杳然不囬神仙無可致之理必矣\n而君王未悟猶徘徊臺上庶幾見之且胡不以一物驗其眞妄乎金盤盛\n露和以玉屑服之可以長生此方士之說也今侍臣相如正苦消渴何不\n以一盃賜之若服之而愈則方士之說猶可信也不然則其妄明矣二十\n八字之間委蛇曲折含不盡之意唐子西立朝賦梅花詩云桃花能紅",
+              "block_bbox": [
+                29,
+                415,
+                811,
+                1518
+              ],
+              "block_id": 0,
+              "block_order": 1,
+              "group_id": 0,
+              "block_polygon_points": [
+                [
+                  29.0,
+                  415.0
+                ],
+                [
+                  811.0,
+                  415.0
+                ],
+                [
+                  811.0,
+                  1518.0
+                ],
+                [
+                  29.0,
+                  1518.0
+                ]
+              ]
+            },
+            {
+              "block_label": "footer_image",
+              "block_content": "",
+              "block_bbox": [
+                0,
+                624,
+                35,
+                687
+              ],
+              "block_id": 1,
+              "block_order": null,
+              "group_id": 1,
+              "block_polygon_points": [
+                [
+                  0.0,
+                  624.0
+                ],
+                [
+                  35.0,
+                  624.0
+                ],
+                [
+                  35.0,
+                  687.0
+                ],
+                [
+                  0.0,
+                  687.0
+                ]
+              ]
+            },
+            {
+              "block_label": "footer",
+              "block_content": "文",
+              "block_bbox": [
+                0,
+                683,
+                23,
+                925
+              ],
+              "block_id": 2,
+              "block_order": null,
+              "group_id": 2,
+              "block_polygon_points": [
+                [
+                  0.0,
+                  692.0
+                ],
+                [
+                  0.0,
+                  924.0
+                ],
+                [
+                  18.0,
+                  924.0
+                ],
+                [
+                  22.0,
+                  916.0
+                ],
+                [
+                  22.0,
+                  700.0
+                ],
+                [
+                  18.0,
+                  692.0
+                ]
+              ]
+            },
+            {
+              "block_label": "footer_image",
+              "block_content": "",
+              "block_bbox": [
+                0,
+                1070,
+                36,
+                1132
+              ],
+              "block_id": 3,
+              "block_order": null,
+              "group_id": 3,
+              "block_polygon_points": [
+                [
+                  0.0,
+                  1070.0
+                ],
+                [
+                  36.0,
+                  1070.0
+                ],
+                [
+                  36.0,
+                  1132.0
+                ],
+                [
+                  0.0,
+                  1132.0
+                ]
+              ]
+            },
+            {
+              "block_label": "footer_image",
+              "block_content": "",
+              "block_bbox": [
+                0,
+                1236,
+                36,
+                1293
+              ],
+              "block_id": 4,
+              "block_order": null,
+              "group_id": 4,
+              "block_polygon_points": [
+                [
+                  0.0,
+                  1236.0
+                ],
+                [
+                  36.0,
+                  1236.0
+                ],
+                [
+                  36.0,
+                  1293.0
+                ],
+                [
+                  0.0,
+                  1293.0
+                ]
+              ]
+            }
+          ],
+          "layout_det_res": {
+            "boxes": [
+              {
+                "cls_id": 23,
+                "label": "vertical_text",
+                "score": 0.966985821723938,
+                "coordinate": [
+                  29,
+                  415,
+                  811,
+                  1518
+                ],
+                "order": 1,
+                "polygon_points": [
+                  [
+                    29.0,
+                    415.0
+                  ],
+                  [
+                    811.0,
+                    415.0
+                  ],
+                  [
+                    811.0,
+                    1518.0
+                  ],
+                  [
+                    29.0,
+                    1518.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 9,
+                "label": "footer_image",
+                "score": 0.4806212782859802,
+                "coordinate": [
+                  0,
+                  624,
+                  35,
+                  687
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    0.0,
+                    624.0
+                  ],
+                  [
+                    35.0,
+                    624.0
+                  ],
+                  [
+                    35.0,
+                    687.0
+                  ],
+                  [
+                    0.0,
+                    687.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.7026854157447815,
+                "coordinate": [
+                  0,
+                  683,
+                  23,
+                  925
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    0.0,
+                    692.0
+                  ],
+                  [
+                    0.0,
+                    924.0
+                  ],
+                  [
+                    18.0,
+                    924.0
+                  ],
+                  [
+                    22.0,
+                    916.0
+                  ],
+                  [
+                    22.0,
+                    700.0
+                  ],
+                  [
+                    18.0,
+                    692.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 9,
+                "label": "footer_image",
+                "score": 0.5343294143676758,
+                "coordinate": [
+                  0,
+                  1070,
+                  36,
+                  1132
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    0.0,
+                    1070.0
+                  ],
+                  [
+                    36.0,
+                    1070.0
+                  ],
+                  [
+                    36.0,
+                    1132.0
+                  ],
+                  [
+                    0.0,
+                    1132.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 9,
+                "label": "footer_image",
+                "score": 0.44689279794692993,
+                "coordinate": [
+                  0,
+                  1236,
+                  36,
+                  1293
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    0.0,
+                    1236.0
+                  ],
+                  [
+                    36.0,
+                    1236.0
+                  ],
+                  [
+                    36.0,
+                    1293.0
+                  ],
+                  [
+                    0.0,
+                    1293.0
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        "markdown": {
+          "text": "云水冷冷而北出山靡靡以旁圗欲窮源而不得竟悵望以空歸晁無咎\n\n編續楚詞謂此詩具六藝群書之餘味故與其經學典冊之文俱傳朱文\n\n公編楚詞後語亦收此篇自陳黃之後詩人無逾陳簡齋其詩繇簡古\n\n而發穠纖值靖康之亂崎嶇流落感時恨别頗有一飯不忘君之意如凉\n\n風又落宮南木老鴈孤鳴漢北州乾坤萬事集雙鬢臣子一謫今五年天\n\n翻地覆傷春色齒豁頭童祝聖時近得㑹稽消息不稍傳荆渚路岐寛東\n\n南鬼火成何事終藉胡鋒作爭臣龍沙此日西風冷誰折黃花壽兩宫皆\n\n可味也徐淵子九日詩云衰容不似秋容好坐上誰憐老孟嘉牢裹烏\n\n紗莫吹却免教白髮見黃花時一士和云呼兒爲我整烏紗不是無心學\n\n孟嘉要摘金英滿頭揷明朝還是過時花二詩興致皆佳未易優劣唐\n\n李商隱漢宫詩云青雀西飛竟未囬君王猶在集靈臺侍臣最有相如渴\n\n不賜金莖露一盃譏武帝求仙言青雀杳然不囬神仙無可致之理必矣\n\n而君王未悟猶徘徊臺上庶幾見之且胡不以一物驗其眞妄乎金盤盛\n\n露和以玉屑服之可以長生此方士之說也今侍臣相如正苦消渴何不\n\n以一盃賜之若服之而愈則方士之說猶可信也不然則其妄明矣二十\n\n八字之間委蛇曲折含不盡之意唐子西立朝賦梅花詩云桃花能紅",
+          "images": {
+            "imgs/img_in_footer_image_box_0_624_35_687.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//03702fd8-432d-4034-a27d-f721068a1af6/markdown_0/imgs/img_in_footer_image_box_0_624_35_687.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A13Z%2F-1%2F%2F8a795f7c205a1bf06738269e7d43e9015a2e151684109bd337fbdcb1ad3588e9",
+            "imgs/img_in_footer_image_box_0_1070_36_1132.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//03702fd8-432d-4034-a27d-f721068a1af6/markdown_0/imgs/img_in_footer_image_box_0_1070_36_1132.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A13Z%2F-1%2F%2F50f27013af1e0bfbfe76fb75fb882c364ade2c95bdb098eddcd067862a628c23",
+            "imgs/img_in_footer_image_box_0_1236_36_1293.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//03702fd8-432d-4034-a27d-f721068a1af6/markdown_0/imgs/img_in_footer_image_box_0_1236_36_1293.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A13Z%2F-1%2F%2F047766dc18d097dc7da4292b5ffed27038efbc20051cd4269fbb187048461438"
+          }
+        },
+        "outputImages": {
+          "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//03702fd8-432d-4034-a27d-f721068a1af6/layout_det_res_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A14Z%2F-1%2F%2F805679b93cdea6671705b29d76fb4e576eae8962694a6d8efe9eb8f5c8b97257"
+        },
+        "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//03702fd8-432d-4034-a27d-f721068a1af6/input_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A14Z%2F-1%2F%2Fd223272f81331fca54a8ed2df44bff58836fca95a34058c1b4a52b075afffc56"
+      }
+    ],
+    "dataInfo": {
+      "width": 864,
+      "height": 1700,
+      "type": "image"
+    },
+    "preprocessedImages": [
+      "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//03702fd8-432d-4034-a27d-f721068a1af6/preprocessed_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A15Z%2F-1%2F%2F90ab652d3b8cf03e88c9e6e5041a6b257a8de7db25287a6f6edc61ff0b387299"
+    ]
+  },
+  "errorCode": 0,
+  "errorMsg": "Success"
+}

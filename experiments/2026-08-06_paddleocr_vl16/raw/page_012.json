@@ -1,0 +1,430 @@
+{
+  "logId": "c3d7a928-ca4d-4046-b5e2-521b31b1beca",
+  "result": {
+    "layoutParsingResults": [
+      {
+        "prunedResult": {
+          "page_count": null,
+          "width": 864,
+          "height": 1728,
+          "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_layout_detection": true,
+            "use_chart_recognition": false,
+            "use_seal_recognition": false,
+            "use_ocr_for_image_block": false,
+            "format_block_content": false,
+            "merge_layout_blocks": true,
+            "markdown_ignore_labels": [
+              "number",
+              "footnote",
+              "header",
+              "header_image",
+              "footer",
+              "footer_image",
+              "aside_text"
+            ],
+            "return_layout_polygon_points": true
+          },
+          "parsing_res_list": [
+            {
+              "block_label": "header_image",
+              "block_content": "",
+              "block_bbox": [
+                822,
+                636,
+                863,
+                693
+              ],
+              "block_id": 0,
+              "block_order": null,
+              "group_id": 0,
+              "block_polygon_points": [
+                [
+                  822.0,
+                  636.0
+                ],
+                [
+                  863.0,
+                  636.0
+                ],
+                [
+                  863.0,
+                  693.0
+                ],
+                [
+                  822.0,
+                  693.0
+                ]
+              ]
+            },
+            {
+              "block_label": "header",
+              "block_content": "永樂大典卷一百二十一",
+              "block_bbox": [
+                840,
+                686,
+                864,
+                954
+              ],
+              "block_id": 1,
+              "block_order": null,
+              "group_id": 1,
+              "block_polygon_points": [
+                [
+                  848.0,
+                  695.0
+                ],
+                [
+                  844.0,
+                  704.0
+                ],
+                [
+                  840.0,
+                  730.0
+                ],
+                [
+                  840.0,
+                  737.0
+                ],
+                [
+                  840.0,
+                  747.0
+                ],
+                [
+                  840.0,
+                  763.0
+                ],
+                [
+                  840.0,
+                  868.0
+                ],
+                [
+                  840.0,
+                  919.0
+                ],
+                [
+                  844.0,
+                  945.0
+                ],
+                [
+                  848.0,
+                  953.0
+                ],
+                [
+                  863.0,
+                  953.0
+                ],
+                [
+                  863.0,
+                  695.0
+                ]
+              ]
+            },
+            {
+              "block_label": "header_image",
+              "block_content": "",
+              "block_bbox": [
+                826,
+                1076,
+                864,
+                1159
+              ],
+              "block_id": 2,
+              "block_order": null,
+              "group_id": 2,
+              "block_polygon_points": [
+                [
+                  826.0,
+                  1076.0
+                ],
+                [
+                  865.0,
+                  1076.0
+                ],
+                [
+                  865.0,
+                  1159.0
+                ],
+                [
+                  826.0,
+                  1159.0
+                ]
+              ]
+            },
+            {
+              "block_label": "header_image",
+              "block_content": "",
+              "block_bbox": [
+                827,
+                1252,
+                864,
+                1313
+              ],
+              "block_id": 3,
+              "block_order": null,
+              "group_id": 3,
+              "block_polygon_points": [
+                [
+                  827.0,
+                  1252.0
+                ],
+                [
+                  864.0,
+                  1252.0
+                ],
+                [
+                  864.0,
+                  1313.0
+                ],
+                [
+                  827.0,
+                  1313.0
+                ]
+              ]
+            },
+            {
+              "block_label": "vertical_text",
+              "block_content": "散亂開倚風輕薄甚佯困貼梅腮其句清絕如此足見其胷中灑落而非俗者也蘇東坡詩云水面風生人未知低昂巨葉先零亂巨葉荷也此二句殊有佳致非才藻過人者未易及此此恰如鄭毅夫詩也毅夫詩云料得涼風消息近蕭蕭巳在柳梢頭比之東坡詩句語雖別而意極同此是知前人錦繡腎腸凡吐出者皆新奇初非蹈習者也蘇東坡壺中九華詩板本首句云我家岷蜀㝡髙峯然余家收得東坡親書此詩石本首句乃云清溪電轉失雲峯此首句以不若板本之竒疑後來經改也王介甫不作纖艶等語余嘗疑濃綠萬枝紅一點動人春色不須多非介甫之詞後觀方勺泊宅編云陳正敏謂此唐人詩介甫常題於扇上爾是余之所見爲不妄也洪覺範詩云麗句妙於天下白髙才俊似海東青此一聯甚佳天下白者越女天下白也海東青者海上一鳥名能一日渡海者也杜子美詩云白白江魚入饌來余深愛其用入饌二字後觀黃太史家書云笋四時入饌又洪駒父詩云溪毛入饌光浮莢亦愛其用入饌二字與余所見同也秦少游贈鮮于子駿詩云擊強雕鶚徤治劇鶡鶋銛藝苑雌黃病其句中不見餘刃之意遽云鶡鶋銛不可彼盖不知少游用杜子美之詩耳子美詩云銛鋒瑩鶡鶋所謂鶡鶋銛者盖此爾非少游",
+              "block_bbox": [
+                47,
+                423,
+                826,
+                1536
+              ],
+              "block_id": 4,
+              "block_order": 1,
+              "group_id": 4,
+              "block_polygon_points": [
+                [
+                  47.0,
+                  423.0
+                ],
+                [
+                  826.0,
+                  423.0
+                ],
+                [
+                  826.0,
+                  1536.0
+                ],
+                [
+                  47.0,
+                  1536.0
+                ]
+              ]
+            }
+          ],
+          "layout_det_res": {
+            "boxes": [
+              {
+                "cls_id": 13,
+                "label": "header_image",
+                "score": 0.5937382578849792,
+                "coordinate": [
+                  822,
+                  636,
+                  863,
+                  693
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    822.0,
+                    636.0
+                  ],
+                  [
+                    863.0,
+                    636.0
+                  ],
+                  [
+                    863.0,
+                    693.0
+                  ],
+                  [
+                    822.0,
+                    693.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.5842973589897156,
+                "coordinate": [
+                  840,
+                  686,
+                  864,
+                  954
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    848.0,
+                    695.0
+                  ],
+                  [
+                    844.0,
+                    704.0
+                  ],
+                  [
+                    840.0,
+                    730.0
+                  ],
+                  [
+                    840.0,
+                    737.0
+                  ],
+                  [
+                    840.0,
+                    747.0
+                  ],
+                  [
+                    840.0,
+                    763.0
+                  ],
+                  [
+                    840.0,
+                    868.0
+                  ],
+                  [
+                    840.0,
+                    919.0
+                  ],
+                  [
+                    844.0,
+                    945.0
+                  ],
+                  [
+                    848.0,
+                    953.0
+                  ],
+                  [
+                    863.0,
+                    953.0
+                  ],
+                  [
+                    863.0,
+                    695.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 13,
+                "label": "header_image",
+                "score": 0.4127231538295746,
+                "coordinate": [
+                  826,
+                  1076,
+                  864,
+                  1159
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    826.0,
+                    1076.0
+                  ],
+                  [
+                    865.0,
+                    1076.0
+                  ],
+                  [
+                    865.0,
+                    1159.0
+                  ],
+                  [
+                    826.0,
+                    1159.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 13,
+                "label": "header_image",
+                "score": 0.46270549297332764,
+                "coordinate": [
+                  827,
+                  1252,
+                  864,
+                  1313
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    827.0,
+                    1252.0
+                  ],
+                  [
+                    864.0,
+                    1252.0
+                  ],
+                  [
+                    864.0,
+                    1313.0
+                  ],
+                  [
+                    827.0,
+                    1313.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 23,
+                "label": "vertical_text",
+                "score": 0.9671035408973694,
+                "coordinate": [
+                  47,
+                  423,
+                  826,
+                  1536
+                ],
+                "order": 1,
+                "polygon_points": [
+                  [
+                    47.0,
+                    423.0
+                  ],
+                  [
+                    826.0,
+                    423.0
+                  ],
+                  [
+                    826.0,
+                    1536.0
+                  ],
+                  [
+                    47.0,
+                    1536.0
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        "markdown": {
+          "text": "散亂開倚風輕薄甚佯困貼梅腮其句清絕如此足見其胷中灑落而非俗者也蘇東坡詩云水面風生人未知低昂巨葉先零亂巨葉荷也此二句殊有佳致非才藻過人者未易及此此恰如鄭毅夫詩也毅夫詩云料得涼風消息近蕭蕭巳在柳梢頭比之東坡詩句語雖別而意極同此是知前人錦繡腎腸凡吐出者皆新奇初非蹈習者也蘇東坡壺中九華詩板本首句云我家岷蜀㝡髙峯然余家收得東坡親書此詩石本首句乃云清溪電轉失雲峯此首句以不若板本之竒疑後來經改也王介甫不作纖艶等語余嘗疑濃綠萬枝紅一點動人春色不須多非介甫之詞後觀方勺泊宅編云陳正敏謂此唐人詩介甫常題於扇上爾是余之所見爲不妄也洪覺範詩云麗句妙於天下白髙才俊似海東青此一聯甚佳天下白者越女天下白也海東青者海上一鳥名能一日渡海者也杜子美詩云白白江魚入饌來余深愛其用入饌二字後觀黃太史家書云笋四時入饌又洪駒父詩云溪毛入饌光浮莢亦愛其用入饌二字與余所見同也秦少游贈鮮于子駿詩云擊強雕鶚徤治劇鶡鶋銛藝苑雌黃病其句中不見餘刃之意遽云鶡鶋銛不可彼盖不知少游用杜子美之詩耳子美詩云銛鋒瑩鶡鶋所謂鶡鶋銛者盖此爾非少游",
+          "images": {
+            "imgs/img_in_header_image_box_822_636_863_693.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c3d7a928-ca4d-4046-b5e2-521b31b1beca/markdown_0/imgs/img_in_header_image_box_822_636_863_693.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A45Z%2F-1%2F%2F191491ebd2c7237c802756b7818d25187a18cfd8564822e93ecb47fefcd22180",
+            "imgs/img_in_header_image_box_826_1076_864_1159.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c3d7a928-ca4d-4046-b5e2-521b31b1beca/markdown_0/imgs/img_in_header_image_box_826_1076_864_1159.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A45Z%2F-1%2F%2Fa1af59a3c57ccf50c362209b1048045a5c4156cd07add35056e9801b8dcfbfad",
+            "imgs/img_in_header_image_box_827_1252_864_1313.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c3d7a928-ca4d-4046-b5e2-521b31b1beca/markdown_0/imgs/img_in_header_image_box_827_1252_864_1313.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A45Z%2F-1%2F%2Ffcc521db1e47fdc4812bc1eebb29e871dab2cc7d2588efcdd126eb12e7b52290"
+          }
+        },
+        "outputImages": {
+          "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c3d7a928-ca4d-4046-b5e2-521b31b1beca/layout_det_res_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A45Z%2F-1%2F%2F2c3c0591071957b01045c743c1f7a1466b819d70d3fcc74afc1a0967d618ed9d"
+        },
+        "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c3d7a928-ca4d-4046-b5e2-521b31b1beca/input_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A46Z%2F-1%2F%2F3bfdcc1f5e74f4fc888d3e0290b1ce00d47409cfbe8f59e4ccac8851a2d637d9"
+      }
+    ],
+    "dataInfo": {
+      "width": 864,
+      "height": 1728,
+      "type": "image"
+    },
+    "preprocessedImages": [
+      "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c3d7a928-ca4d-4046-b5e2-521b31b1beca/preprocessed_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A46Z%2F-1%2F%2Fd9c4c82626481cd8b2578ad31a41bdc9d3f128b3bef3f3b37611043a096fdc2a"
+    ]
+  },
+  "errorCode": 0,
+  "errorMsg": "Success"
+}

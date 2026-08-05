@@ -1,0 +1,366 @@
+{
+  "logId": "608768c0-fa16-4b51-b460-41a025b88ec6",
+  "result": {
+    "layoutParsingResults": [
+      {
+        "prunedResult": {
+          "page_count": null,
+          "width": 864,
+          "height": 1744,
+          "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_layout_detection": true,
+            "use_chart_recognition": false,
+            "use_seal_recognition": false,
+            "use_ocr_for_image_block": false,
+            "format_block_content": false,
+            "merge_layout_blocks": true,
+            "markdown_ignore_labels": [
+              "number",
+              "footnote",
+              "header",
+              "header_image",
+              "footer",
+              "footer_image",
+              "aside_text"
+            ],
+            "return_layout_polygon_points": true
+          },
+          "parsing_res_list": [
+            {
+              "block_label": "header_image",
+              "block_content": "",
+              "block_bbox": [
+                827,
+                648,
+                864,
+                696
+              ],
+              "block_id": 0,
+              "block_order": null,
+              "group_id": 0,
+              "block_polygon_points": [
+                [
+                  827.0,
+                  648.0
+                ],
+                [
+                  864.0,
+                  648.0
+                ],
+                [
+                  864.0,
+                  696.0
+                ],
+                [
+                  827.0,
+                  696.0
+                ]
+              ]
+            },
+            {
+              "block_label": "header",
+              "block_content": "示集大典卷二",
+              "block_bbox": [
+                844,
+                697,
+                864,
+                941
+              ],
+              "block_id": 1,
+              "block_order": null,
+              "group_id": 1,
+              "block_polygon_points": [
+                [
+                  844.0,
+                  696.9999389648438
+                ],
+                [
+                  863.0,
+                  696.9999389648438
+                ],
+                [
+                  863.0,
+                  939.9999389648438
+                ],
+                [
+                  844.0,
+                  939.9999389648438
+                ]
+              ]
+            },
+            {
+              "block_label": "header_image",
+              "block_content": "",
+              "block_bbox": [
+                825,
+                1089,
+                864,
+                1153
+              ],
+              "block_id": 2,
+              "block_order": null,
+              "group_id": 2,
+              "block_polygon_points": [
+                [
+                  825.0,
+                  1089.0
+                ],
+                [
+                  864.0,
+                  1089.0
+                ],
+                [
+                  864.0,
+                  1153.0
+                ],
+                [
+                  825.0,
+                  1153.0
+                ]
+              ]
+            },
+            {
+              "block_label": "header_image",
+              "block_content": "",
+              "block_bbox": [
+                825,
+                1264,
+                864,
+                1318
+              ],
+              "block_id": 3,
+              "block_order": null,
+              "group_id": 3,
+              "block_polygon_points": [
+                [
+                  825.0,
+                  1264.0
+                ],
+                [
+                  864.0,
+                  1264.0
+                ],
+                [
+                  864.0,
+                  1318.0
+                ],
+                [
+                  825.0,
+                  1318.0
+                ]
+              ]
+            },
+            {
+              "block_label": "vertical_text",
+              "block_content": "李能白春深何處無顏色不應尚有數枝梅可是東君苦留客向來開處\n是嚴冬桃李未在交遊中只今已是丈人行勿與年少争春風執政者惡\n其自尊一斥不復後以黨禍謫羅浮作詩云說與門白鷺群也須從此斷\n知聞諸公有意除鈎黨甲乙推求恐到君殊有意味又云鶴歸遼海悲人\n世猿入巴山呌月明唯有蟲沙今好在往來休傍水邊行抱朴子云周穆\n王南征一軍皆化君子化為猿鶴小人化為蟲沙詩意言君子或死或貶\n唯小人得志深畏其含沙射影也 徐淵子詩云俸餘擬辦買山錢却買\n端州古硯磚依舊被渠驅使在買山之事定何年劉改之賀其除直院啓\n云以載鶴之船載書入覲之清標如此移買山之錢買硯平生之雅好可\n知淵子詩詞清雅余尤愛其夜泊廬山詞云風緊浪淘生蛟吼鼉鳴家人\n睡着帕人驚只有一翁捫虱坐依約三更雪又打殘燈欲暗還明有誰知\n我此時情獨對梅花傾一盞還又詩成 吾郡羅椿字永年誠齋髙弟也\n清貧入骨一介不取頗有李方叔謝無逸風味累舉於禮部竟不第自號\n就齋嘗訪誠齋於毗陵誠齋作詩送之歸曰梅萼香邊蹋雪來杏花影裏\n帶春囬明朝解纜還千里今日看花更一杯誰遣文章大驚俗何縁場屋\n不遺才南溪鷗鷺如相問為報春吟費麝煤宋慶元初誠齋與朱文公同",
+              "block_bbox": [
+                41,
+                417,
+                825,
+                1549
+              ],
+              "block_id": 4,
+              "block_order": 1,
+              "group_id": 4,
+              "block_polygon_points": [
+                [
+                  41.0,
+                  417.0
+                ],
+                [
+                  825.0,
+                  417.0
+                ],
+                [
+                  825.0,
+                  1549.0
+                ],
+                [
+                  41.0,
+                  1549.0
+                ]
+              ]
+            }
+          ],
+          "layout_det_res": {
+            "boxes": [
+              {
+                "cls_id": 13,
+                "label": "header_image",
+                "score": 0.5661158561706543,
+                "coordinate": [
+                  827,
+                  648,
+                  864,
+                  696
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    827.0,
+                    648.0
+                  ],
+                  [
+                    864.0,
+                    648.0
+                  ],
+                  [
+                    864.0,
+                    696.0
+                  ],
+                  [
+                    827.0,
+                    696.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.6962185502052307,
+                "coordinate": [
+                  844,
+                  697,
+                  864,
+                  941
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    844.0,
+                    696.9999389648438
+                  ],
+                  [
+                    863.0,
+                    696.9999389648438
+                  ],
+                  [
+                    863.0,
+                    939.9999389648438
+                  ],
+                  [
+                    844.0,
+                    939.9999389648438
+                  ]
+                ]
+              },
+              {
+                "cls_id": 13,
+                "label": "header_image",
+                "score": 0.4295364022254944,
+                "coordinate": [
+                  825,
+                  1089,
+                  864,
+                  1153
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    825.0,
+                    1089.0
+                  ],
+                  [
+                    864.0,
+                    1089.0
+                  ],
+                  [
+                    864.0,
+                    1153.0
+                  ],
+                  [
+                    825.0,
+                    1153.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 13,
+                "label": "header_image",
+                "score": 0.3699151873588562,
+                "coordinate": [
+                  825,
+                  1264,
+                  864,
+                  1318
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    825.0,
+                    1264.0
+                  ],
+                  [
+                    864.0,
+                    1264.0
+                  ],
+                  [
+                    864.0,
+                    1318.0
+                  ],
+                  [
+                    825.0,
+                    1318.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 23,
+                "label": "vertical_text",
+                "score": 0.972047746181488,
+                "coordinate": [
+                  41,
+                  417,
+                  825,
+                  1549
+                ],
+                "order": 1,
+                "polygon_points": [
+                  [
+                    41.0,
+                    417.0
+                  ],
+                  [
+                    825.0,
+                    417.0
+                  ],
+                  [
+                    825.0,
+                    1549.0
+                  ],
+                  [
+                    41.0,
+                    1549.0
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        "markdown": {
+          "text": "李能白春深何處無顏色不應尚有數枝梅可是東君苦留客向來開處\n\n是嚴冬桃李未在交遊中只今已是丈人行勿與年少争春風執政者惡\n\n其自尊一斥不復後以黨禍謫羅浮作詩云說與門白鷺群也須從此斷\n\n知聞諸公有意除鈎黨甲乙推求恐到君殊有意味又云鶴歸遼海悲人\n\n世猿入巴山呌月明唯有蟲沙今好在往來休傍水邊行抱朴子云周穆\n\n王南征一軍皆化君子化為猿鶴小人化為蟲沙詩意言君子或死或貶\n\n唯小人得志深畏其含沙射影也 徐淵子詩云俸餘擬辦買山錢却買\n\n端州古硯磚依舊被渠驅使在買山之事定何年劉改之賀其除直院啓\n\n云以載鶴之船載書入覲之清標如此移買山之錢買硯平生之雅好可\n\n知淵子詩詞清雅余尤愛其夜泊廬山詞云風緊浪淘生蛟吼鼉鳴家人\n\n睡着帕人驚只有一翁捫虱坐依約三更雪又打殘燈欲暗還明有誰知\n\n我此時情獨對梅花傾一盞還又詩成 吾郡羅椿字永年誠齋髙弟也\n\n清貧入骨一介不取頗有李方叔謝無逸風味累舉於禮部竟不第自號\n\n就齋嘗訪誠齋於毗陵誠齋作詩送之歸曰梅萼香邊蹋雪來杏花影裏\n\n帶春囬明朝解纜還千里今日看花更一杯誰遣文章大驚俗何縁場屋\n\n不遺才南溪鷗鷺如相問為報春吟費麝煤宋慶元初誠齋與朱文公同",
+          "images": {
+            "imgs/img_in_header_image_box_827_648_864_696.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//608768c0-fa16-4b51-b460-41a025b88ec6/markdown_0/imgs/img_in_header_image_box_827_648_864_696.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A15Z%2F-1%2F%2Fd264ab022ed491264f15d85adb18173f432c34f57eb06a152cadb0284ec27e42",
+            "imgs/img_in_header_image_box_825_1089_864_1153.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//608768c0-fa16-4b51-b460-41a025b88ec6/markdown_0/imgs/img_in_header_image_box_825_1089_864_1153.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A16Z%2F-1%2F%2F4e56e02214a8b144e19c45344876cb3cffef31f1a60c05ac273704be5c633bb2",
+            "imgs/img_in_header_image_box_825_1264_864_1318.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//608768c0-fa16-4b51-b460-41a025b88ec6/markdown_0/imgs/img_in_header_image_box_825_1264_864_1318.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A16Z%2F-1%2F%2F08cca2b2922790101e5d7eda370a1ccaf3443ba7b375e9d0696b214b54e9ccc1"
+          }
+        },
+        "outputImages": {
+          "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//608768c0-fa16-4b51-b460-41a025b88ec6/layout_det_res_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A16Z%2F-1%2F%2Fdbce52d5cc201cc07c73b9fc8fcf7f744c5f1dd6c45fe89528dd3966b5e2ae71"
+        },
+        "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//608768c0-fa16-4b51-b460-41a025b88ec6/input_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A17Z%2F-1%2F%2Fe89d1e35bc7a5502d4bc4f90f072cf6e6c30289ce4946ffb3105a013501dfd8c"
+      }
+    ],
+    "dataInfo": {
+      "width": 864,
+      "height": 1744,
+      "type": "image"
+    },
+    "preprocessedImages": [
+      "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//608768c0-fa16-4b51-b460-41a025b88ec6/preprocessed_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A17Z%2F-1%2F%2Fa6b6aaa8b9045da5c0a38d847bb4ab1e3e9b760db26085cf4ae365a16612b95c"
+    ]
+  },
+  "errorCode": 0,
+  "errorMsg": "Success"
+}

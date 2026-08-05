@@ -1,0 +1,366 @@
+{
+  "logId": "5cfd4599-5029-4abd-8925-797fc95ccc11",
+  "result": {
+    "layoutParsingResults": [
+      {
+        "prunedResult": {
+          "page_count": null,
+          "width": 864,
+          "height": 1681,
+          "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_layout_detection": true,
+            "use_chart_recognition": false,
+            "use_seal_recognition": false,
+            "use_ocr_for_image_block": false,
+            "format_block_content": false,
+            "merge_layout_blocks": true,
+            "markdown_ignore_labels": [
+              "number",
+              "footnote",
+              "header",
+              "header_image",
+              "footer",
+              "footer_image",
+              "aside_text"
+            ],
+            "return_layout_polygon_points": true
+          },
+          "parsing_res_list": [
+            {
+              "block_label": "vertical_text",
+              "block_content": "當見之詠槿花云月裏寧無姊雲中亦有君又詠李花云月裏誰無姊雲\n中亦有君月姊雲君用之於槿花雖新竒固不若用之於李花之爲高潔\n也然誰無姊語太徑庭誰字止冝作寧 根非生下土葉不墜秋風因尋\n樵子舍誤到葛洪家自不害爲佳句而後人論詩者以爲此皆假對意謂\n下土與秋風樵子與葛洪不相偶屬故借下爲春夏之夏子爲朱紫之紫\n塵俗哉 李益鸛雀樓詩事去千年猶恨速愁來一日即知長魯直初至\n葉縣詩云千年往事如飛鳥一日傾愁對夕陽全用李句然其意不逮李\n遠矣 歐詩歡時雖索寞得酒便豪橫老蘇詩佳節屢從愁裏過壯心還\n傍酒中來二老詩意正同 老杜寄髙適岑參詩云髙岑殊緩步沈鮑得\n同行休文明逺意愜關飛動篇終接混茫舉天悲楊駱富嘉暮近代惜盧\n王似爾官仍貴前賢命可傷以此詩證戯爲等篇則此老未嘗鄙四傑也\n老杜送髙三十五書記師字韻詩言意娓娓不盡予嘗欲學作一篇自\n顧淺鄙不敢措手人言百尺竿頭更進一步予謂此詩百尺竿頭更進百\n尺 許渾灞上逢元處士東歸詩云何人更結王生韈此客空彈貢禹冠\n薛逢上崔相公云公車未結王生韈客路空彈貢禹冠二人所對皆同然\n許語似暢於薛 東坡贈王子直詩首云萬里雲山一破裘杖端閑掛百",
+              "block_bbox": [
+                25,
+                431,
+                792,
+                1508
+              ],
+              "block_id": 0,
+              "block_order": 1,
+              "group_id": 0,
+              "block_polygon_points": [
+                [
+                  25.0,
+                  431.0
+                ],
+                [
+                  792.0,
+                  431.0
+                ],
+                [
+                  792.0,
+                  1508.0
+                ],
+                [
+                  25.0,
+                  1508.0
+                ]
+              ]
+            },
+            {
+              "block_label": "footer",
+              "block_content": "クレームニー",
+              "block_bbox": [
+                0,
+                701,
+                21,
+                964
+              ],
+              "block_id": 1,
+              "block_order": null,
+              "group_id": 1,
+              "block_polygon_points": [
+                [
+                  -1.0,
+                  701.0
+                ],
+                [
+                  21.0,
+                  701.0
+                ],
+                [
+                  21.0,
+                  964.0
+                ],
+                [
+                  -1.0,
+                  964.0
+                ]
+              ]
+            },
+            {
+              "block_label": "footer_image",
+              "block_content": "",
+              "block_bbox": [
+                0,
+                636,
+                34,
+                691
+              ],
+              "block_id": 2,
+              "block_order": null,
+              "group_id": 2,
+              "block_polygon_points": [
+                [
+                  0.0,
+                  636.0
+                ],
+                [
+                  34.0,
+                  636.0
+                ],
+                [
+                  34.0,
+                  691.0
+                ],
+                [
+                  0.0,
+                  691.0
+                ]
+              ]
+            },
+            {
+              "block_label": "footer_image",
+              "block_content": "",
+              "block_bbox": [
+                0,
+                1068,
+                33,
+                1119
+              ],
+              "block_id": 3,
+              "block_order": null,
+              "group_id": 3,
+              "block_polygon_points": [
+                [
+                  0.0,
+                  1068.0
+                ],
+                [
+                  33.0,
+                  1068.0
+                ],
+                [
+                  33.0,
+                  1119.0
+                ],
+                [
+                  0.0,
+                  1119.0
+                ]
+              ]
+            },
+            {
+              "block_label": "footer_image",
+              "block_content": "",
+              "block_bbox": [
+                0,
+                1236,
+                33,
+                1290
+              ],
+              "block_id": 4,
+              "block_order": null,
+              "group_id": 4,
+              "block_polygon_points": [
+                [
+                  0.0,
+                  1236.0
+                ],
+                [
+                  33.0,
+                  1236.0
+                ],
+                [
+                  33.0,
+                  1290.0
+                ],
+                [
+                  0.0,
+                  1290.0
+                ]
+              ]
+            }
+          ],
+          "layout_det_res": {
+            "boxes": [
+              {
+                "cls_id": 23,
+                "label": "vertical_text",
+                "score": 0.967325747013092,
+                "coordinate": [
+                  25,
+                  431,
+                  792,
+                  1508
+                ],
+                "order": 1,
+                "polygon_points": [
+                  [
+                    25.0,
+                    431.0
+                  ],
+                  [
+                    792.0,
+                    431.0
+                  ],
+                  [
+                    792.0,
+                    1508.0
+                  ],
+                  [
+                    25.0,
+                    1508.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.6511020064353943,
+                "coordinate": [
+                  0,
+                  701,
+                  21,
+                  964
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    -1.0,
+                    701.0
+                  ],
+                  [
+                    21.0,
+                    701.0
+                  ],
+                  [
+                    21.0,
+                    964.0
+                  ],
+                  [
+                    -1.0,
+                    964.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 9,
+                "label": "footer_image",
+                "score": 0.6419261693954468,
+                "coordinate": [
+                  0,
+                  636,
+                  34,
+                  691
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    0.0,
+                    636.0
+                  ],
+                  [
+                    34.0,
+                    636.0
+                  ],
+                  [
+                    34.0,
+                    691.0
+                  ],
+                  [
+                    0.0,
+                    691.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 9,
+                "label": "footer_image",
+                "score": 0.6310380101203918,
+                "coordinate": [
+                  0,
+                  1068,
+                  33,
+                  1119
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    0.0,
+                    1068.0
+                  ],
+                  [
+                    33.0,
+                    1068.0
+                  ],
+                  [
+                    33.0,
+                    1119.0
+                  ],
+                  [
+                    0.0,
+                    1119.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 9,
+                "label": "footer_image",
+                "score": 0.7161052823066711,
+                "coordinate": [
+                  0,
+                  1236,
+                  33,
+                  1290
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    0.0,
+                    1236.0
+                  ],
+                  [
+                    33.0,
+                    1236.0
+                  ],
+                  [
+                    33.0,
+                    1290.0
+                  ],
+                  [
+                    0.0,
+                    1290.0
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        "markdown": {
+          "text": "當見之詠槿花云月裏寧無姊雲中亦有君又詠李花云月裏誰無姊雲\n\n中亦有君月姊雲君用之於槿花雖新竒固不若用之於李花之爲高潔\n\n也然誰無姊語太徑庭誰字止冝作寧 根非生下土葉不墜秋風因尋\n\n樵子舍誤到葛洪家自不害爲佳句而後人論詩者以爲此皆假對意謂\n\n下土與秋風樵子與葛洪不相偶屬故借下爲春夏之夏子爲朱紫之紫\n\n塵俗哉 李益鸛雀樓詩事去千年猶恨速愁來一日即知長魯直初至\n\n葉縣詩云千年往事如飛鳥一日傾愁對夕陽全用李句然其意不逮李\n\n遠矣 歐詩歡時雖索寞得酒便豪橫老蘇詩佳節屢從愁裏過壯心還\n\n傍酒中來二老詩意正同 老杜寄髙適岑參詩云髙岑殊緩步沈鮑得\n\n同行休文明逺意愜關飛動篇終接混茫舉天悲楊駱富嘉暮近代惜盧\n\n王似爾官仍貴前賢命可傷以此詩證戯爲等篇則此老未嘗鄙四傑也\n\n老杜送髙三十五書記師字韻詩言意娓娓不盡予嘗欲學作一篇自\n\n顧淺鄙不敢措手人言百尺竿頭更進一步予謂此詩百尺竿頭更進百\n\n尺 許渾灞上逢元處士東歸詩云何人更結王生韈此客空彈貢禹冠\n\n薛逢上崔相公云公車未結王生韈客路空彈貢禹冠二人所對皆同然\n\n許語似暢於薛 東坡贈王子直詩首云萬里雲山一破裘杖端閑掛百",
+          "images": {
+            "imgs/img_in_footer_image_box_0_636_34_691.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//5cfd4599-5029-4abd-8925-797fc95ccc11/markdown_0/imgs/img_in_footer_image_box_0_636_34_691.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A31Z%2F-1%2F%2F9f650e3ae7c81596994ecb191a34c41bff30e5a3f30c4598330059324ff3015a",
+            "imgs/img_in_footer_image_box_0_1068_33_1119.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//5cfd4599-5029-4abd-8925-797fc95ccc11/markdown_0/imgs/img_in_footer_image_box_0_1068_33_1119.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A31Z%2F-1%2F%2Fb08d4c816fd41f3aa4f4d2f32d54b2f52cb0a711beb05935d8e1f9a0edb56299",
+            "imgs/img_in_footer_image_box_0_1236_33_1290.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//5cfd4599-5029-4abd-8925-797fc95ccc11/markdown_0/imgs/img_in_footer_image_box_0_1236_33_1290.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A31Z%2F-1%2F%2F7e29a341cb97c84af0a38bdd7020a38a2c79e2a24ec0b06920648d212cd1df32"
+          }
+        },
+        "outputImages": {
+          "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//5cfd4599-5029-4abd-8925-797fc95ccc11/layout_det_res_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A32Z%2F-1%2F%2F4944b1a86ffb193521c1d0dd347cb0eb6657c399fc192ddb8a9b4d3c9df01b74"
+        },
+        "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//5cfd4599-5029-4abd-8925-797fc95ccc11/input_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A32Z%2F-1%2F%2F3d72ee46d0c50315fa8d357fbb26fcef3fcd58183940ad5665ed37282b8bdd0c"
+      }
+    ],
+    "dataInfo": {
+      "width": 864,
+      "height": 1681,
+      "type": "image"
+    },
+    "preprocessedImages": [
+      "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//5cfd4599-5029-4abd-8925-797fc95ccc11/preprocessed_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A05%3A32Z%2F-1%2F%2F0e7dc56a4f33c1e286f5914181e6e7c305ae991295ef57138115f36db67b099c"
+    ]
+  },
+  "errorCode": 0,
+  "errorMsg": "Success"
+}

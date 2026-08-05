@@ -1,0 +1,373 @@
+{
+  "logId": "9410212c-c336-46ef-9e88-c8fb0e8377e9",
+  "result": {
+    "layoutParsingResults": [
+      {
+        "prunedResult": {
+          "page_count": null,
+          "width": 864,
+          "height": 1761,
+          "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_layout_detection": true,
+            "use_chart_recognition": false,
+            "use_seal_recognition": false,
+            "use_ocr_for_image_block": false,
+            "format_block_content": false,
+            "merge_layout_blocks": true,
+            "markdown_ignore_labels": [
+              "number",
+              "footnote",
+              "header",
+              "header_image",
+              "footer",
+              "footer_image",
+              "aside_text"
+            ],
+            "return_layout_polygon_points": true
+          },
+          "parsing_res_list": [
+            {
+              "block_label": "header_image",
+              "block_content": "",
+              "block_bbox": [
+                830,
+                654,
+                864,
+                706
+              ],
+              "block_id": 0,
+              "block_order": null,
+              "group_id": 0,
+              "block_polygon_points": [
+                [
+                  830.0,
+                  654.0
+                ],
+                [
+                  864.0,
+                  654.0
+                ],
+                [
+                  864.0,
+                  706.0
+                ],
+                [
+                  830.0,
+                  706.0
+                ]
+              ]
+            },
+            {
+              "block_label": "header",
+              "block_content": "永集大典卷八",
+              "block_bbox": [
+                845,
+                705,
+                864,
+                950
+              ],
+              "block_id": 1,
+              "block_order": null,
+              "group_id": 1,
+              "block_polygon_points": [
+                [
+                  850.0,
+                  705.0
+                ],
+                [
+                  845.0,
+                  714.0
+                ],
+                [
+                  845.0,
+                  949.0
+                ],
+                [
+                  863.0,
+                  949.0
+                ],
+                [
+                  863.0,
+                  705.0
+                ]
+              ]
+            },
+            {
+              "block_label": "header_image",
+              "block_content": "",
+              "block_bbox": [
+                828,
+                1104,
+                864,
+                1169
+              ],
+              "block_id": 2,
+              "block_order": null,
+              "group_id": 2,
+              "block_polygon_points": [
+                [
+                  828.0,
+                  1104.0
+                ],
+                [
+                  864.0,
+                  1104.0
+                ],
+                [
+                  864.0,
+                  1169.0
+                ],
+                [
+                  828.0,
+                  1169.0
+                ]
+              ]
+            },
+            {
+              "block_label": "number",
+              "block_content": "1",
+              "block_bbox": [
+                847,
+                1172,
+                864,
+                1223
+              ],
+              "block_id": 3,
+              "block_order": null,
+              "group_id": 3,
+              "block_polygon_points": [
+                [
+                  847.0,
+                  1172.0
+                ],
+                [
+                  863.0,
+                  1172.0
+                ],
+                [
+                  863.0,
+                  1222.0
+                ],
+                [
+                  847.0,
+                  1222.0
+                ]
+              ]
+            },
+            {
+              "block_label": "vertical_text",
+              "block_content": "月不相饒獨立萬端憂等僞作東坡注不知此何傳記耶世俗淺識輩又\n引其注爲故事用豈不誤後學㢤所謂詩武庫者又僞指爲東萊之書也\n余後觀周少隱竹溪録云東坡煑猪肉詩有火候足之句乃引雲仙録火\n候足之語以爲證然此亦常語何必用事乃知少隱亦誤以此書爲真後\n來引用者亦不足恠 唐人以格律自拘唯白居易敢易其音於語中如\n照地騏麟袍雪擺胡欄干三百六十橋晏殊嘗評之曰詩人乗後語當如\n此用字故宴公與鄭俠詩云春風不是長來客主張繁華能幾時然杜詩\n如此用字亦多將軍只數漠嫖姚漠書音漂鷂而杜作平聲之類李嘉祐\n詩門臨蒼茫經年閉身逐嫖姚幾日歸又張祐詩洛水暮天橫蒼莽邙山\n落日露崔嵬東坡詩崢嶸依絶壁蒼茫瞰奔流蒼茫二字古人用之皆是\n平聲而此作仄聲又石鼻城詩獨穿暗月朦朧裏愁度關河蒼茫間亦作\n側聲魯直亦多如此用字 夏文莊舉制科對策罷方出殿門遇楊徽之\n見其年少遽邀與語曰老夫他則不知唯喜吟詠願丐賢良一篇以卜他\n日之志公欣然援筆曰殿上衮衣明日月硯中旗影動龍蛇縱橫禮樂三\n千字獨對丹墀日未斜楊公歎服曰真宰相噐也此青箱記所載又東軒\n筆録與此少異云公舉科制對策廷下有老宦者前揖曰吾閱人多矣視",
+              "block_bbox": [
+                33,
+                417,
+                835,
+                1562
+              ],
+              "block_id": 4,
+              "block_order": 1,
+              "group_id": 4,
+              "block_polygon_points": [
+                [
+                  33.0,
+                  417.0
+                ],
+                [
+                  835.0,
+                  417.0
+                ],
+                [
+                  835.0,
+                  1562.0
+                ],
+                [
+                  33.0,
+                  1562.0
+                ]
+              ]
+            }
+          ],
+          "layout_det_res": {
+            "boxes": [
+              {
+                "cls_id": 13,
+                "label": "header_image",
+                "score": 0.594802737236023,
+                "coordinate": [
+                  830,
+                  654,
+                  864,
+                  706
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    830.0,
+                    654.0
+                  ],
+                  [
+                    864.0,
+                    654.0
+                  ],
+                  [
+                    864.0,
+                    706.0
+                  ],
+                  [
+                    830.0,
+                    706.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.7004833817481995,
+                "coordinate": [
+                  845,
+                  705,
+                  864,
+                  950
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    850.0,
+                    705.0
+                  ],
+                  [
+                    845.0,
+                    714.0
+                  ],
+                  [
+                    845.0,
+                    949.0
+                  ],
+                  [
+                    863.0,
+                    949.0
+                  ],
+                  [
+                    863.0,
+                    705.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 13,
+                "label": "header_image",
+                "score": 0.4195779263973236,
+                "coordinate": [
+                  828,
+                  1104,
+                  864,
+                  1169
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    828.0,
+                    1104.0
+                  ],
+                  [
+                    864.0,
+                    1104.0
+                  ],
+                  [
+                    864.0,
+                    1169.0
+                  ],
+                  [
+                    828.0,
+                    1169.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.3213975429534912,
+                "coordinate": [
+                  847,
+                  1172,
+                  864,
+                  1223
+                ],
+                "order": 1,
+                "polygon_points": [
+                  [
+                    847.0,
+                    1172.0
+                  ],
+                  [
+                    863.0,
+                    1172.0
+                  ],
+                  [
+                    863.0,
+                    1222.0
+                  ],
+                  [
+                    847.0,
+                    1222.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 23,
+                "label": "vertical_text",
+                "score": 0.9581156373023987,
+                "coordinate": [
+                  33,
+                  417,
+                  835,
+                  1562
+                ],
+                "order": 2,
+                "polygon_points": [
+                  [
+                    33.0,
+                    417.0
+                  ],
+                  [
+                    835.0,
+                    417.0
+                  ],
+                  [
+                    835.0,
+                    1562.0
+                  ],
+                  [
+                    33.0,
+                    1562.0
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        "markdown": {
+          "text": "月不相饒獨立萬端憂等僞作東坡注不知此何傳記耶世俗淺識輩又\n\n引其注爲故事用豈不誤後學㢤所謂詩武庫者又僞指爲東萊之書也\n\n余後觀周少隱竹溪録云東坡煑猪肉詩有火候足之句乃引雲仙録火\n\n候足之語以爲證然此亦常語何必用事乃知少隱亦誤以此書爲真後\n\n來引用者亦不足恠 唐人以格律自拘唯白居易敢易其音於語中如\n\n照地騏麟袍雪擺胡欄干三百六十橋晏殊嘗評之曰詩人乗後語當如\n\n此用字故宴公與鄭俠詩云春風不是長來客主張繁華能幾時然杜詩\n\n如此用字亦多將軍只數漠嫖姚漠書音漂鷂而杜作平聲之類李嘉祐\n\n詩門臨蒼茫經年閉身逐嫖姚幾日歸又張祐詩洛水暮天橫蒼莽邙山\n\n落日露崔嵬東坡詩崢嶸依絶壁蒼茫瞰奔流蒼茫二字古人用之皆是\n\n平聲而此作仄聲又石鼻城詩獨穿暗月朦朧裏愁度關河蒼茫間亦作\n\n側聲魯直亦多如此用字 夏文莊舉制科對策罷方出殿門遇楊徽之\n\n見其年少遽邀與語曰老夫他則不知唯喜吟詠願丐賢良一篇以卜他\n\n日之志公欣然援筆曰殿上衮衣明日月硯中旗影動龍蛇縱橫禮樂三\n\n千字獨對丹墀日未斜楊公歎服曰真宰相噐也此青箱記所載又東軒\n\n筆録與此少異云公舉科制對策廷下有老宦者前揖曰吾閱人多矣視",
+          "images": {
+            "imgs/img_in_header_image_box_830_654_864_706.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//9410212c-c336-46ef-9e88-c8fb0e8377e9/markdown_0/imgs/img_in_header_image_box_830_654_864_706.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A29Z%2F-1%2F%2F6c6e8a068c68f8fa8cdf46749eb99603efa661abcbbf76e5e36df5fb383c729d",
+            "imgs/img_in_header_image_box_828_1104_864_1169.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//9410212c-c336-46ef-9e88-c8fb0e8377e9/markdown_0/imgs/img_in_header_image_box_828_1104_864_1169.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A29Z%2F-1%2F%2Fb3dba83b28ea41159919fbc66b90e1fcb41c9c67efe8220870552205feaba189"
+          }
+        },
+        "outputImages": {
+          "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//9410212c-c336-46ef-9e88-c8fb0e8377e9/layout_det_res_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A29Z%2F-1%2F%2F77646b63411b62af7b446ae116a081a0d329e197c0d471d69a0fe132a474607b"
+        },
+        "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//9410212c-c336-46ef-9e88-c8fb0e8377e9/input_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A29Z%2F-1%2F%2Fc8646eb26044ccc10eef459540d1e2b631eaeb03daeeffea57a751bb9cb832a3"
+      }
+    ],
+    "dataInfo": {
+      "width": 864,
+      "height": 1761,
+      "type": "image"
+    },
+    "preprocessedImages": [
+      "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//9410212c-c336-46ef-9e88-c8fb0e8377e9/preprocessed_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A29Z%2F-1%2F%2F3872e5f6a584a0b83da0fddd722f57f61f1d48bb148654bafe588fe65fe501f5"
+    ]
+  },
+  "errorCode": 0,
+  "errorMsg": "Success"
+}

@@ -1,0 +1,365 @@
+{
+  "logId": "3698a5d0-8690-4c90-9cb0-a202237421ad",
+  "result": {
+    "layoutParsingResults": [
+      {
+        "prunedResult": {
+          "page_count": null,
+          "width": 864,
+          "height": 1766,
+          "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_layout_detection": true,
+            "use_chart_recognition": false,
+            "use_seal_recognition": false,
+            "use_ocr_for_image_block": false,
+            "format_block_content": false,
+            "merge_layout_blocks": true,
+            "markdown_ignore_labels": [
+              "number",
+              "footnote",
+              "header",
+              "header_image",
+              "footer",
+              "footer_image",
+              "aside_text"
+            ],
+            "return_layout_polygon_points": true
+          },
+          "parsing_res_list": [
+            {
+              "block_label": "header_image",
+              "block_content": "",
+              "block_bbox": [
+                825,
+                663,
+                864,
+                717
+              ],
+              "block_id": 0,
+              "block_order": null,
+              "group_id": 0,
+              "block_polygon_points": [
+                [
+                  825.0,
+                  663.0
+                ],
+                [
+                  864.0,
+                  663.0
+                ],
+                [
+                  864.0,
+                  717.0
+                ],
+                [
+                  825.0,
+                  717.0
+                ]
+              ]
+            },
+            {
+              "block_label": "header",
+              "block_content": "才與九典卷一百一",
+              "block_bbox": [
+                844,
+                721,
+                864,
+                970
+              ],
+              "block_id": 1,
+              "block_order": null,
+              "group_id": 1,
+              "block_polygon_points": [
+                [
+                  844.0,
+                  721.0
+                ],
+                [
+                  863.0,
+                  721.0
+                ],
+                [
+                  863.0,
+                  969.0
+                ],
+                [
+                  844.0,
+                  969.0
+                ]
+              ]
+            },
+            {
+              "block_label": "header_image",
+              "block_content": "",
+              "block_bbox": [
+                824,
+                1121,
+                864,
+                1174
+              ],
+              "block_id": 2,
+              "block_order": null,
+              "group_id": 2,
+              "block_polygon_points": [
+                [
+                  824.0,
+                  1121.0
+                ],
+                [
+                  864.0,
+                  1121.0
+                ],
+                [
+                  864.0,
+                  1174.0
+                ],
+                [
+                  824.0,
+                  1174.0
+                ]
+              ]
+            },
+            {
+              "block_label": "vertical_text",
+              "block_content": "之之失也劉勲少宣雲中人專於詩萬里風沙憐病客幾年刁斗厭寒\n更人憐直道違時好自喜聞身與世踈擊筑漫流燕客淚佩蘭誰識楚臣\n心濟南云好風襟袖知秋早甲夜闌干得月多航行著色屏風裏人在回\n文錦字中百和香薰風過處萬盤珠落雨來時尤可喜也唐詩有一句\n中自成對者謂之當句對盖起於楚詞桂棹蘭枻斵氷積雪蕙烝蘭藉桂\n酒將自後皆然如襟三江帶五湖鍾鳴鼎食于公異卧鼓偃旗養威蓄銳\n左武右文銷鋒鑄鏑杜詩尤多楊徽之詩太宗寫其警句屏上僧文瑩\n云必以天地浩露滌筆於氷甌雪盤中方與此詩相副寒山詩涉獵廣\n慱非但釋子語楚辭尤超出曰有人兮山陘雲卷兮霞纓秉芳兮欲寄路\n漫兮難征心怊悵兮狐疑謇獨立兮忠貞若青蠅白鶴黃籍白丁青蚨黃\n絹黃口白頭七札五行綵熊席青鳳裝甚工問津耦耕各其適後人未可\n輕雌黃兩翁之心秋月白孫燭湖讀通鑑詩簿書流汗走君房那得狂\n奴故意降努力諸公了臺閣不煩魚鴈到桐江清濁無心陳仲弓圓機聊\n救漢諸公末流不料兒孫誤千古黃初佐命功二絕甚佳朱文公曰栗\n里題咏獨顏平原一篇云張良思報韓龔勝耻事新狙擊苦不就舍生悲\n拕紳嗚呼陶淵明奕葉爲晉臣自以分相後每懷宗國屯題詩庚子歲自",
+              "block_bbox": [
+                44,
+                440,
+                824,
+                1582
+              ],
+              "block_id": 3,
+              "block_order": 1,
+              "group_id": 3,
+              "block_polygon_points": [
+                [
+                  44.0,
+                  440.0
+                ],
+                [
+                  824.0,
+                  440.0
+                ],
+                [
+                  824.0,
+                  1582.0
+                ],
+                [
+                  44.0,
+                  1582.0
+                ]
+              ]
+            },
+            {
+              "block_label": "paragraph_title",
+              "block_content": "大永",
+              "block_bbox": [
+                137,
+                394,
+                280,
+                454
+              ],
+              "block_id": 4,
+              "block_order": 2,
+              "group_id": 4,
+              "block_polygon_points": [
+                [
+                  137.0,
+                  394.0
+                ],
+                [
+                  280.0,
+                  394.0
+                ],
+                [
+                  280.0,
+                  454.0
+                ],
+                [
+                  137.0,
+                  454.0
+                ]
+              ]
+            }
+          ],
+          "layout_det_res": {
+            "boxes": [
+              {
+                "cls_id": 13,
+                "label": "header_image",
+                "score": 0.5663644075393677,
+                "coordinate": [
+                  825,
+                  663,
+                  864,
+                  717
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    825.0,
+                    663.0
+                  ],
+                  [
+                    864.0,
+                    663.0
+                  ],
+                  [
+                    864.0,
+                    717.0
+                  ],
+                  [
+                    825.0,
+                    717.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.6595249176025391,
+                "coordinate": [
+                  844,
+                  721,
+                  864,
+                  970
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    844.0,
+                    721.0
+                  ],
+                  [
+                    863.0,
+                    721.0
+                  ],
+                  [
+                    863.0,
+                    969.0
+                  ],
+                  [
+                    844.0,
+                    969.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 13,
+                "label": "header_image",
+                "score": 0.5303863883018494,
+                "coordinate": [
+                  824,
+                  1121,
+                  864,
+                  1174
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    824.0,
+                    1121.0
+                  ],
+                  [
+                    864.0,
+                    1121.0
+                  ],
+                  [
+                    864.0,
+                    1174.0
+                  ],
+                  [
+                    824.0,
+                    1174.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 23,
+                "label": "vertical_text",
+                "score": 0.8963595032691956,
+                "coordinate": [
+                  44,
+                  440,
+                  824,
+                  1582
+                ],
+                "order": 1,
+                "polygon_points": [
+                  [
+                    44.0,
+                    440.0
+                  ],
+                  [
+                    824.0,
+                    440.0
+                  ],
+                  [
+                    824.0,
+                    1582.0
+                  ],
+                  [
+                    44.0,
+                    1582.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.36542046070098877,
+                "coordinate": [
+                  137,
+                  394,
+                  280,
+                  454
+                ],
+                "order": 2,
+                "polygon_points": [
+                  [
+                    137.0,
+                    394.0
+                  ],
+                  [
+                    280.0,
+                    394.0
+                  ],
+                  [
+                    280.0,
+                    454.0
+                  ],
+                  [
+                    137.0,
+                    454.0
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        "markdown": {
+          "text": "之之失也劉勲少宣雲中人專於詩萬里風沙憐病客幾年刁斗厭寒\n\n更人憐直道違時好自喜聞身與世踈擊筑漫流燕客淚佩蘭誰識楚臣\n\n心濟南云好風襟袖知秋早甲夜闌干得月多航行著色屏風裏人在回\n\n文錦字中百和香薰風過處萬盤珠落雨來時尤可喜也唐詩有一句\n\n中自成對者謂之當句對盖起於楚詞桂棹蘭枻斵氷積雪蕙烝蘭藉桂\n\n酒將自後皆然如襟三江帶五湖鍾鳴鼎食于公異卧鼓偃旗養威蓄銳\n\n左武右文銷鋒鑄鏑杜詩尤多楊徽之詩太宗寫其警句屏上僧文瑩\n\n云必以天地浩露滌筆於氷甌雪盤中方與此詩相副寒山詩涉獵廣\n\n慱非但釋子語楚辭尤超出曰有人兮山陘雲卷兮霞纓秉芳兮欲寄路\n\n漫兮難征心怊悵兮狐疑謇獨立兮忠貞若青蠅白鶴黃籍白丁青蚨黃\n\n絹黃口白頭七札五行綵熊席青鳳裝甚工問津耦耕各其適後人未可\n\n輕雌黃兩翁之心秋月白孫燭湖讀通鑑詩簿書流汗走君房那得狂\n\n奴故意降努力諸公了臺閣不煩魚鴈到桐江清濁無心陳仲弓圓機聊\n\n救漢諸公末流不料兒孫誤千古黃初佐命功二絕甚佳朱文公曰栗\n\n里題咏獨顏平原一篇云張良思報韓龔勝耻事新狙擊苦不就舍生悲\n\n拕紳嗚呼陶淵明奕葉爲晉臣自以分相後每懷宗國屯題詩庚子歲自\n\n## 大永",
+          "images": {
+            "imgs/img_in_header_image_box_825_663_864_717.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//3698a5d0-8690-4c90-9cb0-a202237421ad/markdown_0/imgs/img_in_header_image_box_825_663_864_717.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A26Z%2F-1%2F%2F66b625bd870257e590fff84ed3c62205811267a4253957bcb95b6ad90bfe6b4f",
+            "imgs/img_in_header_image_box_824_1121_864_1174.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//3698a5d0-8690-4c90-9cb0-a202237421ad/markdown_0/imgs/img_in_header_image_box_824_1121_864_1174.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A26Z%2F-1%2F%2Fb2a14bd1db75ae9d4c28f7b96c99de3566cc0c3a15ad0fea47e818e0e0654d18"
+          }
+        },
+        "outputImages": {
+          "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//3698a5d0-8690-4c90-9cb0-a202237421ad/layout_det_res_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A26Z%2F-1%2F%2Fbe0f723abea246451dd298cbe1a8cf777858ede6d11b771fcc5568150daf2529"
+        },
+        "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//3698a5d0-8690-4c90-9cb0-a202237421ad/input_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A27Z%2F-1%2F%2F54a8b87c9971cd845d1fed97b88d9e900382363590a2a239e92a6b90c56150e5"
+      }
+    ],
+    "dataInfo": {
+      "width": 864,
+      "height": 1766,
+      "type": "image"
+    },
+    "preprocessedImages": [
+      "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//3698a5d0-8690-4c90-9cb0-a202237421ad/preprocessed_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-05T19%3A06%3A27Z%2F-1%2F%2Fb5128dc6aecf7c15f479904856e468bdbb5bd743ee6e2eb866d63e1934c01a52"
+    ]
+  },
+  "errorCode": 0,
+  "errorMsg": "Success"
+}
