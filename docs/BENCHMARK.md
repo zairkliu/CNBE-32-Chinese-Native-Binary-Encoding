@@ -1,4 +1,15 @@
-# CNBE-32 基准对比实验报告
+# CNBE-32 Benchmark
+
+## 2026-08-05 生产性能基准（现行）
+
+- 报告：[experiments/2026-08-05_performance_benchmark/REPORT.md](../experiments/2026-08-05_performance_benchmark/REPORT.md)
+- 原始结果：[results.json](../experiments/2026-08-05_performance_benchmark/results.json)
+- 复现：`bash experiments/2026-08-05_performance_benchmark/run_benchmark.sh`
+- 结论摘要：C 核心 encode 0.89 ns/op、decode 1.55 ns/op；Python SDK 约 0.7-1.9 μs（含校验与对象开销）；SQLite 单字查询约 1.6 ms，批量热路径应使用内存表；CNBE 定长 4 字节相对 BMP UTF-8 3 字节多 33%，价值在结构可计算而非压缩。
+
+---
+
+## 历史记录：v0.4.0 基准（2026-07-09，legacy）
 
 **日期**: 2026-07-09 | **版本**: v0.4.0 | **运行环境**: Windows 11, Python 3.12, RTX 4060 Ti
 

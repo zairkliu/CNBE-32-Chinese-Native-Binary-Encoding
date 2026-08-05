@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "scope": "8105 national-standard common Chinese characters",
+  "scope_size": 8105,
+  "cnbe32": {
+    "covered": 8105,
+    "distinct_codes": 8101,
+    "unique_ratio": 0.9995,
+    "colliding_code_values": 4,
+    "avg_code_length": 9.742,
+    "min_code_length": 8,
+    "max_code_length": 10,
+    "storage_bytes": 32420,
+    "display_length": "32-bit fixed (4 bytes)",
+    "standard_track": 7602,
+    "legacy_track": 503,
+    "invalid_structure": 503
+  },
+  "ids": {
+    "covered": 7952,
+    "distinct_codes": 7949,
+    "unique_ratio": 0.9996,
+    "colliding_code_values": 3,
+    "avg_code_length": 3.384,
+    "min_code_length": 3,
+    "max_code_length": 14,
+    "storage_bytes": 76940,
+    "with_unknown_component": 0
+  },
+  "four_corner": {
+    "covered": 8105,
+    "distinct_codes": 4889,
+    "unique_ratio": 0.6032,
+    "colliding_code_values": 1551,
+    "avg_code_length": 5.521,
+    "min_code_length": 4,
+    "max_code_length": 13,
+    "storage_bytes": 44746
+  },
+  "cangjie": {
+    "covered": 7913,
+    "distinct_codes": 7718,
+    "unique_ratio": 0.9754,
+    "colliding_code_values": 186,
+    "avg_code_length": 4.02,
+    "min_code_length": 1,
+    "max_code_length": 5,
+    "storage_bytes": 31813
+  },
+  "unihan_coverage": {
+    "kRSUnicode": 8105,
+    "kTotalStrokes": 8105
+  },
+  "wubi": {
+    "covered": null,
+    "note": "No authoritative machine-readable Wubi table is bundled; metrics are documented qualitatively.",
+    "code_length_rule": "1-4 letters, optional fifth letter for phrases; single chars usually 1-4."
+  },
+  "boundary_notes": [
+    "IDS data is from cjkvi/cjkvi-ids; aggregate statistics only, no source file is shipped.",
+    "Four-Corner and Cangjie are read from Unicode Unihan fields kFourCornerCode and kCangjie.",
+    "Wubi is not measured because no authoritative machine-readable table is available here."
+  ]
+}

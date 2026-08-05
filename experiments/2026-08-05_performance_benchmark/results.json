@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-05T19:46:36+0800",
+  "environment": {
+    "python": "3.14.4",
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "machine": "x86_64",
+    "processor": "",
+    "db": "/mnt/c/Users/zairk/Documents/Codex/2026-07-27/https-github-com-zairkliu-cnbe-32/repo/data/cnbe32.db",
+    "db_bytes": 1859584,
+    "table_rows": 8105
+  },
+  "python_operations": {
+    "python_encode_ns_per_op": 778.0786686838125,
+    "python_decode_ns_per_op": 679.5370650529501,
+    "python_field_distance_ns_per_pair": 1856.9151515151516,
+    "python_bit_hamming_ns_per_pair": 1560.728787878788,
+    "python_lookup_ns_per_op": 1606645.934,
+    "python_batch_ns_per_char": 1428421.307,
+    "python_ord_ns_per_op": 46.537465
+  },
+  "database": {
+    "db_connect_count_ms": 13.318808
+  },
+  "memory": {
+    "maxrss_delta_kb": 18332
+  },
+  "storage": {
+    "db_file_bytes": 1859584,
+    "cnbe_binary_bytes": 84712,
+    "cnbe_binary_bytes_per_char": 4,
+    "utf8_chars_bytes": 63730,
+    "utf8_bytes_per_char": 3.009,
+    "json_rows_bytes": 1012150,
+    "rows_measured": 21178
+  },
+  "c_operations": {
+    "c_encode_ns_per_op": 0.891,
+    "c_decode_ns_per_op": 1.547,
+    "c_bit_hamming_ns_per_pair": 1.88,
+    "c_binary_lookup_ns_per_op": 30.453
+  }
+}

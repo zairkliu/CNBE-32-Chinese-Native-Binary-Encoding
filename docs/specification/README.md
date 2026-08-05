@@ -12,6 +12,7 @@
 | [domain-encodings.md](domain-encodings.md) | 跨领域编码方案汇总 | v9.0-v10.8 |
 | [riscv-instructions.md](riscv-instructions.md) | RISC-V自定义指令接口 | v7.0-v7.2 |
 | [validation.md](validation.md) | 编码验证标准 | 全系列 |
+| [CNBE-32 RFC 0001：v1.2 位域重分配](../rfc/CNBE32_RFC_0001_v1_2_bitfield_redesign.md) | v1.2 位域重分配草案（idx 移除、笔画扩展） | V3 |
 
 ## 设计目标
 
