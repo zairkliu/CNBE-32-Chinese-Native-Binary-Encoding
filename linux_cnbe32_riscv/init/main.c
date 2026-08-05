@@ -9,6 +9,7 @@
 
 #include <linux/tty.h>
 #include <linux/sched.h>
+#include <linux/kernel.h>
 #include <linux/head.h>
 #include <asm/system.h>
 #include <asm/io.h>
@@ -39,11 +40,11 @@ extern long kernel_mktime(struct tm * tm);
 extern long startup_time;
 
 
-/* 系统初始化时间 —— 使用 RISC-V mtime 寄存器 */
-#define MTIME_BASE      0x0200BFF8UL
+/* 系统初始化时间 —— QEMU/OpenSBI 下 S-mode 无法直读 CLINT mtime，
+ * 先使用固定时间源，后续可改为 SBI get_time 调用。 */
 static uint64_t read_mtime(void)
 {
-    return *(volatile uint64_t *)MTIME_BASE;
+    return 0;
 }
 
 /* 时间初始化 (替换 x86 CMOS RTC) */
@@ -76,57 +77,24 @@ void main(void)
     buffer_init();
     hd_init();
     sti();                          /* 启用中断 */
-    move_to_user_mode();
-    if (!fork()) {
-        init();
-    }
-    for(;;) pause();
+    init();
+    for(;;) __asm__ volatile ("wfi");
 }
 
-static int printf(const char *fmt, ...)
+static void boot_uart_puts(const char *s)
 {
-    va_list args;
-    int i;
-    va_start(args, fmt);
-    write(1, printbuf, i = vsprintf(printbuf, fmt, args));
-    va_end(args);
-    return i;
+    volatile unsigned char *uart = (volatile unsigned char *)0x10000000UL;
+    while (*s) {
+        while ((uart[5] & 0x20) == 0)
+            ;
+        uart[0] = (unsigned char)*s++;
+    }
 }
-
-static char * argv[] = { "-", NULL };
-static char * envp[] = { "HOME=/usr/root", NULL };  /* 环境变量路径保留英文 */
 
 void init(void)
 {
-    int i, j;
-
-    setup();
-    if (!fork())
-        _exit(execve("/bin/update", NULL, NULL));
-    (void) open("/dev/tty0", O_RDWR, 0);
-    (void) dup(0);
-    (void) dup(0);
-    printf("%d 个缓冲区 = %d 字节缓冲空间\r\n", NR_BUFFERS, NR_BUFFERS * BLOCK_SIZE);
-    printf(" 就绪\r\n");
-
-    /* CNBE-32 中文内核就绪消息 */
-    printf("=== 中文原生操作系统 ===\r\n");
-    printf("CNBE-32 中文编码 | RISC-V 64位架构\r\n");
-    printf("部首-笔画-结构 三维语义编码\r\n");
-
-    if ((i = fork()) < 0)
-        printf("初始化创建进程失败\r\n");
-    else if (!i) {
-        close(0); close(1); close(2);
-        setsid();
-        (void) open("/dev/tty0", O_RDWR, 0);
-        (void) dup(0);
-        (void) dup(0);
-        printf("\r\n中文系统> ");
-        _exit(execve("/bin/sh", argv, envp));
-    }
-    j = wait(&i);
-    printf("子进程 %d 退出，代码 %04x\n", j, i);
-    sync();
-    _exit(0);
+    boot_uart_puts("\r\n=== 中文原生操作系统 ===\r\n");
+    boot_uart_puts("CNBE-32 中文编码 | RISC-V 64位架构\r\n");
+    boot_uart_puts("部首-笔画-结构 三维语义编码\r\n");
+    boot_uart_puts("中文系统> 就绪\r\n");
 }

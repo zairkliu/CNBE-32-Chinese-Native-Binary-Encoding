@@ -1,0 +1,10 @@
+{
+  "samples": 200000,
+  "mean_hyperbolic": 3.1133,
+  "mean_weighted": 603.5919,
+  "same_radix_mean_hyp": 2.3018,
+  "diff_radix_mean_hyp": 3.119,
+  "radix_separation_ratio": 1.3551,
+  "rank_correlation_weighted_hyp": 0.4029,
+  "note": "Hyperbolic distance is a monotone-ish transform of the field vector; it does not add new labeled-benchmark information without a confusable-character dataset."
+}

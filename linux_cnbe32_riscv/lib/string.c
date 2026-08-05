@@ -6,7 +6,7 @@
  *   - 所有函数保持原始语义，兼容 RISC-V
  *   - 不使用 x86 特有的段寄存器假设 (ds=es=data space)
  * CNBE-32: 字符串操作支持 UTF-8 安全（按字节操作）
- *          集成点: 可使用 cnhe_cmp 进行中文语义比较
+ *          集成点: 可使用 cnbe_cmp 进行中文语义比较
  */
 
 #ifndef __GNUC__

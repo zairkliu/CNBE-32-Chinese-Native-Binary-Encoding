@@ -51,7 +51,7 @@ int file_read(struct m_inode * inode, struct file * filp, char * buf, int count)
 		}
 	}
 	inode->i_atime = CURRENT_TIME;
-	return (count-left)?(count-left):-ERROR;
+	return (count-left)?(count-left):-EIO;
 }
 
 int file_write(struct m_inode * inode, struct file * filp, char * buf, int count)

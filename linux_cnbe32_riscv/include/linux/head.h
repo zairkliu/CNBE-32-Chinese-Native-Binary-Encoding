@@ -8,7 +8,7 @@
  */
 
 /* 页目录 (Sv39 根页表) */
-extern unsigned long pg_dir[512];
+extern unsigned long swapper_pg_dir[512];
 
 /* RISC-V 无 GDT/LDT/IDT，保留空结构以兼容 */
 typedef struct desc_struct {

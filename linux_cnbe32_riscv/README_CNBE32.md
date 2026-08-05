@@ -1,4 +1,4 @@
- > ⚠️ **声明：本项目由 AI Agent 自动生成，未在 RISC-V 硬件或 QEMU 上验证，代码存在多处架构不一致问题，当前状态无法编译运行。此文档为 Agent 生成的技术描述，供概念验证参考。** 详见 [WHITEPAPER.md](WHITEPAPER.md)。
+ > ✅ **状态（2026-08-05）**：本项目已在 Ubuntu 26.04 WSL + QEMU RISC-V + OpenSBI 下编译并启动成功，输出中文启动信息；完整用户态 Shell 与进程调度仍待完善。历史 AI 生成文档详见 [WHITEPAPER.md](WHITEPAPER.md)。
  
  # Linux 0.01 CNBE-32 RISC-V 转码项目（Agent 生成 — 概念验证）
 
@@ -18,10 +18,10 @@
 
 ## 转码核心思路 (来自仓库 basic 编码)
 
-1. **CNBE-32 运行时集成**: `cnhe_map` (Unicode→CNBE) / `cnhe_extract` (位域提取) / `cnhe_cmp` (语义距离)
+1. **CNBE-32 运行时集成**: `cnbe_map` (Unicode→CNBE) / `cnbe_extract` (位域提取) / `cnbe_cmp` (语义距离)
 2. **中文内核消息**: 所有 `printk`/`panic` 字符串使用 UTF-8 中文
 3. **中文注释**: 关键代码注释全部转码为中文
-4. **RISC-V 自定义指令接口**: 保留 `cnhe.map` / `cnhe.extract` / `cnhe.cmp` 硬件指令扩展点
+4. **RISC-V 自定义指令接口**: 保留 `cnbe.map` / `cnbe.extract` / `cnbe.cmp` / `cnbe.skill` 硬件指令扩展点
 5. **零标准库**: `-nostdlib -ffreestanding` 独立内核构建
 
 ## 项目结构
@@ -148,6 +148,30 @@ linux-cnbe32-riscv/
 - **所有关键注释**: 英文 → 中文 UTF-8
 
 ## 构建指南
+
+### v8 运行时对齐（2026-08-05）
+
+本仓库的 CNBE 运行时已对齐到 `riscv/v8` 的指令语义，并改用
+`data/cnbe32.db` 真实技能表：
+
+```bash
+python3 tools/gen_cnbe_table.py
+gcc -O2 -Wall -Wextra -iquote include \
+    tests/test_cnbe_v8_alignment.c cnbe/cnbe.c -o /tmp/test_cnbe_kernel
+/tmp/test_cnbe_kernel
+# CNBE kernel v8 alignment test: 55 passed, 0 failed
+```
+
+Shell 命令与 v8 指令对应：
+
+| 中文命令 | v8 指令 |
+|---|---|
+| 取编码 | cnbe.map |
+| 取部首 / 取笔画 / 取结构 | cnbe.extract |
+| 比较 | cnbe.cmp |
+| 反查 | cnbe.skill |
+
+完整验证过程见 `../riscv/v8/docs/VERIFICATION_REPORT_2026-08-05.md`。
 
 ### 环境要求
 

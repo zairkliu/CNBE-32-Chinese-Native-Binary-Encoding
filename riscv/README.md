@@ -7,6 +7,7 @@ from software emulation through FPGA prototype.
 
 | Directory | Version | Content |
 |-----------|:-------:|---------|
+| `v8/` | v8 | Simulator-first rebuild: ISA spec, real skill tables, Python simulator, C/QEMU tests, Spike patches, Verilog |
 | `v7.0_c_impl/` | v7.0 | C language skill table implementation |
 | `v7.0.1_qemu/` | v7.0.1 | RISC-V cross compilation + QEMU verification |
 | `v7.1_spike/` | v7.1 | RISC-V custom instruction encoding verification |
@@ -35,6 +36,26 @@ from software emulation through FPGA prototype.
 | Spike instruction type | Custom-0 (opcode=0x0B) |
 | FPGA BRAM | 81.6KB, single-cycle access |
 | Min verification | QEMU RISC-V user-mode, 3 instructions |
+
+## v8 Status
+
+`v8/` is the new engineering foundation for the RISC-V layer:
+
+- ISA spec: `v8/spec/CNBE_RISCV_ISA_SPEC.md`
+- Golden vectors from `data/cnbe32.db`: `v8/golden/`
+- Python cycle simulator: `v8/sim/python/cnbe_riscv_sim.py`
+- C reference + QEMU test: `v8/sim/c/`, `v8/qemu/`
+- Spike patches and build script: `v8/spike/`
+- Verilog execution unit: `v8/verilog/`
+
+Run from `v8/`:
+
+```bash
+make generate
+make python-sim
+make c-ref
+make qemu
+```
 
 ## See Also
 

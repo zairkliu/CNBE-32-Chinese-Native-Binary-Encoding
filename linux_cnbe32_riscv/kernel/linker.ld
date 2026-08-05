@@ -46,6 +46,7 @@ SECTIONS
         *(.bss.*)
         *(COMMON)
         __bss_end = .;
+        end = .;
     } > RAM
 
     /* 内核栈 (每 CPU 16KB，从 1GB 顶端向下生长) */

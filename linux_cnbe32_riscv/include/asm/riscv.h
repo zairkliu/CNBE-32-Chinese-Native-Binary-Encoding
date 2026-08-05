@@ -88,10 +88,11 @@
 })
 
 /* 中断使能/禁用宏 (x86 cli/sti 的 RISC-V 替代) */
-#define local_irq_disable()     csr_clear(mstatus, MSTATUS_MIE)
-#define local_irq_enable()      csr_set(mstatus, MSTATUS_MIE)
-#define local_irq_save(flags)   do { flags = csr_read(mstatus); csr_clear(mstatus, MSTATUS_MIE); } while(0)
-#define local_irq_restore(flags) csr_write(mstatus, flags)
+#define SSTATUS_SIE             0x00000002
+#define local_irq_disable()     csr_clear(sstatus, SSTATUS_SIE)
+#define local_irq_enable()      csr_set(sstatus, SSTATUS_SIE)
+#define local_irq_save(flags)   do { flags = csr_read(sstatus); csr_clear(sstatus, SSTATUS_SIE); } while(0)
+#define local_irq_restore(flags) csr_write(sstatus, flags)
 
 /* 内存屏障 */
 #define mb()    __asm__ volatile ("fence" ::: "memory")

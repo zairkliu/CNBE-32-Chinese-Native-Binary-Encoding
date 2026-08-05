@@ -1,0 +1,15 @@
+{
+  "rows": 21178,
+  "H(radix)": 7.5086,
+  "H(stroke)": 4.8317,
+  "H(struct)": 3.3792,
+  "H(radix,stroke,struct)": 13.2833,
+  "H(stroke|radix)": 4.5803,
+  "I(radix;stroke)": 0.2514,
+  "field_capacity_bits": 17,
+  "redundancy_bits": 3.7167,
+  "effective_bits": 13.2833,
+  "distinct_radix": 214,
+  "distinct_stroke": 31,
+  "distinct_struct": 13
+}

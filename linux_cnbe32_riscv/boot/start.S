@@ -28,11 +28,11 @@
 
 _start:
     /* 关闭所有中断 (机器模式) */
-    csrrci  x0, mstatus, 0x8    /* 清除 MIE */
-    csrw    mie, x0             /* 关闭所有中断使能 */
+    csrrci  x0, sstatus, 0x2    /* 清除 MIE */
+    csrw    sie, x0             /* 关闭所有中断使能 */
 
     /* 仅在 Hart 0 上启动 (QEMU virt 多核) */
-    csrr    t0, mhartid
+    mv      t0, a0
     bnez    t0, _hang           /* 非主核进入循环 */
 
     /* 初始化栈指针 (1GB 顶端 - 16KB) */
@@ -50,7 +50,7 @@ _bss_done:
 
     /* 设置陷阱向量表 (机器模式) */
     la      t0, _trap_vector
-    csrw    mtvec, t0
+    csrw    stvec, t0
 
     /* 初始化 UART (输出 "加载系统中...") */
     call    _uart_init
@@ -122,10 +122,16 @@ _setup_mmu:
     /* 映射 0x80000000 - 0xBFFFFFFF (1GB) 使用 1GB 超大页 */
     /* VPN[2] = 0x2 (0x80000000 >> 30 = 2) */
     li      t1, 0x80000000
-    li      t2, (PTE_V | PTE_R | PTE_W | PTE_X | PTE_G)
+    li      t2, (PTE_V | PTE_R | PTE_W | PTE_X | PTE_G | PTE_A | PTE_D)
     srli    t1, t1, 2           /* 转为 PPN 格式 */
     or      t1, t1, t2
     sd      t1, 16(t0)          /* 根页表[2] = 映射 */
+
+    /* 映射 0x00000000 - 0x3FFFFFFF (低 1GB，UART/CLINT/MMIO) */
+    li      t1, 0
+    li      t2, (PTE_V | PTE_R | PTE_W | PTE_X | PTE_G | PTE_A | PTE_D)
+    or      t1, t1, t2
+    sd      t1, 0(t0)           /* 根页表[0] = 映射 */
 
     ret
 
@@ -147,7 +153,7 @@ _trap_vector:
     sd      a6, 80(sp)
     sd      a7, 88(sp)
 
-    csrr    t0, mcause
+    csrr    t0, scause
     bgez    t0, _trap_exception
 
     /* 中断处理 */
@@ -167,8 +173,12 @@ _trap_exception:
     j       _trap_done
 
 _trap_syscall:
-    /* 系统调用处理: a7 = 系统调用号, a0-a6 = 参数 */
-    call    system_call
+    /* 最小系统调用返回: 跳过 ecall 并返回 0 */
+    csrr    t0, sepc
+    addi    t0, t0, 4
+    csrw    sepc, t0
+    li      a0, 0
+    sd      a0, 32(sp)          /* 写回保存帧中的 a0 */
     j       _trap_done
 
 _trap_external_irq:
@@ -191,7 +201,7 @@ _trap_done:
     ld      a6, 80(sp)
     ld      a7, 88(sp)
     addi    sp, sp, 256
-    mret
+    sret
 
 /* 数据段 */
 .section .rodata

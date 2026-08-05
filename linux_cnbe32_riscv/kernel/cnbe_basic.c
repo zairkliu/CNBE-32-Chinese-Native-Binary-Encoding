@@ -717,7 +717,7 @@ static struct cnbe_value eval_func_call(struct expr_ctx *ctx, const char *name, 
     if (cnbe_strcmp_impl(name, "取编码") == 0 && nargs >= 1) {
         int advance = 0;
         uint32_t uni = cnbe_utf8_decode(args[0].sval, &advance);
-        uint32_t code = cnhe_map(uni);
+        uint32_t code = cnbe_map(uni);
         val_set_int(&v, (long)code);
         return v;
     }
@@ -726,8 +726,8 @@ static struct cnbe_value eval_func_call(struct expr_ctx *ctx, const char *name, 
     if (cnbe_strcmp_impl(name, "取部首") == 0 && nargs >= 1) {
         int advance = 0;
         uint32_t uni = cnbe_utf8_decode(args[0].sval, &advance);
-        uint32_t code = cnhe_map(uni);
-        uint32_t radical = cnhe_extract(code, 0);
+        uint32_t code = cnbe_map(uni);
+        uint32_t radical = cnbe_extract(code, 0);
         val_set_int(&v, (long)radical);
         return v;
     }
@@ -737,9 +737,9 @@ static struct cnbe_value eval_func_call(struct expr_ctx *ctx, const char *name, 
         int advance1 = 0, advance2 = 0;
         uint32_t uni1 = cnbe_utf8_decode(args[0].sval, &advance1);
         uint32_t uni2 = cnbe_utf8_decode(args[1].sval, &advance2);
-        uint32_t code1 = cnhe_map(uni1);
-        uint32_t code2 = cnhe_map(uni2);
-        uint32_t dist = cnhe_cmp(code1, code2);
+        uint32_t code1 = cnbe_map(uni1);
+        uint32_t code2 = cnbe_map(uni2);
+        uint32_t dist = cnbe_cmp(code1, code2);
         val_set_int(&v, (long)dist);
         return v;
     }
@@ -1375,22 +1375,26 @@ static void cmd_cnbe(const char *p)
         uni = (uint32_t)v.ival;
     }
 
-    uint32_t code = cnhe_map(uni);
+    uint32_t code = cnbe_map(uni);
     cnbe_puts("CNBE-32编码: ");
     cnbe_puthex((unsigned long)code);
     cnbe_putc('\n');
 
     cnbe_puts("  部首: ");
-    cnbe_putint((long)cnhe_extract(code, 0));
+    cnbe_putint((long)cnbe_extract(code, 0));
     cnbe_puts("  笔画: ");
-    cnbe_putint((long)cnhe_extract(code, 1));
+    cnbe_putint((long)cnbe_extract(code, 1));
     cnbe_puts("  结构: ");
-    cnbe_putint((long)cnhe_extract(code, 2));
+    cnbe_putint((long)cnbe_extract(code, 2));
+    cnbe_puts("  索引: ");
+    cnbe_putint((long)cnbe_extract(code, 3));
+    cnbe_puts("  扩展: ");
+    cnbe_putint((long)cnbe_extract(code, 4));
     cnbe_putc('\n');
 }
 
-/* 取部首命令: 取部首 "字" */
-static void cmd_radical(const char *p)
+/* 取字段命令: 取字段 "字" (selector: 0部首 1笔画 2结构 3索引 4扩展) */
+static void cmd_extract(const char *p, uint32_t selector, const char *label)
 {
     p = skip_ws(p);
     struct expr_ctx ctx;
@@ -1412,11 +1416,62 @@ static void cmd_radical(const char *p)
         uni = (uint32_t)v.ival;
     }
 
-    uint32_t code = cnhe_map(uni);
-    uint32_t radical = cnhe_extract(code, 0);
+    uint32_t code = cnbe_map(uni);
+    uint32_t value = cnbe_extract(code, selector);
 
-    cnbe_puts("部首码: ");
-    cnbe_putint((long)radical);
+    cnbe_puts(label);
+    cnbe_puts(": ");
+    cnbe_putint((long)value);
+    cnbe_putc('\n');
+}
+
+/* 取部首命令: 取部首 "字" */
+static void cmd_radical(const char *p)
+{
+    cmd_extract(p, 0, "部首码");
+}
+
+/* 取笔画命令: 取笔画 "字" */
+static void cmd_stroke(const char *p)
+{
+    cmd_extract(p, 1, "笔画数");
+}
+
+/* 取结构命令: 取结构 "字" */
+static void cmd_struct(const char *p)
+{
+    cmd_extract(p, 2, "结构码");
+}
+
+/* 反查命令: 反查 <CNBE编码> 或 反查 "字" */
+static void cmd_skill(const char *p)
+{
+    p = skip_ws(p);
+    struct expr_ctx ctx;
+    ctx.p = p;
+    ctx.error = 0;
+    struct cnbe_value v = eval_expr(&ctx);
+
+    if (ctx.error) {
+        cnbe_puts("语法错误\n");
+        return;
+    }
+
+    uint32_t code;
+    if (v.type == VAL_STR) {
+        int advance = 0;
+        uint32_t uni = cnbe_utf8_decode(v.sval, &advance);
+        code = cnbe_map(uni);
+    } else {
+        code = (uint32_t)v.ival;
+    }
+
+    uint32_t unicode = cnbe_skill(code);
+    cnbe_puts("反查Unicode: ");
+    if (unicode != 0)
+        cnbe_puthex((unsigned long)unicode);
+    else
+        cnbe_puts("未找到");
     cnbe_putc('\n');
 }
 
@@ -1461,28 +1516,28 @@ static void cmd_cmp(const char *p)
     else
         uni2 = (uint32_t)v2.ival;
 
-    uint32_t code1 = cnhe_map(uni1);
-    uint32_t code2 = cnhe_map(uni2);
-    uint32_t dist = cnhe_cmp(code1, code2);
+    uint32_t code1 = cnbe_map(uni1);
+    uint32_t code2 = cnbe_map(uni2);
+    uint32_t dist = cnbe_cmp(code1, code2);
 
     cnbe_puts("语义距离: ");
     cnbe_putint((long)dist);
     cnbe_putc('\n');
 
     cnbe_puts("  字1 部首: ");
-    cnbe_putint((long)cnhe_extract(code1, 0));
+    cnbe_putint((long)cnbe_extract(code1, 0));
     cnbe_puts(" 笔画: ");
-    cnbe_putint((long)cnhe_extract(code1, 1));
+    cnbe_putint((long)cnbe_extract(code1, 1));
     cnbe_puts(" 结构: ");
-    cnbe_putint((long)cnhe_extract(code1, 2));
+    cnbe_putint((long)cnbe_extract(code1, 2));
     cnbe_putc('\n');
 
     cnbe_puts("  字2 部首: ");
-    cnbe_putint((long)cnhe_extract(code2, 0));
+    cnbe_putint((long)cnbe_extract(code2, 0));
     cnbe_puts(" 笔画: ");
-    cnbe_putint((long)cnhe_extract(code2, 1));
+    cnbe_putint((long)cnbe_extract(code2, 1));
     cnbe_puts(" 结构: ");
-    cnbe_putint((long)cnhe_extract(code2, 2));
+    cnbe_putint((long)cnbe_extract(code2, 2));
     cnbe_putc('\n');
 }
 
@@ -1546,7 +1601,10 @@ static void cmd_help(void)
     cnbe_puts("  返回 <表达式>       从函数返回\n");
     cnbe_puts("  取编码 \"字\"         获取CNBE-32编码\n");
     cnbe_puts("  取部首 \"字\"         取部首码\n");
+    cnbe_puts("  取笔画 \"字\"         取笔画数\n");
+    cnbe_puts("  取结构 \"字\"         取结构码\n");
     cnbe_puts("  比较 \"字1\" \"字2\"   比较两字语义距离\n");
+    cnbe_puts("  反查 <编码>           CNBE编码反查Unicode\n");
     cnbe_puts("  阅读 [章节号]       阅读道德经\n");
     cnbe_puts("  帮助                显示此帮助\n");
     cnbe_puts("  退出                退出解释器\n");
@@ -1950,9 +2008,27 @@ int cnbe_basic_eval(const char *line)
         return 0;
     }
 
+    /* 取笔画命令 */
+    if ((kwlen = match_kw(p, "取笔画"))) {
+        cmd_stroke(p + kwlen);
+        return 0;
+    }
+
+    /* 取结构命令 */
+    if ((kwlen = match_kw(p, "取结构"))) {
+        cmd_struct(p + kwlen);
+        return 0;
+    }
+
     /* 比较命令 */
     if ((kwlen = match_kw(p, "比较"))) {
         cmd_cmp(p + kwlen);
+        return 0;
+    }
+
+    /* 反查命令 */
+    if ((kwlen = match_kw(p, "反查"))) {
+        cmd_skill(p + kwlen);
         return 0;
     }
 

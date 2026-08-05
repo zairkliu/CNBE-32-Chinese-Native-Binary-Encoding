@@ -3,19 +3,17 @@
  * 原始文件: linux/kernel/asm.s
  * 
  * 【RISC-V 转码状态】已完成核心架构迁移
- * - x86 IDT 多硬件入口 → RISC-V mtvec 统一入口 + 软件向量表分发
+ * - x86 IDT 多硬件入口 → RISC-V stvec 统一入口 + 软件向量表分发
  * - x86 push/pop 寄存器 → RISC-V sw/lw 保存/恢复
- * - x86 iret → RISC-V mret
+ * - x86 iret → RISC-V sret
  * - x86 段寄存器 (ds/es/fs) → RISC-V 已移除 (无段式内存管理)
- * - x86 CR0/TS/EM 浮点管理 → RISC-V mstatus.FS 字段
+ * - x86 CR0/TS/EM 浮点管理 → RISC-V sstatus.FS 字段
  * - 页异常由 mm 子系统处理，不在此处定义
  * 
  * 【CNBE-32 集成点】
  * - 异常消息通过 cnbe_printk 输出中文诊断信息
  * - 保留核心函数命名以保证跨文件 ABI 兼容
  */
-
-#include <cnbe.h>
 
 /* RISC-V CSR 数值 (避免依赖未安装的 csr.h) */
 #define CSR_MSTATUS   0x300
@@ -28,15 +26,15 @@
 #define MSTATUS_MPP   0x00001800
 #define MSTATUS_FS    0x00006000
 
-/* 导出符号：供 traps.c 设置 mtvec 和向量表引用 */
+/* 导出符号：供 traps.c 设置 stvec 和向量表引用 */
 .globl _trap_entry
 .globl _trap_vector_table
 
 /* 异常处理函数入口 (供向量表和 traps.c 链接) */
-.globl _divide_error, _debug, _nmi, _int3, _overflow, _bounds, _invalid_op
-.globl _device_not_available, _double_fault, _coprocessor_segment_overrun
-.globl _invalid_TSS, _segment_not_present, _stack_segment
-.globl _general_protection, _coprocessor_error, _reserved
+.globl divide_error, debug, nmi, int3, overflow, bounds, invalid_op
+.globl device_not_available, double_fault, coprocessor_segment_overrun
+.globl invalid_TSS, segment_not_present, stack_segment
+.globl general_protection, coprocessor_error, reserved
 
 .text
 .align 4
@@ -44,7 +42,7 @@
 /* ============================================================
  * _trap_entry: RISC-V 统一异常/中断入口
  * 硬件触发: 所有同步异常和外部中断均跳转至此
- * 软件行为: 保存完整上下文 → 读取 mcause → 向量表分发
+ * 软件行为: 保存完整上下文 → 读取 scause → 向量表分发
  * ============================================================ */
 _trap_entry:
 	/* 保存所有通用寄存器 (构建 trap frame) */
@@ -86,33 +84,33 @@ _trap_entry:
 
 	/* 保存 CSR (关键上下文) */
 	csrr	t0, CSR_MEPC
-	sw	t0, 124(sp)      /* mepc (对应 x86 eip) */
+	sw	t0, 124(sp)      /* sepc (对应 x86 eip) */
 	csrr	t0, CSR_MSTATUS
-	sw	t0, 128(sp)      /* mstatus (对应 x86 eflags/特权级) */
+	sw	t0, 128(sp)      /* sstatus (对应 x86 eflags/特权级) */
 	csrr	t0, CSR_MCAUSE
-	sw	t0, 132(sp)      /* mcause (异常原因) */
+	sw	t0, 132(sp)      /* scause (异常原因) */
 	csrr	t0, CSR_MTVAL
-	sw	t0, 136(sp)      /* mtval (异常值/地址) */
+	sw	t0, 136(sp)      /* stval (异常值/地址) */
 
 	/* 保存 trap frame 基址到 s0 (供各处理函数访问) */
 	mv	s0, sp
 
-	/* 根据 mcause 分派 (同步异常码 0-15) */
+	/* 根据 scause 分派 (同步异常码 0-15) */
 	csrr	a0, CSR_MCAUSE
 	li	t1, 0x7FFFFFFF
 	and	a0, a0, t1       /* 屏蔽中断位，获取异常码 */
 	li	t1, 16
-	bgeu	a0, t1, .L_reserved_dispatch  /* >= 16 → 保留异常 */
+	bgeu	a0, t1, .Lreserved_dispatch  /* >= 16 → 保留异常 */
 
 	/* 查向量表 */
 	la	t1, trap_vector_table
 	slli	t0, a0, 2
 	add	t1, t1, t0
 	lw	t0, 0(t1)
-	jalr	t0               /* 跳转到 _divide_error 等处理函数 */
+	jalr	t0               /* 跳转到 divide_error 等处理函数 */
 	/* 各处理函数返回后继续执行统一恢复路径 */
 
-.L_restore_and_mret:
+.L_restore_and_sret:
 	/* 恢复 CSR */
 	lw	t0, 124(sp)
 	csrw	CSR_MEPC, t0
@@ -152,36 +150,36 @@ _trap_entry:
 	lw	x31, 120(sp)
 	lw	x2,   4(sp)       /* 恢复原始 sp */
 	addi	sp, sp, 144
-	mret
+	sret
 
-.L_reserved_dispatch:
-	la	t0, _reserved
+.Lreserved_dispatch:
+	la	t0, reserved
 	jalr	t0
-	j	.L_restore_and_mret
+	j	.L_restore_and_sret
 
 /* ============================================================
- * 异常向量表 (mcause 索引 0-15)
+ * 异常向量表 (scause 索引 0-15)
  * 对应 x86 IDT 0-15 项，供 _trap_entry 查询
  * ============================================================ */
 .section .rodata
 .align 4
 trap_vector_table:
-	.word	_divide_error              /* 0:  除零错误 (Instruction address misaligned) */
-	.word	_debug                     /* 1:  调试异常 / 访问故障 */
-	.word	_nmi                       /* 2:  NMI (RISC-V 中通常映射为保留) */
-	.word	_int3                      /* 3:  断点 / 加载地址错位 */
-	.word	_overflow                   /* 4:  溢出 / 加载访问故障 */
-	.word	_bounds                     /* 5:  边界检查 / 存储地址错位 */
-	.word	_invalid_op                 /* 6:  非法指令 */
-	.word	_device_not_available       /* 7:  设备不可用 / 断点 */
-	.word	_double_fault               /* 8:  双重故障 / 用户环境调用 */
-	.word	_coprocessor_segment_overrun /* 9: 协处理器段溢出 */
-	.word	_invalid_TSS                /* 10: 无效 TSS */
-	.word	_segment_not_present       /* 11: 段不存在 */
-	.word	_stack_segment              /* 12: 栈段错误 / 指令访问故障 */
-	.word	_general_protection         /* 13: 通用保护 / 加载页面故障 */
-	.word	_page_fault                 /* 14: 页故障 (由 mm/page.s 处理) */
-	.word	_reserved                   /* 15: 保留 */
+	.word	divide_error              /* 0:  除零错误 (Instruction address misaligned) */
+	.word	debug                     /* 1:  调试异常 / 访问故障 */
+	.word	nmi                       /* 2:  NMI (RISC-V 中通常映射为保留) */
+	.word	int3                      /* 3:  断点 / 加载地址错位 */
+	.word	overflow                   /* 4:  溢出 / 加载访问故障 */
+	.word	bounds                     /* 5:  边界检查 / 存储地址错位 */
+	.word	invalid_op                 /* 6:  非法指令 */
+	.word	device_not_available       /* 7:  设备不可用 / 断点 */
+	.word	double_fault               /* 8:  双重故障 / 用户环境调用 */
+	.word	coprocessor_segment_overrun /* 9: 协处理器段溢出 */
+	.word	invalid_TSS                /* 10: 无效 TSS */
+	.word	segment_not_present       /* 11: 段不存在 */
+	.word	stack_segment              /* 12: 栈段错误 / 指令访问故障 */
+	.word	general_protection         /* 13: 通用保护 / 加载页面故障 */
+	.word	page_fault                 /* 14: 页故障 (由 mm/page.s 处理) */
+	.word	reserved                   /* 15: 保留 */
 
 .text
 
@@ -192,70 +190,70 @@ trap_vector_table:
  * ============================================================ */
 
 .align 4
-_divide_error:
+divide_error:
 	/* 【CNBE-32 注释】除零错误：算术运算异常，需终止进程 */
 	mv	a0, s0
 	li	a1, 0
-	la	t0, _do_divide_error
+	la	t0, do_divide_error
 	jalr	t0
 	ret
 
 .align 4
-_debug:
+debug:
 	/* 【CNBE-32 注释】调试异常：RISC-V 通过 dcsr 管理，此处兼容保留 */
 	mv	a0, s0
 	li	a1, 0
-	la	t0, _do_int3          /* 原始 x86 debug 映射到 do_int3 */
+	la	t0, do_int3          /* 原始 x86 debug 映射到 do_int3 */
 	jalr	t0
 	ret
 
 .align 4
-_nmi:
+nmi:
 	/* 【CNBE-32 注释】NMI：RISC-V 无独立 NMI，通常映射为高优先级中断 */
 	mv	a0, s0
 	li	a1, 0
-	la	t0, _do_nmi
+	la	t0, do_nmi
 	jalr	t0
 	ret
 
 .align 4
-_int3:
+int3:
 	/* 【CNBE-32 注释】断点异常：RISC-V 使用 ebreak 指令触发 */
 	mv	a0, s0
 	li	a1, 0
-	la	t0, _do_int3
+	la	t0, do_int3
 	jalr	t0
 	ret
 
 .align 4
-_overflow:
+overflow:
 	mv	a0, s0
 	li	a1, 0
-	la	t0, _do_overflow
+	la	t0, do_overflow
 	jalr	t0
 	ret
 
 .align 4
-_bounds:
+bounds:
 	mv	a0, s0
 	li	a1, 0
-	la	t0, _do_bounds
+	la	t0, do_bounds
 	jalr	t0
 	ret
 
 .align 4
-_invalid_op:
-	/* 【CNBE-32 注释】非法指令：RISC-V 中 mcause=2 或 mcause=6 */
+invalid_op:
+	/* 【CNBE-32 注释】非法指令：RISC-V 中 scause=2 或 scause=6 */
 	mv	a0, s0
 	li	a1, 0
-	la	t0, _do_invalid_op
+	la	t0, do_invalid_op
 	jalr	t0
 	ret
 
 .align 4
-_device_not_available:
-	/* 【CNBE-32 注释】RISC-V 浮点单元通过 mstatus.FS 位管理状态 */
-	/* 原始 x86 检查 CR0.EM/TS，此处映射为 mstatus.FS 检查 */
+device_not_available:
+	/* 【CNBE-32 注释】RISC-V 浮点单元通过 sstatus.FS 位管理状态 */
+	/* 原始 x86 检查 CR0.EM/TS，此处映射为 sstatus.FS 检查 */
 	csrr	t0, CSR_MSTATUS
 	li	t1, MSTATUS_FS
 	and	t0, t0, t1
@@ -269,15 +267,15 @@ _device_not_available:
 	csrw	CSR_MSTATUS, t0
 
 	/* 检查是否需要恢复浮点状态 */
-	la	t0, _current
+	la	t0, current
 	lw	t0, 0(t0)
-	la	t1, _last_task_used_math
+	la	t1, last_task_used_math
 	lw	t1, 0(t1)
 	beq	t0, t1, 1f
 
 	addi	sp, sp, -16
 	sw	ra, 0(sp)
-	la	t0, _math_state_restore
+	la	t0, math_state_restore
 	jalr	t0
 	lw	ra, 0(sp)
 	addi	sp, sp, 16
@@ -288,31 +286,31 @@ _device_not_available:
 	/* 数学仿真路径 */
 	mv	a0, s0
 	li	a1, 0
-	la	t0, _do_device_not_available
+	la	t0, do_device_not_available
 	jalr	t0
 	ret
 
 .align 4
-_coprocessor_segment_overrun:
+coprocessor_segment_overrun:
 	mv	a0, s0
 	li	a1, 0
-	la	t0, _do_coprocessor_segment_overrun
+	la	t0, do_coprocessor_segment_overrun
 	jalr	t0
 	ret
 
 .align 4
-_reserved:
+reserved:
 	mv	a0, s0
 	li	a1, 0
-	la	t0, _do_reserved
+	la	t0, do_reserved
 	jalr	t0
 	ret
 
 .align 4
-_coprocessor_error:
+coprocessor_error:
 	mv	a0, s0
 	li	a1, 0
-	la	t0, _do_coprocessor_error
+	la	t0, do_coprocessor_error
 	jalr	t0
 	ret
 
@@ -322,50 +320,50 @@ _coprocessor_error:
  * ============================================================ */
 
 .align 4
-_double_fault:
+double_fault:
 	mv	a0, s0
 	li	a1, 0                   /* RISC-V 无硬件错误码 */
-	la	t0, _do_double_fault
+	la	t0, do_double_fault
 	jalr	t0
 	ret
 
 .align 4
-_invalid_TSS:
+invalid_TSS:
 	/* 【CNBE-32 注释】RISC-V 无 TSS 概念，保留兼容符号 */
 	mv	a0, s0
 	li	a1, 0
-	la	t0, _do_invalid_TSS
+	la	t0, do_invalid_TSS
 	jalr	t0
 	ret
 
 .align 4
-_segment_not_present:
+segment_not_present:
 	/* 【CNBE-32 注释】RISC-V 无段式，此异常保留为兼容 */
 	mv	a0, s0
 	li	a1, 0
-	la	t0, _do_segment_not_present
+	la	t0, do_segment_not_present
 	jalr	t0
 	ret
 
 .align 4
-_stack_segment:
+stack_segment:
 	/* 【CNBE-32 注释】RISC-V 无栈段寄存器，栈错误映射为访问故障 */
 	mv	a0, s0
 	li	a1, 0
-	la	t0, _do_stack_segment
+	la	t0, do_stack_segment
 	jalr	t0
 	ret
 
 .align 4
-_general_protection:
+general_protection:
 	/* 【CNBE-32 注释】RISC-V 无保护环/段检查，GPF 映射为权限故障 */
 	mv	a0, s0
 	li	a1, 0
-	la	t0, _do_general_protection
+	la	t0, do_general_protection
 	jalr	t0
 	ret
 
 /* 页异常入口符号 (由 mm/page.s 实际定义) */
-.globl _page_fault
+.globl page_fault
 
 /* ============================================================ */

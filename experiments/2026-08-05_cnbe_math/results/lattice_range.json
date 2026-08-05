@@ -1,0 +1,16 @@
+{
+  "rows": 21178,
+  "distinct_tuples": 15382,
+  "product_space": 131072,
+  "lattice_properties": {
+    "idempotent": true,
+    "commutative": true,
+    "associative": true,
+    "absorption": true
+  },
+  "range_queries": 1000,
+  "prefix_time_s": 0.00178,
+  "brute_time_s": 2.615954,
+  "speedup": 1469.57,
+  "all_matches": true
+}

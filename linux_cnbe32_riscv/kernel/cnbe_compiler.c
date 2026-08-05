@@ -39,8 +39,9 @@
 #include <cnbe.h>
 #include <stdarg.h>
 #include <stdint.h>
+#include <string.h>
 
-#include "cnbe_compiler.h"
+#include <linux/cnbe_compiler.h>
 
 /* ========== 常量定义 ========== */
 

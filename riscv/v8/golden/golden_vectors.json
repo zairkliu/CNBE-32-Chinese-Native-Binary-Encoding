@@ -1,0 +1,150 @@
+{
+  "version": "v8.0.0",
+  "encoding": "CNBE-32",
+  "description": "Golden vectors for the v8 RISC-V simulator and hardware models. Fields are decoded from the CNBE code, matching the SDK; a few database metadata columns may lag the code.",
+  "instructions": [
+    "cnbe.map",
+    "cnbe.extract",
+    "cnbe.cmp",
+    "cnbe.skill"
+  ],
+  "cycle_model": {
+    "map": 2,
+    "extract": 1,
+    "cmp": 3,
+    "skill": 2
+  },
+  "map_vectors": [
+    {
+      "name": "map_中",
+      "unicode": 20013,
+      "char": "中",
+      "code": 35652304,
+      "code_hex": "0x022002D0",
+      "radix": 2,
+      "stroke": 4,
+      "struct": 0,
+      "idx": 45,
+      "ext": 0,
+      "reverse_unicode": 20013
+    },
+    {
+      "name": "map_学",
+      "unicode": 23398,
+      "char": "学",
+      "code": 658593376,
+      "code_hex": "0x27415660",
+      "radix": 39,
+      "stroke": 8,
+      "struct": 2,
+      "idx": 1382,
+      "ext": 0,
+      "reverse_unicode": 23398
+    },
+    {
+      "name": "map_水",
+      "unicode": 27700,
+      "char": "水",
+      "code": 1428185920,
+      "code_hex": "0x55206340",
+      "radix": 85,
+      "stroke": 4,
+      "struct": 0,
+      "idx": 1588,
+      "ext": 0,
+      "reverse_unicode": 27700
+    },
+    {
+      "name": "map_國",
+      "unicode": 22283,
+      "char": "國",
+      "code": 2964361392,
+      "code_hex": "0xB0B090B0",
+      "radix": 176,
+      "stroke": 22,
+      "struct": 1,
+      "idx": 267,
+      "ext": 0,
+      "reverse_unicode": 22283
+    },
+    {
+      "name": "map_龍",
+      "unicode": 40845,
+      "char": "龍",
+      "code": 2021529808,
+      "code_hex": "0x787E18D0",
+      "radix": 120,
+      "stroke": 15,
+      "struct": 12,
+      "idx": 397,
+      "ext": 0,
+      "reverse_unicode": 40845
+    },
+    {
+      "name": "map_體",
+      "unicode": 39636,
+      "char": "體",
+      "code": 3279834432,
+      "code_hex": "0xC37E4D40",
+      "radix": 195,
+      "stroke": 15,
+      "struct": 12,
+      "idx": 1236,
+      "ext": 0,
+      "reverse_unicode": 39636
+    },
+    {
+      "name": "map_㑇",
+      "unicode": 13383,
+      "char": "㑇",
+      "code": 154788976,
+      "code_hex": "0x0939E470",
+      "radix": 9,
+      "stroke": 7,
+      "struct": 3,
+      "idx": 1607,
+      "ext": 0,
+      "reverse_unicode": 13383
+    }
+  ],
+  "cmp_vectors": [
+    {
+      "name": "cmp_中_学",
+      "a": 35652304,
+      "b": 658593376,
+      "distance": 324
+    },
+    {
+      "name": "cmp_学_水",
+      "a": 658593376,
+      "b": 1428185920,
+      "distance": 396
+    },
+    {
+      "name": "cmp_水_國",
+      "a": 1428185920,
+      "b": 2964361392,
+      "distance": 822
+    },
+    {
+      "name": "cmp_國_龍",
+      "a": 2964361392,
+      "b": 2021529808,
+      "distance": 527
+    },
+    {
+      "name": "cmp_龍_體",
+      "a": 2021529808,
+      "b": 3279834432,
+      "distance": 600
+    },
+    {
+      "name": "cmp_體_㑇",
+      "a": 3279834432,
+      "b": 154788976,
+      "distance": 1564
+    }
+  ],
+  "not_found_unicode": 65535,
+  "not_found_code": 0
+}

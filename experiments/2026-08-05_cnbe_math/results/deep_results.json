@@ -1,0 +1,49 @@
+{
+  "metric": {
+    "tuple_classes": 15382,
+    "multi_member_classes": 1093,
+    "rows_in_multi_classes": 6889,
+    "modified_cmp_with_idx_ext": {
+      "triangle_ok_200k": true
+    }
+  },
+  "lattice": {
+    "distributive": true,
+    "closure": {
+      "join": 20644,
+      "meet": 22632,
+      "checked": 50000,
+      "join_rate": 0.4129,
+      "meet_rate": 0.4526
+    }
+  },
+  "information": {
+    "H(code)": 14.3699,
+    "H(tuple)": 13.2833,
+    "huffman_avg_bits": 13.3498,
+    "mutual_information": {
+      "radix-stroke": 0.2514,
+      "radix-struct": 0.4013,
+      "stroke-struct": 1.6024
+    }
+  },
+  "geometry": {
+    "auc_same_radix": {
+      "weighted": 0.9845,
+      "euclid": 0.9639,
+      "hyperbolic": 0.7092
+    },
+    "knn_radix_accuracy": {
+      "weighted": 0.45,
+      "euclid": 0.264,
+      "hyperbolic": 0.018
+    }
+  },
+  "algebra": {
+    "A1_extract_map": 105890,
+    "A2_nonneg_sym_500k": 500000,
+    "A3_triangle_500k": 500000,
+    "A4_skill_roundtrip_all": 21178,
+    "hash_equals_linear_10k": 10000
+  }
+}

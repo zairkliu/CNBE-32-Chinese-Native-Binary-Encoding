@@ -26,8 +26,8 @@ volatile void panic(const char * s)
 	printk("【内核恐慌】%s\n\r",s);
 	
 	/*
-	 * CNBE-32 集成点：此处可调用 cnhe_map 记录恐慌消息到 CNBE-32 编码日志。
-	 * 示例: cnhe_map((const unsigned char *)s, strlen(s));
+	 * CNBE-32 集成点：此处可调用 cnbe_map 记录恐慌消息到 CNBE-32 编码日志。
+	 * 示例: cnbe_map((const unsigned char *)s, strlen(s));
 	 * 但由于 panic 后系统不再运行，实际意义有限。
 	 */
 	

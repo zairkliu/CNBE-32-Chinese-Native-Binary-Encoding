@@ -1,0 +1,11 @@
+{
+  "passes": 160000,
+  "fails": 0,
+  "axioms": [
+    "extract(map(U),field)=field(U)",
+    "cmp nonneg/sym",
+    "triangle",
+    "skill(map(U)) first-match"
+  ],
+  "first_failures": []
+}

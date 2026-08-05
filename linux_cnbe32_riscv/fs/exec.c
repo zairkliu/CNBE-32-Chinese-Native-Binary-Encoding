@@ -8,6 +8,7 @@
  *   - 内核消息转为中文
  */
 #include <errno.h>
+#include <string.h>
 #include <sys/stat.h>
 #include <a.out.h>
 
@@ -222,7 +223,7 @@ static unsigned long change_ldt_riscv(unsigned long text_size,unsigned long * pa
 	code_limit &= 0xFFFFF000;
 	data_limit = 0x4000000;
 	/* RISC-V 无段基址，使用平面地址。代码和数据从同一基址开始 */
-	code_base = current->mm ? current->mm->start_code : 0x400000;
+	code_base = 0x400000;
 	data_base = code_base;
 	/* CNBE-32: x86 set_base/set_limit 使用 LDT 描述符。
 	 * RISC-V 使用页表映射来限制和映射内存，无需段寄存器。

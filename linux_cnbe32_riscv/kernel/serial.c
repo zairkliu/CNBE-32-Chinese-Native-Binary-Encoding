@@ -77,9 +77,9 @@ static void init(unsigned long port_base)
  */
 void rs_init(void)
 {
-	/* 初始化串口 1 和串口 2 */
-	init(tty_table[1].read_q.data);
-	init(tty_table[2].read_q.data);
+	/* RISC-V virt 平台只有一个 NS16550 UART，串口 1/2 均映射到它 */
+	init(UART_BASE);
+	init(UART_BASE);
 
 	/*
 	 * 【RISC-V 说明】以下 x86 代码被移除:

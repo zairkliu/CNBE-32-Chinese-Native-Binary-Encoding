@@ -1,0 +1,10 @@
+{
+  "rows": 21178,
+  "non_negative": true,
+  "symmetric": true,
+  "triangle_checked": 200000,
+  "triangle_violations": 0,
+  "triangle_holds": true,
+  "zero_distance_different_codes": 50728,
+  "note": "cmp excludes idx/ext, so different codes with identical radix/stroke/struct have distance 0"
+}

@@ -10,7 +10,7 @@
 #define __LIBRARY__
 #include <unistd.h>
 
-int read(int fd, char * buf, int count)
+int read(int fd, char * buf, off_t count)
 {
 	int __res;
 	register long a7 __asm__("a7") = __NR_read;

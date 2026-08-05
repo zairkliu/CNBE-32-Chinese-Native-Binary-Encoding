@@ -11,12 +11,17 @@
 
 #include <asm/riscv.h>
 
-/* move_to_user_mode: RISC-V 简化版 — 仅清除 MPP 位 */
-/* 完整的用户模式切换需要设置 mepc 并 mret，此处为简化实现 */
+/* move_to_user_mode: RISC-V S-mode -> U-mode 切换 */
 #define move_to_user_mode() \
     __asm__ __volatile__ ( \
-        "li t0, 0x1800\n\t"        /* MSTATUS_MPP */ \
-        "csrc mstatus, t0\n\t"     /* 清除 MPP, 设为 U-mode */ \
+        "li t0, 0x20\n\t"          /* SSTATUS_SPIE */ \
+        "csrs sstatus, t0\n\t" \
+        "li t0, 0x100\n\t"         /* SSTATUS_SPP = 0 (U-mode) */ \
+        "csrc sstatus, t0\n\t" \
+        "la t0, 1f\n\t" \
+        "csrw sepc, t0\n\t" \
+        "sret\n" \
+        "1:\n\t" \
         ::: "t0", "memory")
 
 /* 中断使能/禁用 (x86 sti/cli 的 RISC-V 替代) */

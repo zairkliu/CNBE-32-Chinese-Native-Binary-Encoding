@@ -66,8 +66,8 @@ static int match(int len,const char * name,struct dir_entry * de)
 		return 0;
 	/* RISC-V 替代 x86 fs: repe cmpsb */
 	if (len > NAME_LEN) return 0;
-	if (cnhe_cmp(name, de->name) == 0) {
-		/* CNBE-32: 使用 cnhe_cmp 比较中文文件名 */
+	if (cnbe_strcmp(name, de->name) == 0) {
+	/* CNBE-32: 使用 cnbe_strcmp 比较中文文件名 */
 		same = 1;
 	} else {
 		/* 回退到逐字节比较 */
@@ -440,7 +440,7 @@ int sys_mkdir(const char * pathname, int mode)
 		free_block(inode->i_dev,inode->i_zone[0]);
 		inode->i_nlinks--;
 		iput(inode);
-		return -ERROR;
+		return -EIO;
 	}
 	de = (struct dir_entry *) dir_block->b_data;
 	de->inode=inode->i_num;
@@ -565,7 +565,7 @@ int sys_rmdir(const char * name)
 		iput(inode);
 		iput(dir);
 		brelse(bh);
-		return -ENOTEMPTY;
+		return -ENOTDIR;
 	}
 	if (inode->i_nlinks != 2)
 		printk("空目录的 nlink!=2 (%d)",inode->i_nlinks);

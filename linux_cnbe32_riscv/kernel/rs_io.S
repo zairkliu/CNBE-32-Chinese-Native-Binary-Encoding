@@ -12,11 +12,8 @@
  * 【CNBE-32 集成点】
  * - 串口数据接收缓冲区支持中文 UTF-8 输入
  * - 注释使用中文说明 MMIO 寄存器映射
- * - 保留 _table_list 结构兼容 tty_io.c
+ * - 保留 table_list 结构兼容 tty_io.c
  */
-
-#include <cnbe.h>
-#include <asm/io.h>
 
 /* RISC-V NS16550 UART MMIO 寄存器偏移 */
 #define UART_BASE       0x10000000
@@ -48,26 +45,26 @@
  * ============================================================ */
 .align 4
 _rs1_interrupt:
-	la	a0, _table_list
-	addi	a0, a0, 8        /* 对应原始 _table_list+8 */
+	la	a0, table_list
+	addi	a0, a0, 8        /* 对应原始 table_list+8 */
 	j	rs_int
 
 .align 4
 _rs2_interrupt:
 	/* 【CNBE-32 注释】RISC-V 单 UART 环境保留，直接转发至 rs1 */
-	la	a0, _table_list
-	addi	a0, a0, 16       /* 对应原始 _table_list+16 */
+	la	a0, table_list
+	addi	a0, a0, 16       /* 对应原始 table_list+16 */
 	j	rs_int
 
 /* ============================================================
  * rs_int: 通用串口中断处理
- * 输入: a0 = &_table_list[n] (tty 队列结构指针的地址)
+ * 输入: a0 = &table_list[n] (tty 队列结构指针的地址)
  * 逻辑: 读取 IIR → 循环处理所有挂起中断 → 返回
  * ============================================================ */
 rs_int:
 	addi	sp, sp, -40
 	sw	ra,  0(sp)
-	sw	s0,  4(sp)        /* s0 = &_table_list[n] */
+	sw	s0,  4(sp)        /* s0 = &table_list[n] */
 	sw	s1,  8(sp)        /* s1 = tty_queue 指针 */
 	sw	s2, 12(sp)        /* s2 = 工作寄存器 */
 	sw	s3, 16(sp)
@@ -77,7 +74,7 @@ rs_int:
 	sw	a4, 32(sp)
 	sw	a5, 36(sp)
 
-	mv	s0, a0           /* 保存 &_table_list[n] */
+	mv	s0, a0           /* 保存 &table_list[n] */
 	lw	s1, 0(s0)         /* s1 = tty_queue 指针 */
 	lw	a1, RS_ADDR(s1)   /* a1 = UART MMIO 基地址 */
 	addi	a2, a1, 2        /* a2 = UART_IIR 地址 */
@@ -167,8 +164,8 @@ read_char:
 	lb	t0, 0(a1)          /* UART_RBR */
 	andi	t0, t0, 0xFF
 
-	/* 计算 tty 号: ( &_table_list[n] - &_table_list ) >> 3 */
-	la	t1, _table_list
+	/* 计算 tty 号: ( &table_list[n] - &table_list ) >> 3 */
+	la	t1, table_list
 	sub	a3, s0, t1
 	srli	a3, a3, 3
 
@@ -201,7 +198,7 @@ read_char:
 	sw	ra, 0(sp)
 	sw	a3, 4(sp)
 	mv	a0, a3
-	la	t0, _do_tty_interrupt
+	la	t0, do_tty_interrupt
 	jalr	t0
 	lw	a3, 4(sp)
 	lw	ra, 0(sp)
@@ -233,15 +230,15 @@ write_char:
 	/* 检查是否低于 startup 阈值 */
 	li	t1, STARTUP
 	ble	a3, t1, .L_wake_writer
-	j	.L_do_write
+	j	.Ldo_write
 
 .L_wake_writer:
 	/* 唤醒等待写完成的进程 */
 	lw	t0, PROC_LIST(s2)
-	beqz	t0, .L_do_write
+	beqz	t0, .Ldo_write
 	sw	zero, 0(t0)
 
-.L_do_write:
+.Ldo_write:
 	/* 从队列取字符 */
 	lw	a4, TAIL(s2)
 	add	t1, s2, BUF

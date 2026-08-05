@@ -14,11 +14,11 @@ OBJDUMP = riscv64-linux-gnu-objdump
 # -mcmodel=medany: 适合 1GB 地址空间的代码模型
 CFLAGS  = -march=rv64im_zicsr -mabi=lp64 -mcmodel=medany \
           -static -O2 -nostdlib -ffreestanding -fno-pic \
-          -Wall -Wextra -Wno-unused-parameter \
+          -MMD -MP -Wall -Wextra -Wno-unused-parameter \
           -Iinclude -fno-exceptions -fno-rtti -fno-threadsafe-statics
 
 # 链接器脚本: 定义 1GB 内存布局
-LDFLAGS = -T kernel/linker.ld -nostdlib -nostartfiles
+LDFLAGS = -T kernel/linker.ld
 
 # 启动代码 (RISC-V 汇编)
 BOOT_OBJS = boot/start.o
@@ -54,6 +54,7 @@ CNBE_OBJS = cnbe/cnbe.o
 
 ALL_OBJS = $(BOOT_OBJS) $(INIT_OBJS) $(KERNEL_OBJS) $(MM_OBJS) \
            $(FS_OBJS) $(LIB_OBJS) $(CNBE_OBJS)
+DEPS     = $(ALL_OBJS:.o=.d)
 
 TARGET_ELF = output/kernel.elf
 TARGET_BIN = output/kernel.bin
@@ -77,16 +78,14 @@ $(TARGET_BIN): $(TARGET_ELF)
 %.o: %.S
 	$(CC) $(CFLAGS) -D__ASSEMBLY__ -c $< -o $@
 
-# QEMU 运行 (RISC-V virt 平台, 1GB 内存)
-run: $(TARGET_BIN)
+# QEMU 运行 (RISC-V virt 平台, OpenSBI + 1GB 内存)
+run: $(TARGET_ELF)
 	qemu-system-riscv64 \
 		-M virt \
 		-m 1024M \
 		-smp 1 \
-		-bios none \
-		-kernel $(TARGET_BIN) \
-		-nographic \
-		-serial stdio
+		-kernel $(TARGET_ELF) \
+		-nographic
 
 qemu: run
 
@@ -94,10 +93,25 @@ qemu: run
 disasm: $(TARGET_ELF)
 	$(OBJDUMP) -d $(TARGET_ELF) | less
 
+verify: $(TARGET_BIN)
+	gcc -O2 -Wall -Wextra -iquote include \
+		tests/test_cnbe_v8_alignment.c cnbe/cnbe.c -o /tmp/test_cnbe_kernel
+	/tmp/test_cnbe_kernel
+	@echo "Linux 0.01 CNBE-32 build + runtime alignment verified"
+
+boot-smoke: $(TARGET_ELF)
+	@echo "Booting Linux 0.01 CNBE-32 in QEMU (15s smoke)..."
+	@timeout 15 qemu-system-riscv64 -M virt -m 1024M -smp 1 \
+		-kernel $(TARGET_ELF) -nographic 2>&1 | grep -q "中文系统> 就绪" \
+		&& echo BOOT_SMOKE_PASS || (echo BOOT_SMOKE_FAIL; exit 1)
+
 # 清理
 clean:
 	rm -f $(ALL_OBJS) $(TARGET_ELF) $(TARGET_BIN) $(TARGET_MAP)
+	rm -f $(DEPS)
 
 # 生成 CNBE-32 Skill 表 (需要 Python 运行时)
 gen-table:
 	python3 tools/gen_cnbe_table.py
+
+-include $(DEPS)

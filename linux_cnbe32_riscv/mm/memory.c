@@ -63,7 +63,7 @@ __asm__ __volatile__ ("sfence.vma" ::: "memory")
 /* 复制一页 (4KB = 1024 个 unsigned long)
  * x86 原指令: cld ; rep ; movsl
  * RISC-V 替代: C 循环实现, 避免内联汇编复杂度。
- * CNBE-32 注: 页复制为高频操作, 可映射到 cnhe_map 的缓存友好型拷贝。
+ * CNBE-32 注: 页复制为高频操作, 可映射到 cnbe_map 的缓存友好型拷贝。
  */
 static inline void copy_page(unsigned long from, unsigned long to)
 {
@@ -310,8 +310,8 @@ void calc_mem(void)
 			free++;
 	printk("%d 页空闲 (共 %d 页)\n\r", free, PAGING_PAGES);
 	for (i = 2; i < 1024; i++) {
-		if (PTE_V & pg_dir[i]) {
-			pg_tbl = (long *)(PTE_ADDR_MASK & pg_dir[i]);
+		if (PTE_V & swapper_pg_dir[i]) {
+			pg_tbl = (long *)(PTE_ADDR_MASK & swapper_pg_dir[i]);
 			for (j = k = 0; j < 1024; j++)
 				if (pg_tbl[j] & PTE_V)
 					k++;

@@ -1,0 +1,18 @@
+{
+  "source_db": "../../data/cnbe32.db",
+  "total_rows": 21178,
+  "standard_rows": 7602,
+  "duplicate_cnbe": 4,
+  "unicode_min": 13383,
+  "unicode_max": 183955,
+  "skill_table_bin_sha256": "565a971ea4370d0bad0fe78985faa5049462cf6ff3484dc09a5808e9ac3fb266",
+  "skill_table_8105_bin_sha256": "a3bd3fe81cbdd51a969959440831cf3a92e5ee4edd6d64e3f1b7230b3c86ba57",
+  "files": {
+    "skill_table.bin": "/mnt/c/Users/zairk/Documents/Codex/2026-07-27/https-github-com-zairkliu-cnbe-32/repo/riscv/v8/generated/skill_table.bin",
+    "skill_table_8105.bin": "/mnt/c/Users/zairk/Documents/Codex/2026-07-27/https-github-com-zairkliu-cnbe-32/repo/riscv/v8/generated/skill_table_8105.bin",
+    "unicode_table.hex": "/mnt/c/Users/zairk/Documents/Codex/2026-07-27/https-github-com-zairkliu-cnbe-32/repo/riscv/v8/generated/unicode_table.hex",
+    "cnbe_table.hex": "/mnt/c/Users/zairk/Documents/Codex/2026-07-27/https-github-com-zairkliu-cnbe-32/repo/riscv/v8/generated/cnbe_table.hex",
+    "cnbe_skill_table.cc": "/mnt/c/Users/zairk/Documents/Codex/2026-07-27/https-github-com-zairkliu-cnbe-32/repo/riscv/v8/generated/cnbe_skill_table.cc",
+    "cnbe_table_params.svh": "/mnt/c/Users/zairk/Documents/Codex/2026-07-27/https-github-com-zairkliu-cnbe-32/repo/riscv/v8/generated/cnbe_table_params.svh"
+  }
+}

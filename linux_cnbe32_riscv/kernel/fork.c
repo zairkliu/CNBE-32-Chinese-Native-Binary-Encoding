@@ -195,8 +195,8 @@ int copy_process(int nr,long ra,long sp,long gp,long tp,long none,
 	 * RISC-V 注：原 x86 设置 TSS/LDT 描述符到 GDT。
 	 * RISC-V 无 GDT/TSS，保留宏以保持兼容性。
 	 */
-	set_tss_desc(gdt+(nr<<1)+FIRST_TSS_ENTRY,&(p->tss));
-	set_ldt_desc(gdt+(nr<<1)+FIRST_LDT_ENTRY,&(p->ldt));
+        set_tss_desc(0,&(p->tss));
+	set_ldt_desc(0,&(p->ldt));
 
 	task[nr] = p;	/* 最后执行，以防万一 */
 	return last_pid;

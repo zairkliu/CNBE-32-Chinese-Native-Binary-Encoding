@@ -30,6 +30,28 @@ int do_exit(long code);
 
 void page_exception(void);
 
+void riscv_set_trap_handler(int n, void *addr)
+{
+    (void)n;
+    (void)addr;
+}
+
+void riscv_set_syscall_handler(int n, void *addr)
+{
+    (void)n;
+    (void)addr;
+}
+
+void riscv_set_intr_handler(int n, void *addr)
+{
+    (void)n;
+    (void)addr;
+}
+
+void do_IRQ(void)
+{
+}
+
 void divide_error(void);
 void debug(void);
 void nmi(void);

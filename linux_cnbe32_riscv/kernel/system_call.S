@@ -7,7 +7,7 @@
  * - x86 系统调用号(eax) → RISC-V a7
  * - x86 参数(ebx,ecx,edx) → RISC-V a0,a1,a2
  * - x86 栈布局 → RISC-V trap frame 布局
- * - x86 iret → RISC-V mret
+ * - x86 iret → RISC-V sret
  * - x86 段寄存器 (ds/es/fs) → RISC-V 忽略 (无段式)
  * - x86 信号处理用户栈操作 → RISC-V 简化适配 (需完整信号帧实现)
  * - x86 8259 PIC EOI → RISC-V 无需 (使用 CLINT/PLIC)
@@ -15,10 +15,8 @@
  * 【CNBE-32 集成点】
  * - 系统调用错误消息使用中文 UTF-8
  * - 关键路径注释使用中文
- * - 保留 _sys_call_table 符号供 C 代码填充
+ * - 保留 sys_call_table 符号供 C 代码填充
  */
-
-#include <cnbe.h>
 
 /* RISC-V CSR 定义 */
 #define CSR_MSTATUS   0x300
@@ -39,12 +37,12 @@
 #define NR_SYSCALLS     67
 
 /* 导出符号 */
-.globl _system_call, _sys_fork, _timer_interrupt, _hd_interrupt, _sys_execve
+.globl system_call, sys_fork, timer_interrupt, hd_interrupt, sys_execve
 
 .text
 
 /* ============================================================
- * 系统调用入口 _system_call
+ * 系统调用入口 system_call
  * 触发方式: 用户态执行 ecall 指令
  * 寄存器约定:
  *   a7 = 系统调用号 (对应 x86 eax)
@@ -55,7 +53,7 @@
  * 返回值: a0
  * ============================================================ */
 .align 4
-_system_call:
+system_call:
 	/* 保存完整上下文 (构建 trap frame) */
 	addi	sp, sp, -128
 	sw	ra,   0(sp)
@@ -91,16 +89,16 @@ _system_call:
 
 	/* 保存 CSR */
 	csrr	t0, CSR_MEPC
-	sw	t0, 120(sp)      /* mepc (返回地址) */
+	sw	t0, 120(sp)      /* sepc (返回地址) */
 	csrr	t0, CSR_MSTATUS
-	sw	t0, 124(sp)      /* mstatus (特权级/中断状态) */
+	sw	t0, 124(sp)      /* sstatus (特权级/中断状态) */
 
 	/* 检查系统调用号 */
 	li	t0, NR_SYSCALLS
 	bgeu	a7, t0, _bad_syscall
 
 	/* 调用 sys_call_table[a7] */
-	la	t0, _sys_call_table
+	la	t0, sys_call_table
 	slli	t1, a7, 2
 	add	t0, t0, t1
 	lw	t0, 0(t0)
@@ -111,7 +109,7 @@ _system_call:
 
 _ret_from_syscall:
 	/* 检查是否需要调度 */
-	la	t0, _current
+	la	t0, current
 	lw	t0, 0(t0)
 	lw	t1, TASK_STATE(t0)
 	bnez	t1, _reschedule
@@ -123,20 +121,20 @@ _ret_from_syscall:
 	 * 原始 x86 代码在每个系统调用/定时器中断后扫描信号位图
 	 * RISC-V 中保持相同逻辑，但用户栈帧构造需适配新 ABI
 	 * ========================================================= */
-	la	t0, _current
+	la	t0, current
 	lw	t0, 0(t0)
-	la	t1, _task
+	la	t1, task
 	lw	t1, 0(t1)
 	beq	t0, t1, .L_syscall_done    /* task[0] 不能有信号 */
 
-	/* 检查是否来自用户态 (mstatus.MPP == 00, U-mode) */
+	/* 检查是否来自用户态 (sstatus.MPP == 00, U-mode) */
 	lw	t2, 124(sp)
 	li	t3, MSTATUS_MPP
 	and	t2, t2, t3
 	bnez	t2, .L_syscall_done       /* MPP != 0 表示内核态，不处理信号 */
 
 .L_signal_check:
-	la	t0, _current
+	la	t0, current
 	lw	t0, 0(t0)
 	lw	t1, TASK_SIGNAL(t0)
 	beqz	t1, .L_syscall_done
@@ -162,7 +160,7 @@ _ret_from_syscall:
 	sw	t1, TASK_SIGNAL(t0)
 
 	/* 获取信号处理函数 */
-	la	t3, TASK_SIG_FN(t0)
+	addi	t3, t0, TASK_SIG_FN
 	slli	t4, t2, 2
 	add	t3, t3, t4
 	lw	t3, 0(t3)
@@ -181,7 +179,7 @@ _ret_from_syscall:
 	 * 原始 x86 代码通过 fs 段在用户栈上构造信号恢复帧
 	 * RISC-V 无段寄存器，需直接操作用户态 sp (trap frame offset 4)
 	 * 此处为简化框架，实际生产环境需完整实现 RISC-V 信号帧布局
-	 * 包括保存 mepc, a0-a7, 及信号恢复器地址 (restorer)
+	 * 包括保存 sepc, a0-a7, 及信号恢复器地址 (restorer)
 	 */
 	/* TODO: 完整的 RISC-V 信号帧压栈实现 */
 
@@ -196,7 +194,7 @@ _ret_from_syscall:
 	sw	ra, 0(sp)
 	sw	t2, 4(sp)
 	mv	a0, t2
-	la	t0, _do_exit
+	la	t0, do_exit
 	jalr	t0
 	lw	ra, 0(sp)
 	lw	t2, 4(sp)
@@ -242,7 +240,7 @@ _ret_from_syscall:
 	lw	t5, 112(sp)
 	lw	t6, 116(sp)
 	addi	sp, sp, 128
-	mret
+	sret
 
 /* ============================================================ */
 _bad_syscall:
@@ -253,19 +251,19 @@ _bad_syscall:
 _reschedule:
 	addi	sp, sp, -4
 	sw	ra, 0(sp)
-	la	t0, _schedule
+	la	t0, schedule
 	jalr	t0
 	lw	ra, 0(sp)
 	addi	sp, sp, 4
 	j	_ret_from_syscall
 
 /* ============================================================
- * _timer_interrupt: 定时器中断处理
+ * timer_interrupt: 定时器中断处理
  * 原始 x86 使用 8253 PIT + 8259 PIC
  * RISC-V 使用 CLINT (Core Local Interruptor) 或 PLIC 定时器
  * ============================================================ */
 .align 4
-_timer_interrupt:
+timer_interrupt:
 	addi	sp, sp, -48
 	sw	ra,  0(sp)
 	sw	t0,  4(sp)
@@ -281,7 +279,7 @@ _timer_interrupt:
 	sw	s0, 44(sp)
 
 	/* 增加 jiffies */
-	la	t0, _jiffies
+	la	t0, jiffies
 	lw	t1, 0(t0)
 	addi	t1, t1, 1
 	sw	t1, 0(t0)
@@ -299,7 +297,7 @@ _timer_interrupt:
 	srli	a0, a0, 11
 
 	/* 调用 do_timer(CPL) */
-	la	t0, _do_timer
+	la	t0, do_timer
 	jalr	t0
 
 	/* 恢复并进入系统调用返回路径 */
@@ -319,32 +317,32 @@ _timer_interrupt:
 	j	_ret_from_syscall
 
 /* ============================================================
- * _sys_execve: execve 系统调用包装
- * 原始 x86: lea EIP(%esp),%eax; pushl %eax; call _do_execve
- * RISC-V: 传递 mepc 地址作为参数 (指向用户返回地址)
+ * sys_execve: execve 系统调用包装
+ * 原始 x86: lea EIP(%esp),%eax; pushl %eax; call do_execve
+ * RISC-V: 传递 sepc 地址作为参数 (指向用户返回地址)
  * ============================================================ */
 .align 4
-_sys_execve:
-	/* 此时 sp 仍指向 _system_call 的 trap frame */
+sys_execve:
+	/* 此时 sp 仍指向 system_call 的 trap frame */
 	mv	a0, sp
-	addi	a0, a0, 120      /* &mepc (对应 x86 &eip) */
-	la	t0, _do_execve
+	addi	a0, a0, 120      /* &sepc (对应 x86 &eip) */
+	la	t0, do_execve
 	jalr	t0
 	ret
 
 /* ============================================================
- * _sys_fork: fork 系统调用包装
+ * sys_fork: fork 系统调用包装
  * 原始 x86 通过栈传递 copy_process 的 17 个参数
  * RISC-V 通过寄存器 + 栈传递，从 trap frame 提取寄存器值
  * ============================================================ */
 .align 4
-_sys_fork:
+sys_fork:
 	mv	s0, sp              /* s0 = trap frame 基址 */
 	addi	sp, sp, -40      /* 为 copy_process 的 9 个栈参数分配空间 */
 	sw	ra, 36(sp)
 
 	/* 调用 find_empty_process()，返回值 nr 在 a0 */
-	la	t0, _find_empty_process
+	la	t0, find_empty_process
 	jalr	t0
 	bltz	a0, .L_fork_done
 
@@ -369,18 +367,18 @@ _sys_fork:
 	sw	t0, 8(sp)
 	li	t0, 0               /* ds (RISC-V 无) */
 	sw	t0, 12(sp)
-	lw	t0, 120(s0)         /* eip (mepc) */
+	lw	t0, 120(s0)         /* eip (sepc) */
 	sw	t0, 16(sp)
 	li	t0, 0               /* cs (RISC-V 无) */
 	sw	t0, 20(sp)
-	lw	t0, 124(s0)         /* eflags (mstatus) */
+	lw	t0, 124(s0)         /* eflags (sstatus) */
 	sw	t0, 24(sp)
 	lw	t0, 4(s0)           /* esp (原始 sp) */
 	sw	t0, 28(sp)
 	li	t0, 0               /* ss (RISC-V 无) */
 	sw	t0, 32(sp)
 
-	la	t0, _copy_process
+	la	t0, copy_process
 	jalr	t0
 
 .L_fork_done:
@@ -389,12 +387,12 @@ _sys_fork:
 	ret
 
 /* ============================================================
- * _hd_interrupt: 硬盘中断处理
+ * hd_interrupt: 硬盘中断处理
  * 原始 x86 使用 8259 PIC 级联中断
  * RISC-V 使用 PLIC (Platform Level Interrupt Controller)
  * ============================================================ */
 .align 4
-_hd_interrupt:
+hd_interrupt:
 	addi	sp, sp, -28
 	sw	ra,  0(sp)
 	sw	t0,  4(sp)
@@ -409,15 +407,15 @@ _hd_interrupt:
 	 * RISC-V 替代: PLIC 通过内存映射完成通知，由驱动处理
 	 */
 
-	/* 调用 do_hd 或 unexpected_hd_interrupt */
-	la	t0, _do_hd
+	/* 调用 do_hd 或 unexpectedhd_interrupt */
+	la	t0, do_hd
 	lw	t0, 0(t0)
 	beqz	t0, .L_unexpected_hd
 	jalr	t0
 	j	.L_hd_done
 
 .L_unexpected_hd:
-	la	t0, _unexpected_hd_interrupt
+	la	t0, unexpected_hd_interrupt
 	jalr	t0
 
 .L_hd_done:
@@ -429,4 +427,4 @@ _hd_interrupt:
 	lw	a2, 20(sp)
 	lw	a3, 24(sp)
 	addi	sp, sp, 28
-	mret
+	sret

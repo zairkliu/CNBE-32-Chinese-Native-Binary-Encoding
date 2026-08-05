@@ -1,0 +1,4 @@
+work/
+*.elf
+*.o
+__pycache__/

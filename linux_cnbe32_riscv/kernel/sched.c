@@ -284,8 +284,8 @@ void sched_init(void)
 	 * RISC-V 无段式内存，因此跳过 GDT/LDT 设置。
 	 * 保留函数调用以保持代码兼容性。
 	 */
-	set_tss_desc(gdt+FIRST_TSS_ENTRY,&(init_task.task.tss));
-	set_ldt_desc(gdt+FIRST_LDT_ENTRY,&(init_task.task.ldt));
+	set_tss_desc(0,&(init_task.task.tss));
+	set_ldt_desc(0,&(init_task.task.ldt));
 
 	/* 初始化任务数组 */
 	for(i=1;i<NR_TASKS;i++) {
