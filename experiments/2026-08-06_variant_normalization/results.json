@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "substitutions": 603,
+  "label_counts": {
+    "variant": 354,
+    "other": 81,
+    "truth_not_in_standard": 121,
+    "shape_confusable": 27,
+    "truth_not_in_db": 11,
+    "ocr_not_in_db": 9
+  },
+  "variant_pairs": 354,
+  "coverage_gap": {
+    "truth_unique_not_in_standard": 812,
+    "truth_unique_not_in_db": 6,
+    "examples_not_in_db": [
+      {
+        "char": "㻛",
+        "count": 4
+      },
+      {
+        "char": "㳅",
+        "count": 2
+      },
+      {
+        "char": "㸔",
+        "count": 2
+      },
+      {
+        "char": "䄂",
+        "count": 2
+      },
+      {
+        "char": "㮣",
+        "count": 1
+      },
+      {
+        "char": "㴠",
+        "count": 1
+      }
+    ]
+  },
+  "experiments": {
+    "baseline_accuracy": 0.9091,
+    "oracle_variant_fix_chars": 354,
+    "oracle_variant_accuracy": 0.931,
+    "learned_direction_accuracy": 0.9264,
+    "learned_direction_changes": 353,
+    "learned_direction_correct": 9,
+    "naive_canonical_accuracy": 0.6524,
+    "naive_canonical_changes": 4940,
+    "naive_canonical_correct": 4
+  }
+}

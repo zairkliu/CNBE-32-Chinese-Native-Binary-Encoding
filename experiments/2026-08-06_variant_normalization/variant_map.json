@@ -1,0 +1,11256 @@
+[
+  {
+    "root": "詩",
+    "members": [
+      "詩",
+      "诗"
+    ],
+    "canonical": "诗",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "云",
+    "members": [
+      "云",
+      "雲"
+    ],
+    "canonical": "云",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "一",
+    "members": [
+      "一",
+      "壹"
+    ],
+    "canonical": "一",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "为",
+    "members": [
+      "为",
+      "為",
+      "爲"
+    ],
+    "canonical": "为",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "為": {
+        "爲": 41
+      }
+    },
+    "learned_map": {
+      "為": "爲"
+    }
+  },
+  {
+    "root": "只",
+    "members": [
+      "只",
+      "子"
+    ],
+    "canonical": "只",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "东",
+    "members": [
+      "东",
+      "東"
+    ],
+    "canonical": "东",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "橆",
+    "members": [
+      "无",
+      "無"
+    ],
+    "canonical": "无",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "时",
+    "members": [
+      "时",
+      "時"
+    ],
+    "canonical": "时",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "亏",
+    "members": [
+      "于",
+      "亏",
+      "於"
+    ],
+    "canonical": "于",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "謂",
+    "members": [
+      "謂",
+      "谓"
+    ],
+    "canonical": "谓",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "語",
+    "members": [
+      "語",
+      "语"
+    ],
+    "canonical": "语",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "來",
+    "members": [
+      "來",
+      "来"
+    ],
+    "canonical": "来",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "与",
+    "members": [
+      "与",
+      "與"
+    ],
+    "canonical": "与",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "则",
+    "members": [
+      "则",
+      "則"
+    ],
+    "canonical": "则",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "風",
+    "members": [
+      "風",
+      "风"
+    ],
+    "canonical": "风",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "見",
+    "members": [
+      "見",
+      "见"
+    ],
+    "canonical": "见",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "二",
+    "members": [
+      "二",
+      "贰"
+    ],
+    "canonical": "二",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "后",
+    "members": [
+      "后",
+      "後"
+    ],
+    "canonical": "后",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "予",
+    "members": [
+      "予",
+      "余",
+      "餘"
+    ],
+    "canonical": "予",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "三",
+    "members": [
+      "三",
+      "叁"
+    ],
+    "canonical": "三",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "盖",
+    "members": [
+      "盖",
+      "蓋"
+    ],
+    "canonical": "盖",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "盖": {
+        "蓋": 34
+      }
+    },
+    "learned_map": {
+      "盖": "蓋"
+    }
+  },
+  {
+    "root": "乃",
+    "members": [
+      "乃",
+      "迺"
+    ],
+    "canonical": "乃",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "乐",
+    "members": [
+      "乐",
+      "樂"
+    ],
+    "canonical": "乐",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "归",
+    "members": [
+      "归",
+      "歸"
+    ],
+    "canonical": "归",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "书",
+    "members": [
+      "书",
+      "書"
+    ],
+    "canonical": "书",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "悞",
+    "members": [
+      "悞",
+      "誤",
+      "误"
+    ],
+    "canonical": "误",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "黃",
+    "members": [
+      "黃",
+      "黄"
+    ],
+    "canonical": "黄",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "黃": {
+        "黄": 20
+      }
+    },
+    "learned_map": {
+      "黃": "黄"
+    }
+  },
+  {
+    "root": "囌",
+    "members": [
+      "苏",
+      "蘇"
+    ],
+    "canonical": "苏",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "𬺧",
+    "members": [
+      "光",
+      "水"
+    ],
+    "canonical": "光",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "𬺦",
+    "members": [
+      "高",
+      "髙"
+    ],
+    "canonical": "高",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "髙": {
+        "高": 14
+      }
+    },
+    "learned_map": {
+      "髙": "高"
+    }
+  },
+  {
+    "root": "噹",
+    "members": [
+      "当",
+      "當"
+    ],
+    "canonical": "当",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "处",
+    "members": [
+      "䖏",
+      "处",
+      "處"
+    ],
+    "canonical": "处",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "䖏": {
+        "處": 4
+      }
+    },
+    "learned_map": {
+      "䖏": "處"
+    }
+  },
+  {
+    "root": "美",
+    "members": [
+      "美",
+      "羙"
+    ],
+    "canonical": "美",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "羙": {
+        "美": 2
+      }
+    },
+    "learned_map": {
+      "羙": "美"
+    }
+  },
+  {
+    "root": "学",
+    "members": [
+      "学",
+      "學"
+    ],
+    "canonical": "学",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "独",
+    "members": [
+      "独",
+      "獨"
+    ],
+    "canonical": "独",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "对",
+    "members": [
+      "对",
+      "對"
+    ],
+    "canonical": "对",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "仝",
+    "members": [
+      "仝",
+      "同"
+    ],
+    "canonical": "仝",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "晁",
+    "members": [
+      "晁",
+      "朝"
+    ],
+    "canonical": "晁",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "愛",
+    "members": [
+      "愛",
+      "爱"
+    ],
+    "canonical": "爱",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "儘",
+    "members": [
+      "尽",
+      "盡"
+    ],
+    "canonical": "尽",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "嘗",
+    "members": [
+      "嘗",
+      "尝"
+    ],
+    "canonical": "尝",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "佰",
+    "members": [
+      "佰",
+      "百"
+    ],
+    "canonical": "佰",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "远",
+    "members": [
+      "远",
+      "遠"
+    ],
+    "canonical": "远",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "过",
+    "members": [
+      "过",
+      "過"
+    ],
+    "canonical": "过",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "头",
+    "members": [
+      "头",
+      "頭"
+    ],
+    "canonical": "头",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "宫",
+    "members": [
+      "宫",
+      "宮"
+    ],
+    "canonical": "宫",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "宮": {
+        "宫": 10
+      },
+      "宫": {
+        "宮": 1
+      }
+    },
+    "learned_map": {
+      "宮": "宫"
+    }
+  },
+  {
+    "root": "岂",
+    "members": [
+      "岂",
+      "豈"
+    ],
+    "canonical": "岂",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "裏",
+    "members": [
+      "裏",
+      "里"
+    ],
+    "canonical": "里",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "气",
+    "members": [
+      "气",
+      "氣"
+    ],
+    "canonical": "气",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "万",
+    "members": [
+      "万",
+      "萬"
+    ],
+    "canonical": "万",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "間",
+    "members": [
+      "間",
+      "间"
+    ],
+    "canonical": "间",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "別",
+    "members": [
+      "別",
+      "别"
+    ],
+    "canonical": "别",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "別": {
+        "别": 9
+      }
+    },
+    "learned_map": {
+      "別": "别"
+    }
+  },
+  {
+    "root": "四",
+    "members": [
+      "四",
+      "肆"
+    ],
+    "canonical": "四",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "陈",
+    "members": [
+      "陈",
+      "陳"
+    ],
+    "canonical": "陈",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "咊",
+    "members": [
+      "和",
+      "龢"
+    ],
+    "canonical": "和",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "类",
+    "members": [
+      "类",
+      "類"
+    ],
+    "canonical": "类",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "眞",
+    "members": [
+      "眞",
+      "真"
+    ],
+    "canonical": "真",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "眞": {
+        "真": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "両",
+    "members": [
+      "两",
+      "兩"
+    ],
+    "canonical": "两",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "經",
+    "members": [
+      "經",
+      "经"
+    ],
+    "canonical": "经",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "尒",
+    "members": [
+      "尔",
+      "爾"
+    ],
+    "canonical": "尔",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "复",
+    "members": [
+      "复",
+      "復",
+      "覆"
+    ],
+    "canonical": "复",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "覌",
+    "members": [
+      "觀",
+      "观"
+    ],
+    "canonical": "观",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鳥",
+    "members": [
+      "鳥",
+      "鸟"
+    ],
+    "canonical": "鸟",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "声",
+    "members": [
+      "声",
+      "聲"
+    ],
+    "canonical": "声",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "載",
+    "members": [
+      "載",
+      "载"
+    ],
+    "canonical": "载",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "才",
+    "members": [
+      "才",
+      "纔"
+    ],
+    "canonical": "才",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "聞",
+    "members": [
+      "聞",
+      "闻"
+    ],
+    "canonical": "闻",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "氜",
+    "members": [
+      "阳",
+      "陽"
+    ],
+    "canonical": "阳",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "仟",
+    "members": [
+      "仟",
+      "千",
+      "阡"
+    ],
+    "canonical": "仟",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "𬺭",
+    "members": [
+      "乾",
+      "干",
+      "幹"
+    ],
+    "canonical": "乾",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "传",
+    "members": [
+      "传",
+      "傳"
+    ],
+    "canonical": "传",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "树",
+    "members": [
+      "树",
+      "樹"
+    ],
+    "canonical": "树",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "笔",
+    "members": [
+      "笔",
+      "筆"
+    ],
+    "canonical": "笔",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "湏",
+    "members": [
+      "湏",
+      "須",
+      "须",
+      "鬚"
+    ],
+    "canonical": "须",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "湏": {
+        "須": 7
+      }
+    },
+    "learned_map": {
+      "湏": "須"
+    }
+  },
+  {
+    "root": "义",
+    "members": [
+      "义",
+      "義"
+    ],
+    "canonical": "义",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "义": {
+        "義": 2
+      }
+    },
+    "learned_map": {
+      "义": "義"
+    }
+  },
+  {
+    "root": "犹",
+    "members": [
+      "犹",
+      "猶"
+    ],
+    "canonical": "犹",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "虽",
+    "members": [
+      "虽",
+      "雖"
+    ],
+    "canonical": "虽",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "閒",
+    "members": [
+      "閑",
+      "闲"
+    ],
+    "canonical": "闲",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "問",
+    "members": [
+      "問",
+      "问"
+    ],
+    "canonical": "问",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "叶",
+    "members": [
+      "叶",
+      "葉"
+    ],
+    "canonical": "叶",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "汉",
+    "members": [
+      "汉",
+      "漢"
+    ],
+    "canonical": "汉",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "記",
+    "members": [
+      "記",
+      "记"
+    ],
+    "canonical": "记",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "志",
+    "members": [
+      "志",
+      "誌"
+    ],
+    "canonical": "志",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "擧",
+    "members": [
+      "举",
+      "舉"
+    ],
+    "canonical": "举",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "从",
+    "members": [
+      "从",
+      "從"
+    ],
+    "canonical": "从",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "艸",
+    "members": [
+      "廿",
+      "草"
+    ],
+    "canonical": "廿",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "数",
+    "members": [
+      "数",
+      "數"
+    ],
+    "canonical": "数",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "絕",
+    "members": [
+      "絕",
+      "絶",
+      "绝"
+    ],
+    "canonical": "绝",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "絕": {
+        "絶": 5
+      }
+    },
+    "learned_map": {
+      "絕": "絶"
+    }
+  },
+  {
+    "root": "咏",
+    "members": [
+      "咏",
+      "詠"
+    ],
+    "canonical": "咏",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "詠": {
+        "咏": 11
+      }
+    },
+    "learned_map": {
+      "詠": "咏"
+    }
+  },
+  {
+    "root": "注",
+    "members": [
+      "注",
+      "註"
+    ],
+    "canonical": "注",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "註": {
+        "注": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "刘",
+    "members": [
+      "刘",
+      "劉"
+    ],
+    "canonical": "刘",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "往",
+    "members": [
+      "往",
+      "徃"
+    ],
+    "canonical": "往",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "往": {
+        "徃": 2
+      }
+    },
+    "learned_map": {
+      "往": "徃"
+    }
+  },
+  {
+    "root": "杨",
+    "members": [
+      "杨",
+      "楊"
+    ],
+    "canonical": "杨",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "杯",
+    "members": [
+      "杯",
+      "盃"
+    ],
+    "canonical": "杯",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鳴",
+    "members": [
+      "鳴",
+      "鸣"
+    ],
+    "canonical": "鸣",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "柽",
+    "members": [
+      "柳",
+      "柽"
+    ],
+    "canonical": "柳",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "嵗",
+    "members": [
+      "岁",
+      "歲"
+    ],
+    "canonical": "岁",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "龍",
+    "members": [
+      "敦",
+      "龍",
+      "龙"
+    ],
+    "canonical": "敦",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "說",
+    "members": [
+      "說",
+      "説",
+      "说"
+    ],
+    "canonical": "说",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "說": {
+        "説": 11
+      }
+    },
+    "learned_map": {
+      "說": "説"
+    }
+  },
+  {
+    "root": "淵",
+    "members": [
+      "淵",
+      "渊"
+    ],
+    "canonical": "渊",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "喜",
+    "members": [
+      "喜",
+      "憙"
+    ],
+    "canonical": "喜",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "几",
+    "members": [
+      "几",
+      "幾"
+    ],
+    "canonical": "几",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "謝",
+    "members": [
+      "謝",
+      "谢"
+    ],
+    "canonical": "谢",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "极",
+    "members": [
+      "极",
+      "極"
+    ],
+    "canonical": "极",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "张",
+    "members": [
+      "张",
+      "張"
+    ],
+    "canonical": "张",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "紅",
+    "members": [
+      "紅",
+      "红"
+    ],
+    "canonical": "红",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "还",
+    "members": [
+      "还",
+      "還"
+    ],
+    "canonical": "还",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "𬺣",
+    "members": [
+      "旦",
+      "足"
+    ],
+    "canonical": "旦",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "題",
+    "members": [
+      "題",
+      "题"
+    ],
+    "canonical": "题",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "斗",
+    "members": [
+      "斗",
+      "鬥"
+    ],
+    "canonical": "斗",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "幵",
+    "members": [
+      "开",
+      "開"
+    ],
+    "canonical": "开",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "体",
+    "members": [
+      "体",
+      "體"
+    ],
+    "canonical": "体",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "囘",
+    "members": [
+      "回",
+      "囬",
+      "迴"
+    ],
+    "canonical": "回",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "囬": {
+        "回": 5
+      }
+    },
+    "learned_map": {
+      "囬": "回"
+    }
+  },
+  {
+    "root": "門",
+    "members": [
+      "門",
+      "门"
+    ],
+    "canonical": "门",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "随",
+    "members": [
+      "随",
+      "隨"
+    ],
+    "canonical": "随",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "随": {
+        "隨": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "将",
+    "members": [
+      "将",
+      "將"
+    ],
+    "canonical": "将",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "詞",
+    "members": [
+      "詞",
+      "词"
+    ],
+    "canonical": "词",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "貴",
+    "members": [
+      "貴",
+      "贵"
+    ],
+    "canonical": "贵",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "覐",
+    "members": [
+      "覺",
+      "觉"
+    ],
+    "canonical": "觉",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "韓",
+    "members": [
+      "韓",
+      "韩"
+    ],
+    "canonical": "韩",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "諸",
+    "members": [
+      "諸",
+      "诸"
+    ],
+    "canonical": "诸",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "国",
+    "members": [
+      "国",
+      "國"
+    ],
+    "canonical": "国",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "終",
+    "members": [
+      "終",
+      "终"
+    ],
+    "canonical": "终",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "韵",
+    "members": [
+      "韵",
+      "韻"
+    ],
+    "canonical": "韵",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "发",
+    "members": [
+      "发",
+      "發",
+      "髮"
+    ],
+    "canonical": "发",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "馬",
+    "members": [
+      "馬",
+      "马"
+    ],
+    "canonical": "马",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "讀",
+    "members": [
+      "讀",
+      "读"
+    ],
+    "canonical": "读",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "斋",
+    "members": [
+      "斋",
+      "齋"
+    ],
+    "canonical": "斋",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鶴",
+    "members": [
+      "鶴",
+      "鹤"
+    ],
+    "canonical": "鹤",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "应",
+    "members": [
+      "应",
+      "應"
+    ],
+    "canonical": "应",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "奇",
+    "members": [
+      "奇",
+      "竒"
+    ],
+    "canonical": "奇",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "竒": {
+        "奇": 9
+      }
+    },
+    "learned_map": {
+      "竒": "奇"
+    }
+  },
+  {
+    "root": "荆",
+    "members": [
+      "荆",
+      "荊"
+    ],
+    "canonical": "荆",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "識",
+    "members": [
+      "識",
+      "识"
+    ],
+    "canonical": "识",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "灵",
+    "members": [
+      "灵",
+      "靈"
+    ],
+    "canonical": "灵",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "离",
+    "members": [
+      "离",
+      "離"
+    ],
+    "canonical": "离",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "乱",
+    "members": [
+      "乱",
+      "亂"
+    ],
+    "canonical": "乱",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "宴",
+    "members": [
+      "宴",
+      "讌"
+    ],
+    "canonical": "宴",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "旧",
+    "members": [
+      "旧",
+      "舊"
+    ],
+    "canonical": "旧",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "誰",
+    "members": [
+      "誰",
+      "谁"
+    ],
+    "canonical": "谁",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "軰",
+    "members": [
+      "輩",
+      "辈"
+    ],
+    "canonical": "辈",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "贈",
+    "members": [
+      "贈",
+      "赠"
+    ],
+    "canonical": "赠",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "曲",
+    "members": [
+      "曲",
+      "麹"
+    ],
+    "canonical": "曲",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "九",
+    "members": [
+      "九",
+      "玖"
+    ],
+    "canonical": "九",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "难",
+    "members": [
+      "难",
+      "難"
+    ],
+    "canonical": "难",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "会",
+    "members": [
+      "会",
+      "會"
+    ],
+    "canonical": "会",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "吕",
+    "members": [
+      "吕",
+      "呂"
+    ],
+    "canonical": "吕",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "呂": {
+        "吕": 4
+      }
+    },
+    "learned_map": {
+      "呂": "吕"
+    }
+  },
+  {
+    "root": "晓",
+    "members": [
+      "晓",
+      "曉"
+    ],
+    "canonical": "晓",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "完",
+    "members": [
+      "完",
+      "烟",
+      "煙"
+    ],
+    "canonical": "完",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "寻",
+    "members": [
+      "寻",
+      "尋"
+    ],
+    "canonical": "寻",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "着",
+    "members": [
+      "着",
+      "著"
+    ],
+    "canonical": "着",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "满",
+    "members": [
+      "满",
+      "滿"
+    ],
+    "canonical": "满",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "台",
+    "members": [
+      "台",
+      "臺"
+    ],
+    "canonical": "台",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "盘",
+    "members": [
+      "盘",
+      "盤"
+    ],
+    "canonical": "盘",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "八",
+    "members": [
+      "八",
+      "捌"
+    ],
+    "canonical": "八",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "論",
+    "members": [
+      "論",
+      "论"
+    ],
+    "canonical": "论",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "师",
+    "members": [
+      "师",
+      "師"
+    ],
+    "canonical": "师",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "录",
+    "members": [
+      "录",
+      "錄",
+      "録"
+    ],
+    "canonical": "录",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "錄": {
+        "録": 4
+      }
+    },
+    "learned_map": {
+      "錄": "録"
+    }
+  },
+  {
+    "root": "亲",
+    "members": [
+      "亲",
+      "榛",
+      "親"
+    ],
+    "canonical": "亲",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "辞",
+    "members": [
+      "辞",
+      "辭"
+    ],
+    "canonical": "辞",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "內",
+    "members": [
+      "內",
+      "内"
+    ],
+    "canonical": "内",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "內": {
+        "内": 4
+      }
+    },
+    "learned_map": {
+      "內": "内"
+    }
+  },
+  {
+    "root": "罗",
+    "members": [
+      "罗",
+      "羅"
+    ],
+    "canonical": "罗",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "异",
+    "members": [
+      "异",
+      "異"
+    ],
+    "canonical": "异",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "横",
+    "members": [
+      "横",
+      "橫"
+    ],
+    "canonical": "横",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "橫": {
+        "横": 8
+      }
+    },
+    "learned_map": {
+      "橫": "横"
+    }
+  },
+  {
+    "root": "边",
+    "members": [
+      "边",
+      "邊"
+    ],
+    "canonical": "边",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "関",
+    "members": [
+      "关",
+      "寡",
+      "關"
+    ],
+    "canonical": "关",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "渖",
+    "members": [
+      "沈",
+      "沉"
+    ],
+    "canonical": "沈",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "羣",
+    "members": [
+      "羣",
+      "群"
+    ],
+    "canonical": "群",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "羣": {
+        "群": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "争",
+    "members": [
+      "争",
+      "爭"
+    ],
+    "canonical": "争",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "誠",
+    "members": [
+      "誠",
+      "诚"
+    ],
+    "canonical": "诚",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "穷",
+    "members": [
+      "穷",
+      "窮"
+    ],
+    "canonical": "穷",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "忧",
+    "members": [
+      "忧",
+      "憂"
+    ],
+    "canonical": "忧",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "连",
+    "members": [
+      "连",
+      "連"
+    ],
+    "canonical": "连",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "泪",
+    "members": [
+      "泪",
+      "淚"
+    ],
+    "canonical": "泪",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "坭",
+    "members": [
+      "坭",
+      "泥"
+    ],
+    "canonical": "坭",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "編",
+    "members": [
+      "編",
+      "编"
+    ],
+    "canonical": "编",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "賦",
+    "members": [
+      "賦",
+      "赋"
+    ],
+    "canonical": "赋",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "寍",
+    "members": [
+      "宁",
+      "寧"
+    ],
+    "canonical": "宁",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "談",
+    "members": [
+      "談",
+      "谈",
+      "谭"
+    ],
+    "canonical": "谈",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "楼",
+    "members": [
+      "楼",
+      "樓"
+    ],
+    "canonical": "楼",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "夢",
+    "members": [
+      "夢",
+      "梦"
+    ],
+    "canonical": "梦",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "耤",
+    "members": [
+      "借",
+      "耤",
+      "藉"
+    ],
+    "canonical": "借",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "际",
+    "members": [
+      "际",
+      "際"
+    ],
+    "canonical": "际",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "冩",
+    "members": [
+      "写",
+      "冩",
+      "寫"
+    ],
+    "canonical": "写",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "寫": {
+        "冩": 2
+      }
+    },
+    "learned_map": {
+      "寫": "冩"
+    }
+  },
+  {
+    "root": "华",
+    "members": [
+      "华",
+      "華"
+    ],
+    "canonical": "华",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "仆",
+    "members": [
+      "仆",
+      "僕"
+    ],
+    "canonical": "仆",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "圕",
+    "members": [
+      "图",
+      "圖"
+    ],
+    "canonical": "图",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "运",
+    "members": [
+      "运",
+      "運"
+    ],
+    "canonical": "运",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "简",
+    "members": [
+      "简",
+      "簡",
+      "耕"
+    ],
+    "canonical": "简",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "魯",
+    "members": [
+      "魯",
+      "鲁"
+    ],
+    "canonical": "鲁",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "断",
+    "members": [
+      "断",
+      "斷"
+    ],
+    "canonical": "断",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "許",
+    "members": [
+      "許",
+      "许"
+    ],
+    "canonical": "许",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "結",
+    "members": [
+      "結",
+      "结"
+    ],
+    "canonical": "结",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "丝",
+    "members": [
+      "丝",
+      "絲"
+    ],
+    "canonical": "丝",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "机",
+    "members": [
+      "机",
+      "機"
+    ],
+    "canonical": "机",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "効",
+    "members": [
+      "効",
+      "效"
+    ],
+    "canonical": "效",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "効": {
+        "效": 3
+      }
+    },
+    "learned_map": {
+      "効": "效"
+    }
+  },
+  {
+    "root": "緑",
+    "members": [
+      "氯",
+      "綠",
+      "緑",
+      "绿"
+    ],
+    "canonical": "氯",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "綠": {
+        "緑": 5
+      }
+    },
+    "learned_map": {
+      "綠": "緑"
+    }
+  },
+  {
+    "root": "佗",
+    "members": [
+      "他",
+      "佗",
+      "她",
+      "它"
+    ],
+    "canonical": "他",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "兰",
+    "members": [
+      "兰",
+      "蘭"
+    ],
+    "canonical": "兰",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "顔",
+    "members": [
+      "顏",
+      "顔",
+      "颜"
+    ],
+    "canonical": "颜",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "顏": {
+        "顔": 6
+      }
+    },
+    "learned_map": {
+      "顏": "顔"
+    }
+  },
+  {
+    "root": "輕",
+    "members": [
+      "輕",
+      "轻"
+    ],
+    "canonical": "轻",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "药",
+    "members": [
+      "药",
+      "藥"
+    ],
+    "canonical": "药",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "参",
+    "members": [
+      "参",
+      "參",
+      "叅"
+    ],
+    "canonical": "参",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "叅": {
+        "參": 2
+      }
+    },
+    "learned_map": {
+      "叅": "參"
+    }
+  },
+  {
+    "root": "賞",
+    "members": [
+      "賞",
+      "赏"
+    ],
+    "canonical": "赏",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "魚",
+    "members": [
+      "魚",
+      "鱼"
+    ],
+    "canonical": "鱼",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "賜",
+    "members": [
+      "賜",
+      "赐"
+    ],
+    "canonical": "赐",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "忆",
+    "members": [
+      "忆",
+      "憶"
+    ],
+    "canonical": "忆",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "愿",
+    "members": [
+      "愿",
+      "願"
+    ],
+    "canonical": "愿",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "紛",
+    "members": [
+      "紛",
+      "纷"
+    ],
+    "canonical": "纷",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "凡",
+    "members": [
+      "凡",
+      "凢"
+    ],
+    "canonical": "凡",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "凢": {
+        "凡": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "凤",
+    "members": [
+      "凤",
+      "鳳"
+    ],
+    "canonical": "凤",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "临",
+    "members": [
+      "临",
+      "臨"
+    ],
+    "canonical": "临",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "瑤",
+    "members": [
+      "瑤",
+      "瑶"
+    ],
+    "canonical": "瑶",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "瑤": {
+        "瑶": 7
+      }
+    },
+    "learned_map": {
+      "瑤": "瑶"
+    }
+  },
+  {
+    "root": "綿",
+    "members": [
+      "綿",
+      "绵"
+    ],
+    "canonical": "绵",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "虚",
+    "members": [
+      "虚",
+      "虛"
+    ],
+    "canonical": "虚",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "虛": {
+        "虚": 6
+      }
+    },
+    "learned_map": {
+      "虛": "虚"
+    }
+  },
+  {
+    "root": "晉",
+    "members": [
+      "晉",
+      "晋"
+    ],
+    "canonical": "晋",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "点",
+    "members": [
+      "点",
+      "點"
+    ],
+    "canonical": "点",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "琼",
+    "members": [
+      "琼",
+      "瓊"
+    ],
+    "canonical": "琼",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "联",
+    "members": [
+      "联",
+      "聯"
+    ],
+    "canonical": "联",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "試",
+    "members": [
+      "試",
+      "试"
+    ],
+    "canonical": "试",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "广",
+    "members": [
+      "广",
+      "廣"
+    ],
+    "canonical": "广",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "动",
+    "members": [
+      "动",
+      "動"
+    ],
+    "canonical": "动",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "苍",
+    "members": [
+      "苍",
+      "蒼"
+    ],
+    "canonical": "苍",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "隐",
+    "members": [
+      "隐",
+      "隱"
+    ],
+    "canonical": "隐",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "錦",
+    "members": [
+      "錦",
+      "锦"
+    ],
+    "canonical": "锦",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "欧",
+    "members": [
+      "欧",
+      "歐"
+    ],
+    "canonical": "欧",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "称",
+    "members": [
+      "称",
+      "稱"
+    ],
+    "canonical": "称",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "錯",
+    "members": [
+      "錯",
+      "错"
+    ],
+    "canonical": "错",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "进",
+    "members": [
+      "进",
+      "進"
+    ],
+    "canonical": "进",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "勝",
+    "members": [
+      "勝",
+      "胜"
+    ],
+    "canonical": "胜",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "𠒇",
+    "members": [
+      "儿",
+      "兒"
+    ],
+    "canonical": "儿",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "礼",
+    "members": [
+      "礼",
+      "禮"
+    ],
+    "canonical": "礼",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "伪",
+    "members": [
+      "伪",
+      "僞"
+    ],
+    "canonical": "伪",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "适",
+    "members": [
+      "适",
+      "適"
+    ],
+    "canonical": "适",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "吳",
+    "members": [
+      "吳",
+      "吴",
+      "呉"
+    ],
+    "canonical": "吴",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "吳": {
+        "呉": 5
+      }
+    },
+    "learned_map": {
+      "吳": "呉"
+    }
+  },
+  {
+    "root": "細",
+    "members": [
+      "細",
+      "细"
+    ],
+    "canonical": "细",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "辩",
+    "members": [
+      "辨",
+      "辩"
+    ],
+    "canonical": "辨",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "兴",
+    "members": [
+      "兴",
+      "興"
+    ],
+    "canonical": "兴",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "皋",
+    "members": [
+      "皋",
+      "睾",
+      "臯"
+    ],
+    "canonical": "皋",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "臯": {
+        "皋": 6
+      }
+    },
+    "learned_map": {
+      "臯": "皋"
+    }
+  },
+  {
+    "root": "军",
+    "members": [
+      "军",
+      "軍"
+    ],
+    "canonical": "军",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "採",
+    "members": [
+      "採",
+      "采"
+    ],
+    "canonical": "采",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "頗",
+    "members": [
+      "頗",
+      "颇"
+    ],
+    "canonical": "颇",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "賢",
+    "members": [
+      "賢",
+      "贤"
+    ],
+    "canonical": "贤",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "听",
+    "members": [
+      "听",
+      "聽"
+    ],
+    "canonical": "听",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "买",
+    "members": [
+      "买",
+      "買"
+    ],
+    "canonical": "买",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "陆",
+    "members": [
+      "陆",
+      "陸"
+    ],
+    "canonical": "陆",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "䛡",
+    "members": [
+      "話",
+      "话"
+    ],
+    "canonical": "话",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "寔",
+    "members": [
+      "实",
+      "實"
+    ],
+    "canonical": "实",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "塵",
+    "members": [
+      "塵",
+      "尘"
+    ],
+    "canonical": "尘",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "節",
+    "members": [
+      "節",
+      "节"
+    ],
+    "canonical": "节",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "戯",
+    "members": [
+      "戏",
+      "戯",
+      "戲"
+    ],
+    "canonical": "戏",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "戯": {
+        "戲": 2
+      }
+    },
+    "learned_map": {
+      "戯": "戲"
+    }
+  },
+  {
+    "root": "飮",
+    "members": [
+      "飮",
+      "飲",
+      "饮"
+    ],
+    "canonical": "饮",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "杀",
+    "members": [
+      "杀",
+      "殺"
+    ],
+    "canonical": "杀",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "証",
+    "members": [
+      "證",
+      "证"
+    ],
+    "canonical": "证",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "雁",
+    "members": [
+      "雁",
+      "鴈"
+    ],
+    "canonical": "雁",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "鴈": {
+        "雁": 6
+      }
+    },
+    "learned_map": {
+      "鴈": "雁"
+    }
+  },
+  {
+    "root": "詔",
+    "members": [
+      "詔",
+      "诏"
+    ],
+    "canonical": "诏",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "帋",
+    "members": [
+      "紙",
+      "纸"
+    ],
+    "canonical": "纸",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "賀",
+    "members": [
+      "賀",
+      "贺"
+    ],
+    "canonical": "贺",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "丽",
+    "members": [
+      "丽",
+      "麗"
+    ],
+    "canonical": "丽",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "众",
+    "members": [
+      "众",
+      "匝",
+      "衆"
+    ],
+    "canonical": "众",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "孀",
+    "members": [
+      "孀",
+      "霜"
+    ],
+    "canonical": "孀",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "画",
+    "members": [
+      "画",
+      "畫"
+    ],
+    "canonical": "画",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "了",
+    "members": [
+      "了",
+      "瞭"
+    ],
+    "canonical": "了",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "貧",
+    "members": [
+      "貧",
+      "贫"
+    ],
+    "canonical": "贫",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "制",
+    "members": [
+      "制",
+      "製"
+    ],
+    "canonical": "制",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "庄",
+    "members": [
+      "庄",
+      "莊"
+    ],
+    "canonical": "庄",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "卢",
+    "members": [
+      "卢",
+      "盧"
+    ],
+    "canonical": "卢",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "遗",
+    "members": [
+      "遗",
+      "遺"
+    ],
+    "canonical": "遗",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "訓",
+    "members": [
+      "訓",
+      "训"
+    ],
+    "canonical": "训",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "峒",
+    "members": [
+      "峒",
+      "洞"
+    ],
+    "canonical": "峒",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "麥",
+    "members": [
+      "麥",
+      "麦"
+    ],
+    "canonical": "麦",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "龔",
+    "members": [
+      "龔",
+      "龚"
+    ],
+    "canonical": "龚",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "縱",
+    "members": [
+      "縱",
+      "纵"
+    ],
+    "canonical": "纵",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "惊",
+    "members": [
+      "惊",
+      "驚"
+    ],
+    "canonical": "惊",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "䉵",
+    "members": [
+      "饌",
+      "馔"
+    ],
+    "canonical": "馔",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "叹",
+    "members": [
+      "叹",
+      "嘆",
+      "歎"
+    ],
+    "canonical": "叹",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "宝",
+    "members": [
+      "宝",
+      "寳",
+      "寶"
+    ],
+    "canonical": "宝",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "寳": {
+        "寶": 4
+      }
+    },
+    "learned_map": {
+      "寳": "寶"
+    }
+  },
+  {
+    "root": "厤",
+    "members": [
+      "历",
+      "厉",
+      "厲",
+      "曆"
+    ],
+    "canonical": "历",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "巍",
+    "members": [
+      "巍",
+      "魏"
+    ],
+    "canonical": "巍",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "卷",
+    "members": [
+      "卷",
+      "捲"
+    ],
+    "canonical": "卷",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "赵",
+    "members": [
+      "赵",
+      "趙"
+    ],
+    "canonical": "赵",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "錢",
+    "members": [
+      "錢",
+      "钱"
+    ],
+    "canonical": "钱",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "号",
+    "members": [
+      "号",
+      "號"
+    ],
+    "canonical": "号",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鏗",
+    "members": [
+      "鏗",
+      "铿"
+    ],
+    "canonical": "铿",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "飃",
+    "members": [
+      "飄",
+      "飘"
+    ],
+    "canonical": "飘",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "飯",
+    "members": [
+      "飯",
+      "饭"
+    ],
+    "canonical": "饭",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "峯",
+    "members": [
+      "峯",
+      "峰"
+    ],
+    "canonical": "峰",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "峯": {
+        "峰": 3
+      }
+    },
+    "learned_map": {
+      "峯": "峰"
+    }
+  },
+  {
+    "root": "孙",
+    "members": [
+      "孙",
+      "孫"
+    ],
+    "canonical": "孙",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "乌",
+    "members": [
+      "乌",
+      "烏"
+    ],
+    "canonical": "乌",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "阴",
+    "members": [
+      "阴",
+      "陰",
+      "隂"
+    ],
+    "canonical": "阴",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "隂": {
+        "陰": 3
+      }
+    },
+    "learned_map": {
+      "隂": "陰"
+    }
+  },
+  {
+    "root": "怌",
+    "members": [
+      "怀",
+      "懷"
+    ],
+    "canonical": "怀",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "皷",
+    "members": [
+      "皷",
+      "鼓"
+    ],
+    "canonical": "鼓",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "皷": {
+        "鼓": 4
+      }
+    },
+    "learned_map": {
+      "皷": "鼓"
+    }
+  },
+  {
+    "root": "侧",
+    "members": [
+      "侧",
+      "側"
+    ],
+    "canonical": "侧",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "劝",
+    "members": [
+      "劝",
+      "勸"
+    ],
+    "canonical": "劝",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "七",
+    "members": [
+      "七",
+      "柒"
+    ],
+    "canonical": "七",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "懽",
+    "members": [
+      "欢",
+      "歡"
+    ],
+    "canonical": "欢",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "報",
+    "members": [
+      "報",
+      "报"
+    ],
+    "canonical": "报",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "圭",
+    "members": [
+      "圭",
+      "珪"
+    ],
+    "canonical": "圭",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "掷",
+    "members": [
+      "掷",
+      "擲",
+      "擿"
+    ],
+    "canonical": "掷",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "閣",
+    "members": [
+      "閣",
+      "阁"
+    ],
+    "canonical": "阁",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "庐",
+    "members": [
+      "庐",
+      "廬"
+    ],
+    "canonical": "庐",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "莱",
+    "members": [
+      "莱",
+      "萊"
+    ],
+    "canonical": "莱",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "专",
+    "members": [
+      "专",
+      "專",
+      "耑"
+    ],
+    "canonical": "专",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "襍",
+    "members": [
+      "杂",
+      "雜"
+    ],
+    "canonical": "杂",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "攷",
+    "members": [
+      "攷",
+      "考"
+    ],
+    "canonical": "考",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鷿",
+    "members": [
+      "䴙",
+      "鸊"
+    ],
+    "canonical": "䴙",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "烛",
+    "members": [
+      "烛",
+      "燭"
+    ],
+    "canonical": "烛",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "冫",
+    "members": [
+      "冰",
+      "氷"
+    ],
+    "canonical": "冰",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "氷": {
+        "冰": 3
+      }
+    },
+    "learned_map": {
+      "氷": "冰"
+    }
+  },
+  {
+    "root": "併",
+    "members": [
+      "並",
+      "併",
+      "并"
+    ],
+    "canonical": "并",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "詳",
+    "members": [
+      "詳",
+      "详"
+    ],
+    "canonical": "详",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "涧",
+    "members": [
+      "涧",
+      "澗",
+      "磵"
+    ],
+    "canonical": "涧",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "豫",
+    "members": [
+      "豫",
+      "預",
+      "预"
+    ],
+    "canonical": "豫",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "莶",
+    "members": [
+      "莶",
+      "蔹",
+      "薟"
+    ],
+    "canonical": "莶",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "撽",
+    "members": [
+      "击",
+      "擊"
+    ],
+    "canonical": "击",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "冲",
+    "members": [
+      "冲",
+      "沖",
+      "衝"
+    ],
+    "canonical": "冲",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "沖": {
+        "冲": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "怅",
+    "members": [
+      "怅",
+      "悵"
+    ],
+    "canonical": "怅",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "济",
+    "members": [
+      "济",
+      "濟"
+    ],
+    "canonical": "济",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "範",
+    "members": [
+      "範",
+      "范"
+    ],
+    "canonical": "范",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "淡",
+    "members": [
+      "淡",
+      "澹"
+    ],
+    "canonical": "淡",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鋒",
+    "members": [
+      "鋒",
+      "锋"
+    ],
+    "canonical": "锋",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "罢",
+    "members": [
+      "罢",
+      "罷"
+    ],
+    "canonical": "罢",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "饒",
+    "members": [
+      "饒",
+      "饶"
+    ],
+    "canonical": "饶",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "党",
+    "members": [
+      "党",
+      "黨"
+    ],
+    "canonical": "党",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "綴",
+    "members": [
+      "綴",
+      "缀"
+    ],
+    "canonical": "缀",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "蕊",
+    "members": [
+      "蕊",
+      "蘂"
+    ],
+    "canonical": "蕊",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "蘂": {
+        "蕊": 3
+      }
+    },
+    "learned_map": {
+      "蘂": "蕊"
+    }
+  },
+  {
+    "root": "鐘",
+    "members": [
+      "鍾",
+      "钟",
+      "锺"
+    ],
+    "canonical": "钟",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "务",
+    "members": [
+      "务",
+      "務"
+    ],
+    "canonical": "务",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "闌",
+    "members": [
+      "闌",
+      "阑"
+    ],
+    "canonical": "阑",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "妇",
+    "members": [
+      "妇",
+      "婦"
+    ],
+    "canonical": "妇",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "頸",
+    "members": [
+      "頸",
+      "颈"
+    ],
+    "canonical": "颈",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "征",
+    "members": [
+      "征",
+      "徵"
+    ],
+    "canonical": "征",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "带",
+    "members": [
+      "带",
+      "帶"
+    ],
+    "canonical": "带",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "噐",
+    "members": [
+      "噐",
+      "器"
+    ],
+    "canonical": "器",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "噐": {
+        "器": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "續",
+    "members": [
+      "續",
+      "续"
+    ],
+    "canonical": "续",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "誦",
+    "members": [
+      "誦",
+      "诵"
+    ],
+    "canonical": "诵",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "选",
+    "members": [
+      "选",
+      "選"
+    ],
+    "canonical": "选",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "业",
+    "members": [
+      "业",
+      "業"
+    ],
+    "canonical": "业",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "职",
+    "members": [
+      "职",
+      "職"
+    ],
+    "canonical": "职",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "釣",
+    "members": [
+      "釣",
+      "钓"
+    ],
+    "canonical": "钓",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鵑",
+    "members": [
+      "鵑",
+      "鹃"
+    ],
+    "canonical": "鹃",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "浅",
+    "members": [
+      "浅",
+      "淺"
+    ],
+    "canonical": "浅",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "积",
+    "members": [
+      "积",
+      "積"
+    ],
+    "canonical": "积",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "严",
+    "members": [
+      "严",
+      "嚴"
+    ],
+    "canonical": "严",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "謫",
+    "members": [
+      "謫",
+      "谪"
+    ],
+    "canonical": "谪",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "兹",
+    "members": [
+      "兹",
+      "茲"
+    ],
+    "canonical": "兹",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "茲": {
+        "兹": 4
+      }
+    },
+    "learned_map": {
+      "茲": "兹"
+    }
+  },
+  {
+    "root": "映",
+    "members": [
+      "映",
+      "暎"
+    ],
+    "canonical": "映",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "暎": {
+        "映": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "献",
+    "members": [
+      "献",
+      "獻"
+    ],
+    "canonical": "献",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "驪",
+    "members": [
+      "驪",
+      "骊"
+    ],
+    "canonical": "骊",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "怜",
+    "members": [
+      "怜",
+      "憐"
+    ],
+    "canonical": "怜",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "释",
+    "members": [
+      "释",
+      "釋"
+    ],
+    "canonical": "释",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "䴘",
+    "members": [
+      "䴘",
+      "鷉"
+    ],
+    "canonical": "䴘",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "岭",
+    "members": [
+      "岭",
+      "嶺"
+    ],
+    "canonical": "岭",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "飧",
+    "members": [
+      "飧",
+      "飱"
+    ],
+    "canonical": "飧",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "紗",
+    "members": [
+      "紗",
+      "纱"
+    ],
+    "canonical": "纱",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "沤",
+    "members": [
+      "沤",
+      "漚"
+    ],
+    "canonical": "沤",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "刊",
+    "members": [
+      "刊",
+      "刋"
+    ],
+    "canonical": "刊",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "刋": {
+        "刊": 2
+      }
+    },
+    "learned_map": {
+      "刋": "刊"
+    }
+  },
+  {
+    "root": "鏡",
+    "members": [
+      "鏡",
+      "镜"
+    ],
+    "canonical": "镜",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "絳",
+    "members": [
+      "絳",
+      "绛"
+    ],
+    "canonical": "绛",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "請",
+    "members": [
+      "請",
+      "请"
+    ],
+    "canonical": "请",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "暖",
+    "members": [
+      "暖",
+      "煖"
+    ],
+    "canonical": "暖",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "煖": {
+        "暖": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "織",
+    "members": [
+      "織",
+      "织"
+    ],
+    "canonical": "织",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "据",
+    "members": [
+      "据",
+      "據"
+    ],
+    "canonical": "据",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "頓",
+    "members": [
+      "頓",
+      "顿"
+    ],
+    "canonical": "顿",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "板",
+    "members": [
+      "板",
+      "版"
+    ],
+    "canonical": "板",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "圣",
+    "members": [
+      "圣",
+      "聖"
+    ],
+    "canonical": "圣",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "属",
+    "members": [
+      "属",
+      "屬"
+    ],
+    "canonical": "属",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "欹",
+    "members": [
+      "欹",
+      "猗"
+    ],
+    "canonical": "欹",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "謬",
+    "members": [
+      "謬",
+      "谬"
+    ],
+    "canonical": "谬",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "双",
+    "members": [
+      "双",
+      "雙"
+    ],
+    "canonical": "双",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "頋",
+    "members": [
+      "顧",
+      "顾"
+    ],
+    "canonical": "顾",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "御",
+    "members": [
+      "御",
+      "驭"
+    ],
+    "canonical": "御",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "評",
+    "members": [
+      "評",
+      "评"
+    ],
+    "canonical": "评",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "残",
+    "members": [
+      "残",
+      "殘"
+    ],
+    "canonical": "残",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "呜",
+    "members": [
+      "呜",
+      "嗚"
+    ],
+    "canonical": "呜",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "奔",
+    "members": [
+      "奔",
+      "犇"
+    ],
+    "canonical": "奔",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "挂",
+    "members": [
+      "挂",
+      "掛"
+    ],
+    "canonical": "挂",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "掛": {
+        "挂": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "虏",
+    "members": [
+      "掳",
+      "虏",
+      "虜"
+    ],
+    "canonical": "掳",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "設",
+    "members": [
+      "設",
+      "设"
+    ],
+    "canonical": "设",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "𬺤",
+    "members": [
+      "伭",
+      "滚",
+      "玄",
+      "磙",
+      "衮",
+      "袞"
+    ],
+    "canonical": "伭",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "袞": {
+        "衮": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "諷",
+    "members": [
+      "諷",
+      "讽"
+    ],
+    "canonical": "讽",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "車",
+    "members": [
+      "車",
+      "车"
+    ],
+    "canonical": "车",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "灯",
+    "members": [
+      "灯",
+      "燈"
+    ],
+    "canonical": "灯",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "债",
+    "members": [
+      "债",
+      "債"
+    ],
+    "canonical": "债",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "箴",
+    "members": [
+      "箴",
+      "針",
+      "针"
+    ],
+    "canonical": "箴",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鈴",
+    "members": [
+      "鈴",
+      "铃"
+    ],
+    "canonical": "铃",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "翻",
+    "members": [
+      "翻",
+      "飜"
+    ],
+    "canonical": "翻",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "飜": {
+        "翻": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "鷗",
+    "members": [
+      "鷗",
+      "鸥"
+    ],
+    "canonical": "鸥",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "叠",
+    "members": [
+      "叠",
+      "疊"
+    ],
+    "canonical": "叠",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "阶",
+    "members": [
+      "堦",
+      "阶",
+      "階"
+    ],
+    "canonical": "阶",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鷺",
+    "members": [
+      "鷺",
+      "鹭"
+    ],
+    "canonical": "鹭",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "錫",
+    "members": [
+      "錫",
+      "锡"
+    ],
+    "canonical": "锡",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "奈",
+    "members": [
+      "奈",
+      "柰"
+    ],
+    "canonical": "奈",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "溼",
+    "members": [
+      "湿",
+      "濕"
+    ],
+    "canonical": "湿",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "毕",
+    "members": [
+      "毕",
+      "畢"
+    ],
+    "canonical": "毕",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "浊",
+    "members": [
+      "浊",
+      "濁"
+    ],
+    "canonical": "浊",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "温",
+    "members": [
+      "温",
+      "溫"
+    ],
+    "canonical": "温",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "溫": {
+        "温": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "健",
+    "members": [
+      "健",
+      "徤"
+    ],
+    "canonical": "健",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "郑",
+    "members": [
+      "郑",
+      "鄭"
+    ],
+    "canonical": "郑",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "砚",
+    "members": [
+      "砚",
+      "硯"
+    ],
+    "canonical": "砚",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "簌",
+    "members": [
+      "廱",
+      "簌",
+      "邕",
+      "雍"
+    ],
+    "canonical": "簌",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "忻",
+    "members": [
+      "忻",
+      "欣"
+    ],
+    "canonical": "忻",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "违",
+    "members": [
+      "违",
+      "違"
+    ],
+    "canonical": "违",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "揺",
+    "members": [
+      "揺",
+      "搖",
+      "摇"
+    ],
+    "canonical": "摇",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "搖": {
+        "揺": 2
+      }
+    },
+    "learned_map": {
+      "搖": "揺"
+    }
+  },
+  {
+    "root": "坤",
+    "members": [
+      "坤",
+      "堃"
+    ],
+    "canonical": "坤",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "叡",
+    "members": [
+      "叡",
+      "睿"
+    ],
+    "canonical": "睿",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "譏",
+    "members": [
+      "譏",
+      "讥"
+    ],
+    "canonical": "讥",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "訪",
+    "members": [
+      "訪",
+      "访"
+    ],
+    "canonical": "访",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "轉",
+    "members": [
+      "轉",
+      "转"
+    ],
+    "canonical": "转",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "緘",
+    "members": [
+      "緘",
+      "缄"
+    ],
+    "canonical": "缄",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "螘",
+    "members": [
+      "蚁",
+      "蟻"
+    ],
+    "canonical": "蚁",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "暢",
+    "members": [
+      "暢",
+      "畅"
+    ],
+    "canonical": "畅",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "优",
+    "members": [
+      "优",
+      "優"
+    ],
+    "canonical": "优",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "虫",
+    "members": [
+      "虫",
+      "蟲"
+    ],
+    "canonical": "虫",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鍳",
+    "members": [
+      "鉴",
+      "鑑",
+      "鑒"
+    ],
+    "canonical": "鉴",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "壮",
+    "members": [
+      "壮",
+      "壯"
+    ],
+    "canonical": "壮",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "凉",
+    "members": [
+      "凉",
+      "涼"
+    ],
+    "canonical": "凉",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "涼": {
+        "凉": 2
+      }
+    },
+    "learned_map": {
+      "涼": "凉"
+    }
+  },
+  {
+    "root": "迁",
+    "members": [
+      "迁",
+      "遷"
+    ],
+    "canonical": "迁",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "芜",
+    "members": [
+      "芜",
+      "蕪"
+    ],
+    "canonical": "芜",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "彥",
+    "members": [
+      "彥",
+      "彦"
+    ],
+    "canonical": "彦",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "彥": {
+        "彦": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "浑",
+    "members": [
+      "浑",
+      "渾"
+    ],
+    "canonical": "浑",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "檐",
+    "members": [
+      "檐",
+      "簷"
+    ],
+    "canonical": "檐",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "簷": {
+        "檐": 3
+      }
+    },
+    "learned_map": {
+      "簷": "檐"
+    }
+  },
+  {
+    "root": "謳",
+    "members": [
+      "謳",
+      "讴"
+    ],
+    "canonical": "讴",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "計",
+    "members": [
+      "計",
+      "计"
+    ],
+    "canonical": "计",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "汎",
+    "members": [
+      "汎",
+      "泛"
+    ],
+    "canonical": "泛",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "箾",
+    "members": [
+      "烧",
+      "燒",
+      "箫",
+      "簫"
+    ],
+    "canonical": "烧",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "貭",
+    "members": [
+      "質",
+      "质"
+    ],
+    "canonical": "质",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "泽",
+    "members": [
+      "泽",
+      "澤"
+    ],
+    "canonical": "泽",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "飢",
+    "members": [
+      "飢",
+      "饥"
+    ],
+    "canonical": "饥",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "倾",
+    "members": [
+      "倾",
+      "傾"
+    ],
+    "canonical": "倾",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "静",
+    "members": [
+      "静",
+      "靜"
+    ],
+    "canonical": "静",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "伤",
+    "members": [
+      "伤",
+      "傷"
+    ],
+    "canonical": "伤",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "岛",
+    "members": [
+      "岛",
+      "島"
+    ],
+    "canonical": "岛",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "桌",
+    "members": [
+      "桌",
+      "棹"
+    ],
+    "canonical": "桌",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "恩",
+    "members": [
+      "恩",
+      "摁"
+    ],
+    "canonical": "恩",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "怪",
+    "members": [
+      "怪",
+      "恠"
+    ],
+    "canonical": "怪",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "恠": {
+        "怪": 2
+      }
+    },
+    "learned_map": {
+      "恠": "怪"
+    }
+  },
+  {
+    "root": "跡",
+    "members": [
+      "跡",
+      "迹"
+    ],
+    "canonical": "迹",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "趋",
+    "members": [
+      "趋",
+      "趨"
+    ],
+    "canonical": "趋",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "删",
+    "members": [
+      "删",
+      "刪"
+    ],
+    "canonical": "删",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "刪": {
+        "删": 2
+      }
+    },
+    "learned_map": {
+      "刪": "删"
+    }
+  },
+  {
+    "root": "屡",
+    "members": [
+      "屡",
+      "屢"
+    ],
+    "canonical": "屡",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "答",
+    "members": [
+      "答",
+      "荅"
+    ],
+    "canonical": "答",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "荅": {
+        "答": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "欤",
+    "members": [
+      "欤",
+      "歟"
+    ],
+    "canonical": "欤",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "岩",
+    "members": [
+      "岩",
+      "巖"
+    ],
+    "canonical": "岩",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "剑",
+    "members": [
+      "剑",
+      "劍",
+      "劒"
+    ],
+    "canonical": "剑",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "劒": {
+        "劍": 2
+      }
+    },
+    "learned_map": {
+      "劒": "劍"
+    }
+  },
+  {
+    "root": "遟",
+    "members": [
+      "迟",
+      "遲"
+    ],
+    "canonical": "迟",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "閉",
+    "members": [
+      "閉",
+      "闭"
+    ],
+    "canonical": "闭",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "緗",
+    "members": [
+      "緗",
+      "缃"
+    ],
+    "canonical": "缃",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "飽",
+    "members": [
+      "飽",
+      "饱"
+    ],
+    "canonical": "饱",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "綫",
+    "members": [
+      "線",
+      "线"
+    ],
+    "canonical": "线",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "紲",
+    "members": [
+      "緤",
+      "绁"
+    ],
+    "canonical": "绁",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "帅",
+    "members": [
+      "帅",
+      "帥"
+    ],
+    "canonical": "帅",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "眎",
+    "members": [
+      "視",
+      "视"
+    ],
+    "canonical": "视",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "龜",
+    "members": [
+      "龜",
+      "龟"
+    ],
+    "canonical": "龟",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "莺",
+    "members": [
+      "莺",
+      "鶯"
+    ],
+    "canonical": "莺",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "強",
+    "members": [
+      "強",
+      "强"
+    ],
+    "canonical": "强",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鈎",
+    "members": [
+      "鈎",
+      "钩"
+    ],
+    "canonical": "钩",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "俭",
+    "members": [
+      "俭",
+      "儉"
+    ],
+    "canonical": "俭",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "綉",
+    "members": [
+      "繡",
+      "绣"
+    ],
+    "canonical": "绣",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "煑",
+    "members": [
+      "煑",
+      "煮"
+    ],
+    "canonical": "煮",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "煑": {
+        "煮": 2
+      }
+    },
+    "learned_map": {
+      "煑": "煮"
+    }
+  },
+  {
+    "root": "逊",
+    "members": [
+      "逊",
+      "遜"
+    ],
+    "canonical": "逊",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "勋",
+    "members": [
+      "勋",
+      "勛",
+      "勳"
+    ],
+    "canonical": "勋",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "剧",
+    "members": [
+      "剧",
+      "劇"
+    ],
+    "canonical": "剧",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "斉",
+    "members": [
+      "齊",
+      "齐"
+    ],
+    "canonical": "齐",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "謁",
+    "members": [
+      "謁",
+      "谒"
+    ],
+    "canonical": "谒",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "丛",
+    "members": [
+      "丛",
+      "叢"
+    ],
+    "canonical": "丛",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "嘘",
+    "members": [
+      "嘘",
+      "噓"
+    ],
+    "canonical": "嘘",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "噓": {
+        "嘘": 2
+      }
+    },
+    "learned_map": {
+      "噓": "嘘"
+    }
+  },
+  {
+    "root": "栋",
+    "members": [
+      "栋",
+      "棟"
+    ],
+    "canonical": "栋",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "痴",
+    "members": [
+      "痴",
+      "癡"
+    ],
+    "canonical": "痴",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "劳",
+    "members": [
+      "劳",
+      "勞"
+    ],
+    "canonical": "劳",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "装",
+    "members": [
+      "装",
+      "裝"
+    ],
+    "canonical": "装",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "懍",
+    "members": [
+      "凛",
+      "凜",
+      "懔"
+    ],
+    "canonical": "凛",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "凜": {
+        "凛": 2
+      }
+    },
+    "learned_map": {
+      "凜": "凛"
+    }
+  },
+  {
+    "root": "瑩",
+    "members": [
+      "瑩",
+      "莹"
+    ],
+    "canonical": "莹",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "純",
+    "members": [
+      "純",
+      "纯"
+    ],
+    "canonical": "纯",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "傑",
+    "members": [
+      "傑",
+      "杰"
+    ],
+    "canonical": "杰",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "习",
+    "members": [
+      "习",
+      "習"
+    ],
+    "canonical": "习",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "挿",
+    "members": [
+      "插",
+      "揷"
+    ],
+    "canonical": "插",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "揷": {
+        "插": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "状",
+    "members": [
+      "状",
+      "狀"
+    ],
+    "canonical": "状",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "粜",
+    "members": [
+      "条",
+      "條",
+      "粜"
+    ],
+    "canonical": "条",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "废",
+    "members": [
+      "废",
+      "廢"
+    ],
+    "canonical": "废",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "拕",
+    "members": [
+      "拕",
+      "拖"
+    ],
+    "canonical": "拖",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "护",
+    "members": [
+      "护",
+      "護"
+    ],
+    "canonical": "护",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "团",
+    "members": [
+      "团",
+      "團"
+    ],
+    "canonical": "团",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "費",
+    "members": [
+      "費",
+      "费"
+    ],
+    "canonical": "费",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "区",
+    "members": [
+      "区",
+      "區"
+    ],
+    "canonical": "区",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "徕",
+    "members": [
+      "勑",
+      "徕",
+      "徠",
+      "敕"
+    ],
+    "canonical": "徕",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "勑": {
+        "敕": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "萧",
+    "members": [
+      "萧",
+      "蕭"
+    ],
+    "canonical": "萧",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "权",
+    "members": [
+      "权",
+      "權"
+    ],
+    "canonical": "权",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "帐",
+    "members": [
+      "帐",
+      "帳",
+      "账"
+    ],
+    "canonical": "帐",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鬓",
+    "members": [
+      "鬓",
+      "鬢"
+    ],
+    "canonical": "鬓",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "艺",
+    "members": [
+      "艺",
+      "藝"
+    ],
+    "canonical": "艺",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "冻",
+    "members": [
+      "冻",
+      "凍"
+    ],
+    "canonical": "冻",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "佑",
+    "members": [
+      "佑",
+      "祐"
+    ],
+    "canonical": "佑",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "坚",
+    "members": [
+      "坚",
+      "堅"
+    ],
+    "canonical": "坚",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "洒",
+    "members": [
+      "洒",
+      "灑"
+    ],
+    "canonical": "洒",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "咀",
+    "members": [
+      "咀",
+      "嘴",
+      "觜"
+    ],
+    "canonical": "咀",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "损",
+    "members": [
+      "损",
+      "損"
+    ],
+    "canonical": "损",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "濶",
+    "members": [
+      "闊",
+      "阔"
+    ],
+    "canonical": "阔",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "县",
+    "members": [
+      "县",
+      "縣"
+    ],
+    "canonical": "县",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "肠",
+    "members": [
+      "肠",
+      "腸",
+      "膓"
+    ],
+    "canonical": "肠",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "膓": {
+        "腸": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "凴",
+    "members": [
+      "凭",
+      "憑"
+    ],
+    "canonical": "凭",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "𬺨",
+    "members": [
+      "像",
+      "象"
+    ],
+    "canonical": "像",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "伫",
+    "members": [
+      "伫",
+      "佇"
+    ],
+    "canonical": "伫",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "踏",
+    "members": [
+      "踏",
+      "蹋"
+    ],
+    "canonical": "踏",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "弹",
+    "members": [
+      "弹",
+      "彈"
+    ],
+    "canonical": "弹",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "窃",
+    "members": [
+      "窃",
+      "竊"
+    ],
+    "canonical": "窃",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "儆",
+    "members": [
+      "儆",
+      "警"
+    ],
+    "canonical": "儆",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "决",
+    "members": [
+      "决",
+      "決"
+    ],
+    "canonical": "决",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "決": {
+        "决": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "貢",
+    "members": [
+      "貢",
+      "贡"
+    ],
+    "canonical": "贡",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "齒",
+    "members": [
+      "齒",
+      "齿"
+    ],
+    "canonical": "齿",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "种",
+    "members": [
+      "种",
+      "種"
+    ],
+    "canonical": "种",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "𠏄",
+    "members": [
+      "径",
+      "徑"
+    ],
+    "canonical": "径",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "库",
+    "members": [
+      "库",
+      "庫"
+    ],
+    "canonical": "库",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "润",
+    "members": [
+      "润",
+      "潤"
+    ],
+    "canonical": "润",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "触",
+    "members": [
+      "触",
+      "觸"
+    ],
+    "canonical": "触",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "媿",
+    "members": [
+      "媿",
+      "愧"
+    ],
+    "canonical": "愧",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鎭",
+    "members": [
+      "鎮",
+      "镇"
+    ],
+    "canonical": "镇",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "脫",
+    "members": [
+      "脫",
+      "脱"
+    ],
+    "canonical": "脱",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "脫": {
+        "脱": 2
+      }
+    },
+    "learned_map": {
+      "脫": "脱"
+    }
+  },
+  {
+    "root": "韋",
+    "members": [
+      "韋",
+      "韦"
+    ],
+    "canonical": "韦",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "烝",
+    "members": [
+      "烝",
+      "蒸"
+    ],
+    "canonical": "烝",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "牕",
+    "members": [
+      "窗",
+      "窻"
+    ],
+    "canonical": "窗",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "窻": {
+        "窗": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "袅",
+    "members": [
+      "袅",
+      "裊"
+    ],
+    "canonical": "袅",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "紀",
+    "members": [
+      "紀",
+      "纪"
+    ],
+    "canonical": "纪",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "袜",
+    "members": [
+      "袜",
+      "韈"
+    ],
+    "canonical": "袜",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "唤",
+    "members": [
+      "唤",
+      "喚"
+    ],
+    "canonical": "唤",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "菔",
+    "members": [
+      "卜",
+      "菔"
+    ],
+    "canonical": "卜",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "騎",
+    "members": [
+      "騎",
+      "骑"
+    ],
+    "canonical": "骑",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "謗",
+    "members": [
+      "謗",
+      "谤"
+    ],
+    "canonical": "谤",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "坠",
+    "members": [
+      "坠",
+      "墜"
+    ],
+    "canonical": "坠",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "蚕",
+    "members": [
+      "蚕",
+      "蠶"
+    ],
+    "canonical": "蚕",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "恋",
+    "members": [
+      "恋",
+      "戀"
+    ],
+    "canonical": "恋",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鮮",
+    "members": [
+      "鮮",
+      "鲜"
+    ],
+    "canonical": "鲜",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "颯",
+    "members": [
+      "颯",
+      "飒"
+    ],
+    "canonical": "飒",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "宽",
+    "members": [
+      "宽",
+      "寬"
+    ],
+    "canonical": "宽",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "騐",
+    "members": [
+      "驗",
+      "验"
+    ],
+    "canonical": "验",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "駦",
+    "members": [
+      "腾",
+      "騰"
+    ],
+    "canonical": "腾",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鴻",
+    "members": [
+      "鴻",
+      "鸿"
+    ],
+    "canonical": "鸿",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "厌",
+    "members": [
+      "厌",
+      "厭"
+    ],
+    "canonical": "厌",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "纎",
+    "members": [
+      "砌",
+      "纖",
+      "纤"
+    ],
+    "canonical": "砌",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "綾",
+    "members": [
+      "綾",
+      "绫"
+    ],
+    "canonical": "绫",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "紟",
+    "members": [
+      "衿",
+      "襟"
+    ],
+    "canonical": "衿",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "穎",
+    "members": [
+      "頴",
+      "颖"
+    ],
+    "canonical": "颖",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "莀",
+    "members": [
+      "农",
+      "農"
+    ],
+    "canonical": "农",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "乔",
+    "members": [
+      "乔",
+      "喬"
+    ],
+    "canonical": "乔",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "屿",
+    "members": [
+      "屿",
+      "嶼"
+    ],
+    "canonical": "屿",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "覽",
+    "members": [
+      "覽",
+      "览"
+    ],
+    "canonical": "览",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "約",
+    "members": [
+      "約",
+      "约"
+    ],
+    "canonical": "约",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鵲",
+    "members": [
+      "鵲",
+      "鹊"
+    ],
+    "canonical": "鹊",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "議",
+    "members": [
+      "議",
+      "议"
+    ],
+    "canonical": "议",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "顛",
+    "members": [
+      "顛",
+      "颠"
+    ],
+    "canonical": "颠",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "剪",
+    "members": [
+      "剪",
+      "翦"
+    ],
+    "canonical": "剪",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "驛",
+    "members": [
+      "驛",
+      "驿"
+    ],
+    "canonical": "驿",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "舆",
+    "members": [
+      "舆",
+      "輿"
+    ],
+    "canonical": "舆",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "粗",
+    "members": [
+      "粗",
+      "麄"
+    ],
+    "canonical": "粗",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "麄": {
+        "粗": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "宻",
+    "members": [
+      "宻",
+      "密"
+    ],
+    "canonical": "密",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "宻": {
+        "密": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "遁",
+    "members": [
+      "遁",
+      "遯"
+    ],
+    "canonical": "遁",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "侂",
+    "members": [
+      "侂",
+      "託"
+    ],
+    "canonical": "侂",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "庆",
+    "members": [
+      "庆",
+      "慶"
+    ],
+    "canonical": "庆",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "調",
+    "members": [
+      "調",
+      "调"
+    ],
+    "canonical": "调",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鮑",
+    "members": [
+      "鮑",
+      "鲍"
+    ],
+    "canonical": "鲍",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "祸",
+    "members": [
+      "祸",
+      "禍"
+    ],
+    "canonical": "祸",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "矇",
+    "members": [
+      "濛",
+      "蒙"
+    ],
+    "canonical": "蒙",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "启",
+    "members": [
+      "启",
+      "啓"
+    ],
+    "canonical": "启",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "笋",
+    "members": [
+      "笋",
+      "筍"
+    ],
+    "canonical": "笋",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "筍": {
+        "笋": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "変",
+    "members": [
+      "变",
+      "變"
+    ],
+    "canonical": "变",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "眥",
+    "members": [
+      "眥",
+      "眦"
+    ],
+    "canonical": "眦",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "眥": {
+        "眦": 2
+      }
+    },
+    "learned_map": {
+      "眥": "眦"
+    }
+  },
+  {
+    "root": "盏",
+    "members": [
+      "盏",
+      "盞"
+    ],
+    "canonical": "盏",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "駒",
+    "members": [
+      "駒",
+      "驹"
+    ],
+    "canonical": "驹",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "頣",
+    "members": [
+      "頤",
+      "颐"
+    ],
+    "canonical": "颐",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "屦",
+    "members": [
+      "屦",
+      "屨"
+    ],
+    "canonical": "屦",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "势",
+    "members": [
+      "势",
+      "勢"
+    ],
+    "canonical": "势",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "烦",
+    "members": [
+      "烦",
+      "煩"
+    ],
+    "canonical": "烦",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "圆",
+    "members": [
+      "圆",
+      "圓"
+    ],
+    "canonical": "圆",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "迨",
+    "members": [
+      "迨",
+      "逮"
+    ],
+    "canonical": "迨",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鯨",
+    "members": [
+      "鯨",
+      "鲸"
+    ],
+    "canonical": "鲸",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "羡",
+    "members": [
+      "羡",
+      "羨"
+    ],
+    "canonical": "羡",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "羨": {
+        "羡": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "㿟",
+    "members": [
+      "皎",
+      "皦"
+    ],
+    "canonical": "皎",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "飆",
+    "members": [
+      "飆",
+      "飈",
+      "飑",
+      "飙"
+    ],
+    "canonical": "飑",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "飈": {
+        "飆": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "頒",
+    "members": [
+      "頒",
+      "颁"
+    ],
+    "canonical": "颁",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "佋",
+    "members": [
+      "紹",
+      "绍"
+    ],
+    "canonical": "绍",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "揸",
+    "members": [
+      "揸",
+      "楂",
+      "槎"
+    ],
+    "canonical": "揸",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "樚",
+    "members": [
+      "轆",
+      "辘"
+    ],
+    "canonical": "辘",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鸛",
+    "members": [
+      "鸛",
+      "鹳"
+    ],
+    "canonical": "鹳",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "闔",
+    "members": [
+      "闔",
+      "阖"
+    ],
+    "canonical": "阖",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "騏",
+    "members": [
+      "騏",
+      "骐"
+    ],
+    "canonical": "骐",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "禂",
+    "members": [
+      "祷",
+      "禱"
+    ],
+    "canonical": "祷",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "惬",
+    "members": [
+      "惬",
+      "愜"
+    ],
+    "canonical": "惬",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "辟",
+    "members": [
+      "辟",
+      "闢"
+    ],
+    "canonical": "辟",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "轍",
+    "members": [
+      "轍",
+      "辙"
+    ],
+    "canonical": "辙",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "覓",
+    "members": [
+      "覓",
+      "觅"
+    ],
+    "canonical": "觅",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "紧",
+    "members": [
+      "紧",
+      "緊"
+    ],
+    "canonical": "紧",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "巘",
+    "members": [
+      "巘",
+      "𪩘"
+    ],
+    "canonical": "𪩘",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "帘",
+    "members": [
+      "帘",
+      "簾"
+    ],
+    "canonical": "帘",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "維",
+    "members": [
+      "維",
+      "维"
+    ],
+    "canonical": "维",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "扪",
+    "members": [
+      "扪",
+      "捫"
+    ],
+    "canonical": "扪",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "輔",
+    "members": [
+      "輔",
+      "辅"
+    ],
+    "canonical": "辅",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "挥",
+    "members": [
+      "挥",
+      "揮"
+    ],
+    "canonical": "挥",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "晖",
+    "members": [
+      "晖",
+      "暉"
+    ],
+    "canonical": "晖",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "筦",
+    "members": [
+      "筦",
+      "管"
+    ],
+    "canonical": "筦",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "秾",
+    "members": [
+      "秾",
+      "穠"
+    ],
+    "canonical": "秾",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鷂",
+    "members": [
+      "鷂",
+      "鹞"
+    ],
+    "canonical": "鹞",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "讖",
+    "members": [
+      "讖",
+      "谶"
+    ],
+    "canonical": "谶",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "雞",
+    "members": [
+      "鷄",
+      "鸡"
+    ],
+    "canonical": "鸡",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "个",
+    "members": [
+      "个",
+      "箇"
+    ],
+    "canonical": "个",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "緝",
+    "members": [
+      "緝",
+      "缉"
+    ],
+    "canonical": "缉",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "仇",
+    "members": [
+      "仇",
+      "讎",
+      "雠"
+    ],
+    "canonical": "仇",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "貶",
+    "members": [
+      "貶",
+      "贬"
+    ],
+    "canonical": "贬",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "弥",
+    "members": [
+      "弥",
+      "彌"
+    ],
+    "canonical": "弥",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "枭",
+    "members": [
+      "枭",
+      "梟",
+      "鸮"
+    ],
+    "canonical": "枭",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "峥",
+    "members": [
+      "峥",
+      "崢"
+    ],
+    "canonical": "峥",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "崢": {
+        "峥": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "冊",
+    "members": [
+      "冊",
+      "册"
+    ],
+    "canonical": "册",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "冊": {
+        "册": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "村",
+    "members": [
+      "村",
+      "邨"
+    ],
+    "canonical": "村",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "搞",
+    "members": [
+      "搅",
+      "搞",
+      "攪"
+    ],
+    "canonical": "搅",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "朧",
+    "members": [
+      "朧",
+      "胧"
+    ],
+    "canonical": "胧",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "概",
+    "members": [
+      "㮣",
+      "概",
+      "槩"
+    ],
+    "canonical": "概",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "槩": {
+        "㮣": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "渐",
+    "members": [
+      "渐",
+      "漸"
+    ],
+    "canonical": "渐",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "蝇",
+    "members": [
+      "蝇",
+      "蠅"
+    ],
+    "canonical": "蝇",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "准",
+    "members": [
+      "准",
+      "準"
+    ],
+    "canonical": "准",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "餌",
+    "members": [
+      "餌",
+      "饵"
+    ],
+    "canonical": "饵",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "資",
+    "members": [
+      "資",
+      "资"
+    ],
+    "canonical": "资",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "办",
+    "members": [
+      "办",
+      "辦"
+    ],
+    "canonical": "办",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "员",
+    "members": [
+      "员",
+      "員"
+    ],
+    "canonical": "员",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "垄",
+    "members": [
+      "垄",
+      "壟"
+    ],
+    "canonical": "垄",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "丰",
+    "members": [
+      "丰",
+      "豐"
+    ],
+    "canonical": "丰",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鱗",
+    "members": [
+      "鱗",
+      "鳞"
+    ],
+    "canonical": "鳞",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "态",
+    "members": [
+      "态",
+      "態"
+    ],
+    "canonical": "态",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "栏",
+    "members": [
+      "栏",
+      "欄"
+    ],
+    "canonical": "栏",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "愈",
+    "members": [
+      "愈",
+      "愉"
+    ],
+    "canonical": "愈",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "嘿",
+    "members": [
+      "嘿",
+      "默"
+    ],
+    "canonical": "嘿",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "絖",
+    "members": [
+      "絖",
+      "纩"
+    ],
+    "canonical": "纩",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "敺",
+    "members": [
+      "驅",
+      "驱"
+    ],
+    "canonical": "驱",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "峤",
+    "members": [
+      "峤",
+      "嶠"
+    ],
+    "canonical": "峤",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "邻",
+    "members": [
+      "邻",
+      "鄰"
+    ],
+    "canonical": "邻",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "訖",
+    "members": [
+      "訖",
+      "讫"
+    ],
+    "canonical": "讫",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "敌",
+    "members": [
+      "敌",
+      "敵"
+    ],
+    "canonical": "敌",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "闋",
+    "members": [
+      "闋",
+      "阕"
+    ],
+    "canonical": "阕",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "揽",
+    "members": [
+      "揽",
+      "攬"
+    ],
+    "canonical": "揽",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "娲",
+    "members": [
+      "娲",
+      "媧"
+    ],
+    "canonical": "娲",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "粘",
+    "members": [
+      "粘",
+      "黏"
+    ],
+    "canonical": "粘",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "妒",
+    "members": [
+      "妒",
+      "妬"
+    ],
+    "canonical": "妒",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "妬": {
+        "妒": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "謹",
+    "members": [
+      "謹",
+      "谨"
+    ],
+    "canonical": "谨",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鑄",
+    "members": [
+      "鑄",
+      "铸"
+    ],
+    "canonical": "铸",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鑰",
+    "members": [
+      "鑰",
+      "钥"
+    ],
+    "canonical": "钥",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "輪",
+    "members": [
+      "輪",
+      "轮"
+    ],
+    "canonical": "轮",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "閆",
+    "members": [
+      "閻",
+      "闫",
+      "阎"
+    ],
+    "canonical": "闫",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "讒",
+    "members": [
+      "讒",
+      "谗"
+    ],
+    "canonical": "谗",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "拟",
+    "members": [
+      "拟",
+      "擬"
+    ],
+    "canonical": "拟",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "岖",
+    "members": [
+      "岖",
+      "嶇"
+    ],
+    "canonical": "岖",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "慙",
+    "members": [
+      "惭",
+      "慙",
+      "慚"
+    ],
+    "canonical": "惭",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "慙": {
+        "慚": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "軸",
+    "members": [
+      "軸",
+      "轴"
+    ],
+    "canonical": "轴",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "紈",
+    "members": [
+      "紈",
+      "纨"
+    ],
+    "canonical": "纨",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "蜍",
+    "members": [
+      "蜍",
+      "蠩"
+    ],
+    "canonical": "蜍",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "涛",
+    "members": [
+      "涛",
+      "濤"
+    ],
+    "canonical": "涛",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "謀",
+    "members": [
+      "謀",
+      "谋"
+    ],
+    "canonical": "谋",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "围",
+    "members": [
+      "围",
+      "圍"
+    ],
+    "canonical": "围",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "昼",
+    "members": [
+      "昼",
+      "晝"
+    ],
+    "canonical": "昼",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "标",
+    "members": [
+      "标",
+      "標",
+      "檩"
+    ],
+    "canonical": "标",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "壶",
+    "members": [
+      "壶",
+      "壺"
+    ],
+    "canonical": "壶",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "駿",
+    "members": [
+      "駿",
+      "骏"
+    ],
+    "canonical": "骏",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "浓",
+    "members": [
+      "浓",
+      "濃"
+    ],
+    "canonical": "浓",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "壽",
+    "members": [
+      "壽",
+      "寿"
+    ],
+    "canonical": "寿",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "傥",
+    "members": [
+      "倘",
+      "傥",
+      "儻"
+    ],
+    "canonical": "倘",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "納",
+    "members": [
+      "納",
+      "纳"
+    ],
+    "canonical": "纳",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鵡",
+    "members": [
+      "鵡",
+      "鹉"
+    ],
+    "canonical": "鹉",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "聪",
+    "members": [
+      "聪",
+      "聰"
+    ],
+    "canonical": "聪",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "丧",
+    "members": [
+      "丧",
+      "喪"
+    ],
+    "canonical": "丧",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "邺",
+    "members": [
+      "邺",
+      "鄴"
+    ],
+    "canonical": "邺",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "餽",
+    "members": [
+      "匮",
+      "柜",
+      "饋",
+      "馈"
+    ],
+    "canonical": "匮",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "侠",
+    "members": [
+      "侠",
+      "俠"
+    ],
+    "canonical": "侠",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "迈",
+    "members": [
+      "迈",
+      "邁"
+    ],
+    "canonical": "迈",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "蝉",
+    "members": [
+      "蝉",
+      "蟬"
+    ],
+    "canonical": "蝉",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "泾",
+    "members": [
+      "泾",
+      "涇"
+    ],
+    "canonical": "泾",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鏘",
+    "members": [
+      "鏘",
+      "锵"
+    ],
+    "canonical": "锵",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "輦",
+    "members": [
+      "輦",
+      "辇"
+    ],
+    "canonical": "辇",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "紐",
+    "members": [
+      "紐",
+      "纽"
+    ],
+    "canonical": "纽",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "閶",
+    "members": [
+      "閶",
+      "阊"
+    ],
+    "canonical": "阊",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "䌫",
+    "members": [
+      "纜",
+      "缆"
+    ],
+    "canonical": "缆",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "枣",
+    "members": [
+      "枣",
+      "棗"
+    ],
+    "canonical": "枣",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "檴",
+    "members": [
+      "獲",
+      "获"
+    ],
+    "canonical": "获",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "蔷",
+    "members": [
+      "蔷",
+      "薔"
+    ],
+    "canonical": "蔷",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "諧",
+    "members": [
+      "諧",
+      "谐"
+    ],
+    "canonical": "谐",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "宾",
+    "members": [
+      "宾",
+      "賓"
+    ],
+    "canonical": "宾",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鸚",
+    "members": [
+      "鸚",
+      "鹦"
+    ],
+    "canonical": "鹦",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "渔",
+    "members": [
+      "渔",
+      "漁"
+    ],
+    "canonical": "渔",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "狱",
+    "members": [
+      "狱",
+      "獄"
+    ],
+    "canonical": "狱",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "綺",
+    "members": [
+      "綺",
+      "绮"
+    ],
+    "canonical": "绮",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "謐",
+    "members": [
+      "謐",
+      "谧"
+    ],
+    "canonical": "谧",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "緩",
+    "members": [
+      "緩",
+      "缓"
+    ],
+    "canonical": "缓",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "脑",
+    "members": [
+      "脑",
+      "腦"
+    ],
+    "canonical": "脑",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "羁",
+    "members": [
+      "羁",
+      "羈",
+      "覊"
+    ],
+    "canonical": "羁",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "覊": {
+        "羈": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "繆",
+    "members": [
+      "繆",
+      "缪"
+    ],
+    "canonical": "缪",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "筹",
+    "members": [
+      "筹",
+      "籌"
+    ],
+    "canonical": "筹",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "裤",
+    "members": [
+      "绔",
+      "袴",
+      "裤"
+    ],
+    "canonical": "绔",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "規",
+    "members": [
+      "規",
+      "规"
+    ],
+    "canonical": "规",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "詒",
+    "members": [
+      "詒",
+      "诒"
+    ],
+    "canonical": "诒",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "絹",
+    "members": [
+      "絹",
+      "绢"
+    ],
+    "canonical": "绢",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "叫",
+    "members": [
+      "叫",
+      "呌"
+    ],
+    "canonical": "叫",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "呌": {
+        "叫": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "摆",
+    "members": [
+      "摆",
+      "擺"
+    ],
+    "canonical": "摆",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "輟",
+    "members": [
+      "輟",
+      "辍"
+    ],
+    "canonical": "辍",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "瓯",
+    "members": [
+      "瓯",
+      "甌"
+    ],
+    "canonical": "瓯",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "烂",
+    "members": [
+      "烂",
+      "爛"
+    ],
+    "canonical": "烂",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "挢",
+    "members": [
+      "娇",
+      "嬌"
+    ],
+    "canonical": "娇",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "奕",
+    "members": [
+      "奕",
+      "弈"
+    ],
+    "canonical": "奕",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "劲",
+    "members": [
+      "劲",
+      "勁"
+    ],
+    "canonical": "劲",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "綱",
+    "members": [
+      "綱",
+      "纲"
+    ],
+    "canonical": "纲",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "汤",
+    "members": [
+      "汤",
+      "湯"
+    ],
+    "canonical": "汤",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "补",
+    "members": [
+      "补",
+      "補"
+    ],
+    "canonical": "补",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "俻",
+    "members": [
+      "備",
+      "备"
+    ],
+    "canonical": "备",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "絡",
+    "members": [
+      "絡",
+      "络"
+    ],
+    "canonical": "络",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "銳",
+    "members": [
+      "銳",
+      "鋭",
+      "锐"
+    ],
+    "canonical": "锐",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "銳": {
+        "鋭": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "茎",
+    "members": [
+      "茎",
+      "莖"
+    ],
+    "canonical": "茎",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "吃",
+    "members": [
+      "吃",
+      "喫"
+    ],
+    "canonical": "吃",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "莲",
+    "members": [
+      "莲",
+      "蓮"
+    ],
+    "canonical": "莲",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "亚",
+    "members": [
+      "亚",
+      "亞"
+    ],
+    "canonical": "亚",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "术",
+    "members": [
+      "术",
+      "術"
+    ],
+    "canonical": "术",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "恸",
+    "members": [
+      "恸",
+      "慟"
+    ],
+    "canonical": "恸",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "呪",
+    "members": [
+      "呪",
+      "咒"
+    ],
+    "canonical": "咒",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "呪": {
+        "咒": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "涤",
+    "members": [
+      "涤",
+      "滌"
+    ],
+    "canonical": "涤",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "摄",
+    "members": [
+      "摄",
+      "攝"
+    ],
+    "canonical": "摄",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "汙",
+    "members": [
+      "汙",
+      "污",
+      "洿"
+    ],
+    "canonical": "污",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "汙": {
+        "污": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "纓",
+    "members": [
+      "纓",
+      "缨"
+    ],
+    "canonical": "缨",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "嵘",
+    "members": [
+      "嵘",
+      "嶸"
+    ],
+    "canonical": "嵘",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鴦",
+    "members": [
+      "鴦",
+      "鸯"
+    ],
+    "canonical": "鸯",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "遙",
+    "members": [
+      "遙",
+      "遥"
+    ],
+    "canonical": "遥",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "遙": {
+        "遥": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "駐",
+    "members": [
+      "駐",
+      "驻"
+    ],
+    "canonical": "驻",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "夸",
+    "members": [
+      "夸",
+      "誇"
+    ],
+    "canonical": "夸",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "笺",
+    "members": [
+      "笺",
+      "箋"
+    ],
+    "canonical": "笺",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "响",
+    "members": [
+      "响",
+      "響"
+    ],
+    "canonical": "响",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "刓",
+    "members": [
+      "园",
+      "園"
+    ],
+    "canonical": "园",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "痖",
+    "members": [
+      "哑",
+      "啞"
+    ],
+    "canonical": "哑",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "閲",
+    "members": [
+      "閱",
+      "閲",
+      "阅"
+    ],
+    "canonical": "阅",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "閱": {
+        "閲": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "悬",
+    "members": [
+      "悬",
+      "懸"
+    ],
+    "canonical": "悬",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "洁",
+    "members": [
+      "洁",
+      "潔"
+    ],
+    "canonical": "洁",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "寘",
+    "members": [
+      "寘",
+      "置"
+    ],
+    "canonical": "置",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "軒",
+    "members": [
+      "軒",
+      "轩"
+    ],
+    "canonical": "轩",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "单",
+    "members": [
+      "单",
+      "單"
+    ],
+    "canonical": "单",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "泄",
+    "members": [
+      "泄",
+      "渫"
+    ],
+    "canonical": "泄",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "懒",
+    "members": [
+      "懒",
+      "懶"
+    ],
+    "canonical": "懒",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "毀",
+    "members": [
+      "毀",
+      "毁"
+    ],
+    "canonical": "毁",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "毀": {
+        "毁": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "䢙",
+    "members": [
+      "敗",
+      "败"
+    ],
+    "canonical": "败",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "琏",
+    "members": [
+      "琏",
+      "璉"
+    ],
+    "canonical": "琏",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "媆",
+    "members": [
+      "媆",
+      "嫩"
+    ],
+    "canonical": "媆",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "駕",
+    "members": [
+      "駕",
+      "驾"
+    ],
+    "canonical": "驾",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "捬",
+    "members": [
+      "抚",
+      "撫"
+    ],
+    "canonical": "抚",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "辽",
+    "members": [
+      "辽",
+      "遼"
+    ],
+    "canonical": "辽",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "涟",
+    "members": [
+      "涟",
+      "漣"
+    ],
+    "canonical": "涟",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "卤",
+    "members": [
+      "卤",
+      "鹵"
+    ],
+    "canonical": "卤",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "飾",
+    "members": [
+      "飾",
+      "饰"
+    ],
+    "canonical": "饰",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "雏",
+    "members": [
+      "雏",
+      "雛"
+    ],
+    "canonical": "雏",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "餳",
+    "members": [
+      "餳",
+      "饧"
+    ],
+    "canonical": "饧",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "䘺",
+    "members": [
+      "綻",
+      "绽"
+    ],
+    "canonical": "绽",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "啭",
+    "members": [
+      "啭",
+      "囀"
+    ],
+    "canonical": "啭",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "堯",
+    "members": [
+      "堯",
+      "尧"
+    ],
+    "canonical": "尧",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "紆",
+    "members": [
+      "紆",
+      "纡"
+    ],
+    "canonical": "纡",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "陉",
+    "members": [
+      "陉",
+      "陘"
+    ],
+    "canonical": "陉",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "舖",
+    "members": [
+      "鋪",
+      "铺"
+    ],
+    "canonical": "铺",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "托",
+    "members": [
+      "托",
+      "拓"
+    ],
+    "canonical": "托",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "貪",
+    "members": [
+      "貪",
+      "贪"
+    ],
+    "canonical": "贪",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "皓",
+    "members": [
+      "皓",
+      "颢"
+    ],
+    "canonical": "皓",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "噁",
+    "members": [
+      "恶",
+      "惡",
+      "𫫇"
+    ],
+    "canonical": "恶",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "郷",
+    "members": [
+      "乡",
+      "鄉"
+    ],
+    "canonical": "乡",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鸞",
+    "members": [
+      "鸞",
+      "鸾"
+    ],
+    "canonical": "鸾",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "俯",
+    "members": [
+      "俯",
+      "𫖯"
+    ],
+    "canonical": "俯",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "扬",
+    "members": [
+      "扬",
+      "揚"
+    ],
+    "canonical": "扬",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "舘",
+    "members": [
+      "舘",
+      "館",
+      "馆"
+    ],
+    "canonical": "馆",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "謠",
+    "members": [
+      "謠",
+      "謡",
+      "谣"
+    ],
+    "canonical": "谣",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "謠": {
+        "謡": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "㟢",
+    "members": [
+      "埼",
+      "崎"
+    ],
+    "canonical": "埼",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "綸",
+    "members": [
+      "綸",
+      "纶"
+    ],
+    "canonical": "纶",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "吊",
+    "members": [
+      "吊",
+      "弔"
+    ],
+    "canonical": "吊",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "諱",
+    "members": [
+      "諱",
+      "讳"
+    ],
+    "canonical": "讳",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "繼",
+    "members": [
+      "繼",
+      "继"
+    ],
+    "canonical": "继",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "厅",
+    "members": [
+      "厅",
+      "廳"
+    ],
+    "canonical": "厅",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "厦",
+    "members": [
+      "厦",
+      "廈"
+    ],
+    "canonical": "厦",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "廈": {
+        "厦": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "組",
+    "members": [
+      "組",
+      "组"
+    ],
+    "canonical": "组",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "頌",
+    "members": [
+      "頌",
+      "颂"
+    ],
+    "canonical": "颂",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "緣",
+    "members": [
+      "緣",
+      "縁",
+      "缘"
+    ],
+    "canonical": "缘",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "縁": {
+        "緣": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "电",
+    "members": [
+      "电",
+      "電"
+    ],
+    "canonical": "电",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "涩",
+    "members": [
+      "涩",
+      "澀",
+      "澁"
+    ],
+    "canonical": "涩",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "澁": {
+        "澀": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "鴛",
+    "members": [
+      "鴛",
+      "鸳"
+    ],
+    "canonical": "鸳",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "堕",
+    "members": [
+      "堕",
+      "墮"
+    ],
+    "canonical": "堕",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "餓",
+    "members": [
+      "餓",
+      "饿"
+    ],
+    "canonical": "饿",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "蜗",
+    "members": [
+      "蜗",
+      "蝸"
+    ],
+    "canonical": "蜗",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "猎",
+    "members": [
+      "猎",
+      "獵"
+    ],
+    "canonical": "猎",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "匈",
+    "members": [
+      "匈",
+      "胷",
+      "胸"
+    ],
+    "canonical": "匈",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "胷": {
+        "胸": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "銷",
+    "members": [
+      "銷",
+      "销"
+    ],
+    "canonical": "销",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "順",
+    "members": [
+      "順",
+      "顺"
+    ],
+    "canonical": "顺",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "講",
+    "members": [
+      "講",
+      "讲"
+    ],
+    "canonical": "讲",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "夺",
+    "members": [
+      "夺",
+      "奪"
+    ],
+    "canonical": "夺",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鼉",
+    "members": [
+      "鼉",
+      "鼍"
+    ],
+    "canonical": "鼍",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "荐",
+    "members": [
+      "荐",
+      "薦"
+    ],
+    "canonical": "荐",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "槖",
+    "members": [
+      "槖",
+      "橐"
+    ],
+    "canonical": "橐",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "槖": {
+        "橐": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "絢",
+    "members": [
+      "絢",
+      "绚"
+    ],
+    "canonical": "绚",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "譴",
+    "members": [
+      "譴",
+      "谴"
+    ],
+    "canonical": "谴",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鈍",
+    "members": [
+      "鈍",
+      "钝"
+    ],
+    "canonical": "钝",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "謨",
+    "members": [
+      "謨",
+      "谟"
+    ],
+    "canonical": "谟",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "覲",
+    "members": [
+      "覲",
+      "觐"
+    ],
+    "canonical": "觐",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "䄍",
+    "members": [
+      "蜡",
+      "蠟"
+    ],
+    "canonical": "蜡",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "係",
+    "members": [
+      "系",
+      "繫"
+    ],
+    "canonical": "系",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鏑",
+    "members": [
+      "鏑",
+      "镝"
+    ],
+    "canonical": "镝",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "险",
+    "members": [
+      "险",
+      "險"
+    ],
+    "canonical": "险",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "輒",
+    "members": [
+      "輒",
+      "輙",
+      "辄"
+    ],
+    "canonical": "辄",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "輙": {
+        "輒": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "偿",
+    "members": [
+      "偿",
+      "償"
+    ],
+    "canonical": "偿",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "这",
+    "members": [
+      "这",
+      "這"
+    ],
+    "canonical": "这",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "詁",
+    "members": [
+      "詁",
+      "诂"
+    ],
+    "canonical": "诂",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "貞",
+    "members": [
+      "貞",
+      "贞"
+    ],
+    "canonical": "贞",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "肾",
+    "members": [
+      "肾",
+      "腎"
+    ],
+    "canonical": "肾",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "誨",
+    "members": [
+      "誨",
+      "诲"
+    ],
+    "canonical": "诲",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "珰",
+    "members": [
+      "珰",
+      "璫"
+    ],
+    "canonical": "珰",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "斩",
+    "members": [
+      "斩",
+      "斬"
+    ],
+    "canonical": "斩",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "阵",
+    "members": [
+      "阵",
+      "陣"
+    ],
+    "canonical": "阵",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "蚀",
+    "members": [
+      "蚀",
+      "蝕"
+    ],
+    "canonical": "蚀",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "蓝",
+    "members": [
+      "蓝",
+      "藍"
+    ],
+    "canonical": "蓝",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "瓮",
+    "members": [
+      "瓮",
+      "甕"
+    ],
+    "canonical": "瓮",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "竞",
+    "members": [
+      "竞",
+      "競"
+    ],
+    "canonical": "竞",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "䌥",
+    "members": [
+      "縯",
+      "𬙂"
+    ],
+    "canonical": "𬙂",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "层",
+    "members": [
+      "层",
+      "層"
+    ],
+    "canonical": "层",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "認",
+    "members": [
+      "認",
+      "认"
+    ],
+    "canonical": "认",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "歿",
+    "members": [
+      "歿",
+      "殁"
+    ],
+    "canonical": "殁",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "歿": {
+        "殁": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "貼",
+    "members": [
+      "貼",
+      "贴"
+    ],
+    "canonical": "贴",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "桥",
+    "members": [
+      "桥",
+      "橋"
+    ],
+    "canonical": "桥",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "閭",
+    "members": [
+      "閭",
+      "闾"
+    ],
+    "canonical": "闾",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "蒋",
+    "members": [
+      "蒋",
+      "蔣"
+    ],
+    "canonical": "蒋",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "榮",
+    "members": [
+      "榮",
+      "荣"
+    ],
+    "canonical": "荣",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "愍",
+    "members": [
+      "悯",
+      "愍"
+    ],
+    "canonical": "悯",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "萝",
+    "members": [
+      "萝",
+      "蘿"
+    ],
+    "canonical": "萝",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "驟",
+    "members": [
+      "驟",
+      "骤"
+    ],
+    "canonical": "骤",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "旷",
+    "members": [
+      "旷",
+      "曠"
+    ],
+    "canonical": "旷",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "涌",
+    "members": [
+      "涌",
+      "湧"
+    ],
+    "canonical": "涌",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "湧": {
+        "涌": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "冤",
+    "members": [
+      "冤",
+      "寃"
+    ],
+    "canonical": "冤",
+    "has_standard_member": true,
+    "direction_evidence": {
+      "寃": {
+        "冤": 1
+      }
+    },
+    "learned_map": {}
+  },
+  {
+    "root": "貽",
+    "members": [
+      "貽",
+      "贻"
+    ],
+    "canonical": "贻",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "㓕",
+    "members": [
+      "滅",
+      "灭"
+    ],
+    "canonical": "灭",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "场",
+    "members": [
+      "场",
+      "場"
+    ],
+    "canonical": "场",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "煇",
+    "members": [
+      "輝",
+      "辉"
+    ],
+    "canonical": "辉",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "弯",
+    "members": [
+      "弯",
+      "彎"
+    ],
+    "canonical": "弯",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "紳",
+    "members": [
+      "紳",
+      "绅"
+    ],
+    "canonical": "绅",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "憝",
+    "members": [
+      "怼",
+      "懟"
+    ],
+    "canonical": "怼",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "繪",
+    "members": [
+      "繪",
+      "绘"
+    ],
+    "canonical": "绘",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "執",
+    "members": [
+      "執",
+      "执"
+    ],
+    "canonical": "执",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "閏",
+    "members": [
+      "閏",
+      "闰"
+    ],
+    "canonical": "闰",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "駱",
+    "members": [
+      "駱",
+      "骆"
+    ],
+    "canonical": "骆",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "銀",
+    "members": [
+      "銀",
+      "银"
+    ],
+    "canonical": "银",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "頽",
+    "members": [
+      "頽",
+      "颓"
+    ],
+    "canonical": "颓",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "萤",
+    "members": [
+      "萤",
+      "螢"
+    ],
+    "canonical": "萤",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "轤",
+    "members": [
+      "轤",
+      "轳"
+    ],
+    "canonical": "轳",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "压",
+    "members": [
+      "压",
+      "壓"
+    ],
+    "canonical": "压",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "剂",
+    "members": [
+      "剂",
+      "劑"
+    ],
+    "canonical": "剂",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "頟",
+    "members": [
+      "額",
+      "额"
+    ],
+    "canonical": "额",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "觞",
+    "members": [
+      "觞",
+      "觴"
+    ],
+    "canonical": "觞",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鶚",
+    "members": [
+      "鶚",
+      "鹗"
+    ],
+    "canonical": "鹗",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "砖",
+    "members": [
+      "砖",
+      "磚"
+    ],
+    "canonical": "砖",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "祕",
+    "members": [
+      "祕",
+      "秘"
+    ],
+    "canonical": "祕",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "塗",
+    "members": [
+      "塗",
+      "涂"
+    ],
+    "canonical": "涂",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "詎",
+    "members": [
+      "詎",
+      "讵"
+    ],
+    "canonical": "讵",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "踬",
+    "members": [
+      "踬",
+      "躓"
+    ],
+    "canonical": "踬",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "瞠",
+    "members": [
+      "瞠",
+      "瞪"
+    ],
+    "canonical": "瞠",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "叨",
+    "members": [
+      "叨",
+      "饕"
+    ],
+    "canonical": "叨",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "蝥",
+    "members": [
+      "蝥",
+      "蟊"
+    ],
+    "canonical": "蝥",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鞒",
+    "members": [
+      "橇",
+      "鞒"
+    ],
+    "canonical": "橇",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "苹",
+    "members": [
+      "苹",
+      "𬞟"
+    ],
+    "canonical": "苹",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "庅",
+    "members": [
+      "么",
+      "幺",
+      "麽"
+    ],
+    "canonical": "么",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "啎",
+    "members": [
+      "忤",
+      "迕"
+    ],
+    "canonical": "忤",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "氤",
+    "members": [
+      "氤",
+      "𬘡"
+    ],
+    "canonical": "氤",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "盐",
+    "members": [
+      "盐",
+      "鹽"
+    ],
+    "canonical": "盐",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "菌",
+    "members": [
+      "菌",
+      "蕈"
+    ],
+    "canonical": "菌",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鑚",
+    "members": [
+      "钳",
+      "钻"
+    ],
+    "canonical": "钳",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "嶝",
+    "members": [
+      "嶝",
+      "磴"
+    ],
+    "canonical": "嶝",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "档",
+    "members": [
+      "档",
+      "𣗋"
+    ],
+    "canonical": "档",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "椹",
+    "members": [
+      "椹",
+      "葚"
+    ],
+    "canonical": "椹",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "茏",
+    "members": [
+      "茏",
+      "蘢"
+    ],
+    "canonical": "茏",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "罂",
+    "members": [
+      "䓨",
+      "罂"
+    ],
+    "canonical": "䓨",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "埇",
+    "members": [
+      "埇",
+      "甬"
+    ],
+    "canonical": "埇",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "郄",
+    "members": [
+      "郄",
+      "郤"
+    ],
+    "canonical": "郄",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "邬",
+    "members": [
+      "坞",
+      "邬"
+    ],
+    "canonical": "坞",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "冱",
+    "members": [
+      "冱",
+      "沍",
+      "沪"
+    ],
+    "canonical": "冱",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "咨",
+    "members": [
+      "咨",
+      "嗞"
+    ],
+    "canonical": "咨",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "衔",
+    "members": [
+      "衔",
+      "銜"
+    ],
+    "canonical": "衔",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "跃",
+    "members": [
+      "趯",
+      "跃"
+    ],
+    "canonical": "趯",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "脍",
+    "members": [
+      "脍",
+      "鲙"
+    ],
+    "canonical": "脍",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "疍",
+    "members": [
+      "疍",
+      "蛋"
+    ],
+    "canonical": "疍",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "吶",
+    "members": [
+      "呐",
+      "讷"
+    ],
+    "canonical": "呐",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "淹",
+    "members": [
+      "淹",
+      "渰"
+    ],
+    "canonical": "淹",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "毓",
+    "members": [
+      "毓",
+      "育"
+    ],
+    "canonical": "毓",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "萆",
+    "members": [
+      "萆",
+      "蓖"
+    ],
+    "canonical": "萆",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "椎",
+    "members": [
+      "棰",
+      "椎",
+      "槌"
+    ],
+    "canonical": "棰",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "扞",
+    "members": [
+      "扞",
+      "捍"
+    ],
+    "canonical": "扞",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "崭",
+    "members": [
+      "崭",
+      "巉"
+    ],
+    "canonical": "崭",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "𭥔",
+    "members": [
+      "曜",
+      "耀"
+    ],
+    "canonical": "曜",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "拼",
+    "members": [
+      "拼",
+      "摒"
+    ],
+    "canonical": "拼",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "滨",
+    "members": [
+      "滨",
+      "濒"
+    ],
+    "canonical": "滨",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "誚",
+    "members": [
+      "诮",
+      "谯"
+    ],
+    "canonical": "诮",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "够",
+    "members": [
+      "够",
+      "彀"
+    ],
+    "canonical": "够",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "眇",
+    "members": [
+      "眇",
+      "缈"
+    ],
+    "canonical": "眇",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "嬤",
+    "members": [
+      "嫫",
+      "嬷"
+    ],
+    "canonical": "嫫",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "唬",
+    "members": [
+      "唬",
+      "猇",
+      "虓"
+    ],
+    "canonical": "唬",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "克",
+    "members": [
+      "克",
+      "剋"
+    ],
+    "canonical": "克",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "繅",
+    "members": [
+      "缫",
+      "缲"
+    ],
+    "canonical": "缫",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "戆",
+    "members": [
+      "戆",
+      "戇"
+    ],
+    "canonical": "戆",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "髌",
+    "members": [
+      "膑",
+      "髌"
+    ],
+    "canonical": "膑",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "魷",
+    "members": [
+      "鱿",
+      "鳅"
+    ],
+    "canonical": "鱿",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "彻",
+    "members": [
+      "彻",
+      "澈"
+    ],
+    "canonical": "彻",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "懑",
+    "members": [
+      "懑",
+      "闷"
+    ],
+    "canonical": "懑",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "朐",
+    "members": [
+      "朐",
+      "鸲"
+    ],
+    "canonical": "朐",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "冈",
+    "members": [
+      "冈",
+      "岗"
+    ],
+    "canonical": "冈",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "股",
+    "members": [
+      "股",
+      "𦙶"
+    ],
+    "canonical": "股",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "忭",
+    "members": [
+      "忭",
+      "昪"
+    ],
+    "canonical": "忭",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "凓",
+    "members": [
+      "凓",
+      "溧"
+    ],
+    "canonical": "凓",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "圢",
+    "members": [
+      "圢",
+      "町"
+    ],
+    "canonical": "圢",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "喒",
+    "members": [
+      "咱",
+      "昝"
+    ],
+    "canonical": "咱",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "耙",
+    "members": [
+      "耙",
+      "钯"
+    ],
+    "canonical": "耙",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "苎",
+    "members": [
+      "苎",
+      "苧"
+    ],
+    "canonical": "苎",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "棱",
+    "members": [
+      "棱",
+      "楞"
+    ],
+    "canonical": "棱",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "甾",
+    "members": [
+      "灾",
+      "甾"
+    ],
+    "canonical": "灾",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "瓷",
+    "members": [
+      "瓷",
+      "磁"
+    ],
+    "canonical": "瓷",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "疹",
+    "members": [
+      "疹",
+      "胗"
+    ],
+    "canonical": "疹",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "弢",
+    "members": [
+      "弢",
+      "韬"
+    ],
+    "canonical": "弢",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "斅",
+    "members": [
+      "敩",
+      "镚"
+    ],
+    "canonical": "敩",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "玟",
+    "members": [
+      "玟",
+      "玫"
+    ],
+    "canonical": "玟",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "茜",
+    "members": [
+      "茜",
+      "蒨"
+    ],
+    "canonical": "茜",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "侁",
+    "members": [
+      "侁",
+      "诜",
+      "𬳽"
+    ],
+    "canonical": "侁",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "籥",
+    "members": [
+      "籥",
+      "龠"
+    ],
+    "canonical": "籥",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "藦",
+    "members": [
+      "藦",
+      "蘑"
+    ],
+    "canonical": "藦",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "袄",
+    "members": [
+      "澳",
+      "袄"
+    ],
+    "canonical": "澳",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "溻",
+    "members": [
+      "溻",
+      "褟"
+    ],
+    "canonical": "溻",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "坂",
+    "members": [
+      "坂",
+      "阪"
+    ],
+    "canonical": "坂",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "瘅",
+    "members": [
+      "疸",
+      "瘅"
+    ],
+    "canonical": "疸",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "熔",
+    "members": [
+      "熔",
+      "镕"
+    ],
+    "canonical": "熔",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "哲",
+    "members": [
+      "哲",
+      "喆"
+    ],
+    "canonical": "哲",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "噑",
+    "members": [
+      "嗥",
+      "嚎"
+    ],
+    "canonical": "嗥",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "圩",
+    "members": [
+      "圩",
+      "墟"
+    ],
+    "canonical": "圩",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "扳",
+    "members": [
+      "扳",
+      "攀"
+    ],
+    "canonical": "扳",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "蒉",
+    "members": [
+      "篑",
+      "蒉"
+    ],
+    "canonical": "篑",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "菇",
+    "members": [
+      "菇",
+      "菰"
+    ],
+    "canonical": "菇",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "鏢",
+    "members": [
+      "镖",
+      "镳"
+    ],
+    "canonical": "镖",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "烊",
+    "members": [
+      "炀",
+      "烊"
+    ],
+    "canonical": "炀",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "戗",
+    "members": [
+      "创",
+      "戗"
+    ],
+    "canonical": "创",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "厘",
+    "members": [
+      "厘",
+      "釐"
+    ],
+    "canonical": "厘",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "荚",
+    "members": [
+      "荚",
+      "莢"
+    ],
+    "canonical": "荚",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "崧",
+    "members": [
+      "崧",
+      "嵩"
+    ],
+    "canonical": "崧",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "㟗",
+    "members": [
+      "豳",
+      "邠"
+    ],
+    "canonical": "豳",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "椀",
+    "members": [
+      "椀",
+      "碗"
+    ],
+    "canonical": "椀",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "杧",
+    "members": [
+      "杧",
+      "芒"
+    ],
+    "canonical": "杧",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "虬",
+    "members": [
+      "虬",
+      "蚪"
+    ],
+    "canonical": "虬",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "螗",
+    "members": [
+      "螗",
+      "螳"
+    ],
+    "canonical": "螗",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "瞥",
+    "members": [
+      "瞥",
+      "苤"
+    ],
+    "canonical": "瞥",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "跻",
+    "members": [
+      "跻",
+      "𬯀"
+    ],
+    "canonical": "跻",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "扫",
+    "members": [
+      "埽",
+      "扫"
+    ],
+    "canonical": "埽",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "溽",
+    "members": [
+      "溽",
+      "缛"
+    ],
+    "canonical": "溽",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "負",
+    "members": [
+      "負",
+      "负"
+    ],
+    "canonical": "负",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "彬",
+    "members": [
+      "彬",
+      "斌"
+    ],
+    "canonical": "彬",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "啃",
+    "members": [
+      "啃",
+      "龈"
+    ],
+    "canonical": "啃",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "唉",
+    "members": [
+      "唉",
+      "欸"
+    ],
+    "canonical": "唉",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "罔",
+    "members": [
+      "网",
+      "罔"
+    ],
+    "canonical": "网",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "柁",
+    "members": [
+      "柁",
+      "舵"
+    ],
+    "canonical": "柁",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "稣",
+    "members": [
+      "甦",
+      "稣"
+    ],
+    "canonical": "甦",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "伙",
+    "members": [
+      "伙",
+      "夥"
+    ],
+    "canonical": "伙",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "皱",
+    "members": [
+      "皱",
+      "绉"
+    ],
+    "canonical": "皱",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "螺",
+    "members": [
+      "螺",
+      "蠃"
+    ],
+    "canonical": "螺",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "襜",
+    "members": [
+      "裣",
+      "襜"
+    ],
+    "canonical": "裣",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "协",
+    "members": [
+      "勰",
+      "协"
+    ],
+    "canonical": "勰",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "㒋",
+    "members": [
+      "厮",
+      "廝"
+    ],
+    "canonical": "厮",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "杠",
+    "members": [
+      "杠",
+      "𬕂"
+    ],
+    "canonical": "杠",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "煅",
+    "members": [
+      "煅",
+      "锻"
+    ],
+    "canonical": "煅",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "篮",
+    "members": [
+      "箖",
+      "篮"
+    ],
+    "canonical": "箖",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "餒",
+    "members": [
+      "喂",
+      "馁"
+    ],
+    "canonical": "喂",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "吒",
+    "members": [
+      "吒",
+      "咤"
+    ],
+    "canonical": "吒",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "玚",
+    "members": [
+      "玚",
+      "瑒"
+    ],
+    "canonical": "玚",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "拇",
+    "members": [
+      "拇",
+      "𧿹"
+    ],
+    "canonical": "拇",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "姆",
+    "members": [
+      "姆",
+      "姥"
+    ],
+    "canonical": "姆",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "吲",
+    "members": [
+      "吲",
+      "哂"
+    ],
+    "canonical": "吲",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "达",
+    "members": [
+      "达",
+      "達"
+    ],
+    "canonical": "达",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "坏",
+    "members": [
+      "坏",
+      "坯"
+    ],
+    "canonical": "坏",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  },
+  {
+    "root": "砣",
+    "members": [
+      "砣",
+      "铊"
+    ],
+    "canonical": "砣",
+    "has_standard_member": true,
+    "direction_evidence": {},
+    "learned_map": {}
+  }
+]
