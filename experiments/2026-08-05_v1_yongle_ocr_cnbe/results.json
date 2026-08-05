@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "seed": 42,
+  "lambda_freq": 3.0,
+  "corpus_chars": 24381158,
+  "baselines": {
+    "best": {
+      "pages": 37,
+      "truth_chars": 16123,
+      "matched": 6068,
+      "accuracy": 0.3764,
+      "substitutions": 5243
+    },
+    "paddle": {
+      "pages": 37,
+      "truth_chars": 16123,
+      "matched": 1916,
+      "accuracy": 0.1188,
+      "substitutions": 9620
+    },
+    "v1": {
+      "pages": 37,
+      "truth_chars": 16123,
+      "matched": 6242,
+      "accuracy": 0.3871,
+      "substitutions": 4896
+    }
+  },
+  "real_substitution_cnbe_analysis": {
+    "substitutions": 5243,
+    "both_in_cnbe_standard": 2797,
+    "truth_in_topK": {
+      "1": 10,
+      "3": 21,
+      "5": 29,
+      "10": 38,
+      "20": 65
+    },
+    "confusing_group_errors": 17,
+    "confusing_group_top1": 17,
+    "group_top1_rate": 1.0,
+    "applied_group_verifier_on_best_ocr": {
+      "pages": 37,
+      "truth_chars": 16123,
+      "baseline_accuracy": 0.3764,
+      "group_verifier_accuracy": 0.3761,
+      "changes": 9,
+      "correct_changes": 0
+    }
+  },
+  "synthetic_benchmark": {
+    "0.01": {
+      "corrupted_chars": 105,
+      "truth_chars": 16123,
+      "baseline_accuracy": 0.9935,
+      "group_verifier_accuracy": 0.9926,
+      "neighbor_verifier_accuracy": 0.8026,
+      "group_changes": 20,
+      "neighbor_changes": 3194
+    },
+    "0.02": {
+      "corrupted_chars": 255,
+      "truth_chars": 16123,
+      "baseline_accuracy": 0.9842,
+      "group_verifier_accuracy": 0.9833,
+      "neighbor_verifier_accuracy": 0.7998,
+      "group_changes": 19,
+      "neighbor_changes": 3258
+    },
+    "0.05": {
+      "corrupted_chars": 609,
+      "truth_chars": 16123,
+      "baseline_accuracy": 0.9622,
+      "group_verifier_accuracy": 0.9619,
+      "neighbor_verifier_accuracy": 0.7924,
+      "group_changes": 28,
+      "neighbor_changes": 3390
+    },
+    "0.1": {
+      "corrupted_chars": 1164,
+      "truth_chars": 16123,
+      "baseline_accuracy": 0.9278,
+      "group_verifier_accuracy": 0.9279,
+      "neighbor_verifier_accuracy": 0.7819,
+      "group_changes": 34,
+      "neighbor_changes": 3667
+    }
+  },
+  "group_only_synthetic_benchmark": {
+    "0.5": {
+      "group_positions": 1004,
+      "corrupted_group_positions": 450,
+      "baseline_group_accuracy": 0.5518,
+      "group_verifier_group_accuracy": 0.6155,
+      "neighbor_verifier_group_accuracy": 0.5608,
+      "oracle_upper_bound": 1.0
+    },
+    "1.0": {
+      "group_positions": 1004,
+      "corrupted_group_positions": 911,
+      "baseline_group_accuracy": 0.0926,
+      "group_verifier_group_accuracy": 0.241,
+      "neighbor_verifier_group_accuracy": 0.1972,
+      "oracle_upper_bound": 1.0
+    }
+  }
+}
