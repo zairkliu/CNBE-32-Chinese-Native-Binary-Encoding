@@ -156,6 +156,9 @@ governance, experiments, limitations, reproducibility, and roadmap.
 | SDK install and basic encoding | [Quick start](#quick-start), [Python SDK example](#python-sdk-example) | Bitfield encode/decode, Hamming distance, SQLite lookup |
 | Bitfield consistency | [`spec/golden_vectors.json`](./spec/golden_vectors.json), [Implementation consistency](#implementation-consistency) | Shared golden vectors for Python/C/Rust/hardware directions |
 | Desktop software | [Desktop demo](#desktop-demo) | Local run and Windows/macOS/Linux packaging |
+| RISC-V v8 simulator stack | [`riscv/v8/`](./riscv/v8/), [verification report](./riscv/v8/docs/VERIFICATION_REPORT_2026-08-05.md) | Python/C/QEMU/Verilog/Spike five-layer consistency, real 21,178-row skill tables |
+| Linux mini-kernel boot | [`linux_cnbe32_riscv/`](./linux_cnbe32_riscv/), [simulation report](./linux_cnbe32_riscv/docs/SIMULATION_REPORT_2026-08-05.md) | Linux 0.01 CNBE-32 RISC-V boots under QEMU/OpenSBI; runtime aligns with v8 (55/55) |
+| Mathematical foundation experiments | [`experiments/2026-08-05_cnbe_math/`](./experiments/2026-08-05_cnbe_math/) | Pseudo-metric boundary, distributive lattice, entropy, hyperbolic geometry, algebraic properties |
 | Seven-corpus compression and Volume | [`experiments/2026-08-02_seven_corpora_compression/`](./experiments/2026-08-02_seven_corpora_compression/) | 24.38M characters, compression, random access, routing proxies |
 | MoE prototype | [`experiments/2026-08-03_cnbe_moe/`](./experiments/2026-08-03_cnbe_moe/) | Dense/MoE, hard routing, three-field mapping, Triton experiments |
 | Classical OCR boundary | [`llm_experiments/2026-08-02_yongle_failures/`](./llm_experiments/2026-08-02_yongle_failures/) | Yongle postmortem, truth library, punctuation pivot |
@@ -172,7 +175,7 @@ enter from different angles:
 |---|---|---|
 | Chinese NLP / AI practitioners | [Experiment Summary](#experiment-summary), [CNBE-MoE](#2026-08-03-cnbe-moe-prototype-and-api-ablation) | CNBE as a small-model feature, MoE routing prior, and confusable-character signal |
 | Chinese philology / digital humanities | [Ancient OCR postmortem](#2026-08-02-ancient-ocr-failure-postmortem-and-punctuation-pivot), [Project rationale](#project-rationale) | OCR, truth databases, punctuation, segmentation, collation, and Hanzi evidence boundaries |
-| Systems / chip / compiler engineers | [Technology Stack by Layer](#technology-stack-by-layer), [Bitfield layout](#bitfield-layout), [For geeks](#for-geeks) | How bitfields, RISC-V, Verilog, Linux, and SDKs connect into a full-stack prototype |
+| Systems / chip / compiler engineers | [RISC-V v8 simulator stack](#2026-08-05-risc-v-v8-simulator-and-math-foundation), [Technology Stack by Layer](#technology-stack-by-layer), [Bitfield layout](#bitfield-layout), [For geeks](#for-geeks) | How bitfields, RISC-V, Verilog, Linux, and SDKs connect into a full-stack prototype |
 | Policy / standards / industry readers | [Compatibility Strategy](#compatibility-strategy-gradual-evolution-not-a-rewrite), [Current standards restart](#current-standards-restart), [Evidence level](#evidence-level) | How CNBE stays compatible with Unicode/GB and separates prototype claims from standards evidence |
 | Demo / copyright users | [Desktop demo](#desktop-demo) | Runnable demo software, cross-platform packaging, and software-copyright materials |
 
@@ -261,7 +264,7 @@ replacing them, based on historical lessons:
 > Chinese structural information an optional, compatible layer of the existing
 > computing system.
 
-## Current Status and Roadmap (2026-08-04)
+## Current Status and Roadmap (2026-08-05)
 
 ### Completed (locally validated)
 
@@ -273,6 +276,9 @@ replacing them, based on historical lessons:
 | Compression | Seven-corpus (24.38M chars) CNBE stream and Volume | ✅ Done |
 | MoE routing | 8/16/64 experts, three-field mapping, Gini 0.15 | ✅ Done |
 | Hardware prototype | RISC-V custom instructions, Verilog core | ✅ Done |
+| RISC-V v8 simulator | Python/C/QEMU/Verilog/Spike five-layer consistency, real skill tables | ✅ Done |
+| Linux 0.01 CNBE-32 RISC-V | Compiles, links, boots under QEMU/OpenSBI; runtime aligns with v8 | ✅ Done |
+| Math model deepening | Metric/lattice/information-theory/geometry/algebra experiments | ✅ Done |
 | API ablation | Confusable-character +33.3pp vs plain text | ✅ Done |
 | Copyright materials | Software copyright application submitted | ✅ Done |
 
@@ -295,10 +301,13 @@ A100/H100 compute, estimated at 2-4 hours per experiment:
 1. Bit-field spec: `radix(8) | stroke(5) | struct(4) | index(11) | ext(4)`,
    see `docs/specification/bit-layout.md`;
 2. Formal mathematics: morphological Hamming distance, hyperbolic embeddings,
-   golden-vector consistency;
+   golden-vector consistency; 2026-08-05 experiments add metric-space axioms,
+   lattice/range-query theory, entropy analysis, and algebraic property tests;
 3. Instruction set and hardware: RISC-V custom instructions
-   (map / extract / cmp / skill), Verilog core and FPGA validation;
-4. Operating system: Linux kernel patch examples (`linux_cnbe32_riscv/`);
+   (map / extract / cmp / skill), v8 five-layer simulator (Python / C / QEMU /
+   Verilog / Spike), Verilog core and FPGA validation;
+4. Operating system: Linux 0.01 CNBE-32 RISC-V mini-kernel that boots under
+   QEMU/OpenSBI (`linux_cnbe32_riscv/`);
 5. Compiler / decoder: `cnbe32` Python package, C/Rust bindings,
    bidirectional conversion;
 6. Applications and tools: desktop demo, classical-text OCR validation,
@@ -312,9 +321,18 @@ A100/H100 compute, estimated at 2-4 hours per experiment:
 | CNBE Volume | O(1) random access | Suitable for random access |
 | MoE-64 hard routing | Next-code +3.26pp, Gini 0.153 | Hard routing works; three-field mapping is more balanced |
 | API confusable disambiguation | CNBE hint 0.933 vs plain 0.600 | Structural fields help character-level tasks significantly |
+| v8 five-layer simulator | Python/C/QEMU/Verilog/Spike all PASS, Linux runtime 55/55 | Instruction semantics and runtime align on the same real skill table |
+| Metric axioms | 200k-pair PASS except identity; 50,728 zero-distance pairs | `cnbe.cmp` is a pseudo-metric; structural equivalence-class semantics required |
+| Lattice / range query | Distributive lattice holds; 3D prefix-sum ~1500x speedup | Structural range search is O(1) and ready for indexing |
+| Information theory | H(tuple) 13.28 bit; ~3.7 bit redundancy over 17 bits | Entropy belongs in storage-layer design, not RISC-V field semantics |
+| Algebraic properties | 160,000+ assertions, 0 failures | Suitable entry point for TLA+/Coq formal verification |
 
 ## Version History
 
+- **v1.2.0 (2026-08-05)**: RISC-V v8 five-layer simulator foundation, Linux
+  0.01 CNBE-32 RISC-V boot under QEMU/OpenSBI, and mathematical model
+  deepening experiments (pseudo-metric boundary, lattice/range query,
+  information theory, hyperbolic geometry, algebraic properties);
 - **v1.1.0 (2026-08-04)**: positioning redefined; added compatibility
   strategy, status/roadmap, technology-stack layering, and limitations;
 - **v1.0.4 (2026-07-27)**: first stable release with 21,178 entries,
@@ -561,6 +579,35 @@ but not punctuation.
 - [CNBE-MoE Entry](./experiments/2026-08-03_cnbe_moe/README.md)
 - [Final Report](./experiments/2026-08-03_cnbe_moe/CNBE_MoE_最终报告.md)
 - [API Ablation Report](./experiments/2026-08-03_cnbe_moe/CNBE_MoE_API消融实验报告.md)
+
+### 2026-08-05: RISC-V v8 Simulator and Math Foundation
+
+The RISC-V layer was rebuilt as a simulator-first foundation (`riscv/v8/`):
+all skill tables and golden vectors come from the real 21,178-row
+`data/cnbe32.db`, and the same instruction semantics were verified across
+Python, C, QEMU, Verilog, and Spike. The Linux 0.01 CNBE-32 RISC-V mini-kernel
+then compiled, linked, and booted under QEMU/OpenSBI, printing the Chinese
+system banner and passing the v8 runtime alignment test 55/55.
+
+The same real database anchored five mathematical deepening experiments:
+
+| Direction | Result | Boundary |
+|---|---|---|
+| Metric axioms | Nonnegativity, symmetry, triangle PASS; identity FAIL | `cnbe.cmp` is a pseudo-metric (50,728 zero-distance pairs); must define structural equivalence classes |
+| Lattice / range query | Distributive lattice holds; 3D prefix-sum ~1500x speedup | Range search is O(1); join/meet results are not closed inside the current char table |
+| Information theory | H(tuple) 13.28 bit; ~3.7 bit redundancy over 17 bits | Entropy optimization belongs in storage-layer design, not RISC-V field semantics |
+| Hyperbolic geometry | Same-radix AUC 0.7092 vs weighted 0.9845 | Cannot support the 92.7% → 95% claim without a labeled confusable set; direction deferred |
+| Algebraic properties | 160,000+ assertions, 0 failures | Lightweight axioms pass; TLA+/Coq + CBMC/SymbiYosys is the next formalization stage |
+
+Documents:
+
+- [v8 Verification Report](./riscv/v8/docs/VERIFICATION_REPORT_2026-08-05.md)
+- [v8 Alignment Map](./riscv/v8/docs/ALIGNMENT.md)
+- [Linux 0.01 Simulation Report](./linux_cnbe32_riscv/docs/SIMULATION_REPORT_2026-08-05.md)
+- [Math Experiment Report](./experiments/2026-08-05_cnbe_math/REPORT_2026-08-05.md)
+- [TLA+ Draft](./experiments/2026-08-05_cnbe_math/spec/CNBE32_ALGEBRA.tla)
+
+Unified local reproduction: `scripts/verify_project.sh`.
 
 ## Agent and automation boundary
 
