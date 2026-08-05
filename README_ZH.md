@@ -130,6 +130,9 @@ flowchart TD
 | SDK 安装与基础编码 | [快速开始](#快速开始)、[Python SDK 示例](#python-sdk-示例) | 位域编码/解码、Hamming distance、SQLite 查询 |
 | 位域一致性 | [`spec/golden_vectors.json`](./spec/golden_vectors.json)、[实现一致性](#实现一致性) | Python/C/Rust/硬件方向共享 golden vectors |
 | 桌面软件 | [桌面展示 Demo](#桌面展示-demo) | 本地运行与 Win/macOS/Linux 打包 |
+| RISC-V v8 模拟器栈 | [`riscv/v8/`](./riscv/v8/)、[验证过程公示](./riscv/v8/docs/VERIFICATION_REPORT_2026-08-05.md) | Python/C/QEMU/Verilog/Spike 五层一致性，真实 21,178 行技能表 |
+| Linux mini-kernel 启动 | [`linux_cnbe32_riscv/`](./linux_cnbe32_riscv/)、[模拟启动报告](./linux_cnbe32_riscv/docs/SIMULATION_REPORT_2026-08-05.md) | Linux 0.01 CNBE-32 RISC-V 在 QEMU/OpenSBI 下启动，运行时与 v8 对拍 55/55 |
+| 数学基础实验 | [`experiments/2026-08-05_cnbe_math/`](./experiments/2026-08-05_cnbe_math/) | 伪度量边界、分配格、信息熵、双曲几何、代数性质 |
 | 七语料压缩与 Volume | [`experiments/2026-08-02_seven_corpora_compression/`](./experiments/2026-08-02_seven_corpora_compression/) | 24.38M 字，压缩、随机访问、路由代理 |
 | MoE 原型 | [`experiments/2026-08-03_cnbe_moe/`](./experiments/2026-08-03_cnbe_moe/) | Dense/MoE、硬路由、三字段映射、Triton 实验 |
 | 古籍 OCR 边界 | [`llm_experiments/2026-08-02_yongle_failures/`](./llm_experiments/2026-08-02_yongle_failures/) | 永乐大典失败复盘、真值库与句读转向 |
@@ -145,7 +148,7 @@ CNBE-32 既是一个可运行的软件项目，也是一组正在形成的研究
 |---|---|---|
 | 中文信息处理 / 人工智能从业者 | [实验结果摘要](#实验结果摘要)、[CNBE-MoE](#2026-08-03cnbe-moe-原型与-api-消融) | CNBE 如何作为小模型特征、MoE 路由先验和形近字消歧线索 |
 | 中文文字 / 古籍数字化研究者 | [古籍 OCR 失败复盘](#2026-08-02古籍-ocr-失败复盘与句读转向)、[项目合理性](#项目合理性) | OCR、真值库、句读、分段、校勘和汉字结构证据的分工 |
-| 系统 / 芯片 / 编译器方向 | [技术栈分层](#技术栈分层)、[位域布局](#位域布局)、[给 geek 的看点](#给-geek-的看点) | 位域、RISC-V、Verilog、Linux、SDK 如何连成全栈原型 |
+| 系统 / 芯片 / 编译器方向 | [RISC-V v8 模拟器栈](#2026-08-05risc-v-v8-模拟器与数学基座)、[技术栈分层](#技术栈分层)、[位域布局](#位域布局)、[给 geek 的看点](#给-geek-的看点) | 位域、RISC-V、Verilog、Linux、SDK 如何连成全栈原型 |
 | 政策制定 / 标准化 / 产业观察者 | [兼容性策略](#兼容性策略渐进演进而非另起炉灶)、[当前标准重启状态](#当前标准重启状态)、[证据等级](#证据等级) | 项目如何兼容 Unicode/GB，如何区分研究原型、标准对齐和证据边界 |
 | 软件著作权 / 演示使用者 | [桌面展示 Demo](#桌面展示-demo) | 可运行展示程序、三端打包方式和软著材料 |
 
@@ -221,7 +224,7 @@ CNBE-32 兼容现有 CJK/Unicode/GB 编码体系，而非彻底取代，这一�
 > 核心原则：CNBE-32 不是“另起炉灶”，而是“添砖加瓦”——让中文结构信息
 > 成为现有计算机体系的可选、兼容的附加层。
 
-## 当前状态与进展（2026-08-04）
+## 当前状态与进展（2026-08-05）
 
 ### 已完成（本地验证）
 
@@ -233,6 +236,9 @@ CNBE-32 兼容现有 CJK/Unicode/GB 编码体系，而非彻底取代，这一�
 | 压缩实验 | 七语料（24.38M 字）CNBE 流与 Volume | ✅ 完成 |
 | MoE 路由 | 8/16/64 专家硬路由，三字段映射，Gini 0.15 | ✅ 完成 |
 | 硬件原型 | RISC-V 自定义指令、Verilog core | ✅ 完成 |
+| RISC-V v8 模拟器 | Python/C/QEMU/Verilog/Spike 五层一致性，真实技能表 | ✅ 完成 |
+| Linux 0.01 CNBE-32 RISC-V | 编译、链接并在 QEMU/OpenSBI 下启动；运行时与 v8 对齐 | ✅ 完成 |
+| 数学模型深化 | 度量/格/信息论/几何/代数五类实验 | ✅ 完成 |
 | API 消融 | 形近字消歧 +33.3pp（vs 原文） | ✅ 完成 |
 | 软著材料 | 已提交计算机软件著作权登记 | ✅ 完成 |
 
@@ -253,9 +259,12 @@ CNBE-32 兼容现有 CJK/Unicode/GB 编码体系，而非彻底取代，这一�
 1. 位域规范：`radix(8) | stroke(5) | struct(4) | index(11) | ext(4)`，
    见 `docs/specification/bit-layout.md`；
 2. 形式化数学：形态汉明距离、双曲嵌入、golden vectors 一致性测试；
+   2026-08-05 实验新增度量公理、格与范围查询、熵分析与代数性质测试；
 3. 指令集与硬件：RISC-V 自定义指令（map / extract / cmp / skill），
-   Verilog core 与 FPGA 验证；
-4. 操作系统：Linux 内核补丁示例（`linux_cnbe32_riscv/`）；
+   v8 五层模拟器（Python / C / QEMU / Verilog / Spike）、Verilog core 与
+   FPGA 验证；
+4. 操作系统：Linux 0.01 CNBE-32 RISC-V mini-kernel，可在 QEMU/OpenSBI
+   下启动（`linux_cnbe32_riscv/`）；
 5. 编译/解码器：`cnbe32` Python 包、C/Rust 绑定、双向转换；
 6. 应用与工具：桌面 Demo、古籍 OCR 校验原型、MoE 结构路由验证。
 
@@ -267,9 +276,17 @@ CNBE-32 兼容现有 CJK/Unicode/GB 编码体系，而非彻底取代，这一�
 | CNBE Volume | O(1) 定位 | 适合随机访问 |
 | MoE-64 硬路由 | Next-code +3.26pp，Gini 0.153 | 硬路由有效，三字段映射更均衡 |
 | API 形近字消歧 | CNBE 提示 0.933 vs 原文 0.600 | 结构字段对字符级任务显著有效 |
+| v8 五层模拟器 | Python/C/QEMU/Verilog/Spike 全 PASS，Linux 运行时 55/55 | 指令语义与运行时在同一真实技能表上对齐 |
+| 度量公理 | 20 万对除同一性外全 PASS；50,728 对零距离 | `cnbe.cmp` 是伪度量，需明确结构等价类语义 |
+| 格与范围查询 | 分配格成立；三维前缀和约 1500x 加速 | 结构范围检索 O(1)，可用于索引设计 |
+| 信息论 | H(tuple) 13.28 bit，相对 17 bit 冗余约 3.7 bit | 熵优化属于存储层，不改 RISC-V 字段语义 |
+| 代数性质 | 160,000+ 断言，0 失败 | 可作为 TLA+/Coq 形式化验证的入口 |
 
 ## 版本历史
 
+- **v1.2.0（2026-08-05）**：RISC-V v8 五层模拟器基座、Linux 0.01
+  CNBE-32 RISC-V 在 QEMU/OpenSBI 下启动、数学模型深化实验（伪度量边界、
+  格/范围查询、信息论、双曲几何、代数性质）；
 - **v1.1.0（2026-08-04）**：定位重定义，增加兼容性策略、状态与规划、
   技术栈分层与局限性说明；
 - **v1.0.4（2026-07-27）**：首个稳定发布，含 21,178 条编码、桌面 Demo、
@@ -506,6 +523,34 @@ CNBE Volume 以约 +40% 体积换 O(1) 随机定位；CNBE 结构路由负载近
 - [CNBE-MoE 实验入口](./experiments/2026-08-03_cnbe_moe/README.md)
 - [最终报告](./experiments/2026-08-03_cnbe_moe/CNBE_MoE_最终报告.md)
 - [API 消融报告](./experiments/2026-08-03_cnbe_moe/CNBE_MoE_API消融实验报告.md)
+
+### 2026-08-05：RISC-V v8 模拟器与数学基座
+
+RISC-V 层以“模拟器优先”重建为 v8 基座（`riscv/v8/`）：所有技能表与
+golden vectors 均来自真实 `data/cnbe32.db`（21,178 行），同一套指令语义
+在 Python、C、QEMU、Verilog、Spike 五层中一致通过；随后 Linux 0.01
+CNBE-32 RISC-V mini-kernel 完成编译、链接，并在 QEMU/OpenSBI 下启动，
+输出中文系统信息，运行时与 v8 对拍 55/55。
+
+同一份真实数据库支撑了五类数学深化实验：
+
+| 方向 | 结果 | 边界 |
+|---|---|---|
+| 度量公理 | 非负/对称/三角 PASS；同一性 FAIL | `cnbe.cmp` 是伪度量（50,728 对零距离）；需定义结构等价类 |
+| 格与范围查询 | 分配格成立；三维前缀和约 1500x 加速 | 范围检索 O(1)；join/meet 结果不一定落在现有字表内 |
+| 信息论 | H(tuple) 13.28 bit；相对 17 bit 冗余约 3.7 bit | 熵优化属于存储层设计，不改 RISC-V 字段语义 |
+| 双曲几何 | 同部首 AUC 0.7092 vs 加权 0.9845 | 无标注形近字集，不能支持 92.7%→95% 声称；方向暂缓 |
+| 代数性质 | 160,000+ 断言，0 失败 | 轻量公理通过；下一步 TLA+/Coq + CBMC/SymbiYosys 形式化 |
+
+文档：
+
+- [v8 验证过程公示](./riscv/v8/docs/VERIFICATION_REPORT_2026-08-05.md)
+- [v8 对齐地图](./riscv/v8/docs/ALIGNMENT.md)
+- [Linux 0.01 模拟启动报告](./linux_cnbe32_riscv/docs/SIMULATION_REPORT_2026-08-05.md)
+- [数学实验报告](./experiments/2026-08-05_cnbe_math/REPORT_2026-08-05.md)
+- [TLA+ 草稿](./experiments/2026-08-05_cnbe_math/spec/CNBE32_ALGEBRA.tla)
+
+统一本地复现：`scripts/verify_project.sh`。
 
 ---
 
