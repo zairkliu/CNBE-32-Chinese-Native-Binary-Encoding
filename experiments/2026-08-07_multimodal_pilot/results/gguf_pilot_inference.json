@@ -1,0 +1,8 @@
+{
+  "ucp": "U+6CA5",
+  "char": "沥",
+  "prompt": "char=沥 cnbe64=0x1017f1c055388470 gb18030_pointer=12259 definition=trickle, drip; strain; dregs mandarin=lì glyph_evidence=rendered 256x256 simsun",
+  "response": "{\"char\": \"沥\", \"cnbe64\": \"0x1017f1c055388470\", \"structure_guess\": \"左右\", \"radix_guess\": \"氵\", \"stroke_guess\": 12, \"confidence\": 0.95, \"rationale\": \"沥字由左边的三点水部首和右边的历组成，呈现典型的左右结构。\"}",
+  "eval_count": 90,
+  "done_reason": "stop"
+}

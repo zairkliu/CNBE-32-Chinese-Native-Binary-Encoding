@@ -1,0 +1,2411 @@
+{
+  "schema_version": 1,
+  "seed": 42,
+  "strata": {
+    "A_8105_core": 100,
+    "B_outside_with_semantic": 100,
+    "C_extension_gap": 100
+  },
+  "entries": [
+    {
+      "ucp": "U+6CA5",
+      "char": "沥",
+      "cnbe_hex": "0x55388470",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+6C67",
+      "char": "汧",
+      "cnbe_hex": "0x55388110",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+98A6",
+      "char": "颦",
+      "cnbe_hex": "0xB5A880B0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+9B36",
+      "char": "鬶",
+      "cnbe_hex": "0xC1908010",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+8F6C",
+      "char": "转",
+      "cnbe_hex": "0x9F408010",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+52B3",
+      "char": "劳",
+      "cnbe_hex": "0x133980C0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+835A",
+      "char": "荚",
+      "cnbe_hex": "0x8C4884E0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+755A",
+      "char": "畚",
+      "cnbe_hex": "0x66508080",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+9C88",
+      "char": "鲈",
+      "cnbe_hex": "0xC3688090",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+9738",
+      "char": "霸",
+      "cnbe_hex": "0xADA88030",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+9E1F",
+      "char": "鸟",
+      "cnbe_hex": "0xC4288000",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+28C4F",
+      "char": "𨱏",
+      "cnbe_hex": "0xA7788980",
+      "block": "CJK_Extension_B",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+7F08",
+      "char": "缈",
+      "cnbe_hex": "0x78608440",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+5DFE",
+      "char": "巾",
+      "cnbe_hex": "0x32198000",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+6BD0",
+      "char": "毐",
+      "cnbe_hex": "0x50388010",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+7F01",
+      "char": "缁",
+      "cnbe_hex": "0x785884A0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+954F",
+      "char": "镏",
+      "cnbe_hex": "0xA7788550",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+576A",
+      "char": "坪",
+      "cnbe_hex": "0x204180E0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+83E5",
+      "char": "菥",
+      "cnbe_hex": "0x8C5883A0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+9E38",
+      "char": "鸸",
+      "cnbe_hex": "0xC4588020",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+9CC7",
+      "char": "鳇",
+      "cnbe_hex": "0xC3888300",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+797A",
+      "char": "祺",
+      "cnbe_hex": "0x71608050",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+692A",
+      "char": "椪",
+      "cnbe_hex": "0x4B608760",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+4E1A",
+      "char": "业",
+      "cnbe_hex": "0x01280070",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+6C64",
+      "char": "汤",
+      "cnbe_hex": "0x553081D0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+976C",
+      "char": "靬",
+      "cnbe_hex": "0xB1608040",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+5FB7",
+      "char": "德",
+      "cnbe_hex": "0x3C788040",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+8C0D",
+      "char": "谍",
+      "cnbe_hex": "0x955882D0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+62CD",
+      "char": "拍",
+      "cnbe_hex": "0x40408350",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+589F",
+      "char": "墟",
+      "cnbe_hex": "0x207182D0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+6591",
+      "char": "斑",
+      "cnbe_hex": "0x43618020",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+8C14",
+      "char": "谔",
+      "cnbe_hex": "0x95588340",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+919B",
+      "char": "醛",
+      "cnbe_hex": "0xA4808150",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+4F69",
+      "char": "佩",
+      "cnbe_hex": "0x094080F0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+6989",
+      "char": "榉",
+      "cnbe_hex": "0x4B688690",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+9CA6",
+      "char": "鲦",
+      "cnbe_hex": "0xC3788260",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+7414",
+      "char": "琔",
+      "cnbe_hex": "0x606080C0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+579A",
+      "char": "垚",
+      "cnbe_hex": "0x20498180",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+5341",
+      "char": "十",
+      "cnbe_hex": "0x18118000",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+5C88",
+      "char": "岈",
+      "cnbe_hex": "0x2E3980C0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+6F56",
+      "char": "潖",
+      "cnbe_hex": "0x55788200",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+9E60",
+      "char": "鹠",
+      "cnbe_hex": "0xC4788290",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+56B7",
+      "char": "嚷",
+      "cnbe_hex": "0x1EA18070",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+6320",
+      "char": "挠",
+      "cnbe_hex": "0x404883F0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+2C497",
+      "char": "𬒗",
+      "cnbe_hex": "0x707085F0",
+      "block": "CJK_Extension_E",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+58A9",
+      "char": "墩",
+      "cnbe_hex": "0x20798140",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+8BB6",
+      "char": "讶",
+      "cnbe_hex": "0x95308040",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+64B5",
+      "char": "撵",
+      "cnbe_hex": "0x40788410",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+5586",
+      "char": "喆",
+      "cnbe_hex": "0x1E6182A0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+6634",
+      "char": "昴",
+      "cnbe_hex": "0x48488230",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+6C2F",
+      "char": "氯",
+      "cnbe_hex": "0x54628030",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+4F9D",
+      "char": "依",
+      "cnbe_hex": "0x09408430",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+7ED6",
+      "char": "绖",
+      "cnbe_hex": "0x78488150",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+6064",
+      "char": "恤",
+      "cnbe_hex": "0x3D4883C0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+62DC",
+      "char": "拜",
+      "cnbe_hex": "0x40488100",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+9E3E",
+      "char": "鸾",
+      "cnbe_hex": "0xC4588080",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+7445",
+      "char": "瑅",
+      "cnbe_hex": "0x60688140",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+8403",
+      "char": "萃",
+      "cnbe_hex": "0x8C588560",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+6C6B",
+      "char": "汫",
+      "cnbe_hex": "0x55388150",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+6C06",
+      "char": "氆",
+      "cnbe_hex": "0x52818080",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+7EB2",
+      "char": "纲",
+      "cnbe_hex": "0x78388080",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+6CA1",
+      "char": "没",
+      "cnbe_hex": "0x55388430",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+741A",
+      "char": "琚",
+      "cnbe_hex": "0x60608120",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+8482",
+      "char": "蒂",
+      "cnbe_hex": "0x8C608700",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+6B93",
+      "char": "殓",
+      "cnbe_hex": "0x4E588090",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+9785",
+      "char": "鞅",
+      "cnbe_hex": "0xB1708110",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+5BC6",
+      "char": "密",
+      "cnbe_hex": "0x285980E0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+6E30",
+      "char": "渰",
+      "cnbe_hex": "0x55608300",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+8191",
+      "char": "膑",
+      "cnbe_hex": "0x827081D0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+7A80",
+      "char": "窀",
+      "cnbe_hex": "0x74498080",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+5E05",
+      "char": "帅",
+      "cnbe_hex": "0x32298050",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+6B49",
+      "char": "歉",
+      "cnbe_hex": "0x4C708030",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+777D",
+      "char": "睽",
+      "cnbe_hex": "0x6D708190",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+8160",
+      "char": "腠",
+      "cnbe_hex": "0x82688160",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+8E51",
+      "char": "蹑",
+      "cnbe_hex": "0x9D888100",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+8E70",
+      "char": "蹰",
+      "cnbe_hex": "0x9D9880C0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+9010",
+      "char": "逐",
+      "cnbe_hex": "0xA25380C0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+633D",
+      "char": "挽",
+      "cnbe_hex": "0x40508210",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+4E13",
+      "char": "专",
+      "cnbe_hex": "0x01200050",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+8BB5",
+      "char": "讵",
+      "cnbe_hex": "0x95308030",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+5C49",
+      "char": "屉",
+      "cnbe_hex": "0x2C428080",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+7442",
+      "char": "瑂",
+      "cnbe_hex": "0x60688110",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+96C7",
+      "char": "雇",
+      "cnbe_hex": "0xAC618090",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+7330",
+      "char": "猰",
+      "cnbe_hex": "0x5E608140",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+789F",
+      "char": "碟",
+      "cnbe_hex": "0x707080B0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+784C",
+      "char": "硌",
+      "cnbe_hex": "0x70588120",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+8017",
+      "char": "耗",
+      "cnbe_hex": "0x7F518020",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+9CE3",
+      "char": "鳣",
+      "cnbe_hex": "0xC3A88250",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+8DF9",
+      "char": "跹",
+      "cnbe_hex": "0x9D688200",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+6910",
+      "char": "椐",
+      "cnbe_hex": "0x4B6085E0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+5410",
+      "char": "吐",
+      "cnbe_hex": "0x1E318150",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+40CE",
+      "char": "䃎",
+      "cnbe_hex": "0x70708060",
+      "block": "CJK_Extension_A",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+72F3",
+      "char": "狳",
+      "cnbe_hex": "0x5E508080",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+73DB",
+      "char": "珛",
+      "cnbe_hex": "0x60508160",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+6A66",
+      "char": "橦",
+      "cnbe_hex": "0x4B808450",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+7AA6",
+      "char": "窦",
+      "cnbe_hex": "0x746980C0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+53D6",
+      "char": "取",
+      "cnbe_hex": "0x1D408030",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+9174",
+      "char": "酴",
+      "cnbe_hex": "0xA4708040",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+9CB1",
+      "char": "鲱",
+      "cnbe_hex": "0xC38082F0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+6D43",
+      "char": "浃",
+      "cnbe_hex": "0x55488510",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "A_8105_core",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+21B50",
+      "char": "𡭐",
+      "cnbe_hex": "0x29918000",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+21650",
+      "char": "𡙐",
+      "cnbe_hex": "0x25618100",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+7342",
+      "char": "獂",
+      "cnbe_hex": "0x5E6880F0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+364A",
+      "char": "㙊",
+      "cnbe_hex": "0x20598030",
+      "block": "CJK_Extension_A",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+286F5",
+      "char": "𨛵",
+      "cnbe_hex": "0xA3508210",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+48C4",
+      "char": "䣄",
+      "cnbe_hex": "0xA3508010",
+      "block": "CJK_Extension_A",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+9A4B",
+      "char": "驋",
+      "cnbe_hex": "0xBBB08060",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+23932",
+      "char": "𣤲",
+      "cnbe_hex": "0x4CA08020",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+744E",
+      "char": "瑎",
+      "cnbe_hex": "0x606881D0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+35DD",
+      "char": "㗝",
+      "cnbe_hex": "0x1E6980B0",
+      "block": "CJK_Extension_A",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+20FE4",
+      "char": "𠿤",
+      "cnbe_hex": "0x1E818450",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+21FF0",
+      "char": "𡿰",
+      "cnbe_hex": "0x2F398030",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+8A8E",
+      "char": "誎",
+      "cnbe_hex": "0x957080F0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+315CC",
+      "char": "𱗌",
+      "cnbe_hex": "0x20618CA0",
+      "block": "CJK_Extension_H",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+20A3B",
+      "char": "𠨻",
+      "cnbe_hex": "0x1B328100",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+8C38",
+      "char": "谸",
+      "cnbe_hex": "0x96508010",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+40F1",
+      "char": "䃱",
+      "cnbe_hex": "0x70A08000",
+      "block": "CJK_Extension_A",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+9ABD",
+      "char": "骽",
+      "cnbe_hex": "0xBC808060",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+2B68C",
+      "char": "𫚌",
+      "cnbe_hex": "0xC36080B0",
+      "block": "CJK_Extension_C",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+4E6A",
+      "char": "乪",
+      "cnbe_hex": "0x05300080",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+29095",
+      "char": "𩂕",
+      "cnbe_hex": "0xAD6880F0",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+2A85B",
+      "char": "𪡛",
+      "cnbe_hex": "0x1E599050",
+      "block": "CJK_Extension_C",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+2A67D",
+      "char": "𪙽",
+      "cnbe_hex": "0xD3F88020",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+22398",
+      "char": "𢎘",
+      "cnbe_hex": "0x39198020",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+9B84",
+      "char": "鮄",
+      "cnbe_hex": "0xC3808170",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+9BCD",
+      "char": "鯍",
+      "cnbe_hex": "0xC3908200",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+3F15",
+      "char": "㼕",
+      "cnbe_hex": "0x61918000",
+      "block": "CJK_Extension_A",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+7959",
+      "char": "祙",
+      "cnbe_hex": "0x714880E0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+75E5",
+      "char": "痥",
+      "cnbe_hex": "0x686081D0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+218F9",
+      "char": "𡣹",
+      "cnbe_hex": "0x26908140",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+27C52",
+      "char": "𧱒",
+      "cnbe_hex": "0x98708090",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+837F",
+      "char": "荿",
+      "cnbe_hex": "0x8C488610",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+29147",
+      "char": "𩅇",
+      "cnbe_hex": "0xAD988180",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+200A5",
+      "char": "𠂥",
+      "cnbe_hex": "0x04300080",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+8EC6",
+      "char": "軆",
+      "cnbe_hex": "0x9EA08010",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+25635",
+      "char": "𥘵",
+      "cnbe_hex": "0x71488200",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+5E6E",
+      "char": "幮",
+      "cnbe_hex": "0x32918000",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+4BF2",
+      "char": "䯲",
+      "cnbe_hex": "0xBE708030",
+      "block": "CJK_Extension_A",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+27A6B",
+      "char": "𧩫",
+      "cnbe_hex": "0x95808360",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+6E8A",
+      "char": "溊",
+      "cnbe_hex": "0x55608850",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+350D",
+      "char": "㔍",
+      "cnbe_hex": "0x12808020",
+      "block": "CJK_Extension_A",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+256D1",
+      "char": "𥛑",
+      "cnbe_hex": "0x717081B0",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+918A",
+      "char": "醊",
+      "cnbe_hex": "0xA47880E0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+78DF",
+      "char": "磟",
+      "cnbe_hex": "0x708080D0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+59F8",
+      "char": "姸",
+      "cnbe_hex": "0x264882B0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+4450",
+      "char": "䑐",
+      "cnbe_hex": "0x83598000",
+      "block": "CJK_Extension_A",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+262E3",
+      "char": "𦋣",
+      "cnbe_hex": "0x7A7180D0",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+6804",
+      "char": "栄",
+      "cnbe_hex": "0x4B488570",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+612F",
+      "char": "愯",
+      "cnbe_hex": "0x3D6881F0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+271CC",
+      "char": "𧇌",
+      "cnbe_hex": "0x8D7080C0",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+2BDC9",
+      "char": "𫷉",
+      "cnbe_hex": "0x32618370",
+      "block": "CJK_Extension_E",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+3639",
+      "char": "㘹",
+      "cnbe_hex": "0x20498030",
+      "block": "CJK_Extension_A",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+252B8",
+      "char": "𥊸",
+      "cnbe_hex": "0x6D888290",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+30D6F",
+      "char": "𰵯",
+      "cnbe_hex": "0x95488320",
+      "block": "CJK_Extension_G",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+2A576",
+      "char": "𪕶",
+      "cnbe_hex": "0xD0B88070",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+7FCD",
+      "char": "翍",
+      "cnbe_hex": "0x7C5880D0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+24C09",
+      "char": "𤰉",
+      "cnbe_hex": "0x65618010",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+29144",
+      "char": "𩅄",
+      "cnbe_hex": "0xAD988150",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+41FE",
+      "char": "䇾",
+      "cnbe_hex": "0x76688090",
+      "block": "CJK_Extension_A",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+27640",
+      "char": "𧙀",
+      "cnbe_hex": "0x915082D0",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+20BC8",
+      "char": "𠯈",
+      "cnbe_hex": "0x1E3183B0",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+2786B",
+      "char": "𧡫",
+      "cnbe_hex": "0x93808120",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+2E263",
+      "char": "𮉣",
+      "cnbe_hex": "0x784082B0",
+      "block": "CJK_Extension_F",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+40AC",
+      "char": "䂬",
+      "cnbe_hex": "0x70588030",
+      "block": "CJK_Extension_A",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+5695",
+      "char": "嚕",
+      "cnbe_hex": "0x1E918080",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+200F6",
+      "char": "𠃶",
+      "cnbe_hex": "0x054800E0",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+81F5",
+      "char": "臵",
+      "cnbe_hex": "0x85618000",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+4861",
+      "char": "䡡",
+      "cnbe_hex": "0x9F808010",
+      "block": "CJK_Extension_A",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+25C20",
+      "char": "𥰠",
+      "cnbe_hex": "0x768083A0",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+29207",
+      "char": "𩈇",
+      "cnbe_hex": "0xB0688040",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+7DDD",
+      "char": "緝",
+      "cnbe_hex": "0x787881B0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+2679F",
+      "char": "𦞟",
+      "cnbe_hex": "0x82708260",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+20758",
+      "char": "𠝘",
+      "cnbe_hex": "0x12508430",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+3E74",
+      "char": "㹴",
+      "cnbe_hex": "0x5E508030",
+      "block": "CJK_Extension_A",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+24645",
+      "char": "𤙅",
+      "cnbe_hex": "0x5D4881B0",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+7790",
+      "char": "瞐",
+      "cnbe_hex": "0x6D788120",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+21C38",
+      "char": "𡰸",
+      "cnbe_hex": "0x2C3A80A0",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+2764C",
+      "char": "𧙌",
+      "cnbe_hex": "0x91508390",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+20086",
+      "char": "𠂆",
+      "cnbe_hex": "0x04100040",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+675A",
+      "char": "杚",
+      "cnbe_hex": "0x4B3881B0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+2830D",
+      "char": "𨌍",
+      "cnbe_hex": "0x9F7081B0",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+27874",
+      "char": "𧡴",
+      "cnbe_hex": "0x938081B0",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+40AA",
+      "char": "䂪",
+      "cnbe_hex": "0x70588010",
+      "block": "CJK_Extension_A",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+26E97",
+      "char": "𦺗",
+      "cnbe_hex": "0x8C808620",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+83E4",
+      "char": "菤",
+      "cnbe_hex": "0x8C588390",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+9D6D",
+      "char": "鵭",
+      "cnbe_hex": "0xC4988110",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+4800",
+      "char": "䠀",
+      "cnbe_hex": "0x9D788030",
+      "block": "CJK_Extension_A",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+231A4",
+      "char": "𣆤",
+      "cnbe_hex": "0x48508350",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+4D54",
+      "char": "䵔",
+      "cnbe_hex": "0xCAA08000",
+      "block": "CJK_Extension_A",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+59D9",
+      "char": "姙",
+      "cnbe_hex": "0x264880D0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+91FC",
+      "char": "釼",
+      "cnbe_hex": "0xA75881A0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+9285",
+      "char": "銅",
+      "cnbe_hex": "0xA7708190",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+46F3",
+      "char": "䛳",
+      "cnbe_hex": "0x957880A0",
+      "block": "CJK_Extension_A",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+511B",
+      "char": "儛",
+      "cnbe_hex": "0x098080D0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+21029",
+      "char": "𡀩",
+      "cnbe_hex": "0x1E818880",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+284DE",
+      "char": "𨓞",
+      "cnbe_hex": "0xA25383D0",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+25CC6",
+      "char": "𥳆",
+      "cnbe_hex": "0x769082D0",
+      "block": "CJK_Extension_B",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+630B",
+      "char": "挋",
+      "cnbe_hex": "0x404882E0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+39DC",
+      "char": "㧜",
+      "cnbe_hex": "0x40408090",
+      "block": "CJK_Extension_A",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+2B785",
+      "char": "𫞅",
+      "cnbe_hex": "0x4A5080B0",
+      "block": "CJK_Extension_D",
+      "stratum": "B_outside_with_semantic",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+2EE3E",
+      "char": "𮸾",
+      "cnbe_hex": "0xB8608370",
+      "block": "CJK_Extension_I",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+7183",
+      "char": "熃",
+      "cnbe_hex": "0x56708170",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+21783",
+      "char": "𡞃",
+      "cnbe_hex": "0x26588720",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+22554",
+      "char": "𢕔",
+      "cnbe_hex": "0x3C7080C0",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+25AF6",
+      "char": "𥫶",
+      "cnbe_hex": "0x76508210",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+28F55",
+      "char": "𨽕",
+      "cnbe_hex": "0xAA8880C0",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+2E0BF",
+      "char": "𮂿",
+      "cnbe_hex": "0x73508400",
+      "block": "CJK_Extension_F",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+20E77",
+      "char": "𠹷",
+      "cnbe_hex": "0x1E698830",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+7BE0",
+      "char": "篠",
+      "cnbe_hex": "0x768081B0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+21A3C",
+      "char": "𡨼",
+      "cnbe_hex": "0x285982C0",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+5CF3",
+      "char": "峳",
+      "cnbe_hex": "0x2E5181A0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+2709E",
+      "char": "𧂞",
+      "cnbe_hex": "0x8CA084A0",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+29198",
+      "char": "𩆘",
+      "cnbe_hex": "0xADB080D0",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+2E5A7",
+      "char": "𮖧",
+      "cnbe_hex": "0x91788510",
+      "block": "CJK_Extension_F",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+2E501",
+      "char": "𮔁",
+      "cnbe_hex": "0x8E608780",
+      "block": "CJK_Extension_F",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+2695E",
+      "char": "𦥞",
+      "cnbe_hex": "0x86508030",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+2207F",
+      "char": "𢁿",
+      "cnbe_hex": "0x32418140",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+23714",
+      "char": "𣜔",
+      "cnbe_hex": "0x4B888590",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+8D83",
+      "char": "趃",
+      "cnbe_hex": "0x9C6080A0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+305AD",
+      "char": "𰖭",
+      "cnbe_hex": "0x48808680",
+      "block": "CJK_Extension_G",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+20B83",
+      "char": "𠮃",
+      "cnbe_hex": "0x1D788000",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+24DF5",
+      "char": "𤷵",
+      "cnbe_hex": "0x68688590",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+251B4",
+      "char": "𥆴",
+      "cnbe_hex": "0x6D6084D0",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+276F6",
+      "char": "𧛶",
+      "cnbe_hex": "0x917085A0",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+2933C",
+      "char": "𩌼",
+      "cnbe_hex": "0xB1A081B0",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+238F7",
+      "char": "𣣷",
+      "cnbe_hex": "0x4C7080D0",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+27AFE",
+      "char": "𧫾",
+      "cnbe_hex": "0x95988250",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+318FF",
+      "char": "𱣿",
+      "cnbe_hex": "0x4B709270",
+      "block": "CJK_Extension_H",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+2EE23",
+      "char": "𮸣",
+      "cnbe_hex": "0xA7A08AF0",
+      "block": "CJK_Extension_I",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+31E24",
+      "char": "𱸤",
+      "cnbe_hex": "0x76888AA0",
+      "block": "CJK_Extension_H",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+7DE4",
+      "char": "緤",
+      "cnbe_hex": "0x78788210",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+202D6",
+      "char": "𠋖",
+      "cnbe_hex": "0x09588740",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+25E7A",
+      "char": "𥹺",
+      "cnbe_hex": "0x77698170",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+4587",
+      "char": "䖇",
+      "cnbe_hex": "0x8CF88000",
+      "block": "CJK_Extension_A",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+20843",
+      "char": "𠡃",
+      "cnbe_hex": "0x133980F0",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+2208A",
+      "char": "𢂊",
+      "cnbe_hex": "0x324181F0",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+24A8A",
+      "char": "𤪊",
+      "cnbe_hex": "0x60888370",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+55B0",
+      "char": "喰",
+      "cnbe_hex": "0x1E6184F0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+2ACBD",
+      "char": "𪲽",
+      "cnbe_hex": "0x4B688FC0",
+      "block": "CJK_Extension_C",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+315E2",
+      "char": "𱗢",
+      "cnbe_hex": "0x20698AF0",
+      "block": "CJK_Extension_H",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+2DE77",
+      "char": "𭹷",
+      "cnbe_hex": "0x60808550",
+      "block": "CJK_Extension_F",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+2701A",
+      "char": "𧀚",
+      "cnbe_hex": "0x8C908960",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+6143",
+      "char": "慃",
+      "cnbe_hex": "0x3D6882B0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+20EB5",
+      "char": "𠺵",
+      "cnbe_hex": "0x1E698C10",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+3434",
+      "char": "㐴",
+      "cnbe_hex": "0x09288040",
+      "block": "CJK_Extension_A",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+2D915",
+      "char": "𭤕",
+      "cnbe_hex": "0x43498070",
+      "block": "CJK_Extension_F",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+2A107",
+      "char": "𪄇",
+      "cnbe_hex": "0xC4A88380",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+434F",
+      "char": "䍏",
+      "cnbe_hex": "0x7A298000",
+      "block": "CJK_Extension_A",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+9AAD",
+      "char": "骭",
+      "cnbe_hex": "0xBC608040",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+209A8",
+      "char": "𠦨",
+      "cnbe_hex": "0x18518050",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+4291",
+      "char": "䊑",
+      "cnbe_hex": "0x77718040",
+      "block": "CJK_Extension_A",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+2483A",
+      "char": "𤠺",
+      "cnbe_hex": "0x5E708130",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+237B3",
+      "char": "𣞳",
+      "cnbe_hex": "0x4B988460",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+26FE5",
+      "char": "𦿥",
+      "cnbe_hex": "0x8C908620",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+2A5EF",
+      "char": "𪗯",
+      "cnbe_hex": "0xD3A08170",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+20586",
+      "char": "𠖆",
+      "cnbe_hex": "0x0E418030",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+2B918",
+      "char": "𫤘",
+      "cnbe_hex": "0x0A4080F0",
+      "block": "CJK_Extension_E",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+6535",
+      "char": "攵",
+      "cnbe_hex": "0x42208010",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+2BF86",
+      "char": "𫾆",
+      "cnbe_hex": "0x40788BC0",
+      "block": "CJK_Extension_E",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+76B0",
+      "char": "皰",
+      "cnbe_hex": "0x6B508020",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+7C37",
+      "char": "簷",
+      "cnbe_hex": "0x769880F0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+9188",
+      "char": "醈",
+      "cnbe_hex": "0xA47880C0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+4274",
+      "char": "䉴",
+      "cnbe_hex": "0x76B88020",
+      "block": "CJK_Extension_A",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+2BC6F",
+      "char": "𫱯",
+      "cnbe_hex": "0x267886E0",
+      "block": "CJK_Extension_E",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+317C5",
+      "char": "𱟅",
+      "cnbe_hex": "0x3D788CE0",
+      "block": "CJK_Extension_H",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+2B00B",
+      "char": "𫀋",
+      "cnbe_hex": "0x715882F0",
+      "block": "CJK_Extension_C",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+8DFE",
+      "char": "跾",
+      "cnbe_hex": "0x9D7080B0",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+41C4",
+      "char": "䇄",
+      "cnbe_hex": "0x75408010",
+      "block": "CJK_Extension_A",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+2E4D3",
+      "char": "𮓓",
+      "cnbe_hex": "0x8CB88290",
+      "block": "CJK_Extension_F",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+821D",
+      "char": "舝",
+      "cnbe_hex": "0x88688000",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+31923",
+      "char": "𱤣",
+      "cnbe_hex": "0x4B888B70",
+      "block": "CJK_Extension_H",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+97D5",
+      "char": "韕",
+      "cnbe_hex": "0xB2888030",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+24FA4",
+      "char": "𤾤",
+      "cnbe_hex": "0x6A888070",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+31FCF",
+      "char": "𱿏",
+      "cnbe_hex": "0x8D608140",
+      "block": "CJK_Extension_H",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+30E80",
+      "char": "𰺀",
+      "cnbe_hex": "0x9F488250",
+      "block": "CJK_Extension_G",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+3131C",
+      "char": "𱌜",
+      "cnbe_hex": "0xD3988170",
+      "block": "CJK_Extension_G",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+210D2",
+      "char": "𡃒",
+      "cnbe_hex": "0x1E9185A0",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+21043",
+      "char": "𡁃",
+      "cnbe_hex": "0x1E898200",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+25D7B",
+      "char": "𥵻",
+      "cnbe_hex": "0x76A082B0",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+25936",
+      "char": "𥤶",
+      "cnbe_hex": "0x744980F0",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+28806",
+      "char": "𨠆",
+      "cnbe_hex": "0xA4588230",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+2074C",
+      "char": "𠝌",
+      "cnbe_hex": "0x12508370",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+30096",
+      "char": "𰂖",
+      "cnbe_hex": "0x09508D60",
+      "block": "CJK_Extension_G",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+294B8",
+      "char": "𩒸",
+      "cnbe_hex": "0xB5808280",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+234E1",
+      "char": "𣓡",
+      "cnbe_hex": "0x4B608A50",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+27109",
+      "char": "𧄉",
+      "cnbe_hex": "0x8CA88480",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+268CC",
+      "char": "𦣌",
+      "cnbe_hex": "0x82B88080",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+23311",
+      "char": "𣌑",
+      "cnbe_hex": "0x48B08060",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+2B207",
+      "char": "𫈇",
+      "cnbe_hex": "0x8C588FC0",
+      "block": "CJK_Extension_C",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+2AE31",
+      "char": "𪸱",
+      "cnbe_hex": "0x56588730",
+      "block": "CJK_Extension_C",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+3790",
+      "char": "㞐",
+      "cnbe_hex": "0x2C428010",
+      "block": "CJK_Extension_A",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+2D1B6",
+      "char": "𭆶",
+      "cnbe_hex": "0x1D7080C0",
+      "block": "CJK_Extension_F",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+304BF",
+      "char": "𰒿",
+      "cnbe_hex": "0x40388810",
+      "block": "CJK_Extension_G",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+23C4C",
+      "char": "𣱌",
+      "cnbe_hex": "0x53588010",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+32160",
+      "char": "𲅠",
+      "cnbe_hex": "0xA2638840",
+      "block": "CJK_Extension_H",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+7D72",
+      "char": "絲",
+      "cnbe_hex": "0x78608330",
+      "block": "CJK_Unified_Ideographs",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+28D15",
+      "char": "𨴕",
+      "cnbe_hex": "0xA97401E0",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+25A14",
+      "char": "𥨔",
+      "cnbe_hex": "0x74898150",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": false
+    },
+    {
+      "ucp": "U+23EAE",
+      "char": "𣺮",
+      "cnbe_hex": "0x55688C60",
+      "block": "CJK_Extension_B",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    },
+    {
+      "ucp": "U+3DBA",
+      "char": "㶺",
+      "cnbe_hex": "0x56588010",
+      "block": "CJK_Extension_A",
+      "stratum": "C_extension_gap",
+      "semantic_ref": true
+    }
+  ]
+}

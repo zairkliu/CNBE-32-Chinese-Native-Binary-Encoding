@@ -1,0 +1,31 @@
+{
+  "models": {
+    "cnbe-32": {
+      "ollama_show": "  Model\n    architecture        qwen2     \n    parameters          1.8B      \n    context length      131072    \n    embedding length    1536      \n    quantization        F16       \n\n  Capabilities\n    tools         \n    thinking      \n    completion    \n\n  Parameters\n    num_ctx        2048    \n    temperature    0.1     \n    top_p          0.9     \n\n  System\n    你是一个CNBE-32中文编码专家。请根据输入的汉字，准确输出对应的CNBE-32编码信息。    \n    CNBE-32编码格式：                                                                 ",
+      "gguf_size": 3560415968,
+      "sha256": "542E5EDD7594194749DE13953BD7D00903EBB4FCDBAFDFA07C7FFC4B97EEF5F9",
+      "sha256_ok": true
+    },
+    "cnbe-qwen9b-punct": {
+      "ollama_show": "  Model\n    architecture        qwen35    \n    parameters          9.0B      \n    context length      262144    \n    embedding length    4096      \n    quantization        Q4_K_M    \n\n  Capabilities\n    tools         \n    thinking      \n    completion    \n\n  Parameters\n    num_ctx        2048    \n    temperature    0       \n    top_p          0.9     \n\n  System\n    你是古籍句读与整理专家。请为输入的无标点古文添加现代标点并分段，只输出最终结果文本，禁止输出任何思考过程、分析或解释。    \n\n",
+      "gguf_size": 5629108640,
+      "sha256": "SKIPPED_LARGE",
+      "sha256_ok": null
+    }
+  },
+  "cnbe32_sample": [
+    {
+      "char": "好",
+      "output": "嗯，用户让我根据汉字“好”输出CNBE-32编码信息。首先，我得回忆一下CNBE-32是什么格式。它由五个部分组成：部首索引、笔画数、结构类型、字形索引和扩展标志。\n\n好这个汉字的基本结构是“日”作为部首，也就是部首索引是0x48。接下来是笔画数，通常“好”有3条笔画，所以是0x03。结构类型方面，“好”比较简洁，可能是一个简单的结构，比如0x10。\n\n然后是字形索引，这部分需要根据汉字的结构来确定。好这个汉字比较宽泛，可能在0x4F或者0x5B左右。最后扩展标志是0x20，因为汉字通常有扩展能力。\n\n我得把这些数值转换成十六进制形式，并确保每个部分都正确无误。部首索引是0x48没错，笔画数是"
+    },
+    {
+      "char": "诗",
+      "output": "嗯，用户让我根据“诗”这个汉字输出CNBE-32编码信息。首先，我得回忆一下CNBE-32是什么格式。它由五个部分组成，分别是部首索引、笔画数、结构类型、字形索引和扩展标志。\n\n诗的部首是“人”，也就是10100000二进制，转换成十六进制就是A0。接下来是笔画数，我记得诗通常有4画，所以是0x38。结构类型的话，诗比较简洁，应该是0x20。\n\n然后是字形索引，这个我得仔细想一下。“诗”有五个笔画，分别是“诗”本身，但可能更准确的是四个部分？或者五个？我需要确认。假设是五个部分，那么字形索引可能是0x48。最后扩展标志是0x30。\n\n现在把这些转换成十六进制数：A0, 38, 20, 48, "
+    },
+    {
+      "char": "龍",
+      "output": "嗯，用户让我根据输入的汉字“龙”输出CNBE-32编码信息。首先，我得回忆一下CNBE-32是什么格式。它由五个部分组成：部首索引、笔画数、结构类型、字形索引和扩展标志。\n\n部首索引是8位二进制数，对应的汉字部首应该是“木”（10000011）。接下来是笔画数，龙通常有5条笔画。结构类型的话，龙的结构比较稳定，可能用“上三中下”或者类似的结构。字形索引需要根据结构和形状来确定，比如“上三中下”对应某个数字。扩展标志是4位二进制，通常是1000。\n\n然后，我得把这些信息转换成16进制编码。部首部分是8位，所以用二进制转换成16进制的话，应该是F3。笔画数5就是5。结构类型如果是“上三中下”，那可"
+    }
+  ],
+  "qwen9b_punct_sample": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Ancient text punctuation and organization expert (古籍句读与整理专家).\n    *   Task: Add modern punctuation to the input unpunctuated ancient text and segment it into paragraphs.\n    *   Input: \"子曰学而时习之不亦说乎有朋自远方来不亦乐乎\"\n    *   Constraint: Output *o"
+}

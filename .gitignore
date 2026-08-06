@@ -39,6 +39,7 @@ outputs/*.png
 outputs/**/*.png
 outputs/.~*.xlsx
 outputs/
+experiments/2026-08-07_multimodal_pilot/glyphs/*.png
 reports/full_catalog_row_level_extraction_results.json
 reports/full_catalog_agent_mapping_evidence_join.json
 # CNBE-32 golden vector local build artifacts
