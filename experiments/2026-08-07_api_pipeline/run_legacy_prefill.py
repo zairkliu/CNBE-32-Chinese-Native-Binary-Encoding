@@ -24,7 +24,15 @@ from openpyxl.utils import get_column_letter
 
 from cnbe32 import decode_cnbe, encode_cnbe
 
-from clients.evidence import STRUCT_CODE, aggregate, deterministic_proposal, load_ids, load_radix_name_map, load_unihan_irg
+from clients.evidence import (
+    STRUCT_CODE,
+    aggregate,
+    deterministic_proposal,
+    encode_proposal,
+    load_ids,
+    load_radix_name_map,
+    load_unihan_irg,
+)
 from clients.llm_client import DeepSeekV4Client
 
 REPO = Path(__file__).resolve().parents[2]
@@ -44,31 +52,6 @@ HEADERS = [
     "复核决定(批准/驳回/修改)", "复核人", "备注",
 ]
 WIDTHS = [8, 10, 10, 10, 10, 10, 12, 12, 12, 10, 24, 12, 12, 12, 10, 12, 12, 10, 34, 12, 10, 12, 10, 36, 22, 10, 20]
-
-
-def encode_proposal(proposal: dict) -> dict:
-    fields = (proposal.get("radix"), proposal.get("strokes"), proposal.get("struct_type"), proposal.get("index"))
-    if any(v is None for v in fields):
-        proposal["encode"] = None
-        proposal["roundtrip_pass"] = False
-        return proposal
-    try:
-        code = encode_cnbe(int(proposal["radix"]), int(proposal["strokes"]), int(proposal["struct_type"]), int(proposal["index"]), 0)
-        decoded = decode_cnbe(code)
-        proposal["cnbe"] = code.code
-        proposal["cnbe_hex"] = hex(code.code)
-        proposal["roundtrip_pass"] = (
-            decoded["radix"] == int(proposal["radix"])
-            and decoded["stroke"] == int(proposal["strokes"])
-            and decoded["struct"] == int(proposal["struct_type"])
-            and decoded["index"] == int(proposal["index"])
-        )
-    except Exception as exc:
-        proposal["cnbe"] = None
-        proposal["cnbe_hex"] = None
-        proposal["roundtrip_pass"] = False
-        proposal["encode_error"] = str(exc)
-    return proposal
 
 
 def llm_prompt(entry: dict, ev: dict, proposal: dict) -> str:
@@ -150,7 +133,12 @@ def build_workbook(entries: list[dict], out_path: Path) -> None:
     ws.freeze_panes = "A2"
     ws.auto_filter.ref = ws.dimensions
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    wb.save(out_path)
+    try:
+        wb.save(out_path)
+    except PermissionError:
+        fallback = out_path.with_name(out_path.stem + "_pending.xlsx")
+        wb.save(fallback)
+        print(f"[warn] primary workbook locked; wrote {fallback}")
 
 
 def main() -> int:
@@ -184,7 +172,7 @@ def main() -> int:
         enriched.append({"char": entry["char"], "unicode": entry["unicode"], "standard_rank": entry.get("standard_rank"), "current": entry["current"], "evidence": ev, "deterministic": det, "entry": entry})
 
     llm_targets = enriched[: args.llm_limit] if args.llm_limit > 0 else []
-    llm_stats = {"requested": len(llm_targets), "cached": 0, "parsed": 0, "agreement": 0}
+    llm_stats = {"requested": len(llm_targets), "cached": 0, "parsed": 0, "agreement": 0, "consistent": 0}
     if llm_targets and not client.available:
         print("LLM_SKIPPED: no API key configured", flush=True)
         llm_stats["status"] = "LLM_SKIPPED"
@@ -232,12 +220,22 @@ def main() -> int:
                 item["llm"] = llm
                 llm_stats["parsed"] += 1
                 det = item["deterministic"]
-                if (
+                strict_agreement = (
                     llm["radix"] == det.get("radix")
                     and llm["strokes"] == det.get("strokes")
                     and llm["struct_type"] == det.get("struct_type")
+                )
+                consistent = (
+                    (det.get("radix") is None or llm["radix"] == det.get("radix"))
+                    and (det.get("strokes") is None or llm["strokes"] == det.get("strokes"))
+                    and (det.get("struct_type") is None or llm["struct_type"] == det.get("struct_type"))
+                )
+                if (
+                    strict_agreement
                 ):
                     llm_stats["agreement"] += 1
+                if consistent:
+                    llm_stats["consistent"] += 1
             except (ValueError, KeyError, TypeError) as exc:
                 item["llm"] = {"status": f"parse_error:{exc}", "raw": resp.text[:500]}
 

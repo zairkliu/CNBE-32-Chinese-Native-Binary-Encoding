@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "scope": "full_catalog_97686",
+  "evidence": {
+    "catalog_csv_gz": "data/cnbe_catalog_fixed.csv.gz",
+    "unihan_irg": "experiments/2026-08-05_scheme_comparison/build/Unihan_IRGSources.txt",
+    "ids": "experiments/2026-08-05_scheme_comparison/build/ids.txt",
+    "radix_map": "evidence/8105/cnbe8105_radical_code_map.json",
+    "runtime_db": "data/cnbe32.db"
+  },
+  "llm": {
+    "model": "deepseek-v4-flash",
+    "base_url": "https://api.deepseek.com/v1/responses",
+    "max_output_tokens": 2048,
+    "temperature": 0.0
+  },
+  "confidence": {
+    "high": 0.95,
+    "medium": 0.8
+  },
+  "stages": {
+    "evidence": true,
+    "llm_prefill": true,
+    "review_packet": true
+  },
+  "cost_guard": {
+    "max_llm_calls": 20000,
+    "max_total_tokens": 20000000
+  },
+  "boundary": "candidate prefill only; no release database writes; GF0011/GF0012/GF0013 authority stays gated"
+}

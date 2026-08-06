@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "scope": "full_catalog_97686",
+  "rows": 500,
+  "deterministic_complete": 494,
+  "deterministic_complete_rate": 0.988,
+  "roundtrip_pass": 494,
+  "roundtrip_pass_rate": 0.988,
+  "stroke_overflow": 0,
+  "confidence_buckets": {
+    "medium": 494,
+    "low": 6
+  },
+  "llm": {
+    "requested": 20,
+    "cached": 20,
+    "parsed": 20,
+    "agreement": 14,
+    "consistent": 20,
+    "calls_made": 0,
+    "tokens_used": 0,
+    "status": "RUN"
+  },
+  "write_gate": "NO_WRITE_TO_RELEASE_DB"
+}

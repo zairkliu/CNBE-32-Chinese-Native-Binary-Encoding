@@ -1,7 +1,7 @@
 {
   "summary": {
     "schema_version": 1,
-    "generated_at": "2026-08-07T00:29:38+0800",
+    "generated_at": "2026-08-07T00:38:14+0800",
     "rows": 491,
     "deterministic_complete": 491,
     "deterministic_complete_rate": 1.0,
@@ -23,6 +23,7 @@
       "cached": 20,
       "parsed": 20,
       "agreement": 20,
+      "consistent": 20,
       "status": "RUN"
     },
     "write_gate": "NO_WRITE_TO_RELEASE_DB"

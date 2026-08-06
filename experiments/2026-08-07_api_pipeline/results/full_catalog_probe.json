@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-07T00:36:15+0800",
+  "scope": "full_catalog_97686",
+  "rows": 97686,
+  "probe_elapsed_s": 0.72,
+  "coverage": {
+    "in_runtime_db": 21184,
+    "in_runtime_db_rate": 0.2169,
+    "unihan_radix": 97201,
+    "unihan_radix_rate": 0.995,
+    "unihan_strokes": 97686,
+    "unihan_strokes_rate": 1.0,
+    "ids_available": 87875,
+    "ids_available_rate": 0.8996,
+    "structure_available": 87485,
+    "structure_available_rate": 0.8956,
+    "deterministic_complete": 87485,
+    "deterministic_complete_rate": 0.8956,
+    "roundtrip_pass": 87327,
+    "roundtrip_pass_rate": 0.894,
+    "stroke_overflow": 172
+  },
+  "confidence_buckets": {
+    "medium>=0.8": 97187,
+    "low<0.8": 499
+  },
+  "llm_profile_measured": {
+    "input_tokens_avg": 205.3,
+    "output_tokens_avg": 94.3,
+    "total_tokens_avg": 299.6,
+    "elapsed_avg_s": 1.532
+  },
+  "llm_projections": {
+    "all_rows": {
+      "calls": 97686,
+      "input_tokens": 20054936,
+      "output_tokens": 9211790,
+      "total_tokens": 29266726,
+      "sequential_hours": 41.57,
+      "parallel8_hours": 5.2
+    },
+    "below_high_confidence": {
+      "calls": 87485,
+      "input_tokens": 17960670,
+      "output_tokens": 8249836,
+      "total_tokens": 26210506,
+      "sequential_hours": 37.23,
+      "parallel8_hours": 4.65
+    },
+    "incomplete": {
+      "calls": 10201,
+      "input_tokens": 2094265,
+      "output_tokens": 961954,
+      "total_tokens": 3056220,
+      "sequential_hours": 4.34,
+      "parallel8_hours": 0.54
+    }
+  },
+  "write_gate": "NO_WRITE_TO_RELEASE_DB"
+}

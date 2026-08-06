@@ -11,6 +11,8 @@ import json
 import re
 from pathlib import Path
 
+from cnbe32 import decode_cnbe, encode_cnbe
+
 STRUCT_ORDER = [
     "独体字", "上下", "上中下", "左右", "左中右", "左上包", "右上包",
     "左三包", "左下包", "上三包", "下三包", "全包围", "镶嵌",
@@ -146,4 +148,29 @@ def deterministic_proposal(entry: dict, ev: dict, index: int) -> dict:
         confidence -= 0.05
         reasons.append("boundary: stroke count exceeds CNBE32 5-bit field, needs CNBE64/extended")
         proposal["confidence"] = round(min(confidence, 0.95), 3)
+    return proposal
+
+
+def encode_proposal(proposal: dict) -> dict:
+    fields = (proposal.get("radix"), proposal.get("strokes"), proposal.get("struct_type"), proposal.get("index"))
+    if any(v is None for v in fields):
+        proposal["encode"] = None
+        proposal["roundtrip_pass"] = False
+        return proposal
+    try:
+        code = encode_cnbe(int(proposal["radix"]), int(proposal["strokes"]), int(proposal["struct_type"]), int(proposal["index"]), 0)
+        decoded = decode_cnbe(code)
+        proposal["cnbe"] = code.code
+        proposal["cnbe_hex"] = hex(code.code)
+        proposal["roundtrip_pass"] = (
+            decoded["radix"] == int(proposal["radix"])
+            and decoded["stroke"] == int(proposal["strokes"])
+            and decoded["struct"] == int(proposal["struct_type"])
+            and decoded["index"] == int(proposal["index"])
+        )
+    except Exception as exc:
+        proposal["cnbe"] = None
+        proposal["cnbe_hex"] = None
+        proposal["roundtrip_pass"] = False
+        proposal["encode_error"] = str(exc)
     return proposal
