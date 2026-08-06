@@ -31,7 +31,7 @@ def main() -> None:
          "项目负责人", EXP / "runtime_promotion_2026-08-06.json",
          "0 failures, 0 duplicate CNBE codes"),
         ("2026-08-06", "T1 1.5B 训练", "变体归一化 1.5B QLoRA", "负结果封存",
-         "项目负责人", None, "private: outputs/private_training_plans/T1_1.5B_NEGATIVE_RESULT.md"),
+         "项目负责人", None, "私有记录，不上传 GitHub"),
     ]
     lines = [
         "# CNBE 项目审核登记 2026-08-06",
@@ -49,7 +49,7 @@ def main() -> None:
         "- 审核工作簿：`evidence/validation/`",
         "- 审核数据包：`experiments/2026-08-06_variant_normalization/`",
         "- 运行时提升：`experiments/2026-08-06_variant_normalization/runtime_promotion_2026-08-06.json`",
-        "- 私有训练记录：`outputs/private_training_plans/`（不上传 GitHub）",
+        "- 私有训练记录：仅存本地，不上传 GitHub",
     ]
     registry = VALIDATION / "REVIEW_REGISTRY_2026-08-06.md"
     registry.write_text("\n".join(lines) + "\n", encoding="utf-8")
