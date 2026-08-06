@@ -1,0 +1,8 @@
+{
+  "authorizer": "项目负责人",
+  "authorized_at": "2026-08-06T23:48:06",
+  "scope": "8105 remaining legacy-track rows",
+  "legacy_rows": 491,
+  "gate": "review_conclusion_only_no_release_db_write",
+  "workbook": "C:\\Users\\zairk\\Documents\\Codex\\2026-07-27\\https-github-com-zairkliu-cnbe-32\\repo\\evidence\\validation\\CNBE8105_LEGACY_REVIEW_2026-08-06.xlsx"
+}

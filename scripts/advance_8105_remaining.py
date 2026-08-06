@@ -245,7 +245,7 @@ def main() -> None:
     lines = [
         "# 8105 Remaining Rows Progress Report",
         "",
-        f"Date: 2026-08-05",
+        f"Date: {time.strftime('%Y-%m-%d')}",
         "",
         "## Current state",
         "",

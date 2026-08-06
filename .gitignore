@@ -33,6 +33,7 @@ build/
 !evidence/validation/**/*.xlsx
 *.docx
 data/*.json
+!data/gf0011_201_radicals.json
 data/*.gz
 outputs/*.png
 outputs/**/*.png

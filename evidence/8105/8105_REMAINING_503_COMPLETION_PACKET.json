@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-05T20:08:08+0800",
+  "generated_at": "2026-08-06T23:50:44+0800",
   "summary": {
     "scope_8105_total": 8105,
     "runtime_rows_8105": 8105,
     "missing_from_runtime": 0,
-    "legacy_rows_remaining": 503,
+    "legacy_rows_remaining": 491,
     "action_counts": {
-      "REVIEW_REQUIRED": 503
+      "REVIEW_REQUIRED": 491
     },
-    "unresolved_radix_names": 10,
-    "cross_reference_available": 503,
-    "cross_reference_radix_available": 503,
-    "cross_reference_strokes_available": 503,
-    "cross_reference_decomp_available": 503,
+    "unresolved_radix_names": 7,
+    "cross_reference_available": 491,
+    "cross_reference_radix_available": 491,
+    "cross_reference_strokes_available": 491,
+    "cross_reference_decomp_available": 491,
     "write_gate": "NO_WRITE_TO_RELEASE_DB"
   },
   "entries": [
@@ -50,43 +50,6 @@
         "krs_radical_name": "乙",
         "kTotalStrokes": "2",
         "cjk_decomp": "sbl/o(㇟,㇆)",
-        "cjk_decomp_operator": "s"
-      },
-      "action": "REVIEW_REQUIRED",
-      "proposed": null
-    },
-    {
-      "char": "也",
-      "unicode": "U+4E5F",
-      "codepoint": 20063,
-      "standard_rank": 66,
-      "current": {
-        "cnbe": 1612318192,
-        "radix": 96,
-        "radix_name": "玄",
-        "strokes": 3,
-        "struct_name": "up-mid-down",
-        "struct_type": 4,
-        "track": "legacy"
-      },
-      "standard_evidence": {
-        "radical": "乚",
-        "stroke_count": 3,
-        "structure": "镶嵌",
-        "decomposition": "⿻?乚",
-        "evidence_status": "REVIEW_REQUIRED",
-        "issues": [
-          "ambiguous_decomposition",
-          "radical_mismatch",
-          "structure_mismatch"
-        ]
-      },
-      "cross_reference": {
-        "kRSUnicode": "5.2",
-        "krs_radical_code": 5,
-        "krs_radical_name": "乙",
-        "kTotalStrokes": "3",
-        "cjk_decomp": "sbl/o(㇟,37387)",
         "cjk_decomp_operator": "s"
       },
       "action": "REVIEW_REQUIRED",
@@ -1084,43 +1047,6 @@
       "proposed": null
     },
     {
-      "char": "刁",
-      "unicode": "U+5201",
-      "codepoint": 20993,
-      "standard_rank": 16,
-      "current": {
-        "cnbe": 2854076432,
-        "radix": 170,
-        "radix_name": "阜",
-        "strokes": 2,
-        "struct_name": "full-wrap",
-        "struct_type": 11,
-        "track": "legacy"
-      },
-      "standard_evidence": {
-        "radical": "刁",
-        "stroke_count": 2,
-        "structure": "独体字",
-        "decomposition": "?",
-        "evidence_status": "REVIEW_REQUIRED",
-        "issues": [
-          "ambiguous_decomposition",
-          "radical_mismatch",
-          "stroke_count_mismatch"
-        ]
-      },
-      "cross_reference": {
-        "kRSUnicode": "18.0",
-        "krs_radical_code": 18,
-        "krs_radical_name": "刀",
-        "kTotalStrokes": "2",
-        "cjk_decomp": "str(㇆,㇀)",
-        "cjk_decomp_operator": "s"
-      },
-      "action": "REVIEW_REQUIRED",
-      "proposed": null
-    },
-    {
       "char": "剕",
       "unicode": "U+5255",
       "codepoint": 21077,
@@ -1155,46 +1081,6 @@
         "krs_radical_name": "刀",
         "kTotalStrokes": "10",
         "cjk_decomp": "a(非,刂)",
-        "cjk_decomp_operator": "a"
-      },
-      "action": "REVIEW_REQUIRED",
-      "proposed": null
-    },
-    {
-      "char": "勍",
-      "unicode": "U+52CD",
-      "codepoint": 21197,
-      "standard_rank": 7040,
-      "current": {
-        "cnbe": 2695613648,
-        "radix": 160,
-        "radix_name": "辛",
-        "strokes": 10,
-        "struct_name": "bottom-left-wrap",
-        "struct_type": 7,
-        "track": "legacy"
-      },
-      "standard_evidence": {
-        "radical": null,
-        "stroke_count": 10,
-        "structure": null,
-        "decomposition": null,
-        "evidence_status": "REVIEW_REQUIRED",
-        "issues": [
-          "missing_decomposition",
-          "missing_standard_radical",
-          "missing_standard_structure",
-          "radical_mismatch",
-          "stroke_count_mismatch",
-          "structure_mismatch"
-        ]
-      },
-      "cross_reference": {
-        "kRSUnicode": "19.8",
-        "krs_radical_code": 19,
-        "krs_radical_name": "力",
-        "kTotalStrokes": "10",
-        "cjk_decomp": "a(京,力)",
         "cjk_decomp_operator": "a"
       },
       "action": "REVIEW_REQUIRED",
@@ -2721,46 +2607,6 @@
       "proposed": null
     },
     {
-      "char": "夐",
-      "unicode": "U+5910",
-      "codepoint": 22800,
-      "standard_rank": 7709,
-      "current": {
-        "cnbe": 862302464,
-        "radix": 51,
-        "radix_name": "干",
-        "strokes": 14,
-        "struct_name": "full-wrap",
-        "struct_type": 11,
-        "track": "legacy"
-      },
-      "standard_evidence": {
-        "radical": null,
-        "stroke_count": 14,
-        "structure": null,
-        "decomposition": null,
-        "evidence_status": "REVIEW_REQUIRED",
-        "issues": [
-          "missing_decomposition",
-          "missing_standard_radical",
-          "missing_standard_structure",
-          "radical_mismatch",
-          "stroke_count_mismatch",
-          "structure_mismatch"
-        ]
-      },
-      "cross_reference": {
-        "kRSUnicode": "35.11",
-        "krs_radical_code": 35,
-        "krs_radical_name": "夊",
-        "kTotalStrokes": "14",
-        "cjk_decomp": "d(37338,夂)",
-        "cjk_decomp_operator": "d"
-      },
-      "action": "REVIEW_REQUIRED",
-      "proposed": null
-    },
-    {
       "char": "奡",
       "unicode": "U+5961",
       "codepoint": 22881,
@@ -4080,82 +3926,6 @@
       "proposed": null
     },
     {
-      "char": "巳",
-      "unicode": "U+5DF3",
-      "codepoint": 24051,
-      "standard_rank": 62,
-      "current": {
-        "cnbe": 314113840,
-        "radix": 18,
-        "radix_name": "刀",
-        "strokes": 3,
-        "struct_name": "left-right",
-        "struct_type": 1,
-        "track": "legacy"
-      },
-      "standard_evidence": {
-        "radical": "巳",
-        "stroke_count": 3,
-        "structure": "镶嵌",
-        "decomposition": "⿻乚?",
-        "evidence_status": "REVIEW_REQUIRED",
-        "issues": [
-          "ambiguous_decomposition",
-          "radical_mismatch",
-          "stroke_count_mismatch",
-          "structure_mismatch"
-        ]
-      },
-      "cross_reference": {
-        "kRSUnicode": "49.0",
-        "krs_radical_code": 49,
-        "krs_radical_name": null,
-        "kTotalStrokes": "3",
-        "cjk_decomp": "d/m(尸,㇟)",
-        "cjk_decomp_operator": "d"
-      },
-      "action": "REVIEW_REQUIRED",
-      "proposed": null
-    },
-    {
-      "char": "巴",
-      "unicode": "U+5DF4",
-      "codepoint": 24052,
-      "standard_rank": 178,
-      "current": {
-        "cnbe": 331448128,
-        "radix": 19,
-        "radix_name": "力",
-        "strokes": 4,
-        "struct_name": "left-mid-right",
-        "struct_type": 2,
-        "track": "legacy"
-      },
-      "standard_evidence": {
-        "radical": "巳",
-        "stroke_count": 4,
-        "structure": "镶嵌",
-        "decomposition": "⿻巳?",
-        "evidence_status": "REVIEW_REQUIRED",
-        "issues": [
-          "ambiguous_decomposition",
-          "radical_mismatch",
-          "stroke_count_mismatch",
-          "structure_mismatch"
-        ]
-      },
-      "cross_reference": {
-        "kRSUnicode": "49.1",
-        "krs_radical_code": 49,
-        "krs_radical_name": null,
-        "kTotalStrokes": "4",
-        "cjk_decomp": "d/m(𠃜,㇟)",
-        "cjk_decomp_operator": "d"
-      },
-      "action": "REVIEW_REQUIRED",
-      "proposed": null
-    },
-    {
       "char": "帡",
       "unicode": "U+5E21",
       "codepoint": 24097,
@@ -4990,46 +4760,6 @@
         "kTotalStrokes": "14",
         "cjk_decomp": "a(忄,堇)",
         "cjk_decomp_operator": "a"
-      },
-      "action": "REVIEW_REQUIRED",
-      "proposed": null
-    },
-    {
-      "char": "慭",
-      "unicode": "U+616D",
-      "codepoint": 24941,
-      "standard_rank": 7765,
-      "current": {
-        "cnbe": 879998672,
-        "radix": 52,
-        "radix_name": "幺",
-        "strokes": 15,
-        "struct_name": "bottom-left-wrap",
-        "struct_type": 7,
-        "track": "legacy"
-      },
-      "standard_evidence": {
-        "radical": null,
-        "stroke_count": 15,
-        "structure": null,
-        "decomposition": null,
-        "evidence_status": "REVIEW_REQUIRED",
-        "issues": [
-          "missing_decomposition",
-          "missing_standard_radical",
-          "missing_standard_structure",
-          "radical_mismatch",
-          "stroke_count_mismatch",
-          "structure_mismatch"
-        ]
-      },
-      "cross_reference": {
-        "kRSUnicode": "61.11",
-        "krs_radical_code": 61,
-        "krs_radical_name": "心",
-        "kTotalStrokes": "15",
-        "cjk_decomp": "d(𪻧,心)",
-        "cjk_decomp_operator": "d"
       },
       "action": "REVIEW_REQUIRED",
       "proposed": null
@@ -7353,43 +7083,6 @@
       "proposed": null
     },
     {
-      "char": "民",
-      "unicode": "U+6C11",
-      "codepoint": 27665,
-      "standard_rank": 327,
-      "current": {
-        "cnbe": 3494961424,
-        "radix": 208,
-        "radix_name": "鼠",
-        "strokes": 5,
-        "struct_name": "left-right",
-        "struct_type": 1,
-        "track": "legacy"
-      },
-      "standard_evidence": {
-        "radical": "民",
-        "stroke_count": 5,
-        "structure": "镶嵌",
-        "decomposition": "⿻巳戈",
-        "evidence_status": "COMPLETE",
-        "issues": [
-          "radical_mismatch",
-          "stroke_count_mismatch",
-          "structure_mismatch"
-        ]
-      },
-      "cross_reference": {
-        "kRSUnicode": "83.1",
-        "krs_radical_code": 83,
-        "krs_radical_name": "氏",
-        "kTotalStrokes": "5",
-        "cjk_decomp": "stl(巳,37141)",
-        "cjk_decomp_operator": "s"
-      },
-      "action": "REVIEW_REQUIRED",
-      "proposed": null
-    },
-    {
       "char": "汫",
       "unicode": "U+6C6B",
       "codepoint": 27755,
@@ -7742,46 +7435,6 @@
         "krs_radical_name": "水",
         "kTotalStrokes": "9",
         "cjk_decomp": "a(氵,伊)",
-        "cjk_decomp_operator": "a"
-      },
-      "action": "REVIEW_REQUIRED",
-      "proposed": null
-    },
-    {
-      "char": "洴",
-      "unicode": "U+6D34",
-      "codepoint": 27956,
-      "standard_rank": 6897,
-      "current": {
-        "cnbe": 1202942784,
-        "radix": 71,
-        "radix_name": "无",
-        "strokes": 9,
-        "struct_name": "top-right-wrap",
-        "struct_type": 6,
-        "track": "legacy"
-      },
-      "standard_evidence": {
-        "radical": null,
-        "stroke_count": 9,
-        "structure": null,
-        "decomposition": null,
-        "evidence_status": "REVIEW_REQUIRED",
-        "issues": [
-          "missing_decomposition",
-          "missing_standard_radical",
-          "missing_standard_structure",
-          "radical_mismatch",
-          "stroke_count_mismatch",
-          "structure_mismatch"
-        ]
-      },
-      "cross_reference": {
-        "kRSUnicode": "85.6",
-        "krs_radical_code": 85,
-        "krs_radical_name": "水",
-        "kTotalStrokes": "9",
-        "cjk_decomp": "a(氵,并)",
         "cjk_decomp_operator": "a"
       },
       "action": "REVIEW_REQUIRED",
@@ -8986,46 +8639,6 @@
       "proposed": null
     },
     {
-      "char": "澼",
-      "unicode": "U+6FBC",
-      "codepoint": 28604,
-      "standard_rank": 7908,
-      "current": {
-        "cnbe": 1301945280,
-        "radix": 77,
-        "radix_name": "止",
-        "strokes": 16,
-        "struct_name": "up-mid-down",
-        "struct_type": 4,
-        "track": "legacy"
-      },
-      "standard_evidence": {
-        "radical": null,
-        "stroke_count": 16,
-        "structure": null,
-        "decomposition": null,
-        "evidence_status": "REVIEW_REQUIRED",
-        "issues": [
-          "missing_decomposition",
-          "missing_standard_radical",
-          "missing_standard_structure",
-          "radical_mismatch",
-          "stroke_count_mismatch",
-          "structure_mismatch"
-        ]
-      },
-      "cross_reference": {
-        "kRSUnicode": "85.13",
-        "krs_radical_code": 85,
-        "krs_radical_name": "水",
-        "kTotalStrokes": "16",
-        "cjk_decomp": "a(氵,辟)",
-        "cjk_decomp_operator": "a"
-      },
-      "action": "REVIEW_REQUIRED",
-      "proposed": null
-    },
-    {
       "char": "瀍",
       "unicode": "U+700D",
       "codepoint": 28685,
@@ -9702,46 +9315,6 @@
         "kTotalStrokes": "11",
         "cjk_decomp": "a(牛,尨)",
         "cjk_decomp_operator": "a"
-      },
-      "action": "REVIEW_REQUIRED",
-      "proposed": null
-    },
-    {
-      "char": "犇",
-      "unicode": "U+7287",
-      "codepoint": 29319,
-      "standard_rank": 7384,
-      "current": {
-        "cnbe": 2527742064,
-        "radix": 150,
-        "radix_name": "谷",
-        "strokes": 12,
-        "struct_name": "up-mid-down",
-        "struct_type": 4,
-        "track": "legacy"
-      },
-      "standard_evidence": {
-        "radical": null,
-        "stroke_count": 12,
-        "structure": null,
-        "decomposition": null,
-        "evidence_status": "REVIEW_REQUIRED",
-        "issues": [
-          "missing_decomposition",
-          "missing_standard_radical",
-          "missing_standard_structure",
-          "radical_mismatch",
-          "stroke_count_mismatch",
-          "structure_mismatch"
-        ]
-      },
-      "cross_reference": {
-        "kRSUnicode": "93.8",
-        "krs_radical_code": 93,
-        "krs_radical_name": "牛",
-        "kTotalStrokes": "12",
-        "cjk_decomp": "r3tr(牛)",
-        "cjk_decomp_operator": "r"
       },
       "action": "REVIEW_REQUIRED",
       "proposed": null
@@ -12541,46 +12114,6 @@
         "krs_radical_name": "示",
         "kTotalStrokes": "9",
         "cjk_decomp": "a(礻,石)",
-        "cjk_decomp_operator": "a"
-      },
-      "action": "REVIEW_REQUIRED",
-      "proposed": null
-    },
-    {
-      "char": "祐",
-      "unicode": "U+7950",
-      "codepoint": 31056,
-      "standard_rank": 6905,
-      "current": {
-        "cnbe": 2947953920,
-        "radix": 175,
-        "radix_name": "非",
-        "strokes": 9,
-        "struct_name": "triangle",
-        "struct_type": 12,
-        "track": "legacy"
-      },
-      "standard_evidence": {
-        "radical": null,
-        "stroke_count": 9,
-        "structure": null,
-        "decomposition": null,
-        "evidence_status": "REVIEW_REQUIRED",
-        "issues": [
-          "missing_decomposition",
-          "missing_standard_radical",
-          "missing_standard_structure",
-          "radical_mismatch",
-          "stroke_count_mismatch",
-          "structure_mismatch"
-        ]
-      },
-      "cross_reference": {
-        "kRSUnicode": "113.5",
-        "krs_radical_code": 113,
-        "krs_radical_name": "示",
-        "kTotalStrokes": "9",
-        "cjk_decomp": "a(礻,右)",
         "cjk_decomp_operator": "a"
       },
       "action": "REVIEW_REQUIRED",

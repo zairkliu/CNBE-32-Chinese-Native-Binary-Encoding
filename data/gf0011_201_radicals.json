@@ -1,0 +1,1012 @@
+{
+  "schema_version": 1,
+  "source": "GF 0011-2009 汉字部首表（公开转载）",
+  "source_url": "https://www.ichara.cn/web/account/view_article.php?art_id=110",
+  "radicals": [
+    {
+      "code": 1,
+      "main": "一",
+      "attached": ""
+    },
+    {
+      "code": 2,
+      "main": "丨",
+      "attached": "亅"
+    },
+    {
+      "code": 3,
+      "main": "丿",
+      "attached": ""
+    },
+    {
+      "code": 4,
+      "main": "丶",
+      "attached": ""
+    },
+    {
+      "code": 5,
+      "main": "乛",
+      "attached": ""
+    },
+    {
+      "code": 6,
+      "main": "十",
+      "attached": ""
+    },
+    {
+      "code": 7,
+      "main": "厂",
+      "attached": "⺁"
+    },
+    {
+      "code": 8,
+      "main": "匚",
+      "attached": ""
+    },
+    {
+      "code": 9,
+      "main": "卜",
+      "attached": "⺊"
+    },
+    {
+      "code": 10,
+      "main": "冂",
+      "attached": "⺆"
+    },
+    {
+      "code": 11,
+      "main": "八",
+      "attached": "丷"
+    },
+    {
+      "code": 12,
+      "main": "人",
+      "attached": "亻入"
+    },
+    {
+      "code": 13,
+      "main": "勹",
+      "attached": ""
+    },
+    {
+      "code": 14,
+      "main": "儿",
+      "attached": ""
+    },
+    {
+      "code": 15,
+      "main": "匕",
+      "attached": ""
+    },
+    {
+      "code": 16,
+      "main": "几",
+      "attached": "⺇"
+    },
+    {
+      "code": 17,
+      "main": "亠",
+      "attached": ""
+    },
+    {
+      "code": 18,
+      "main": "冫",
+      "attached": ""
+    },
+    {
+      "code": 19,
+      "main": "冖",
+      "attached": ""
+    },
+    {
+      "code": 20,
+      "main": "凵",
+      "attached": ""
+    },
+    {
+      "code": 21,
+      "main": "卩",
+      "attached": "⺋"
+    },
+    {
+      "code": 22,
+      "main": "刀",
+      "attached": "刂⺈"
+    },
+    {
+      "code": 23,
+      "main": "力",
+      "attached": ""
+    },
+    {
+      "code": 24,
+      "main": "又",
+      "attached": ""
+    },
+    {
+      "code": 25,
+      "main": "厶",
+      "attached": ""
+    },
+    {
+      "code": 26,
+      "main": "廴",
+      "attached": ""
+    },
+    {
+      "code": 27,
+      "main": "干",
+      "attached": ""
+    },
+    {
+      "code": 28,
+      "main": "工",
+      "attached": ""
+    },
+    {
+      "code": 29,
+      "main": "土",
+      "attached": "士"
+    },
+    {
+      "code": 30,
+      "main": "艹",
+      "attached": "艸"
+    },
+    {
+      "code": 31,
+      "main": "寸",
+      "attached": ""
+    },
+    {
+      "code": 32,
+      "main": "廾",
+      "attached": ""
+    },
+    {
+      "code": 33,
+      "main": "大",
+      "attached": ""
+    },
+    {
+      "code": 34,
+      "main": "尢",
+      "attached": "兀尣"
+    },
+    {
+      "code": 35,
+      "main": "弋",
+      "attached": ""
+    },
+    {
+      "code": 36,
+      "main": "小",
+      "attached": "⺌"
+    },
+    {
+      "code": 37,
+      "main": "口",
+      "attached": ""
+    },
+    {
+      "code": 38,
+      "main": "囗",
+      "attached": ""
+    },
+    {
+      "code": 39,
+      "main": "山",
+      "attached": ""
+    },
+    {
+      "code": 40,
+      "main": "巾",
+      "attached": ""
+    },
+    {
+      "code": 41,
+      "main": "彳",
+      "attached": ""
+    },
+    {
+      "code": 42,
+      "main": "彡",
+      "attached": ""
+    },
+    {
+      "code": 43,
+      "main": "夕",
+      "attached": ""
+    },
+    {
+      "code": 44,
+      "main": "夂",
+      "attached": ""
+    },
+    {
+      "code": 45,
+      "main": "丬",
+      "attached": "爿"
+    },
+    {
+      "code": 46,
+      "main": "广",
+      "attached": ""
+    },
+    {
+      "code": 47,
+      "main": "门",
+      "attached": "門"
+    },
+    {
+      "code": 48,
+      "main": "宀",
+      "attached": ""
+    },
+    {
+      "code": 49,
+      "main": "辶",
+      "attached": "辵"
+    },
+    {
+      "code": 50,
+      "main": "彐",
+      "attached": "彐彑"
+    },
+    {
+      "code": 51,
+      "main": "尸",
+      "attached": ""
+    },
+    {
+      "code": 52,
+      "main": "己",
+      "attached": "已巳"
+    },
+    {
+      "code": 53,
+      "main": "弓",
+      "attached": ""
+    },
+    {
+      "code": 54,
+      "main": "子",
+      "attached": ""
+    },
+    {
+      "code": 55,
+      "main": "屮",
+      "attached": ""
+    },
+    {
+      "code": 56,
+      "main": "女",
+      "attached": ""
+    },
+    {
+      "code": 57,
+      "main": "飞",
+      "attached": "飛"
+    },
+    {
+      "code": 58,
+      "main": "马",
+      "attached": "馬"
+    },
+    {
+      "code": 59,
+      "main": "幺",
+      "attached": ""
+    },
+    {
+      "code": 60,
+      "main": "巛",
+      "attached": ""
+    },
+    {
+      "code": 61,
+      "main": "王",
+      "attached": "玉"
+    },
+    {
+      "code": 62,
+      "main": "无",
+      "attached": "旡"
+    },
+    {
+      "code": 63,
+      "main": "韦",
+      "attached": "韋"
+    },
+    {
+      "code": 64,
+      "main": "木",
+      "attached": "朩"
+    },
+    {
+      "code": 65,
+      "main": "支",
+      "attached": ""
+    },
+    {
+      "code": 66,
+      "main": "犬",
+      "attached": "犭"
+    },
+    {
+      "code": 67,
+      "main": "歹",
+      "attached": "歺"
+    },
+    {
+      "code": 68,
+      "main": "车",
+      "attached": "車"
+    },
+    {
+      "code": 69,
+      "main": "牙",
+      "attached": ""
+    },
+    {
+      "code": 70,
+      "main": "戈",
+      "attached": ""
+    },
+    {
+      "code": 71,
+      "main": "比",
+      "attached": ""
+    },
+    {
+      "code": 72,
+      "main": "瓦",
+      "attached": ""
+    },
+    {
+      "code": 73,
+      "main": "止",
+      "attached": ""
+    },
+    {
+      "code": 74,
+      "main": "攴",
+      "attached": "攵"
+    },
+    {
+      "code": 75,
+      "main": "日",
+      "attached": "⺜曰"
+    },
+    {
+      "code": 76,
+      "main": "贝",
+      "attached": "貝"
+    },
+    {
+      "code": 77,
+      "main": "水",
+      "attached": "氵氺"
+    },
+    {
+      "code": 78,
+      "main": "见",
+      "attached": "見"
+    },
+    {
+      "code": 79,
+      "main": "牛",
+      "attached": "牜"
+    },
+    {
+      "code": 80,
+      "main": "手",
+      "attached": "扌看"
+    },
+    {
+      "code": 81,
+      "main": "气",
+      "attached": ""
+    },
+    {
+      "code": 82,
+      "main": "毛",
+      "attached": ""
+    },
+    {
+      "code": 83,
+      "main": "长",
+      "attached": "镸長"
+    },
+    {
+      "code": 84,
+      "main": "片",
+      "attached": ""
+    },
+    {
+      "code": 85,
+      "main": "斤",
+      "attached": ""
+    },
+    {
+      "code": 86,
+      "main": "爪",
+      "attached": "爫"
+    },
+    {
+      "code": 87,
+      "main": "父",
+      "attached": ""
+    },
+    {
+      "code": 88,
+      "main": "月",
+      "attached": "⺝"
+    },
+    {
+      "code": 89,
+      "main": "氏",
+      "attached": ""
+    },
+    {
+      "code": 90,
+      "main": "欠",
+      "attached": ""
+    },
+    {
+      "code": 91,
+      "main": "风",
+      "attached": "風"
+    },
+    {
+      "code": 92,
+      "main": "殳",
+      "attached": ""
+    },
+    {
+      "code": 93,
+      "main": "文",
+      "attached": ""
+    },
+    {
+      "code": 94,
+      "main": "方",
+      "attached": ""
+    },
+    {
+      "code": 95,
+      "main": "火",
+      "attached": "灬"
+    },
+    {
+      "code": 96,
+      "main": "斗",
+      "attached": ""
+    },
+    {
+      "code": 97,
+      "main": "户",
+      "attached": ""
+    },
+    {
+      "code": 98,
+      "main": "心",
+      "attached": "忄⺗"
+    },
+    {
+      "code": 99,
+      "main": "毋",
+      "attached": "母"
+    },
+    {
+      "code": 100,
+      "main": "示",
+      "attached": "礻"
+    },
+    {
+      "code": 101,
+      "main": "甘",
+      "attached": ""
+    },
+    {
+      "code": 102,
+      "main": "石",
+      "attached": ""
+    },
+    {
+      "code": 103,
+      "main": "龙",
+      "attached": "龍"
+    },
+    {
+      "code": 104,
+      "main": "业",
+      "attached": ""
+    },
+    {
+      "code": 105,
+      "main": "目",
+      "attached": ""
+    },
+    {
+      "code": 106,
+      "main": "田",
+      "attached": ""
+    },
+    {
+      "code": 107,
+      "main": "罒",
+      "attached": ""
+    },
+    {
+      "code": 108,
+      "main": "皿",
+      "attached": ""
+    },
+    {
+      "code": 109,
+      "main": "生",
+      "attached": ""
+    },
+    {
+      "code": 110,
+      "main": "矢",
+      "attached": ""
+    },
+    {
+      "code": 111,
+      "main": "禾",
+      "attached": ""
+    },
+    {
+      "code": 112,
+      "main": "白",
+      "attached": ""
+    },
+    {
+      "code": 113,
+      "main": "瓜",
+      "attached": ""
+    },
+    {
+      "code": 114,
+      "main": "鸟",
+      "attached": "鳥"
+    },
+    {
+      "code": 115,
+      "main": "疒",
+      "attached": ""
+    },
+    {
+      "code": 116,
+      "main": "立",
+      "attached": ""
+    },
+    {
+      "code": 117,
+      "main": "穴",
+      "attached": ""
+    },
+    {
+      "code": 118,
+      "main": "疋",
+      "attached": "⺪"
+    },
+    {
+      "code": 119,
+      "main": "皮",
+      "attached": ""
+    },
+    {
+      "code": 120,
+      "main": "癶",
+      "attached": ""
+    },
+    {
+      "code": 121,
+      "main": "矛",
+      "attached": ""
+    },
+    {
+      "code": 122,
+      "main": "耒",
+      "attached": ""
+    },
+    {
+      "code": 123,
+      "main": "老",
+      "attached": ""
+    },
+    {
+      "code": 124,
+      "main": "耳",
+      "attached": ""
+    },
+    {
+      "code": 125,
+      "main": "臣",
+      "attached": ""
+    },
+    {
+      "code": 126,
+      "main": "覀",
+      "attached": "襾西"
+    },
+    {
+      "code": 127,
+      "main": "而",
+      "attached": ""
+    },
+    {
+      "code": 128,
+      "main": "页",
+      "attached": "頁"
+    },
+    {
+      "code": 129,
+      "main": "至",
+      "attached": ""
+    },
+    {
+      "code": 130,
+      "main": "虍",
+      "attached": "虎"
+    },
+    {
+      "code": 131,
+      "main": "虫",
+      "attached": ""
+    },
+    {
+      "code": 132,
+      "main": "肉",
+      "attached": ""
+    },
+    {
+      "code": 133,
+      "main": "缶",
+      "attached": ""
+    },
+    {
+      "code": 134,
+      "main": "舌",
+      "attached": ""
+    },
+    {
+      "code": 135,
+      "main": "竹",
+      "attached": "⺮"
+    },
+    {
+      "code": 136,
+      "main": "臼",
+      "attached": "⺽"
+    },
+    {
+      "code": 137,
+      "main": "自",
+      "attached": ""
+    },
+    {
+      "code": 138,
+      "main": "血",
+      "attached": ""
+    },
+    {
+      "code": 139,
+      "main": "舟",
+      "attached": ""
+    },
+    {
+      "code": 140,
+      "main": "色",
+      "attached": ""
+    },
+    {
+      "code": 141,
+      "main": "齐",
+      "attached": "齊"
+    },
+    {
+      "code": 142,
+      "main": "衣",
+      "attached": "衤"
+    },
+    {
+      "code": 143,
+      "main": "羊",
+      "attached": "⺶⺷"
+    },
+    {
+      "code": 144,
+      "main": "米",
+      "attached": ""
+    },
+    {
+      "code": 145,
+      "main": "聿",
+      "attached": "肀⺻"
+    },
+    {
+      "code": 146,
+      "main": "艮",
+      "attached": ""
+    },
+    {
+      "code": 147,
+      "main": "羽",
+      "attached": ""
+    },
+    {
+      "code": 148,
+      "main": "糸",
+      "attached": "纟糹"
+    },
+    {
+      "code": 149,
+      "main": "麦",
+      "attached": "麥"
+    },
+    {
+      "code": 150,
+      "main": "走",
+      "attached": ""
+    },
+    {
+      "code": 151,
+      "main": "赤",
+      "attached": ""
+    },
+    {
+      "code": 152,
+      "main": "豆",
+      "attached": ""
+    },
+    {
+      "code": 153,
+      "main": "酉",
+      "attached": ""
+    },
+    {
+      "code": 154,
+      "main": "辰",
+      "attached": ""
+    },
+    {
+      "code": 155,
+      "main": "豕",
+      "attached": ""
+    },
+    {
+      "code": 156,
+      "main": "卤",
+      "attached": "鹵"
+    },
+    {
+      "code": 157,
+      "main": "里",
+      "attached": ""
+    },
+    {
+      "code": 158,
+      "main": "足",
+      "attached": "⻊"
+    },
+    {
+      "code": 159,
+      "main": "邑",
+      "attached": "阝右"
+    },
+    {
+      "code": 160,
+      "main": "身",
+      "attached": ""
+    },
+    {
+      "code": 161,
+      "main": "釆",
+      "attached": ""
+    },
+    {
+      "code": 162,
+      "main": "谷",
+      "attached": ""
+    },
+    {
+      "code": 163,
+      "main": "豸",
+      "attached": ""
+    },
+    {
+      "code": 164,
+      "main": "龟",
+      "attached": "龜"
+    },
+    {
+      "code": 165,
+      "main": "角",
+      "attached": ""
+    },
+    {
+      "code": 166,
+      "main": "言",
+      "attached": "讠"
+    },
+    {
+      "code": 167,
+      "main": "辛",
+      "attached": ""
+    },
+    {
+      "code": 168,
+      "main": "青",
+      "attached": ""
+    },
+    {
+      "code": 169,
+      "main": "龺",
+      "attached": ""
+    },
+    {
+      "code": 170,
+      "main": "雨",
+      "attached": ""
+    },
+    {
+      "code": 171,
+      "main": "非",
+      "attached": ""
+    },
+    {
+      "code": 172,
+      "main": "齿",
+      "attached": "齒"
+    },
+    {
+      "code": 173,
+      "main": "黾",
+      "attached": "黽"
+    },
+    {
+      "code": 174,
+      "main": "隹",
+      "attached": ""
+    },
+    {
+      "code": 175,
+      "main": "阜",
+      "attached": "阝左"
+    },
+    {
+      "code": 176,
+      "main": "金",
+      "attached": "钅"
+    },
+    {
+      "code": 177,
+      "main": "鱼",
+      "attached": "魚"
+    },
+    {
+      "code": 178,
+      "main": "隶",
+      "attached": ""
+    },
+    {
+      "code": 179,
+      "main": "革",
+      "attached": ""
+    },
+    {
+      "code": 180,
+      "main": "面",
+      "attached": ""
+    },
+    {
+      "code": 181,
+      "main": "韭",
+      "attached": ""
+    },
+    {
+      "code": 182,
+      "main": "骨",
+      "attached": ""
+    },
+    {
+      "code": 183,
+      "main": "香",
+      "attached": ""
+    },
+    {
+      "code": 184,
+      "main": "鬼",
+      "attached": ""
+    },
+    {
+      "code": 185,
+      "main": "食",
+      "attached": "饣飠"
+    },
+    {
+      "code": 186,
+      "main": "音",
+      "attached": ""
+    },
+    {
+      "code": 187,
+      "main": "首",
+      "attached": ""
+    },
+    {
+      "code": 188,
+      "main": "髟",
+      "attached": ""
+    },
+    {
+      "code": 189,
+      "main": "鬲",
+      "attached": ""
+    },
+    {
+      "code": 190,
+      "main": "鬥",
+      "attached": ""
+    },
+    {
+      "code": 191,
+      "main": "高",
+      "attached": ""
+    },
+    {
+      "code": 192,
+      "main": "黄",
+      "attached": ""
+    },
+    {
+      "code": 193,
+      "main": "麻",
+      "attached": ""
+    },
+    {
+      "code": 194,
+      "main": "鹿",
+      "attached": ""
+    },
+    {
+      "code": 195,
+      "main": "鼎",
+      "attached": ""
+    },
+    {
+      "code": 196,
+      "main": "黑",
+      "attached": ""
+    },
+    {
+      "code": 197,
+      "main": "黍",
+      "attached": ""
+    },
+    {
+      "code": 198,
+      "main": "鼓",
+      "attached": ""
+    },
+    {
+      "code": 199,
+      "main": "鼠",
+      "attached": ""
+    },
+    {
+      "code": 200,
+      "main": "鼻",
+      "attached": ""
+    },
+    {
+      "code": 201,
+      "main": "龠",
+      "attached": ""
+    }
+  ]
+}

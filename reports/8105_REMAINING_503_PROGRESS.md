@@ -1,22 +1,22 @@
 # 8105 Remaining Rows Progress Report
 
-Date: 2026-08-05
+Date: 2026-08-06
 
 ## Current state
 
 - 8105 scope: 8105 chars; runtime rows: 8105; missing: 0
-- Standard-track rows: 7602
-- Remaining legacy-track rows: 503
+- Standard-track rows: 7614
+- Remaining legacy-track rows: 491
 
 ## Completion packet
 
 - Path: `evidence/8105/8105_REMAINING_503_COMPLETION_PACKET.json`
-- Actions: {'REVIEW_REQUIRED': 503}
-- Unresolved radical names (no code in current radical map): 10
-- Rows with cross-reference evidence (Unihan radical/strokes or cjk_decomp): 503
-- Rows with cross-reference radical code: 503
-- Rows with cross-reference total strokes: 503
-- Rows with cjk_decomp: 503
+- Actions: {'REVIEW_REQUIRED': 491}
+- Unresolved radical names (no code in current radical map): 7
+- Rows with cross-reference evidence (Unihan radical/strokes or cjk_decomp): 491
+- Rows with cross-reference radical code: 491
+- Rows with cross-reference total strokes: 491
+- Rows with cjk_decomp: 491
 
 ## Policy
 
