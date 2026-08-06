@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "layout": {
+    "version_bits": [
+      63,
+      60
+    ],
+    "pointer_bits": [
+      59,
+      39
+    ],
+    "present_bit": 38,
+    "status_bits": [
+      37,
+      36
+    ],
+    "reserved_bits": [
+      35,
+      32
+    ],
+    "cnbe32_bits": [
+      31,
+      0
+    ]
+  },
+  "rows": 97686,
+  "unique_cnbe64": 97686,
+  "unique_cnbe64_rate": 1.0,
+  "max_gb18030_pointer": 329207,
+  "pointer_bits_needed": 19,
+  "pointer_fits_21bits": true,
+  "status_counts": {
+    "MAPPED": 91061,
+    "CONFLICT": 6625,
+    "MISSING": 0,
+    "UNKNOWN": 0
+  },
+  "encode_failures": [],
+  "sample": [
+    {
+      "ucp": "U+3400",
+      "char": "㐀",
+      "gb18030_pointer": 12439,
+      "four_byte": true,
+      "status": 0,
+      "cnbe64": "0x10184bc001280000",
+      "unpack": {
+        "version": 1,
+        "pointer": 12439,
+        "present": 1,
+        "status": 0,
+        "reserved": 0,
+        "low32": 19398656
+      }
+    },
+    {
+      "ucp": "U+3401",
+      "char": "㐁",
+      "gb18030_pointer": 12440,
+      "four_byte": true,
+      "status": 0,
+      "cnbe64": "0x10184c4001300000",
+      "unpack": {
+        "version": 1,
+        "pointer": 12440,
+        "present": 1,
+        "status": 0,
+        "reserved": 0,
+        "low32": 19922944
+      }
+    },
+    {
+      "ucp": "U+3402",
+      "char": "㐂",
+      "gb18030_pointer": 12441,
+      "four_byte": true,
+      "status": 0,
+      "cnbe64": "0x10184cc001300010",
+      "unpack": {
+        "version": 1,
+        "pointer": 12441,
+        "present": 1,
+        "status": 0,
+        "reserved": 0,
+        "low32": 19922960
+      }
+    },
+    {
+      "ucp": "U+3403",
+      "char": "㐃",
+      "gb18030_pointer": 12442,
+      "four_byte": true,
+      "status": 0,
+      "cnbe64": "0x10184d4002180000",
+      "unpack": {
+        "version": 1,
+        "pointer": 12442,
+        "present": 1,
+        "status": 0,
+        "reserved": 0,
+        "low32": 35127296
+      }
+    },
+    {
+      "ucp": "U+3404",
+      "char": "㐄",
+      "gb18030_pointer": 12443,
+      "four_byte": true,
+      "status": 0,
+      "cnbe64": "0x10184dc002180010",
+      "unpack": {
+        "version": 1,
+        "pointer": 12443,
+        "present": 1,
+        "status": 0,
+        "reserved": 0,
+        "low32": 35127312
+      }
+    }
+  ],
+  "write_gate": "NO_WRITE_TO_RELEASE_DB"
+}
