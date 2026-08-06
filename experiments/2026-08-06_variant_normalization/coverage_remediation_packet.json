@@ -13,7 +13,8 @@
     "reviewed_approved": 16,
     "batch_reviewed_approved": 796,
     "batch_skipped": 0,
-    "batch_unresolved": {}
+    "batch_unresolved": {},
+    "fallback_review_approved": 66
   },
   "entries": [
     {
@@ -1529,7 +1530,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 108,
-        "radix_name": "⺻",
+        "radix_name": "皿",
         "strokes": 14,
         "struct_name": "上下",
         "struct_type": 1,
@@ -1542,13 +1543,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "⺻",
+        "reviewed_radix_name": "皿",
         "reviewed_strokes": 14,
         "reviewed_structure": "上下",
         "radix_code": 108,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 1
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 1,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -2205,7 +2212,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 13,
         "struct_name": "左右",
         "struct_type": 3,
@@ -2218,13 +2225,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 13,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -3401,7 +3414,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 12,
         "struct_name": "左右",
         "struct_type": 3,
@@ -3414,13 +3427,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 12,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -3817,7 +3836,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 9,
         "struct_name": "左右",
         "struct_type": 3,
@@ -3830,13 +3849,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 9,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -4814,7 +4839,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 11,
         "struct_name": "左右",
         "struct_type": 3,
@@ -4827,13 +4852,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 11,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -5126,7 +5157,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 178,
-        "radix_name": "龺",
+        "radix_name": "韋",
         "strokes": 17,
         "struct_name": "左右",
         "struct_type": 3,
@@ -5139,13 +5170,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "龺",
+        "reviewed_radix_name": "韋",
         "reviewed_strokes": 17,
         "reviewed_structure": "左右",
         "radix_code": 178,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -5403,9 +5440,15 @@
         "reviewed_strokes": 13,
         "reviewed_structure": "左右",
         "radix_code": 5,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "supplement",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -7111,7 +7154,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 11,
         "struct_name": "左右",
         "struct_type": 3,
@@ -7124,13 +7167,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 11,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -7163,7 +7212,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 12,
         "struct_name": "左右",
         "struct_type": 3,
@@ -7176,13 +7225,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 12,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -7215,7 +7270,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 12,
         "struct_name": "左右",
         "struct_type": 3,
@@ -7228,13 +7283,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 12,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -7267,7 +7328,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 15,
         "struct_name": "左右",
         "struct_type": 3,
@@ -7280,13 +7341,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 15,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -8255,7 +8322,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 10,
         "struct_name": "左右",
         "struct_type": 3,
@@ -8268,13 +8335,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 10,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -8307,7 +8380,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 14,
         "struct_name": "左右",
         "struct_type": 3,
@@ -8320,13 +8393,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 14,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -8359,7 +8438,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 14,
         "struct_name": "左右",
         "struct_type": 3,
@@ -8372,13 +8451,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 14,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -9607,7 +9692,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 79,
-        "radix_name": "朩",
+        "radix_name": "殳",
         "strokes": 10,
         "struct_name": "左右",
         "struct_type": 3,
@@ -9620,13 +9705,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "朩",
+        "reviewed_radix_name": "殳",
         "reviewed_strokes": 10,
         "reviewed_structure": "左右",
         "radix_code": 79,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -9919,7 +10010,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 10,
         "struct_name": "左右",
         "struct_type": 3,
@@ -9932,13 +10023,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 10,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -9971,7 +10068,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 11,
         "struct_name": "左右",
         "struct_type": 3,
@@ -9984,13 +10081,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 11,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -11852,7 +11955,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 17,
         "struct_name": "左右",
         "struct_type": 3,
@@ -11865,13 +11968,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 17,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -13357,7 +13466,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 75,
-        "radix_name": "业",
+        "radix_name": "木",
         "strokes": 13,
         "struct_name": "上下",
         "struct_type": 1,
@@ -13370,13 +13479,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "业",
+        "reviewed_radix_name": "木",
         "reviewed_strokes": 13,
         "reviewed_structure": "上下",
         "radix_code": 75,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 1
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 1,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -13782,7 +13897,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 10,
         "struct_name": "左右",
         "struct_type": 3,
@@ -13795,13 +13910,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 10,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -13834,7 +13955,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 14,
         "struct_name": "左右",
         "struct_type": 3,
@@ -13847,13 +13968,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 14,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -13886,7 +14013,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 21,
         "struct_name": "左右",
         "struct_type": 3,
@@ -13899,13 +14026,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 21,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -15757,8 +15890,8 @@
       "evidence_grade": "cross_reference_unihan_ids",
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
-        "radix": 71,
-        "radix_name": "旡",
+        "radix": 1,
+        "radix_name": "一",
         "strokes": 11,
         "struct_name": "左右",
         "struct_type": 3,
@@ -15771,13 +15904,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "旡",
+        "reviewed_radix_name": "一",
         "reviewed_strokes": 11,
         "reviewed_structure": "左右",
-        "radix_code": 71,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_code": 1,
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -16434,7 +16573,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 12,
         "struct_name": "左右",
         "struct_type": 3,
@@ -16447,13 +16586,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 12,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -16486,7 +16631,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 15,
         "struct_name": "左右",
         "struct_type": 3,
@@ -16499,13 +16644,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 15,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -16538,7 +16689,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 18,
         "struct_name": "左右",
         "struct_type": 3,
@@ -16551,13 +16702,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 18,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -21582,7 +21739,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 9,
         "struct_name": "左右",
         "struct_type": 3,
@@ -21595,13 +21752,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 9,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -21634,7 +21797,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 9,
         "struct_name": "左右",
         "struct_type": 3,
@@ -21647,13 +21810,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 9,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -21686,7 +21855,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 10,
         "struct_name": "左右",
         "struct_type": 3,
@@ -21699,13 +21868,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 10,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -21738,7 +21913,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 14,
         "struct_name": "左右",
         "struct_type": 3,
@@ -21751,13 +21926,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 14,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -21790,7 +21971,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 14,
         "struct_name": "左右",
         "struct_type": 3,
@@ -21803,13 +21984,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 14,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -21842,7 +22029,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 15,
         "struct_name": "左右",
         "struct_type": 3,
@@ -21855,13 +22042,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 15,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -21894,7 +22087,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 15,
         "struct_name": "左右",
         "struct_type": 3,
@@ -21907,13 +22100,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 15,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -21946,7 +22145,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 15,
         "struct_name": "左右",
         "struct_type": 3,
@@ -21959,13 +22158,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 15,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -21998,7 +22203,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 16,
         "struct_name": "左右",
         "struct_type": 3,
@@ -22011,13 +22216,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 16,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -22050,7 +22261,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 19,
         "struct_name": "左右",
         "struct_type": 3,
@@ -22063,13 +22274,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 19,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -22102,7 +22319,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 23,
         "struct_name": "左右",
         "struct_type": 3,
@@ -22115,13 +22332,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 23,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -22154,7 +22377,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 23,
         "struct_name": "左右",
         "struct_type": 3,
@@ -22167,13 +22390,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 23,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -30216,8 +30445,8 @@
       "evidence_grade": "cross_reference_unihan_ids",
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
-        "radix": 72,
-        "radix_name": "旡",
+        "radix": 73,
+        "radix_name": "曰",
         "strokes": 16,
         "struct_name": "上下",
         "struct_type": 1,
@@ -30230,13 +30459,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "旡",
+        "reviewed_radix_name": "曰",
         "reviewed_strokes": 16,
         "reviewed_structure": "上下",
-        "radix_code": 72,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 1
+        "radix_code": 73,
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 1,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -33233,7 +33468,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 9,
         "struct_name": "左右",
         "struct_type": 3,
@@ -33246,13 +33481,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 9,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -33285,7 +33526,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 9,
         "struct_name": "左右",
         "struct_type": 3,
@@ -33298,13 +33539,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 9,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -33337,7 +33584,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 10,
         "struct_name": "左右",
         "struct_type": 3,
@@ -33350,13 +33597,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 10,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -33389,7 +33642,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 10,
         "struct_name": "左右",
         "struct_type": 3,
@@ -33402,13 +33655,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 10,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -33441,7 +33700,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 11,
         "struct_name": "左右",
         "struct_type": 3,
@@ -33454,13 +33713,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 11,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -33493,7 +33758,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 11,
         "struct_name": "左右",
         "struct_type": 3,
@@ -33506,13 +33771,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 11,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -33545,7 +33816,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 11,
         "struct_name": "左右",
         "struct_type": 3,
@@ -33558,13 +33829,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 11,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -33597,7 +33874,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 12,
         "struct_name": "左右",
         "struct_type": 3,
@@ -33610,13 +33887,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 12,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -33649,7 +33932,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 12,
         "struct_name": "左右",
         "struct_type": 3,
@@ -33662,13 +33945,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 12,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -33701,7 +33990,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 12,
         "struct_name": "左右",
         "struct_type": 3,
@@ -33714,13 +34003,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 12,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -33753,7 +34048,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 13,
         "struct_name": "左右",
         "struct_type": 3,
@@ -33766,13 +34061,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 13,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -33805,7 +34106,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 14,
         "struct_name": "左右",
         "struct_type": 3,
@@ -33818,13 +34119,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 14,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -33857,7 +34164,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 14,
         "struct_name": "左右",
         "struct_type": 3,
@@ -33870,13 +34177,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 14,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -33909,7 +34222,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 14,
         "struct_name": "左右",
         "struct_type": 3,
@@ -33922,13 +34235,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 14,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -33961,7 +34280,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 14,
         "struct_name": "左右",
         "struct_type": 3,
@@ -33974,13 +34293,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 14,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -34013,7 +34338,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 14,
         "struct_name": "左右",
         "struct_type": 3,
@@ -34026,13 +34351,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 14,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -34065,7 +34396,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 14,
         "struct_name": "上下",
         "struct_type": 1,
@@ -34078,13 +34409,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 14,
         "reviewed_structure": "上下",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 1
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 1,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -34117,7 +34454,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 15,
         "struct_name": "左右",
         "struct_type": 3,
@@ -34130,13 +34467,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 15,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -34169,7 +34512,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 15,
         "struct_name": "左右",
         "struct_type": 3,
@@ -34182,13 +34525,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 15,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -34221,7 +34570,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 15,
         "struct_name": "左右",
         "struct_type": 3,
@@ -34234,13 +34583,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 15,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -34273,7 +34628,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 17,
         "struct_name": "左右",
         "struct_type": 3,
@@ -34286,13 +34641,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 17,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -34325,7 +34686,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 17,
         "struct_name": "左右",
         "struct_type": 3,
@@ -34338,13 +34699,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 17,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -34377,7 +34744,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 19,
         "struct_name": "左右",
         "struct_type": 3,
@@ -34390,13 +34757,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 19,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -34429,7 +34802,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 19,
         "struct_name": "上下",
         "struct_type": 1,
@@ -34442,13 +34815,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 19,
         "reviewed_structure": "上下",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 1
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 1,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -34481,7 +34860,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 20,
         "struct_name": "左右",
         "struct_type": 3,
@@ -34494,13 +34873,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 20,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -34533,7 +34918,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 23,
         "struct_name": "左右",
         "struct_type": 3,
@@ -34546,13 +34931,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 23,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {
@@ -34585,7 +34976,7 @@
       "action": "UPGRADE_CANDIDATE",
       "proposed": {
         "radix": 120,
-        "radix_name": "糹",
+        "radix_name": "糸",
         "strokes": 27,
         "struct_name": "左右",
         "struct_type": 3,
@@ -34598,13 +34989,19 @@
         "decision": "批准",
         "reviewer": "zairkliu",
         "reviewed_at": "2026-08-06",
-        "reviewed_radix_name": "糹",
+        "reviewed_radix_name": "糸",
         "reviewed_strokes": 27,
         "reviewed_structure": "左右",
         "radix_code": 120,
-        "radix_source": "unihan_fallback",
-        "radix_name_mismatch": true,
-        "struct_code": 3
+        "radix_source": "radix_map",
+        "radix_name_mismatch": false,
+        "struct_code": 3,
+        "second_round": {
+          "decision": "批准",
+          "reviewer": "zairkliu",
+          "reviewed_at": "2026-08-06",
+          "note": ""
+        }
       }
     },
     {

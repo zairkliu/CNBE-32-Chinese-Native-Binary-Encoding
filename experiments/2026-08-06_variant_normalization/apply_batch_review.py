@@ -31,7 +31,7 @@ STRUCT_CODE = {name: i for i, name in enumerate(STRUCT_ORDER)}
 
 # Kangxi 214 radical name -> code supplement for names absent from the project map.
 RADIX_SUPPLEMENT = {
-    "一": 1, "乙": 5, "二": 7, "人": 9, "儿": 10, "入": 11, "八": 12,
+    "一": 1, "乙": 5, "乚": 5, "二": 7, "人": 9, "儿": 10, "入": 11, "八": 12,
     "刀": 18, "刂": 18, "力": 19, "口": 30, "囗": 31, "土": 32, "士": 33,
     "夂": 34, "夕": 36, "大": 37, "女": 38, "子": 39, "宀": 40, "寸": 41,
     "小": 42, "尢": 43, "尸": 44, "山": 46, "工": 48, "己": 49, "巳": 49,
