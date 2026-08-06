@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-07T00:29:38+0800",
+  "rows": 491,
+  "deterministic_complete": 491,
+  "deterministic_complete_rate": 1.0,
+  "roundtrip_pass": 490,
+  "roundtrip_pass_rate": 0.998,
+  "confidence_avg": 0.8967,
+  "issue_counts": {
+    "ambiguous_decomposition": 6,
+    "radical_mismatch": 491,
+    "stroke_count_mismatch": 476,
+    "structure_mismatch": 489,
+    "missing_decomposition": 482,
+    "missing_standard_radical": 482,
+    "missing_standard_structure": 482,
+    "invalid_current_structure": 7
+  },
+  "llm": {
+    "requested": 20,
+    "cached": 20,
+    "parsed": 20,
+    "agreement": 20,
+    "status": "RUN"
+  },
+  "write_gate": "NO_WRITE_TO_RELEASE_DB"
+}
