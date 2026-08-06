@@ -1,0 +1,13 @@
+{
+  "release_db": "C:\\Users\\zairk\\Documents\\Codex\\2026-07-27\\https-github-com-zairkliu-cnbe-32\\repo\\data\\cnbe32.db",
+  "candidate_db": "C:\\Users\\zairk\\Documents\\Codex\\2026-07-27\\https-github-com-zairkliu-cnbe-32\\repo\\experiments\\2026-08-06_variant_normalization\\build\\cnbe32_8105_expanded_candidate.db",
+  "approved_rows": 812,
+  "updated": 806,
+  "inserted": 6,
+  "skipped_missing_codes": 0,
+  "failures": 0,
+  "duplicate_cnbe_provisional": 0,
+  "total_rows": 21184,
+  "failure_examples": [],
+  "duplicate_examples": []
+}

@@ -1,6 +1,6 @@
 {
   "authorizer": "项目负责人",
-  "authorized_at": "2026-08-06T03:43:47",
+  "authorized_at": "2026-08-06T11:20:25",
   "scope": "CNBE coverage-gap human review for 812 unique truth chars",
   "gate": "review_conclusion_only_no_release_db_write",
   "review_required": 16,

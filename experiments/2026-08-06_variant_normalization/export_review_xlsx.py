@@ -31,6 +31,7 @@ def row_from_entry(e: dict) -> list:
     cur = e.get("current") or {}
     ev = e.get("evidence") or {}
     prop = e.get("proposed") or {}
+    review = e.get("review") or {}
     return [
         e["char"],
         e["codepoint"],
@@ -54,9 +55,9 @@ def row_from_entry(e: dict) -> list:
         prop.get("struct_type", ""),
         prop.get("index", ""),
         prop.get("track", ""),
-        "",
-        "",
-        "",
+        review.get("decision", ""),
+        review.get("reviewer", ""),
+        "人工复核 2026-08-06" if review else "",
     ]
 
 
