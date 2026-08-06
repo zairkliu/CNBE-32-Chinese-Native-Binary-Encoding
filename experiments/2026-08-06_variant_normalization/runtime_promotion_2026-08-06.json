@@ -1,0 +1,42 @@
+{
+  "authorized_by": "项目负责人",
+  "authorized_at": "2026-08-06",
+  "applied_at": "2026-08-06T03:44:49+00:00",
+  "candidate_db": "C:\\Users\\zairk\\Documents\\Codex\\2026-07-27\\https-github-com-zairkliu-cnbe-32\\repo\\experiments\\2026-08-06_variant_normalization\\build\\cnbe32_8105_expanded_candidate.db",
+  "candidate_sha256": "aa81f39e3424008df448a688a0b30ae150df6c46664dbc55b5af2be83b8b644e",
+  "before_sha256": {
+    "C:\\Users\\zairk\\Documents\\Codex\\2026-07-27\\https-github-com-zairkliu-cnbe-32\\repo\\data\\cnbe32.db": "a283869871bdb328f17921feb506c818b3188920dc236d07de308af6d7d196a4",
+    "C:\\Users\\zairk\\Documents\\Codex\\2026-07-27\\https-github-com-zairkliu-cnbe-32\\repo\\src\\cnbe32\\data\\cnbe32.db": "4fc228aba62fc52d178a05186d69909cbd8345238dbcbcfd0cb46c28822a907d"
+  },
+  "after_sha256": {
+    "C:\\Users\\zairk\\Documents\\Codex\\2026-07-27\\https-github-com-zairkliu-cnbe-32\\repo\\data\\cnbe32.db": "450dfa66964158135c156948a688ac1524512e50d1fae90ce675aa7e625c37ab",
+    "C:\\Users\\zairk\\Documents\\Codex\\2026-07-27\\https-github-com-zairkliu-cnbe-32\\repo\\src\\cnbe32\\data\\cnbe32.db": "450dfa66964158135c156948a688ac1524512e50d1fae90ce675aa7e625c37ab"
+  },
+  "verification": {
+    "C:\\Users\\zairk\\Documents\\Codex\\2026-07-27\\https-github-com-zairkliu-cnbe-32\\repo\\data\\cnbe32.db": {
+      "path": "C:\\Users\\zairk\\Documents\\Codex\\2026-07-27\\https-github-com-zairkliu-cnbe-32\\repo\\data\\cnbe32.db",
+      "rows": 21184,
+      "tracks": {
+        "legacy": 12770,
+        "provisional": 812,
+        "standard": 7602
+      },
+      "approved_checked": 812,
+      "failures": [],
+      "duplicate_provisional_cnbe": 0
+    },
+    "C:\\Users\\zairk\\Documents\\Codex\\2026-07-27\\https-github-com-zairkliu-cnbe-32\\repo\\src\\cnbe32\\data\\cnbe32.db": {
+      "path": "C:\\Users\\zairk\\Documents\\Codex\\2026-07-27\\https-github-com-zairkliu-cnbe-32\\repo\\src\\cnbe32\\data\\cnbe32.db",
+      "rows": 21184,
+      "tracks": {
+        "legacy": 12770,
+        "provisional": 812,
+        "standard": 7602
+      },
+      "approved_checked": 812,
+      "failures": [],
+      "duplicate_provisional_cnbe": 0
+    }
+  },
+  "overall_pass": true
+}
