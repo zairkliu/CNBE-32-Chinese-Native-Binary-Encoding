@@ -9,7 +9,8 @@
     },
     "insert_candidates": 6,
     "upgrade_candidates": 796,
-    "write_gate": "NO_WRITE_TO_RELEASE_DB"
+    "write_gate": "NO_WRITE_TO_RELEASE_DB",
+    "reviewed_approved": 16
   },
   "entries": [
     {
@@ -79,7 +80,38 @@
       },
       "evidence_grade": "review_required",
       "action": "UPGRADE_REVIEW",
-      "proposed": null
+      "proposed": {
+        "radix": 5,
+        "radix_name": "乙",
+        "strokes": 3,
+        "struct_name": "独体字",
+        "struct_type": 0,
+        "index": 95,
+        "ext": 0,
+        "track": "provisional"
+      },
+      "review_status": "APPROVED",
+      "review": {
+        "decision": "批准",
+        "reviewer": "zairkliu",
+        "reviewed_at": "2026-08-06",
+        "reviewed_radix_name": "乙",
+        "reviewed_strokes": 3,
+        "reviewed_structure": "独体字",
+        "radix_code": 5,
+        "radix_source": "radix_map",
+        "struct_code": 0,
+        "proposed": {
+          "radix": 5,
+          "radix_name": "乙",
+          "strokes": 3,
+          "struct_name": "独体字",
+          "struct_type": 0,
+          "index": 95,
+          "ext": 0,
+          "track": "provisional"
+        }
+      }
     },
     {
       "char": "爲",
@@ -109,7 +141,38 @@
       },
       "evidence_grade": "review_required",
       "action": "UPGRADE_REVIEW",
-      "proposed": null
+      "proposed": {
+        "radix": 87,
+        "radix_name": "爫",
+        "strokes": 12,
+        "struct_name": "独体字",
+        "struct_type": 0,
+        "index": 1074,
+        "ext": 0,
+        "track": "provisional"
+      },
+      "review_status": "APPROVED",
+      "review": {
+        "decision": "批准",
+        "reviewer": "zairkliu",
+        "reviewed_at": "2026-08-06",
+        "reviewed_radix_name": "爫",
+        "reviewed_strokes": 12,
+        "reviewed_structure": "独体字",
+        "radix_code": 87,
+        "radix_source": "radix_map",
+        "struct_code": 0,
+        "proposed": {
+          "radix": 87,
+          "radix_name": "爫",
+          "strokes": 12,
+          "struct_name": "独体字",
+          "struct_type": 0,
+          "index": 1074,
+          "ext": 0,
+          "track": "provisional"
+        }
+      }
     },
     {
       "char": "東",
@@ -139,7 +202,38 @@
       },
       "evidence_grade": "review_required",
       "action": "UPGRADE_REVIEW",
-      "proposed": null
+      "proposed": {
+        "radix": 1,
+        "radix_name": "一",
+        "strokes": 8,
+        "struct_name": "独体字",
+        "struct_type": 0,
+        "index": 369,
+        "ext": 0,
+        "track": "provisional"
+      },
+      "review_status": "APPROVED",
+      "review": {
+        "decision": "批准",
+        "reviewer": "zairkliu",
+        "reviewed_at": "2026-08-06",
+        "reviewed_radix_name": "一",
+        "reviewed_strokes": 8,
+        "reviewed_structure": "独体字",
+        "radix_code": 1,
+        "radix_source": "radix_map",
+        "struct_code": 0,
+        "proposed": {
+          "radix": 1,
+          "radix_name": "一",
+          "strokes": 8,
+          "struct_name": "独体字",
+          "struct_type": 0,
+          "index": 369,
+          "ext": 0,
+          "track": "provisional"
+        }
+      }
     },
     {
       "char": "時",
@@ -3133,7 +3227,38 @@
       },
       "evidence_grade": "review_required",
       "action": "UPGRADE_REVIEW",
-      "proposed": null
+      "proposed": {
+        "radix": 183,
+        "radix_name": "飞",
+        "strokes": 9,
+        "struct_name": "独体字",
+        "struct_type": 0,
+        "index": 731,
+        "ext": 0,
+        "track": "provisional"
+      },
+      "review_status": "APPROVED",
+      "review": {
+        "decision": "批准",
+        "reviewer": "zairkliu",
+        "reviewed_at": "2026-08-06",
+        "reviewed_radix_name": "飞",
+        "reviewed_strokes": 9,
+        "reviewed_structure": "独体字",
+        "radix_code": 183,
+        "radix_source": "unihan_fallback",
+        "struct_code": 0,
+        "proposed": {
+          "radix": 183,
+          "radix_name": "飞",
+          "strokes": 9,
+          "struct_name": "独体字",
+          "struct_type": 0,
+          "index": 731,
+          "ext": 0,
+          "track": "provisional"
+        }
+      }
     },
     {
       "char": "將",
@@ -4996,7 +5121,38 @@
       },
       "evidence_grade": "review_required",
       "action": "UPGRADE_REVIEW",
-      "proposed": null
+      "proposed": {
+        "radix": 49,
+        "radix_name": "巳",
+        "strokes": 3,
+        "struct_name": "独体字",
+        "struct_type": 0,
+        "index": 2035,
+        "ext": 0,
+        "track": "provisional"
+      },
+      "review_status": "APPROVED",
+      "review": {
+        "decision": "批准",
+        "reviewer": "zairkliu",
+        "reviewed_at": "2026-08-06",
+        "reviewed_radix_name": "巳",
+        "reviewed_strokes": 3,
+        "reviewed_structure": "独体字",
+        "radix_code": 49,
+        "radix_source": "unihan_fallback",
+        "struct_code": 0,
+        "proposed": {
+          "radix": 49,
+          "radix_name": "巳",
+          "strokes": 3,
+          "struct_name": "独体字",
+          "struct_type": 0,
+          "index": 2035,
+          "ext": 0,
+          "track": "provisional"
+        }
+      }
     },
     {
       "char": "憂",
@@ -8419,7 +8575,38 @@
       },
       "evidence_grade": "review_required",
       "action": "UPGRADE_REVIEW",
-      "proposed": null
+      "proposed": {
+        "radix": 49,
+        "radix_name": "巳",
+        "strokes": 4,
+        "struct_name": "独体字",
+        "struct_type": 0,
+        "index": 2036,
+        "ext": 0,
+        "track": "provisional"
+      },
+      "review_status": "APPROVED",
+      "review": {
+        "decision": "批准",
+        "reviewer": "zairkliu",
+        "reviewed_at": "2026-08-06",
+        "reviewed_radix_name": "巳",
+        "reviewed_strokes": 4,
+        "reviewed_structure": "独体字",
+        "radix_code": 49,
+        "radix_source": "unihan_fallback",
+        "struct_code": 0,
+        "proposed": {
+          "radix": 49,
+          "radix_name": "巳",
+          "strokes": 4,
+          "struct_name": "独体字",
+          "struct_type": 0,
+          "index": 2036,
+          "ext": 0,
+          "track": "provisional"
+        }
+      }
     },
     {
       "char": "廬",
@@ -9530,14 +9717,36 @@
       "evidence_grade": "cross_reference_unihan_ids",
       "action": "INSERT_CANDIDATE",
       "proposed": {
-        "radix": 96,
-        "radix_name": "玄",
+        "radix": 95,
+        "radix_name": "王",
         "strokes": 12,
         "struct_name": "左右",
         "struct_type": 3,
         "index": 219,
         "ext": 0,
         "track": "provisional"
+      },
+      "review_status": "APPROVED",
+      "review": {
+        "decision": "批准",
+        "reviewer": "zairkliu",
+        "reviewed_at": "2026-08-06",
+        "reviewed_radix_name": "王",
+        "reviewed_strokes": 12,
+        "reviewed_structure": "左右",
+        "radix_code": 95,
+        "radix_source": "radix_map",
+        "struct_code": 3,
+        "proposed": {
+          "radix": 95,
+          "radix_name": "王",
+          "strokes": 12,
+          "struct_name": "左右",
+          "struct_type": 3,
+          "index": 219,
+          "ext": 0,
+          "track": "provisional"
+        }
       }
     },
     {
@@ -9958,7 +10167,38 @@
       },
       "evidence_grade": "review_required",
       "action": "UPGRADE_REVIEW",
-      "proposed": null
+      "proposed": {
+        "radix": 83,
+        "radix_name": "氏",
+        "strokes": 5,
+        "struct_name": "独体字",
+        "struct_type": 0,
+        "index": 1553,
+        "ext": 0,
+        "track": "provisional"
+      },
+      "review_status": "APPROVED",
+      "review": {
+        "decision": "批准",
+        "reviewer": "zairkliu",
+        "reviewed_at": "2026-08-06",
+        "reviewed_radix_name": "氏",
+        "reviewed_strokes": 5,
+        "reviewed_structure": "独体字",
+        "radix_code": 83,
+        "radix_source": "radix_map",
+        "struct_code": 0,
+        "proposed": {
+          "radix": 83,
+          "radix_name": "氏",
+          "strokes": 5,
+          "struct_name": "独体字",
+          "struct_type": 0,
+          "index": 1553,
+          "ext": 0,
+          "track": "provisional"
+        }
+      }
     },
     {
       "char": "淺",
@@ -12952,7 +13192,38 @@
       },
       "evidence_grade": "review_required",
       "action": "UPGRADE_REVIEW",
-      "proposed": null
+      "proposed": {
+        "radix": 159,
+        "radix_name": "車",
+        "strokes": 7,
+        "struct_name": "独体字",
+        "struct_type": 0,
+        "index": 202,
+        "ext": 0,
+        "track": "provisional"
+      },
+      "review_status": "APPROVED",
+      "review": {
+        "decision": "批准",
+        "reviewer": "zairkliu",
+        "reviewed_at": "2026-08-06",
+        "reviewed_radix_name": "車",
+        "reviewed_strokes": 7,
+        "reviewed_structure": "独体字",
+        "radix_code": 159,
+        "radix_source": "radix_map",
+        "struct_code": 0,
+        "proposed": {
+          "radix": 159,
+          "radix_name": "車",
+          "strokes": 7,
+          "struct_name": "独体字",
+          "struct_type": 0,
+          "index": 202,
+          "ext": 0,
+          "track": "provisional"
+        }
+      }
     },
     {
       "char": "轉",
@@ -13635,13 +13906,35 @@
       "action": "INSERT_CANDIDATE",
       "proposed": {
         "radix": 85,
-        "radix_name": "水",
+        "radix_name": "氵",
         "strokes": 7,
         "struct_name": "左右",
         "struct_type": 3,
         "index": 1733,
         "ext": 0,
         "track": "provisional"
+      },
+      "review_status": "APPROVED",
+      "review": {
+        "decision": "批准",
+        "reviewer": "zairkliu",
+        "reviewed_at": "2026-08-06",
+        "reviewed_radix_name": "氵",
+        "reviewed_strokes": 7,
+        "reviewed_structure": "左右",
+        "radix_code": 85,
+        "radix_source": "radix_map",
+        "struct_code": 3,
+        "proposed": {
+          "radix": 85,
+          "radix_name": "氵",
+          "strokes": 7,
+          "struct_name": "左右",
+          "struct_type": 3,
+          "index": 1733,
+          "ext": 0,
+          "track": "provisional"
+        }
       }
     },
     {
@@ -13669,6 +13962,28 @@
         "index": 20,
         "ext": 0,
         "track": "provisional"
+      },
+      "review_status": "APPROVED",
+      "review": {
+        "decision": "批准",
+        "reviewer": "zairkliu",
+        "reviewed_at": "2026-08-06",
+        "reviewed_radix_name": "爪",
+        "reviewed_strokes": 11,
+        "reviewed_structure": "左上包",
+        "radix_code": 87,
+        "radix_source": "radix_map",
+        "struct_code": 5,
+        "proposed": {
+          "radix": 87,
+          "radix_name": "爪",
+          "strokes": 11,
+          "struct_name": "左上包",
+          "struct_type": 5,
+          "index": 20,
+          "ext": 0,
+          "track": "provisional"
+        }
       }
     },
     {
@@ -13689,13 +14004,35 @@
       "action": "INSERT_CANDIDATE",
       "proposed": {
         "radix": 113,
-        "radix_name": "示",
+        "radix_name": "礻",
         "strokes": 10,
         "struct_name": "左右",
         "struct_type": 3,
         "index": 770,
         "ext": 0,
         "track": "provisional"
+      },
+      "review_status": "APPROVED",
+      "review": {
+        "decision": "批准",
+        "reviewer": "zairkliu",
+        "reviewed_at": "2026-08-06",
+        "reviewed_radix_name": "礻",
+        "reviewed_strokes": 10,
+        "reviewed_structure": "左右",
+        "radix_code": 113,
+        "radix_source": "radix_map",
+        "struct_code": 3,
+        "proposed": {
+          "radix": 113,
+          "radix_name": "礻",
+          "strokes": 10,
+          "struct_name": "左右",
+          "struct_type": 3,
+          "index": 770,
+          "ext": 0,
+          "track": "provisional"
+        }
       }
     },
     {
@@ -18718,7 +19055,38 @@
       },
       "evidence_grade": "review_required",
       "action": "UPGRADE_REVIEW",
-      "proposed": null
+      "proposed": {
+        "radix": 213,
+        "radix_name": "龜",
+        "strokes": 17,
+        "struct_name": "独体字",
+        "struct_type": 0,
+        "index": 412,
+        "ext": 0,
+        "track": "provisional"
+      },
+      "review_status": "APPROVED",
+      "review": {
+        "decision": "批准",
+        "reviewer": "zairkliu",
+        "reviewed_at": "2026-08-06",
+        "reviewed_radix_name": "龜",
+        "reviewed_strokes": 17,
+        "reviewed_structure": "独体字",
+        "radix_code": 213,
+        "radix_source": "radix_map",
+        "struct_code": 0,
+        "proposed": {
+          "radix": 213,
+          "radix_name": "龜",
+          "strokes": 17,
+          "struct_name": "独体字",
+          "struct_type": 0,
+          "index": 412,
+          "ext": 0,
+          "track": "provisional"
+        }
+      }
     },
     {
       "char": "㮣",
@@ -18745,6 +19113,28 @@
         "index": 1443,
         "ext": 0,
         "track": "provisional"
+      },
+      "review_status": "APPROVED",
+      "review": {
+        "decision": "批准",
+        "reviewer": "zairkliu",
+        "reviewed_at": "2026-08-06",
+        "reviewed_radix_name": "木",
+        "reviewed_strokes": 13,
+        "reviewed_structure": "上下",
+        "radix_code": 75,
+        "radix_source": "radix_map",
+        "struct_code": 1,
+        "proposed": {
+          "radix": 75,
+          "radix_name": "木",
+          "strokes": 13,
+          "struct_name": "上下",
+          "struct_type": 1,
+          "index": 1443,
+          "ext": 0,
+          "track": "provisional"
+        }
       }
     },
     {
@@ -18765,13 +19155,35 @@
       "action": "INSERT_CANDIDATE",
       "proposed": {
         "radix": 85,
-        "radix_name": "水",
+        "radix_name": "氵",
         "strokes": 12,
         "struct_name": "左右",
         "struct_type": 3,
         "index": 1824,
         "ext": 0,
         "track": "provisional"
+      },
+      "review_status": "APPROVED",
+      "review": {
+        "decision": "批准",
+        "reviewer": "zairkliu",
+        "reviewed_at": "2026-08-06",
+        "reviewed_radix_name": "氵",
+        "reviewed_strokes": 12,
+        "reviewed_structure": "左右",
+        "radix_code": 85,
+        "radix_source": "radix_map",
+        "struct_code": 3,
+        "proposed": {
+          "radix": 85,
+          "radix_name": "氵",
+          "strokes": 12,
+          "struct_name": "左右",
+          "struct_type": 3,
+          "index": 1824,
+          "ext": 0,
+          "track": "provisional"
+        }
       }
     },
     {
@@ -25900,7 +26312,38 @@
       },
       "evidence_grade": "review_required",
       "action": "UPGRADE_REVIEW",
-      "proposed": null
+      "proposed": {
+        "radix": 129,
+        "radix_name": "肀",
+        "strokes": 13,
+        "struct_name": "独体字",
+        "struct_type": 0,
+        "index": 645,
+        "ext": 0,
+        "track": "provisional"
+      },
+      "review_status": "APPROVED",
+      "review": {
+        "decision": "批准",
+        "reviewer": "zairkliu",
+        "reviewed_at": "2026-08-06",
+        "reviewed_radix_name": "肀",
+        "reviewed_strokes": 13,
+        "reviewed_structure": "独体字",
+        "radix_code": 129,
+        "radix_source": "unihan_fallback",
+        "struct_code": 0,
+        "proposed": {
+          "radix": 129,
+          "radix_name": "肀",
+          "strokes": 13,
+          "struct_name": "独体字",
+          "struct_type": 0,
+          "index": 645,
+          "ext": 0,
+          "track": "provisional"
+        }
+      }
     },
     {
       "char": "脰",
