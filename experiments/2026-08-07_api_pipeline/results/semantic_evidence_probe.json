@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "scope": "full_catalog_97686",
+  "rows": 97686,
+  "generated_at": "2026-08-07T01:07:13+0800",
+  "coverage": {
+    "kDefinition": {
+      "count": 22988,
+      "rate": 0.2353
+    },
+    "kMandarin": {
+      "count": 44346,
+      "rate": 0.454
+    },
+    "kHanyuPinyin": {
+      "count": 34130,
+      "rate": 0.3494
+    },
+    "kCantonese": {
+      "count": 29915,
+      "rate": 0.3062
+    },
+    "kGradeLevel": {
+      "count": 2632,
+      "rate": 0.0269
+    },
+    "kTraditionalVariant": {
+      "count": 6475,
+      "rate": 0.0663
+    },
+    "kSimplifiedVariant": {
+      "count": 6923,
+      "rate": 0.0709
+    },
+    "kSemanticVariant": {
+      "count": 3531,
+      "rate": 0.0361
+    },
+    "kZVariant": {
+      "count": 149,
+      "rate": 0.0015
+    },
+    "kRSUnicode": {
+      "count": 97686,
+      "rate": 1.0
+    },
+    "kTotalStrokes": {
+      "count": 97686,
+      "rate": 1.0
+    }
+  },
+  "aggregates": {
+    "semantic_any": {
+      "count": 46857,
+      "rate": 0.4797
+    },
+    "reading_any": {
+      "count": 46742,
+      "rate": 0.4785
+    },
+    "variant_any": {
+      "count": 15398,
+      "rate": 0.1576
+    }
+  },
+  "note": "Unihan cross-reference only; not authoritative semantics; multimodal/image evidence is a separate layer"
+}
