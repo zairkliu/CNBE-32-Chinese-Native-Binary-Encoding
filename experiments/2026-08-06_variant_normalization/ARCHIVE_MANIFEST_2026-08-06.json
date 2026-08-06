@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "archived_at": "2026-08-06",
+  "entries": [
+    {
+      "path": "experiments\\2026-08-06_variant_normalization\\runtime_promotion_2026-08-06.json",
+      "size": 2236,
+      "sha256": "d4b2f35e7079751e9b99bc636487cd53c751fc84e51b6fa0a4d5ff95858104c6"
+    },
+    {
+      "path": "experiments\\2026-08-06_variant_normalization\\candidate_db_verification.json",
+      "size": 554,
+      "sha256": "7ce8fd2ffe2f3c057a7ea28e6566be0d39ad527152db9d81f6e2e4bcefed91cd"
+    },
+    {
+      "path": "experiments\\2026-08-06_variant_normalization\\coverage_remediation_packet.json",
+      "size": 1166912,
+      "sha256": "e114c8295754e467b102612a3d17007d76334cee0110e4e916cf8a0ef1de8da5"
+    },
+    {
+      "path": "experiments\\2026-08-06_variant_normalization\\variant_pairs.json",
+      "size": 62004,
+      "sha256": "e2e0d586bda1123a8aae3dd2d21a996add20291dc7ab4c69ddd358b3b26355d4"
+    },
+    {
+      "path": "experiments\\2026-08-06_variant_normalization\\coverage_gap.json",
+      "size": 322617,
+      "sha256": "02c0733aa4b138187cb3ee183601a6301208c0aa7ab824819d95a0411699fa15"
+    },
+    {
+      "path": "experiments\\2026-08-06_variant_normalization\\variant_map.json",
+      "size": 187217,
+      "sha256": "cec00a0b248aec52e3d12fcbc7114354d92b1be378706e9a7d1ba56eddc105fa"
+    },
+    {
+      "path": "experiments\\2026-08-06_variant_normalization\\variant_rules.json",
+      "size": 5702,
+      "sha256": "2db87b29d252ccf344322fb5911441941b011763f070968310bf424b92c988cf"
+    },
+    {
+      "path": "experiments\\2026-08-06_variant_normalization\\missing_six_candidates.json",
+      "size": 1603,
+      "sha256": "c6e93d3f62aefbe44c78762e1e7a11a80158a7f1cd79a4edb1312735d258709b"
+    },
+    {
+      "path": "experiments\\2026-08-06_variant_normalization\\review_authorization.json",
+      "size": 440,
+      "sha256": "7d391b602965fd60b226d27969fad0d1fbb82184cdba6f48d192273e41f047db"
+    },
+    {
+      "path": "experiments\\2026-08-06_variant_normalization\\batch_review_summary.json",
+      "size": 217,
+      "sha256": "586f08f0e758c713d37a0b4eb0dd33fa2551105680110e33f8a375efb2e74b44"
+    },
+    {
+      "path": "experiments\\2026-08-06_variant_normalization\\fallback_review_summary.json",
+      "size": 168,
+      "sha256": "5e4adeacdbceb54c759f08a1af56f3cd2c99df870b8596c2ccdb07a94a595c42"
+    },
+    {
+      "path": "evidence\\validation\\CNBE覆盖缺口人工复核_2026-08-06.xlsx",
+      "size": 216759,
+      "sha256": "57c4bf74e36b62bf20f8da3e9ca0386098e2dcecdcb454da8a7ffc5eee8875c8"
+    },
+    {
+      "path": "evidence\\validation\\CNBE部首名回退复核_2026-08-06.xlsx",
+      "size": 16608,
+      "sha256": "b30a0d2b31e4b9c5270f7e12366c5015644f1b2508cb3269528a40edb99d8b76"
+    },
+    {
+      "path": "evidence\\validation\\REVIEW_REGISTRY_2026-08-06.md",
+      "size": 1656,
+      "sha256": "4c4b51c847f25b49e2d61cecdb3aeb4bf031732b8efa6295ff90f0f3723a5269"
+    },
+    {
+      "path": "data\\cnbe32.db",
+      "size": 1957888,
+      "sha256": "450dfa66964158135c156948a688ac1524512e50d1fae90ce675aa7e625c37ab"
+    },
+    {
+      "path": "src\\cnbe32\\data\\cnbe32.db",
+      "size": 1957888,
+      "sha256": "450dfa66964158135c156948a688ac1524512e50d1fae90ce675aa7e625c37ab"
+    },
+    {
+      "path": "experiments\\2026-08-06_paddleocr_vl16\\REPORT.md",
+      "size": 1655,
+      "sha256": "d3de9f3f5f5a53f933ee6f2a50d67b065d86644ee1823206f7a8b4f8ef74652c"
+    },
+    {
+      "path": "experiments\\2026-08-06_paddleocr_vl16\\results.json",
+      "size": 903,
+      "sha256": "8d1f046da97bf807370c9d64d0e9eca8872b08fabb220cad511ca27f49c79c0c"
+    },
+    {
+      "path": "experiments\\2026-08-05_v1_yongle_ocr_cnbe\\REPORT.md",
+      "size": 3174,
+      "sha256": "3669df10dd93e721dea07393af24e3ec5284587d83a77daab51fb8a3a73c32bd"
+    },
+    {
+      "path": "experiments\\2026-08-05_v1_yongle_ocr_cnbe\\results.json",
+      "size": 2693,
+      "sha256": "77dde96be0b594a30faf70ffedf2c632b5408e52963ad2b8b9f2d8fbb708eaf2"
+    }
+  ]
+}
