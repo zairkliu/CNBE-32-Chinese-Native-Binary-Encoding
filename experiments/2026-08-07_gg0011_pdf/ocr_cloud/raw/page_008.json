@@ -1,0 +1,242 @@
+{
+  "logId": "13d98825-1507-472e-b575-6eeccf2e20e9",
+  "result": {
+    "layoutParsingResults": [
+      {
+        "prunedResult": {
+          "page_count": null,
+          "width": 2481,
+          "height": 3509,
+          "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_layout_detection": true,
+            "use_chart_recognition": false,
+            "use_seal_recognition": false,
+            "use_ocr_for_image_block": false,
+            "format_block_content": false,
+            "merge_layout_blocks": true,
+            "markdown_ignore_labels": [
+              "number",
+              "footnote",
+              "header",
+              "header_image",
+              "footer",
+              "footer_image",
+              "aside_text"
+            ],
+            "return_layout_polygon_points": true
+          },
+          "parsing_res_list": [
+            {
+              "block_label": "header",
+              "block_content": "GF 0011—2009",
+              "block_bbox": [
+                1922,
+                258,
+                2223,
+                310
+              ],
+              "block_id": 0,
+              "block_order": null,
+              "group_id": 0,
+              "block_polygon_points": [
+                [
+                  1922.0,
+                  258.0
+                ],
+                [
+                  2223.0,
+                  258.0
+                ],
+                [
+                  2223.0,
+                  310.0
+                ],
+                [
+                  1922.0,
+                  310.0
+                ]
+              ]
+            },
+            {
+              "block_label": "image",
+              "block_content": "",
+              "block_bbox": [
+                337,
+                371,
+                2158,
+                1381
+              ],
+              "block_id": 1,
+              "block_order": null,
+              "group_id": 1,
+              "block_polygon_points": [
+                [
+                  337.0,
+                  371.0
+                ],
+                [
+                  2158.0,
+                  371.0
+                ],
+                [
+                  2158.0,
+                  1381.0
+                ],
+                [
+                  337.0,
+                  1381.0
+                ]
+              ]
+            },
+            {
+              "block_label": "number",
+              "block_content": "5",
+              "block_bbox": [
+                2166,
+                3067,
+                2201,
+                3114
+              ],
+              "block_id": 2,
+              "block_order": null,
+              "group_id": 2,
+              "block_polygon_points": [
+                [
+                  2166.0,
+                  3067.0
+                ],
+                [
+                  2201.0,
+                  3067.0
+                ],
+                [
+                  2201.0,
+                  3114.0
+                ],
+                [
+                  2166.0,
+                  3114.0
+                ]
+              ]
+            }
+          ],
+          "layout_det_res": {
+            "boxes": [
+              {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.7875282764434814,
+                "coordinate": [
+                  1922,
+                  258,
+                  2223,
+                  310
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    1922.0,
+                    258.0
+                  ],
+                  [
+                    2223.0,
+                    258.0
+                  ],
+                  [
+                    2223.0,
+                    310.0
+                  ],
+                  [
+                    1922.0,
+                    310.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.4891524314880371,
+                "coordinate": [
+                  337,
+                  371,
+                  2158,
+                  1381
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    337.0,
+                    371.0
+                  ],
+                  [
+                    2158.0,
+                    371.0
+                  ],
+                  [
+                    2158.0,
+                    1381.0
+                  ],
+                  [
+                    337.0,
+                    1381.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.6525828838348389,
+                "coordinate": [
+                  2166,
+                  3067,
+                  2201,
+                  3114
+                ],
+                "order": 1,
+                "polygon_points": [
+                  [
+                    2166.0,
+                    3067.0
+                  ],
+                  [
+                    2201.0,
+                    3067.0
+                  ],
+                  [
+                    2201.0,
+                    3114.0
+                  ],
+                  [
+                    2166.0,
+                    3114.0
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        "markdown": {
+          "text": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_337_371_2158_1381.jpg\" alt=\"Image\" width=\"73%\" /></div>\n",
+          "images": {
+            "imgs/img_in_image_box_337_371_2158_1381.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//13d98825-1507-472e-b575-6eeccf2e20e9/markdown_0/imgs/img_in_image_box_337_371_2158_1381.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-07T01%3A36%3A29Z%2F-1%2F%2F3fb581a00cc2da67593cbdd99fcf2e23b2552a907a9307cac17f09f2b9f2feb8"
+          }
+        },
+        "outputImages": {
+          "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//13d98825-1507-472e-b575-6eeccf2e20e9/layout_det_res_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-07T01%3A36%3A30Z%2F-1%2F%2F867029d2e1766c5a786a9c14bec1b918413916918f80a96080d1e9d1bbbba38c"
+        },
+        "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//13d98825-1507-472e-b575-6eeccf2e20e9/input_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-07T01%3A36%3A30Z%2F-1%2F%2Fe3c5d655101a7b9af36988722b5fb390f52ad752c915719bcd1afe965594cc90"
+      }
+    ],
+    "dataInfo": {
+      "width": 2481,
+      "height": 3509,
+      "type": "image"
+    },
+    "preprocessedImages": [
+      "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//13d98825-1507-472e-b575-6eeccf2e20e9/preprocessed_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-07T01%3A36%3A30Z%2F-1%2F%2F6856ff4b84466797fbe8c63d9575ca0a517dcf3ef3b655660685c143e47e95af"
+    ]
+  },
+  "errorCode": 0,
+  "errorMsg": "Success"
+}

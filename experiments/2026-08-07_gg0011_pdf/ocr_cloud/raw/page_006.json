@@ -1,0 +1,570 @@
+{
+  "logId": "26022910-25f0-4cbb-ab32-bfe44751ef8c",
+  "result": {
+    "layoutParsingResults": [
+      {
+        "prunedResult": {
+          "page_count": null,
+          "width": 2481,
+          "height": 3509,
+          "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_layout_detection": true,
+            "use_chart_recognition": false,
+            "use_seal_recognition": false,
+            "use_ocr_for_image_block": false,
+            "format_block_content": false,
+            "merge_layout_blocks": true,
+            "markdown_ignore_labels": [
+              "number",
+              "footnote",
+              "header",
+              "header_image",
+              "footer",
+              "footer_image",
+              "aside_text"
+            ],
+            "return_layout_polygon_points": true
+          },
+          "parsing_res_list": [
+            {
+              "block_label": "header",
+              "block_content": "GF 0011—2009",
+              "block_bbox": [
+                1890,
+                255,
+                2198,
+                309
+              ],
+              "block_id": 0,
+              "block_order": null,
+              "group_id": 0,
+              "block_polygon_points": [
+                [
+                  1890.0,
+                  255.0
+                ],
+                [
+                  2198.0,
+                  255.0
+                ],
+                [
+                  2198.0,
+                  309.0
+                ],
+                [
+                  1890.0,
+                  309.0
+                ]
+              ]
+            },
+            {
+              "block_label": "table",
+              "block_content": "<table><tr><td rowspan=\"3\">一画</td><td>[175](阝左)</td><td>46广</td><td>[68](车)</td></tr><tr><td>[159](阝右)</td><td>47门(門)</td><td>69牙</td></tr><tr><td>22刀(刂ヶ)</td><td>[77](氵)</td><td>70戈</td></tr><tr><td>1一</td><td>23力</td><td>[98](忄)</td><td>[62](无)</td></tr><tr><td>2|(丿)</td><td>24又</td><td>48ヘ</td><td>71比</td></tr><tr><td>[2](丿)</td><td>25厶</td><td>49辶(辵)</td><td>72瓦</td></tr><tr><td>3丿</td><td>26廴</td><td>50彐(丩互)</td><td>73止</td></tr><tr><td>4丶</td><td>[21](巳)</td><td>[50](丶)</td><td>74支(攵)</td></tr><tr><td>5一</td><td></td><td>51尸</td><td>[98](小)</td></tr><tr><td rowspan=\"2\">二画</td><td rowspan=\"2\">三画</td><td>52己(巳巳)</td><td>[75](曰)</td></tr><tr><td>[52](巳)</td><td>[75](曰)</td></tr><tr><td>6十</td><td>27干</td><td>[52](巳)</td><td>75日(曰曰)</td></tr><tr><td>7厂(厂)</td><td>28工</td><td>53弓</td><td>[88](月)</td></tr><tr><td>8匚</td><td>29土(士)</td><td>54子</td><td>76贝(貝)</td></tr><tr><td>[9](卜)</td><td>[29](士)</td><td>55屮(屮)</td><td>77水(氵水)</td></tr><tr><td>[22](刂)</td><td>[80](扌)</td><td>[55](屮)</td><td>78见(見)</td></tr><tr><td>9卜(卜)</td><td>30艹(艸)</td><td>56女</td><td>79牛(牛)</td></tr><tr><td>10冂(冂)</td><td>31寸</td><td>57飞(飛)</td><td>80手(扌尹)</td></tr><tr><td>[12](亻)</td><td>32卄</td><td>58马(馬)</td><td>[80](尹)</td></tr><tr><td>[7](厂)</td><td>33大</td><td>[50](互)</td><td>81气</td></tr><tr><td>11八(丷)</td><td>[34](兀)</td><td>[148](纟)</td><td>82毛</td></tr><tr><td>12人(亻入)</td><td>34尢(兀允)</td><td>59幺</td><td>[79](牛)</td></tr><tr><td>[12](入)</td><td>35弋</td><td>60巛</td><td>[74](攵)</td></tr><tr><td>[22](ヶ)</td><td>36小(ヶ)</td><td></td><td>83长(長長)</td></tr><tr><td>[10](冂)</td><td>[36](ヵ)</td><td>四画</td><td>84片</td></tr><tr><td>13勺</td><td>37口</td><td></td><td>85斤</td></tr><tr><td>[16](几)</td><td>38囗</td><td>61王(玉)</td><td>86爪(爫)</td></tr><tr><td>14儿</td><td>39山</td><td>62无(无)</td><td>87父</td></tr><tr><td>15匕</td><td>40巾</td><td>63韦(韋)</td><td>[34](允)</td></tr><tr><td>16几(几)</td><td>41彳</td><td>[123](耂)</td><td>[86](爫)</td></tr><tr><td>17亠</td><td>42彡</td><td>64木(木)</td><td>88月(月)</td></tr><tr><td>18亻</td><td>[66](犭)</td><td>[64](木)</td><td>89氏</td></tr><tr><td>[11](丷)</td><td>43夕</td><td>65支</td><td>90欠</td></tr><tr><td>19丷</td><td>44夂</td><td>66犬(犭)</td><td>91风(風)</td></tr><tr><td>[166](讠)</td><td>[185](饣)</td><td>67歹(岁)</td><td>92殳</td></tr><tr><td>20凵</td><td>45牜(爿)</td><td>68车(车車)</td><td>93文</td></tr><tr><td>21卩(巳)</td><td></td><td></td><td></td></tr></table>",
+              "block_bbox": [
+                333,
+                385,
+                2156,
+                3047
+              ],
+              "block_id": 1,
+              "block_order": null,
+              "group_id": 1,
+              "block_polygon_points": [
+                [
+                  333.0,
+                  385.0
+                ],
+                [
+                  2156.0,
+                  385.0
+                ],
+                [
+                  2156.0,
+                  3047.0
+                ],
+                [
+                  333.0,
+                  3047.0
+                ]
+              ]
+            },
+            {
+              "block_label": "number",
+              "block_content": "3",
+              "block_bbox": [
+                2134,
+                3067,
+                2175,
+                3114
+              ],
+              "block_id": 2,
+              "block_order": null,
+              "group_id": 2,
+              "block_polygon_points": [
+                [
+                  2134.0,
+                  3067.0
+                ],
+                [
+                  2175.0,
+                  3067.0
+                ],
+                [
+                  2175.0,
+                  3114.0
+                ],
+                [
+                  2134.0,
+                  3114.0
+                ]
+              ]
+            }
+          ],
+          "layout_det_res": {
+            "boxes": [
+              {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.7929348349571228,
+                "coordinate": [
+                  1890,
+                  255,
+                  2198,
+                  309
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    1890.0,
+                    255.0
+                  ],
+                  [
+                    2198.0,
+                    255.0
+                  ],
+                  [
+                    2198.0,
+                    309.0
+                  ],
+                  [
+                    1890.0,
+                    309.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.3285706639289856,
+                "coordinate": [
+                  437,
+                  443,
+                  596,
+                  518
+                ],
+                "order": 1,
+                "polygon_points": [
+                  [
+                    437.0,
+                    443.0
+                  ],
+                  [
+                    596.0,
+                    443.0
+                  ],
+                  [
+                    596.0,
+                    518.0
+                  ],
+                  [
+                    437.0,
+                    518.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.31838172674179077,
+                "coordinate": [
+                  357,
+                  462,
+                  632,
+                  1009
+                ],
+                "order": 2,
+                "polygon_points": [
+                  [
+                    357.0,
+                    462.0
+                  ],
+                  [
+                    632.0,
+                    462.0
+                  ],
+                  [
+                    632.0,
+                    1009.0
+                  ],
+                  [
+                    357.0,
+                    1009.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.31348782777786255,
+                "coordinate": [
+                  333,
+                  385,
+                  2156,
+                  3047
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    333.0,
+                    385.0
+                  ],
+                  [
+                    2156.0,
+                    385.0
+                  ],
+                  [
+                    2156.0,
+                    3047.0
+                  ],
+                  [
+                    333.0,
+                    3047.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.6558738350868225,
+                "coordinate": [
+                  441,
+                  1075,
+                  594,
+                  1149
+                ],
+                "order": 3,
+                "polygon_points": [
+                  [
+                    441.0,
+                    1075.0
+                  ],
+                  [
+                    594.0,
+                    1075.0
+                  ],
+                  [
+                    594.0,
+                    1149.0
+                  ],
+                  [
+                    441.0,
+                    1149.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.31189990043640137,
+                "coordinate": [
+                  342,
+                  1200,
+                  704,
+                  3048
+                ],
+                "order": 4,
+                "polygon_points": [
+                  [
+                    342.0,
+                    1200.0
+                  ],
+                  [
+                    704.0,
+                    1200.0
+                  ],
+                  [
+                    704.0,
+                    3048.0
+                  ],
+                  [
+                    342.0,
+                    3048.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.35591986775398254,
+                "coordinate": [
+                  816,
+                  380,
+                  1174,
+                  978
+                ],
+                "order": 5,
+                "polygon_points": [
+                  [
+                    816.0,
+                    380.0
+                  ],
+                  [
+                    1174.0,
+                    380.0
+                  ],
+                  [
+                    1174.0,
+                    978.0
+                  ],
+                  [
+                    816.0,
+                    978.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.5872049331665039,
+                "coordinate": [
+                  920,
+                  1051,
+                  1077,
+                  1122
+                ],
+                "order": 6,
+                "polygon_points": [
+                  [
+                    920.0,
+                    1051.0
+                  ],
+                  [
+                    1077.0,
+                    1051.0
+                  ],
+                  [
+                    1077.0,
+                    1122.0
+                  ],
+                  [
+                    920.0,
+                    1122.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.3025117516517639,
+                "coordinate": [
+                  810,
+                  1158,
+                  1137,
+                  3035
+                ],
+                "order": 7,
+                "polygon_points": [
+                  [
+                    810.0,
+                    1158.0
+                  ],
+                  [
+                    1137.0,
+                    1158.0
+                  ],
+                  [
+                    1137.0,
+                    3035.0
+                  ],
+                  [
+                    810.0,
+                    3035.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.36567339301109314,
+                "coordinate": [
+                  1293,
+                  378,
+                  1639,
+                  2096
+                ],
+                "order": 8,
+                "polygon_points": [
+                  [
+                    1293.0,
+                    378.0
+                  ],
+                  [
+                    1639.0,
+                    378.0
+                  ],
+                  [
+                    1639.0,
+                    2096.0
+                  ],
+                  [
+                    1293.0,
+                    2096.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.6288722157478333,
+                "coordinate": [
+                  1409,
+                  2155,
+                  1551,
+                  2225
+                ],
+                "order": 9,
+                "polygon_points": [
+                  [
+                    1409.0,
+                    2155.0
+                  ],
+                  [
+                    1551.0,
+                    2155.0
+                  ],
+                  [
+                    1551.0,
+                    2225.0
+                  ],
+                  [
+                    1409.0,
+                    2225.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.35966581106185913,
+                "coordinate": [
+                  1293,
+                  2301,
+                  1645,
+                  3043
+                ],
+                "order": 10,
+                "polygon_points": [
+                  [
+                    1293.0,
+                    2301.0
+                  ],
+                  [
+                    1645.0,
+                    2301.0
+                  ],
+                  [
+                    1645.0,
+                    3043.0
+                  ],
+                  [
+                    1293.0,
+                    3043.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.3121993839740753,
+                "coordinate": [
+                  1773,
+                  384,
+                  2125,
+                  3032
+                ],
+                "order": 11,
+                "polygon_points": [
+                  [
+                    1773.0,
+                    384.0
+                  ],
+                  [
+                    2125.0,
+                    384.0
+                  ],
+                  [
+                    2125.0,
+                    3032.0
+                  ],
+                  [
+                    1773.0,
+                    3032.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.6167693734169006,
+                "coordinate": [
+                  2134,
+                  3067,
+                  2175,
+                  3114
+                ],
+                "order": 12,
+                "polygon_points": [
+                  [
+                    2134.0,
+                    3067.0
+                  ],
+                  [
+                    2175.0,
+                    3067.0
+                  ],
+                  [
+                    2175.0,
+                    3114.0
+                  ],
+                  [
+                    2134.0,
+                    3114.0
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        "markdown": {
+          "text": "\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td rowspan=\"3\">一画</td><td style='text-align: center; word-wrap: break-word;'>[175](阝左)</td><td style='text-align: center; word-wrap: break-word;'>46广</td><td style='text-align: center; word-wrap: break-word;'>[68](车)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>[159](阝右)</td><td style='text-align: center; word-wrap: break-word;'>47门(門)</td><td style='text-align: center; word-wrap: break-word;'>69牙</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>22刀(刂ヶ)</td><td style='text-align: center; word-wrap: break-word;'>[77](氵)</td><td style='text-align: center; word-wrap: break-word;'>70戈</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>1一</td><td style='text-align: center; word-wrap: break-word;'>23力</td><td style='text-align: center; word-wrap: break-word;'>[98](忄)</td><td style='text-align: center; word-wrap: break-word;'>[62](无)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>2|(丿)</td><td style='text-align: center; word-wrap: break-word;'>24又</td><td style='text-align: center; word-wrap: break-word;'>48ヘ</td><td style='text-align: center; word-wrap: break-word;'>71比</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>[2](丿)</td><td style='text-align: center; word-wrap: break-word;'>25厶</td><td style='text-align: center; word-wrap: break-word;'>49辶(辵)</td><td style='text-align: center; word-wrap: break-word;'>72瓦</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>3丿</td><td style='text-align: center; word-wrap: break-word;'>26廴</td><td style='text-align: center; word-wrap: break-word;'>50彐(丩互)</td><td style='text-align: center; word-wrap: break-word;'>73止</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>4丶</td><td style='text-align: center; word-wrap: break-word;'>[21](巳)</td><td style='text-align: center; word-wrap: break-word;'>[50](丶)</td><td style='text-align: center; word-wrap: break-word;'>74支(攵)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>5一</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>51尸</td><td style='text-align: center; word-wrap: break-word;'>[98](小)</td></tr><tr><td rowspan=\"2\">二画</td><td rowspan=\"2\">三画</td><td style='text-align: center; word-wrap: break-word;'>52己(巳巳)</td><td style='text-align: center; word-wrap: break-word;'>[75](曰)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>[52](巳)</td><td style='text-align: center; word-wrap: break-word;'>[75](曰)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>6十</td><td style='text-align: center; word-wrap: break-word;'>27干</td><td style='text-align: center; word-wrap: break-word;'>[52](巳)</td><td style='text-align: center; word-wrap: break-word;'>75日(曰曰)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>7厂(厂)</td><td style='text-align: center; word-wrap: break-word;'>28工</td><td style='text-align: center; word-wrap: break-word;'>53弓</td><td style='text-align: center; word-wrap: break-word;'>[88](月)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>8匚</td><td style='text-align: center; word-wrap: break-word;'>29土(士)</td><td style='text-align: center; word-wrap: break-word;'>54子</td><td style='text-align: center; word-wrap: break-word;'>76贝(貝)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>[9](卜)</td><td style='text-align: center; word-wrap: break-word;'>[29](士)</td><td style='text-align: center; word-wrap: break-word;'>55屮(屮)</td><td style='text-align: center; word-wrap: break-word;'>77水(氵水)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>[22](刂)</td><td style='text-align: center; word-wrap: break-word;'>[80](扌)</td><td style='text-align: center; word-wrap: break-word;'>[55](屮)</td><td style='text-align: center; word-wrap: break-word;'>78见(見)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>9卜(卜)</td><td style='text-align: center; word-wrap: break-word;'>30艹(艸)</td><td style='text-align: center; word-wrap: break-word;'>56女</td><td style='text-align: center; word-wrap: break-word;'>79牛(牛)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>10冂(冂)</td><td style='text-align: center; word-wrap: break-word;'>31寸</td><td style='text-align: center; word-wrap: break-word;'>57飞(飛)</td><td style='text-align: center; word-wrap: break-word;'>80手(扌尹)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>[12](亻)</td><td style='text-align: center; word-wrap: break-word;'>32卄</td><td style='text-align: center; word-wrap: break-word;'>58马(馬)</td><td style='text-align: center; word-wrap: break-word;'>[80](尹)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>[7](厂)</td><td style='text-align: center; word-wrap: break-word;'>33大</td><td style='text-align: center; word-wrap: break-word;'>[50](互)</td><td style='text-align: center; word-wrap: break-word;'>81气</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>11八(丷)</td><td style='text-align: center; word-wrap: break-word;'>[34](兀)</td><td style='text-align: center; word-wrap: break-word;'>[148](纟)</td><td style='text-align: center; word-wrap: break-word;'>82毛</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>12人(亻入)</td><td style='text-align: center; word-wrap: break-word;'>34尢(兀允)</td><td style='text-align: center; word-wrap: break-word;'>59幺</td><td style='text-align: center; word-wrap: break-word;'>[79](牛)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>[12](入)</td><td style='text-align: center; word-wrap: break-word;'>35弋</td><td style='text-align: center; word-wrap: break-word;'>60巛</td><td style='text-align: center; word-wrap: break-word;'>[74](攵)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>[22](ヶ)</td><td style='text-align: center; word-wrap: break-word;'>36小(ヶ)</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>83长(長長)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>[10](冂)</td><td style='text-align: center; word-wrap: break-word;'>[36](ヵ)</td><td style='text-align: center; word-wrap: break-word;'>四画</td><td style='text-align: center; word-wrap: break-word;'>84片</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>13勺</td><td style='text-align: center; word-wrap: break-word;'>37口</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>85斤</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>[16](几)</td><td style='text-align: center; word-wrap: break-word;'>38囗</td><td style='text-align: center; word-wrap: break-word;'>61王(玉)</td><td style='text-align: center; word-wrap: break-word;'>86爪(爫)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>14儿</td><td style='text-align: center; word-wrap: break-word;'>39山</td><td style='text-align: center; word-wrap: break-word;'>62无(无)</td><td style='text-align: center; word-wrap: break-word;'>87父</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>15匕</td><td style='text-align: center; word-wrap: break-word;'>40巾</td><td style='text-align: center; word-wrap: break-word;'>63韦(韋)</td><td style='text-align: center; word-wrap: break-word;'>[34](允)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>16几(几)</td><td style='text-align: center; word-wrap: break-word;'>41彳</td><td style='text-align: center; word-wrap: break-word;'>[123](耂)</td><td style='text-align: center; word-wrap: break-word;'>[86](爫)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>17亠</td><td style='text-align: center; word-wrap: break-word;'>42彡</td><td style='text-align: center; word-wrap: break-word;'>64木(木)</td><td style='text-align: center; word-wrap: break-word;'>88月(月)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>18亻</td><td style='text-align: center; word-wrap: break-word;'>[66](犭)</td><td style='text-align: center; word-wrap: break-word;'>[64](木)</td><td style='text-align: center; word-wrap: break-word;'>89氏</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>[11](丷)</td><td style='text-align: center; word-wrap: break-word;'>43夕</td><td style='text-align: center; word-wrap: break-word;'>65支</td><td style='text-align: center; word-wrap: break-word;'>90欠</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>19丷</td><td style='text-align: center; word-wrap: break-word;'>44夂</td><td style='text-align: center; word-wrap: break-word;'>66犬(犭)</td><td style='text-align: center; word-wrap: break-word;'>91风(風)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>[166](讠)</td><td style='text-align: center; word-wrap: break-word;'>[185](饣)</td><td style='text-align: center; word-wrap: break-word;'>67歹(岁)</td><td style='text-align: center; word-wrap: break-word;'>92殳</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>20凵</td><td style='text-align: center; word-wrap: break-word;'>45牜(爿)</td><td style='text-align: center; word-wrap: break-word;'>68车(车車)</td><td style='text-align: center; word-wrap: break-word;'>93文</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>21卩(巳)</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr></table>",
+          "images": {}
+        },
+        "outputImages": {
+          "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//26022910-25f0-4cbb-ab32-bfe44751ef8c/layout_det_res_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-07T01%3A36%3A31Z%2F-1%2F%2Fadfa37ee184bf19b856a78b32d3a1ca9ec86acdbb0aae53f28f60ebf28bd33b2"
+        },
+        "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//26022910-25f0-4cbb-ab32-bfe44751ef8c/input_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-07T01%3A36%3A31Z%2F-1%2F%2Ff365a2d87d92a0bc9eafd7bba871174abc3888aa3760e719c7ac7b57611e39fd"
+      }
+    ],
+    "dataInfo": {
+      "width": 2481,
+      "height": 3509,
+      "type": "image"
+    },
+    "preprocessedImages": [
+      "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//26022910-25f0-4cbb-ab32-bfe44751ef8c/preprocessed_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-07T01%3A36%3A31Z%2F-1%2F%2Fa0dffc24368bd658f880cd3fdbe41b7bddc103c351b76e27458962b29d873172"
+    ]
+  },
+  "errorCode": 0,
+  "errorMsg": "Success"
+}

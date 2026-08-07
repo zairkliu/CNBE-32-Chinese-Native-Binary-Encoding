@@ -17,6 +17,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 import requests
+from requests.exceptions import HTTPError
 
 JOB_URL = "https://paddleocr.aistudio-app.com/api/v2/ocr/jobs"
 DEFAULT_MODEL = "PaddleOCR-VL-1.6"
@@ -58,12 +59,21 @@ class PaddleOCRVLClient:
                 }
             ),
         }
-        with open(image_path, "rb") as fh:
-            resp = requests.post(
-                JOB_URL, headers=self.headers, data=data, files={"file": fh}, timeout=180
-            )
-        resp.raise_for_status()
-        return resp.json()["data"]["jobId"]
+        last_error: HTTPError | None = None
+        for attempt in range(4):
+            try:
+                with open(image_path, "rb") as fh:
+                    resp = requests.post(
+                        JOB_URL, headers=self.headers, data=data, files={"file": fh}, timeout=180
+                    )
+                resp.raise_for_status()
+                return resp.json()["data"]["jobId"]
+            except HTTPError as exc:
+                last_error = exc
+                if exc.response is not None and exc.response.status_code in (400, 401, 403):
+                    break
+                time.sleep(2 * (attempt + 1))
+        raise last_error if last_error else RuntimeError("submit failed")
 
     def poll(self, job_id: str) -> dict:
         resp = requests.get(f"{JOB_URL}/{job_id}", headers=self.headers, timeout=60)
@@ -178,10 +188,17 @@ def main() -> int:
         return 1
     pages = None
     if args.pages:
+        raw = [p.strip() for p in args.pages.split(",") if p.strip()]
+        expanded = []
+        for token in raw:
+            if "-" in token:
+                lo, hi = (int(x) for x in token.split("-", 1))
+                expanded.extend(str(i) for i in range(lo, hi + 1))
+            else:
+                expanded.append(token)
         pages = [
-            f"{int(p):03d}" if p.strip().isdigit() else p.strip()
-            for p in args.pages.split(",")
-            if p.strip()
+            f"{int(p):03d}" if p.isdigit() else p
+            for p in expanded
         ]
     client = PaddleOCRVLClient(token, poll_interval=args.poll_interval, max_wait=args.max_wait)
     result = client.run_batch(args.images_dir, args.out_dir, pages=pages)

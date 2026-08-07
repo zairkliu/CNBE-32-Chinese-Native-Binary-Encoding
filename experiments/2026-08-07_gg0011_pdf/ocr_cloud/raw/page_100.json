@@ -1,0 +1,118 @@
+{
+  "logId": "6c3b97bb-4b40-426d-9763-e4b9bded0153",
+  "result": {
+    "layoutParsingResults": [
+      {
+        "prunedResult": {
+          "page_count": null,
+          "width": 1821,
+          "height": 1010,
+          "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_layout_detection": true,
+            "use_chart_recognition": false,
+            "use_seal_recognition": false,
+            "use_ocr_for_image_block": false,
+            "format_block_content": false,
+            "merge_layout_blocks": true,
+            "markdown_ignore_labels": [
+              "number",
+              "footnote",
+              "header",
+              "header_image",
+              "footer",
+              "footer_image",
+              "aside_text"
+            ],
+            "return_layout_polygon_points": true
+          },
+          "parsing_res_list": [
+            {
+              "block_label": "table",
+              "block_content": "<table><tr><td rowspan=\"3\">十画</td><td>[156]（鹵）</td><td>十三画</td><td>十五画</td></tr><tr><td>[114]（鳥）</td><td>198鼓</td><td>[172]（齒）</td></tr><tr><td>[177]（魚）</td><td>[173]（黽）</td><td>十六画</td></tr><tr><td>188髟</td><td>193麻</td><td>199鼠</td><td>[103]（龍）</td></tr><tr><td>[58]（馬）</td><td>194鹿</td><td>十四画</td><td>十七画</td></tr><tr><td>189鬲</td><td>十二画</td><td>200鼻</td><td>[164]（龜）</td></tr><tr><td>190鬥</td><td>195鼎</td><td>[141]（齊）</td><td>201龠</td></tr><tr><td>191高</td><td>196黑</td><td>[149]（麥）</td><td>201龠</td></tr><tr><td>十一画</td><td>197黍</td><td></td><td></td></tr><tr><td>192黃</td><td></td><td></td><td></td></tr></table>",
+              "block_bbox": [
+                8,
+                0,
+                1821,
+                1010
+              ],
+              "block_id": 0,
+              "block_order": null,
+              "group_id": 0,
+              "block_polygon_points": [
+                [
+                  8.0,
+                  0.0
+                ],
+                [
+                  1829.0,
+                  0.0
+                ],
+                [
+                  1829.0,
+                  1010.0
+                ],
+                [
+                  8.0,
+                  1010.0
+                ]
+              ]
+            }
+          ],
+          "layout_det_res": {
+            "boxes": [
+              {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.5650935173034668,
+                "coordinate": [
+                  8,
+                  0,
+                  1821,
+                  1010
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    8.0,
+                    0.0
+                  ],
+                  [
+                    1829.0,
+                    0.0
+                  ],
+                  [
+                    1829.0,
+                    1010.0
+                  ],
+                  [
+                    8.0,
+                    1010.0
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        "markdown": {
+          "text": "\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td rowspan=\"3\">十画</td><td style='text-align: center; word-wrap: break-word;'>[156]（鹵）</td><td style='text-align: center; word-wrap: break-word;'>十三画</td><td style='text-align: center; word-wrap: break-word;'>十五画</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>[114]（鳥）</td><td style='text-align: center; word-wrap: break-word;'>198鼓</td><td style='text-align: center; word-wrap: break-word;'>[172]（齒）</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>[177]（魚）</td><td style='text-align: center; word-wrap: break-word;'>[173]（黽）</td><td style='text-align: center; word-wrap: break-word;'>十六画</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>188髟</td><td style='text-align: center; word-wrap: break-word;'>193麻</td><td style='text-align: center; word-wrap: break-word;'>199鼠</td><td style='text-align: center; word-wrap: break-word;'>[103]（龍）</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>[58]（馬）</td><td style='text-align: center; word-wrap: break-word;'>194鹿</td><td style='text-align: center; word-wrap: break-word;'>十四画</td><td style='text-align: center; word-wrap: break-word;'>十七画</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>189鬲</td><td style='text-align: center; word-wrap: break-word;'>十二画</td><td style='text-align: center; word-wrap: break-word;'>200鼻</td><td style='text-align: center; word-wrap: break-word;'>[164]（龜）</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>190鬥</td><td style='text-align: center; word-wrap: break-word;'>195鼎</td><td style='text-align: center; word-wrap: break-word;'>[141]（齊）</td><td style='text-align: center; word-wrap: break-word;'>201龠</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>191高</td><td style='text-align: center; word-wrap: break-word;'>196黑</td><td style='text-align: center; word-wrap: break-word;'>[149]（麥）</td><td style='text-align: center; word-wrap: break-word;'>201龠</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>十一画</td><td style='text-align: center; word-wrap: break-word;'>197黍</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>192黃</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr></table>",
+          "images": {}
+        },
+        "outputImages": {
+          "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6c3b97bb-4b40-426d-9763-e4b9bded0153/layout_det_res_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-07T01%3A39%3A00Z%2F-1%2F%2Ff234dbc908895250a56bdc8831e93ca8d5ad96bd2a20dc25ae03552b4f681b08"
+        },
+        "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6c3b97bb-4b40-426d-9763-e4b9bded0153/input_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-07T01%3A39%3A00Z%2F-1%2F%2Fde4797011691acd5bf625af246c3a0875f2cfa361b67bf09cde954e92d1fa3c2"
+      }
+    ],
+    "dataInfo": {
+      "width": 1821,
+      "height": 1010,
+      "type": "image"
+    },
+    "preprocessedImages": [
+      "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6c3b97bb-4b40-426d-9763-e4b9bded0153/preprocessed_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-07T01%3A39%3A00Z%2F-1%2F%2Fbbcebb2f5bba8ed7065c0dbca9b2e6bb49879eeec62e78c8679a5a0d0ec955ba"
+    ]
+  },
+  "errorCode": 0,
+  "errorMsg": "Success"
+}

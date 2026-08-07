@@ -1,0 +1,1486 @@
+{
+  "source": "PaddleOCR-VL-1.6",
+  "entries": [
+    {
+      "kind": "attached",
+      "id": 175,
+      "form": "阝左"
+    },
+    {
+      "kind": "main",
+      "id": 46,
+      "main": "广",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 68,
+      "form": "车"
+    },
+    {
+      "kind": "attached",
+      "id": 159,
+      "form": "阝右"
+    },
+    {
+      "kind": "main",
+      "id": 47,
+      "main": "门",
+      "attached_raw": "門"
+    },
+    {
+      "kind": "main",
+      "id": 69,
+      "main": "牙",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 22,
+      "main": "刀",
+      "attached_raw": "刂ヶ"
+    },
+    {
+      "kind": "attached",
+      "id": 77,
+      "form": "氵"
+    },
+    {
+      "kind": "main",
+      "id": 70,
+      "main": "戈",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 1,
+      "main": "一",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 23,
+      "main": "力",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 98,
+      "form": "忄"
+    },
+    {
+      "kind": "attached",
+      "id": 62,
+      "form": "无"
+    },
+    {
+      "kind": "main",
+      "id": 2,
+      "main": "|",
+      "attached_raw": "丿"
+    },
+    {
+      "kind": "main",
+      "id": 24,
+      "main": "又",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 48,
+      "main": "ヘ",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 71,
+      "main": "比",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 2,
+      "form": "丿"
+    },
+    {
+      "kind": "main",
+      "id": 25,
+      "main": "厶",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 49,
+      "main": "辶",
+      "attached_raw": "辵"
+    },
+    {
+      "kind": "main",
+      "id": 72,
+      "main": "瓦",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 3,
+      "main": "丿",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 26,
+      "main": "廴",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 50,
+      "main": "彐",
+      "attached_raw": "丩互"
+    },
+    {
+      "kind": "main",
+      "id": 73,
+      "main": "止",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 4,
+      "main": "丶",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 21,
+      "form": "巳"
+    },
+    {
+      "kind": "attached",
+      "id": 50,
+      "form": "丶"
+    },
+    {
+      "kind": "main",
+      "id": 74,
+      "main": "支",
+      "attached_raw": "攵"
+    },
+    {
+      "kind": "main",
+      "id": 5,
+      "main": "一",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 51,
+      "main": "尸",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 98,
+      "form": "小"
+    },
+    {
+      "kind": "main",
+      "id": 52,
+      "main": "己",
+      "attached_raw": "巳巳"
+    },
+    {
+      "kind": "attached",
+      "id": 75,
+      "form": "曰"
+    },
+    {
+      "kind": "attached",
+      "id": 52,
+      "form": "巳"
+    },
+    {
+      "kind": "attached",
+      "id": 75,
+      "form": "曰"
+    },
+    {
+      "kind": "main",
+      "id": 6,
+      "main": "十",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 27,
+      "main": "干",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 52,
+      "form": "巳"
+    },
+    {
+      "kind": "main",
+      "id": 75,
+      "main": "日",
+      "attached_raw": "曰曰"
+    },
+    {
+      "kind": "main",
+      "id": 7,
+      "main": "厂",
+      "attached_raw": "厂"
+    },
+    {
+      "kind": "main",
+      "id": 28,
+      "main": "工",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 53,
+      "main": "弓",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 88,
+      "form": "月"
+    },
+    {
+      "kind": "main",
+      "id": 8,
+      "main": "匚",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 29,
+      "main": "土",
+      "attached_raw": "士"
+    },
+    {
+      "kind": "main",
+      "id": 54,
+      "main": "子",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 76,
+      "main": "贝",
+      "attached_raw": "貝"
+    },
+    {
+      "kind": "attached",
+      "id": 9,
+      "form": "卜"
+    },
+    {
+      "kind": "attached",
+      "id": 29,
+      "form": "士"
+    },
+    {
+      "kind": "main",
+      "id": 55,
+      "main": "屮",
+      "attached_raw": "屮"
+    },
+    {
+      "kind": "main",
+      "id": 77,
+      "main": "水",
+      "attached_raw": "氵水"
+    },
+    {
+      "kind": "attached",
+      "id": 22,
+      "form": "刂"
+    },
+    {
+      "kind": "attached",
+      "id": 80,
+      "form": "扌"
+    },
+    {
+      "kind": "attached",
+      "id": 55,
+      "form": "屮"
+    },
+    {
+      "kind": "main",
+      "id": 78,
+      "main": "见",
+      "attached_raw": "見"
+    },
+    {
+      "kind": "main",
+      "id": 9,
+      "main": "卜",
+      "attached_raw": "卜"
+    },
+    {
+      "kind": "main",
+      "id": 30,
+      "main": "艹",
+      "attached_raw": "艸"
+    },
+    {
+      "kind": "main",
+      "id": 56,
+      "main": "女",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 79,
+      "main": "牛",
+      "attached_raw": "牛"
+    },
+    {
+      "kind": "main",
+      "id": 10,
+      "main": "冂",
+      "attached_raw": "冂"
+    },
+    {
+      "kind": "main",
+      "id": 31,
+      "main": "寸",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 57,
+      "main": "飞",
+      "attached_raw": "飛"
+    },
+    {
+      "kind": "main",
+      "id": 80,
+      "main": "手",
+      "attached_raw": "扌尹"
+    },
+    {
+      "kind": "attached",
+      "id": 12,
+      "form": "亻"
+    },
+    {
+      "kind": "main",
+      "id": 32,
+      "main": "卄",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 58,
+      "main": "马",
+      "attached_raw": "馬"
+    },
+    {
+      "kind": "attached",
+      "id": 80,
+      "form": "尹"
+    },
+    {
+      "kind": "attached",
+      "id": 7,
+      "form": "厂"
+    },
+    {
+      "kind": "main",
+      "id": 33,
+      "main": "大",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 50,
+      "form": "互"
+    },
+    {
+      "kind": "main",
+      "id": 81,
+      "main": "气",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 11,
+      "main": "八",
+      "attached_raw": "丷"
+    },
+    {
+      "kind": "attached",
+      "id": 34,
+      "form": "兀"
+    },
+    {
+      "kind": "attached",
+      "id": 148,
+      "form": "纟"
+    },
+    {
+      "kind": "main",
+      "id": 82,
+      "main": "毛",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 12,
+      "main": "人",
+      "attached_raw": "亻入"
+    },
+    {
+      "kind": "main",
+      "id": 34,
+      "main": "尢",
+      "attached_raw": "兀允"
+    },
+    {
+      "kind": "main",
+      "id": 59,
+      "main": "幺",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 79,
+      "form": "牛"
+    },
+    {
+      "kind": "attached",
+      "id": 12,
+      "form": "入"
+    },
+    {
+      "kind": "main",
+      "id": 35,
+      "main": "弋",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 60,
+      "main": "巛",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 74,
+      "form": "攵"
+    },
+    {
+      "kind": "attached",
+      "id": 22,
+      "form": "ヶ"
+    },
+    {
+      "kind": "main",
+      "id": 36,
+      "main": "小",
+      "attached_raw": "ヶ"
+    },
+    {
+      "kind": "main",
+      "id": 83,
+      "main": "长",
+      "attached_raw": "長長"
+    },
+    {
+      "kind": "attached",
+      "id": 10,
+      "form": "冂"
+    },
+    {
+      "kind": "attached",
+      "id": 36,
+      "form": "ヵ"
+    },
+    {
+      "kind": "main",
+      "id": 84,
+      "main": "片",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 13,
+      "main": "勺",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 37,
+      "main": "口",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 85,
+      "main": "斤",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 16,
+      "form": "几"
+    },
+    {
+      "kind": "main",
+      "id": 38,
+      "main": "囗",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 61,
+      "main": "王",
+      "attached_raw": "玉"
+    },
+    {
+      "kind": "main",
+      "id": 86,
+      "main": "爪",
+      "attached_raw": "爫"
+    },
+    {
+      "kind": "main",
+      "id": 14,
+      "main": "儿",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 39,
+      "main": "山",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 62,
+      "main": "无",
+      "attached_raw": "无"
+    },
+    {
+      "kind": "main",
+      "id": 87,
+      "main": "父",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 15,
+      "main": "匕",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 40,
+      "main": "巾",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 63,
+      "main": "韦",
+      "attached_raw": "韋"
+    },
+    {
+      "kind": "attached",
+      "id": 34,
+      "form": "允"
+    },
+    {
+      "kind": "main",
+      "id": 16,
+      "main": "几",
+      "attached_raw": "几"
+    },
+    {
+      "kind": "main",
+      "id": 41,
+      "main": "彳",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 123,
+      "form": "耂"
+    },
+    {
+      "kind": "attached",
+      "id": 86,
+      "form": "爫"
+    },
+    {
+      "kind": "main",
+      "id": 17,
+      "main": "亠",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 42,
+      "main": "彡",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 64,
+      "main": "木",
+      "attached_raw": "木"
+    },
+    {
+      "kind": "main",
+      "id": 88,
+      "main": "月",
+      "attached_raw": "月"
+    },
+    {
+      "kind": "main",
+      "id": 18,
+      "main": "亻",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 66,
+      "form": "犭"
+    },
+    {
+      "kind": "attached",
+      "id": 64,
+      "form": "木"
+    },
+    {
+      "kind": "main",
+      "id": 89,
+      "main": "氏",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 11,
+      "form": "丷"
+    },
+    {
+      "kind": "main",
+      "id": 43,
+      "main": "夕",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 65,
+      "main": "支",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 90,
+      "main": "欠",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 19,
+      "main": "丷",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 44,
+      "main": "夂",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 66,
+      "main": "犬",
+      "attached_raw": "犭"
+    },
+    {
+      "kind": "main",
+      "id": 91,
+      "main": "风",
+      "attached_raw": "風"
+    },
+    {
+      "kind": "attached",
+      "id": 166,
+      "form": "讠"
+    },
+    {
+      "kind": "attached",
+      "id": 185,
+      "form": "饣"
+    },
+    {
+      "kind": "main",
+      "id": 67,
+      "main": "歹",
+      "attached_raw": "岁"
+    },
+    {
+      "kind": "main",
+      "id": 92,
+      "main": "殳",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 20,
+      "main": "凵",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 45,
+      "main": "牜",
+      "attached_raw": "爿"
+    },
+    {
+      "kind": "main",
+      "id": 68,
+      "main": "车",
+      "attached_raw": "车車"
+    },
+    {
+      "kind": "main",
+      "id": 93,
+      "main": "文",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 21,
+      "main": "卩",
+      "attached_raw": "巳"
+    },
+    {
+      "kind": "attached",
+      "id": 156,
+      "form": "鹵"
+    },
+    {
+      "kind": "attached",
+      "id": 114,
+      "form": "鳥"
+    },
+    {
+      "kind": "main",
+      "id": 198,
+      "main": "鼓",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 172,
+      "form": "齒"
+    },
+    {
+      "kind": "attached",
+      "id": 177,
+      "form": "魚"
+    },
+    {
+      "kind": "attached",
+      "id": 173,
+      "form": "黽"
+    },
+    {
+      "kind": "main",
+      "id": 188,
+      "main": "髟",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 193,
+      "main": "麻",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 199,
+      "main": "鼠",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 103,
+      "form": "龍"
+    },
+    {
+      "kind": "attached",
+      "id": 58,
+      "form": "馬"
+    },
+    {
+      "kind": "main",
+      "id": 194,
+      "main": "鹿",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 189,
+      "main": "鬲",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 200,
+      "main": "鼻",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 164,
+      "form": "龜"
+    },
+    {
+      "kind": "main",
+      "id": 190,
+      "main": "鬥",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 195,
+      "main": "鼎",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 141,
+      "form": "齊"
+    },
+    {
+      "kind": "main",
+      "id": 201,
+      "main": "龠",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 191,
+      "main": "高",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 196,
+      "main": "黑",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 149,
+      "form": "麥"
+    },
+    {
+      "kind": "main",
+      "id": 201,
+      "main": "龠",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 197,
+      "main": "黍",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 192,
+      "main": "黃",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 94,
+      "main": "方",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 95,
+      "main": "火",
+      "attached_raw": "灬"
+    },
+    {
+      "kind": "main",
+      "id": 96,
+      "main": "斗",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 95,
+      "form": "灬"
+    },
+    {
+      "kind": "main",
+      "id": 97,
+      "main": "户",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 100,
+      "form": "礻"
+    },
+    {
+      "kind": "main",
+      "id": 98,
+      "main": "心",
+      "attached_raw": "忄小"
+    },
+    {
+      "kind": "attached",
+      "id": 145,
+      "form": "肀"
+    },
+    {
+      "kind": "attached",
+      "id": 45,
+      "form": "爿"
+    },
+    {
+      "kind": "main",
+      "id": 99,
+      "main": "毋",
+      "attached_raw": "母"
+    },
+    {
+      "kind": "attached",
+      "id": 61,
+      "form": "玉"
+    },
+    {
+      "kind": "main",
+      "id": 100,
+      "main": "示",
+      "attached_raw": "礻"
+    },
+    {
+      "kind": "main",
+      "id": 101,
+      "main": "甘",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 102,
+      "main": "石",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 103,
+      "main": "龙",
+      "attached_raw": "龍"
+    },
+    {
+      "kind": "attached",
+      "id": 67,
+      "form": "歺"
+    },
+    {
+      "kind": "main",
+      "id": 104,
+      "main": "业",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 77,
+      "form": "氺"
+    },
+    {
+      "kind": "main",
+      "id": 105,
+      "main": "目",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 106,
+      "main": "田",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 107,
+      "main": "皿",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 108,
+      "main": "皿",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 176,
+      "form": "钅"
+    },
+    {
+      "kind": "main",
+      "id": 109,
+      "main": "生",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 110,
+      "main": "矢",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 111,
+      "main": "禾",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 112,
+      "main": "白",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 113,
+      "main": "瓜",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 114,
+      "main": "鸟",
+      "attached_raw": "鳥"
+    },
+    {
+      "kind": "main",
+      "id": 115,
+      "main": "疒",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 116,
+      "main": "立",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 117,
+      "main": "穴",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 142,
+      "form": "礻"
+    },
+    {
+      "kind": "attached",
+      "id": 145,
+      "form": "垂"
+    },
+    {
+      "kind": "attached",
+      "id": 118,
+      "form": "正"
+    },
+    {
+      "kind": "main",
+      "id": 118,
+      "main": "疋",
+      "attached_raw": "正"
+    },
+    {
+      "kind": "main",
+      "id": 119,
+      "main": "皮",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 120,
+      "main": "殳",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 121,
+      "main": "矛",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 99,
+      "form": "母"
+    },
+    {
+      "kind": "main",
+      "id": 123,
+      "main": "老",
+      "attached_raw": "耂"
+    },
+    {
+      "kind": "main",
+      "id": 124,
+      "main": "耳",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 125,
+      "main": "臣",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 126,
+      "form": "西"
+    },
+    {
+      "kind": "main",
+      "id": 126,
+      "main": "酉",
+      "attached_raw": "西西"
+    },
+    {
+      "kind": "attached",
+      "id": 126,
+      "form": "西"
+    },
+    {
+      "kind": "main",
+      "id": 127,
+      "main": "而",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 128,
+      "main": "页",
+      "attached_raw": "頁"
+    },
+    {
+      "kind": "main",
+      "id": 129,
+      "main": "至",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 130,
+      "main": "声",
+      "attached_raw": "虎"
+    },
+    {
+      "kind": "main",
+      "id": 131,
+      "main": "虫",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 132,
+      "main": "肉",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 133,
+      "main": "缶",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 134,
+      "main": "舌",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 135,
+      "main": "竹",
+      "attached_raw": "木"
+    },
+    {
+      "kind": "attached",
+      "id": 135,
+      "form": "木"
+    },
+    {
+      "kind": "main",
+      "id": 136,
+      "main": "臼",
+      "attached_raw": "臼"
+    },
+    {
+      "kind": "main",
+      "id": 137,
+      "main": "自",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 138,
+      "main": "血",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 139,
+      "main": "舟",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 140,
+      "main": "色",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 141,
+      "main": "齐",
+      "attached_raw": "齊"
+    },
+    {
+      "kind": "main",
+      "id": 142,
+      "main": "衣",
+      "attached_raw": "衤"
+    },
+    {
+      "kind": "main",
+      "id": 143,
+      "main": "羊",
+      "attached_raw": "羋羊"
+    },
+    {
+      "kind": "attached",
+      "id": 143,
+      "form": "羋"
+    },
+    {
+      "kind": "main",
+      "id": 149,
+      "main": "麦",
+      "attached_raw": "麥"
+    },
+    {
+      "kind": "attached",
+      "id": 83,
+      "form": "镸"
+    },
+    {
+      "kind": "main",
+      "id": 150,
+      "main": "走",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 151,
+      "main": "赤",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 68,
+      "form": "車"
+    },
+    {
+      "kind": "main",
+      "id": 152,
+      "main": "豆",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 153,
+      "main": "西",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 154,
+      "main": "辰",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 155,
+      "main": "豕",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 156,
+      "main": "卤",
+      "attached_raw": "鹵"
+    },
+    {
+      "kind": "attached",
+      "id": 76,
+      "form": "貝"
+    },
+    {
+      "kind": "attached",
+      "id": 78,
+      "form": "見"
+    },
+    {
+      "kind": "main",
+      "id": 157,
+      "main": "里",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 158,
+      "form": "跼"
+    },
+    {
+      "kind": "main",
+      "id": 158,
+      "main": "足",
+      "attached_raw": "跼"
+    },
+    {
+      "kind": "main",
+      "id": 159,
+      "main": "邑",
+      "attached_raw": "阝右"
+    },
+    {
+      "kind": "attached",
+      "id": 136,
+      "form": "臼"
+    },
+    {
+      "kind": "main",
+      "id": 160,
+      "main": "身",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 49,
+      "form": "辵"
+    },
+    {
+      "kind": "main",
+      "id": 161,
+      "main": "采",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 162,
+      "main": "谷",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 163,
+      "main": "豸",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 164,
+      "main": "龟",
+      "attached_raw": "龜"
+    },
+    {
+      "kind": "main",
+      "id": 165,
+      "main": "角",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 166,
+      "main": "言",
+      "attached_raw": "讠"
+    },
+    {
+      "kind": "attached",
+      "id": 143,
+      "form": "羔"
+    },
+    {
+      "kind": "main",
+      "id": 144,
+      "main": "米",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 145,
+      "main": "聿",
+      "attached_raw": "聿"
+    },
+    {
+      "kind": "main",
+      "id": 146,
+      "main": "艮",
+      "attached_raw": ""
+    },
+    {
+      "kind": "attached",
+      "id": 30,
+      "form": "艸"
+    },
+    {
+      "kind": "main",
+      "id": 147,
+      "main": "羽",
+      "attached_raw": ""
+    },
+    {
+      "kind": "main",
+      "id": 148,
+      "main": "糸",
+      "attached_raw": "糸"
+    },
+    {
+      "kind": "attached",
+      "id": 148,
+      "form": "糸"
+    },
+    {
+      "kind": "main",
+      "id": 172,
+      "main": "齿",
+      "attached_raw": "齒"
+    },
+    {
+      "kind": "attached",
+      "id": 130,
+      "form": "虎"
+    },
+    {
+      "kind": "attached",
+      "id": 47,
+      "form": "門"
+    }
+  ]
+}

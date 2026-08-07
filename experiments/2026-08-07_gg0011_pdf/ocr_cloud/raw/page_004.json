@@ -1,0 +1,1704 @@
+{
+  "logId": "0596b5bc-47b0-4577-a1c3-5bb098c6bce2",
+  "result": {
+    "layoutParsingResults": [
+      {
+        "prunedResult": {
+          "page_count": null,
+          "width": 2481,
+          "height": 3509,
+          "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_layout_detection": true,
+            "use_chart_recognition": false,
+            "use_seal_recognition": false,
+            "use_ocr_for_image_block": false,
+            "format_block_content": false,
+            "merge_layout_blocks": true,
+            "markdown_ignore_labels": [
+              "number",
+              "footnote",
+              "header",
+              "header_image",
+              "footer",
+              "footer_image",
+              "aside_text"
+            ],
+            "return_layout_polygon_points": true
+          },
+          "parsing_res_list": [
+            {
+              "block_label": "header",
+              "block_content": "GF 0011—2009",
+              "block_bbox": [
+                1891,
+                259,
+                2190,
+                311
+              ],
+              "block_id": 0,
+              "block_order": null,
+              "group_id": 0,
+              "block_polygon_points": [
+                [
+                  1891.0,
+                  259.0
+                ],
+                [
+                  2190.0,
+                  259.0
+                ],
+                [
+                  2190.0,
+                  311.0
+                ],
+                [
+                  1891.0,
+                  311.0
+                ]
+              ]
+            },
+            {
+              "block_label": "paragraph_title",
+              "block_content": "汉字部首表",
+              "block_bbox": [
+                998,
+                566,
+                1475,
+                642
+              ],
+              "block_id": 1,
+              "block_order": 1,
+              "group_id": 1,
+              "block_polygon_points": [
+                [
+                  998.0,
+                  566.0
+                ],
+                [
+                  1475.0,
+                  566.0
+                ],
+                [
+                  1475.0,
+                  642.0
+                ],
+                [
+                  998.0,
+                  642.0
+                ]
+              ]
+            },
+            {
+              "block_label": "paragraph_title",
+              "block_content": "1 范围",
+              "block_bbox": [
+                287,
+                897,
+                460,
+                952
+              ],
+              "block_id": 2,
+              "block_order": 2,
+              "group_id": 2,
+              "block_polygon_points": [
+                [
+                  287.0,
+                  897.0
+                ],
+                [
+                  460.0,
+                  897.0
+                ],
+                [
+                  460.0,
+                  952.0
+                ],
+                [
+                  287.0,
+                  952.0
+                ]
+              ]
+            },
+            {
+              "block_label": "text",
+              "block_content": "本规范规定了汉字的部首表及其使用规则。",
+              "block_bbox": [
+                369,
+                1017,
+                1196,
+                1070
+              ],
+              "block_id": 3,
+              "block_order": 3,
+              "group_id": 3,
+              "block_polygon_points": [
+                [
+                  369.0,
+                  1017.0
+                ],
+                [
+                  1196.0,
+                  1017.0
+                ],
+                [
+                  1196.0,
+                  1070.0
+                ],
+                [
+                  369.0,
+                  1070.0
+                ]
+              ]
+            },
+            {
+              "block_label": "text",
+              "block_content": "本规范适用于辞书编纂、汉字信息处理及其他领域的汉字检索，也可供汉字教学参考。",
+              "block_bbox": [
+                368,
+                1081,
+                2026,
+                1140
+              ],
+              "block_id": 4,
+              "block_order": 4,
+              "group_id": 4,
+              "block_polygon_points": [
+                [
+                  368.0,
+                  1081.0
+                ],
+                [
+                  2026.0,
+                  1081.0
+                ],
+                [
+                  2026.0,
+                  1140.0
+                ],
+                [
+                  368.0,
+                  1140.0
+                ]
+              ]
+            },
+            {
+              "block_label": "paragraph_title",
+              "block_content": "2 规范性引用文件",
+              "block_bbox": [
+                285,
+                1183,
+                678,
+                1238
+              ],
+              "block_id": 5,
+              "block_order": 5,
+              "group_id": 5,
+              "block_polygon_points": [
+                [
+                  285.0,
+                  1183.0
+                ],
+                [
+                  678.0,
+                  1183.0
+                ],
+                [
+                  678.0,
+                  1238.0
+                ],
+                [
+                  285.0,
+                  1238.0
+                ]
+              ]
+            },
+            {
+              "block_label": "text",
+              "block_content": "下列文件中的条款通过本规范的引用而成为本规范的条款。凡是注明日期的引用文件，其随后所有的修改单（不包括勘误的内容）或修订版均不适用于本规范，然而，鼓励根据本规范达成协议的各方研究是否可使用这些文件的最新版本。凡是不注明日期的引用文件，其最新版本适用于本规范。",
+              "block_bbox": [
+                286,
+                1280,
+                2195,
+                1531
+              ],
+              "block_id": 6,
+              "block_order": 6,
+              "group_id": 6,
+              "block_polygon_points": [
+                [
+                  286.0,
+                  1280.0
+                ],
+                [
+                  2195.0,
+                  1280.0
+                ],
+                [
+                  2195.0,
+                  1531.0
+                ],
+                [
+                  286.0,
+                  1531.0
+                ]
+              ]
+            },
+            {
+              "block_label": "text",
+              "block_content": "GB/T 12200.2—1994 汉语信息处理词汇 02 部分：汉语和汉字",
+              "block_bbox": [
+                373,
+                1545,
+                1638,
+                1598
+              ],
+              "block_id": 7,
+              "block_order": 7,
+              "group_id": 7,
+              "block_polygon_points": [
+                [
+                  373.0,
+                  1545.0
+                ],
+                [
+                  1638.0,
+                  1545.0
+                ],
+                [
+                  1638.0,
+                  1598.0
+                ],
+                [
+                  373.0,
+                  1598.0
+                ]
+              ]
+            },
+            {
+              "block_label": "text",
+              "block_content": "国家语言文字工作委员会、新闻出版署发布《现代汉语通用字笔顺规范》1997年4月",
+              "block_bbox": [
+                374,
+                1610,
+                2019,
+                1665
+              ],
+              "block_id": 8,
+              "block_order": 8,
+              "group_id": 8,
+              "block_polygon_points": [
+                [
+                  374.0,
+                  1610.0
+                ],
+                [
+                  2019.0,
+                  1610.0
+                ],
+                [
+                  2019.0,
+                  1665.0
+                ],
+                [
+                  374.0,
+                  1665.0
+                ]
+              ]
+            },
+            {
+              "block_label": "text",
+              "block_content": "GF 3002—1999 GB 13000.1 字符集汉字笔顺规范",
+              "block_bbox": [
+                373,
+                1679,
+                1350,
+                1730
+              ],
+              "block_id": 9,
+              "block_order": 9,
+              "group_id": 9,
+              "block_polygon_points": [
+                [
+                  373.0,
+                  1679.0
+                ],
+                [
+                  1350.0,
+                  1679.0
+                ],
+                [
+                  1350.0,
+                  1730.0
+                ],
+                [
+                  373.0,
+                  1730.0
+                ]
+              ]
+            },
+            {
+              "block_label": "text",
+              "block_content": "GF 3003—1999 GB 13000.1 字符集汉字字序（笔画序）规范",
+              "block_bbox": [
+                375,
+                1743,
+                1576,
+                1797
+              ],
+              "block_id": 10,
+              "block_order": 10,
+              "group_id": 10,
+              "block_polygon_points": [
+                [
+                  375.0,
+                  1743.0
+                ],
+                [
+                  1576.0,
+                  1743.0
+                ],
+                [
+                  1576.0,
+                  1797.0
+                ],
+                [
+                  375.0,
+                  1797.0
+                ]
+              ]
+            },
+            {
+              "block_label": "text",
+              "block_content": "GF 2001—2001 GB 13000.1 字符集汉字折笔规范",
+              "block_bbox": [
+                374,
+                1811,
+                1354,
+                1864
+              ],
+              "block_id": 11,
+              "block_order": 11,
+              "group_id": 11,
+              "block_polygon_points": [
+                [
+                  374.0,
+                  1811.0
+                ],
+                [
+                  1354.0,
+                  1811.0
+                ],
+                [
+                  1354.0,
+                  1864.0
+                ],
+                [
+                  374.0,
+                  1864.0
+                ]
+              ]
+            },
+            {
+              "block_label": "paragraph_title",
+              "block_content": "3 术语和定义",
+              "block_bbox": [
+                286,
+                1911,
+                592,
+                1965
+              ],
+              "block_id": 12,
+              "block_order": 12,
+              "group_id": 12,
+              "block_polygon_points": [
+                [
+                  286.0,
+                  1911.0
+                ],
+                [
+                  592.0,
+                  1911.0
+                ],
+                [
+                  592.0,
+                  1965.0
+                ],
+                [
+                  286.0,
+                  1965.0
+                ]
+              ]
+            },
+            {
+              "block_label": "text",
+              "block_content": "下列术语和定义适用于本规范。",
+              "block_bbox": [
+                375,
+                2011,
+                980,
+                2063
+              ],
+              "block_id": 13,
+              "block_order": 13,
+              "group_id": 13,
+              "block_polygon_points": [
+                [
+                  375.0,
+                  2011.0
+                ],
+                [
+                  980.0,
+                  2011.0
+                ],
+                [
+                  980.0,
+                  2063.0
+                ],
+                [
+                  375.0,
+                  2063.0
+                ]
+              ]
+            },
+            {
+              "block_label": "paragraph_title",
+              "block_content": "3.1 部首 indexing component",
+              "block_bbox": [
+                288,
+                2080,
+                925,
+                2128
+              ],
+              "block_id": 14,
+              "block_order": 14,
+              "group_id": 14,
+              "block_polygon_points": [
+                [
+                  288.0,
+                  2080.0
+                ],
+                [
+                  925.0,
+                  2080.0
+                ],
+                [
+                  925.0,
+                  2128.0
+                ],
+                [
+                  288.0,
+                  2128.0
+                ]
+              ]
+            },
+            {
+              "block_label": "text",
+              "block_content": "可以成批构字的一部分部件。含有同一部件的字，在字集中均排列在一起，该部件作为领头单位排在开头，成为查字的依据。",
+              "block_bbox": [
+                287,
+                2139,
+                2194,
+                2262
+              ],
+              "block_id": 15,
+              "block_order": 15,
+              "group_id": 15,
+              "block_polygon_points": [
+                [
+                  287.0,
+                  2139.0
+                ],
+                [
+                  2194.0,
+                  2139.0
+                ],
+                [
+                  2194.0,
+                  2262.0
+                ],
+                [
+                  287.0,
+                  2262.0
+                ]
+              ]
+            },
+            {
+              "block_label": "paragraph_title",
+              "block_content": "3.2 笔画 stroke",
+              "block_bbox": [
+                290,
+                2277,
+                668,
+                2326
+              ],
+              "block_id": 16,
+              "block_order": 16,
+              "group_id": 16,
+              "block_polygon_points": [
+                [
+                  290.0,
+                  2277.0
+                ],
+                [
+                  668.0,
+                  2277.0
+                ],
+                [
+                  668.0,
+                  2326.0
+                ],
+                [
+                  290.0,
+                  2326.0
+                ]
+              ]
+            },
+            {
+              "block_label": "text",
+              "block_content": "构成楷书汉字字形的最小书写单位。",
+              "block_bbox": [
+                380,
+                2342,
+                1067,
+                2394
+              ],
+              "block_id": 17,
+              "block_order": 17,
+              "group_id": 17,
+              "block_polygon_points": [
+                [
+                  380.0,
+                  2342.0
+                ],
+                [
+                  1067.0,
+                  2342.0
+                ],
+                [
+                  1067.0,
+                  2394.0
+                ],
+                [
+                  380.0,
+                  2394.0
+                ]
+              ]
+            },
+            {
+              "block_label": "paragraph_title",
+              "block_content": "3.3 笔顺 stroke order",
+              "block_bbox": [
+                291,
+                2410,
+                788,
+                2459
+              ],
+              "block_id": 18,
+              "block_order": 18,
+              "group_id": 18,
+              "block_polygon_points": [
+                [
+                  291.0,
+                  2410.0
+                ],
+                [
+                  788.0,
+                  2410.0
+                ],
+                [
+                  788.0,
+                  2459.0
+                ],
+                [
+                  291.0,
+                  2459.0
+                ]
+              ]
+            },
+            {
+              "block_label": "text",
+              "block_content": "书写每个汉字时的笔画的次序和方向。",
+              "block_bbox": [
+                382,
+                2475,
+                1115,
+                2526
+              ],
+              "block_id": 19,
+              "block_order": 19,
+              "group_id": 19,
+              "block_polygon_points": [
+                [
+                  382.0,
+                  2475.0
+                ],
+                [
+                  1115.0,
+                  2475.0
+                ],
+                [
+                  1115.0,
+                  2526.0
+                ],
+                [
+                  382.0,
+                  2526.0
+                ]
+              ]
+            },
+            {
+              "block_label": "paragraph_title",
+              "block_content": "3.4 三部首 principal indexing component",
+              "block_bbox": [
+                290,
+                2542,
+                1152,
+                2592
+              ],
+              "block_id": 20,
+              "block_order": 20,
+              "group_id": 20,
+              "block_polygon_points": [
+                [
+                  290.0,
+                  2542.0
+                ],
+                [
+                  1152.0,
+                  2542.0
+                ],
+                [
+                  1152.0,
+                  2592.0
+                ],
+                [
+                  290.0,
+                  2592.0
+                ]
+              ]
+            },
+            {
+              "block_label": "text",
+              "block_content": "有不同写法的部首中具有代表性的书写形式。",
+              "block_bbox": [
+                345,
+                2605,
+                1240,
+                2659
+              ],
+              "block_id": 21,
+              "block_order": 21,
+              "group_id": 21,
+              "block_polygon_points": [
+                [
+                  345.0,
+                  2605.0
+                ],
+                [
+                  1240.0,
+                  2605.0
+                ],
+                [
+                  1240.0,
+                  2659.0
+                ],
+                [
+                  345.0,
+                  2659.0
+                ]
+              ]
+            },
+            {
+              "block_label": "paragraph_title",
+              "block_content": "3.5 附形部首 associated indexing component",
+              "block_bbox": [
+                290,
+                2674,
+                1217,
+                2724
+              ],
+              "block_id": 22,
+              "block_order": 22,
+              "group_id": 22,
+              "block_polygon_points": [
+                [
+                  290.0,
+                  2674.0
+                ],
+                [
+                  1217.0,
+                  2674.0
+                ],
+                [
+                  1217.0,
+                  2724.0
+                ],
+                [
+                  290.0,
+                  2724.0
+                ]
+              ]
+            },
+            {
+              "block_label": "text",
+              "block_content": "附属于主部首的书写形式，有繁体（如門、貝、馬）、变形（如刂、氵、辵）和从属（如几、曰、臼）三种。",
+              "block_bbox": [
+                291,
+                2732,
+                2195,
+                2859
+              ],
+              "block_id": 23,
+              "block_order": 23,
+              "group_id": 23,
+              "block_polygon_points": [
+                [
+                  291.0,
+                  2732.0
+                ],
+                [
+                  2195.0,
+                  2732.0
+                ],
+                [
+                  2195.0,
+                  2859.0
+                ],
+                [
+                  291.0,
+                  2859.0
+                ]
+              ]
+            },
+            {
+              "block_label": "paragraph_title",
+              "block_content": "4《汉字部首表》的制定原则",
+              "block_bbox": [
+                290,
+                2903,
+                888,
+                2957
+              ],
+              "block_id": 24,
+              "block_order": 24,
+              "group_id": 24,
+              "block_polygon_points": [
+                [
+                  290.0,
+                  2903.0
+                ],
+                [
+                  888.0,
+                  2903.0
+                ],
+                [
+                  888.0,
+                  2957.0
+                ],
+                [
+                  290.0,
+                  2957.0
+                ]
+              ]
+            },
+            {
+              "block_label": "text",
+              "block_content": "4.1 尊重传统。以现存有代表性、有影响的《康熙字典》《辞海》《新华字典》《现代汉语词典》",
+              "block_bbox": [
+                289,
+                2996,
+                2195,
+                3056
+              ],
+              "block_id": 25,
+              "block_order": 25,
+              "group_id": 25,
+              "block_polygon_points": [
+                [
+                  289.0,
+                  2996.0
+                ],
+                [
+                  2195.0,
+                  2996.0
+                ],
+                [
+                  2195.0,
+                  3056.0
+                ],
+                [
+                  289.0,
+                  3056.0
+                ]
+              ]
+            },
+            {
+              "block_label": "number",
+              "block_content": "1",
+              "block_bbox": [
+                2144,
+                3072,
+                2174,
+                3113
+              ],
+              "block_id": 26,
+              "block_order": null,
+              "group_id": 26,
+              "block_polygon_points": [
+                [
+                  2144.0,
+                  3072.0
+                ],
+                [
+                  2173.0,
+                  3072.0
+                ],
+                [
+                  2173.0,
+                  3112.0
+                ],
+                [
+                  2144.0,
+                  3112.0
+                ]
+              ]
+            }
+          ],
+          "layout_det_res": {
+            "boxes": [
+              {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8448284268379211,
+                "coordinate": [
+                  1891,
+                  259,
+                  2190,
+                  311
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    1891.0,
+                    259.0
+                  ],
+                  [
+                    2190.0,
+                    259.0
+                  ],
+                  [
+                    2190.0,
+                    311.0
+                  ],
+                  [
+                    1891.0,
+                    311.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8579170107841492,
+                "coordinate": [
+                  998,
+                  566,
+                  1475,
+                  642
+                ],
+                "order": 1,
+                "polygon_points": [
+                  [
+                    998.0,
+                    566.0
+                  ],
+                  [
+                    1475.0,
+                    566.0
+                  ],
+                  [
+                    1475.0,
+                    642.0
+                  ],
+                  [
+                    998.0,
+                    642.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8453368544578552,
+                "coordinate": [
+                  287,
+                  897,
+                  460,
+                  952
+                ],
+                "order": 2,
+                "polygon_points": [
+                  [
+                    287.0,
+                    897.0
+                  ],
+                  [
+                    460.0,
+                    897.0
+                  ],
+                  [
+                    460.0,
+                    952.0
+                  ],
+                  [
+                    287.0,
+                    952.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8437360525131226,
+                "coordinate": [
+                  369,
+                  1017,
+                  1196,
+                  1070
+                ],
+                "order": 3,
+                "polygon_points": [
+                  [
+                    369.0,
+                    1017.0
+                  ],
+                  [
+                    1196.0,
+                    1017.0
+                  ],
+                  [
+                    1196.0,
+                    1070.0
+                  ],
+                  [
+                    369.0,
+                    1070.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8410176038742065,
+                "coordinate": [
+                  368,
+                  1081,
+                  2026,
+                  1140
+                ],
+                "order": 4,
+                "polygon_points": [
+                  [
+                    368.0,
+                    1081.0
+                  ],
+                  [
+                    2026.0,
+                    1081.0
+                  ],
+                  [
+                    2026.0,
+                    1140.0
+                  ],
+                  [
+                    368.0,
+                    1140.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8430261015892029,
+                "coordinate": [
+                  285,
+                  1183,
+                  678,
+                  1238
+                ],
+                "order": 5,
+                "polygon_points": [
+                  [
+                    285.0,
+                    1183.0
+                  ],
+                  [
+                    678.0,
+                    1183.0
+                  ],
+                  [
+                    678.0,
+                    1238.0
+                  ],
+                  [
+                    285.0,
+                    1238.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9486094117164612,
+                "coordinate": [
+                  286,
+                  1280,
+                  2195,
+                  1531
+                ],
+                "order": 6,
+                "polygon_points": [
+                  [
+                    286.0,
+                    1280.0
+                  ],
+                  [
+                    2195.0,
+                    1280.0
+                  ],
+                  [
+                    2195.0,
+                    1531.0
+                  ],
+                  [
+                    286.0,
+                    1531.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8375521898269653,
+                "coordinate": [
+                  373,
+                  1545,
+                  1638,
+                  1598
+                ],
+                "order": 7,
+                "polygon_points": [
+                  [
+                    373.0,
+                    1545.0
+                  ],
+                  [
+                    1638.0,
+                    1545.0
+                  ],
+                  [
+                    1638.0,
+                    1598.0
+                  ],
+                  [
+                    373.0,
+                    1598.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.842170000076294,
+                "coordinate": [
+                  374,
+                  1610,
+                  2019,
+                  1665
+                ],
+                "order": 8,
+                "polygon_points": [
+                  [
+                    374.0,
+                    1610.0
+                  ],
+                  [
+                    2019.0,
+                    1610.0
+                  ],
+                  [
+                    2019.0,
+                    1665.0
+                  ],
+                  [
+                    374.0,
+                    1665.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.842499315738678,
+                "coordinate": [
+                  373,
+                  1679,
+                  1350,
+                  1730
+                ],
+                "order": 9,
+                "polygon_points": [
+                  [
+                    373.0,
+                    1679.0
+                  ],
+                  [
+                    1350.0,
+                    1679.0
+                  ],
+                  [
+                    1350.0,
+                    1730.0
+                  ],
+                  [
+                    373.0,
+                    1730.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8103991150856018,
+                "coordinate": [
+                  375,
+                  1743,
+                  1576,
+                  1797
+                ],
+                "order": 10,
+                "polygon_points": [
+                  [
+                    375.0,
+                    1743.0
+                  ],
+                  [
+                    1576.0,
+                    1743.0
+                  ],
+                  [
+                    1576.0,
+                    1797.0
+                  ],
+                  [
+                    375.0,
+                    1797.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8241235613822937,
+                "coordinate": [
+                  374,
+                  1811,
+                  1354,
+                  1864
+                ],
+                "order": 11,
+                "polygon_points": [
+                  [
+                    374.0,
+                    1811.0
+                  ],
+                  [
+                    1354.0,
+                    1811.0
+                  ],
+                  [
+                    1354.0,
+                    1864.0
+                  ],
+                  [
+                    374.0,
+                    1864.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8373172283172607,
+                "coordinate": [
+                  286,
+                  1911,
+                  592,
+                  1965
+                ],
+                "order": 12,
+                "polygon_points": [
+                  [
+                    286.0,
+                    1911.0
+                  ],
+                  [
+                    592.0,
+                    1911.0
+                  ],
+                  [
+                    592.0,
+                    1965.0
+                  ],
+                  [
+                    286.0,
+                    1965.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8284255266189575,
+                "coordinate": [
+                  375,
+                  2011,
+                  980,
+                  2063
+                ],
+                "order": 13,
+                "polygon_points": [
+                  [
+                    375.0,
+                    2011.0
+                  ],
+                  [
+                    980.0,
+                    2011.0
+                  ],
+                  [
+                    980.0,
+                    2063.0
+                  ],
+                  [
+                    375.0,
+                    2063.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.6817660927772522,
+                "coordinate": [
+                  288,
+                  2080,
+                  925,
+                  2128
+                ],
+                "order": 14,
+                "polygon_points": [
+                  [
+                    288.0,
+                    2080.0
+                  ],
+                  [
+                    925.0,
+                    2080.0
+                  ],
+                  [
+                    925.0,
+                    2128.0
+                  ],
+                  [
+                    288.0,
+                    2128.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9084001183509827,
+                "coordinate": [
+                  287,
+                  2139,
+                  2194,
+                  2262
+                ],
+                "order": 15,
+                "polygon_points": [
+                  [
+                    287.0,
+                    2139.0
+                  ],
+                  [
+                    2194.0,
+                    2139.0
+                  ],
+                  [
+                    2194.0,
+                    2262.0
+                  ],
+                  [
+                    287.0,
+                    2262.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.4792851507663727,
+                "coordinate": [
+                  290,
+                  2277,
+                  668,
+                  2326
+                ],
+                "order": 16,
+                "polygon_points": [
+                  [
+                    290.0,
+                    2277.0
+                  ],
+                  [
+                    668.0,
+                    2277.0
+                  ],
+                  [
+                    668.0,
+                    2326.0
+                  ],
+                  [
+                    290.0,
+                    2326.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8234278559684753,
+                "coordinate": [
+                  380,
+                  2342,
+                  1067,
+                  2394
+                ],
+                "order": 17,
+                "polygon_points": [
+                  [
+                    380.0,
+                    2342.0
+                  ],
+                  [
+                    1067.0,
+                    2342.0
+                  ],
+                  [
+                    1067.0,
+                    2394.0
+                  ],
+                  [
+                    380.0,
+                    2394.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.5433501601219177,
+                "coordinate": [
+                  291,
+                  2410,
+                  788,
+                  2459
+                ],
+                "order": 18,
+                "polygon_points": [
+                  [
+                    291.0,
+                    2410.0
+                  ],
+                  [
+                    788.0,
+                    2410.0
+                  ],
+                  [
+                    788.0,
+                    2459.0
+                  ],
+                  [
+                    291.0,
+                    2459.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8091732859611511,
+                "coordinate": [
+                  382,
+                  2475,
+                  1115,
+                  2526
+                ],
+                "order": 19,
+                "polygon_points": [
+                  [
+                    382.0,
+                    2475.0
+                  ],
+                  [
+                    1115.0,
+                    2475.0
+                  ],
+                  [
+                    1115.0,
+                    2526.0
+                  ],
+                  [
+                    382.0,
+                    2526.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.5990752577781677,
+                "coordinate": [
+                  290,
+                  2542,
+                  1152,
+                  2592
+                ],
+                "order": 20,
+                "polygon_points": [
+                  [
+                    290.0,
+                    2542.0
+                  ],
+                  [
+                    1152.0,
+                    2542.0
+                  ],
+                  [
+                    1152.0,
+                    2592.0
+                  ],
+                  [
+                    290.0,
+                    2592.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7480288147926331,
+                "coordinate": [
+                  345,
+                  2605,
+                  1240,
+                  2659
+                ],
+                "order": 21,
+                "polygon_points": [
+                  [
+                    345.0,
+                    2605.0
+                  ],
+                  [
+                    1240.0,
+                    2605.0
+                  ],
+                  [
+                    1240.0,
+                    2659.0
+                  ],
+                  [
+                    345.0,
+                    2659.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.7178375124931335,
+                "coordinate": [
+                  290,
+                  2674,
+                  1217,
+                  2724
+                ],
+                "order": 22,
+                "polygon_points": [
+                  [
+                    290.0,
+                    2674.0
+                  ],
+                  [
+                    1217.0,
+                    2674.0
+                  ],
+                  [
+                    1217.0,
+                    2724.0
+                  ],
+                  [
+                    290.0,
+                    2724.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9156606197357178,
+                "coordinate": [
+                  291,
+                  2732,
+                  2195,
+                  2859
+                ],
+                "order": 23,
+                "polygon_points": [
+                  [
+                    291.0,
+                    2732.0
+                  ],
+                  [
+                    2195.0,
+                    2732.0
+                  ],
+                  [
+                    2195.0,
+                    2859.0
+                  ],
+                  [
+                    291.0,
+                    2859.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8349035382270813,
+                "coordinate": [
+                  290,
+                  2903,
+                  888,
+                  2957
+                ],
+                "order": 24,
+                "polygon_points": [
+                  [
+                    290.0,
+                    2903.0
+                  ],
+                  [
+                    888.0,
+                    2903.0
+                  ],
+                  [
+                    888.0,
+                    2957.0
+                  ],
+                  [
+                    290.0,
+                    2957.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8363039493560791,
+                "coordinate": [
+                  289,
+                  2996,
+                  2195,
+                  3056
+                ],
+                "order": 25,
+                "polygon_points": [
+                  [
+                    289.0,
+                    2996.0
+                  ],
+                  [
+                    2195.0,
+                    2996.0
+                  ],
+                  [
+                    2195.0,
+                    3056.0
+                  ],
+                  [
+                    289.0,
+                    3056.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.6246724128723145,
+                "coordinate": [
+                  2144,
+                  3072,
+                  2174,
+                  3113
+                ],
+                "order": 26,
+                "polygon_points": [
+                  [
+                    2144.0,
+                    3072.0
+                  ],
+                  [
+                    2173.0,
+                    3072.0
+                  ],
+                  [
+                    2173.0,
+                    3112.0
+                  ],
+                  [
+                    2144.0,
+                    3112.0
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        "markdown": {
+          "text": "## 汉字部首表\n\n## 1 范围\n\n本规范规定了汉字的部首表及其使用规则。\n\n本规范适用于辞书编纂、汉字信息处理及其他领域的汉字检索，也可供汉字教学参考。\n\n## 2 规范性引用文件\n\n下列文件中的条款通过本规范的引用而成为本规范的条款。凡是注明日期的引用文件，其随后所有的修改单（不包括勘误的内容）或修订版均不适用于本规范，然而，鼓励根据本规范达成协议的各方研究是否可使用这些文件的最新版本。凡是不注明日期的引用文件，其最新版本适用于本规范。\n\nGB/T 12200.2—1994 汉语信息处理词汇 02 部分：汉语和汉字\n\n国家语言文字工作委员会、新闻出版署发布《现代汉语通用字笔顺规范》1997年4月\n\nGF 3002—1999 GB 13000.1 字符集汉字笔顺规范\n\nGF 3003—1999 GB 13000.1 字符集汉字字序（笔画序）规范\n\nGF 2001—2001 GB 13000.1 字符集汉字折笔规范\n\n## 3 术语和定义\n\n下列术语和定义适用于本规范。\n\n### 3.1 部首 indexing component\n\n可以成批构字的一部分部件。含有同一部件的字，在字集中均排列在一起，该部件作为领头单位排在开头，成为查字的依据。\n\n### 3.2 笔画 stroke\n\n构成楷书汉字字形的最小书写单位。\n\n### 3.3 笔顺 stroke order\n\n书写每个汉字时的笔画的次序和方向。\n\n### 3.4 三部首 principal indexing component\n\n有不同写法的部首中具有代表性的书写形式。\n\n### 3.5 附形部首 associated indexing component\n\n附属于主部首的书写形式，有繁体（如門、貝、馬）、变形（如刂、氵、辵）和从属（如几、曰、臼）三种。\n\n## 4 《汉字部首表》的制定原则\n\n4.1 尊重传统。以现存有代表性、有影响的《康熙字典》《辞海》《新华字典》《现代汉语词典》",
+          "images": {}
+        },
+        "outputImages": {
+          "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//0596b5bc-47b0-4577-a1c3-5bb098c6bce2/layout_det_res_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-07T01%3A36%3A25Z%2F-1%2F%2F57836176e8383296f887caca3f7d0fdd6065b6e01c2d5d3c64eed1f78a8f8795"
+        },
+        "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//0596b5bc-47b0-4577-a1c3-5bb098c6bce2/input_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-07T01%3A36%3A25Z%2F-1%2F%2F76fb7cb1228fc77f04d26e6a693bd765937ad035d49825a997674b7185e95a3f"
+      }
+    ],
+    "dataInfo": {
+      "width": 2481,
+      "height": 3509,
+      "type": "image"
+    },
+    "preprocessedImages": [
+      "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//0596b5bc-47b0-4577-a1c3-5bb098c6bce2/preprocessed_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-07T01%3A36%3A25Z%2F-1%2F%2F672d7a447043c1a884058caa6eaca4a4014fa4c88163fced6dd608e41a730e67"
+    ]
+  },
+  "errorCode": 0,
+  "errorMsg": "Success"
+}

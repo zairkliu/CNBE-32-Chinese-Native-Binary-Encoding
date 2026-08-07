@@ -1,0 +1,301 @@
+{
+  "logId": "fd5e9971-3537-405b-b853-3f02e99c06a0",
+  "result": {
+    "layoutParsingResults": [
+      {
+        "prunedResult": {
+          "page_count": null,
+          "width": 2481,
+          "height": 3509,
+          "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_layout_detection": true,
+            "use_chart_recognition": false,
+            "use_seal_recognition": false,
+            "use_ocr_for_image_block": false,
+            "format_block_content": false,
+            "merge_layout_blocks": true,
+            "markdown_ignore_labels": [
+              "number",
+              "footnote",
+              "header",
+              "header_image",
+              "footer",
+              "footer_image",
+              "aside_text"
+            ],
+            "return_layout_polygon_points": true
+          },
+          "parsing_res_list": [
+            {
+              "block_label": "header",
+              "block_content": "GF 0011—2009",
+              "block_bbox": [
+                1898,
+                261,
+                2192,
+                312
+              ],
+              "block_id": 0,
+              "block_order": null,
+              "group_id": 0,
+              "block_polygon_points": [
+                [
+                  1898.0,
+                  261.0
+                ],
+                [
+                  2192.0,
+                  261.0
+                ],
+                [
+                  2192.0,
+                  312.0
+                ],
+                [
+                  1898.0,
+                  312.0
+                ]
+              ]
+            },
+            {
+              "block_label": "paragraph_title",
+              "block_content": "目次",
+              "block_bbox": [
+                1108,
+                497,
+                1380,
+                576
+              ],
+              "block_id": 1,
+              "block_order": 1,
+              "group_id": 1,
+              "block_polygon_points": [
+                [
+                  1108.0,
+                  497.0
+                ],
+                [
+                  1380.0,
+                  497.0
+                ],
+                [
+                  1380.0,
+                  576.0
+                ],
+                [
+                  1108.0,
+                  576.0
+                ]
+              ]
+            },
+            {
+              "block_label": "content",
+              "block_content": "前言 …… III\n\n1 范围 …… 1\n\n2 规范性引用文件 …… 1\n\n3 术语和定义 …… 1\n\n4 《汉字部首表》的制定原则 …… 1\n\n5 《汉字部首表》说明 …… 2\n\n6 《汉字部首表》使用规则 …… 2\n\n7 汉字部首表 …… 2\n\n附录 A（资料性附录）25 组同笔顺部首排序情况对照表 …… 6",
+              "block_bbox": [
+                285,
+                696,
+                2193,
+                1283
+              ],
+              "block_id": 2,
+              "block_order": 2,
+              "group_id": 2,
+              "block_polygon_points": [
+                [
+                  285.0,
+                  696.0
+                ],
+                [
+                  2193.0,
+                  696.0
+                ],
+                [
+                  2193.0,
+                  1283.0
+                ],
+                [
+                  285.0,
+                  1283.0
+                ]
+              ]
+            },
+            {
+              "block_label": "number",
+              "block_content": "I",
+              "block_bbox": [
+                2134,
+                3062,
+                2162,
+                3111
+              ],
+              "block_id": 3,
+              "block_order": null,
+              "group_id": 3,
+              "block_polygon_points": [
+                [
+                  2134.0,
+                  3062.0
+                ],
+                [
+                  2161.0,
+                  3062.0
+                ],
+                [
+                  2161.0,
+                  3110.0
+                ],
+                [
+                  2134.0,
+                  3110.0
+                ]
+              ]
+            }
+          ],
+          "layout_det_res": {
+            "boxes": [
+              {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8421232104301453,
+                "coordinate": [
+                  1898,
+                  261,
+                  2192,
+                  312
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    1898.0,
+                    261.0
+                  ],
+                  [
+                    2192.0,
+                    261.0
+                  ],
+                  [
+                    2192.0,
+                    312.0
+                  ],
+                  [
+                    1898.0,
+                    312.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8362500071525574,
+                "coordinate": [
+                  1108,
+                  497,
+                  1380,
+                  576
+                ],
+                "order": 1,
+                "polygon_points": [
+                  [
+                    1108.0,
+                    497.0
+                  ],
+                  [
+                    1380.0,
+                    497.0
+                  ],
+                  [
+                    1380.0,
+                    576.0
+                  ],
+                  [
+                    1108.0,
+                    576.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 4,
+                "label": "content",
+                "score": 0.9721922874450684,
+                "coordinate": [
+                  285,
+                  696,
+                  2193,
+                  1283
+                ],
+                "order": 2,
+                "polygon_points": [
+                  [
+                    285.0,
+                    696.0
+                  ],
+                  [
+                    2193.0,
+                    696.0
+                  ],
+                  [
+                    2193.0,
+                    1283.0
+                  ],
+                  [
+                    285.0,
+                    1283.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.610821545124054,
+                "coordinate": [
+                  2134,
+                  3062,
+                  2162,
+                  3111
+                ],
+                "order": 3,
+                "polygon_points": [
+                  [
+                    2134.0,
+                    3062.0
+                  ],
+                  [
+                    2161.0,
+                    3062.0
+                  ],
+                  [
+                    2161.0,
+                    3110.0
+                  ],
+                  [
+                    2134.0,
+                    3110.0
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        "markdown": {
+          "text": "## 目次\n\n前言 …… III  \n  \n1 范围 …… 1  \n  \n2 规范性引用文件 …… 1  \n  \n3 术语和定义 …… 1  \n  \n4 《汉字部首表》的制定原则 …… 1  \n  \n5 《汉字部首表》说明 …… 2  \n  \n6 《汉字部首表》使用规则 …… 2  \n  \n7 汉字部首表 …… 2  \n  \n附录 A（资料性附录）25 组同笔顺部首排序情况对照表 …… 6",
+          "images": {}
+        },
+        "outputImages": {
+          "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//fd5e9971-3537-405b-b853-3f02e99c06a0/layout_det_res_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-07T01%3A36%3A20Z%2F-1%2F%2Fd2ec2350608f276d34f5f02cb37c314fcbbaf991e7f9b735cbf3df8c1f5bf817"
+        },
+        "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//fd5e9971-3537-405b-b853-3f02e99c06a0/input_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-07T01%3A36%3A20Z%2F-1%2F%2Fd05a17b3269078aee009250ce6425919d87dfd3674a6618944eea29e638876ed"
+      }
+    ],
+    "dataInfo": {
+      "width": 2481,
+      "height": 3509,
+      "type": "image"
+    },
+    "preprocessedImages": [
+      "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//fd5e9971-3537-405b-b853-3f02e99c06a0/preprocessed_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-07T01%3A36%3A21Z%2F-1%2F%2F95389501631be2cd8d355aed88bed2b3414746248b99c738ef2b396e30f6a6e1"
+    ]
+  },
+  "errorCode": 0,
+  "errorMsg": "Success"
+}

@@ -1,0 +1,1940 @@
+{
+  "schema_version": 1,
+  "summary": {
+    "gf_main_total": 201,
+    "ocr_main_found": 180,
+    "ocr_attached_found": 79,
+    "missing_main": [
+      122,
+      167,
+      168,
+      169,
+      170,
+      171,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187
+    ],
+    "extra_main": [],
+    "main_mismatch": 16,
+    "attached_mismatch": 27,
+    "full_match": 137
+  },
+  "radicals": [
+    {
+      "id": 1,
+      "main": "一",
+      "attached_forms": [],
+      "ocr_main": "一",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 2,
+      "main": "丨",
+      "attached_forms": [
+        "亅"
+      ],
+      "ocr_main": "|",
+      "ocr_attached_forms": [
+        "丿"
+      ],
+      "status": "OCR_MAIN_MISMATCH_AND_ATTACHED"
+    },
+    {
+      "id": 3,
+      "main": "丿",
+      "attached_forms": [],
+      "ocr_main": "丿",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 4,
+      "main": "丶",
+      "attached_forms": [],
+      "ocr_main": "丶",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 5,
+      "main": "乛",
+      "attached_forms": [],
+      "ocr_main": "一",
+      "ocr_attached_forms": [],
+      "status": "OCR_MAIN_MISMATCH"
+    },
+    {
+      "id": 6,
+      "main": "十",
+      "attached_forms": [],
+      "ocr_main": "十",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 7,
+      "main": "厂",
+      "attached_forms": [
+        "⺁"
+      ],
+      "ocr_main": "厂",
+      "ocr_attached_forms": [
+        "厂"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 8,
+      "main": "匚",
+      "attached_forms": [],
+      "ocr_main": "匚",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 9,
+      "main": "卜",
+      "attached_forms": [
+        "⺊"
+      ],
+      "ocr_main": "卜",
+      "ocr_attached_forms": [
+        "卜"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 10,
+      "main": "冂",
+      "attached_forms": [
+        "⺆"
+      ],
+      "ocr_main": "冂",
+      "ocr_attached_forms": [
+        "冂"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 11,
+      "main": "八",
+      "attached_forms": [
+        "丷"
+      ],
+      "ocr_main": "八",
+      "ocr_attached_forms": [
+        "丷"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 12,
+      "main": "人",
+      "attached_forms": [
+        "亻",
+        "入"
+      ],
+      "ocr_main": "人",
+      "ocr_attached_forms": [
+        "亻",
+        "入"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 13,
+      "main": "勹",
+      "attached_forms": [],
+      "ocr_main": "勺",
+      "ocr_attached_forms": [],
+      "status": "OCR_MAIN_MISMATCH"
+    },
+    {
+      "id": 14,
+      "main": "儿",
+      "attached_forms": [],
+      "ocr_main": "儿",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 15,
+      "main": "匕",
+      "attached_forms": [],
+      "ocr_main": "匕",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 16,
+      "main": "几",
+      "attached_forms": [
+        "⺇"
+      ],
+      "ocr_main": "几",
+      "ocr_attached_forms": [
+        "几"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 17,
+      "main": "亠",
+      "attached_forms": [],
+      "ocr_main": "亠",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 18,
+      "main": "冫",
+      "attached_forms": [],
+      "ocr_main": "亻",
+      "ocr_attached_forms": [],
+      "status": "OCR_MAIN_MISMATCH"
+    },
+    {
+      "id": 19,
+      "main": "冖",
+      "attached_forms": [],
+      "ocr_main": "丷",
+      "ocr_attached_forms": [],
+      "status": "OCR_MAIN_MISMATCH"
+    },
+    {
+      "id": 20,
+      "main": "凵",
+      "attached_forms": [],
+      "ocr_main": "凵",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 21,
+      "main": "卩",
+      "attached_forms": [
+        "⺋"
+      ],
+      "ocr_main": "卩",
+      "ocr_attached_forms": [
+        "巳"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 22,
+      "main": "刀",
+      "attached_forms": [
+        "刂",
+        "⺈"
+      ],
+      "ocr_main": "刀",
+      "ocr_attached_forms": [
+        "刂",
+        "ヶ"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 23,
+      "main": "力",
+      "attached_forms": [],
+      "ocr_main": "力",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 24,
+      "main": "又",
+      "attached_forms": [],
+      "ocr_main": "又",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 25,
+      "main": "厶",
+      "attached_forms": [],
+      "ocr_main": "厶",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 26,
+      "main": "廴",
+      "attached_forms": [],
+      "ocr_main": "廴",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 27,
+      "main": "干",
+      "attached_forms": [],
+      "ocr_main": "干",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 28,
+      "main": "工",
+      "attached_forms": [],
+      "ocr_main": "工",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 29,
+      "main": "土",
+      "attached_forms": [
+        "士"
+      ],
+      "ocr_main": "土",
+      "ocr_attached_forms": [
+        "士"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 30,
+      "main": "艹",
+      "attached_forms": [
+        "艸"
+      ],
+      "ocr_main": "艹",
+      "ocr_attached_forms": [
+        "艸"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 31,
+      "main": "寸",
+      "attached_forms": [],
+      "ocr_main": "寸",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 32,
+      "main": "廾",
+      "attached_forms": [],
+      "ocr_main": "卄",
+      "ocr_attached_forms": [],
+      "status": "OCR_MAIN_MISMATCH"
+    },
+    {
+      "id": 33,
+      "main": "大",
+      "attached_forms": [],
+      "ocr_main": "大",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 34,
+      "main": "尢",
+      "attached_forms": [
+        "兀",
+        "尣"
+      ],
+      "ocr_main": "尢",
+      "ocr_attached_forms": [
+        "兀",
+        "允"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 35,
+      "main": "弋",
+      "attached_forms": [],
+      "ocr_main": "弋",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 36,
+      "main": "小",
+      "attached_forms": [
+        "⺌"
+      ],
+      "ocr_main": "小",
+      "ocr_attached_forms": [
+        "ヵ"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 37,
+      "main": "口",
+      "attached_forms": [],
+      "ocr_main": "口",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 38,
+      "main": "囗",
+      "attached_forms": [],
+      "ocr_main": "囗",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 39,
+      "main": "山",
+      "attached_forms": [],
+      "ocr_main": "山",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 40,
+      "main": "巾",
+      "attached_forms": [],
+      "ocr_main": "巾",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 41,
+      "main": "彳",
+      "attached_forms": [],
+      "ocr_main": "彳",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 42,
+      "main": "彡",
+      "attached_forms": [],
+      "ocr_main": "彡",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 43,
+      "main": "夕",
+      "attached_forms": [],
+      "ocr_main": "夕",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 44,
+      "main": "夂",
+      "attached_forms": [],
+      "ocr_main": "夂",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 45,
+      "main": "丬",
+      "attached_forms": [
+        "爿"
+      ],
+      "ocr_main": "牜",
+      "ocr_attached_forms": [
+        "爿"
+      ],
+      "status": "OCR_MAIN_MISMATCH"
+    },
+    {
+      "id": 46,
+      "main": "广",
+      "attached_forms": [],
+      "ocr_main": "广",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 47,
+      "main": "门",
+      "attached_forms": [
+        "門"
+      ],
+      "ocr_main": "门",
+      "ocr_attached_forms": [
+        "門"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 48,
+      "main": "宀",
+      "attached_forms": [],
+      "ocr_main": "ヘ",
+      "ocr_attached_forms": [],
+      "status": "OCR_MAIN_MISMATCH"
+    },
+    {
+      "id": 49,
+      "main": "辶",
+      "attached_forms": [
+        "辵"
+      ],
+      "ocr_main": "辶",
+      "ocr_attached_forms": [
+        "辵"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 50,
+      "main": "彐",
+      "attached_forms": [
+        "彐",
+        "彑"
+      ],
+      "ocr_main": "彐",
+      "ocr_attached_forms": [
+        "丶",
+        "互"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 51,
+      "main": "尸",
+      "attached_forms": [],
+      "ocr_main": "尸",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 52,
+      "main": "己",
+      "attached_forms": [
+        "已",
+        "巳"
+      ],
+      "ocr_main": "己",
+      "ocr_attached_forms": [
+        "巳",
+        "巳"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 53,
+      "main": "弓",
+      "attached_forms": [],
+      "ocr_main": "弓",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 54,
+      "main": "子",
+      "attached_forms": [],
+      "ocr_main": "子",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 55,
+      "main": "屮",
+      "attached_forms": [],
+      "ocr_main": "屮",
+      "ocr_attached_forms": [
+        "屮"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 56,
+      "main": "女",
+      "attached_forms": [],
+      "ocr_main": "女",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 57,
+      "main": "飞",
+      "attached_forms": [
+        "飛"
+      ],
+      "ocr_main": "飞",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 58,
+      "main": "马",
+      "attached_forms": [
+        "馬"
+      ],
+      "ocr_main": "马",
+      "ocr_attached_forms": [
+        "馬"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 59,
+      "main": "幺",
+      "attached_forms": [],
+      "ocr_main": "幺",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 60,
+      "main": "巛",
+      "attached_forms": [],
+      "ocr_main": "巛",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 61,
+      "main": "王",
+      "attached_forms": [
+        "玉"
+      ],
+      "ocr_main": "王",
+      "ocr_attached_forms": [
+        "玉"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 62,
+      "main": "无",
+      "attached_forms": [
+        "旡"
+      ],
+      "ocr_main": "无",
+      "ocr_attached_forms": [
+        "无"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 63,
+      "main": "韦",
+      "attached_forms": [
+        "韋"
+      ],
+      "ocr_main": "韦",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 64,
+      "main": "木",
+      "attached_forms": [
+        "朩"
+      ],
+      "ocr_main": "木",
+      "ocr_attached_forms": [
+        "木"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 65,
+      "main": "支",
+      "attached_forms": [],
+      "ocr_main": "支",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 66,
+      "main": "犬",
+      "attached_forms": [
+        "犭"
+      ],
+      "ocr_main": "犬",
+      "ocr_attached_forms": [
+        "犭"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 67,
+      "main": "歹",
+      "attached_forms": [
+        "歺"
+      ],
+      "ocr_main": "歹",
+      "ocr_attached_forms": [
+        "歺"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 68,
+      "main": "车",
+      "attached_forms": [
+        "車"
+      ],
+      "ocr_main": "车",
+      "ocr_attached_forms": [
+        "车",
+        "車"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 69,
+      "main": "牙",
+      "attached_forms": [],
+      "ocr_main": "牙",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 70,
+      "main": "戈",
+      "attached_forms": [],
+      "ocr_main": "戈",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 71,
+      "main": "比",
+      "attached_forms": [],
+      "ocr_main": "比",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 72,
+      "main": "瓦",
+      "attached_forms": [],
+      "ocr_main": "瓦",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 73,
+      "main": "止",
+      "attached_forms": [],
+      "ocr_main": "止",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 74,
+      "main": "攴",
+      "attached_forms": [
+        "攵"
+      ],
+      "ocr_main": "支",
+      "ocr_attached_forms": [
+        "攵"
+      ],
+      "status": "OCR_MAIN_MISMATCH"
+    },
+    {
+      "id": 75,
+      "main": "日",
+      "attached_forms": [
+        "⺜",
+        "曰"
+      ],
+      "ocr_main": "日",
+      "ocr_attached_forms": [
+        "曰",
+        "曰"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 76,
+      "main": "贝",
+      "attached_forms": [
+        "貝"
+      ],
+      "ocr_main": "贝",
+      "ocr_attached_forms": [
+        "貝"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 77,
+      "main": "水",
+      "attached_forms": [
+        "氵",
+        "氺"
+      ],
+      "ocr_main": "水",
+      "ocr_attached_forms": [
+        "氵",
+        "氺"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 78,
+      "main": "见",
+      "attached_forms": [
+        "見"
+      ],
+      "ocr_main": "见",
+      "ocr_attached_forms": [
+        "見"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 79,
+      "main": "牛",
+      "attached_forms": [
+        "牜"
+      ],
+      "ocr_main": "牛",
+      "ocr_attached_forms": [
+        "牛"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 80,
+      "main": "手",
+      "attached_forms": [
+        "扌",
+        "看"
+      ],
+      "ocr_main": "手",
+      "ocr_attached_forms": [
+        "扌",
+        "尹"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 81,
+      "main": "气",
+      "attached_forms": [],
+      "ocr_main": "气",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 82,
+      "main": "毛",
+      "attached_forms": [],
+      "ocr_main": "毛",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 83,
+      "main": "长",
+      "attached_forms": [
+        "镸",
+        "長"
+      ],
+      "ocr_main": "长",
+      "ocr_attached_forms": [
+        "镸"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 84,
+      "main": "片",
+      "attached_forms": [],
+      "ocr_main": "片",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 85,
+      "main": "斤",
+      "attached_forms": [],
+      "ocr_main": "斤",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 86,
+      "main": "爪",
+      "attached_forms": [
+        "爫"
+      ],
+      "ocr_main": "爪",
+      "ocr_attached_forms": [
+        "爫"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 87,
+      "main": "父",
+      "attached_forms": [],
+      "ocr_main": "父",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 88,
+      "main": "月",
+      "attached_forms": [
+        "⺝"
+      ],
+      "ocr_main": "月",
+      "ocr_attached_forms": [
+        "月"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 89,
+      "main": "氏",
+      "attached_forms": [],
+      "ocr_main": "氏",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 90,
+      "main": "欠",
+      "attached_forms": [],
+      "ocr_main": "欠",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 91,
+      "main": "风",
+      "attached_forms": [
+        "風"
+      ],
+      "ocr_main": "风",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 92,
+      "main": "殳",
+      "attached_forms": [],
+      "ocr_main": "殳",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 93,
+      "main": "文",
+      "attached_forms": [],
+      "ocr_main": "文",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 94,
+      "main": "方",
+      "attached_forms": [],
+      "ocr_main": "方",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 95,
+      "main": "火",
+      "attached_forms": [
+        "灬"
+      ],
+      "ocr_main": "火",
+      "ocr_attached_forms": [
+        "灬"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 96,
+      "main": "斗",
+      "attached_forms": [],
+      "ocr_main": "斗",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 97,
+      "main": "户",
+      "attached_forms": [],
+      "ocr_main": "户",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 98,
+      "main": "心",
+      "attached_forms": [
+        "忄",
+        "⺗"
+      ],
+      "ocr_main": "心",
+      "ocr_attached_forms": [
+        "忄",
+        "小"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 99,
+      "main": "毋",
+      "attached_forms": [
+        "母"
+      ],
+      "ocr_main": "毋",
+      "ocr_attached_forms": [
+        "母"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 100,
+      "main": "示",
+      "attached_forms": [
+        "礻"
+      ],
+      "ocr_main": "示",
+      "ocr_attached_forms": [
+        "礻"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 101,
+      "main": "甘",
+      "attached_forms": [],
+      "ocr_main": "甘",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 102,
+      "main": "石",
+      "attached_forms": [],
+      "ocr_main": "石",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 103,
+      "main": "龙",
+      "attached_forms": [
+        "龍"
+      ],
+      "ocr_main": "龙",
+      "ocr_attached_forms": [
+        "龍"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 104,
+      "main": "业",
+      "attached_forms": [],
+      "ocr_main": "业",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 105,
+      "main": "目",
+      "attached_forms": [],
+      "ocr_main": "目",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 106,
+      "main": "田",
+      "attached_forms": [],
+      "ocr_main": "田",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 107,
+      "main": "罒",
+      "attached_forms": [],
+      "ocr_main": "皿",
+      "ocr_attached_forms": [],
+      "status": "OCR_MAIN_MISMATCH"
+    },
+    {
+      "id": 108,
+      "main": "皿",
+      "attached_forms": [],
+      "ocr_main": "皿",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 109,
+      "main": "生",
+      "attached_forms": [],
+      "ocr_main": "生",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 110,
+      "main": "矢",
+      "attached_forms": [],
+      "ocr_main": "矢",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 111,
+      "main": "禾",
+      "attached_forms": [],
+      "ocr_main": "禾",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 112,
+      "main": "白",
+      "attached_forms": [],
+      "ocr_main": "白",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 113,
+      "main": "瓜",
+      "attached_forms": [],
+      "ocr_main": "瓜",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 114,
+      "main": "鸟",
+      "attached_forms": [
+        "鳥"
+      ],
+      "ocr_main": "鸟",
+      "ocr_attached_forms": [
+        "鳥"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 115,
+      "main": "疒",
+      "attached_forms": [],
+      "ocr_main": "疒",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 116,
+      "main": "立",
+      "attached_forms": [],
+      "ocr_main": "立",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 117,
+      "main": "穴",
+      "attached_forms": [],
+      "ocr_main": "穴",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 118,
+      "main": "疋",
+      "attached_forms": [
+        "⺪"
+      ],
+      "ocr_main": "疋",
+      "ocr_attached_forms": [
+        "正"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 119,
+      "main": "皮",
+      "attached_forms": [],
+      "ocr_main": "皮",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 120,
+      "main": "癶",
+      "attached_forms": [],
+      "ocr_main": "殳",
+      "ocr_attached_forms": [],
+      "status": "OCR_MAIN_MISMATCH"
+    },
+    {
+      "id": 121,
+      "main": "矛",
+      "attached_forms": [],
+      "ocr_main": "矛",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 122,
+      "main": "耒",
+      "attached_forms": [],
+      "ocr_main": null,
+      "ocr_attached_forms": [],
+      "status": "OCR_MISSING_MAIN"
+    },
+    {
+      "id": 123,
+      "main": "老",
+      "attached_forms": [],
+      "ocr_main": "老",
+      "ocr_attached_forms": [
+        "耂"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 124,
+      "main": "耳",
+      "attached_forms": [],
+      "ocr_main": "耳",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 125,
+      "main": "臣",
+      "attached_forms": [],
+      "ocr_main": "臣",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 126,
+      "main": "覀",
+      "attached_forms": [
+        "襾",
+        "西"
+      ],
+      "ocr_main": "酉",
+      "ocr_attached_forms": [
+        "西",
+        "西"
+      ],
+      "status": "OCR_MAIN_MISMATCH_AND_ATTACHED"
+    },
+    {
+      "id": 127,
+      "main": "而",
+      "attached_forms": [],
+      "ocr_main": "而",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 128,
+      "main": "页",
+      "attached_forms": [
+        "頁"
+      ],
+      "ocr_main": "页",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 129,
+      "main": "至",
+      "attached_forms": [],
+      "ocr_main": "至",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 130,
+      "main": "虍",
+      "attached_forms": [
+        "虎"
+      ],
+      "ocr_main": "声",
+      "ocr_attached_forms": [
+        "虎"
+      ],
+      "status": "OCR_MAIN_MISMATCH"
+    },
+    {
+      "id": 131,
+      "main": "虫",
+      "attached_forms": [],
+      "ocr_main": "虫",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 132,
+      "main": "肉",
+      "attached_forms": [],
+      "ocr_main": "肉",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 133,
+      "main": "缶",
+      "attached_forms": [],
+      "ocr_main": "缶",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 134,
+      "main": "舌",
+      "attached_forms": [],
+      "ocr_main": "舌",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 135,
+      "main": "竹",
+      "attached_forms": [
+        "⺮"
+      ],
+      "ocr_main": "竹",
+      "ocr_attached_forms": [
+        "木"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 136,
+      "main": "臼",
+      "attached_forms": [
+        "⺽"
+      ],
+      "ocr_main": "臼",
+      "ocr_attached_forms": [
+        "臼"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 137,
+      "main": "自",
+      "attached_forms": [],
+      "ocr_main": "自",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 138,
+      "main": "血",
+      "attached_forms": [],
+      "ocr_main": "血",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 139,
+      "main": "舟",
+      "attached_forms": [],
+      "ocr_main": "舟",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 140,
+      "main": "色",
+      "attached_forms": [],
+      "ocr_main": "色",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 141,
+      "main": "齐",
+      "attached_forms": [
+        "齊"
+      ],
+      "ocr_main": "齐",
+      "ocr_attached_forms": [
+        "齊"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 142,
+      "main": "衣",
+      "attached_forms": [
+        "衤"
+      ],
+      "ocr_main": "衣",
+      "ocr_attached_forms": [
+        "礻"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 143,
+      "main": "羊",
+      "attached_forms": [
+        "⺶",
+        "⺷"
+      ],
+      "ocr_main": "羊",
+      "ocr_attached_forms": [
+        "羋",
+        "羔"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 144,
+      "main": "米",
+      "attached_forms": [],
+      "ocr_main": "米",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 145,
+      "main": "聿",
+      "attached_forms": [
+        "肀",
+        "⺻"
+      ],
+      "ocr_main": "聿",
+      "ocr_attached_forms": [
+        "肀",
+        "垂"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 146,
+      "main": "艮",
+      "attached_forms": [],
+      "ocr_main": "艮",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 147,
+      "main": "羽",
+      "attached_forms": [],
+      "ocr_main": "羽",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 148,
+      "main": "糸",
+      "attached_forms": [
+        "纟",
+        "糹"
+      ],
+      "ocr_main": "糸",
+      "ocr_attached_forms": [
+        "纟",
+        "糸"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 149,
+      "main": "麦",
+      "attached_forms": [
+        "麥"
+      ],
+      "ocr_main": "麦",
+      "ocr_attached_forms": [
+        "麥"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 150,
+      "main": "走",
+      "attached_forms": [],
+      "ocr_main": "走",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 151,
+      "main": "赤",
+      "attached_forms": [],
+      "ocr_main": "赤",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 152,
+      "main": "豆",
+      "attached_forms": [],
+      "ocr_main": "豆",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 153,
+      "main": "酉",
+      "attached_forms": [],
+      "ocr_main": "西",
+      "ocr_attached_forms": [],
+      "status": "OCR_MAIN_MISMATCH"
+    },
+    {
+      "id": 154,
+      "main": "辰",
+      "attached_forms": [],
+      "ocr_main": "辰",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 155,
+      "main": "豕",
+      "attached_forms": [],
+      "ocr_main": "豕",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 156,
+      "main": "卤",
+      "attached_forms": [
+        "鹵"
+      ],
+      "ocr_main": "卤",
+      "ocr_attached_forms": [
+        "鹵"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 157,
+      "main": "里",
+      "attached_forms": [],
+      "ocr_main": "里",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 158,
+      "main": "足",
+      "attached_forms": [
+        "⻊"
+      ],
+      "ocr_main": "足",
+      "ocr_attached_forms": [
+        "跼"
+      ],
+      "status": "OCR_ATTACHED_MISMATCH"
+    },
+    {
+      "id": 159,
+      "main": "邑",
+      "attached_forms": [
+        "阝",
+        "右"
+      ],
+      "ocr_main": "邑",
+      "ocr_attached_forms": [
+        "阝右"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 160,
+      "main": "身",
+      "attached_forms": [],
+      "ocr_main": "身",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 161,
+      "main": "釆",
+      "attached_forms": [],
+      "ocr_main": "采",
+      "ocr_attached_forms": [],
+      "status": "OCR_MAIN_MISMATCH"
+    },
+    {
+      "id": 162,
+      "main": "谷",
+      "attached_forms": [],
+      "ocr_main": "谷",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 163,
+      "main": "豸",
+      "attached_forms": [],
+      "ocr_main": "豸",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 164,
+      "main": "龟",
+      "attached_forms": [
+        "龜"
+      ],
+      "ocr_main": "龟",
+      "ocr_attached_forms": [
+        "龜"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 165,
+      "main": "角",
+      "attached_forms": [],
+      "ocr_main": "角",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 166,
+      "main": "言",
+      "attached_forms": [
+        "讠"
+      ],
+      "ocr_main": "言",
+      "ocr_attached_forms": [
+        "讠"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 167,
+      "main": "辛",
+      "attached_forms": [],
+      "ocr_main": null,
+      "ocr_attached_forms": [],
+      "status": "OCR_MISSING_MAIN"
+    },
+    {
+      "id": 168,
+      "main": "青",
+      "attached_forms": [],
+      "ocr_main": null,
+      "ocr_attached_forms": [],
+      "status": "OCR_MISSING_MAIN"
+    },
+    {
+      "id": 169,
+      "main": "龺",
+      "attached_forms": [],
+      "ocr_main": null,
+      "ocr_attached_forms": [],
+      "status": "OCR_MISSING_MAIN"
+    },
+    {
+      "id": 170,
+      "main": "雨",
+      "attached_forms": [],
+      "ocr_main": null,
+      "ocr_attached_forms": [],
+      "status": "OCR_MISSING_MAIN"
+    },
+    {
+      "id": 171,
+      "main": "非",
+      "attached_forms": [],
+      "ocr_main": null,
+      "ocr_attached_forms": [],
+      "status": "OCR_MISSING_MAIN"
+    },
+    {
+      "id": 172,
+      "main": "齿",
+      "attached_forms": [
+        "齒"
+      ],
+      "ocr_main": "齿",
+      "ocr_attached_forms": [
+        "齒"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": 173,
+      "main": "黾",
+      "attached_forms": [
+        "黽"
+      ],
+      "ocr_main": null,
+      "ocr_attached_forms": [
+        "黽"
+      ],
+      "status": "OCR_MISSING_MAIN"
+    },
+    {
+      "id": 174,
+      "main": "隹",
+      "attached_forms": [],
+      "ocr_main": null,
+      "ocr_attached_forms": [],
+      "status": "OCR_MISSING_MAIN"
+    },
+    {
+      "id": 175,
+      "main": "阜",
+      "attached_forms": [
+        "阝",
+        "左"
+      ],
+      "ocr_main": null,
+      "ocr_attached_forms": [
+        "阝左"
+      ],
+      "status": "OCR_MISSING_MAIN"
+    },
+    {
+      "id": 176,
+      "main": "金",
+      "attached_forms": [
+        "钅"
+      ],
+      "ocr_main": null,
+      "ocr_attached_forms": [
+        "钅"
+      ],
+      "status": "OCR_MISSING_MAIN"
+    },
+    {
+      "id": 177,
+      "main": "鱼",
+      "attached_forms": [
+        "魚"
+      ],
+      "ocr_main": null,
+      "ocr_attached_forms": [
+        "魚"
+      ],
+      "status": "OCR_MISSING_MAIN"
+    },
+    {
+      "id": 178,
+      "main": "隶",
+      "attached_forms": [],
+      "ocr_main": null,
+      "ocr_attached_forms": [],
+      "status": "OCR_MISSING_MAIN"
+    },
+    {
+      "id": 179,
+      "main": "革",
+      "attached_forms": [],
+      "ocr_main": null,
+      "ocr_attached_forms": [],
+      "status": "OCR_MISSING_MAIN"
+    },
+    {
+      "id": 180,
+      "main": "面",
+      "attached_forms": [],
+      "ocr_main": null,
+      "ocr_attached_forms": [],
+      "status": "OCR_MISSING_MAIN"
+    },
+    {
+      "id": 181,
+      "main": "韭",
+      "attached_forms": [],
+      "ocr_main": null,
+      "ocr_attached_forms": [],
+      "status": "OCR_MISSING_MAIN"
+    },
+    {
+      "id": 182,
+      "main": "骨",
+      "attached_forms": [],
+      "ocr_main": null,
+      "ocr_attached_forms": [],
+      "status": "OCR_MISSING_MAIN"
+    },
+    {
+      "id": 183,
+      "main": "香",
+      "attached_forms": [],
+      "ocr_main": null,
+      "ocr_attached_forms": [],
+      "status": "OCR_MISSING_MAIN"
+    },
+    {
+      "id": 184,
+      "main": "鬼",
+      "attached_forms": [],
+      "ocr_main": null,
+      "ocr_attached_forms": [],
+      "status": "OCR_MISSING_MAIN"
+    },
+    {
+      "id": 185,
+      "main": "食",
+      "attached_forms": [
+        "饣",
+        "飠"
+      ],
+      "ocr_main": null,
+      "ocr_attached_forms": [
+        "饣"
+      ],
+      "status": "OCR_MISSING_MAIN_AND_ATTACHED"
+    },
+    {
+      "id": 186,
+      "main": "音",
+      "attached_forms": [],
+      "ocr_main": null,
+      "ocr_attached_forms": [],
+      "status": "OCR_MISSING_MAIN"
+    },
+    {
+      "id": 187,
+      "main": "首",
+      "attached_forms": [],
+      "ocr_main": null,
+      "ocr_attached_forms": [],
+      "status": "OCR_MISSING_MAIN"
+    },
+    {
+      "id": 188,
+      "main": "髟",
+      "attached_forms": [],
+      "ocr_main": "髟",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 189,
+      "main": "鬲",
+      "attached_forms": [],
+      "ocr_main": "鬲",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 190,
+      "main": "鬥",
+      "attached_forms": [],
+      "ocr_main": "鬥",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 191,
+      "main": "高",
+      "attached_forms": [],
+      "ocr_main": "高",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 192,
+      "main": "黄",
+      "attached_forms": [],
+      "ocr_main": "黃",
+      "ocr_attached_forms": [],
+      "status": "OCR_MAIN_MISMATCH"
+    },
+    {
+      "id": 193,
+      "main": "麻",
+      "attached_forms": [],
+      "ocr_main": "麻",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 194,
+      "main": "鹿",
+      "attached_forms": [],
+      "ocr_main": "鹿",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 195,
+      "main": "鼎",
+      "attached_forms": [],
+      "ocr_main": "鼎",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 196,
+      "main": "黑",
+      "attached_forms": [],
+      "ocr_main": "黑",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 197,
+      "main": "黍",
+      "attached_forms": [],
+      "ocr_main": "黍",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 198,
+      "main": "鼓",
+      "attached_forms": [],
+      "ocr_main": "鼓",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 199,
+      "main": "鼠",
+      "attached_forms": [],
+      "ocr_main": "鼠",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 200,
+      "main": "鼻",
+      "attached_forms": [],
+      "ocr_main": "鼻",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    },
+    {
+      "id": 201,
+      "main": "龠",
+      "attached_forms": [],
+      "ocr_main": "龠",
+      "ocr_attached_forms": [],
+      "status": "MATCH"
+    }
+  ]
+}

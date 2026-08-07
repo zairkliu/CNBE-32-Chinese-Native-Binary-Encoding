@@ -1,0 +1,850 @@
+{
+  "logId": "fcf83154-9454-46a2-9cd6-91eeac61cf41",
+  "result": {
+    "layoutParsingResults": [
+      {
+        "prunedResult": {
+          "page_count": null,
+          "width": 2481,
+          "height": 3509,
+          "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_layout_detection": true,
+            "use_chart_recognition": false,
+            "use_seal_recognition": false,
+            "use_ocr_for_image_block": false,
+            "format_block_content": false,
+            "merge_layout_blocks": true,
+            "markdown_ignore_labels": [
+              "number",
+              "footnote",
+              "header",
+              "header_image",
+              "footer",
+              "footer_image",
+              "aside_text"
+            ],
+            "return_layout_polygon_points": true
+          },
+          "parsing_res_list": [
+            {
+              "block_label": "header",
+              "block_content": "GF 0011—2009",
+              "block_bbox": [
+                282,
+                263,
+                589,
+                319
+              ],
+              "block_id": 0,
+              "block_order": null,
+              "group_id": 0,
+              "block_polygon_points": [
+                [
+                  282.0,
+                  263.0
+                ],
+                [
+                  589.0,
+                  263.0
+                ],
+                [
+                  589.0,
+                  319.0
+                ],
+                [
+                  282.0,
+                  319.0
+                ]
+              ]
+            },
+            {
+              "block_label": "text",
+              "block_content": "94 方\n95 火(灬)\n96 斗\n[95](灬)\n97 户\n[100](礻)\n98 心(忄小)\n[145](肀)\n[45](爿)\n99 毋(母)",
+              "block_bbox": [
+                361,
+                389,
+                696,
+                1136
+              ],
+              "block_id": 1,
+              "block_order": 1,
+              "group_id": 1,
+              "block_polygon_points": [
+                [
+                  361.0,
+                  389.0
+                ],
+                [
+                  696.0,
+                  389.0
+                ],
+                [
+                  696.0,
+                  1136.0
+                ],
+                [
+                  361.0,
+                  1136.0
+                ]
+              ]
+            },
+            {
+              "block_label": "paragraph_title",
+              "block_content": "五画",
+              "block_bbox": [
+                452,
+                1208,
+                598,
+                1279
+              ],
+              "block_id": 2,
+              "block_order": 2,
+              "group_id": 2,
+              "block_polygon_points": [
+                [
+                  452.0,
+                  1208.0
+                ],
+                [
+                  598.0,
+                  1208.0
+                ],
+                [
+                  598.0,
+                  1279.0
+                ],
+                [
+                  452.0,
+                  1279.0
+                ]
+              ]
+            },
+            {
+              "block_label": "text",
+              "block_content": "[61]（玉）\n100 示（礻）\n101 甘\n102 石\n103 龙（龍）\n[67]（歺）\n104 业\n[77]（氺）\n105 目\n106 田\n107 皿\n108 皿\n[176]（钅）\n109 生\n110 矢\n111 禾\n112 白\n113 瓜\n114 鸟（鳥）\n115 疒\n116 立\n117 穴\n[142]（礻）",
+              "block_bbox": [
+                342,
+                1359,
+                717,
+                3049
+              ],
+              "block_id": 3,
+              "block_order": 3,
+              "group_id": 3,
+              "block_polygon_points": [
+                [
+                  342.0,
+                  1359.0
+                ],
+                [
+                  717.0,
+                  1359.0
+                ],
+                [
+                  717.0,
+                  3049.0
+                ],
+                [
+                  342.0,
+                  3049.0
+                ]
+              ]
+            },
+            {
+              "block_label": "text",
+              "block_content": "[145](垂)\n[118](正)\n118 疋(正)\n119 皮\n120 殳\n121 矛\n[99](母)",
+              "block_bbox": [
+                827,
+                393,
+                1165,
+                913
+              ],
+              "block_id": 4,
+              "block_order": 4,
+              "group_id": 4,
+              "block_polygon_points": [
+                [
+                  827.0,
+                  393.0
+                ],
+                [
+                  1165.0,
+                  393.0
+                ],
+                [
+                  1165.0,
+                  913.0
+                ],
+                [
+                  827.0,
+                  913.0
+                ]
+              ]
+            },
+            {
+              "block_label": "paragraph_title",
+              "block_content": "六画",
+              "block_bbox": [
+                932,
+                983,
+                1078,
+                1053
+              ],
+              "block_id": 5,
+              "block_order": 5,
+              "group_id": 5,
+              "block_polygon_points": [
+                [
+                  932.0,
+                  983.0
+                ],
+                [
+                  1078.0,
+                  983.0
+                ],
+                [
+                  1078.0,
+                  1053.0
+                ],
+                [
+                  932.0,
+                  1053.0
+                ]
+              ]
+            },
+            {
+              "block_label": "text",
+              "block_content": "123 老（耂）\n124 耳\n125 臣\n[126]（西）\n126 酉（西西）\n[126]（西）\n127 而\n128 页（頁）\n129 至\n130 声（虎）\n131 虫\n132 肉\n133 缶\n134 舌\n135 竹（木）\n[135]（木）\n136 臼（臼）\n137 自\n138 血\n139 舟\n140 色\n141 齐（齊）\n142 衣（衤）\n143 羊（羋羊）\n[143]（羋）\n149 麦（麥）\n[83]（镸）\n150 走\n151 赤\n[68]（車）\n152 豆\n153 西\n154 辰\n155 豕\n156 卤（鹵）\n[76]（貝）\n[78]（見）\n157 里\n[158]（跼）\n158 足（跼）\n159 邑（阝右）\n[136]（臼）\n160 身\n[49]（辵）\n161 采\n162 谷\n163 豸\n164 龟（龜）\n165 角\n166 言（讠）",
+              "block_bbox": [
+                821,
+                1180,
+                1659,
+                3047
+              ],
+              "block_id": 6,
+              "block_order": 6,
+              "group_id": 6,
+              "block_polygon_points": [
+                [
+                  821.0,
+                  1180.0
+                ],
+                [
+                  1659.0,
+                  1180.0
+                ],
+                [
+                  1659.0,
+                  3047.0
+                ],
+                [
+                  821.0,
+                  3047.0
+                ]
+              ]
+            },
+            {
+              "block_label": "text",
+              "block_content": "[143]（羔）\n144 米\n145 聿（聿）\n146 艮\n[30]（艸）\n147 羽\n148 糸（糸）\n[148]（糸）",
+              "block_bbox": [
+                1305,
+                397,
+                1645,
+                984
+              ],
+              "block_id": 7,
+              "block_order": 7,
+              "group_id": 7,
+              "block_polygon_points": [
+                [
+                  1305.0,
+                  397.0
+                ],
+                [
+                  1645.0,
+                  397.0
+                ],
+                [
+                  1645.0,
+                  984.0
+                ],
+                [
+                  1305.0,
+                  984.0
+                ]
+              ]
+            },
+            {
+              "block_label": "paragraph_title",
+              "block_content": "七画",
+              "block_bbox": [
+                1412,
+                1055,
+                1557,
+                1128
+              ],
+              "block_id": 8,
+              "block_order": 8,
+              "group_id": 8,
+              "block_polygon_points": [
+                [
+                  1412.0,
+                  1055.0
+                ],
+                [
+                  1557.0,
+                  1055.0
+                ],
+                [
+                  1557.0,
+                  1128.0
+                ],
+                [
+                  1412.0,
+                  1128.0
+                ]
+              ]
+            },
+            {
+              "block_label": "paragraph_title",
+              "block_content": "八画",
+              "block_bbox": [
+                1887,
+                541,
+                2029,
+                610
+              ],
+              "block_id": 9,
+              "block_order": 9,
+              "group_id": 9,
+              "block_polygon_points": [
+                [
+                  1887.0,
+                  541.0
+                ],
+                [
+                  2029.0,
+                  541.0
+                ],
+                [
+                  2029.0,
+                  610.0
+                ],
+                [
+                  1887.0,
+                  610.0
+                ]
+              ]
+            },
+            {
+              "block_label": "text",
+              "block_content": "172 齿(齒)\n[130](虎)\n[47](門)",
+              "block_bbox": [
+                1786,
+                1060,
+                2115,
+                1271
+              ],
+              "block_id": 10,
+              "block_order": 10,
+              "group_id": 10,
+              "block_polygon_points": [
+                [
+                  1786.0,
+                  1060.0
+                ],
+                [
+                  2115.0,
+                  1060.0
+                ],
+                [
+                  2115.0,
+                  1271.0
+                ],
+                [
+                  1786.0,
+                  1271.0
+                ]
+              ]
+            },
+            {
+              "block_label": "paragraph_title",
+              "block_content": "九画",
+              "block_bbox": [
+                1891,
+                1868,
+                2032,
+                1939
+              ],
+              "block_id": 11,
+              "block_order": 11,
+              "group_id": 11,
+              "block_polygon_points": [
+                [
+                  1891.0,
+                  1868.0
+                ],
+                [
+                  2032.0,
+                  1868.0
+                ],
+                [
+                  2032.0,
+                  1939.0
+                ],
+                [
+                  1891.0,
+                  1939.0
+                ]
+              ]
+            },
+            {
+              "block_label": "number",
+              "block_content": "4",
+              "block_bbox": [
+                311,
+                3077,
+                351,
+                3119
+              ],
+              "block_id": 12,
+              "block_order": null,
+              "group_id": 12,
+              "block_polygon_points": [
+                [
+                  311.0,
+                  3077.0
+                ],
+                [
+                  351.0,
+                  3077.0
+                ],
+                [
+                  351.0,
+                  3119.0
+                ],
+                [
+                  311.0,
+                  3119.0
+                ]
+              ]
+            }
+          ],
+          "layout_det_res": {
+            "boxes": [
+              {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.6805723309516907,
+                "coordinate": [
+                  282,
+                  263,
+                  589,
+                  319
+                ],
+                "order": null,
+                "polygon_points": [
+                  [
+                    282.0,
+                    263.0
+                  ],
+                  [
+                    589.0,
+                    263.0
+                  ],
+                  [
+                    589.0,
+                    319.0
+                  ],
+                  [
+                    282.0,
+                    319.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.6039221286773682,
+                "coordinate": [
+                  361,
+                  389,
+                  696,
+                  1136
+                ],
+                "order": 1,
+                "polygon_points": [
+                  [
+                    361.0,
+                    389.0
+                  ],
+                  [
+                    696.0,
+                    389.0
+                  ],
+                  [
+                    696.0,
+                    1136.0
+                  ],
+                  [
+                    361.0,
+                    1136.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.6483255624771118,
+                "coordinate": [
+                  452,
+                  1208,
+                  598,
+                  1279
+                ],
+                "order": 2,
+                "polygon_points": [
+                  [
+                    452.0,
+                    1208.0
+                  ],
+                  [
+                    598.0,
+                    1208.0
+                  ],
+                  [
+                    598.0,
+                    1279.0
+                  ],
+                  [
+                    452.0,
+                    1279.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.46694862842559814,
+                "coordinate": [
+                  342,
+                  1359,
+                  717,
+                  3049
+                ],
+                "order": 3,
+                "polygon_points": [
+                  [
+                    342.0,
+                    1359.0
+                  ],
+                  [
+                    717.0,
+                    1359.0
+                  ],
+                  [
+                    717.0,
+                    3049.0
+                  ],
+                  [
+                    342.0,
+                    3049.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.4143708050251007,
+                "coordinate": [
+                  827,
+                  393,
+                  1165,
+                  913
+                ],
+                "order": 4,
+                "polygon_points": [
+                  [
+                    827.0,
+                    393.0
+                  ],
+                  [
+                    1165.0,
+                    393.0
+                  ],
+                  [
+                    1165.0,
+                    913.0
+                  ],
+                  [
+                    827.0,
+                    913.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.6433610320091248,
+                "coordinate": [
+                  932,
+                  983,
+                  1078,
+                  1053
+                ],
+                "order": 5,
+                "polygon_points": [
+                  [
+                    932.0,
+                    983.0
+                  ],
+                  [
+                    1078.0,
+                    983.0
+                  ],
+                  [
+                    1078.0,
+                    1053.0
+                  ],
+                  [
+                    932.0,
+                    1053.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.30424991250038147,
+                "coordinate": [
+                  821,
+                  1180,
+                  1659,
+                  3047
+                ],
+                "order": 6,
+                "polygon_points": [
+                  [
+                    821.0,
+                    1180.0
+                  ],
+                  [
+                    1659.0,
+                    1180.0
+                  ],
+                  [
+                    1659.0,
+                    3047.0
+                  ],
+                  [
+                    821.0,
+                    3047.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.4083956182003021,
+                "coordinate": [
+                  1305,
+                  397,
+                  1645,
+                  984
+                ],
+                "order": 7,
+                "polygon_points": [
+                  [
+                    1305.0,
+                    397.0
+                  ],
+                  [
+                    1645.0,
+                    397.0
+                  ],
+                  [
+                    1645.0,
+                    984.0
+                  ],
+                  [
+                    1305.0,
+                    984.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.625151515007019,
+                "coordinate": [
+                  1412,
+                  1055,
+                  1557,
+                  1128
+                ],
+                "order": 8,
+                "polygon_points": [
+                  [
+                    1412.0,
+                    1055.0
+                  ],
+                  [
+                    1557.0,
+                    1055.0
+                  ],
+                  [
+                    1557.0,
+                    1128.0
+                  ],
+                  [
+                    1412.0,
+                    1128.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.39088842272758484,
+                "coordinate": [
+                  1887,
+                  541,
+                  2029,
+                  610
+                ],
+                "order": 9,
+                "polygon_points": [
+                  [
+                    1887.0,
+                    541.0
+                  ],
+                  [
+                    2029.0,
+                    541.0
+                  ],
+                  [
+                    2029.0,
+                    610.0
+                  ],
+                  [
+                    1887.0,
+                    610.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.3193329870700836,
+                "coordinate": [
+                  1786,
+                  1060,
+                  2115,
+                  1271
+                ],
+                "order": 10,
+                "polygon_points": [
+                  [
+                    1786.0,
+                    1060.0
+                  ],
+                  [
+                    2115.0,
+                    1060.0
+                  ],
+                  [
+                    2115.0,
+                    1271.0
+                  ],
+                  [
+                    1786.0,
+                    1271.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.6196268200874329,
+                "coordinate": [
+                  1891,
+                  1868,
+                  2032,
+                  1939
+                ],
+                "order": 11,
+                "polygon_points": [
+                  [
+                    1891.0,
+                    1868.0
+                  ],
+                  [
+                    2032.0,
+                    1868.0
+                  ],
+                  [
+                    2032.0,
+                    1939.0
+                  ],
+                  [
+                    1891.0,
+                    1939.0
+                  ]
+                ]
+              },
+              {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.6284886002540588,
+                "coordinate": [
+                  311,
+                  3077,
+                  351,
+                  3119
+                ],
+                "order": 12,
+                "polygon_points": [
+                  [
+                    311.0,
+                    3077.0
+                  ],
+                  [
+                    351.0,
+                    3077.0
+                  ],
+                  [
+                    351.0,
+                    3119.0
+                  ],
+                  [
+                    311.0,
+                    3119.0
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        "markdown": {
+          "text": "94 方\n\n95 火(灬)\n\n96 斗\n\n[95](灬)\n\n97 户\n\n[100](礻)\n\n98 心(忄小)\n\n[145](肀)\n\n[45](爿)\n\n99 毋(母)\n\n## 五 画\n\n[61]（玉）\n\n100 示（礻）\n\n101 甘\n\n102 石\n\n103 龙（龍）\n\n[67]（歺）\n\n104 业\n\n[77]（氺）\n\n105 目\n\n106 田\n\n107 皿\n\n108 皿\n\n[176]（钅）\n\n109 生\n\n110 矢\n\n111 禾\n\n112 白\n\n113 瓜\n\n114 鸟（鳥）\n\n115 疒\n\n116 立\n\n117 穴\n\n[142]（礻）\n\n[145](垂)\n\n[118](正)\n\n118 疋(正)\n\n119 皮\n\n120 殳\n\n121 矛\n\n[99](母)\n\n## 六 画\n\n123 老（耂）\n\n124 耳\n\n125 臣\n\n[126]（西）\n\n126 酉（西西）\n\n[126]（西）\n\n127 而\n\n128 页（頁）\n\n129 至\n\n130 声（虎）\n\n131 虫\n\n132 肉\n\n133 缶\n\n134 舌\n\n135 竹（木）\n\n[135]（木）\n\n136 臼（臼）\n\n137 自\n\n138 血\n\n139 舟\n\n140 色\n\n141 齐（齊）\n\n142 衣（衤）\n\n143 羊（羋羊）\n\n[143]（羋）\n\n149 麦（麥）\n\n[83]（镸）\n\n150 走\n\n151 赤\n\n[68]（車）\n\n152 豆\n\n153 西\n\n154 辰\n\n155 豕\n\n156 卤（鹵）\n\n[76]（貝）\n\n[78]（見）\n\n157 里\n\n[158]（跼）\n\n158 足（跼）\n\n159 邑（阝右）\n\n[136]（臼）\n\n160 身\n\n[49]（辵）\n\n161 采\n\n162 谷\n\n163 豸\n\n164 龟（龜）\n\n165 角\n\n166 言（讠）\n\n[143]（羔）\n\n144 米\n\n145 聿（聿）\n\n146 艮\n\n[30]（艸）\n\n147 羽\n\n148 糸（糸）\n\n[148]（糸）\n\n## 七 画\n\n## 八 画\n\n172 齿(齒)\n\n[130](虎)\n\n[47](門)\n\n## 九 画",
+          "images": {}
+        },
+        "outputImages": {
+          "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//fcf83154-9454-46a2-9cd6-91eeac61cf41/layout_det_res_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-07T01%3A37%3A29Z%2F-1%2F%2F6f60edf4ac00640eaed5392068774aa0d4a20ba3899b50eaf10a74ad30e27051"
+        },
+        "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//fcf83154-9454-46a2-9cd6-91eeac61cf41/input_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-07T01%3A37%3A31Z%2F-1%2F%2F063b4fd92604715f55ec240b8a5ab1e9ec0306d02d1d13e2558368ef17763f3e"
+      }
+    ],
+    "dataInfo": {
+      "width": 2481,
+      "height": 3509,
+      "type": "image"
+    },
+    "preprocessedImages": [
+      "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//fcf83154-9454-46a2-9cd6-91eeac61cf41/preprocessed_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-08-07T01%3A37%3A33Z%2F-1%2F%2Fda5c415da7da93373a4c43caa8b066dd2b95fcdbfd62f27f2b5b9e4d89f70df6"
+    ]
+  },
+  "errorCode": 0,
+  "errorMsg": "Success"
+}
