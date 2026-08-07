@@ -1,0 +1,732 @@
+{
+  "schema_version": 1,
+  "n": 30,
+  "parsed": 30,
+  "structure_agreement": 13,
+  "radix_agreement": 8,
+  "stroke_exact": 5,
+  "stroke_within1": 10,
+  "generated_at": "2026-08-07T08:39:09+0800",
+  "entries": [
+    {
+      "ucp": "U+6CA5",
+      "char": "沥",
+      "stratum": "A_8105_core",
+      "raw": "{\"char\": \"沥\", \"cnbe64\": \"0x1017f1c055388470\", \"structure_guess\": \"左右\", \"radix_guess\": \"氵\", \"stroke_guess\": 12, \"confidence\": 0.95, \"rationale\": \"沥字由左边的三点水部首和右边的历组成，结构为左右型。\"}",
+      "parsed": true,
+      "model": {
+        "char": "沥",
+        "cnbe64": "0x1017f1c055388470",
+        "structure_guess": "左右",
+        "radix_guess": "氵",
+        "stroke_guess": 12,
+        "confidence": 0.95,
+        "rationale": "沥字由左边的三点水部首和右边的历组成，结构为左右型。"
+      },
+      "deterministic": {
+        "structure": "左右",
+        "radix_name": "水",
+        "strokes": 7
+      },
+      "structure_ok": true,
+      "radix_ok": false,
+      "stroke_diff": 5
+    },
+    {
+      "ucp": "U+6C67",
+      "char": "汧",
+      "stratum": "A_8105_core",
+      "raw": "{\"char\": \"汧\", \"cnbe64\": \"0x1009a94055388110\", \"structure_guess\": \"左右\", \"radix_guess\": \"氵\", \"stroke_guess\": 7, \"confidence\": 0.92, \"rationale\": \"汧字由左边的三点水部首和右边的‘千’组成，呈现典型的左右结构。\"}",
+      "parsed": true,
+      "model": {
+        "char": "汧",
+        "cnbe64": "0x1009a94055388110",
+        "structure_guess": "左右",
+        "radix_guess": "氵",
+        "stroke_guess": 7,
+        "confidence": 0.92,
+        "rationale": "汧字由左边的三点水部首和右边的‘千’组成，呈现典型的左右结构。"
+      },
+      "deterministic": {
+        "structure": "左右",
+        "radix_name": "水",
+        "strokes": 7
+      },
+      "structure_ok": true,
+      "radix_ok": false,
+      "stroke_diff": 0
+    },
+    {
+      "ucp": "U+98A6",
+      "char": "颦",
+      "stratum": "A_8105_core",
+      "raw": "{\"char\": \"颦\", \"cnbe64\": \"0x102a2540b5a880b0\", \"structure_guess\": \"上下\", \"radix_guess\": \"页\", \"stroke_guess\": 23, \"confidence\": 0.95, \"rationale\": \"颦字由上部频与下部页组成，属上下结构，总笔画数23画。\"}",
+      "parsed": true,
+      "model": {
+        "char": "颦",
+        "cnbe64": "0x102a2540b5a880b0",
+        "structure_guess": "上下",
+        "radix_guess": "页",
+        "stroke_guess": 23,
+        "confidence": 0.95,
+        "rationale": "颦字由上部频与下部页组成，属上下结构，总笔画数23画。"
+      },
+      "deterministic": {
+        "structure": "上下",
+        "radix_name": "頁",
+        "strokes": 21
+      },
+      "structure_ok": true,
+      "radix_ok": false,
+      "stroke_diff": 2
+    },
+    {
+      "ucp": "U+9B36",
+      "char": "鬶",
+      "stratum": "A_8105_core",
+      "raw": "{\"char\": \"鬶\", \"cnbe64\": \"0x102ac140c1908010\", \"structure_guess\": \"独体\", \"radix_guess\": \"鬲\", \"stroke_guess\": 15, \"confidence\": 0.95, \"rationale\": \"字形结构复杂且无明确左右或上下分割，符合独体字特征。\"}",
+      "parsed": true,
+      "model": {
+        "char": "鬶",
+        "cnbe64": "0x102ac140c1908010",
+        "structure_guess": "独体",
+        "radix_guess": "鬲",
+        "stroke_guess": 15,
+        "confidence": 0.95,
+        "rationale": "字形结构复杂且无明确左右或上下分割，符合独体字特征。"
+      },
+      "deterministic": {
+        "structure": "上下",
+        "radix_name": "鬲",
+        "strokes": 18
+      },
+      "structure_ok": false,
+      "radix_ok": true,
+      "stroke_diff": 3
+    },
+    {
+      "ucp": "U+8F6C",
+      "char": "转",
+      "stratum": "A_8105_core",
+      "raw": "{\"char\": \"转\", \"cnbe64\": \"0x10201ec09f408010\", \"structure_guess\": \"左右\", \"radix_guess\": \"车\", \"stroke_guess\": 8, \"confidence\": 0.95, \"rationale\": \"字形由‘车’和‘专’组成，呈现典型的左右结构。\"}",
+      "parsed": true,
+      "model": {
+        "char": "转",
+        "cnbe64": "0x10201ec09f408010",
+        "structure_guess": "左右",
+        "radix_guess": "车",
+        "stroke_guess": 8,
+        "confidence": 0.95,
+        "rationale": "字形由‘车’和‘专’组成，呈现典型的左右结构。"
+      },
+      "deterministic": {
+        "structure": "左右",
+        "radix_name": "車",
+        "strokes": 8
+      },
+      "structure_ok": true,
+      "radix_ok": false,
+      "stroke_diff": 0
+    },
+    {
+      "ucp": "U+52B3",
+      "char": "劳",
+      "stratum": "A_8105_core",
+      "raw": "{\"char\": \"劳\", \"cnbe64\": \"0x1017a740133980c0\", \"structure_guess\": \"上下\", \"radix_guess\": \"艹\", \"stroke_guess\": 7, \"confidence\": 0.95, \"rationale\": \"字形显示上部为草字头，下部结构紧凑，符合上下结构的典型特征。\"}",
+      "parsed": true,
+      "model": {
+        "char": "劳",
+        "cnbe64": "0x1017a740133980c0",
+        "structure_guess": "上下",
+        "radix_guess": "艹",
+        "stroke_guess": 7,
+        "confidence": 0.95,
+        "rationale": "字形显示上部为草字头，下部结构紧凑，符合上下结构的典型特征。"
+      },
+      "deterministic": {
+        "structure": "上下",
+        "radix_name": "力",
+        "strokes": 7
+      },
+      "structure_ok": true,
+      "radix_ok": false,
+      "stroke_diff": 0
+    },
+    {
+      "ucp": "U+835A",
+      "char": "荚",
+      "stratum": "A_8105_core",
+      "raw": "{\"char\": \"荚\", \"cnbe64\": \"0x10162ec08c4884e0\", \"structure_guess\": \"上下\", \"radix_guess\": \"艹\", \"stroke_guess\": 9, \"confidence\": 0.95, \"rationale\": \"字形由上部的草字头与下部的夹组成，符合上下结构特征。\"}",
+      "parsed": true,
+      "model": {
+        "char": "荚",
+        "cnbe64": "0x10162ec08c4884e0",
+        "structure_guess": "上下",
+        "radix_guess": "艹",
+        "stroke_guess": 9,
+        "confidence": 0.95,
+        "rationale": "字形由上部的草字头与下部的夹组成，符合上下结构特征。"
+      },
+      "deterministic": {
+        "structure": "上下",
+        "radix_name": "艸",
+        "strokes": 9
+      },
+      "structure_ok": true,
+      "radix_ok": false,
+      "stroke_diff": 0
+    },
+    {
+      "ucp": "U+755A",
+      "char": "畚",
+      "stratum": "A_8105_core",
+      "raw": "{\"char\": \"畚\", \"cnbe64\": \"0x1021acc066508080\", \"structure_guess\": \"上下\", \"radix_guess\": \"田\", \"stroke_guess\": 11, \"confidence\": 0.95, \"rationale\": \"字形由上部的‘丰’和下部的‘田’组成，符合上下结构特征。\"}",
+      "parsed": true,
+      "model": {
+        "char": "畚",
+        "cnbe64": "0x1021acc066508080",
+        "structure_guess": "上下",
+        "radix_guess": "田",
+        "stroke_guess": 11,
+        "confidence": 0.95,
+        "rationale": "字形由上部的‘丰’和下部的‘田’组成，符合上下结构特征。"
+      },
+      "deterministic": {
+        "structure": "上中下",
+        "radix_name": "田",
+        "strokes": 10
+      },
+      "structure_ok": false,
+      "radix_ok": true,
+      "stroke_diff": 1
+    },
+    {
+      "ucp": "U+9C88",
+      "char": "鲈",
+      "stratum": "A_8105_core",
+      "raw": "{\"char\": \"鲈\", \"cnbe64\": \"0x102bb4c0c3688090\", \"structure_guess\": \"左右\", \"radix_guess\": \"鱼\", \"stroke_guess\": 17, \"confidence\": 0.95, \"rationale\": \"字形由左边的‘鱼’旁和右边的‘卢’组成，符合左右结构特征。\"}",
+      "parsed": true,
+      "model": {
+        "char": "鲈",
+        "cnbe64": "0x102bb4c0c3688090",
+        "structure_guess": "左右",
+        "radix_guess": "鱼",
+        "stroke_guess": 17,
+        "confidence": 0.95,
+        "rationale": "字形由左边的‘鱼’旁和右边的‘卢’组成，符合左右结构特征。"
+      },
+      "deterministic": {
+        "structure": "左右",
+        "radix_name": "魚",
+        "strokes": 13
+      },
+      "structure_ok": true,
+      "radix_ok": false,
+      "stroke_diff": 4
+    },
+    {
+      "ucp": "U+9738",
+      "char": "霸",
+      "stratum": "A_8105_core",
+      "raw": "{\"char\": \"霸\", \"cnbe64\": \"0x1011bac0ada88030\", \"structure_guess\": \"上下结构\", \"radix_guess\": \"雨\", \"stroke_guess\": 21, \"confidence\": 0.95, \"rationale\": \"字形由上部的‘雨’和下部的‘革、月’组合而成，符合上下结构的特征。\"}",
+      "parsed": true,
+      "model": {
+        "char": "霸",
+        "cnbe64": "0x1011bac0ada88030",
+        "structure_guess": "上下结构",
+        "radix_guess": "雨",
+        "stroke_guess": 21,
+        "confidence": 0.95,
+        "rationale": "字形由上部的‘雨’和下部的‘革、月’组合而成，符合上下结构的特征。"
+      },
+      "deterministic": {
+        "structure": "上下",
+        "radix_name": "雨",
+        "strokes": 21
+      },
+      "structure_ok": false,
+      "radix_ok": true,
+      "stroke_diff": 0
+    },
+    {
+      "ucp": "U+21B50",
+      "char": "𡭐",
+      "stratum": "B_outside_with_semantic",
+      "raw": "{\"char\": \"𡭐\", \"cnbe64\": \"0x11fecc4029918000\", \"structure_guess\": \"独体\", \"radix_guess\": \"未知\", \"stroke_guess\": 15, \"confidence\": 0.75, \"rationale\": \"CNBE64编码特征与独体结构匹配，结合GB18030指针推断笔画数约为15画。\"}",
+      "parsed": true,
+      "model": {
+        "char": "𡭐",
+        "cnbe64": "0x11fecc4029918000",
+        "structure_guess": "独体",
+        "radix_guess": "未知",
+        "stroke_guess": 15,
+        "confidence": 0.75,
+        "rationale": "CNBE64编码特征与独体结构匹配，结合GB18030指针推断笔画数约为15画。"
+      },
+      "deterministic": {
+        "structure": "左右",
+        "radix_name": "寸",
+        "strokes": 18
+      },
+      "structure_ok": false,
+      "radix_ok": false,
+      "stroke_diff": 3
+    },
+    {
+      "ucp": "U+21650",
+      "char": "𡙐",
+      "stratum": "B_outside_with_semantic",
+      "raw": "{\"char\": \"𡙐\", \"cnbe64\": \"0x11fc4c4025618100\", \"structure_guess\": \"独体\", \"radix_guess\": \"未知\", \"stroke_guess\": 13, \"confidence\": 0.92, \"rationale\": \"CNBE64编码特征与独体结构高度吻合，字形呈现单一连贯笔画组合。\"}",
+      "parsed": true,
+      "model": {
+        "char": "𡙐",
+        "cnbe64": "0x11fc4c4025618100",
+        "structure_guess": "独体",
+        "radix_guess": "未知",
+        "stroke_guess": 13,
+        "confidence": 0.92,
+        "rationale": "CNBE64编码特征与独体结构高度吻合，字形呈现单一连贯笔画组合。"
+      },
+      "deterministic": {
+        "structure": "上下",
+        "radix_name": "大",
+        "strokes": 12
+      },
+      "structure_ok": false,
+      "radix_ok": false,
+      "stroke_diff": 1
+    },
+    {
+      "ucp": "U+7342",
+      "char": "獂",
+      "stratum": "B_outside_with_semantic",
+      "raw": "{\"char\": \"獂\", \"cnbe64\": \"0x100f53405e6880f0\", \"structure_guess\": \"左右\", \"radix_guess\": \"犬\", \"stroke_guess\": 20, \"confidence\": 0.95, \"rationale\": \"字形由‘獁’与‘犭’组成，呈现典型的左右结构特征。\"}",
+      "parsed": true,
+      "model": {
+        "char": "獂",
+        "cnbe64": "0x100f53405e6880f0",
+        "structure_guess": "左右",
+        "radix_guess": "犬",
+        "stroke_guess": 20,
+        "confidence": 0.95,
+        "rationale": "字形由‘獁’与‘犭’组成，呈现典型的左右结构特征。"
+      },
+      "deterministic": {
+        "structure": "左右",
+        "radix_name": "犬",
+        "strokes": 13
+      },
+      "structure_ok": true,
+      "radix_ok": true,
+      "stroke_diff": 7
+    },
+    {
+      "ucp": "U+364A",
+      "char": "㙊",
+      "stratum": "B_outside_with_semantic",
+      "raw": "{\"char\": \"㙊\", \"cnbe64\": \"0x10196e4020598030\", \"structure_guess\": \"独体\", \"radix_guess\": \"土\", \"stroke_guess\": 12, \"confidence\": 0.75, \"rationale\": \"字形结构复杂且罕见，结合定义与编码特征推测为独体或半包围结构。\"}",
+      "parsed": true,
+      "model": {
+        "char": "㙊",
+        "cnbe64": "0x10196e4020598030",
+        "structure_guess": "独体",
+        "radix_guess": "土",
+        "stroke_guess": 12,
+        "confidence": 0.75,
+        "rationale": "字形结构复杂且罕见，结合定义与编码特征推测为独体或半包围结构。"
+      },
+      "deterministic": {
+        "structure": "左右",
+        "radix_name": "土",
+        "strokes": 11
+      },
+      "structure_ok": false,
+      "radix_ok": true,
+      "stroke_diff": 1
+    },
+    {
+      "ucp": "U+286F5",
+      "char": "𨛵",
+      "stratum": "B_outside_with_semantic",
+      "raw": "{\"char\": \"𨛵\", \"cnbe64\": \"0x12349ec0a3508210\", \"structure_guess\": \"独体\", \"radix_guess\": \"未知\", \"stroke_guess\": 27, \"confidence\": 0.65, \"rationale\": \"CNBE64编码结构位暗示独体，但字形复杂且罕见，需结合笔画数推断。\"}",
+      "parsed": true,
+      "model": {
+        "char": "𨛵",
+        "cnbe64": "0x12349ec0a3508210",
+        "structure_guess": "独体",
+        "radix_guess": "未知",
+        "stroke_guess": 27,
+        "confidence": 0.65,
+        "rationale": "CNBE64编码结构位暗示独体，但字形复杂且罕见，需结合笔画数推断。"
+      },
+      "deterministic": {
+        "structure": "左右",
+        "radix_name": "邑",
+        "strokes": 10
+      },
+      "structure_ok": false,
+      "radix_ok": false,
+      "stroke_diff": 17
+    },
+    {
+      "ucp": "U+48C4",
+      "char": "䣄",
+      "stratum": "B_outside_with_semantic",
+      "raw": "{\"char\": \"䣄\", \"cnbe64\": \"0x1022a040a3508010\", \"structure_guess\": \"独体\", \"radix_guess\": \"土\", \"stroke_guess\": 9, \"confidence\": 0.75, \"rationale\": \"字形结构紧凑，结合读音与地名属性，推测为独体或半包围结构。\"}",
+      "parsed": true,
+      "model": {
+        "char": "䣄",
+        "cnbe64": "0x1022a040a3508010",
+        "structure_guess": "独体",
+        "radix_guess": "土",
+        "stroke_guess": 9,
+        "confidence": 0.75,
+        "rationale": "字形结构紧凑，结合读音与地名属性，推测为独体或半包围结构。"
+      },
+      "deterministic": {
+        "structure": "左右",
+        "radix_name": "邑",
+        "strokes": 10
+      },
+      "structure_ok": false,
+      "radix_ok": false,
+      "stroke_diff": 1
+    },
+    {
+      "ucp": "U+9A4B",
+      "char": "驋",
+      "stratum": "B_outside_with_semantic",
+      "raw": "{\"char\": \"驋\", \"cnbe64\": \"0x102a17c0bbb08060\", \"structure_guess\": \"左右\", \"radix_guess\": \"马\", \"stroke_guess\": 19, \"confidence\": 0.95, \"rationale\": \"字形由左边的‘馬’和右边的‘且’组成，符合左右结构特征。\"}",
+      "parsed": true,
+      "model": {
+        "char": "驋",
+        "cnbe64": "0x102a17c0bbb08060",
+        "structure_guess": "左右",
+        "radix_guess": "马",
+        "stroke_guess": 19,
+        "confidence": 0.95,
+        "rationale": "字形由左边的‘馬’和右边的‘且’组成，符合左右结构特征。"
+      },
+      "deterministic": {
+        "structure": "左右",
+        "radix_name": "馬",
+        "strokes": 22
+      },
+      "structure_ok": true,
+      "radix_ok": false,
+      "stroke_diff": 3
+    },
+    {
+      "ucp": "U+23932",
+      "char": "𣤲",
+      "stratum": "B_outside_with_semantic",
+      "raw": "{\"char\": \"𣤲\", \"cnbe64\": \"0x120dbd404ca08020\", \"structure_guess\": \"独体\", \"radix_guess\": \"未知\", \"stroke_guess\": 15, \"confidence\": 0.75, \"rationale\": \"CNBE64编码特征与独体结构及15画数匹配，字形渲染支持该判断。\"}",
+      "parsed": true,
+      "model": {
+        "char": "𣤲",
+        "cnbe64": "0x120dbd404ca08020",
+        "structure_guess": "独体",
+        "radix_guess": "未知",
+        "stroke_guess": 15,
+        "confidence": 0.75,
+        "rationale": "CNBE64编码特征与独体结构及15画数匹配，字形渲染支持该判断。"
+      },
+      "deterministic": {
+        "structure": "左右",
+        "radix_name": "欠",
+        "strokes": 20
+      },
+      "structure_ok": false,
+      "radix_ok": false,
+      "stroke_diff": 5
+    },
+    {
+      "ucp": "U+744E",
+      "char": "瑎",
+      "stratum": "B_outside_with_semantic",
+      "raw": "{\"char\": \"瑎\", \"cnbe64\": \"0x101014c0606881d0\", \"structure_guess\": \"左右\", \"radix_guess\": \"王\", \"stroke_guess\": 15, \"confidence\": 0.92, \"rationale\": \"字形由‘王’旁与‘邪’组成，属左右结构。\"}",
+      "parsed": true,
+      "model": {
+        "char": "瑎",
+        "cnbe64": "0x101014c0606881d0",
+        "structure_guess": "左右",
+        "radix_guess": "王",
+        "stroke_guess": 15,
+        "confidence": 0.92,
+        "rationale": "字形由‘王’旁与‘邪’组成，属左右结构。"
+      },
+      "deterministic": {
+        "structure": "左右",
+        "radix_name": "玄",
+        "strokes": 13
+      },
+      "structure_ok": true,
+      "radix_ok": false,
+      "stroke_diff": 2
+    },
+    {
+      "ucp": "U+35DD",
+      "char": "㗝",
+      "stratum": "B_outside_with_semantic",
+      "raw": "{\"char\": \"㗝\", \"cnbe64\": \"0x101938c01e6980b0\", \"structure_guess\": \"独体\", \"radix_guess\": \"口\", \"stroke_guess\": 27, \"confidence\": 0.95, \"rationale\": \"字形由多个‘口’组成，结构紧凑呈独体状，符合CNBE64编码特征。\"}",
+      "parsed": true,
+      "model": {
+        "char": "㗝",
+        "cnbe64": "0x101938c01e6980b0",
+        "structure_guess": "独体",
+        "radix_guess": "口",
+        "stroke_guess": 27,
+        "confidence": 0.95,
+        "rationale": "字形由多个‘口’组成，结构紧凑呈独体状，符合CNBE64编码特征。"
+      },
+      "deterministic": {
+        "structure": "左右",
+        "radix_name": "口",
+        "strokes": 13
+      },
+      "structure_ok": false,
+      "radix_ok": true,
+      "stroke_diff": 14
+    },
+    {
+      "ucp": "U+2EE3E",
+      "char": "𮸾",
+      "stratum": "C_extension_gap",
+      "raw": "{\"char\": \"𮸾\", \"cnbe64\": \"0x12684340b8608370\", \"structure_guess\": \"独体\", \"radix_guess\": \"未知\", \"stroke_guess\": 25, \"confidence\": 0.92, \"rationale\": \"CNBE64编码特征与独体结构高度匹配，且无明确部首线索\"}",
+      "parsed": true,
+      "model": {
+        "char": "𮸾",
+        "cnbe64": "0x12684340b8608370",
+        "structure_guess": "独体",
+        "radix_guess": "未知",
+        "stroke_guess": 25,
+        "confidence": 0.92,
+        "rationale": "CNBE64编码特征与独体结构高度匹配，且无明确部首线索"
+      },
+      "deterministic": {
+        "structure": null,
+        "radix_name": "食",
+        "strokes": 12
+      },
+      "structure_ok": false,
+      "radix_ok": false,
+      "stroke_diff": 13
+    },
+    {
+      "ucp": "U+7183",
+      "char": "熃",
+      "stratum": "C_extension_gap",
+      "raw": "{\"char\": \"熃\", \"cnbe64\": \"0x100b604056708170\", \"structure_guess\": \"上下\", \"radix_guess\": \"火\", \"stroke_guess\": 12, \"confidence\": 0.95, \"rationale\": \"字形上部为'天'下部为'火'，属上下结构\"}",
+      "parsed": true,
+      "model": {
+        "char": "熃",
+        "cnbe64": "0x100b604056708170",
+        "structure_guess": "上下",
+        "radix_guess": "火",
+        "stroke_guess": 12,
+        "confidence": 0.95,
+        "rationale": "字形上部为'天'下部为'火'，属上下结构"
+      },
+      "deterministic": {
+        "structure": "上下",
+        "radix_name": "火",
+        "strokes": 14
+      },
+      "structure_ok": true,
+      "radix_ok": true,
+      "stroke_diff": 2
+    },
+    {
+      "ucp": "U+21783",
+      "char": "𡞃",
+      "stratum": "C_extension_gap",
+      "raw": "{\"char\": \"𡞃\", \"cnbe64\": \"0x11fce5c026588720\", \"structure_guess\": \"独体\", \"radix_guess\": \"未知\", \"stroke_guess\": 13, \"confidence\": 0.92, \"rationale\": \"CNBE64编码特征与独体结构高度吻合，且无明确部首关联\"}",
+      "parsed": true,
+      "model": {
+        "char": "𡞃",
+        "cnbe64": "0x11fce5c026588720",
+        "structure_guess": "独体",
+        "radix_guess": "未知",
+        "stroke_guess": 13,
+        "confidence": 0.92,
+        "rationale": "CNBE64编码特征与独体结构高度吻合，且无明确部首关联"
+      },
+      "deterministic": {
+        "structure": "左右",
+        "radix_name": "女",
+        "strokes": 11
+      },
+      "structure_ok": false,
+      "radix_ok": false,
+      "stroke_diff": 2
+    },
+    {
+      "ucp": "U+22554",
+      "char": "𢕔",
+      "stratum": "C_extension_gap",
+      "raw": "{\"char\": \"𢕔\", \"cnbe64\": \"0x1203ce403c7080c0\", \"structure_guess\": \"左右\", \"radix_guess\": \"竹\", \"stroke_guess\": 15, \"confidence\": 0.92, \"rationale\": \"字形结构呈现明显的左右分布，左侧为竹字旁特征。\"}",
+      "parsed": true,
+      "model": {
+        "char": "𢕔",
+        "cnbe64": "0x1203ce403c7080c0",
+        "structure_guess": "左右",
+        "radix_guess": "竹",
+        "stroke_guess": 15,
+        "confidence": 0.92,
+        "rationale": "字形结构呈现明显的左右分布，左侧为竹字旁特征。"
+      },
+      "deterministic": {
+        "structure": "左右",
+        "radix_name": "彳",
+        "strokes": 14
+      },
+      "structure_ok": true,
+      "radix_ok": false,
+      "stroke_diff": 1
+    },
+    {
+      "ucp": "U+25AF6",
+      "char": "𥫶",
+      "stratum": "C_extension_gap",
+      "raw": "{\"char\": \"𥫶\", \"cnbe64\": \"0x121e9f4076508210\", \"structure_guess\": \"独体\", \"radix_guess\": \"未知\", \"stroke_guess\": 13, \"confidence\": 0.65, \"rationale\": \"CNBE64编码特征与独体结构及13画数匹配，字形渲染显示为单一连贯部件。\"}",
+      "parsed": true,
+      "model": {
+        "char": "𥫶",
+        "cnbe64": "0x121e9f4076508210",
+        "structure_guess": "独体",
+        "radix_guess": "未知",
+        "stroke_guess": 13,
+        "confidence": 0.65,
+        "rationale": "CNBE64编码特征与独体结构及13画数匹配，字形渲染显示为单一连贯部件。"
+      },
+      "deterministic": {
+        "structure": "上下",
+        "radix_name": "竹",
+        "strokes": 10
+      },
+      "structure_ok": false,
+      "radix_ok": false,
+      "stroke_diff": 3
+    },
+    {
+      "ucp": "U+28F55",
+      "char": "𨽕",
+      "stratum": "C_extension_gap",
+      "raw": "{\"char\": \"𨽕\", \"cnbe64\": \"0x1238cec0aa8880c0\", \"structure_guess\": \"独体\", \"radix_guess\": \"未知\", \"stroke_guess\": 29, \"confidence\": 0.75, \"rationale\": \"CNBE64编码特征与独体结构及29画数匹配，字形复杂且无明确部首组合。\"}",
+      "parsed": true,
+      "model": {
+        "char": "𨽕",
+        "cnbe64": "0x1238cec0aa8880c0",
+        "structure_guess": "独体",
+        "radix_guess": "未知",
+        "stroke_guess": 29,
+        "confidence": 0.75,
+        "rationale": "CNBE64编码特征与独体结构及29画数匹配，字形复杂且无明确部首组合。"
+      },
+      "deterministic": {
+        "structure": "左右",
+        "radix_name": "阜",
+        "strokes": 17
+      },
+      "structure_ok": false,
+      "radix_ok": false,
+      "stroke_diff": 12
+    },
+    {
+      "ucp": "U+2E0BF",
+      "char": "𮂿",
+      "stratum": "C_extension_gap",
+      "raw": "{\"char\": \"𮂿\", \"cnbe64\": \"0x126183c073508400\", \"structure_guess\": \"独体\", \"radix_guess\": \"未知\", \"stroke_guess\": 29, \"confidence\": 0.65, \"rationale\": \"CNBE64编码特征暗示该字结构复杂且可能为独体或特殊组合，结合GB18030指针与渲染证据推断笔画数约为29画。\"}",
+      "parsed": true,
+      "model": {
+        "char": "𮂿",
+        "cnbe64": "0x126183c073508400",
+        "structure_guess": "独体",
+        "radix_guess": "未知",
+        "stroke_guess": 29,
+        "confidence": 0.65,
+        "rationale": "CNBE64编码特征暗示该字结构复杂且可能为独体或特殊组合，结合GB18030指针与渲染证据推断笔画数约为29画。"
+      },
+      "deterministic": {
+        "structure": "左右",
+        "radix_name": "禾",
+        "strokes": 10
+      },
+      "structure_ok": false,
+      "radix_ok": false,
+      "stroke_diff": 19
+    },
+    {
+      "ucp": "U+20E77",
+      "char": "𠹷",
+      "stratum": "C_extension_gap",
+      "raw": "{\"char\": \"𠹷\", \"cnbe64\": \"0x11f85fc01e698830\", \"structure_guess\": \"独体\", \"radix_guess\": \"未知\", \"stroke_guess\": 2, \"confidence\": 0.75, \"rationale\": \"CNBE64编码特征及字形渲染显示为简单独体结构，笔画数较少。\"}",
+      "parsed": true,
+      "model": {
+        "char": "𠹷",
+        "cnbe64": "0x11f85fc01e698830",
+        "structure_guess": "独体",
+        "radix_guess": "未知",
+        "stroke_guess": 2,
+        "confidence": 0.75,
+        "rationale": "CNBE64编码特征及字形渲染显示为简单独体结构，笔画数较少。"
+      },
+      "deterministic": {
+        "structure": "左右",
+        "radix_name": "口",
+        "strokes": 13
+      },
+      "structure_ok": false,
+      "radix_ok": false,
+      "stroke_diff": 11
+    },
+    {
+      "ucp": "U+7BE0",
+      "char": "篠",
+      "stratum": "C_extension_gap",
+      "raw": "{\"char\": \"篠\", \"cnbe64\": \"0x101530c0768081b0\", \"structure_guess\": \"上下\", \"radix_guess\": \"竹\", \"stroke_guess\": 13, \"confidence\": 0.92, \"rationale\": \"字形上部为竹字头，下部结构清晰，符合上下结构的典型特征。\"}",
+      "parsed": true,
+      "model": {
+        "char": "篠",
+        "cnbe64": "0x101530c0768081b0",
+        "structure_guess": "上下",
+        "radix_guess": "竹",
+        "stroke_guess": 13,
+        "confidence": 0.92,
+        "rationale": "字形上部为竹字头，下部结构清晰，符合上下结构的典型特征。"
+      },
+      "deterministic": {
+        "structure": "上下",
+        "radix_name": "竹",
+        "strokes": 16
+      },
+      "structure_ok": true,
+      "radix_ok": true,
+      "stroke_diff": 3
+    },
+    {
+      "ucp": "U+21A3C",
+      "char": "𡨼",
+      "stratum": "C_extension_gap",
+      "raw": "{\"char\": \"𡨼\", \"cnbe64\": \"0x11fe4240285982c0\", \"structure_guess\": \"独体\", \"radix_guess\": \"未知\", \"stroke_guess\": 13, \"confidence\": 0.75, \"rationale\": \"CNBE64编码特征与独体结构匹配，结合GB18030指针推断笔画数约为13画。\"}",
+      "parsed": true,
+      "model": {
+        "char": "𡨼",
+        "cnbe64": "0x11fe4240285982c0",
+        "structure_guess": "独体",
+        "radix_guess": "未知",
+        "stroke_guess": 13,
+        "confidence": 0.75,
+        "rationale": "CNBE64编码特征与独体结构匹配，结合GB18030指针推断笔画数约为13画。"
+      },
+      "deterministic": {
+        "structure": "上下",
+        "radix_name": "宀",
+        "strokes": 11
+      },
+      "structure_ok": false,
+      "radix_ok": false,
+      "stroke_diff": 2
+    }
+  ]
+}

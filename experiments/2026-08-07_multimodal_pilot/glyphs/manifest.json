@@ -9,6 +9,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+6CA5.png",
       "sha256": "16bfb95d8e955f9e5b70aa20636733a003989d2cac7360b9a5731d5cc21d9925",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -18,6 +19,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+6C67.png",
       "sha256": "74ce40c3fa6ca7adec2c5412a8dc1330c97c775185604b654658229a67a04b3a",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -27,6 +29,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+98A6.png",
       "sha256": "c64cd213fae7143eded3151aaf3f42157cca13f07c9ba622590c5fcfd8a2310d",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -36,6 +39,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+9B36.png",
       "sha256": "0033b5fed0412f5c89c1c840259e5c2a2718db3cb426cb666feb5b9bed27b999",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -45,6 +49,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+8F6C.png",
       "sha256": "e4ea4fdb602ab52d64ffe8e0656291e99a6cb2e1a094c8a8a14dd529335496d2",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -54,6 +59,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+52B3.png",
       "sha256": "3b0f9101efde1fdf063e6ac87e5cab4da18d32a2768dbebd19061d17e2c089b4",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -63,6 +69,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+835A.png",
       "sha256": "8ac0b348f6f0a345fa8a5b7068466baf8eeaf1dae05bc2a6bfad77cde6f51eac",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -72,6 +79,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+755A.png",
       "sha256": "4be3604912f1b03669855d0ebd461904151bbb256c746d7082bcd340964a349f",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -81,6 +89,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+9C88.png",
       "sha256": "306ca557424a7c4ebbc3ff5f0fdef0b8c092575e6d3881408a7647052791db74",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -90,6 +99,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+9738.png",
       "sha256": "d6a2bb3f15f16f82d6560ae248d67f73473312b1dd3219c550cd70201289db51",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -99,6 +109,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+9E1F.png",
       "sha256": "67344be02c0ce6da569a8326eb573d7e425574a2ac1b1ec556d0d8344c7e8064",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -106,8 +117,9 @@
       "char": "𨱏",
       "stratum": "A_8105_core",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+28C4F.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "f60c86392eaf98a7be7cd3050c71c37383d7e19450724f50308f639dbf913ceb",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -117,6 +129,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+7F08.png",
       "sha256": "450c87a8431382b365e6d198fd85fdb844c504724ec0102da1a0abc23f0d98d4",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -126,6 +139,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+5DFE.png",
       "sha256": "59fd297ed61a9fa04aba01688ecdc9099be38acccfbb636cb6516cfac24463dd",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -135,6 +149,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+6BD0.png",
       "sha256": "c9cededaf46756c04a605d171bb4af25e7140e35f118369d04e0426eeef87e1d",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -144,6 +159,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+7F01.png",
       "sha256": "528a63805a232dbc588d5f323f6c55a8f55d9811d9aba4895ee5a4175eaa0fa5",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -153,6 +169,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+954F.png",
       "sha256": "246ac806841f8731c2afb67d82fdaacf5311e314b8e4fc3b568247a8320b832c",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -162,6 +179,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+576A.png",
       "sha256": "44c8c02be892c813a0046834410d5542f3c5d39a44ac4c7927fefad0245572cb",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -171,6 +189,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+83E5.png",
       "sha256": "8456c346e321d0dc12d36ddc9f74f834e613bf04bc35a527f96ef089415dff58",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -180,6 +199,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+9E38.png",
       "sha256": "c3e30372edc8ef0714cd96d19e5cf0388b620c288f0f73792ed4e7817d08e855",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -189,6 +209,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+9CC7.png",
       "sha256": "4b8cd5ec262ea24ba9797be3864258154b0a70e305f1617e320cacb049c10eb5",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -198,6 +219,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+797A.png",
       "sha256": "030fb4205dc8dfe4397101ba6f1964ff3d7f5d62dc8890be853342e62ab27b03",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -207,6 +229,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+692A.png",
       "sha256": "dcff95e3ae46a210115269033448404051978e720a01cbfa9d2a90485f45519a",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -216,6 +239,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+4E1A.png",
       "sha256": "ee6dfd907d9fdceb5137c5f05478a8fb9b0be00375df5c7e2ae220332006a939",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -225,6 +249,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+6C64.png",
       "sha256": "8bdbd0a2c83787c37c6bd0320783ed799dc704b81a4b8bae9d25bc4daf790ffe",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -234,6 +259,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+976C.png",
       "sha256": "23b5309bd1d645e690437d13cf860b68168dac06aa1b2d6b2cdb3c33df0a2dc0",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -243,6 +269,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+5FB7.png",
       "sha256": "ad2bd29058643cc1a61a6429d3b1c816e2be8680faa8358308f69c19fb0bfc29",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -252,6 +279,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+8C0D.png",
       "sha256": "8430001925c63faab7f67075a64272e41f0adbc6c1629ea684da64336253bed3",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -261,6 +289,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+62CD.png",
       "sha256": "763ff8a7e28f3dd80161455d25ebddfd315f63ee0a850e4121bf128f82dbeb69",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -270,6 +299,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+589F.png",
       "sha256": "51f27a1f62c5cd54e966066f15650dd66e508741c14f5435144464f936b1cd3d",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -279,6 +309,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+6591.png",
       "sha256": "7a2c92622b081d6bf129da02b72efee33139bed38a68b0d4f208493fa50e5d6b",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -288,6 +319,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+8C14.png",
       "sha256": "1098b5b607570a98cf2e57a13a5bd3a9878a3c2d6b7d3ab76d6e7336899b9ddf",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -297,6 +329,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+919B.png",
       "sha256": "d1cd73022c42aca59f3eb868613cf17c32f1ad49c8c877b43a3bed245f8e3869",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -306,6 +339,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+4F69.png",
       "sha256": "5f5e26f433f55ef7d7160977a6faef1c044e7e606533b8351ba38ab7e500ba2d",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -315,6 +349,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+6989.png",
       "sha256": "507d5b7d43ef81e2f2f083b730d795063172661f2bdfb37810332e5f7d9c1413",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -324,6 +359,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+9CA6.png",
       "sha256": "b331ef29cbd597843dd0ecb8819e8acc4985d96211c760439b9568be0abb2ac0",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -333,6 +369,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+7414.png",
       "sha256": "5e8fb10c3f1f30ce5e4c20f2de87732f922ae1d093506e9dd7971d7fcc351693",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -342,6 +379,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+579A.png",
       "sha256": "202cfe0565a5f6e0ae793a4dae3efde8e9f0a0a013127d3130c3d076485e39c2",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -351,6 +389,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+5341.png",
       "sha256": "e50a8b6cfe6273d9e406ac9e1f5071fd26443ab1de5df1b19050fd44fc4094e0",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -360,6 +399,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+5C88.png",
       "sha256": "fbb4b5a8fb7b0ab0ccf04762a84ecf078a2d8c4a490e8af98daba9693e38ef03",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -369,6 +409,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+6F56.png",
       "sha256": "1b8583ee99021c01f9bc78ed637cfe41e27ba20de6a8d19b62e78a3570f8de69",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -378,6 +419,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+9E60.png",
       "sha256": "f924a82adaaed20bad3aefcdae171c385a73b2529fb8d2f77f4d57583f3c9786",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -387,6 +429,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+56B7.png",
       "sha256": "cdf2073675dbcf70a9cc5bbfdfe6c683071eeb7768ba5e3b140a56df3e8a4f09",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -396,6 +439,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+6320.png",
       "sha256": "4d33f66db337ff7942dbac5595cfe7bcba9591bf442c991c1870cb94b6ee1e37",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -403,8 +447,9 @@
       "char": "𬒗",
       "stratum": "A_8105_core",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2C497.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "c21df8302885916a1d7c90799085aba1a4ab2833c58c8c15fd84ad1f9bfae98e",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -414,6 +459,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+58A9.png",
       "sha256": "239e76f7ce762acc913c20aab156ca5d159751aadb8cf0bca3e87e07f4cbd23e",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -423,6 +469,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+8BB6.png",
       "sha256": "222c36a8b50aafc569a23f6134491116bc91f01229c1a10aaa914c1f233e80e7",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -432,6 +479,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+64B5.png",
       "sha256": "a77dc6a8bd95a1de8e42cec693a27f543659f7bbf0cc418dc65b1f0638735314",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -441,6 +489,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+5586.png",
       "sha256": "c547b9d29041968e98332050eac779da21db80b320e6797bdad5979f1130d1fc",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -450,6 +499,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+6634.png",
       "sha256": "4b756e691b2a1351d7f789458ba8ad253ba10560a30a95df7b2133cab92548ef",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -459,6 +509,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+6C2F.png",
       "sha256": "0b776e2c2b828d68fa9970b4f45ce9329ade9565d32b044b773e16b097408f6b",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -468,6 +519,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+4F9D.png",
       "sha256": "19c5b3ef5c13d19dfee5124bd6279f9a3cd8caa2b7d5cec7548f70d8344097c3",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -477,6 +529,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+7ED6.png",
       "sha256": "e22550807322203d6231b4fbab6fa3eb05bf9cbd866a02bcaece82984488e0d0",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -486,6 +539,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+6064.png",
       "sha256": "c04a68e493cbe72513402a01ce2f69d3c4cc82fc23c510f44732e1ebe0017cc5",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -495,6 +549,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+62DC.png",
       "sha256": "4f9f66bfe174a9432449bdcd4649e9e54c3197b032dd141c525d73711177f8e0",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -504,6 +559,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+9E3E.png",
       "sha256": "d6a12fad0c4f4f3e5179f760682227d088b6134832686481e6ba3a31178a8830",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -513,6 +569,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+7445.png",
       "sha256": "78c332af9c5858d20fd9feaeeba05ab792169e964221b5126999a97382457fa6",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -522,6 +579,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+8403.png",
       "sha256": "f1ab654b213f9412416ec7a115dd2c2a22b2e1254bf95e8e5ca640ba38bc9310",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -531,6 +589,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+6C6B.png",
       "sha256": "516de6fdefe6be6eafdfe1461f6023fde5cc5c6ee68c4bc673cf44170e10fc74",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -540,6 +599,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+6C06.png",
       "sha256": "7f6a93bc130c0d3a0df33ab33f18d8fe569d9c6f63650931c6ed6b521e1bdfdb",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -549,6 +609,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+7EB2.png",
       "sha256": "0f2925eaa9889ca2db08da93d7767e007a1b131dae09c863db100ffddd5878fa",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -558,6 +619,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+6CA1.png",
       "sha256": "6c1fdcd85499b4b5ea0fc36e1fa526f66f46cf79f3a0b483b0ac1f55db80bc83",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -567,6 +629,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+741A.png",
       "sha256": "2608b703abd81b5b9263c5d50df416f830f2eee40c3682cdd05dcdd814439e0f",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -576,6 +639,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+8482.png",
       "sha256": "704895faffe3bf65dce41fc59b49c7fc62186b8069cc4f70c87efb4c9782a18e",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -585,6 +649,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+6B93.png",
       "sha256": "2a2a28a46e9eb23c1b76520988ea1f6e47df15b0b7164c1dc33a371f57c8f88c",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -594,6 +659,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+9785.png",
       "sha256": "423d7320118f7c51362ffe59261e30028ca31d4329ea602555add4b4ba3fb94b",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -603,6 +669,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+5BC6.png",
       "sha256": "82f485f0918e4c9370e802fa8e3f0efac873da4193053be9af58995201862dd4",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -612,6 +679,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+6E30.png",
       "sha256": "68ecd7d3ef4c970001fe7da6e4b5fde7fc6fcfe9b5788ba97a7bd8c423c1f20a",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -621,6 +689,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+8191.png",
       "sha256": "907f5275e0d5f063a90491f887b041289d9203063f3c722cb960ef7bed13cb53",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -630,6 +699,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+7A80.png",
       "sha256": "2d5c096754051079b2d40b062782ce6b1b87925ff17cbdedd0a0e823a2c4527f",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -639,6 +709,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+5E05.png",
       "sha256": "5487f725ae62a7c8c39da06ab014acc28c3e31913d58a0a0267cff7cab0a1882",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -648,6 +719,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+6B49.png",
       "sha256": "387f1d0a90f80177a373b9b7d18f26de75360de9414cf91e67ae80f724cd2dc3",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -657,6 +729,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+777D.png",
       "sha256": "6273b96e943c0ca8683d99fba8c6110142273f1d2e9f6b42a8910540d5da6fa7",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -666,6 +739,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+8160.png",
       "sha256": "365ade6f1aee1ef64a6927adcbddf7141430739105f65bdde8215a951e40d3a8",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -675,6 +749,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+8E51.png",
       "sha256": "fcb5c972bc3289c7202fa750b417dba54b3b88bebc4a9d8bd99afa42f8dc5c44",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -684,6 +759,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+8E70.png",
       "sha256": "58fe608932238ae369f06d50980054ccffb87334143d642d5d81a0962ec65ffd",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -693,6 +769,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+9010.png",
       "sha256": "f782d81cfea10a69a74c000e887da27077b92f72f96edfcf953ad990968d3e84",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -702,6 +779,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+633D.png",
       "sha256": "76d9a4560359276662cbb9f73069be040df3a9dc99a15502608fae7aaded6b86",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -711,6 +789,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+4E13.png",
       "sha256": "813977ed01d64abce896922e33d79c50dfa8da2ab8a426b1d198c1d78b62a9a1",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -720,6 +799,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+8BB5.png",
       "sha256": "9fc7aa0c5a6636f9a927e15525edaf2a3e6e5ee951617e597200a29ac829fe9b",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -729,6 +809,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+5C49.png",
       "sha256": "dda88dd23cbcd128d53ab60a25bb8b780ae30092e00f3323651df83c7e9e542f",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -738,6 +819,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+7442.png",
       "sha256": "418333db2fee7f79d8a2c89a5e4226f602246538904ba9d44e272992605688ef",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -747,6 +829,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+96C7.png",
       "sha256": "5100d8ee54f25264cb5c464cc1e9354b24a4c1ea09076de7e8dc1a0b985d6e79",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -756,6 +839,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+7330.png",
       "sha256": "3de67a52e3e5022b774c0785ef3cd9e6211c2a0781d59a84dc06fd6670641b93",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -765,6 +849,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+789F.png",
       "sha256": "1ac03d69506854ca0c0c961cc30cecfd44416d4f57e004c3d2cd659afe09f876",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -774,6 +859,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+784C.png",
       "sha256": "1240d3f33875de1c555eec0b83f31a8f18e889c9a27fe55b0eb0ae664514b79a",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -783,6 +869,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+8017.png",
       "sha256": "b516080fc096a9dd51db2597b179d0f8594cbbe630385029191d0b5dbf520506",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -792,6 +879,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+9CE3.png",
       "sha256": "99793b6a151de23cc06070d69ae2f405cf05295ab9e2c3152c3c31632e261d4d",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -801,6 +889,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+8DF9.png",
       "sha256": "daf8cf80f5f07ff3215cf38078cd33c14a82750353178aa1e51709d0ef67c93d",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -810,6 +899,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+6910.png",
       "sha256": "20407626824c148125bd8ab235d0c21fae02ac7816a7eb267318f547bee23b60",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -819,6 +909,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+5410.png",
       "sha256": "debcd5306d05c2584e183d273b1e345717531d6e56d2bc575b1ec0ffccd79dab",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -828,6 +919,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+40CE.png",
       "sha256": "2dbf92dc26cc2ec599307ff7e42c8d7e32ee74daa2c80dcd3380ab616d705824",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -837,6 +929,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+72F3.png",
       "sha256": "931a6e7ec3eba4c448e59dc8d7884aa37e86419a41af09096e3915a07f57f513",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -846,6 +939,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+73DB.png",
       "sha256": "29e7ee20463ce886b81a1e4a5ce3a835a983603edf05750ef92242b2ca8b8507",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -855,6 +949,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+6A66.png",
       "sha256": "0f3e580de102146c641d11294acb874fad991026d00a41de2fa78e613744b174",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -864,6 +959,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+7AA6.png",
       "sha256": "fd531f7c21aab2e0ef10b28978c400c3f7df53aed86b5de61a1ab8fbacb3b503",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -873,6 +969,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+53D6.png",
       "sha256": "1a3b76e8db71456740f68511c63173fe08185f85480c595da29c775d4df4a7ae",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -882,6 +979,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+9174.png",
       "sha256": "b29c8b35f01f8340adbe9987252545f04aac2963e45faa6022eaa471eb3c85ec",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -891,6 +989,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+9CB1.png",
       "sha256": "ef13ce562558827ee8b123db6306161e43266ab6ebcf6d9c176b5ebdcd9c4d9d",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -900,6 +999,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+6D43.png",
       "sha256": "2b3f045e5ff9f742d26b3a4236667434a150288e2388fe332c59b99a1fe759c4",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -907,8 +1007,9 @@
       "char": "𡭐",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+21B50.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -916,8 +1017,9 @@
       "char": "𡙐",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+21650.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -927,6 +1029,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+7342.png",
       "sha256": "6a81f01c063ef4cc1fb00afd5a6a74a1cc3f382dce12fba75bbeda119881747b",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -936,6 +1039,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+364A.png",
       "sha256": "697140e3528065d1f82b2d1a5723a957ec5d3925576a079073b4a94693ffc229",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -943,8 +1047,9 @@
       "char": "𨛵",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+286F5.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -954,6 +1059,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+48C4.png",
       "sha256": "4914c68d3caec05e56139e921bb6097095059f0f9e5c0f873c3a9b00716d06bc",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -963,6 +1069,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+9A4B.png",
       "sha256": "1826b927fe2df0dc1e268a882f6fcebd263c94015929da0a16240ec089b1fa86",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -970,8 +1077,9 @@
       "char": "𣤲",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+23932.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -981,6 +1089,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+744E.png",
       "sha256": "5d33ff4aa448eceb20b787e5b8e0a9016734e9837ec270085da46a87c293bb8b",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -990,6 +1099,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+35DD.png",
       "sha256": "2016bdc4db56dba3f071f314fc927ce4db793bd835364620397ad293a5863fc2",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -997,8 +1107,9 @@
       "char": "𠿤",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+20FE4.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1006,8 +1117,9 @@
       "char": "𡿰",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+21FF0.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1017,6 +1129,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+8A8E.png",
       "sha256": "adedb8e38e5dba4f0ac465242810d50dc723415b8ceabeb5ac8cd401155e061a",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1024,8 +1137,9 @@
       "char": "𱗌",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+315CC.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1033,8 +1147,9 @@
       "char": "𠨻",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+20A3B.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1044,6 +1159,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+8C38.png",
       "sha256": "11c2962aca856d1085b93361abe5990bc063b1822ed0fc7eac8af643d278bcfe",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1053,6 +1169,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+40F1.png",
       "sha256": "539c072add6a9f05c88b755577b5a7d22badf3aa9b24ebb623bebb8a8476278d",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1062,6 +1179,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+9ABD.png",
       "sha256": "d32d44d7fabc15f5f1681bacdee2817973fa66e62e372c96eabeb6e5d5807dce",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1069,8 +1187,9 @@
       "char": "𫚌",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2B68C.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1080,6 +1199,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+4E6A.png",
       "sha256": "e759ae9f70a26f91ac2e08fde565e9acf4b1469f13f9b082663e57c29e3e17c7",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1087,8 +1207,9 @@
       "char": "𩂕",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+29095.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1096,8 +1217,9 @@
       "char": "𪡛",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2A85B.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1105,8 +1227,9 @@
       "char": "𪙽",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2A67D.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1114,8 +1237,9 @@
       "char": "𢎘",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+22398.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1125,6 +1249,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+9B84.png",
       "sha256": "51efaa2f2100703600aa5eec9860036225c8377e1995788c5feba713d369e757",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1134,6 +1259,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+9BCD.png",
       "sha256": "ec62164f2abc08cda5c547152356c5db8d5810b5774838e1615ec129bbcf9df5",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1143,6 +1269,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+3F15.png",
       "sha256": "b248787eea3f103a1d3d1b8500b6f2384891ab19891fd7a0e90296fe0b86e2b2",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1152,6 +1279,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+7959.png",
       "sha256": "4f6defa997f33fd1335822833486afd0d6aadc3dc5ac6a50d65dd91403e86f05",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1161,6 +1289,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+75E5.png",
       "sha256": "91a9f2a762802b1f5e0305c9b1ed144034f450aa2ddc4a786db9aa49e5a8a86c",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1168,8 +1297,9 @@
       "char": "𡣹",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+218F9.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1177,8 +1307,9 @@
       "char": "𧱒",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+27C52.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1188,6 +1319,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+837F.png",
       "sha256": "044cf57573fff295c16957600d046103420210259da345dfcf9bd23dd56a9f34",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1195,8 +1327,9 @@
       "char": "𩅇",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+29147.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1204,8 +1337,9 @@
       "char": "𠂥",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+200A5.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1215,6 +1349,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+8EC6.png",
       "sha256": "93f57812aebc74525e005c24798349b44937a9c61f2f39b928ecfde7009cc1fa",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1222,8 +1357,9 @@
       "char": "𥘵",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+25635.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1233,6 +1369,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+5E6E.png",
       "sha256": "ae209d5f378ee3cfc668332430f1e7a86b8c30796fa83ef693515059bd457367",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1242,6 +1379,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+4BF2.png",
       "sha256": "b2fb0f3df5b03200e1478fd9ac5e6c769ee88b09c55b3877077af800d527519a",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1249,8 +1387,9 @@
       "char": "𧩫",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+27A6B.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1260,6 +1399,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+6E8A.png",
       "sha256": "2b114386662208123f77a2e4f2fda90d337d3e5ccebcb5df0dc57ff6c490b780",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1269,6 +1409,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+350D.png",
       "sha256": "1c598eaff8aebdee883da4e2bf0fecfaa8534ee74e9d6cf03e11fb61cf0e801c",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1276,8 +1417,9 @@
       "char": "𥛑",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+256D1.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1287,6 +1429,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+918A.png",
       "sha256": "987a3b9703693db2700dcfa0054582ee94773bdf9283a9b62a40906e3cac2df9",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1296,6 +1439,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+78DF.png",
       "sha256": "66068aadba1c43d74052e4351fefc064c91487dae722cf9ea35a2e104237fc48",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1305,6 +1449,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+59F8.png",
       "sha256": "6f838af5321fba38def8c97aed86db99f79e58e762e6829f65b114a5e653d2ab",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1314,6 +1459,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+4450.png",
       "sha256": "7019689f8fc97f06288a31e2db83e564b955535cdb8a9ca9a1b93efc47151a6a",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1321,8 +1467,9 @@
       "char": "𦋣",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+262E3.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1332,6 +1479,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+6804.png",
       "sha256": "5300ea355dcecd9beed825df3e81fdcfce54c59a00f83dc35defb9bfbecbe342",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1341,6 +1489,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+612F.png",
       "sha256": "3caf4c2e62e835c6c87cbdffda947ab7a6c1e63b26a196df830016057e3fb1f5",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1348,8 +1497,9 @@
       "char": "𧇌",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+271CC.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1357,8 +1507,9 @@
       "char": "𫷉",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2BDC9.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1368,6 +1519,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+3639.png",
       "sha256": "3a5b27e7ee2b2866364bce3df64991a19bf16968e64fba63222492f3435abb30",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1375,8 +1527,9 @@
       "char": "𥊸",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+252B8.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1384,8 +1537,9 @@
       "char": "𰵯",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+30D6F.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1393,8 +1547,9 @@
       "char": "𪕶",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2A576.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1404,6 +1559,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+7FCD.png",
       "sha256": "07aeb1c066623b745a47642dba870858511f5db00bbae25bf9597109da8625d1",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1411,8 +1567,9 @@
       "char": "𤰉",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+24C09.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1420,8 +1577,9 @@
       "char": "𩅄",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+29144.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1431,6 +1589,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+41FE.png",
       "sha256": "48d277103842f3dee4fc0dd1ecabfb84e8ca4efe3e240fc5c7cd9d0754c6aa4a",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1438,8 +1597,9 @@
       "char": "𧙀",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+27640.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1447,8 +1607,9 @@
       "char": "𠯈",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+20BC8.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1456,8 +1617,9 @@
       "char": "𧡫",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2786B.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1465,8 +1627,9 @@
       "char": "𮉣",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2E263.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1476,6 +1639,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+40AC.png",
       "sha256": "e590aac8ddb5f506bcd15720b4b2a54f5578b98393d26662c12d5511fa62fe29",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1485,6 +1649,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+5695.png",
       "sha256": "a531fa22544a7e22e1676fbe628a814144825c253db722c2f5a2b5d422e69700",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1492,8 +1657,9 @@
       "char": "𠃶",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+200F6.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1503,6 +1669,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+81F5.png",
       "sha256": "7617c616301c4361ed6d2f8d53aa08de834dab8bc12795538e0e4dc3506b8594",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1512,6 +1679,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+4861.png",
       "sha256": "7da3bf9905a8b2cf87da7c49fcc9c12c350b727f409d42f76f2e8413d29353cb",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1519,8 +1687,9 @@
       "char": "𥰠",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+25C20.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1528,8 +1697,9 @@
       "char": "𩈇",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+29207.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1539,6 +1709,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+7DDD.png",
       "sha256": "14f1f283c1d94a21bed41f05d1e0d6387bf6dc8e4ec0f9e6a8a3deb4b3c83122",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1546,8 +1717,9 @@
       "char": "𦞟",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2679F.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1555,8 +1727,9 @@
       "char": "𠝘",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+20758.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1566,6 +1739,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+3E74.png",
       "sha256": "8e2a7d89fd2c491d8a5bd5883b4a766375a001bdc7fef0aae6aee348808f1b39",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1573,8 +1747,9 @@
       "char": "𤙅",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+24645.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1584,6 +1759,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+7790.png",
       "sha256": "77d38e07e27911c22a181f4e4f41f22a286ac8ab1f6933b565476a95d2ce2a73",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1591,8 +1767,9 @@
       "char": "𡰸",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+21C38.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1600,8 +1777,9 @@
       "char": "𧙌",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2764C.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1609,8 +1787,9 @@
       "char": "𠂆",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+20086.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1620,6 +1799,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+675A.png",
       "sha256": "238a0b96394a983b3ab8fc5f39fc79d6502f8bf93f17d93087cf3295747ac97f",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1627,8 +1807,9 @@
       "char": "𨌍",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2830D.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1636,8 +1817,9 @@
       "char": "𧡴",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+27874.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1647,6 +1829,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+40AA.png",
       "sha256": "f0056cd1d0223a1344dbe68e4c988f791fb1b38f7c07f45b116442d0c773ea6c",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1654,8 +1837,9 @@
       "char": "𦺗",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+26E97.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1665,6 +1849,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+83E4.png",
       "sha256": "0723a66b1c3b1e15a5ef967a2ecfe8fc60e793423b0832c1fcfc2139707ae58a",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1674,6 +1859,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+9D6D.png",
       "sha256": "d6dc8ab0e09907829a90e94fbc4706f31c432c8afadabe20fc1c6640c3a53c7a",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1683,6 +1869,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+4800.png",
       "sha256": "bba32931d4e0d339b75632c1d537faf83e213b76b5f8819f6a4b9bc1711baa33",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1690,8 +1877,9 @@
       "char": "𣆤",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+231A4.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1701,6 +1889,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+4D54.png",
       "sha256": "c75a40b2f0b7147bff78c04fafe0a14816d7b3c8f81de1a42f72679247dd6863",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1710,6 +1899,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+59D9.png",
       "sha256": "67da8e0ee04d8ab7c3ab87783f43e8f94029adc85bb3a420b4decd74bf21ed39",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1719,6 +1909,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+91FC.png",
       "sha256": "c44dc9e9c21ccb09f3e077ed4f67a84525edad1394a6fa564514483a9f202987",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1728,6 +1919,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+9285.png",
       "sha256": "eb33fddb2823eed0cf6f136882f9eb924b6083cb4eeeb1b83e4574b1304bb5db",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1737,6 +1929,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+46F3.png",
       "sha256": "9acd061fcaea5f171a2fc19e15f047ee08a65cfb662eb6aaec6e7f5cbc80cd77",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1746,6 +1939,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+511B.png",
       "sha256": "1767c3731fe5f6940b7b2b3d33347f20ec6648569c8d28bc2579cbb10c7ddb75",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1753,8 +1947,9 @@
       "char": "𡀩",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+21029.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1762,8 +1957,9 @@
       "char": "𨓞",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+284DE.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1771,8 +1967,9 @@
       "char": "𥳆",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+25CC6.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1782,6 +1979,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+630B.png",
       "sha256": "9c8c5aadffa5d10c61e6c76cbdb8246048df94a2aa21cce2726efbaa95f22561",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1791,6 +1989,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+39DC.png",
       "sha256": "4d13d27aa096e0a1f1b649de2beac9d8e038a8d43ee987555edda1d4347c32c4",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1798,8 +1997,9 @@
       "char": "𫞅",
       "stratum": "B_outside_with_semantic",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2B785.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1807,8 +2007,9 @@
       "char": "𮸾",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2EE3E.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1818,6 +2019,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+7183.png",
       "sha256": "e3d863fbfcf6916d5ed44890ad2bc457b9449f74d7e837f048ee9976a0d5780d",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1825,8 +2027,9 @@
       "char": "𡞃",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+21783.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1834,8 +2037,9 @@
       "char": "𢕔",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+22554.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1843,8 +2047,9 @@
       "char": "𥫶",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+25AF6.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1852,8 +2057,9 @@
       "char": "𨽕",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+28F55.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1861,8 +2067,9 @@
       "char": "𮂿",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2E0BF.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1870,8 +2077,9 @@
       "char": "𠹷",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+20E77.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1881,6 +2089,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+7BE0.png",
       "sha256": "b4bd84c26ba564590df4ba5b1526ca4b9501bbd63188809a9bb4b776059b0780",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1888,8 +2097,9 @@
       "char": "𡨼",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+21A3C.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1899,6 +2109,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+5CF3.png",
       "sha256": "32a7c51e3e60cad1cde7350be41e81e00cf44cbb75727db0d9a44848cc29b65e",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1906,8 +2117,9 @@
       "char": "𧂞",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2709E.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1915,8 +2127,9 @@
       "char": "𩆘",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+29198.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1924,8 +2137,9 @@
       "char": "𮖧",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2E5A7.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1933,8 +2147,9 @@
       "char": "𮔁",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2E501.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1942,8 +2157,9 @@
       "char": "𦥞",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2695E.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1951,8 +2167,9 @@
       "char": "𢁿",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2207F.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1960,8 +2177,9 @@
       "char": "𣜔",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+23714.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1971,6 +2189,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+8D83.png",
       "sha256": "4cee0ebc9f9a4cc2ac9dafbfac3033756ad43023376b3f9527a851a1c582bdff",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1978,8 +2197,9 @@
       "char": "𰖭",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+305AD.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1987,8 +2207,9 @@
       "char": "𠮃",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+20B83.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -1996,8 +2217,9 @@
       "char": "𤷵",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+24DF5.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2005,8 +2227,9 @@
       "char": "𥆴",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+251B4.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2014,8 +2237,9 @@
       "char": "𧛶",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+276F6.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2023,8 +2247,9 @@
       "char": "𩌼",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2933C.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2032,8 +2257,9 @@
       "char": "𣣷",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+238F7.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2041,8 +2267,9 @@
       "char": "𧫾",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+27AFE.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2050,8 +2277,9 @@
       "char": "𱣿",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+318FF.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2059,8 +2287,9 @@
       "char": "𮸣",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2EE23.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2068,8 +2297,9 @@
       "char": "𱸤",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+31E24.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2079,6 +2309,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+7DE4.png",
       "sha256": "9c844c7f27d38c8d8b2cffd08fc697229f7e04dd63f96631d2e6d09480d416c6",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2086,8 +2317,9 @@
       "char": "𠋖",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+202D6.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2095,8 +2327,9 @@
       "char": "𥹺",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+25E7A.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2106,6 +2339,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+4587.png",
       "sha256": "658449335bd24711a71a13fbb66ddaedaba57c95691785f97a44eca2052f7ca4",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2113,8 +2347,9 @@
       "char": "𠡃",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+20843.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2122,8 +2357,9 @@
       "char": "𢂊",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2208A.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2131,8 +2367,9 @@
       "char": "𤪊",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+24A8A.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2142,6 +2379,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+55B0.png",
       "sha256": "5a50a8ad4989e85d4900c1cb36cbe6d0cc7ed9f1582e72fcf33860b829cc298b",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2149,8 +2387,9 @@
       "char": "𪲽",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2ACBD.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2158,8 +2397,9 @@
       "char": "𱗢",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+315E2.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2167,8 +2407,9 @@
       "char": "𭹷",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2DE77.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2176,8 +2417,9 @@
       "char": "𧀚",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2701A.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2187,6 +2429,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+6143.png",
       "sha256": "698b8df062d4a92264fdc6bcbf1b186c352fac580a0226de5ab978c230e461bc",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2194,8 +2437,9 @@
       "char": "𠺵",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+20EB5.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2205,6 +2449,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+3434.png",
       "sha256": "cf00067093bd3524c5b0d28fe775d7c223fbfa9665233be330b744ce2b1ac43b",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2212,8 +2457,9 @@
       "char": "𭤕",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2D915.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2221,8 +2467,9 @@
       "char": "𪄇",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2A107.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2232,6 +2479,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+434F.png",
       "sha256": "bb750feffd142d20af89ecf037b156007114379d1b515dcb6c1c7766948e13b1",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2241,6 +2489,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+9AAD.png",
       "sha256": "6ed729c0d04a75b782245fbee28befe217edf142593e0b2ff10c579df1c9ea45",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2248,8 +2497,9 @@
       "char": "𠦨",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+209A8.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2259,6 +2509,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+4291.png",
       "sha256": "6924aef6272d26767c441b8a2813059d05a6c0bd91304da590c07dee76c50cfb",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2266,8 +2517,9 @@
       "char": "𤠺",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2483A.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2275,8 +2527,9 @@
       "char": "𣞳",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+237B3.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2284,8 +2537,9 @@
       "char": "𦿥",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+26FE5.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2293,8 +2547,9 @@
       "char": "𪗯",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2A5EF.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2302,8 +2557,9 @@
       "char": "𠖆",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+20586.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2311,8 +2567,9 @@
       "char": "𫤘",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2B918.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2322,6 +2579,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+6535.png",
       "sha256": "c663f08e18d36ef1706a37a9ecca2488fe829ab2589a2f79f582c3bb132e99b0",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2329,8 +2587,9 @@
       "char": "𫾆",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2BF86.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2340,6 +2599,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+76B0.png",
       "sha256": "98f587afba1749d057a93a302ce297f3be22a4654c034263bbefbd6255357049",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2349,6 +2609,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+7C37.png",
       "sha256": "4455b3ee43554fa04b87083c4a59a945e210e29a09d6b4f7a558ee2b58a1dbcc",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2358,6 +2619,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+9188.png",
       "sha256": "a035daac0d207405e4437737e7be47e4c02d98edddefe4b47574393ec8ce8d2b",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2367,6 +2629,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+4274.png",
       "sha256": "9292dc88b670d4f291b414669c2d7de28c431965f9a4e10c01aa6d1caa128268",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2374,8 +2637,9 @@
       "char": "𫱯",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2BC6F.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2383,8 +2647,9 @@
       "char": "𱟅",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+317C5.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2392,8 +2657,9 @@
       "char": "𫀋",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2B00B.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2403,6 +2669,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+8DFE.png",
       "sha256": "cfdd47be7479cc329cdf3dfb060b4bbd2784626179307eb663094e5808b1a3c8",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2412,6 +2679,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+41C4.png",
       "sha256": "046de7bed0eb0d18bdbdb05b282506f94434c2f2b5f270ad8007d7528e10be3d",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2419,8 +2687,9 @@
       "char": "𮓓",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2E4D3.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2430,6 +2699,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+821D.png",
       "sha256": "0174f976bdb27282daef12de86106836b8e9a1484fee98903b96e4033533035a",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2437,8 +2707,9 @@
       "char": "𱤣",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+31923.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2448,6 +2719,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+97D5.png",
       "sha256": "fd10224bafea84e5f4763383164a04138cc24c5f100654b811dacc731efd629a",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2455,8 +2727,9 @@
       "char": "𤾤",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+24FA4.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2464,8 +2737,9 @@
       "char": "𱿏",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+31FCF.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2473,8 +2747,9 @@
       "char": "𰺀",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+30E80.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2482,8 +2757,9 @@
       "char": "𱌜",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+3131C.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2491,8 +2767,9 @@
       "char": "𡃒",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+210D2.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2500,8 +2777,9 @@
       "char": "𡁃",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+21043.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2509,8 +2787,9 @@
       "char": "𥵻",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+25D7B.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2518,8 +2797,9 @@
       "char": "𥤶",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+25936.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2527,8 +2807,9 @@
       "char": "𨠆",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+28806.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2536,8 +2817,9 @@
       "char": "𠝌",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2074C.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2545,8 +2827,9 @@
       "char": "𰂖",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+30096.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2554,8 +2837,9 @@
       "char": "𩒸",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+294B8.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2563,8 +2847,9 @@
       "char": "𣓡",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+234E1.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2572,8 +2857,9 @@
       "char": "𧄉",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+27109.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2581,8 +2867,9 @@
       "char": "𦣌",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+268CC.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2590,8 +2877,9 @@
       "char": "𣌑",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+23311.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2599,8 +2887,9 @@
       "char": "𫈇",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2B207.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2608,8 +2897,9 @@
       "char": "𪸱",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2AE31.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2619,6 +2909,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+3790.png",
       "sha256": "21e95a8d8d471eff7c072399860448f2c3a7988056d04298ede7a1b37f1dac41",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2626,8 +2917,9 @@
       "char": "𭆶",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+2D1B6.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2635,8 +2927,9 @@
       "char": "𰒿",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+304BF.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2644,8 +2937,9 @@
       "char": "𣱌",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+23C4C.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2653,8 +2947,9 @@
       "char": "𲅠",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+32160.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2664,6 +2959,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+7D72.png",
       "sha256": "39dbb813fe5e67b4fb70f3204cd81175ba1aeddf7bb6730dbb58d9937e0ddf8e",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2671,8 +2967,9 @@
       "char": "𨴕",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+28D15.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2680,8 +2977,9 @@
       "char": "𥨔",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+25A14.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2689,8 +2987,9 @@
       "char": "𣺮",
       "stratum": "C_extension_gap",
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+23EAE.png",
-      "sha256": "73d7ed9877bc3b373ef42a3cec0d2e94ee1b2f32c7296c6067032d2b3b949d3e",
-      "font": "simsun.ttc",
+      "sha256": "bcda7eddf994f1010ec4619b6f639b93fc30ba6a61724a08896dcc775f81e293",
+      "font": "msyh.ttc",
+      "render_ok": true,
       "size": 256
     },
     {
@@ -2700,6 +2999,7 @@
       "image": "experiments\\2026-08-07_multimodal_pilot\\glyphs\\U+3DBA.png",
       "sha256": "c7902935c400ccf4a5ec310178867c3bc216276c1712272af4661b0c04560451",
       "font": "simsun.ttc",
+      "render_ok": true,
       "size": 256
     }
   ]

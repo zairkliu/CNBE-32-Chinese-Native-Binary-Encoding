@@ -16,14 +16,20 @@ BRIDGE = r"C:\Users\zairk\.codex\skills\vision-bridge\vision.js"
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--limit", type=int, default=1)
+    parser.add_argument("--limit", type=int, default=3)
     args = parser.parse_args()
     evidence = json.loads((EXP / "results" / "pilot_evidence.json").read_text(encoding="utf-8"))["entries"]
     sample = [e for e in evidence if e["glyph"]][: args.limit]
+    out_path = EXP / "results" / "vision_verify.json"
     outputs = []
+    if out_path.exists():
+        outputs = json.loads(out_path.read_text(encoding="utf-8")).get("entries", [])
+    done = {o["ucp"] for o in outputs if o.get("stderr") != "timeout"}
     for e in sample:
+        if e["ucp"] in done:
+            continue
         image = REPO / e["glyph"]["image"]
-        prompt = f"请识别这个汉字，并描述其部首、笔画结构（上下/左右/独体/包围等）、字形特征。"
+        prompt = "请识别这个汉字，并描述其部首、笔画结构（上下/左右/独体/包围等）、字形特征。"
         try:
             result = subprocess.run(
                 ["node", BRIDGE, str(image), prompt],
@@ -33,24 +39,31 @@ def main() -> int:
                 errors="replace",
                 timeout=240,
             )
+            outputs.append(
+                {
+                    "ucp": e["ucp"],
+                    "char": e["char"],
+                    "image": e["glyph"]["image"],
+                    "returncode": result.returncode,
+                    "stdout": result.stdout[:1200],
+                    "stderr": result.stderr[:400],
+                }
+            )
         except subprocess.TimeoutExpired:
-            outputs.append({"ucp": e["ucp"], "char": e["char"], "image": e["glyph"]["image"], "error": "timeout"})
-            continue
-        outputs.append(
-            {
-                "ucp": e["ucp"],
-                "char": e["char"],
-                "image": e["glyph"]["image"],
-                "returncode": result.returncode,
-                "stdout": result.stdout[:800],
-                "stderr": result.stderr[:400],
-            }
-        )
-    out = EXP / "results"
-    out.mkdir(parents=True, exist_ok=True)
-    (out / "vision_verify.json").write_text(json.dumps({"schema_version": 1, "n": len(outputs), "entries": outputs}, ensure_ascii=False, indent=2), encoding="utf-8")
+            outputs.append(
+                {
+                    "ucp": e["ucp"],
+                    "char": e["char"],
+                    "image": e["glyph"]["image"],
+                    "returncode": None,
+                    "stdout": "",
+                    "stderr": "timeout",
+                }
+            )
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text(json.dumps({"schema_version": 1, "n": len(outputs), "entries": outputs}, ensure_ascii=False, indent=2), encoding="utf-8")
     for o in outputs:
-        print(o["ucp"], o["returncode"], o["stdout"][:120].replace("\n", " "))
+        print(o["ucp"], o.get("returncode"), (o.get("stdout") or "")[:120].replace("\n", " "), o.get("stderr", ""))
     return 0
 
 

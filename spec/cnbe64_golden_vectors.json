@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "layout": {
+    "version": [63, 60],
+    "gb18030_pointer": [59, 39],
+    "gb18030_present": [38, 38],
+    "gb18030_status": [37, 36],
+    "reserved": [35, 32],
+    "cnbe32": [31, 0]
+  },
+  "vectors": [
+    {
+      "ucp": "U+3400",
+      "char": "㐀",
+      "cnbe32": "0x01280000",
+      "gb18030_pointer": 12439,
+      "status": 0,
+      "cnbe64": "0x10184bc001280000"
+    },
+    {
+      "ucp": "U+6CA5",
+      "char": "沥",
+      "cnbe32": "0x55388470",
+      "gb18030_pointer": 12259,
+      "status": 0,
+      "cnbe64": "0x1017f1c055388470"
+    },
+    {
+      "ucp": "U+98A6",
+      "char": "颦",
+      "cnbe32": "0xB5A880B0",
+      "gb18030_pointer": 21578,
+      "status": 0,
+      "cnbe64": "0x102a2540b5a880b0"
+    },
+    {
+      "ucp": "U+7183",
+      "char": "熃",
+      "cnbe32": "0x56708170",
+      "gb18030_pointer": 5824,
+      "status": 0,
+      "cnbe64": "0x100b604056708170"
+    }
+  ]
+}
