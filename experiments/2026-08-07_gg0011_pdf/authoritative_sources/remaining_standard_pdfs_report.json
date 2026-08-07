@@ -1,0 +1,30 @@
+{
+  "gf0014_single_component": {
+    "page_url": "https://hudong.moe.gov.cn/jyb_sjzl/ziliao/A19/201001/t20100115_75697.html",
+    "note": "现代常用独体字规范",
+    "page_size_bytes": 6721,
+    "attachment_links": [
+      "/ewebeditor/uploadfile/2015/01/13/20150113090418639.pdf"
+    ],
+    "pdf_probe": {
+      "pdf_size_bytes": 583875,
+      "sha256": "eeedf11ca7e0e38c2a79283c5b9e200fbec011c87c1fa24536045518ab94e5a7",
+      "pages": 7,
+      "pages_with_text": 0,
+      "pages_with_images": 7,
+      "total_extracted_chars": 0,
+      "title": "Microsoft Word - 独体字.doc"
+    },
+    "pdf_url": "http://www.moe.gov.cn/ewebeditor/uploadfile/2015/01/13/20150113090418639.pdf",
+    "local_path": "C:\\Users\\zairk\\Documents\\Codex\\2026-07-27\\https-github-com-zairkliu-cnbe-32\\repo\\experiments\\2026-08-07_gg0011_pdf\\authoritative_sources\\gf0014_single_component_pdf.pdf"
+  },
+  "gf3002_stroke_order": {
+    "page_url": "http://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201001/t20100115_75619.html",
+    "note": "GF3002-1999 GB13000.1字符集汉字笔顺规范",
+    "page_size_bytes": 12667,
+    "attachment_links": [
+      "./W020150902457900316281.pdf"
+    ],
+    "error": "HTTP Error 418: I'm a Teapot"
+  }
+}

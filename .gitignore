@@ -34,6 +34,7 @@ build/
 *.docx
 data/*.json
 !data/gf0011_201_radicals.json
+!data/gf0011_201_radicals_full.json
 data/*.gz
 outputs/*.png
 outputs/**/*.png

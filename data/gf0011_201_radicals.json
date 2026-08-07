@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "source": "GF 0011-2009 汉字部首表（公开转载）",
+  "source": "GF 0011-2009 汉字部首表（完整版 docx 交叉入库，2026-08-07）",
   "source_url": "https://www.ichara.cn/web/account/view_article.php?art_id=110",
   "radicals": [
     {
@@ -401,7 +401,7 @@
     {
       "code": 80,
       "main": "手",
-      "attached": "扌看"
+      "attached": "扌龵"
     },
     {
       "code": 81,

@@ -1,0 +1,2919 @@
+{
+  "schema_version": 1,
+  "source": "维基百科《汉字部首表》渲染页导航模板 Template:简体中文部首",
+  "source_url": "https://zh.wikipedia.org/wiki/汉字部首表",
+  "summary": {
+    "group_count": 15,
+    "entry_count": 201,
+    "group_sizes": {
+      "一画": 5,
+      "二画": 21,
+      "三画": 34,
+      "四画": 39,
+      "五画": 22,
+      "六画": 27,
+      "七画": 19,
+      "八画": 11,
+      "九画": 9,
+      "十画": 4,
+      "十一画": 3,
+      "十二画": 3,
+      "十三画": 2,
+      "十四画": 1,
+      "十七画": 1
+    }
+  },
+  "groups": [
+    {
+      "stroke_group": "一画",
+      "items": [
+        {
+          "code": 1,
+          "main": "一",
+          "wiki_attached": "",
+          "stroke_group": "一画",
+          "raw": "一"
+        },
+        {
+          "code": 2,
+          "main": "丨",
+          "wiki_attached": "",
+          "stroke_group": "一画",
+          "raw": "丨"
+        },
+        {
+          "code": 3,
+          "main": "丿",
+          "wiki_attached": "",
+          "stroke_group": "一画",
+          "raw": "丿"
+        },
+        {
+          "code": 4,
+          "main": "丶",
+          "wiki_attached": "",
+          "stroke_group": "一画",
+          "raw": "丶"
+        },
+        {
+          "code": 5,
+          "main": "乛",
+          "wiki_attached": "亅乚乙",
+          "stroke_group": "一画",
+          "raw": "乛（亅乚乙）"
+        }
+      ]
+    },
+    {
+      "stroke_group": "二画",
+      "items": [
+        {
+          "code": 6,
+          "main": "十",
+          "wiki_attached": "",
+          "stroke_group": "二画",
+          "raw": "十"
+        },
+        {
+          "code": 7,
+          "main": "厂",
+          "wiki_attached": "𠂆",
+          "stroke_group": "二画",
+          "raw": "厂（𠂆）"
+        },
+        {
+          "code": 8,
+          "main": "匚",
+          "wiki_attached": "",
+          "stroke_group": "二画",
+          "raw": "匚"
+        },
+        {
+          "code": 9,
+          "main": "卜",
+          "wiki_attached": "⺊",
+          "stroke_group": "二画",
+          "raw": "卜（⺊）"
+        },
+        {
+          "code": 10,
+          "main": "冂",
+          "wiki_attached": "⺆",
+          "stroke_group": "二画",
+          "raw": "冂（⺆）"
+        },
+        {
+          "code": 11,
+          "main": "八",
+          "wiki_attached": "丷",
+          "stroke_group": "二画",
+          "raw": "八（丷）"
+        },
+        {
+          "code": 12,
+          "main": "人",
+          "wiki_attached": "亻入",
+          "stroke_group": "二画",
+          "raw": "人（亻入）"
+        },
+        {
+          "code": 13,
+          "main": "勹",
+          "wiki_attached": "",
+          "stroke_group": "二画",
+          "raw": "勹"
+        },
+        {
+          "code": 14,
+          "main": "儿",
+          "wiki_attached": "",
+          "stroke_group": "二画",
+          "raw": "儿"
+        },
+        {
+          "code": 15,
+          "main": "匕",
+          "wiki_attached": "",
+          "stroke_group": "二画",
+          "raw": "匕"
+        },
+        {
+          "code": 16,
+          "main": "几",
+          "wiki_attached": "𠘨",
+          "stroke_group": "二画",
+          "raw": "几（𠘨）"
+        },
+        {
+          "code": 17,
+          "main": "亠",
+          "wiki_attached": "",
+          "stroke_group": "二画",
+          "raw": "亠"
+        },
+        {
+          "code": 18,
+          "main": "冫",
+          "wiki_attached": "",
+          "stroke_group": "二画",
+          "raw": "冫"
+        },
+        {
+          "code": 19,
+          "main": "冖",
+          "wiki_attached": "",
+          "stroke_group": "二画",
+          "raw": "冖"
+        },
+        {
+          "code": 20,
+          "main": "凵",
+          "wiki_attached": "",
+          "stroke_group": "二画",
+          "raw": "凵"
+        },
+        {
+          "code": 21,
+          "main": "卩",
+          "wiki_attached": "㔾",
+          "stroke_group": "二画",
+          "raw": "卩（㔾）"
+        },
+        {
+          "code": 22,
+          "main": "刀",
+          "wiki_attached": "刂⺈",
+          "stroke_group": "二画",
+          "raw": "刀（刂⺈）"
+        },
+        {
+          "code": 23,
+          "main": "力",
+          "wiki_attached": "",
+          "stroke_group": "二画",
+          "raw": "力"
+        },
+        {
+          "code": 24,
+          "main": "又",
+          "wiki_attached": "",
+          "stroke_group": "二画",
+          "raw": "又"
+        },
+        {
+          "code": 25,
+          "main": "厶",
+          "wiki_attached": "",
+          "stroke_group": "二画",
+          "raw": "厶"
+        },
+        {
+          "code": 26,
+          "main": "廴",
+          "wiki_attached": "",
+          "stroke_group": "二画",
+          "raw": "廴"
+        }
+      ]
+    },
+    {
+      "stroke_group": "三画",
+      "items": [
+        {
+          "code": 27,
+          "main": "干",
+          "wiki_attached": "",
+          "stroke_group": "三画",
+          "raw": "干"
+        },
+        {
+          "code": 28,
+          "main": "工",
+          "wiki_attached": "",
+          "stroke_group": "三画",
+          "raw": "工"
+        },
+        {
+          "code": 29,
+          "main": "土",
+          "wiki_attached": "士",
+          "stroke_group": "三画",
+          "raw": "土（士）"
+        },
+        {
+          "code": 30,
+          "main": "艹",
+          "wiki_attached": "艸",
+          "stroke_group": "三画",
+          "raw": "艹（艸）"
+        },
+        {
+          "code": 31,
+          "main": "寸",
+          "wiki_attached": "",
+          "stroke_group": "三画",
+          "raw": "寸"
+        },
+        {
+          "code": 32,
+          "main": "廾",
+          "wiki_attached": "",
+          "stroke_group": "三画",
+          "raw": "廾"
+        },
+        {
+          "code": 33,
+          "main": "大",
+          "wiki_attached": "",
+          "stroke_group": "三画",
+          "raw": "大"
+        },
+        {
+          "code": 34,
+          "main": "尢",
+          "wiki_attached": "兀尣",
+          "stroke_group": "三画",
+          "raw": "尢（兀尣）"
+        },
+        {
+          "code": 35,
+          "main": "弋",
+          "wiki_attached": "",
+          "stroke_group": "三画",
+          "raw": "弋"
+        },
+        {
+          "code": 36,
+          "main": "小",
+          "wiki_attached": "⺌",
+          "stroke_group": "三画",
+          "raw": "小（⺌）"
+        },
+        {
+          "code": 37,
+          "main": "口",
+          "wiki_attached": "",
+          "stroke_group": "三画",
+          "raw": "口"
+        },
+        {
+          "code": 38,
+          "main": "囗",
+          "wiki_attached": "",
+          "stroke_group": "三画",
+          "raw": "囗"
+        },
+        {
+          "code": 39,
+          "main": "山",
+          "wiki_attached": "",
+          "stroke_group": "三画",
+          "raw": "山"
+        },
+        {
+          "code": 40,
+          "main": "巾",
+          "wiki_attached": "",
+          "stroke_group": "三画",
+          "raw": "巾"
+        },
+        {
+          "code": 41,
+          "main": "彳",
+          "wiki_attached": "",
+          "stroke_group": "三画",
+          "raw": "彳"
+        },
+        {
+          "code": 42,
+          "main": "彡",
+          "wiki_attached": "",
+          "stroke_group": "三画",
+          "raw": "彡"
+        },
+        {
+          "code": 43,
+          "main": "夕",
+          "wiki_attached": "",
+          "stroke_group": "三画",
+          "raw": "夕"
+        },
+        {
+          "code": 44,
+          "main": "夂",
+          "wiki_attached": "",
+          "stroke_group": "三画",
+          "raw": "夂"
+        },
+        {
+          "code": 45,
+          "main": "丬",
+          "wiki_attached": "爿",
+          "stroke_group": "三画",
+          "raw": "丬（爿）"
+        },
+        {
+          "code": 46,
+          "main": "广",
+          "wiki_attached": "",
+          "stroke_group": "三画",
+          "raw": "广"
+        },
+        {
+          "code": 47,
+          "main": "门",
+          "wiki_attached": "門",
+          "stroke_group": "三画",
+          "raw": "门（門）"
+        },
+        {
+          "code": 48,
+          "main": "宀",
+          "wiki_attached": "",
+          "stroke_group": "三画",
+          "raw": "宀"
+        },
+        {
+          "code": 49,
+          "main": "辶",
+          "wiki_attached": "辵",
+          "stroke_group": "三画",
+          "raw": "辶（辵）"
+        },
+        {
+          "code": 50,
+          "main": "彐",
+          "wiki_attached": "⺕彑",
+          "stroke_group": "三画",
+          "raw": "彐（⺕彑）"
+        },
+        {
+          "code": 51,
+          "main": "尸",
+          "wiki_attached": "",
+          "stroke_group": "三画",
+          "raw": "尸"
+        },
+        {
+          "code": 52,
+          "main": "己",
+          "wiki_attached": "已巳",
+          "stroke_group": "三画",
+          "raw": "己（已巳）"
+        },
+        {
+          "code": 53,
+          "main": "弓",
+          "wiki_attached": "",
+          "stroke_group": "三画",
+          "raw": "弓"
+        },
+        {
+          "code": 54,
+          "main": "子",
+          "wiki_attached": "",
+          "stroke_group": "三画",
+          "raw": "子"
+        },
+        {
+          "code": 55,
+          "main": "屮",
+          "wiki_attached": "",
+          "stroke_group": "三画",
+          "raw": "屮"
+        },
+        {
+          "code": 56,
+          "main": "女",
+          "wiki_attached": "",
+          "stroke_group": "三画",
+          "raw": "女"
+        },
+        {
+          "code": 57,
+          "main": "飞",
+          "wiki_attached": "飛",
+          "stroke_group": "三画",
+          "raw": "飞（飛）"
+        },
+        {
+          "code": 58,
+          "main": "马",
+          "wiki_attached": "馬",
+          "stroke_group": "三画",
+          "raw": "马（馬）"
+        },
+        {
+          "code": 59,
+          "main": "幺",
+          "wiki_attached": "",
+          "stroke_group": "三画",
+          "raw": "幺"
+        },
+        {
+          "code": 60,
+          "main": "巛",
+          "wiki_attached": "",
+          "stroke_group": "三画",
+          "raw": "巛"
+        }
+      ]
+    },
+    {
+      "stroke_group": "四画",
+      "items": [
+        {
+          "code": 61,
+          "main": "王",
+          "wiki_attached": "𤣩玉",
+          "stroke_group": "四画",
+          "raw": "王（𤣩玉）"
+        },
+        {
+          "code": 62,
+          "main": "无",
+          "wiki_attached": "旡",
+          "stroke_group": "四画",
+          "raw": "无（旡）"
+        },
+        {
+          "code": 63,
+          "main": "韦",
+          "wiki_attached": "韋",
+          "stroke_group": "四画",
+          "raw": "韦（韋）"
+        },
+        {
+          "code": 64,
+          "main": "木",
+          "wiki_attached": "朩",
+          "stroke_group": "四画",
+          "raw": "木（朩）"
+        },
+        {
+          "code": 65,
+          "main": "支",
+          "wiki_attached": "",
+          "stroke_group": "四画",
+          "raw": "支"
+        },
+        {
+          "code": 66,
+          "main": "犬",
+          "wiki_attached": "犭",
+          "stroke_group": "四画",
+          "raw": "犬（犭）"
+        },
+        {
+          "code": 67,
+          "main": "歹",
+          "wiki_attached": "歺",
+          "stroke_group": "四画",
+          "raw": "歹（歺）"
+        },
+        {
+          "code": 68,
+          "main": "车",
+          "wiki_attached": "車",
+          "stroke_group": "四画",
+          "raw": "车（車）"
+        },
+        {
+          "code": 69,
+          "main": "牙",
+          "wiki_attached": "",
+          "stroke_group": "四画",
+          "raw": "牙"
+        },
+        {
+          "code": 70,
+          "main": "戈",
+          "wiki_attached": "",
+          "stroke_group": "四画",
+          "raw": "戈"
+        },
+        {
+          "code": 71,
+          "main": "比",
+          "wiki_attached": "",
+          "stroke_group": "四画",
+          "raw": "比"
+        },
+        {
+          "code": 72,
+          "main": "瓦",
+          "wiki_attached": "",
+          "stroke_group": "四画",
+          "raw": "瓦"
+        },
+        {
+          "code": 73,
+          "main": "止",
+          "wiki_attached": "",
+          "stroke_group": "四画",
+          "raw": "止"
+        },
+        {
+          "code": 74,
+          "main": "攴",
+          "wiki_attached": "攵",
+          "stroke_group": "四画",
+          "raw": "攴（攵）"
+        },
+        {
+          "code": 75,
+          "main": "日",
+          "wiki_attached": "曰⺜",
+          "stroke_group": "四画",
+          "raw": "日（曰⺜）"
+        },
+        {
+          "code": 76,
+          "main": "贝",
+          "wiki_attached": "貝",
+          "stroke_group": "四画",
+          "raw": "贝（貝）"
+        },
+        {
+          "code": 77,
+          "main": "水",
+          "wiki_attached": "氵氺",
+          "stroke_group": "四画",
+          "raw": "水（氵氺）"
+        },
+        {
+          "code": 78,
+          "main": "见",
+          "wiki_attached": "見",
+          "stroke_group": "四画",
+          "raw": "见（見）"
+        },
+        {
+          "code": 79,
+          "main": "牛",
+          "wiki_attached": "牜",
+          "stroke_group": "四画",
+          "raw": "牛（牜）"
+        },
+        {
+          "code": 80,
+          "main": "手",
+          "wiki_attached": "扌龵",
+          "stroke_group": "四画",
+          "raw": "手（扌龵）"
+        },
+        {
+          "code": 81,
+          "main": "气",
+          "wiki_attached": "",
+          "stroke_group": "四画",
+          "raw": "气"
+        },
+        {
+          "code": 82,
+          "main": "毛",
+          "wiki_attached": "",
+          "stroke_group": "四画",
+          "raw": "毛"
+        },
+        {
+          "code": 83,
+          "main": "长",
+          "wiki_attached": "镸長",
+          "stroke_group": "四画",
+          "raw": "长（镸長）"
+        },
+        {
+          "code": 84,
+          "main": "片",
+          "wiki_attached": "",
+          "stroke_group": "四画",
+          "raw": "片"
+        },
+        {
+          "code": 85,
+          "main": "斤",
+          "wiki_attached": "",
+          "stroke_group": "四画",
+          "raw": "斤"
+        },
+        {
+          "code": 86,
+          "main": "爪",
+          "wiki_attached": "爫",
+          "stroke_group": "四画",
+          "raw": "爪（爫）"
+        },
+        {
+          "code": 87,
+          "main": "父",
+          "wiki_attached": "",
+          "stroke_group": "四画",
+          "raw": "父"
+        },
+        {
+          "code": 88,
+          "main": "月",
+          "wiki_attached": "⺝",
+          "stroke_group": "四画",
+          "raw": "月（⺝）"
+        },
+        {
+          "code": 89,
+          "main": "氏",
+          "wiki_attached": "",
+          "stroke_group": "四画",
+          "raw": "氏"
+        },
+        {
+          "code": 90,
+          "main": "欠",
+          "wiki_attached": "",
+          "stroke_group": "四画",
+          "raw": "欠"
+        },
+        {
+          "code": 91,
+          "main": "风",
+          "wiki_attached": "風",
+          "stroke_group": "四画",
+          "raw": "风（風）"
+        },
+        {
+          "code": 92,
+          "main": "殳",
+          "wiki_attached": "",
+          "stroke_group": "四画",
+          "raw": "殳"
+        },
+        {
+          "code": 93,
+          "main": "文",
+          "wiki_attached": "",
+          "stroke_group": "四画",
+          "raw": "文"
+        },
+        {
+          "code": 94,
+          "main": "方",
+          "wiki_attached": "",
+          "stroke_group": "四画",
+          "raw": "方"
+        },
+        {
+          "code": 95,
+          "main": "火",
+          "wiki_attached": "灬",
+          "stroke_group": "四画",
+          "raw": "火（灬）"
+        },
+        {
+          "code": 96,
+          "main": "斗",
+          "wiki_attached": "",
+          "stroke_group": "四画",
+          "raw": "斗"
+        },
+        {
+          "code": 97,
+          "main": "户",
+          "wiki_attached": "",
+          "stroke_group": "四画",
+          "raw": "户"
+        },
+        {
+          "code": 98,
+          "main": "心",
+          "wiki_attached": "忄⺗",
+          "stroke_group": "四画",
+          "raw": "心（忄⺗）"
+        },
+        {
+          "code": 99,
+          "main": "毋",
+          "wiki_attached": "母",
+          "stroke_group": "四画",
+          "raw": "毋（母）"
+        }
+      ]
+    },
+    {
+      "stroke_group": "五画",
+      "items": [
+        {
+          "code": 100,
+          "main": "示",
+          "wiki_attached": "礻",
+          "stroke_group": "五画",
+          "raw": "示（礻）"
+        },
+        {
+          "code": 101,
+          "main": "甘",
+          "wiki_attached": "",
+          "stroke_group": "五画",
+          "raw": "甘"
+        },
+        {
+          "code": 102,
+          "main": "石",
+          "wiki_attached": "",
+          "stroke_group": "五画",
+          "raw": "石"
+        },
+        {
+          "code": 103,
+          "main": "龙",
+          "wiki_attached": "龍",
+          "stroke_group": "五画",
+          "raw": "龙（龍）"
+        },
+        {
+          "code": 104,
+          "main": "业",
+          "wiki_attached": "",
+          "stroke_group": "五画",
+          "raw": "业"
+        },
+        {
+          "code": 105,
+          "main": "目",
+          "wiki_attached": "",
+          "stroke_group": "五画",
+          "raw": "目"
+        },
+        {
+          "code": 106,
+          "main": "田",
+          "wiki_attached": "",
+          "stroke_group": "五画",
+          "raw": "田"
+        },
+        {
+          "code": 107,
+          "main": "罒",
+          "wiki_attached": "",
+          "stroke_group": "五画",
+          "raw": "罒"
+        },
+        {
+          "code": 108,
+          "main": "皿",
+          "wiki_attached": "",
+          "stroke_group": "五画",
+          "raw": "皿"
+        },
+        {
+          "code": 109,
+          "main": "生",
+          "wiki_attached": "",
+          "stroke_group": "五画",
+          "raw": "生"
+        },
+        {
+          "code": 110,
+          "main": "矢",
+          "wiki_attached": "",
+          "stroke_group": "五画",
+          "raw": "矢"
+        },
+        {
+          "code": 111,
+          "main": "禾",
+          "wiki_attached": "",
+          "stroke_group": "五画",
+          "raw": "禾"
+        },
+        {
+          "code": 112,
+          "main": "白",
+          "wiki_attached": "",
+          "stroke_group": "五画",
+          "raw": "白"
+        },
+        {
+          "code": 113,
+          "main": "瓜",
+          "wiki_attached": "",
+          "stroke_group": "五画",
+          "raw": "瓜"
+        },
+        {
+          "code": 114,
+          "main": "鸟",
+          "wiki_attached": "鳥",
+          "stroke_group": "五画",
+          "raw": "鸟（鳥）"
+        },
+        {
+          "code": 115,
+          "main": "疒",
+          "wiki_attached": "",
+          "stroke_group": "五画",
+          "raw": "疒"
+        },
+        {
+          "code": 116,
+          "main": "立",
+          "wiki_attached": "",
+          "stroke_group": "五画",
+          "raw": "立"
+        },
+        {
+          "code": 117,
+          "main": "穴",
+          "wiki_attached": "",
+          "stroke_group": "五画",
+          "raw": "穴"
+        },
+        {
+          "code": 118,
+          "main": "疋",
+          "wiki_attached": "𤴔",
+          "stroke_group": "五画",
+          "raw": "疋（𤴔）"
+        },
+        {
+          "code": 119,
+          "main": "皮",
+          "wiki_attached": "",
+          "stroke_group": "五画",
+          "raw": "皮"
+        },
+        {
+          "code": 120,
+          "main": "癶",
+          "wiki_attached": "",
+          "stroke_group": "五画",
+          "raw": "癶"
+        },
+        {
+          "code": 121,
+          "main": "矛",
+          "wiki_attached": "",
+          "stroke_group": "五画",
+          "raw": "矛"
+        }
+      ]
+    },
+    {
+      "stroke_group": "六画",
+      "items": [
+        {
+          "code": 122,
+          "main": "耒",
+          "wiki_attached": "",
+          "stroke_group": "六画",
+          "raw": "耒"
+        },
+        {
+          "code": 123,
+          "main": "老",
+          "wiki_attached": "耂",
+          "stroke_group": "六画",
+          "raw": "老（耂）"
+        },
+        {
+          "code": 124,
+          "main": "耳",
+          "wiki_attached": "",
+          "stroke_group": "六画",
+          "raw": "耳"
+        },
+        {
+          "code": 125,
+          "main": "臣",
+          "wiki_attached": "",
+          "stroke_group": "六画",
+          "raw": "臣"
+        },
+        {
+          "code": 126,
+          "main": "覀",
+          "wiki_attached": "西",
+          "stroke_group": "六画",
+          "raw": "覀（西）"
+        },
+        {
+          "code": 127,
+          "main": "而",
+          "wiki_attached": "",
+          "stroke_group": "六画",
+          "raw": "而"
+        },
+        {
+          "code": 128,
+          "main": "页",
+          "wiki_attached": "頁",
+          "stroke_group": "六画",
+          "raw": "页（頁）"
+        },
+        {
+          "code": 129,
+          "main": "至",
+          "wiki_attached": "",
+          "stroke_group": "六画",
+          "raw": "至"
+        },
+        {
+          "code": 130,
+          "main": "虍",
+          "wiki_attached": "虎",
+          "stroke_group": "六画",
+          "raw": "虍（虎）"
+        },
+        {
+          "code": 131,
+          "main": "虫",
+          "wiki_attached": "",
+          "stroke_group": "六画",
+          "raw": "虫"
+        },
+        {
+          "code": 132,
+          "main": "肉",
+          "wiki_attached": "",
+          "stroke_group": "六画",
+          "raw": "肉"
+        },
+        {
+          "code": 133,
+          "main": "缶",
+          "wiki_attached": "",
+          "stroke_group": "六画",
+          "raw": "缶"
+        },
+        {
+          "code": 134,
+          "main": "舌",
+          "wiki_attached": "",
+          "stroke_group": "六画",
+          "raw": "舌"
+        },
+        {
+          "code": 135,
+          "main": "竹",
+          "wiki_attached": "𥫗",
+          "stroke_group": "六画",
+          "raw": "竹（𥫗）"
+        },
+        {
+          "code": 136,
+          "main": "臼",
+          "wiki_attached": "𦥑",
+          "stroke_group": "六画",
+          "raw": "臼（𦥑）"
+        },
+        {
+          "code": 137,
+          "main": "自",
+          "wiki_attached": "",
+          "stroke_group": "六画",
+          "raw": "自"
+        },
+        {
+          "code": 138,
+          "main": "血",
+          "wiki_attached": "",
+          "stroke_group": "六画",
+          "raw": "血"
+        },
+        {
+          "code": 139,
+          "main": "舟",
+          "wiki_attached": "",
+          "stroke_group": "六画",
+          "raw": "舟"
+        },
+        {
+          "code": 140,
+          "main": "色",
+          "wiki_attached": "",
+          "stroke_group": "六画",
+          "raw": "色"
+        },
+        {
+          "code": 141,
+          "main": "齐",
+          "wiki_attached": "齊",
+          "stroke_group": "六画",
+          "raw": "齐（齊）"
+        },
+        {
+          "code": 142,
+          "main": "衣",
+          "wiki_attached": "衤",
+          "stroke_group": "六画",
+          "raw": "衣（衤）"
+        },
+        {
+          "code": 143,
+          "main": "羊",
+          "wiki_attached": "⺶𦍌",
+          "stroke_group": "六画",
+          "raw": "羊（⺶𦍌）"
+        },
+        {
+          "code": 144,
+          "main": "米",
+          "wiki_attached": "",
+          "stroke_group": "六画",
+          "raw": "米"
+        },
+        {
+          "code": 145,
+          "main": "聿",
+          "wiki_attached": "肀⺻",
+          "stroke_group": "六画",
+          "raw": "聿（肀⺻）"
+        },
+        {
+          "code": 146,
+          "main": "艮",
+          "wiki_attached": "",
+          "stroke_group": "六画",
+          "raw": "艮"
+        },
+        {
+          "code": 147,
+          "main": "羽",
+          "wiki_attached": "",
+          "stroke_group": "六画",
+          "raw": "羽"
+        },
+        {
+          "code": 148,
+          "main": "糸",
+          "wiki_attached": "纟糹",
+          "stroke_group": "六画",
+          "raw": "糸（纟糹）"
+        }
+      ]
+    },
+    {
+      "stroke_group": "七画",
+      "items": [
+        {
+          "code": 149,
+          "main": "麦",
+          "wiki_attached": "麥",
+          "stroke_group": "七画",
+          "raw": "麦（麥）"
+        },
+        {
+          "code": 150,
+          "main": "走",
+          "wiki_attached": "",
+          "stroke_group": "七画",
+          "raw": "走"
+        },
+        {
+          "code": 151,
+          "main": "赤",
+          "wiki_attached": "",
+          "stroke_group": "七画",
+          "raw": "赤"
+        },
+        {
+          "code": 152,
+          "main": "豆",
+          "wiki_attached": "",
+          "stroke_group": "七画",
+          "raw": "豆"
+        },
+        {
+          "code": 153,
+          "main": "酉",
+          "wiki_attached": "",
+          "stroke_group": "七画",
+          "raw": "酉"
+        },
+        {
+          "code": 154,
+          "main": "辰",
+          "wiki_attached": "",
+          "stroke_group": "七画",
+          "raw": "辰"
+        },
+        {
+          "code": 155,
+          "main": "豕",
+          "wiki_attached": "",
+          "stroke_group": "七画",
+          "raw": "豕"
+        },
+        {
+          "code": 156,
+          "main": "卤",
+          "wiki_attached": "鹵",
+          "stroke_group": "七画",
+          "raw": "卤（鹵）"
+        },
+        {
+          "code": 157,
+          "main": "里",
+          "wiki_attached": "",
+          "stroke_group": "七画",
+          "raw": "里"
+        },
+        {
+          "code": 158,
+          "main": "足",
+          "wiki_attached": "𧾷",
+          "stroke_group": "七画",
+          "raw": "足（𧾷）"
+        },
+        {
+          "code": 159,
+          "main": "邑",
+          "wiki_attached": "⻏，在右",
+          "stroke_group": "七画",
+          "raw": "邑（⻏，在右）"
+        },
+        {
+          "code": 160,
+          "main": "身",
+          "wiki_attached": "",
+          "stroke_group": "七画",
+          "raw": "身"
+        },
+        {
+          "code": 161,
+          "main": "釆",
+          "wiki_attached": "",
+          "stroke_group": "七画",
+          "raw": "釆"
+        },
+        {
+          "code": 162,
+          "main": "谷",
+          "wiki_attached": "",
+          "stroke_group": "七画",
+          "raw": "谷"
+        },
+        {
+          "code": 163,
+          "main": "豸",
+          "wiki_attached": "",
+          "stroke_group": "七画",
+          "raw": "豸"
+        },
+        {
+          "code": 164,
+          "main": "龟",
+          "wiki_attached": "龜",
+          "stroke_group": "七画",
+          "raw": "龟（龜）"
+        },
+        {
+          "code": 165,
+          "main": "角",
+          "wiki_attached": "",
+          "stroke_group": "七画",
+          "raw": "角"
+        },
+        {
+          "code": 166,
+          "main": "言",
+          "wiki_attached": "讠",
+          "stroke_group": "七画",
+          "raw": "言（讠）"
+        },
+        {
+          "code": 167,
+          "main": "辛",
+          "wiki_attached": "",
+          "stroke_group": "七画",
+          "raw": "辛"
+        }
+      ]
+    },
+    {
+      "stroke_group": "八画",
+      "items": [
+        {
+          "code": 168,
+          "main": "青",
+          "wiki_attached": "",
+          "stroke_group": "八画",
+          "raw": "青"
+        },
+        {
+          "code": 169,
+          "main": "龺",
+          "wiki_attached": "",
+          "stroke_group": "八画",
+          "raw": "龺"
+        },
+        {
+          "code": 170,
+          "main": "雨",
+          "wiki_attached": "⻗",
+          "stroke_group": "八画",
+          "raw": "雨（⻗）"
+        },
+        {
+          "code": 171,
+          "main": "非",
+          "wiki_attached": "",
+          "stroke_group": "八画",
+          "raw": "非"
+        },
+        {
+          "code": 172,
+          "main": "齿",
+          "wiki_attached": "齒",
+          "stroke_group": "八画",
+          "raw": "齿（齒）"
+        },
+        {
+          "code": 173,
+          "main": "黾",
+          "wiki_attached": "黽",
+          "stroke_group": "八画",
+          "raw": "黾（黽）"
+        },
+        {
+          "code": 174,
+          "main": "隹",
+          "wiki_attached": "",
+          "stroke_group": "八画",
+          "raw": "隹"
+        },
+        {
+          "code": 175,
+          "main": "阜",
+          "wiki_attached": "⻖，在左",
+          "stroke_group": "八画",
+          "raw": "阜（⻖，在左）"
+        },
+        {
+          "code": 176,
+          "main": "金",
+          "wiki_attached": "钅",
+          "stroke_group": "八画",
+          "raw": "金（钅）"
+        },
+        {
+          "code": 177,
+          "main": "鱼",
+          "wiki_attached": "魚",
+          "stroke_group": "八画",
+          "raw": "鱼（魚）"
+        },
+        {
+          "code": 178,
+          "main": "隶",
+          "wiki_attached": "",
+          "stroke_group": "八画",
+          "raw": "隶"
+        }
+      ]
+    },
+    {
+      "stroke_group": "九画",
+      "items": [
+        {
+          "code": 179,
+          "main": "革",
+          "wiki_attached": "",
+          "stroke_group": "九画",
+          "raw": "革"
+        },
+        {
+          "code": 180,
+          "main": "面",
+          "wiki_attached": "",
+          "stroke_group": "九画",
+          "raw": "面"
+        },
+        {
+          "code": 181,
+          "main": "韭",
+          "wiki_attached": "",
+          "stroke_group": "九画",
+          "raw": "韭"
+        },
+        {
+          "code": 182,
+          "main": "骨",
+          "wiki_attached": "",
+          "stroke_group": "九画",
+          "raw": "骨"
+        },
+        {
+          "code": 183,
+          "main": "香",
+          "wiki_attached": "",
+          "stroke_group": "九画",
+          "raw": "香"
+        },
+        {
+          "code": 184,
+          "main": "鬼",
+          "wiki_attached": "",
+          "stroke_group": "九画",
+          "raw": "鬼"
+        },
+        {
+          "code": 185,
+          "main": "食",
+          "wiki_attached": "饣飠",
+          "stroke_group": "九画",
+          "raw": "食（饣飠）"
+        },
+        {
+          "code": 186,
+          "main": "音",
+          "wiki_attached": "",
+          "stroke_group": "九画",
+          "raw": "音"
+        },
+        {
+          "code": 187,
+          "main": "首",
+          "wiki_attached": "",
+          "stroke_group": "九画",
+          "raw": "首"
+        }
+      ]
+    },
+    {
+      "stroke_group": "十画",
+      "items": [
+        {
+          "code": 188,
+          "main": "髟",
+          "wiki_attached": "",
+          "stroke_group": "十画",
+          "raw": "髟"
+        },
+        {
+          "code": 189,
+          "main": "鬲",
+          "wiki_attached": "",
+          "stroke_group": "十画",
+          "raw": "鬲"
+        },
+        {
+          "code": 190,
+          "main": "鬥",
+          "wiki_attached": "",
+          "stroke_group": "十画",
+          "raw": "鬥"
+        },
+        {
+          "code": 191,
+          "main": "高",
+          "wiki_attached": "",
+          "stroke_group": "十画",
+          "raw": "高"
+        }
+      ]
+    },
+    {
+      "stroke_group": "十一画",
+      "items": [
+        {
+          "code": 192,
+          "main": "黄",
+          "wiki_attached": "",
+          "stroke_group": "十一画",
+          "raw": "黄"
+        },
+        {
+          "code": 193,
+          "main": "麻",
+          "wiki_attached": "",
+          "stroke_group": "十一画",
+          "raw": "麻"
+        },
+        {
+          "code": 194,
+          "main": "鹿",
+          "wiki_attached": "",
+          "stroke_group": "十一画",
+          "raw": "鹿"
+        }
+      ]
+    },
+    {
+      "stroke_group": "十二画",
+      "items": [
+        {
+          "code": 195,
+          "main": "鼎",
+          "wiki_attached": "",
+          "stroke_group": "十二画",
+          "raw": "鼎"
+        },
+        {
+          "code": 196,
+          "main": "黑",
+          "wiki_attached": "",
+          "stroke_group": "十二画",
+          "raw": "黑"
+        },
+        {
+          "code": 197,
+          "main": "黍",
+          "wiki_attached": "",
+          "stroke_group": "十二画",
+          "raw": "黍"
+        }
+      ]
+    },
+    {
+      "stroke_group": "十三画",
+      "items": [
+        {
+          "code": 198,
+          "main": "鼓",
+          "wiki_attached": "",
+          "stroke_group": "十三画",
+          "raw": "鼓"
+        },
+        {
+          "code": 199,
+          "main": "鼠",
+          "wiki_attached": "",
+          "stroke_group": "十三画",
+          "raw": "鼠"
+        }
+      ]
+    },
+    {
+      "stroke_group": "十四画",
+      "items": [
+        {
+          "code": 200,
+          "main": "鼻",
+          "wiki_attached": "",
+          "stroke_group": "十四画",
+          "raw": "鼻"
+        }
+      ]
+    },
+    {
+      "stroke_group": "十七画",
+      "items": [
+        {
+          "code": 201,
+          "main": "龠",
+          "wiki_attached": "",
+          "stroke_group": "十七画",
+          "raw": "龠"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "code": 1,
+      "main": "一",
+      "wiki_attached": "",
+      "stroke_group": "一画",
+      "raw": "一"
+    },
+    {
+      "code": 2,
+      "main": "丨",
+      "wiki_attached": "",
+      "stroke_group": "一画",
+      "raw": "丨"
+    },
+    {
+      "code": 3,
+      "main": "丿",
+      "wiki_attached": "",
+      "stroke_group": "一画",
+      "raw": "丿"
+    },
+    {
+      "code": 4,
+      "main": "丶",
+      "wiki_attached": "",
+      "stroke_group": "一画",
+      "raw": "丶"
+    },
+    {
+      "code": 5,
+      "main": "乛",
+      "wiki_attached": "亅乚乙",
+      "stroke_group": "一画",
+      "raw": "乛（亅乚乙）"
+    },
+    {
+      "code": 6,
+      "main": "十",
+      "wiki_attached": "",
+      "stroke_group": "二画",
+      "raw": "十"
+    },
+    {
+      "code": 7,
+      "main": "厂",
+      "wiki_attached": "𠂆",
+      "stroke_group": "二画",
+      "raw": "厂（𠂆）"
+    },
+    {
+      "code": 8,
+      "main": "匚",
+      "wiki_attached": "",
+      "stroke_group": "二画",
+      "raw": "匚"
+    },
+    {
+      "code": 9,
+      "main": "卜",
+      "wiki_attached": "⺊",
+      "stroke_group": "二画",
+      "raw": "卜（⺊）"
+    },
+    {
+      "code": 10,
+      "main": "冂",
+      "wiki_attached": "⺆",
+      "stroke_group": "二画",
+      "raw": "冂（⺆）"
+    },
+    {
+      "code": 11,
+      "main": "八",
+      "wiki_attached": "丷",
+      "stroke_group": "二画",
+      "raw": "八（丷）"
+    },
+    {
+      "code": 12,
+      "main": "人",
+      "wiki_attached": "亻入",
+      "stroke_group": "二画",
+      "raw": "人（亻入）"
+    },
+    {
+      "code": 13,
+      "main": "勹",
+      "wiki_attached": "",
+      "stroke_group": "二画",
+      "raw": "勹"
+    },
+    {
+      "code": 14,
+      "main": "儿",
+      "wiki_attached": "",
+      "stroke_group": "二画",
+      "raw": "儿"
+    },
+    {
+      "code": 15,
+      "main": "匕",
+      "wiki_attached": "",
+      "stroke_group": "二画",
+      "raw": "匕"
+    },
+    {
+      "code": 16,
+      "main": "几",
+      "wiki_attached": "𠘨",
+      "stroke_group": "二画",
+      "raw": "几（𠘨）"
+    },
+    {
+      "code": 17,
+      "main": "亠",
+      "wiki_attached": "",
+      "stroke_group": "二画",
+      "raw": "亠"
+    },
+    {
+      "code": 18,
+      "main": "冫",
+      "wiki_attached": "",
+      "stroke_group": "二画",
+      "raw": "冫"
+    },
+    {
+      "code": 19,
+      "main": "冖",
+      "wiki_attached": "",
+      "stroke_group": "二画",
+      "raw": "冖"
+    },
+    {
+      "code": 20,
+      "main": "凵",
+      "wiki_attached": "",
+      "stroke_group": "二画",
+      "raw": "凵"
+    },
+    {
+      "code": 21,
+      "main": "卩",
+      "wiki_attached": "㔾",
+      "stroke_group": "二画",
+      "raw": "卩（㔾）"
+    },
+    {
+      "code": 22,
+      "main": "刀",
+      "wiki_attached": "刂⺈",
+      "stroke_group": "二画",
+      "raw": "刀（刂⺈）"
+    },
+    {
+      "code": 23,
+      "main": "力",
+      "wiki_attached": "",
+      "stroke_group": "二画",
+      "raw": "力"
+    },
+    {
+      "code": 24,
+      "main": "又",
+      "wiki_attached": "",
+      "stroke_group": "二画",
+      "raw": "又"
+    },
+    {
+      "code": 25,
+      "main": "厶",
+      "wiki_attached": "",
+      "stroke_group": "二画",
+      "raw": "厶"
+    },
+    {
+      "code": 26,
+      "main": "廴",
+      "wiki_attached": "",
+      "stroke_group": "二画",
+      "raw": "廴"
+    },
+    {
+      "code": 27,
+      "main": "干",
+      "wiki_attached": "",
+      "stroke_group": "三画",
+      "raw": "干"
+    },
+    {
+      "code": 28,
+      "main": "工",
+      "wiki_attached": "",
+      "stroke_group": "三画",
+      "raw": "工"
+    },
+    {
+      "code": 29,
+      "main": "土",
+      "wiki_attached": "士",
+      "stroke_group": "三画",
+      "raw": "土（士）"
+    },
+    {
+      "code": 30,
+      "main": "艹",
+      "wiki_attached": "艸",
+      "stroke_group": "三画",
+      "raw": "艹（艸）"
+    },
+    {
+      "code": 31,
+      "main": "寸",
+      "wiki_attached": "",
+      "stroke_group": "三画",
+      "raw": "寸"
+    },
+    {
+      "code": 32,
+      "main": "廾",
+      "wiki_attached": "",
+      "stroke_group": "三画",
+      "raw": "廾"
+    },
+    {
+      "code": 33,
+      "main": "大",
+      "wiki_attached": "",
+      "stroke_group": "三画",
+      "raw": "大"
+    },
+    {
+      "code": 34,
+      "main": "尢",
+      "wiki_attached": "兀尣",
+      "stroke_group": "三画",
+      "raw": "尢（兀尣）"
+    },
+    {
+      "code": 35,
+      "main": "弋",
+      "wiki_attached": "",
+      "stroke_group": "三画",
+      "raw": "弋"
+    },
+    {
+      "code": 36,
+      "main": "小",
+      "wiki_attached": "⺌",
+      "stroke_group": "三画",
+      "raw": "小（⺌）"
+    },
+    {
+      "code": 37,
+      "main": "口",
+      "wiki_attached": "",
+      "stroke_group": "三画",
+      "raw": "口"
+    },
+    {
+      "code": 38,
+      "main": "囗",
+      "wiki_attached": "",
+      "stroke_group": "三画",
+      "raw": "囗"
+    },
+    {
+      "code": 39,
+      "main": "山",
+      "wiki_attached": "",
+      "stroke_group": "三画",
+      "raw": "山"
+    },
+    {
+      "code": 40,
+      "main": "巾",
+      "wiki_attached": "",
+      "stroke_group": "三画",
+      "raw": "巾"
+    },
+    {
+      "code": 41,
+      "main": "彳",
+      "wiki_attached": "",
+      "stroke_group": "三画",
+      "raw": "彳"
+    },
+    {
+      "code": 42,
+      "main": "彡",
+      "wiki_attached": "",
+      "stroke_group": "三画",
+      "raw": "彡"
+    },
+    {
+      "code": 43,
+      "main": "夕",
+      "wiki_attached": "",
+      "stroke_group": "三画",
+      "raw": "夕"
+    },
+    {
+      "code": 44,
+      "main": "夂",
+      "wiki_attached": "",
+      "stroke_group": "三画",
+      "raw": "夂"
+    },
+    {
+      "code": 45,
+      "main": "丬",
+      "wiki_attached": "爿",
+      "stroke_group": "三画",
+      "raw": "丬（爿）"
+    },
+    {
+      "code": 46,
+      "main": "广",
+      "wiki_attached": "",
+      "stroke_group": "三画",
+      "raw": "广"
+    },
+    {
+      "code": 47,
+      "main": "门",
+      "wiki_attached": "門",
+      "stroke_group": "三画",
+      "raw": "门（門）"
+    },
+    {
+      "code": 48,
+      "main": "宀",
+      "wiki_attached": "",
+      "stroke_group": "三画",
+      "raw": "宀"
+    },
+    {
+      "code": 49,
+      "main": "辶",
+      "wiki_attached": "辵",
+      "stroke_group": "三画",
+      "raw": "辶（辵）"
+    },
+    {
+      "code": 50,
+      "main": "彐",
+      "wiki_attached": "⺕彑",
+      "stroke_group": "三画",
+      "raw": "彐（⺕彑）"
+    },
+    {
+      "code": 51,
+      "main": "尸",
+      "wiki_attached": "",
+      "stroke_group": "三画",
+      "raw": "尸"
+    },
+    {
+      "code": 52,
+      "main": "己",
+      "wiki_attached": "已巳",
+      "stroke_group": "三画",
+      "raw": "己（已巳）"
+    },
+    {
+      "code": 53,
+      "main": "弓",
+      "wiki_attached": "",
+      "stroke_group": "三画",
+      "raw": "弓"
+    },
+    {
+      "code": 54,
+      "main": "子",
+      "wiki_attached": "",
+      "stroke_group": "三画",
+      "raw": "子"
+    },
+    {
+      "code": 55,
+      "main": "屮",
+      "wiki_attached": "",
+      "stroke_group": "三画",
+      "raw": "屮"
+    },
+    {
+      "code": 56,
+      "main": "女",
+      "wiki_attached": "",
+      "stroke_group": "三画",
+      "raw": "女"
+    },
+    {
+      "code": 57,
+      "main": "飞",
+      "wiki_attached": "飛",
+      "stroke_group": "三画",
+      "raw": "飞（飛）"
+    },
+    {
+      "code": 58,
+      "main": "马",
+      "wiki_attached": "馬",
+      "stroke_group": "三画",
+      "raw": "马（馬）"
+    },
+    {
+      "code": 59,
+      "main": "幺",
+      "wiki_attached": "",
+      "stroke_group": "三画",
+      "raw": "幺"
+    },
+    {
+      "code": 60,
+      "main": "巛",
+      "wiki_attached": "",
+      "stroke_group": "三画",
+      "raw": "巛"
+    },
+    {
+      "code": 61,
+      "main": "王",
+      "wiki_attached": "𤣩玉",
+      "stroke_group": "四画",
+      "raw": "王（𤣩玉）"
+    },
+    {
+      "code": 62,
+      "main": "无",
+      "wiki_attached": "旡",
+      "stroke_group": "四画",
+      "raw": "无（旡）"
+    },
+    {
+      "code": 63,
+      "main": "韦",
+      "wiki_attached": "韋",
+      "stroke_group": "四画",
+      "raw": "韦（韋）"
+    },
+    {
+      "code": 64,
+      "main": "木",
+      "wiki_attached": "朩",
+      "stroke_group": "四画",
+      "raw": "木（朩）"
+    },
+    {
+      "code": 65,
+      "main": "支",
+      "wiki_attached": "",
+      "stroke_group": "四画",
+      "raw": "支"
+    },
+    {
+      "code": 66,
+      "main": "犬",
+      "wiki_attached": "犭",
+      "stroke_group": "四画",
+      "raw": "犬（犭）"
+    },
+    {
+      "code": 67,
+      "main": "歹",
+      "wiki_attached": "歺",
+      "stroke_group": "四画",
+      "raw": "歹（歺）"
+    },
+    {
+      "code": 68,
+      "main": "车",
+      "wiki_attached": "車",
+      "stroke_group": "四画",
+      "raw": "车（車）"
+    },
+    {
+      "code": 69,
+      "main": "牙",
+      "wiki_attached": "",
+      "stroke_group": "四画",
+      "raw": "牙"
+    },
+    {
+      "code": 70,
+      "main": "戈",
+      "wiki_attached": "",
+      "stroke_group": "四画",
+      "raw": "戈"
+    },
+    {
+      "code": 71,
+      "main": "比",
+      "wiki_attached": "",
+      "stroke_group": "四画",
+      "raw": "比"
+    },
+    {
+      "code": 72,
+      "main": "瓦",
+      "wiki_attached": "",
+      "stroke_group": "四画",
+      "raw": "瓦"
+    },
+    {
+      "code": 73,
+      "main": "止",
+      "wiki_attached": "",
+      "stroke_group": "四画",
+      "raw": "止"
+    },
+    {
+      "code": 74,
+      "main": "攴",
+      "wiki_attached": "攵",
+      "stroke_group": "四画",
+      "raw": "攴（攵）"
+    },
+    {
+      "code": 75,
+      "main": "日",
+      "wiki_attached": "曰⺜",
+      "stroke_group": "四画",
+      "raw": "日（曰⺜）"
+    },
+    {
+      "code": 76,
+      "main": "贝",
+      "wiki_attached": "貝",
+      "stroke_group": "四画",
+      "raw": "贝（貝）"
+    },
+    {
+      "code": 77,
+      "main": "水",
+      "wiki_attached": "氵氺",
+      "stroke_group": "四画",
+      "raw": "水（氵氺）"
+    },
+    {
+      "code": 78,
+      "main": "见",
+      "wiki_attached": "見",
+      "stroke_group": "四画",
+      "raw": "见（見）"
+    },
+    {
+      "code": 79,
+      "main": "牛",
+      "wiki_attached": "牜",
+      "stroke_group": "四画",
+      "raw": "牛（牜）"
+    },
+    {
+      "code": 80,
+      "main": "手",
+      "wiki_attached": "扌龵",
+      "stroke_group": "四画",
+      "raw": "手（扌龵）"
+    },
+    {
+      "code": 81,
+      "main": "气",
+      "wiki_attached": "",
+      "stroke_group": "四画",
+      "raw": "气"
+    },
+    {
+      "code": 82,
+      "main": "毛",
+      "wiki_attached": "",
+      "stroke_group": "四画",
+      "raw": "毛"
+    },
+    {
+      "code": 83,
+      "main": "长",
+      "wiki_attached": "镸長",
+      "stroke_group": "四画",
+      "raw": "长（镸長）"
+    },
+    {
+      "code": 84,
+      "main": "片",
+      "wiki_attached": "",
+      "stroke_group": "四画",
+      "raw": "片"
+    },
+    {
+      "code": 85,
+      "main": "斤",
+      "wiki_attached": "",
+      "stroke_group": "四画",
+      "raw": "斤"
+    },
+    {
+      "code": 86,
+      "main": "爪",
+      "wiki_attached": "爫",
+      "stroke_group": "四画",
+      "raw": "爪（爫）"
+    },
+    {
+      "code": 87,
+      "main": "父",
+      "wiki_attached": "",
+      "stroke_group": "四画",
+      "raw": "父"
+    },
+    {
+      "code": 88,
+      "main": "月",
+      "wiki_attached": "⺝",
+      "stroke_group": "四画",
+      "raw": "月（⺝）"
+    },
+    {
+      "code": 89,
+      "main": "氏",
+      "wiki_attached": "",
+      "stroke_group": "四画",
+      "raw": "氏"
+    },
+    {
+      "code": 90,
+      "main": "欠",
+      "wiki_attached": "",
+      "stroke_group": "四画",
+      "raw": "欠"
+    },
+    {
+      "code": 91,
+      "main": "风",
+      "wiki_attached": "風",
+      "stroke_group": "四画",
+      "raw": "风（風）"
+    },
+    {
+      "code": 92,
+      "main": "殳",
+      "wiki_attached": "",
+      "stroke_group": "四画",
+      "raw": "殳"
+    },
+    {
+      "code": 93,
+      "main": "文",
+      "wiki_attached": "",
+      "stroke_group": "四画",
+      "raw": "文"
+    },
+    {
+      "code": 94,
+      "main": "方",
+      "wiki_attached": "",
+      "stroke_group": "四画",
+      "raw": "方"
+    },
+    {
+      "code": 95,
+      "main": "火",
+      "wiki_attached": "灬",
+      "stroke_group": "四画",
+      "raw": "火（灬）"
+    },
+    {
+      "code": 96,
+      "main": "斗",
+      "wiki_attached": "",
+      "stroke_group": "四画",
+      "raw": "斗"
+    },
+    {
+      "code": 97,
+      "main": "户",
+      "wiki_attached": "",
+      "stroke_group": "四画",
+      "raw": "户"
+    },
+    {
+      "code": 98,
+      "main": "心",
+      "wiki_attached": "忄⺗",
+      "stroke_group": "四画",
+      "raw": "心（忄⺗）"
+    },
+    {
+      "code": 99,
+      "main": "毋",
+      "wiki_attached": "母",
+      "stroke_group": "四画",
+      "raw": "毋（母）"
+    },
+    {
+      "code": 100,
+      "main": "示",
+      "wiki_attached": "礻",
+      "stroke_group": "五画",
+      "raw": "示（礻）"
+    },
+    {
+      "code": 101,
+      "main": "甘",
+      "wiki_attached": "",
+      "stroke_group": "五画",
+      "raw": "甘"
+    },
+    {
+      "code": 102,
+      "main": "石",
+      "wiki_attached": "",
+      "stroke_group": "五画",
+      "raw": "石"
+    },
+    {
+      "code": 103,
+      "main": "龙",
+      "wiki_attached": "龍",
+      "stroke_group": "五画",
+      "raw": "龙（龍）"
+    },
+    {
+      "code": 104,
+      "main": "业",
+      "wiki_attached": "",
+      "stroke_group": "五画",
+      "raw": "业"
+    },
+    {
+      "code": 105,
+      "main": "目",
+      "wiki_attached": "",
+      "stroke_group": "五画",
+      "raw": "目"
+    },
+    {
+      "code": 106,
+      "main": "田",
+      "wiki_attached": "",
+      "stroke_group": "五画",
+      "raw": "田"
+    },
+    {
+      "code": 107,
+      "main": "罒",
+      "wiki_attached": "",
+      "stroke_group": "五画",
+      "raw": "罒"
+    },
+    {
+      "code": 108,
+      "main": "皿",
+      "wiki_attached": "",
+      "stroke_group": "五画",
+      "raw": "皿"
+    },
+    {
+      "code": 109,
+      "main": "生",
+      "wiki_attached": "",
+      "stroke_group": "五画",
+      "raw": "生"
+    },
+    {
+      "code": 110,
+      "main": "矢",
+      "wiki_attached": "",
+      "stroke_group": "五画",
+      "raw": "矢"
+    },
+    {
+      "code": 111,
+      "main": "禾",
+      "wiki_attached": "",
+      "stroke_group": "五画",
+      "raw": "禾"
+    },
+    {
+      "code": 112,
+      "main": "白",
+      "wiki_attached": "",
+      "stroke_group": "五画",
+      "raw": "白"
+    },
+    {
+      "code": 113,
+      "main": "瓜",
+      "wiki_attached": "",
+      "stroke_group": "五画",
+      "raw": "瓜"
+    },
+    {
+      "code": 114,
+      "main": "鸟",
+      "wiki_attached": "鳥",
+      "stroke_group": "五画",
+      "raw": "鸟（鳥）"
+    },
+    {
+      "code": 115,
+      "main": "疒",
+      "wiki_attached": "",
+      "stroke_group": "五画",
+      "raw": "疒"
+    },
+    {
+      "code": 116,
+      "main": "立",
+      "wiki_attached": "",
+      "stroke_group": "五画",
+      "raw": "立"
+    },
+    {
+      "code": 117,
+      "main": "穴",
+      "wiki_attached": "",
+      "stroke_group": "五画",
+      "raw": "穴"
+    },
+    {
+      "code": 118,
+      "main": "疋",
+      "wiki_attached": "𤴔",
+      "stroke_group": "五画",
+      "raw": "疋（𤴔）"
+    },
+    {
+      "code": 119,
+      "main": "皮",
+      "wiki_attached": "",
+      "stroke_group": "五画",
+      "raw": "皮"
+    },
+    {
+      "code": 120,
+      "main": "癶",
+      "wiki_attached": "",
+      "stroke_group": "五画",
+      "raw": "癶"
+    },
+    {
+      "code": 121,
+      "main": "矛",
+      "wiki_attached": "",
+      "stroke_group": "五画",
+      "raw": "矛"
+    },
+    {
+      "code": 122,
+      "main": "耒",
+      "wiki_attached": "",
+      "stroke_group": "六画",
+      "raw": "耒"
+    },
+    {
+      "code": 123,
+      "main": "老",
+      "wiki_attached": "耂",
+      "stroke_group": "六画",
+      "raw": "老（耂）"
+    },
+    {
+      "code": 124,
+      "main": "耳",
+      "wiki_attached": "",
+      "stroke_group": "六画",
+      "raw": "耳"
+    },
+    {
+      "code": 125,
+      "main": "臣",
+      "wiki_attached": "",
+      "stroke_group": "六画",
+      "raw": "臣"
+    },
+    {
+      "code": 126,
+      "main": "覀",
+      "wiki_attached": "西",
+      "stroke_group": "六画",
+      "raw": "覀（西）"
+    },
+    {
+      "code": 127,
+      "main": "而",
+      "wiki_attached": "",
+      "stroke_group": "六画",
+      "raw": "而"
+    },
+    {
+      "code": 128,
+      "main": "页",
+      "wiki_attached": "頁",
+      "stroke_group": "六画",
+      "raw": "页（頁）"
+    },
+    {
+      "code": 129,
+      "main": "至",
+      "wiki_attached": "",
+      "stroke_group": "六画",
+      "raw": "至"
+    },
+    {
+      "code": 130,
+      "main": "虍",
+      "wiki_attached": "虎",
+      "stroke_group": "六画",
+      "raw": "虍（虎）"
+    },
+    {
+      "code": 131,
+      "main": "虫",
+      "wiki_attached": "",
+      "stroke_group": "六画",
+      "raw": "虫"
+    },
+    {
+      "code": 132,
+      "main": "肉",
+      "wiki_attached": "",
+      "stroke_group": "六画",
+      "raw": "肉"
+    },
+    {
+      "code": 133,
+      "main": "缶",
+      "wiki_attached": "",
+      "stroke_group": "六画",
+      "raw": "缶"
+    },
+    {
+      "code": 134,
+      "main": "舌",
+      "wiki_attached": "",
+      "stroke_group": "六画",
+      "raw": "舌"
+    },
+    {
+      "code": 135,
+      "main": "竹",
+      "wiki_attached": "𥫗",
+      "stroke_group": "六画",
+      "raw": "竹（𥫗）"
+    },
+    {
+      "code": 136,
+      "main": "臼",
+      "wiki_attached": "𦥑",
+      "stroke_group": "六画",
+      "raw": "臼（𦥑）"
+    },
+    {
+      "code": 137,
+      "main": "自",
+      "wiki_attached": "",
+      "stroke_group": "六画",
+      "raw": "自"
+    },
+    {
+      "code": 138,
+      "main": "血",
+      "wiki_attached": "",
+      "stroke_group": "六画",
+      "raw": "血"
+    },
+    {
+      "code": 139,
+      "main": "舟",
+      "wiki_attached": "",
+      "stroke_group": "六画",
+      "raw": "舟"
+    },
+    {
+      "code": 140,
+      "main": "色",
+      "wiki_attached": "",
+      "stroke_group": "六画",
+      "raw": "色"
+    },
+    {
+      "code": 141,
+      "main": "齐",
+      "wiki_attached": "齊",
+      "stroke_group": "六画",
+      "raw": "齐（齊）"
+    },
+    {
+      "code": 142,
+      "main": "衣",
+      "wiki_attached": "衤",
+      "stroke_group": "六画",
+      "raw": "衣（衤）"
+    },
+    {
+      "code": 143,
+      "main": "羊",
+      "wiki_attached": "⺶𦍌",
+      "stroke_group": "六画",
+      "raw": "羊（⺶𦍌）"
+    },
+    {
+      "code": 144,
+      "main": "米",
+      "wiki_attached": "",
+      "stroke_group": "六画",
+      "raw": "米"
+    },
+    {
+      "code": 145,
+      "main": "聿",
+      "wiki_attached": "肀⺻",
+      "stroke_group": "六画",
+      "raw": "聿（肀⺻）"
+    },
+    {
+      "code": 146,
+      "main": "艮",
+      "wiki_attached": "",
+      "stroke_group": "六画",
+      "raw": "艮"
+    },
+    {
+      "code": 147,
+      "main": "羽",
+      "wiki_attached": "",
+      "stroke_group": "六画",
+      "raw": "羽"
+    },
+    {
+      "code": 148,
+      "main": "糸",
+      "wiki_attached": "纟糹",
+      "stroke_group": "六画",
+      "raw": "糸（纟糹）"
+    },
+    {
+      "code": 149,
+      "main": "麦",
+      "wiki_attached": "麥",
+      "stroke_group": "七画",
+      "raw": "麦（麥）"
+    },
+    {
+      "code": 150,
+      "main": "走",
+      "wiki_attached": "",
+      "stroke_group": "七画",
+      "raw": "走"
+    },
+    {
+      "code": 151,
+      "main": "赤",
+      "wiki_attached": "",
+      "stroke_group": "七画",
+      "raw": "赤"
+    },
+    {
+      "code": 152,
+      "main": "豆",
+      "wiki_attached": "",
+      "stroke_group": "七画",
+      "raw": "豆"
+    },
+    {
+      "code": 153,
+      "main": "酉",
+      "wiki_attached": "",
+      "stroke_group": "七画",
+      "raw": "酉"
+    },
+    {
+      "code": 154,
+      "main": "辰",
+      "wiki_attached": "",
+      "stroke_group": "七画",
+      "raw": "辰"
+    },
+    {
+      "code": 155,
+      "main": "豕",
+      "wiki_attached": "",
+      "stroke_group": "七画",
+      "raw": "豕"
+    },
+    {
+      "code": 156,
+      "main": "卤",
+      "wiki_attached": "鹵",
+      "stroke_group": "七画",
+      "raw": "卤（鹵）"
+    },
+    {
+      "code": 157,
+      "main": "里",
+      "wiki_attached": "",
+      "stroke_group": "七画",
+      "raw": "里"
+    },
+    {
+      "code": 158,
+      "main": "足",
+      "wiki_attached": "𧾷",
+      "stroke_group": "七画",
+      "raw": "足（𧾷）"
+    },
+    {
+      "code": 159,
+      "main": "邑",
+      "wiki_attached": "⻏，在右",
+      "stroke_group": "七画",
+      "raw": "邑（⻏，在右）"
+    },
+    {
+      "code": 160,
+      "main": "身",
+      "wiki_attached": "",
+      "stroke_group": "七画",
+      "raw": "身"
+    },
+    {
+      "code": 161,
+      "main": "釆",
+      "wiki_attached": "",
+      "stroke_group": "七画",
+      "raw": "釆"
+    },
+    {
+      "code": 162,
+      "main": "谷",
+      "wiki_attached": "",
+      "stroke_group": "七画",
+      "raw": "谷"
+    },
+    {
+      "code": 163,
+      "main": "豸",
+      "wiki_attached": "",
+      "stroke_group": "七画",
+      "raw": "豸"
+    },
+    {
+      "code": 164,
+      "main": "龟",
+      "wiki_attached": "龜",
+      "stroke_group": "七画",
+      "raw": "龟（龜）"
+    },
+    {
+      "code": 165,
+      "main": "角",
+      "wiki_attached": "",
+      "stroke_group": "七画",
+      "raw": "角"
+    },
+    {
+      "code": 166,
+      "main": "言",
+      "wiki_attached": "讠",
+      "stroke_group": "七画",
+      "raw": "言（讠）"
+    },
+    {
+      "code": 167,
+      "main": "辛",
+      "wiki_attached": "",
+      "stroke_group": "七画",
+      "raw": "辛"
+    },
+    {
+      "code": 168,
+      "main": "青",
+      "wiki_attached": "",
+      "stroke_group": "八画",
+      "raw": "青"
+    },
+    {
+      "code": 169,
+      "main": "龺",
+      "wiki_attached": "",
+      "stroke_group": "八画",
+      "raw": "龺"
+    },
+    {
+      "code": 170,
+      "main": "雨",
+      "wiki_attached": "⻗",
+      "stroke_group": "八画",
+      "raw": "雨（⻗）"
+    },
+    {
+      "code": 171,
+      "main": "非",
+      "wiki_attached": "",
+      "stroke_group": "八画",
+      "raw": "非"
+    },
+    {
+      "code": 172,
+      "main": "齿",
+      "wiki_attached": "齒",
+      "stroke_group": "八画",
+      "raw": "齿（齒）"
+    },
+    {
+      "code": 173,
+      "main": "黾",
+      "wiki_attached": "黽",
+      "stroke_group": "八画",
+      "raw": "黾（黽）"
+    },
+    {
+      "code": 174,
+      "main": "隹",
+      "wiki_attached": "",
+      "stroke_group": "八画",
+      "raw": "隹"
+    },
+    {
+      "code": 175,
+      "main": "阜",
+      "wiki_attached": "⻖，在左",
+      "stroke_group": "八画",
+      "raw": "阜（⻖，在左）"
+    },
+    {
+      "code": 176,
+      "main": "金",
+      "wiki_attached": "钅",
+      "stroke_group": "八画",
+      "raw": "金（钅）"
+    },
+    {
+      "code": 177,
+      "main": "鱼",
+      "wiki_attached": "魚",
+      "stroke_group": "八画",
+      "raw": "鱼（魚）"
+    },
+    {
+      "code": 178,
+      "main": "隶",
+      "wiki_attached": "",
+      "stroke_group": "八画",
+      "raw": "隶"
+    },
+    {
+      "code": 179,
+      "main": "革",
+      "wiki_attached": "",
+      "stroke_group": "九画",
+      "raw": "革"
+    },
+    {
+      "code": 180,
+      "main": "面",
+      "wiki_attached": "",
+      "stroke_group": "九画",
+      "raw": "面"
+    },
+    {
+      "code": 181,
+      "main": "韭",
+      "wiki_attached": "",
+      "stroke_group": "九画",
+      "raw": "韭"
+    },
+    {
+      "code": 182,
+      "main": "骨",
+      "wiki_attached": "",
+      "stroke_group": "九画",
+      "raw": "骨"
+    },
+    {
+      "code": 183,
+      "main": "香",
+      "wiki_attached": "",
+      "stroke_group": "九画",
+      "raw": "香"
+    },
+    {
+      "code": 184,
+      "main": "鬼",
+      "wiki_attached": "",
+      "stroke_group": "九画",
+      "raw": "鬼"
+    },
+    {
+      "code": 185,
+      "main": "食",
+      "wiki_attached": "饣飠",
+      "stroke_group": "九画",
+      "raw": "食（饣飠）"
+    },
+    {
+      "code": 186,
+      "main": "音",
+      "wiki_attached": "",
+      "stroke_group": "九画",
+      "raw": "音"
+    },
+    {
+      "code": 187,
+      "main": "首",
+      "wiki_attached": "",
+      "stroke_group": "九画",
+      "raw": "首"
+    },
+    {
+      "code": 188,
+      "main": "髟",
+      "wiki_attached": "",
+      "stroke_group": "十画",
+      "raw": "髟"
+    },
+    {
+      "code": 189,
+      "main": "鬲",
+      "wiki_attached": "",
+      "stroke_group": "十画",
+      "raw": "鬲"
+    },
+    {
+      "code": 190,
+      "main": "鬥",
+      "wiki_attached": "",
+      "stroke_group": "十画",
+      "raw": "鬥"
+    },
+    {
+      "code": 191,
+      "main": "高",
+      "wiki_attached": "",
+      "stroke_group": "十画",
+      "raw": "高"
+    },
+    {
+      "code": 192,
+      "main": "黄",
+      "wiki_attached": "",
+      "stroke_group": "十一画",
+      "raw": "黄"
+    },
+    {
+      "code": 193,
+      "main": "麻",
+      "wiki_attached": "",
+      "stroke_group": "十一画",
+      "raw": "麻"
+    },
+    {
+      "code": 194,
+      "main": "鹿",
+      "wiki_attached": "",
+      "stroke_group": "十一画",
+      "raw": "鹿"
+    },
+    {
+      "code": 195,
+      "main": "鼎",
+      "wiki_attached": "",
+      "stroke_group": "十二画",
+      "raw": "鼎"
+    },
+    {
+      "code": 196,
+      "main": "黑",
+      "wiki_attached": "",
+      "stroke_group": "十二画",
+      "raw": "黑"
+    },
+    {
+      "code": 197,
+      "main": "黍",
+      "wiki_attached": "",
+      "stroke_group": "十二画",
+      "raw": "黍"
+    },
+    {
+      "code": 198,
+      "main": "鼓",
+      "wiki_attached": "",
+      "stroke_group": "十三画",
+      "raw": "鼓"
+    },
+    {
+      "code": 199,
+      "main": "鼠",
+      "wiki_attached": "",
+      "stroke_group": "十三画",
+      "raw": "鼠"
+    },
+    {
+      "code": 200,
+      "main": "鼻",
+      "wiki_attached": "",
+      "stroke_group": "十四画",
+      "raw": "鼻"
+    },
+    {
+      "code": 201,
+      "main": "龠",
+      "wiki_attached": "",
+      "stroke_group": "十七画",
+      "raw": "龠"
+    }
+  ]
+}

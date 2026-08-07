@@ -1,0 +1,35 @@
+[
+  {
+    "key": "gf0012_zip",
+    "url": "http://video.moe.gov.cn/yuxinsi/15hanzibushou.zip",
+    "page_url": "https://hudong.moe.gov.cn/jyb_sjzl/ziliao/A19/200901/t20090102_186104.html",
+    "note": "教育部官方附件：GB13000.1字符集汉字部首归部规范.pdf",
+    "sha256": "16841501c437f7c32ba2bf1b3beb09eb674c00dff46c81d058a2ebdfb44cd0dc",
+    "size_bytes": 18752050,
+    "local_path": "C:\\Users\\zairk\\Documents\\Codex\\2026-07-27\\https-github-com-zairkliu-cnbe-32\\repo\\experiments\\2026-08-07_gg0011_pdf\\authoritative_sources\\gf0012_zip.bin",
+    "zip_entries": [
+      {
+        "name": "15hanzibushou.pdf",
+        "size": 22152182,
+        "crc32": "6a0a6677"
+      }
+    ],
+    "pdf_probe": {
+      "magic": "%PDF-1.5",
+      "pdf_size_bytes": 22152182,
+      "page_object_count_estimate": 236,
+      "has_font_or_contents_objects": true
+    }
+  },
+  {
+    "key": "gf0011_2022_announcement",
+    "url": "http://www.gov.cn/xinwen/2022-11/24/content_5728500.htm",
+    "page_url": "http://www.gov.cn/xinwen/2022-11/24/content_5728500.htm",
+    "note": "中国政府网：教育部、国家语委发布《汉字部首表》2022修订公告",
+    "sha256": "c3bd5c60083b8d48ebcf0df3c896d5b38fc0dc1173b58c6bf53d7dd8a87563e7",
+    "size_bytes": 26614,
+    "local_path": "C:\\Users\\zairk\\Documents\\Codex\\2026-07-27\\https-github-com-zairkliu-cnbe-32\\repo\\experiments\\2026-08-07_gg0011_pdf\\authoritative_sources\\gf0011_2022_announcement.bin",
+    "text_size_chars": 23541,
+    "contains_hanzi_bushou": true
+  }
+]

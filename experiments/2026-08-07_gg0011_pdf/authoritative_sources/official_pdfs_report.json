@@ -1,0 +1,44 @@
+{
+  "gf0013_components_pdf": {
+    "url": "http://www.moe.gov.cn/ewebeditor/uploadfile/2015/01/13/20150113090318445.pdf",
+    "page_url": "http://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201001/t20100115_75696.html",
+    "note": "现代常用字部件及部件名称规范",
+    "downloaded": true,
+    "pdf_probe": {
+      "pdf_size_bytes": 4751233,
+      "sha256": "bb554d91ac39dc10470e3186555ca1140c150b678190f63624ecf6f2298dffc6",
+      "pages": 41,
+      "pages_with_text": 0,
+      "pages_with_images": 41,
+      "total_extracted_chars": 0,
+      "title": "Microsoft Word - 汉字部件.doc"
+    },
+    "local_path": "C:\\Users\\zairk\\Documents\\Codex\\2026-07-27\\https-github-com-zairkliu-cnbe-32\\repo\\experiments\\2026-08-07_gg0011_pdf\\authoritative_sources\\gf0013_components_pdf.pdf"
+  },
+  "gf2001_stroke_shapes_pdf": {
+    "url": "http://www.moe.gov.cn/ewebeditor/uploadfile/2015/01/12/20150112170016626.pdf",
+    "page_url": "https://hudong.moe.gov.cn/jyb_sjzl/ziliao/A19/201001/t20100115_75688.html",
+    "note": "GB 13000.1 字符集汉字折笔规范",
+    "downloaded": true,
+    "pdf_probe": {
+      "pdf_size_bytes": 5039255,
+      "sha256": "0a1dd59e367aa8314c4d6f7887fa333358eb11dfa2364ad7eba78a1b6206259b",
+      "pages": 11,
+      "pages_with_text": 0,
+      "pages_with_images": 11,
+      "total_extracted_chars": 0,
+      "title": ""
+    },
+    "local_path": "C:\\Users\\zairk\\Documents\\Codex\\2026-07-27\\https-github-com-zairkliu-cnbe-32\\repo\\experiments\\2026-08-07_gg0011_pdf\\authoritative_sources\\gf2001_stroke_shapes_pdf.pdf"
+  },
+  "gb18030_2022_notice": {
+    "url": "https://openstd.samr.gov.cn/bzgk/std/nd?no=1783",
+    "page_url": "https://openstd.samr.gov.cn/bzgk/std/nd?no=1783",
+    "note": "国家标准全文公开系统：GB 18030-2022 题录入口",
+    "downloaded": true,
+    "size_bytes": 20250,
+    "contains_18030": true,
+    "sha256": "0b2c973a469c189755b3bcc5edb74c5cd21e40c15550f432d7dea4dddb5f6fd5",
+    "attachment_links": []
+  }
+}

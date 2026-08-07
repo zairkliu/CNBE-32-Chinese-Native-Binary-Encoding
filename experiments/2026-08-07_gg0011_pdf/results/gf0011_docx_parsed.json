@@ -1,0 +1,3832 @@
+{
+  "schema_version": 1,
+  "source": "GF 0011-2009 汉字部首表（完整版 docx 文字层）",
+  "summary": {
+    "main_count": 201,
+    "attached_entry_count": 79,
+    "missing_codes": [],
+    "extra_codes": []
+  },
+  "radicals": [
+    {
+      "kind": "main",
+      "code": 1,
+      "main": "一",
+      "attached": "",
+      "stroke_group": "一",
+      "raw": "1 一"
+    },
+    {
+      "kind": "main",
+      "code": 2,
+      "main": "丨",
+      "attached": "亅",
+      "stroke_group": "一",
+      "raw": "2 丨（亅）"
+    },
+    {
+      "kind": "main",
+      "code": 3,
+      "main": "丿",
+      "attached": "",
+      "stroke_group": "一",
+      "raw": "3 丿"
+    },
+    {
+      "kind": "main",
+      "code": 4,
+      "main": "丶",
+      "attached": "",
+      "stroke_group": "一",
+      "raw": "4 丶"
+    },
+    {
+      "kind": "main",
+      "code": 5,
+      "main": "乛",
+      "attached": "",
+      "stroke_group": "一",
+      "raw": "5 乛"
+    },
+    {
+      "kind": "main",
+      "code": 6,
+      "main": "十",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "6 十"
+    },
+    {
+      "kind": "main",
+      "code": 7,
+      "main": "厂",
+      "attached": "厂",
+      "stroke_group": "二",
+      "raw": "7 厂（厂）"
+    },
+    {
+      "kind": "main",
+      "code": 8,
+      "main": "匚",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "8 匚"
+    },
+    {
+      "kind": "main",
+      "code": 9,
+      "main": "卜",
+      "attached": "卜",
+      "stroke_group": "二",
+      "raw": "9 卜（卜）"
+    },
+    {
+      "kind": "main",
+      "code": 10,
+      "main": "冂",
+      "attached": "門",
+      "stroke_group": "二",
+      "raw": "10 冂（門）"
+    },
+    {
+      "kind": "main",
+      "code": 11,
+      "main": "八",
+      "attached": "丷",
+      "stroke_group": "二",
+      "raw": "11 八（丷）"
+    },
+    {
+      "kind": "main",
+      "code": 12,
+      "main": "人",
+      "attached": "亻人",
+      "stroke_group": "二",
+      "raw": "12 人（亻人）"
+    },
+    {
+      "kind": "main",
+      "code": 13,
+      "main": "勹",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "13 勹"
+    },
+    {
+      "kind": "main",
+      "code": 14,
+      "main": "儿",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "14 儿"
+    },
+    {
+      "kind": "main",
+      "code": 15,
+      "main": "匕",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "15 匕"
+    },
+    {
+      "kind": "main",
+      "code": 16,
+      "main": "几",
+      "attached": "几",
+      "stroke_group": "二",
+      "raw": "16 几（几）"
+    },
+    {
+      "kind": "main",
+      "code": 17,
+      "main": "冫",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "17 冫"
+    },
+    {
+      "kind": "main",
+      "code": 18,
+      "main": "冖",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "18 冖"
+    },
+    {
+      "kind": "main",
+      "code": 19,
+      "main": "凵",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "19 凵"
+    },
+    {
+      "kind": "main",
+      "code": 20,
+      "main": "卩",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "20 卩"
+    },
+    {
+      "kind": "main",
+      "code": 21,
+      "main": "阝",
+      "attached": "卩",
+      "stroke_group": "二",
+      "raw": "21 阝（卩）"
+    },
+    {
+      "kind": "main",
+      "code": 22,
+      "main": "刀",
+      "attached": "刂",
+      "stroke_group": "二",
+      "raw": "22 刀（刂）"
+    },
+    {
+      "kind": "main",
+      "code": 23,
+      "main": "力",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "23 力"
+    },
+    {
+      "kind": "main",
+      "code": 24,
+      "main": "又",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "24 又"
+    },
+    {
+      "kind": "main",
+      "code": 25,
+      "main": "厶",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "25 厶"
+    },
+    {
+      "kind": "main",
+      "code": 26,
+      "main": "廴",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "26 廴"
+    },
+    {
+      "kind": "main",
+      "code": 27,
+      "main": "干",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "27 干"
+    },
+    {
+      "kind": "main",
+      "code": 28,
+      "main": "工",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "28 工"
+    },
+    {
+      "kind": "main",
+      "code": 29,
+      "main": "土",
+      "attached": "士",
+      "stroke_group": "三",
+      "raw": "29 土（士）"
+    },
+    {
+      "kind": "main",
+      "code": 30,
+      "main": "艹",
+      "attached": "艸",
+      "stroke_group": "三",
+      "raw": "30 艹（艸）"
+    },
+    {
+      "kind": "main",
+      "code": 31,
+      "main": "寸",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "31 寸"
+    },
+    {
+      "kind": "main",
+      "code": 32,
+      "main": "廾",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "32 廾"
+    },
+    {
+      "kind": "main",
+      "code": 33,
+      "main": "大",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "33 大"
+    },
+    {
+      "kind": "main",
+      "code": 34,
+      "main": "尢",
+      "attached": "兀允",
+      "stroke_group": "三",
+      "raw": "34 尢（兀允）"
+    },
+    {
+      "kind": "main",
+      "code": 35,
+      "main": "弋",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "35 弋"
+    },
+    {
+      "kind": "main",
+      "code": 36,
+      "main": "小",
+      "attached": "⺌",
+      "stroke_group": "三",
+      "raw": "36 小（⺌）"
+    },
+    {
+      "kind": "main",
+      "code": 37,
+      "main": "口",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "37 口"
+    },
+    {
+      "kind": "main",
+      "code": 38,
+      "main": "囗",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "38 囗"
+    },
+    {
+      "kind": "main",
+      "code": 39,
+      "main": "山",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "39 山"
+    },
+    {
+      "kind": "main",
+      "code": 40,
+      "main": "巾",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "40 巾"
+    },
+    {
+      "kind": "main",
+      "code": 41,
+      "main": "彳",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "41 彳"
+    },
+    {
+      "kind": "main",
+      "code": 42,
+      "main": "彡",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "42 彡"
+    },
+    {
+      "kind": "main",
+      "code": 43,
+      "main": "夕",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "43 夕"
+    },
+    {
+      "kind": "main",
+      "code": 44,
+      "main": "夂",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "44 夂"
+    },
+    {
+      "kind": "main",
+      "code": 45,
+      "main": "丬",
+      "attached": "爿",
+      "stroke_group": "三",
+      "raw": "45 丬（爿）"
+    },
+    {
+      "kind": "main",
+      "code": 46,
+      "main": "广",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "46 广"
+    },
+    {
+      "kind": "main",
+      "code": 47,
+      "main": "门",
+      "attached": "門",
+      "stroke_group": "三",
+      "raw": "47 门（門）"
+    },
+    {
+      "kind": "main",
+      "code": 48,
+      "main": "冫",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "48 冫"
+    },
+    {
+      "kind": "main",
+      "code": 49,
+      "main": "辶",
+      "attached": "辵",
+      "stroke_group": "三",
+      "raw": "49 辶（辵）"
+    },
+    {
+      "kind": "main",
+      "code": 50,
+      "main": "彐",
+      "attached": "彑彐",
+      "stroke_group": "三",
+      "raw": "50 彐（彑彐）"
+    },
+    {
+      "kind": "main",
+      "code": 51,
+      "main": "尸",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "51 尸"
+    },
+    {
+      "kind": "main",
+      "code": 52,
+      "main": "己",
+      "attached": "已巳",
+      "stroke_group": "三",
+      "raw": "52 己（已巳）"
+    },
+    {
+      "kind": "main",
+      "code": 53,
+      "main": "弓",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "53 弓"
+    },
+    {
+      "kind": "main",
+      "code": 54,
+      "main": "子",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "54 子"
+    },
+    {
+      "kind": "main",
+      "code": 55,
+      "main": "屮",
+      "attached": "艸",
+      "stroke_group": "三",
+      "raw": "55 屮（艸）"
+    },
+    {
+      "kind": "main",
+      "code": 56,
+      "main": "女",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "56 女"
+    },
+    {
+      "kind": "main",
+      "code": 57,
+      "main": "飞",
+      "attached": "飛",
+      "stroke_group": "三",
+      "raw": "57 飞（飛）"
+    },
+    {
+      "kind": "main",
+      "code": 58,
+      "main": "马",
+      "attached": "馬",
+      "stroke_group": "三",
+      "raw": "58 马（馬）"
+    },
+    {
+      "kind": "main",
+      "code": 59,
+      "main": "幺",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "59 幺"
+    },
+    {
+      "kind": "main",
+      "code": 60,
+      "main": "巛",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "60 巛"
+    },
+    {
+      "kind": "main",
+      "code": 61,
+      "main": "王",
+      "attached": "玉",
+      "stroke_group": "四",
+      "raw": "61 王（玉）"
+    },
+    {
+      "kind": "main",
+      "code": 62,
+      "main": "无",
+      "attached": "旡",
+      "stroke_group": "四",
+      "raw": "62 无（旡）"
+    },
+    {
+      "kind": "main",
+      "code": 63,
+      "main": "韦",
+      "attached": "韋",
+      "stroke_group": "四",
+      "raw": "63 韦（韋）"
+    },
+    {
+      "kind": "main",
+      "code": 64,
+      "main": "木",
+      "attached": "朩",
+      "stroke_group": "四",
+      "raw": "64 木（朩）"
+    },
+    {
+      "kind": "main",
+      "code": 65,
+      "main": "支",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "65 支"
+    },
+    {
+      "kind": "main",
+      "code": 66,
+      "main": "犬",
+      "attached": "犭",
+      "stroke_group": "四",
+      "raw": "66 犬（犭）"
+    },
+    {
+      "kind": "main",
+      "code": 67,
+      "main": "歹",
+      "attached": "歺",
+      "stroke_group": "四",
+      "raw": "67 歹（歺）"
+    },
+    {
+      "kind": "main",
+      "code": 68,
+      "main": "车",
+      "attached": "車车",
+      "stroke_group": "四",
+      "raw": "68 车（車车）"
+    },
+    {
+      "kind": "main",
+      "code": 69,
+      "main": "牙",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "69 牙"
+    },
+    {
+      "kind": "main",
+      "code": 70,
+      "main": "戈",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "70 戈"
+    },
+    {
+      "kind": "main",
+      "code": 71,
+      "main": "比",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "71 比"
+    },
+    {
+      "kind": "main",
+      "code": 72,
+      "main": "瓦",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "72 瓦"
+    },
+    {
+      "kind": "main",
+      "code": 73,
+      "main": "止",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "73 止"
+    },
+    {
+      "kind": "main",
+      "code": 74,
+      "main": "攵",
+      "attached": "攵",
+      "stroke_group": "四",
+      "raw": "74 攵（攵）"
+    },
+    {
+      "kind": "main",
+      "code": 75,
+      "main": "日",
+      "attached": "冂曰",
+      "stroke_group": "四",
+      "raw": "75 日（冂曰）"
+    },
+    {
+      "kind": "main",
+      "code": 76,
+      "main": "贝",
+      "attached": "貝",
+      "stroke_group": "四",
+      "raw": "76 贝（貝）"
+    },
+    {
+      "kind": "main",
+      "code": 77,
+      "main": "水",
+      "attached": "氵氺",
+      "stroke_group": "四",
+      "raw": "77 水（氵氺）"
+    },
+    {
+      "kind": "main",
+      "code": 78,
+      "main": "见",
+      "attached": "見",
+      "stroke_group": "四",
+      "raw": "78 见（見）"
+    },
+    {
+      "kind": "main",
+      "code": 79,
+      "main": "牛",
+      "attached": "牜",
+      "stroke_group": "四",
+      "raw": "79 牛（牜）"
+    },
+    {
+      "kind": "main",
+      "code": 80,
+      "main": "手",
+      "attached": "扌龵",
+      "stroke_group": "四",
+      "raw": "80 手（扌龵）"
+    },
+    {
+      "kind": "main",
+      "code": 81,
+      "main": "气",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "81 气"
+    },
+    {
+      "kind": "main",
+      "code": 82,
+      "main": "毛",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "82 毛"
+    },
+    {
+      "kind": "main",
+      "code": 83,
+      "main": "长",
+      "attached": "镸長",
+      "stroke_group": "四",
+      "raw": "83 长（镸長）"
+    },
+    {
+      "kind": "main",
+      "code": 84,
+      "main": "片",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "84 片"
+    },
+    {
+      "kind": "main",
+      "code": 85,
+      "main": "斤",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "85 斤"
+    },
+    {
+      "kind": "main",
+      "code": 86,
+      "main": "爪",
+      "attached": "爫",
+      "stroke_group": "四",
+      "raw": "86 爪（爫）"
+    },
+    {
+      "kind": "main",
+      "code": 87,
+      "main": "父",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "87 父"
+    },
+    {
+      "kind": "main",
+      "code": 88,
+      "main": "月",
+      "attached": "⺝",
+      "stroke_group": "四",
+      "raw": "88 月（⺝）"
+    },
+    {
+      "kind": "main",
+      "code": 89,
+      "main": "氏",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "89 氏"
+    },
+    {
+      "kind": "main",
+      "code": 90,
+      "main": "欠",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "90 欠"
+    },
+    {
+      "kind": "main",
+      "code": 91,
+      "main": "风",
+      "attached": "風",
+      "stroke_group": "四",
+      "raw": "91 风（風）"
+    },
+    {
+      "kind": "main",
+      "code": 92,
+      "main": "殳",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "92 殳"
+    },
+    {
+      "kind": "main",
+      "code": 93,
+      "main": "文",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "93 文"
+    },
+    {
+      "kind": "main",
+      "code": 94,
+      "main": "方",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "94 方"
+    },
+    {
+      "kind": "main",
+      "code": 95,
+      "main": "火",
+      "attached": "灬",
+      "stroke_group": "四",
+      "raw": "95 火（灬）"
+    },
+    {
+      "kind": "main",
+      "code": 96,
+      "main": "斗",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "96 斗"
+    },
+    {
+      "kind": "main",
+      "code": 97,
+      "main": "户",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "97 户"
+    },
+    {
+      "kind": "main",
+      "code": 98,
+      "main": "心",
+      "attached": "忄⺗",
+      "stroke_group": "四",
+      "raw": "98 心（忄⺗）"
+    },
+    {
+      "kind": "main",
+      "code": 99,
+      "main": "毋",
+      "attached": "母",
+      "stroke_group": "四",
+      "raw": "99 毋（母）"
+    },
+    {
+      "kind": "main",
+      "code": 100,
+      "main": "示",
+      "attached": "礻",
+      "stroke_group": "五",
+      "raw": "100 示（礻）"
+    },
+    {
+      "kind": "main",
+      "code": 101,
+      "main": "甘",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "101 甘"
+    },
+    {
+      "kind": "main",
+      "code": 102,
+      "main": "石",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "102 石"
+    },
+    {
+      "kind": "main",
+      "code": 103,
+      "main": "龙",
+      "attached": "龍",
+      "stroke_group": "五",
+      "raw": "103 龙（龍）"
+    },
+    {
+      "kind": "main",
+      "code": 104,
+      "main": "业",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "104 业"
+    },
+    {
+      "kind": "main",
+      "code": 105,
+      "main": "目",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "105 目"
+    },
+    {
+      "kind": "main",
+      "code": 106,
+      "main": "田",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "106 田"
+    },
+    {
+      "kind": "main",
+      "code": 107,
+      "main": "罒",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "107 罒"
+    },
+    {
+      "kind": "main",
+      "code": 108,
+      "main": "皿",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "108 皿"
+    },
+    {
+      "kind": "main",
+      "code": 109,
+      "main": "生",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "109 生"
+    },
+    {
+      "kind": "main",
+      "code": 110,
+      "main": "矢",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "110 矢"
+    },
+    {
+      "kind": "main",
+      "code": 111,
+      "main": "禾",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "111 禾"
+    },
+    {
+      "kind": "main",
+      "code": 112,
+      "main": "白",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "112 白"
+    },
+    {
+      "kind": "main",
+      "code": 113,
+      "main": "瓜",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "113 瓜"
+    },
+    {
+      "kind": "main",
+      "code": 114,
+      "main": "鸟",
+      "attached": "鳥",
+      "stroke_group": "五",
+      "raw": "114 鸟（鳥）"
+    },
+    {
+      "kind": "main",
+      "code": 115,
+      "main": "疒",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "115 疒"
+    },
+    {
+      "kind": "main",
+      "code": 116,
+      "main": "立",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "116 立"
+    },
+    {
+      "kind": "main",
+      "code": 117,
+      "main": "穴",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "117 穴"
+    },
+    {
+      "kind": "main",
+      "code": 118,
+      "main": "疋",
+      "attached": "⺪",
+      "stroke_group": "五",
+      "raw": "118 疋（⺪）"
+    },
+    {
+      "kind": "main",
+      "code": 119,
+      "main": "皮",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "119 皮"
+    },
+    {
+      "kind": "main",
+      "code": 120,
+      "main": "癶",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "120 癶"
+    },
+    {
+      "kind": "main",
+      "code": 121,
+      "main": "矛",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "121 矛"
+    },
+    {
+      "kind": "main",
+      "code": 122,
+      "main": "耒",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "122 耒"
+    },
+    {
+      "kind": "main",
+      "code": 123,
+      "main": "老",
+      "attached": "耂",
+      "stroke_group": "六",
+      "raw": "123 老（耂）"
+    },
+    {
+      "kind": "main",
+      "code": 124,
+      "main": "耳",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "124 耳"
+    },
+    {
+      "kind": "main",
+      "code": 125,
+      "main": "臣",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "125 臣"
+    },
+    {
+      "kind": "main",
+      "code": 126,
+      "main": "覀",
+      "attached": "覀覀",
+      "stroke_group": "六",
+      "raw": "126 覀（覀覀）"
+    },
+    {
+      "kind": "main",
+      "code": 127,
+      "main": "而",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "127 而"
+    },
+    {
+      "kind": "main",
+      "code": 128,
+      "main": "页",
+      "attached": "頁",
+      "stroke_group": "六",
+      "raw": "128 页（頁）"
+    },
+    {
+      "kind": "main",
+      "code": 129,
+      "main": "至",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "129 至"
+    },
+    {
+      "kind": "main",
+      "code": 130,
+      "main": "虍",
+      "attached": "虎",
+      "stroke_group": "六",
+      "raw": "130 虍（虎）"
+    },
+    {
+      "kind": "main",
+      "code": 131,
+      "main": "虫",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "131 虫"
+    },
+    {
+      "kind": "main",
+      "code": 132,
+      "main": "肉",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "132 肉"
+    },
+    {
+      "kind": "main",
+      "code": 133,
+      "main": "缶",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "133 缶"
+    },
+    {
+      "kind": "main",
+      "code": 134,
+      "main": "舌",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "134 舌"
+    },
+    {
+      "kind": "main",
+      "code": 135,
+      "main": "竹",
+      "attached": "⺮",
+      "stroke_group": "六",
+      "raw": "135 竹（⺮）"
+    },
+    {
+      "kind": "main",
+      "code": 136,
+      "main": "臼",
+      "attached": "臼",
+      "stroke_group": "六",
+      "raw": "136 臼（臼）"
+    },
+    {
+      "kind": "main",
+      "code": 137,
+      "main": "自",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "137 自"
+    },
+    {
+      "kind": "main",
+      "code": 138,
+      "main": "血",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "138 血"
+    },
+    {
+      "kind": "main",
+      "code": 139,
+      "main": "舟",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "139 舟"
+    },
+    {
+      "kind": "main",
+      "code": 140,
+      "main": "色",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "140 色"
+    },
+    {
+      "kind": "main",
+      "code": 141,
+      "main": "齐",
+      "attached": "齊",
+      "stroke_group": "六",
+      "raw": "141 齐（齊）"
+    },
+    {
+      "kind": "main",
+      "code": 142,
+      "main": "衣",
+      "attached": "衤",
+      "stroke_group": "六",
+      "raw": "142 衣（衤）"
+    },
+    {
+      "kind": "main",
+      "code": 143,
+      "main": "羊",
+      "attached": "⺶羊",
+      "stroke_group": "六",
+      "raw": "143 羊（⺶羊）"
+    },
+    {
+      "kind": "main",
+      "code": 144,
+      "main": "米",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "144 米"
+    },
+    {
+      "kind": "main",
+      "code": 145,
+      "main": "聿",
+      "attached": "肀⺕",
+      "stroke_group": "六",
+      "raw": "145 聿（肀⺕）"
+    },
+    {
+      "kind": "main",
+      "code": 146,
+      "main": "艮",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "146 艮"
+    },
+    {
+      "kind": "main",
+      "code": 147,
+      "main": "羽",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "147 羽"
+    },
+    {
+      "kind": "main",
+      "code": 148,
+      "main": "糸",
+      "attached": "纟糹",
+      "stroke_group": "六",
+      "raw": "148 糸（纟糹）"
+    },
+    {
+      "kind": "main",
+      "code": 149,
+      "main": "麦",
+      "attached": "麥",
+      "stroke_group": "七",
+      "raw": "149 麦（麥）"
+    },
+    {
+      "kind": "main",
+      "code": 150,
+      "main": "走",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "150 走"
+    },
+    {
+      "kind": "main",
+      "code": 151,
+      "main": "赤",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "151 赤"
+    },
+    {
+      "kind": "main",
+      "code": 152,
+      "main": "豆",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "152 豆"
+    },
+    {
+      "kind": "main",
+      "code": 153,
+      "main": "酉",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "153 酉"
+    },
+    {
+      "kind": "main",
+      "code": 154,
+      "main": "辰",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "154 辰"
+    },
+    {
+      "kind": "main",
+      "code": 155,
+      "main": "豕",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "155 豕"
+    },
+    {
+      "kind": "main",
+      "code": 156,
+      "main": "卤",
+      "attached": "鹵",
+      "stroke_group": "七",
+      "raw": "156 卤（鹵）"
+    },
+    {
+      "kind": "main",
+      "code": 157,
+      "main": "里",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "157 里"
+    },
+    {
+      "kind": "main",
+      "code": 158,
+      "main": "足",
+      "attached": "⻊",
+      "stroke_group": "七",
+      "raw": "158 足（⻊）"
+    },
+    {
+      "kind": "main",
+      "code": 159,
+      "main": "邑",
+      "attached": "阝右",
+      "stroke_group": "七",
+      "raw": "159 邑（阝右）"
+    },
+    {
+      "kind": "main",
+      "code": 160,
+      "main": "身",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "160 身"
+    },
+    {
+      "kind": "main",
+      "code": 161,
+      "main": "釆",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "161 釆"
+    },
+    {
+      "kind": "main",
+      "code": 162,
+      "main": "谷",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "162 谷"
+    },
+    {
+      "kind": "main",
+      "code": 163,
+      "main": "豸",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "163 豸"
+    },
+    {
+      "kind": "main",
+      "code": 164,
+      "main": "龟",
+      "attached": "龜",
+      "stroke_group": "七",
+      "raw": "164 龟（龜）"
+    },
+    {
+      "kind": "main",
+      "code": 165,
+      "main": "角",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "165 角"
+    },
+    {
+      "kind": "main",
+      "code": 166,
+      "main": "言",
+      "attached": "讠",
+      "stroke_group": "七",
+      "raw": "166 言（讠）"
+    },
+    {
+      "kind": "main",
+      "code": 167,
+      "main": "辛",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "167 辛"
+    },
+    {
+      "kind": "main",
+      "code": 168,
+      "main": "青",
+      "attached": "",
+      "stroke_group": "八",
+      "raw": "168 青"
+    },
+    {
+      "kind": "main",
+      "code": 169,
+      "main": "卓",
+      "attached": "",
+      "stroke_group": "八",
+      "raw": "169 卓"
+    },
+    {
+      "kind": "main",
+      "code": 170,
+      "main": "雨",
+      "attached": "",
+      "stroke_group": "八",
+      "raw": "170 雨"
+    },
+    {
+      "kind": "main",
+      "code": 171,
+      "main": "非",
+      "attached": "",
+      "stroke_group": "八",
+      "raw": "171 非"
+    },
+    {
+      "kind": "main",
+      "code": 172,
+      "main": "齿",
+      "attached": "齒",
+      "stroke_group": "八",
+      "raw": "172 齿（齒）"
+    },
+    {
+      "kind": "main",
+      "code": 173,
+      "main": "黾",
+      "attached": "黽",
+      "stroke_group": "八",
+      "raw": "173 黾（黽）"
+    },
+    {
+      "kind": "main",
+      "code": 174,
+      "main": "隹",
+      "attached": "",
+      "stroke_group": "八",
+      "raw": "174 隹"
+    },
+    {
+      "kind": "main",
+      "code": 175,
+      "main": "阜",
+      "attached": "阝左",
+      "stroke_group": "八",
+      "raw": "175 阜（阝左）"
+    },
+    {
+      "kind": "main",
+      "code": 176,
+      "main": "金",
+      "attached": "钅",
+      "stroke_group": "八",
+      "raw": "176 金（钅）"
+    },
+    {
+      "kind": "main",
+      "code": 177,
+      "main": "鱼",
+      "attached": "魚",
+      "stroke_group": "八",
+      "raw": "177 鱼（魚）"
+    },
+    {
+      "kind": "main",
+      "code": 178,
+      "main": "隶",
+      "attached": "",
+      "stroke_group": "八",
+      "raw": "178 隶"
+    },
+    {
+      "kind": "main",
+      "code": 179,
+      "main": "革",
+      "attached": "",
+      "stroke_group": "九",
+      "raw": "179 革"
+    },
+    {
+      "kind": "main",
+      "code": 180,
+      "main": "面",
+      "attached": "",
+      "stroke_group": "九",
+      "raw": "180 面"
+    },
+    {
+      "kind": "main",
+      "code": 181,
+      "main": "韭",
+      "attached": "",
+      "stroke_group": "九",
+      "raw": "181 韭"
+    },
+    {
+      "kind": "main",
+      "code": 182,
+      "main": "骨",
+      "attached": "",
+      "stroke_group": "九",
+      "raw": "182 骨"
+    },
+    {
+      "kind": "main",
+      "code": 183,
+      "main": "香",
+      "attached": "",
+      "stroke_group": "九",
+      "raw": "183 香"
+    },
+    {
+      "kind": "main",
+      "code": 184,
+      "main": "鬼",
+      "attached": "",
+      "stroke_group": "九",
+      "raw": "184 鬼"
+    },
+    {
+      "kind": "main",
+      "code": 185,
+      "main": "食",
+      "attached": "饣飠",
+      "stroke_group": "九",
+      "raw": "185 食（饣飠）"
+    },
+    {
+      "kind": "main",
+      "code": 186,
+      "main": "音",
+      "attached": "",
+      "stroke_group": "九",
+      "raw": "186 音"
+    },
+    {
+      "kind": "main",
+      "code": 187,
+      "main": "首",
+      "attached": "",
+      "stroke_group": "九",
+      "raw": "187 首"
+    },
+    {
+      "kind": "main",
+      "code": 188,
+      "main": "髟",
+      "attached": "",
+      "stroke_group": "十",
+      "raw": "188 髟"
+    },
+    {
+      "kind": "main",
+      "code": 189,
+      "main": "鬲",
+      "attached": "",
+      "stroke_group": "十",
+      "raw": "189 鬲"
+    },
+    {
+      "kind": "main",
+      "code": 190,
+      "main": "鬥",
+      "attached": "",
+      "stroke_group": "十",
+      "raw": "190 鬥"
+    },
+    {
+      "kind": "main",
+      "code": 191,
+      "main": "高",
+      "attached": "",
+      "stroke_group": "十",
+      "raw": "191 高"
+    },
+    {
+      "kind": "main",
+      "code": 192,
+      "main": "黄",
+      "attached": "",
+      "stroke_group": "十一",
+      "raw": "192 黄"
+    },
+    {
+      "kind": "main",
+      "code": 193,
+      "main": "麻",
+      "attached": "",
+      "stroke_group": "十一",
+      "raw": "193 麻"
+    },
+    {
+      "kind": "main",
+      "code": 194,
+      "main": "鹿",
+      "attached": "",
+      "stroke_group": "十一",
+      "raw": "194 鹿"
+    },
+    {
+      "kind": "main",
+      "code": 195,
+      "main": "鼎",
+      "attached": "",
+      "stroke_group": "十二",
+      "raw": "195 鼎"
+    },
+    {
+      "kind": "main",
+      "code": 196,
+      "main": "黑",
+      "attached": "",
+      "stroke_group": "十二",
+      "raw": "196 黑"
+    },
+    {
+      "kind": "main",
+      "code": 197,
+      "main": "黍",
+      "attached": "",
+      "stroke_group": "十二",
+      "raw": "197 黍"
+    },
+    {
+      "kind": "main",
+      "code": 198,
+      "main": "鼓",
+      "attached": "",
+      "stroke_group": "十三",
+      "raw": "198 鼓"
+    },
+    {
+      "kind": "main",
+      "code": 199,
+      "main": "鼠",
+      "attached": "",
+      "stroke_group": "十三",
+      "raw": "199 鼠"
+    },
+    {
+      "kind": "main",
+      "code": 200,
+      "main": "鼻",
+      "attached": "",
+      "stroke_group": "十四",
+      "raw": "200 鼻"
+    },
+    {
+      "kind": "main",
+      "code": 201,
+      "main": "龠",
+      "attached": "",
+      "stroke_group": "十七",
+      "raw": "201 龠"
+    }
+  ],
+  "attached_entries": {
+    "2": [
+      "亅"
+    ],
+    "7": [
+      "厂"
+    ],
+    "9": [
+      "卜"
+    ],
+    "11": [
+      "丷"
+    ],
+    "12": [
+      "亻",
+      "人"
+    ],
+    "16": [
+      "几"
+    ],
+    "21": [
+      "卩"
+    ],
+    "22": [
+      "刂",
+      "ツ"
+    ],
+    "29": [
+      "士"
+    ],
+    "30": [
+      "艸"
+    ],
+    "34": [
+      "兀",
+      "允"
+    ],
+    "36": [
+      "⺌"
+    ],
+    "45": [
+      "爿"
+    ],
+    "47": [
+      "门"
+    ],
+    "49": [
+      "辶"
+    ],
+    "50": [
+      "彐",
+      "彑"
+    ],
+    "52": [
+      "已",
+      "巳"
+    ],
+    "55": [
+      "艸"
+    ],
+    "57": [
+      "飞"
+    ],
+    "58": [
+      "马"
+    ],
+    "62": [
+      "旡"
+    ],
+    "63": [
+      "韦"
+    ],
+    "64": [
+      "朩"
+    ],
+    "66": [
+      "犭"
+    ],
+    "67": [
+      "歺",
+      "歺"
+    ],
+    "75": [
+      "臼",
+      "曰"
+    ],
+    "76": [
+      "贝"
+    ],
+    "77": [
+      "氵",
+      "氺"
+    ],
+    "78": [
+      "见"
+    ],
+    "79": [
+      "牜"
+    ],
+    "80": [
+      "扌",
+      "龵"
+    ],
+    "83": [
+      "镸",
+      "镸"
+    ],
+    "86": [
+      "爫"
+    ],
+    "91": [
+      "风"
+    ],
+    "95": [
+      "灬"
+    ],
+    "98": [
+      "忄",
+      "忄"
+    ],
+    "99": [
+      "母"
+    ],
+    "100": [
+      "礻"
+    ],
+    "103": [
+      "龙"
+    ],
+    "114": [
+      "鸟"
+    ],
+    "123": [
+      "耂"
+    ],
+    "126": [
+      "覀",
+      "覀"
+    ],
+    "128": [
+      "页"
+    ],
+    "130": [
+      "虎"
+    ],
+    "135": [
+      "⺮"
+    ],
+    "136": [
+      "臼",
+      "臼"
+    ],
+    "141": [
+      "齐"
+    ],
+    "142": [
+      "衤"
+    ],
+    "143": [
+      "⺶",
+      "⺶"
+    ],
+    "145": [
+      "肀"
+    ],
+    "148": [
+      "糹",
+      "糹"
+    ],
+    "149": [
+      "麦"
+    ],
+    "156": [
+      "卤"
+    ],
+    "158": [
+      "⻊"
+    ],
+    "159": [
+      "阝右"
+    ],
+    "164": [
+      "龟"
+    ],
+    "166": [
+      "讠"
+    ],
+    "172": [
+      "齿"
+    ],
+    "173": [
+      "黾"
+    ],
+    "175": [
+      "阝左"
+    ],
+    "176": [
+      "钅"
+    ],
+    "177": [
+      "鱼"
+    ],
+    "185": [
+      "饣",
+      "饣"
+    ]
+  },
+  "order": [
+    {
+      "kind": "main",
+      "code": 1,
+      "main": "一",
+      "attached": "",
+      "stroke_group": "一",
+      "raw": "1 一"
+    },
+    {
+      "kind": "main",
+      "code": 2,
+      "main": "丨",
+      "attached": "亅",
+      "stroke_group": "一",
+      "raw": "2 丨（亅）"
+    },
+    {
+      "kind": "attached",
+      "code": 2,
+      "form": "亅"
+    },
+    {
+      "kind": "main",
+      "code": 3,
+      "main": "丿",
+      "attached": "",
+      "stroke_group": "一",
+      "raw": "3 丿"
+    },
+    {
+      "kind": "main",
+      "code": 4,
+      "main": "丶",
+      "attached": "",
+      "stroke_group": "一",
+      "raw": "4 丶"
+    },
+    {
+      "kind": "main",
+      "code": 5,
+      "main": "乛",
+      "attached": "",
+      "stroke_group": "一",
+      "raw": "5 乛"
+    },
+    {
+      "kind": "main",
+      "code": 6,
+      "main": "十",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "6 十"
+    },
+    {
+      "kind": "main",
+      "code": 7,
+      "main": "厂",
+      "attached": "厂",
+      "stroke_group": "二",
+      "raw": "7 厂（厂）"
+    },
+    {
+      "kind": "main",
+      "code": 8,
+      "main": "匚",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "8 匚"
+    },
+    {
+      "kind": "attached",
+      "code": 9,
+      "form": "卜"
+    },
+    {
+      "kind": "attached",
+      "code": 22,
+      "form": "刂"
+    },
+    {
+      "kind": "main",
+      "code": 9,
+      "main": "卜",
+      "attached": "卜",
+      "stroke_group": "二",
+      "raw": "9 卜（卜）"
+    },
+    {
+      "kind": "main",
+      "code": 10,
+      "main": "冂",
+      "attached": "門",
+      "stroke_group": "二",
+      "raw": "10 冂（門）"
+    },
+    {
+      "kind": "attached",
+      "code": 12,
+      "form": "亻"
+    },
+    {
+      "kind": "attached",
+      "code": 7,
+      "form": "厂"
+    },
+    {
+      "kind": "main",
+      "code": 11,
+      "main": "八",
+      "attached": "丷",
+      "stroke_group": "二",
+      "raw": "11 八（丷）"
+    },
+    {
+      "kind": "main",
+      "code": 12,
+      "main": "人",
+      "attached": "亻人",
+      "stroke_group": "二",
+      "raw": "12 人（亻人）"
+    },
+    {
+      "kind": "attached",
+      "code": 12,
+      "form": "人"
+    },
+    {
+      "kind": "attached",
+      "code": 22,
+      "form": "ツ"
+    },
+    {
+      "kind": "main",
+      "code": 13,
+      "main": "勹",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "13 勹"
+    },
+    {
+      "kind": "attached",
+      "code": 16,
+      "form": "几"
+    },
+    {
+      "kind": "main",
+      "code": 14,
+      "main": "儿",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "14 儿"
+    },
+    {
+      "kind": "main",
+      "code": 15,
+      "main": "匕",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "15 匕"
+    },
+    {
+      "kind": "main",
+      "code": 16,
+      "main": "几",
+      "attached": "几",
+      "stroke_group": "二",
+      "raw": "16 几（几）"
+    },
+    {
+      "kind": "main",
+      "code": 17,
+      "main": "冫",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "17 冫"
+    },
+    {
+      "kind": "attached",
+      "code": 11,
+      "form": "丷"
+    },
+    {
+      "kind": "main",
+      "code": 18,
+      "main": "冖",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "18 冖"
+    },
+    {
+      "kind": "main",
+      "code": 19,
+      "main": "凵",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "19 凵"
+    },
+    {
+      "kind": "attached",
+      "code": 166,
+      "form": "讠"
+    },
+    {
+      "kind": "main",
+      "code": 20,
+      "main": "卩",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "20 卩"
+    },
+    {
+      "kind": "main",
+      "code": 21,
+      "main": "阝",
+      "attached": "卩",
+      "stroke_group": "二",
+      "raw": "21 阝（卩）"
+    },
+    {
+      "kind": "attached",
+      "code": 175,
+      "form": "阝左"
+    },
+    {
+      "kind": "attached",
+      "code": 159,
+      "form": "阝右"
+    },
+    {
+      "kind": "main",
+      "code": 22,
+      "main": "刀",
+      "attached": "刂",
+      "stroke_group": "二",
+      "raw": "22 刀（刂）"
+    },
+    {
+      "kind": "main",
+      "code": 23,
+      "main": "力",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "23 力"
+    },
+    {
+      "kind": "main",
+      "code": 24,
+      "main": "又",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "24 又"
+    },
+    {
+      "kind": "main",
+      "code": 25,
+      "main": "厶",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "25 厶"
+    },
+    {
+      "kind": "main",
+      "code": 26,
+      "main": "廴",
+      "attached": "",
+      "stroke_group": "二",
+      "raw": "26 廴"
+    },
+    {
+      "kind": "attached",
+      "code": 21,
+      "form": "卩"
+    },
+    {
+      "kind": "main",
+      "code": 27,
+      "main": "干",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "27 干"
+    },
+    {
+      "kind": "main",
+      "code": 28,
+      "main": "工",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "28 工"
+    },
+    {
+      "kind": "main",
+      "code": 29,
+      "main": "土",
+      "attached": "士",
+      "stroke_group": "三",
+      "raw": "29 土（士）"
+    },
+    {
+      "kind": "attached",
+      "code": 29,
+      "form": "士"
+    },
+    {
+      "kind": "attached",
+      "code": 80,
+      "form": "扌"
+    },
+    {
+      "kind": "main",
+      "code": 30,
+      "main": "艹",
+      "attached": "艸",
+      "stroke_group": "三",
+      "raw": "30 艹（艸）"
+    },
+    {
+      "kind": "main",
+      "code": 31,
+      "main": "寸",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "31 寸"
+    },
+    {
+      "kind": "main",
+      "code": 32,
+      "main": "廾",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "32 廾"
+    },
+    {
+      "kind": "main",
+      "code": 33,
+      "main": "大",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "33 大"
+    },
+    {
+      "kind": "attached",
+      "code": 34,
+      "form": "兀"
+    },
+    {
+      "kind": "main",
+      "code": 34,
+      "main": "尢",
+      "attached": "兀允",
+      "stroke_group": "三",
+      "raw": "34 尢（兀允）"
+    },
+    {
+      "kind": "main",
+      "code": 35,
+      "main": "弋",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "35 弋"
+    },
+    {
+      "kind": "main",
+      "code": 36,
+      "main": "小",
+      "attached": "⺌",
+      "stroke_group": "三",
+      "raw": "36 小（⺌）"
+    },
+    {
+      "kind": "attached",
+      "code": 36,
+      "form": "⺌"
+    },
+    {
+      "kind": "main",
+      "code": 37,
+      "main": "口",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "37 口"
+    },
+    {
+      "kind": "main",
+      "code": 38,
+      "main": "囗",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "38 囗"
+    },
+    {
+      "kind": "main",
+      "code": 39,
+      "main": "山",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "39 山"
+    },
+    {
+      "kind": "main",
+      "code": 40,
+      "main": "巾",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "40 巾"
+    },
+    {
+      "kind": "main",
+      "code": 41,
+      "main": "彳",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "41 彳"
+    },
+    {
+      "kind": "main",
+      "code": 42,
+      "main": "彡",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "42 彡"
+    },
+    {
+      "kind": "attached",
+      "code": 66,
+      "form": "犭"
+    },
+    {
+      "kind": "main",
+      "code": 43,
+      "main": "夕",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "43 夕"
+    },
+    {
+      "kind": "main",
+      "code": 44,
+      "main": "夂",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "44 夂"
+    },
+    {
+      "kind": "attached",
+      "code": 185,
+      "form": "饣"
+    },
+    {
+      "kind": "main",
+      "code": 45,
+      "main": "丬",
+      "attached": "爿",
+      "stroke_group": "三",
+      "raw": "45 丬（爿）"
+    },
+    {
+      "kind": "main",
+      "code": 46,
+      "main": "广",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "46 广"
+    },
+    {
+      "kind": "main",
+      "code": 47,
+      "main": "门",
+      "attached": "門",
+      "stroke_group": "三",
+      "raw": "47 门（門）"
+    },
+    {
+      "kind": "attached",
+      "code": 77,
+      "form": "氵"
+    },
+    {
+      "kind": "attached",
+      "code": 98,
+      "form": "忄"
+    },
+    {
+      "kind": "main",
+      "code": 48,
+      "main": "冫",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "48 冫"
+    },
+    {
+      "kind": "main",
+      "code": 49,
+      "main": "辶",
+      "attached": "辵",
+      "stroke_group": "三",
+      "raw": "49 辶（辵）"
+    },
+    {
+      "kind": "main",
+      "code": 50,
+      "main": "彐",
+      "attached": "彑彐",
+      "stroke_group": "三",
+      "raw": "50 彐（彑彐）"
+    },
+    {
+      "kind": "attached",
+      "code": 50,
+      "form": "彐"
+    },
+    {
+      "kind": "main",
+      "code": 51,
+      "main": "尸",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "51 尸"
+    },
+    {
+      "kind": "main",
+      "code": 52,
+      "main": "己",
+      "attached": "已巳",
+      "stroke_group": "三",
+      "raw": "52 己（已巳）"
+    },
+    {
+      "kind": "attached",
+      "code": 52,
+      "form": "已"
+    },
+    {
+      "kind": "attached",
+      "code": 52,
+      "form": "巳"
+    },
+    {
+      "kind": "main",
+      "code": 53,
+      "main": "弓",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "53 弓"
+    },
+    {
+      "kind": "main",
+      "code": 54,
+      "main": "子",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "54 子"
+    },
+    {
+      "kind": "main",
+      "code": 55,
+      "main": "屮",
+      "attached": "艸",
+      "stroke_group": "三",
+      "raw": "55 屮（艸）"
+    },
+    {
+      "kind": "attached",
+      "code": 55,
+      "form": "艸"
+    },
+    {
+      "kind": "main",
+      "code": 56,
+      "main": "女",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "56 女"
+    },
+    {
+      "kind": "main",
+      "code": 57,
+      "main": "飞",
+      "attached": "飛",
+      "stroke_group": "三",
+      "raw": "57 飞（飛）"
+    },
+    {
+      "kind": "main",
+      "code": 58,
+      "main": "马",
+      "attached": "馬",
+      "stroke_group": "三",
+      "raw": "58 马（馬）"
+    },
+    {
+      "kind": "attached",
+      "code": 50,
+      "form": "彑"
+    },
+    {
+      "kind": "attached",
+      "code": 148,
+      "form": "糹"
+    },
+    {
+      "kind": "main",
+      "code": 59,
+      "main": "幺",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "59 幺"
+    },
+    {
+      "kind": "main",
+      "code": 60,
+      "main": "巛",
+      "attached": "",
+      "stroke_group": "三",
+      "raw": "60 巛"
+    },
+    {
+      "kind": "main",
+      "code": 61,
+      "main": "王",
+      "attached": "玉",
+      "stroke_group": "四",
+      "raw": "61 王（玉）"
+    },
+    {
+      "kind": "main",
+      "code": 62,
+      "main": "无",
+      "attached": "旡",
+      "stroke_group": "四",
+      "raw": "62 无（旡）"
+    },
+    {
+      "kind": "main",
+      "code": 63,
+      "main": "韦",
+      "attached": "韋",
+      "stroke_group": "四",
+      "raw": "63 韦（韋）"
+    },
+    {
+      "kind": "attached",
+      "code": 123,
+      "form": "耂"
+    },
+    {
+      "kind": "main",
+      "code": 64,
+      "main": "木",
+      "attached": "朩",
+      "stroke_group": "四",
+      "raw": "64 木（朩）"
+    },
+    {
+      "kind": "attached",
+      "code": 64,
+      "form": "朩"
+    },
+    {
+      "kind": "main",
+      "code": 65,
+      "main": "支",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "65 支"
+    },
+    {
+      "kind": "main",
+      "code": 66,
+      "main": "犬",
+      "attached": "犭",
+      "stroke_group": "四",
+      "raw": "66 犬（犭）"
+    },
+    {
+      "kind": "main",
+      "code": 67,
+      "main": "歹",
+      "attached": "歺",
+      "stroke_group": "四",
+      "raw": "67 歹（歺）"
+    },
+    {
+      "kind": "main",
+      "code": 68,
+      "main": "车",
+      "attached": "車车",
+      "stroke_group": "四",
+      "raw": "68 车（車车）"
+    },
+    {
+      "kind": "main",
+      "code": 69,
+      "main": "牙",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "69 牙"
+    },
+    {
+      "kind": "main",
+      "code": 70,
+      "main": "戈",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "70 戈"
+    },
+    {
+      "kind": "attached",
+      "code": 62,
+      "form": "旡"
+    },
+    {
+      "kind": "main",
+      "code": 71,
+      "main": "比",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "71 比"
+    },
+    {
+      "kind": "main",
+      "code": 72,
+      "main": "瓦",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "72 瓦"
+    },
+    {
+      "kind": "main",
+      "code": 73,
+      "main": "止",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "73 止"
+    },
+    {
+      "kind": "main",
+      "code": 74,
+      "main": "攵",
+      "attached": "攵",
+      "stroke_group": "四",
+      "raw": "74 攵（攵）"
+    },
+    {
+      "kind": "attached",
+      "code": 98,
+      "form": "忄"
+    },
+    {
+      "kind": "attached",
+      "code": 75,
+      "form": "臼"
+    },
+    {
+      "kind": "main",
+      "code": 75,
+      "main": "日",
+      "attached": "冂曰",
+      "stroke_group": "四",
+      "raw": "75 日（冂曰）"
+    },
+    {
+      "kind": "attached",
+      "code": 75,
+      "form": "曰"
+    },
+    {
+      "kind": "main",
+      "code": 76,
+      "main": "贝",
+      "attached": "貝",
+      "stroke_group": "四",
+      "raw": "76 贝（貝）"
+    },
+    {
+      "kind": "main",
+      "code": 77,
+      "main": "水",
+      "attached": "氵氺",
+      "stroke_group": "四",
+      "raw": "77 水（氵氺）"
+    },
+    {
+      "kind": "main",
+      "code": 78,
+      "main": "见",
+      "attached": "見",
+      "stroke_group": "四",
+      "raw": "78 见（見）"
+    },
+    {
+      "kind": "main",
+      "code": 79,
+      "main": "牛",
+      "attached": "牜",
+      "stroke_group": "四",
+      "raw": "79 牛（牜）"
+    },
+    {
+      "kind": "main",
+      "code": 80,
+      "main": "手",
+      "attached": "扌龵",
+      "stroke_group": "四",
+      "raw": "80 手（扌龵）"
+    },
+    {
+      "kind": "attached",
+      "code": 80,
+      "form": "龵"
+    },
+    {
+      "kind": "main",
+      "code": 81,
+      "main": "气",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "81 气"
+    },
+    {
+      "kind": "main",
+      "code": 82,
+      "main": "毛",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "82 毛"
+    },
+    {
+      "kind": "attached",
+      "code": 79,
+      "form": "牜"
+    },
+    {
+      "kind": "main",
+      "code": 83,
+      "main": "长",
+      "attached": "镸長",
+      "stroke_group": "四",
+      "raw": "83 长（镸長）"
+    },
+    {
+      "kind": "main",
+      "code": 84,
+      "main": "片",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "84 片"
+    },
+    {
+      "kind": "main",
+      "code": 85,
+      "main": "斤",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "85 斤"
+    },
+    {
+      "kind": "main",
+      "code": 86,
+      "main": "爪",
+      "attached": "爫",
+      "stroke_group": "四",
+      "raw": "86 爪（爫）"
+    },
+    {
+      "kind": "attached",
+      "code": 34,
+      "form": "允"
+    },
+    {
+      "kind": "attached",
+      "code": 86,
+      "form": "爫"
+    },
+    {
+      "kind": "main",
+      "code": 87,
+      "main": "父",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "87 父"
+    },
+    {
+      "kind": "main",
+      "code": 88,
+      "main": "月",
+      "attached": "⺝",
+      "stroke_group": "四",
+      "raw": "88 月（⺝）"
+    },
+    {
+      "kind": "main",
+      "code": 89,
+      "main": "氏",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "89 氏"
+    },
+    {
+      "kind": "main",
+      "code": 90,
+      "main": "欠",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "90 欠"
+    },
+    {
+      "kind": "main",
+      "code": 91,
+      "main": "风",
+      "attached": "風",
+      "stroke_group": "四",
+      "raw": "91 风（風）"
+    },
+    {
+      "kind": "main",
+      "code": 92,
+      "main": "殳",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "92 殳"
+    },
+    {
+      "kind": "main",
+      "code": 93,
+      "main": "文",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "93 文"
+    },
+    {
+      "kind": "main",
+      "code": 94,
+      "main": "方",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "94 方"
+    },
+    {
+      "kind": "main",
+      "code": 95,
+      "main": "火",
+      "attached": "灬",
+      "stroke_group": "四",
+      "raw": "95 火（灬）"
+    },
+    {
+      "kind": "main",
+      "code": 96,
+      "main": "斗",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "96 斗"
+    },
+    {
+      "kind": "attached",
+      "code": 95,
+      "form": "灬"
+    },
+    {
+      "kind": "main",
+      "code": 97,
+      "main": "户",
+      "attached": "",
+      "stroke_group": "四",
+      "raw": "97 户"
+    },
+    {
+      "kind": "attached",
+      "code": 100,
+      "form": "礻"
+    },
+    {
+      "kind": "main",
+      "code": 98,
+      "main": "心",
+      "attached": "忄⺗",
+      "stroke_group": "四",
+      "raw": "98 心（忄⺗）"
+    },
+    {
+      "kind": "attached",
+      "code": 145,
+      "form": "肀"
+    },
+    {
+      "kind": "attached",
+      "code": 45,
+      "form": "爿"
+    },
+    {
+      "kind": "main",
+      "code": 99,
+      "main": "毋",
+      "attached": "母",
+      "stroke_group": "四",
+      "raw": "99 毋（母）"
+    },
+    {
+      "kind": "main",
+      "code": 100,
+      "main": "示",
+      "attached": "礻",
+      "stroke_group": "五",
+      "raw": "100 示（礻）"
+    },
+    {
+      "kind": "main",
+      "code": 101,
+      "main": "甘",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "101 甘"
+    },
+    {
+      "kind": "main",
+      "code": 102,
+      "main": "石",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "102 石"
+    },
+    {
+      "kind": "main",
+      "code": 103,
+      "main": "龙",
+      "attached": "龍",
+      "stroke_group": "五",
+      "raw": "103 龙（龍）"
+    },
+    {
+      "kind": "attached",
+      "code": 67,
+      "form": "歺"
+    },
+    {
+      "kind": "main",
+      "code": 104,
+      "main": "业",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "104 业"
+    },
+    {
+      "kind": "attached",
+      "code": 77,
+      "form": "氺"
+    },
+    {
+      "kind": "main",
+      "code": 105,
+      "main": "目",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "105 目"
+    },
+    {
+      "kind": "main",
+      "code": 106,
+      "main": "田",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "106 田"
+    },
+    {
+      "kind": "main",
+      "code": 107,
+      "main": "罒",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "107 罒"
+    },
+    {
+      "kind": "main",
+      "code": 108,
+      "main": "皿",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "108 皿"
+    },
+    {
+      "kind": "attached",
+      "code": 176,
+      "form": "钅"
+    },
+    {
+      "kind": "main",
+      "code": 109,
+      "main": "生",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "109 生"
+    },
+    {
+      "kind": "main",
+      "code": 110,
+      "main": "矢",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "110 矢"
+    },
+    {
+      "kind": "main",
+      "code": 111,
+      "main": "禾",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "111 禾"
+    },
+    {
+      "kind": "main",
+      "code": 112,
+      "main": "白",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "112 白"
+    },
+    {
+      "kind": "main",
+      "code": 113,
+      "main": "瓜",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "113 瓜"
+    },
+    {
+      "kind": "main",
+      "code": 114,
+      "main": "鸟",
+      "attached": "鳥",
+      "stroke_group": "五",
+      "raw": "114 鸟（鳥）"
+    },
+    {
+      "kind": "main",
+      "code": 115,
+      "main": "疒",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "115 疒"
+    },
+    {
+      "kind": "main",
+      "code": 116,
+      "main": "立",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "116 立"
+    },
+    {
+      "kind": "main",
+      "code": 117,
+      "main": "穴",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "117 穴"
+    },
+    {
+      "kind": "attached",
+      "code": 142,
+      "form": "衤"
+    },
+    {
+      "kind": "main",
+      "code": 118,
+      "main": "疋",
+      "attached": "⺪",
+      "stroke_group": "五",
+      "raw": "118 疋（⺪）"
+    },
+    {
+      "kind": "main",
+      "code": 119,
+      "main": "皮",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "119 皮"
+    },
+    {
+      "kind": "main",
+      "code": 120,
+      "main": "癶",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "120 癶"
+    },
+    {
+      "kind": "main",
+      "code": 121,
+      "main": "矛",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "121 矛"
+    },
+    {
+      "kind": "attached",
+      "code": 99,
+      "form": "母"
+    },
+    {
+      "kind": "main",
+      "code": 122,
+      "main": "耒",
+      "attached": "",
+      "stroke_group": "五",
+      "raw": "122 耒"
+    },
+    {
+      "kind": "main",
+      "code": 123,
+      "main": "老",
+      "attached": "耂",
+      "stroke_group": "六",
+      "raw": "123 老（耂）"
+    },
+    {
+      "kind": "main",
+      "code": 124,
+      "main": "耳",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "124 耳"
+    },
+    {
+      "kind": "main",
+      "code": 125,
+      "main": "臣",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "125 臣"
+    },
+    {
+      "kind": "attached",
+      "code": 126,
+      "form": "覀"
+    },
+    {
+      "kind": "main",
+      "code": 126,
+      "main": "覀",
+      "attached": "覀覀",
+      "stroke_group": "六",
+      "raw": "126 覀（覀覀）"
+    },
+    {
+      "kind": "attached",
+      "code": 126,
+      "form": "覀"
+    },
+    {
+      "kind": "main",
+      "code": 127,
+      "main": "而",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "127 而"
+    },
+    {
+      "kind": "main",
+      "code": 128,
+      "main": "页",
+      "attached": "頁",
+      "stroke_group": "六",
+      "raw": "128 页（頁）"
+    },
+    {
+      "kind": "main",
+      "code": 129,
+      "main": "至",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "129 至"
+    },
+    {
+      "kind": "main",
+      "code": 130,
+      "main": "虍",
+      "attached": "虎",
+      "stroke_group": "六",
+      "raw": "130 虍（虎）"
+    },
+    {
+      "kind": "attached",
+      "code": 67,
+      "form": "歺"
+    },
+    {
+      "kind": "main",
+      "code": 131,
+      "main": "虫",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "131 虫"
+    },
+    {
+      "kind": "main",
+      "code": 132,
+      "main": "肉",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "132 肉"
+    },
+    {
+      "kind": "main",
+      "code": 133,
+      "main": "缶",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "133 缶"
+    },
+    {
+      "kind": "main",
+      "code": 134,
+      "main": "舌",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "134 舌"
+    },
+    {
+      "kind": "main",
+      "code": 135,
+      "main": "竹",
+      "attached": "⺮",
+      "stroke_group": "六",
+      "raw": "135 竹（⺮）"
+    },
+    {
+      "kind": "attached",
+      "code": 135,
+      "form": "⺮"
+    },
+    {
+      "kind": "main",
+      "code": 136,
+      "main": "臼",
+      "attached": "臼",
+      "stroke_group": "六",
+      "raw": "136 臼（臼）"
+    },
+    {
+      "kind": "attached",
+      "code": 136,
+      "form": "臼"
+    },
+    {
+      "kind": "main",
+      "code": 137,
+      "main": "自",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "137 自"
+    },
+    {
+      "kind": "main",
+      "code": 138,
+      "main": "血",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "138 血"
+    },
+    {
+      "kind": "main",
+      "code": 139,
+      "main": "舟",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "139 舟"
+    },
+    {
+      "kind": "main",
+      "code": 140,
+      "main": "色",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "140 色"
+    },
+    {
+      "kind": "main",
+      "code": 141,
+      "main": "齐",
+      "attached": "齊",
+      "stroke_group": "六",
+      "raw": "141 齐（齊）"
+    },
+    {
+      "kind": "main",
+      "code": 142,
+      "main": "衣",
+      "attached": "衤",
+      "stroke_group": "六",
+      "raw": "142 衣（衤）"
+    },
+    {
+      "kind": "main",
+      "code": 143,
+      "main": "羊",
+      "attached": "⺶羊",
+      "stroke_group": "六",
+      "raw": "143 羊（⺶羊）"
+    },
+    {
+      "kind": "attached",
+      "code": 143,
+      "form": "⺶"
+    },
+    {
+      "kind": "attached",
+      "code": 143,
+      "form": "⺶"
+    },
+    {
+      "kind": "main",
+      "code": 144,
+      "main": "米",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "144 米"
+    },
+    {
+      "kind": "main",
+      "code": 145,
+      "main": "聿",
+      "attached": "肀⺕",
+      "stroke_group": "六",
+      "raw": "145 聿（肀⺕）"
+    },
+    {
+      "kind": "main",
+      "code": 146,
+      "main": "艮",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "146 艮"
+    },
+    {
+      "kind": "attached",
+      "code": 30,
+      "form": "艸"
+    },
+    {
+      "kind": "main",
+      "code": 147,
+      "main": "羽",
+      "attached": "",
+      "stroke_group": "六",
+      "raw": "147 羽"
+    },
+    {
+      "kind": "main",
+      "code": 148,
+      "main": "糸",
+      "attached": "纟糹",
+      "stroke_group": "六",
+      "raw": "148 糸（纟糹）"
+    },
+    {
+      "kind": "attached",
+      "code": 148,
+      "form": "糹"
+    },
+    {
+      "kind": "main",
+      "code": 149,
+      "main": "麦",
+      "attached": "麥",
+      "stroke_group": "七",
+      "raw": "149 麦（麥）"
+    },
+    {
+      "kind": "main",
+      "code": 150,
+      "main": "走",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "150 走"
+    },
+    {
+      "kind": "main",
+      "code": 151,
+      "main": "赤",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "151 赤"
+    },
+    {
+      "kind": "attached",
+      "code": 83,
+      "form": "镸"
+    },
+    {
+      "kind": "main",
+      "code": 152,
+      "main": "豆",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "152 豆"
+    },
+    {
+      "kind": "main",
+      "code": 153,
+      "main": "酉",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "153 酉"
+    },
+    {
+      "kind": "main",
+      "code": 154,
+      "main": "辰",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "154 辰"
+    },
+    {
+      "kind": "main",
+      "code": 155,
+      "main": "豕",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "155 豕"
+    },
+    {
+      "kind": "main",
+      "code": 156,
+      "main": "卤",
+      "attached": "鹵",
+      "stroke_group": "七",
+      "raw": "156 卤（鹵）"
+    },
+    {
+      "kind": "attached",
+      "code": 76,
+      "form": "贝"
+    },
+    {
+      "kind": "main",
+      "code": 157,
+      "main": "里",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "157 里"
+    },
+    {
+      "kind": "attached",
+      "code": 78,
+      "form": "见"
+    },
+    {
+      "kind": "main",
+      "code": 158,
+      "main": "足",
+      "attached": "⻊",
+      "stroke_group": "七",
+      "raw": "158 足（⻊）"
+    },
+    {
+      "kind": "attached",
+      "code": 158,
+      "form": "⻊"
+    },
+    {
+      "kind": "main",
+      "code": 159,
+      "main": "邑",
+      "attached": "阝右",
+      "stroke_group": "七",
+      "raw": "159 邑（阝右）"
+    },
+    {
+      "kind": "attached",
+      "code": 136,
+      "form": "臼"
+    },
+    {
+      "kind": "main",
+      "code": 160,
+      "main": "身",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "160 身"
+    },
+    {
+      "kind": "attached",
+      "code": 49,
+      "form": "辶"
+    },
+    {
+      "kind": "main",
+      "code": 161,
+      "main": "釆",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "161 釆"
+    },
+    {
+      "kind": "main",
+      "code": 162,
+      "main": "谷",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "162 谷"
+    },
+    {
+      "kind": "main",
+      "code": 163,
+      "main": "豸",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "163 豸"
+    },
+    {
+      "kind": "main",
+      "code": 164,
+      "main": "龟",
+      "attached": "龜",
+      "stroke_group": "七",
+      "raw": "164 龟（龜）"
+    },
+    {
+      "kind": "main",
+      "code": 165,
+      "main": "角",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "165 角"
+    },
+    {
+      "kind": "main",
+      "code": 166,
+      "main": "言",
+      "attached": "讠",
+      "stroke_group": "七",
+      "raw": "166 言（讠）"
+    },
+    {
+      "kind": "main",
+      "code": 167,
+      "main": "辛",
+      "attached": "",
+      "stroke_group": "七",
+      "raw": "167 辛"
+    },
+    {
+      "kind": "main",
+      "code": 168,
+      "main": "青",
+      "attached": "",
+      "stroke_group": "八",
+      "raw": "168 青"
+    },
+    {
+      "kind": "attached",
+      "code": 83,
+      "form": "镸"
+    },
+    {
+      "kind": "main",
+      "code": 169,
+      "main": "卓",
+      "attached": "",
+      "stroke_group": "八",
+      "raw": "169 卓"
+    },
+    {
+      "kind": "main",
+      "code": 170,
+      "main": "雨",
+      "attached": "",
+      "stroke_group": "八",
+      "raw": "170 雨"
+    },
+    {
+      "kind": "main",
+      "code": 171,
+      "main": "非",
+      "attached": "",
+      "stroke_group": "八",
+      "raw": "171 非"
+    },
+    {
+      "kind": "main",
+      "code": 172,
+      "main": "齿",
+      "attached": "齒",
+      "stroke_group": "八",
+      "raw": "172 齿（齒）"
+    },
+    {
+      "kind": "attached",
+      "code": 130,
+      "form": "虎"
+    },
+    {
+      "kind": "attached",
+      "code": 47,
+      "form": "门"
+    },
+    {
+      "kind": "main",
+      "code": 173,
+      "main": "黾",
+      "attached": "黽",
+      "stroke_group": "八",
+      "raw": "173 黾（黽）"
+    },
+    {
+      "kind": "main",
+      "code": 174,
+      "main": "隹",
+      "attached": "",
+      "stroke_group": "八",
+      "raw": "174 隹"
+    },
+    {
+      "kind": "main",
+      "code": 175,
+      "main": "阜",
+      "attached": "阝左",
+      "stroke_group": "八",
+      "raw": "175 阜（阝左）"
+    },
+    {
+      "kind": "main",
+      "code": 176,
+      "main": "金",
+      "attached": "钅",
+      "stroke_group": "八",
+      "raw": "176 金（钅）"
+    },
+    {
+      "kind": "attached",
+      "code": 185,
+      "form": "饣"
+    },
+    {
+      "kind": "main",
+      "code": 177,
+      "main": "鱼",
+      "attached": "魚",
+      "stroke_group": "八",
+      "raw": "177 鱼（魚）"
+    },
+    {
+      "kind": "main",
+      "code": 178,
+      "main": "隶",
+      "attached": "",
+      "stroke_group": "八",
+      "raw": "178 隶"
+    },
+    {
+      "kind": "main",
+      "code": 179,
+      "main": "革",
+      "attached": "",
+      "stroke_group": "九",
+      "raw": "179 革"
+    },
+    {
+      "kind": "attached",
+      "code": 128,
+      "form": "页"
+    },
+    {
+      "kind": "main",
+      "code": 180,
+      "main": "面",
+      "attached": "",
+      "stroke_group": "九",
+      "raw": "180 面"
+    },
+    {
+      "kind": "main",
+      "code": 181,
+      "main": "韭",
+      "attached": "",
+      "stroke_group": "九",
+      "raw": "181 韭"
+    },
+    {
+      "kind": "main",
+      "code": 182,
+      "main": "骨",
+      "attached": "",
+      "stroke_group": "九",
+      "raw": "182 骨"
+    },
+    {
+      "kind": "main",
+      "code": 183,
+      "main": "香",
+      "attached": "",
+      "stroke_group": "九",
+      "raw": "183 香"
+    },
+    {
+      "kind": "main",
+      "code": 184,
+      "main": "鬼",
+      "attached": "",
+      "stroke_group": "九",
+      "raw": "184 鬼"
+    },
+    {
+      "kind": "main",
+      "code": 185,
+      "main": "食",
+      "attached": "饣飠",
+      "stroke_group": "九",
+      "raw": "185 食（饣飠）"
+    },
+    {
+      "kind": "attached",
+      "code": 91,
+      "form": "风"
+    },
+    {
+      "kind": "main",
+      "code": 186,
+      "main": "音",
+      "attached": "",
+      "stroke_group": "九",
+      "raw": "186 音"
+    },
+    {
+      "kind": "main",
+      "code": 187,
+      "main": "首",
+      "attached": "",
+      "stroke_group": "九",
+      "raw": "187 首"
+    },
+    {
+      "kind": "attached",
+      "code": 63,
+      "form": "韦"
+    },
+    {
+      "kind": "attached",
+      "code": 57,
+      "form": "飞"
+    },
+    {
+      "kind": "main",
+      "code": 188,
+      "main": "髟",
+      "attached": "",
+      "stroke_group": "十",
+      "raw": "188 髟"
+    },
+    {
+      "kind": "attached",
+      "code": 58,
+      "form": "马"
+    },
+    {
+      "kind": "main",
+      "code": 189,
+      "main": "鬲",
+      "attached": "",
+      "stroke_group": "十",
+      "raw": "189 鬲"
+    },
+    {
+      "kind": "main",
+      "code": 190,
+      "main": "鬥",
+      "attached": "",
+      "stroke_group": "十",
+      "raw": "190 鬥"
+    },
+    {
+      "kind": "main",
+      "code": 191,
+      "main": "高",
+      "attached": "",
+      "stroke_group": "十",
+      "raw": "191 高"
+    },
+    {
+      "kind": "main",
+      "code": 192,
+      "main": "黄",
+      "attached": "",
+      "stroke_group": "十一",
+      "raw": "192 黄"
+    },
+    {
+      "kind": "attached",
+      "code": 149,
+      "form": "麦"
+    },
+    {
+      "kind": "attached",
+      "code": 156,
+      "form": "卤"
+    },
+    {
+      "kind": "attached",
+      "code": 114,
+      "form": "鸟"
+    },
+    {
+      "kind": "attached",
+      "code": 177,
+      "form": "鱼"
+    },
+    {
+      "kind": "main",
+      "code": 193,
+      "main": "麻",
+      "attached": "",
+      "stroke_group": "十一",
+      "raw": "193 麻"
+    },
+    {
+      "kind": "main",
+      "code": 194,
+      "main": "鹿",
+      "attached": "",
+      "stroke_group": "十一",
+      "raw": "194 鹿"
+    },
+    {
+      "kind": "main",
+      "code": 195,
+      "main": "鼎",
+      "attached": "",
+      "stroke_group": "十二",
+      "raw": "195 鼎"
+    },
+    {
+      "kind": "main",
+      "code": 196,
+      "main": "黑",
+      "attached": "",
+      "stroke_group": "十二",
+      "raw": "196 黑"
+    },
+    {
+      "kind": "main",
+      "code": 197,
+      "main": "黍",
+      "attached": "",
+      "stroke_group": "十二",
+      "raw": "197 黍"
+    },
+    {
+      "kind": "main",
+      "code": 198,
+      "main": "鼓",
+      "attached": "",
+      "stroke_group": "十三",
+      "raw": "198 鼓"
+    },
+    {
+      "kind": "attached",
+      "code": 173,
+      "form": "黾"
+    },
+    {
+      "kind": "main",
+      "code": 199,
+      "main": "鼠",
+      "attached": "",
+      "stroke_group": "十三",
+      "raw": "199 鼠"
+    },
+    {
+      "kind": "main",
+      "code": 200,
+      "main": "鼻",
+      "attached": "",
+      "stroke_group": "十四",
+      "raw": "200 鼻"
+    },
+    {
+      "kind": "attached",
+      "code": 141,
+      "form": "齐"
+    },
+    {
+      "kind": "attached",
+      "code": 172,
+      "form": "齿"
+    },
+    {
+      "kind": "attached",
+      "code": 103,
+      "form": "龙"
+    },
+    {
+      "kind": "attached",
+      "code": 164,
+      "form": "龟"
+    },
+    {
+      "kind": "main",
+      "code": 201,
+      "main": "龠",
+      "attached": "",
+      "stroke_group": "十七",
+      "raw": "201 龠"
+    }
+  ]
+}

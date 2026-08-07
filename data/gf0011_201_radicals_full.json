@@ -1,0 +1,2918 @@
+{
+  "schema_version": 2,
+  "standard": "GF 0011-2009 汉字部首表",
+  "title": "汉字部首表（完整版入库）",
+  "ingested_at": "2026-08-07",
+  "status": "INGESTED",
+  "source_chain": [
+    {
+      "id": "official_docx",
+      "description": "用户提供完整版 docx，含官方 PDF 9 页图像与文字层",
+      "path": "C:/Users/zairk/WorkBuddy/2026-08-07-20-23-37/GF_0011-2009_汉字部首表.docx"
+    },
+    {
+      "id": "public_transcription",
+      "url": "https://www.ichara.cn/web/account/view_article.php?art_id=110"
+    },
+    {
+      "id": "wikipedia_template",
+      "url": "https://zh.wikipedia.org/wiki/汉字部首表",
+      "note": "Template:简体中文部首，201 主部首 + 100 附形部首"
+    }
+  ],
+  "summary": {
+    "main_count": 201,
+    "attached_entry_count": 79,
+    "stroke_group_sizes": {
+      "一画": 5,
+      "二画": 21,
+      "三画": 34,
+      "四画": 39,
+      "五画": 22,
+      "六画": 27,
+      "七画": 19,
+      "八画": 11,
+      "九画": 9,
+      "十画": 4,
+      "十一画": 3,
+      "十二画": 3,
+      "十三画": 2,
+      "十四画": 1,
+      "十七画": 1
+    },
+    "corrected": 1,
+    "needs_review": 1
+  },
+  "radicals": [
+    {
+      "code": 1,
+      "main": "一",
+      "attached": "",
+      "stroke_group": "一画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "一",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 2,
+      "main": "丨",
+      "attached": "亅",
+      "stroke_group": "一画",
+      "attached_entries": [
+        {
+          "form": "亅",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "丨",
+      "docx_attached": "亅",
+      "wiki_attached": ""
+    },
+    {
+      "code": 3,
+      "main": "丿",
+      "attached": "",
+      "stroke_group": "一画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "丿",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 4,
+      "main": "丶",
+      "attached": "",
+      "stroke_group": "一画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "丶",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 5,
+      "main": "乛",
+      "attached": "",
+      "stroke_group": "一画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "乛",
+      "docx_attached": "",
+      "wiki_attached": "亅乚乙"
+    },
+    {
+      "code": 6,
+      "main": "十",
+      "attached": "",
+      "stroke_group": "二画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "十",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 7,
+      "main": "厂",
+      "attached": "⺁",
+      "stroke_group": "二画",
+      "attached_entries": [
+        {
+          "form": "厂",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "厂",
+      "docx_attached": "厂",
+      "wiki_attached": "𠂆"
+    },
+    {
+      "code": 8,
+      "main": "匚",
+      "attached": "",
+      "stroke_group": "二画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "匚",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 9,
+      "main": "卜",
+      "attached": "⺊",
+      "stroke_group": "二画",
+      "attached_entries": [
+        {
+          "form": "卜",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "卜",
+      "docx_attached": "卜",
+      "wiki_attached": "⺊"
+    },
+    {
+      "code": 10,
+      "main": "冂",
+      "attached": "⺆",
+      "stroke_group": "二画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "冂",
+      "docx_attached": "門",
+      "wiki_attached": "⺆"
+    },
+    {
+      "code": 11,
+      "main": "八",
+      "attached": "丷",
+      "stroke_group": "二画",
+      "attached_entries": [
+        {
+          "form": "丷",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "八",
+      "docx_attached": "丷",
+      "wiki_attached": "丷"
+    },
+    {
+      "code": 12,
+      "main": "人",
+      "attached": "亻入",
+      "stroke_group": "二画",
+      "attached_entries": [
+        {
+          "form": "亻",
+          "source": "docx_text_layer",
+          "draft": true
+        },
+        {
+          "form": "人",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "人",
+      "docx_attached": "亻人",
+      "wiki_attached": "亻入"
+    },
+    {
+      "code": 13,
+      "main": "勹",
+      "attached": "",
+      "stroke_group": "二画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "勹",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 14,
+      "main": "儿",
+      "attached": "",
+      "stroke_group": "二画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "儿",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 15,
+      "main": "匕",
+      "attached": "",
+      "stroke_group": "二画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "匕",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 16,
+      "main": "几",
+      "attached": "⺇",
+      "stroke_group": "二画",
+      "attached_entries": [
+        {
+          "form": "几",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "几",
+      "docx_attached": "几",
+      "wiki_attached": "𠘨"
+    },
+    {
+      "code": 17,
+      "main": "亠",
+      "attached": "",
+      "stroke_group": "二画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "冫",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 18,
+      "main": "冫",
+      "attached": "",
+      "stroke_group": "二画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "冖",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 19,
+      "main": "冖",
+      "attached": "",
+      "stroke_group": "二画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "凵",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 20,
+      "main": "凵",
+      "attached": "",
+      "stroke_group": "二画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "卩",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 21,
+      "main": "卩",
+      "attached": "⺋",
+      "stroke_group": "二画",
+      "attached_entries": [
+        {
+          "form": "卩",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "阝",
+      "docx_attached": "卩",
+      "wiki_attached": "㔾"
+    },
+    {
+      "code": 22,
+      "main": "刀",
+      "attached": "刂⺈",
+      "stroke_group": "二画",
+      "attached_entries": [
+        {
+          "form": "刂",
+          "source": "docx_text_layer",
+          "draft": true
+        },
+        {
+          "form": "ツ",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "刀",
+      "docx_attached": "刂",
+      "wiki_attached": "刂⺈"
+    },
+    {
+      "code": 23,
+      "main": "力",
+      "attached": "",
+      "stroke_group": "二画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "力",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 24,
+      "main": "又",
+      "attached": "",
+      "stroke_group": "二画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "又",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 25,
+      "main": "厶",
+      "attached": "",
+      "stroke_group": "二画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "厶",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 26,
+      "main": "廴",
+      "attached": "",
+      "stroke_group": "二画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "廴",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 27,
+      "main": "干",
+      "attached": "",
+      "stroke_group": "三画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "干",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 28,
+      "main": "工",
+      "attached": "",
+      "stroke_group": "三画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "工",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 29,
+      "main": "土",
+      "attached": "士",
+      "stroke_group": "三画",
+      "attached_entries": [
+        {
+          "form": "士",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "土",
+      "docx_attached": "士",
+      "wiki_attached": "士"
+    },
+    {
+      "code": 30,
+      "main": "艹",
+      "attached": "艸",
+      "stroke_group": "三画",
+      "attached_entries": [
+        {
+          "form": "艸",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "艹",
+      "docx_attached": "艸",
+      "wiki_attached": "艸"
+    },
+    {
+      "code": 31,
+      "main": "寸",
+      "attached": "",
+      "stroke_group": "三画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "寸",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 32,
+      "main": "廾",
+      "attached": "",
+      "stroke_group": "三画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "廾",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 33,
+      "main": "大",
+      "attached": "",
+      "stroke_group": "三画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "大",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 34,
+      "main": "尢",
+      "attached": "兀尣",
+      "stroke_group": "三画",
+      "attached_entries": [
+        {
+          "form": "兀",
+          "source": "docx_text_layer",
+          "draft": true
+        },
+        {
+          "form": "允",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "尢",
+      "docx_attached": "兀允",
+      "wiki_attached": "兀尣"
+    },
+    {
+      "code": 35,
+      "main": "弋",
+      "attached": "",
+      "stroke_group": "三画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "弋",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 36,
+      "main": "小",
+      "attached": "⺌",
+      "stroke_group": "三画",
+      "attached_entries": [
+        {
+          "form": "⺌",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "小",
+      "docx_attached": "⺌",
+      "wiki_attached": "⺌"
+    },
+    {
+      "code": 37,
+      "main": "口",
+      "attached": "",
+      "stroke_group": "三画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "口",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 38,
+      "main": "囗",
+      "attached": "",
+      "stroke_group": "三画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "囗",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 39,
+      "main": "山",
+      "attached": "",
+      "stroke_group": "三画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "山",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 40,
+      "main": "巾",
+      "attached": "",
+      "stroke_group": "三画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "巾",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 41,
+      "main": "彳",
+      "attached": "",
+      "stroke_group": "三画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "彳",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 42,
+      "main": "彡",
+      "attached": "",
+      "stroke_group": "三画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "彡",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 43,
+      "main": "夕",
+      "attached": "",
+      "stroke_group": "三画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "夕",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 44,
+      "main": "夂",
+      "attached": "",
+      "stroke_group": "三画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "夂",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 45,
+      "main": "丬",
+      "attached": "爿",
+      "stroke_group": "三画",
+      "attached_entries": [
+        {
+          "form": "爿",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "丬",
+      "docx_attached": "爿",
+      "wiki_attached": "爿"
+    },
+    {
+      "code": 46,
+      "main": "广",
+      "attached": "",
+      "stroke_group": "三画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "广",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 47,
+      "main": "门",
+      "attached": "門",
+      "stroke_group": "三画",
+      "attached_entries": [
+        {
+          "form": "门",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "门",
+      "docx_attached": "門",
+      "wiki_attached": "門"
+    },
+    {
+      "code": 48,
+      "main": "宀",
+      "attached": "",
+      "stroke_group": "三画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "冫",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 49,
+      "main": "辶",
+      "attached": "辵",
+      "stroke_group": "三画",
+      "attached_entries": [
+        {
+          "form": "辶",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "辶",
+      "docx_attached": "辵",
+      "wiki_attached": "辵"
+    },
+    {
+      "code": 50,
+      "main": "彐",
+      "attached": "彐彑",
+      "stroke_group": "三画",
+      "attached_entries": [
+        {
+          "form": "彐",
+          "source": "docx_text_layer",
+          "draft": true
+        },
+        {
+          "form": "彑",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "NEEDS_REVIEW",
+      "note": "docx 文字层为 彑彐，维基模板为 ⺕彑，原公开转载表为 彐彑；字形/顺序待官方页图像最终确认",
+      "docx_main": "彐",
+      "docx_attached": "彑彐",
+      "wiki_attached": "⺕彑"
+    },
+    {
+      "code": 51,
+      "main": "尸",
+      "attached": "",
+      "stroke_group": "三画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "尸",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 52,
+      "main": "己",
+      "attached": "已巳",
+      "stroke_group": "三画",
+      "attached_entries": [
+        {
+          "form": "已",
+          "source": "docx_text_layer",
+          "draft": true
+        },
+        {
+          "form": "巳",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "己",
+      "docx_attached": "已巳",
+      "wiki_attached": "已巳"
+    },
+    {
+      "code": 53,
+      "main": "弓",
+      "attached": "",
+      "stroke_group": "三画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "弓",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 54,
+      "main": "子",
+      "attached": "",
+      "stroke_group": "三画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "子",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 55,
+      "main": "屮",
+      "attached": "",
+      "stroke_group": "三画",
+      "attached_entries": [
+        {
+          "form": "艸",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "屮",
+      "docx_attached": "艸",
+      "wiki_attached": ""
+    },
+    {
+      "code": 56,
+      "main": "女",
+      "attached": "",
+      "stroke_group": "三画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "女",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 57,
+      "main": "飞",
+      "attached": "飛",
+      "stroke_group": "三画",
+      "attached_entries": [
+        {
+          "form": "飞",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "飞",
+      "docx_attached": "飛",
+      "wiki_attached": "飛"
+    },
+    {
+      "code": 58,
+      "main": "马",
+      "attached": "馬",
+      "stroke_group": "三画",
+      "attached_entries": [
+        {
+          "form": "马",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "马",
+      "docx_attached": "馬",
+      "wiki_attached": "馬"
+    },
+    {
+      "code": 59,
+      "main": "幺",
+      "attached": "",
+      "stroke_group": "三画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "幺",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 60,
+      "main": "巛",
+      "attached": "",
+      "stroke_group": "三画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "巛",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 61,
+      "main": "王",
+      "attached": "玉",
+      "stroke_group": "四画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "王",
+      "docx_attached": "玉",
+      "wiki_attached": "𤣩玉"
+    },
+    {
+      "code": 62,
+      "main": "无",
+      "attached": "旡",
+      "stroke_group": "四画",
+      "attached_entries": [
+        {
+          "form": "旡",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "无",
+      "docx_attached": "旡",
+      "wiki_attached": "旡"
+    },
+    {
+      "code": 63,
+      "main": "韦",
+      "attached": "韋",
+      "stroke_group": "四画",
+      "attached_entries": [
+        {
+          "form": "韦",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "韦",
+      "docx_attached": "韋",
+      "wiki_attached": "韋"
+    },
+    {
+      "code": 64,
+      "main": "木",
+      "attached": "朩",
+      "stroke_group": "四画",
+      "attached_entries": [
+        {
+          "form": "朩",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "木",
+      "docx_attached": "朩",
+      "wiki_attached": "朩"
+    },
+    {
+      "code": 65,
+      "main": "支",
+      "attached": "",
+      "stroke_group": "四画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "支",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 66,
+      "main": "犬",
+      "attached": "犭",
+      "stroke_group": "四画",
+      "attached_entries": [
+        {
+          "form": "犭",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "犬",
+      "docx_attached": "犭",
+      "wiki_attached": "犭"
+    },
+    {
+      "code": 67,
+      "main": "歹",
+      "attached": "歺",
+      "stroke_group": "四画",
+      "attached_entries": [
+        {
+          "form": "歺",
+          "source": "docx_text_layer",
+          "draft": true
+        },
+        {
+          "form": "歺",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "歹",
+      "docx_attached": "歺",
+      "wiki_attached": "歺"
+    },
+    {
+      "code": 68,
+      "main": "车",
+      "attached": "車",
+      "stroke_group": "四画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "车",
+      "docx_attached": "車车",
+      "wiki_attached": "車"
+    },
+    {
+      "code": 69,
+      "main": "牙",
+      "attached": "",
+      "stroke_group": "四画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "牙",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 70,
+      "main": "戈",
+      "attached": "",
+      "stroke_group": "四画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "戈",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 71,
+      "main": "比",
+      "attached": "",
+      "stroke_group": "四画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "比",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 72,
+      "main": "瓦",
+      "attached": "",
+      "stroke_group": "四画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "瓦",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 73,
+      "main": "止",
+      "attached": "",
+      "stroke_group": "四画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "止",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 74,
+      "main": "攴",
+      "attached": "攵",
+      "stroke_group": "四画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "攵",
+      "docx_attached": "攵",
+      "wiki_attached": "攵"
+    },
+    {
+      "code": 75,
+      "main": "日",
+      "attached": "⺜曰",
+      "stroke_group": "四画",
+      "attached_entries": [
+        {
+          "form": "臼",
+          "source": "docx_text_layer",
+          "draft": true
+        },
+        {
+          "form": "曰",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "日",
+      "docx_attached": "冂曰",
+      "wiki_attached": "曰⺜"
+    },
+    {
+      "code": 76,
+      "main": "贝",
+      "attached": "貝",
+      "stroke_group": "四画",
+      "attached_entries": [
+        {
+          "form": "贝",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "贝",
+      "docx_attached": "貝",
+      "wiki_attached": "貝"
+    },
+    {
+      "code": 77,
+      "main": "水",
+      "attached": "氵氺",
+      "stroke_group": "四画",
+      "attached_entries": [
+        {
+          "form": "氵",
+          "source": "docx_text_layer",
+          "draft": true
+        },
+        {
+          "form": "氺",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "水",
+      "docx_attached": "氵氺",
+      "wiki_attached": "氵氺"
+    },
+    {
+      "code": 78,
+      "main": "见",
+      "attached": "見",
+      "stroke_group": "四画",
+      "attached_entries": [
+        {
+          "form": "见",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "见",
+      "docx_attached": "見",
+      "wiki_attached": "見"
+    },
+    {
+      "code": 79,
+      "main": "牛",
+      "attached": "牜",
+      "stroke_group": "四画",
+      "attached_entries": [
+        {
+          "form": "牜",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "牛",
+      "docx_attached": "牜",
+      "wiki_attached": "牜"
+    },
+    {
+      "code": 80,
+      "main": "手",
+      "attached": "扌龵",
+      "stroke_group": "四画",
+      "attached_entries": [
+        {
+          "form": "扌",
+          "source": "docx_text_layer",
+          "draft": true
+        },
+        {
+          "form": "龵",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CORRECTED",
+      "note": "docx 文字层与维基模板均为 扌龵；原公开转载表 扌看 为 OCR 同形误读",
+      "docx_main": "手",
+      "docx_attached": "扌龵",
+      "wiki_attached": "扌龵"
+    },
+    {
+      "code": 81,
+      "main": "气",
+      "attached": "",
+      "stroke_group": "四画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "气",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 82,
+      "main": "毛",
+      "attached": "",
+      "stroke_group": "四画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "毛",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 83,
+      "main": "长",
+      "attached": "镸長",
+      "stroke_group": "四画",
+      "attached_entries": [
+        {
+          "form": "镸",
+          "source": "docx_text_layer",
+          "draft": true
+        },
+        {
+          "form": "镸",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "长",
+      "docx_attached": "镸長",
+      "wiki_attached": "镸長"
+    },
+    {
+      "code": 84,
+      "main": "片",
+      "attached": "",
+      "stroke_group": "四画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "片",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 85,
+      "main": "斤",
+      "attached": "",
+      "stroke_group": "四画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "斤",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 86,
+      "main": "爪",
+      "attached": "爫",
+      "stroke_group": "四画",
+      "attached_entries": [
+        {
+          "form": "爫",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "爪",
+      "docx_attached": "爫",
+      "wiki_attached": "爫"
+    },
+    {
+      "code": 87,
+      "main": "父",
+      "attached": "",
+      "stroke_group": "四画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "父",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 88,
+      "main": "月",
+      "attached": "⺝",
+      "stroke_group": "四画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "月",
+      "docx_attached": "⺝",
+      "wiki_attached": "⺝"
+    },
+    {
+      "code": 89,
+      "main": "氏",
+      "attached": "",
+      "stroke_group": "四画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "氏",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 90,
+      "main": "欠",
+      "attached": "",
+      "stroke_group": "四画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "欠",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 91,
+      "main": "风",
+      "attached": "風",
+      "stroke_group": "四画",
+      "attached_entries": [
+        {
+          "form": "风",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "风",
+      "docx_attached": "風",
+      "wiki_attached": "風"
+    },
+    {
+      "code": 92,
+      "main": "殳",
+      "attached": "",
+      "stroke_group": "四画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "殳",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 93,
+      "main": "文",
+      "attached": "",
+      "stroke_group": "四画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "文",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 94,
+      "main": "方",
+      "attached": "",
+      "stroke_group": "四画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "方",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 95,
+      "main": "火",
+      "attached": "灬",
+      "stroke_group": "四画",
+      "attached_entries": [
+        {
+          "form": "灬",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "火",
+      "docx_attached": "灬",
+      "wiki_attached": "灬"
+    },
+    {
+      "code": 96,
+      "main": "斗",
+      "attached": "",
+      "stroke_group": "四画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "斗",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 97,
+      "main": "户",
+      "attached": "",
+      "stroke_group": "四画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "户",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 98,
+      "main": "心",
+      "attached": "忄⺗",
+      "stroke_group": "四画",
+      "attached_entries": [
+        {
+          "form": "忄",
+          "source": "docx_text_layer",
+          "draft": true
+        },
+        {
+          "form": "忄",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "心",
+      "docx_attached": "忄⺗",
+      "wiki_attached": "忄⺗"
+    },
+    {
+      "code": 99,
+      "main": "毋",
+      "attached": "母",
+      "stroke_group": "四画",
+      "attached_entries": [
+        {
+          "form": "母",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "毋",
+      "docx_attached": "母",
+      "wiki_attached": "母"
+    },
+    {
+      "code": 100,
+      "main": "示",
+      "attached": "礻",
+      "stroke_group": "五画",
+      "attached_entries": [
+        {
+          "form": "礻",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "示",
+      "docx_attached": "礻",
+      "wiki_attached": "礻"
+    },
+    {
+      "code": 101,
+      "main": "甘",
+      "attached": "",
+      "stroke_group": "五画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "甘",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 102,
+      "main": "石",
+      "attached": "",
+      "stroke_group": "五画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "石",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 103,
+      "main": "龙",
+      "attached": "龍",
+      "stroke_group": "五画",
+      "attached_entries": [
+        {
+          "form": "龙",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "龙",
+      "docx_attached": "龍",
+      "wiki_attached": "龍"
+    },
+    {
+      "code": 104,
+      "main": "业",
+      "attached": "",
+      "stroke_group": "五画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "业",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 105,
+      "main": "目",
+      "attached": "",
+      "stroke_group": "五画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "目",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 106,
+      "main": "田",
+      "attached": "",
+      "stroke_group": "五画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "田",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 107,
+      "main": "罒",
+      "attached": "",
+      "stroke_group": "五画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "罒",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 108,
+      "main": "皿",
+      "attached": "",
+      "stroke_group": "五画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "皿",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 109,
+      "main": "生",
+      "attached": "",
+      "stroke_group": "五画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "生",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 110,
+      "main": "矢",
+      "attached": "",
+      "stroke_group": "五画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "矢",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 111,
+      "main": "禾",
+      "attached": "",
+      "stroke_group": "五画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "禾",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 112,
+      "main": "白",
+      "attached": "",
+      "stroke_group": "五画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "白",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 113,
+      "main": "瓜",
+      "attached": "",
+      "stroke_group": "五画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "瓜",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 114,
+      "main": "鸟",
+      "attached": "鳥",
+      "stroke_group": "五画",
+      "attached_entries": [
+        {
+          "form": "鸟",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "鸟",
+      "docx_attached": "鳥",
+      "wiki_attached": "鳥"
+    },
+    {
+      "code": 115,
+      "main": "疒",
+      "attached": "",
+      "stroke_group": "五画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "疒",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 116,
+      "main": "立",
+      "attached": "",
+      "stroke_group": "五画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "立",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 117,
+      "main": "穴",
+      "attached": "",
+      "stroke_group": "五画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "穴",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 118,
+      "main": "疋",
+      "attached": "⺪",
+      "stroke_group": "五画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "疋",
+      "docx_attached": "⺪",
+      "wiki_attached": "𤴔"
+    },
+    {
+      "code": 119,
+      "main": "皮",
+      "attached": "",
+      "stroke_group": "五画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "皮",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 120,
+      "main": "癶",
+      "attached": "",
+      "stroke_group": "五画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "癶",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 121,
+      "main": "矛",
+      "attached": "",
+      "stroke_group": "五画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "矛",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 122,
+      "main": "耒",
+      "attached": "",
+      "stroke_group": "六画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "耒",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 123,
+      "main": "老",
+      "attached": "",
+      "stroke_group": "六画",
+      "attached_entries": [
+        {
+          "form": "耂",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "老",
+      "docx_attached": "耂",
+      "wiki_attached": "耂"
+    },
+    {
+      "code": 124,
+      "main": "耳",
+      "attached": "",
+      "stroke_group": "六画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "耳",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 125,
+      "main": "臣",
+      "attached": "",
+      "stroke_group": "六画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "臣",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 126,
+      "main": "覀",
+      "attached": "襾西",
+      "stroke_group": "六画",
+      "attached_entries": [
+        {
+          "form": "覀",
+          "source": "docx_text_layer",
+          "draft": true
+        },
+        {
+          "form": "覀",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "覀",
+      "docx_attached": "覀覀",
+      "wiki_attached": "西"
+    },
+    {
+      "code": 127,
+      "main": "而",
+      "attached": "",
+      "stroke_group": "六画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "而",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 128,
+      "main": "页",
+      "attached": "頁",
+      "stroke_group": "六画",
+      "attached_entries": [
+        {
+          "form": "页",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "页",
+      "docx_attached": "頁",
+      "wiki_attached": "頁"
+    },
+    {
+      "code": 129,
+      "main": "至",
+      "attached": "",
+      "stroke_group": "六画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "至",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 130,
+      "main": "虍",
+      "attached": "虎",
+      "stroke_group": "六画",
+      "attached_entries": [
+        {
+          "form": "虎",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "虍",
+      "docx_attached": "虎",
+      "wiki_attached": "虎"
+    },
+    {
+      "code": 131,
+      "main": "虫",
+      "attached": "",
+      "stroke_group": "六画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "虫",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 132,
+      "main": "肉",
+      "attached": "",
+      "stroke_group": "六画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "肉",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 133,
+      "main": "缶",
+      "attached": "",
+      "stroke_group": "六画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "缶",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 134,
+      "main": "舌",
+      "attached": "",
+      "stroke_group": "六画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "舌",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 135,
+      "main": "竹",
+      "attached": "⺮",
+      "stroke_group": "六画",
+      "attached_entries": [
+        {
+          "form": "⺮",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "竹",
+      "docx_attached": "⺮",
+      "wiki_attached": "𥫗"
+    },
+    {
+      "code": 136,
+      "main": "臼",
+      "attached": "⺽",
+      "stroke_group": "六画",
+      "attached_entries": [
+        {
+          "form": "臼",
+          "source": "docx_text_layer",
+          "draft": true
+        },
+        {
+          "form": "臼",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "臼",
+      "docx_attached": "臼",
+      "wiki_attached": "𦥑"
+    },
+    {
+      "code": 137,
+      "main": "自",
+      "attached": "",
+      "stroke_group": "六画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "自",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 138,
+      "main": "血",
+      "attached": "",
+      "stroke_group": "六画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "血",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 139,
+      "main": "舟",
+      "attached": "",
+      "stroke_group": "六画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "舟",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 140,
+      "main": "色",
+      "attached": "",
+      "stroke_group": "六画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "色",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 141,
+      "main": "齐",
+      "attached": "齊",
+      "stroke_group": "六画",
+      "attached_entries": [
+        {
+          "form": "齐",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "齐",
+      "docx_attached": "齊",
+      "wiki_attached": "齊"
+    },
+    {
+      "code": 142,
+      "main": "衣",
+      "attached": "衤",
+      "stroke_group": "六画",
+      "attached_entries": [
+        {
+          "form": "衤",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "衣",
+      "docx_attached": "衤",
+      "wiki_attached": "衤"
+    },
+    {
+      "code": 143,
+      "main": "羊",
+      "attached": "⺶⺷",
+      "stroke_group": "六画",
+      "attached_entries": [
+        {
+          "form": "⺶",
+          "source": "docx_text_layer",
+          "draft": true
+        },
+        {
+          "form": "⺶",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "羊",
+      "docx_attached": "⺶羊",
+      "wiki_attached": "⺶𦍌"
+    },
+    {
+      "code": 144,
+      "main": "米",
+      "attached": "",
+      "stroke_group": "六画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "米",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 145,
+      "main": "聿",
+      "attached": "肀⺻",
+      "stroke_group": "六画",
+      "attached_entries": [
+        {
+          "form": "肀",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "聿",
+      "docx_attached": "肀⺕",
+      "wiki_attached": "肀⺻"
+    },
+    {
+      "code": 146,
+      "main": "艮",
+      "attached": "",
+      "stroke_group": "六画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "艮",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 147,
+      "main": "羽",
+      "attached": "",
+      "stroke_group": "六画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "羽",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 148,
+      "main": "糸",
+      "attached": "纟糹",
+      "stroke_group": "六画",
+      "attached_entries": [
+        {
+          "form": "糹",
+          "source": "docx_text_layer",
+          "draft": true
+        },
+        {
+          "form": "糹",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "糸",
+      "docx_attached": "纟糹",
+      "wiki_attached": "纟糹"
+    },
+    {
+      "code": 149,
+      "main": "麦",
+      "attached": "麥",
+      "stroke_group": "七画",
+      "attached_entries": [
+        {
+          "form": "麦",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "麦",
+      "docx_attached": "麥",
+      "wiki_attached": "麥"
+    },
+    {
+      "code": 150,
+      "main": "走",
+      "attached": "",
+      "stroke_group": "七画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "走",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 151,
+      "main": "赤",
+      "attached": "",
+      "stroke_group": "七画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "赤",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 152,
+      "main": "豆",
+      "attached": "",
+      "stroke_group": "七画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "豆",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 153,
+      "main": "酉",
+      "attached": "",
+      "stroke_group": "七画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "酉",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 154,
+      "main": "辰",
+      "attached": "",
+      "stroke_group": "七画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "辰",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 155,
+      "main": "豕",
+      "attached": "",
+      "stroke_group": "七画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "豕",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 156,
+      "main": "卤",
+      "attached": "鹵",
+      "stroke_group": "七画",
+      "attached_entries": [
+        {
+          "form": "卤",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "卤",
+      "docx_attached": "鹵",
+      "wiki_attached": "鹵"
+    },
+    {
+      "code": 157,
+      "main": "里",
+      "attached": "",
+      "stroke_group": "七画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "里",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 158,
+      "main": "足",
+      "attached": "⻊",
+      "stroke_group": "七画",
+      "attached_entries": [
+        {
+          "form": "⻊",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "足",
+      "docx_attached": "⻊",
+      "wiki_attached": "𧾷"
+    },
+    {
+      "code": 159,
+      "main": "邑",
+      "attached": "阝右",
+      "stroke_group": "七画",
+      "attached_entries": [
+        {
+          "form": "阝右",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "邑",
+      "docx_attached": "阝右",
+      "wiki_attached": "⻏，在右"
+    },
+    {
+      "code": 160,
+      "main": "身",
+      "attached": "",
+      "stroke_group": "七画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "身",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 161,
+      "main": "釆",
+      "attached": "",
+      "stroke_group": "七画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "釆",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 162,
+      "main": "谷",
+      "attached": "",
+      "stroke_group": "七画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "谷",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 163,
+      "main": "豸",
+      "attached": "",
+      "stroke_group": "七画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "豸",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 164,
+      "main": "龟",
+      "attached": "龜",
+      "stroke_group": "七画",
+      "attached_entries": [
+        {
+          "form": "龟",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "龟",
+      "docx_attached": "龜",
+      "wiki_attached": "龜"
+    },
+    {
+      "code": 165,
+      "main": "角",
+      "attached": "",
+      "stroke_group": "七画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "角",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 166,
+      "main": "言",
+      "attached": "讠",
+      "stroke_group": "七画",
+      "attached_entries": [
+        {
+          "form": "讠",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "言",
+      "docx_attached": "讠",
+      "wiki_attached": "讠"
+    },
+    {
+      "code": 167,
+      "main": "辛",
+      "attached": "",
+      "stroke_group": "七画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "辛",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 168,
+      "main": "青",
+      "attached": "",
+      "stroke_group": "八画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "青",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 169,
+      "main": "龺",
+      "attached": "",
+      "stroke_group": "八画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "卓",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 170,
+      "main": "雨",
+      "attached": "",
+      "stroke_group": "八画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "雨",
+      "docx_attached": "",
+      "wiki_attached": "⻗"
+    },
+    {
+      "code": 171,
+      "main": "非",
+      "attached": "",
+      "stroke_group": "八画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "非",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 172,
+      "main": "齿",
+      "attached": "齒",
+      "stroke_group": "八画",
+      "attached_entries": [
+        {
+          "form": "齿",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "齿",
+      "docx_attached": "齒",
+      "wiki_attached": "齒"
+    },
+    {
+      "code": 173,
+      "main": "黾",
+      "attached": "黽",
+      "stroke_group": "八画",
+      "attached_entries": [
+        {
+          "form": "黾",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "黾",
+      "docx_attached": "黽",
+      "wiki_attached": "黽"
+    },
+    {
+      "code": 174,
+      "main": "隹",
+      "attached": "",
+      "stroke_group": "八画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "隹",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 175,
+      "main": "阜",
+      "attached": "阝左",
+      "stroke_group": "八画",
+      "attached_entries": [
+        {
+          "form": "阝左",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "阜",
+      "docx_attached": "阝左",
+      "wiki_attached": "⻖，在左"
+    },
+    {
+      "code": 176,
+      "main": "金",
+      "attached": "钅",
+      "stroke_group": "八画",
+      "attached_entries": [
+        {
+          "form": "钅",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "金",
+      "docx_attached": "钅",
+      "wiki_attached": "钅"
+    },
+    {
+      "code": 177,
+      "main": "鱼",
+      "attached": "魚",
+      "stroke_group": "八画",
+      "attached_entries": [
+        {
+          "form": "鱼",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "鱼",
+      "docx_attached": "魚",
+      "wiki_attached": "魚"
+    },
+    {
+      "code": 178,
+      "main": "隶",
+      "attached": "",
+      "stroke_group": "八画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "隶",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 179,
+      "main": "革",
+      "attached": "",
+      "stroke_group": "九画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "革",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 180,
+      "main": "面",
+      "attached": "",
+      "stroke_group": "九画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "面",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 181,
+      "main": "韭",
+      "attached": "",
+      "stroke_group": "九画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "韭",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 182,
+      "main": "骨",
+      "attached": "",
+      "stroke_group": "九画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "骨",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 183,
+      "main": "香",
+      "attached": "",
+      "stroke_group": "九画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "香",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 184,
+      "main": "鬼",
+      "attached": "",
+      "stroke_group": "九画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "鬼",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 185,
+      "main": "食",
+      "attached": "饣飠",
+      "stroke_group": "九画",
+      "attached_entries": [
+        {
+          "form": "饣",
+          "source": "docx_text_layer",
+          "draft": true
+        },
+        {
+          "form": "饣",
+          "source": "docx_text_layer",
+          "draft": true
+        }
+      ],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "食",
+      "docx_attached": "饣飠",
+      "wiki_attached": "饣飠"
+    },
+    {
+      "code": 186,
+      "main": "音",
+      "attached": "",
+      "stroke_group": "九画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "音",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 187,
+      "main": "首",
+      "attached": "",
+      "stroke_group": "九画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "首",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 188,
+      "main": "髟",
+      "attached": "",
+      "stroke_group": "十画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "髟",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 189,
+      "main": "鬲",
+      "attached": "",
+      "stroke_group": "十画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "鬲",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 190,
+      "main": "鬥",
+      "attached": "",
+      "stroke_group": "十画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "鬥",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 191,
+      "main": "高",
+      "attached": "",
+      "stroke_group": "十画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "高",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 192,
+      "main": "黄",
+      "attached": "",
+      "stroke_group": "十一画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "黄",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 193,
+      "main": "麻",
+      "attached": "",
+      "stroke_group": "十一画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "麻",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 194,
+      "main": "鹿",
+      "attached": "",
+      "stroke_group": "十一画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "鹿",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 195,
+      "main": "鼎",
+      "attached": "",
+      "stroke_group": "十二画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "鼎",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 196,
+      "main": "黑",
+      "attached": "",
+      "stroke_group": "十二画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "黑",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 197,
+      "main": "黍",
+      "attached": "",
+      "stroke_group": "十二画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "黍",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 198,
+      "main": "鼓",
+      "attached": "",
+      "stroke_group": "十三画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "鼓",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 199,
+      "main": "鼠",
+      "attached": "",
+      "stroke_group": "十三画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "鼠",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 200,
+      "main": "鼻",
+      "attached": "",
+      "stroke_group": "十四画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "鼻",
+      "docx_attached": "",
+      "wiki_attached": ""
+    },
+    {
+      "code": 201,
+      "main": "龠",
+      "attached": "",
+      "stroke_group": "十七画",
+      "attached_entries": [],
+      "source_status": "CONSISTENT",
+      "note": "",
+      "docx_main": "龠",
+      "docx_attached": "",
+      "wiki_attached": ""
+    }
+  ]
+}

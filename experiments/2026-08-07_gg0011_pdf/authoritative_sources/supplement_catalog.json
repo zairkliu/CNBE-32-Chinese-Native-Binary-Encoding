@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-07",
+  "purpose": "GF0011/GF0012 权威标准与 GitHub 补充来源盘点",
+  "sources": [
+    {
+      "id": "gf0011_2009",
+      "name": "汉字部首表",
+      "standard": "GF 0011-2009",
+      "layer": "national_standard",
+      "machine_readable_official": false,
+      "status": "OFFICIAL_SCAN_AVAILABLE",
+      "local_transcription": "data/gf0011_201_radicals.json",
+      "notes": "201 主部首，公开转载版已入库，仍需与官方扫描件逐项复核"
+    },
+    {
+      "id": "gf0011_2022",
+      "name": "汉字部首表（2022年修订）",
+      "standard": "GF 0011-2022",
+      "layer": "national_standard",
+      "machine_readable_official": false,
+      "status": "OFFICIAL_ANNOUNCEMENT_ONLY",
+      "official_url": "http://www.gov.cn/xinwen/2022-11/24/content_5728500.htm",
+      "notes": "新增部分常用部首名称和部首的信息处理国际编码；未见官方公开电子表"
+    },
+    {
+      "id": "gf0012_2009",
+      "name": "GB13000.1字符集汉字部首归部规范",
+      "standard": "GF 0012-2009",
+      "layer": "national_standard",
+      "machine_readable_official": false,
+      "status": "OFFICIAL_SCAN_AVAILABLE",
+      "official_url": "https://hudong.moe.gov.cn/jyb_sjzl/ziliao/A19/200901/t20090102_186104.html",
+      "attachment_url": "http://video.moe.gov.cn/yuxinsi/15hanzibushou.zip",
+      "pages": 236,
+      "pages_with_text": 0,
+      "notes": "20902 字逐字归部表，当前无公开机器可读版"
+    },
+    {
+      "id": "gf0013_2009",
+      "name": "现代常用独体字规范",
+      "standard": "GF 0013-2009",
+      "layer": "national_standard",
+      "machine_readable_official": false,
+      "status": "OFFICIAL_SCAN_AVAILABLE",
+      "official_url": "https://hudong.moe.gov.cn/jyb_sjzl/ziliao/A19/201001/t20100115_75697.html",
+      "pages": 7,
+      "pages_with_text": 0
+    },
+    {
+      "id": "gf0014_2009",
+      "name": "现代常用字部件及部件名称规范",
+      "standard": "GF 0014-2009",
+      "layer": "national_standard",
+      "machine_readable_official": false,
+      "status": "OFFICIAL_SCAN_AVAILABLE",
+      "official_url": "https://hudong.moe.gov.cn/jyb_sjzl/ziliao/A19/201001/t20100115_75696.html",
+      "pages": 41,
+      "pages_with_text": 0
+    },
+    {
+      "id": "gf2001_2001",
+      "name": "GB13000.1字符集汉字折笔规范",
+      "standard": "GF 2001-2001",
+      "layer": "national_standard",
+      "machine_readable_official": false,
+      "status": "OFFICIAL_SCAN_AVAILABLE",
+      "official_url": "https://hudong.moe.gov.cn/jyb_sjzl/ziliao/A19/201001/t20100115_75688.html",
+      "pages": 11,
+      "pages_with_text": 0
+    },
+    {
+      "id": "gf3002_1999",
+      "name": "GB13000.1字符集汉字笔顺规范",
+      "standard": "GF 3002-1999",
+      "layer": "national_standard",
+      "machine_readable_official": false,
+      "status": "DOWNLOAD_BLOCKED",
+      "official_url": "http://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201001/t20100115_75619.html"
+    },
+    {
+      "id": "gf0031_2026",
+      "name": "通用规范汉字笔顺规范",
+      "standard": "GF 0031-2026",
+      "layer": "national_standard",
+      "machine_readable_official": false,
+      "status": "NOT_DOWNLOADED",
+      "official_url": "http://www.duan.gov.cn/ztzl/yywzflfgxc/t10786988.shtml"
+    },
+    {
+      "id": "gb18030_2022",
+      "name": "信息技术 中文编码字符集",
+      "standard": "GB 18030-2022",
+      "layer": "national_standard",
+      "machine_readable_official": "INDEX_ONLY",
+      "status": "OFFICIAL_INDEX_ONLY",
+      "official_url": "https://openstd.samr.gov.cn/bzgk/std/nd?no=1783",
+      "notes": "88115 汉字/部首；全文需国家标准全文公开系统查阅"
+    },
+    {
+      "id": "gbt_8105",
+      "name": "通用规范汉字表",
+      "standard": "国发〔2013〕23号",
+      "layer": "national_standard",
+      "machine_readable_official": false,
+      "status": "OFFICIAL_SCAN_AVAILABLE",
+      "official_url": "http://www.gov.cn/gzdt/att/att/site1/20130819/tygfhzb.pdf",
+      "notes": "8105 字；GitHub 转录见 shengdoushi/common-standard-chinese-characters-table"
+    },
+    {
+      "id": "unihan_17",
+      "name": "Unihan 17.0.0",
+      "layer": "unicode",
+      "machine_readable_official": true,
+      "status": "LOCAL_MANIFEST_AND_CROSS_REFERENCE",
+      "local_manifest": "data/sources/unihan-17.0.0.json",
+      "notes": "kRSUnicode 为康熙 214 体系，不得冒充 GF0011/GF0012"
+    },
+    {
+      "id": "cjkvi_ids",
+      "name": "cjkvi/cjkvi-ids",
+      "layer": "glyph_decomposition",
+      "machine_readable": true,
+      "status": "CROSS_REFERENCE",
+      "url": "https://github.com/cjkvi/cjkvi-ids",
+      "license": "GPLv2 (upstream)"
+    },
+    {
+      "id": "shengdoushi_8105",
+      "name": "common-standard-chinese-characters-table",
+      "layer": "scope_table",
+      "machine_readable": true,
+      "status": "CROSS_REFERENCE",
+      "url": "https://github.com/shengdoushi/common-standard-chinese-characters-table",
+      "license": "UNSPECIFIED"
+    },
+    {
+      "id": "max32002_chinese_dictionary",
+      "name": "chinese_dictionary",
+      "layer": "dictionary",
+      "machine_readable": true,
+      "status": "CROSS_REFERENCE_REQUIRES_QUALITY_CHECK",
+      "url": "https://github.com/max32002/chinese_dictionary",
+      "license": "UNSPECIFIED",
+      "notes": "约 81052 字 部首/笔画/異體字/文字組件"
+    },
+    {
+      "id": "hanzi_chaizi",
+      "name": "hanzi_chaizi",
+      "layer": "glyph_decomposition",
+      "machine_readable": true,
+      "status": "CROSS_REFERENCE",
+      "url": "https://github.com/howl-anderson/hanzi_chaizi",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "hanziyin",
+      "name": "hanziyin",
+      "layer": "glyph_decomposition",
+      "machine_readable": true,
+      "status": "CROSS_REFERENCE",
+      "url": "https://github.com/hanziku/hanziyin",
+      "license": "MPL-2.0"
+    },
+    {
+      "id": "makemeahanzi",
+      "name": "make-me-a-hanzi",
+      "layer": "glyph_stroke",
+      "machine_readable": true,
+      "status": "CROSS_REFERENCE",
+      "url": "https://github.com/skishore/makemeahanzi",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "nlp_han_dicts",
+      "name": "nlp-han-dicts",
+      "layer": "dictionary",
+      "machine_readable": true,
+      "status": "STAGED_CROSS_REFERENCE",
+      "url": "https://github.com/leechenhwa2/nlp-han-dicts",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "id": "kanripo_kr1j0048",
+      "name": "KR1j0048 御定康熙字典",
+      "layer": "primary_text",
+      "machine_readable": true,
+      "status": "EVALUATED_CROSS_REFERENCE",
+      "url": "https://github.com/kanripo/KR1j0048",
+      "license": "UNSPECIFIED"
+    },
+    {
+      "id": "he426100_kangxi",
+      "name": "kangxi",
+      "layer": "dictionary",
+      "machine_readable": true,
+      "status": "LICENSE_AND_QUALITY_BLOCKER",
+      "url": "https://github.com/he426100/kangxi",
+      "license": "UNSPECIFIED"
+    }
+  ],
+  "gaps": [
+    "GF0012 20902 字逐字归部表无公开机器可读版",
+    "GF0011-2022 修订版官方电子表未公开",
+    "国标逐字笔画/笔顺表未电子化",
+    "Unihan 部首体系与 GF0011/GF0012 不可混用"
+  ]
+}

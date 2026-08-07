@@ -1,0 +1,1974 @@
+{
+  "summary": {
+    "total": 201,
+    "match": 176,
+    "diff": 25,
+    "missing": 0
+  },
+  "rows": [
+    {
+      "code": 1,
+      "docx_main": "一",
+      "docx_attached": "",
+      "current_main": "一",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 2,
+      "docx_main": "丨",
+      "docx_attached": "亅",
+      "current_main": "丨",
+      "current_attached": "亅",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 3,
+      "docx_main": "丿",
+      "docx_attached": "",
+      "current_main": "丿",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 4,
+      "docx_main": "丶",
+      "docx_attached": "",
+      "current_main": "丶",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 5,
+      "docx_main": "乛",
+      "docx_attached": "",
+      "current_main": "乛",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 6,
+      "docx_main": "十",
+      "docx_attached": "",
+      "current_main": "十",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 7,
+      "docx_main": "厂",
+      "docx_attached": "厂",
+      "current_main": "厂",
+      "current_attached": "⺁",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "attached",
+          "docx": "厂",
+          "current": "⺁"
+        }
+      ]
+    },
+    {
+      "code": 8,
+      "docx_main": "匚",
+      "docx_attached": "",
+      "current_main": "匚",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 9,
+      "docx_main": "卜",
+      "docx_attached": "卜",
+      "current_main": "卜",
+      "current_attached": "⺊",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "attached",
+          "docx": "卜",
+          "current": "⺊"
+        }
+      ]
+    },
+    {
+      "code": 10,
+      "docx_main": "冂",
+      "docx_attached": "門",
+      "current_main": "冂",
+      "current_attached": "⺆",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "attached",
+          "docx": "門",
+          "current": "⺆"
+        }
+      ]
+    },
+    {
+      "code": 11,
+      "docx_main": "八",
+      "docx_attached": "丷",
+      "current_main": "八",
+      "current_attached": "丷",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 12,
+      "docx_main": "人",
+      "docx_attached": "亻人",
+      "current_main": "人",
+      "current_attached": "亻入",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "attached",
+          "docx": "亻人",
+          "current": "亻入"
+        }
+      ]
+    },
+    {
+      "code": 13,
+      "docx_main": "勹",
+      "docx_attached": "",
+      "current_main": "勹",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 14,
+      "docx_main": "儿",
+      "docx_attached": "",
+      "current_main": "儿",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 15,
+      "docx_main": "匕",
+      "docx_attached": "",
+      "current_main": "匕",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 16,
+      "docx_main": "几",
+      "docx_attached": "几",
+      "current_main": "几",
+      "current_attached": "⺇",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "attached",
+          "docx": "几",
+          "current": "⺇"
+        }
+      ]
+    },
+    {
+      "code": 17,
+      "docx_main": "冫",
+      "docx_attached": "",
+      "current_main": "亠",
+      "current_attached": "",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "main",
+          "docx": "冫",
+          "current": "亠"
+        }
+      ]
+    },
+    {
+      "code": 18,
+      "docx_main": "冖",
+      "docx_attached": "",
+      "current_main": "冫",
+      "current_attached": "",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "main",
+          "docx": "冖",
+          "current": "冫"
+        }
+      ]
+    },
+    {
+      "code": 19,
+      "docx_main": "凵",
+      "docx_attached": "",
+      "current_main": "冖",
+      "current_attached": "",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "main",
+          "docx": "凵",
+          "current": "冖"
+        }
+      ]
+    },
+    {
+      "code": 20,
+      "docx_main": "卩",
+      "docx_attached": "",
+      "current_main": "凵",
+      "current_attached": "",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "main",
+          "docx": "卩",
+          "current": "凵"
+        }
+      ]
+    },
+    {
+      "code": 21,
+      "docx_main": "阝",
+      "docx_attached": "卩",
+      "current_main": "卩",
+      "current_attached": "⺋",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "main",
+          "docx": "阝",
+          "current": "卩"
+        },
+        {
+          "field": "attached",
+          "docx": "卩",
+          "current": "⺋"
+        }
+      ]
+    },
+    {
+      "code": 22,
+      "docx_main": "刀",
+      "docx_attached": "刂",
+      "current_main": "刀",
+      "current_attached": "刂⺈",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "attached",
+          "docx": "刂",
+          "current": "刂⺈"
+        }
+      ]
+    },
+    {
+      "code": 23,
+      "docx_main": "力",
+      "docx_attached": "",
+      "current_main": "力",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 24,
+      "docx_main": "又",
+      "docx_attached": "",
+      "current_main": "又",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 25,
+      "docx_main": "厶",
+      "docx_attached": "",
+      "current_main": "厶",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 26,
+      "docx_main": "廴",
+      "docx_attached": "",
+      "current_main": "廴",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 27,
+      "docx_main": "干",
+      "docx_attached": "",
+      "current_main": "干",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 28,
+      "docx_main": "工",
+      "docx_attached": "",
+      "current_main": "工",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 29,
+      "docx_main": "土",
+      "docx_attached": "士",
+      "current_main": "土",
+      "current_attached": "士",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 30,
+      "docx_main": "艹",
+      "docx_attached": "艸",
+      "current_main": "艹",
+      "current_attached": "艸",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 31,
+      "docx_main": "寸",
+      "docx_attached": "",
+      "current_main": "寸",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 32,
+      "docx_main": "廾",
+      "docx_attached": "",
+      "current_main": "廾",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 33,
+      "docx_main": "大",
+      "docx_attached": "",
+      "current_main": "大",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 34,
+      "docx_main": "尢",
+      "docx_attached": "兀允",
+      "current_main": "尢",
+      "current_attached": "兀尣",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "attached",
+          "docx": "兀允",
+          "current": "兀尣"
+        }
+      ]
+    },
+    {
+      "code": 35,
+      "docx_main": "弋",
+      "docx_attached": "",
+      "current_main": "弋",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 36,
+      "docx_main": "小",
+      "docx_attached": "⺌",
+      "current_main": "小",
+      "current_attached": "⺌",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 37,
+      "docx_main": "口",
+      "docx_attached": "",
+      "current_main": "口",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 38,
+      "docx_main": "囗",
+      "docx_attached": "",
+      "current_main": "囗",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 39,
+      "docx_main": "山",
+      "docx_attached": "",
+      "current_main": "山",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 40,
+      "docx_main": "巾",
+      "docx_attached": "",
+      "current_main": "巾",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 41,
+      "docx_main": "彳",
+      "docx_attached": "",
+      "current_main": "彳",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 42,
+      "docx_main": "彡",
+      "docx_attached": "",
+      "current_main": "彡",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 43,
+      "docx_main": "夕",
+      "docx_attached": "",
+      "current_main": "夕",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 44,
+      "docx_main": "夂",
+      "docx_attached": "",
+      "current_main": "夂",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 45,
+      "docx_main": "丬",
+      "docx_attached": "爿",
+      "current_main": "丬",
+      "current_attached": "爿",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 46,
+      "docx_main": "广",
+      "docx_attached": "",
+      "current_main": "广",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 47,
+      "docx_main": "门",
+      "docx_attached": "門",
+      "current_main": "门",
+      "current_attached": "門",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 48,
+      "docx_main": "冫",
+      "docx_attached": "",
+      "current_main": "宀",
+      "current_attached": "",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "main",
+          "docx": "冫",
+          "current": "宀"
+        }
+      ]
+    },
+    {
+      "code": 49,
+      "docx_main": "辶",
+      "docx_attached": "辵",
+      "current_main": "辶",
+      "current_attached": "辵",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 50,
+      "docx_main": "彐",
+      "docx_attached": "彑彐",
+      "current_main": "彐",
+      "current_attached": "彐彑",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "attached",
+          "docx": "彑彐",
+          "current": "彐彑"
+        }
+      ]
+    },
+    {
+      "code": 51,
+      "docx_main": "尸",
+      "docx_attached": "",
+      "current_main": "尸",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 52,
+      "docx_main": "己",
+      "docx_attached": "已巳",
+      "current_main": "己",
+      "current_attached": "已巳",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 53,
+      "docx_main": "弓",
+      "docx_attached": "",
+      "current_main": "弓",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 54,
+      "docx_main": "子",
+      "docx_attached": "",
+      "current_main": "子",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 55,
+      "docx_main": "屮",
+      "docx_attached": "艸",
+      "current_main": "屮",
+      "current_attached": "",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "attached",
+          "docx": "艸",
+          "current": ""
+        }
+      ]
+    },
+    {
+      "code": 56,
+      "docx_main": "女",
+      "docx_attached": "",
+      "current_main": "女",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 57,
+      "docx_main": "飞",
+      "docx_attached": "飛",
+      "current_main": "飞",
+      "current_attached": "飛",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 58,
+      "docx_main": "马",
+      "docx_attached": "馬",
+      "current_main": "马",
+      "current_attached": "馬",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 59,
+      "docx_main": "幺",
+      "docx_attached": "",
+      "current_main": "幺",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 60,
+      "docx_main": "巛",
+      "docx_attached": "",
+      "current_main": "巛",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 61,
+      "docx_main": "王",
+      "docx_attached": "玉",
+      "current_main": "王",
+      "current_attached": "玉",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 62,
+      "docx_main": "无",
+      "docx_attached": "旡",
+      "current_main": "无",
+      "current_attached": "旡",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 63,
+      "docx_main": "韦",
+      "docx_attached": "韋",
+      "current_main": "韦",
+      "current_attached": "韋",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 64,
+      "docx_main": "木",
+      "docx_attached": "朩",
+      "current_main": "木",
+      "current_attached": "朩",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 65,
+      "docx_main": "支",
+      "docx_attached": "",
+      "current_main": "支",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 66,
+      "docx_main": "犬",
+      "docx_attached": "犭",
+      "current_main": "犬",
+      "current_attached": "犭",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 67,
+      "docx_main": "歹",
+      "docx_attached": "歺",
+      "current_main": "歹",
+      "current_attached": "歺",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 68,
+      "docx_main": "车",
+      "docx_attached": "車车",
+      "current_main": "车",
+      "current_attached": "車",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "attached",
+          "docx": "車车",
+          "current": "車"
+        }
+      ]
+    },
+    {
+      "code": 69,
+      "docx_main": "牙",
+      "docx_attached": "",
+      "current_main": "牙",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 70,
+      "docx_main": "戈",
+      "docx_attached": "",
+      "current_main": "戈",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 71,
+      "docx_main": "比",
+      "docx_attached": "",
+      "current_main": "比",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 72,
+      "docx_main": "瓦",
+      "docx_attached": "",
+      "current_main": "瓦",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 73,
+      "docx_main": "止",
+      "docx_attached": "",
+      "current_main": "止",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 74,
+      "docx_main": "攵",
+      "docx_attached": "攵",
+      "current_main": "攴",
+      "current_attached": "攵",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "main",
+          "docx": "攵",
+          "current": "攴"
+        }
+      ]
+    },
+    {
+      "code": 75,
+      "docx_main": "日",
+      "docx_attached": "冂曰",
+      "current_main": "日",
+      "current_attached": "⺜曰",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "attached",
+          "docx": "冂曰",
+          "current": "⺜曰"
+        }
+      ]
+    },
+    {
+      "code": 76,
+      "docx_main": "贝",
+      "docx_attached": "貝",
+      "current_main": "贝",
+      "current_attached": "貝",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 77,
+      "docx_main": "水",
+      "docx_attached": "氵氺",
+      "current_main": "水",
+      "current_attached": "氵氺",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 78,
+      "docx_main": "见",
+      "docx_attached": "見",
+      "current_main": "见",
+      "current_attached": "見",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 79,
+      "docx_main": "牛",
+      "docx_attached": "牜",
+      "current_main": "牛",
+      "current_attached": "牜",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 80,
+      "docx_main": "手",
+      "docx_attached": "扌龵",
+      "current_main": "手",
+      "current_attached": "扌看",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "attached",
+          "docx": "扌龵",
+          "current": "扌看"
+        }
+      ]
+    },
+    {
+      "code": 81,
+      "docx_main": "气",
+      "docx_attached": "",
+      "current_main": "气",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 82,
+      "docx_main": "毛",
+      "docx_attached": "",
+      "current_main": "毛",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 83,
+      "docx_main": "长",
+      "docx_attached": "镸長",
+      "current_main": "长",
+      "current_attached": "镸長",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 84,
+      "docx_main": "片",
+      "docx_attached": "",
+      "current_main": "片",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 85,
+      "docx_main": "斤",
+      "docx_attached": "",
+      "current_main": "斤",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 86,
+      "docx_main": "爪",
+      "docx_attached": "爫",
+      "current_main": "爪",
+      "current_attached": "爫",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 87,
+      "docx_main": "父",
+      "docx_attached": "",
+      "current_main": "父",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 88,
+      "docx_main": "月",
+      "docx_attached": "⺝",
+      "current_main": "月",
+      "current_attached": "⺝",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 89,
+      "docx_main": "氏",
+      "docx_attached": "",
+      "current_main": "氏",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 90,
+      "docx_main": "欠",
+      "docx_attached": "",
+      "current_main": "欠",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 91,
+      "docx_main": "风",
+      "docx_attached": "風",
+      "current_main": "风",
+      "current_attached": "風",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 92,
+      "docx_main": "殳",
+      "docx_attached": "",
+      "current_main": "殳",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 93,
+      "docx_main": "文",
+      "docx_attached": "",
+      "current_main": "文",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 94,
+      "docx_main": "方",
+      "docx_attached": "",
+      "current_main": "方",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 95,
+      "docx_main": "火",
+      "docx_attached": "灬",
+      "current_main": "火",
+      "current_attached": "灬",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 96,
+      "docx_main": "斗",
+      "docx_attached": "",
+      "current_main": "斗",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 97,
+      "docx_main": "户",
+      "docx_attached": "",
+      "current_main": "户",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 98,
+      "docx_main": "心",
+      "docx_attached": "忄⺗",
+      "current_main": "心",
+      "current_attached": "忄⺗",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 99,
+      "docx_main": "毋",
+      "docx_attached": "母",
+      "current_main": "毋",
+      "current_attached": "母",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 100,
+      "docx_main": "示",
+      "docx_attached": "礻",
+      "current_main": "示",
+      "current_attached": "礻",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 101,
+      "docx_main": "甘",
+      "docx_attached": "",
+      "current_main": "甘",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 102,
+      "docx_main": "石",
+      "docx_attached": "",
+      "current_main": "石",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 103,
+      "docx_main": "龙",
+      "docx_attached": "龍",
+      "current_main": "龙",
+      "current_attached": "龍",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 104,
+      "docx_main": "业",
+      "docx_attached": "",
+      "current_main": "业",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 105,
+      "docx_main": "目",
+      "docx_attached": "",
+      "current_main": "目",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 106,
+      "docx_main": "田",
+      "docx_attached": "",
+      "current_main": "田",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 107,
+      "docx_main": "罒",
+      "docx_attached": "",
+      "current_main": "罒",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 108,
+      "docx_main": "皿",
+      "docx_attached": "",
+      "current_main": "皿",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 109,
+      "docx_main": "生",
+      "docx_attached": "",
+      "current_main": "生",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 110,
+      "docx_main": "矢",
+      "docx_attached": "",
+      "current_main": "矢",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 111,
+      "docx_main": "禾",
+      "docx_attached": "",
+      "current_main": "禾",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 112,
+      "docx_main": "白",
+      "docx_attached": "",
+      "current_main": "白",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 113,
+      "docx_main": "瓜",
+      "docx_attached": "",
+      "current_main": "瓜",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 114,
+      "docx_main": "鸟",
+      "docx_attached": "鳥",
+      "current_main": "鸟",
+      "current_attached": "鳥",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 115,
+      "docx_main": "疒",
+      "docx_attached": "",
+      "current_main": "疒",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 116,
+      "docx_main": "立",
+      "docx_attached": "",
+      "current_main": "立",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 117,
+      "docx_main": "穴",
+      "docx_attached": "",
+      "current_main": "穴",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 118,
+      "docx_main": "疋",
+      "docx_attached": "⺪",
+      "current_main": "疋",
+      "current_attached": "⺪",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 119,
+      "docx_main": "皮",
+      "docx_attached": "",
+      "current_main": "皮",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 120,
+      "docx_main": "癶",
+      "docx_attached": "",
+      "current_main": "癶",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 121,
+      "docx_main": "矛",
+      "docx_attached": "",
+      "current_main": "矛",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 122,
+      "docx_main": "耒",
+      "docx_attached": "",
+      "current_main": "耒",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 123,
+      "docx_main": "老",
+      "docx_attached": "耂",
+      "current_main": "老",
+      "current_attached": "",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "attached",
+          "docx": "耂",
+          "current": ""
+        }
+      ]
+    },
+    {
+      "code": 124,
+      "docx_main": "耳",
+      "docx_attached": "",
+      "current_main": "耳",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 125,
+      "docx_main": "臣",
+      "docx_attached": "",
+      "current_main": "臣",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 126,
+      "docx_main": "覀",
+      "docx_attached": "覀覀",
+      "current_main": "覀",
+      "current_attached": "襾西",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "attached",
+          "docx": "覀覀",
+          "current": "襾西"
+        }
+      ]
+    },
+    {
+      "code": 127,
+      "docx_main": "而",
+      "docx_attached": "",
+      "current_main": "而",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 128,
+      "docx_main": "页",
+      "docx_attached": "頁",
+      "current_main": "页",
+      "current_attached": "頁",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 129,
+      "docx_main": "至",
+      "docx_attached": "",
+      "current_main": "至",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 130,
+      "docx_main": "虍",
+      "docx_attached": "虎",
+      "current_main": "虍",
+      "current_attached": "虎",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 131,
+      "docx_main": "虫",
+      "docx_attached": "",
+      "current_main": "虫",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 132,
+      "docx_main": "肉",
+      "docx_attached": "",
+      "current_main": "肉",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 133,
+      "docx_main": "缶",
+      "docx_attached": "",
+      "current_main": "缶",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 134,
+      "docx_main": "舌",
+      "docx_attached": "",
+      "current_main": "舌",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 135,
+      "docx_main": "竹",
+      "docx_attached": "⺮",
+      "current_main": "竹",
+      "current_attached": "⺮",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 136,
+      "docx_main": "臼",
+      "docx_attached": "臼",
+      "current_main": "臼",
+      "current_attached": "⺽",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "attached",
+          "docx": "臼",
+          "current": "⺽"
+        }
+      ]
+    },
+    {
+      "code": 137,
+      "docx_main": "自",
+      "docx_attached": "",
+      "current_main": "自",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 138,
+      "docx_main": "血",
+      "docx_attached": "",
+      "current_main": "血",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 139,
+      "docx_main": "舟",
+      "docx_attached": "",
+      "current_main": "舟",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 140,
+      "docx_main": "色",
+      "docx_attached": "",
+      "current_main": "色",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 141,
+      "docx_main": "齐",
+      "docx_attached": "齊",
+      "current_main": "齐",
+      "current_attached": "齊",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 142,
+      "docx_main": "衣",
+      "docx_attached": "衤",
+      "current_main": "衣",
+      "current_attached": "衤",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 143,
+      "docx_main": "羊",
+      "docx_attached": "⺶羊",
+      "current_main": "羊",
+      "current_attached": "⺶⺷",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "attached",
+          "docx": "⺶羊",
+          "current": "⺶⺷"
+        }
+      ]
+    },
+    {
+      "code": 144,
+      "docx_main": "米",
+      "docx_attached": "",
+      "current_main": "米",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 145,
+      "docx_main": "聿",
+      "docx_attached": "肀⺕",
+      "current_main": "聿",
+      "current_attached": "肀⺻",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "attached",
+          "docx": "肀⺕",
+          "current": "肀⺻"
+        }
+      ]
+    },
+    {
+      "code": 146,
+      "docx_main": "艮",
+      "docx_attached": "",
+      "current_main": "艮",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 147,
+      "docx_main": "羽",
+      "docx_attached": "",
+      "current_main": "羽",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 148,
+      "docx_main": "糸",
+      "docx_attached": "纟糹",
+      "current_main": "糸",
+      "current_attached": "纟糹",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 149,
+      "docx_main": "麦",
+      "docx_attached": "麥",
+      "current_main": "麦",
+      "current_attached": "麥",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 150,
+      "docx_main": "走",
+      "docx_attached": "",
+      "current_main": "走",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 151,
+      "docx_main": "赤",
+      "docx_attached": "",
+      "current_main": "赤",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 152,
+      "docx_main": "豆",
+      "docx_attached": "",
+      "current_main": "豆",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 153,
+      "docx_main": "酉",
+      "docx_attached": "",
+      "current_main": "酉",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 154,
+      "docx_main": "辰",
+      "docx_attached": "",
+      "current_main": "辰",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 155,
+      "docx_main": "豕",
+      "docx_attached": "",
+      "current_main": "豕",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 156,
+      "docx_main": "卤",
+      "docx_attached": "鹵",
+      "current_main": "卤",
+      "current_attached": "鹵",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 157,
+      "docx_main": "里",
+      "docx_attached": "",
+      "current_main": "里",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 158,
+      "docx_main": "足",
+      "docx_attached": "⻊",
+      "current_main": "足",
+      "current_attached": "⻊",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 159,
+      "docx_main": "邑",
+      "docx_attached": "阝右",
+      "current_main": "邑",
+      "current_attached": "阝右",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 160,
+      "docx_main": "身",
+      "docx_attached": "",
+      "current_main": "身",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 161,
+      "docx_main": "釆",
+      "docx_attached": "",
+      "current_main": "釆",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 162,
+      "docx_main": "谷",
+      "docx_attached": "",
+      "current_main": "谷",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 163,
+      "docx_main": "豸",
+      "docx_attached": "",
+      "current_main": "豸",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 164,
+      "docx_main": "龟",
+      "docx_attached": "龜",
+      "current_main": "龟",
+      "current_attached": "龜",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 165,
+      "docx_main": "角",
+      "docx_attached": "",
+      "current_main": "角",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 166,
+      "docx_main": "言",
+      "docx_attached": "讠",
+      "current_main": "言",
+      "current_attached": "讠",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 167,
+      "docx_main": "辛",
+      "docx_attached": "",
+      "current_main": "辛",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 168,
+      "docx_main": "青",
+      "docx_attached": "",
+      "current_main": "青",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 169,
+      "docx_main": "卓",
+      "docx_attached": "",
+      "current_main": "龺",
+      "current_attached": "",
+      "status": "DIFF",
+      "diffs": [
+        {
+          "field": "main",
+          "docx": "卓",
+          "current": "龺"
+        }
+      ]
+    },
+    {
+      "code": 170,
+      "docx_main": "雨",
+      "docx_attached": "",
+      "current_main": "雨",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 171,
+      "docx_main": "非",
+      "docx_attached": "",
+      "current_main": "非",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 172,
+      "docx_main": "齿",
+      "docx_attached": "齒",
+      "current_main": "齿",
+      "current_attached": "齒",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 173,
+      "docx_main": "黾",
+      "docx_attached": "黽",
+      "current_main": "黾",
+      "current_attached": "黽",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 174,
+      "docx_main": "隹",
+      "docx_attached": "",
+      "current_main": "隹",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 175,
+      "docx_main": "阜",
+      "docx_attached": "阝左",
+      "current_main": "阜",
+      "current_attached": "阝左",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 176,
+      "docx_main": "金",
+      "docx_attached": "钅",
+      "current_main": "金",
+      "current_attached": "钅",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 177,
+      "docx_main": "鱼",
+      "docx_attached": "魚",
+      "current_main": "鱼",
+      "current_attached": "魚",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 178,
+      "docx_main": "隶",
+      "docx_attached": "",
+      "current_main": "隶",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 179,
+      "docx_main": "革",
+      "docx_attached": "",
+      "current_main": "革",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 180,
+      "docx_main": "面",
+      "docx_attached": "",
+      "current_main": "面",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 181,
+      "docx_main": "韭",
+      "docx_attached": "",
+      "current_main": "韭",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 182,
+      "docx_main": "骨",
+      "docx_attached": "",
+      "current_main": "骨",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 183,
+      "docx_main": "香",
+      "docx_attached": "",
+      "current_main": "香",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 184,
+      "docx_main": "鬼",
+      "docx_attached": "",
+      "current_main": "鬼",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 185,
+      "docx_main": "食",
+      "docx_attached": "饣飠",
+      "current_main": "食",
+      "current_attached": "饣飠",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 186,
+      "docx_main": "音",
+      "docx_attached": "",
+      "current_main": "音",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 187,
+      "docx_main": "首",
+      "docx_attached": "",
+      "current_main": "首",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 188,
+      "docx_main": "髟",
+      "docx_attached": "",
+      "current_main": "髟",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 189,
+      "docx_main": "鬲",
+      "docx_attached": "",
+      "current_main": "鬲",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 190,
+      "docx_main": "鬥",
+      "docx_attached": "",
+      "current_main": "鬥",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 191,
+      "docx_main": "高",
+      "docx_attached": "",
+      "current_main": "高",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 192,
+      "docx_main": "黄",
+      "docx_attached": "",
+      "current_main": "黄",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 193,
+      "docx_main": "麻",
+      "docx_attached": "",
+      "current_main": "麻",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 194,
+      "docx_main": "鹿",
+      "docx_attached": "",
+      "current_main": "鹿",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 195,
+      "docx_main": "鼎",
+      "docx_attached": "",
+      "current_main": "鼎",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 196,
+      "docx_main": "黑",
+      "docx_attached": "",
+      "current_main": "黑",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 197,
+      "docx_main": "黍",
+      "docx_attached": "",
+      "current_main": "黍",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 198,
+      "docx_main": "鼓",
+      "docx_attached": "",
+      "current_main": "鼓",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 199,
+      "docx_main": "鼠",
+      "docx_attached": "",
+      "current_main": "鼠",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 200,
+      "docx_main": "鼻",
+      "docx_attached": "",
+      "current_main": "鼻",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    },
+    {
+      "code": 201,
+      "docx_main": "龠",
+      "docx_attached": "",
+      "current_main": "龠",
+      "current_attached": "",
+      "status": "MATCH",
+      "diffs": []
+    }
+  ]
+}
