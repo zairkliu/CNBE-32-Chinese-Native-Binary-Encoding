@@ -32,6 +32,7 @@
 | 资产 | 作用 | 证据等级 |
 |---|---|---|
 | `data/gf0011_201_radicals_full.json` | GF0011 201 主部首/附形部首/笔画分组/附形条目 | 完整版 docx + ichara + 维基模板交叉，2026-08-07 入库 |
+| `results/GF0011_201_MAIN_ATTACHED_VERIFICATION.xlsx` | 201 主部首 + 84 表内附形逐条核对 | docx/ichara/维基三方来源，84+15=99（2009 后期口径），2022 修订为 100 |
 | `data/sources/unihan-17.0.0.json` | Unihan 17.0.0 来源登记与 SHA-256 | Unicode 权威 |
 | `data/sources/hanzi-standard-learning.json` | 国标术语/来源映射（GF0013/14、GF3002、GF0031） | 来源清单 |
 | `data/sources/cnbe-research-local.json` | 本地研究知识库 18 项来源审计 | 研究输入 |

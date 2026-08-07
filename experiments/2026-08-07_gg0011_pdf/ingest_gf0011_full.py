@@ -33,9 +33,23 @@ def main() -> int:
             "status": "CORRECTED",
             "note": "docx 文字层与维基模板均为 扌龵；原公开转载表 扌看 为 OCR 同形误读",
         },
+        123: {
+            "attached": "耂",
+            "status": "CORRECTED",
+            "note": "docx 文字层与维基模板均有 耂；原公开转载表漏列",
+        },
+        170: {
+            "attached": "⻗",
+            "status": "CORRECTED",
+            "note": "维基模板与通用部首知识均为 雨（⻗）；原公开转载表漏列",
+        },
         50: {
             "status": "NEEDS_REVIEW",
             "note": "docx 文字层为 彑彐，维基模板为 ⺕彑，原公开转载表为 彐彑；字形/顺序待官方页图像最终确认",
+        },
+        61: {
+            "status": "NEEDS_REVIEW",
+            "note": "维基模板附形含 𤣩玉，docx 文字层与 ichara 均为 玉；𤣩 是否入表待官方页图像确认",
         },
     }
 
@@ -50,23 +64,30 @@ def main() -> int:
         note = correction.get("note", "")
 
         docx_forms = docx_attached_entries.get(str(code), [])
-        rows.append(
-            {
-                "code": code,
-                "main": base["main"],
-                "attached": attached,
-                "stroke_group": w["stroke_group"],
-                "attached_entries": [
-                    {"form": form, "source": "docx_text_layer", "draft": True}
-                    for form in docx_forms
-                ],
-                "source_status": status,
-                "note": note,
-                "docx_main": d["main"],
-                "docx_attached": d["attached"],
-                "wiki_attached": w["wiki_attached"],
-            }
-        )
+        row = {
+            "code": code,
+            "main": base["main"],
+            "attached": attached,
+            "stroke_group": w["stroke_group"],
+            "attached_entries": [
+                {"form": form, "source": "docx_text_layer", "draft": True}
+                for form in docx_forms
+            ],
+            "source_status": status,
+            "note": note,
+            "docx_main": d["main"],
+            "docx_attached": d["attached"],
+            "wiki_attached": w["wiki_attached"],
+        }
+        if code == 5:
+            row["unlisted_attached_forms_raw"] = (
+                "乛、㇇、㇈、㇄、丨、㇀、㇒、丿、㇓、㇆、㇆、㇁"
+            )
+            row["unlisted_attached_count"] = 15
+            row["note"] = (
+                "标准 5.5：乛 部 15 个附形部首因数量较多未在部首表中列出"
+            )
+        rows.append(row)
 
     out = {
         "schema_version": 2,
@@ -93,6 +114,9 @@ def main() -> int:
         "summary": {
             "main_count": len(rows),
             "attached_entry_count": sum(len(r["attached_entries"]) for r in rows),
+            "listed_attached_form_count": 84,
+            "unlisted_attached_form_count": 15,
+            "total_attached_form_count_2009_late_document": 99,
             "stroke_group_sizes": {
                 group: sum(1 for r in rows if r["stroke_group"] == group)
                 for group in [r["stroke_group"] for r in rows]

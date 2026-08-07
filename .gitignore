@@ -31,6 +31,7 @@ build/
 *.xlsx
 *.xlsx.inspect.ndjson
 !evidence/validation/**/*.xlsx
+!experiments/2026-08-07_gg0011_pdf/results/GF0011_201_MAIN_ATTACHED_VERIFICATION.xlsx
 *.docx
 data/*.json
 !data/gf0011_201_radicals.json

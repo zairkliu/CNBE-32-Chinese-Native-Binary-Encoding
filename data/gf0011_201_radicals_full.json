@@ -23,6 +23,9 @@
   "summary": {
     "main_count": 201,
     "attached_entry_count": 79,
+    "listed_attached_form_count": 84,
+    "unlisted_attached_form_count": 15,
+    "total_attached_form_count_2009_late_document": 99,
     "stroke_group_sizes": {
       "一画": 5,
       "二画": 21,
@@ -40,8 +43,8 @@
       "十四画": 1,
       "十七画": 1
     },
-    "corrected": 1,
-    "needs_review": 1
+    "corrected": 3,
+    "needs_review": 2
   },
   "radicals": [
     {
@@ -105,10 +108,12 @@
       "stroke_group": "一画",
       "attached_entries": [],
       "source_status": "CONSISTENT",
-      "note": "",
+      "note": "标准 5.5：乛 部 15 个附形部首因数量较多未在部首表中列出",
       "docx_main": "乛",
       "docx_attached": "",
-      "wiki_attached": "亅乚乙"
+      "wiki_attached": "亅乚乙",
+      "unlisted_attached_forms_raw": "乛、㇇、㇈、㇄、丨、㇀、㇒、丿、㇓、㇆、㇆、㇁",
+      "unlisted_attached_count": 15
     },
     {
       "code": 6,
@@ -915,8 +920,8 @@
       "attached": "玉",
       "stroke_group": "四画",
       "attached_entries": [],
-      "source_status": "CONSISTENT",
-      "note": "",
+      "source_status": "NEEDS_REVIEW",
+      "note": "维基模板附形含 𤣩玉，docx 文字层与 ichara 均为 玉；𤣩 是否入表待官方页图像确认",
       "docx_main": "王",
       "docx_attached": "玉",
       "wiki_attached": "𤣩玉"
@@ -1806,7 +1811,7 @@
     {
       "code": 123,
       "main": "老",
-      "attached": "",
+      "attached": "耂",
       "stroke_group": "六画",
       "attached_entries": [
         {
@@ -1815,8 +1820,8 @@
           "draft": true
         }
       ],
-      "source_status": "CONSISTENT",
-      "note": "",
+      "source_status": "CORRECTED",
+      "note": "docx 文字层与维基模板均有 耂；原公开转载表漏列",
       "docx_main": "老",
       "docx_attached": "耂",
       "wiki_attached": "耂"
@@ -2492,11 +2497,11 @@
     {
       "code": 170,
       "main": "雨",
-      "attached": "",
+      "attached": "⻗",
       "stroke_group": "八画",
       "attached_entries": [],
-      "source_status": "CONSISTENT",
-      "note": "",
+      "source_status": "CORRECTED",
+      "note": "维基模板与通用部首知识均为 雨（⻗）；原公开转载表漏列",
       "docx_main": "雨",
       "docx_attached": "",
       "wiki_attached": "⻗"
