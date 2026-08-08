@@ -12,6 +12,8 @@ from pathlib import Path
 EXP = Path(__file__).resolve().parent
 BUNDLE = EXP / "scnet_cnbe_moe_bundle"
 SRC_SOURCE = EXP.parents[0] / "2026-08-03_cnbe_moe" / "cnbe_moe_base" / "src"
+SCRIPTS_SOURCE = EXP / "scripts_src"
+CONFIG_SOURCE = EXP / "config_src"
 
 DOCKERFILE = """\
 ARG BASE_IMAGE=pytorch/pytorch:2.4.1-cuda12.4-cudnn9-runtime
@@ -301,6 +303,10 @@ def main() -> int:
 
     for py in SRC_SOURCE.glob("*.py"):
         shutil.copy2(py, BUNDLE / "src" / py.name)
+    for py in SCRIPTS_SOURCE.glob("*.py"):
+        shutil.copy2(py, BUNDLE / "scripts" / py.name)
+    for yml in CONFIG_SOURCE.glob("*.yaml"):
+        shutil.copy2(yml, BUNDLE / "config" / yml.name)
 
     def write_lf(path: Path, text: str) -> None:
         with path.open("w", newline="\n", encoding="utf-8") as f:

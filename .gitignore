@@ -32,6 +32,10 @@ build/
 *.xlsx.inspect.ndjson
 !evidence/validation/**/*.xlsx
 !experiments/2026-08-07_gg0011_pdf/results/GF0011_201_MAIN_ATTACHED_VERIFICATION.xlsx
+
+# SCNet upload package (large, local only)
+experiments/2026-08-08_cnbe_moe_scnet/scnet_upload_package/
+experiments/2026-08-08_cnbe_moe_scnet/scnet_upload_package.tar.gz
 *.docx
 data/*.json
 !data/gf0011_201_radicals.json
