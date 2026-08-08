@@ -1,0 +1,62 @@
+# SCNet CNBE-MoE 配置 A（推荐首跑）
+experiment_name: cnbe-moe-128-a100
+seed: 42
+device: cuda
+
+data:
+  cnbe_paths:
+    - /data/cnbe/zzjh_294.cnbe
+    - /data/cnbe/luxun_18.cnbe
+    - /data/cnbe/agatha.cnbe
+    - /data/cnbe/csbook.cnbe
+    - /data/cnbe/jinyong.cnbe
+    - /data/cnbe/caixin.cnbe
+    - /data/cnbe/sushi.cnbe
+  train_ratio: 0.95
+  eval_ratio: 0.05
+  vocab_path: /data/cnbe/vocab.json
+  mapping_path: /data/cnbe/mapping_128.json
+
+model:
+  d_model: 512
+  d_ff: 2048
+  n_layers: 8
+  n_heads: 8
+  num_experts: 128
+  top_k: 2
+  dropout: 0.1
+  use_moe: true
+  learned_router: false
+  balance_weight: 0.01
+  aux_loss_weight: 0.1
+
+training:
+  seq_len: 256
+  batch_size: 32
+  grad_accum_steps: 4
+  epochs: 2
+  lr: 0.0003
+  warmup_steps: 100
+  weight_decay: 0.01
+  grad_clip: 1.0
+  precision: bf16
+  checkpoint_every_steps: 100
+  eval_every_steps: 100
+  log_every_steps: 10
+  save_dir: /output/checkpoints
+
+distributed:
+  backend: nccl
+  world_size: 8
+  timeout_minutes: 60
+
+metrics:
+  - eval_loss
+  - eval_accuracy
+  - eval_radix_accuracy
+  - eval_struct_accuracy
+  - eval_strokes_accuracy
+  - eval_idx_accuracy
+  - expert_gini
+  - steps_per_sec
+  - mfu
