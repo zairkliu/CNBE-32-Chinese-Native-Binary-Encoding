@@ -10,12 +10,31 @@ def ocr_page(doc, page_num, dpi=120):
     resp = json.loads(urllib.request.urlopen(req, timeout=120).read())
     return resp.get("response","").strip()
 
-def ocr_pdf(pdf_path, pages=None):
+def ocr_page_mimo(doc, page_num, dpi=120):
+    import os
+    import tempfile
+    from mimo_ocr import ocr_image
+
+    page = doc[page_num]
+    pix = page.get_pixmap(dpi=dpi)
+    with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as tmp:
+        tmp_path = tmp.name
+    pix.save(tmp_path)
+    try:
+        result = ocr_image(tmp_path)
+    finally:
+        os.unlink(tmp_path)
+    return result.get("content", "").strip()
+
+def ocr_pdf(pdf_path, pages=None, engine="deepseek"):
     doc = fitz.open(pdf_path)
     if pages is None: pages = range(len(doc))
     results = []
     for pn in pages:
-        text = ocr_page(doc, pn)
+        if engine == "mimo":
+            text = ocr_page_mimo(doc, pn)
+        else:
+            text = ocr_page(doc, pn)
         chars = list(set(re.findall(r"[\u4e00-\u9fff\u3400-\u4dbf]", text)))
         results.append({"page":pn,"text":text,"chars":chars})
     doc.close()
@@ -30,12 +49,19 @@ def encode_chars(chars, api_url="http://localhost:8000"):
 
 if __name__=="__main__":
     if len(sys.argv)<2:
-        print("Usage: python ocr_pipeline.py <pdf_path> [page1 page2 ...]")
+        print("Usage: python ocr_pipeline.py <pdf_path> [page1 page2 ...] [--engine deepseek|mimo]")
         sys.exit(1)
     pdf = sys.argv[1]
-    pages = [int(a) for a in sys.argv[2:]] if len(sys.argv)>2 else None
+    args = sys.argv[2:]
+    engine = "deepseek"
+    if "--engine" in args:
+        idx = args.index("--engine")
+        engine = args[idx+1]
+        args = args[:idx] + args[idx+2:]
+    pages = [int(a) for a in args] if args else None
     print(f"OCR: {pdf}")
-    texts = ocr_pdf(pdf, pages)
+    print(f"Engine: {engine}")
+    texts = ocr_pdf(pdf, pages, engine=engine)
     for t in texts:
         print(f"  Page {t['page']}: {len(t['text'])} chars, {len(t['chars'])} unique")
     all_chars = list(set(c for t in texts for c in t["chars"]))

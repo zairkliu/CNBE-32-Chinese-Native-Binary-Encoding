@@ -120,18 +120,33 @@
 - 配置 A 仍然可行，8→4 卡后全局 batch 减半，步数翻倍；
 - 配置 B 需要 8 卡，4 卡跑 256 专家会更慢且显存吃紧。
 
-## 六、购买时在控制台怎么选
+## 六、购买时在控制台怎么选（2026-08-08 表单实测）
 
-进入「模型训练 → 新建训练」后建议：
+当前 Notebook 创建页实际资源为 **NVIDIA A800 80GB PCIE + CUDA 12.4**：
 
-1. 任务名：`cnbe-moe-128-a100`（或 `-256`）；
-2. 计算资源：A100/H800 80GB，数量 8（至少 4）；
-3. 运行框架：PyTorch 镜像（CUDA 12.x）；
-4. 存储：上传训练包到工作目录，至少 200GB 配额；
-5. 运行时长：24h 起步，预留到 72h；
-6. 启动命令：先跑 1 分钟 smoke test，通过后再跑正式训练。
+1. 资源组：**016 组（2 卡）**，优于 087 组（1 卡）；
+2. 开发工具：**JupyterLab / Jupyter**；
+3. 镜像：**CUDA 12.4 的 PyTorch Jupyter 基础镜像**（Python 3.10，Ubuntu 22.04）；
+4. 不要选 DTK/DCU 镜像，避免与 A800/CUDA 12.4 不匹配导致容器实例异常；
+5. 存储：上传训练包到工作目录，至少 200GB 配额；
+6. 启动命令：先在 Jupyter 里跑 smoke test，通过后再跑正式训练。
 
 如果控制台表单里有我们不认识的字段，把页面选项发我，我再给精确填法。
+
+## 六.5 Jupyter 开发工作流（Ubuntu 22.04）
+
+开发入口改为 Jupyter Notebook，避免在 Notebook 里直接跑长任务阻塞界面：
+
+1. 在 JupyterLab 打开 `code/notebooks/CNBE_MoE_SCNet_Jupyter.ipynb`；
+2. 依次运行：环境检查 → 挂载检查 → 配置加载 → 冒烟训练 → 结果查看；
+3. 冒烟通过后，在 Jupyter 的 Terminal 执行：
+
+```bash
+bash /app/startup.sh
+```
+
+Notebook 会自动回退路径（未挂载时用包内相对目录），也支持
+`CNBE_MOE_ROOT / CNBE_DATA_DIR / CNBE_OUTPUT_DIR` 环境变量覆盖。
 
 ## 七、代码改造清单（购买后立即执行）
 
@@ -147,6 +162,7 @@
 - [ ] 数据集改用内存映射或分片，24M 码一次性进内存约 190MB，可接受；
 - [ ] Triton grouped GEMM kernel 做 GPU 兼容性检测，不支持时回退向量化 `bmm`；
 - [ ] 运行脚本输出 `MANIFEST.json`（数据、配置、git hash、依赖版本）。
+- [x] Jupyter Notebook 开发入口（`code/notebooks/CNBE_MoE_SCNet_Jupyter.ipynb`）。
 
 ## 八、执行里程碑
 
@@ -183,7 +199,9 @@
 ## 十一、产物
 
 - 训练包：`scnet_cnbe_moe_bundle/`（代码、数据清单、配置、启动脚本）
+- DCU 专用包：`scnet_upload_package_DCU.tar.gz` 与 `scnet_cnbe_moe_bundle_DCU.tar.gz`
 - Checkpoint：`checkpoints/cnbe_moe_128.pt` 或 `cnbe_moe_256.pt`
 - 指标：`outputs/SCNET_TRAIN_METRICS.json`
+- Jupyter 开发入口：`code/notebooks/CNBE_MoE_SCNet_Jupyter.ipynb`
 - 报告：`experiments/2026-08-08_cnbe_moe_scnet/REPORT_SCNET_CNBE_MOE.md`
 - 私有数据与训练代码不上 GitHub；公开仓库只保留实验报告与结论。

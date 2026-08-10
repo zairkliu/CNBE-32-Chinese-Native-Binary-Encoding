@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -75,7 +76,7 @@ def main() -> int:
         flush=True,
     )
 
-    mapping_dir = Path("/app/mappings")
+    mapping_dir = Path(os.environ.get("CNBE_MAPPING_DIR", "/app/mappings"))
     mapping_dir.mkdir(parents=True, exist_ok=True)
     mapping_path = mapping_dir / f"mapping_{experts}.json"
     mapping_path.write_text(

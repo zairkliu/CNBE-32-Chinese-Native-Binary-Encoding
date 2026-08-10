@@ -82,7 +82,7 @@ def main() -> int:
     local_rank = int(os.environ.get("LOCAL_RANK", "0"))
     world_size = int(os.environ.get("WORLD_SIZE", "1"))
     use_cuda = torch.cuda.is_available()
-    backend = "nccl" if use_cuda else "gloo"
+    backend = os.environ.get("DIST_BACKEND", "nccl" if use_cuda else "gloo")
     dist.init_process_group(backend=backend, rank=rank, world_size=world_size)
     if use_cuda:
         torch.cuda.set_device(local_rank)
@@ -138,7 +138,9 @@ def main() -> int:
     id_to_code = id_to_code_array(vocab).tolist()
 
     mapping = build_balanced_mapping(train_codes, experts, mode=3)
-    mapping_path = Path("/tmp") / f"mapping_{experts}.json"
+    mapping_dir = Path(os.environ.get("CNBE_MAPPING_DIR", "/tmp"))
+    mapping_dir.mkdir(parents=True, exist_ok=True)
+    mapping_path = mapping_dir / f"mapping_{experts}.json"
     mapping_path.write_text(json.dumps(mapping, ensure_ascii=False), encoding="utf-8")
 
     train_ds = CodeDataset(train_codes, vocab, seq_len)

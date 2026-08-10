@@ -83,6 +83,21 @@ ollama run cnbe-32
 python /path/to/deploy/ocr_pipeline.py "古籍PDF路径.pdf" 2 3 4
 ```
 
+### MiMo V2.5 图形阅读补充（DeepSeek 视觉兜底）
+
+DeepSeek 是文本模型，图片/古籍影像的阅读可交给小米 MiMo V2.5：
+
+```bash
+# 1. 安装并配置 deepseek-vision skill（密钥由 skill 保管，不写入仓库）
+python /path/to/deploy/mimo_ocr.py "古籍页面.png"
+
+# 2. OCR 管线切换 MiMo 引擎
+python /path/to/deploy/ocr_pipeline.py "古籍PDF.pdf" --engine mimo
+```
+
+MiMo 适配器调用 `~/.codex/skills/deepseek-vision/scripts/mimo.py`，
+按量付费时会在返回结果中附带 token 数与人民币费用。
+
 ## 5000 步训练
 
 ### 当前训练状态

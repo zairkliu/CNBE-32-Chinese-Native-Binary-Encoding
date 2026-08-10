@@ -14,6 +14,7 @@ BUNDLE = EXP / "scnet_cnbe_moe_bundle"
 SRC_SOURCE = EXP.parents[0] / "2026-08-03_cnbe_moe" / "cnbe_moe_base" / "src"
 SCRIPTS_SOURCE = EXP / "scripts_src"
 CONFIG_SOURCE = EXP / "config_src"
+NOTEBOOK_SOURCE = EXP / "notebooks_src"
 
 DOCKERFILE = """\
 ARG BASE_IMAGE=pytorch/pytorch:2.4.1-cuda12.4-cudnn9-runtime
@@ -28,6 +29,7 @@ RUN pip install --no-cache-dir -i ${PIP_INDEX_URL} -r requirements.txt
 COPY src ./src
 COPY scripts ./scripts
 COPY config ./config
+COPY notebooks ./notebooks
 COPY entrypoint.sh .
 RUN chmod +x /app/entrypoint.sh
 
@@ -63,6 +65,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -133,7 +136,7 @@ def main() -> int:
         flush=True,
     )
 
-    mapping_dir = Path("/app/mappings")
+    mapping_dir = Path(os.environ.get("CNBE_MAPPING_DIR", "/app/mappings"))
     mapping_dir.mkdir(parents=True, exist_ok=True)
     mapping_path = mapping_dir / f"mapping_{experts}.json"
     mapping_path.write_text(
@@ -238,9 +241,11 @@ README = """\
 
 ## 内容
 
-- `Dockerfile`：PyTorch 2.4.1 + CUDA 12.4 运行镜像
+- `Dockerfile`：默认 PyTorch 2.4.1 + CUDA 12.4（本地验证用），
+  SCNet DCU 构建时通过 `--build-arg BASE_IMAGE` 指定 DTK 24.04 镜像
 - `src/`：CNBE-MoE 原型代码（复制自 `experiments/2026-08-03_cnbe_moe/cnbe_moe_base/src`）
 - `scripts/train_scnet.py`：单进程训练入口，支持 smoke / 全量
+- `notebooks/CNBE_MoE_SCNet_Jupyter.ipynb`：JupyterLab 开发工作流
 - `config/scnet_moe_config_a.yaml`：推荐配置 A
 - `entrypoint.sh`：容器入口
 
@@ -256,6 +261,14 @@ README = """\
 
 ```bash
 docker build -t cnbe-moe-scnet:0.1 ./scnet_cnbe_moe_bundle
+```
+
+SCNet DCU 构建：
+
+```bash
+docker build \
+  --build-arg BASE_IMAGE=image.sourcefind.cn:5000/dcu/admin/base/pytorch:2.1.0-ubuntu22.04-dtk24.04.2-py3.10 \
+  -t cnbe-moe-scnet:0.1 ./scnet_cnbe_moe_bundle
 ```
 
 本项目已在 Ubuntu-26.04 + Docker 29.1.3 完成构建，
@@ -286,7 +299,7 @@ python scripts/train_scnet.py \
 ## 注意事项
 
 - 数据文件不打包进镜像，训练时挂载 `/data/cnbe/`；
-- 当前入口为单进程，多卡 DDP 入口会在下一阶段加入；
+- 多卡 DDP 入口见 `scripts/train_distributed.py`，由 `startup.sh` 启动；
 - 本地 GPU 透传需 `nvidia-container-toolkit`；SCNet 运行时自带 GPU 挂载，无需本地验证；
 - 私有语料与训练代码不上传公开 GitHub。
 """
@@ -300,6 +313,7 @@ def main() -> int:
         shutil.rmtree(BUNDLE)
     for sub in ("src", "scripts", "config"):
         (BUNDLE / sub).mkdir(parents=True, exist_ok=True)
+    (BUNDLE / "notebooks").mkdir(parents=True, exist_ok=True)
 
     for py in SRC_SOURCE.glob("*.py"):
         shutil.copy2(py, BUNDLE / "src" / py.name)
@@ -307,6 +321,8 @@ def main() -> int:
         shutil.copy2(py, BUNDLE / "scripts" / py.name)
     for yml in CONFIG_SOURCE.glob("*.yaml"):
         shutil.copy2(yml, BUNDLE / "config" / yml.name)
+    for nb in NOTEBOOK_SOURCE.glob("*.ipynb"):
+        shutil.copy2(nb, BUNDLE / "notebooks" / nb.name)
 
     def write_lf(path: Path, text: str) -> None:
         with path.open("w", newline="\n", encoding="utf-8") as f:

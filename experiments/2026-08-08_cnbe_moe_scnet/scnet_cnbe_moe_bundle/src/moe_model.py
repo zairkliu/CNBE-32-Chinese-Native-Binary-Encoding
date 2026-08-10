@@ -60,6 +60,7 @@ class MoEFFN(nn.Module):
         router: CNBERouter,
         use_triton: bool = False,
         learned_router: bool = False,
+        experts: nn.ModuleList | None = None,
     ):
         super().__init__()
         self.num_experts = num_experts
@@ -67,7 +68,9 @@ class MoEFFN(nn.Module):
         self.router = router
         self.use_triton = use_triton
         self.learned_router = learned_router
-        self.experts = nn.ModuleList([ExpertFFN(d_model, d_ff) for _ in range(num_experts)])
+        self.experts = experts if experts is not None else nn.ModuleList(
+            [ExpertFFN(d_model, d_ff) for _ in range(num_experts)]
+        )
         if learned_router:
             self.router_net = LearnedRouter(d_model, num_experts)
 
@@ -117,7 +120,7 @@ class MoEFFN(nn.Module):
                     sorted_x, sorted_e, counts, offsets, order, group_pos, w1, b1, w2, b2
                 )
                 out_slots = torch.zeros(t * k, d, device=x.device, dtype=x.dtype)
-                out_slots[order] = result
+                out_slots[order] = result.to(out_slots.dtype)
             else:
                 out_slots = self._vectorized(sorted_x, sorted_e, group_pos, order, counts, offsets, w1, b1, w2, b2, t, k, d)
         else:
@@ -134,7 +137,7 @@ class MoEFFN(nn.Module):
         h = F.silu(h)
         y = torch.baddbmm(b2.unsqueeze(1), h, w2.transpose(1, 2))
         out_slots = torch.zeros(t * k, d, device=sorted_x.device, dtype=sorted_x.dtype)
-        out_slots[order] = y[sorted_e, group_pos]
+        out_slots[order] = y[sorted_e, group_pos].to(out_slots.dtype)
         return out_slots
 
 
@@ -150,6 +153,7 @@ class Block(nn.Module):
         router: CNBERouter,
         use_triton: bool = False,
         learned_router: bool = False,
+        experts: nn.ModuleList | None = None,
     ):
         super().__init__()
         self.attn = nn.MultiheadAttention(d_model, n_heads, batch_first=True)
@@ -157,7 +161,9 @@ class Block(nn.Module):
         self.norm2 = nn.LayerNorm(d_model)
         self.use_moe = use_moe
         if use_moe:
-            self.ffn = MoEFFN(d_model, d_ff, num_experts, top_k, router, use_triton, learned_router)
+            self.ffn = MoEFFN(
+                d_model, d_ff, num_experts, top_k, router, use_triton, learned_router, experts=experts
+            )
         else:
             self.ffn = ExpertFFN(d_model, d_ff)
 
@@ -195,9 +201,15 @@ class CNBEModel(nn.Module):
         self.pos = nn.Parameter(torch.zeros(1, 512, d_model))
         nn.init.normal_(self.pos, std=0.02)
         self.router = CNBERouter(num_experts=num_experts, mapping_path=mapping_path, num_activated=top_k)
+        self.experts = nn.ModuleList(
+            [ExpertFFN(d_model, d_ff) for _ in range(num_experts)]
+        )
         self.blocks = nn.ModuleList(
             [
-                Block(d_model, n_heads, d_ff, use_moe, num_experts, top_k, self.router, use_triton, learned_router)
+                Block(
+                    d_model, n_heads, d_ff, use_moe, num_experts, top_k,
+                    self.router, use_triton, learned_router, experts=self.experts
+                )
                 for _ in range(n_layers)
             ]
         )

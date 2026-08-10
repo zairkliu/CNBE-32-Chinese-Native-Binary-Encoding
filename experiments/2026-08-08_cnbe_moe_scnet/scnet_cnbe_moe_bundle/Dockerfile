@@ -10,6 +10,7 @@ RUN pip install --no-cache-dir -i ${PIP_INDEX_URL} -r requirements.txt
 COPY src ./src
 COPY scripts ./scripts
 COPY config ./config
+COPY notebooks ./notebooks
 COPY entrypoint.sh .
 RUN chmod +x /app/entrypoint.sh
 
