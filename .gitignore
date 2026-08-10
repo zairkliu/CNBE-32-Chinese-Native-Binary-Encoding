@@ -53,5 +53,12 @@ reports/full_catalog_row_level_extraction_results.json
 reports/full_catalog_agent_mapping_evidence_join.json
 # CNBE-32 golden vector local build artifacts
 c/golden_vectors/cnbe32_golden_test
+
+# SCNet CNBE-MoE cloud experiment (private/large artifacts, local only)
+experiments/2026-08-08_cnbe_moe_scnet/*.tar.gz
+experiments/2026-08-08_cnbe_moe_scnet/scnet_upload_package_DCU/
+experiments/2026-08-08_cnbe_moe_scnet/scnet_cnbe_moe_bundle_DCU/
+experiments/2026-08-08_cnbe_moe_scnet/results_2026-08-10/checkpoints/
+experiments/2026-08-08_cnbe_moe_scnet/results_2026-08-10/mappings/
 # CNBE-32 golden vector local build artifacts
 c/golden_vectors/cnbe32_golden_test
