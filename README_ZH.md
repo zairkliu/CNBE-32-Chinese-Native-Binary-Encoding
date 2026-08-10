@@ -43,7 +43,8 @@ OCR 工程师、中文信息处理研究者、政策与标准化观察者、中�
 
 **当前到了哪里？** 已有 21,178 行运行时数据库、多语言 SDK、桌面 Demo、
 七语料 24.38M 字验证、MoE-64 三字段硬路由、本地 QLoRA 与 DeepSeek/Ollama
-复现实验；下一阶段是云 GPU 规模化验证、CNBE Studio 与古籍整理 pipeline。
+复现实验；第一轮 SCNet L20 128 共享专家云训练已完成，下一阶段是 256 专家
+规模化验证、CNBE Studio 与古籍整理 pipeline。
 
 ## 成熟度声明
 
@@ -51,7 +52,9 @@ OCR 工程师、中文信息处理研究者、政策与标准化观察者、中�
   SQLite 运行时查询、21,178 行检入数据库、桌面 Demo、核心测试。
 - **已本地实证**：七语料压缩与 Volume、MoE-8/16/64 硬路由、三字段均衡映射、
   DeepSeek V4 API 字段消融、1.5B 小模型边界复盘。
-- **规划中 / 待规模化验证**：128/256 专家 MoE、d_model 512-1024、9B 句读模型融合、
+- **云实证（第一轮）**：SCNet L20、128 共享专家、24.38M CNBE 码、
+  next-code 19.12%、Gini 0.207。
+- **规划中 / 待规模化验证**：256 专家 MoE、d_model 512-1024、9B 句读模型融合、
   端到端古籍整理工具、CNBE64/CNBE128 证据归档。
 - **项目状态**：研究原型 -> 工程验证中。仓库会明确标注每项工作的证据等级，
   避免把规划、实验观察和稳定发布混为一谈。
@@ -244,9 +247,11 @@ CNBE-32 兼容现有 CJK/Unicode/GB 编码体系，而非彻底取代，这一�
 
 ### 规划中（需云 GPU 大规模验证）
 
-以下工作**尚未开展**，计划在获得 A100/H100 算力后推进，预计每项 2-4 小时：
+128 共享专家第一轮云训练已在 SCNet L20 完成
+（[验收报告](./experiments/2026-08-08_cnbe_moe_scnet/REPORT_SCNET_CNBE_MOE_L20.md)）。
+以下工作仍需更大规模云算力：
 
-- MoE 专家数扩展至 128-256，在更大数据上验证硬路由收益；
+- MoE 专家数扩展至 256，在更大数据上验证硬路由收益；
 - d_model 增大至 512-1024，评估 Triton kernel 性能收益；
 - 与 9B QLoRA 句读模型融合，验证下游 F1 提升；
 - 端到端古籍整理工具，将 CNBE 结构编码集成到 OCR 后处理管线。
@@ -275,6 +280,7 @@ CNBE-32 兼容现有 CJK/Unicode/GB 编码体系，而非彻底取代，这一�
 | 七语料压缩 | CNBE 定长流 ≈ gzip +13~47% | 压缩非主优势，结构可计算为主 |
 | CNBE Volume | O(1) 定位 | 适合随机访问 |
 | MoE-64 硬路由 | Next-code +3.26pp，Gini 0.153 | 硬路由有效，三字段映射更均衡 |
+| SCNet L20 128 共享专家 | Next-code 19.12%，struct 34.14%，Gini 0.207 | CNBE 码可学习；小语料限制 struct/Gini |
 | API 形近字消歧 | CNBE 提示 0.933 vs 原文 0.600 | 结构字段对字符级任务显著有效 |
 | v8 五层模拟器 | Python/C/QEMU/Verilog/Spike 全 PASS，Linux 运行时 55/55 | 指令语义与运行时在同一真实技能表上对齐 |
 | 度量公理 | 20 万对除同一性外全 PASS；50,728 对零距离 | `cnbe.cmp` 是伪度量，需明确结构等价类语义 |
@@ -551,6 +557,17 @@ CNBE-32 RISC-V mini-kernel 完成编译、链接，并在 QEMU/OpenSBI 下启动
 - [TLA+ 草稿](./experiments/2026-08-05_cnbe_math/spec/CNBE32_ALGEBRA.tla)
 
 统一本地复现：`scripts/verify_project.sh`。
+
+### 2026-08-10：SCNet L20 CNBE-MoE 第一轮云训练
+
+在 SCNet L20（NVIDIA L20，CUDA 12.4）完成第一轮云训练：128 专家跨层共享、
+24.38M CNBE 码、46,874 步。最终指标：next-code 19.12%、radix 20.23%、
+struct 34.14%、strokes 24.38%、Gini 0.207、参数量 289.9M。验证 CNBE 码流
+可学习；struct 与 Gini 的进一步优化需要更大语料。
+
+- [验收报告](./experiments/2026-08-08_cnbe_moe_scnet/REPORT_SCNET_CNBE_MOE_L20.md)
+- [训练记录](./experiments/2026-08-08_cnbe_moe_scnet/SCNET_TRAINING_RECORD_2026-08-10.md)
+- [实验日志](./outputs/experiment_logs/2026-08-10.md)
 
 ---
 

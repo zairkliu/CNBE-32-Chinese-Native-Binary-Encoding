@@ -60,7 +60,9 @@ Studio, and a classical-text cleanup pipeline.
 - **Locally validated**: seven-corpus compression and Volume, MoE-8/16/64 hard
   routing, three-field balanced mapping, DeepSeek V4 API ablation, and the
   1.5B small-model boundary postmortem.
-- **Planned / awaiting scale validation**: 128/256-expert MoE, d_model
+- **Cloud validated (first round)**: SCNet L20, 128 shared experts,
+  24.38M CNBE codes, next-code 19.12%, Gini 0.207.
+- **Planned / awaiting scale validation**: 256-expert MoE, d_model
   512-1024, 9B punctuation-model fusion, end-to-end classical-text cleanup,
   and CNBE64/CNBE128 evidence archives.
 - **Project status**: research prototype -> engineering validation. The
@@ -284,10 +286,11 @@ replacing them, based on historical lessons:
 
 ### Planned (requires cloud GPU large-scale validation)
 
-The following work is **not yet started** and is planned after obtaining
-A100/H100 compute, estimated at 2-4 hours per experiment:
+The 128-expert shared-MoE round is now complete on SCNet L20
+([acceptance report](./experiments/2026-08-08_cnbe_moe_scnet/REPORT_SCNET_CNBE_MOE_L20.md)).
+The remaining work still requires larger cloud compute:
 
-- Scale MoE experts to 128-256 and validate hard-routing gains on larger data;
+- Scale MoE experts to 256 and validate hard-routing gains on larger data;
 - Increase d_model to 512-1024 and evaluate Triton kernel gains;
 - Fuse with a 9B QLoRA punctuation model to validate downstream F1;
 - Build an end-to-end classical-text cleanup tool integrating CNBE into OCR
@@ -320,6 +323,7 @@ A100/H100 compute, estimated at 2-4 hours per experiment:
 | Seven-corpus compression | CNBE stream ≈ gzip +13~47% | Compression is not the main edge; computable structure is |
 | CNBE Volume | O(1) random access | Suitable for random access |
 | MoE-64 hard routing | Next-code +3.26pp, Gini 0.153 | Hard routing works; three-field mapping is more balanced |
+| SCNet L20 128-expert MoE | Next-code 19.12%, struct 34.14%, Gini 0.207 | CNBE codes are learnable; small corpus limits struct/Gini |
 | API confusable disambiguation | CNBE hint 0.933 vs plain 0.600 | Structural fields help character-level tasks significantly |
 | v8 five-layer simulator | Python/C/QEMU/Verilog/Spike all PASS, Linux runtime 55/55 | Instruction semantics and runtime align on the same real skill table |
 | Metric axioms | 200k-pair PASS except identity; 50,728 zero-distance pairs | `cnbe.cmp` is a pseudo-metric; structural equivalence-class semantics required |
@@ -602,6 +606,18 @@ Documents:
 - [TLA+ Draft](./experiments/2026-08-05_cnbe_math/spec/CNBE32_ALGEBRA.tla)
 
 Unified local reproduction: `scripts/verify_project.sh`.
+
+### 2026-08-10: SCNet L20 CNBE-MoE First Cloud Round
+
+Completed the first cloud training round on SCNet L20 (NVIDIA L20, CUDA 12.4):
+128 shared experts, 24.38M CNBE codes, 46,874 steps. Final metrics:
+next-code 19.12%, radix 20.23%, struct 34.14%, strokes 24.38%, Gini 0.207,
+289.9M parameters. Confirms CNBE codes are learnable; struct/Gini headroom
+requires a larger corpus.
+
+- [Acceptance Report](./experiments/2026-08-08_cnbe_moe_scnet/REPORT_SCNET_CNBE_MOE_L20.md)
+- [Training Record](./experiments/2026-08-08_cnbe_moe_scnet/SCNET_TRAINING_RECORD_2026-08-10.md)
+- [Experiment Log](./outputs/experiment_logs/2026-08-10.md)
 
 ## Agent and automation boundary
 
