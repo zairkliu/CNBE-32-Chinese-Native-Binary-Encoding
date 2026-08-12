@@ -34,7 +34,7 @@ cp -f "$ROOT"/configs/v1_*.yaml "$CODE/config/"
 python "$ROOT/tools_generate_v1_manifest.py" \
   --output "$DCU/output/v1_robustness/MANIFEST.json"
 
-bash "$ROOT/scripts/stage_a_eval.sh"
+bash "$ROOT/scripts/stage_a_eval.sh" || echo "stage A incomplete; continuing with stage B"
 bash "$ROOT/scripts/stage_b_multiseed.sh" "${1:-43}"
 
 if [ "${RUN_SEED44:-0}" = "1" ]; then
