@@ -62,6 +62,12 @@ Studio, and a classical-text cleanup pipeline.
   1.5B small-model boundary postmortem.
 - **Cloud validated (first round)**: SCNet L20, 128 shared experts,
   24.38M CNBE codes, next-code 19.12%, Gini 0.207.
+- **Cloud validated (second round)**: SCNet DCU BW x2, 544M CNBE tokens,
+  128 shared experts, 626M params, next-code 23.56%, struct 44.07%,
+  Gini 0.297.
+- **Controlled comparison (v1)**: on the same v1 corpus and eval split,
+  MoE-128 next-code 22.96%, Dense 2.61%, Unicode 0.001%; CNBE clearly
+  outperforms Unicode; equal-parameter Dense control is pending.
 - **Planned / awaiting scale validation**: 256-expert MoE, d_model
   512-1024, 9B punctuation-model fusion, end-to-end classical-text cleanup,
   and CNBE64/CNBE128 evidence archives.
@@ -211,7 +217,7 @@ from encoding, evidence, software, models, and systems prototypes:
 |---|---|---|
 | CNBE Studio / demo | Desktop demo, cross-platform packaging scripts, copyright guide | Batch encoding, Volume viewer, MoE routing visualization, classical-text cleanup demo |
 | Classical-text cleanup | Yongle failure postmortem, OCR/truth boundary, punctuation pivot | OCR/truth DB -> CNBE coverage check -> confusable risk -> LLM punctuation/segmentation -> human review queue |
-| CNBE-MoE | 8/16/64 experts, three-field hard routing, DeepSeek V4 ablation | Equal-parameter/equal-compute controls, 128/256-expert cloud-GPU validation |
+| CNBE-MoE | 8/16/64/128 experts, 544M-token DCU training, v1 MoE/Dense/Unicode comparison | Equal-parameter Dense control, 256-expert cloud validation |
 | LLM and small-model boundary | QLoRA, DeepSeek/Ollama reproduction, 1.5B failure boundary | 1.5B/7B/14B scale curves, length scans, punctuation F1 and confusable-disambiguation stability |
 | Standards and evidence | 8105 baseline, GF0017 gates, unified evidence index | Keep no-write gates, design CNBE64/CNBE128 evidence archive paths |
 | Low-level systems | RISC-V instructions, Verilog, Linux prototypes, C/Rust/Python SDKs | Move the structural layer from demos into toolchains and measurable benchmarks |
@@ -287,8 +293,10 @@ replacing them, based on historical lessons:
 ### Planned (requires cloud GPU large-scale validation)
 
 The 128-expert shared-MoE round is now complete on SCNet L20
-([acceptance report](./experiments/2026-08-08_cnbe_moe_scnet/REPORT_SCNET_CNBE_MOE_L20.md)).
-The remaining work still requires larger cloud compute:
+([acceptance report](./experiments/2026-08-08_cnbe_moe_scnet/REPORT_SCNET_CNBE_MOE_L20.md))
+and on SCNet DCU BW x2 with 544M tokens. The v1 controlled comparison is
+complete for MoE-128 / Dense / Unicode; an equal-parameter Dense control is
+still pending. The remaining work still requires larger cloud compute:
 
 - Scale MoE experts to 256 and validate hard-routing gains on larger data;
 - Increase d_model to 512-1024 and evaluate Triton kernel gains;
@@ -624,6 +632,42 @@ requires a larger corpus.
 - [Acceptance Report](./experiments/2026-08-08_cnbe_moe_scnet/REPORT_SCNET_CNBE_MOE_L20.md)
 - [Training Record](./experiments/2026-08-08_cnbe_moe_scnet/SCNET_TRAINING_RECORD_2026-08-10.md)
 - [Experiment Log](./outputs/experiment_logs/2026-08-10.md)
+
+### 2026-08-11/12: 544M DCU-128 Round 2 and V1 Controlled Comparison
+
+Second cloud round on SCNet DCU BW x2 with 544M CNBE tokens, d_model=1024,
+12 layers, 128 shared experts, 125,976 steps:
+
+| Metric | Value |
+|---|---:|
+| eval_loss | 4.5915 |
+| next-code | 23.56% |
+| radix | 24.09% |
+| struct | 44.07% |
+| strokes | 26.04% |
+| struct head | 47.10% |
+| expert_gini | 0.2971 |
+| params | 626,435,442 |
+
+V1 controlled comparison on the same 24M corpus and identical 381,237-token
+eval split:
+
+| Condition | eval_loss | next-code / next-token | struct |
+|---|---:|---:|---:|
+| MoE-128 | 4.5430 | 22.96% | 43.05% |
+| Dense same-config | 7.3033 | 2.61% | 38.41% |
+| Unicode Dense | 7.7933 | 0.0010% | N/A |
+
+Conclusions: MoE-128 clearly outperforms the same-configuration dense model;
+CNBE clearly outperforms Unicode codepoints; expert Gini is 0.147 on v1.
+Equal-parameter dense control is still pending before MoE gains can be fully
+attributed.
+
+- [Training Run Report](./docs/TRAINING_RUN_REPORT_2026-08-11.md)
+- [Experiment Archive Index](./experiments/2026-08-08_cnbe_moe_scnet/README_EXPERIMENTS_2026-08-12.md)
+- [V1 Control Design](./experiments/2026-08-08_cnbe_moe_scnet/CONTROL_EXPERIMENTS_V1_DESIGN_2026-08-11.md)
+- [Results 2026-08-11](./experiments/2026-08-08_cnbe_moe_scnet/results_2026-08-11/)
+- [Results 2026-08-12](./experiments/2026-08-08_cnbe_moe_scnet/results_2026-08-12/)
 
 ## Agent and automation boundary
 
