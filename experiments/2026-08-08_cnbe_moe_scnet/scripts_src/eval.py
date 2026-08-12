@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import sys
@@ -40,6 +41,7 @@ def parse_args() -> argparse.Namespace:
     ap.add_argument("--vocab", default="")
     ap.add_argument("--limit-batches", type=int, default=0)
     ap.add_argument("--max-eval-tokens", type=int, default=0)
+    ap.add_argument("--prediction-hash-output", default="")
     return ap.parse_args()
 
 
@@ -188,6 +190,8 @@ def main() -> int:
     cr = cs = cst = 0
     cr_h = cs_h = cst_h = 0
     load_sum = None
+    pred_hash = hashlib.md5()
+    pred_hashed = 0
     eval_t0 = time.perf_counter()
     loader = DataLoader(eval_ds, batch_size=batch_size, num_workers=0)
     with torch.no_grad(), torch.autocast(
@@ -207,6 +211,12 @@ def main() -> int:
             pred = logits.argmax(-1)
             correct += (pred == y).sum().item()
             total += y.numel()
+            if pred_hashed < 1000:
+                chunk = (
+                    pred.cpu().reshape(-1).numpy().astype("<i8")
+                )[: 1000 - pred_hashed]
+                pred_hash.update(chunk.tobytes())
+                pred_hashed += int(len(chunk))
 
             pred_codes = torch.tensor(
                 [id_to_code[int(i)] for i in pred.cpu().flatten()],
@@ -278,6 +288,13 @@ def main() -> int:
             "experts": num_experts,
         },
     }
+    if args.prediction_hash_output:
+        hash_path = Path(args.prediction_hash_output)
+        hash_path.parent.mkdir(parents=True, exist_ok=True)
+        hash_path.write_text(
+            json.dumps({"md5": pred_hash.hexdigest(), "count": pred_hashed}),
+            encoding="utf-8",
+        )
     out = Path(args.output)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(metrics, ensure_ascii=False, indent=2), encoding="utf-8")

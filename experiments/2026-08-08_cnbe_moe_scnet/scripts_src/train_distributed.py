@@ -40,6 +40,8 @@ def parse_args() -> argparse.Namespace:
     ap.add_argument("--checkpoint-dir", default="/output/checkpoints")
     ap.add_argument("--resume", action="store_true")
     ap.add_argument("--smoke", action="store_true")
+    ap.add_argument("--seed", type=int, default=None)
+    ap.add_argument("--max-steps", type=int, default=0)
     return ap.parse_args()
 
 
@@ -123,7 +125,8 @@ def main() -> int:
         log_every = int(train_cfg.get("log_every_steps", 10))
         checkpoint_every = int(train_cfg.get("checkpoint_every_steps", 100))
 
-    torch.manual_seed(int(cfg.get("seed", 42)))
+    seed = args.seed if args.seed is not None else int(cfg.get("seed", 42))
+    torch.manual_seed(seed)
     if rank == 0:
         print(
             f"rank={rank} world={world_size} device={device} "
@@ -200,6 +203,8 @@ def main() -> int:
 
     steps_per_epoch = max(1, len(sampler) // batch_size)
     total_steps = int(steps_per_epoch * epochs)
+    if args.max_steps:
+        total_steps = min(total_steps, args.max_steps)
     if rank == 0:
         print(
             f"train_windows={len(train_ds)} eval_windows={len(eval_ds)} "
