@@ -28,6 +28,8 @@ echo "v1 data: $V1_DATA"
 mkdir -p "$DCU/output/v1_robustness"
 cp -f "$ROOT/code/scripts/train_distributed.py" "$CODE/scripts/train_distributed.py"
 cp -f "$ROOT/code/scripts/eval.py" "$CODE/scripts/eval.py"
+mkdir -p "$CODE/config"
+cp -f "$ROOT"/configs/v1_*.yaml "$CODE/config/"
 
 python "$ROOT/tools_generate_v1_manifest.py" \
   --output "$DCU/output/v1_robustness/MANIFEST.json"
