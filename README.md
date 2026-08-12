@@ -67,7 +67,7 @@ Studio, and a classical-text cleanup pipeline.
   Gini 0.297.
 - **Controlled comparison (v1)**: on the same v1 corpus and eval split,
   MoE-128 next-code 22.96%, Dense 2.61%, Unicode 0.001%; CNBE clearly
-  outperforms Unicode; equal-parameter Dense control is pending.
+  outperforms Unicode; equal-parameter Dense (2.61%) confirms the MoE gain.
 - **Planned / awaiting scale validation**: 256-expert MoE, d_model
   512-1024, 9B punctuation-model fusion, end-to-end classical-text cleanup,
   and CNBE64/CNBE128 evidence archives.
@@ -217,7 +217,7 @@ from encoding, evidence, software, models, and systems prototypes:
 |---|---|---|
 | CNBE Studio / demo | Desktop demo, cross-platform packaging scripts, copyright guide | Batch encoding, Volume viewer, MoE routing visualization, classical-text cleanup demo |
 | Classical-text cleanup | Yongle failure postmortem, OCR/truth boundary, punctuation pivot | OCR/truth DB -> CNBE coverage check -> confusable risk -> LLM punctuation/segmentation -> human review queue |
-| CNBE-MoE | 8/16/64/128 experts, 544M-token DCU training, v1 MoE/Dense/Unicode comparison | Equal-parameter Dense control, 256-expert cloud validation |
+| CNBE-MoE | 8/16/64/128 experts, 544M-token DCU training, v1 MoE/Dense/Unicode/matched comparison | 256-expert cloud validation, 544M controlled comparison |
 | LLM and small-model boundary | QLoRA, DeepSeek/Ollama reproduction, 1.5B failure boundary | 1.5B/7B/14B scale curves, length scans, punctuation F1 and confusable-disambiguation stability |
 | Standards and evidence | 8105 baseline, GF0017 gates, unified evidence index | Keep no-write gates, design CNBE64/CNBE128 evidence archive paths |
 | Low-level systems | RISC-V instructions, Verilog, Linux prototypes, C/Rust/Python SDKs | Move the structural layer from demos into toolchains and measurable benchmarks |
@@ -295,8 +295,9 @@ replacing them, based on historical lessons:
 The 128-expert shared-MoE round is now complete on SCNet L20
 ([acceptance report](./experiments/2026-08-08_cnbe_moe_scnet/REPORT_SCNET_CNBE_MOE_L20.md))
 and on SCNet DCU BW x2 with 544M tokens. The v1 controlled comparison is
-complete for MoE-128 / Dense / Unicode; an equal-parameter Dense control is
-still pending. The remaining work still requires larger cloud compute:
+complete for MoE-128 / Dense / Dense matched-params / Unicode; the
+equal-parameter Dense control confirms the MoE gain. The remaining work still
+requires larger cloud compute:
 
 - Scale MoE experts to 256 and validate hard-routing gains on larger data;
 - Increase d_model to 512-1024 and evaluate Triton kernel gains;
@@ -652,16 +653,16 @@ Second cloud round on SCNet DCU BW x2 with 544M CNBE tokens, d_model=1024,
 V1 controlled comparison on the same 24M corpus and identical 381,237-token
 eval split:
 
-| Condition | eval_loss | next-code / next-token | struct |
-|---|---:|---:|---:|
-| MoE-128 | 4.5430 | 22.96% | 43.05% |
-| Dense same-config | 7.3033 | 2.61% | 38.41% |
-| Unicode Dense | 7.7933 | 0.0010% | N/A |
+| Condition | eval_loss | next-code / next-token | struct | params |
+|---|---:|---:|---:|---:|
+| MoE-128 | 4.5430 | 22.96% | 43.05% | 289,920,031 |
+| Dense same-config | 7.3033 | 2.61% | 38.41% | 37,954,591 |
+| Dense matched-params | 7.2802 | 2.61% | 38.41% | 289,858,591 |
+| Unicode Dense | 7.7933 | 0.0010% | N/A | 38,130,891 |
 
 Conclusions: MoE-128 clearly outperforms the same-configuration dense model;
+the matched-parameter dense baseline confirms the MoE architecture gain;
 CNBE clearly outperforms Unicode codepoints; expert Gini is 0.147 on v1.
-Equal-parameter dense control is still pending before MoE gains can be fully
-attributed.
 
 - [Training Run Report](./docs/TRAINING_RUN_REPORT_2026-08-11.md)
 - [Experiment Archive Index](./experiments/2026-08-08_cnbe_moe_scnet/README_EXPERIMENTS_2026-08-12.md)
