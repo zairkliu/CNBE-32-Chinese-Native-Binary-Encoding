@@ -48,13 +48,21 @@ def main() -> int:
     ap.add_argument("--dcu-root", type=Path, default=Path("/scnet_upload_package_DCU"))
     ap.add_argument("--merged-root", type=Path, default=Path("/scnet_upload_package_MERGED_DCU"))
     ap.add_argument("--data-dir", type=Path, default=Path(""))
+    ap.add_argument("--code-dir", type=Path, default=Path(""))
     args = ap.parse_args()
 
     import torch
 
     dcu = args.dcu_root
     merged = args.merged_root
-    data_dir = args.data_dir or dcu / "data"
+    if args.data_dir:
+        data_dir = args.data_dir
+    else:
+        data_dir = next(
+            (d for d in (merged / "data", dcu / "data") if (d / "zzjh_294.cnbe").exists()),
+            dcu / "data",
+        )
+    code_dir = args.code_dir or merged / "code"
     out_dir = args.output.parent
     out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -109,16 +117,16 @@ def main() -> int:
         },
         "config": hashes(
             {
-                "moe128": merged / "code" / "config" / "v1_moe128_dcu2.yaml",
-                "dense": merged / "code" / "config" / "v1_dense_dcu2.yaml",
-                "dense_matched": merged / "code" / "config" / "v1_dense_matched_dcu2.yaml",
-                "unicode": merged / "code" / "config" / "v1_unicode_dcu2.yaml",
+                "moe128": code_dir / "config" / "v1_moe128_dcu2.yaml",
+                "dense": code_dir / "config" / "v1_dense_dcu2.yaml",
+                "dense_matched": code_dir / "config" / "v1_dense_matched_dcu2.yaml",
+                "unicode": code_dir / "config" / "v1_unicode_dcu2.yaml",
             }
         ),
         "scripts": hashes(
             {
-                "train": merged / "code" / "scripts" / "train_distributed.py",
-                "eval": merged / "code" / "scripts" / "eval.py",
+                "train": code_dir / "scripts" / "train_distributed.py",
+                "eval": code_dir / "scripts" / "eval.py",
             }
         ),
         "checkpoints": hashes(
