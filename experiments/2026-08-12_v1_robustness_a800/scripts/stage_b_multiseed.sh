@@ -4,6 +4,7 @@ set -euo pipefail
 SEED="${1:-43}"
 CODE="${CNBE_CODE:-/scnet_upload_package_MERGED_DCU/code}"
 DCU="${CNBE_DCU:-/scnet_upload_package_DCU}"
+MERGED="${CNBE_MERGED:-/scnet_upload_package_MERGED_DCU}"
 V1_DATA="${CNBE_V1_DATA:-$MERGED/data}"
 OUT="${CNBE_OUT:-$DCU/output}"
 STAGE="$OUT/v1_robustness/stage_b"
