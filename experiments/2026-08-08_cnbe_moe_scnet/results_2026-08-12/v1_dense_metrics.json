@@ -1,0 +1,10 @@
+{
+  "eval_loss": 7.305456384385969,
+  "eval_accuracy": 0.02611599647414372,
+  "eval_radix_accuracy": 0.030964048858294155,
+  "eval_struct_accuracy": 0.3840848514103425,
+  "eval_strokes_accuracy": 0.13874139523169912,
+  "expert_gini": null,
+  "params": 37954591,
+  "smoke": false
+}

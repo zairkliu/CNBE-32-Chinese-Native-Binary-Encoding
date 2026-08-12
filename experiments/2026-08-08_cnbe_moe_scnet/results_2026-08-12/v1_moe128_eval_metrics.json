@@ -1,0 +1,26 @@
+{
+  "checkpoint": "/scnet_upload_package_DCU/output/checkpoints/moe128/final.pt",
+  "checkpoint_step": 23436,
+  "eval_loss": 4.543037608616139,
+  "eval_accuracy": 0.2295820391202149,
+  "eval_radix_accuracy": 0.24522540295500336,
+  "eval_struct_accuracy": 0.4305086257555406,
+  "eval_strokes_accuracy": 0.30126133310946945,
+  "eval_radix_head_accuracy": 0.22145473052384151,
+  "eval_struct_head_accuracy": 0.45806487155809267,
+  "eval_strokes_head_accuracy": 0.27963922934855606,
+  "expert_gini": 0.14724016189575195,
+  "params": 289920031,
+  "tokens_evaluated": 381184,
+  "config": {
+    "max_train": 24000000,
+    "max_eval": 1200000,
+    "seq_len": 128,
+    "batch_size": 8,
+    "d_model": 512,
+    "d_ff": 2048,
+    "layers": 8,
+    "heads": 8,
+    "experts": 128
+  }
+}

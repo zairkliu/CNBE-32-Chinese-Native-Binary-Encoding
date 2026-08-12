@@ -3,6 +3,8 @@
 
 from __future__ import annotations
 
+import math
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -60,7 +62,7 @@ class MoEFFN(nn.Module):
         router: CNBERouter,
         use_triton: bool = False,
         learned_router: bool = False,
-        experts: nn.ModuleList | None = None,
+        expert_params: tuple | None = None,
     ):
         super().__init__()
         self.num_experts = num_experts
@@ -68,9 +70,18 @@ class MoEFFN(nn.Module):
         self.router = router
         self.use_triton = use_triton
         self.learned_router = learned_router
-        self.experts = experts if experts is not None else nn.ModuleList(
-            [ExpertFFN(d_model, d_ff) for _ in range(num_experts)]
-        )
+        if expert_params is not None:
+            self._expert_params = expert_params
+        else:
+            self.w1 = nn.Parameter(torch.empty(num_experts, d_ff, d_model))
+            self.b1 = nn.Parameter(torch.empty(num_experts, d_ff))
+            self.w2 = nn.Parameter(torch.empty(num_experts, d_model, d_ff))
+            self.b2 = nn.Parameter(torch.empty(num_experts, d_model))
+            nn.init.kaiming_uniform_(self.w1, a=math.sqrt(5))
+            nn.init.kaiming_uniform_(self.w2, a=math.sqrt(5))
+            nn.init.zeros_(self.b1)
+            nn.init.zeros_(self.b2)
+            self._expert_params = (self.w1, self.b1, self.w2, self.b2)
         if learned_router:
             self.router_net = LearnedRouter(d_model, num_experts)
 
@@ -87,7 +98,10 @@ class MoEFFN(nn.Module):
             for e in range(self.num_experts):
                 mask = e_idx == e
                 if mask.any():
-                    out[mask] += w[mask].unsqueeze(-1) * self.experts[e](flat_x[mask])
+                    w1e, b1e, w2e, b2e = (p[e] for p in self._expert_params)
+                    out[mask] += w[mask].unsqueeze(-1) * F.linear(
+                        F.silu(F.linear(flat_x[mask], w1e, b1e)), w2e, b2e
+                    )
         load = weights.sum(dim=(0, 1))
         self.last_probs = weights
         return out.reshape(b, s, d), load
@@ -106,10 +120,7 @@ class MoEFFN(nn.Module):
         max_c = int(counts.max().item()) if counts.numel() else 0
         slot_idx = torch.arange(t * k, device=x.device, dtype=torch.long)
         group_pos = slot_idx - offsets[sorted_e]
-        w1 = torch.stack([ex.fc1.weight for ex in self.experts])  # (n, ff, d)
-        b1 = torch.stack([ex.fc1.bias for ex in self.experts])  # (n, ff)
-        w2 = torch.stack([ex.fc2.weight for ex in self.experts])  # (n, d, ff)
-        b2 = torch.stack([ex.fc2.bias for ex in self.experts])  # (n, d)
+        w1, b1, w2, b2 = self._expert_params
         if self.learned_router:
             return self._learned_forward(x, codes)
         if self.use_triton:
@@ -153,7 +164,7 @@ class Block(nn.Module):
         router: CNBERouter,
         use_triton: bool = False,
         learned_router: bool = False,
-        experts: nn.ModuleList | None = None,
+        expert_params: tuple | None = None,
     ):
         super().__init__()
         self.attn = nn.MultiheadAttention(d_model, n_heads, batch_first=True)
@@ -162,7 +173,8 @@ class Block(nn.Module):
         self.use_moe = use_moe
         if use_moe:
             self.ffn = MoEFFN(
-                d_model, d_ff, num_experts, top_k, router, use_triton, learned_router, experts=experts
+                d_model, d_ff, num_experts, top_k, router, use_triton, learned_router,
+                expert_params=expert_params,
             )
         else:
             self.ffn = ExpertFFN(d_model, d_ff)
@@ -201,14 +213,22 @@ class CNBEModel(nn.Module):
         self.pos = nn.Parameter(torch.zeros(1, 512, d_model))
         nn.init.normal_(self.pos, std=0.02)
         self.router = CNBERouter(num_experts=num_experts, mapping_path=mapping_path, num_activated=top_k)
-        self.experts = nn.ModuleList(
-            [ExpertFFN(d_model, d_ff) for _ in range(num_experts)]
-        )
+        self.expert_params = None
+        if use_moe:
+            self.expert_w1 = nn.Parameter(torch.empty(num_experts, d_ff, d_model))
+            self.expert_b1 = nn.Parameter(torch.empty(num_experts, d_ff))
+            self.expert_w2 = nn.Parameter(torch.empty(num_experts, d_model, d_ff))
+            self.expert_b2 = nn.Parameter(torch.empty(num_experts, d_model))
+            nn.init.kaiming_uniform_(self.expert_w1, a=math.sqrt(5))
+            nn.init.kaiming_uniform_(self.expert_w2, a=math.sqrt(5))
+            nn.init.zeros_(self.expert_b1)
+            nn.init.zeros_(self.expert_b2)
+            self.expert_params = (self.expert_w1, self.expert_b1, self.expert_w2, self.expert_b2)
         self.blocks = nn.ModuleList(
             [
                 Block(
                     d_model, n_heads, d_ff, use_moe, num_experts, top_k,
-                    self.router, use_triton, learned_router, experts=self.experts
+                    self.router, use_triton, learned_router, expert_params=self.expert_params
                 )
                 for _ in range(n_layers)
             ]

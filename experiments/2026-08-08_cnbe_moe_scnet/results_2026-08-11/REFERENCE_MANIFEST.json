@@ -1,0 +1,50 @@
+{
+  "source_archive": "round2_dcu128_reference_with_readme.tar.gz",
+  "received_files": [
+    {
+      "path": "8-11_0.544Btest/README.md",
+      "size_bytes": 5041
+    },
+    {
+      "path": "code/config/scnet_moe_config_merged_dcu2.yaml",
+      "size_bytes": 576
+    },
+    {
+      "path": "code/scripts/eval.py",
+      "size_bytes": 8251
+    },
+    {
+      "path": "code/scripts/train_distributed.py",
+      "size_bytes": 12661
+    },
+    {
+      "path": "output/assets/vocab_merged.json",
+      "size_bytes": 351028
+    },
+    {
+      "path": "output/eval_metrics.json",
+      "size_bytes": 777
+    },
+    {
+      "path": "output/mappings/mapping_128.json",
+      "size_bytes": 938356
+    },
+    {
+      "path": "output/smoke_metrics.json",
+      "size_bytes": 736
+    },
+    {
+      "path": "output/train_metrics.json",
+      "size_bytes": 292
+    }
+  ],
+  "missing_files": [
+    "output/training.log",
+    "data/corpus_manifest.json"
+  ],
+  "notes": [
+    "config checkpoint_every_steps=10000 explains last.pt step=120000",
+    "eval.py in archive is the first-patch version (build_vocab, no uint32/vocab reuse)",
+    "latest eval.py is available locally in scnet_cnbe_moe_bundle/scripts/eval.py"
+  ]
+}

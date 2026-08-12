@@ -1,0 +1,1 @@
+{"version": 1, "stats": {"num_experts": 1, "mode": 3}, "mapping": {"0": {"experts": [0], "freq": 19280747, "radix": 0, "struct": 0, "strokes": 0}, "32": {"experts": [0], "freq": 4719174, "radix": 0, "struct": 1, "strokes": 0}, "128": {"experts": [0], "freq": 66, "radix": 0, "struct": 4, "strokes": 0}, "160": {"experts": [0], "freq": 13, "radix": 0, "struct": 5, "strokes": 0}}}

@@ -171,7 +171,7 @@ def main() -> int:
         n_heads=heads,
         num_experts=experts,
         top_k=int(model_cfg["top_k"]),
-        use_moe=True,
+        use_moe=bool(model_cfg.get("use_moe", True)),
         mapping_path=str(mapping_path),
         learned_router=bool(model_cfg.get("learned_router", False)),
     ).to(device)
@@ -279,9 +279,31 @@ def main() -> int:
                     ckpt_path,
                 )
 
-    dist.barrier()
     metrics: dict = {}
     if rank == 0:
+        final_ckpt = {
+            "model": model.module.state_dict(),
+            "optimizer": opt.state_dict(),
+            "step": total_steps,
+            "vocab_size": len(vocab),
+            "config": {
+                "d_model": d_model,
+                "d_ff": d_ff,
+                "layers": layers,
+                "heads": heads,
+                "experts": experts,
+                "seq_len": seq_len,
+                "batch_size": batch_size,
+                "epochs": epochs,
+            },
+        }
+        torch.save(final_ckpt, ckpt_path)
+        torch.save(final_ckpt, checkpoint_dir / "final.pt")
+        print(
+            "saved final checkpoint step",
+            total_steps,
+            flush=True,
+        )
         model.eval()
         total_loss = 0.0
         correct = 0
@@ -328,8 +350,6 @@ def main() -> int:
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(json.dumps(metrics, ensure_ascii=False, indent=2), encoding="utf-8")
         print(json.dumps(metrics, ensure_ascii=False, indent=2), flush=True)
-    dist.barrier()
-    dist.destroy_process_group()
     return 0
 
 

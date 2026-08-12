@@ -1,0 +1,38 @@
+{
+  "mapping": "scnet_upload_package\\assets\\mapping_128.json",
+  "num_experts": 128,
+  "key_mode": 3,
+  "templates": 6346,
+  "templates_per_expert": {
+    "min": 1,
+    "max": 59,
+    "mean": 49.578,
+    "std": 19.669
+  },
+  "tokens_per_expert": {
+    "min": 164386,
+    "max": 531310,
+    "mean": 180954.492,
+    "std": 52288.928
+  },
+  "vocab_triples": 6366,
+  "codes_per_triple": {
+    "min": 1,
+    "max": 49,
+    "mean": 1.727
+  },
+  "step": {
+    "tokens": 8192,
+    "rows": 16384,
+    "max_tokens_per_expert": 538,
+    "min_tokens_per_expert": 62,
+    "mean_tokens_per_expert": 128.0,
+    "experts_used": 128,
+    "vectorized_slots": 68864,
+    "padding_factor": 4.203
+  },
+  "layer_slots": {
+    "actual": 128,
+    "potential": 1024
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "use_moe": true,
+  "avg_train_loss": 9.641345596313476,
+  "eval_loss": 7.648020144431822,
+  "eval_accuracy": 0.0010080645161290322,
+  "eval_radix_accuracy": 0.015120967741935484,
+  "eval_struct_accuracy": 0.1592741935483871,
+  "eval_strokes_accuracy": 0.056451612903225805,
+  "eval_radix_head_accuracy": 0.0025201612903225806,
+  "eval_struct_head_accuracy": 0.07409274193548387,
+  "eval_strokes_head_accuracy": 0.02721774193548387,
+  "train_steps_per_sec": 1.213,
+  "expert_gini": 0.076,
+  "params": 567480,
+  "smoke": true,
+  "config": {
+    "max_train": 20000,
+    "max_eval": 2000,
+    "seq_len": 32,
+    "batch_size": 2,
+    "steps": 5,
+    "d_model": 64,
+    "d_ff": 128,
+    "layers": 1,
+    "heads": 2,
+    "experts": 8
+  }
+}

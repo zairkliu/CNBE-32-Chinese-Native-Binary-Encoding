@@ -49,7 +49,8 @@ def fields_from_codes(codes: np.ndarray) -> dict[str, np.ndarray]:
 
 class CodeDataset(Dataset):
     def __init__(self, codes: np.ndarray, code_to_id: dict[int, int], seq_len: int = 64):
-        self.ids = np.array([code_to_id[int(c)] for c in codes], dtype=np.int64)
+        table = np.array(sorted(code_to_id.keys()), dtype=np.int64)
+        self.ids = np.searchsorted(table, codes).astype(np.int64)
         self.raw = codes
         self.seq_len = seq_len
         n = (len(self.ids) - 1) // seq_len

@@ -1,0 +1,35 @@
+experiment_name: v1-control-dense-matched-dcu2
+seed: 42
+device: cuda
+
+data:
+  cnbe_paths: []
+  max_train_tokens: 24000000
+  max_eval_tokens: 1200000
+
+model:
+  d_model: 512
+  d_ff: 32768
+  n_layers: 8
+  n_heads: 8
+  num_experts: 1
+  top_k: 1
+  dropout: 0.1
+  use_moe: false
+  learned_router: false
+  balance_weight: 0.0
+  aux_loss_weight: 0.0
+
+training:
+  seq_len: 128
+  batch_size: 8
+  grad_accum_steps: 1
+  epochs: 2
+  steps: 1000
+  lr: 0.0003
+  warmup_steps: 100
+  weight_decay: 0.01
+  grad_clip: 1.0
+  precision: bf16
+  log_every_steps: 10
+  checkpoint_every_steps: 1000

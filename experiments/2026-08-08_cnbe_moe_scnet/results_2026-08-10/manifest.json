@@ -1,0 +1,256 @@
+{
+  "package": "scnet_upload_package",
+  "generated_at": "2026-08-08",
+  "image": "cnbe-moe-scnet:0.1",
+  "scnet_form": {
+    "accelerator": "DCU",
+    "dev_tool": "JupyterLab",
+    "python": "3.10",
+    "dtk": "24.04.1 / 24.04.2",
+    "os": "Ubuntu 20.04 / 22.04",
+    "base_image": "PyTorch/2.1.0/py3.10-ubuntu20.04/dtk24.04.1"
+  },
+  "scnet_form_a800": {
+    "resource_group": "016 组（2 卡）",
+    "accelerator": "NVIDIA A800 80GB PCIE",
+    "cuda": "12.4",
+    "dev_tool": "JupyterLab / Jupyter",
+    "image": "CUDA 12.4 的 PyTorch Jupyter 基础镜像",
+    "python": "3.10",
+    "os": "Ubuntu 22.04"
+  },
+  "jupyter": "code/notebooks/CNBE_MoE_SCNet_Jupyter.ipynb",
+  "config": "code/config/scnet_moe_config_c.yaml",
+  "files": [
+    {
+      "path": "data/zzjh_294.cnbe",
+      "bytes": 18235544,
+      "sha256": "e8901f3a17145a7a60e0753725152c32c210e880879740eb7f5a63693904006d"
+    },
+    {
+      "path": "data/luxun_18.cnbe",
+      "bytes": 15457216,
+      "sha256": "b36f5181528d73ce3252187247a936b11b618b20fe63440a445db425a8dbda04"
+    },
+    {
+      "path": "data/agatha.cnbe",
+      "bytes": 31216792,
+      "sha256": "48529dc8c416af31d7bb7ce4fcf98f05d189e9b3a61dc21c0deb8e9505098baa"
+    },
+    {
+      "path": "data/csbook.cnbe",
+      "bytes": 1123064,
+      "sha256": "8e446520a873fa64189fcffd060bbc2814f0f00538c5f581b073fbba2ac57cbf"
+    },
+    {
+      "path": "data/jinyong.cnbe",
+      "bytes": 30233600,
+      "sha256": "3f0c58b8a68855282d7d70a13b5727d3041cd865296e0592d4e132f1a49b7fa0"
+    },
+    {
+      "path": "data/caixin.cnbe",
+      "bytes": 1145596,
+      "sha256": "a8538dff3e1593da539d99eabedc837bb196aa29482e79218e56202b54224645"
+    },
+    {
+      "path": "data/sushi.cnbe",
+      "bytes": 113136,
+      "sha256": "baa59d45f201057ff4e8a264e50693e3706ef9548c64f4956a530db5ce7b06a5"
+    },
+    {
+      "path": "data_src/zzjh_294.chars.txt",
+      "bytes": 13676724,
+      "sha256": "eaa34edaba6ccdd2cc32f1742510631bc9b058a01546fb418542e1e0852f4ade"
+    },
+    {
+      "path": "data_src/luxun_18.chars.txt",
+      "bytes": 11592912,
+      "sha256": "31cf6cce3c7bc9667e05e77c76946ad21077f35216d0fd545f689f0ebf11bca3"
+    },
+    {
+      "path": "data_src/agatha.chars.txt",
+      "bytes": 23412594,
+      "sha256": "1a29ea4669d8962115ec28c12588582b9122431164382616c29ba9f4043dfbd9"
+    },
+    {
+      "path": "data_src/csbook.chars.txt",
+      "bytes": 842298,
+      "sha256": "216e0d22f1ee03921addce1790b3304092d5fbb177be456aab2e0adb71e73a74"
+    },
+    {
+      "path": "data_src/jinyong.chars.txt",
+      "bytes": 22675213,
+      "sha256": "cb7a14929ae9f4341980db918358c21679a5b35657ec16ee1119d1c1eb674a33"
+    },
+    {
+      "path": "data_src/caixin.chars.txt",
+      "bytes": 859197,
+      "sha256": "f43e68a308b71790315e7a8bf1c5918161082a29f9042daedae49aa29263dce9"
+    },
+    {
+      "path": "data_src/sushi.chars.txt",
+      "bytes": 84852,
+      "sha256": "343af0844bac2d804e7617156a9958b687402ef04d223d2b67daf29bafda4ba9"
+    },
+    {
+      "path": "history/results/cnbe_moe_final_result.json",
+      "bytes": 2922,
+      "sha256": "bbc550180ef67d7e333be042c23cdeee707ab5699f3b3baa853cef9382742450"
+    },
+    {
+      "path": "history/results/cnbe_moe_final_result_v2.json",
+      "bytes": 3684,
+      "sha256": "2ebdb4d774c5551ca40ae3724dd3c0cae103d478b8a2b5e56b35f13a2312265d"
+    },
+    {
+      "path": "history/results/cnbe_moe_phase01_result.json",
+      "bytes": 1891,
+      "sha256": "d888138c07eadce7bb2fd6f4a364afbbdf799cd8d840693b5b953193c4e919fb"
+    },
+    {
+      "path": "history/results/map_16_balanced_v2.json",
+      "bytes": 151289,
+      "sha256": "af625e32d8201efe20c415884759e485c28f284f474c493ed2b0c488d40d0703"
+    },
+    {
+      "path": "history/results/map_64_balanced_v2.json",
+      "bytes": 152607,
+      "sha256": "8108bc2948ba894f18f8e49c28c333319b4099664156eafe85c9c09a1b7e208c"
+    },
+    {
+      "path": "history/results/map_test.json",
+      "bytes": 83014,
+      "sha256": "455b36338143270a5bae22fdb1989502522ec2b3d9d53f3b7830ee889b565aaf"
+    },
+    {
+      "path": "history/results/struct_expert_map_64_3f_phase.json",
+      "bytes": 635795,
+      "sha256": "8c54e98a55aef14cc2323f7caf613599b542fb2392e3e02817b305fc2c9d4daa"
+    },
+    {
+      "path": "history/results/struct_expert_map_8_phase01.json",
+      "bytes": 231352,
+      "sha256": "f8c85289193b76faba6cac73727f1cd6ee73289bba1b55fa548e2fa961136884"
+    },
+    {
+      "path": "history/results/ubuntu_moe64_compile_v2.json",
+      "bytes": 1245,
+      "sha256": "f4d902acf1e5817f023eb7c41eb9dd4010314d35fe913ecdb94023c4307ecf8a"
+    },
+    {
+      "path": "history/results/ubuntu_moe64_nocompile_v2.json",
+      "bytes": 1249,
+      "sha256": "ef2966eac03cfc480235d697455f4dfd4d49dd33ae560fe5c3a8a1cd7b6f374e"
+    },
+    {
+      "path": "history/results/ubuntu_moe64_triton.json",
+      "bytes": 1270,
+      "sha256": "ab701e65c6fac6fd01720ae9b467a557714938d2814cbc03d425aba471de0414"
+    },
+    {
+      "path": "history/results/ubuntu_v4_moe64_3f.json",
+      "bytes": 1301,
+      "sha256": "c6a6d91cdcb303c874ffd3cffb6120d38bc1866e2b92d46faca4b3a688d42051"
+    },
+    {
+      "path": "history/results/ubuntu_v5_moe64_learned.json",
+      "bytes": 1341,
+      "sha256": "1af8f664c7cd8fdec8d13d9bdef29511dd0e62cc555fbabd58e30ce1d9ab01af"
+    },
+    {
+      "path": "history/results/ubuntu_v5_moe64_learned_switch.json",
+      "bytes": 1347,
+      "sha256": "c5f2aceed39fce674b0e421221e16440e8198bfddc6ad4034843ce51e333a9d9"
+    },
+    {
+      "path": "history/api_and_routing/deepseek_moe_repro.json",
+      "bytes": 511,
+      "sha256": "a392d4ac9e7861da9f1e8beef0f16290dd40db41c01e94c3a18ca72df4c2bb2b"
+    },
+    {
+      "path": "history/api_and_routing/deepseek_punct_repro.json",
+      "bytes": 7187,
+      "sha256": "05e92b6d1a53bafd7694184405d21f86861873059fe667b87ed6d2fcd9ce481b"
+    },
+    {
+      "path": "history/api_and_routing/deepseek_struct_repro.json",
+      "bytes": 572,
+      "sha256": "ecfcb56275b554cbe411f4866f418488c02cd7830b9c64a14b384379bfb7bece"
+    },
+    {
+      "path": "history/api_and_routing/routing_benchmark.json",
+      "bytes": 289,
+      "sha256": "3e2aad3936537bcd7c137f1d56266f5d11973608c3a7b35044eb9cdca7aabac0"
+    },
+    {
+      "path": "history/api_and_routing/routing_quality.json",
+      "bytes": 178,
+      "sha256": "adcee6932fd2942eb4cbdf03d183b52391eebfa15374cb63d7f3bb0f50ae077c"
+    },
+    {
+      "path": "history/api_and_routing/struct_expert_map_16.json",
+      "bytes": 281512,
+      "sha256": "c673d4dc952a59331895612f4925379d3419e289bd0a100a0b14dd1f91aebd4d"
+    },
+    {
+      "path": "history/api_and_routing/struct_expert_map_64.json",
+      "bytes": 283488,
+      "sha256": "61c6604818c3a0bb08fb207651893e097c505fd8f4cf177b0f1bb6df19d02524"
+    },
+    {
+      "path": "history/docs/report.md",
+      "bytes": 3005,
+      "sha256": "3cdc4ed1000621ac4d66b9458a749d00c8fef0223f1a90ef6e01215e62db9bbb"
+    },
+    {
+      "path": "history/docs/README.md",
+      "bytes": 1922,
+      "sha256": "5d7e8689e7d7486ce855971107ac702423993550cc6d1555fafa251fd6b17165"
+    },
+    {
+      "path": "history/docs/CNBE_MoE_最终报告.md",
+      "bytes": 7853,
+      "sha256": "047a5a0284868f6d5d8587d6d6e3a730696e99b281b3a67d6ddf689160eb844a"
+    },
+    {
+      "path": "history/docs/CNBE_MoE_API消融实验报告.md",
+      "bytes": 2215,
+      "sha256": "fa08901a67fa272a7cc7ed6e03655095373dfa82df892885b7d612e123386b30"
+    },
+    {
+      "path": "history/docs/README.md",
+      "bytes": 1644,
+      "sha256": "48b3291301248b66e50c43ebcf6f4cad4da570d5b6a0f92103483d451dddad1f"
+    },
+    {
+      "path": "history/docs/README.md",
+      "bytes": 885,
+      "sha256": "42043e2eaca5e849f414de344bdaf3b089107ed8ab5f13ca480773ff95acbe2b"
+    },
+    {
+      "path": "history/scripts/run.py",
+      "bytes": 6252,
+      "sha256": "70becb0347d139ad00ffbb27f8dd2c84dfc341a7eda323032d1e5a8393cb8be9"
+    },
+    {
+      "path": "assets/mapping_128.json",
+      "bytes": 519954,
+      "sha256": "840a77cf45e2b6976ec45a61012b9724ee85365abb0a5f13687e021ebb9f9908"
+    },
+    {
+      "path": "assets/mapping_256.json",
+      "bytes": 523360,
+      "sha256": "bf6839f9cb8b6f4171161b8450d6e89e989e9a048aefa2f7238b87b82cf66821"
+    },
+    {
+      "path": "assets/vocab.json",
+      "bytes": 216639,
+      "sha256": "58da040580c3a7b82c070c8e3d7cc30794e2ed62a4bd365ef79ee30349a371ce"
+    },
+    {
+      "path": "assets/vocab_meta.json",
+      "bytes": 83,
+      "sha256": "80890efeb6eb7f889e44bcfcc95e439b3fc232ca7c07f57a2fcad0e26dfc82c4"
+    }
+  ]
+}

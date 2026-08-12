@@ -1,0 +1,26 @@
+{
+  "checkpoint": "/scnet_upload_package_MERGED_DCU/output/checkpoints/dense/final.pt",
+  "checkpoint_step": 23436,
+  "eval_loss": 4.141336945396816,
+  "eval_accuracy": 0.26495242825901427,
+  "eval_radix_accuracy": 0.2755935633134201,
+  "eval_struct_accuracy": 0.45029469810113076,
+  "eval_strokes_accuracy": 0.3126733518241946,
+  "eval_radix_head_accuracy": 0.0035970503520375507,
+  "eval_struct_head_accuracy": 0.036738918818007255,
+  "eval_strokes_head_accuracy": 0.04444640761681246,
+  "expert_gini": null,
+  "params": 37979191,
+  "tokens_evaluated": 1199872,
+  "config": {
+    "max_train": 24000000,
+    "max_eval": 1200000,
+    "seq_len": 128,
+    "batch_size": 8,
+    "d_model": 512,
+    "d_ff": 2048,
+    "layers": 8,
+    "heads": 8,
+    "experts": 1
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-08-12 04:46:23",
+  "root": "/scnet_upload_package_DCU",
+  "metrics_found": [
+    "moe128",
+    "dense"
+  ],
+  "files": [
+    {
+      "path": "moe128_eval_metrics.json",
+      "size_bytes": 772,
+      "size_human": "772 B"
+    },
+    {
+      "path": "moe128_metrics.json",
+      "size_bytes": 293,
+      "size_human": "293 B"
+    },
+    {
+      "path": "dense_eval_metrics.json",
+      "size_bytes": 762,
+      "size_human": "762 B"
+    },
+    {
+      "path": "dense_metrics.json",
+      "size_bytes": 280,
+      "size_human": "280 B"
+    },
+    {
+      "path": "vocab_merged.json",
+      "size_bytes": 216639,
+      "size_human": "211.56 KB"
+    },
+    {
+      "path": "comparison_table.md",
+      "size_bytes": 818,
+      "size_human": "818 B"
+    }
+  ]
+}

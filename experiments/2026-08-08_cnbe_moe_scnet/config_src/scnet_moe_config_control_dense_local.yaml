@@ -1,0 +1,35 @@
+experiment_name: cnbe-moe-control-local-dense
+seed: 42
+device: cuda
+
+data:
+  cnbe_paths: []
+  max_train_tokens: 100000
+  max_eval_tokens: 10000
+
+model:
+  d_model: 128
+  d_ff: 256
+  n_layers: 2
+  n_heads: 4
+  num_experts: 8
+  top_k: 2
+  dropout: 0.1
+  use_moe: false
+  learned_router: false
+  balance_weight: 0.0
+  aux_loss_weight: 0.0
+
+training:
+  seq_len: 64
+  batch_size: 16
+  grad_accum_steps: 1
+  epochs: 1
+  steps: 40
+  lr: 0.0003
+  warmup_steps: 10
+  weight_decay: 0.01
+  grad_clip: 1.0
+  precision: bf16
+  log_every_steps: 10
+  checkpoint_every_steps: 1000

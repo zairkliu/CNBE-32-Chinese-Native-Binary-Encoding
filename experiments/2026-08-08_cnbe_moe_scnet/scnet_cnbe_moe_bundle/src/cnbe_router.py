@@ -15,13 +15,14 @@ def build_balanced_mapping(codes: np.ndarray, num_experts: int, mode: int = 2) -
     """按 CNBE 字段频率贪心构建负载均衡映射。
     mode=2: (radix, struct)；mode=3: (radix, struct, strokes)。
     """
+    codes = np.asarray(codes, dtype=np.uint32)
     radix = (codes >> 24) & 0xFF
     struct = (codes >> 15) & 0x0F
     strokes = (codes >> 19) & 0x1F
     if mode == 3:
         keys = (radix << 9) | (struct << 5) | strokes
     else:
-        keys = radix * 16 + struct
+        keys = radix.astype(np.uint32) * 16 + struct
     unique, counts = np.unique(keys, return_counts=True)
     order = np.argsort(-counts)
     loads = np.zeros(num_experts, dtype=np.int64)

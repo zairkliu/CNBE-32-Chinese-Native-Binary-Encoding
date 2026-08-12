@@ -1,0 +1,7 @@
+{
+  "baseline": "unicode_dense",
+  "eval_loss": 7.123667313502385,
+  "eval_accuracy": 0.035256410256410256,
+  "params": 1464527,
+  "smoke": false
+}

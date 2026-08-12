@@ -26,6 +26,7 @@ def parse_args() -> argparse.Namespace:
     ap.add_argument("--cnbe-paths", nargs="+", default=[])
     ap.add_argument("--output", default="/output/metrics.json")
     ap.add_argument("--smoke", action="store_true", help="run a tiny smoke test")
+    ap.add_argument("--steps", type=int, default=0, help="override training steps")
     return ap.parse_args()
 
 
@@ -57,7 +58,7 @@ def main() -> int:
         max_eval = int(data_cfg.get("max_eval_tokens", 1_200_000))
         seq_len = int(train_cfg["seq_len"])
         batch_size = int(train_cfg["batch_size"])
-        steps = int(train_cfg.get("steps", 1000))
+        steps = args.steps or int(train_cfg.get("steps", 1000))
         d_model = int(model_cfg["d_model"])
         d_ff = int(model_cfg["d_ff"])
         layers = int(model_cfg["n_layers"])
@@ -93,7 +94,7 @@ def main() -> int:
         eval_ds,
         len(vocab),
         id_to_code,
-        use_moe=True,
+        use_moe=bool(model_cfg.get("use_moe", True)),
         mapping_path=str(mapping_path),
         num_experts=experts,
         top_k=int(model_cfg["top_k"]),
