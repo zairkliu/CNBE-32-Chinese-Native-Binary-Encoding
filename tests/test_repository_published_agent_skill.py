@@ -54,8 +54,9 @@ def test_skill_directory_separates_current_agent_from_legacy_experiment_skill() 
 def test_github_agents_page_profile_publishes_current_agent() -> None:
     text = read_text(".github/agents/cnbe-hanzi-structure-encoding-agent.agent.md")
 
-    assert "name: cnbe-hanzi-structure-encoding-agent" in text
+    assert "name: CNBE Hanzi Structure Encoding Agent" in text
     assert "description: Standards-aligned total-control Agent" in text
+    assert 'tools: ["read", "search", "edit", "execute", "web"]' in text
     assert "GitHub-native listing entry for custom Copilot" in text
     assert "Unicode identity" in text
     assert "8105" in text

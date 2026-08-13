@@ -30,27 +30,27 @@ Unicode identity
 Use these skills as the conceptual pipeline:
 
 1. `cnbe-standard-skill`
-   - Location: `/Users/liuzhaoqi/Documents/cnbe-research/cnbe-standard-skill`
+   - Location: `~/Documents/cnbe-research/cnbe-standard-skill`
    - Purpose: authoritative source and evidence engineering.
    - Use for national standards, OCR/source status, source grades, dictionary
      and encyclopedia cross-references, and evidence boundaries.
 
 2. `cnbe-hanzi-knowledge-builder`
-   - Location: `/Users/liuzhaoqi/Documents/cnbe-research/cnbe-hanzi-knowledge-builder`
+   - Location: `~/Documents/cnbe-research/cnbe-hanzi-knowledge-builder`
    - Purpose: Hanzi knowledge schema construction.
    - Use for strokes, stroke shapes, stroke order, components, component names,
      radicals, side components, glyph forms, independent characters, structure,
      and decomposition.
 
 3. `cnbe-hanzi-decomposition-standardizer`
-   - Location: `/Users/liuzhaoqi/.codex/skills/cnbe-hanzi-decomposition-standardizer`
+   - Location: `~/.codex/skills/cnbe-hanzi-decomposition-standardizer`
    - Purpose: dedicated structure and decomposition evidence standardization.
    - Use for structure labels, decomposition trees, character components,
      non-character components, basic components, component names,
      single-component conflict checks, and no-score review packets.
 
 4. `cnbe-gf0017-batch-audit`
-   - Location: `/Users/liuzhaoqi/.codex/skills/cnbe-gf0017-batch-audit`
+   - Location: `~/.codex/skills/cnbe-gf0017-batch-audit`
    - Purpose: batch quality gate and checkpoint discipline.
    - Use for Unicode-first batch auditing, GF0017 50-point scoring,
      stop-on-blocker behavior, and resume rules.
@@ -713,5 +713,6 @@ python3 -m pytest tests/test_8105_full_no_legacy_workflow.py
 
 ## References
 
-Read [orchestration.md](references/orchestration.md) when designing a new
-batch runner, encoding candidate workflow, or research-grade report.
+Read [CNBE Reproducible Agent Workflow](../../docs/CNBE_REPRODUCIBLE_AGENT_WORKFLOW.md)
+when designing a new batch runner, encoding candidate workflow, or research-grade
+report.
