@@ -54,6 +54,12 @@ OCR 工程师、中文信息处理研究者、政策与标准化观察者、中�
   DeepSeek V4 API 字段消融、1.5B 小模型边界复盘。
 - **云实证（第一轮）**：SCNet L20、128 共享专家、24.38M CNBE 码、
   next-code 19.12%、Gini 0.207。
+- **云实证（第二轮）**：SCNet DCU BW x2、544M CNBE token、128 共享专家、
+  626M 参数、next-code 23.56%、struct 44.07%、Gini 0.297。
+- **v1 受控对比**：MoE-128 22.96%、Dense 2.61%、Unicode 0.001%；
+  等参数 Dense 确认 MoE 增益。
+- **A800 5.4B 训练**：v2 冻结语料、配置与运行脚本已就绪；
+  下一步为 smoke 测试。
 - **规划中 / 待规模化验证**：256 专家 MoE、d_model 512-1024、9B 句读模型融合、
   端到端古籍整理工具、CNBE64/CNBE128 证据归档。
 - **项目状态**：研究原型 -> 工程验证中。仓库会明确标注每项工作的证据等级，
@@ -568,6 +574,34 @@ struct 34.14%、strokes 24.38%、Gini 0.207、参数量 289.9M。验证 CNBE 码
 - [验收报告](./experiments/2026-08-08_cnbe_moe_scnet/REPORT_SCNET_CNBE_MOE_L20.md)
 - [训练记录](./experiments/2026-08-08_cnbe_moe_scnet/SCNET_TRAINING_RECORD_2026-08-10.md)
 - [实验日志](./outputs/experiment_logs/2026-08-10.md)
+
+### 2026-08-14：v2 语料冻结与 A800 5.4B 训练计划
+
+v2 语料已正式冻结：
+
+| 项目 | 值 |
+|---|---:|
+| 文件数 | 15,589 |
+| 总字符 | 5,152,417,784 |
+| train 物理词数 | 5,069,667,334 |
+| vocab（含 code 0） | 20,535 |
+| mapping 模板 | 14,248 |
+| train / eval / val 文件 | 15,288 / 145 / 156 |
+
+下一阶段在 A800 x2 上使用 v2 全量 train 码流训练：
+
+| 项目 | 值 |
+|---|---:|
+| 模型 | d_model=1024、12 层、16 头 |
+| MoE | 128 专家、Top-2 硬路由 |
+| seq_len / batch per GPU | 256 / 16 |
+| 全局 batch | 8,192 token/step |
+| 预计步数 | 约 618,750 |
+| checkpoint | 每 10,000 步 |
+
+- [A800 前置准备](./docs/A800_PRETRAIN_PREP_2026-08-14.md)
+- [A800 训练计划审阅稿](./docs/A800_5_4B_TRAINING_PLAN_REVIEW_2026-08-14.md)
+- [A800 5.4B 实验包](./experiments/2026-08-14_a800_5_4b/)
 
 ---
 

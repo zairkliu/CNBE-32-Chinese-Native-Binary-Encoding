@@ -62,6 +62,13 @@ Studio, and a classical-text cleanup pipeline.
   1.5B small-model boundary postmortem.
 - **Cloud validated (first round)**: SCNet L20, 128 shared experts,
   24.38M CNBE codes, next-code 19.12%, Gini 0.207.
+- **Cloud validated (second round)**: SCNet DCU BW x2, 544M CNBE tokens,
+  128 shared experts, 626M params, next-code 23.56%, struct 44.07%,
+  Gini 0.297.
+- **Controlled comparison (v1)**: MoE-128 22.96%, Dense 2.61%,
+  Unicode 0.001%; equal-parameter Dense confirms the MoE gain.
+- **A800 5.4B training**: v2 frozen corpus, configs and run scripts are ready;
+  smoke test is the next milestone.
 - **Planned / awaiting scale validation**: 256-expert MoE, d_model
   512-1024, 9B punctuation-model fusion, end-to-end classical-text cleanup,
   and CNBE64/CNBE128 evidence archives.
@@ -618,6 +625,34 @@ requires a larger corpus.
 - [Acceptance Report](./experiments/2026-08-08_cnbe_moe_scnet/REPORT_SCNET_CNBE_MOE_L20.md)
 - [Training Record](./experiments/2026-08-08_cnbe_moe_scnet/SCNET_TRAINING_RECORD_2026-08-10.md)
 - [Experiment Log](./outputs/experiment_logs/2026-08-10.md)
+
+### 2026-08-14: v2 Corpus Frozen and A800 5.4B Training Plan
+
+v2 corpus has been formally frozen:
+
+| Item | Value |
+|---|---:|
+| Files | 15,589 |
+| Total characters | 5,152,417,784 |
+| train physical tokens | 5,069,667,334 |
+| vocab (including code 0) | 20,535 |
+| mapping templates | 14,248 |
+| train / eval / val files | 15,288 / 145 / 156 |
+
+The next training target is A800 x2 on the full v2 train stream:
+
+| Item | Value |
+|---|---:|
+| Model | d_model=1024, 12 layers, 16 heads |
+| MoE | 128 experts, Top-2 hard routing |
+| seq_len / batch per GPU | 256 / 16 |
+| Global batch | 8,192 tokens/step |
+| Estimated steps | about 618,750 |
+| Checkpoint | every 10,000 steps |
+
+- [A800 Pretrain Prep](./docs/A800_PRETRAIN_PREP_2026-08-14.md)
+- [A800 Training Plan Review](./docs/A800_5_4B_TRAINING_PLAN_REVIEW_2026-08-14.md)
+- [A800 5.4B Experiment Package](./experiments/2026-08-14_a800_5_4b/)
 
 ## Agent and automation boundary
 
