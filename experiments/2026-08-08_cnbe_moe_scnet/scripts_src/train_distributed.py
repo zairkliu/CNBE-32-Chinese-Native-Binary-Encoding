@@ -42,6 +42,9 @@ def parse_args() -> argparse.Namespace:
     ap.add_argument("--smoke", action="store_true")
     ap.add_argument("--seed", type=int, default=None)
     ap.add_argument("--max-steps", type=int, default=0)
+    ap.add_argument("--step-metrics", default="")
+    ap.add_argument("--vocab-path", default="")
+    ap.add_argument("--mapping-path", default="")
     return ap.parse_args()
 
 
@@ -137,14 +140,22 @@ def main() -> int:
     codes = load_codes(paths, max_train + max_eval)
     train_codes = codes[:max_train]
     eval_codes = codes[max_train : max_train + max_eval]
-    vocab = build_vocab(codes)
+    vocab_path = args.vocab_path or data_cfg.get("vocab_path")
+    vocab = None
+    if vocab_path and Path(vocab_path).exists():
+        raw = json.loads(Path(vocab_path).read_text(encoding="utf-8"))
+        vocab = {int(k): int(v) for k, v in raw.items()}
+    if vocab is None:
+        vocab = build_vocab(codes)
     id_to_code = id_to_code_array(vocab).tolist()
 
-    mapping = build_balanced_mapping(train_codes, experts, mode=3)
-    mapping_dir = Path(os.environ.get("CNBE_MAPPING_DIR", "/tmp"))
-    mapping_dir.mkdir(parents=True, exist_ok=True)
-    mapping_path = mapping_dir / f"mapping_{experts}.json"
-    mapping_path.write_text(json.dumps(mapping, ensure_ascii=False), encoding="utf-8")
+    mapping_path = args.mapping_path or data_cfg.get("mapping_path")
+    if not mapping_path or not Path(mapping_path).exists():
+        mapping = build_balanced_mapping(train_codes, experts, mode=3)
+        mapping_dir = Path(os.environ.get("CNBE_MAPPING_DIR", "/tmp"))
+        mapping_dir.mkdir(parents=True, exist_ok=True)
+        mapping_path = mapping_dir / f"mapping_{experts}.json"
+        mapping_path.write_text(json.dumps(mapping, ensure_ascii=False), encoding="utf-8")
 
     train_ds = CodeDataset(train_codes, vocab, seq_len)
     eval_ds = CodeDataset(eval_codes, vocab, seq_len)
@@ -193,13 +204,16 @@ def main() -> int:
     checkpoint_dir.mkdir(parents=True, exist_ok=True)
     ckpt_path = checkpoint_dir / "last.pt"
     start_step = 0
-    if args.resume and ckpt_path.exists():
-        ckpt = torch.load(ckpt_path, map_location=device)
-        model.module.load_state_dict(ckpt["model"])
-        opt.load_state_dict(ckpt["optimizer"])
-        start_step = int(ckpt["step"])
-        if rank == 0:
-            print("resumed from step", start_step, flush=True)
+    if args.resume:
+        step_ckpts = sorted(checkpoint_dir.glob("step_*.pt"))
+        ckpt_path = step_ckpts[-1] if step_ckpts else checkpoint_dir / "last.pt"
+        if ckpt_path.exists():
+            ckpt = torch.load(ckpt_path, map_location=device)
+            model.module.load_state_dict(ckpt["model"])
+            opt.load_state_dict(ckpt["optimizer"])
+            start_step = int(ckpt["step"])
+            if rank == 0:
+                print("resumed from", ckpt_path, "step", start_step, flush=True)
 
     steps_per_epoch = max(1, len(sampler) // batch_size)
     total_steps = int(steps_per_epoch * epochs)
@@ -264,25 +278,43 @@ def main() -> int:
                     f"steps/s {sps:.2f}",
                     flush=True,
                 )
-            if (step + 1) % checkpoint_every == 0:
-                torch.save(
-                    {
-                        "model": model.module.state_dict(),
-                        "optimizer": opt.state_dict(),
-                        "step": step + 1,
-                        "config": {
-                            "d_model": d_model,
-                            "d_ff": d_ff,
-                            "layers": layers,
-                            "heads": heads,
-                            "experts": experts,
-                            "seq_len": seq_len,
-                            "batch_size": batch_size,
-                            "epochs": epochs,
-                        },
-                    },
-                    ckpt_path,
+                step_metrics_path = (
+                    Path(args.step_metrics)
+                    if args.step_metrics
+                    else Path(args.output).with_name("step_metrics.jsonl")
                 )
+                step_metrics_path.parent.mkdir(parents=True, exist_ok=True)
+                with step_metrics_path.open("a", encoding="utf-8") as f:
+                    f.write(
+                        json.dumps(
+                            {
+                                "step": step + 1,
+                                "total_steps": total_steps,
+                                "loss": loss_sum,
+                                "steps_per_sec": round(sps, 4),
+                                "lr": opt.param_groups[0]["lr"],
+                            }
+                        )
+                        + "\n"
+                    )
+            if (step + 1) % checkpoint_every == 0:
+                step_ckpt = {
+                    "model": model.module.state_dict(),
+                    "optimizer": opt.state_dict(),
+                    "step": step + 1,
+                    "config": {
+                        "d_model": d_model,
+                        "d_ff": d_ff,
+                        "layers": layers,
+                        "heads": heads,
+                        "experts": experts,
+                        "seq_len": seq_len,
+                        "batch_size": batch_size,
+                        "epochs": epochs,
+                    },
+                }
+                torch.save(step_ckpt, ckpt_path)
+                torch.save(step_ckpt, checkpoint_dir / f"step_{step + 1:06d}.pt")
 
     metrics: dict = {}
     if rank == 0:
@@ -304,6 +336,7 @@ def main() -> int:
         }
         torch.save(final_ckpt, ckpt_path)
         torch.save(final_ckpt, checkpoint_dir / "final.pt")
+        torch.save(final_ckpt, checkpoint_dir / f"step_{total_steps:06d}.pt")
         print(
             "saved final checkpoint step",
             total_steps,

@@ -1,7 +1,7 @@
 # CNBE 中文出版物合并去重语料库 v1 项目交接
 
 日期：2026-08-13
-状态：清洗与质量校准已完成，待进入“冻结训练语料”阶段
+状态：2026-08-13 已完成残留复扫清理与 P0 冻结，训练包已生成
 
 ## 一、已完成
 
@@ -60,26 +60,25 @@ D:\1 训练语料\CNBE中文出版物合并去重_v1\
 
 ## 三、剩余工作
 
-### P0：冻结为正式训练语料（下一步优先）
+### P0：冻结为正式训练语料（已完成）
 
-1. 生成 `canonical_manifest.json`
+1. ✅ 生成 `canonical_manifest.json`
    - 每个文件记录：slug、bucket、batch、sha256、字符数、CJK、meta 分；
    - 冻结 train / eval / val 切分；
-   - 固定 seed。
+   - 固定 seed=42。
 
-2. 生成最终 CNBE 资产
-   - 从最终语料构建 `vocab.json`；
-   - 构建 128 专家 `mapping_128.json`；
+2. ✅ 生成最终 CNBE 资产
+   - 从最终语料构建 `vocab.json`（20,534 码）；
+   - 构建 128 专家 `mapping_128.json`（14,247 模板）；
    - 输出覆盖率与结构熵报告。
 
-3. 确定 code-0 策略
-   - 约 21.6% 为标点/英文/空白；
-   - 决定：保留、mask、或单独字段；
-   - 写入训练配置，避免每轮不一致。
+3. ✅ 确定 code-0 策略
+   - 决定：LM 保留为常规词元，Structure-MLM 字段头建议 mask；
+   - 写入 `frozen/config/code0_strategy.json` 与训练配置。
 
-4. 生成训练包
-   - `scnet_upload_package_CORPUS_V1_FROZEN.tar.gz`；
-   - 包含 shards、manifest、vocab、mapping、config、eval 脚本。
+4. ✅ 生成训练包
+   - `D:\1 训练语料\scnet_upload_package_CORPUS_V1_FROZEN.tar.gz`（约 10.3GB）；
+   - 包含 train/eval/val `.cnbe`、manifest、vocab、mapping、config、eval/verify 脚本。
 
 ### P1：语料扩展与复核
 
@@ -108,10 +107,11 @@ D:\1 训练语料\CNBE中文出版物合并去重_v1\
 
 ```text
 项目：CNBE 中文出版物合并去重语料库 v1 冻结。
-现状：清洗、去重、质量校准、人工抽检修复均完成。
+现状：清洗、去重、质量校准、人工抽检修复、残留复扫清理、P0 冻结均完成。
 数据：D:\1 训练语料\CNBE中文出版物合并去重_v1
 交接文档：repo/docs/CORPUS_V1_PROJECT_HANDOFF_2026-08-13.md
-下一步：P0 生成 canonical_manifest、冻结 vocab/mapping、确定 code-0 策略、打训练包。
+冻结产物：语料根目录 frozen\ 与 D:\1 训练语料\scnet_upload_package_CORPUS_V1_FROZEN.tar.gz
+下一步：P1 语料扩展与多组稳健性复现。
 ```
 
 ## 五、关键指标速查
@@ -121,6 +121,7 @@ D:\1 训练语料\CNBE中文出版物合并去重_v1\
 | 总书数（去重后） | 14,997 |
 | core / technical | 13,515 / 868 |
 | 总字符 | 约 51.4 亿 |
+| 总字符（冻结后） | 5,144,052,824 |
 | CNBE 唯一码 | 20,533 |
 | 覆盖率 | 96.95% |
 | CJK 覆盖率 | 99.9996% |
@@ -128,3 +129,24 @@ D:\1 训练语料\CNBE中文出版物合并去重_v1\
 | 精确重复 | 0（已剔除） |
 | 近重复 | 0 |
 | manifest 匹配 | 100% |
+
+## 六、2026-08-13 整理与冻结完成
+
+- 新增 `repo/tools/residual_audit_v2.py` 与 `repo/tools/fix_corpus_residuals_v2.py`；
+- 全量复扫并清理 1,913 个文件：移除头部版权页/目录、尾部版权声明/TOC、正文水印；
+- 水印命中归 0；剩余 1,019 个宽模式命中为正文自然词或正文内章节大纲，未做破坏性删除；
+- `frozen/canonical_manifest.json`：seed 42，train 14,109 本 / eval 133 本 / val 141 本；
+- `frozen/data/`：train.cnbe 5,061,444,046 token、eval.cnbe 47,539,685、val.cnbe 35,069,093；
+- `frozen/assets/`：vocab.json（含 code 0 共 20,534 码）、mapping_128.json；
+- code-0 策略：LM 保留，Structure-MLM 字段头 mask，见 `frozen/config/code0_strategy.json`。
+- 训练包：`D:\1 训练语料\scnet_upload_package_CORPUS_V1_FROZEN.tar.gz`（约 10.3GB）。
+
+## 七、2026-08-13 法规增量与 v2 候选库
+
+- 新增国家级语料：全国人大/全国人大常委会法律 719 份、国务院令 472 份，合计 1,191 份；
+- 国家级文件按约定不做清洗，直接原文入库；
+- 已生成 v2 候选库 `D:\1 训练语料\CNBE中文出版物合并去重_v2`：15,574 份，core 14,664 / technical 910；
+- v2 canonical manifest（seed 42）：train 15,273 / eval 145 / val 156，总字符 5,152,138,510；
+- v2 质量校准：CNBE 覆盖 96.95%，CJK 覆盖 99.9996%/99.9984%，manifest 完整性 15,574/15,574；
+- 法规子集近重复审计见 `政务法规语料_2026-08-13/quality_analysis.md` 与 `near_dup_report.json`；
+- 待办：v2 正式冻结（CNBE 码流、vocab/mapping、code-0 配置、训练包）。

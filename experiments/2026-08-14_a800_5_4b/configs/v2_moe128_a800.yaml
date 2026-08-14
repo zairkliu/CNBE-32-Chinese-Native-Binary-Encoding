@@ -1,0 +1,39 @@
+experiment_name: cnbe-v2-moe128-a800
+seed: 42
+device: cuda
+
+data:
+  cnbe_paths:
+    - /scnet_upload_package_CORPUS_V2_FROZEN/data/train.cnbe
+    - /scnet_upload_package_CORPUS_V2_FROZEN/data/eval.cnbe
+  max_train_tokens: 5069667334
+  max_eval_tokens: 47611359
+  vocab_path: /scnet_upload_package_CORPUS_V2_FROZEN/assets/vocab.json
+  mapping_path: /scnet_upload_package_CORPUS_V2_FROZEN/assets/mapping_128.json
+
+model:
+  d_model: 1024
+  d_ff: 2048
+  n_layers: 12
+  n_heads: 16
+  num_experts: 128
+  top_k: 2
+  dropout: 0.1
+  use_moe: true
+  learned_router: false
+  balance_weight: 0.01
+  aux_loss_weight: 0.1
+
+training:
+  seq_len: 256
+  batch_size: 16
+  grad_accum_steps: 1
+  epochs: 1
+  steps: 1000
+  lr: 0.0003
+  warmup_steps: 100
+  weight_decay: 0.01
+  grad_clip: 1.0
+  precision: bf16
+  log_every_steps: 10
+  checkpoint_every_steps: 10000
