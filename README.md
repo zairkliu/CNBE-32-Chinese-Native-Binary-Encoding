@@ -68,6 +68,8 @@ Studio, and a classical-text cleanup pipeline.
 - **Controlled comparison (v1)**: on the same v1 corpus and eval split,
   MoE-128 next-code 22.96%, Dense 2.61%, Unicode 0.001%; CNBE clearly
   outperforms Unicode; equal-parameter Dense (2.61%) confirms the MoE gain.
+- **A800 5.4B training**: v2 frozen corpus, configs and run scripts are ready;
+  smoke test is the next milestone.
 - **Planned / awaiting scale validation**: 256-expert MoE, d_model
   512-1024, 9B punctuation-model fusion, end-to-end classical-text cleanup,
   and CNBE64/CNBE128 evidence archives.
@@ -669,6 +671,34 @@ CNBE clearly outperforms Unicode codepoints; expert Gini is 0.147 on v1.
 - [V1 Control Design](./experiments/2026-08-08_cnbe_moe_scnet/CONTROL_EXPERIMENTS_V1_DESIGN_2026-08-11.md)
 - [Results 2026-08-11](./experiments/2026-08-08_cnbe_moe_scnet/results_2026-08-11/)
 - [Results 2026-08-12](./experiments/2026-08-08_cnbe_moe_scnet/results_2026-08-12/)
+
+### 2026-08-14: v2 Corpus Frozen and A800 5.4B Training Plan
+
+v2 corpus has been formally frozen:
+
+| Item | Value |
+|---|---:|
+| Files | 15,589 |
+| Total characters | 5,152,417,784 |
+| train physical tokens | 5,069,667,334 |
+| vocab (including code 0) | 20,535 |
+| mapping templates | 14,248 |
+| train / eval / val files | 15,288 / 145 / 156 |
+
+The next training target is A800 x2 on the full v2 train stream:
+
+| Item | Value |
+|---|---:|
+| Model | d_model=1024, 12 layers, 16 heads |
+| MoE | 128 experts, Top-2 hard routing |
+| seq_len / batch per GPU | 256 / 16 |
+| Global batch | 8,192 tokens/step |
+| Estimated steps | about 618,750 |
+| Checkpoint | every 10,000 steps |
+
+- [A800 Pretrain Prep](./docs/A800_PRETRAIN_PREP_2026-08-14.md)
+- [A800 Training Plan Review](./docs/A800_5_4B_TRAINING_PLAN_REVIEW_2026-08-14.md)
+- [A800 5.4B Experiment Package](./experiments/2026-08-14_a800_5_4b/)
 
 ## Agent and automation boundary
 
