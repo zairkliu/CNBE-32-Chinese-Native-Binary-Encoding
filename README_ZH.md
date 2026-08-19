@@ -32,6 +32,23 @@ CNBE-32 是一项面向中文的完整原生编码体系，目标是在机器码
 
 项目定位见 [CNBE32_PROJECT_POSITION_ZH.md](./docs/CNBE32_PROJECT_POSITION_ZH.md)。
 
+## 2026-08-18/19：CCF-A 论文与结构敏感实验证据
+
+仓库现包含 CCF-A 论文包、OCR 候选重排实验、embedding 对照和古籍 PDF 语料方案：
+
+- [CCF-A 论文与技术数据库](./research/2026-08-18_ccfa_cnbe_moe/README.md)
+- [OCR 候选重排实验](./experiments/2026-08-19_small_scale_ocr_rerank/REPORT.md)
+- [ChineseBERT / BERT embedding 对照](./experiments/2026-08-19_small_scale_ocr_rerank/EMBEDDING_COMPARISON_REPORT.md)
+- [古籍 PDF 语料方案与清单](./experiments/2026-08-19_ancient_pdf_corpus/PLAN.md)
+
+关键结果：
+
+- 真实 OCR 重排：GBDT + CNBE 特征 66.39%，Unicode 50.42%；
+- DeepSeek V4 API：CNBE 92.31%、Unicode 85.71%、plain 71.43%；
+- embedding：bert-base-chinese 40.58%、ChineseBERT 18.12%、raw CNBE 15.94%；
+- 永乐大典 37 页端到端：90.91% -> 92.64%；
+- 古籍 OCR pilot：CNBE 覆盖率 100%。
+
 ## TL;DR（30 秒速览）
 
 **CNBE-32 是什么？** 一套兼容 Unicode/GB 的中文结构计算层，用 32 位字段表达
@@ -602,6 +619,24 @@ v2 语料已正式冻结：
 - [A800 前置准备](./docs/A800_PRETRAIN_PREP_2026-08-14.md)
 - [A800 训练计划审阅稿](./docs/A800_5_4B_TRAINING_PLAN_REVIEW_2026-08-14.md)
 - [A800 5.4B 实验包](./experiments/2026-08-14_a800_5_4b/)
+
+### 2026-08-19：结构敏感重排与古籍 PDF 语料
+
+为回答“CNBE 作为计算结构指纹层的差异化优势”这一问题，项目完成了一组结构敏感实验：
+
+| 实验 | 结果 |
+|---|---|
+| 真实 OCR 重排，Unicode baseline | 50.42% Top-1 |
+| 真实 OCR 重排，GBDT + CNBE 特征 | 66.39% Top-1 |
+| DeepSeek V4 API，plain / Unicode / CNBE | 71.43% / 85.71% / 92.31% |
+| bert-base-chinese / ChineseBERT / raw CNBE | 40.58% / 18.12% / 15.94% |
+| 永乐大典 37 页端到端 | 90.91% -> 92.64% |
+
+链接：
+
+- [OCR 重排实验](./experiments/2026-08-19_small_scale_ocr_rerank/REPORT.md)
+- [Embedding 对照](./experiments/2026-08-19_small_scale_ocr_rerank/EMBEDDING_COMPARISON_REPORT.md)
+- [古籍 PDF 语料](./experiments/2026-08-19_ancient_pdf_corpus/PLAN.md)
 
 ---
 

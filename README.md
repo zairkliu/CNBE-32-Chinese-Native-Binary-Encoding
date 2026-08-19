@@ -36,16 +36,28 @@ In the AI era, Chinese should be one of the foundations, not an option.
 
 See [CNBE32_PROJECT_POSITION_ZH.md](./docs/CNBE32_PROJECT_POSITION_ZH.md).
 
-## 2026-08-18: CCF-A Paper and Non-Training Supplements
+## 2026-08-18/19: CCF-A Paper and Structure-Sensitive Evidence
 
 The repository now includes a CCF-A-oriented paper package for CNBE-MoE, plus
-non-training supplements that do not depend on private weights or corpus data:
+non-training supplements and new experiments that do not depend on private
+weights or corpus data:
 
 - [CCF-A paper draft and technical database](./research/2026-08-18_ccfa_cnbe_moe/README.md)
+- [OCR candidate reranking experiments](./experiments/2026-08-19_small_scale_ocr_rerank/REPORT.md)
+- [ChineseBERT / BERT embedding baselines](./experiments/2026-08-19_small_scale_ocr_rerank/EMBEDDING_COMPARISON_REPORT.md)
+- [Ancient PDF corpus plan and manifest](./experiments/2026-08-19_ancient_pdf_corpus/PLAN.md)
 - [CNBE Knowledge Bridge](./src/cnbe32/knowledge_bridge.py)
 - [E-book corpus builder skill](./skill/cnbe-ebook-corpus-builder-v3/SKILL.md)
 - [CNBE-MoE boundary skill](./skill/cnbe-moe-boundary/SKILL.md)
 - [Corpus freeze and residual audit tools](./tools/)
+
+New evidence highlights:
+
+- Real OCR rerank: GBDT with CNBE features reaches 66.39% Top-1 vs Unicode 50.42%;
+- DeepSeek V4 API: CNBE hints 92.31% vs Unicode 85.71% vs plain 71.43% (parsed subset);
+- Embedding baselines: bert-base-chinese 40.58%, ChineseBERT 18.12%, raw CNBE 15.94%;
+- 37-page Yongle e2e: 90.91% -> 92.64% with Unihan variant map;
+- Ancient PDF pilot: deepseek-ocr page with 100% CNBE coverage.
 
 Training checkpoints, `.cnbe` streams, and private SCNet upload archives remain
 outside the repository.
@@ -713,6 +725,26 @@ The next training target is A800 x2 on the full v2 train stream:
 - [A800 Pretrain Prep](./docs/A800_PRETRAIN_PREP_2026-08-14.md)
 - [A800 Training Plan Review](./docs/A800_5_4B_TRAINING_PLAN_REVIEW_2026-08-14.md)
 - [A800 5.4B Experiment Package](./experiments/2026-08-14_a800_5_4b/)
+
+### 2026-08-19: Structure-Sensitive Rerank and Ancient PDF Corpus
+
+The project completed a set of structure-sensitive experiments to answer the
+reviewer question: what is CNBE's differentiation as a computational structural
+fingerprint layer?
+
+| Experiment | Result |
+|---|---|
+| Real OCR rerank, Unicode baseline | 50.42% Top-1 |
+| Real OCR rerank, GBDT + CNBE features | 66.39% Top-1 |
+| DeepSeek V4 API, plain / Unicode / CNBE | 71.43% / 85.71% / 92.31% |
+| bert-base-chinese / ChineseBERT / raw CNBE | 40.58% / 18.12% / 15.94% |
+| Yongle 37-page e2e | 90.91% -> 92.64% |
+
+Links:
+
+- [OCR rerank experiment](./experiments/2026-08-19_small_scale_ocr_rerank/REPORT.md)
+- [Embedding comparison](./experiments/2026-08-19_small_scale_ocr_rerank/EMBEDDING_COMPARISON_REPORT.md)
+- [Ancient PDF corpus](./experiments/2026-08-19_ancient_pdf_corpus/PLAN.md)
 
 ## Agent and automation boundary
 
