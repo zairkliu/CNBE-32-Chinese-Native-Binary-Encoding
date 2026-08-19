@@ -1,0 +1,381 @@
+{
+  "summary": {
+    "pages": 37,
+    "truth_chars": 16123,
+    "baseline_accuracy": 0.9091,
+    "variant_map_accuracy": 0.9264,
+    "variant_map_gain": 0.0174
+  },
+  "pages": [
+    {
+      "page": 3,
+      "truth_chars": 429,
+      "base_matches": 333,
+      "fix_matches": 337,
+      "base_subs": 8,
+      "fix_subs": 4,
+      "truth_in_db": 429,
+      "truth_in_standard": 336
+    },
+    {
+      "page": 4,
+      "truth_chars": 431,
+      "base_matches": 357,
+      "fix_matches": 363,
+      "base_subs": 9,
+      "fix_subs": 3,
+      "truth_in_db": 431,
+      "truth_in_standard": 312
+    },
+    {
+      "page": 5,
+      "truth_chars": 435,
+      "base_matches": 366,
+      "fix_matches": 370,
+      "base_subs": 10,
+      "fix_subs": 6,
+      "truth_in_db": 435,
+      "truth_in_standard": 300
+    },
+    {
+      "page": 6,
+      "truth_chars": 433,
+      "base_matches": 365,
+      "fix_matches": 381,
+      "base_subs": 24,
+      "fix_subs": 8,
+      "truth_in_db": 433,
+      "truth_in_standard": 309
+    },
+    {
+      "page": 7,
+      "truth_chars": 435,
+      "base_matches": 383,
+      "fix_matches": 388,
+      "base_subs": 17,
+      "fix_subs": 12,
+      "truth_in_db": 435,
+      "truth_in_standard": 301
+    },
+    {
+      "page": 8,
+      "truth_chars": 435,
+      "base_matches": 392,
+      "fix_matches": 402,
+      "base_subs": 20,
+      "fix_subs": 10,
+      "truth_in_db": 435,
+      "truth_in_standard": 319
+    },
+    {
+      "page": 9,
+      "truth_chars": 438,
+      "base_matches": 414,
+      "fix_matches": 420,
+      "base_subs": 9,
+      "fix_subs": 3,
+      "truth_in_db": 438,
+      "truth_in_standard": 328
+    },
+    {
+      "page": 10,
+      "truth_chars": 432,
+      "base_matches": 413,
+      "fix_matches": 418,
+      "base_subs": 19,
+      "fix_subs": 14,
+      "truth_in_db": 432,
+      "truth_in_standard": 288
+    },
+    {
+      "page": 11,
+      "truth_chars": 440,
+      "base_matches": 421,
+      "fix_matches": 434,
+      "base_subs": 18,
+      "fix_subs": 5,
+      "truth_in_db": 440,
+      "truth_in_standard": 307
+    },
+    {
+      "page": 12,
+      "truth_chars": 441,
+      "base_matches": 413,
+      "fix_matches": 423,
+      "base_subs": 23,
+      "fix_subs": 13,
+      "truth_in_db": 441,
+      "truth_in_standard": 302
+    },
+    {
+      "page": 13,
+      "truth_chars": 444,
+      "base_matches": 421,
+      "fix_matches": 428,
+      "base_subs": 17,
+      "fix_subs": 10,
+      "truth_in_db": 444,
+      "truth_in_standard": 299
+    },
+    {
+      "page": 14,
+      "truth_chars": 433,
+      "base_matches": 412,
+      "fix_matches": 417,
+      "base_subs": 12,
+      "fix_subs": 7,
+      "truth_in_db": 433,
+      "truth_in_standard": 303
+    },
+    {
+      "page": 15,
+      "truth_chars": 438,
+      "base_matches": 402,
+      "fix_matches": 409,
+      "base_subs": 19,
+      "fix_subs": 12,
+      "truth_in_db": 438,
+      "truth_in_standard": 315
+    },
+    {
+      "page": 16,
+      "truth_chars": 436,
+      "base_matches": 404,
+      "fix_matches": 411,
+      "base_subs": 9,
+      "fix_subs": 2,
+      "truth_in_db": 436,
+      "truth_in_standard": 302
+    },
+    {
+      "page": 17,
+      "truth_chars": 438,
+      "base_matches": 392,
+      "fix_matches": 395,
+      "base_subs": 21,
+      "fix_subs": 18,
+      "truth_in_db": 438,
+      "truth_in_standard": 304
+    },
+    {
+      "page": 18,
+      "truth_chars": 436,
+      "base_matches": 392,
+      "fix_matches": 394,
+      "base_subs": 12,
+      "fix_subs": 10,
+      "truth_in_db": 436,
+      "truth_in_standard": 308
+    },
+    {
+      "page": 19,
+      "truth_chars": 432,
+      "base_matches": 381,
+      "fix_matches": 386,
+      "base_subs": 10,
+      "fix_subs": 5,
+      "truth_in_db": 432,
+      "truth_in_standard": 299
+    },
+    {
+      "page": 20,
+      "truth_chars": 428,
+      "base_matches": 383,
+      "fix_matches": 391,
+      "base_subs": 32,
+      "fix_subs": 24,
+      "truth_in_db": 428,
+      "truth_in_standard": 305
+    },
+    {
+      "page": 21,
+      "truth_chars": 426,
+      "base_matches": 381,
+      "fix_matches": 387,
+      "base_subs": 20,
+      "fix_subs": 14,
+      "truth_in_db": 426,
+      "truth_in_standard": 300
+    },
+    {
+      "page": 22,
+      "truth_chars": 432,
+      "base_matches": 381,
+      "fix_matches": 393,
+      "base_subs": 17,
+      "fix_subs": 5,
+      "truth_in_db": 432,
+      "truth_in_standard": 314
+    },
+    {
+      "page": 23,
+      "truth_chars": 429,
+      "base_matches": 348,
+      "fix_matches": 367,
+      "base_subs": 38,
+      "fix_subs": 19,
+      "truth_in_db": 429,
+      "truth_in_standard": 298
+    },
+    {
+      "page": 24,
+      "truth_chars": 427,
+      "base_matches": 389,
+      "fix_matches": 399,
+      "base_subs": 14,
+      "fix_subs": 4,
+      "truth_in_db": 427,
+      "truth_in_standard": 305
+    },
+    {
+      "page": 25,
+      "truth_chars": 444,
+      "base_matches": 416,
+      "fix_matches": 417,
+      "base_subs": 7,
+      "fix_subs": 6,
+      "truth_in_db": 444,
+      "truth_in_standard": 312
+    },
+    {
+      "page": 26,
+      "truth_chars": 440,
+      "base_matches": 414,
+      "fix_matches": 418,
+      "base_subs": 14,
+      "fix_subs": 10,
+      "truth_in_db": 440,
+      "truth_in_standard": 333
+    },
+    {
+      "page": 27,
+      "truth_chars": 439,
+      "base_matches": 416,
+      "fix_matches": 425,
+      "base_subs": 14,
+      "fix_subs": 5,
+      "truth_in_db": 439,
+      "truth_in_standard": 318
+    },
+    {
+      "page": 28,
+      "truth_chars": 441,
+      "base_matches": 427,
+      "fix_matches": 434,
+      "base_subs": 10,
+      "fix_subs": 3,
+      "truth_in_db": 441,
+      "truth_in_standard": 302
+    },
+    {
+      "page": 29,
+      "truth_chars": 442,
+      "base_matches": 398,
+      "fix_matches": 401,
+      "base_subs": 21,
+      "fix_subs": 18,
+      "truth_in_db": 442,
+      "truth_in_standard": 314
+    },
+    {
+      "page": 30,
+      "truth_chars": 440,
+      "base_matches": 398,
+      "fix_matches": 408,
+      "base_subs": 23,
+      "fix_subs": 13,
+      "truth_in_db": 440,
+      "truth_in_standard": 314
+    },
+    {
+      "page": 31,
+      "truth_chars": 439,
+      "base_matches": 378,
+      "fix_matches": 390,
+      "base_subs": 24,
+      "fix_subs": 12,
+      "truth_in_db": 439,
+      "truth_in_standard": 316
+    },
+    {
+      "page": 32,
+      "truth_chars": 441,
+      "base_matches": 388,
+      "fix_matches": 399,
+      "base_subs": 17,
+      "fix_subs": 6,
+      "truth_in_db": 441,
+      "truth_in_standard": 308
+    },
+    {
+      "page": 33,
+      "truth_chars": 436,
+      "base_matches": 397,
+      "fix_matches": 403,
+      "base_subs": 11,
+      "fix_subs": 5,
+      "truth_in_db": 436,
+      "truth_in_standard": 312
+    },
+    {
+      "page": 34,
+      "truth_chars": 433,
+      "base_matches": 397,
+      "fix_matches": 407,
+      "base_subs": 19,
+      "fix_subs": 9,
+      "truth_in_db": 433,
+      "truth_in_standard": 298
+    },
+    {
+      "page": 35,
+      "truth_chars": 432,
+      "base_matches": 419,
+      "fix_matches": 421,
+      "base_subs": 8,
+      "fix_subs": 6,
+      "truth_in_db": 432,
+      "truth_in_standard": 301
+    },
+    {
+      "page": 36,
+      "truth_chars": 442,
+      "base_matches": 429,
+      "fix_matches": 434,
+      "base_subs": 13,
+      "fix_subs": 8,
+      "truth_in_db": 442,
+      "truth_in_standard": 301
+    },
+    {
+      "page": 37,
+      "truth_chars": 445,
+      "base_matches": 429,
+      "fix_matches": 440,
+      "base_subs": 16,
+      "fix_subs": 5,
+      "truth_in_db": 445,
+      "truth_in_standard": 322
+    },
+    {
+      "page": 38,
+      "truth_chars": 438,
+      "base_matches": 421,
+      "fix_matches": 431,
+      "base_subs": 14,
+      "fix_subs": 4,
+      "truth_in_db": 438,
+      "truth_in_standard": 311
+    },
+    {
+      "page": 39,
+      "truth_chars": 423,
+      "base_matches": 387,
+      "fix_matches": 396,
+      "base_subs": 14,
+      "fix_subs": 5,
+      "truth_in_db": 423,
+      "truth_in_standard": 293
+    }
+  ]
+}
