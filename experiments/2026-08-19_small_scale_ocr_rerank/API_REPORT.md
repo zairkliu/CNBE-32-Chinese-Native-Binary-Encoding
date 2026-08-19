@@ -39,3 +39,28 @@ python experiments/2026-08-19_small_scale_ocr_rerank/api_rerank_experiment.py --
 ```
 
 结果：`api_rerank_results.json`
+
+## 6. v5：编号输出 + 明确提示词
+
+改用候选编号输出，样本 19，结果：
+
+| 条件 | Top-1 | 已解析 | 解析率 |
+|---|---:|---:|---:|
+| plain | 71.43% | 14 | 73.68% |
+| unicode | 85.71% | 14 | 73.68% |
+| cnbe | 92.31% | 13 | 68.42% |
+
+解读：
+
+1. 已解析样本中，CNBE 最高；
+2. 解析率约 68%-74%，仍需改进；
+3. 该结果可进入论文作为“CNBE 提示优于 plain/Unicode”的早期证据；
+4. 最终论文需要更大样本和严格输出约束。
+
+复现：
+
+```bash
+python experiments/2026-08-19_small_scale_ocr_rerank/api_rerank_v2.py \
+  --limit 20 \
+  --output experiments/2026-08-19_small_scale_ocr_rerank/api_rerank_v5_results.json
+```
