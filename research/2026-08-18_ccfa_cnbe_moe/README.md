@@ -11,6 +11,7 @@
 | `TECHNICAL_PAPER_CNBE_MOE_2026-08-18.md` | CCF-A 技术论文草稿（已按审稿意见修订） |
 | `REVIEW_RESPONSE_2026-08-18.md` | 审稿意见逐条响应表 |
 | `SEGMENTFAULT_REVIEW_ANALYSIS_2026-08-19.md` | 外部专业评审分析：有效观点与必须修复的 fatal gaps |
+| `CNBE_POSITIONING_ANALYSIS_2026-08-19.md` | CNBE 通用 NLU vs 结构敏感任务定位分析与差异化 |
 | `A800_TRAINING_PROGRESS_MODEL_2026-08-18.md` | 基于 184,482 步损失分布的训练进度与稳定性模型 |
 | `A800_TRAINING_PROGRESS_MODEL_2026-08-19.md` | 基于 250,578 步损失分布的最新训练进度与稳定性模型 |
 | `WHITEPAPER_CNBE_FULL_JOURNEY_2026-08-18.md` | 国标对齐到 A800 的全链路白皮书 |

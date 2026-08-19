@@ -210,7 +210,8 @@
     "public sanitized dataset and evaluation protocol",
     "unicode baseline re-validation (current 0.001% suspected instrumentation artifact)",
     "conditional struct accuracy excluding code 0",
-    "comparison with ChineseBERT / Glyce / SubChar / CNM-BERT"
+    "comparison with ChineseBERT / Glyce / SubChar / CNM-BERT",
+    "general NLU sanity check (CLUE subset) to demonstrate no significant regression"
   ],
   "next_steps": [
     "start A800×2 full training",

@@ -67,6 +67,10 @@ CNBE-MoE combines three ideas that have not been jointly studied: structural cha
 
 We do not claim that language models directly see Unicode code-point integers, nor that code-point proximity is what models perceive. The claim is narrower: without additional features, the embedding layer treats each Chinese character as an atomic token, so structural similarity is not available at the input layer unless explicitly encoded.
 
+### 2.8 General NLU vs Structure-Sensitive Tasks
+
+External evidence suggests that explicit structural priors provide only marginal gains on general NLU, while large models may implicitly reconstruct character structure in middle and upper layers. We therefore position CNBE not as a replacement for Unicode or as a guaranteed general-NLU booster, but as a computable structural fingerprint layer for structure-sensitive tasks such as confusable-character disambiguation, OOV handling, ancient-text OCR correction, and hard MoE routing. This positioning is consistent with our strongest evidence: API ablation gains of +33.3pp on confusable-character tasks and routing proxy accuracy of 74%-84%.
+
 ## 3. Method
 
 ### 3.1 CNBE-32 Encoding
@@ -259,6 +263,8 @@ The minimum training loss is now below the DCU 544M final eval_loss of 4.5915. T
 
 The mapping creates 14,248 structure templates. Each template is assigned to an expert by frequency. This gives the model a prior over character structure: similar radicals and structures are processed by similar experts. Expert specialization can be visualized by analyzing per-expert template distributions.
 
+This argument is strongest for structure-sensitive tasks. It does not claim that general NLU necessarily improves; instead, CNBE provides a deterministic routing signal where structural similarity is directly relevant.
+
 ### 6.2 Why 1.5B Fails
 
 The 1.5B experiment fails not because the model cannot learn, but because generative exact mapping requires memorization of a large discrete space under insufficient capacity. Deterministic rules and reranking are more reliable for this task. This finding supports the paper's central claim: structural learning requires specialized representation or architecture, not only more parameters.
@@ -283,10 +289,11 @@ This indicates stable optimization without divergence. The max loss must be chec
 6. Hardware differences between L20, DCU, and A800 may affect throughput comparisons.
 7. The Unicode baseline requires re-validation; its current next-code value is suspiciously low and is not used as a headline claim.
 8. Reported struct accuracy may be dominated by the high-frequency code 0 class; conditional accuracy on non-zero codes will be reported.
+9. We do not claim general NLU improvements from explicit structure; CNBE is positioned for structure-sensitive tasks, with general-language sanity checks still to be reported.
 
 ## 8. Conclusion
 
-CNBE-MoE offers a new perspective: encode the prior structural information of Chinese characters into the token representation, so that language models acquire structural perception at the input layer. Although the 5.4B training is still in progress, existing results show that CNBE combined with MoE is viable and significantly better than the traditional Unicode + Dense baseline. More importantly, the failure of the 1.5B generative model suggests that structural learning may require specialized architecture design rather than simply adding parameters.
+CNBE-MoE offers a new perspective: encode the prior structural information of Chinese characters into a computable fingerprint that can serve deterministic MoE routing and structure-sensitive downstream tasks. Although the 5.4B training is still in progress, existing results show that CNBE combined with MoE is viable and better than the traditional Unicode + Dense baseline on controlled character-level modeling. More importantly, the failure of the 1.5B generative model suggests that structural learning may require specialized architecture design rather than simply adding parameters. We do not claim that explicit structure is necessary for large models in general NLU; we claim that it is useful where structure itself is the signal.
 
 ## Reproducibility Statement
 
