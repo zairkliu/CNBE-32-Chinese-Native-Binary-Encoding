@@ -1,6 +1,6 @@
 <p align="center">
   <strong>CNBE-32</strong><br>
-  Chinese Native Computing Foundation · Unified Chinese Structural Representation from Machine Code to Applications
+  A Research Program for Auditable Chinese Structural Computing
 </p>
 
 <p align="center">
@@ -57,7 +57,48 @@ The detailed protocol, acceptance gates, and prohibited inferences are in
 [Research Program and Experiment Ladder](./docs/RESEARCH_PROGRAM_AND_EXPERIMENT_LADDER.md)
 and [Evidence Status](./docs/EVIDENCE_STATUS_2026-08-19.md).
 
-## 2026-08-18/19: CCF-A Paper and Structure-Sensitive Evidence
+## Research Design: Object, Method, and Falsifiability
+
+The intellectual starting point is a narrow, testable part of a broader
+Chinese-native AI governance discussion: useful Chinese-language computation
+needs representations whose sources, transformations, and limitations can be
+examined. CNBE does **not** claim that a bitfield solves language governance,
+or that character structure alone supplies semantics. It isolates one research
+object: an optional structural descriptor attached to an otherwise ordinary
+Unicode character.
+
+For a character \(c\), let \(u(c)\) be its Unicode code point and let
+\(\phi(c) = (r, s, t, i, e)\) denote the versioned structural fields: radix,
+stroke count, structure class, compatibility index, and extension. The current
+carrier is a 32-bit packing function:
+
+```text
+E(c) = (r << 24) | (s << 19) | (t << 15) | (i << 4) | e
+```
+
+`u(c)` remains the identity and interchange key. `E(c)` is a derived,
+versioned feature record; it is not an alternate character repertoire, a
+Unicode replacement, or a linguistic theorem. The compatibility index is
+deprecated as an addressing key, and the radix field remains explicitly
+version-bound. See [Field Semantics Freeze v1.1](./docs/FIELD_SEMANTICS_FREEZE_v1.1.md).
+
+The research methods follow four falsifiable hypotheses:
+
+| Hypothesis | Claim under test | What would count as failure |
+|---|---|---|
+| H1: representation integrity | A fixed schema can be aligned to Unicode and reproduced across implementations. | Golden-vector or versioned-source disagreement. |
+| H2: task value | CNBE features improve a pre-registered structure-sensitive task over declared baselines. | No held-out improvement, leakage, or an improvement explained by a non-CNBE confound. |
+| H3: model value | A structural prior has incremental value under equal data, parameters, compute, and evaluation. | A matched token-only or structure-aware baseline removes the effect. |
+| H4: systems value | The same semantics can travel across SDK and prototype boundaries with measurable cost. | Cross-language mismatch, or no measured advantage for the stated system constraint. |
+
+The field-weighted distance, hyperbolic operators, HDC/VSA representations, and
+bitwise routing are candidate tools for H2--H4, not assumptions that make those
+hypotheses true. Their formal definitions and property tests are linked in
+[CNBE-32 Mathematical Structure](./docs/CNBE32_MATHEMATICAL_STRUCTURE.md).
+The fuller research protocol is in [Research Program and Experiment Ladder](./docs/RESEARCH_PROGRAM_AND_EXPERIMENT_LADDER.md); the rationale for this README redesign is recorded in
+[README Research Redesign Rationale](./docs/README_RESEARCH_REDESIGN_RATIONALE_2026-08-19.md).
+
+## Evidence Snapshot: 2026-08-18/19
 
 The repository now includes a CCF-A-oriented paper package, OCR reranking
 experiments, embedding baselines, and an ancient PDF corpus plan:
@@ -76,7 +117,11 @@ Key pilot results and boundaries:
 - Yongle 37-page e2e: 90.91% -> 92.64%;
 - Ancient PDF pilot: 100% CNBE coverage.
 
-## TL;DR
+## Reader's Map
+
+**Research question.** Can a Unicode-compatible structural descriptor be made
+auditable and demonstrate task-specific value? CNBE-32 is the current proposed
+carrier for testing that question.
 
 **What is CNBE-32?** A Unicode/GB-compatible Chinese structural computing layer
 that encodes radix/stroke/structure/index/ext in 32-bit fields, exposing Hanzi
@@ -86,7 +131,7 @@ structure to SDKs, databases, instructions, hardware prototypes, and AI models.
 classical-text digitization/OCR engineers, Chinese NLP researchers,
 policy/standards readers, and Chinese-language technology enthusiasts.
 
-**Where is it now?** The project has a 21,178-row runtime database,
+**What is available now?** The project has a 21,178-row runtime database,
 multi-language SDKs, a desktop demo, a 24.38M-character seven-corpus validation,
 MoE-64 three-field hard routing, local QLoRA experiments, and DeepSeek/Ollama
 reproduction materials. The next stage is cloud-GPU scale validation, CNBE
@@ -119,7 +164,7 @@ Studio, and a classical-text cleanup pipeline.
   repository explicitly separates stable releases, experimental observations,
   and planned work.
 
-## Abstract
+## Research Abstract
 
 CNBE-32 asks a specific systems question: given that Unicode already carries
 character identity and Unicode/GB already anchor the real-world ecosystem, can
@@ -129,16 +174,17 @@ hardware prototypes, and AI models?
 
 The answer proposed here is not to replace existing encodings. Unicode/GB carry
 identity and interchange; CNBE-32 carries structural fingerprints and
-computable features. The repository now contains a 21,178-row runtime database,
+computable features. The repository contains a 21,178-row runtime database,
 Python/C/Rust SDKs, RISC-V and Verilog prototypes, a desktop demo, a
 24.38M-character seven-corpus validation, QLoRA small-model training,
 CNBE-MoE routing prototypes, and evidence boundaries governed by the 8105
 common standardized Chinese character table and GF0017.
 
-This is a Chinese-computing idea that becomes discussable again in the AI era:
-compute, open-source models, RISC-V, domestic chips, and agentic workflows turn
-"can Chinese structure enter lower levels of computation?" from a historical
-vision into a reproducible engineering research question.
+The project separates a research program from its current evidence: verified
+representation behavior, exploratory application/model observations, and
+unproven hardware or deployment directions are not interchangeable. The goal
+is a sequence of small, reproducible conclusions rather than a declaration
+that Chinese computation has already been rebuilt.
 
 ## Why Now
 
@@ -276,12 +322,13 @@ from encoding, evidence, software, models, and systems prototypes:
 | Phase 3: classical-text pipeline | Mid term | OCR/truth DB -> CNBE coverage check -> confusable risk -> LLM punctuation/segmentation -> human review | At least one public sample pack with inputs, outputs, error analysis, and review queue |
 | Phase 4: extended width and standardization | Long term | CNBE64/CNBE128, GB 18030/Unicode bidirectional mapping, external review | Design docs, golden vectors, evidence-archive schema, P1/WS-4 review results |
 
-## Project Positioning
+## Project Positioning and Scope
 
-**CNBE-32 is a complete native encoding infrastructure for Chinese**, aiming to
-provide a unified, computable Chinese structural representation across machine
+**CNBE-32 is a research prototype for a compatible Chinese structural layer.**
+It explores whether one versioned representation can be reused across machine
 code, instruction sets, operating systems, compilers/decoders, programming
-languages, and applications.
+languages, and applications. These layers are experiments with different
+acceptance criteria, not a claim of a finished native encoding infrastructure.
 
 | Layer | CNBE-32 Counterpart |
 |---|---|
