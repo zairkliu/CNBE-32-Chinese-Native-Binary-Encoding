@@ -19,22 +19,43 @@
   <img alt="Extended scope" src="https://img.shields.io/badge/97%2C686-experimental%20target-lightgrey">
 </p>
 
-CNBE-32 is a complete native encoding infrastructure for Chinese, aiming to
-provide a unified, computable Chinese structural representation across machine
-code, instruction sets, operating systems, compilers/decoders, programming
-languages, and applications. It carries computable morphology in a 32-bit field
-algebra (radix/stroke/struct/index/ext), spans RISC-V instructions, Verilog
-prototypes, the Linux kernel layer, compilers/decoders, C++/Python/Rust, and
-applications. Compatibility with existing CJK/Unicode/GB encodings is a gradual,
-patch-friendly evolution path for current computer systems, not a rewrite; its
-academic value lies in a structure-aware encoding substrate for computational
-linguistics, Chinese philology, and digital humanities on classical texts.
-With AI, domestic chips, RISC-V, and open-source AI systems advancing rapidly,
-the historical vision of a complete Chinese computing system now has a concrete
-basis for renewed discussion and engineering.
-In the AI era, Chinese should be one of the foundations, not an option.
+CNBE-32 is a long-horizon research program and open-source prototype. It asks
+whether Chinese character structure can become a compatible, computable layer
+beside Unicode/GB identity: first in data, SDKs, and auditable applications,
+then, only where evidence supports it, in models, toolchains, and systems.
+Its 32-bit field algebra (radix/stroke/struct/index/ext) is one proposed
+representation, not a replacement for existing encodings or an established
+computing standard. RISC-V, Verilog, Linux, C++/Python/Rust, and AI artifacts
+are separate prototypes that test how one structural representation may travel
+across layers. Their coexistence is a research agenda, not proof that the full
+agenda has already succeeded.
 
 See [CNBE32_PROJECT_POSITION_ZH.md](./docs/CNBE32_PROJECT_POSITION_ZH.md).
+
+## Research Question and Evidence Ladder
+
+The long-term question is deliberately broader than any one experiment:
+
+> Can a standard-aligned and auditable structural representation of Hanzi be
+> consumed by computing systems without replacing Unicode/GB, and does it help
+> in tasks where character structure is genuinely relevant?
+
+CNBE answers this in stages rather than by assertion:
+
+1. **Representation**: Unicode alignment, field semantics, golden vectors, and
+   a versioned structural database establish what a CNBE value means.
+2. **Evidence governance**: national-standard alignment, source provenance,
+   human review, uncertainty labels, and no-write gates make entries auditable.
+3. **Applications**: OCR candidates, variants, confusables, rare characters,
+   and classical-text review provide falsifiable structure-sensitive tasks.
+4. **Models**: CNBE is tested as a feature or routing prior against aligned,
+   strong baselines; a model result never retroactively validates the data.
+5. **Systems**: SDKs and hardware prototypes test portability only after the
+   representation and task evidence are understood.
+
+The detailed protocol, acceptance gates, and prohibited inferences are in
+[Research Program and Experiment Ladder](./docs/RESEARCH_PROGRAM_AND_EXPERIMENT_LADDER.md)
+and [Evidence Status](./docs/EVIDENCE_STATUS_2026-08-19.md).
 
 ## 2026-08-18/19: CCF-A Paper and Structure-Sensitive Evidence
 

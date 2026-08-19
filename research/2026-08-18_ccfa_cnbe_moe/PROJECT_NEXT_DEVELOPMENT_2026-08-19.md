@@ -7,7 +7,7 @@
 
 - 主分支：`main`
 - 远程分支：数量较多，主要来自历史实验、文档和发布工作；
-- README：README / README_EN / README_ZH 三语已同步；
+- README：README / README_EN / README_ZH 以同一证据状态表约束主张；
 - 论文包：`research/2026-08-18_ccfa_cnbe_moe/`
 - 实验包：OCR rerank、embedding 对照、古籍 PDF、永乐大典 37 页评估。
 
@@ -20,8 +20,8 @@ CNBE 是面向结构敏感任务、国家标准对齐、可计算、可审计的
 ### 2.2 已形成的证据
 
 - A800×2 5.4B 训练进行中；
-- GBDT + CNBE 特征在 OCR rerank 上超过 Unicode；
-- DeepSeek V4 API 提示中 CNBE 高于 Unicode 和 plain；
+- 构造候选的 OCR 残差 pilot 中，GBDT + CNBE 特征高于 Unicode 距离；
+- DeepSeek V4 API 小样本、条件化结果已记录，尚不构成稳定比较结论；
 - ChineseBERT / bert-base-chinese embedding 对照已跑；
 - 古籍 PDF OCR pilot 已跑通；
 - 37 页永乐大典端到端已评估。
@@ -36,29 +36,33 @@ CNBE 是面向结构敏感任务、国家标准对齐、可计算、可审计的
 
 ## 3. 下一步发展
 
-### 3.1 主线：完成 A800×2 5.4B
+### 3.1 主线：建立真实 OCR benchmark
+
+- 固定 OCR 引擎实际 top-N 候选，而非真值派生候选；
+- 按卷或来源冻结测试集，并发布清单、配置和错误分析；
+- 先验证结构特征的实际任务边界，再扩大模型或算力规模。
+
+### 3.2 模型线：完成可解释对照
+
+- 重跑 Unicode baseline；
+- 报告非零码条件 struct accuracy；
+- 补等计算预算、多种子和直接基线；
+- 在同一 benchmark 上补 Glyce / SubChar / CNM-BERT 或可复现替代基线。
+
+### 3.3 训练线：完成 A800×2 5.4B
 
 - 等待正式训练完成；
 - 收集最终 eval_metrics、step_metrics、final.pt；
 - 回填论文；
 - 形成最终收敛曲线与模型分析。
 
-### 3.2 论文线：补齐 CCF-A 证据
-
-- 重跑 Unicode baseline；
-- 报告非零码条件 struct accuracy；
-- 补 Glyce / SubChar / CNM-BERT 对照；
-- 补 CLUE sanity；
-- 补多 seed；
-- 最终定稿 CCF-A 论文。
-
-### 3.3 数据线：古籍语料化
+### 3.4 数据线：古籍语料化
 
 - 37 页 -> 70 页 -> 更多 PDF；
 - 建立 PDF 清单、OCR 文本、真值、CNBE 编码、质量报告；
 - 形成可复现的古籍 OCR 后处理 benchmark。
 
-### 3.4 工程线：仓库整理
+### 3.5 工程线：仓库整理
 
 - 合并或归档历史分支；
 - 清理未推送的本地产物；
@@ -69,7 +73,7 @@ CNBE 是面向结构敏感任务、国家标准对齐、可计算、可审计的
 
 | 风险 | 影响 | 处理 |
 |---|---|---|
-| A800 训练结果不达预期 | 论文主结果受影响 | 已有 544M/受控对比兜底 |
+| A800 训练结果不达预期 | 论文主结果受影响 | 将其作为负结果记录，不以旧实验替代未完成验证 |
 | Unicode baseline 未修复 | headline 被质疑 | 重跑并降级宣传 |
 | Glyce/SubChar 未对照 | 差异化不足 | 补齐 benchmark |
 | 古籍数据版权 | 无法公开 | 只发布清单、脚本和去敏结果 |
@@ -77,11 +81,12 @@ CNBE 是面向结构敏感任务、国家标准对齐、可计算、可审计的
 
 ## 5. 建议
 
-接下来只做四件事：
+接下来按证据依赖关系推进：
 
-1. 跑完 A800×2；
-2. 修 Unicode baseline；
-3. 补 Glyce / SubChar 对照；
-4. 把古籍 70 页语料化跑通。
+1. 建立真实 OCR top-N benchmark；
+2. 修 Unicode baseline 并报告条件指标；
+3. 在同一 benchmark 上补强基线与多种子；
+4. 收口 A800 最终评估；
+5. 以 70 页古籍真值闭环验证可复用流程。
 
-这四件事完成后，论文和产品入口都会自然成型。
+这些步骤完成后，论文与产品入口才有共同、可审计的证据基础。
