@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import random
+import re
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -15,15 +16,25 @@ sys.path.insert(0, str(REPO / "src"))
 from cnbe32 import CNBEKnowledgeBridge  # noqa: E402
 
 
+def cjk_clean(text: str) -> str:
+    return re.sub(r"[^\u4e00-\u9fff]", "", text)
+
+
 def main() -> int:
     exp = Path(__file__).resolve().parent
     pairs = json.loads((exp / "all_substitutions.json").read_text(encoding="utf-8"))
     bridge = CNBEKnowledgeBridge()
     standard_pool = [r["char"] for r in bridge._all_rows() if r.get("track") == "standard"]
     page_chars: dict[int, list[str]] = defaultdict(list)
+    page_text: dict[int, str] = {}
     for p in pairs:
         if p["truth"] not in page_chars[p["page"]]:
             page_chars[p["page"]].append(p["truth"])
+    pages_dir = REPO / "experiments/2026-08-06_paddleocr_vl16" / "pages"
+    for page in page_chars:
+        md = pages_dir / f"page_{page:03d}.md"
+        if md.exists():
+            page_text[page] = cjk_clean(md.read_text(encoding="utf-8"))
 
     rng = random.Random(42)
     records = []
@@ -33,6 +44,10 @@ def main() -> int:
         if bridge.lookup(ocr) is None or bridge.lookup(truth) is None:
             skipped += 1
             continue
+        text = page_text.get(p["page"], "")
+        idx = text.find(ocr)
+        left = text[idx - 1] if idx > 0 else ""
+        right = text[idx + 1] if 0 <= idx + 1 < len(text) else ""
         page_cands = [c for c in page_chars[p["page"]] if c not in (ocr, truth)]
         need = max(0, 20 - len(page_cands) - 1)
         distractor_pool = [c for c in standard_pool if c not in (ocr, truth) and c not in page_cands]
@@ -44,6 +59,8 @@ def main() -> int:
             if d is None:
                 continue
             fields = d["fields"]
+            left_d = bridge.distance(cand, left) if left else None
+            right_d = bridge.distance(cand, right) if right else None
             records.append(
                 {
                     "page": p["page"],
@@ -62,6 +79,14 @@ def main() -> int:
                         "idx_same": int(fields["index_same"]),
                         "ocr_in_standard": int(bridge.lookup(ocr).track == "standard"),
                         "truth_in_standard": int(bridge.lookup(truth).track == "standard"),
+                        "left_unicode": ord(left) if left else 0,
+                        "right_unicode": ord(right) if right else 0,
+                        "cand_left_cnbe": (
+                            left_d["field_weighted_distance"] if left_d else 999
+                        ),
+                        "cand_right_cnbe": (
+                            right_d["field_weighted_distance"] if right_d else 999
+                        ),
                     },
                 }
             )

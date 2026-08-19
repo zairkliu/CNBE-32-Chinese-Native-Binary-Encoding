@@ -10,6 +10,7 @@ from collections import defaultdict
 from pathlib import Path
 
 import numpy as np
+from sklearn.ensemble import HistGradientBoostingClassifier
 from sklearn.linear_model import LogisticRegression
 
 
@@ -23,7 +24,13 @@ FEATURES = [
     "idx_same",
     "ocr_in_standard",
     "truth_in_standard",
+    "left_unicode",
+    "right_unicode",
+    "cand_left_cnbe",
+    "cand_right_cnbe",
 ]
+
+REPO = Path(__file__).resolve().parents[2]
 
 
 def rank_of(target: str, candidates: list[dict], key) -> int:
@@ -45,6 +52,12 @@ def metrics(rows: list[tuple[int, str]]) -> dict:
 
 def main() -> int:
     exp = Path(__file__).resolve().parent
+    variant_map = {}
+    rules_path = REPO / "experiments/2026-08-06_variant_normalization/variant_rules.json"
+    if rules_path.exists():
+        for rule in json.loads(rules_path.read_text(encoding="utf-8")):
+            variant_map[rule["ocr"]] = rule["target"]
+
     records = []
     with (exp / "features.jsonl").open(encoding="utf-8") as f:
         for line in f:
@@ -62,17 +75,29 @@ def main() -> int:
 
     train_records = [r for r in records if r["page"] in train_pages]
     test_records = [r for r in records if r["page"] in test_pages]
-    clf = LogisticRegression(max_iter=1000)
-    clf.fit(matrix(train_records), [r["label"] for r in train_records])
-    probs = clf.predict_proba(matrix(test_records))[:, 1]
-    for r, p in zip(test_records, probs):
-        r["_score"] = float(p)
+    models = {
+        "learned_lr": LogisticRegression(max_iter=1000),
+        "learned_gbdt": HistGradientBoostingClassifier(max_iter=300, random_state=42),
+    }
+    for name, clf in models.items():
+        clf.fit(matrix(train_records), [r["label"] for r in train_records])
+        probs = clf.predict_proba(matrix(test_records))[:, 1]
+        for r, p in zip(test_records, probs):
+            r[f"_score_{name}"] = float(p)
 
     groups = defaultdict(list)
     for r in test_records:
         groups[(r["page"], r["ocr"], r["truth"], r["error_label"])].append(r)
 
-    methods = ["random", "unicode", "cnbe_weighted", "cnbe_hamming", "learned"]
+    methods = [
+        "random",
+        "unicode",
+        "cnbe_weighted",
+        "cnbe_hamming",
+        "variant_map",
+        "learned_lr",
+        "learned_gbdt",
+    ]
     collected = {m: [] for m in methods}
     for (page, ocr, truth, label), cands in groups.items():
         shuffled = list(cands)
@@ -88,14 +113,26 @@ def main() -> int:
         collected["cnbe_hamming"].append(
             (label, rank_of(truth, cands, lambda c: (c["features"]["cnbe_hamming"], ord(c["candidate"]))))
         )
-        collected["learned"].append(
-            (label, rank_of(truth, cands, lambda c: (-c["_score"], ord(c["candidate"]))))
+        mapped = variant_map.get(ocr)
+        collected["variant_map"].append(
+            (
+                label,
+                rank_of(
+                    truth,
+                    cands,
+                    lambda c: (0 if mapped is not None and c["candidate"] == mapped else 1, ord(c["candidate"])),
+                ),
+            )
         )
+        for name in models:
+            collected[name].append(
+                (label, rank_of(truth, cands, lambda c, n=name: (-c[f"_score_{n}"], ord(c["candidate"]))))
+            )
 
     summary = {"overall": {}, "by_label": {}}
     for method in methods:
         summary["overall"][method] = metrics(collected[method])
-    labels = sorted({lab for lab, _ in collected["learned"]})
+    labels = sorted({lab for lab, _ in collected["learned_lr"]})
     for label in labels:
         summary["by_label"][label] = {
             method: metrics([r for r in collected[method] if r[0] == label]) for method in methods

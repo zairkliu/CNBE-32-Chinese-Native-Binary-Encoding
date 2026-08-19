@@ -26,10 +26,20 @@
         "mean_reciprocal_rank": 0.30622786041636946,
         "mean_rank": 11.050420168067227
       },
-      "learned": {
-        "top1_accuracy": 0.42857142857142855,
-        "mean_reciprocal_rank": 0.5218550724204877,
-        "mean_rank": 8.512605042016807
+      "variant_map": {
+        "top1_accuracy": 0.4117647058823529,
+        "mean_reciprocal_rank": 0.4852825491071192,
+        "mean_rank": 7.915966386554622
+      },
+      "learned_lr": {
+        "top1_accuracy": 0.4117647058823529,
+        "mean_reciprocal_rank": 0.5100390110580907,
+        "mean_rank": 8.521008403361344
+      },
+      "learned_gbdt": {
+        "top1_accuracy": 0.6302521008403361,
+        "mean_reciprocal_rank": 0.693131968387817,
+        "mean_rank": 5.042016806722689
       }
     },
     "by_label": {
@@ -54,10 +64,20 @@
           "mean_reciprocal_rank": 0.17419184950293548,
           "mean_rank": 13.384615384615385
         },
-        "learned": {
+        "variant_map": {
+          "top1_accuracy": 0.038461538461538464,
+          "mean_reciprocal_rank": 0.14900736518383575,
+          "mean_rank": 10.961538461538462
+        },
+        "learned_lr": {
           "top1_accuracy": 0.11538461538461539,
-          "mean_reciprocal_rank": 0.22256815081445946,
+          "mean_reciprocal_rank": 0.21457557568387525,
           "mean_rank": 11.884615384615385
+        },
+        "learned_gbdt": {
+          "top1_accuracy": 0.23076923076923078,
+          "mean_reciprocal_rank": 0.32800353169745305,
+          "mean_rank": 10.0
         }
       },
       "shape_confusable": {
@@ -81,10 +101,20 @@
           "mean_reciprocal_rank": 0.7461111111111112,
           "mean_rank": 3.0
         },
-        "learned": {
+        "variant_map": {
+          "top1_accuracy": 0.1,
+          "mean_reciprocal_rank": 0.25303270803270805,
+          "mean_rank": 8.2
+        },
+        "learned_lr": {
           "top1_accuracy": 0.9,
           "mean_reciprocal_rank": 0.9199999999999999,
           "mean_rank": 1.4
+        },
+        "learned_gbdt": {
+          "top1_accuracy": 0.9,
+          "mean_reciprocal_rank": 0.9038461538461539,
+          "mean_rank": 3.5
         }
       },
       "truth_not_in_standard": {
@@ -108,10 +138,20 @@
           "mean_reciprocal_rank": 0.3106552161551607,
           "mean_rank": 12.24
         },
-        "learned": {
+        "variant_map": {
+          "top1_accuracy": 0.04,
+          "mean_reciprocal_rank": 0.12739766837909253,
+          "mean_rank": 17.12
+        },
+        "learned_lr": {
           "top1_accuracy": 0.48,
-          "mean_reciprocal_rank": 0.5431807906279456,
-          "mean_rank": 10.4
+          "mean_reciprocal_rank": 0.5422427687255273,
+          "mean_rank": 10.56
+        },
+        "learned_gbdt": {
+          "top1_accuracy": 0.52,
+          "mean_reciprocal_rank": 0.6088867757629367,
+          "mean_rank": 6.44
         }
       },
       "variant": {
@@ -135,10 +175,20 @@
           "mean_reciprocal_rank": 0.2876661342669227,
           "mean_rank": 10.879310344827585
         },
-        "learned": {
-          "top1_accuracy": 0.46551724137931033,
-          "mean_reciprocal_rank": 0.5781803781235076,
-          "mean_rank": 7.413793103448276
+        "variant_map": {
+          "top1_accuracy": 0.7931034482758621,
+          "mean_reciprocal_rank": 0.8303303975717768,
+          "mean_rank": 2.5344827586206895
+        },
+        "learned_lr": {
+          "top1_accuracy": 0.43103448275862066,
+          "mean_reciprocal_rank": 0.5579242781033422,
+          "mean_rank": 7.362068965517241
+        },
+        "learned_gbdt": {
+          "top1_accuracy": 0.8103448275862069,
+          "mean_reciprocal_rank": 0.8567927841634738,
+          "mean_rank": 2.4827586206896552
         }
       }
     }
