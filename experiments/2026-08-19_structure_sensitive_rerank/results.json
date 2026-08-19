@@ -1,0 +1,1067 @@
+{
+  "n_queries": 104,
+  "summary": {
+    "random": {
+      "top1_accuracy": 0.028846153846153848,
+      "mean_reciprocal_rank": 0.15994028291442206,
+      "mean_rank": 11.567307692307692
+    },
+    "unicode": {
+      "top1_accuracy": 0.46153846153846156,
+      "mean_reciprocal_rank": 0.5928010983254791,
+      "mean_rank": 4.471153846153846
+    },
+    "cnbe_weighted": {
+      "top1_accuracy": 0.4807692307692308,
+      "mean_reciprocal_rank": 0.6070001608943172,
+      "mean_rank": 4.346153846153846
+    },
+    "cnbe_hamming": {
+      "top1_accuracy": 0.5096153846153846,
+      "mean_reciprocal_rank": 0.640225679768949,
+      "mean_rank": 3.798076923076923
+    }
+  },
+  "rows": [
+    {
+      "query": "戊",
+      "target": "戌",
+      "family_size": 4,
+      "candidate_count": 23,
+      "random_rank": 19,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 3,
+      "cnbe_hamming_rank": 2
+    },
+    {
+      "query": "戊",
+      "target": "戎",
+      "family_size": 4,
+      "candidate_count": 23,
+      "random_rank": 18,
+      "unicode_rank": 3,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "戊",
+      "target": "戍",
+      "family_size": 4,
+      "candidate_count": 23,
+      "random_rank": 16,
+      "unicode_rank": 2,
+      "cnbe_weighted_rank": 5,
+      "cnbe_hamming_rank": 3
+    },
+    {
+      "query": "戌",
+      "target": "戊",
+      "family_size": 4,
+      "candidate_count": 23,
+      "random_rank": 13,
+      "unicode_rank": 2,
+      "cnbe_weighted_rank": 3,
+      "cnbe_hamming_rank": 3
+    },
+    {
+      "query": "戌",
+      "target": "戎",
+      "family_size": 4,
+      "candidate_count": 23,
+      "random_rank": 8,
+      "unicode_rank": 3,
+      "cnbe_weighted_rank": 2,
+      "cnbe_hamming_rank": 2
+    },
+    {
+      "query": "戌",
+      "target": "戍",
+      "family_size": 4,
+      "candidate_count": 23,
+      "random_rank": 2,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "戎",
+      "target": "戊",
+      "family_size": 4,
+      "candidate_count": 23,
+      "random_rank": 12,
+      "unicode_rank": 3,
+      "cnbe_weighted_rank": 4,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "戎",
+      "target": "戌",
+      "family_size": 4,
+      "candidate_count": 23,
+      "random_rank": 2,
+      "unicode_rank": 2,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 2
+    },
+    {
+      "query": "戎",
+      "target": "戍",
+      "family_size": 4,
+      "candidate_count": 23,
+      "random_rank": 21,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 2,
+      "cnbe_hamming_rank": 3
+    },
+    {
+      "query": "戍",
+      "target": "戊",
+      "family_size": 4,
+      "candidate_count": 23,
+      "random_rank": 8,
+      "unicode_rank": 3,
+      "cnbe_weighted_rank": 4,
+      "cnbe_hamming_rank": 3
+    },
+    {
+      "query": "戍",
+      "target": "戌",
+      "family_size": 4,
+      "candidate_count": 23,
+      "random_rank": 23,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "戍",
+      "target": "戎",
+      "family_size": 4,
+      "candidate_count": 23,
+      "random_rank": 14,
+      "unicode_rank": 2,
+      "cnbe_weighted_rank": 2,
+      "cnbe_hamming_rank": 2
+    },
+    {
+      "query": "己",
+      "target": "已",
+      "family_size": 3,
+      "candidate_count": 22,
+      "random_rank": 11,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 2
+    },
+    {
+      "query": "己",
+      "target": "巳",
+      "family_size": 3,
+      "candidate_count": 22,
+      "random_rank": 13,
+      "unicode_rank": 2,
+      "cnbe_weighted_rank": 2,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "已",
+      "target": "己",
+      "family_size": 3,
+      "candidate_count": 22,
+      "random_rank": 7,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 2
+    },
+    {
+      "query": "已",
+      "target": "巳",
+      "family_size": 3,
+      "candidate_count": 22,
+      "random_rank": 8,
+      "unicode_rank": 2,
+      "cnbe_weighted_rank": 2,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "巳",
+      "target": "己",
+      "family_size": 3,
+      "candidate_count": 22,
+      "random_rank": 3,
+      "unicode_rank": 2,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "巳",
+      "target": "已",
+      "family_size": 3,
+      "candidate_count": 22,
+      "random_rank": 4,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 2,
+      "cnbe_hamming_rank": 2
+    },
+    {
+      "query": "日",
+      "target": "曰",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 9,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "曰",
+      "target": "日",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 17,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "未",
+      "target": "末",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 5,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "末",
+      "target": "未",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 18,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "土",
+      "target": "士",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 3,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "士",
+      "target": "土",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 20,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "人",
+      "target": "入",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 5,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 3
+    },
+    {
+      "query": "入",
+      "target": "人",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 10,
+      "unicode_rank": 3,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "大",
+      "target": "太",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 18,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "太",
+      "target": "大",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 16,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "天",
+      "target": "夭",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 2,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "夭",
+      "target": "天",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 21,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "干",
+      "target": "千",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 16,
+      "unicode_rank": 5,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "千",
+      "target": "干",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 16,
+      "unicode_rank": 4,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "田",
+      "target": "由",
+      "family_size": 4,
+      "candidate_count": 23,
+      "random_rank": 23,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "田",
+      "target": "甲",
+      "family_size": 4,
+      "candidate_count": 23,
+      "random_rank": 14,
+      "unicode_rank": 2,
+      "cnbe_weighted_rank": 2,
+      "cnbe_hamming_rank": 2
+    },
+    {
+      "query": "田",
+      "target": "申",
+      "family_size": 4,
+      "candidate_count": 23,
+      "random_rank": 19,
+      "unicode_rank": 3,
+      "cnbe_weighted_rank": 3,
+      "cnbe_hamming_rank": 3
+    },
+    {
+      "query": "由",
+      "target": "田",
+      "family_size": 4,
+      "candidate_count": 23,
+      "random_rank": 2,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "由",
+      "target": "甲",
+      "family_size": 4,
+      "candidate_count": 23,
+      "random_rank": 19,
+      "unicode_rank": 2,
+      "cnbe_weighted_rank": 2,
+      "cnbe_hamming_rank": 3
+    },
+    {
+      "query": "由",
+      "target": "申",
+      "family_size": 4,
+      "candidate_count": 23,
+      "random_rank": 8,
+      "unicode_rank": 3,
+      "cnbe_weighted_rank": 3,
+      "cnbe_hamming_rank": 2
+    },
+    {
+      "query": "甲",
+      "target": "田",
+      "family_size": 4,
+      "candidate_count": 23,
+      "random_rank": 20,
+      "unicode_rank": 3,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "甲",
+      "target": "由",
+      "family_size": 4,
+      "candidate_count": 23,
+      "random_rank": 13,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 2,
+      "cnbe_hamming_rank": 3
+    },
+    {
+      "query": "甲",
+      "target": "申",
+      "family_size": 4,
+      "candidate_count": 23,
+      "random_rank": 15,
+      "unicode_rank": 2,
+      "cnbe_weighted_rank": 3,
+      "cnbe_hamming_rank": 2
+    },
+    {
+      "query": "申",
+      "target": "田",
+      "family_size": 4,
+      "candidate_count": 23,
+      "random_rank": 20,
+      "unicode_rank": 3,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 3
+    },
+    {
+      "query": "申",
+      "target": "由",
+      "family_size": 4,
+      "candidate_count": 23,
+      "random_rank": 20,
+      "unicode_rank": 2,
+      "cnbe_weighted_rank": 2,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "申",
+      "target": "甲",
+      "family_size": 4,
+      "candidate_count": 23,
+      "random_rank": 12,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 3,
+      "cnbe_hamming_rank": 2
+    },
+    {
+      "query": "王",
+      "target": "玉",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 1,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "玉",
+      "target": "王",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 8,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "我",
+      "target": "找",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 9,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 12
+    },
+    {
+      "query": "找",
+      "target": "我",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 5,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 15
+    },
+    {
+      "query": "目",
+      "target": "日",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 9,
+      "unicode_rank": 6,
+      "cnbe_weighted_rank": 4,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "日",
+      "target": "目",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 9,
+      "unicode_rank": 10,
+      "cnbe_weighted_rank": 10,
+      "cnbe_hamming_rank": 3
+    },
+    {
+      "query": "白",
+      "target": "自",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 12,
+      "unicode_rank": 6,
+      "cnbe_weighted_rank": 6,
+      "cnbe_hamming_rank": 18
+    },
+    {
+      "query": "自",
+      "target": "白",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 5,
+      "unicode_rank": 7,
+      "cnbe_weighted_rank": 7,
+      "cnbe_hamming_rank": 16
+    },
+    {
+      "query": "月",
+      "target": "用",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 20,
+      "unicode_rank": 8,
+      "cnbe_weighted_rank": 7,
+      "cnbe_hamming_rank": 3
+    },
+    {
+      "query": "用",
+      "target": "月",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 8,
+      "unicode_rank": 9,
+      "cnbe_weighted_rank": 5,
+      "cnbe_hamming_rank": 4
+    },
+    {
+      "query": "乌",
+      "target": "鸟",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 1,
+      "unicode_rank": 19,
+      "cnbe_weighted_rank": 19,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "鸟",
+      "target": "乌",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 18,
+      "unicode_rank": 20,
+      "cnbe_weighted_rank": 21,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "免",
+      "target": "兔",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 6,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 2,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "兔",
+      "target": "免",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 11,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "哀",
+      "target": "衰",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 13,
+      "unicode_rank": 17,
+      "cnbe_weighted_rank": 17,
+      "cnbe_hamming_rank": 10
+    },
+    {
+      "query": "衰",
+      "target": "哀",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 17,
+      "unicode_rank": 19,
+      "cnbe_weighted_rank": 17,
+      "cnbe_hamming_rank": 8
+    },
+    {
+      "query": "崇",
+      "target": "祟",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 4,
+      "unicode_rank": 16,
+      "cnbe_weighted_rank": 16,
+      "cnbe_hamming_rank": 12
+    },
+    {
+      "query": "祟",
+      "target": "崇",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 19,
+      "unicode_rank": 15,
+      "cnbe_weighted_rank": 15,
+      "cnbe_hamming_rank": 8
+    },
+    {
+      "query": "泊",
+      "target": "柏",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 2,
+      "unicode_rank": 7,
+      "cnbe_weighted_rank": 5,
+      "cnbe_hamming_rank": 7
+    },
+    {
+      "query": "柏",
+      "target": "泊",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 11,
+      "unicode_rank": 4,
+      "cnbe_weighted_rank": 5,
+      "cnbe_hamming_rank": 8
+    },
+    {
+      "query": "拔",
+      "target": "拨",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 16,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "拨",
+      "target": "拔",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 2,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "晴",
+      "target": "睛",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 8,
+      "unicode_rank": 9,
+      "cnbe_weighted_rank": 8,
+      "cnbe_hamming_rank": 10
+    },
+    {
+      "query": "睛",
+      "target": "晴",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 12,
+      "unicode_rank": 11,
+      "cnbe_weighted_rank": 12,
+      "cnbe_hamming_rank": 5
+    },
+    {
+      "query": "喝",
+      "target": "渴",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 13,
+      "unicode_rank": 9,
+      "cnbe_weighted_rank": 8,
+      "cnbe_hamming_rank": 12
+    },
+    {
+      "query": "渴",
+      "target": "喝",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 20,
+      "unicode_rank": 16,
+      "cnbe_weighted_rank": 14,
+      "cnbe_hamming_rank": 8
+    },
+    {
+      "query": "析",
+      "target": "柝",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 12,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "柝",
+      "target": "析",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 20,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "冠",
+      "target": "寇",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 11,
+      "unicode_rank": 3,
+      "cnbe_weighted_rank": 3,
+      "cnbe_hamming_rank": 6
+    },
+    {
+      "query": "寇",
+      "target": "冠",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 21,
+      "unicode_rank": 7,
+      "cnbe_weighted_rank": 7,
+      "cnbe_hamming_rank": 8
+    },
+    {
+      "query": "冶",
+      "target": "治",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 10,
+      "unicode_rank": 8,
+      "cnbe_weighted_rank": 9,
+      "cnbe_hamming_rank": 15
+    },
+    {
+      "query": "治",
+      "target": "冶",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 7,
+      "unicode_rank": 14,
+      "cnbe_weighted_rank": 15,
+      "cnbe_hamming_rank": 18
+    },
+    {
+      "query": "徒",
+      "target": "徙",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 3,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "徙",
+      "target": "徒",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 3,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "待",
+      "target": "侍",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 21,
+      "unicode_rank": 7,
+      "cnbe_weighted_rank": 8,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "侍",
+      "target": "待",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 5,
+      "unicode_rank": 6,
+      "cnbe_weighted_rank": 5,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "辨",
+      "target": "辩",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 15,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "辩",
+      "target": "辨",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 7,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "赢",
+      "target": "羸",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 14,
+      "unicode_rank": 7,
+      "cnbe_weighted_rank": 8,
+      "cnbe_hamming_rank": 5
+    },
+    {
+      "query": "羸",
+      "target": "赢",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 1,
+      "unicode_rank": 5,
+      "cnbe_weighted_rank": 5,
+      "cnbe_hamming_rank": 7
+    },
+    {
+      "query": "风",
+      "target": "凤",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 2,
+      "unicode_rank": 20,
+      "cnbe_weighted_rank": 20,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "凤",
+      "target": "风",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 7,
+      "unicode_rank": 21,
+      "cnbe_weighted_rank": 21,
+      "cnbe_hamming_rank": 2
+    },
+    {
+      "query": "冈",
+      "target": "罔",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 12,
+      "unicode_rank": 10,
+      "cnbe_weighted_rank": 9,
+      "cnbe_hamming_rank": 13
+    },
+    {
+      "query": "罔",
+      "target": "冈",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 13,
+      "unicode_rank": 19,
+      "cnbe_weighted_rank": 20,
+      "cnbe_hamming_rank": 12
+    },
+    {
+      "query": "余",
+      "target": "佘",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 18,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "佘",
+      "target": "余",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 2,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "侯",
+      "target": "候",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 21,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 6
+    },
+    {
+      "query": "候",
+      "target": "侯",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 10,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "宦",
+      "target": "宧",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 5,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "宧",
+      "target": "宦",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 9,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "誉",
+      "target": "誊",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 17,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "誊",
+      "target": "誉",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 20,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "茶",
+      "target": "荼",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 18,
+      "unicode_rank": 2,
+      "cnbe_weighted_rank": 2,
+      "cnbe_hamming_rank": 2
+    },
+    {
+      "query": "荼",
+      "target": "茶",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 13,
+      "unicode_rank": 2,
+      "cnbe_weighted_rank": 2,
+      "cnbe_hamming_rank": 2
+    },
+    {
+      "query": "妲",
+      "target": "姮",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 6,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "姮",
+      "target": "妲",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 9,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "亘",
+      "target": "旦",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 15,
+      "unicode_rank": 9,
+      "cnbe_weighted_rank": 10,
+      "cnbe_hamming_rank": 20
+    },
+    {
+      "query": "旦",
+      "target": "亘",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 8,
+      "unicode_rank": 11,
+      "cnbe_weighted_rank": 9,
+      "cnbe_hamming_rank": 18
+    },
+    {
+      "query": "卯",
+      "target": "印",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 14,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    },
+    {
+      "query": "印",
+      "target": "卯",
+      "family_size": 2,
+      "candidate_count": 21,
+      "random_rank": 12,
+      "unicode_rank": 1,
+      "cnbe_weighted_rank": 1,
+      "cnbe_hamming_rank": 1
+    }
+  ]
+}
