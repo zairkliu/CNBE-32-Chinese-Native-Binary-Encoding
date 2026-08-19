@@ -164,3 +164,34 @@ Unicode 码点 -> tokenizer -> embedding lookup
 所有实验脚本、结果和论文草稿均已公开在仓库：
 
 https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding
+
+## 8. 下一步处理
+
+### 8.1 立即执行
+
+1. 重跑 Unicode baseline，修正 `0.001%` 的可疑结果；
+2. 报告非零码条件 `struct accuracy`；
+3. 将 OCR rerank 升级为真实 OCR top-N 候选；
+4. 扩展古籍 OCR 到 70 页卷981真值闭环；
+5. 发布本更新稿。
+
+### 8.2 需要算力或模型
+
+1. Glyce / SubChar / CNM-BERT 直接 embedding 对照；
+2. CLUE 子集 sanity check；
+3. A800×2 5.4B 最终训练指标。
+
+### 8.3 投稿门槛
+
+- A800×2 最终 eval_loss 与收敛曲线；
+- Dense matched-params 复核；
+- Unicode baseline 修正；
+- ChineseBERT / Glyce / SubChar / CNM-BERT 对照；
+- 下游 benchmark；
+- 多 seed 统计显著性。
+
+### 8.4 推荐顺序
+
+1. 今天：修 Unicode baseline + 条件 struct accuracy + 发布帖子；
+2. 本周：古籍 70 页 OCR + Glyce/SubChar 对照；
+3. A800 训练完成：回填最终指标并定稿 CCF-A 论文。
