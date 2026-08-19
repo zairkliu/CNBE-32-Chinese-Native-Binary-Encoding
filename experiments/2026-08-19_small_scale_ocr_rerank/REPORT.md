@@ -63,3 +63,29 @@
 python experiments/2026-08-19_small_scale_ocr_rerank/extract_substitutions.py
 python experiments/2026-08-19_small_scale_ocr_rerank/run_experiment.py
 ```
+
+## 9. 学习式 re-ranker 首轮
+
+新增 Logistic Regression re-ranker，按 page 切分 train/test：
+
+| 方法 | Top-1 | MRR |
+|---|---:|---:|
+| Random | 3.36% | 0.1459 |
+| Unicode | 50.42% | 0.5700 |
+| CNBE weighted | 21.85% | 0.3187 |
+| CNBE hamming | 19.33% | 0.3062 |
+| Learned (LR) | 42.86% | 0.5219 |
+
+结论：简单 LR 仍低于 Unicode。说明当前特征和候选构造还不够，需要：
+
+- 真实 OCR top-N；
+- 上下文特征；
+- 更强模型；
+- Unihan variant map 单独处理 variant 错误。
+
+复现：
+
+```bash
+python experiments/2026-08-19_small_scale_ocr_rerank/build_features.py
+python experiments/2026-08-19_small_scale_ocr_rerank/train_reranker.py
+```

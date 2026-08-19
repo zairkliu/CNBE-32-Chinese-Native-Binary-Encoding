@@ -13,6 +13,7 @@
 | `SEGMENTFAULT_REVIEW_ANALYSIS_2026-08-19.md` | 外部专业评审分析：有效观点与必须修复的 fatal gaps |
 | `CNBE_POSITIONING_ANALYSIS_2026-08-19.md` | CNBE 通用 NLU vs 结构敏感任务定位分析与差异化 |
 | `CNBE_EXISTING_WORK_AND_DIFFERENTIATION_2026-08-19.md` | 已有工作、他人未尝试原因、ChineseBERT/Glyce/SubChar 对比与方向判断 |
+| `PROJECT_COMPARISON_LESSONS_2026-08-19.md` | 已有项目情况分析及对 CNBE 项目的启示 |
 | `A800_TRAINING_PROGRESS_MODEL_2026-08-18.md` | 基于 184,482 步损失分布的训练进度与稳定性模型 |
 | `A800_TRAINING_PROGRESS_MODEL_2026-08-19.md` | 基于 250,578 步损失分布的最新训练进度与稳定性模型 |
 | `WHITEPAPER_CNBE_FULL_JOURNEY_2026-08-18.md` | 国标对齐到 A800 的全链路白皮书 |
