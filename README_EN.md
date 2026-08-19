@@ -45,11 +45,12 @@ experiments, embedding baselines, and an ancient PDF corpus plan:
 - [OCR candidate reranking experiments](./experiments/2026-08-19_small_scale_ocr_rerank/REPORT.md)
 - [ChineseBERT / BERT embedding baselines](./experiments/2026-08-19_small_scale_ocr_rerank/EMBEDDING_COMPARISON_REPORT.md)
 - [Ancient PDF corpus plan and manifest](./experiments/2026-08-19_ancient_pdf_corpus/PLAN.md)
+- [Evidence status and claim boundaries](./docs/EVIDENCE_STATUS_2026-08-19.md)
 
-Key results:
+Key pilot results and boundaries:
 
-- Real OCR rerank: GBDT + CNBE features 66.39% vs Unicode 50.42%;
-- DeepSeek V4 API: CNBE 92.31% vs Unicode 85.71% vs plain 71.43%;
+- OCR-residual constructed-candidate ranking: GBDT + CNBE features 66.39% vs Unicode 50.42% on a page-held-out split. The candidate set is truth-derived, so this is not a production OCR top-N result;
+- DeepSeek V4 API: 92.31% / 85.71% / 71.43% for CNBE / Unicode / plain on their respective parsed subsets of 19 prompts (parse rates 68--74%); this is feasibility evidence only;
 - Embeddings: bert-base-chinese 40.58%, ChineseBERT 18.12%, raw CNBE 15.94%;
 - Yongle 37-page e2e: 90.91% -> 92.64%;
 - Ancient PDF pilot: 100% CNBE coverage.
@@ -83,10 +84,13 @@ Studio, and a classical-text cleanup pipeline.
 - **Cloud validated (second round)**: SCNet DCU BW x2, 544M CNBE tokens,
   128 shared experts, 626M params, next-code 23.56%, struct 44.07%,
   Gini 0.297.
-- **Controlled comparison (v1)**: MoE-128 22.96%, Dense 2.61%,
-  Unicode 0.001%; equal-parameter Dense confirms the MoE gain.
-- **A800 5.4B training**: v2 frozen corpus, configs and run scripts are ready;
-  smoke test is the next milestone.
+- **v1 comparison (preliminary)**: the MoE-128, Dense, Unicode, and
+  matched-Dense runs are an exploratory record. The 0.001% Unicode result is
+  under investigation; no causal MoE or CNBE-over-Unicode conclusion is made
+  before its rerun, conditional accuracy, equal-compute controls, and direct
+  prior-work baselines.
+- **A800 5.4B training (in progress)**: the 2026-08-19 snapshot records
+  250,578 / 618,750 steps (40.5%). Final evaluation is pending.
 - **Planned / awaiting scale validation**: 256-expert MoE, d_model
   512-1024, 9B punctuation-model fusion, end-to-end classical-text cleanup,
   and CNBE64/CNBE128 evidence archives.
@@ -672,6 +676,9 @@ The next training target is A800 x2 on the full v2 train stream:
 - [A800 Training Plan Review](./docs/A800_5_4B_TRAINING_PLAN_REVIEW_2026-08-14.md)
 - [A800 5.4B Experiment Package](./experiments/2026-08-14_a800_5_4b/)
 
+Status update: the plan has progressed to an in-flight run. The 2026-08-19
+snapshot records 250,578 / 618,750 steps (40.5%); it is not a final evaluation.
+
 ### 2026-08-19: Structure-Sensitive Rerank and Ancient PDF Corpus
 
 The project completed structure-sensitive experiments to support the
@@ -679,9 +686,9 @@ positioning of CNBE as a computational structural fingerprint layer:
 
 | Experiment | Result |
 |---|---|
-| Real OCR rerank, Unicode baseline | 50.42% Top-1 |
-| Real OCR rerank, GBDT + CNBE features | 66.39% Top-1 |
-| DeepSeek V4 API, plain / Unicode / CNBE | 71.43% / 85.71% / 92.31% |
+| OCR-residual constructed-candidate pilot, Unicode baseline | 50.42% Top-1 on page-held-out groups |
+| OCR-residual constructed-candidate pilot, GBDT + CNBE features | 66.39% Top-1; not a production OCR top-N result |
+| DeepSeek V4 API pilot, plain / Unicode / CNBE | 71.43% / 85.71% / 92.31% on separate parsed subsets of 19 prompts |
 | bert-base-chinese / ChineseBERT / raw CNBE | 40.58% / 18.12% / 15.94% |
 | Yongle 37-page e2e | 90.91% -> 92.64% |
 

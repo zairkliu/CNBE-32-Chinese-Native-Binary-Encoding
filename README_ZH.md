@@ -40,11 +40,12 @@ CNBE-32 是一项面向中文的完整原生编码体系，目标是在机器码
 - [OCR 候选重排实验](./experiments/2026-08-19_small_scale_ocr_rerank/REPORT.md)
 - [ChineseBERT / BERT embedding 对照](./experiments/2026-08-19_small_scale_ocr_rerank/EMBEDDING_COMPARISON_REPORT.md)
 - [古籍 PDF 语料方案与清单](./experiments/2026-08-19_ancient_pdf_corpus/PLAN.md)
+- [证据状态与主张边界](./docs/EVIDENCE_STATUS_2026-08-19.md)
 
-关键结果：
+关键 pilot 结果与边界：
 
-- 真实 OCR 重排：GBDT + CNBE 特征 66.39%，Unicode 50.42%；
-- DeepSeek V4 API：CNBE 92.31%、Unicode 85.71%、plain 71.43%；
+- OCR 残差的构造候选重排：按页留出时，GBDT + CNBE 特征 66.39%，Unicode 50.42%。候选集含由真值派生的条目，不能视作真实 OCR top-N 结果；
+- DeepSeek V4 API：19 个提示中，CNBE / Unicode / plain 在各自可解析子集上为 92.31% / 85.71% / 71.43%，解析率为 68%--74%；仅作为可行性证据；
 - embedding：bert-base-chinese 40.58%、ChineseBERT 18.12%、raw CNBE 15.94%；
 - 永乐大典 37 页端到端：90.91% -> 92.64%；
 - 古籍 OCR pilot：CNBE 覆盖率 100%。
@@ -73,10 +74,11 @@ OCR 工程师、中文信息处理研究者、政策与标准化观察者、中�
   next-code 19.12%、Gini 0.207。
 - **云实证（第二轮）**：SCNet DCU BW x2、544M CNBE token、128 共享专家、
   626M 参数、next-code 23.56%、struct 44.07%、Gini 0.297。
-- **v1 受控对比**：MoE-128 22.96%、Dense 2.61%、Unicode 0.001%；
-  等参数 Dense 确认 MoE 增益。
-- **A800 5.4B 训练**：v2 冻结语料、配置与运行脚本已就绪；
-  下一步为 smoke 测试。
+- **v1 对比（初步）**：MoE-128、Dense、Unicode 与 matched-Dense 均保留为探索记录。
+  Unicode 的 0.001% 正在复核；在完成重跑、非零码条件准确率、等计算预算对照与
+  既有方法直接基线前，不主张 MoE 的因果增益或 CNBE 优于 Unicode。
+- **A800 5.4B 训练（进行中）**：2026-08-19 快照为 250,578 / 618,750 步（40.5%）；
+  尚无最终评估结果。
 - **规划中 / 待规模化验证**：256 专家 MoE、d_model 512-1024、9B 句读模型融合、
   端到端古籍整理工具、CNBE64/CNBE128 证据归档。
 - **项目状态**：研究原型 -> 工程验证中。仓库会明确标注每项工作的证据等级，
@@ -620,15 +622,18 @@ v2 语料已正式冻结：
 - [A800 训练计划审阅稿](./docs/A800_5_4B_TRAINING_PLAN_REVIEW_2026-08-14.md)
 - [A800 5.4B 实验包](./experiments/2026-08-14_a800_5_4b/)
 
+状态更新：该计划已进入正式训练。2026-08-19 快照为 250,578 / 618,750 步（40.5%），
+不构成最终评估结果。
+
 ### 2026-08-19：结构敏感重排与古籍 PDF 语料
 
 为回答“CNBE 作为计算结构指纹层的差异化优势”这一问题，项目完成了一组结构敏感实验：
 
 | 实验 | 结果 |
 |---|---|
-| 真实 OCR 重排，Unicode baseline | 50.42% Top-1 |
-| 真实 OCR 重排，GBDT + CNBE 特征 | 66.39% Top-1 |
-| DeepSeek V4 API，plain / Unicode / CNBE | 71.43% / 85.71% / 92.31% |
+| OCR 残差构造候选 pilot，Unicode baseline | 按页留出组上 50.42% Top-1 |
+| OCR 残差构造候选 pilot，GBDT + CNBE 特征 | 66.39% Top-1；不是生产 OCR top-N 结果 |
+| DeepSeek V4 API pilot，plain / Unicode / CNBE | 19 个提示的各自可解析子集上为 71.43% / 85.71% / 92.31% |
 | bert-base-chinese / ChineseBERT / raw CNBE | 40.58% / 18.12% / 15.94% |
 | 永乐大典 37 页端到端 | 90.91% -> 92.64% |
 
