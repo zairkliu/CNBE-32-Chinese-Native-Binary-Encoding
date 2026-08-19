@@ -1,0 +1,34 @@
+{
+  "pdf": "D:\\古籍\\【古籍】永乐大典219本.散本收集✔\\永乐大典（明嘉靖隆庆间内府重写本）\\永乐大典.卷913-914.尸字.明嘉靖隆庆间内府重写本.pdf",
+  "first": 1,
+  "last": 2,
+  "pages": [
+    {
+      "page": "page-001.png",
+      "chars": 0,
+      "unique_chars": 0,
+      "in_db": 0,
+      "in_standard": 0,
+      "coverage_db": 0.0,
+      "coverage_standard": 0.0,
+      "elapsed": 35.72,
+      "text_preview": ", and book cover, book cover, book cover, book cover, book cover, book cover, book cover, book cover, book cover, book c"
+    },
+    {
+      "page": "page-002.png",
+      "chars": 3696,
+      "unique_chars": 31,
+      "in_db": 3696,
+      "in_standard": 3696,
+      "coverage_db": 1.0,
+      "coverage_standard": 1.0,
+      "elapsed": 43.3,
+      "text_preview": "九百十四卷\n小说蒙求 廿六页内一俗\n五代碑史 十九页内一俗\n撰遗新说 廿六页内一俗\n经世大典 二十五页内一俗\n卷三 三十五页内一俗\n经世大典 三十五页内一俗\n卷四 三十五页内一俗\n卷五 三十五页内一俗\n卷六 三十五页内一俗\n卷七 三十五页内"
+    }
+  ],
+  "summary": {
+    "pages": 2,
+    "total_chars": 3696,
+    "coverage_db_avg": 0.5
+  }
+}
