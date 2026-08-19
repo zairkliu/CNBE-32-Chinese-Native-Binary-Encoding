@@ -32,14 +32,19 @@
         "mean_rank": 7.915966386554622
       },
       "learned_lr": {
-        "top1_accuracy": 0.4117647058823529,
-        "mean_reciprocal_rank": 0.5100390110580907,
-        "mean_rank": 8.521008403361344
+        "top1_accuracy": 0.44537815126050423,
+        "mean_reciprocal_rank": 0.5483062773946608,
+        "mean_rank": 7.394957983193278
       },
       "learned_gbdt": {
-        "top1_accuracy": 0.6302521008403361,
-        "mean_reciprocal_rank": 0.693131968387817,
-        "mean_rank": 5.042016806722689
+        "top1_accuracy": 0.6638655462184874,
+        "mean_reciprocal_rank": 0.7122618225179531,
+        "mean_rank": 4.932773109243698
+      },
+      "learned_mlp": {
+        "top1_accuracy": 0.6218487394957983,
+        "mean_reciprocal_rank": 0.6648623927323213,
+        "mean_rank": 5.781512605042017
       }
     },
     "by_label": {
@@ -70,14 +75,19 @@
           "mean_rank": 10.961538461538462
         },
         "learned_lr": {
-          "top1_accuracy": 0.11538461538461539,
-          "mean_reciprocal_rank": 0.21457557568387525,
-          "mean_rank": 11.884615384615385
+          "top1_accuracy": 0.15384615384615385,
+          "mean_reciprocal_rank": 0.26096309460222805,
+          "mean_rank": 11.384615384615385
         },
         "learned_gbdt": {
-          "top1_accuracy": 0.23076923076923078,
-          "mean_reciprocal_rank": 0.32800353169745305,
-          "mean_rank": 10.0
+          "top1_accuracy": 0.19230769230769232,
+          "mean_reciprocal_rank": 0.3030420327535712,
+          "mean_rank": 10.153846153846153
+        },
+        "learned_mlp": {
+          "top1_accuracy": 0.19230769230769232,
+          "mean_reciprocal_rank": 0.292029392606018,
+          "mean_rank": 10.23076923076923
         }
       },
       "shape_confusable": {
@@ -107,14 +117,19 @@
           "mean_rank": 8.2
         },
         "learned_lr": {
-          "top1_accuracy": 0.9,
-          "mean_reciprocal_rank": 0.9199999999999999,
-          "mean_rank": 1.4
+          "top1_accuracy": 0.7,
+          "mean_reciprocal_rank": 0.7924242424242424,
+          "mean_rank": 2.3
         },
         "learned_gbdt": {
+          "top1_accuracy": 0.8,
+          "mean_reciprocal_rank": 0.8545454545454545,
+          "mean_rank": 3.2
+        },
+        "learned_mlp": {
           "top1_accuracy": 0.9,
-          "mean_reciprocal_rank": 0.9038461538461539,
-          "mean_rank": 3.5
+          "mean_reciprocal_rank": 0.9037037037037037,
+          "mean_rank": 3.6
         }
       },
       "truth_not_in_standard": {
@@ -144,14 +159,19 @@
           "mean_rank": 17.12
         },
         "learned_lr": {
-          "top1_accuracy": 0.48,
-          "mean_reciprocal_rank": 0.5422427687255273,
-          "mean_rank": 10.56
+          "top1_accuracy": 0.32,
+          "mean_reciprocal_rank": 0.44310017565280724,
+          "mean_rank": 10.6
         },
         "learned_gbdt": {
-          "top1_accuracy": 0.52,
-          "mean_reciprocal_rank": 0.6088867757629367,
-          "mean_rank": 6.44
+          "top1_accuracy": 0.6,
+          "mean_reciprocal_rank": 0.6482495807687623,
+          "mean_rank": 6.64
+        },
+        "learned_mlp": {
+          "top1_accuracy": 0.48,
+          "mean_reciprocal_rank": 0.5188617419229113,
+          "mean_rank": 9.36
         }
       },
       "variant": {
@@ -181,14 +201,19 @@
           "mean_rank": 2.5344827586206895
         },
         "learned_lr": {
-          "top1_accuracy": 0.43103448275862066,
-          "mean_reciprocal_rank": 0.5579242781033422,
-          "mean_rank": 7.362068965517241
+          "top1_accuracy": 0.5862068965517241,
+          "mean_reciprocal_rank": 0.6803734437024845,
+          "mean_rank": 5.103448275862069
         },
         "learned_gbdt": {
-          "top1_accuracy": 0.8103448275862069,
-          "mean_reciprocal_rank": 0.8567927841634738,
-          "mean_rank": 2.4827586206896552
+          "top1_accuracy": 0.8793103448275862,
+          "mean_reciprocal_rank": 0.8987649993684477,
+          "mean_rank": 2.1551724137931036
+        },
+        "learned_mlp": {
+          "top1_accuracy": 0.8275862068965517,
+          "mean_reciprocal_rank": 0.8537462059013783,
+          "mean_rank": 2.6206896551724137
         }
       }
     }

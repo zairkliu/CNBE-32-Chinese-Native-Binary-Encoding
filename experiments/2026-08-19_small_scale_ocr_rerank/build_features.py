@@ -12,8 +12,10 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO / "src"))
+sys.path.insert(0, str(REPO / "experiments/2026-08-05_v1_yongle_ocr_cnbe"))
 
 from cnbe32 import CNBEKnowledgeBridge  # noqa: E402
+import run_v1_experiment as v1  # noqa: E402
 
 
 def cjk_clean(text: str) -> str:
@@ -24,6 +26,9 @@ def main() -> int:
     exp = Path(__file__).resolve().parent
     pairs = json.loads((exp / "all_substitutions.json").read_text(encoding="utf-8"))
     bridge = CNBEKnowledgeBridge()
+    freq = v1.load_corpus_freq(
+        REPO / "experiments/2026-08-02_seven_corpora_compression" / "data"
+    )
     standard_pool = [r["char"] for r in bridge._all_rows() if r.get("track") == "standard"]
     page_chars: dict[int, list[str]] = defaultdict(list)
     page_text: dict[int, str] = {}
@@ -61,6 +66,8 @@ def main() -> int:
             fields = d["fields"]
             left_d = bridge.distance(cand, left) if left else None
             right_d = bridge.distance(cand, right) if right else None
+            so = bridge.lookup(ocr)
+            sc = bridge.lookup(cand)
             records.append(
                 {
                     "page": p["page"],
@@ -87,6 +94,11 @@ def main() -> int:
                         "cand_right_cnbe": (
                             right_d["field_weighted_distance"] if right_d else 999
                         ),
+                        "candidate_freq": freq.get(cand, 0),
+                        "truth_freq": freq.get(truth, 0),
+                        "cnbe_radix_diff": abs(so.radix - sc.radix),
+                        "cnbe_stroke_diff": abs(so.stroke - sc.stroke),
+                        "cnbe_struct_diff": abs(so.struct - sc.struct),
                     },
                 }
             )

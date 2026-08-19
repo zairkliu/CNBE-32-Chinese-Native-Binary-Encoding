@@ -12,6 +12,9 @@ from pathlib import Path
 import numpy as np
 from sklearn.ensemble import HistGradientBoostingClassifier
 from sklearn.linear_model import LogisticRegression
+from sklearn.neural_network import MLPClassifier
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
 
 
 FEATURES = [
@@ -23,11 +26,15 @@ FEATURES = [
     "struct_same",
     "idx_same",
     "ocr_in_standard",
-    "truth_in_standard",
     "left_unicode",
     "right_unicode",
     "cand_left_cnbe",
     "cand_right_cnbe",
+    "candidate_freq",
+    "cnbe_radix_diff",
+    "cnbe_stroke_diff",
+    "cnbe_struct_diff",
+    "variant_target_match",
 ]
 
 REPO = Path(__file__).resolve().parents[2]
@@ -62,6 +69,10 @@ def main() -> int:
     with (exp / "features.jsonl").open(encoding="utf-8") as f:
         for line in f:
             records.append(json.loads(line))
+    for r in records:
+        r["features"]["variant_target_match"] = int(
+            variant_map.get(r["ocr"]) == r["candidate"]
+        )
 
     pages = sorted({r["page"] for r in records})
     rng = random.Random(42)
@@ -78,6 +89,19 @@ def main() -> int:
     models = {
         "learned_lr": LogisticRegression(max_iter=1000),
         "learned_gbdt": HistGradientBoostingClassifier(max_iter=300, random_state=42),
+        "learned_mlp": Pipeline(
+            [
+                ("scale", StandardScaler()),
+                (
+                    "mlp",
+                    MLPClassifier(
+                        hidden_layer_sizes=(32,),
+                        max_iter=500,
+                        random_state=42,
+                    ),
+                ),
+            ]
+        ),
     }
     for name, clf in models.items():
         clf.fit(matrix(train_records), [r["label"] for r in train_records])
@@ -97,6 +121,7 @@ def main() -> int:
         "variant_map",
         "learned_lr",
         "learned_gbdt",
+        "learned_mlp",
     ]
     collected = {m: [] for m in methods}
     for (page, ocr, truth, label), cands in groups.items():

@@ -99,7 +99,7 @@ python experiments/2026-08-19_small_scale_ocr_rerank/train_reranker.py
 - Unihan variant map baseline；
 - HistGradientBoostingClassifier。
 
-总体结果：
+总体结果（已移除目标字频率等泄漏特征）：
 
 | 方法 | Top-1 | MRR |
 |---|---:|---:|
@@ -108,20 +108,21 @@ python experiments/2026-08-19_small_scale_ocr_rerank/train_reranker.py
 | CNBE weighted | 21.85% | 0.3187 |
 | CNBE hamming | 19.33% | 0.3062 |
 | Variant map | 41.18% | 0.4853 |
-| Learned LR | 41.18% | 0.5100 |
-| Learned GBDT | 63.03% | 0.6931 |
+| Learned LR | 44.54% | 0.5483 |
+| Learned GBDT | 66.39% | 0.7123 |
+| Learned MLP | 62.18% | 0.6649 |
 
 按 label 看：
 
 | 类型 | Unicode Top-1 | GBDT Top-1 | Variant map Top-1 |
 |---|---:|---:|---:|
-| variant | 56.90% | 81.03% | 79.31% |
-| shape_confusable | 90.00% | 90.00% | 10.00% |
-| other | 15.38% | 23.08% | 3.85% |
+| variant | 56.90% | 87.93% | 79.31% |
+| shape_confusable | 90.00% | 80.00% | 10.00% |
+| other | 15.38% | 19.23% | 3.85% |
 
 结论：
 
 1. GBDT 加上下文特征后总体超过 Unicode；
 2. variant 错误由 variant map 和 GBDT 共同覆盖；
-3. shape_confusable 仍主要由 Unicode/CNBE weighted 覆盖；
+3. shape_confusable 上 Unicode/MLP 仍更强；
 4. 下一步用真实 OCR top-N 和更强上下文模型继续提升。
