@@ -1,0 +1,5429 @@
+[
+  {
+    "page": 3,
+    "ocr": "宮",
+    "truth": "宫",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 3,
+    "ocr": "寂",
+    "truth": "最",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 269
+  },
+  {
+    "page": 3,
+    "ocr": "宮",
+    "truth": "宫",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 3,
+    "ocr": "說",
+    "truth": "説",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 3,
+    "ocr": "戯",
+    "truth": "戲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 3,
+    "ocr": "冝",
+    "truth": "宜",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 3,
+    "ocr": "尻",
+    "truth": "兄",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 288
+  },
+  {
+    "page": 3,
+    "ocr": "莊",
+    "truth": "黈",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 4,
+    "ocr": "踈",
+    "truth": "疏",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 4,
+    "ocr": "搖",
+    "truth": "揺",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 4,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 4,
+    "ocr": "說",
+    "truth": "説",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 4,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 4,
+    "ocr": "詠",
+    "truth": "咏",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 4,
+    "ocr": "詠",
+    "truth": "咏",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 4,
+    "ocr": "詠",
+    "truth": "咏",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 4,
+    "ocr": "瀑",
+    "truth": "暴",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 127
+  },
+  {
+    "page": 5,
+    "ocr": "掛",
+    "truth": "行",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 5,
+    "ocr": "灞",
+    "truth": "霸",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 727
+  },
+  {
+    "page": 5,
+    "ocr": "髙",
+    "truth": "高",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 5,
+    "ocr": "戯",
+    "truth": "戲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 5,
+    "ocr": "暮",
+    "truth": "謨",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 5,
+    "ocr": "逺",
+    "truth": "遠",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 5,
+    "ocr": "髙",
+    "truth": "高",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 5,
+    "ocr": "髙",
+    "truth": "高",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 5,
+    "ocr": "橫",
+    "truth": "横",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 5,
+    "ocr": "冝",
+    "truth": "宜",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 6,
+    "ocr": "永",
+    "truth": "此",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 81
+  },
+  {
+    "page": 6,
+    "ocr": "大",
+    "truth": "道",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 1061
+  },
+  {
+    "page": 6,
+    "ocr": "逺",
+    "truth": "能",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 6,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 6,
+    "ocr": "寳",
+    "truth": "寶",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 6,
+    "ocr": "髙",
+    "truth": "高",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 6,
+    "ocr": "逺",
+    "truth": "遠",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 6,
+    "ocr": "寳",
+    "truth": "寶",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 6,
+    "ocr": "吳",
+    "truth": "呉",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 6,
+    "ocr": "醹",
+    "truth": "醽",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 6,
+    "ocr": "魯",
+    "truth": "曾",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 6,
+    "ocr": "汙",
+    "truth": "污",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 6,
+    "ocr": "筍",
+    "truth": "笋",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 6,
+    "ocr": "詠",
+    "truth": "咏",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 6,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 6,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 6,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 6,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 6,
+    "ocr": "皷",
+    "truth": "鼓",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 6,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 6,
+    "ocr": "皷",
+    "truth": "鼓",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 6,
+    "ocr": "皷",
+    "truth": "鼓",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 6,
+    "ocr": "皷",
+    "truth": "鼓",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 6,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 7,
+    "ocr": "逺",
+    "truth": "遠",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 7,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 7,
+    "ocr": "鴈",
+    "truth": "雁",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 7,
+    "ocr": "膓",
+    "truth": "腸",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 7,
+    "ocr": "銜",
+    "truth": "衘",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 7,
+    "ocr": "荅",
+    "truth": "答",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 7,
+    "ocr": "瑤",
+    "truth": "瑶",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 7,
+    "ocr": "鴈",
+    "truth": "雁",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 7,
+    "ocr": "髪",
+    "truth": "髮",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 7,
+    "ocr": "顏",
+    "truth": "顔",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 7,
+    "ocr": "瑤",
+    "truth": "瑶",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 7,
+    "ocr": "街",
+    "truth": "衘",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 7,
+    "ocr": "逺",
+    "truth": "遠",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 7,
+    "ocr": "魯",
+    "truth": "曾",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 7,
+    "ocr": "詠",
+    "truth": "咏",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 7,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 7,
+    "ocr": "挨",
+    "truth": "捩",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 5
+  },
+  {
+    "page": 8,
+    "ocr": "永",
+    "truth": "沈",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 22
+  },
+  {
+    "page": 8,
+    "ocr": "大",
+    "truth": "矣",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 656
+  },
+  {
+    "page": 8,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 8,
+    "ocr": "黃",
+    "truth": "黄",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 8,
+    "ocr": "瑤",
+    "truth": "瑶",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 8,
+    "ocr": "踈",
+    "truth": "疏",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 8,
+    "ocr": "瑤",
+    "truth": "瑶",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 8,
+    "ocr": "兮",
+    "truth": "弓",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 369
+  },
+  {
+    "page": 8,
+    "ocr": "踈",
+    "truth": "疏",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 8,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 8,
+    "ocr": "橫",
+    "truth": "横",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 8,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 8,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 8,
+    "ocr": "盡",
+    "truth": "畫",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 8,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 8,
+    "ocr": "髙",
+    "truth": "高",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 8,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 8,
+    "ocr": "髙",
+    "truth": "高",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 8,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 8,
+    "ocr": "遊",
+    "truth": "游",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 9,
+    "ocr": "覊",
+    "truth": "羈",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 9,
+    "ocr": "詠",
+    "truth": "咏",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 9,
+    "ocr": "傅",
+    "truth": "傳",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 9,
+    "ocr": "瑒",
+    "truth": "㻛",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 9,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 9,
+    "ocr": "別",
+    "truth": "别",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 9,
+    "ocr": "說",
+    "truth": "説",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 9,
+    "ocr": "橫",
+    "truth": "横",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 9,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 10,
+    "ocr": "熖",
+    "truth": "焰",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 10,
+    "ocr": "壠",
+    "truth": "壟",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 10,
+    "ocr": "髙",
+    "truth": "高",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 10,
+    "ocr": "眄",
+    "truth": "盻",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 10,
+    "ocr": "逺",
+    "truth": "遠",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 10,
+    "ocr": "蒲",
+    "truth": "滿",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 10,
+    "ocr": "蒲",
+    "truth": "滿",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 10,
+    "ocr": "虛",
+    "truth": "虚",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 10,
+    "ocr": "蒲",
+    "truth": "滿",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 10,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 10,
+    "ocr": "毀",
+    "truth": "毁",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 10,
+    "ocr": "絕",
+    "truth": "絶",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 10,
+    "ocr": "己",
+    "truth": "已",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 0
+  },
+  {
+    "page": 10,
+    "ocr": "詠",
+    "truth": "咏",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 10,
+    "ocr": "沖",
+    "truth": "冲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 10,
+    "ocr": "瑒",
+    "truth": "㻛",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 10,
+    "ocr": "瑒",
+    "truth": "㻛",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 10,
+    "ocr": "瑒",
+    "truth": "㻛",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 10,
+    "ocr": "髙",
+    "truth": "高",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 11,
+    "ocr": "竒",
+    "truth": "奇",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 11,
+    "ocr": "詠",
+    "truth": "咏",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 11,
+    "ocr": "簷",
+    "truth": "檐",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 11,
+    "ocr": "窻",
+    "truth": "窗",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 11,
+    "ocr": "湏",
+    "truth": "須",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 11,
+    "ocr": "折",
+    "truth": "拆",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 5
+  },
+  {
+    "page": 11,
+    "ocr": "㝡",
+    "truth": "最",
+    "label": "ocr_not_in_db",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 11,
+    "ocr": "趨",
+    "truth": "趜",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 11,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 11,
+    "ocr": "宮",
+    "truth": "宫",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 11,
+    "ocr": "蘂",
+    "truth": "蕊",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 11,
+    "ocr": "蘂",
+    "truth": "蕊",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 11,
+    "ocr": "瑤",
+    "truth": "瑶",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 11,
+    "ocr": "說",
+    "truth": "説",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 11,
+    "ocr": "詠",
+    "truth": "咏",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 11,
+    "ocr": "橫",
+    "truth": "横",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 11,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 11,
+    "ocr": "羣",
+    "truth": "群",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 12,
+    "ocr": "鶋",
+    "truth": "鷉",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 12,
+    "ocr": "鶡",
+    "truth": "鸊",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 12,
+    "ocr": "鶋",
+    "truth": "鷉",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 12,
+    "ocr": "鶡",
+    "truth": "鸊",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 12,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 12,
+    "ocr": "鶋",
+    "truth": "鷉",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 12,
+    "ocr": "鶡",
+    "truth": "鸊",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 12,
+    "ocr": "鶋",
+    "truth": "鷉",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 12,
+    "ocr": "鶡",
+    "truth": "鸊",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 12,
+    "ocr": "莢",
+    "truth": "筴",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 12,
+    "ocr": "黃",
+    "truth": "黄",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 12,
+    "ocr": "髙",
+    "truth": "高",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 12,
+    "ocr": "綠",
+    "truth": "緑",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 12,
+    "ocr": "竒",
+    "truth": "奇",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 12,
+    "ocr": "峯",
+    "truth": "峰",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 12,
+    "ocr": "峯",
+    "truth": "峰",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 12,
+    "ocr": "髙",
+    "truth": "高",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 12,
+    "ocr": "㝡",
+    "truth": "最",
+    "label": "ocr_not_in_db",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 12,
+    "ocr": "別",
+    "truth": "别",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 12,
+    "ocr": "涼",
+    "truth": "凉",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 12,
+    "ocr": "昂",
+    "truth": "昴",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 5
+  },
+  {
+    "page": 12,
+    "ocr": "胷",
+    "truth": "胸",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 12,
+    "ocr": "絕",
+    "truth": "絶",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 13,
+    "ocr": "寘",
+    "truth": "寊",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 13,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 13,
+    "ocr": "李",
+    "truth": "季",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 293
+  },
+  {
+    "page": 13,
+    "ocr": "輙",
+    "truth": "輒",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 13,
+    "ocr": "臯",
+    "truth": "皋",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 13,
+    "ocr": "寫",
+    "truth": "冩",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 13,
+    "ocr": "臯",
+    "truth": "皋",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 13,
+    "ocr": "臯",
+    "truth": "皋",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 13,
+    "ocr": "臯",
+    "truth": "皋",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 13,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 13,
+    "ocr": "臯",
+    "truth": "皋",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 13,
+    "ocr": "臯",
+    "truth": "皋",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 13,
+    "ocr": "蜮",
+    "truth": "蝛",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 13,
+    "ocr": "蜥",
+    "truth": "蛜",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 13,
+    "ocr": "湏",
+    "truth": "須",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 13,
+    "ocr": "蘂",
+    "truth": "蕊",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 13,
+    "ocr": "嬾",
+    "truth": "懶",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 14,
+    "ocr": "黃",
+    "truth": "黄",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 14,
+    "ocr": "嵇",
+    "truth": "嵍",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 14,
+    "ocr": "嚾",
+    "truth": "巏",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 14,
+    "ocr": "羨",
+    "truth": "羡",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 14,
+    "ocr": "嵇",
+    "truth": "嵍",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 14,
+    "ocr": "嚾",
+    "truth": "巏",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 14,
+    "ocr": "別",
+    "truth": "别",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 14,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 14,
+    "ocr": "寫",
+    "truth": "冩",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 14,
+    "ocr": "註",
+    "truth": "注",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 14,
+    "ocr": "吳",
+    "truth": "呉",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 14,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 15,
+    "ocr": "巳",
+    "truth": "已",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 15,
+    "ocr": "隅",
+    "truth": "隔",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 5
+  },
+  {
+    "page": 15,
+    "ocr": "絕",
+    "truth": "絶",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 15,
+    "ocr": "絕",
+    "truth": "絶",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 15,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 15,
+    "ocr": "冣",
+    "truth": "最",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 15,
+    "ocr": "黃",
+    "truth": "黄",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 15,
+    "ocr": "商",
+    "truth": "啇",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 15,
+    "ocr": "絢",
+    "truth": "絇",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 15,
+    "ocr": "絢",
+    "truth": "絇",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 15,
+    "ocr": "絢",
+    "truth": "絇",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 15,
+    "ocr": "絢",
+    "truth": "絇",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 15,
+    "ocr": "絢",
+    "truth": "絇",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 15,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 15,
+    "ocr": "絢",
+    "truth": "絇",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 15,
+    "ocr": "絢",
+    "truth": "絇",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 15,
+    "ocr": "絢",
+    "truth": "絇",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 15,
+    "ocr": "黃",
+    "truth": "黄",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 15,
+    "ocr": "竒",
+    "truth": "奇",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 16,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 16,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 16,
+    "ocr": "不",
+    "truth": "㳅",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 16,
+    "ocr": "綠",
+    "truth": "緑",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 16,
+    "ocr": "綠",
+    "truth": "緑",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 16,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 16,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 16,
+    "ocr": "已",
+    "truth": "己",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 0
+  },
+  {
+    "page": 16,
+    "ocr": "別",
+    "truth": "别",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 17,
+    "ocr": "闢",
+    "truth": "關",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 17,
+    "ocr": "闢",
+    "truth": "關",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 17,
+    "ocr": "闢",
+    "truth": "關",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 17,
+    "ocr": "夫",
+    "truth": "天",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 44
+  },
+  {
+    "page": 17,
+    "ocr": "脫",
+    "truth": "脱",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 17,
+    "ocr": "寳",
+    "truth": "寶",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 17,
+    "ocr": "刺",
+    "truth": "剌",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 5
+  },
+  {
+    "page": 17,
+    "ocr": "刺",
+    "truth": "剌",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 5
+  },
+  {
+    "page": 17,
+    "ocr": "須",
+    "truth": "頒",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 17,
+    "ocr": "真",
+    "truth": "直",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 10
+  },
+  {
+    "page": 17,
+    "ocr": "叅",
+    "truth": "參",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 17,
+    "ocr": "巳",
+    "truth": "已",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 17,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 17,
+    "ocr": "飮",
+    "truth": "飯",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 17,
+    "ocr": "褰",
+    "truth": "裹",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 14
+  },
+  {
+    "page": 17,
+    "ocr": "飮",
+    "truth": "飯",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 17,
+    "ocr": "褰",
+    "truth": "裹",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 14
+  },
+  {
+    "page": 17,
+    "ocr": "飮",
+    "truth": "飯",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 17,
+    "ocr": "衆",
+    "truth": "裹",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 17,
+    "ocr": "永",
+    "truth": "齊",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 17,
+    "ocr": "大",
+    "truth": "高",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 1291
+  },
+  {
+    "page": 18,
+    "ocr": "決",
+    "truth": "决",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 18,
+    "ocr": "巳",
+    "truth": "已",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 18,
+    "ocr": "豐",
+    "truth": "豊",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 18,
+    "ocr": "揚",
+    "truth": "掦",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 18,
+    "ocr": "掛",
+    "truth": "挂",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 18,
+    "ocr": "巳",
+    "truth": "已",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 18,
+    "ocr": "湏",
+    "truth": "須",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 18,
+    "ocr": "戇",
+    "truth": "戅",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 18,
+    "ocr": "太",
+    "truth": "大",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 17
+  },
+  {
+    "page": 18,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 18,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 18,
+    "ocr": "吳",
+    "truth": "呉",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 19,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 19,
+    "ocr": "効",
+    "truth": "效",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 19,
+    "ocr": "飜",
+    "truth": "翻",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 19,
+    "ocr": "湧",
+    "truth": "涌",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 19,
+    "ocr": "看",
+    "truth": "㸔",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 19,
+    "ocr": "遙",
+    "truth": "遥",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 19,
+    "ocr": "虛",
+    "truth": "虚",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 19,
+    "ocr": "沍",
+    "truth": "㳅",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 19,
+    "ocr": "虛",
+    "truth": "虚",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 19,
+    "ocr": "說",
+    "truth": "説",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 20,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 20,
+    "ocr": "煖",
+    "truth": "暖",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 20,
+    "ocr": "顏",
+    "truth": "顔",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 20,
+    "ocr": "廈",
+    "truth": "厦",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 20,
+    "ocr": "虛",
+    "truth": "虚",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 20,
+    "ocr": "黃",
+    "truth": "黄",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 20,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 20,
+    "ocr": "綠",
+    "truth": "緑",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 20,
+    "ocr": "說",
+    "truth": "説",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 20,
+    "ocr": "錄",
+    "truth": "録",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 20,
+    "ocr": "宫",
+    "truth": "宮",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 20,
+    "ocr": "唐",
+    "truth": "友",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 38
+  },
+  {
+    "page": 20,
+    "ocr": "謂",
+    "truth": "使",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 20,
+    "ocr": "以",
+    "truth": "舶",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 1059
+  },
+  {
+    "page": 20,
+    "ocr": "者",
+    "truth": "市",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 631
+  },
+  {
+    "page": 20,
+    "ocr": "妄",
+    "truth": "南",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 127
+  },
+  {
+    "page": 20,
+    "ocr": "義",
+    "truth": "廣",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 20,
+    "ocr": "其",
+    "truth": "爲",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 20,
+    "ocr": "曉",
+    "truth": "一",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 20,
+    "ocr": "莫",
+    "truth": "太",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 886
+  },
+  {
+    "page": 20,
+    "ocr": "世",
+    "truth": "吕",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 241
+  },
+  {
+    "page": 20,
+    "ocr": "云",
+    "truth": "詩",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 20,
+    "ocr": "坡",
+    "truth": "杜",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 349
+  },
+  {
+    "page": 20,
+    "ocr": "東",
+    "truth": "也",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 20,
+    "ocr": "反",
+    "truth": "語",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 20,
+    "ocr": "而",
+    "truth": "結",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 20,
+    "ocr": "休",
+    "truth": "可",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 185
+  },
+  {
+    "page": 20,
+    "ocr": "張",
+    "truth": "草",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 20,
+    "ocr": "史",
+    "truth": "南",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 72
+  },
+  {
+    "page": 20,
+    "ocr": "刺",
+    "truth": "江",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 546
+  },
+  {
+    "page": 20,
+    "ocr": "逐",
+    "truth": "折",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 819
+  },
+  {
+    "page": 20,
+    "ocr": "使",
+    "truth": "應",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 21,
+    "ocr": "妬",
+    "truth": "妒",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 21,
+    "ocr": "眥",
+    "truth": "眦",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 21,
+    "ocr": "眥",
+    "truth": "眦",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 21,
+    "ocr": "槩",
+    "truth": "㮣",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 21,
+    "ocr": "踈",
+    "truth": "疏",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 21,
+    "ocr": "麄",
+    "truth": "粗",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 21,
+    "ocr": "恠",
+    "truth": "怪",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 21,
+    "ocr": "巳",
+    "truth": "已",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 21,
+    "ocr": "藥",
+    "truth": "蕊",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 21,
+    "ocr": "看",
+    "truth": "㸔",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 21,
+    "ocr": "勑",
+    "truth": "敕",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 21,
+    "ocr": "闘",
+    "truth": "鬥",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 21,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 21,
+    "ocr": "闘",
+    "truth": "鬥",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 21,
+    "ocr": "勖",
+    "truth": "劻",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 21,
+    "ocr": "勖",
+    "truth": "劻",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 21,
+    "ocr": "隂",
+    "truth": "陰",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 21,
+    "ocr": "終",
+    "truth": "紛",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 21,
+    "ocr": "終",
+    "truth": "紛",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 21,
+    "ocr": "寳",
+    "truth": "寶",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 22,
+    "ocr": "刺",
+    "truth": "剌",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 5
+  },
+  {
+    "page": 22,
+    "ocr": "本",
+    "truth": "木",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 5
+  },
+  {
+    "page": 22,
+    "ocr": "憗",
+    "truth": "慭",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 22,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 22,
+    "ocr": "綠",
+    "truth": "緑",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 22,
+    "ocr": "呪",
+    "truth": "咒",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 22,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 22,
+    "ocr": "劒",
+    "truth": "劍",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 22,
+    "ocr": "黃",
+    "truth": "黄",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 22,
+    "ocr": "字",
+    "truth": "宇",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 8
+  },
+  {
+    "page": 22,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 22,
+    "ocr": "劒",
+    "truth": "劍",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 22,
+    "ocr": "黃",
+    "truth": "黄",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 22,
+    "ocr": "黃",
+    "truth": "黄",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 22,
+    "ocr": "鴈",
+    "truth": "雁",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 22,
+    "ocr": "鴈",
+    "truth": "雁",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 22,
+    "ocr": "䖏",
+    "truth": "處",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "刪",
+    "truth": "删",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "湏",
+    "truth": "須",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "湏",
+    "truth": "須",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "靣",
+    "truth": "面",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "魯",
+    "truth": "曽",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "湏",
+    "truth": "須",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "錄",
+    "truth": "録",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "吳",
+    "truth": "呉",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "乆",
+    "truth": "久",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "宮",
+    "truth": "宫",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "宮",
+    "truth": "宫",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "茲",
+    "truth": "兹",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "茲",
+    "truth": "兹",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "茲",
+    "truth": "兹",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "呂",
+    "truth": "吕",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "茲",
+    "truth": "兹",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "別",
+    "truth": "别",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "別",
+    "truth": "别",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "瑤",
+    "truth": "瑶",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "穆",
+    "truth": "穋",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "慙",
+    "truth": "慗",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "此",
+    "truth": "亭",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 575
+  },
+  {
+    "page": 23,
+    "ocr": "舘",
+    "truth": "下",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "之",
+    "truth": "白",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 830
+  },
+  {
+    "page": 23,
+    "ocr": "長",
+    "truth": "三",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "乎",
+    "truth": "詩",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "集",
+    "truth": "王",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 656
+  },
+  {
+    "page": 23,
+    "ocr": "又",
+    "truth": "門",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "柞",
+    "truth": "下",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 630
+  },
+  {
+    "page": 23,
+    "ocr": "五",
+    "truth": "白",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 797
+  },
+  {
+    "page": 23,
+    "ocr": "聯",
+    "truth": "當",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "而",
+    "truth": "正",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 401
+  },
+  {
+    "page": 23,
+    "ocr": "長",
+    "truth": "樹",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 23,
+    "ocr": "掩",
+    "truth": "三",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 552
+  },
+  {
+    "page": 23,
+    "ocr": "下",
+    "truth": "驛",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 24,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 24,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 24,
+    "ocr": "脫",
+    "truth": "脱",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 24,
+    "ocr": "宻",
+    "truth": "密",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 24,
+    "ocr": "魯",
+    "truth": "曽",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 24,
+    "ocr": "凜",
+    "truth": "凛",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 24,
+    "ocr": "凜",
+    "truth": "凛",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 24,
+    "ocr": "涵",
+    "truth": "㴠",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 24,
+    "ocr": "䖏",
+    "truth": "處",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 24,
+    "ocr": "邉",
+    "truth": "邊",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 24,
+    "ocr": "噓",
+    "truth": "嘘",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 24,
+    "ocr": "隂",
+    "truth": "陰",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 24,
+    "ocr": "虛",
+    "truth": "虚",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 24,
+    "ocr": "噓",
+    "truth": "嘘",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 25,
+    "ocr": "慗",
+    "truth": "憗",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 25,
+    "ocr": "㑹",
+    "truth": "會",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 25,
+    "ocr": "養",
+    "truth": "飬",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 25,
+    "ocr": "㑹",
+    "truth": "會",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 25,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 25,
+    "ocr": "㑹",
+    "truth": "會",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 25,
+    "ocr": "徵",
+    "truth": "徴",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 26,
+    "ocr": "永",
+    "truth": "欲",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 114
+  },
+  {
+    "page": 26,
+    "ocr": "大",
+    "truth": "圍",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 26,
+    "ocr": "疵",
+    "truth": "疪",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 26,
+    "ocr": "寃",
+    "truth": "冤",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 26,
+    "ocr": "冨",
+    "truth": "富",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 26,
+    "ocr": "冨",
+    "truth": "富",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 26,
+    "ocr": "每",
+    "truth": "母",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 14
+  },
+  {
+    "page": 26,
+    "ocr": "本",
+    "truth": "木",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 5
+  },
+  {
+    "page": 26,
+    "ocr": "凢",
+    "truth": "凡",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 26,
+    "ocr": "呂",
+    "truth": "吕",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 26,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 26,
+    "ocr": "羙",
+    "truth": "美",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 26,
+    "ocr": "達",
+    "truth": "逹",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 26,
+    "ocr": "囬",
+    "truth": "回",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 27,
+    "ocr": "說",
+    "truth": "説",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 27,
+    "ocr": "說",
+    "truth": "説",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 27,
+    "ocr": "眞",
+    "truth": "真",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 27,
+    "ocr": "囬",
+    "truth": "回",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 27,
+    "ocr": "囬",
+    "truth": "回",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 27,
+    "ocr": "揷",
+    "truth": "插",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 27,
+    "ocr": "黃",
+    "truth": "黄",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 27,
+    "ocr": "黃",
+    "truth": "黄",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 27,
+    "ocr": "寛",
+    "truth": "寬",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 27,
+    "ocr": "㑹",
+    "truth": "會",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 27,
+    "ocr": "鴈",
+    "truth": "雁",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 27,
+    "ocr": "宮",
+    "truth": "宫",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 27,
+    "ocr": "黃",
+    "truth": "黄",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 27,
+    "ocr": "冊",
+    "truth": "册",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 28,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 28,
+    "ocr": "縁",
+    "truth": "緣",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 28,
+    "ocr": "囬",
+    "truth": "回",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 28,
+    "ocr": "髙",
+    "truth": "高",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 28,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 28,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 28,
+    "ocr": "往",
+    "truth": "徃",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 28,
+    "ocr": "呌",
+    "truth": "叫",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 28,
+    "ocr": "說",
+    "truth": "説",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 28,
+    "ocr": "遊",
+    "truth": "游",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 29,
+    "ocr": "永",
+    "truth": "十",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 503
+  },
+  {
+    "page": 29,
+    "ocr": "大",
+    "truth": "服",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 357
+  },
+  {
+    "page": 29,
+    "ocr": "見",
+    "truth": "則",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 29,
+    "ocr": "既",
+    "truth": "旣",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 29,
+    "ocr": "効",
+    "truth": "效",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 29,
+    "ocr": "蓋",
+    "truth": "薟",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 29,
+    "ocr": "蟲",
+    "truth": "虱",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 29,
+    "ocr": "蓋",
+    "truth": "薟",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 29,
+    "ocr": "說",
+    "truth": "説",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 29,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 29,
+    "ocr": "也",
+    "truth": "虱",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 29,
+    "ocr": "嶽",
+    "truth": "薟",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 29,
+    "ocr": "達",
+    "truth": "逹",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 29,
+    "ocr": "蘢",
+    "truth": "薽",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 29,
+    "ocr": "荊",
+    "truth": "茢",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 29,
+    "ocr": "燭",
+    "truth": "煼",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 29,
+    "ocr": "蘢",
+    "truth": "薽",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 29,
+    "ocr": "荊",
+    "truth": "茢",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 29,
+    "ocr": "䟽",
+    "truth": "疏",
+    "label": "ocr_not_in_db",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 29,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 29,
+    "ocr": "段",
+    "truth": "叚",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 400
+  },
+  {
+    "page": 30,
+    "ocr": "鹽",
+    "truth": "鑒",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 30,
+    "ocr": "負",
+    "truth": "員",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 30,
+    "ocr": "備",
+    "truth": "傋",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 30,
+    "ocr": "氷",
+    "truth": "冰",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 30,
+    "ocr": "义",
+    "truth": "義",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 30,
+    "ocr": "逺",
+    "truth": "遠",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 30,
+    "ocr": "㢤",
+    "truth": "哉",
+    "label": "ocr_not_in_db",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 30,
+    "ocr": "湏",
+    "truth": "須",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 30,
+    "ocr": "㣲",
+    "truth": "微",
+    "label": "ocr_not_in_db",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 30,
+    "ocr": "㣲",
+    "truth": "微",
+    "label": "ocr_not_in_db",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 30,
+    "ocr": "達",
+    "truth": "逹",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 30,
+    "ocr": "己",
+    "truth": "已",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 0
+  },
+  {
+    "page": 30,
+    "ocr": "义",
+    "truth": "義",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 30,
+    "ocr": "䖏",
+    "truth": "處",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 30,
+    "ocr": "錄",
+    "truth": "録",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 30,
+    "ocr": "効",
+    "truth": "效",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 30,
+    "ocr": "三",
+    "truth": "二",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 53
+  },
+  {
+    "page": 30,
+    "ocr": "煑",
+    "truth": "煮",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 30,
+    "ocr": "顏",
+    "truth": "顔",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 30,
+    "ocr": "蓋",
+    "truth": "薟",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 30,
+    "ocr": "顏",
+    "truth": "顔",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 30,
+    "ocr": "㣲",
+    "truth": "微",
+    "label": "ocr_not_in_db",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 30,
+    "ocr": "乆",
+    "truth": "久",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 31,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 31,
+    "ocr": "別",
+    "truth": "别",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 31,
+    "ocr": "适",
+    "truth": "迂",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 15
+  },
+  {
+    "page": 31,
+    "ocr": "麗",
+    "truth": "廱",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 31,
+    "ocr": "第",
+    "truth": "弟",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 508
+  },
+  {
+    "page": 31,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 31,
+    "ocr": "暨",
+    "truth": "曁",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 31,
+    "ocr": "袖",
+    "truth": "䄂",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 31,
+    "ocr": "街",
+    "truth": "衘",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 31,
+    "ocr": "別",
+    "truth": "别",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 31,
+    "ocr": "髙",
+    "truth": "高",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 31,
+    "ocr": "刪",
+    "truth": "删",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 31,
+    "ocr": "乆",
+    "truth": "久",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 31,
+    "ocr": "髙",
+    "truth": "高",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 31,
+    "ocr": "街",
+    "truth": "衘",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 31,
+    "ocr": "髙",
+    "truth": "高",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 31,
+    "ocr": "槖",
+    "truth": "橐",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 31,
+    "ocr": "宮",
+    "truth": "宫",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 31,
+    "ocr": "之",
+    "truth": "高",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 1519
+  },
+  {
+    "page": 31,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 31,
+    "ocr": "歿",
+    "truth": "殁",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 31,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 31,
+    "ocr": "随",
+    "truth": "隨",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 31,
+    "ocr": "同",
+    "truth": "司",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 17
+  },
+  {
+    "page": 32,
+    "ocr": "內",
+    "truth": "内",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 32,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 32,
+    "ocr": "飈",
+    "truth": "飆",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 32,
+    "ocr": "內",
+    "truth": "内",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 32,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 32,
+    "ocr": "涼",
+    "truth": "凉",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 32,
+    "ocr": "第",
+    "truth": "弟",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 508
+  },
+  {
+    "page": 32,
+    "ocr": "宮",
+    "truth": "宫",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 32,
+    "ocr": "閻",
+    "truth": "關",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 32,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 32,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 32,
+    "ocr": "瑤",
+    "truth": "瑶",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 32,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 32,
+    "ocr": "峯",
+    "truth": "峰",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 32,
+    "ocr": "己",
+    "truth": "已",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 0
+  },
+  {
+    "page": 32,
+    "ocr": "潮",
+    "truth": "朝",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 103
+  },
+  {
+    "page": 32,
+    "ocr": "搖",
+    "truth": "揺",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 33,
+    "ocr": "宮",
+    "truth": "宫",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 33,
+    "ocr": "謠",
+    "truth": "謡",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 33,
+    "ocr": "夏",
+    "truth": "夐",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 33,
+    "ocr": "橫",
+    "truth": "横",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 33,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 33,
+    "ocr": "廝",
+    "truth": "斸",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 33,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 33,
+    "ocr": "澁",
+    "truth": "澀",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 33,
+    "ocr": "佑",
+    "truth": "估",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 0
+  },
+  {
+    "page": 33,
+    "ocr": "詠",
+    "truth": "咏",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 33,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 34,
+    "ocr": "永",
+    "truth": "遠",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 34,
+    "ocr": "大",
+    "truth": "雲",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 34,
+    "ocr": "顏",
+    "truth": "顔",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 34,
+    "ocr": "絕",
+    "truth": "絶",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 34,
+    "ocr": "黃",
+    "truth": "黄",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 34,
+    "ocr": "鴈",
+    "truth": "雁",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 34,
+    "ocr": "黃",
+    "truth": "黄",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 34,
+    "ocr": "黃",
+    "truth": "黄",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 34,
+    "ocr": "黃",
+    "truth": "黄",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 34,
+    "ocr": "黃",
+    "truth": "黄",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 34,
+    "ocr": "慱",
+    "truth": "博",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 34,
+    "ocr": "氷",
+    "truth": "冰",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 34,
+    "ocr": "銳",
+    "truth": "鋭",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 34,
+    "ocr": "氷",
+    "truth": "冰",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 34,
+    "ocr": "斵",
+    "truth": "斫",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 34,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 34,
+    "ocr": "航",
+    "truth": "船",
+    "label": "shape_confusable",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 5
+  },
+  {
+    "page": 34,
+    "ocr": "袖",
+    "truth": "䄂",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 34,
+    "ocr": "踈",
+    "truth": "疏",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 35,
+    "ocr": "錄",
+    "truth": "録",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 35,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 35,
+    "ocr": "慙",
+    "truth": "慚",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 35,
+    "ocr": "顏",
+    "truth": "顔",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 35,
+    "ocr": "彥",
+    "truth": "彦",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 35,
+    "ocr": "往",
+    "truth": "徃",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 35,
+    "ocr": "呂",
+    "truth": "吕",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 35,
+    "ocr": "傅",
+    "truth": "傳",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 36,
+    "ocr": "閱",
+    "truth": "閲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 36,
+    "ocr": "噐",
+    "truth": "器",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 36,
+    "ocr": "橫",
+    "truth": "横",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 36,
+    "ocr": "詠",
+    "truth": "咏",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 36,
+    "ocr": "崢",
+    "truth": "峥",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 36,
+    "ocr": "橫",
+    "truth": "横",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 36,
+    "ocr": "漠",
+    "truth": "漢",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 36,
+    "ocr": "漠",
+    "truth": "漢",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 36,
+    "ocr": "乗",
+    "truth": "乘",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 36,
+    "ocr": "恠",
+    "truth": "怪",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 36,
+    "ocr": "肉",
+    "truth": "囱",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 841
+  },
+  {
+    "page": 36,
+    "ocr": "煑",
+    "truth": "煮",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 36,
+    "ocr": "㢤",
+    "truth": "哉",
+    "label": "ocr_not_in_db",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 37,
+    "ocr": "別",
+    "truth": "别",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 37,
+    "ocr": "溫",
+    "truth": "温",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 37,
+    "ocr": "竒",
+    "truth": "奇",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 37,
+    "ocr": "囬",
+    "truth": "回",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 37,
+    "ocr": "簷",
+    "truth": "檐",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 37,
+    "ocr": "暎",
+    "truth": "映",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 37,
+    "ocr": "黃",
+    "truth": "黄",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 37,
+    "ocr": "宮",
+    "truth": "宫",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 37,
+    "ocr": "內",
+    "truth": "内",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 37,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 37,
+    "ocr": "液",
+    "truth": "夜",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 415
+  },
+  {
+    "page": 37,
+    "ocr": "黃",
+    "truth": "黄",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 37,
+    "ocr": "吳",
+    "truth": "呉",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 37,
+    "ocr": "橫",
+    "truth": "横",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 37,
+    "ocr": "袞",
+    "truth": "衮",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 37,
+    "ocr": "內",
+    "truth": "内",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 38,
+    "ocr": "黃",
+    "truth": "黄",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 38,
+    "ocr": "竒",
+    "truth": "奇",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 38,
+    "ocr": "竒",
+    "truth": "奇",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 38,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 38,
+    "ocr": "竒",
+    "truth": "奇",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 38,
+    "ocr": "說",
+    "truth": "説",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 38,
+    "ocr": "魯",
+    "truth": "曾",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 38,
+    "ocr": "濁",
+    "truth": "漏",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 38,
+    "ocr": "遊",
+    "truth": "游",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 38,
+    "ocr": "竒",
+    "truth": "奇",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 38,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 38,
+    "ocr": "為",
+    "truth": "爲",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 38,
+    "ocr": "簷",
+    "truth": "檐",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 38,
+    "ocr": "㑹",
+    "truth": "會",
+    "label": "truth_not_in_standard",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 39,
+    "ocr": "隂",
+    "truth": "陰",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 39,
+    "ocr": "巳",
+    "truth": "已",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 39,
+    "ocr": "于",
+    "truth": "干",
+    "label": "other",
+    "ocr_in_standard": true,
+    "truth_in_standard": true,
+    "field_distance": 136
+  },
+  {
+    "page": 39,
+    "ocr": "竒",
+    "truth": "奇",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 39,
+    "ocr": "㓜",
+    "truth": "幼",
+    "label": "ocr_not_in_db",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 39,
+    "ocr": "䖏",
+    "truth": "處",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 39,
+    "ocr": "羙",
+    "truth": "美",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 39,
+    "ocr": "盖",
+    "truth": "蓋",
+    "label": "variant",
+    "ocr_in_standard": true,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 39,
+    "ocr": "刋",
+    "truth": "刊",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 39,
+    "ocr": "虛",
+    "truth": "虚",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 39,
+    "ocr": "刋",
+    "truth": "刊",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 39,
+    "ocr": "叅",
+    "truth": "參",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": false,
+    "field_distance": null
+  },
+  {
+    "page": 39,
+    "ocr": "呂",
+    "truth": "吕",
+    "label": "variant",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  },
+  {
+    "page": 39,
+    "ocr": "斵",
+    "truth": "斫",
+    "label": "other",
+    "ocr_in_standard": false,
+    "truth_in_standard": true,
+    "field_distance": null
+  }
+]
