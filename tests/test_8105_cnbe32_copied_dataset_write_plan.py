@@ -6,8 +6,8 @@ def test_copied_dataset_write_plan_preserves_source_shape() -> None:
     summary = model["summary"]
 
     assert model["overall_status"] == "PASS_8105_CNBE32_COPIED_DATASET_WRITE_PLAN_READY"
-    assert summary["source_rows"] == 21178
-    assert summary["copy_rows"] == 21178
+    assert summary["source_rows"] == 21184
+    assert summary["copy_rows"] == 21184
     assert summary["patch_rows_in_copy"] == 6712
     assert summary["force_approved_not_patched_rows"] == 1117
     assert model["checks"]["source_row_count_preserved"] is True

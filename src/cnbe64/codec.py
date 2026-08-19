@@ -10,8 +10,6 @@ bits 31..0:  cnbe32 (32)
 
 from __future__ import annotations
 
-from dataclasses import dataclass
-
 LAYOUT = {
     "version": (63, 60),
     "gb18030_pointer": (59, 39),
@@ -22,7 +20,7 @@ LAYOUT = {
 }
 
 
-class GB18030_STATUS:
+class GB18030Status:
     MAPPED = 0
     CONFLICT = 1
     MISSING = 2
@@ -33,7 +31,7 @@ def pack(
     cnbe32: int,
     gb18030_pointer: int = 0,
     version: int = 1,
-    status: int = GB18030_STATUS.UNKNOWN,
+    status: int = GB18030Status.UNKNOWN,
     present: bool = False,
     reserved: int = 0,
 ) -> int:

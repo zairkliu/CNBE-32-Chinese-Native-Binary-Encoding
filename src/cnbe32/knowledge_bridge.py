@@ -15,10 +15,11 @@ from __future__ import annotations
 
 import json
 import sqlite3
+from collections.abc import Iterable
 from dataclasses import dataclass
 from difflib import SequenceMatcher
 from pathlib import Path
-from typing import Any, Iterable, Optional
+from typing import Any
 
 from .core import CNBE32, bit_hamming_distance, decode_cnbe, encode_cnbe, field_weighted_distance
 from .db import resolve_db_path
@@ -66,7 +67,7 @@ class CNBEState:
     radix_name: str = ""
     struct_name: str = ""
     track: str = ""
-    unicode: Optional[int] = None
+    unicode: int | None = None
 
     @property
     def hex(self) -> str:
@@ -133,12 +134,12 @@ class CNBEKnowledgeBridge:
         self.db_path = str(path)
         self.conn = sqlite3.connect(self.db_path)
         self.conn.row_factory = sqlite3.Row
-        self._rows: Optional[list[dict[str, Any]]] = None
+        self._rows: list[dict[str, Any]] | None = None
 
     def close(self) -> None:
         self.conn.close()
 
-    def lookup(self, char: str) -> Optional[CNBEState]:
+    def lookup(self, char: str) -> CNBEState | None:
         if len(char) != 1:
             raise ValueError("lookup() expects exactly one character")
         row = self.conn.execute(
@@ -148,7 +149,7 @@ class CNBEKnowledgeBridge:
         ).fetchone()
         return self._state_from_row(dict(row)) if row else None
 
-    def lookup_code(self, code: int | CNBE32) -> Optional[CNBEState]:
+    def lookup_code(self, code: int | CNBE32) -> CNBEState | None:
         value = _code(code)
         row = self.conn.execute(
             "SELECT * FROM cnbe32 WHERE cnbe = ? LIMIT 1", (value,)
@@ -229,7 +230,7 @@ class CNBEKnowledgeBridge:
             "duplicate_idx_sample": duplicate_idx[:10],
         }
 
-    def distance(self, a: str | CNBEState | int, b: str | CNBEState | int) -> Optional[dict[str, Any]]:
+    def distance(self, a: str | CNBEState | int, b: str | CNBEState | int) -> dict[str, Any] | None:
         sa = self._coerce_state(a)
         sb = self._coerce_state(b)
         if sa is None or sb is None:
@@ -250,7 +251,7 @@ class CNBEKnowledgeBridge:
             },
         }
 
-    def _coerce_state(self, value: str | CNBEState | int) -> Optional[CNBEState]:
+    def _coerce_state(self, value: str | CNBEState | int) -> CNBEState | None:
         if isinstance(value, CNBEState):
             return value
         if isinstance(value, str):

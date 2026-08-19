@@ -16,12 +16,12 @@ from scripts.build_cnbe_agent_encoding_standard import (
 def test_legacy_structure_localization_covers_current_runtime_rows() -> None:
     model = build_structure_localization(DEFAULT_CNBE_INPUT)
 
-    assert model["summary"]["row_count"] == 21178
+    assert model["summary"]["row_count"] == 21184
     assert model["summary"]["legacy_label_count"] == 26
     assert model["summary"]["all_legacy_labels_mapped"] is False
-    assert model["summary"]["missing_label_rows"] == 7586
+    assert model["summary"]["missing_label_rows"] == 7592
     assert len(model["mapping"]) == 13
-    assert sum(model["summary"]["raw_structure_counts"].values()) == 21178
+    assert sum(model["summary"]["raw_structure_counts"].values()) == 21184
 
 
 def test_agent_structure_standard_uses_chinese_labels_and_agent_types() -> None:

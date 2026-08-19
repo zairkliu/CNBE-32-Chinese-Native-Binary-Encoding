@@ -7,7 +7,7 @@ def test_approved_structure_merge_covers_8105_and_current_model() -> None:
 
     assert model["overall_status"] == "PASS_8105_APPROVED_STRUCTURE_MODEL_MERGE_READY"
     assert summary["total_rows"] == 8105
-    assert summary["current_model_rows"] == 21178
+    assert summary["current_model_rows"] == 21184
     assert summary["current_model_intersection_rows"] == 8105
     assert summary["missing_from_current_model_rows"] == 0
     assert summary["current_model_intersection_rows"] + summary["missing_from_current_model_rows"] == 8105

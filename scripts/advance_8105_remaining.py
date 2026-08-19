@@ -255,7 +255,7 @@ def main() -> None:
         "",
         "## Completion packet",
         "",
-        f"- Path: `evidence/8105/8105_REMAINING_503_COMPLETION_PACKET.json`",
+        "- Path: `evidence/8105/8105_REMAINING_503_COMPLETION_PACKET.json`",
         f"- Actions: {dict(status_counter)}",
         f"- Unresolved radical names (no code in current radical map): {len(unresolved_radix)}",
         f"- Rows with cross-reference evidence (Unihan radical/strokes or cjk_decomp): "

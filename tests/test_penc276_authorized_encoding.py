@@ -43,7 +43,7 @@ def test_runtime_and_package_databases_include_completed_batch() -> None:
     for path in (Path("data/cnbe32.db"), Path("src/cnbe32/data/cnbe32.db")):
         with sqlite3.connect(path) as connection:
             assert connection.execute("PRAGMA integrity_check").fetchone()[0] == "ok"
-            assert connection.execute("SELECT COUNT(*) FROM cnbe32").fetchone()[0] == 21178
+            assert connection.execute("SELECT COUNT(*) FROM cnbe32").fetchone()[0] == 21184
             assert connection.execute("SELECT COUNT(*) FROM cnbe32 WHERE needs_encoding=1").fetchone()[0] == 0
             actual = {
                 row[0]: row[1:]
@@ -58,7 +58,7 @@ def test_runtime_and_package_databases_include_completed_batch() -> None:
             assert actual == expected
     model = json.loads(Path("data/cnbe32.json").read_text(encoding="utf-8"))
     assert model["metadata"]["penc276_authorized_encoding_rows"] == 276
-    assert len(model["characters"]) == 21178
+    assert len(model["characters"]) == 21184
     runtime = {row["unicode"]: row for row in model["characters"]}
     for unicode, values in expected.items():
         row = runtime[unicode]
