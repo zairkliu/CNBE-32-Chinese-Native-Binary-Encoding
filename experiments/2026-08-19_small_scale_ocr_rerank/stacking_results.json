@@ -1,0 +1,27 @@
+{
+  "pages": 37,
+  "train_pages": 29,
+  "test_pages": 8,
+  "summary": {
+    "unicode": {
+      "top1_accuracy": 0.5042016806722689,
+      "mean_reciprocal_rank": 0.5700323462566907,
+      "mean_rank": 8.403361344537815
+    },
+    "learned_gbdt": {
+      "top1_accuracy": 0.6638655462184874,
+      "mean_reciprocal_rank": 0.7122618225179531,
+      "mean_rank": 4.932773109243698
+    },
+    "learned_mlp": {
+      "top1_accuracy": 0.6218487394957983,
+      "mean_reciprocal_rank": 0.6648623927323213,
+      "mean_rank": 5.781512605042017
+    },
+    "stack": {
+      "top1_accuracy": 0.6554621848739496,
+      "mean_reciprocal_rank": 0.7023154832838016,
+      "mean_rank": 5.042016806722689
+    }
+  }
+}

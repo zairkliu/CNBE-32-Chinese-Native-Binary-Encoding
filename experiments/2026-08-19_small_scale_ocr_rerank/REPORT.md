@@ -112,6 +112,7 @@ python experiments/2026-08-19_small_scale_ocr_rerank/train_reranker.py
 | Learned GBDT | 66.39% | 0.7123 |
 | Learned MLP | 62.18% | 0.6649 |
 | Rank fusion ensemble | 57.14% | 0.6576 |
+| Learned stacking | 65.55% | 0.7023 |
 
 按 label 看：
 
@@ -127,4 +128,5 @@ python experiments/2026-08-19_small_scale_ocr_rerank/train_reranker.py
 2. variant 错误由 variant map 和 GBDT 共同覆盖；
 3. shape_confusable 上 Unicode/MLP 仍更强；
 4. 简单 rank fusion 没有超过 GBDT，说明应继续用学习式融合；
-5. 下一步用真实 OCR top-N 和更强上下文模型继续提升。
+5. learned stacking 与 GBDT 接近，说明当前特征集下单模型已接近上限；
+6. 下一步用真实 OCR top-N 和更强上下文模型继续提升。
