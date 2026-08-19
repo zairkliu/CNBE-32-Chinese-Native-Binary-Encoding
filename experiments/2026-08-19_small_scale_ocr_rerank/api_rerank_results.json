@@ -1,0 +1,543 @@
+{
+  "limit": 20,
+  "n": 20,
+  "summary": {
+    "plain": {
+      "top1_accuracy": 0.9166666666666666,
+      "parsed": 12,
+      "total": 20
+    },
+    "unicode": {
+      "top1_accuracy": 0.7692307692307693,
+      "parsed": 13,
+      "total": 20
+    },
+    "cnbe": {
+      "top1_accuracy": 0.8461538461538461,
+      "parsed": 13,
+      "total": 20
+    }
+  },
+  "rows": [
+    {
+      "page": 7,
+      "ocr": "挨",
+      "truth": "捩",
+      "label": "shape_confusable",
+      "predictions": {
+        "plain": {
+          "pred": "",
+          "status": "ok",
+          "elapsed": 21.87,
+          "correct": false
+        },
+        "unicode": {
+          "pred": "捩",
+          "status": "ok",
+          "elapsed": 10.96,
+          "correct": true
+        },
+        "cnbe": {
+          "pred": "捩",
+          "status": "ok",
+          "elapsed": 9.3,
+          "correct": true
+        }
+      }
+    },
+    {
+      "page": 8,
+      "ocr": "永",
+      "truth": "沈",
+      "label": "shape_confusable",
+      "predictions": {
+        "plain": {
+          "pred": "",
+          "status": "ok",
+          "elapsed": 21.7,
+          "correct": false
+        },
+        "unicode": {
+          "pred": "",
+          "status": "ok",
+          "elapsed": 23.57,
+          "correct": false
+        },
+        "cnbe": {
+          "pred": "",
+          "status": "ok",
+          "elapsed": 23.26,
+          "correct": false
+        }
+      }
+    },
+    {
+      "page": 10,
+      "ocr": "己",
+      "truth": "已",
+      "label": "shape_confusable",
+      "predictions": {
+        "plain": {
+          "pred": "",
+          "status": "ok",
+          "elapsed": 21.65,
+          "correct": false
+        },
+        "unicode": {
+          "pred": "已",
+          "status": "ok",
+          "elapsed": 8.96,
+          "correct": true
+        },
+        "cnbe": {
+          "pred": "",
+          "status": "ok",
+          "elapsed": 22.23,
+          "correct": false
+        }
+      }
+    },
+    {
+      "page": 11,
+      "ocr": "折",
+      "truth": "拆",
+      "label": "shape_confusable",
+      "predictions": {
+        "plain": {
+          "pred": "拆",
+          "status": "ok",
+          "elapsed": 2.02,
+          "correct": true
+        },
+        "unicode": {
+          "pred": "拆",
+          "status": "ok",
+          "elapsed": 1.37,
+          "correct": true
+        },
+        "cnbe": {
+          "pred": "拆",
+          "status": "ok",
+          "elapsed": 1.54,
+          "correct": true
+        }
+      }
+    },
+    {
+      "page": 12,
+      "ocr": "昂",
+      "truth": "昴",
+      "label": "shape_confusable",
+      "predictions": {
+        "plain": {
+          "pred": "昴",
+          "status": "ok",
+          "elapsed": 12.73,
+          "correct": true
+        },
+        "unicode": {
+          "pred": "昴",
+          "status": "ok",
+          "elapsed": 8.11,
+          "correct": true
+        },
+        "cnbe": {
+          "pred": "昴",
+          "status": "ok",
+          "elapsed": 1.34,
+          "correct": true
+        }
+      }
+    },
+    {
+      "page": 15,
+      "ocr": "隅",
+      "truth": "隔",
+      "label": "shape_confusable",
+      "predictions": {
+        "plain": {
+          "pred": "隔",
+          "status": "ok",
+          "elapsed": 11.31,
+          "correct": true
+        },
+        "unicode": {
+          "pred": "奇",
+          "status": "ok",
+          "elapsed": 3.41,
+          "correct": false
+        },
+        "cnbe": {
+          "pred": "",
+          "status": "ok",
+          "elapsed": 20.88,
+          "correct": false
+        }
+      }
+    },
+    {
+      "page": 16,
+      "ocr": "已",
+      "truth": "己",
+      "label": "shape_confusable",
+      "predictions": {
+        "plain": {
+          "pred": "己",
+          "status": "ok",
+          "elapsed": 1.7,
+          "correct": true
+        },
+        "unicode": {
+          "pred": "己",
+          "status": "ok",
+          "elapsed": 1.33,
+          "correct": true
+        },
+        "cnbe": {
+          "pred": "己",
+          "status": "ok",
+          "elapsed": 2.33,
+          "correct": true
+        }
+      }
+    },
+    {
+      "page": 17,
+      "ocr": "夫",
+      "truth": "天",
+      "label": "shape_confusable",
+      "predictions": {
+        "plain": {
+          "pred": "",
+          "status": "ok",
+          "elapsed": 16.18,
+          "correct": false
+        },
+        "unicode": {
+          "pred": "",
+          "status": "ok",
+          "elapsed": 15.87,
+          "correct": false
+        },
+        "cnbe": {
+          "pred": "天",
+          "status": "ok",
+          "elapsed": 9.36,
+          "correct": true
+        }
+      }
+    },
+    {
+      "page": 17,
+      "ocr": "刺",
+      "truth": "剌",
+      "label": "shape_confusable",
+      "predictions": {
+        "plain": {
+          "pred": "剌",
+          "status": "ok",
+          "elapsed": 2.29,
+          "correct": true
+        },
+        "unicode": {
+          "pred": "剌",
+          "status": "ok",
+          "elapsed": 8.91,
+          "correct": true
+        },
+        "cnbe": {
+          "pred": "剌",
+          "status": "ok",
+          "elapsed": 2.03,
+          "correct": true
+        }
+      }
+    },
+    {
+      "page": 17,
+      "ocr": "刺",
+      "truth": "剌",
+      "label": "shape_confusable",
+      "predictions": {
+        "plain": {
+          "pred": "剌",
+          "status": "ok",
+          "elapsed": 5.5,
+          "correct": true
+        },
+        "unicode": {
+          "pred": "剌",
+          "status": "ok",
+          "elapsed": 2.09,
+          "correct": true
+        },
+        "cnbe": {
+          "pred": "",
+          "status": "ok",
+          "elapsed": 21.22,
+          "correct": false
+        }
+      }
+    },
+    {
+      "page": 20,
+      "ocr": "史",
+      "truth": "南",
+      "label": "other",
+      "predictions": {
+        "plain": {
+          "pred": "使",
+          "status": "ok",
+          "elapsed": 10.63,
+          "correct": false
+        },
+        "unicode": {
+          "pred": "使",
+          "status": "ok",
+          "elapsed": 1.47,
+          "correct": false
+        },
+        "cnbe": {
+          "pred": "使",
+          "status": "ok",
+          "elapsed": 4.78,
+          "correct": false
+        }
+      }
+    },
+    {
+      "page": 11,
+      "ocr": "趨",
+      "truth": "趜",
+      "label": "truth_not_in_standard",
+      "predictions": {
+        "plain": {
+          "pred": "趜",
+          "status": "ok",
+          "elapsed": 2.83,
+          "correct": true
+        },
+        "unicode": {
+          "pred": "趜",
+          "status": "ok",
+          "elapsed": 20.77,
+          "correct": true
+        },
+        "cnbe": {
+          "pred": "趜",
+          "status": "ok",
+          "elapsed": 1.31,
+          "correct": true
+        }
+      }
+    },
+    {
+      "page": 26,
+      "ocr": "永",
+      "truth": "欲",
+      "label": "other",
+      "predictions": {
+        "plain": {
+          "pred": "",
+          "status": "ok",
+          "elapsed": 19.2,
+          "correct": false
+        },
+        "unicode": {
+          "pred": "美",
+          "status": "ok",
+          "elapsed": 16.47,
+          "correct": false
+        },
+        "cnbe": {
+          "pred": "凡",
+          "status": "ok",
+          "elapsed": 18.95,
+          "correct": false
+        }
+      }
+    },
+    {
+      "page": 20,
+      "ocr": "坡",
+      "truth": "杜",
+      "label": "other",
+      "predictions": {
+        "plain": {
+          "pred": "",
+          "status": "ok",
+          "elapsed": 20.71,
+          "correct": false
+        },
+        "unicode": {
+          "pred": "",
+          "status": "ok",
+          "elapsed": 21.21,
+          "correct": false
+        },
+        "cnbe": {
+          "pred": "",
+          "status": "ok",
+          "elapsed": 21.51,
+          "correct": false
+        }
+      }
+    },
+    {
+      "page": 36,
+      "ocr": "噐",
+      "truth": "器",
+      "label": "variant",
+      "predictions": {
+        "plain": {
+          "pred": "器",
+          "status": "ok",
+          "elapsed": 1.55,
+          "correct": true
+        },
+        "unicode": {
+          "pred": "器",
+          "status": "ok",
+          "elapsed": 1.62,
+          "correct": true
+        },
+        "cnbe": {
+          "pred": "器",
+          "status": "ok",
+          "elapsed": 1.67,
+          "correct": true
+        }
+      }
+    },
+    {
+      "page": 20,
+      "ocr": "曉",
+      "truth": "一",
+      "label": "other",
+      "predictions": {
+        "plain": {
+          "pred": "",
+          "status": "ok",
+          "elapsed": 18.24,
+          "correct": false
+        },
+        "unicode": {
+          "pred": "",
+          "status": "ok",
+          "elapsed": 20.4,
+          "correct": false
+        },
+        "cnbe": {
+          "pred": "",
+          "status": "ok",
+          "elapsed": 22.37,
+          "correct": false
+        }
+      }
+    },
+    {
+      "page": 10,
+      "ocr": "絕",
+      "truth": "絶",
+      "label": "variant",
+      "predictions": {
+        "plain": {
+          "pred": "絶",
+          "status": "ok",
+          "elapsed": 1.45,
+          "correct": true
+        },
+        "unicode": {
+          "pred": "",
+          "status": "ok",
+          "elapsed": 20.25,
+          "correct": false
+        },
+        "cnbe": {
+          "pred": "絶",
+          "status": "ok",
+          "elapsed": 1.63,
+          "correct": true
+        }
+      }
+    },
+    {
+      "page": 18,
+      "ocr": "吳",
+      "truth": "呉",
+      "label": "variant",
+      "predictions": {
+        "plain": {
+          "pred": "",
+          "status": "ok",
+          "elapsed": 19.74,
+          "correct": false
+        },
+        "unicode": {
+          "pred": "呉",
+          "status": "ok",
+          "elapsed": 1.53,
+          "correct": true
+        },
+        "cnbe": {
+          "pred": "",
+          "status": "ok",
+          "elapsed": 21.04,
+          "correct": false
+        }
+      }
+    },
+    {
+      "page": 14,
+      "ocr": "註",
+      "truth": "注",
+      "label": "variant",
+      "predictions": {
+        "plain": {
+          "pred": "注",
+          "status": "ok",
+          "elapsed": 6.76,
+          "correct": true
+        },
+        "unicode": {
+          "pred": "",
+          "status": "ok",
+          "elapsed": 18.76,
+          "correct": false
+        },
+        "cnbe": {
+          "pred": "注",
+          "status": "ok",
+          "elapsed": 1.75,
+          "correct": true
+        }
+      }
+    },
+    {
+      "page": 29,
+      "ocr": "為",
+      "truth": "爲",
+      "label": "variant",
+      "predictions": {
+        "plain": {
+          "pred": "爲",
+          "status": "ok",
+          "elapsed": 1.07,
+          "correct": true
+        },
+        "unicode": {
+          "pred": "",
+          "status": "ok",
+          "elapsed": 17.32,
+          "correct": false
+        },
+        "cnbe": {
+          "pred": "爲",
+          "status": "ok",
+          "elapsed": 2.56,
+          "correct": true
+        }
+      }
+    }
+  ]
+}
