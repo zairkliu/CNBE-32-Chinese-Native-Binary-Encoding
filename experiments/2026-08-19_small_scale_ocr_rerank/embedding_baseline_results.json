@@ -1,0 +1,15 @@
+{
+  "model": "ShannonAI/ChineseBERT-base",
+  "chars": 1679,
+  "groups": 138,
+  "summary": {
+    "cnbe_hamming": {
+      "top1_accuracy": 0.15942028985507245,
+      "mean_reciprocal_rank": 0.28796515534489125
+    },
+    "embedding": {
+      "top1_accuracy": 0.18115942028985507,
+      "mean_reciprocal_rank": 0.30244493970534814
+    }
+  }
+}

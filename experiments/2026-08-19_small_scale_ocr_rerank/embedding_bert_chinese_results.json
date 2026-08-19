@@ -1,0 +1,15 @@
+{
+  "model": "bert-base-chinese",
+  "chars": 1679,
+  "groups": 138,
+  "summary": {
+    "cnbe_hamming": {
+      "top1_accuracy": 0.15942028985507245,
+      "mean_reciprocal_rank": 0.28796515534489125
+    },
+    "embedding": {
+      "top1_accuracy": 0.4057971014492754,
+      "mean_reciprocal_rank": 0.48692904158915623
+    }
+  }
+}
