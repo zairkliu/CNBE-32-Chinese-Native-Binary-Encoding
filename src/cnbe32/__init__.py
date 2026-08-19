@@ -9,9 +9,12 @@ from .core import (
     hamming_distance,
 )
 from .db import batch, close_connection, count, lookup, resolve_db_path
+from .knowledge_bridge import CNBEKnowledgeBridge, CNBEState
 from .skill_table import SkillTable
 
 __all__ = [
+    "CNBEKnowledgeBridge",
+    "CNBEState",
     "CNBE32",
     "SkillTable",
     "batch",

@@ -36,6 +36,20 @@ In the AI era, Chinese should be one of the foundations, not an option.
 
 See [CNBE32_PROJECT_POSITION_ZH.md](./docs/CNBE32_PROJECT_POSITION_ZH.md).
 
+## 2026-08-18: CCF-A Paper and Non-Training Supplements
+
+The repository now includes a CCF-A-oriented paper package for CNBE-MoE, plus
+non-training supplements that do not depend on private weights or corpus data:
+
+- [CCF-A paper draft and technical database](./research/2026-08-18_ccfa_cnbe_moe/README.md)
+- [CNBE Knowledge Bridge](./src/cnbe32/knowledge_bridge.py)
+- [E-book corpus builder skill](./skill/cnbe-ebook-corpus-builder-v3/SKILL.md)
+- [CNBE-MoE boundary skill](./skill/cnbe-moe-boundary/SKILL.md)
+- [Corpus freeze and residual audit tools](./tools/)
+
+Training checkpoints, `.cnbe` streams, and private SCNet upload archives remain
+outside the repository.
+
 ## TL;DR
 
 **What is CNBE-32?** A Unicode/GB-compatible Chinese structural computing layer

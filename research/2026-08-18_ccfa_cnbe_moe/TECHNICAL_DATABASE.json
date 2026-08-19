@@ -1,0 +1,222 @@
+{
+  "project": {
+    "name": "CNBE-MoE Full Journey",
+    "version": "2.0",
+    "date": "2026-08-18",
+    "status": "a800_smoke_passed_formal_ready",
+    "target": "CCF-A technical paper, white paper, blue paper, data chain, technical database"
+  },
+  "standards_alignment": {
+    "core_standard": "GB 8105",
+    "related_standards": [
+      "GF 0011-2009",
+      "GF 0012-2009",
+      "GF 0013-2009",
+      "GF 0017-2013",
+      "GF 0023-2020"
+    ],
+    "database_rows": 21178,
+    "baseline_8105": 8105,
+    "standard_track": 7602,
+    "penc276_authorized": 276,
+    "governance_gates": 13
+  },
+  "evaluation": {
+    "feasibility_review_date": "2026-08-03",
+    "conclusion": "direction feasible, initial document not directly runnable",
+    "key_corrections": [
+      "CNBE as structured auxiliary feature, not raw 32-bit token sequence",
+      "separate FLOPs speedup from wall-clock throughput",
+      "use verified (radix, struct, strokes) mapping",
+      "validate small prototype before multi-GPU training"
+    ]
+  },
+  "t1_1_5b_training": {
+    "environment": "Ubuntu 26.04 WSL2",
+    "runtime": "Ollama deepseek-r1:1.5b",
+    "model": "DeepSeek-R1-Distill-Qwen-1.5B",
+    "quantization": "4-bit NF4 QLoRA",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "steps": 1000,
+    "eval_loss": 0.09179,
+    "exact_match": 0.0,
+    "result": "negative for generative variant normalization",
+    "decision": "close local 1.5B generative line; use deterministic rules and larger models"
+  },
+  "seven_corpus": {
+    "total_chars": 24381237,
+    "cnbe_coverage_min": 0.999828,
+    "cnbe_coverage_max": 1.0,
+    "routing_proxy_accuracy_min": 0.7443,
+    "routing_proxy_accuracy_max": 0.8367,
+    "punct_f1_min": 0.4834,
+    "punct_f1_max": 0.8505
+  },
+  "corpus_v2": {
+    "files": 15589,
+    "train_physical_tokens": 5069667334,
+    "train_content_tokens": 5069636759,
+    "train_separator_tokens": 30575,
+    "eval_physical_tokens": 47611359,
+    "eval_content_tokens": 47611070,
+    "eval_separator_tokens": 289,
+    "val_physical_tokens": 35170268,
+    "val_content_tokens": 35169957,
+    "val_separator_tokens": 311,
+    "vocab_size": 20535,
+    "mapping_templates": 14248,
+    "split_method": "sha256(slug|42) mod 10000"
+  },
+  "experiments": [
+    {
+      "id": "moe_prototype_8_16_64",
+      "status": "completed",
+      "result": {
+        "dense_next_code": 0.1592,
+        "moe8_next_code": 0.1765,
+        "moe16_next_code": 0.1799,
+        "moe64_next_code": 0.1918,
+        "moe64_3f_gini": 0.1533
+      }
+    },
+    {
+      "id": "l20_24m",
+      "status": "completed",
+      "hardware": "SCNet L20",
+      "eval_loss": 6.5821259756709525,
+      "eval_accuracy": 0.1911648967427804,
+      "expert_gini": 0.2070654034614563
+    },
+    {
+      "id": "dcu_544m",
+      "status": "completed",
+      "hardware": "SCNet DCU×2",
+      "steps": 125976,
+      "eval_loss": 4.591474966106527,
+      "eval_accuracy": 0.23559563830972427,
+      "expert_gini": 0.297105073928833,
+      "params": 626435442
+    },
+    {
+      "id": "v1_moe128",
+      "status": "completed",
+      "eval_loss": 4.543037608616139,
+      "eval_accuracy": 0.2295820391202149,
+      "expert_gini": 0.14724016189575195,
+      "params": 289920031
+    },
+    {
+      "id": "v1_dense",
+      "status": "completed",
+      "eval_loss": 7.303338495975697,
+      "eval_accuracy": 0.02611599647414372,
+      "expert_gini": null,
+      "params": 37954591
+    },
+    {
+      "id": "v1_unicode_dense",
+      "status": "completed",
+      "eval_loss": 7.793251749811115,
+      "eval_accuracy": 1.04936198791135e-05,
+      "expert_gini": null,
+      "params": 38130891
+    },
+    {
+      "id": "a800_smoke",
+      "status": "completed",
+      "hardware": "A800×2",
+      "steps": 9,
+      "train_loss_first": 12.0984,
+      "train_loss_last": 8.6226,
+      "eval_loss": 8.020417086283366,
+      "expert_gini": 0.27170002460479736,
+      "params": 632707431
+    },
+    {
+      "id": "a800_full_5_4b",
+      "status": "ready_to_start",
+      "progress_snapshot": {
+        "snapshot_date": "2026-08-19",
+        "steps_completed": 250578,
+        "planned_steps": 618750,
+        "progress_ratio": 0.4050,
+        "median_loss": 5.669,
+        "q1_loss": 4.9502,
+        "q99_loss": 6.19,
+        "min_loss": 4.0943,
+        "max_loss": 12.9702,
+        "relative_spread": 0.1093
+      },
+      "expected_steps": 618750,
+      "checkpoint_every_steps": 10000,
+      "step_metrics_every_steps": 1
+    }
+  ],
+  "model_a800": {
+    "d_model": 1024,
+    "d_ff": 2048,
+    "layers": 12,
+    "heads": 16,
+    "experts": 128,
+    "top_k": 2,
+    "seq_len": 256,
+    "batch_per_gpu": 16,
+    "gpus": 2,
+    "global_batch_tokens": 8192
+  },
+  "artifacts": {
+    "output_audit": "OUTPUT_AUDIT_2026-08-18.md",
+    "technical_paper": "TECHNICAL_PAPER_CNBE_MOE_2026-08-18.md",
+    "white_paper": "WHITEPAPER_CNBE_FULL_JOURNEY_2026-08-18.md",
+    "blueprint": "BLUEPRINT_CNBE_MOE_2026-08-18.md",
+    "data_chain": "DATA_CHAIN_CNBE_MOE_2026-08-18.md",
+    "remote_project": "/root/private_data/scnet_a800_v4",
+    "remote_symlink": "/scnet_upload_package_A800_V4_CODE",
+    "full_output_dir": "/root/private_data/scnet_a800_v4/output/run_2026-08-14_full"
+  },
+  "math_checks": [
+    {
+      "name": "physical_tokens_identity",
+      "formula": "file_size / 4 = physical_tokens"
+    },
+    {
+      "name": "separator_identity",
+      "formula": "physical_tokens = content_tokens + separator_tokens"
+    },
+    {
+      "name": "vocab_identity",
+      "value": 20535
+    },
+    {
+      "name": "mapping_identity",
+      "value": 14248
+    },
+    {
+      "name": "global_batch",
+      "value": 8192
+    },
+    {
+      "name": "total_steps",
+      "value": 618750
+    }
+  ],
+  "gaps_for_ccfa": [
+    "full 5.4B final results",
+    "dense matched-params comparison",
+    "tokenizer/bpe fair comparison",
+    "downstream benchmark",
+    "multiple seed statistical significance",
+    "public sanitized dataset and evaluation protocol",
+    "unicode baseline re-validation (current 0.001% suspected instrumentation artifact)",
+    "conditional struct accuracy excluding code 0",
+    "comparison with ChineseBERT / Glyce / SubChar / CNM-BERT"
+  ],
+  "next_steps": [
+    "start A800×2 full training",
+    "collect step_metrics.jsonl and checkpoints",
+    "run dense matched-params and tokenizer baselines",
+    "build downstream benchmark",
+    "finalize CCF-A paper with full results"
+  ]
+}

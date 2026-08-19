@@ -47,6 +47,7 @@ scnet_upload_package_DCU/
 | 表单项 | 推荐值 |
 |---|---|
 | 加速卡 | 异构加速卡BW（DCU，64GB） |
+| 每实例加速卡数量 | 2（113 组，单机） |
 | 开发工具 | JupyterLab / Jupyter |
 | Python | 3.11 |
 | DTK | 26.04 |
@@ -93,6 +94,25 @@ bash /app/scnet_startup.sh
 
 该脚本会先检查 `code/data/output` 挂载，再跑 smoke，通过后自动进入
 正式训练；也支持 `bash /app/scnet_startup.sh --smoke-only` 只冒烟。
+
+## DCU BW 2 卡快速启动（113 组）
+
+资源选择 `113 组 AI计算-异构加速卡BW-1`，每实例 **2 卡**，实例数 **1**。
+
+训练表单“启动脚本”字段可直接粘贴：
+
+```bash
+bash /app/scnet_startup_dcu2.sh
+```
+
+该脚本使用 `code/config/scnet_moe_config_dcu2.yaml`：
+
+- d_model=1024, d_ff=2048, 12 层, 16 头
+- 256 专家跨层共享, Top-2, 三字段硬路由
+- seq_len=256, batch_size=8/卡, grad_accum=8
+- 24M tokens，2 epoch（约 1,464 步）
+
+也支持 `bash /app/scnet_startup_dcu2.sh --smoke-only` 只冒烟。
 
 ## Jupyter 开发工作流
 
@@ -237,11 +257,25 @@ DCU_FORM_GUIDE = """\
 | 表单项 | 推荐值 | 原因 |
 |---|---|---|
 | 加速卡 | 异构加速卡BW（DCU，64GB） | 2026-08-08 控制台实际资源，本包不依赖 CUDA 专有代码 |
+| 资源组 / 卡数 | 113 组，每实例 2 卡 | 当前可用 2 卡，跑 256 共享专家验证 |
 | 开发工具 | JupyterLab / Jupyter | 平台要求镜像包含 Jupyter，否则容器实例功能可能不可用 |
 | Python | 3.11 | 平台基础镜像自带 |
 | DTK | 26.04 | 平台基础镜像自带 |
 | 操作系统 | Ubuntu 22.04 | 平台基础镜像自带 |
 | 基础镜像 | PyTorch / 2.9.0 / py3.11-Ubuntu22.04 / dtk26.04 | 2026-08-08 控制台实测可用 |
+
+### 2 卡启动脚本
+
+```bash
+bash /app/scnet_startup_dcu2.sh
+```
+
+对应配置 `code/config/scnet_moe_config_dcu2.yaml`（256 共享专家，
+12 层，2 epoch，约 1,464 步）。先跑：
+
+```bash
+bash /app/scnet_startup_dcu2.sh --smoke-only
+```
 
 ## 二、为什么这样选
 
@@ -387,6 +421,10 @@ def main() -> int:
     write_lf(DST / "SCNET_DCU_FORM_GUIDE.md", DCU_FORM_GUIDE)
     write_lf(DST / "code" / "Dockerfile", DCU_DOCKERFILE)
     write_lf(DST / "code" / "README.md", DCU_CODE_README)
+    dcu2_script = EXP / "scnet_startup_dcu2.sh"
+    if dcu2_script.exists():
+        shutil.copy2(dcu2_script, DST / "scnet_startup_dcu2.sh")
+        shutil.copy2(dcu2_script, DST / "code" / "scnet_startup_dcu2.sh")
 
     if BUNDLE_DST.exists():
         shutil.rmtree(BUNDLE_DST)
@@ -411,6 +449,14 @@ def main() -> int:
         "os": "Ubuntu 22.04",
         "base_image": "PyTorch/2.9.0/py3.11-Ubuntu22.04/dtk26.04",
         "note": "自定义镜像当前无法启用，使用平台基础镜像",
+    }
+    manifest["scnet_form_dcu2"] = {
+        "resource_group": "113 组 AI计算-异构加速卡BW-1",
+        "cards": 2,
+        "nodes": 1,
+        "config": "code/config/scnet_moe_config_dcu2.yaml",
+        "startup": "scnet_startup_dcu2.sh",
+        "total_steps": 1464,
     }
     manifest.pop("scnet_form_a800", None)
     manifest["jupyter"] = "code/notebooks/CNBE_MoE_SCNet_Jupyter.ipynb"

@@ -87,3 +87,30 @@
 | cnbe_moe_checkpoint_2026-08-10.tar | 3,480,360,960 B |
 
 checkpoint 内含 `output/checkpoints/last.pt`，可用于后续续训或下游实验。
+
+## 八、DCU BW 2 卡第二轮确认配置（2026-08-10）
+
+| 项 | 值 |
+|---|---|
+| 资源组 | 113 组 AI计算-异构加速卡BW-1 |
+| 加速卡 | 异构加速卡BW × 2（工具面板显示总显存 256GB） |
+| 区域 | 华中一区【A区】 |
+| 基础镜像 | PyTorch / 2.9.0 / py3.11-Ubuntu22.04 / dtk26.04 |
+| 启动脚本 | scnet_startup_dcu2.sh |
+| 配置 | scnet_moe_config_dcu2.yaml（256 共享专家，16 层，2 epoch） |
+
+启动命令：
+
+```bash
+bash /app/scnet_startup_dcu2.sh
+```
+
+## 九、复盘修正（2026-08-10 晚间）
+
+128 专家云训练完成复盘：该轮证明训练栈可跑通，但没有同配置 Dense /
+Unicode 对照，不能得出“128 专家有效”的结论。实测向量化 grouped GEMM
+存在约 4.2x 填充浪费，8 层共享同一路由使专家-上下文槽位从 1024 塌缩为
+128。后续改为先补控制实验、再修 MoE 实现，暂停 256 专家与盲扩语料。
+
+详见 `RETRO_128_EXPERIMENT_2026-08-10.md` 与
+`NEXT_PHASE_PLAN_2026-08-10.md`。

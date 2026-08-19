@@ -439,15 +439,20 @@ detect_nproc() {
     echo "$NPROC_PER_NODE"
     return
   fi
-  if [ -n "${HIP_VISIBLE_DEVICES:-}" ]; then
-    printf '%s' "$HIP_VISIBLE_DEVICES" | tr ',' '\\n' | wc -l
+  COUNT=$(python -c "import torch; print(torch.cuda.device_count())" 2>/dev/null || echo 0)
+  if [ "$COUNT" -gt 0 ]; then
+    echo "$COUNT"
     return
   fi
   if [ -n "${CUDA_VISIBLE_DEVICES:-}" ]; then
     printf '%s' "$CUDA_VISIBLE_DEVICES" | tr ',' '\\n' | wc -l
     return
   fi
-  python -c "import torch; print(max(1, torch.cuda.device_count()))" 2>/dev/null || echo 1
+  if [ -n "${HIP_VISIBLE_DEVICES:-}" ]; then
+    printf '%s' "$HIP_VISIBLE_DEVICES" | tr ',' '\\n' | wc -l
+    return
+  fi
+  echo 1
 }
 
 run_smoke() {
