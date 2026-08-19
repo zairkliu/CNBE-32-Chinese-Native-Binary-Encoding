@@ -15,6 +15,7 @@
 | `CNBE_EXISTING_WORK_AND_DIFFERENTIATION_2026-08-19.md` | 已有工作、他人未尝试原因、ChineseBERT/Glyce/SubChar 对比与方向判断 |
 | `PROJECT_COMPARISON_LESSONS_2026-08-19.md` | 已有项目情况分析及对 CNBE 项目的启示 |
 | `EXPERIMENTS_VS_SEGMENTFAULT_REVIEW_2026-08-19.md` | 实验证据与 SegmentFault 评审结论的对照 |
+| `PROJECT_NEXT_DEVELOPMENT_2026-08-19.md` | 项目预期、风险与下一步发展评估 |
 | `A800_TRAINING_PROGRESS_MODEL_2026-08-18.md` | 基于 184,482 步损失分布的训练进度与稳定性模型 |
 | `A800_TRAINING_PROGRESS_MODEL_2026-08-19.md` | 基于 250,578 步损失分布的最新训练进度与稳定性模型 |
 | `WHITEPAPER_CNBE_FULL_JOURNEY_2026-08-18.md` | 国标对齐到 A800 的全链路白皮书 |
