@@ -46,6 +46,10 @@ def rank_of(target: str, candidates: list[dict], key) -> int:
     return chars.index(target) + 1
 
 
+def order_map(candidates: list[dict], key) -> dict[str, int]:
+    return {c["candidate"]: i + 1 for i, c in enumerate(sorted(candidates, key=key))}
+
+
 def metrics(rows: list[tuple[int, str]]) -> dict:
     if not rows:
         return {"top1_accuracy": 0.0, "mean_reciprocal_rank": 0.0, "mean_rank": 0.0}
@@ -122,6 +126,7 @@ def main() -> int:
         "learned_lr",
         "learned_gbdt",
         "learned_mlp",
+        "ensemble",
     ]
     collected = {m: [] for m in methods}
     for (page, ocr, truth, label), cands in groups.items():
@@ -153,6 +158,26 @@ def main() -> int:
             collected[name].append(
                 (label, rank_of(truth, cands, lambda c, n=name: (-c[f"_score_{n}"], ord(c["candidate"]))))
             )
+        orders = {
+            "unicode": order_map(cands, lambda c: (c["features"]["unicode_abs_diff"], ord(c["candidate"]))),
+            "cnbe_weighted": order_map(cands, lambda c: (c["features"]["cnbe_weighted"], ord(c["candidate"]))),
+            "cnbe_hamming": order_map(cands, lambda c: (c["features"]["cnbe_hamming"], ord(c["candidate"]))),
+            "variant_map": order_map(
+                cands,
+                lambda c: (
+                    0 if mapped is not None and c["candidate"] == mapped else 1,
+                    ord(c["candidate"]),
+                ),
+            ),
+            "learned_gbdt": order_map(cands, lambda c: (-c["_score_learned_gbdt"], ord(c["candidate"]))),
+            "learned_mlp": order_map(cands, lambda c: (-c["_score_learned_mlp"], ord(c["candidate"]))),
+        }
+
+        def ensemble_key(c):
+            score = sum(1.0 / orders[m][c["candidate"]] for m in orders if c["candidate"] in orders[m])
+            return (-score, ord(c["candidate"]))
+
+        collected["ensemble"].append((label, rank_of(truth, cands, ensemble_key)))
 
     summary = {"overall": {}, "by_label": {}}
     for method in methods:

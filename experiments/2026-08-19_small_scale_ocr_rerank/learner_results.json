@@ -45,6 +45,11 @@
         "top1_accuracy": 0.6218487394957983,
         "mean_reciprocal_rank": 0.6648623927323213,
         "mean_rank": 5.781512605042017
+      },
+      "ensemble": {
+        "top1_accuracy": 0.5714285714285714,
+        "mean_reciprocal_rank": 0.6576440851081172,
+        "mean_rank": 5.117647058823529
       }
     },
     "by_label": {
@@ -88,6 +93,11 @@
           "top1_accuracy": 0.19230769230769232,
           "mean_reciprocal_rank": 0.292029392606018,
           "mean_rank": 10.23076923076923
+        },
+        "ensemble": {
+          "top1_accuracy": 0.15384615384615385,
+          "mean_reciprocal_rank": 0.2824028619497779,
+          "mean_rank": 10.423076923076923
         }
       },
       "shape_confusable": {
@@ -130,6 +140,11 @@
           "top1_accuracy": 0.9,
           "mean_reciprocal_rank": 0.9037037037037037,
           "mean_rank": 3.6
+        },
+        "ensemble": {
+          "top1_accuracy": 0.9,
+          "mean_reciprocal_rank": 0.9099999999999999,
+          "mean_rank": 1.9
         }
       },
       "truth_not_in_standard": {
@@ -172,6 +187,11 @@
           "top1_accuracy": 0.48,
           "mean_reciprocal_rank": 0.5188617419229113,
           "mean_rank": 9.36
+        },
+        "ensemble": {
+          "top1_accuracy": 0.48,
+          "mean_reciprocal_rank": 0.5760000000000001,
+          "mean_rank": 8.0
         }
       },
       "variant": {
@@ -214,6 +234,11 @@
           "top1_accuracy": 0.8275862068965517,
           "mean_reciprocal_rank": 0.8537462059013783,
           "mean_rank": 2.6206896551724137
+        },
+        "ensemble": {
+          "top1_accuracy": 0.7413793103448276,
+          "mean_reciprocal_rank": 0.8175374433995124,
+          "mean_rank": 2.0517241379310347
         }
       }
     }
