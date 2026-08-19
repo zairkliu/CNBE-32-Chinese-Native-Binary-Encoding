@@ -76,3 +76,24 @@ CNBE 的差异化不是“又一个结构 embedding”，而是：
 ## 7. 一句话结论
 
 评审的结论是对的：CNBE 的价值在“可计算结构指纹层”，不在“通用编码替代”。论文按这个定位写，才不会被 CCF-A reviewer 第一眼否决。
+
+## 8. 已主动完成实验：结构敏感候选重排
+
+为避免停留在分析，2026-08-19 已在本地完成零样本候选重排实验，不训练模型：
+
+| 方法 | Top-1 | MRR | Mean Rank |
+|---|---:|---:|---:|
+| Random | 2.88% | 0.1599 | 11.57 |
+| Unicode 码点距离 | 46.15% | 0.5928 | 4.47 |
+| CNBE field-weighted | 48.08% | 0.6070 | 4.35 |
+| CNBE bit Hamming | 50.96% | 0.6402 | 3.80 |
+
+结论：CNBE 不需要训练即可在形近字/OCR 候选重排上超过 Unicode 码点距离，支持“结构敏感任务定位”。
+
+复现：
+
+```bash
+python experiments/2026-08-19_structure_sensitive_rerank/run_rerank_experiment.py
+```
+
+报告与结果已推送 GitHub。
