@@ -1,4 +1,4 @@
-﻿import torch, torch.nn as nn, torch.nn.functional as F, numpy as np, json, os, time
+import torch, torch.nn as nn, torch.nn.functional as F, numpy as np, json, os, time
 
 CFG = type("Cfg",(),{"H":128,"L":4,"Hd":4,"FF":256,"B":64,"EP":30,"LR":0.001,
                       "DEV":"cuda" if torch.cuda.is_available() else "cpu","V":20,"N":2000})()

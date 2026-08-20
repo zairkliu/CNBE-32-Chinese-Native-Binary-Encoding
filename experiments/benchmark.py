@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 # CNBE-32 Benchmark: encode speed, information density, feature separability
 import os, sys, time, math, json, random
 import numpy as np

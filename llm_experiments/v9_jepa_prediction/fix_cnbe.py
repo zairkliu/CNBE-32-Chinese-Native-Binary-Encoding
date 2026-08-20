@@ -1,4 +1,4 @@
-﻿# Fix CNBE encoder normalization
+# Fix CNBE encoder normalization
 path = r"C:\Users\zairk\Documents\Codex\2026-07-02\codex-dangerously-bypass-approvals-and-sandbox\v9_jepa_tree\src\cnbe_tree_encoder.py"
 with open(path, "r", encoding="utf-8") as f:
     lines = f.readlines()

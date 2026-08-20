@@ -15,7 +15,7 @@
   <img alt="Python SDK" src="https://img.shields.io/badge/Python%20SDK-stable%20baseline-blue">
   <a href="https://pypi.org/project/cnbe32/"><img alt="PyPI" src="https://img.shields.io/pypi/v/cnbe32.svg"></a>
   <a href="https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding/releases/tag/demo-v1.0.0"><img alt="Desktop Demo" src="https://img.shields.io/badge/demo-v1.0.0-blue"></a>
-  <img alt="Basic CJK DB" src="https://img.shields.io/badge/Basic%20CJK-20%2C902%20entries-green">
+  <img alt="Pre-PENC276 baseline" src="https://img.shields.io/badge/pre--PENC276%20baseline-20%2C902%20entries-lightgrey">
   <img alt="Extended scope" src="https://img.shields.io/badge/97%2C686-experimental%20target-lightgrey">
 </p>
 
@@ -139,7 +139,7 @@ structure to SDKs, databases, instructions, hardware prototypes, and AI models.
 classical-text digitization/OCR engineers, Chinese NLP researchers,
 policy/standards readers, and Chinese-language technology enthusiasts.
 
-**What is available now?** The project has a 21,178-row runtime database,
+**What is available now?** The project has a 21,184-row runtime database,
 multi-language SDKs, a desktop demo, a 24.38M-character seven-corpus validation,
 MoE-64 three-field hard routing, local QLoRA experiments, and DeepSeek/Ollama
 reproduction materials. The next stage is cloud-GPU scale validation, CNBE
@@ -148,7 +148,7 @@ Studio, and a classical-text cleanup pipeline.
 ## Maturity Statement
 
 - **Locked / reproducible**: CNBE32 bitfield encode/decode, golden vectors,
-  Python SDK, SQLite runtime lookup, the checked-in 21,178-row database,
+  Python SDK, SQLite runtime lookup, the checked-in 21,184-row database,
   desktop demo, and core tests.
 - **Locally validated**: seven-corpus compression and Volume, MoE-8/16/64 hard
   routing, three-field balanced mapping, DeepSeek V4 API ablation, and the
@@ -183,7 +183,7 @@ hardware prototypes, and AI models?
 
 The answer proposed here is not to replace existing encodings. Unicode/GB carry
 identity and interchange; CNBE-32 carries structural fingerprints and
-computable features. The repository contains a 21,178-row runtime database,
+computable features. The repository contains a 21,184-row runtime database,
 Python/C/Rust SDKs, RISC-V and Verilog prototypes, a desktop demo, a
 24.38M-character seven-corpus validation, QLoRA small-model training,
 CNBE-MoE routing prototypes, and evidence boundaries governed by the 8105
@@ -239,7 +239,7 @@ itself?
 ```mermaid
 flowchart TD
   A["Unicode / GB character identity"] --> B["CNBE-32 structural layer"]
-  B --> C["SQLite runtime database<br/>21,178 rows"]
+  B --> C["SQLite runtime database<br/>21,184 rows"]
   B --> D["Python / C / Rust SDKs"]
   B --> E["RISC-V / Verilog / Linux prototypes"]
   B --> F["AI features and MoE routing"]
@@ -263,7 +263,7 @@ governance, experiments, limitations, reproducibility, and roadmap.
 | SDK install and basic encoding | [Quick start](#quick-start), [Python SDK example](#python-sdk-example) | Bitfield encode/decode, Hamming distance, SQLite lookup |
 | Bitfield consistency | [`spec/golden_vectors.json`](./spec/golden_vectors.json), [Implementation consistency](#implementation-consistency) | Shared golden vectors for Python/C/Rust/hardware directions |
 | Desktop software | [Desktop demo](#desktop-demo) | Local run and Windows/macOS/Linux packaging |
-| RISC-V v8 simulator stack | [`riscv/v8/`](./riscv/v8/), [verification report](./riscv/v8/docs/VERIFICATION_REPORT_2026-08-05.md) | Python/C/QEMU/Verilog/Spike five-layer consistency, real 21,178-row skill tables |
+| RISC-V v8 simulator stack | [`riscv/v8/`](./riscv/v8/), [verification report](./riscv/v8/docs/VERIFICATION_REPORT_2026-08-05.md) | Python/C/QEMU/Verilog/Spike five-layer consistency, real 21,184-row skill tables |
 | Linux mini-kernel boot | [`linux_cnbe32_riscv/`](./linux_cnbe32_riscv/), [simulation report](./linux_cnbe32_riscv/docs/SIMULATION_REPORT_2026-08-05.md) | Linux 0.01 CNBE-32 RISC-V boots under QEMU/OpenSBI; runtime aligns with v8 (55/55) |
 | Mathematical foundation experiments | [`experiments/2026-08-05_cnbe_math/`](./experiments/2026-08-05_cnbe_math/) | Pseudo-metric boundary, distributive lattice, entropy, hyperbolic geometry, algebraic properties |
 | Seven-corpus compression and Volume | [`experiments/2026-08-02_seven_corpora_compression/`](./experiments/2026-08-02_seven_corpora_compression/) | 24.38M characters, compression, random access, routing proxies |
@@ -325,7 +325,7 @@ from encoding, evidence, software, models, and systems prototypes:
 
 | Phase | Time horizon | Goal | Acceptance criteria |
 |---|---|---|---|
-| Phase 0: local validation | Done | Encoding spec, 21,178-row database, SDKs, demo, seven-corpus validation, MoE-64, API ablation | Key results have reports, scripts, or result files; core SDK tests pass |
+| Phase 0: local validation | Done | Encoding spec, 21,184-row database, SDKs, demo, seven-corpus validation, MoE-64, API ablation | Key results have reports, scripts, or result files; core SDK tests pass |
 | Phase 1: cloud-GPU scaling | Near term | 128/256 experts, d_model 512-1024, Triton retest at larger scale | Equal-parameter/equal-compute Dense controls; report loss, next-code, Gini, throughput |
 | Phase 2: CNBE Studio | Near term | Batch encoding, Volume viewer, MoE routing visualization, copyright/demo improvements | Desktop app packages and runs; README and copyright docs stay synchronized |
 | Phase 3: classical-text pipeline | Mid term | OCR/truth DB -> CNBE coverage check -> confusable risk -> LLM punctuation/segmentation -> human review | At least one public sample pack with inputs, outputs, error analysis, and review queue |
@@ -379,7 +379,7 @@ replacing them, based on historical lessons:
 | Module | Content | Status |
 |---|---|:---:|
 | Encoding spec | 32-bit field layout, national-standard alignment | ✅ Done |
-| Dataset | 21,178 entries, 7,602 standard-track 8105 rows | ✅ Done |
+| Dataset | 21,184 entries, 7,602 standard-track 8105 rows | ✅ Done |
 | Software stack | Python / C / Rust SDKs, desktop demo | ✅ Done |
 | Compression | Seven-corpus (24.38M chars) CNBE stream and Volume | ✅ Done |
 | MoE routing | 8/16/64 experts, three-field mapping, Gini 0.15 | ✅ Done |
@@ -449,14 +449,14 @@ controls remain outstanding. The remaining work requires larger cloud compute:
   information theory, hyperbolic geometry, algebraic properties);
 - **v1.1.0 (2026-08-04)**: positioning redefined; added compatibility
   strategy, status/roadmap, technology-stack layering, and limitations;
-- **v1.0.4 (2026-07-27)**: first stable release with 21,178 entries,
+- **v1.0.4 (2026-07-27)**: first stable release with the then-current 20,902-entry runtime snapshot,
   desktop demo, and MoE prototype.
 
 > **CNBE-32 is a research prototype.**
-> The checked-in Python SDK runtime now contains **21,178 entries**, including the 276 PENC276 characters completed under the project human-audit baseline.
+> The checked-in Python SDK runtime now contains **21,184 entries**, including the 276 PENC276 characters completed under the project human-audit baseline.
 > The broader **97,686 CJK** figure is an intended / experimental extended scope, not current packaged SDK coverage.
 > The latest published package is **cnbe32 1.0.4**, matching the GitHub `v1.0.4` release checkpoint.
-> The repository database has since been migrated to **v1.1** (21,178 rows); see the confirmed state below.
+> The repository database has since been migrated to **v1.1** (21,184 rows); see the confirmed state below.
 
 ## Desktop demo
 
@@ -497,7 +497,7 @@ The demo is a project presentation and runtime lookup application. It does not c
 
 CNBE is being reorganized around a stricter standards-aligned workflow.
 
-The **8105 common standardized Chinese character table** is now the national-standard core for the rebuild. Existing CNBE rows are treated as legacy/current runtime data until they pass the renewed evidence gates. The former 20,902-row Agent pre-encoding pool is preserved as the pre-PENC276 baseline; the current checked-in runtime contains 21,178 rows. The 97,686-row full catalog remains an extended research target.
+The **8105 common standardized Chinese character table** is now the national-standard core for the rebuild. Existing CNBE rows are treated as legacy/current runtime data until they pass the renewed evidence gates. The former 20,902-row Agent pre-encoding pool is preserved as the pre-PENC276 baseline; the current checked-in runtime contains 21,184 rows. The 97,686-row full catalog remains an extended research target.
 
 The restart target is to rebuild CNBE as a national-language-standard-aligned encoding project: the Agent performs controlled Hanzi structure work, every promoted row carries evidence and review state, and the repository separates runtime code, evidence, reports, historical experiments, and reproducible research outputs.
 
@@ -511,7 +511,7 @@ Current confirmed state:
 - additional conservative standardized runtime repairs: `598`
 - total patched 8105 runtime rows after repair: `7310`
 - force-approved rows retained for later insertion/radical strategy: `795`
-- runtime JSON and SQLite databases now contain the 21,178-row authorized project runtime
+- runtime JSON and SQLite databases now contain the 21,184-row authorized project runtime
 
 Post-migration state (v1.1, applied 2026-07-25 under owner authorization):
 
@@ -697,7 +697,7 @@ but not punctuation.
 ### 2026-08-05: RISC-V v8 Simulator and Math Foundation
 
 The RISC-V layer was rebuilt as a simulator-first foundation (`riscv/v8/`):
-all skill tables and golden vectors come from the real 21,178-row
+all skill tables and golden vectors come from the real 21,184-row
 `data/cnbe32.db`, and the same instruction semantics were verified across
 Python, C, QEMU, Verilog, and Spike. The Linux 0.01 CNBE-32 RISC-V mini-kernel
 then compiled, linked, and booted under QEMU/OpenSBI, printing the Chinese
@@ -940,7 +940,7 @@ These should be interpreted as **preliminary research prototypes** unless the co
 |---|---|
 | **8105 national-standard core** | 8,105 common standardized Chinese characters used as the release-track standards baseline |
 | **Published package checkpoint** | `cnbe32==1.0.4`; release metadata is distinct from the checked-in runtime data state |
-| **Repository and checked-in SDK database** | 21,178 rows: 7,602 standard + 13,576 legacy; all 276 PENC276 rows have an authorized project-baseline CNBE value |
+| **Repository and checked-in SDK database** | 21,184 rows: 7,602 standard + 12,770 legacy; all 276 PENC276 rows have an authorized project-baseline CNBE value |
 | **Agent-standard candidate scope** | project-controlled candidate outputs that must align to 8105 before promotion |
 | **Experimental extended scope** | 97,686 CJK characters as a design / research target, not a validated release claim; the figure anchors the Unicode CJK Unified Ideographs total and must be updated with Unicode versions and GB 18030-2022 amendments |
 | **Experiment-specific coverage** | depends on the dataset and reproduction script for each experiment |

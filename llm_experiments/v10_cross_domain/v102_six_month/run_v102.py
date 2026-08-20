@@ -1,4 +1,4 @@
-﻿import sys, os, json, time, numpy as np, torch, torch.nn as nn, torch.nn.functional as F
+import sys, os, json, time, numpy as np, torch, torch.nn as nn, torch.nn.functional as F
 from datetime import datetime, timedelta
 
 # ===== Known Price Reference Points =====

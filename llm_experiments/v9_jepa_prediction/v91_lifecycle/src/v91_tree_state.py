@@ -1,4 +1,4 @@
-﻿import numpy as np
+import numpy as np
 
 class CNBEV91Encoder:
     """v9.1 扩展版CNBE编码器——包含生存/天气/雷击"""

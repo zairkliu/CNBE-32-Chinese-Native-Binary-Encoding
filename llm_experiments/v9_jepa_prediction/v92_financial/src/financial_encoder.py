@@ -1,4 +1,4 @@
-﻿import numpy as np
+import numpy as np
 
 class CNBEFinancialEncoder:
     """CNBE金融编码器——将多维金融指标编码为32位结构化位域"""

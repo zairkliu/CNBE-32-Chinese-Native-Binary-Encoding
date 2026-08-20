@@ -1,4 +1,4 @@
-﻿"""Generate S&P 500 1-minute data for all 21 trading days of June 2026"""
+"""Generate S&P 500 1-minute data for all 21 trading days of June 2026"""
 import numpy as np
 
 # 21 trading days in June 2026 (excluding 6/19 Juneteenth)

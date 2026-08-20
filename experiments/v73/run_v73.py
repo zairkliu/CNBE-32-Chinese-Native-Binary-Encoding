@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 import numpy as np, json, sys, warnings
 import os
 from itertools import combinations

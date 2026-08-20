@@ -1,4 +1,4 @@
-﻿name: WASM Build + Deploy
+name: WASM Build + Deploy
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
 
       - name: Build WASM with Emscripten
         run: |
-          docker run --rm -v $PWD:/src emscripten/emsdk:latest \
+          docker run --rm -v $PWD:/src emscripten/emsdk:3.1.68 \
             emcc /src/hardware/cnbe_wasm.c \
               -o /src/hardware/cnbe_wasm.wasm \
               -O3 -s WASM=1 -s EXPORTED_FUNCTIONS='["_cnbe_encode","_cnbe_radix","_cnbe_stroke","_cnbe_struct_type","_cnbe_index","_cnbe_extension","_cnbe_distance","_cnbe_struct_name"]' \
@@ -32,7 +32,8 @@ jobs:
       - name: Copy WASM to docs
         run: |
           mkdir -p docs/wasm
-          cp hardware/*.wasm docs/wasm/ 2>/dev/null || true
+          test -f hardware/cnbe_wasm.wasm
+          cp hardware/cnbe_wasm.wasm docs/wasm/
           cp hardware/index.html docs/wasm/
           cp hardware/app.js docs/wasm/
           cp hardware/style.css docs/wasm/

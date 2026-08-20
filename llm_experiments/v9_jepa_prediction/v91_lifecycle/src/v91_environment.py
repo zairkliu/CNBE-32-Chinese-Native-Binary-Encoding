@@ -1,4 +1,4 @@
-﻿import numpy as np
+import numpy as np
 from typing import List, Tuple, Optional
 from dataclasses import dataclass
 

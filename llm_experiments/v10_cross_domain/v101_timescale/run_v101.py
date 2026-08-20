@@ -1,4 +1,4 @@
-﻿import sys, os, json, time, numpy as np, torch, torch.nn as nn, torch.nn.functional as F
+import sys, os, json, time, numpy as np, torch, torch.nn as nn, torch.nn.functional as F
 
 # === Reuse v10.0 data generator ===
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "v100_backtest", "src"))

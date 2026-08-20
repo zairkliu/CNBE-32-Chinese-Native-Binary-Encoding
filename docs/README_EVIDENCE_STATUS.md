@@ -11,7 +11,7 @@
 |---|---|---|
 | 项目定位 | CNBE-32 是 Unicode 兼容层之上的研究性结构特征编码，不替代 Unicode。 | `docs/CNBE_RESEARCH_POSITION_STATEMENT.md` |
 | 标准核心 | 8105 是项目发布轨道的国家标准核心；项目处于“对齐中”，不声明已整体符合国家标准。 | `docs/CNBE_STANDARDS_COMPLIANCE_STATEMENT.md` |
-| 运行时数据 | 已提交的 v1.1 迁移记录报告 21,178 条运行时记录（standard 7,602 / legacy 13,576），并记录 PENC276 的 276 条授权写入。 | `reports/MIGRATION_V1_1_WS7WS8.md`、`reports/PENC276_AUTHORIZED_ENCODING_APPLY.md` |
+| 运行时数据 | 当前检入的 JSON 与 SQLite 运行时均含 21,184 条唯一 Unicode 记录（standard 7,602 / legacy 12,770 / provisional 812）；v1.1 迁移记录与 PENC276 授权写入保留为历史证据。 | `data/cnbe32.json`、`data/cnbe32.db`、`reports/MIGRATION_V1_1_WS7WS8.md`、`reports/PENC276_AUTHORIZED_ENCODING_APPLY.md` |
 | 数学程序 | 13 组公式性质测试通过；这仅验证实现性质，不验证语言学正确性或任务性能。 | `experiments/morphology_computing/reports/FORMAL_FORMULA_VERIFICATION_REPORT.md` |
 | 外部评审 | P1 独立评审仍是待完成门禁。 | `docs/review/P1_EXTERNAL_REVIEW_EXECUTION_KIT.md` |
 

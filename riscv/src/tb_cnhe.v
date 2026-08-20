@@ -1,4 +1,4 @@
-﻿`timescale 1ns/1ps
+`timescale 1ns/1ps
 module tb_cnhe();
     reg clk, rst_n, valid;
     reg [31:0] insn, rs1, rs2;

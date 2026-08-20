@@ -1,4 +1,4 @@
-﻿from lexer import Token, TT
+from lexer import Token, TT
 from nodes import *
 
 class Parser:

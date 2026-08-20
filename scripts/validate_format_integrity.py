@@ -267,6 +267,34 @@ HISTORICAL_MARKDOWN_ROOTS = [
     "results",
 ]
 
+REPOSITORY_TEXT_SUFFIXES = {
+    ".c",
+    ".cc",
+    ".cnbe",
+    ".cpp",
+    ".css",
+    ".csv",
+    ".h",
+    ".html",
+    ".java",
+    ".js",
+    ".json",
+    ".jsonl",
+    ".md",
+    ".py",
+    ".ps1",
+    ".rs",
+    ".s",
+    ".sh",
+    ".sql",
+    ".toml",
+    ".ts",
+    ".v",
+    ".yaml",
+    ".yml",
+}
+REPOSITORY_TEXT_FILENAMES = {".gitattributes", ".gitignore", "Makefile", "MANIFEST.in"}
+
 MIN_LINES = {
     ".gitattributes": 10,
     "MANIFEST.in": 10,
@@ -717,9 +745,33 @@ def iter_text_files() -> list[str]:
     return paths
 
 
+def iter_tracked_repository_text_files() -> list[str]:
+    result = subprocess.run(
+        ["git", "ls-files", "-z"],
+        capture_output=True,
+        check=False,
+    )
+    if result.returncode != 0:
+        fail("unable to list tracked files for repository format validation")
+
+    paths: list[str] = []
+    for raw_path in result.stdout.decode("utf-8").split("\0"):
+        if not raw_path:
+            continue
+        path = Path(raw_path)
+        if path.name in REPOSITORY_TEXT_FILENAMES or path.suffix.lower() in REPOSITORY_TEXT_SUFFIXES:
+            paths.append(raw_path)
+    return paths
+
+
 def main() -> int:
-    for path in iter_text_files():
+    validated_paths = set(iter_text_files())
+    for path in validated_paths:
         validate_file(path)
+
+    for path in iter_tracked_repository_text_files():
+        if path not in validated_paths:
+            read_utf8_lf(Path(path))
 
     require_no_tracked_binary()
     print("FORMAT INTEGRITY PASS")

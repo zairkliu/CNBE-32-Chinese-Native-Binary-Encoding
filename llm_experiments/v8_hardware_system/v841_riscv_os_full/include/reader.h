@@ -1,4 +1,4 @@
-﻿#ifndef READER_H
+#ifndef READER_H
 #define READER_H
 
 void reader_init(void);

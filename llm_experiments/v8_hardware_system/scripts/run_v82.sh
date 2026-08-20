@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 set -e
 echo "========================================"
 echo " CNBE-32 v8.2 Spike End-to-End Validation"

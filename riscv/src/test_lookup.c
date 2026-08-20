@@ -1,4 +1,4 @@
-﻿#include <stdio.h>
+#include <stdio.h>
 #include <stdint.h>
 #define N 20902
 static uint32_t tbl[N];

@@ -1,4 +1,4 @@
-﻿"""Generate both US (S&P500) and A-share (沪深300) monthly 1-minute data"""
+"""Generate both US (S&P500) and A-share (沪深300) monthly 1-minute data"""
 import numpy as np
 
 TRADING_DAYS = ["2026-06-01","06-02","06-03","06-04","06-05",

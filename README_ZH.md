@@ -15,7 +15,7 @@
   <img alt="Python SDK" src="https://img.shields.io/badge/Python%20SDK-stable%20baseline-blue">
   <a href="https://pypi.org/project/cnbe32/"><img alt="PyPI" src="https://img.shields.io/pypi/v/cnbe32.svg"></a>
   <a href="https://github.com/zairkliu/CNBE-32-Chinese-Native-Binary-Encoding/releases/tag/demo-v1.0.0"><img alt="Desktop Demo" src="https://img.shields.io/badge/demo-v1.0.0-blue"></a>
-  <img alt="Basic CJK DB" src="https://img.shields.io/badge/Basic%20CJK-20%2C902%20entries-green">
+  <img alt="PENC276 前基线" src="https://img.shields.io/badge/PENC276%20前基线-20%2C902%20entries-lightgrey">
   <img alt="Extended scope" src="https://img.shields.io/badge/97%2C686-experimental%20target-lightgrey">
 </p>
 
@@ -115,7 +115,7 @@ CNBE-32 是检验这一问题的当前载体。
 **谁应该关注？** 大模型与 MoE 架构研究者、RISC-V/系统工程师、古籍数字化与
 OCR 工程师、中文信息处理研究者、政策与标准化观察者、中文技术爱好者。
 
-**当前可用什么？** 已有 21,178 行运行时数据库、多语言 SDK、桌面 Demo、
+**当前可用什么？** 已有 21,184 行运行时数据库、多语言 SDK、桌面 Demo、
 七语料 24.38M 字验证、MoE-64 三字段硬路由、本地 QLoRA 与 DeepSeek/Ollama
 复现实验；第一轮 SCNet L20 128 共享专家云训练已完成，下一阶段是 256 专家
 规模化验证、CNBE Studio 与古籍整理 pipeline。
@@ -123,7 +123,7 @@ OCR 工程师、中文信息处理研究者、政策与标准化观察者、中�
 ## 成熟度声明
 
 - **已锁定 / 可复现**：CNBE32 位域编码/解码、golden vectors、Python SDK、
-  SQLite 运行时查询、21,178 行检入数据库、桌面 Demo、核心测试。
+  SQLite 运行时查询、21,184 行检入数据库、桌面 Demo、核心测试。
 - **已本地实证**：七语料压缩与 Volume、MoE-8/16/64 硬路由、三字段均衡映射、
   DeepSeek V4 API 字段消融、1.5B 小模型边界复盘。
 - **云实证（第一轮）**：SCNet L20、128 共享专家、24.38M CNBE 码、
@@ -147,7 +147,7 @@ CNBE-32 研究的问题是：在 Unicode 已经承担字符身份、GB/Unicode �
 部首、笔画、构型与字形索引能够进入 SDK、数据库、指令、硬件原型和 AI 模型？
 
 本项目给出的答案不是“替代现有编码”，而是构建一个兼容层：Unicode/GB 负责
-字符身份与交换，CNBE-32 负责结构指纹与可计算特征。当前仓库包含 21,178 行
+字符身份与交换，CNBE-32 负责结构指纹与可计算特征。当前仓库包含 21,184 行
 运行时数据库、Python/C/Rust SDK、RISC-V 与 Verilog 原型、桌面 Demo、七语料
 24.38M 字实验、QLoRA 小模型训练、CNBE-MoE 路由原型，以及按 8105 和 GF0017
 治理的证据边界。
@@ -191,7 +191,7 @@ AI 时代改变了这个问题的可行性边界：
 ```mermaid
 flowchart TD
   A["Unicode / GB 字符身份"] --> B["CNBE-32 结构层"]
-  B --> C["SQLite 运行时数据库<br/>21,178 rows"]
+  B --> C["SQLite 运行时数据库<br/>21,184 rows"]
   B --> D["Python / C / Rust SDK"]
   B --> E["RISC-V / Verilog / Linux 原型"]
   B --> F["AI 特征与 MoE 路由"]
@@ -214,7 +214,7 @@ flowchart TD
 | SDK 安装与基础编码 | [快速开始](#快速开始)、[Python SDK 示例](#python-sdk-示例) | 位域编码/解码、Hamming distance、SQLite 查询 |
 | 位域一致性 | [`spec/golden_vectors.json`](./spec/golden_vectors.json)、[实现一致性](#实现一致性) | Python/C/Rust/硬件方向共享 golden vectors |
 | 桌面软件 | [桌面展示 Demo](#桌面展示-demo) | 本地运行与 Win/macOS/Linux 打包 |
-| RISC-V v8 模拟器栈 | [`riscv/v8/`](./riscv/v8/)、[验证过程公示](./riscv/v8/docs/VERIFICATION_REPORT_2026-08-05.md) | Python/C/QEMU/Verilog/Spike 五层一致性，真实 21,178 行技能表 |
+| RISC-V v8 模拟器栈 | [`riscv/v8/`](./riscv/v8/)、[验证过程公示](./riscv/v8/docs/VERIFICATION_REPORT_2026-08-05.md) | Python/C/QEMU/Verilog/Spike 五层一致性，真实 21,184 行技能表 |
 | Linux mini-kernel 启动 | [`linux_cnbe32_riscv/`](./linux_cnbe32_riscv/)、[模拟启动报告](./linux_cnbe32_riscv/docs/SIMULATION_REPORT_2026-08-05.md) | Linux 0.01 CNBE-32 RISC-V 在 QEMU/OpenSBI 下启动，运行时与 v8 对拍 55/55 |
 | 数学基础实验 | [`experiments/2026-08-05_cnbe_math/`](./experiments/2026-08-05_cnbe_math/) | 伪度量边界、分配格、信息熵、双曲几何、代数性质 |
 | 七语料压缩与 Volume | [`experiments/2026-08-02_seven_corpora_compression/`](./experiments/2026-08-02_seven_corpora_compression/) | 24.38M 字，压缩、随机访问、路由代理 |
@@ -269,7 +269,7 @@ README 后续内容按四条主线组织：
 
 | 阶段 | 时间口径 | 目标 | 验收标准 |
 |---|---|---|---|
-| Phase 0：本地验证 | 已完成 | 编码规范、21,178 行数据库、SDK、Demo、七语料、MoE-64、API 消融 | 关键结果已有报告、脚本或结果文件，核心 SDK 测试通过 |
+| Phase 0：本地验证 | 已完成 | 编码规范、21,184 行数据库、SDK、Demo、七语料、MoE-64、API 消融 | 关键结果已有报告、脚本或结果文件，核心 SDK 测试通过 |
 | Phase 1：云 GPU 规模化 | 近期规划 | 128/256 专家，d_model 512-1024，Triton 在更大模型上复测 | 与 Dense 做等参数/等计算预算对照；报告 loss、next-code、Gini、吞吐 |
 | Phase 2：CNBE Studio | 近期规划 | 批量编码、Volume 查看、MoE 路由可视化、软著演示增强 | 桌面应用可打包运行，README 与软著文档同步更新 |
 | Phase 3：古籍整理 pipeline | 中期规划 | OCR/真值库 -> CNBE 覆盖检查 -> 形近字风险 -> LLM 句读分段 -> 人工校对 | 至少一个公开样例包，含输入、输出、错误分析与人工校对队列 |
@@ -316,7 +316,7 @@ CNBE-32 兼容现有 CJK/Unicode/GB 编码体系，而非彻底取代，这一�
 | 模块 | 内容 | 状态 |
 |---|---|:---:|
 | 编码规范 | 32 位位域定义、国标对齐 | ✅ 完成 |
-| 数据集 | 21,178 条编码，7,602 条 8105 标准轨 | ✅ 完成 |
+| 数据集 | 21,184 条编码，7,602 条 8105 标准轨 | ✅ 完成 |
 | 软件栈 | Python / C / Rust SDK，桌面 Demo | ✅ 完成 |
 | 压缩实验 | 七语料（24.38M 字）CNBE 流与 Volume | ✅ 完成 |
 | MoE 路由 | 8/16/64 专家硬路由，三字段映射，Gini 0.15 | ✅ 完成 |
@@ -377,14 +377,14 @@ CNBE-32 兼容现有 CJK/Unicode/GB 编码体系，而非彻底取代，这一�
   格/范围查询、信息论、双曲几何、代数性质）；
 - **v1.1.0（2026-08-04）**：定位重定义，增加兼容性策略、状态与规划、
   技术栈分层与局限性说明；
-- **v1.0.4（2026-07-27）**：首个稳定发布，含 21,178 条编码、桌面 Demo、
+- **v1.0.4（2026-07-27）**：首个稳定发布，采用当时的 20,902 条运行时快照，含桌面 Demo、
   MoE 原型。
 
 > **CNBE-32 是研究原型。**
-> 当前检入的 Python SDK 运行时包含 **21,178 条记录**，其中包括按项目人工审核基线完成的 276 个 PENC276 字符。
+> 当前检入的 Python SDK 运行时包含 **21,184 条记录**，其中包括按项目人工审核基线完成的 276 个 PENC276 字符。
 > 更大的 **97,686 CJK** 数字是计划中 / 实验性的扩展范围，不代表当前随包 SDK 覆盖。
 > 最新发布包是 **cnbe32 1.0.4**，对应 GitHub `v1.0.4` 发布检查点。
-> 仓库数据库此后已迁移至 **v1.1**（21,178 行）；迁移后已确认状态见下文。
+> 仓库数据库此后已迁移至 **v1.1**（21,184 行）；迁移后已确认状态见下文。
 
 ## 桌面展示 Demo
 
@@ -425,7 +425,7 @@ bash tools/linux/build_demo_exe.sh
 
 CNBE 正在按更严格的国家语言文字规范证据链重新组织。
 
-**8105 通用规范汉字表**现在是本轮重写编码的国家标准核心。现有 CNBE 行在通过新的证据门禁前，只能视为旧版 / 当前运行时数据。原 20,902 行 Agent 预编码池保留为 PENC276 之前的基线；当前检入运行时为 21,178 行。97,686 行全目录仍是扩展研究目标。
+**8105 通用规范汉字表**现在是本轮重写编码的国家标准核心。现有 CNBE 行在通过新的证据门禁前，只能视为旧版 / 当前运行时数据。原 20,902 行 Agent 预编码池保留为 PENC276 之前的基线；当前检入运行时为 21,184 行。97,686 行全目录仍是扩展研究目标。
 
 本轮重启目标是把 CNBE 重建为一个对齐国家语言文字规范的编码项目：Agent 负责受控执行汉字结构工作，每个可提升结果都必须携带证据和审核状态，仓库结构必须区分运行时代码、证据、报告、历史实验和科研复现产物。
 
@@ -439,7 +439,7 @@ CNBE 正在按更严格的国家语言文字规范证据链重新组织。
 - 额外完成的保守标准化运行时修复行数：`598`
 - 当前已修复的 8105 运行时总行数：`7310`
 - 强制通过但保留到后续插入 / 部首策略队列的行数：`795`
-- 运行时 JSON 和 SQLite 数据库当前均为经授权的 21,178 行项目运行时
+- 运行时 JSON 和 SQLite 数据库当前均为经授权的 21,184 行项目运行时
 
 迁移后状态（v1.1，2026-07-25 经所有者授权执行）：
 
@@ -615,7 +615,7 @@ CNBE Volume 以约 +40% 体积换 O(1) 随机定位；CNBE 结构路由负载近
 ### 2026-08-05：RISC-V v8 模拟器与数学基座
 
 RISC-V 层以“模拟器优先”重建为 v8 基座（`riscv/v8/`）：所有技能表与
-golden vectors 均来自真实 `data/cnbe32.db`（21,178 行），同一套指令语义
+golden vectors 均来自真实 `data/cnbe32.db`（21,184 行），同一套指令语义
 在 Python、C、QEMU、Verilog、Spike 五层中一致通过；随后 Linux 0.01
 CNBE-32 RISC-V mini-kernel 完成编译、链接，并在 QEMU/OpenSBI 下启动，
 输出中文系统信息，运行时与 v8 对拍 55/55。
@@ -812,7 +812,7 @@ print(bit_hamming_distance(a, b))
 |---|---|
 | **8105 国家标准核心** | 8,105 个通用规范汉字，作为发布轨道的标准基线 |
 | **已发布包检查点** | `cnbe32==1.0.4`；发布元数据与检入运行时数据状态分开表述 |
-| **仓库与检入 SDK 数据库** | 21,178 行：7,602 standard + 13,576 legacy；全部 276 条 PENC276 记录已有经授权的项目基线 CNBE 值 |
+| **仓库与检入 SDK 数据库** | 21,184 行：7,602 standard + 12,770 legacy；全部 276 条 PENC276 记录已有经授权的项目基线 CNBE 值 |
 | **Agent-standard 候选范围** | 项目受控候选输出，必须向 8105 对齐后才能提升 |
 | **实验性扩展范围** | 97,686 个 CJK 字符作为设计 / 研究目标，不是已验证发布声明；该数字锚定 Unicode CJK 统一表意文字总量，须随 Unicode 版本与 GB 18030-2022 修改单同步更新 |
 | **具体实验覆盖范围** | 取决于每个实验使用的数据集和复现脚本 |

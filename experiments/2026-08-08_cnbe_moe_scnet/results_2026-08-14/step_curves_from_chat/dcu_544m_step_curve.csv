@@ -1,4 +1,4 @@
-﻿step,total,loss,steps_per_sec
+step,total,loss,steps_per_sec
 10,125976,7.1331,0.28
 20,125976,6.5508,0.29
 30,125976,6.7752,0.3

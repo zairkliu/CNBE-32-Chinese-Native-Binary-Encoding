@@ -1,4 +1,4 @@
-﻿import sys, os, json, time, numpy as np, torch, torch.nn as nn, torch.nn.functional as F
+import sys, os, json, time, numpy as np, torch, torch.nn as nn, torch.nn.functional as F
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
 from generate_data import generate_dataset
 from financial_encoder import CNBEFinancialEncoder, RawFinancialEncoder, OneHotFinancialEncoder, RandomFinancialEncoder

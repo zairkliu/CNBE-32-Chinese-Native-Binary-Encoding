@@ -1,4 +1,4 @@
-﻿import openai, os
+import openai, os
 client = openai.OpenAI(api_key=os.environ.get("DEEPSEEK_API_KEY"), base_url="https://api.deepseek.com")
 test_data = [
     {"char": "\u6811", "prompt": "Split the radical from this character"},

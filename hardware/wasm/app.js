@@ -1,4 +1,4 @@
-﻿// CNBE-32 WASM glue code
+// CNBE-32 WASM glue code
 let Module = null;
 const structNames = ["独体","左右","左中右","上下","上中下","左上包围","右上包围","左下包围","上包围","下包围","左包围","全包围","三角形"];
 

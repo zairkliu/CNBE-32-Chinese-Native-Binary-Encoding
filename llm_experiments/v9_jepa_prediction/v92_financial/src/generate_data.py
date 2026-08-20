@@ -1,4 +1,4 @@
-﻿import numpy as np
+import numpy as np
 import os
 
 """Generate realistic 2008 financial crisis data (synthetic, numpy-only)"""

@@ -1,4 +1,4 @@
-﻿import os, re, sys
+import os, re, sys
 
 REPO = os.environ["USERPROFILE"] + "/Documents/Codex/2026-07-08/cnbe-linux-2/temp/CNBE-32-Chinese-Native-Binary-Encoding"
 

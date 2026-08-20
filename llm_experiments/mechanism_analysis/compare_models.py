@@ -1,4 +1,4 @@
-﻿import json, os, sys, re, time, gc, torch
+import json, os, sys, re, time, gc, torch
 sys.path.insert(0, os.path.join(os.path.dirname(__file__),"..","..","src"))
 from cnbe32.db import lookup
 import random

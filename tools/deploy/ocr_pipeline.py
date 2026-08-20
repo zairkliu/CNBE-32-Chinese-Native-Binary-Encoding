@@ -1,4 +1,4 @@
-﻿import fitz, base64, json, urllib.request, re, sys, os
+import fitz, base64, json, urllib.request, re, sys, os
 
 def ocr_page(doc, page_num, dpi=120):
     page = doc[page_num]

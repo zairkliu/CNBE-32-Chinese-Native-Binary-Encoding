@@ -1,4 +1,4 @@
-﻿#ifndef CNBE_H
+#ifndef CNBE_H
 #define CNBE_H
 #include <stdint.h>
 void cnbe_init(void);

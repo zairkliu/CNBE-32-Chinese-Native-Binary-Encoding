@@ -1,4 +1,4 @@
-﻿import urllib.request, json, time
+import urllib.request, json, time
 data = json.dumps({"model":"qwen3.5:0.8b","messages":[{"role":"user","content":"你好"}],"stream":False}).encode()
 req = urllib.request.Request("http://localhost:11434/api/chat", data=data, headers={"Content-Type":"application/json"})
 t0 = time.time()

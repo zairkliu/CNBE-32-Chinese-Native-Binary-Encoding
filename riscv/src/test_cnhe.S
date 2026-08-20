@@ -1,4 +1,4 @@
-﻿.section .text
+.section .text
 .globl main
 main:
     li a1, 0x5B66

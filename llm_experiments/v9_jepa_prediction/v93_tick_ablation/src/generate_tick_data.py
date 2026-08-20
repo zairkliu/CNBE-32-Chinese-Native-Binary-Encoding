@@ -1,4 +1,4 @@
-﻿"""Generate realistic S&P 500 1-minute OHLCV data for June 1"""
+"""Generate realistic S&P 500 1-minute OHLCV data for June 1"""
 import numpy as np
 
 # Known S&P 500 reference: ~5500-5800 range for 2024-2025

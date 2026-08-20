@@ -1,4 +1,4 @@
-﻿import sys
+import sys
 sys.path.insert(0, r"C:\Users\zairk\Documents\Codex\2026-07-02\codex-dangerously-bypass-approvals-and-sandbox\v9_jepa_tree\src")
 from cnbe_tree_encoder import CNBETreeEncoder
 enc = CNBETreeEncoder()

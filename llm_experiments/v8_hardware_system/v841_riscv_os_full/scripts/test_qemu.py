@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 '''Test v8.4.1 OS interactive commands via QEMU serial.'''
 
 import subprocess

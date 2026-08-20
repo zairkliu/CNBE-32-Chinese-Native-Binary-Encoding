@@ -1,4 +1,4 @@
-﻿import json, urllib.request, time
+import json, urllib.request, time
 
 url = "http://localhost:11434/api/chat"
 headers = {"Content-Type":"application/json", "Connection":"keep-alive"}

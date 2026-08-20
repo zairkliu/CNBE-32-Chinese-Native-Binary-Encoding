@@ -5,11 +5,11 @@ from pathlib import Path
 
 import pytest
 
-LOCAL_KNOWLEDGE_ROOT = Path(
-    os.environ.get(
-        "CNBE_RESEARCH_KNOWLEDGE_ROOT",
-        "/Users/liuzhaoqi/Documents/cnbe-research/knowledge",
-    )
+LOCAL_KNOWLEDGE_ROOT_ENV = os.environ.get("CNBE_RESEARCH_KNOWLEDGE_ROOT")
+LOCAL_KNOWLEDGE_ROOT = (
+    Path(LOCAL_KNOWLEDGE_ROOT_ENV).expanduser()
+    if LOCAL_KNOWLEDGE_ROOT_ENV
+    else None
 )
 
 LOCAL_KNOWLEDGE_TESTS = {
@@ -40,10 +40,13 @@ LOCAL_KNOWLEDGE_TESTS = {
 
 
 def pytest_collection_modifyitems(config: pytest.Config, items: list[pytest.Item]) -> None:
-    if LOCAL_KNOWLEDGE_ROOT.exists():
+    if LOCAL_KNOWLEDGE_ROOT is not None and LOCAL_KNOWLEDGE_ROOT.is_dir():
         return
 
-    reason = "requires local cnbe-research knowledge workspace"
+    reason = (
+        "requires an explicitly configured local cnbe-research knowledge workspace "
+        "(set CNBE_RESEARCH_KNOWLEDGE_ROOT)"
+    )
     marker = pytest.mark.skip(reason=reason)
     for item in items:
         if Path(str(item.fspath)).name in LOCAL_KNOWLEDGE_TESTS:

@@ -1,4 +1,4 @@
-﻿import json, os, urllib.request, time, re, sys
+import json, os, urllib.request, time, re, sys
 
 OLLAMA_URL = "http://localhost:11434/api/chat"
 MODEL = "qwen3.5:0.8b"

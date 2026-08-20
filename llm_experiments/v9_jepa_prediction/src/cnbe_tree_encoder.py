@@ -1,4 +1,4 @@
-﻿import numpy as np
+import numpy as np
 
 class CNBETreeEncoder:
     """将树木状态编码为CNBE风格的结构化32位编码"""

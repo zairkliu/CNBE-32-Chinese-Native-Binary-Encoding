@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 CNBE-32 Experiment Runner — Reproduce v1-v7 experiments with Ollama models.
 Usage: python experiment.py <experiment_id> [options]

@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 import os
 
 path = os.path.expanduser("~/v84_riscv_os_full/src/editor/reader.c")

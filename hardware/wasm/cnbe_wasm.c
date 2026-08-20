@@ -1,4 +1,4 @@
-﻿#include <emscripten/emscripten.h>
+#include <emscripten/emscripten.h>
 #include <stdint.h>
 
 /* CNBE-32 bit layout (aligned with cnbe32.h v0.4.0) */

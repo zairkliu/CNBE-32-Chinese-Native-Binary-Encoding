@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Generate all v8.4.1 source files for CNBE-32 RISC-V OS."""
 
 import os

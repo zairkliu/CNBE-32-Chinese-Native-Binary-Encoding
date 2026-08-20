@@ -1,4 +1,4 @@
-﻿"""
+"""
 CNBE-32 Encoding Utility — Core encoding module for all experiments.
 Usage: python encode.py <text> [--format A|C|D|F] [--table path/to/skill_table.npy]
        python encode.py --batch <file> [--format A|C|D|F]

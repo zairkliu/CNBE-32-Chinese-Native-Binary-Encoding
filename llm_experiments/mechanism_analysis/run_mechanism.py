@@ -1,4 +1,4 @@
-﻿import json, os, sys, time, urllib.request, urllib.error
+import json, os, sys, time, urllib.request, urllib.error
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "..", "src"))
 sys.path.insert(0, os.path.dirname(__file__))
 from encoder import get_all_encoders

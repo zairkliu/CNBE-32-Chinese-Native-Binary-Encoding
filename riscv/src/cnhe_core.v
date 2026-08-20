@@ -1,4 +1,4 @@
-﻿// cnhe_core.v - CNBE-32 FPGA implementation
+// cnhe_core.v - CNBE-32 FPGA implementation
 // Implements cnhe.map, cnhe.extract, cnhe.cmp
 
 module cnhe_core (

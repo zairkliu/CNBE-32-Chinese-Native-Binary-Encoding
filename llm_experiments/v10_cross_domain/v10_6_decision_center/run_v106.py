@@ -1,4 +1,4 @@
-﻿"""CNBE v10.6: Social info distribution & decision center simulation (numpy only)"""
+"""CNBE v10.6: Social info distribution & decision center simulation (numpy only)"""
 import numpy as np, json, os, time
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsRegressor

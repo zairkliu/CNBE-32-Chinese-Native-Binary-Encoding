@@ -1,4 +1,4 @@
-﻿"""CNBE v10.7: Pretraining foundation model - CNBE as frozen embedding for Transformer"""
+"""CNBE v10.7: Pretraining foundation model - CNBE as frozen embedding for Transformer"""
 import torch, torch.nn as nn, torch.nn.functional as F, numpy as np, json, os, time
 
 CFG = type("Cfg",(),{"hdim":128,"nlay":4,"nhead":4,"ff":256,"seq":16,"bs":64,"ep":50,

@@ -29,6 +29,17 @@ make -C c/golden_vectors test
 cargo test --manifest-path rust/golden_vectors/Cargo.toml
 ```
 
+The default suite is fully reproducible from tracked repository artifacts.
+Tests that exercise the private `cnbe-research` knowledge workspace are skipped
+unless an administrator explicitly provides its path:
+
+```bash
+CNBE_RESEARCH_KNOWLEDGE_ROOT=/absolute/path/to/cnbe-research/knowledge pytest
+```
+
+That opt-in workspace is an administrator integration environment, not a
+GitHub CI dependency or a substitute for committed evidence artifacts.
+
 ## Golden vectors
 
 Implementation changes must preserve compatibility with `spec/golden_vectors.json`. If a change modifies bitfield behavior, update the spec, Python tests, C tests, Rust tests, and documentation together.

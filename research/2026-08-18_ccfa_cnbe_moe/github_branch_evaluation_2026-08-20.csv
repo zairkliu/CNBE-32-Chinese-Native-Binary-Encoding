@@ -1,4 +1,4 @@
-﻿branch,last_commit,unique_commits,diff_files,pr,pr_state,ci
+branch,last_commit,unique_commits,diff_files,pr,pr_state,ci
 chore/db-v1.1-migration,2026-08-20 03:01:35 +0800,0,0,50,closed,green
 docs/formal-spec-port,2026-08-20 03:01:35 +0800,0,0,46,closed,green
 docs/math-structure-render-fix,2026-08-20 03:01:35 +0800,0,0,45,closed,green
