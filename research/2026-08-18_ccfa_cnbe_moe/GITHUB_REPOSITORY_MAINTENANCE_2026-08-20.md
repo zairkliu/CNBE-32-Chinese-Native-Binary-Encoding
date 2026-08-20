@@ -3,7 +3,7 @@
 ## 结论
 
 - 远端分支：55 个收敛为 1 个（仅 `main`），开放 PR 为 0。
-- 主分支当前头：`b284335`。
+- 主分支当前头：以 GitHub `main` 页面为准。
 - CI 基线已修复：pytest、ruff、format、build、release 校验在三个 Python 版本上通过。
 - 新增的 wasm-deploy 已全绿：构建路径、LFS、standalone wasm 入口均已修复。
 - 开放 Issue 2 个：#35 Agent smoke test、#39 字段级数据缺陷。
