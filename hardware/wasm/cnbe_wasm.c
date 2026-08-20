@@ -1,5 +1,6 @@
 #include <emscripten/emscripten.h>
 #include <stdint.h>
+#include <stdlib.h>
 
 /* CNBE-32 bit layout (aligned with cnbe32.h v0.4.0) */
 #define RADIX_SHIFT  24
