@@ -708,6 +708,33 @@ v2 语料已正式冻结：
 
 项目的可复现基线保存在已提交的 skill、测试、报告、review packet 和普通 GitHub Actions 中。没有 Copilot cloud agent 访问权限的维护者，仍可在本地或通过普通 pull request 执行 CNBE Agent 工作流。详见[GitHub Copilot 云端智能体状态](./docs/COPILOT_CLOUD_AGENT_LIMITATION.md)。
 
+## 当前标准重启状态
+
+CNBE 正在按更严格的国家语言文字规范证据链重新组织。
+
+**8105 通用规范汉字表**现在是本轮重写编码的国家标准核心。现有 CNBE 行在通过新的证据门禁前，只能视为旧版 / 当前运行时数据。20,902 行 Agent 预编码池是项目候选输出，97,686 行全目录仍是扩展研究目标。
+
+本轮重启目标是把 CNBE 重建为一个对齐国家语言文字规范的编码项目：Agent 负责受控执行汉字结构工作，每个可提升结果都必须携带证据和审核状态，仓库结构必须区分运行时代码、证据、报告、历史实验和科研复现产物。
+
+当前已确认状态：
+
+- 8105 基线行数：`8105`
+- 当前 CNBE 中落入 8105 范围的行数：`7829`
+- 当前 CNBE 中缺失的 8105 行数：`276`
+- 人工审核通过的 8105 Agent 结构基线：`8105 / 8105`
+- 已从批准后的 8105 dry run 提升到运行时 CNBE32 的行数：`6712`
+- 强制通过但保留到后续插入 / 部首策略队列的行数：`1393`
+- 运行时 JSON 和 SQLite 数据库已从批准后的 20,902 行源表重建
+
+治理文档：
+
+- [CNBE 8105 编码治理](./docs/CNBE8105_ENCODING_GOVERNANCE.md)
+- [CNBE 可复现 Agent 工作流](./docs/CNBE_REPRODUCIBLE_AGENT_WORKFLOW.md)
+- [CNBE 版本治理](./docs/CNBE_VERSION_GOVERNANCE.md)
+- [仓库结构](./docs/REPOSITORY_STRUCTURE.md)
+- [CNBE 8105 核心确认](./reports/CNBE8105_CORE_CONFIRMATION.md)
+- [CNBE 8105 运行时提升报告](./reports/8105_CNBE32_RUNTIME_PROMOTION.md)
+
 ---
 
 ## 为什么有趣
