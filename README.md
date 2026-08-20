@@ -1,6 +1,6 @@
 <p align="center">
   <strong>CNBE-32</strong><br>
-  Chinese Native Computing Foundation · Unified Chinese Structural Representation from Machine Code to Applications
+  A Research Program for Auditable Chinese Structural Computing
 </p>
 
 <p align="center">
@@ -19,24 +19,86 @@
   <img alt="Extended scope" src="https://img.shields.io/badge/97%2C686-experimental%20target-lightgrey">
 </p>
 
-CNBE-32 is a complete native encoding infrastructure for Chinese, aiming to
-provide a unified, computable Chinese structural representation across machine
-code, instruction sets, operating systems, compilers/decoders, programming
-languages, and applications. It carries computable morphology in a 32-bit field
-algebra (radix/stroke/struct/index/ext), spans RISC-V instructions, Verilog
-prototypes, the Linux kernel layer, compilers/decoders, C++/Python/Rust, and
-applications. Compatibility with existing CJK/Unicode/GB encodings is a gradual,
-patch-friendly evolution path for current computer systems, not a rewrite; its
-academic value lies in a structure-aware encoding substrate for computational
-linguistics, Chinese philology, and digital humanities on classical texts.
-With AI, domestic chips, RISC-V, and open-source AI systems advancing rapidly,
-the historical vision of a complete Chinese computing system now has a concrete
-basis for renewed discussion and engineering.
-In the AI era, Chinese should be one of the foundations, not an option.
+CNBE-32 is a long-horizon research program and open-source prototype. It asks
+whether Chinese character structure can become a compatible, computable layer
+beside Unicode/GB identity: first in data, SDKs, and auditable applications,
+then, only where evidence supports it, in models, toolchains, and systems.
+Its 32-bit field algebra (radix/stroke/struct/index/ext) is one proposed
+representation, not a replacement for existing encodings or an established
+computing standard. RISC-V, Verilog, Linux, C++/Python/Rust, and AI artifacts
+are separate prototypes that test how one structural representation may travel
+across layers. Their coexistence is a research agenda, not proof that the full
+agenda has already succeeded.
 
 See [CNBE32_PROJECT_POSITION_ZH.md](./docs/CNBE32_PROJECT_POSITION_ZH.md).
 
-## 2026-08-18/19: CCF-A Paper and Structure-Sensitive Evidence
+## Research Question and Evidence Ladder
+
+The long-term question is deliberately broader than any one experiment:
+
+> Can a standard-aligned and auditable structural representation of Hanzi be
+> consumed by computing systems without replacing Unicode/GB, and does it help
+> in tasks where character structure is genuinely relevant?
+
+CNBE answers this in stages rather than by assertion:
+
+1. **Representation**: Unicode alignment, field semantics, golden vectors, and
+   a versioned structural database establish what a CNBE value means.
+2. **Evidence governance**: national-standard alignment, source provenance,
+   human review, uncertainty labels, and no-write gates make entries auditable.
+3. **Applications**: OCR candidates, variants, confusables, rare characters,
+   and classical-text review provide falsifiable structure-sensitive tasks.
+4. **Models**: CNBE is tested as a feature or routing prior against aligned,
+   strong baselines; a model result never retroactively validates the data.
+5. **Systems**: SDKs and hardware prototypes test portability only after the
+   representation and task evidence are understood.
+
+The detailed protocol, acceptance gates, and prohibited inferences are in
+[Research Program and Experiment Ladder](./docs/RESEARCH_PROGRAM_AND_EXPERIMENT_LADDER.md)
+and [Evidence Status](./docs/EVIDENCE_STATUS_2026-08-19.md).
+
+## Research Design: Object, Method, and Falsifiability
+
+The intellectual starting point is a narrow, testable part of a broader
+Chinese-native AI governance discussion: useful Chinese-language computation
+needs representations whose sources, transformations, and limitations can be
+examined. CNBE does **not** claim that a bitfield solves language governance,
+or that character structure alone supplies semantics. It isolates one research
+object: an optional structural descriptor attached to an otherwise ordinary
+Unicode character.
+
+For a character \(c\), let \(u(c)\) be its Unicode code point and let
+\(\phi(c) = (r, s, t, i, e)\) denote the versioned structural fields: radix,
+stroke count, structure class, compatibility index, and extension. The current
+carrier is a 32-bit packing function:
+
+```text
+E(c) = (r << 24) | (s << 19) | (t << 15) | (i << 4) | e
+```
+
+`u(c)` remains the identity and interchange key. `E(c)` is a derived,
+versioned feature record; it is not an alternate character repertoire, a
+Unicode replacement, or a linguistic theorem. The compatibility index is
+deprecated as an addressing key, and the radix field remains explicitly
+version-bound. See [Field Semantics Freeze v1.1](./docs/FIELD_SEMANTICS_FREEZE_v1.1.md).
+
+The research methods follow four falsifiable hypotheses:
+
+| Hypothesis | Claim under test | What would count as failure |
+|---|---|---|
+| H1: representation integrity | A fixed schema can be aligned to Unicode and reproduced across implementations. | Golden-vector or versioned-source disagreement. |
+| H2: task value | CNBE features improve a pre-registered structure-sensitive task over declared baselines. | No held-out improvement, leakage, or an improvement explained by a non-CNBE confound. |
+| H3: model value | A structural prior has incremental value under equal data, parameters, compute, and evaluation. | A matched token-only or structure-aware baseline removes the effect. |
+| H4: systems value | The same semantics can travel across SDK and prototype boundaries with measurable cost. | Cross-language mismatch, or no measured advantage for the stated system constraint. |
+
+The field-weighted distance, hyperbolic operators, HDC/VSA representations, and
+bitwise routing are candidate tools for H2--H4, not assumptions that make those
+hypotheses true. Their formal definitions and property tests are linked in
+[CNBE-32 Mathematical Structure](./docs/CNBE32_MATHEMATICAL_STRUCTURE.md).
+The fuller research protocol is in [Research Program and Experiment Ladder](./docs/RESEARCH_PROGRAM_AND_EXPERIMENT_LADDER.md); the rationale for this README redesign is recorded in
+[README Research Redesign Rationale](./docs/README_RESEARCH_REDESIGN_RATIONALE_2026-08-19.md).
+
+## Evidence Snapshot: 2026-08-18/19
 
 The repository now includes a CCF-A-oriented paper package for CNBE-MoE, plus
 non-training supplements and new experiments that do not depend on private
@@ -50,11 +112,12 @@ weights or corpus data:
 - [E-book corpus builder skill](./skill/cnbe-ebook-corpus-builder-v3/SKILL.md)
 - [CNBE-MoE boundary skill](./skill/cnbe-moe-boundary/SKILL.md)
 - [Corpus freeze and residual audit tools](./tools/)
+- [Evidence status and claim boundaries](./docs/EVIDENCE_STATUS_2026-08-19.md)
 
-New evidence highlights:
+New evidence highlights, all scoped as pilots unless stated otherwise:
 
-- Real OCR rerank: GBDT with CNBE features reaches 66.39% Top-1 vs Unicode 50.42%;
-- DeepSeek V4 API: CNBE hints 92.31% vs Unicode 85.71% vs plain 71.43% (parsed subset);
+- OCR-residual constructed-candidate ranking: on a page-held-out split, GBDT with CNBE features reaches 66.39% Top-1 vs Unicode 50.42%. Candidates include ground-truth-derived entries, so this is not a production OCR top-N result;
+- DeepSeek V4 API pilot: on 19 prompts with 68--74% parse rates, CNBE is 92.31%, Unicode 85.71%, and plain 71.43% on their respective parsed subsets. This is feasibility evidence, not a comparative accuracy claim;
 - Embedding baselines: bert-base-chinese 40.58%, ChineseBERT 18.12%, raw CNBE 15.94%;
 - 37-page Yongle e2e: 90.91% -> 92.64% with Unihan variant map;
 - Ancient PDF pilot: deepseek-ocr page with 100% CNBE coverage.
@@ -62,7 +125,11 @@ New evidence highlights:
 Training checkpoints, `.cnbe` streams, and private SCNet upload archives remain
 outside the repository.
 
-## TL;DR
+## Reader's Map
+
+**Research question.** Can a Unicode-compatible structural descriptor be made
+auditable and demonstrate task-specific value? CNBE-32 is the current proposed
+carrier for testing that question.
 
 **What is CNBE-32?** A Unicode/GB-compatible Chinese structural computing layer
 that encodes radix/stroke/structure/index/ext in 32-bit fields, exposing Hanzi
@@ -72,7 +139,7 @@ structure to SDKs, databases, instructions, hardware prototypes, and AI models.
 classical-text digitization/OCR engineers, Chinese NLP researchers,
 policy/standards readers, and Chinese-language technology enthusiasts.
 
-**Where is it now?** The project has a 21,178-row runtime database,
+**What is available now?** The project has a 21,178-row runtime database,
 multi-language SDKs, a desktop demo, a 24.38M-character seven-corpus validation,
 MoE-64 three-field hard routing, local QLoRA experiments, and DeepSeek/Ollama
 reproduction materials. The next stage is cloud-GPU scale validation, CNBE
@@ -91,11 +158,14 @@ Studio, and a classical-text cleanup pipeline.
 - **Cloud validated (second round)**: SCNet DCU BW x2, 544M CNBE tokens,
   128 shared experts, 626M params, next-code 23.56%, struct 44.07%,
   Gini 0.297.
-- **Controlled comparison (v1)**: on the same v1 corpus and eval split,
-  MoE-128 next-code 22.96%, Dense 2.61%, Unicode 0.001%; CNBE clearly
-  outperforms Unicode; equal-parameter Dense (2.61%) confirms the MoE gain.
-- **A800 5.4B training**: v2 frozen corpus, configs and run scripts are ready;
-  smoke test is the next milestone.
+- **v1 comparison (preliminary)**: MoE-128, Dense, Unicode, and matched-Dense
+  runs are retained as an exploratory record. The 0.001% Unicode result is
+  under investigation; without its rerun, non-zero-code conditional accuracy,
+  equal-compute controls, and direct prior-work baselines, no causal MoE or
+  CNBE-over-Unicode conclusion is claimed.
+- **A800 5.4B training (in progress)**: the 2026-08-19 snapshot records
+  250,578 / 618,750 steps (40.5%). It has no final evaluation, cross-run
+  comparison, or publishable performance conclusion yet.
 - **Planned / awaiting scale validation**: 256-expert MoE, d_model
   512-1024, 9B punctuation-model fusion, end-to-end classical-text cleanup,
   and CNBE64/CNBE128 evidence archives.
@@ -103,7 +173,7 @@ Studio, and a classical-text cleanup pipeline.
   repository explicitly separates stable releases, experimental observations,
   and planned work.
 
-## Abstract
+## Research Abstract
 
 CNBE-32 asks a specific systems question: given that Unicode already carries
 character identity and Unicode/GB already anchor the real-world ecosystem, can
@@ -113,16 +183,17 @@ hardware prototypes, and AI models?
 
 The answer proposed here is not to replace existing encodings. Unicode/GB carry
 identity and interchange; CNBE-32 carries structural fingerprints and
-computable features. The repository now contains a 21,178-row runtime database,
+computable features. The repository contains a 21,178-row runtime database,
 Python/C/Rust SDKs, RISC-V and Verilog prototypes, a desktop demo, a
 24.38M-character seven-corpus validation, QLoRA small-model training,
 CNBE-MoE routing prototypes, and evidence boundaries governed by the 8105
 common standardized Chinese character table and GF0017.
 
-This is a Chinese-computing idea that becomes discussable again in the AI era:
-compute, open-source models, RISC-V, domestic chips, and agentic workflows turn
-"can Chinese structure enter lower levels of computation?" from a historical
-vision into a reproducible engineering research question.
+The project separates a research program from its current evidence: verified
+representation behavior, exploratory application/model observations, and
+unproven hardware or deployment directions are not interchangeable. The goal
+is a sequence of small, reproducible conclusions rather than a declaration
+that Chinese computation has already been rebuilt.
 
 ## Why Now
 
@@ -260,12 +331,13 @@ from encoding, evidence, software, models, and systems prototypes:
 | Phase 3: classical-text pipeline | Mid term | OCR/truth DB -> CNBE coverage check -> confusable risk -> LLM punctuation/segmentation -> human review | At least one public sample pack with inputs, outputs, error analysis, and review queue |
 | Phase 4: extended width and standardization | Long term | CNBE64/CNBE128, GB 18030/Unicode bidirectional mapping, external review | Design docs, golden vectors, evidence-archive schema, P1/WS-4 review results |
 
-## Project Positioning
+## Project Positioning and Scope
 
-**CNBE-32 is a complete native encoding infrastructure for Chinese**, aiming to
-provide a unified, computable Chinese structural representation across machine
+**CNBE-32 is a research prototype for a compatible Chinese structural layer.**
+It explores whether one versioned representation can be reused across machine
 code, instruction sets, operating systems, compilers/decoders, programming
-languages, and applications.
+languages, and applications. These layers are experiments with different
+acceptance criteria, not a claim of a finished native encoding infrastructure.
 
 | Layer | CNBE-32 Counterpart |
 |---|---|
@@ -323,9 +395,10 @@ replacing them, based on historical lessons:
 The 128-expert shared-MoE round is now complete on SCNet L20
 ([acceptance report](./experiments/2026-08-08_cnbe_moe_scnet/REPORT_SCNET_CNBE_MOE_L20.md))
 and on SCNet DCU BW x2 with 544M tokens. The v1 controlled comparison is
-complete for MoE-128 / Dense / Dense matched-params / Unicode; the
-equal-parameter Dense control confirms the MoE gain. The remaining work still
-requires larger cloud compute:
+recorded for MoE-128 / Dense / Dense matched-params / Unicode. It is not yet
+an interpretable causal comparison: the Unicode baseline is under
+investigation, and equal-compute, conditional-accuracy, and direct prior-work
+controls remain outstanding. The remaining work requires larger cloud compute:
 
 - Scale MoE experts to 256 and validate hard-routing gains on larger data;
 - Increase d_model to 512-1024 and evaluate Triton kernel gains;
@@ -688,9 +761,10 @@ eval split:
 | Dense matched-params | 7.2802 | 2.61% | 38.41% | 289,858,591 |
 | Unicode Dense | 7.7933 | 0.0010% | N/A | 38,130,891 |
 
-Conclusions: MoE-128 clearly outperforms the same-configuration dense model;
-the matched-parameter dense baseline confirms the MoE architecture gain;
-CNBE clearly outperforms Unicode codepoints; expert Gini is 0.147 on v1.
+Interpretation boundary: these values preserve the v1 run record. They do not
+yet establish a causal MoE advantage or a CNBE-over-Unicode result, because the
+Unicode baseline is under investigation and the required conditional,
+equal-compute, multi-seed, and direct-prior-work comparisons are incomplete.
 
 - [Training Run Report](./docs/TRAINING_RUN_REPORT_2026-08-11.md)
 - [Experiment Archive Index](./experiments/2026-08-08_cnbe_moe_scnet/README_EXPERIMENTS_2026-08-12.md)
@@ -726,6 +800,9 @@ The next training target is A800 x2 on the full v2 train stream:
 - [A800 Training Plan Review](./docs/A800_5_4B_TRAINING_PLAN_REVIEW_2026-08-14.md)
 - [A800 5.4B Experiment Package](./experiments/2026-08-14_a800_5_4b/)
 
+Status update: the plan has progressed to an in-flight run. The 2026-08-19
+snapshot records 250,578 / 618,750 steps (40.5%); it is not a final evaluation.
+
 ### 2026-08-19: Structure-Sensitive Rerank and Ancient PDF Corpus
 
 The project completed a set of structure-sensitive experiments to answer the
@@ -734,9 +811,9 @@ fingerprint layer?
 
 | Experiment | Result |
 |---|---|
-| Real OCR rerank, Unicode baseline | 50.42% Top-1 |
-| Real OCR rerank, GBDT + CNBE features | 66.39% Top-1 |
-| DeepSeek V4 API, plain / Unicode / CNBE | 71.43% / 85.71% / 92.31% |
+| OCR-residual constructed-candidate pilot, Unicode baseline | 50.42% Top-1 on page-held-out groups |
+| OCR-residual constructed-candidate pilot, GBDT + CNBE features | 66.39% Top-1; not a production OCR top-N result |
+| DeepSeek V4 API pilot, plain / Unicode / CNBE | 71.43% / 85.71% / 92.31% on separate parsed subsets of 19 prompts |
 | bert-base-chinese / ChineseBERT / raw CNBE | 40.58% / 18.12% / 15.94% |
 | Yongle 37-page e2e | 90.91% -> 92.64% |
 

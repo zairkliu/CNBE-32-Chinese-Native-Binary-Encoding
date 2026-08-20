@@ -3,6 +3,10 @@
 日期：2026-08-19  
 来源：外部 AI 对 CNBE-MoE 投稿前方案的专业评审
 
+> 本文保留评审提出时的历史问题。当前可对外使用的证据状态以
+> [`docs/EVIDENCE_STATUS_2026-08-19.md`](../../docs/EVIDENCE_STATUS_2026-08-19.md)
+> 为准；后续补跑不能倒写为评审当时已经完成。
+
 ## 1. 结论
 
 这份评审总体可信，且与项目当前状态高度相关。它没有否定方向本身，但明确指出：现有 framing 会直接被拒，Unicode baseline 有 bug 嫌疑，等参 Dense 缺失会导致因果不可归因。
@@ -39,11 +43,13 @@
 - 完成 184k/250k 两次进度建模；
 - 论文初稿已按第一轮审稿意见重写。
 
-因此评审中关于“MoE 规模”的担忧已经进入验证阶段，但“等参对照、Unicode baseline、条件 accuracy、相关工作对标”四个 fatal gap 仍然存在。
+因此评审中关于“MoE 规模”的担忧已经进入验证阶段。仓库现在已有
+matched-Dense 的结果记录，但其可复现核查尚未替代等计算预算和多种子比较；Unicode
+baseline、非零码条件 accuracy、以及与既有工作的直接对照仍是投稿前的阻塞项。
 
 ## 5. 必须修复的前四项
 
-1. 补跑 Dense matched-params；
+1. 审核 matched-Dense 的配置、日志和可复算结果，并补等计算预算；
 2. 重跑并修正 Unicode baseline；
 3. 报告非零码上的条件 struct accuracy；
 4. 增加与 ChineseBERT / SubChar / CNM-BERT 的差异化和对比。

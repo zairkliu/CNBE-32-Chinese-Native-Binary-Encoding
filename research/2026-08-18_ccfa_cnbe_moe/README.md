@@ -11,6 +11,7 @@
 | `TECHNICAL_PAPER_CNBE_MOE_2026-08-18.md` | CCF-A 技术论文草稿（已按审稿意见修订） |
 | `REVIEW_RESPONSE_2026-08-18.md` | 审稿意见逐条响应表 |
 | `SEGMENTFAULT_REVIEW_ANALYSIS_2026-08-19.md` | 外部专业评审分析：有效观点与必须修复的 fatal gaps |
+| `SEGMENTFAULT_PUBLIC_CORRECTION_2026-08-19.md` | 公开问题页的二次更正稿与逐项编辑清单 |
 | `CNBE_POSITIONING_ANALYSIS_2026-08-19.md` | CNBE 通用 NLU vs 结构敏感任务定位分析与差异化 |
 | `CNBE_EXISTING_WORK_AND_DIFFERENTIATION_2026-08-19.md` | 已有工作、他人未尝试原因、ChineseBERT/Glyce/SubChar 对比与方向判断 |
 | `PROJECT_COMPARISON_LESSONS_2026-08-19.md` | 已有项目情况分析及对 CNBE 项目的启示 |

@@ -10,7 +10,7 @@
 | 实验 | 结果 | 意义 |
 |---|---|---|
 | 零样本结构重排 | CNBE hamming Top-1 50.96% vs Unicode 46.15% | 结构指纹可零样本排序 |
-| 真实 OCR 学习式重排 | GBDT Top-1 66.39% vs Unicode 50.42% | CNBE 特征进入模型有效 |
+| OCR 残差构造候选重排 | GBDT Top-1 66.39% vs Unicode 50.42% | 受限候选排序条件下的 pilot；不能外推为真实 OCR top-N 增益 |
 | DeepSeek API v5 | CNBE 提示 92.31% vs Unicode 85.71% vs plain 71.43% | 结构字段帮助 LLM 提示 |
 | 古籍 OCR pilot | CNBE 覆盖率 100% | 标准轨覆盖可验证 |
 
@@ -22,7 +22,7 @@
 
 我们的实验恰好支持这一点：
 
-- 单独 CNBE 距离在真实 OCR 上不够强；
+- 单独 CNBE 距离在构造候选的 OCR 残差重排中不够强；
 - 与 Unihan variant map 和上下文结合后才有明显增益；
 - 作为特征进入 GBDT/MLP 后超过 Unicode；
 - 作为 API 提示时高于 plain/Unicode。
@@ -38,7 +38,7 @@
 | 零样本结构距离 | 弱 | 弱 | 弱 | 可计算 |
 | 国家标准对齐 | 无 | 无 | 无 | GB 8105 / GF |
 | 硬件/系统层 | 无 | 无 | 无 | RISC-V / Verilog / Linux |
-| 真实 OCR 重排增益 | 待测 | 待测 | 待测 | 已验证 |
+| 真实 OCR top-N 重排增益 | 待测 | 待测 | 待测 | 待测（现有为构造候选 pilot） |
 
 我们的差异化是：
 
